@@ -5,10 +5,10 @@ keywords:
   - Edge
   - reComputer R1000
   - Flash OS
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.png
 slug: /recomputer_r1000_flash_OS
 last_update:
-  date: 05/8/2023
+  date: 10/25/2024
   author: Parker Hu
 ---
 #  reComputer R1000 Raspbian OS to eMMC
@@ -438,6 +438,21 @@ sudo reboot
 
 This process will ensure that your drivers are up to date before updating the firmware.
 
+For reComputer R1000 V1.0, it need to change the `/boot/firmware/config.txt` file after restarting and enter the following command:
+```shell
+ sudo nano /boot/firmware/config.txt
+```
+Modify the final content of the file to:
+```shell
+  enable uart=1
+  dtoverlay=dwc2,dr mode=host
+  dtoverlay=vc4-kms-v3d
+  dtoverlay=reComputer-R100x,uart2
+```
+Then restart:
+```shell
+  sudo reboot
+```
 
 ## Tech Support & Product Discussion
 

@@ -1015,6 +1015,7 @@ const sidebars = {
           label: 'MR60FDA2 mmWave kit',
           items: [
             'Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/getting_started_with_mr60fda2',
+            'Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/ha_with_mr60fda2',
           ],
         },
         {
@@ -1761,7 +1762,7 @@ const sidebars = {
         'Sensor/ReSpeaker_Lite/reSpeaker_lite_introduction',
         {
           type: 'category',
-          label: 'ReSpeaker Lite Voice Assistant Kit',
+          label: 'ReSpeaker Lite with XIAO ESP32S3',
           link: {
             type: "doc",
             id: 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/xiao_respeaker',
@@ -1793,6 +1794,7 @@ const sidebars = {
                 'Sensor/ReSpeaker_Lite/Application/respeaker_lite_pi5',
               ],
         },
+        'Sensor/ReSpeaker_Lite/respeaker_enclosure',
           ],
     },
 
@@ -1963,68 +1965,77 @@ const sidebars = {
           label: 'Wio Series',
           items: [
             'Sensor/Wio_Series/Wio',
-            {
-              type: 'category',
-              label: 'Wio-E5',
-              items: [
-                'Sensor/Wio_Series/Wio-E5/LoRa_E5_mini',
-                'Sensor/Wio_Series/Wio-E5/LoRa_E5_Dev_Board',
-                'Sensor/Wio_Series/Wio-E5/LoRa-E5_STM32WLE5JC_Module',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Wio-SX1262',
-              items: [
-                'Sensor/Wio_Series/Wio_SX1262/Introduction',
-                //'Sensor/Wio_Series/Wio_SX1262/How_to_build_a_lora_sensor',
-                {
-                  type: 'category',
-                  label: 'Wio SX1262 with XIAO ESP32S3 Kit',
-                  items: [
-                    'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Introduction',
-                    'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Get_Started_meshtastic',
-                    //'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Get_Started_lora',
-                  ],
-                },
-              ],
-            },
-                        {
-              type: 'category',
-              label: 'Wio Tracker 1110 Dev Board',
-              items: [
-                'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Introduction',
-                'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Get_Started',
-                'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_to_TTN',
-                'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/LoRa_Locator',
-                'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_1110_to_HA',
-                'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/change_antenna_path',
+            // {
+            //   type: 'category',
+            //   label: 'Wio-E5',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio-E5/LoRa_E5_mini',
+            //     'Sensor/Wio_Series/Wio-E5/LoRa_E5_Dev_Board',
+            //     'Sensor/Wio_Series/Wio-E5/LoRa-E5_STM32WLE5JC_Module',
+            //   ],
+            // },
+            // {
+            //   type: 'category',
+            //   label: 'Wio-SX1262',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_SX1262/Introduction',
+            //     //'Sensor/Wio_Series/Wio_SX1262/How_to_build_a_lora_sensor',
+            //     {
+            //       type: 'category',
+            //       label: 'Wio SX1262 with XIAO ESP32S3 Kit',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Introduction',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Get_Started_meshtastic',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Single_Channel_LoRaWAN_Gateway',
+            //         'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/LoRaWAN_Sensor_Node',
+            //         {
+            //           type: 'category',
+            //           label: 'LoRaWAN Network Server',
+            //           items: [
+            //             'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Lorawan_network_server/TTN',
+            //             'Sensor/Wio_Series/Wio_SX1262/Wio_SX1262_with_XIAO_ESP32S3_Kit/Lorawan_network_server/Chirpstack',
+            //           ],
+            //         },
+            //       ],
+            //     },
+            //   ],
+            // },
+            //             {
+            //   type: 'category',
+            //   label: 'Wio Tracker 1110 Dev Board',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Introduction',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Get_Started',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_to_TTN',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/LoRa_Locator',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Connect_1110_to_HA',
+            //     'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/change_antenna_path',
 
-                {
-                  type: 'category',
-                  label: 'Development Tutorial',
-                  items: [
-                    'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Development_Tutorial/Setup_toolchain',
-                  ],
-                },
-              ],
-            },
+            //     {
+            //       type: 'category',
+            //       label: 'Development Tutorial',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio_Tracker_1110_Dev_Board/Development_Tutorial/Setup_toolchain',
+            //       ],
+            //     },
+            //   ],
+            // },
 
-            {
-              type: 'category',
-              label: 'Wio WM1110 Dev Kit',
-              items: [
-                'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Introduction',
-                'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Get_Started_with_Wio-WM1110_Dev_Kit',
-                {
-                  type: 'category',
-                  label: 'Development Tutorial',
-                  items: [
-                    'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Development_Tutorial/Hardware_Overview',
-                  ],
-                },
-              ],
-            },
+            // {
+            //   type: 'category',
+            //   label: 'Wio WM1110 Dev Kit',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Introduction',
+            //     'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Get_Started_with_Wio-WM1110_Dev_Kit',
+            //     {
+            //       type: 'category',
+            //       label: 'Development Tutorial',
+            //       items: [
+            //         'Sensor/Wio_Series/Wio-WM1110_Dev_Kit/Development_Tutorial/Hardware_Overview',
+            //       ],
+            //     },
+            //   ],
+            // },
             {
               type: 'category',
               label: 'LPWAN Dev Kit for Sidewalk',
@@ -2036,14 +2047,14 @@ const sidebars = {
 
 
 
-            {
-              type: 'category',
-              label: 'Wio WM1302',
-              items: [
-                'Sensor/Wio_Series/Wio_WM1302/WM1302_module',
-                'Sensor/Wio_Series/Wio_WM1302/WM1302_Pi_HAT',
-              ],
-            },
+            // {
+            //   type: 'category',
+            //   label: 'Wio WM1302',
+            //   items: [
+            //     'Sensor/Wio_Series/Wio_WM1302/WM1302_module',
+            //     'Sensor/Wio_Series/Wio_WM1302/WM1302_Pi_HAT',
+            //   ],
+            // },
 
             {
               type: 'category',
@@ -2345,9 +2356,27 @@ const sidebars = {
 
               ],
             },
+            {
+              type: 'category',
+              label: 'SenseCAP Indicator for Meshtastic',
+              items: [
+                'Network/Meshtastic_Network/SenseCAP_Indicator/sensecap_indicator_meshtastic',
+              ],
+            },
           ],
     },
-
+    {
+      type: 'category',
+      label: 'LoRa Wio Series',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'Network/LoRa_Wio_Series',
+        },
+      ]
+    },
     {
       type: 'category',
       label: 'SenseCAP Gateway',
@@ -3074,6 +3103,7 @@ const sidebars = {
               id: 'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_intro',
             },
             items: [
+              'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_pcn',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_flash_os',
               'Edge/Raspberry_Pi_Devices/reComputer_R1000/recomputer_r1000_assembly_guide',
@@ -3152,6 +3182,7 @@ const sidebars = {
                                   label: 'ThingsBoard',
                                   items: [
                                      'Edge/Raspberry_Pi_Devices/reComputer_R1000/Applications/tb/recomputer_r1000_thingsboard_ce',
+                                     'Edge/Raspberry_Pi_Devices/reComputer_R1000/Applications/tb/recomputer_r1000_thingsboard_dashboard',
                                     ],
                                   },
    

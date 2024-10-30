@@ -4,8 +4,9 @@ title: Weekly Wiki
 keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
+slug: /weekly_wiki
 last_update:
-  date: 10/08/2024
+  date: 10/28/2024
   author: Frank
 ---
 
@@ -17,69 +18,33 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is October 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is October 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Using VNC on reComputer Jetson](https://wiki.seeedstudio.com/vnc_for_recomputer/) 
+### [Enclosure Installation Guide with ReSpeaker Lite](https://wiki.seeedstudio.com/respeaker_enclosure/)
 
-<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer/Application/vnc_for_jetson/fig4.png"/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/tb/dashboard/thingsboard.gif" style={{width:600}}/></div>
 
-VNC is a remote desktop tool that allows you to remotely control your reComputer Nvidia Jetson form ohter PC devices, with real-time access to the graphical desktop. This wiki describes how to install and use VNC on the reComputer Nvidia Jetson.
+The [ThingsBoard Community Edition](https://thingsboard.io/), an open-source platform, offers powerful features for creating interactive dashboards that stand out among other open-source IoT solutions. With a variety of graphical tools, ThingsBoard allows users to easily visualize and monitor data collected from IoT devices, making it ideal for managing and analyzing real-time data. Whether for industrial automation, smart city projects, or environmental monitoring, ThingsBoard provides a versatile and user-friendly way to track and respond to IoT data insights.
 
-### [Using MID360 LiDAR on reComputer Jetson](https://wiki.seeedstudio.com/mid360/) 
+### [reComputer R1000 V1.1 Product Change Description](https://wiki.seeedstudio.com/recomputer_r1000_v1_1_description/)
 
-MID360 LIDAR sensors provide high-precision 3D point cloud data for various applications. This guide focuses on setting up the MID360 on a [reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) device running ROS Noetic.
+We found that some users have trouble with DE pin control when using the modbus function of reComputer R1000 V1.0. For better user experience, we modified the pin assignment to make RS485 more usable.And made some adjustments to the overall product.
 
-<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/robotics/hardware/MID360/reesult.png"/></div>
+### [Configuring Wio-SX1262 with XIAO ESP32S3 kit as LoRaWAN Sensor Node](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_lora_sensor_node/)
 
-This wiki provides a step-by-step guide to install and set up MID360 LiDAR on [reComputer J30/40](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) Jetson using ROS, and visualize point cloud data.
+This wiki provides a step-by-step guide on configuring the Wio-SX1262 with XIAO ESP32S3 to act as a LoRaWAN sensor node, connecting a DHT20 temperature and humidity sensor, adding an M2 LoRaWAN gateway, and sending data to the The Things Network LNS platform. It also covers the configuration of a format decoder.
 
-### [MR60BHA2 mmWave Sensor with Home Assistant](https://wiki.seeedstudio.com/ha_with_mr60bha2/) 
+## Existing Wiki Updated
 
-The MR60BHA2 is a 60GHz mmWave Breathing and Heartbeat Detection Sensor module designed for integration with the XIAO ESP32C6 microcontroller. This advanced sensor utilizes millimeter-wave technology to provide non-invasive monitoring of vital signs and presence detection.
+### [Getting Started with reServer Industrial](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/)
 
-<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-sensor-light-on.jpg"/></div>
-
-This guide aims to provide a clear and comprehensive walkthrough for integrating the MR60BHA2 mmWave Sensor with Home Assistant using the XIAO ESP32C6 microcontroller. By following this guide, users will learn how to set up the sensor for heartbeat detection, connect it to their Home Assistant environment, and utilize ESPHome to manage and monitor the device effectively. 
-
-
-
-
-<!-- ## Existing Wiki Updated
-
-### [How to use 40-Pin GPIO on reComputer Jetson Boards](https://wiki.seeedstudio.com/reComputer_Jetson_GPIO/)
-
-We've updated an [example](https://wiki.seeedstudio.com/reComputer_Jetson_GPIO/#for-jetpack6) for accessing and controlling GPIO for Jetpack 6+.
-
-### [Get Started with T1000-E Tracker](https://wiki.seeedstudio.com/sensecap_t1000_e/)
-
-We provide troubleshooting [methods](https://wiki.seeedstudio.com/sensecap_t1000_e/#troubleshooting) for some common issues.
-
-
-### [Raspberry Pi support on Grove-16x2 LCD Series](https://wiki.seeedstudio.com/Grove-16x2_LCD_Series/#play-with-raspberry-pi-with-grove-base-hat-for-raspberry-pi)
-
-We've added an [example](https://wiki.seeedstudio.com/Grove-16x2_LCD_Series/#play-with-raspberry-pi-with-grove-base-hat-for-raspberry-pi) of Raspberry Pi support for the Grove-16x2 LCD Series.
-
-### [Raspberry pi support on Grove-OLED Display 1.12inch](https://wiki.seeedstudio.com/Grove-OLED_Display_1.12inch/#play-with-raspberry-pi-with-grove-base-hat-for-raspberry-pi)
-
-We've added an [example](https://wiki.seeedstudio.com/Grove-OLED_Display_1.12inch/#play-with-raspberry-pi-with-grove-base-hat-for-raspberry-pi) of Raspberry Pi support for the Grove-OLED Display 1.12inch.
-
-### [Raspberry pi support on Grove - Optical Rotary Encoder](https://wiki.seeedstudio.com/Grove-Optical_Rotary_Encoder-TCUT1600X01/#play-with-raspberry-pi-with-grove-base-hat-for-raspberry-pi)
-
-We've added an [example](https://wiki.seeedstudio.com/Grove-Optical_Rotary_Encoder-TCUT1600X01/#play-with-raspberry-pi-with-grove-base-hat-for-raspberry-pi) of Raspberry Pi support for the Grove - Optical Rotary Encoder.
-
-### [Added Example for XIAO RP2350 with C/C++ SDK](https://wiki.seeedstudio.com/xiao-rp2350-c-cpp-sdk/#example-2-rgb-blink)
-
-We’ve added examples for XIAO: [RGB Blink](https://wiki.seeedstudio.com/xiao-rp2350-c-cpp-sdk/#example-2-rgb-blink), [UART Print](https://wiki.seeedstudio.com/xiao-rp2350-c-cpp-sdk/#exmaple-3-uart-print), and [Read Battery Voltage](https://wiki.seeedstudio.com/xiao-rp2350-c-cpp-sdk/#exmaple-4-read-battery-voltage).-->
-
-
-
-
+We provided an [operational demonstration](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#binding-physical-network-ports-to-eth-numbers) for reServer on binding physical network ports to eth numbers.
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO RP2040 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-rp2040-with-nuttx/) 
+<!-- ### [Seeed Studio XIAO RP2040 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-rp2040-with-nuttx/) 
 
 [NuttX](https://nuttx.apache.org/) is a mature real-time operating system (RTOS) widely recognized for its standards compliance and small footprint. One of NuttX's main features is its scalability, which allows it to be used in environments ranging from 8-bit microcontrollers to 64-bit systems. This flexibility is achieved through adherence to POSIX and ANSI standards, enabling you to experiment with similar NuttX features across a wide range of chips from different architectures, families, and semiconductor vendors.
 
@@ -89,7 +54,7 @@ Additionally, NuttX offers many advanced and useful features, such as USB, Ether
 
 NuttX supports a vast and continually expanding number of boards. [The official documentation](https://nuttx.apache.org/docs/latest/platforms/) provides a comprehensive list of supported boards, organized by architecture and System-on-Chip (SoC) series. For instance, the [Seeed Studio Xiao RP2040](https://nuttx.apache.org/docs/latest/platforms/arm/rp2040/boards/seeed-xiao-rp2040/index.html) page in the NuttX documentation offers detailed descriptions of each supported feature and instructions on how to utilize them.
 
-<!-- ### [IAO ESP32S3(Sense) With FreeRTOS](https://wiki.seeedstudio.com/xiao-esp32s3-freertos/)
+[IAO ESP32S3(Sense) With FreeRTOS](https://wiki.seeedstudio.com/xiao-esp32s3-freertos/)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/1.png" alt="pir" width={600} height="auto" /></p>
 
@@ -97,11 +62,8 @@ FreeRTOS is a collection of C libraries comprised of a real-time kernel and a se
 
 This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/). With the assistance of this guide you will be able to utilize the feature set available to the board.     -->
 
-
-
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
-- We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us! 
-
+- We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
 
 ## Past Weekly wiki
 
@@ -182,6 +144,8 @@ This wiki covers [FreeRTOS](https://freertos.org/) support for the [Seeed Studio
 - [weekly wiki on 2024.9.16th](/Seeed_Elderly/weekly_wiki/wiki240918)
 - [weekly wiki on 2024.9.23th](/Seeed_Elderly/weekly_wiki/wiki240923)
 - [weekly wiki on 2024.9.30th](/Seeed_Elderly/weekly_wiki/wiki240930)
+- [weekly wiki on 2024.10.07th](/Seeed_Elderly/weekly_wiki/wiki241007)
+- [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
+- [weekly wiki on 2024.10.21th](/Seeed_Elderly/weekly_wiki/wiki241021)
 
 </details>
-

@@ -6,12 +6,14 @@ keywords:
   - reComputer R1000
   - Modbus RTU
   - rs485
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/wirshark_capture.png
 slug: /reComputer_r1000_use_bacnet_mstp
 last_update:
-  date: 07/8/2024
+  date: 10/25/2024
   author: ShuishengPeng
 ---
+
+# reComputer R1000 use bacnet MS/TP
 
 ## Introduction
 BACnet MS/TP (Master-Slave/Token Passing) is a communication protocol for building automation and control networks. It is part of the BACnet (Building Automation and Control Networks) protocol suite. MS/TP usually uses the RS-485 physical layer and bus topology. All devices are connected to the same twisted pair cable. There are master stations and slave stations in the MS/TP network. The master is responsible for generating and delivering the token, while the slave only responds when a request is received. The master device determines which device can send data by passing the token. The token passing mechanism ensures that communication on the bus is orderly and conflict-free
@@ -43,7 +45,7 @@ Before you start this project, you may need to prepare your hardware and softwar
     </div>
 
 ### Software
-* Since bacnet MS/TP uses the RS485 physical layer, you can refer to this [wiki](https://wiki.seeedstudio.com/reComputer_r1000_use_rs485_modbus_rtu/) on how to use the RS485 function on reComputer R1000 normally.
+* Since bacnet MS/TP uses the RS485 physical layer, you can refer to this [wiki](https://wiki.seeedstudio.com/reComputer_r1000_use_rs485_modbus_rtu/) on how to use the RS485 function on reComputer R1000 V1.0 normally.
 * We simulate a server with the help of the `bacnet-stack` library application, so you need to enter the following command to download it:
   ```shell
   git clone https://github.com/bacnet-stack/bacnet-stack.git

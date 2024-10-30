@@ -325,14 +325,11 @@ Here we will install **Jetpack 6.0** on the A603 Carrier Board with Jetson Orin 
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/jp6.0_files.png" /></div>
 
-**Step 3:** Extract **Jetson_Linux_R36.3.0_aarch64.tbz2** and **Tegra_Linux_Sample-Root-Filesystem_R36.3.0_aarch64.tbz2** by navigating to the folder containing these files, apply the changes and install the necessary prerequisites.
+**Step 3:** Extract **Jetson_Linux_R36.3.0_aarch64.tbz2** and **Tegra_Linux_Sample-Root-Filesystem_R36.3.0_aarch64.tbz2** by navigating to the folder containing these files.
 
 ```sh
-tar xf Jetson_Linux_R36.3.0_aarch64.tbz2
+sudo tar xf Jetson_Linux_R36.3.0_aarch64.tbz2
 sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.3.0_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
-cd Linux_for_Tegra/
-sudo ./apply_binaries.sh
-sudo ./tools/l4t_flash_prerequisites.sh
 ```
 
 **Step 4:** Extract **A603-JP6.0.zip**. Here we additionally install the **unzip** package which is needed to decompress the .zip file.
@@ -342,8 +339,18 @@ cd ..
 sudo apt install unzip 
 sudo unzip A603-JP6.0.zip
 ```
+Then, copy the three folders `(bootloader, kernel, rootfs in A603-JP6.0.zip)` to Linux_for_Tegra folder.
 
-**Step 5:** Configure your username, password & hostname so that you do not need to enter the Ubuntu installation wizard after the device finishes booting.
+
+**Step 5:** Apply the changes and install the necessary prerequisites
+
+```sh
+cd Linux_for_Tegra/
+sudo ./apply_binaries.sh
+sudo ./tools/l4t_flash_prerequisites.sh
+```
+
+**Step 6:** Configure your username, password & hostname so that you do not need to enter the Ubuntu installation wizard after the device finishes booting.
 
 ```sh
 sudo tools/l4t_create_default_user.sh -u {USERNAME} -p {PASSWORD} -a -n {HOSTNAME} --accept-license
@@ -355,7 +362,7 @@ For example (username:"nvidia", password:"nvidia", device-name:"nvidia-desktop")
 sudo tools/l4t_create_default_user.sh -u nvidia -p nvidia -a -n nvidia-desktop --accept-license
 ```
 
-**Step 6:** Flash the system to NVMe SSD.
+**Step 7:** Flash the system to NVMe SSD.
 
 ```sh
 cd Linux_for_Tegra
