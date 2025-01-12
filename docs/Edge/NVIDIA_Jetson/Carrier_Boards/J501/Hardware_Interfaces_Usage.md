@@ -444,12 +444,41 @@ Here we have used [USB to CAN Analyzer Adapter](https://www.seeedstudio.com/USB-
 
 **Step2.** Some adapters also come with the necessary software for the PC in order to communicate with the CAN device. In our case, according to the adapter that we used, we have downloaded and installed the software which can be found [here](https://github.com/SeeedDocument/USB-CAN-Analyzer/tree/master/res/Program).
 
-**Step3.** Open a terminal on the Jetson device and execute the following commands to configure and enable the CAN interface:
+**Step3.** Initialize the CAN interface of Jetson.
+
+Create a new file named **`can_init.sh`** in Jetson and write the following content:
 
 ```bash
+#!/bin/bash
+
+sudo gpioset gpiochip2 9=0 
+sudo gpioset gpiochip2 8=0
+
+sudo busybox devmem 0x0c303018 w 0xc458
+sudo busybox devmem 0x0c303010 w 0xc400
+sudo busybox devmem 0x0c303008 w 0xc458
+sudo busybox devmem 0x0c303000 w 0xc400
+
+sudo modprobe can
+sudo modprobe can_raw
 sudo modprobe mttcan
+
+sudo ip link set can0 down
+sudo ip link set can1 down
+
 sudo ip link set can0 type can bitrate 125000
+sudo ip link set can1 type can bitrate 125000
 sudo ip link set can0 up
+sudo ip link set can1 up
+
+```
+Then, run the file we just created in the Jetson terminal window:
+
+```bash
+sudo apt-get install gpiod
+cd <path to can_init.sh>
+sudo chmod +x can_init.sh
+./can_init.sh
 ```
 
 **Step4.** Type ifconfig on the terminal and you will see the CAN interface in enabled.

@@ -1,7 +1,7 @@
 ---
 description: You will gain a solid foundation in understanding the different types of tasks that Watcher can perform and how they are organized within the SenseCraft ecosystem.
 title: Task Assignment Guideline
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/85_1.png
+image: https://files.seeedstudio.com/wiki/watcher_getting_started/85_1.webp
 slug: /getting_started_with_watcher_task
 sidebar_position: 3
 last_update:
@@ -36,6 +36,13 @@ By the end of this tutorial, you will have a solid understanding of how to effec
 
 Get ready to take control of Watcher and unlock its full potential. Let's embark on this journey of task assignment and discover how Watcher can help you achieve your monitoring objectives!
 
+## SenseCAP Watcher Advanced Configuration
+
+<div class="table-center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ono_v759R0Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+SenseCAP Watcher is the first physical LLM agent for intelligent places, capable of monitoring scenes,  triggering action, and interacting based on commands. This video will introduce how SenseCAP Watcher selects scene-trigger models based on task analysis: on-device model and LLM model. We will also show how to configure the RGB light and Display&Sound alert, and the notification push mode: APP, UART, HTTP.
 
 ## Concept of the Task
 

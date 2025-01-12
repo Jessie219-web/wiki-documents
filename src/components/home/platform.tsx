@@ -26,7 +26,7 @@ function IndexPlatform() {
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Datasets/'
         }, {
           label: 'SenseCraft EDGE',
-          link: 'https://wiki.seeedstudio.com/sensecraft_ai/'
+          link: 'https://wiki.seeedstudio.com/sensecraft_ai_main/'
         }, {
           label: 'Model Assistant',
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/'
@@ -50,7 +50,7 @@ function IndexPlatform() {
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Datasets/'
         }, {
           label: 'SenseCraft EDGE',
-          link: 'https://wiki.seeedstudio.com/sensecraft_ai/'
+          link: 'https://wiki.seeedstudio.com/sensecraft_ai_main/'
         }, {
           label: 'Model Assistant',
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/'
@@ -74,7 +74,7 @@ function IndexPlatform() {
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Datasets/'
         }, {
           label: 'SenseCraft EDGE',
-          link: 'https://wiki.seeedstudio.com/sensecraft_ai/'
+          link: 'https://wiki.seeedstudio.com/sensecraft_ai_main/'
         }, {
           label: 'Model Assistant',
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/'
@@ -97,7 +97,7 @@ function IndexPlatform() {
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Datasets/'
         }, {
           label: 'SenseCraft EDGE',
-          link: 'https://wiki.seeedstudio.com/sensecraft_ai/'
+          link: 'https://wiki.seeedstudio.com/sensecraft_ai_main/'
         }, {
           label: 'Model Assistant',
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/'
@@ -121,7 +121,7 @@ function IndexPlatform() {
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Tutorials_Datasets/'
         }, {
           label: 'SenseCraft EDGE',
-          link: 'https://wiki.seeedstudio.com/sensecraft_ai/'
+          link: 'https://wiki.seeedstudio.com/sensecraft_ai_main/'
         }, {
           label: 'Model Assistant',
           link: 'https://wiki.seeedstudio.com/ModelAssistant_Introduce_Overview/'

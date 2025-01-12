@@ -1,7 +1,7 @@
 ---
 description: Hardware components of the SenseCAP Watcher.
 title: Hardware Overview
-image: https://files.seeedstudio.com/wiki/watcher_getting_started/hardware_overview_1.png
+image: https://files.seeedstudio.com/wiki/watcher_getting_started/hardware_overview_1.webp
 slug: /watcher_hardware_overview
 sidebar_position: 1
 last_update:
@@ -233,6 +233,20 @@ There are a total of two USB-C ports on the Watcher, allowing users to find the 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/charging.png" style={{width:1000, height:'auto'}}/></div>
 
 When charging the Watcher, please make sure to use a regular manufacturer's power adapter, we recommend using a **5V/1A** power specification to power the Watcher. If you want to communicate with the Watcher, you may need to use a compliant USB-C cable with a signal cable.
+
+:::caution
+Please use a power plug that is compatible with the Watcher; the Watcher must be powered by a 5V power supply and may burn out if you use a non-compliant power adapter or a power supply with a voltage greater than 5V!
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/adapter.jpg" style={{width:350, height:'auto'}}/></div>
+
+The chart above shows the recommended adapter specifications. If you don't know where you can purchase the right adapter, you can choose to buy it directly at the link below.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/USB-Power-Adapter-for-Raspberry-Pi-4-5V-3A-p-4089.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div>
+:::
 
 ## Connecting to Serial Console
 

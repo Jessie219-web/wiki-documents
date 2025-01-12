@@ -53,7 +53,7 @@ Sign in with your registered email account
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/4.png)
 
-More about SenseCraft AI platform you can refer to [here](https://wiki.seeedstudio.com/sensecraft_ai/).
+More about SenseCraft AI platform you can refer to [here](https://wiki.seeedstudio.com/sensecraft_ai_main/).
 
 ## AI Models on SenseCraft AI Platform
 
@@ -76,7 +76,7 @@ Users can favorite public models
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/7.png)
 
-More information about AI Models in SenseCraft AI platform you can refer to [here](https://wiki.seeedstudio.com/sensecraft_ai/#ai-models).
+More information about AI Models in SenseCraft AI platform you can refer to [here](https://wiki.seeedstudio.com/sensecraft_ai_overview/#pretrained-models).
 
 ## Device Workspace
 

@@ -1,5 +1,5 @@
 ---
-description: Meshtastic based on Wio SX1262 with XIAO esp32s3 module
+description: Meshtastic based on Wio-SX1262 with XIAO esp32s3 module
 title: Get Started for Meshtastic
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
 slug: /wio_sx1262_xiao_esp32s3_for_meshtastic
@@ -9,8 +9,21 @@ last_update:
   author: Evelyn Chen
 ---
 
-Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. Wio-SX1262 with XIAO ESP32S3 kit is flexible solution for meshtastic developer and maker.
+Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. XIAO ESP32S3 & Wio-SX1262 Kit is flexible solution for meshtastic developer and maker.
 
+## Flash Firmware
+
+:::note
+Please flash the firmware onto your device if you purchased the XIAO ESP32S3 & Wio-SX1262 Kit before **October 24, 2024** by following this step-by-step tutorial.
+:::
+
+**Step 1**: Firstly, open a browser and visit https://flasher.meshtastic.org/# requires Chrome or Edge browser.
+
+**Step 2**: Then, use a suitable USB cable to connect the device to the PC. You may need to turn off, then **press and hold the BOOT button** while plugging in the USB cable.
+
+**Step 3**: Follow the following instruction provided to perform the subsequent flashing operations. Select the Device as "**Seeed XIAO S3**", Firmware as **the lastest** one, and then click "**Flash**". Don't forget to tick "**Full Erase and Install**" if you want to cover previous firmware.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div>
 
 ## Software Overview
 
@@ -28,7 +41,7 @@ For specific information, please refer to [the official website of Meshtastic](h
 
 ## Device Connection
 
-Before using Meshtastic, the device needs to be connected first. There are two connection methods. The first one is to use an expansion board, and the corresponding information will be displayed on the display. Then, the configuration can be carried out on the corresponding platform according to the reflected information. The second one is to connect the XIAO and the Wio SX1262 module, and use a serial port tool to obtain the node ID and password. 
+Before using Meshtastic, the device needs to be connected first. There are two connection methods. The first one is to use an expansion board, and the corresponding information will be displayed on the display. Then, the configuration can be carried out on the corresponding platform according to the reflected information. The second one is to connect the XIAO and the Wio-SX1262 module, and use a serial port tool to obtain the node ID and password. 
 
 
 ### Method 1: Connected to Expansion board
@@ -93,7 +106,7 @@ Once connected, you can start sending and receiving messages through the Meshtas
 
 ## Sensor Connection
 
-In the meshtastic application, the Wio SX1262 with XIAO esp32s3 kit is capable of supporting a wide range of sensors. When used in conjunction with the XIAO expansion board, it can support numerous grove sensors, please check [here](https://github.com/meshtastic/firmware/blob/3f1c86f9535279fd17eaaab6e10a06f09915b7e4/src/detect/ScanI2C.h#L10). Additionally, when combined with the GNSS add on module, it forms the smallest module within meshtastic that has GPS functionality.
+In the meshtastic application, the Wio-SX1262 with XIAO esp32s3 kit is capable of supporting a wide range of sensors. When used in conjunction with the XIAO expansion board, it can support numerous grove sensors, please check [here](https://github.com/meshtastic/firmware/blob/3f1c86f9535279fd17eaaab6e10a06f09915b7e4/src/detect/ScanI2C.h#L10). Additionally, when combined with the GNSS add on module, it forms the smallest module within meshtastic that has GPS functionality.
 
 ### Temperature and Humidity Sensor
 
@@ -188,16 +201,6 @@ Modules are included in the firmware and allow users to extend the functionality
 | [Telemetry](https://meshtastic.org/docs/configuration/module/telemetry/) | Attach sensors to the device and transmit readings on a regular interval to the mesh. |
 | [Traceroute](https://meshtastic.org/docs/configuration/module/traceroute/) | Track which nodes are used to hop a message to a certain destination. |
 
-
-## Flash Firmware
-
-**Step 1**: Firstly, open a browser and visit https://flasher.meshtastic.org/# requires Chrome or Edge browser.
-
-**Step 2**: Then, use a suitable USB cable to connect the device to the PC. You may need to turn off, then **press and hold the BOOT button** while plugging in the USB cable.
-
-**Step 3**: Follow the following instruction provided to perform the subsequent flashing operations. Select the Device as "**Seeed XIAO S3**", Firmware as **the lastest** one, and then click "**Flash**". Don't forget to tick "**Full Erase and Install**" if you want to cover previous firmware.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div>
 
 ## Tech Support & Product Discussion
 

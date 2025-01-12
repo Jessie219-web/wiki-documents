@@ -69,7 +69,7 @@ First of all, you need to install the peripheral drivers for this board. These a
   </thead>
   <tbody>
     <tr>
-      <td rowSpan={3}>Jetson Orin NX 8GB/ 16GB</td>
+      <td rowSpan={4}>Jetson Orin NX 8GB/ 16GB</td>
       <td>5.1</td>
       <td>35.2.1</td>
       <td><a href="https://sourceforge.net/projects/nvidia-jetson/files/A607-Carrier-Board/Orin-NX/A607-Orin-NX-JP5.1.zip/download" target="_blank" rel="noopener noreferrer">Download</a></td>
@@ -82,10 +82,15 @@ First of all, you need to install the peripheral drivers for this board. These a
     <tr>
       <td>6.0</td>
       <td>36.3</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eal4wLeS_NdInqcXI24DA7IBZ0yHdgFwONkx8Guy5WUhnw?e=6P8KH5" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQS4f032w2VIsYE-4Bs80K8BIRD7YGXgBdDq6umW3zCIlw?e=l0LWr0" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>
     <tr>
-      <td rowSpan={2}>Jetson Orin Nano 4GB</td>
+      <td>6.1</td>
+      <td>36.4</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Ecv3iI8SWcNJs7f_6_bOcyIB9xr9o9x7Ghs98Hj07Im1Ew?e=fkwe6b" target="_blank" rel="noopener noreferrer">Download</a></td>
+    </tr>
+    <tr>
+      <td rowSpan={3}>Jetson Orin Nano 4GB</td>
       <td>5.1.1</td>
       <td>35.3.1</td>
       <td><a href="https://sourceforge.net/projects/nvidia-jetson/files/A607-Carrier-Board/Orin-NX/A607-Orin-Nano-4GB-JP5.1.1.zip/download" target="_blank" rel="noopener noreferrer">Download</a></td>
@@ -93,10 +98,15 @@ First of all, you need to install the peripheral drivers for this board. These a
     <tr>
       <td>6.0</td>
       <td>36.3</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eal4wLeS_NdInqcXI24DA7IBZ0yHdgFwONkx8Guy5WUhnw?e=6P8KH5" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQS4f032w2VIsYE-4Bs80K8BIRD7YGXgBdDq6umW3zCIlw?e=l0LWr0" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>  
     <tr>
-      <td rowSpan={2}>Jetson Orin Nano 8GB</td>
+      <td>6.1</td>
+      <td>36.4</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Ecv3iI8SWcNJs7f_6_bOcyIB9xr9o9x7Ghs98Hj07Im1Ew?e=fkwe6b" target="_blank" rel="noopener noreferrer">Download</a></td>
+    </tr>
+    <tr>
+      <td rowSpan={3}>Jetson Orin Nano 8GB</td>
       <td>5.1.1</td>
       <td>35.3.1</td>
       <td><a href="https://sourceforge.net/projects/nvidia-jetson/files/A607-Carrier-Board/Orin-NX/A607-Orin-Nano-8GB-JP5.1.1.zip/download" target="_blank" rel="noopener noreferrer">Download</a></td>
@@ -104,7 +114,12 @@ First of all, you need to install the peripheral drivers for this board. These a
     <tr>
       <td>6.0</td>
       <td>36.3</td>
-      <td><a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eal4wLeS_NdInqcXI24DA7IBZ0yHdgFwONkx8Guy5WUhnw?e=6P8KH5" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQS4f032w2VIsYE-4Bs80K8BIRD7YGXgBdDq6umW3zCIlw?e=l0LWr0" target="_blank" rel="noopener noreferrer">Download</a></td>
+    </tr>
+    <tr>
+      <td>6.1</td>
+      <td>36.4</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Ecv3iI8SWcNJs7f_6_bOcyIB9xr9o9x7Ghs98Hj07Im1Ew?e=fkwe6b" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>
   </tbody>
 </table>
@@ -315,6 +330,59 @@ You will see the following output if the flashing process is successful:
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/A603/10.jpg" /></div>
 
 </TabItem>
+
+<TabItem value="JP6.1" label="JP6.1">
+
+Here we will use NVIDIA L4T **36.4** to install **Jetpack 6.1** on the A607 Carrier Board with Jetson Orin NX module.
+
+**Step 1:** [Download](https://developer.nvidia.com/embedded/jetson-linux-r3640) the NVIDIA drivers on the host PC. The required drivers are shown below:
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Jetson-AGX-Orin-32GB-H01-Kit/2.jpg" /></div>
+
+**Step 2:** Move the downloaded peripheral drivers from before into the same folder with NVIDIA drivers. Now you will see three compressed files in the same folder.
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A607/a607_jp6.1.png" /></div>
+
+:::note
+You can use the following command to verify that the downloaded file is complete.
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A607/verify_download_file.webp"/>
+</div>
+:::
+
+**Step 3:** Extract **Jetson_Linux_R36.4.0_aarch64.tbz2** and **Tegra_Linux_Sample-Root-Filesystem_R36.4.0_aarch64.tbz2** by navigating to the folder containing these files and apply the changes:
+
+```bash
+cd <path_to_files>
+tar xf Jetson_Linux_R36.4.0_aarch64.tbz2
+sudo tar xfp Tegra_Linux_Sample-Root-Filesystem_R36.4.0_aarch64.tbz2 -C Linux_for_tegra/rootfs
+cd Linux_for_tegra
+sudo ./tools/l4t_flash_prerequisites.sh
+sudo ./apply_binaries.sh
+```
+
+**Step 4:** Extract **A607_Jetpack_6.1.tar.gz**:
+
+```sh
+cd ..
+tar xf A607_Jetpack_6.1.tar.gz
+sudo cp -r 607_jetpack6.1/Linux_for_Tegra/* Linux_for_Tegra/
+```
+
+**Step 5:** Flash the system to either NVMe SSD:
+
+```sh
+cd Linux_for_Tegra
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" --showlogs --network usb0 jetson-orin-nano-devkit internal
+```
+
+You will see the following output if the flashing process is successful:
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/A603/10.jpg" /></div>
+
+</TabItem>
+
 </Tabs>
 
 

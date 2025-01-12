@@ -6,7 +6,7 @@ image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /ha_with_mr60bha2
 keywords:
   - ESPHome
-sidebar_position: 2
+sidebar_position: 1
 last_update:
   date: 09/23/2024
   author: Spencer
@@ -23,7 +23,7 @@ This guide aims to provide a clear and comprehensive walkthrough for integrating
 
 This integration empowers users to enhance their smart home systems with advanced sensing capabilities, enabling automated responses and real-time monitoring for various applications.
 
-<div><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-sensor-light-on.jpg" style={{"border-radius": '6px'}}/></div>
+<div><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-sensor-light-on.png" style={{"border-radius": '6px'}}/></div>
 
 ## Product Overview
 
@@ -33,7 +33,7 @@ This integration empowers users to enhance their smart home systems with advance
          <th>MR60BHA2 mmWave Sensor</th>
       </tr>
       <tr>
-         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/2-mmWave-45font.jpg" style={{width:360, height:'auto', "border-radius": '6px'}}/></div></td>
+         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/22-114993387-mr60bha2-60ghz-mmwave-45font.jpg" style={{width:360, height:'auto', "border-radius": '6px'}}/></div></td>
       </tr>
       <tr>
          <td>
@@ -48,6 +48,11 @@ This integration empowers users to enhance their smart home systems with advance
 ### MR60BHA2 mmWave Sensor with XIAO ESP32C6
 
 To effectively integrate the MR60BHA2 mmWave Sensor with Home Assistant using the XIAO ESP32C6, follow these essential steps:
+
+:::caution
+Please make sure you have [upgrade the firmware](getting_started_with_mr60bha2.md#module-firmware-upgrade) of MR60BHA2 module to the latest version.  
+The latest firmware adds human presence detection and personnel detection feature.
+:::
 
 1. **[Set Up Home Assistant](#setting-up-home-assistant)**: Begin by installing and configuring Home Assistant to manage your smart home devices, ensuring a seamless connection with the sensor.
 2. **[Connect the MR60BHA2 Sensor](#discovering-and-adding-the-device-in-home-assistant)**: Learn how to discover and add the MR60BHA2 Sensor to your Home Assistant setup, enabling real-time monitoring of vital signs.
@@ -77,7 +82,11 @@ To successfully integrate the MR60BHA2 mmWave Sensor with Home Assistant, you wi
    - Click "Install" and then "Start" to enable it.
    - Once installed, configure the add-on to ensure proper communication with the XIAO ESP32C6.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave_kit/2.png" style={{width:1000, height:'auto'}}/></div>
+:::caution Attention
+Due to the new icons, please install ESPHome plugin version 2024.12.0 and above.
+:::
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-enabling_ESPHome_Add-on.png" style={{width:1000, height:'auto'}}/></div>
 
 By gathering the necessary components and setting up Home Assistant with the ESPHome add-on, you'll be ready to proceed with the integration of the MR60BHA2 mmWave Sensor.
 
@@ -97,6 +106,10 @@ By default, your device (XIAO ESP32C6) comes pre-flashed with firmware for breat
 2. **Upgrading the Firmware**: If there is a newer version of the firmware with improved functionality.
 
 There are two simple methods for flashing the firmware:
+
+:::caution
+Firefox does not support flashing firmware on ESP devices. Please use Google Chrome or Microsoft Edge instead.
+:::
 
 <Tabs>
 <TabItem value='Web Tool'>
@@ -165,20 +178,20 @@ By following the steps above, you'll have successfully discovered and added the 
 
 Now that the sensor is added to the "Bedroom," navigate to the "Overview" tab. You will see the mmWave card displayed in the Bedroom section.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-sensor-data.jpg" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-sensor-data-with-person-detection.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
 
 ### RGB light Controlling
 
 In this section, we will explore how to control an RGB light.
 
 <div class="img-container">
-   <img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-sensor-light-on.jpg" style={{"border-radius": '6px'}}/>
+   <img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-sensor-light-on.png" style={{"border-radius": '6px'}}/>
    <img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/light-on.jpg" style={{"border-radius": '6px'}}/>
 </div>
 
 Click on the corresponding box to directly control the RGB light:
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-light-panel.jpg" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-light-panel.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
 
 <iframe class="video-mp4" src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60bha2/ha-control-light.mp4" title="Home Assistant Control RGB Light" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
 
@@ -211,99 +224,110 @@ To get started with ESPHome, follow these steps:
 
 2. **Create a New Configuration**: Click on the device to open its configuration. Here, you can adjust settings such as the sensor's sensitivity, reporting intervals, and output formats. ESPHome uses a YAML configuration format, which is user-friendly and allows you to define various parameters. You can use the following template YAML file as a starting point for your configuration, which is designed specifically for the MR60BHA2 Sensor:
 
-   ```yaml showLineNumbers title=example/mr60bha2.yaml
-   # template from https://github.com/limengdu/MR60BHA2_ESPHome_external_components
+  ```yaml showLineNumbers title=example/mr60bha2.yaml
+  # template from https://github.com/limengdu/MR60BHA2_ESPHome_external_components
 
-   substitutions:
-     name: "seeedstudio-mr60bha2-kit"
-     friendly_name: "Seeed Studio MR60BHA2 Kit"
+  substitutions:
+    name: "seeedstudio-mr60bha2-kit"
+    friendly_name: "Seeed Studio MR60BHA2 Kit"
 
-   esphome:
-     name: "${name}"
-     friendly_name: "${friendly_name}"
-     name_add_mac_suffix: true
-     project:
-       name: "seeedstudio.mr60bha2_kit"
-       version: "1.0"
-     platformio_options:
-       board_upload.maximum_size: 4194304
-     min_version: "2024.3.2" # Fix logger compile error on ESP32-C6
+  esphome:
+    name: "${name}"
+    friendly_name: "${friendly_name}"
+    name_add_mac_suffix: true
+    project:
+      name: "seeedstudio.mr60bha2_kit"
+      version: "2.0"
+    platformio_options:
+      board_upload.maximum_size: 4194304
+    min_version: "2024.3.2" # Fix logger compile error on ESP32-C6 esphome#6323
 
-   esp32:
-     board: esp32-c6-devkitc-1
-     variant: esp32c6
-     flash_size: 4MB # upload.flash_size
-     framework:
-       type: esp-idf
-       platform_version: 6.5.0 # Minimum version required for ESP32-C6
+  esp32:
+    board: esp32-c6-devkitc-1
+    variant: esp32c6
+    flash_size: 4MB # upload.flash_size
+    framework:
+      type: esp-idf
 
-   external_components:
-     - source:
-         type: git
-         url: https://github.com/ssieb/esphome
-         ref: adc
-       components: [ adc ]
-       refresh: 1min
-     - source:
-         type: git
-         url: https://github.com/limengdu/MR60BHA2_ESPHome_external_components
-         ref: main
-       components: [ seeed_mr60bha2 ]
-       refresh: 0s
+  external_components:
+    - source:
+        type: git
+        url: https://github.com/limengdu/MR60BHA2_ESPHome_external_components
+        ref: main
+      components: [ seeed_mr60bha2 ]
+      refresh: 0s
 
-   logger:
-     hardware_uart: USB_SERIAL_JTAG
-     level: DEBUG
+  # Enable logging
+  logger:
+    hardware_uart: USB_SERIAL_JTAG
+    level: DEBUG
 
-   api:
+  # Enable Home Assistant API
+  api:
 
-   ota:
-   - platform: esphome
+  ota:
+    - platform: esphome
 
-   wifi:
-     ap:
-       ssid: "seeedstudio-mr60bha2"
+  wifi:
+    # Enable fallback hotspot (captive portal) in case wifi connection fails
+    ap:
+      ssid: "seeedstudio-mr60bha2"
 
-   light:
-     - platform: esp32_rmt_led_strip
-       id: led_ring
-       name: "Seeed MR60BHA2 RGB Light"
-       pin: GPIO1
-       num_leds: 1
-       rmt_channel: 0
-       rgb_order: GRB
-       chipset: ws2812
+  captive_portal:
 
-   i2c:
-     sda: GPIO22
-     scl: GPIO23
-     scan: true
-     id: bus_a
+  # For XIAO ESP32C6 Onboard LED
+  # light:
+  #   - platform: status_led
+  #     name: "Switch state"
+  #     pin: GPIO15
 
-   uart:
-     id: uart_bus
-     baud_rate: 115200
-     rx_pin: 17
-     tx_pin: 16
-     parity: NONE
-     stop_bits: 1
+  light:
+    - platform: esp32_rmt_led_strip
+      id: led_ring
+      name: "Seeed MR60BHA2 RGB Light"
+      pin: GPIO1
+      num_leds: 1
+      rmt_channel: 0
+      rgb_order: GRB
+      chipset: ws2812
 
-   seeed_mr60bha2:
-     id: my_seeed_mr60bha2
+  i2c:
+    sda: GPIO22
+    scl: GPIO23
+    scan: true
+    id: bus_a
 
-   sensor:
-     - platform: bh1750
-       name: "Seeed MR60BHA2 Illuminance"
-       address: 0x23
-       update_interval: 1s
-     - platform: seeed_mr60bha2
-       breath_rate:
-         name: "Real-time respiratory rate"
-       heart_rate:
-         name: "Real-time heart rate"
-       distance:
-         name: "Distance to detection object"
-   ```
+  uart:
+    id: uart_bus
+    baud_rate: 115200
+    rx_pin: 17
+    tx_pin: 16
+    parity: NONE
+    stop_bits: 1
+
+  seeed_mr60bha2:
+    id: my_seeed_mr60bha2
+
+  binary_sensor:
+    - platform: seeed_mr60bha2
+      people_exist:
+        name: "Person Information"
+
+  sensor:
+    - platform: bh1750
+      name: "Seeed MR60BHA2 Illuminance"
+      address: 0x23
+      update_interval: 1s
+    - platform: seeed_mr60bha2
+      breath_rate:
+        name: "Real-time respiratory rate"
+      heart_rate:
+        name: "Real-time heart rate"
+      distance:
+        name: "Distance to detection object"
+      target_num:
+        name: "Target Number"
+  ```
 
 3. **Customize Functionality**: You can enhance the sensor's capabilities by exploring various features available in ESPHome, allowing for flexible adjustments to suit your specific needs.
 

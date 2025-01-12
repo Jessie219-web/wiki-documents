@@ -165,8 +165,8 @@
     img {
       border-radius: 12px;
       margin-bottom: 20px;
-      height: 200px;
-      width: 100%;
+      width: 100%;            /* 图片宽度占满容器宽度 */
+      aspect-ratio: 4 / 3;    /* 设置宽高比为 4:3 */
 
     }
 
@@ -189,7 +189,8 @@
   @media (max-width: 768px) {
     .wiki_item {
       img {
-        height: 100px;
+        width: 100%;             /* 图片宽度占满容器 */
+        aspect-ratio: 4 / 3;     /* 继续保持 4:3 比例 */
       }
     }
   }
@@ -261,6 +262,11 @@
 
       .wiki_name {
         height: 56px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;      /* 显示的行数 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
         margin-top: 18px;
       }
 
@@ -269,10 +275,9 @@
       }
 
       img {
-        border-radius: 12px;
-        // margin-bottom: 20px;
-        height: 200px;
-        width: 100%;
+        width: 100%;        /* 图片宽度占满容器宽度 */
+        aspect-ratio: 4 / 3;    /* 宽高比为 4:3 */
+        border-radius: 12px; /* 圆角效果 */
 
       }
     }
@@ -315,10 +320,15 @@
     .browseBy_container {
 
       .doc_item {
-        width: calc(50% - 10px);
+        width: calc(50% - 10px); /* 在移动端调整每行显示 2 个项 */
 
+        .wiki_name {
+          font-size: 16px; /* 调整字体大小 */
+        }
+        
         img {
-          height: 100px;
+          height: auto;           /* 高度自动调整 */
+          aspect-ratio: 4 / 3;        /* 保持 4:3 的宽高比 */
         }
 
         &:nth-child(2n) {

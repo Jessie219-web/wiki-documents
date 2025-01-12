@@ -33,7 +33,7 @@ It is recommended to keep your reServer BIOS firmware up-to-date in order to get
 
 **[ODYSSEY-TGL-A_v2.0a 7/7/2022 16:00:00](https://files.seeedstudio.com/wiki/reServer/ODYSSEY-TGL-A_v2.0a.zip)**
 
-- **SHA256:** 58971f80fa26b35bc205baeabacf7b9b262a6075f6b3fbb689af3557ac97f8f7
+- **SHA256:** 02CC2C24E615EE2665CCCF79257709433D69C5B80326FB6DB12D0341DAC2E5F5
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reServer/update-bios-pics/BIOS-main.png" /></div>
 

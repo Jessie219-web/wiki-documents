@@ -10,15 +10,15 @@ last_update:
   author: Salman
 ---
 
-###  Edge Impulse KWS application in XIAO ESP32S3 Sense
+# XIAO ESP32S3-Sense Key Word Spotting
 
 This tutorial will guide you through implementing a Keyword Spotting (KWS) system using TinyML on the XIAO ESP32S3 Sense microcontroller board, with the help of Edge Impulse for data collection and model training. KWS is essential for voice recognition systems, and with the power of TinyML, it's achievable on smaller, low-power devices. Let's build our own KWS system using Edge Impulse and XIAO ESP32S3 Sense!
 
-#### 2.3.1 Getting Started
+## 1. Getting Started
 
 Before starting this project, please follow the preparation steps below to prepare the software and hardware needed for this project.
 
-##### Hardware
+### Hardware
 
 To carry out this project successfully, you need to prepare the following hardware.
 
@@ -31,16 +31,16 @@ Insert the microSD card into the microSD card slot. Please note the direction of
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/66.jpg" style={{width:500, height:'auto'}}/></div>
 
-##### Software
+### Software
 
 If this is your first time using XIAO ESP32S3 Sense, then before you start, we suggest you read the following two Wiki's to learn how to use it.
 
 - [Getting Started with Seeed Studio XIAO ESP32S3 (Sense)](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)
 - [Usage of Seeed Studio XIAO ESP32S3 microphone](https://wiki.seeedstudio.com/xiao_esp32s3_sense_mic/)
 
-#### 2.3.2 Capturing (offline) Audio Data
+## 2. Capturing (offline) Audio Data
 
-##### Step 1. Save recorded sound samples as .wav audio files to a microSD card.
+### Step 1. Save recorded sound samples as .wav audio files to a microSD card.
 
 Let's use the onboard SD Card reader to save.wav audio files, we need to habilitate the XIAO PSRAM first.
 
@@ -203,9 +203,9 @@ Ultimately, we will get the saved files on the SD card.
 We recommend that you have enough sounds for each label sample. You can repeat your keywords several times during each ten-second recording session, and we will segment the samples in subsequent steps. But there needs to be some spacing between keywords.
 :::
 
-#### 2.3.3 Training data acquisition
+## 3. Training data acquisition
 
-##### Step 2. Uploading collected sound data
+### Step 2. Uploading collected sound data
 
 When the raw dataset is defined and collected, we should initiate a new project at [Edge Impulse](https://edgeimpulse.com/). Once the project is created, select the **Upload Existing Data** tool in the **Data Acquisition** section. Choose the files to be uploaded.
 
@@ -217,13 +217,13 @@ All data on dataset have a 1s length, but the samples recorded in the previous s
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/5.png" style={{width:600, height:'auto'}}/></div>
 
-Once inside de tool, split the data into 1-second records. If necessary, add or remove segments.
+Once inside the tool, split the data into 1-second records. If necessary, add or remove segments.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/4.png" style={{width:1000, height:'auto'}}/></div>
 
 This procedure should be repeated for all samples.
 
-##### Step 3. Creating Impulse (Pre-Process / Model definition)
+### Step 3. Creating Impulse (Pre-Process / Model definition)
 
 An impulse takes raw data, uses signal processing to extract features, and then uses a learning block to classify new data.
 
@@ -235,16 +235,15 @@ Each 1-second audio sample should be pre-processed and converted to an image (fo
 
 Next, we select **KERAS** for classification that builds our model from scratch by doing Image Classification using Convolution Neural Network.
 
-##### Step 4. Pre-Processing (MFCC)
+### Step 4. Pre-Processing (MFCC)
 
 The next step is to create the images to be trained in the next phase. We can keep the default parameter values or take advantage of the DSP **Autotuneparameters option**, which we will do.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/7.png" style={{width:1000, height:'auto'}}/></div>
 
+## 4. Building a mechine learning model
 
-#### 2.3.4 Building a mechine learning model
-
-##### Step 5. Model Design and Training
+### Step 5. Model Design and Training
 
 We will use a Convolution Neural Network (CNN) model. The basic architecture is defined with two blocks of Conv1D + MaxPooling (with 8 and 16 neurons, respectively) and a 0.25 Dropout. And on the last layer, after Flattening four neurons, one for each class.
 
@@ -252,10 +251,9 @@ As hyper-parameters, we will have a Learning Rate of 0.005 and a model that will
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/8.png" style={{width:600, height:'auto'}}/></div>
 
+## 5. Deploying to XIAO ESP32S3 Sense
 
-#### 2.3.5 Deploying to XIAO ESP32S3 Sense
-
-##### Step 6. Deploying to XIAO ESP32S3 Sense
+### Step 6. Deploying to XIAO ESP32S3 Sense
 
 Edge Impulse will package all the needed libraries, preprocessing functions, and trained models, downloading them to your computer. You should select the option Arduino Library and at the bottom, select Quantized (Int8) and press the button Build.
 
@@ -563,12 +561,13 @@ static void microphone_inference_end(void)
 
 The idea is that the LED will be ON whenever the keyword **HELLO** is detected. In the same way, instead of turn-on a LED, this could be a "trigger" for an external device, as we saw in the introduction.
 
-# ToDo
+## ToDo
+
 - [ ] Build your own KWS project and run on XIAO ESPS3 Sense. 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/11.png" style={{width:700, height:'auto'}}/></div>
 
-#### Special Thanks
+## Special Thanks
 
 Special thanks to **[MJRoBot (Marcelo Rovai)](https://mjrobot.org/)** for the tutorial content on XIAO ESP32S3 Sense access to Edge Impulse. The original article is very detailed and contains a lot of knowledge about machine learning.
 

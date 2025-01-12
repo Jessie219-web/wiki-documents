@@ -410,3 +410,9 @@ Click `SUBMIT`.
 
 
 Now you are all set, try waking it up with `hey jarvis` and talking to it!
+
+
+
+### Project Sharing
+
+* From **Smart Home Circle** - [Create LOCAL Voice Assistant w/ Home Assistant | NO Soldering | On Device Wake Word🔥| ReSpeaker Lite](https://www.youtube.com/watch?v=XjUeJh2Ok3o)

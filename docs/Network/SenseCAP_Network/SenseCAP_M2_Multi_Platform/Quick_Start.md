@@ -149,6 +149,10 @@ The indicator on the top will show solid green if the gateway is successfully co
 
 
 
+:::tip
+To reduce data consumption, please check [Low Data Consumption Mode Config](https://wiki.seeedstudio.com/traffic_saving_config).
+:::
+
 ### Channel Plan Settings
 
 Navigate to `LoRa` > `Channel Plan` 

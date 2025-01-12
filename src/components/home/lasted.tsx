@@ -96,7 +96,7 @@ function IndexLatestedViki() {
               <div className={css.wiki_group}>
                 {group.map((doc, subIndex) => (
                   <a className={css.wiki_item} href={doc.path} key={subIndex}>
-                    <img src={doc.image} alt={doc.title} style={{ maxWidth: '210px', height: '160px' }} />
+                    <img src={doc.image} alt={doc.title} />
                     <div className={css.wiki_name}>{doc.title}</div>
                   </a>
                 ))}

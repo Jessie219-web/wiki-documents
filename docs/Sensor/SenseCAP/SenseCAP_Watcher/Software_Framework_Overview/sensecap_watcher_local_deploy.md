@@ -253,6 +253,24 @@ By completing these steps, you can harness the power of Watcher's AI services di
 
 We will continue to add tutorials on using **[HTTP Message Block](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool/#http-message-block)** for message push after localised deployment in the Application directory, so stay tuned!
 
+## FAQ
+
+### SenseCap Watcher Service don't work
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/faq1.png" style={{width:800, height:'auto'}}/></div>
+
+The IP of Service Host should be your computer IP address, if not, SenseCAP Watcher Service won’t work. You need to fix that by following steps.
+
+1. Press Win + R > type "ncpa.cpl" > Enter.
+
+2. Right-click "Wi-Fi" or Ethernet > select "Properties."
+
+3. Double-click on IPv4 or IPv6 > Click "Advanced."
+
+4. Uncheck Automatic Metric > Enter 1 (or your desired number) > Click OK.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/faq2.png" style={{width:800, height:'auto'}}/></div>
+
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.

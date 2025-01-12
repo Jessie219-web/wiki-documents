@@ -4,10 +4,10 @@ title: Grove - MP3 v4.0
 keywords:
 - mp3
 - grove
-image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
+image: https://files.seeedstudio.com/wiki/grove-mp3-v4/0.webp
 slug: /grove_mp3_v4
 last_update:
-  date: 05/22/2023
+  date: 12/13/2024
   author: Carla
 ---
 
@@ -36,7 +36,7 @@ This MP3 module with an Arduino can be turned into your multi-format music playe
 | Input                                  | 5V(DC)                                     |
 | Operating current (without signal output state) | less than 15 mA                            |
 | Operating current (with signal output state)    | less than 40 mA                            |
-| Chip                                   | KT403A                                      |
+| Chip                                   | WT2605CX                                     |
 | Chip LDO output voltage                | 3.3 V                                      |
 | Chip output current                   | 100 mA(at Max.)                            |
 | File formats supported                 | MP3, WAV, WMA                               |
@@ -45,7 +45,7 @@ This MP3 module with an Arduino can be turned into your multi-format music playe
 
 ## Hardware Overview
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/grove-mp3-v4/mp3V4.png" style={{width:300, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_716539_x5zKByNTcw7Jc8sR_1706149458?w=2608&h=1322&type=image/png" style={{width:750, height:'auto'}}/></div>
 
 ## Getting Started
 

@@ -37,7 +37,7 @@ This module is suitable for dust detectors, intelligent air purifiers, intellige
 |Operating Voltage|3.3V / 5V|
 |Operating temperature|-10～60℃|
 |Operating humidity|10%～90%RH (non-condensing)|
-|Partical size|3 channels-- 2.5µm, 5µm, 10µm |
+|Partical size|3 channels-- 1.0µm, 2.5µm, 10µm |
 |Range<br />(PM2.5 standard value)|1~500µg/ m<sup>3</sup> (Effective range)<br />1000 µg/ m<sup>3</sup> (Maximum range)|
 |Resolution|Concentration: 1µg/ m<sup>3</sup> <br />Counting concentration: 1s/0.1L|
 |Stability time|30 seconds after power-on|

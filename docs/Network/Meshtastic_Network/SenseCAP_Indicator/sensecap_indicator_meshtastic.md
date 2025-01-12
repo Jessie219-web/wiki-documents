@@ -4,7 +4,7 @@ title: Get Started with Indicator for Meshtastic
 keywords:
 - Meshtastic
 - Indicator
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/indicator-page_1.webp
 slug: /sensecap_indicator_meshtastic
 last_update:
   date: 10/29/2024
@@ -12,21 +12,82 @@ last_update:
 ---
 
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/indicator-page.png" alt="pir" width={800} height="auto" /></p>
+
+
+<div className="table-center">
+  <video width="730" height="500" controls autoPlay muted>
+    <source
+      src="https://media-cdn.seeedstudio.com/media/catalog/product/1/-/1-114993532_sensecap_indicator_for_meshtastic_lora__2.mp4"
+      type="video/mp4"
+    />
+  </video>
+</div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/?q=sensecap%20indicator">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1L-for-Meshtastic-p-6304.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
 
 
-[SenseCAP Indicator](https://www.seeedstudio.com/catalogsearch/result/?q=sensecap%20indicator) is a 4-inch touch screen driven by ESP32-S3 and RP2040 Dual-MCU, it supports Meshtastic network now! 
 
+SenseCAP Indicator is a 4-inch touchscreen device designed for Meshtastic®, powered by dual MCUs, the ESP32 and RP2040, and supports Wi-Fi, BLE, and LoRa®. It is an open-source, powerful IoT development platform.
+
+
+
+:::caution note
+During the process of continuous optimization and testing of the SenseCAP Indicator for Meshtastic, we found a situation that may affect your experience. In order to ensure that you can continue to enjoy the best product performance, we are currently optimizing this feature, so shipments may be delayed.
+
+**Identified Issue**<br/>
+In the `LONGFAST`, `LONGSLOW`, and `MIDSLOW` settings, message content exceeding `50 bytes` may result in instability and CRC errors.
+
+**Special Service for Previous Purchasers**<br/>
+If you are a previous purchaser and have the same issue, we are offering a special service to assist you. Please contact us at `sensecap@seeed.cc` and include your order number for support.
+
+Thank you for your understanding as we work to provide the best possible user experience.
+:::
+
+## Introduction
+
+### Feature
+
+
+* **Supports Meshtastic:** Pre-flashed with Meshtastic firmware, it is ready to work once powered on. You can also upgrade the firmware using Meshtastic Flasher.<br/>
+* **Dual MCUs and Rich GPIOs:** Equipped with powerful ESP32S3 and RP2040 dual MCUs and over 400 Grove-compatible GPIOs for flexible expansion options.<br/>
+* **Local LoRa® Hub for IoT Connectivity:** Integrated with the Semtech SX1262 LoRa® chip, the device can be converted to a LoRaWAN® Single-Channel Gatewa via tutorial. Alternatively, connect LoRa® devices to popular IoT platforms like Matter via Wi-Fi.<br/>
+* **Fully Open Source Platform:** Leverage the extensive ESP32 and Raspberry Pi open-source ecosystem for infinite application possibilities.<br/>
+* **Suitable for Multiple Application Scenarios:** Can be used as a Meshtastic desktop node or a car node, as well as a LoRaWAN® Single-Channel Gateway.
+
+### Specification
+
+|Screen|3\.95 Inch, Capacitive RGB Touch Screen|
+| :- | :- |
+|**Screen Resolution**|480 x 480 pixels|
+|**Power Supply**|5V-DC, 1A|
+|**Battery**|N/A|
+|**Processor**|<p>**ESP32-S3:** Xtensa® dual-core 32-bit up to 240 MHz</p><p>**RP2040:** Dual ARM Cortex-M0+ up to 133MHz</p>|
+|**Flash**|<p>**ESP32-S3:** 8MB</p><p>**RP2040:** 2MB</p>|
+|**External Storage**|Support up to 32GB Micro SD Card (not included)|
+|**Wi-Fi**|802\.11b/g/n, 2.4GHz|
+|**Bluetooth**|Bluetooth 5.0 LE|
+|**LoRa(SX1262**)|Support 862-930MHz|
+|**Buzzer(Not developed yet)**|MLT-8530, Resonant Frequency：2700Hz|
+|**Certification**|CE/FCC|
+
+### Hardware Overview
+
+
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/wysiwyg/HO-114993532.png" alt="pir" width={800} height="auto" /></p>
 
 
 
 ## Flash Firmware
+
+:::tip
+The Fancy-UI firmware has not been officially released yet, it's recommended to flash the Classic-UI firmware described in this wiki.
+:::
+
+### Flash Application Firmware
 
 **Video Instruction**
 
@@ -61,6 +122,31 @@ Please select the `USB Serial` one, not the INDICATOR RP2040.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/connect11.png" alt="pir" width={800} height="auto" /></p>
 
+
+
+### Flash GPS Firmware
+
+
+The SenseCAP Indicator doesn't have a GPS built-in, to get the GPS location, a [Grove GPS Module](https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html) is required.<br/>
+Connect the GPS Module to the Grove port and then flash the GPS firmware.
+
+* **[GPS Firmware Download](https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/meshtastic_gps.ino.uf2)**
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/gps-connect.png" alt="pir" width={800} height="auto" /></p>
+
+
+
+Long press this internal button using a needle, then connect the device to your PC by the provided USB type-C cable, release the button once connected.
+
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_56.png" alt="pir" width={600} height="auto" /></p>
+
+
+Download the `UF2` file and copy it to the `RPI-RP2` drive. Firmware should be flashed after the file is downloaded and the device reboots.
+
+
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/disk.png" alt="pir" width={600} height="auto" /></p>
 
 
 
@@ -169,3 +255,26 @@ Refer to [LoRa Region by Country](https://meshtastic.org/docs/configuration/regi
 
 
 Now that you have set the LoRa region on your device, you can continue with configuring any [LoRa Configs](https://meshtastic.org/docs/configuration/radio/lora/) to suit your needs.
+
+### Pages Description
+
+
+
+### Precautions
+
+#### Role Selection
+
+:::caution
+DO NOT select the Repeater role, which will cause the device to repeatedly reboot.
+:::
+
+
+#### GPS Module
+
+
+If you didn't connect the GPS module, please disable the GPS function in the `Meshtastic` App, otherwise the device will keep trying to find the GPS module, which will cause the device to take a long time to boot up the screen.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/gps-module.png" alt="pir" width={600} height="auto" /></p>
+
+
+

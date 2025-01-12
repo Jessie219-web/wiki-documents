@@ -4,7 +4,13 @@
 
 Seeed Studio has dedicated to realizing interactive digital replica of our physical world, as being an IoT hardware partner since 2008. This is an open platform collecting all the wikis published by Seeed Studio, to show you the full picture of our efforts, natural environments digitization and outcome production.
 
-This is the Github source files for Seeed Studio.
+This is the Github source files for Seeed Studio. 
+
+*Due to previous content, we have a problem with the whole file being too large and we recommend pull the latest one(just around 30M):*
+
+```
+git clone --depth 1 https://github.com/{your repo}}/wiki-documents.git
+```
 
 ## What does this Wiki Platform Cover?
 
@@ -57,9 +63,9 @@ Thanks for our [contributors](https://wiki.seeedstudio.com/contributors/), the c
 
 - [SenseCAP Dashboard](https://wiki.seeedstudio.com/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics/)
 - [SenseCAP API](https://wiki.seeedstudio.com/Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction/)
-- [SenseCraft AI](https://wiki.seeedstudio.com/sensecraft_ai/)
+- [SenseCraft AI](https://wiki.seeedstudio.com/sensecraft_ai_main/)
 
-[![button](https://sensecraft.seeed.cc/wp-content/uploads/2023/11/%E5%88%87%E5%9B%BE-139@2x.png)](https://wiki.seeedstudio.com/sensecraft_ai/)
+[![button](https://sensecraft.seeed.cc/wp-content/uploads/2023/11/%E5%88%87%E5%9B%BE-139@2x.png)](https://wiki.seeedstudio.com/sensecraft_ai_main/)
 
 ### Technology Topics and Popular Platforms
 

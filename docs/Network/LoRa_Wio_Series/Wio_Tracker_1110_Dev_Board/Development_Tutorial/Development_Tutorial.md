@@ -42,9 +42,6 @@ There is a Grove I2C port on the DK, with `SDA` on pin 27 and `SCL` on pin 26.
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/Grove_iic.png" alt="pir" width={300} height="auto" /></p>
 
 
-
-
-
 ### Grove UART
 
 
