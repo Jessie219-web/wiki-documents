@@ -309,73 +309,148 @@ import TabItem from '@theme/TabItem';
         <th>JetPack Version</th>
         <th>L4T Version</th>
         <th>Image Link</th>
+        <th>Alternative Image Link</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td rowSpan={2}>reServer Industrial J4012</td>
+        <td rowSpan={3}>reServer Industrial J4012</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWoMiCYaghJGsmgX8ki3lrwB67RFYkI9zvBW6t86w_7chg?e=afbbOs" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdCn0yi0ArRKivHb3mKLrwcBmBEKXlGKLCnNkRQNzyylAw?e=QTnhQa" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EV0nlnSfW3NEmcDq4l3u1M4BrzThb0-y44qa4hGXk-XfWg?e=G9ub1C" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdCn0yi0ArRKivHb3mKLrwcBmBEKXlGKLCnNkRQNzyylAw?e=QTnhQa" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
-        <td rowSpan={2}>reServer Industrial J4011</td>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ES_8t6K7-0tJmkfcrTs0rgoBGvrBiq4Tr6X6ZTU3SjXxjQ?e=vuiqGS" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td rowSpan={3}>reServer Industrial J4011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY9t48fwnJVLraZyoVzYe2gB5RMb9FMXqKxVT9_WBFnnzQ?e=rcBfY5" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQJBb6D2ISBEnoUnUkqVEgkB9npGJ48jw5p2DXFIWaNJxA?e=lOJiFM" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZlrBLKGf5VDiczIJaPNpNoBcby3urzv85oWmS34pKtcGg?e=u7aWDL" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EQJBb6D2ISBEnoUnUkqVEgkB9npGJ48jw5p2DXFIWaNJxA?e=lOJiFM" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
-        <td rowSpan={2}>reServer Industrial J3011</td>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERd_GV-EQGtIiqm90pnmAisBKIuOgZnCISP783um9r7OJw?e=nYL7oz" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td rowSpan={3}>reServer Industrial J3011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDbctjmL2tAtpW_gaqhylABEE5UT2chlro5vi20sFKygA?e=yE5NfC" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdqRMLVCzHtIkHUShgZ91xoBK367uzXyC_mTGQOzlfJhyQ?e=wgOhwj" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EY0cen9MPIhJpM2LBfm2edEBZtw53n2C9PwqsY2XaiSH_w?e=LWQren" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EdqRMLVCzHtIkHUShgZ91xoBK367uzXyC_mTGQOzlfJhyQ?e=wgOhwj" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
-        <td rowSpan={2}>reServer Industrial J3010</td>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXv18M5S-gNGvFVyCgUIfOMBveES_RLF25qpEP1uMLGrBA?e=d7b2j7" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td rowSpan={3}>reServer Industrial J3010</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EeCYmkCdhqRGrh2idfcueV0B4btw0JAzCt8i7ePWZwSeng?e=XH9HDx" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download2</a>
         </td>
       </tr>
       <tr>
         <td>6.0</td>
         <td>36.3</td>
         <td>
-          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EXxmIAk7sGdOnPcaZHvz7ykB36pGkNwZscpdu3ZytrfD0Q?e=ElJ2bb" target="_blank" rel="noopener noreferrer">Download</a>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQgrBDUICyZCnKBI_qVeupoBYqQJ1dP7_lcxUwxUphg6Qw?e=ObUzPI" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EXxmIAk7sGdOnPcaZHvz7ykB36pGkNwZscpdu3ZytrfD0Q?e=ElJ2bb" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>6.1</td>
+        <td>36.4</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
+<p style={{ fontSize: '0.9em', color: 'yellow' , textAlign: 'center'}}>
+  * The image files from both Download1 and Download2 are the same. You can choose the link with the faster download speed.
+</p>
 
 <!-- The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra) -->
 
@@ -566,12 +641,113 @@ There are 2 LEDs (green and yellow) on each Ethernet port which indicates the fo
   </TabItem>
   </Tabs>
 
-- If you need to configure different IP addresses for each POE interface, follow these instructions:
+
+### Binding Physical Network Ports to eth Numbers
+
+- Step 1: Create udev Rule File
+
+  Create a file in the `/etc/udev/rules.d/` directory named `10-persistent-net.rules` with the following content:
+
+  ```bash
+  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0008:01:00.0", NAME="eth0"
+  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0001:01:00.0", NAME="eth1"
+  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0007:03:00.0", NAME="eth2"
+  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0007:04:00.0", NAME="eth3"
+  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0007:05:00.0", NAME="eth4"
+  ```
+
+-  Step 2: Create Network Configuration Files
+
+    In the `/etc/systemd/network/` directory, create the following files for each `eth` interface:
+
+    - `eth1.network`
+    - `eth2.network`
+    - `eth3.network`
+    - `eth4.network`
+
+    #### Sample Content for Each `.network` File
+
+    For **eth1**:
+
+    ```ini
+    [Match]
+    Name=eth1
+
+    [Link]
+    MACAddress=<MAC address of the first port from the right>
+
+    [Network]
+    DHCP=yes
+    ```
+
+    For **eth2**:
+
+    ```ini
+    [Match]
+    Name=eth2
+
+    [Link]
+    MACAddress=<MAC address of the second port from the right>
+
+    [Network]
+    DHCP=yes
+    ```
+
+    For **eth3**:
+
+    ```ini
+    [Match]
+    Name=eth3
+
+    [Link]
+    MACAddress=<MAC address of the third port from the right>
+
+    [Network]
+    DHCP=yes
+    ```
+
+    For **eth4**:
+
+    ```ini
+    [Match]
+    Name=eth4
+
+    [Link]
+    MACAddress=<MAC address of the fourth port from the right>
+
+    [Network]
+    DHCP=yes
+    ```
+
+    You can copy the MAC address for each port from the system settings and paste it in the relevant `[Link]` section.
+
+-  Step 3: Enable and Start the systemd-networkd Service
+
+    Enable and start the `systemd-networkd` service with the following commands:
+
+    ```bash
+    sudo systemctl enable systemd-networkd
+    sudo systemctl start systemd-networkd
+    ```
+
+  -  Step 4: Reboot the System
+
+      Finally, reboot the system to apply the changes:
+
+      ```bash
+      sudo reboot
+      ```
+
+      Once the system restarts, the new eth interface bindings will take effect.
+
+### Binding Physical Network IP to eth Numbers
+  If you need to configure different IP addresses for each POE interface, follow these instructions:
 
   **Step 1**: Connect the POE to the reServer Industrial device. For example, to configure eth3, set the name of eth3 to POE3.
-    ```bash
+
+  ```bash
   sudo nmcli connection add type ethernet ifname eth3 con-name POE3
-    ```
+  ```
 
   **Step 2**: Configure the IP address of POE3 to **192.168.6.6**. The IP address can be customized according to actual usage.
   ```bash
@@ -579,7 +755,8 @@ There are 2 LEDs (green and yellow) on each Ethernet port which indicates the fo
   ```
 
   **Step3**: To set POE3's IPv4 address to manual configuration.
-    ```bash
+
+  ```bash
   sudo nmcli connection modify POE3 ipv4.method manual
   ```
 

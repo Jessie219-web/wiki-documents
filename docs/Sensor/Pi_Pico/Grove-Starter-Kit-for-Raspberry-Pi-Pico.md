@@ -10,6 +10,10 @@ last_update:
   author: jianjing Huang
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 ![enter image description here](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/Pico_hardware.png)
 
 The Raspberry Pi Pico is a new popular low-cost, high-performance microcontroller board, so how to integrate Grove sensor to it?  The grove shield perfectly solved this problem.
@@ -143,18 +147,51 @@ Now, rotate the **Grove Rotary Angle Sensor**, and you will hear different sound
 
 ### Project 2: Detecting Temperature and Humidity
 
+<Tabs>
+<TabItem  value="Old" label="Option 1: DHT11 and SSD1315" default>
+
 #### Materials Required
 
 **Step 1.** Prepare the following items:
 
-| Pi Pico | Grove Shield for Pi Pico | Grove OLED Display 0.96" (SSD1315) | Grove Temperature & Humidity Sensor (DHT11) |
-|---------|--------------------------|------------------------------------|--------------------------------------------|
-| ![Pi Pico](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/Picoboard1.jpg) | ![Grove Shield for Pi Pico](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/picobaseshield.png) | ![Grove OLED Display](https://files.seeedstudio.com/wiki/Grove-OLED-Display-0.96-SSD1315-/img/Grove-OLED-Displey-0.96-SSD1315-thumbnail.jpg) | ![Grove Temperature Humidity Sensor](https://files.seeedstudio.com/wiki/Grove-TemperatureAndHumidity_Sensor/img/list.jpg) |
-| [Get ONE Now](https://www.seeedstudio.com/Raspberry-Pi-Pico-p-4832.html) | [Get ONE Now](https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html) | [Get ONE Now](https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html) | [Get ONE Now](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html) |
-
-:::note
-In this kit, we have upgraded the Grove Temperature Humidity Sensor (DHT11) to [Grove Temperature Humidity Sensor (DHT20)](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html). If you'd like to get started with the DHT20 sensor, click [here](https://wiki.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DH20/).
-:::
+<div class="table-center">
+	<table align="center" style={{width: 950, height: "auto", overflowX: 'scroll', textAlign: 'left',}}>
+    <tr>
+        <th>Pi Pico</th>
+        <th>Grove Shield for Pi Pico</th>
+        <th>Grove OLED Display 0.96" (SSD1315)</th>
+        <th>Grove Temperature & Humidity Sensor (DHT11)</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/Picoboard1.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/picobaseshield.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-OLED-Display-0.96-SSD1315-/img/Grove-OLED-Displey-0.96-SSD1315-thumbnail.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-TemperatureAndHumidity_Sensor/img/list.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-Pico-p-4832.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+            <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+            <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-OLED-Display-0-96-SSD1315-p-4294.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+            <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+    </tr>
+    </table>
+</div>
 
 **Step 2.** Connect the Grove OLED Display 0.96" to port I2C1 of the Grove Shield.
 
@@ -300,11 +337,13 @@ class DHT(object):
 
 3. Open **dht11.py** in Thonny IDE, click `File -> Save As -> MicroPython device`, and save the file with the name **dht11.py** on your device.
 
-![Save as MicroPython device](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/saveas.png)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/saveas.png" style={{width:700, height:'auto'}}/></div>
+
+<br></br>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/open.png" style={{width:700, height:'auto'}}/></div>
 
 4. Repeat the same process to save **ssd1306.py** to your MicroPython device.
-
-![Open MicroPython file](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/open.png)
 
 #### Running the Project
 
@@ -313,6 +352,122 @@ Once both files are saved to your MicroPython device, run the demo code by press
 You should now see the temperature and humidity displayed on the OLED screen, similar to the image below:
 
 ![OLED Display Output](https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/oled1.jpg)
+
+
+</TabItem>
+<TabItem value="New" label="Option 2: DHT20 and LCD1602" default>
+
+#### Materials Required
+
+**Step 1.** Prepare the following items:
+
+<div class="table-center">
+	<table align="center" style={{width: 950, height: "auto", overflowX: 'scroll', textAlign: 'left',}}>
+    <tr>
+        <th>Pi Pico</th>
+        <th>Grove Shield for Pi Pico</th>
+        <th>Grove 16x2 LCD (White on Blue)</th>
+        <th>Grove Temperature & Humidity Sensor V2.0 (DHT20)</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/Picoboard1.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/picobaseshield.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/h/t/httpsstatics3.seeedstudio.comseeedfile2018-10bazaar969249_front.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/0/101020932_preview-07-min_1.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-Pico-p-4832.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+            <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Pi-Pico-v1-0-p-4846.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+            <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-16x2-LCD-White-on-Blue.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+            <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-V2-0-DHT20-p-4967.html">
+				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				</a>
+			</div></td>
+    </tr>
+    </table>
+</div>
+
+
+**Step 2.** Connect the Grove 16x2 LCD (White on Blue) to port I2C1 of the Grove Shield.
+
+**Step 3.** Connect the Grove Temperature & Humidity Sensor V2.0 (DHT20) to port D18 of the Grove Shield.
+
+**Step 4.** Plug the Grove Shield into the Pi Pico.
+
+**Step 5.** Connect the Pi Pico to your PC using a USB cable.
+
+#### Software Setup
+
+Please refer to the software section of Demo 1.
+
+1. Copy the following code into Thonny IDE:
+
+```python
+from lcd1602 import LCD1602
+from dht20 import DHT20
+from machine import I2C,Pin
+from time import sleep
+
+i2c1 = I2C(1,scl=Pin(7), sda=Pin(6), freq=400000)
+d = LCD1602(i2c1, 2, 16)
+i2c0 = I2C(0, scl=Pin(9), sda=Pin(8),freq=400000)
+dht20 = DHT20(0x38, i2c0)
+
+while True:
+
+    measurements = dht20.measurements
+    temp_rounded = round(measurements['t'], 1)
+    humidity_rounded = round(measurements['rh'], 1)
+    print(f"Temperature: {temp_rounded} °C, humidity: {humidity_rounded} %RH")
+    d.home()
+    d.print('temp=')
+    d.print(str(temp_rounded))
+    d.print('C')
+    sleep(1)
+    d.setCursor(0, 1)
+    d.print('humidity=')
+    d.print(str(humidity_rounded))
+    d.print('%RH')
+    sleep(1)
+```
+
+2. Download the following required Python files to your local machine:
+   - [DHT20.py](https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Sensor/dht/DHT20.py)
+   - [lcd1602.py](https://files.seeedstudio.com/wiki/Grove-16x2_LCD--White_on_Blue/lcd1602.py)
+
+3. Open **DHT20.py** in Thonny IDE, click `File -> Save As -> MicroPython device`, and save the file with the name **DHT20.py** on your device.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Sensor/saveas.png" style={{width:750, height:'auto'}}/></div>
+
+<br></br>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Sensor/open.png" style={{width:750, height:'auto'}}/></div>
+
+4. Repeat the same process to save **lcd1602.py** to your MicroPython device.
+
+#### Running the Project
+
+Once both files are saved to your MicroPython device, run the demo code by pressing the green **Run** button in Thonny.
+
+You should now see the temperature and humidity displayed on the OLED screen, similar to the image below:
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Sensor/oled_output.jpg" style={{width:750, height:'auto'}}/></div>
+
+</TabItem>
+</Tabs>
 
 ### Project 3: Controling Led and Relay
 
@@ -416,7 +571,7 @@ led.rainbow_cycle(0)
 
 ```
 
-Then please download the [ws2812.py](http://47.106.166.129/Embeded/pico-micropython-grove/blob/master/Digital/ws2812.py) to your local. Use Thonny open ws2812.py, click file->save as->MicroPython device.
+Then please download the [ws2812.py](https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Sensor/ws2812.py) to your local. Use Thonny open ws2812.py, click file->save as->MicroPython device.
 
 Input **ws2812.py** in File name column, click "ok", then the file is saved at File->Open->MicroPython device.
 
@@ -480,7 +635,7 @@ while True:
     
 ```
 
-Then please download the [LCD1602.py](http://47.106.166.129/Embeded/pico-micropython-grove/blob/master/I2C/lcd1602.py) to your local. Use Thonny open LCD1602.py, click file->save as->MicroPython device.
+Then please download the [LCD1602.py](https://files.seeedstudio.com/wiki/Grove-16x2_LCD--White_on_Blue/lcd1602.py) to your local. Use Thonny open LCD1602.py, click file->save as->MicroPython device.
 
 Input **LCD1602.py** in File name column, click "ok", then the file is saved at File->Open->MicroPython device.
 

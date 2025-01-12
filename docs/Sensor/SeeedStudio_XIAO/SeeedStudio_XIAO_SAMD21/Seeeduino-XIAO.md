@@ -74,13 +74,17 @@ There are two documents on the usage of **Seeed Studio XIAO SAMD21** which focus
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/regulator_to_3.3v.png" alt="pir" width={600} height="auto" /></p>
 
-:::note
+:::caution
 For general I/O pins:
-Working voltage of MCU is 3.3V . Voltage input connected to general I/O pins may cause chip damage if it' higher than 3.3V .
+Working voltage of MCU is 3.3V. Voltage input connected to general I/O pins may cause chip damage if it' higher than 3.3V .
+
 For power supply pins:
 The built-in DC-DC converter circuit able to change 5V voltage into 3.3V allows to power the device with a 5V supply via VIN-PIN and 5V-PIN.
+
+XIAO SAMD21 currently only supports battery power supply and **cannot connect to Type-C while a battery is connected**, as it may pose a safety risk.
+
 Please pay attention to use, do not lift the shield cover.
-:::
+:::   
 
 ### **Enter Bootloader Mode**
 
@@ -430,6 +434,9 @@ the max size of flash is 8KB the more information at the ATSAMD218A-MU datasheet
 - **[STEP]** [Seeed Studio XIAO SAMD21 3D Model](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/seeeduino-xiao-samd21-3d-model.zip)
 
 - **[ZIP]** [Seeed Studio XIAO SAMD21 Certification files](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/XIAO-SAMD21-Certification.zip)
+
+- 🔗 **[Kicad]** [Seeed Studio XIAO SAMD21 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
 
 ## Course Resources
 

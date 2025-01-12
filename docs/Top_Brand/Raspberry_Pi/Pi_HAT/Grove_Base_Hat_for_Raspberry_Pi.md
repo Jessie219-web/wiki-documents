@@ -149,7 +149,11 @@ We recommend that you power up the Raspberry Pis after all the hardware connecti
 ### Software
 
 :::caution
-Due to chip shortage, we have replaced STM32 with MM32 in the latest version of the product, and the I2C address of the corresponding product has been changed from 0x04 to 0x08 in the old version, please change the I2C address in adc.py from 0x04 to 0x08 when using the library file provided by seed for development.
+Currently, this board is available in two versions on the market: the STM32 version (V1.1) and the MM32 version (V1.0). The current shipping version is the STM32 version.
+
+If you experience issues using the Grove Base Hat for Pi with the `grove.py` library, please check your board version:  
+1. **If it is the STM32 version**, the I2C address is `0x04`. You need to change the I2C address in `/home/username/.local/lib/python3.9/site-packages/adc.py` to `0x04`.  
+2. **If it is the MM32 version**, the I2C address is `0x08`. You need to change the I2C address in `/home/username/.local/lib/python3.9/site-packages/adc.py` to `0x08`.  
 :::
 
 In this section we will introduce how to install the **seeed grove.py** library and how to use I2C, PWM, Digital and analog port of the Grove Base Hat for Raspberry Pi.

@@ -5,8 +5,9 @@ keywords:
 - mmwave
 - radar
 - MR60BHA2
-image: https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/2-mmWave-45font.jpg
+image: https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/22-114993387-mr60bha2-60ghz-mmwave-45font.jpg
 slug: /getting_started_with_mr60bha2_mmwave_kit
+sidebar_position: 0
 last_update:
   date: 08/19/2024
   author: Spencer
@@ -14,7 +15,7 @@ last_update:
 
 # Getting started with 60GHz mmWave Breathing and Heartbeat Detection Sensor Kit with XIAO ESP32C6 (MR60BHA2)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/2-mmWave-45font.jpg" style={{width:'auto', height:'auto', "border-radius": '12.8px'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/22-114993387-mr60bha2-60ghz-mmwave-45font.jpg" style={{width:360, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/MR60BHA2-60GHz-mmWave-Sensor-Breathing-and-Heartbeat-Module-p-5945.html?utm_source=wiki">
@@ -24,7 +25,7 @@ last_update:
 
 Introducing our advanced **mmWave Sensor Modules** for XIAO, designed to provide cutting-edge monitoring solutions for both [fall detection](https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/) and heartbeat monitoring. Powered by the robust XIAO ESP32 microcontroller with built-in Wi-Fi and Bluetooth connectivity, these modules offer precise and reliable detection capabilities. Whether you need to monitor falls in real-time or track heartbeats with sensitive accuracy, our modules are equipped with state-of-the-art technology, including customizable RGB LEDs and ambient light sensing. With easy expansion options through Grove GPIO ports, these versatile modules are perfect for a wide range of applications, from smart home integration to healthcare monitoring.
 
-### Features
+## Features
 
 - **Wi-Fi & Bluetooth Enabled**: Both modules are powered by XIAO ESP32 with pre-flashed ESPHome firmware, ensuring quick setup and customization.
 <!-- - **Fall Detection Module**:
@@ -41,7 +42,7 @@ Introducing our advanced **mmWave Sensor Modules** for XIAO, designed to provide
 <!-- <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/human-caring.jpg" style={{height:'auto', "border-radius": '3.8px'}}/></div>
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/environmental-inductor.jpg" style={{height:'auto', "border-radius": '3.8px'}}/></div> -->
 
-### Specification
+## Specification
 
 | **General Parameters**   |                                      |
 | ------------------------ | ------------------------------------ |
@@ -56,8 +57,7 @@ Introducing our advanced **mmWave Sensor Modules** for XIAO, designed to provide
 | **Power Supply**         | 5V/1A Input |
 | **Power consumption**    | 0.5w: Standby Mode<br />0.8w: Activation Mode<br />1.4w: work with Grove Relay status |
 
-
-### Application
+## Application
 
 - Security Systems
 - Haelthcare Monitoring
@@ -81,8 +81,6 @@ Introducing our advanced **mmWave Sensor Modules** for XIAO, designed to provide
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/side_mounting.png" style={{width:600, height:'auto'}}/></div>
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/side_detect_distance.png" style={{width:600, height:'auto'}}/></div>
 
-
-
 **Method 2.** Inclined installation. For sleep breathing and heart rate detection needs, an inclined installation method can be adopted. The radar is required to be installed at a height of 1m directly above the head of the bed, tilted downward at 45 ° towards the middle of the bed, and the distance between the radar and the chest cavity is controlled to be within 1.5m. The radar normal direction is aligned with the main detection position to ensure that the radar can detect respiratory and heartbeat data.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/tilt_installation.png" style={{width:600, height:'auto'}}/></div>
@@ -97,9 +95,16 @@ Please use this module in an open space, and stay out of the following scenarios
 - Detection through glass and thin wooden boards  
 - Installation location prone to vibrations  
 - Use of low-quality power supplies  
+
 :::
 
 ### Software Preparation (Arduino)
+
+:::info Attention
+
+By default, the MR60BHA2 comes pre-assembled with the [XIAO ESP32C6](/xiao_esp32c6_getting_started), but it's compatible with various other microcontrollers for communication and integration.
+
+:::
 
 If this is your first time using Arduino with the XIAO series, follow the appropriate setup guide for your board:
 
@@ -110,29 +115,26 @@ If this is your first time using Arduino with the XIAO series, follow the approp
 Once your board is set up, proceed with the following steps:
 
 1. **Download the Seeed mmWave Library**:
+
    - Download the [Seeed mmWave library](https://github.com/Love4yzp/Seeed-mmWave-library) from GitHub.
 
-<div class="github_container" style={{textAlign: 'center'}}>
-    <a class="github_item" href="https://github.com/Love4yzp/Seeed-mmWave-library">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Code</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
-    </a>
-</div>
-
+  <div class="github_container" style={{textAlign: 'center'}}>
+      <a class="github_item" href="https://github.com/Love4yzp/Seeed-mmWave-library">
+      <strong><span><font color={'FFFFFF'} size={"4"}> Download the Code</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+      </a>
+  </div>
 2. **Install the Library in Arduino IDE**:
    - Open the Arduino IDE.
    - Navigate to **Sketch > Include Library > Add .ZIP Library...**.
    - Select the downloaded `.zip` file to install the library.
-
 3. **Connect Your XIAO Board**:
    - Plug your XIAO board into your computer via USB.
    - In the Arduino IDE, go to **Tools > Board** and select your XIAO board model.
    - Choose the correct port under **Tools > Port**.
-
 4. **Load an Example Sketch**:
    - Go to **File > Examples > Seeed Arduino mmWave**.
    - Select the relevant example for Heartbeat Detection.
    - Review the code and make any necessary adjustments.
-
 5. **Upload the Sketch**:
    - Click **Upload** to flash the code to your XIAO board.
    - Open the **Serial Monitor** in the Arduino IDE to view real-time sensor data.
@@ -142,8 +144,6 @@ Once your board is set up, proceed with the following steps:
 ### Usage
 
 This section provides example code snippets to help you quickly start using the Seeed Arduino mmWave Library with various functionalities, including breath monitoring, RGB LED control, and light sensing.
-
-
 
 #### Breath Module
 
@@ -194,11 +194,78 @@ if (mmWave.update(100)) {
 }
 }
 ```
+
 The output will be as follows on Arduino Serial Monitor:
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/breathing_and_heartbeat_detection.png" style={{width:700, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/breathing_and_heartbeat_detection_resize.png" style={{width:700, height:'auto'}}/></div>
 
 If the returned data is not `0`, indicate the existence of a living thing inside the detection's range.
+
+#### Human Detection
+
+This example demonstrates how to use the **MR60BHA2** sensor for human detection.
+
+:::caution
+Please make sure you have [upgrade the firmware](#module-firmware-upgrade) of MR60BHA2 module to the latest version.  
+The latest firmware adds human presence detection and human object related functions.
+:::
+
+```cpp
+#include <Arduino.h>
+#include "Seeed_Arduino_mmWave.h"
+
+// If the board is an ESP32, include the HardwareSerial library and create a
+// HardwareSerial object for the mmWave serial communication
+#ifdef ESP32
+#  include <HardwareSerial.h>
+HardwareSerial mmWaveSerial(0);
+#else
+// Otherwise, define mmWaveSerial as Serial1
+#  define mmWaveSerial Serial1
+#endif
+
+SEEED_MR60BHA2 mmWave;
+
+void setup() {
+  Serial.begin(115200);
+  mmWave.begin(&mmWaveSerial);
+}
+
+void loop() {
+  if (mmWave.update(100)) {
+    if (mmWave.isHumanDetected()) {
+        Serial.printf("-----Human Detected-----\n");
+    }
+
+    PeopleCounting target_info;
+    if (mmWave.getPeopleCountingTartgetInfo(target_info)) {
+        Serial.printf("-----Got Target Info-----\n");
+        Serial.printf("Number of targets: %zu\n", target_info.targets.size());
+
+        for (size_t i = 0; i < target_info.targets.size(); i++) {
+            const auto& target = target_info.targets[i];
+            Serial.printf("Target %zu:\n", i + 1);
+            Serial.printf("  x_point: %.2f\n", target.x_point);
+            Serial.printf("  y_point: %.2f\n", target.y_point);
+            Serial.printf("  dop_index: %d\n", target.dop_index);
+            Serial.printf("  cluster_index: %d\n", target.cluster_index);
+            Serial.printf("  move_speed: %.2f cm/s\n", target.dop_index * RANGE_STEP);
+        }
+    }
+    // delay(500);
+  }
+}
+```
+
+The output will be as follows on Arduino Serial Monitor:
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/people-counting-target-info.png" style={{width:700, height:'auto'}}/></div>
+
+:::note
+Breathing and heart rate can be detected within 1.5 meters, and presence can be detected within a range of 1.5 to 6 meters.  
+When there are people within the 1.5M range, the module will enter the heartbeat and breathing detection mode.   
+In this mode, the sensitivity of the human detection function may decrease.  
+:::
 
 <!-- 
 ### Fall Module
@@ -315,7 +382,8 @@ for (int i = 255; i >= 0; i--) {
 }
 }
 ```
-- **Step 3.** Select the correct board and port number to upload the program. 
+
+- **Step 3.** Select the correct board and port number to upload the program.
 
 Once the program is successfully uploaded, you will see RGB LED on the right side of the mmWave Sensor Modules is blinking.
 
@@ -360,7 +428,8 @@ if (BH1750.hasValue()) {
 }
 }
 ```
-- **Step 3.** Select the correct board and port number to upload the program. 
+
+- **Step 3.** Select the correct board and port number to upload the program.
 
 The output will be as follows on Arduino Serial Monitor:
 
@@ -372,14 +441,14 @@ The output will be as follows on Arduino Serial Monitor:
 
 This example uses the `SEEED_MR60BHA2` class to interface with the MR60BHA2 sensor for heart and breath monitoring. Here’s what each key function does:
 
-- **`mmWave.begin(&mmWaveSerial)`**: 
+- **`mmWave.begin(&mmWaveSerial)`**:
   - Initializes the sensor for communication using the specified serial interface. It sets up the connection between the XIAO board and the MR60BHA2 sensor.
 
 - **`mmWave.update(100)`**:
   - Updates the sensor data. The parameter `100` is a timeout value in milliseconds, specifying how long to wait for the sensor to provide new data. If new data is available within this timeframe, the function returns `true`.
 
 - **`mmWave.getHeartBreathPhases(float &total_phase, float &breath_phase, float &heart_phase)`**:
-  - Retrieves the phase information related to heart and breath activities. 
+  - Retrieves the phase information related to heart and breath activities.
   - `total_phase` represents the overall phase shift, while `breath_phase` and `heart_phase` are specific to breathing and heartbeat activities, respectively.
 
 - **`mmWave.getBreathRate(float &rate)`**:
@@ -391,6 +460,26 @@ This example uses the `SEEED_MR60BHA2` class to interface with the MR60BHA2 sens
 - **`mmWave.getDistance(float &distance)`**:
   - Gets the distance from the sensor to the detected object (e.g., human body). This function is useful for understanding the range of the detected signal.
 
+- **`mmWave.getPeopleCountingPointCloud(PeopleCounting& point_cloud)`**:
+  - Retrieves information about point clouds. It just realizes the reception of message type, it is normal that there is no data.
+  - The `PeopleCounting` structure contains a vector of detected targets. Each target includes the following attributes:
+    - `x_point` : X coordinate of the target (in meter).
+    - `y_point` : Y coordinate of the target (in meter).
+    - `dop_index` : Doppler index, representing the speed of the target.
+      - The actual movement speed (in cm/s) can be calculated as: `dop_index * RANGE_STEP`, where `RANGE_STEP` is the speed resolution.
+    - `cluster_index` : Cluster ID of the target, used to identify individual targets in the scene.
+
+- **`mmWave.getPeopleCountingTartgetInfo(PeopleCounting& target_info)`**:
+  - Retrieves information about detected targets.
+  - The `PeopleCounting` structure contains a vector of detected targets. Each target includes the following attributes:
+    - `x_point` : X coordinate of the target (in meter).
+    - `y_point` : Y coordinate of the target (in meter).
+    - `dop_index` : Doppler index, representing the speed of the target.
+      - The actual movement speed (in cm/s) can be calculated as: `dop_index * RANGE_STEP`, where `RANGE_STEP` is the speed resolution.
+    - `cluster_index` : Cluster ID of the target, used to identify individual targets in the scene.
+
+- **`mmWave.isHumanDetected()`**:
+  - Returns whether a human is detected.
 
 <!-- 
 ### Fall Module API
@@ -418,16 +507,115 @@ This example uses the `SEEED_MR60FDA2` class to interface with the MR60FDA2 sens
 - **`mmWave.getFall()`**:
   - Determines whether a fall has been detected. This function returns `true` if a fall is detected and `false` if not.-->
 
+## Module firmware upgrade
+
+:::note
+The new firmware has the following update:
+1. Optimized the breathing and heart rate detection feature, fixing the bug where small body movements caused data loss.  
+2. Enhanced the 3D presence detection function: breathing and heart rate can be detected within 1.5 meters, and presence can be detected within a range of 1.5 to 6 meters.  
+3. Added a personnel detection feature, capable of detecting up to three individuals within a range of 6 meters.
+:::
+
+First, connect the XIAO ESP32C6 and MR60BHA2 modules together. Then use the following code to program XIAO.
+
+```cpp
+#include <Arduino.h>
+#include "Seeed_Arduino_mmWave.h"
+
+// If the board is an ESP32, include the HardwareSerial library and create a
+// HardwareSerial object for the mmWave serial communication
+#ifdef ESP32
+#  include <HardwareSerial.h>
+HardwareSerial mmWaveSerial(0);
+#else
+// Otherwise, define mmWaveSerial as Serial1
+#  define mmWaveSerial Serial1
+#endif
+
+void setup() {
+  // Initialize the serial communication for debugging
+  Serial.begin(115200);
+  while (!Serial) {
+    ; // Wait for Serial to initialize
+  }
+
+  // Initialize the mmWaveSerial communication
+  mmWaveSerial.begin(115200);
+}
+
+void loop() {
+  // Check if there is data available from mmWaveSerial
+  while (mmWaveSerial.available() > 0) {
+    char receivedChar = mmWaveSerial.read();
+    Serial.write(receivedChar); // Forward data to Serial
+  }
+
+  // Check if there is data available from Serial
+  while (Serial.available() > 0) {
+    char receivedChar = Serial.read();
+    mmWaveSerial.write(receivedChar); // Forward data to mmWaveSerial
+  }
+}
+```
+
+:::tip
+The function of the above code is to transparently transmit the serial port of the module to the USB serial port of XIAO, so as to upgrade the firmware of the module through XIAO.  
+Please connect XIAO to your PC during the upgrade process.
+:::
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/passthrough-mode.png" style={{width:700, height:'auto'}}/></div>
+
+You will see the original data sent by the module.
+
+Then you need to download and unzip the OTA tool and the firmware here.
+
+- **MR60BHA2 Firmware upgrade tool**: [MR60BHA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_OTA.zip)
+- **MR60BHA2 Firmware v1.6.4**: [MR60BHA2_eeprom_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_eeprom_1.6.4.bin)
+
+1. Check and connect to the serial port (set the baud rate to 115200)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/1-check-and-connect-serial.png" style={{width:700, height:'auto'}}/></div>
+
+2. Click "REQUEST UPDATE" to enter the upgrade mode:
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/2-request-update.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/3-upgrade-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/4-baudrate-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+3. If "C" or "43" is printed, it means that the module has entered upgrade mode.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/5-module-enter-upgrade-mode.png" style={{width:700, height:'auto'}}/></div>
+
+4. Select the firmware to be upgraded. After selection, it will automatically enter the upgrade state. 
+
+After the upgrade is completed, it will automatically jump to normal mode. If it does not jump, power off and restart, and then use OTA tool to view the serial port data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/6-open-file.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/7-choose-file.png" style={{width:700, height:'auto'}}/></div>
+
+5. After the upgrade is complete, you can use OTA tool to read the version and raw data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/8-flash-done.png" style={{width:700, height:'auto'}}/></div>
+
 ## Open for Customization
 
 Want to tailor-make the kit to fit your unique applications?
 
-For more information about 3D point cloud data generation and interference zone configuration when customizing mmWave modules. Seeed provides one-stop R&D customization and manufacturing services for fast development from concept to production. Contact us at iot@seeed.cc to learn more.
+For more information about 3D point cloud data generation and interference zone configuration when customizing mmWave modules. Seeed provides one-stop R&D customization and manufacturing services for fast development from concept to production. Contact us at <iot@seeed.cc> to learn more.
 
 ## Resources
 
+- **STL**: [mmWave 3D Case](https://files.seeedstudio.com/wiki/mmwave-for-xiao/Seeed_Studio_60GHz_mmWave_Human_Fall_Breating_and_Heartbeat_Detection_Sensor-MR60FDA2_MR60BHA2_Enclosure.stl)
 - **GitHub Repository**: Access the full codebase and documentation at the [Seeed mmWave Library GitHub page](https://github.com/Love4yzp/Seeed-mmWave-library).
 - **ESPHome Documentation**: For further customization and integration, refer to the [ESPHome documentation](https://esphome.io/).
+- **MR60BHA2 Firmware upgrade tool**: [MR60BHA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_OTA.zip)
+- **MR60BHA2 Firmware v1.6.4**: [MR60BHA2_eeprom_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_eeprom_1.6.4.bin)
+- **mmWave Sensor SCH V1.0**: [mmWave_Sensor_SCH_V1.0.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/sch/mmWave_Sensor_SCH_V1.0.pdf)
+- **MR60BHA2 Module Technical Specification**: [MR60BHA2_Breathing_and_Heartbeat_Module.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/datasheet/MR60BHA2_Breathing_and_Heartbeat_Module.pdf)
+- **MR60BHA2 Tiny Frame Interface Manual**: [Seeed_Studio_Tiny_Frame_Interface_Breathing_and_Heartbeat.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/datasheet/Seeed_Studio_Tiny_Frame_Interface_Breathing_and_Heartbeat.pdf)
 
 
 ## Tech Support & Product Discussion
@@ -436,12 +624,12 @@ Thank you for choosing our products! We are here to provide you with different s
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
   <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
 
   <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>

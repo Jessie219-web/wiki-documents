@@ -190,12 +190,12 @@ void loop() {
 #### **Software**
 
 - **Step 1.** Follow [Setting Software](https://www.dexterindustries.com/GrovePi/get-started-with-the-grovepi/setting-software/) to configure the development environment of Resberry Pi.
-- **Step 2.** Download the [Grove-Formaldehyde Sensor Library](https://files.seeedstudio.com/wiki/Grove-Formaldehyde-Sensor-(SFA30)_v1.02-SCH/embedded-sfa3x-main.zip) and unzip it to the Raspberry Pi.
+- **Step 2.** Download the [Grove-Formaldehyde Sensor Library](https://github.com/Sensirion/raspberry-pi-i2c-sfa3x/archive/refs/heads/master.zip) and unzip it to the Raspberry Pi.
 
 - **Step 3.** Navigate to the demos' directory. The following command can monitor the concentration of formaldehyde, humidity and temperature.
 
 ```python
-cd ~/embedded-sfa3x-main/i2c
+cd ~/raspberry-pi-i2c-sfa3x-master
 make
 ./sfa3x_i2c_example_usage
 ```

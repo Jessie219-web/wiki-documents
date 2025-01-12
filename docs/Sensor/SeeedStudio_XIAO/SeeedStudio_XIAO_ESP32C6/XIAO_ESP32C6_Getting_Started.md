@@ -17,28 +17,27 @@ last_update:
 # Getting Started with Seeed Studio XIAO ESP32C6
 
 <div class="table-center">
-	<table>
-		<tr>
-			<th>Seeed Studio XIAO ESP32C6</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg" style={{width:250, height:'auto'}}/></div></td>
-		</tr>
-		<tr>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
+ <table>
+  <tr>
+   <th>Seeed Studio XIAO ESP32C6</th>
+  </tr>
+  <tr>
+   <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg" style={{width:250, height:'auto'}}/></div></td>
+  </tr>
+  <tr>
+   <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html
         ">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-				</a>
-			</div></td>
-		</tr>
-	</table>
+    <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+   </div></td>
+  </tr>
+ </table>
 </div>
-
 
 ## Introduction
 
-Seeed Studio XIAO ESP32C6 is powered by the highly-integrated [ESP32-C6 SoC](https://www.espressif.com/en/products/socs/esp32-c6), built on **two 32-bit RISC-V processors**, with a high-performance (HP) processor with **running up to 160 MHz**, and a low-power (LP) 32-bit RISC-V processor, which can be clocked up to 20 MHz. There are **512KB SRAM and 4 MB Flash on the chip**, allowing for more programming space, and binging more possibilities to the IoT control scenarios. 
+Seeed Studio XIAO ESP32C6 is powered by the highly-integrated [ESP32-C6 SoC](https://www.espressif.com/en/products/socs/esp32-c6), built on **two 32-bit RISC-V processors**, with a high-performance (HP) processor with **running up to 160 MHz**, and a low-power (LP) 32-bit RISC-V processor, which can be clocked up to 20 MHz. There are **512KB SRAM and 4 MB Flash on the chip**, allowing for more programming space, and binging more possibilities to the IoT control scenarios.
 
 XIAO ESP32C6 is **Matter native thanks to its enhanced wireless connectivity**. The wireless stack supports **2.4 GHz WiFi 6, Bluetooth® 5.3, Zigbee, and Thread (802.15.4)**. As the first XIAO member compatible with Thread, it's a perfect fit for building Matter-compliant projects, thus achieving interoperability in smart-home.
 
@@ -55,6 +54,7 @@ export const Highlight = ({children, color}) => (
 );
 
 ## Specifications comparison
+
 <table class="sp-table-c6">
     <thead>
         <tr>
@@ -166,31 +166,41 @@ export const Highlight = ({children, color}) => (
 ## Hardware overview
 
 <table align="center">
-	<tr>
-	    <th>XIAO ESP32C6 indication diagram</th>
-	</tr>
-	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_556525_Slxs4ARdyuXRrJK-_1711096256?w=9854&h=3367&type=image/png" style={{width:700, height:'auto'}}/></div></td>
-	</tr>
+ <tr>
+     <th>XIAO ESP32C6 indication diagram</th>
+ </tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_556525_Slxs4ARdyuXRrJK-_1711096256?w=9854&h=3367&type=image/png" style={{width:700, height:'auto'}}/></div></td>
+ </tr>
     <tr>
-	    <th>XIAO ESP32C6 Pin List</th>
-	</tr>
+     <th>XIAO ESP32C6 Pin List</th>
+ </tr>
     <tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_318648_dMoXitoaQiq2N3-a_1711678067?w=1486&h=1228" style={{width:1000, height:'auto'}}/></div></td>
-	</tr>
+     <td><div style={{textAlign:'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1Nzc0ODUwMjM3NA_318648_dMoXitoaQiq2N3-a_1711678067?w=1486&h=1228" style={{width:1000, height:'auto'}}/></div></td>
+ </tr>
 </table>
 
-:::tip
-GPIO14 is used to select between using the built-in antenna or an external antenna. Before that, you need to set GPIO3 low level to turn on this function. If GPIO14 is set low level, it uses the built-in antenna; if it set to high level, it uses the external antenna. Default is low level. If you want to set it high, you can refer the code below.
+:::tip RF Switch
+
+The **RF Switch** feature allows you to toggle between the built-in ceramic antenna and an external antenna by configuring `GPIO14`. To enable this function, *you must first set `GPIO3` to a low level*, as this activates the RF switch control.  
+
+- **GPIO14 Low Level (Default Setting)**: The device uses the built-in ceramic antenna.
+- **GPIO14 High Level**: The device switches to the external antenna.  
+
+By default, `GPIO14` is set to a low level, enabling the built-in antenna. To use an external antenna, set `GPIO14` to a high level. Refer to the example code below for guidance on configuring `GPIO3` and `GPIO14` to activate the external antenna:
+
 ```cpp
 void setup() {
-  pinMode(3, OUTPUT);
-  digitalWrite(3, LOW);//turn on this function
+  pinMode(WIFI_ENABLE, OUTPUT); // pinMode(3, OUTPUT);
+  digitalWrite(WIFI_ENABLE, LOW) // digitalWrite(3, LOW); // Activate RF switch control
+
   delay(100);
-  pinMode(14, OUTPUT); 
-  digitalWrite(14, HIGH);//use external antenna
+
+  pinMode(WIFI_ANT_CONFIG, OUTPUT); // pinMode(14, OUTPUT);
+  digitalWrite(WIFI_ANT_CONFIG, HIGH); // digitalWrite(14, HIGH); // Use external antenna
 }
 ```
+
 :::
 
 ## Getting started
@@ -220,15 +230,12 @@ Due to the miniature size of XIAO ESP32C6, please be careful when soldering head
 There are times when we use the wrong program to make XIAO appear to lose ports or not work properly. The specific performance is:
 
 - Connected to computer, but no port number found for XIAO.
-
 - The computer is connected and the port number appears, but the upload program fails.
 
 When you encounter the above two situations, you can try to put XIAO into BootLoader mode, which can solve most of the problems of unrecognized devices and failed uploads. The specific method is:
 
 - **Step 1**. Press and hold the BOOT button on the XIAO ESP32C6 without releasing it.
-
 - **Step 2**. Keep the BOOT button pressed and then connect to the computer via the data cable. Release the BOOT button after connecting to the computer.
-
 - **Step 3**. Upload the **Blink** program to check the operation of the XIAO ESP32C6.
 
 ### Reset
@@ -236,7 +243,6 @@ When you encounter the above two situations, you can try to put XIAO into BootLo
 When the program runs abnormally, you can press Reset once during power-up to let XIAO re-execute the uploaded program.
 
 When you press and hold the BOOT key while powering up and then press the Reset key once, you can also enter BootLoader mode.
-
 
 ### Software Preparation
 
@@ -251,13 +257,12 @@ And the on-board package for XIAO ESP32C6 requires at least version **2.0.8** to
 
 - **Step 1.** Download and Install the stable version of Arduino IDE according to your operating system.
 
-<div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
-</div>
+  <div class="download_arduino_container" style={{textAlign: 'center'}}>
+      <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+      </a>
+  </div>
 
-<br></br>
-
+  <br></br>
 - **Step 2.** Launch the Arduino application.
 - **[Step 3](#add-board).**  Add the XIAO ESP32C6 on-board package to the Arduino IDE and click `OK`.
 - **Step 4.** Close the Arduino IDE and reopen it.
@@ -279,7 +284,6 @@ https://espressif.github.io/arduino-esp32/package_esp32_index.json
 :::note
 Only available if the version of the esp32 board is greater than `3.0.0`.
 :::
-
 
 <div style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/install_board.png" style={{width: 'auto', height: 'auto'}}/></div>
 
@@ -304,13 +308,13 @@ Now enjoy coding ✨.
 Once the program is successfully uploaded, you will see the following output message and you can observe that the orange LED on the right side of the XIAO ESP32C6 is blinking.
 
 <table>
-	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/XIAOC6_flash_firmware.png" style={{width:680, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/XIAOC6-blink.gif" style={{width:400, height:'auto'}}/></div></td>
-	</tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/XIAOC6_flash_firmware.png" style={{width:680, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/XIAOC6-blink.gif" style={{width:400, height:'auto'}}/></div></td>
+ </tr>
 </table>
 
-# Battery Usage
+## Battery Usage
 
 The XIAO ESP32C6 series features a built-in power management chip, allowing it to be powered independently by a battery or to charge the battery through its USB port.
 
@@ -334,6 +338,35 @@ The red light behavior for the XIAO ESP32C6 is as follows:
   - The red light turns off.
 
 :::
+
+## Reading Battery Voltage
+
+To monitor the battery voltage on the XIAO ESP32C6, similar to the [XIAO ESP32C3](/XIAO_ESP32C3_Getting_Started/#check-the-battery-voltage), you'll need to solder a 200k resistor in a 1:2 configuration. This setup reduces the voltage by half, allowing safe monitoring through the A0 analog port.
+
+### Sample Code
+
+The code below initializes the ADC on the A0 port and averages 16 readings to calculate the battery voltage, adjusting for the 1:2 attenuation ratio of the voltage divider.
+
+```cpp
+#include <Arduino.h>
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(A0, INPUT);         // Configure A0 as ADC input
+}
+
+void loop() {
+  uint32_t Vbatt = 0;
+  for(int i = 0; i < 16; i++) {
+    Vbatt += analogReadMilliVolts(A0); // Read and accumulate ADC voltage
+  }
+  float Vbattf = 2 * Vbatt / 16 / 1000.0;     // Adjust for 1:2 divider and convert to volts
+  Serial.println(Vbattf, 3);                  // Output voltage to 3 decimal places
+  delay(1000);                                // Wait for 1 second
+}
+```
+
+This code takes 16 measurements from the ADC, averages them, and then compensates for the voltage divider's 1:2 ratio to output the battery voltage in volts with three decimal places of precision.
 
 ## Deep sleep mode and wake-up
 
@@ -417,8 +450,6 @@ void loop(){
   //This is not going to be called
 }
 ```
-
-
 
 ### Demo2: Deep Sleep with Timer Wake Up
 
@@ -529,6 +560,8 @@ If you want to learn to use more of the deep sleep mode and wake-up functions, y
 
 - **[ZIP]** [Seeed Studio XIAO ESP32C6 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/SeeedStudio_XIAO_ESP32C6_Certification.zip)
 
+- 🔗 **[Kicad]** [Seeed Studio XIAO ESP32C6 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
 ## Course Resources
 
 <div align="middle"><img width="400" src="https://mjrovai.github.io/XIAO_Big_Power_Small_Board-ebook/cover.jpg" /></div>
@@ -540,11 +573,11 @@ If you want to learn to use more of the deep sleep mode and wake-up functions, y
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

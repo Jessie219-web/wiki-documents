@@ -6,7 +6,7 @@ keywords:
 - xiao
 - pin multiple
 image: https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/1-102010551-Seeed-Studio-XIAO-RA4M1.jpg
-side_position: 1
+sidebar_position: 1
 slug: /xiao_ra4m1_pin_multiplexing
 last_update:
   date: 08/15/2024
@@ -161,7 +161,7 @@ If the program runs successfully, you will see the following running effect.
 
 ## Analog
 
-XIAO RA4M1 Development Board  Having up to 14 bit ADC for high-resolution reading of analog sensor values , it can help us to read more accurate values . The analog-to-digital converter(ADC) on an XIAO RA4M1 Development board . By Default , the resolution is set 10-bit , which can be to both 12-bit and 14-bit resolution for improved accuracy on analog readings
+XIAO RA4M1 Development Board  Having up to 14 bit ADC for high-resolution reading of analog sensor values , it can help us to read more accurate val The analog-to-digital converter(ADC) on an XIAO RA4M1 Development board . By Default , the resolution is set 10-bit , which can be to both 12-bit and 14-bit resolution for improved accuracy on analog readings
 
 Detail Datas by ADC accuracy
 - 10-bit :  0~1024
@@ -177,12 +177,12 @@ Next , We will choose two sensors to reflect the characteristics of ADC .
 	    <th>Seeed Studio XIAO RA4M1</th>
       <th>Grove-Variable Color LED</th>
 	    <th>Grove-Rotary Angle Sensor </th>
-	    <th>Grove-Rotary Angle Sensor </th>
+	    <th>Seeed Studio Grove Base for XIAO </th>
 	</tr>
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/2-102010551-Seeed-Studio-XIAO-RA4M1-45font.jpg" style={{width:500, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Variable_Color_LED/img/Variable_Color_LED1.jpg" style={{width:500, height:'auto'}}/></div></td>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Shield_for_Pi_Pico_V1.0/rotary.png" style={{width:500, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Variable_Color_LED/img/Variable_Color_LED1.jpg" style={{width:500, height:'auto'}}/></div></td>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:500, height:'auto'}}/></div></td>
 	</tr>
     <tr>
@@ -306,7 +306,9 @@ void loop() {
 
 ### Usage of Serial1
 
-According to the above XIAO RA4M1 Pin diagrams for specific parameters,we can observe that there are TX pin and RX pin,This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added,So nex,we will use the pins led out by the chip for serial communication
+According to the above XIAO RA4M1 Pin diagrams for specific parameters, we can observe that there are TX pin and RX pin. 
+This is different from serial communication, but the usage is also very similar, except that a few parameters need to be added. 
+So next, we will use the pins led out by the chip for serial communication.
 
 ```c
 
@@ -549,9 +551,28 @@ Overall, this code demonstrates how to use the U8g2 library to control an OLED d
 
 #### Step 1 . Prepare two CAN Bus Breakout Board and XIAO RA4M1 
 #### Step 2 . Insert these two XIAO RA4M1 separately in CAN Bus Breakout Board
-#### Step 3 . Prepare the DuPont line connection . 
+#### Step 3 . Prepare the DuPont line connection
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/36.png" style={{width:400, height:'auto'}}/></div>
+
+### Software Preparation
+
+We provide an [Arduino library for the MCP2515 board](https://github.com/limengdu/Arduino_CAN_BUS_MCP2515).
+
+<div class="github_container" style={{textAlign: 'center'}}>
+    <a class="github_item" href="https://github.com/limengdu/Arduino_CAN_BUS_MCP2515">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Libraries</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
+</div>
+
+<br />
+
+The library includes several examples, including:
+
+- ***OBDII-PIDs*** -  retrieve data from the OBD-II interface
+- ***send*** - send a frame to the CAN bus
+- ***recv*** - receive a frame from the CAN bus
+- ***set_mask_filter_recv*** - receive a frame from the CAN bus with mask and filter settings
 
 ### Software Implementation
 
@@ -636,7 +657,7 @@ void loop()
 }
 
 // END FILE
-
+```
 
 
 **CAN Read Code**

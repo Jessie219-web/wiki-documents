@@ -28,7 +28,7 @@ Throughout this course, we will delve into the usage of SenseCraft AI Platform a
 We will emphasize its graphical interface, which simplifies tasks such as data collection, preprocessing, and feature engineering, as well as selecting appropriate model architectures and training parameters.
 
 <div class="button_tech_support_container">
-<a href="/sensecraft_ai" class="button_edgelab"></a> 
+<a href="https://wiki.seeedstudio.com/sensecraft_ai_main/" class="button_edgelab"></a> 
 </div>
 
 By participating in this course, you will gain the following skills and knowledge:

@@ -118,7 +118,7 @@ Go to Run-->Configure Interpreter, and ensure that the Interpreter tab in the Th
 Click "OK" on the dialog and you should be presented with the Micropython shell at the bottom of the thonny window as shown in the figure below.
 Enter scripy line by line to the Shell to get the flash and sram size:
 ```python
-import pc
+import gc
 gc.mem_free()
 
 import esp

@@ -318,7 +318,7 @@ logger:
 
 <summary>Click here to preview the full code</summary>
 
-```css
+```yml
 # Sets up Bluetooth LE (Only on ESP32) to allow the user
 # to provision wifi credentials to the device.
 esp32_improv:
@@ -360,7 +360,7 @@ text_sensor:
 
 binary_sensor:
   - platform: seeed_mr24hpc1
-    someone_exist:
+    has_target:
       name: "Presence Information"
 
 sensor:
@@ -382,13 +382,13 @@ sensor:
 
 switch:
   - platform: seeed_mr24hpc1
-    underly_open_function:
+    underlying_open_function:
       name: Underlying Open Function Info Output Switch
 
 button:
   - platform: seeed_mr24hpc1
-    reset:
-      name: "Module Reset"
+    restart:
+      name: "Module Restart"
     custom_set_end:
       name: "End Of Custom Mode Settings"
 

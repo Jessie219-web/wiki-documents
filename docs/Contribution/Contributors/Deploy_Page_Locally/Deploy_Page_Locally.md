@@ -30,6 +30,8 @@ git clone {your repository}
 
 Please download the [node.js](https://nodejs.org/en/download/) according to your operating system(Windows, Mac).
 
+Please install the `v20.18.1 (LTS)` version of nodejs, otherwise errors may occur during the installation process.
+
 ### 3. Download Visual Studio Code
 
 Please download the [Visual Studio Code](https://code.visualstudio.com/Download) according to your operating system(Windows, Mac).
@@ -50,7 +52,7 @@ For further information, please check [here](https://classic.yarnpkg.com/lang/en
 yarn
 ```
 
-For people using Windows operating system, please change "Powershall" to "Command Promat" and then execute `yarn`.
+For people using Windows operating system, please change "Powershell" to "Command Prompt(cmd)" and then execute `yarn`.
 
 ### 6. Build the wiki patform locally using Yarn
 

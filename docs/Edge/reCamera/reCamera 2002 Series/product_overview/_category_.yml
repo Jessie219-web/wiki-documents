@@ -1,0 +1,10 @@
+position: 2 # float position is supported
+label: 'Product Overview'
+collapsible: true # make the category collapsible
+collapsed: true # keep the category open by default
+className: recamera_product_overview
+link:
+  type: generated-index
+  slug: recamera_product_overview
+  title: Product Overview of reCamera SG200X
+  description: A detailed product overview provided for reCamera SG200W, which contains information such as hardware overview, interface and peripherals configuration, diagrams, and part lists. This wiki provides comprehensive and in-depth details about the product's physical components, how the various interfaces and peripherals are set up and interact, visual representations in the form of diagrams to aid in understanding the layout and connections, and a list of all the parts that make up the reCamera SG200W, enabling users to have a thorough understanding of the device's structure and functionality.

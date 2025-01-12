@@ -382,7 +382,7 @@ All data on dataset have a 1s length, but the samples recorded in the previous s
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/5.png" style={{width:600, height:'auto'}}/></div>
 
-Once inside de tool, split the data into 1-second records. If necessary, add or remove segments.
+Once inside the tool, split the data into 1-second records. If necessary, add or remove segments.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3_kws/4.png" style={{width:1000, height:'auto'}}/></div>
 

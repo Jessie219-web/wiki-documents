@@ -227,7 +227,6 @@ tube2.setTubeType(TYPE_4,I2C_ADDR_DEFAULT_FOUR);
 - **[ZIP]** [Grove - 0.54" Red Dual Alphanumeric Display Schematic file](https://files.seeedstudio.com/wiki/Grove-0.54-Red-Dual-Alphanumeric-Display/res/Grove-0.54-Red-Dual-Alphanumeric-Display.zip)
 - **[PDF]** [LED Module Datasheet](https://files.seeedstudio.com/wiki/Grove-0.54-Red-Dual-Alphanumeric-Display/res/DIP-LED-2-BETY-14-SEG.pdf)
 - **[PDF]** [HT16K33 Datasheet](https://files.seeedstudio.com/wiki/Grove-0.54-Red-Dual-Alphanumeric-Display/res/HT16K33.pdf)
-- **[PDF]** [MPS MP2155 Datasheet](https://files.seeedstudio.com/wiki/Grove-0.54-Red-Dual-Alphanumeric-Display/res/MPS_MP2155%20datasheetpdf.pdf)
 - **[Library]** [Grove - 0.54" Red Dual Alphanumeric Display Library](https://github.com/Seeed-Studio/Seeed_Alphanumeric_Display_HT16K33)
 
 

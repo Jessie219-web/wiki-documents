@@ -9,7 +9,7 @@ image: https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/GPS_Mod
 slug: /get_start_l76k_gnss
 sidebar_position: 0
 last_update:
-  date: 2024-07-25T09:03:13.513Z
+  date: 2024-10-14
   author: Spencer
 ---
 
@@ -43,46 +43,46 @@ The module comes with a high-performance active GNSS antenna intended to cover G
 
 <div class="table-center">
 <table align="center">
-	<tr>
-	    <th>Item</th>
-	    <th>Detail</th>
-	</tr>
-	<tr>
-	    <th>GNSS bands</th>
-	    <td>GPS L1 C/A: 1575.42MHz<br></br> GLONASS L1: 1602MHz<br></br> BeiDou B1: 1561.098MHz</td>
-	</tr>
-	<tr>
-	    <th>Channels</th>
-	    <td>32 tracking ch/72 acquisition ch</td>
-	</tr>
+ <tr>
+     <th>Item</th>
+     <th>Detail</th>
+ </tr>
+ <tr>
+     <th>GNSS bands</th>
+     <td>GPS L1 C/A: 1575.42MHz<br></br> GLONASS L1: 1602MHz<br></br> BeiDou B1: 1561.098MHz</td>
+ </tr>
+ <tr>
+     <th>Channels</th>
+     <td>32 tracking ch/72 acquisition ch</td>
+ </tr>
   <tr>
-	    <th>TTFF (Time To First Fix)</th>
-	    <td>Cold Starts: 30s(w/o AGNSS), 5.5s(w/ GNSS)<br></br> Hot Starts: 5.5s(w/o AGNSS), 2s(w/ AGNSS)</td>
-	</tr>
+     <th>TTFF (Time To First Fix)</th>
+     <td>Cold Starts: 30s(w/o AGNSS), 5.5s(w/ GNSS)<br></br> Hot Starts: 5.5s(w/o AGNSS), 2s(w/ AGNSS)</td>
+ </tr>
   <tr>
-	    <th>Sensitivity</th>
-	    <td>Auto-aquisition: -148dBm<br></br> Tracking: -162dBm<br></br> Re-acquisition: -160dBm</td>
-	</tr>
+     <th>Sensitivity</th>
+     <td>Auto-aquisition: -148dBm<br></br> Tracking: -162dBm<br></br> Re-acquisition: -160dBm</td>
+ </tr>
   <tr>
-	    <th>Accuracy</th>
-	    <td>Position: 2.0m CEP<br></br> Velocity: 0.1m/s<br></br> Acceleration: 0.1m/s²<br></br> Timing: 30ns</td>
-	</tr>
+     <th>Accuracy</th>
+     <td>Position: 2.0m CEP<br></br> Velocity: 0.1m/s<br></br> Acceleration: 0.1m/s²<br></br> Timing: 30ns</td>
+ </tr>
   <tr>
-	    <th>UART Interface</th>
-	    <td>Baud Rate: 9600~115200bps(9600bps default)<br></br> Update Rate: 1Hz(default), 5Hz(Max.)<br></br> Protocol: NMEA 0183, CASIC proprietary protocol </td>
-	</tr>
+     <th>UART Interface</th>
+     <td>Baud Rate: 9600~115200bps(9600bps default)<br></br> Update Rate: 1Hz(default), 5Hz(Max.)<br></br> Protocol: NMEA 0183, CASIC proprietary protocol </td>
+ </tr>
   <tr>
-	    <th>Antenna</th>
-	    <td>Type: Active Antenna<br></br> Operating Frequency: 1559–1606MHz<br></br> Coaxial Cable: RF1.13 Length=10cm<br></br> Cable Connector: U.FL Plug RA </td>
-	</tr>
+     <th>Antenna</th>
+     <td>Type: Active Antenna<br></br> Operating Frequency: 1559–1606MHz<br></br> Coaxial Cable: RF1.13 Length=10cm<br></br> Cable Connector: U.FL Plug RA </td>
+ </tr>
   <tr>
-	    <th>Current consumption(w/ active antenna)</th>
-	    <td>Auto-aquisition: 41mA<br></br> Tracking: 41mA<br></br> Standby: 360uA </td>
-	</tr>
+     <th>Current consumption(w/ active antenna)</th>
+     <td>Auto-aquisition: 41mA<br></br> Tracking: 41mA<br></br> Standby: 360uA </td>
+ </tr>
   <tr>
-	    <th>Dimension</th>
-	    <td>18mm x 21mm</td>
-	</tr>
+     <th>Dimension</th>
+     <td>18mm x 21mm</td>
+ </tr>
 </table>
 </div>
 
@@ -99,47 +99,47 @@ Before we start, we can refer to the following pictures to understand the pin de
 To fully experience the capabilities of the L76K GNSS Module, we recommend pairing it with a motherboard from our XIAO series. *Any of the following XIAO models* would be compatible for use with the L76K GNSS Module.
 
 <table align="center">
-	<tr>
-		<th>Seeed Studio XIAO SAMD21</th>
-		<th>Seeed Studio XIAO RP2040</th>
-		<th>Seeed Studio XIAO nRF52840 (Sense)</th>
-		<th>Seeed Studio XIAO ESP32C3</th>
-	    <th>Seeed Studio XIAO ESP32S3 (Sense)</th>
-	</tr>
-	<tr>
-		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-preview-1.jpg" style={{width:400, height:'auto'}}/></div></td>
-		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/102010428_Preview-07.jpg" style={{width:500, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/xiaoblesense.jpg" style={{width:500, height:'auto'}}/></div></td>
-		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/xiaoesp32c3.jpg" style={{width:450, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:500, height:'auto'}}/></div></td>
-	</tr>
+ <tr>
+  <th>Seeed Studio XIAO SAMD21</th>
+  <th>Seeed Studio XIAO RP2040</th>
+  <th>Seeed Studio XIAO nRF52840 (Sense)</th>
+  <th>Seeed Studio XIAO ESP32C3</th>
+     <th>Seeed Studio XIAO ESP32S3 (Sense)</th>
+ </tr>
+ <tr>
+  <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-preview-1.jpg" style={{width:400, height:'auto'}}/></div></td>
+  <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/102010428_Preview-07.jpg" style={{width:500, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/xiaoblesense.jpg" style={{width:500, height:'auto'}}/></div></td>
+  <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/xiaoesp32c3.jpg" style={{width:450, height:'auto'}}/></div></td>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:500, height:'auto'}}/></div></td>
+ </tr>
     <tr>
-	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html">
+     <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html">
+      </a>
+  </div></td>
+  <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html">
+      </a>
+  </div></td>
+  <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html">
+      </a>
+  </div></td>
+  <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
+      </a>
+  </div></td>
+     <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+      <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-	</tr>
+      </a>
+  </div></td>
+ </tr>
 </table>
 
 Before using this module on a XIAO motherboard, you need to install the header sockets on the module and plug the active GNSS antenna onto the module. When connecting to the XIAO, please pay special attention to the installation direction of the module, please do not plug it in backwards, otherwise it is likely to burn the module or the XIAO.
@@ -155,31 +155,31 @@ Please pay special attention to the installation direction of the module, please
 To use the L76K GNSS Module for SeeedStudio XIAO, we need to program the XIAO series. The recommended programming tool is the Arduino IDE, and you need to configure the Arduino environment for the XIAO and add the on-board package.
 
 :::tip
-If this is your first time using Arduino, we highly recommend you to refer to [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/).
+If this is your first time using Arduino, we highly recommend you to refer to [Getting Started with Arduino](/Getting_Started_with_Arduino/).
 :::
 
-#### Step 1. Download and Install the stable version of Arduino IDE according to your operating system.
+#### Step 1. Download and Install the stable version of Arduino IDE according to your operating system
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
     <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
     </a>
 </div>
 
-#### Step 2. Launch the Arduino application.
+#### Step 2. Launch the Arduino application
 
-#### Step 3. Configure the Arduino IDE for the XIAO you are using.
+#### Step 3. Configure the Arduino IDE for the XIAO you are using
 
-- If you want to use **Seeed Studio XIAO SAMD21** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)** to finish adding.
+- If you want to use **Seeed Studio XIAO SAMD21** for the later routines, please refer to **[this tutorial](/Seeeduino-XIAO/#software)** to finish adding.
 
-- If you want to use **Seeed Studio XIAO RP2040** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)** to finish adding.
+- If you want to use **Seeed Studio XIAO RP2040** for the later routines, please refer to **[this tutorial](/XIAO-RP2040-with-Arduino/#software-setup)** to finish adding.
 
-- If you want to use **Seeed Studio XIAO nRF52840** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)** to finish adding.
+- If you want to use **Seeed Studio XIAO nRF52840** for the later routines, please refer to **[this tutorial](/XIAO_BLE/#software-setup)** to finish adding.
 
-- If you want to use **Seeed Studio XIAO ESP32C3** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** to finish adding.
+- If you want to use **Seeed Studio XIAO ESP32C3** for the later routines, please refer to **[this tutorial](/XIAO_ESP32C3_Getting_Started#software-setup)** to finish adding.
 
-- If you want to use **Seeed Studio XIAO ESP32S3** for the later routines, please refer to **[this tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
+- If you want to use **Seeed Studio XIAO ESP32S3** for the later routines, please refer to **[this tutorial](/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
 
-#### Step 4. Add the TinyGPSPlus library to Arduino.
+#### Step 4. Add the TinyGPSPlus library to Arduino
 
 First, you need to search and download the latest version **TinyGPSPlus** library in the Arduino IDE.
 
@@ -210,6 +210,12 @@ SoftwareSerial ss(RXPin, TXPin);
 
 void setup() {
   Serial.begin(115200);
+#ifdef ARDUINO_SEEED_XIAO_RP2040
+  pinMode(D10,OUTPUT);
+  digitalWrite(D10,1);
+  pinMode(D0,OUTPUT);
+  digitalWrite(D0,1);
+#endif
   ss.begin(GPSBaud);
 
   Serial.println(F("DeviceExample.ino"));
@@ -345,12 +351,15 @@ struct CASIC_Messages {
   uint8_t checksum; // 0xF0,0xC8, 0x17, 0x08
 } L76KStruct;
 ```
+
 :::
 
 ## Resources
 
+- **PDF**: [L76K GNSS Module for Seeed Studio XIAO Schematic](https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/GPS_Module/L76K/109100021-L76K-GNSS-Module-for-Seeed-Studio-XIAO-Schematic.pdf)
 - **PDF**: [Quectel_L76K_GNSS_协议规范_V1.0](https://raw.githubusercontent.com/Seeed-Projects/Seeed_L76K-GNSS_for_XIAO/fb74b715224e0ac153c3884e578ee8e024ed8946/docs/Quectel_L76K_GNSS_协议规范_V1.0.pdf)
 - **PDF**: [Quectel_L76K_GNSS_Protocol_Specification_V1.1](https://raw.githubusercontent.com/Seeed-Projects/Seeed_L76K-GNSS_for_XIAO/fb74b715224e0ac153c3884e578ee8e024ed8946/docs/Quectel_L76K_GNSS_Protocol_Specification_V1.1.pdf)
+- **GitHub**: [Seeed_L76K-GNSS_for_XIAO](https://github.com/Seeed-Projects/Seeed_L76K-GNSS_for_XIAO)
 
 ## Troubleshooting
 
@@ -375,6 +384,7 @@ digitalWrite(D10,1);
 pinMode(D0,OUTPUT);
 digitalWrite(D0,1);
 ```
+
 </details>
 
 ## Tech Support & Product Discussion
@@ -382,11 +392,11 @@ digitalWrite(D0,1);
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
