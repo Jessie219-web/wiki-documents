@@ -19,17 +19,17 @@ last_update:
 Connect the recamera to your computer using the type-c cable, and go to `http://192.168.42.1/#/system` in your computer's browser, or replace the IP address if you are visiting the device via network. Before upgrading, make sure reCamera has **access to the internet** by checking `ip_address/#/network`.
 
 Click `System` Configuration, and if a new firmware is released, click `Apply` to update/upgrade the device system. The button text would be "Check" if there is no new firware auto detected.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image.png" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image.png" /></div>
 
 Wait for the progress bar to complete.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-1.png" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-1.png" /></div>
 
 Click `Restart` to complete the system update/upgrade. **Refresh the browser** around 30 seconds to reconnect to the device.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-2.png" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-2.png" /></div>
 
 The system will automatically check if there is a new version of firmware that can be updated/upgrade.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-3.png" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-3.png" /></div>
 
 ## OS Version management by command
 

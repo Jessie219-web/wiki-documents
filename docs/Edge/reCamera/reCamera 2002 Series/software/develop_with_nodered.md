@@ -55,7 +55,7 @@ There are two ways to import flow to reCamera:
 Once you add, delete, or change nodes and wires in the workspace, please make sure you click the `Deploy` button in the upper right corner to deploy the newest flow to reCamera. 
 
 ## SSCMA Palette
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/sscma_palette.png" /></div>
+<div align="center"><img width={200} src="https://files.seeedstudio.com/wiki/reCamera/sscma_palette.png" /></div>
 
 `node-red-contrib-sscma` is a Node-RED node component designed to facilitate the quick deployment of AI models through flow-based programming. `sscma` is short for Seeed SenseCraft Model Assistant. This allows for seamless integration of AI model outputs with other devices, enabling smart automation and intelligent workflows.
 
@@ -69,7 +69,7 @@ This palette is installed by default when you install Node-RED. If you want to i
 
 ### Camera Node
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/camera_node.png" /></div>
+<div align="center"><img width={200} src="https://files.seeedstudio.com/wiki/reCamera/camera_node.png" /></div>
 
 This node is used to enable the camera. It can be used to capture the stream of the camera module.
 
@@ -169,7 +169,7 @@ Please also select `sscma` for the client. After selecting, the red triangle wil
 Input: Wire the `camera` node to the `stream` node to enable the streaming.
 
 Output:
-You can then use other applications such as VLC to view the RTSP stream out from reCamera. As an example in the above screenshot, you can use `rtsp://admin:admin@192.168.42.1:554/live` in VLC then you can see the streaming video.
+You can then use other applications such as VLC to view the RTSP stream out from reCamera. As an example in the above screenshot, you can use `rtsp://admin:admin@192.168.42.1:554/live` in VLC then you can see the H.264 streaming video.
 - Video parameter: 1920 * 1800 * 30fps by default.
 - Latency: This is different based on what end applications you are using. E.g, VLC is 500 ms.  
 
