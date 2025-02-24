@@ -1,18 +1,20 @@
 ---
-description: reCamera Getting Started 
-title: Network Connection
+description: Connecting network and some potential troubleshoot
+title: Network Connection and Troubleshoot
 keywords:
   - Edge
   - reCamera
+  - network
+  - network troubleshoot
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /recamera_network_connection
-sidebar_position: 3
+sidebar_position: 5
 last_update:
   date: 09/29/2024
   author: Parker Hu
 ---
 
-# reCamera Network Connection
+# Frequent Ask Questions
 
 If you encounter a situation where the usb-connected device fails to recognize reCamera during the network configuration for reCamera, as well as the problem of network connection failure after configuring the network, please refer to this article. 
 
@@ -22,8 +24,7 @@ It is necessary to modify and configure the computer network environment, includ
 
 ### USB NET setup 
 To use USB networking, we enabled UsbNcm and DHCP by default on the system.
-UsbNcm is driver-free on Linux, macOS, and the latest Windows systems. You can log in to 
-recamera's terminal directly using `ssh recamera@192.168.42.1` ,`passwd = recamera` .
+UsbNcm is driver-free on Linux, macOS, and the latest Windows systems. You can log in to recamera's terminal directly using `ssh recamera@192.168.42.1` ,`passwd = recamera` .
 
 - [Windows](#jump1)
 - [Linux](#jump2)
@@ -90,9 +91,9 @@ No extra setup, just plug in a USB cable. Enter `ifconfig`, and you will see the
 
 Check the usb network adapter in System Settings -> Network. The ip of the device is 192.168.42.1
 
-### Computer network error
+## Computer network error
 
-#### windows
+### windows
 
 If your Windows 10 System computer has network access issues after using the USB network of reCamera.
 Press `win+x` click Control Panel. Select All Control Panel Items -> Network Connections. 
@@ -104,7 +105,7 @@ Right mouse click UsbNcm Host Device. Select `Properties` -> `TCP/IPv4` -> `Prop
 Then your network is back up.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/011.png" /></div>
 
-#### MAC
+### MAC
 
 If your computer is running MacOS. You only need to set the priority of the computer network card UsbNcm network card last
 

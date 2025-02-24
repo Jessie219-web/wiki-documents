@@ -72,7 +72,7 @@ For example, `ls -l /home/recamera` will list all files in the `/home/recamera` 
 
 The first time you use the recamera, you reset the default recamera password, which is also the password used to log in to the terminal.
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/linux_fundamentals/image-1.png" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/linux_fundamentals/image-1.png" /></div>
 
 :::note
 
@@ -121,9 +121,9 @@ Here are some basic commands and their usage:
 ### System Information:
 
 - `top`: Displays real-time system processes and resource usage.
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/linux_fundamentals/image-2.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/linux_fundamentals/image-2.png" /></div>
 - `df`: Displays disk space usage.
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/linux_fundamentals/image-3.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/linux_fundamentals/image-3.png" /></div>
 - `free`: Shows memory usage.
 - `uname -r`: Displays the kernel version.
 
