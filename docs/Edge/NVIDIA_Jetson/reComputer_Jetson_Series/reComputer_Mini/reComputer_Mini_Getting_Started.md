@@ -16,21 +16,27 @@ last_update:
 # Getting Started with reComputer Mini
 
 <!-- change image -->
-<div align="center">
-  <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.jpg"/>  
-</div>
+
 
 reComputer Mini is a tiny AI computer powered by NVIDIA Jetson Orin Nano/Orin NX module,delivering up to 100 TOPS AI performance. It‘s equipped with PCIe port at the bottom to provide rich expansion capabilities, which also can be customized flexibly. The whole system is designed for embedding into autonomous machines such as drones, patrol robots, delivering robots, etc. It can directly occupy 54V DC input, able to be widely used in battery powered systems.
 
+<div align="center">
+  <img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg"/>  
+</div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Mini-optional-accessories.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6InJlY29tcHUiLCJjX3NlYXJjaF9yZXN1bHRfcG9zIjoyLCJjX3RvdGFsX3Jlc3VsdHMiOjg4LCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0ifQ%3D%3D">
+<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+</a></div>
 
 <!-- Buy links -->
 
 ## Features 
 
 - **Brilliant AI Performance for Production:** Achieves up to **100 TOPS** AI performance with low power and latency, built by NVIDIA Orin SoC combining the NVIDIA Ampere™ GPU architecture with 64-bit operating capability, integrated advanced multi-function video and image processing, and NVIDIA Deep Learning Accelerators.
-- **Hand-Size Edge AI Device:** Compact size at **63mm * 95mm * 42mm**, featuring an NVIDIA Jetson Orin NX 16GB module, Mini J401 carrier board, fan and enclosure. Support desktop and wall mounting.
-- **Expandable with Rich I/Os:** Includes up to 7x USB, DP 2.1, 2x CSI, 1x RJ45 for GbE, M.2 Key E, M.2 Key M, dual channel CAN, and GPIO.
-- **Accelerate Solutions to Market:** Pre-installed **JetPack 6.1.1** on 128GB NVMe SSD, Linux OS BSP, supporting Jetson software and leading AI frameworks. 
+- **Hand-Size Edge AI Device:** Compact size at **63mmx95mmx42mm**, featuring an NVIDIA Jetson Orin NX 16GB module, Mini J401 carrier board, fan and enclosure. Support desktop and wall mounting.
+- **Expandable with Rich I/Os:** Includes up to 7x USB, 1x DP 2.1, 2x CSI, 1x RJ45 for GbE, M.2 Key E, M.2 Key M, dual channel CAN, and GPIO with extension board.
+- **Accelerate Solutions to Market:** Pre-installed **JetPack 6.0** on 128GB NVMe SSD, Linux OS BSP, supporting Jetson software and leading AI frameworks. 
 - **Scale to deploy:** support OTA, remote management services powered by Allxon and Balena. 
 - **Flexible Customization:** inlcudes changing accessories modules, logo, and hardware interfaces modification based on reComputer Mini J4012 original design.
 
@@ -212,7 +218,23 @@ reComputer Mini is a tiny AI computer powered by NVIDIA Jetson Orin Nano/Orin NX
 ## Hardware Overview 
 
 <div align="center">
-  <img width ="1000" src="https://files.seeedstudio.com/wiki/recomputer_mini/hardware_overview.png"/>  
+  <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/hardware_overview.png"/>  
+</div>
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/B1.png"/>  
+</div>
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/B2.png"/>  
+</div>
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/B3.png"/>  
+</div>
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/B4.png"/>  
 </div>
 
 
