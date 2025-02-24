@@ -7,7 +7,7 @@ keywords:
   - recamera
   - Operating system
   - version upgrade
-image: https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.png
+image: https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.webp
 slug: /recamera_os_version_control
 sidebar_position: 1
 last_update:

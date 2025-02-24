@@ -6,7 +6,7 @@ keywords:
   - reCamera
   - Node-red
   - nodered
-image: https://files.seeedstudio.com/wiki/reCamera/develop_with_nodered.png
+image: https://files.seeedstudio.com/wiki/reCamera/develop_with_nodered.webp
 slug: /recamera_develop_with_node-red
 sidebar_position: 3
 last_update:

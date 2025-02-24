@@ -10,11 +10,13 @@ const excludedPaths = [
   path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // weekly wiki 的历史目录
   path.join(docsDirectory, 'zh-CN'), // 排除中文文档的目录
   path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
+  path.join(docsDirectory, 'Edge', 'Raspberry_Pi_Devices', 'RpiDevices.md'),
   
 
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'USB_Timeout_during_Flashing.md'), // 排除指定文档
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Get_System_Log_of_reComputer_J30_and_J40.md'),
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'How_to_Upgrade_Software_Packages_for_Jetson.md'),
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'How_to_Upgrade_Software_Packages_for_Jetson.md'), // 排除指定文档
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera 2002 Series', 'recamera_software', 'develop_with_c_cpp.md'),
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera 2002 Series', 'recamera_software', 'linux_fundamentals.md'),
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera 2002 Series', 'ai_model_deployment', 'on_device_model.md'),
 ];
 
 // 递归函数，用于遍历多层文件夹

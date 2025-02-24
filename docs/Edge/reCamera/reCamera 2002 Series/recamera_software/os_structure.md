@@ -6,7 +6,7 @@ keywords:
   - reCamera
   - opereating system
   - OS
-image: https://files.seeedstudio.com/wiki/reCamera/develop_with_nodered.png
+image: https://files.seeedstudio.com/wiki/reCamera/recam_OS_structure.webp
 slug: /recamera_os_structure
 sidebar_position: 2
 last_update:
