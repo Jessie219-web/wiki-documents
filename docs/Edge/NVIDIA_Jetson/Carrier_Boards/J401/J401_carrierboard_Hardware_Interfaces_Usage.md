@@ -11,11 +11,11 @@ last_update:
 ---
 ## Introduction
 
-**[reComputer J401 carrier board](https://www.seeedstudio.com/reComputer-J401-Carrier-Board-for-Jetson-Orin-NX-Orin-Nano-p-5636.html)** supports **NVIDIA Jetson Orin Nano/NX([Orin Nano 4GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-4GB-Module-p-5553.html?___store=retailer)/[Orin Nano 8GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-8GB-Module-p-5551.html)**, **[Orin NX 8GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-8GB-p-5522.html)/[Orin NX 16GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5523.html))** bringing exceptional performance and being engineered to tackle tough edge computing tasks with ease. It's the perfect choice for developing industrial automation systems, building powerful AI applications, and more.
+The **[reComputer J401 carrier board](https://www.seeedstudio.com/reComputer-J401-Carrier-Board-for-Jetson-Orin-NX-Orin-Nano-p-5636.html)** supports **NVIDIA Jetson Orin Nano/NX([Orin Nano 4GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-4GB-Module-p-5553.html?___store=retailer)/[Orin Nano 8GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-8GB-Module-p-5551.html)**, **[Orin NX 8GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-8GB-p-5522.html)/[Orin NX 16GB](https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5523.html))** bringing exceptional performance and being engineered to tackle tough edge computing tasks with ease. It's the perfect choice for developing industrial automation systems, building powerful AI applications, and more.
 
-It features networking capability that is equipped with a **Gigabit Ethernet port** for fast networking. It also comes with four **USB 3.2 Type-A (10Gbps) ports**, one **USB 2.0 Type-C port**, and one **CAN connector** for versatile connectivity options.This extension board has been mounted with one **M.2 Key M 2280** and one **M.2 Key E** slot for ample space for flexible storage and wireless connectivity expansion.
+It features networking capability that is equipped with 1x **Gigabit Ethernet port** for fast networking. It also comes with 4x **USB 3.2 Type-A (10Gbps) ports**, 1x **USB 2.0 Type-C port**, and 1x **CAN connector** for versatile connectivity options. This extension board has been mounted with 1x **M.2 Key M 2280** for SSD card(128GB NVMe 2280 SSD included) and 1x **M.2 Key E** slot for LTE wireless connectivity expansion.
 
-In addition, there are multiple peripherals supported on the board. It can enable users to capture and display high-quality video content with two **15-pin CSI camera connectors** and the **HDMI 2.1 port**. There also includes a **FAN connec260 Pin SODIMMtor** for cooling purposes and one **RTC socket** for reliable timekeeping.
+In addition, there are multiple peripherals supported on the board. It can enable users to capture and display high-quality video content with 2x **15-pin MIPI-CSI** and 1x **HDMI 2.1** connector for camera and display connection. There also includes a **5V PWM FAN header**, one **RTC socket** and **2-pin RTC header**.
 
 The board supports a wide input range of **9-19V DC**, making it flexible to integrate into a variety of computing tasks. It maintains operation in the temperature range from -10°C to 60°C.
 
@@ -25,6 +25,8 @@ The board supports a wide input range of **9-19V DC**, making it flexible to int
 <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401-Carrier-Board-for-Jetson-Orin-NX-Orin-Nano-p-5636.html">
 <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
+
+For more accesorries suggestion, please refer to [Bundle Page of reComputer J401](https://www.seeedstudio.com/reComputer-Classic-Optional-Accessories-NVIDIA-Jetson-Orin-Powered-Edge-AI-Box.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6InJlY29tcHUiLCJjX3NlYXJjaF9yZXN1bHRfcG9zIjoxLCJjX3RvdGFsX3Jlc3VsdHMiOjg4LCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0ifQ%3D%3D).
 
 ## 260 Pin SODIMM
 
@@ -47,6 +49,7 @@ M.2 Key M is a specification for the physical and electrical layout of an M.2 co
 - [256GB NVMe M.2 PCle Gen3x4 2280 Internal SSD](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-256GB-p-5333.html)
 - [512GB NVMe M.2 PCle Gen3x4 2280 Internal SSD](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-512GB-p-5334.html)
 - [1TB NVMe M.2 PCle Gen3x4 2280 Internal SSD](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-1TB-p-5767.html)
+- [2TB NVMe M.2 PCle Gen3x4 2280 Internal SSD](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-2TB-p-6265.html)
 
 ### Connection Overview 
 
@@ -73,7 +76,7 @@ sudo dd if=/home/nvidia/test of=/dev/null bs=1M count=512
 
 ## M.2 Key E
 
-M.2 Key E is a specification for the physical and electrical layout of an M.2 connector that supports wireless communication modules, such as Wi-Fi and Bluetooth cards. The "Key E" designation refers to the specific pin configuration and keying of the M.2 connector, which is optimized for wireless networking devices. M.2 Key E connectors are commonly found on motherboards and other devices that require wireless connectivity options.Here we recommand [Intel wifi/blue tooth](https://www.intel.com/content/www/us/en/products/sku/94150/intel-dual-band-wirelessac-8265/specifications.html) module.
+M.2 Key E is a specification for the physical and electrical layout of an M.2 connector that supports wireless communication modules, such as Wi-Fi and Bluetooth cards. The "Key E" designation refers to the specific pin configuration and keying of the M.2 connector, which is optimized for wireless networking devices. M.2 Key E connectors are commonly found on motherboards and other devices that require wireless connectivity options.Here we recommand [Intel wifi/bluetooth](https://www.intel.com/content/www/us/en/products/sku/94150/intel-dual-band-wirelessac-8265/specifications.html) module.
 
 ### Connection Overview
 
@@ -81,11 +84,11 @@ M.2 Key E is a specification for the physical and electrical layout of an M.2 co
 
 ### Usage
 
-After installing wifi/bluetooth, you can see the wifi/bluetooth icon in the top right corner.
+After installing wifi/bluetooth module, you can see the wifi/bluetooth icon in the top right corner.
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/J401-wifi-bluetooth-test.gif"/></div>
 
-#### Wifi test
+#### Wi-Fi test
 
 ```
 ifconfig
@@ -816,7 +819,7 @@ Connect the J401 with TTL with UART as below:
 
 #### Usage
 
-- **Step 1:** Install [puTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on your windows laptop, and set puTTy as below:
+- **Step 1:** Install [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) on your windows laptop, and set PuTTy as below:
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/J401-windows-uart-set.png"/></div>
 
