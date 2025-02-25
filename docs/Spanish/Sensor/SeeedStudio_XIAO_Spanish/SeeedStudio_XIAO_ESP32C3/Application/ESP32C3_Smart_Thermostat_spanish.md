@@ -50,37 +50,35 @@ Si deseas seguir este tutorial por completo, necesitarás preparar lo siguiente:
   </tbody></table>
 -->
 
-<table style="margin: auto; text-align: center;">  
-  <tbody> 
-    <tr>  
-      <th>Seeed Studio XIAO ESP32C3</th>  
-      <th>Placa de Expansión de Seeed Studio</th>  
-      <th>Dispositivos de Home Assistant <br /> ej. Seeed Studio Home Assistant Yellow</th>  
-    </tr>  
-    <tr>
-      <td><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style="width: 100px; height: auto;"/></td>
-      <td><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style="width: 210px; height: auto;"/></td>
-      <td><img src="https://files.seeedstudio.com/wiki/Home-Assistant/1.png" style="width: 210px; height: auto;"/></td>
+<table align="center">
+  <tbody><tr>
+      <th>Seeed Studio XIAO ESP32C3</th>
+      <th>Seeed Studio Expansion Board</th>
+      <th>Home Assistant Devices <br /> e.g. Seeed Studio Home assistant Yellow</th>
     </tr>
     <tr>
-      <td>
-        <div style="text-align: center;">
-          <a href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html" style="color: white; font-size: 16px; background: #007BFF; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block;">Consigue uno ahora 🖱️</a>
-        </div>
-      </td>
-      <td>
-        <div style="text-align: center;">
-          <a href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html" style="color: white; font-size: 16px; background: #007BFF; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block;">Consigue uno ahora 🖱️</a>
-        </div>
-      </td>
-      <td>
-        <div style="text-align: center;">
-          <a href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-" style="color: white; font-size: 16px; background: #007BFF; padding: 10px 15px; border-radius: 5px; text-decoration: none; display: inline-block;">Consigue uno ahora 🖱️</a>
-        </div>
-      </td>
+      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:100, height:'auto'}}/></div></td>
+      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:210, height:'auto'}}/></div></td>
+      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/Home-Assistant/1.png" style={{width:210, height:'auto'}}/></div></td>
     </tr>
-  </tbody>
-</table>
+    <tr>
+        <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora🖱️</font></span></strong>
+            </a>
+        </div></td>
+        <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Consigue Uno Ahora🖱️</font></span></strong>
+            </a>
+        </div></td>
+        <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Descubre Más 🖱️</font></span></strong>
+            </a>
+        </div></td>
+    </tr>
+  </tbody></table>
 
 
 **Grove Sensors**
