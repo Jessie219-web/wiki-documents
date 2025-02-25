@@ -612,7 +612,7 @@ void loop() {
 
 Después de cargar el programa en uno de los XIAO, si todo funciona correctamente, puedes sacar tu teléfono y usar la aplicación nRF Connect para buscar el dispositivo Bluetooth llamado **XIAOESP32C6_BLE**, conectarlo, y hacer clic en el botón mostrado a continuación. Recibirás la información de los datos del sensor.
 
-<div style="textAlign: 'center'"><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/63.jpg" style="width:300, height:'auto'"/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/63.jpg" style={{width:300, height:'auto'}}/></div>
 
 Aquí encontrarás que la manera en que operamos el software no será exactamente la misma que en el ejemplo anterior, porque, generalmente, cuando enviamos un mensaje de tipo sensor, elegimos usar la propiedad **notify** para garantizar que el mensaje sea eficiente.
 
