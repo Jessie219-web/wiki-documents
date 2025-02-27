@@ -1,14 +1,15 @@
 ---
-description: Hardware Interface
-title: Hardware Interface
+description: This is the overview for features, specifications, hardware interface and partlist.
+title: Hardware and Specs
 keywords:
   - Edge
   - reCamera
+  - Hardware overview
 image: https://files.seeedstudio.com/wiki/reCamera/image.webp
-slug: /recamera_hardware_interface
-# sidebar_position: 1
+slug: /recamera_hardware_and_specs
+sidebar_position: 2
 last_update:
-  date: 11/11/2024
+  date: 02/18/2025
   author: Parker Hu
 ---
 
@@ -211,21 +212,86 @@ interfaces offer the most verstile platform for developers building vision AI sy
 
 
 ## Hardware Overview
-
-<!-- ### Core Board-Core
-
-
-### Sensor Board-S101
-
-
-### Base Board-B101 -->
-
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
 
 
-## Interface Overview
+### [Core Board-C101](https://github.com/litxaohu/OSHW-reCamera-Series/tree/main?tab=readme-ov-file#core-board)
+<!-- 搬运github说明和图 -->
+| Board         | Features                           | Version |
+| ------------- | ---------------------------------- | ------------ |
+| C1_2002w    | - eMMC <br /> - WiFi/BLE module <br /> - Onboard antenna <br /> - External antenna connector| 1.2 |
+| C1_2002       | - eMMC <br /> - Extra SDIO to base board <br /> - Extra UART to base board | 1.2 |
 
-- [Camera](#jump1)
+Top View             |  Bottom View
+:-------------------------:|:-------------------------:
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/C1_2002w_Up.png" /></div>  |  <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/C1_2002w_Bottom.png" /></div>
+
+### [Sensor Board-S101](https://github.com/litxaohu/OSHW-reCamera-Series/tree/main?tab=readme-ov-file#sensor-board)
+<!-- 搬运github说明和图 -->
+
+Top View             |  Bottom View
+:-------------------------:|:-------------------------:
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/S1_ov5647_UP.png" /></div> | <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/S1_ov5647_Bottom.png" /></div>
+
+#### ⚙️ features:
+
+<div>
+
+<table ><tbody>
+<tr >
+    <td >SENSOR</td>
+    <td class="dbon">OV5647</td>
+    <td class="dbon">CMOS SIZE</td>
+    <td class="dbon">1/4 inch</td>
+</tr>
+<tr >
+    <td class="dbon">PIXELS</td>
+    <td class="dbon">5MP</td>
+    <td class="dbon">APERTURE</td>
+    <td class="dbon">F2.4</td>
+</tr>
+<tr >
+    <td >FOCAL LENGTL</td>
+    <td class="dbon">3.89mm</td>
+    <td class="dbon">FIELD OF VIEW</td>
+    <td >72.9°</td>
+</tr>
+<tr >
+    <td >DISTORTION</td>
+    <td >&lt;1.5%</td>
+    <td >DEPTH OF FIELD</td>
+    <td >20cm ~∞</td>
+</tr>
+<tr >
+    <td >IMAGE</td>
+    <td  colspan="3">2592 x 1944 still picture resolution</td>
+</tr>
+<tr >
+    <td >VIDEO</td>
+    <td  colspan="3">1920 x 1080p @30fps, 1280 x 720p @60fps, 640 x 480p @60fps, 640 x 480p @90fps</td>
+</tr></tbody>
+</table>
+</div>
+
+- 4 x LED fill lights
+- 1 x microphone
+- 1 x speaker
+- 3 x LED indicator
+
+### [Base Board-B101](https://github.com/litxaohu/OSHW-reCamera-Series/tree/main?tab=readme-ov-file#base-board)
+<!-- 搬运github说明和图 -->
+Top View             |  Bottom View
+:-------------------------:|:-------------------------:
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/B1_Default_Upper.png" /></div>  |  <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/B1_Default_Bottom.png" /></div>
+
+#### ⚙️ Features:
+
+- 1 x Type-C port for power input and communication.
+- 1 x Single Port Transformer Module for Ethernet communication support.
+- 1 x SD card reader for data storage and exchange.
+
+## Hardware Interface
+
 - [Light](#jump2)
 - [Mic && Speaker](#jump3)
 - [WIFI](#jump4)
@@ -233,43 +299,29 @@ interfaces offer the most verstile platform for developers building vision AI sy
 - [Uart (Debug)](#jump6)
 - [User Button](#jump7)
 
-## <span id="jump1"> Camera </span>
-Regarding the camera call, we have adapted node for recamera, you can get the camera's image data in node-red.
-<br />
-Connect the recamera to your computer using **type-c** and access node-red by visiting `192.168.42.1:1880`. You can also access node-red from your recamera network on port `LocalIP:1880` after the recamera is connected.
-<br />
-After the image configuration, you can get the camera's base64 image data and the RTSP's H.264 image push data.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image.png" /></div>
+### <span id="jump2">Light</span>
 
-By accessing `rtsp://192.168.42.1:554/live` to see the h.264 video stream
+There are 3 indicators on the recamera, **red and blue** light are programmable indicators, and the **green** indicator is the power indicator which is not programmable. **Red** is the status indicator of the CPU and **blue** is the reading status indicator of the system emmc.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-1.png" /></div>
-
-### Flow Export
-```json
-[{"id":"86fe9b81.31c418","type":"http request","z":"fafa85fb.98fd68","name":"","method":"GET","ret":"bin","paytoqs":false,"url":"http://192.168.178.21/tmpfs/snap.jpg?usr=admin&pwd=instar","tls":"","proxy":"","authType":"","x":265,"y":343,"wires":[["4068ec45.05b034"]]},{"id":"54d0ea94.c1b9a4","type":"ui_template","z":"fafa85fb.98fd68","group":"73b331f4.a8bda","name":"Display image","order":1,"width":"6","height":"6","format":"\n<img alt=\"HTTP Snap\" src=\"data:image/jpg;base64,{{msg.payload}}\" />\n","storeOutMessages":true,"fwdInMessages":true,"templateScope":"local","x":575.3645515441895,"y":343.6041603088379,"wires":[[]]},{"id":"4068ec45.05b034","type":"base64","z":"fafa85fb.98fd68","name":"","action":"","property":"payload","x":415,"y":343,"wires":[["54d0ea94.c1b9a4"]]},{"id":"3fa57e6a.6819f2","type":"inject","z":"fafa85fb.98fd68","name":"","topic":"","payload":"","payloadType":"date","repeat":"","crontab":"","once":false,"onceDelay":0.1,"x":115,"y":343,"wires":[["86fe9b81.31c418"]]},{"id":"73b331f4.a8bda","type":"ui_group","z":"","name":"HTTP Snap","tab":"d75e440d.a22678","disp":true,"width":"6","collapse":false},{"id":"d75e440d.a22678","type":"ui_tab","z":"fafa85fb.98fd68","name":"Cameras","icon":"camera_alt","order":2}]
+Example 1: Use linux command change the **red led** brightness to zero
+``` bash
+echo 0 | sudo tee /sys/class/leds/red/brightness
 ```
-## <span id="jump2">Light</span>
 
-There are four indicators on the recamera, three of which are controllable indicators and the **green** indicator is the power indicator. 
-Among them, there are four **white** lights, which are the fill lights of the camera.
-**Red** is the status indicator of the CPU and **blue** is the reading status indicator of the system emmc.
-<br />
-The switch of the fill light and the red and blue indicator lights can be controlled by the following instructions.
+Example 2: completely turn **red light** off
+``` bash
+echo none | sudo tee /sys/class/leds/red/trigger
+```
+
+There are four **white** lights, which are the fill lights of the camera. The switch of the fill lights can be controlled by the following instructions.
 
 ``` bash
 echo 1 > /sys/devices/platform/leds/leds/white/brightness //light on
 echo 0 > /sys/devices/platform/leds/leds/white/brightness //light off
-
-echo 1 > /sys/devices/platform/leds/leds/red/brightness //red indicator
-echo 0 > /sys/devices/platform/leds/leds/red/brightness 
-
-echo 1 > /sys/devices/platform/leds/leds/blue/brightness //blue indicator
-echo 0 > /sys/devices/platform/leds/leds/blue/brightness 
 ```
 
-## <span id="jump3">Mic && Speaker</span>
+### <span id="jump3">Mic && Speaker</span>
 
 The recamera has a microphone and a speaker. You can invoke the microphone and speaker by following the command. The recamera can play audio files in **wav** format.
 
@@ -281,26 +333,24 @@ sudo arecord -D hw:0,0 -r 16000 -f S16_LE -c 1 -d 5 /home/recamera/test.wav //Re
 sudo aplay -D hw:1,0 /home/recamera/test.wav //Playing audio
 ```
 
-## <span id="jump4">WIFI</span>
+## <span id="jump4">Wi-Fi</span>
 
-The wifi of recamera is AP+STA dual mode, which can be used to configure the device 
-network or configure the device in AP mode.
+2002w version of reCamera has the Wi-Fi module in hardware.  The Wi-Fi is AP+STA dual mode, which can be used to configure the device network or configure the device in AP mode.
 
 The **SSID** of wifi in AP mode is: `reCamera_+ the last six bits of MAC`.
-<br />
+
 The **Passwd** of wifi in AP mode is: `12345678`.
-<br />
-The ssid and passwd of the WiFi_AP can be configured in the
- /etc/hostapd_2g4.conf file on the recamera system.
+
+The ssid and passwd of the WiFi_AP can be configured in the `/etc/hostapd_2g4.conf` file on the recamera system.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-2.png" /></div>
 
-The reCamera STA configuration file is in **/etc/wpa_supplicant.conf**, where you configure the WiFi account and password to connect to.
-In STA mode, please connect to WiFi in **5G** band.
+The reCamera STA configuration file is in **/etc/wpa_supplicant.conf**, where you configure the Wi-Fi account and password to connect to.
+In STA mode, please connect to Wi-Fi in **5G** band.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-3.png" /></div>
 
-In the terminal, you can scan and connect to WiFi with the following command:
+In the terminal, you can scan and connect to Wi-Fi with the following command:
 
 ```bash
 wpa_cli -i wlan0 scan                           #Start a scan
@@ -365,7 +415,7 @@ cat /sys/class/gpio/gpio510/value #When the key is pressed, 0 is printed
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-11.png" /></div>
 
 
-## Partlist
+## Part list
 
 | Item | Quantity |
 |--|--|
@@ -373,7 +423,7 @@ cat /sys/class/gpio/gpio510/value #When the key is pressed, 0 is printed
 | USB type-C Cable | x1 |
 | Ethernet Cable | x1 |
 
-//## Accessories List
+<!-- ## Accessories List -->
 
 
 

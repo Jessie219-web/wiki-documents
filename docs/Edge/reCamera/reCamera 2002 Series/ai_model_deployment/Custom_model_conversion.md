@@ -24,7 +24,41 @@ This article introduces how to use reCamera's AI model conversion tool through s
 
 ## Set up the working environment
 
-### Method 1: Local Installation
+### Method 1: Installation in a Docker Image (recommend)
+
+Download the required image from [DockerHub (click here)](https://hub.docker.com/r/sophgo/tpuc_dev) and enter a command similar to the following:
+
+```bash
+docker pull sophgo/tpuc_dev:v3.1
+```
+
+If you are using Docker for the first time, you can run the following commands for installation and configuration (only needed for the first-time setup):
+
+```bash
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+Then create a container in the current directory as follows:
+
+```bash
+docker run --privileged --name MyName -v $PWD:/workspace -it sophgo/tpuc_dev:v3.1
+```
+
+** Replace `"MyName"` with the desired name for your container*
+
+Use `pip` to install `tpu_mlir` inside the Docker container, just like in `Method 1`:
+
+```bash
+pip install tpu_mlir[all]
+```
+
+
+### Method 2: Local Installation
 
 First check whether the current system environment meets:
 
@@ -58,56 +92,68 @@ When the tpu_mlir-{version}.whl file already exists locally, you can also use th
 pip install path/to/tpu_mlir-{version}.whl[all]
 ```
 
-### Method 2: Installation in a Docker Image (for Incompatible Local Environments)
-
-Download the required image from [DockerHub (click here)](https://hub.docker.com/r/sophgo/tpuc_dev) and enter a command similar to the following:
-
-```bash
-docker pull sophgo/tpuc_dev:v3.1
-```
-
-If you are using Docker for the first time, you can run the following commands for installation and configuration (only needed for the first-time setup):
-
-```bash
-sudo apt install docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker
-```
-
-Make sure the installation package is in the current directory, and then create a container in the current directory as follows:
-
-```bash
-docker run --privileged --name MyName -v $PWD:/workspace -it sophgo/tpuc_dev:v3.1
-```
-
-** Replace `"MyName"` with the desired name for your container*
-
-Use `pip` to install `tpu_mlir` in the /workspace directory inside the Docker container, just like in `Method 1`:
-
-```bash
-pip install tpu_mlir[all]
-```
 
 ## Convert and Quantize AI Models to the cvimodel Format
 
+### Preparing the ONNX
 reCamera has already adapted the YOLO series for local inference. Therefore, this section uses `yolo11n.onnx` as an example to demonstrate how to convert an ONNX model to the `cvimodel`.
 **The `cvimodel` is the AI model format used for local inference on reCamera.**
 
 The method for converting and quantizing PyTorch, TFLite, and Caffe models is the same as that in this section.
 
-Here is the download link for yolo11n.onnx. You can click the link to download the model and copy it to your workspace for further use.
+Here is the download link for yolo11n.onnx. You can click the link to download the model and copy it to your `Workspace` for further use.
 
 Download the model:  
-[Download yolo11n.onnx](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESj2_zJM4oxOiv62Hh1XKu8BA9gWPQy6zAGSXWd4VL--9w?e=tagPRA)
+[Download yolo11n.onnx](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESj2_zJM4oxOiv62Hh1XKu8BA9gWPQy6zAGSXWd4VL--9w?e=tagPRA)  
+**This ONNX file can be directly used for the examples in the following sections without the need to modify the IR version or Opset version.**
+:::info
+Currently, ONNX in this wiki is based on **IR version 8 and Opset version 17**. If your ONNX file is converted from an example by Ultralytics after December 2024, it may in subsequent processes due to a higher version.
+:::
 
-After downloading the model, please place it into your `workspace` for the next steps.
+You can view the information of the ONNX file using [Netron](https://netron.app/): 
+<div align="center">
+  <img width="800" src="https://files.seeedstudio.com/wiki/reCamera/ONNX_IR_opset.jpg" />
+</div>
+
+
+**If your ONNX file is higher than IR v8 and Opset v17, , we provide a example here to help you downgrade it.** Firstly, installing `onnx` via pip: 
+```bash
+pip install onnx
+```
+Pull the program for modifying the version of the ONNX file from GitHub:
+```bash
+git clone https://github.com/jjjadand/ONNX_Downgrade.git
+cd ONNX_Downgrade/
+```
+Run the script by providing the input and output model file paths as command-line arguments:
+
+```bash
+python downgrade_onnx.py <input_model_path> <output_model_path> --target_ir_version <IR_version> --target_opset_version <Opset_version>
+```
+- `<input_model_path>`: The path to the original ONNX model you want to downgrade.
+- `<output_model_path>`: The path where the downgraded model will be saved.
+- --target_ir_version `<IR_version>`: Optional. The target IR version to downgrade to. Default is 8.
+- --target_opset_version `<Opset_version>`: Optional. The target Opset version to downgrade to. Default is 17.
+
+For example, using Default Versions (IR v8, Opset v17):
+```bash
+python downgrade_onnx.py model_v12.onnx model_v8.onnx
+```
+This will load `model_v12.onnx`, downgrade it to IR version 8, set opset version 17, validate, and save the new model as `model_v8.onnx`.
+
+Using Custom Versions (IR v9, Opset v11):
+```bash
+python downgrade_onnx.py model_v12.onnx model_v9.onnx --target_ir_version 9 --target_opset_version 11
+```
+This will load `model_v12.onnx`, downgrade it to IR version 9, set opset version 11, validate, and save the new model as `model_v9.onnx`.
+
+<p style={{ fontSize: '1.2em', color: 'yellow' , textAlign: 'left'}}>
+  * To avoid errors, we recommend using ONNX with IR v8 and Opset v17.
+</p>
 
 ### Preparing the Workspace
 
-Create the `model_yolo11n` directory at the same level as `tpu-mlir`, and place both the model file and image files inside the `model_yolo11n` directory. The image files are usually part of the model’s training dataset, used for calibration during the subsequent quantization process.
+Create the `model_yolo11n` directory at the same level as `tpu-mlir`. The image files are usually part of the model’s training dataset, used for calibration during the subsequent quantization process.
 Enter the following command in the terminal:
 
 ```bash
@@ -118,8 +164,20 @@ source ./envsetup.sh
 mkdir model_yolo11n && cd model_yolo11n
 cp -rf ${REGRESSION_PATH}/dataset/COCO2017 .
 cp -rf ${REGRESSION_PATH}/image .
-mkdir workspace && cd workspace
+mkdir Workspace && cd Workspace
 ```
+
+After obtaining a usable ONNX file, place it in the `Workspace` directory you created.The directory structure is as follows: 
+
+```bash
+model_yolo11n
+├── COCO2017
+├── image
+└── Workspace
+    └──yolo11n.onnx
+```
+
+**Subsequent steps will be carried out in your `Workspace`.**
 
 ### ONNX to MLIR
 
@@ -272,12 +330,14 @@ If you want to convert from `mlir` to F16-precision `cvimodel`, you can enter th
 ```bash
 model_deploy \
   --mlir yolo11n.mlir \
+  --quant_input \
   --quantize F16 \
+  --customization_format RGB_PACKED \
   --processor cv181x \
-  --test_input yolo11n_in_f32.npz \
+  --test_input ../image/dog.jpg \
   --test_reference yolo11n_top_outputs.npz \
   --fuse_preprocess \
-  --tolerance 0.99,0.99 \
+  --tolerance 0.99,0.9 \
   --model yolo11n_1684x_f16.cvimodel
 ```
 

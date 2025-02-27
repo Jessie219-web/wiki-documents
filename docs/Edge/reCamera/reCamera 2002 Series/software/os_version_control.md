@@ -1,29 +1,35 @@
 ---
-description: reCamera OS version deployment and rollback guideline
-title: OS Upgrade or Revert Guideline
+description: Version control such as upgrade or rollback
+title: OS Version control
 keywords:
   - Edge
   - reCamera
   - recamera
   - Operating system
-image: https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.png
-slug: /os_upgrade_guideline
+  - version upgrade
+image: https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.webp
+slug: /recamera_os_version_control
+sidebar_position: 1
 last_update:
-  date: 2/11/2024
-  author: Parker Hu
+  date: 2/14/2025
+  author: Parker Hu & Dawn Yao
 ---
 
 # OS Update/Upgrade Guideline with Web
-Connect the recamera to your computer using the type-c cable, and go to `http://192.168.42.1/#/system` in your computer's browser to configure your device's network. Make sure reCamera has access to the internet.
+Connect the recamera to your computer using the type-c cable, and go to `http://192.168.42.1/#/system` in your computer's browser, or replace the IP address if you are visiting the device via network. Before upgrading, make sure reCamera has **access to the internet** by checking `ip_address/#/network`.
 
-Click `System` Configuration, and if a new firmware is released, click `Apply` to update/upgrade the device system.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image.png" /></div>
+Click `System` Configuration, and if a new firmware is released, click `Apply` to update/upgrade the device system. The button text would be "Check" if there is no new firware auto detected.
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image.png" /></div>
+
 Wait for the progress bar to complete.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-1.png" /></div>
-Click `Restart` to complete the system update/upgrade. Refresh the browser around 30 seconds to reconnect to the device.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-2.png" /></div>
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-1.png" /></div>
+
+Click `Restart` to complete the system update/upgrade. **Refresh the browser** around 30 seconds to reconnect to the device.
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-2.png" /></div>
+
 The system will automatically check if there is a new version of firmware that can be updated/upgrade.
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-3.png" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-3.png" /></div>
 
 ## OS Version management by command
 
@@ -54,9 +60,12 @@ If you are developing OS and you have your own branch in github, you can also up
 /mnt/system/upgrade.sh start
 ```
 
-### Device Management by Local Package
-You can also update/upgrade the firmware manually using the local ota package. The ota firmwares can be [downloaded here](https://github.com/Seeed-Studio/reCamera-OS/releases/). Use tools like scp to 
-
+### Device management by local package
+You can also update/upgrade the firmware manually using the local ota package. The ota firmwares can be [downloaded here](https://github.com/Seeed-Studio/reCamera-OS/releases/). Use tools like scp to transfer the files to reCamera.
+```bash
+scp sg2002_reCamera_0.1.3_emmc_ota.zip recamera@ip_address
+```
+Then use the bash to deploy.
 ```bash
 /mnt/system/upgrade.sh start sg2002_reCamera_0.1.3_emmc_ota.zip
 ```
@@ -64,8 +73,8 @@ You can also update/upgrade the firmware manually using the local ota package. T
 If you don't have enough permissions to dump files into recamera, you can can change system files to be readable or writable by typing `rootfs_rw on/off`.
 :::
 
-Manually restore factory Settings.
-
+### Manually restore factory Settings.
+This command can restore reCamera to facotry settings. If you use this, all of your user data will be removed such as Node-RED flow and local storage.
 ```bash
 /mnt/system/upgrade.sh recovery
 ```

@@ -8,7 +8,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /raspberry-pi-devices
 last_update:
-  date: 2/17/2023
+  date: 2/17/2025
   author: Kasun Thushara
 ---
 

@@ -92,7 +92,7 @@ In addition to sensors and network modules, the Grove ecosystem offers a variety
 - [Seeed Barometer Selection Guide](https://wiki.seeedstudio.com/Barometer-Selection-Guide/)
 - [Seeed Biomedicine Selection Guide](https://wiki.seeedstudio.com/Sensor_biomedicine/)
 - [Seeed Distance Selection Guide](https://wiki.seeedstudio.com/Sensor_distance/)
-- [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Sensor_gas/)
+- [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)
 - [Seeed Light Sensor Selection Guide](https://wiki.seeedstudio.com/Sensor_light/)
 - [Seeed Relay Selection Guide](https://wiki.seeedstudio.com/Seeed_Relay_Page/)
 - [Seeed Sound Selection Guide](https://wiki.seeedstudio.com/Sensor_sound/)
