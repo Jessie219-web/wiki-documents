@@ -632,6 +632,9 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 
 - **[ZIP]** [Seeed Studio XIAO Plus Base without botton pad lead out](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_without_botton_pad_lead_out_V1.0.zip)
 
+- **[Kicad]** [Seeed Studio XIAO nRF52840 (Sense) Plus FootPrint](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Plus-SMD.kicad_mod)
+
+
 ## Course Resources
 
 <div align="middle"><img width="400" src="https://mjrovai.github.io/XIAO_Big_Power_Small_Board-ebook/cover.jpg" /></div>

@@ -312,7 +312,7 @@ import TabItem from '@theme/TabItem';
     </thead>
     <tbody>
       <tr>
-        <td rowSpan={3}>reServer Industrial J4012</td>
+        <td rowSpan={4}>reServer Industrial J4012</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -321,6 +321,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaRzlOF50wRDvR-1NIgs61YBKz-py02JpUSoa2xKw8i0YQ?e=Lg5LgL" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
@@ -344,7 +354,7 @@ import TabItem from '@theme/TabItem';
         </td>
       </tr>
       <tr>
-        <td rowSpan={3}>reServer Industrial J4011</td>
+        <td rowSpan={4}>reServer Industrial J4011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -353,6 +363,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ES3YbJVFEWBMjaDiE49HNIwB99DwjtfX4QUl3j9Y2eG5KA?e=uBlimq" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
@@ -378,7 +398,7 @@ import TabItem from '@theme/TabItem';
         </td>
       </tr>
       <tr>
-        <td rowSpan={3}>reServer Industrial J3011</td>
+        <td rowSpan={4}>reServer Industrial J3011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -387,6 +407,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERyNbY0Uv3FDpjaziT2Ni3QBZJvs-v5gQ1RXcYwH4x-UxQ?e=jlBd3I" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
@@ -411,7 +441,7 @@ import TabItem from '@theme/TabItem';
         </td>
       </tr>
       <tr>
-        <td rowSpan={3}>reServer Industrial J3010</td>
+        <td rowSpan={4}>reServer Industrial J3010</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -419,6 +449,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQwZP5Sc6YZDrhcE6BFeMjoBVVq5BLwhT9qXhRKzk8_oyA?e=oSzcOc" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
