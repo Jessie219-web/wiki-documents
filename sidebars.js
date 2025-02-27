@@ -3393,6 +3393,18 @@ const sidebars = {
 
             ],
           },
+          {
+            type: 'category',
+            label: 'reComputer R1100',
+            collapsed: true,
+            collapsible: true,
+            items: [
+                  'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/reComputer_R1100',
+                  'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_configure_system',
+                  'Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/recomputer_r1100_assembly_guide',
+            ],
+          },
+
         ],
       },
 
