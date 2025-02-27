@@ -534,7 +534,7 @@ These slots provide flexible expansion options for various wireless communicatio
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/reset.PNG" style={{width:200, height:'auto'}}/></div>
 
 
-The **reComputer R1100** features a **Mini Push Button Switch** located within the reset hole. By pressing this button with a thin object, users can **reset the CM4**.  
+The reComputer R1100 features a **Mini Push Button Switch** located within the reset hole. By pressing this button with a thin object, users can **reset the CM4**.  
 
 - When this pin is **high**, it indicates that the **CM4 has started**.  
 - When this pin is **driven low**, it **resets the module**.
