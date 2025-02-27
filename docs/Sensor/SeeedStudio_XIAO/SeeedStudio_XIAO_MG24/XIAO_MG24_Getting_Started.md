@@ -502,6 +502,121 @@ void loop()
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/100.png" style={{width:1000, height:'auto'}}/></div>
 
+### Preventing XIAO MG24 from Bricking During Deep Sleep
+
+The **XIAO MG24** is a powerful microcontroller board from Seeed Studio, but users have reported issues where the device becomes unresponsive ("bricked") after entering Deep Sleep mode. This tutorial explains the cause of the problem, provides a detailed recovery method, and offers preventive measures to avoid bricking your XIAO MG24.
+
+
+The XIAO MG24 enters a **Deep Sleep mode** (EM4) to conserve power, but in some cases, it fails to wake up properly, preventing new sketches from being uploaded. Unlike other XIAO boards, the MG24 does not have a dedicated **BOOT button** or a documented method to enter boot mode, making recovery challenging.
+
+
+#### Preventive Measures
+
+To avoid bricking your XIAO MG24 while using Deep Sleep mode, follow these steps:
+
+1. Use the Escape Pin (PC0)
+
+The XIAO MG24 has a built-in **escape mechanism** to prevent bricking. If **PC0** is pulled **LOW** during reset, the device enters an infinite loop, allowing you to upload a new sketch.  
+- Connect **PC0** to **GND** before resetting the device.  
+- After resetting, upload your sketch while the device is in the loop.  
+
+2. Modify Your Sketch
+Add the following code to your sketch to detect a user switch and enter an infinite loop if pressed. This allows you to upload a new sketch while the device is looping:
+
+```cpp
+#define USER_SW  PC3   // Example pin for user switch
+
+void setup() {
+  // Other setup code...
+
+  pinMode(USER_SW, INPUT_PULLUP);
+  if (digitalRead(USER_SW) == LOW) {
+    Serial.println("Enable to upload new sketch");
+    while (true) {
+      digitalWrite(LED_BUILTIN, LOW);
+      delay(50);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(50);
+    }
+  }
+}
+```
+
+3. Avoid Unnecessary Flash Sleep
+
+Ensure that your sketch does not put the flash memory into sleep mode (`Deep Power Down`) unless absolutely necessary. This can prevent issues with uploading new sketches.
+
+#### Acknowledgments
+Special thanks to the **Seeed Studio community** for their valuable contributions and solutions to this issue. The recovery methods and preventive measures discussed in this tutorial were developed based on insights from community members like **[msfujino](https://forum.seeedstudio.com/u/msfujino)** and **[PJ_Glasso](https://forum.seeedstudio.com/u/PJ_Glasso)**.  
+
+For more details and discussions, visit the original forum thread:  
+[DeepSleep bricks XIAO_MG24 - Seeed Studio Forum](https://forum.seeedstudio.com/t/deepsleep-bricks-xiao-mg24/284889)
+
+## Unbricking
+
+The XIAO MG24 is currently the only XIAO model equipped with a serial port chip. Unlike other XIAO models, it does not have a BOOT button or a BOOT recovery method. This design oversight can cause issues when the device enters sleep mode or encounters software anomalies, making it impossible to upload a program via the serial port. To address this, we’ve provided a method to wake up the serial port and restore functionality.
+
+### Solution for Windows
+
+1. **Download and Extract the Package**  
+   - Download the provided ZIP file.
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/XIAO_MG24/xiao_mg24_flash_erase_windows.zip">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Download the ZIP 🖱️</font></span></strong>
+    </a>
+</div><br />
+   - Extract the contents to a folder on your computer.
+
+2. **Connect the XIAO MG24**  
+   - Use a USB cable to connect the unresponsive XIAO MG24 to your computer.
+
+3. **Run the Script**  
+   - Open the extracted folder and locate the script `flash_erase.bat`.  
+   - Double-click the script to run it.  
+   - The script will erase the flash memory and reset the device.
+
+4. **Verify Recovery**  
+   - After the script completes, the XIAO MG24 should be restored and ready for use.
+
+### Solution for macOS
+
+1. **Download and Extract the Package**  
+   - Download the provided ZIP file (link will be added here).
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/XIAO_MG24/xiao_mg24_flash_erase_macos.zip">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Download the ZIP 🖱️</font></span></strong>
+    </a>
+</div><br />
+   - Extract the contents to a folder on your computer.
+
+2. **Connect the XIAO MG24**  
+   - Use a USB cable to connect the unresponsive XIAO MG24 to your computer.
+
+3. **Allow Terminal Access**  
+   - Open **System Preferences** > **Security & Privacy** > **Privacy**.  
+   - Under **Accessibility**, ensure that **Terminal** is allowed to control your computer.  
+   - If Terminal is not listed, click the **+** button to add it manually.
+
+4. **Run the Script**  
+   - Open **Terminal**.  
+   - Navigate to the extracted folder using the `cd` command. For example:  
+     ```bash
+     cd /path/to/extracted/folder
+     ```  
+   - Run the script `xiao_mg24_erase.sh` using the following command:  
+     ```bash
+     ./xiao_mg24_erase.sh
+     ```  
+   - The script will use OpenOCD to erase the flash memory and reset the device.  
+
+5. **Verify Recovery**  
+   - After the script completes, the XIAO MG24 should be restored and ready for use.
+
+:::note
+- If macOS fails to recognize OpenOCD, ensure OpenOCD is installed and the correct path is used in the script.  
+- The scripts provided are designed specifically for the XIAO MG24 and should not be used with other XIAO models.  
+:::
+
 ## Resources
 
 ### For Seeed Studio XIAO MG24 Sense

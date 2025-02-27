@@ -8,12 +8,12 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /raspberry-pi-devices
 last_update:
-  date: 5/8/2023
+  date: 2/17/2025
   author: Kasun Thushara
 ---
 
 
-Welcome to the cutting-edge realm of Raspberry Pi-powered devices at Edge Solution. Here, we delve into the innovative solutions crafted by Seeed Studio for edge computing, specifically tailored for Raspberry Pi CM4 customizable devices such as Human-Machine Interface (HMI) units and versatile edge controllers. Join us on a journey through the intricate landscape of these powerful devices, designed to empower your projects with seamless and efficient edge computing capabilities.
+Welcome to the cutting-edge world of Raspberry Pi-powered devices at Edge Solution. Here, we explore the innovative solutions crafted by Seeed Studio for edge computing, specifically tailored for Raspberry Pi CM4 and Raspberry Pi 5. These customizable devices include Human-Machine Interface (HMI) units, versatile edge controllers, and AI suite boxes. Join us on a journey through the intricate landscape of these powerful devices, designed to enhance your projects with seamless and efficient edge computing capabilities.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/banner.png" style={{width:1000, height:'auto'}}/></div> 
 
@@ -57,6 +57,15 @@ All-in-one industrial edge computing controllers based on Raspberry Pi. High-sca
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/Edge_Box/EdgeBox-RPi-200_Edge_Computing_Controller_User_Manual.pdf"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div>
 
+## AI Box 
+
+### reComputer AI R2000 
+
+The reComputer AI R2000 is a powerful Edge AI computer built on the Raspberry Pi 5, featuring a quad-core Cortex-A76 CPU, 8GB RAM, and M.2 SSD support. With a Hailo-8 AI accelerator delivering 26 TOPS, it enables real-time, low-latency AI inferencing. It offers HDMI 4K, USB 3.0, Ethernet, Wi-Fi, and Bluetooth 5.0 for seamless connectivity. Ideal for AI-powered video analytics, machine vision, and edge computing, it brings high-efficiency AI to the edge.
+
+<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:800, height:'auto'}}/></div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/r2000_series_getting_start/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Learn More</font></span></strong></a></div>
 
 <br />
 Seeed Studio has been serving the Pi® Community since 2013 and took the lead to join the approved reseller and design partner. Our range of Raspberry Pi® powered edge devices, including HMI, edge controllers, and routers, has been successfully deployed in various industries such as energy management, automation, Industrial 4.0, smart buildings, and manufacturing. We are proud of the widespread adoption and positive feedback we have received, which has instilled us with great confidence in our products. Check our Seeed Studio Raspberry Pi® Success Stories. 

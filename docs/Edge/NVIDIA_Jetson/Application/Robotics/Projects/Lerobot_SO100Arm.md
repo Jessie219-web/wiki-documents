@@ -100,6 +100,12 @@ The 3D printed parts and table clamps are not included in the product. However, 
 
   [L. Evaluate your policy](https://wiki.seeedstudio.com/lerobot_so100m/#evaluate-your-policy)
 
+:::caution
+
+On February 13, 2025, we fully updated the algorithms in the GitHub repository following the official guidelines of Huggingface. These algorithms are now compatible with and adapted to the Pi0 Vision-Action Large Model. Previous users are required to reinstall the Lerobot environment and re - calibrate and initialize each servo. 
+
+:::
+
 ## 3D Printing Guide
 
 A variety of 3D printers are acceptable to print the parts necessary of the follower and leader arm. Follow the steps below to ensure a good print.
@@ -119,7 +125,9 @@ A variety of 3D printers are acceptable to print the parts necessary of the foll
     - [Print_Follower_SO_ARM100_08_UP_Prusa.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Follower/Print_Follower_SO_ARM100_08k_UP_Prusa.STL)
     - [Print_Leader_SO_ARM100_08_UP_Prusa.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Leader/Print_Leader_SO_ARM100_08k_UP_Prusa.STL)
 
-For the convenience of downloading, we have already packaged all the files on the [Makerworld platform](https://makerworld.com/zh/models/908660), including the Table Clamps.
+There will be certain precision errors in the printed parts, which may make disassembly and assembly rather difficult. You can use a grinding machine to polish the interior.
+
+For easier download, we provide the optimized 3D model of Lerobot to [Makerworld platform](https://makerworld.com/zh/models/908660), including the Table Clamps.
 
 ## Install LeRobot
 
@@ -140,6 +148,7 @@ source ~/.bashrc
 Or, For Windows Linux:
 ```bash
 mkdir -p ~/miniconda3
+cd miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
@@ -156,7 +165,7 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 3. Clone Lerobot:
 
 ```bash
-git clone https://github.com/huggingface/lerobot.git ~/lerobot
+git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 ```
 
 4. Install LeRobot with dependencies for the feetech motors:
@@ -172,6 +181,20 @@ conda install -y -c conda-forge ffmpeg
 pip uninstall -y opencv-python
 conda install -y -c conda-forge "opencv>=4.10.0"
 ```
+
+5. Check Pytorch and Torchvision
+
+Since installing the lerobot environment via pip will uninstall the original Pytorch and Torchvision and install the CPU versions of Pytorch and Torchvision, you need to perform a check in Python.
+
+```python
+import torch
+print(torch.cuda.is_available())
+```
+
+If the printed result is False, you need to reinstall Pytorch and Torchvision according to the [official website tutorial](https://pytorch.org/index.html).
+
+If you are using a Jetson device, install Pytorch and Torchvision according to [this tutorial](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson).
+
 
 ## Configure the motors
 

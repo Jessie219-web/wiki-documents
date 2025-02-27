@@ -68,7 +68,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
 | 手臂的3D打印部件 | 1 | ❌ |
 
 
-> 3D打印部件和桌面夹具未包含在产品中。然而，我们提供了详细的[3D打印STL文件](https://makerworld.com/zh/models/908660)。
+> 3D打印部件和桌面夹具未包含在产品中。然而，我们提供了优化后的[3D打印STL文件](https://makerworld.com/zh/models/908660)。
 
 # 步骤目录
 
@@ -85,13 +85,31 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
   - [K. 评估](https://wiki.seeedstudio.com/cn/lerobot_so100m/#评估)
 
 
+:::caution
+
+2025年2月13日我们已经跟随Huggingface官方全面更新了github仓库上的算法，兼容并适配和Pi0视觉动作大模型，此前的用户需要重新安装Lerobot环境，并且需要重新对每个舵机进行校准初始化工作。
+
+:::
+
+# 初始系统环境
+For Ubuntu X86:
+  - Ubuntu 20.04/Ubuntu 22.04
+  - CUDA 11.5+
+  - Python 3.10
+  - Troch 2.5.0+
+
+For Jetson Orin:
+  - Jetson Jetpack 5.1.3+
+  - Python 3.10
+  - Torch 2.5.0+
+
 ## 3D打印指南
 
 各种3D打印机均可用于打印从动和主动手臂所需的部件。按照以下步骤确保良好的打印质量：
 
 1. **选择打印机**: 提供的STL文件可直接在多种FDM打印机上打印。以下为测试和建议设置，其他设置也可能有效：
     - 材料: PLA
-    - 喷嘴直径和精度: 0.4mm喷嘴直径，层高0.2mm；或0.6mm喷嘴直径，层高0.4mm。
+    - 喷嘴直径和精度: 0.2mm喷嘴直径，层高0.2mm；或0.6mm喷嘴直径，层高0.4mm。
     - 填充密度: 13%
 
 2. **获取3D打印文件**: 从动和主动手臂的所有部件均包含在单个文件中，并以Z轴向上正确定向，最小化支撑需求。
@@ -104,25 +122,32 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
     - [Print_Follower_SO_ARM100_08_UP_Prusa.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Follower/Print_Follower_SO_ARM100_08k_UP_Prusa.STL)
     - [Print_Leader_SO_ARM100_08_UP_Prusa.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Leader/Print_Leader_SO_ARM100_08k_UP_Prusa.STL)
 
-    为方便下载，我们已将所有文件打包至[Makerworld平台](https://makerworld.com/zh/models/908660)，包括桌面夹具的文件。
+    打印件会有一定的精度误差，导致拆装比较困难，可以通过打磨机对内部进行打磨
+
+    为方便下载，我们将优化后的Lerobot三维模型提供至[Makerworld平台](https://makerworld.com/zh/models/908660)，包括桌面夹具的文件。
 
 ## 安装Lerobot
 
 需要根据自身的CUDA安装好Pytorch、Torchvision等环境，接着在你的reComputer Nvidia Jetson上：
 1. 安装Miniconda：
-	```bash
-	mkdir -p ~/miniconda3
-	cd ~/miniconda3
-	wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
-	chmod +x Miniconda3-latest-Linux-aarch64.sh
-	./Miniconda3-latest-Linux-aarch64.sh
-	```
+
+```bash
+mkdir -p ~/miniconda3
+cd ~/miniconda3
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
+chmod +x Miniconda3-latest-Linux-aarch64.sh
+./Miniconda3-latest-Linux-aarch64.sh
+```
+
 重新启动Shell或执行 `source ~/.bashrc`
+
+
 
 如果是Windows上的Ubuntu系统：
 
-```
+```bash
 mkdir -p ~/miniconda3
+cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
@@ -130,26 +155,39 @@ source ~/miniconda3/bin/activate
 conda init --all
 ```
 
-3. 创建并激活一个新的conda环境：
-	```bash 
-	conda create -y -n lerobot python=3.10 && conda activate lerobot
-	```
+2. 创建并激活一个新的conda环境：
+```bash 
+conda create -y -n lerobot python=3.10 && conda activate lerobot
+```
 
-4. 克隆Lerobot仓库：
-	```bash
-	git clone https://github.com/huggingface/lerobot.git ~/lerobot
-	```
+3. 克隆Lerobot仓库：
+```bash
+git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
+```
 
-5. 安装Lerobot及依赖：
-	```bash
-	cd ~/lerobot && pip install -e ".[feetech]"
-	```
-	Linux用户需额外安装录制数据集的依赖项：
-	```bash
-	conda install -y -c conda-forge ffmpeg
-	pip uninstall -y opencv-python
-	conda install -y -c conda-forge "opencv>=4.10.0"
-	```
+4. 安装Lerobot及依赖：
+```bash
+cd ~/lerobot && pip install -e ".[feetech]"
+```
+Linux用户需额外安装录制数据集的依赖项：
+```bash
+conda install -y -c conda-forge ffmpeg
+pip uninstall -y opencv-python
+conda install -y -c conda-forge "opencv>=4.10.0"
+```
+
+5. 检查Pytorch、Torchvision
+  由于通过pip安装lerobot环境会卸载原始pytorch和torchvision，并安装CPU版本的pytorch和torchvision，需要在python中进行检查
+
+```python
+import torch
+print(torch.cuda.is_available())
+```
+
+如果打印结果为False，则需要根据[官网教程重新安装Pytorch和Torchvision](https://pytorch.org/index.html)
+
+如果是Jetson，根据[此教程安装Pytorch和Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)
+
 
 ## 校准舵机并组装机械臂
 
