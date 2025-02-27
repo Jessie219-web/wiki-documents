@@ -500,6 +500,7 @@ The standard version of the reComputer R1100 does not include a built-in 4G modu
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/SSD.PNG" style={{width:600, height:'auto'}}/></div>
  
+
 The reComputer R1100 is equipped with an **NVMe M.2 2280 SSD slot**, supporting storage capacities of **128GB, 256GB, 512GB, and 1TB**. This slot enables high-speed storage expansion, allowing users to enhance both the **performance** and **capacity** of their system.  
 
 **Note:**  
