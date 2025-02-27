@@ -623,7 +623,7 @@ The **reComputer R1100** mainboard has **two Mini-PCIe slots** with the followin
   - **LoRa® module** (USB & SPI protocol)  
   - **Zigbee module** (USB protocol)  
 
-:::notes
+:::note
  **4G and LoRa® modules cannot be used at the same time.**  
  **You cannot plug in two LoRa® modules on the board.**  
 
