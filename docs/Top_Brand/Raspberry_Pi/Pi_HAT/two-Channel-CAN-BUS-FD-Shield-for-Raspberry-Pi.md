@@ -133,7 +133,7 @@ Also we need to two [male to male jumper](https://www.seeedstudio.com/Breadboard
 
 - **Step 4**. Power the Raspberry Pi and Seeeduino.
 
-![](https://github.com/Seeed-Studio/pi-hats/raw/master/images/can_hat_and_arduinno_hardware.jpg)
+![](https://files.seeedstudio.com/pi_hat_hardware_connection.jpg)
 
 ### Software
 
