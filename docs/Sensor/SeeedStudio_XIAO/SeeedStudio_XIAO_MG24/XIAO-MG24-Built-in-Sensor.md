@@ -556,18 +556,15 @@ If you want more sample code , Please Click : -> **"Example -> Seeed Arduino Mic
 
 ## XIAO MG24 Sense Microphone(Silicon Labs Demo)
 
+:::tip
+We need to download the latest on-board package (2.3.0) in order to find the latest official code in the example
+:::
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/mg24download.jpg" style={{width:400, height:'auto'}}/></div>
 
 ### Software Preparation
 
-:::tip
-The current version requires users to install the library manually. It is planned that this functionality will be integrated directly into the new version, so that users can find the application in the sample programs through the automatic update function.
-:::
-
-- 📄 **[ZIP]** [silabs_arduino_core-2.2.0](https://files.seeedstudio.com/wiki/mg24_mic/silabs_arduino_core-2.2.0-20241217.zip)
-
-Replace the duplicate files in the 2.2.0 directory by following the file instructions in the image below
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/save_file.jpg" style={{width:500, height:'auto'}}/></div>
-
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_mic/mg24mic.jpg" style={{width:500, height:'auto'}}/></div>
 
 ### Code Implementation
 

@@ -66,6 +66,12 @@ Choose "Yes" to enable PCIe Gen 3 mode.
 
 Afterward, click "Finish" to exit.
 
+Edit `/boot/firmware/config.txt`, append the following line at the end of the file.
+
+```
+dtoverlay=pciex1-compat-pi5,no-mip
+```
+
 ### Step 2: Install Hailo PCIe Driver
 
 Install the dkms package. This package is required to install the Hailo PCIe driver.
@@ -79,13 +85,14 @@ Get Hailo PCIe Driver from [GitHub](https://github.com/hailo-ai/hailort-drivers)
 
 ```bash
 $ git clone --depth 1 https://github.com/hailo-ai/hailort-drivers
+$ git checkout 24e7ff2fb58fab7029024c1a1d3f2d1914f56d7b
 $ cd hailort-drivers/linux/pcie
 ```
 
 Then, install the Hailo PCIe driver.
 
 ```bash
-$ sudo make dkms_install
+$ sudo make install_dkms
 ```
 
 After installation, download firmware for Hailo and copy it to the `/lib/firmware/hailo` directory.
@@ -94,7 +101,7 @@ After installation, download firmware for Hailo and copy it to the `/lib/firmwar
 $ cd ../..
 $ ./download_firmware.sh
 $ sudo mkdir -p /lib/firmware/hailo
-$ sudo cp *.bin /lib/firmware/hailo
+$ sudo cp hailo8_fw*.bin /lib/firmware/hailo/hailo8_fw.bin
 ```
 
 To avoid PCIe max_desc_page_size issue, we also need to create a rule in `/etc/modprobe.d/hailo_pci.conf` with the following content.
@@ -112,7 +119,7 @@ $ sudo reboot
 After the system is restarted, the Hailo PCIe driver is installed successfully. The `/dev/hailo0` device will be created. Check the device by running the following command.
 
 ```bash
-$ sudo ls /dev/hailo*
+$ ls /dev/hailo*
 /dev/hailo0
 ```
 
@@ -147,10 +154,10 @@ In this part, we assume you have your camera set up and ready to stream with RTS
 
 1. **Pull the Frigate Image:**
 
-    Go to [Package frigate](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/versions), choose one image with `-h8l` suffix. In this example, we choose `ghcr.io/blakeblackshear/frigate:b265b6b-h8l`.
+    Go to [Package frigate](https://github.com/blakeblackshear/frigate/pkgs/container/frigate/versions), choose one image with `-h8l` suffix. In this example, we choose `ghcr.io/blakeblackshear/frigate:0.15.0-rc2-h8l`.
 
     ```bash
-    $ docker pull ghcr.io/blakeblackshear/frigate:b265b6b-h8l
+    $ docker pull ghcr.io/blakeblackshear/frigate:0.15.0-rc2-h8l
     ```
 
 2. **Create Docker Compose File:**
@@ -163,7 +170,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
             container_name: frigate-hailo
             privileged: true
             restart: unless-stopped
-            image: ghcr.io/blakeblackshear/frigate:b265b6b-h8l
+            image: ghcr.io/blakeblackshear/frigate:0.15.0-rc2-h8l
             shm_size: 1024mb
             devices:
                 - /dev/hailo0:/dev/hailo0
@@ -173,9 +180,9 @@ In this part, we assume you have your camera set up and ready to stream with RTS
                 - ./data/db/:/data/db
                 - ./data/storage:/media/frigate
                 - type: tmpfs
-                    target: /tmp/cache
-                    tmpfs:
-                    size: 1000000000
+                  target: /tmp/cache
+                  tmpfs:
+                    size: 1g
             ports:
                 - 5000:5000
     ```
@@ -197,14 +204,22 @@ In this part, we assume you have your camera set up and ready to stream with RTS
     database:
         path: /data/db/frigate.db
 
+    go2rtc:
+        streams:
+            home:
+                - rtsp://admin:passw0rd@192.168.98.11:554/cam/realmonitor?channel=1&subtype=0
+
     cameras:
         home:
             ffmpeg:
             inputs:
                 - path: rtsp://admin:passw0rd@192.168.98.11:554/cam/realmonitor?channel=1&subtype=0
-                roles:
+                  roles:
                     - record
                     - detect
+
+    mqtt:
+        enabled: False
 
     objects:
         track:
@@ -215,14 +230,15 @@ In this part, we assume you have your camera set up and ready to stream with RTS
         hailo8l:
             type: hailo8l
             device: PCIe
-            model:
-            path: /config/model_cache/yolov8n.hef
+            model_path: /config/model_cache/yolov8n.hef
 
     model:
         width: 640
         height: 640
         input_tensor: nhwc
         input_pixel_format: bgr
+
+    version: 0.15-1
     ```
 
 5. **Start Docker Instance:**

@@ -147,3 +147,19 @@ Micro-USB 5V⎓2A</td>
 :::info
 Please refer to this [wiki](/reComputer_J2021_J202_Flash_Jetpack) page for more information because J1020v2 use J202 carrier board.
 :::
+
+## Resources
+[reComputer J1020 v2 datasheet](https://files.seeedstudio.com/wiki/reComputer/reComputer-J1020-v2-datasheet.pdf)
+
+[reComptuer J102 (Also J202) Carrier Boards Schematic](https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer%20J202_V1.0_SCH_PDF_240822.pdf)
+
+[reComputer J1010 3D file](https://files.seeedstudio.com/products/NVIDIA-Jetson/J2021-Xavier-NX.stp)
+
+[Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+
+[Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
+
+[Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
+
+[Seeed Jetson Devices One Page](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+

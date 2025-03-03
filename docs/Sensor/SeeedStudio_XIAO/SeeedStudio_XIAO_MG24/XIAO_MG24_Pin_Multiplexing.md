@@ -12,6 +12,9 @@ last_update:
 sidebar_position: 1
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Pin/top.png" style={{width:700, height:'auto'}}/></div>
 
 ***The XIAO MG24*** features up to ***22 regular pins***, ***18 analog pins***, ***18 digital pins***, ***2 SPI***, ***2 UART***, ***2 I2C***, and supports ***all PWM***. It offers a rich variety of pins available for our use. In this wiki, I will teach you how to drive these pins, enabling us to utilize them effectively 😀!
@@ -213,6 +216,9 @@ Next , We will choose two sensors to reflect the characteristics of ADC .
 
 ### Software Implementation
 
+<Tabs>
+  <TabItem value="Without DMA" label="analogRead Without DMA" default>
+
 ``` cpp
 const int analogInPin = D1;  // Analog input pin that the potentiometer is attached to
 const int analogOutPin = 9;  // Analog output pin that the LED is attached to
@@ -236,6 +242,103 @@ void loop() {
   delay(100);
 }
 ```
+
+  </TabItem>
+  <TabItem value="With DMA" label="analogRead With DMA">
+
+``` cpp
+#define ANALOG_VALUE_MIN 0     // Define the minimum analog value
+#define ANALOG_VALUE_MAX 4095  // Define the maximum analog value for 12-bit ADC
+#define NUM_SAMPLES 128        // Define the number of samples to collect each time
+
+const int analogInPin = D1;            // Analog input pin that the potentiometer is attached to
+const int analogOutPin = LED_BUILTIN;  // Analog output pin that the LED is attached to
+
+// Buffers for storing samples
+uint32_t analog_buffer[NUM_SAMPLES];        // Global buffer to store sampled values
+uint32_t analog_buffer_local[NUM_SAMPLES];  // Local buffer to store sampled values for calculations
+
+volatile bool data_ready_flag = false;  // Data ready flag indicating new sample data is available
+
+void analog_samples_ready_cb();                         // Callback function called when samples are ready
+void calculate_and_display_analog_level();              // Function to calculate and display the analog level
+float getAverage(uint32_t *buffer, uint32_t buf_size);  // Function to compute the average of the given buffer
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(analogOutPin, OUTPUT);
+
+  // Start DMA sampling, storing samples in analog_buffer, with callback on completion
+  analogReadDMA(analogInPin, analog_buffer, NUM_SAMPLES, analog_samples_ready_cb);
+  Serial.println("Sampling started...");
+}
+
+void loop() {
+  // If data is ready, process it
+  if (data_ready_flag) {
+    data_ready_flag = false;
+    calculate_and_display_analog_level();
+  }
+}
+
+void analog_samples_ready_cb() {
+  // Copy data to the local buffer in order to prevent it from overwriting
+  memcpy(analog_buffer_local, analog_buffer, NUM_SAMPLES * sizeof(uint32_t));
+  data_ready_flag = true;
+}
+
+void calculate_and_display_analog_level() {
+  // Rolling average for smoothing the analog level
+  static uint32_t rolling_average = 0u;
+
+  // Stop sampling in order to prevent overwriting the current data
+  ADC.scan_stop();
+
+  // Get the average of the sampled values
+  uint32_t analog_level = (uint32_t)getAverage(analog_buffer_local, NUM_SAMPLES);
+  // Adjust the analog level
+  analog_level = constrain(analog_level, ANALOG_VALUE_MIN, ANALOG_VALUE_MAX);
+  // Calculate the rolling average
+  rolling_average = (analog_level + rolling_average) / 2;
+
+  // Map the current average level to brightness
+  int brightness = map(rolling_average, ANALOG_VALUE_MIN, ANALOG_VALUE_MAX, 0, 255);
+  if (LED_BUILTIN_ACTIVE == LOW) {
+    analogWrite(analogOutPin, 255 - brightness);
+  } else {
+    analogWrite(analogOutPin, brightness);
+  }
+  // Print the average analog level and brightness output
+  Serial.print("sensor = ");
+  Serial.print(rolling_average);
+  Serial.print("\t output = ");
+  Serial.println(brightness);
+
+  // Restart sampling
+  analogReadDMA(analogInPin, analog_buffer, NUM_SAMPLES, analog_samples_ready_cb);
+}
+
+// Gets the average value of the provided samples
+float getAverage(uint32_t *buffer, uint32_t buf_size) {
+  if (!buffer) {
+    return 0.0f;
+  }
+
+  float sum = 0.0f;
+  for (uint32_t i = 0u; i < buf_size; i++) {
+    sum += buffer[i];
+  }
+  return sum / buf_size;
+}
+```
+
+  </TabItem>
+</Tabs>
+
+:::tip
+It should be noted that if you want to use DMA to read analog signals, your library version needs to be greater than 2.2.0. Currently, the new version has not been approved and you need to manually install it.
+:::
+
 ### Result graph
 If everything goes smoothly, after uploading the program, you should see the following effect.
 

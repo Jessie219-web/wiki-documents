@@ -131,7 +131,7 @@ export const listData = [
   },
   {
     id: 6,
-    name: 'Ohter Devices',
+    name: 'Other Devices',
     img: 'https://files.seeedstudio.com/wiki/reComputer/home_page/nvidia_icon.png',
     brands: [
       {

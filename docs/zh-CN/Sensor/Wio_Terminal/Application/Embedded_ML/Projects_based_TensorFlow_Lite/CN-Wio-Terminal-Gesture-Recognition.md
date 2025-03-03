@@ -40,7 +40,7 @@ last_update:
 
 - 安装内置加速度计库 `Seeed_Arduino_LIS3DHTR`, 请访问 [Wio Terminal IMU](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/) 获取更多信息。
 
-- 安装 **Arduino TensorFlow Lite** 库, 请访问 [Wio Terminal TensorFlow Lite](https://wiki.seeedstudio.com/Wio-Terminal-TensonFlow/) 获取更多信息。
+- 安装 **Arduino TensorFlow Lite** 库, 请访问 [Wio Terminal TensorFlow Lite](https://wiki.seeedstudio.com/Wio-Terminal-TinyML-TFLM-1) 获取更多信息。
 
 ## 从Wio Terminal训练IMU数据
 

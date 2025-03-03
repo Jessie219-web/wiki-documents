@@ -192,7 +192,7 @@ By default, `GPIO14` is set to a low level, enabling the built-in antenna. To us
 ```cpp
 void setup() {
   pinMode(WIFI_ENABLE, OUTPUT); // pinMode(3, OUTPUT);
-  digitalWrite(WIFI_ENABLE, LOW) // digitalWrite(3, LOW); // Activate RF switch control
+  digitalWrite(WIFI_ENABLE, LOW); // digitalWrite(3, LOW); // Activate RF switch control
 
   delay(100);
 

@@ -366,8 +366,8 @@ captive_portal:
 
 # I2C configuration for BME680 sensor
 i2c:
-  sda: GPIO6
-  scl: GPIO7
+  sda: GPIO5
+  scl: GPIO6
 
 # BME680 sensor configuration
 sensor:
@@ -495,8 +495,8 @@ spi:
 
 # I2C configuration for BME680 sensor
 i2c:
-  sda: GPIO6
-  scl: GPIO7
+  sda: GPIO5
+  scl: GPIO6
   scan: True
   id: bus_a
   frequency: 1MHz
@@ -566,8 +566,8 @@ spi:
 
 # I2C configuration for BME680 sensor
 i2c:
-  sda: GPIO6
-  scl: GPIO7
+  sda: GPIO5
+  scl: GPIO6
   scan: True
   id: bus_a
   frequency: 1MHz

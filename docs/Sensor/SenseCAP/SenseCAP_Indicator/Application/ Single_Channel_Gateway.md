@@ -11,8 +11,8 @@ slug: /SenseCAP_Indicator_Single_Channel_Gateway
 toc_max_heading_level: 4
 sidebar_position: 5
 last_update:
-  date: 10/30/2024
-  author: Evelyn Chen
+  date: 02/11/2025
+  author: Leo Liu
 ---
 
 # Single Channel LoRaWAN Gateway - SenseCAP Indicator
@@ -251,31 +251,250 @@ Replace `port` and `COM` with the name of used serial port. If connection fails,
 
 ## Connect to The Things Network(TTN)
 
-**Step1**. Log in to the TTN platform and go to the `console`, click `Gateways->Register gateway`.
+**Step 1:** Log in to the TTN platform and go to the `console`, click `Gateways->Register gateway`.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image2.png" style={{width:600, height:'auto'}}/></div>
 
-**Step2**. Enter the `Gateway ID` of the Indicator into the `Gateway EUI`.
+**Step 2:** Enter the `Gateway ID` of the Indicator into the `Gateway EUI`.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image3.png" style={{width:600, height:'auto'}}/></div>
 
-**Step3**. After filling in the custom gateway name, select the corresponding Frequency plan (which must match the configuration on the Indicator), and click `Register gateway`. At this point, the single-channel gateway of the Indicator has been added to TTN.
+**Step 3:** After filling in the custom gateway name, select the corresponding Frequency plan (which must match the configuration on the Indicator), and click `Register gateway`. At this point, the single-channel gateway of the Indicator has been added to TTN.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image4.png" style={{width:600, height:'auto'}}/></div>
 
-**Step4**. After adding the Indicator single-channel gateway, click `Applications` to add a device. In this example, the `SenseCAP T1000 Tracker` is used as the node device. For detailed connection steps, refer to the Wiki: https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN/. In `End devices`->`General settings`->`Network layer`->`Advanced MAC settings`, you need to set the `Adaptive data rate (ADR)` to **Static mode**, and the `ADR data rate index` needs to be configured according to the `spreading factor` set on the Indicator. For example, if the `spreading factor` is set to 9, the `ADR data rate index` should be set to 3, and similarly for other values.
+**Step 4:** After adding the Indicator single-channel gateway, click `Applications` to add a device. In this example, the `SenseCAP T1000 Tracker` is used as the node device. For detailed connection steps, refer to the Wiki: https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN/. In `End devices`->`General settings`->`Network layer`->`Advanced MAC settings`, you need to set the `Adaptive data rate (ADR)` to **Static mode**, and the `ADR data rate index` needs to be configured according to the `spreading factor` set on the Indicator. For example, if the `spreading factor` is set to 9, the `ADR data rate index` should be set to 3, and similarly for other values.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image5.png" style={{width:600, height:'auto'}}/></div>
 
-**Step5**. As shown below, you can check the `EVENT DETAILS` in the Live data of the added node device to view related logs. You can see that the node device reports data through the newly added Indicator single-channel gateway.
+**Step 5:** As shown below, you can check the `EVENT DETAILS` in the Live data of the added node device to view related logs. You can see that the node device reports data through the newly added Indicator single-channel gateway.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image6.png" style={{width:600, height:'auto'}}/></div>
 
+## Connect to ChirpStack
+
+**Step 1:** Install ChirpStack refer to <a  href="https://www.chirpstack.io/docs/getting-started/debian-ubuntu.html" target="_blank"><span> Setup ChirpStack on Ubuntu/Debian</span></a>.
+
+
+**Step 2:** After installing ChirpStack, you need to add a single channel region definition to the `/etc/chirpstack` directory.
+
+In this Wiki, we create a single channel definition under the EU868 band, using the 868.1Mhz channel.
+<details>
+<summary>region_eu868_1ch.toml</summary>
+
+```toml
+# This file contains an example EU868 configuration.
+[[regions]]
+
+  # ID is an user-defined identifier for this region.
+  id="eu868_1ch"
+
+  # Description is a short description for this region.
+  description="EU868_1CH"
+
+  # Common-name refers to the common-name of this region as defined by
+  # the LoRa Alliance.
+  common_name="EU868"
+
+
+  # Gateway configuration.
+  [regions.gateway]
+
+    # Force gateways as private.
+    #
+    # If enabled, gateways can only be used by devices under the same tenant.
+    force_gws_private=false
+
+
+    # Gateway backend configuration.
+    [regions.gateway.backend]
+
+      # The enabled backend type.
+      enabled="mqtt"
+
+      # MQTT configuration.
+      [regions.gateway.backend.mqtt]
+
+        # Topic prefix.
+        #
+        # The topic prefix can be used to define the region of the gateway.
+        # Note, there is no need to add a trailing '/' to the prefix. The trailing
+        # '/' is automatically added to the prefix if it is configured.
+        topic_prefix="eu868"
+
+        # MQTT server (e.g. scheme://host:port where scheme is tcp, ssl or ws)
+        server="tcp://$MQTT_BROKER_HOST:1883"
+
+        # Connect with the given username (optional)
+        username=""
+
+        # Connect with the given password (optional)
+        password=""
+
+        # Quality of service level
+        #
+        # 0: at most once
+        # 1: at least once
+        # 2: exactly once
+        #
+        # Note: an increase of this value will decrease the performance.
+        # For more information: https://www.hivemq.com/blog/mqtt-essentials-part-6-mqtt-quality-of-service-levels
+        qos=0
+
+        # Clean session
+        #
+        # Set the "clean session" flag in the connect message when this client
+        # connects to an MQTT broker. By setting this flag you are indicating
+        # that no messages saved by the broker for this client should be delivered.
+        clean_session=false
+
+        # Client ID
+        #
+        # Set the client id to be used by this client when connecting to the MQTT
+        # broker. A client id must be no longer than 23 characters. If left blank,
+        # a random id will be generated by ChirpStack.
+        client_id=""
+
+        # Keep alive interval.
+        #
+        # This defines the maximum time that that should pass without communication
+        # between the client and server.
+        keep_alive_interval="30s"
+
+        # CA certificate file (optional)
+        #
+        # Use this when setting up a secure connection (when server uses ssl://...)
+        # but the certificate used by the server is not trusted by any CA certificate
+        # on the server (e.g. when self generated).
+        ca_cert=""
+
+        # TLS certificate file (optional)
+        tls_cert=""
+
+        # TLS key file (optional)
+        tls_key=""
+
+  # Region specific network configuration.
+  [regions.network]
+    
+    # Installation margin (dB) used by the ADR engine.
+    #
+    # A higher number means that the network-server will keep more margin,
+    # resulting in a lower data-rate but decreasing the chance that the
+    # device gets disconnected because it is unable to reach one of the
+    # surrounded gateways.
+    installation_margin=10
+
+    # RX window (Class-A).
+    #
+    # Set this to:
+    # 0: RX1 / RX2
+    # 1: RX1 only
+    # 2: RX2 only
+    rx_window=0
+
+    # RX1 delay (1 - 15 seconds).
+    rx1_delay=1
+
+    # RX1 data-rate offset
+    rx1_dr_offset=0
+
+    # RX2 data-rate
+    rx2_dr=0
+
+    # RX2 frequency (Hz)
+    rx2_frequency=869525000
+
+    # Prefer RX2 on RX1 data-rate less than.
+    #
+    # Prefer RX2 over RX1 based on the RX1 data-rate. When the RX1 data-rate
+    # is smaller than the configured value, then the Network Server will
+    # first try to schedule the downlink for RX2, failing that (e.g. the gateway
+    # has already a payload scheduled at the RX2 timing) it will try RX1.
+    rx2_prefer_on_rx1_dr_lt=0
+
+    # Prefer RX2 on link budget.
+    #
+    # When the link-budget is better for RX2 than for RX1, the Network Server will first
+    # try to schedule the downlink in RX2, failing that it will try RX1.
+    rx2_prefer_on_link_budget=false
+
+    # Downlink TX Power (dBm)
+    #
+    # When set to -1, the downlink TX Power from the configured band will
+    # be used.
+    #
+    # Please consult the LoRaWAN Regional Parameters and local regulations
+    # for valid and legal options. Note that the configured TX Power must be
+    # supported by your gateway(s).
+    downlink_tx_power=-1
+
+    # ADR is disabled.
+    adr_disabled=true
+
+    # Minimum data-rate.
+    min_dr=5
+
+    # Maximum data-rate.
+    max_dr=5
+
+    # Add the following after min_dr/max_dr configuration 
+    enabled_uplink_channels=[0] 
+```
+
+</details>
+
+You can also customise your single-channel region, see <a  href="https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/RQ000005dqn4/HobR.KifrmqWNy0bUjfceXByxDWzvwtR37OE5EouVu8" target="_blank"><span> LoRaWAN theory for the One-Channle Hub</span></a>.
+
+**Step 3:** Modify the `/etc/chirpstack/chirpstack.toml` to enable the new defined region.
+
+```toml
+enabled_regions={
+  ...,
+  "eu868_1ch",
+  ...,
+}
+```
+
+**Step 4:** Login into ChirpStack's console and add the single-channel gateway.
+
+Before adding a gateway, check that the single-channel region has been successfully enabled.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Single_Channel_Gateway/single-channel-1.png" alt="pir" width={600} height="auto" /></p>
+
+If the single-channel region is successfully enabled, add the single-channel gateway to the ChirpStack.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Single_Channel_Gateway/single-channel-2.png" alt="pir" width={600} height="auto" /></p>
+
+**Step 5:** Configure the parameters on the LoRa Gateway page, set address to your ChirpStack server's address, click `configure` and then click `reboot`.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image1.png" alt="pir" width={600} height="auto" /></p>
+
+After reboot, you can see the status turn to online in the ChirpStack's console.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Single_Channel_Gateway/single-channel-3.png" alt="pir" width={600} height="auto" /></p>
+
+**Step 6:** We can optimise the end device's join time by using the same data rate with a single-channel gateway.
+
+Referring to the single-channel gateway configuration `SF7 BW125`, we adjust the data rate of the T1000-A to `DR5`.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Single_Channel_Gateway/single-channel-4.png" alt="pir" width={600} height="auto" /></p>
+
+After configuring the data rate of the T1000-A, we need to create a device profile for it.
+
+Select `EU868` for the region and `EU868_1CH` for the region configuration.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Single_Channel_Gateway/single-channel-5.png" alt="pir" width={600} height="auto" /></p>
+
+As you can see in the figure below, you can see that the T1000-A successfully uploaded data to ChirpStack through the single-channel gateway.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Single_Channel_Gateway/single-channel-6.png" alt="pir" width={600} height="auto" /></p>
 
 ## Resource
 
 * [One Channel Hub Firmware for SenseSAP Indicator](https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/Indicator_single_channel_gateway_20241031.zip)
 * [Github Repository](https://github.com/Lora-net/one_channel_hub)
+* [Semtech Application Note](https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/RQ000005dqn4/HobR.KifrmqWNy0bUjfceXByxDWzvwtR37OE5EouVu8)
 
 ## Tech Support & Product Discussion
 

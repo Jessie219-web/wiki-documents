@@ -69,9 +69,13 @@ For installation with a casing, you need to prepare the following materials:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/1_2.jpg" alt="pir" width="700" height="auto" /></div>
 
-
-
 ### Installation
+
+> **Note:** This is a note. `Wipe pogo pin and GPIO pad with alcohol cotton, and then connect it before you using M.2 dual Hat on raspberrypi`
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/hat.jpg" alt="pir" width="700" height="auto" /></div>
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/pi5_GPIO_Pad.png" alt="pir" width="700" height="auto" /></div>
 
 
 import Tabs from '@theme/Tabs';
@@ -160,9 +164,6 @@ Place the overlapping M.2 Hat and Raspberry Pi into the case, with the Raspberry
 </Tabs>
 
 
-
-
-
 ### Use SD Card Copier tool to flash OS onto the NVME SSD On Raspberry Pi OS
 
 *This method works if you have an SD card and have booted the device successfully. Please make sure your system is the latest Raspberry Pi system (Bookworm or later) and and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer, otherwise it may not recognize the NVME-related configurations.*
@@ -202,6 +203,7 @@ If asked to reboot, select `Yes`.
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/copy.gif" alt="pir" width="700" height="auto" /></div>
 
 ### Setting the Raspberry Pi to boot from the NVMe SSD
+
 If you have easy access to your SD card slot you could turn off your Pi, pop out the SD card and (if everything's working as expected) it should automagically boot from your NVMe drive the next time you start it up. If you want to leave the SD card where it is and still boot from NVMe though, you'll need to change the boot order.
 
 **Step 1**:Enter the following command:

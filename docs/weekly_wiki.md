@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 01/27/2025
+  date: 02/24/2025
   author: Frank
 ---
 
@@ -17,46 +17,73 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is January 27th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is February 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Connect to Home Assistant via the Zigbee of the XIAO ESP32C6](https://wiki.seeedstudio.com/xiaoc6_zigbee_led_ha/)
+### [Getting Started with Wi-Fi HaLow Mini PCIe Module](https://wiki.seeedstudio.com/getting_started_with_wifi_halow_mini_pcie_module/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6_zigbee_ha/1.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/0.jpg" style={{width:600, height:'auto'}}/></div>
 
-The integration of Zigbee devices into smart home ecosystems has become increasingly popular due to Zigbee's low power consumption, reliability, and ease of use. In this wiki, we’ll guide you through connecting the **XIAO ESP32C6** to **Home Assistant** via its Zigbee functionality. By the end of this guide, you’ll have a working demo where the XIAO ESP32C6 acts as a Zigbee device that can be controlled directly from Home Assistant's dashboard.
+This guide will walk you through setting up and using the Wi-Fi HaLow Mini PCIe Module to build a Wi-Fi HaLow gateway. The Mini PCIe form factor makes it easy to integrate Wi-Fi HaLow connectivity into existing systems and create IoT gateways that can connect numerous low-power devices over long distances.
+
+### [Getting Started with Wi-Fi HaLow Module for XIAO](https://wiki.seeedstudio.com/getting_started_with_wifi_halow_module_for_xiao/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/20.jpg" style={{width:600, height:'auto'}}/></div>
+
+This tutorial will guide you through setting up and using the Wio-WM6180 Wi-Fi HaLow Module with a XIAO ESP32S3 to build a Wi-Fi HaLow client. Wi-Fi HaLow (IEEE 802.11ah) is designed for long-range, low-power IoT applications, operating in the sub-1 GHz frequency band. We'll walk through the hardware setup, software configuration, and demonstrate how to establish Wi-Fi HaLow connectivity for your IoT projects.
+
+### [reServer Industrial Hardware Interface Usage](https://wiki.seeedstudio.com/reserver_industrial_hardware_interface_usage/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reServer-Industrial/2.jpg" style={{width:800, height:'auto'}}/></div>
+
+This guide covers the key features and setup of the reServer Industrial board, which offers versatile connectivity options, including 5 RJ-45 Ethernet ports (4 PoE PSE), and supports 2.5" SATA HDD/SSD storage. With its fanless design and passive heatsink, it’s built for harsh environments, offering efficient cooling and low power consumption, making it ideal for demanding, noise-sensitive applications.
+
+### [reCamera Software Structure](https://wiki.seeedstudio.com/recamera_os_structure/)
+
+The software comes with a stable reCamera OS that supports firmware OTA updates. Additionally, Node-RED and Sensecraft AI platform is integrated in the device for easier deployment experience. This integration offers novice developers a modular programming experience based on Node-RED nodes.  For advanced developers, the in-depth Linux-based development and python are also there for twist and play.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/recam_OS_structure.png" style={{width:800, height:'auto'}}/></div>
+
+We warmly welcome developers proficient in JavaScript, C/C++, Python, Linux OS, buildroot, as well as geeks, students, and beginners, to engage in further development and explore applications.
+
+### [Develop reCamera with Node-RED](https://wiki.seeedstudio.com/recamera_develop_with_node-red/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/example_flow.png" style={{width:800, height:'auto'}}/></div>
+
+Node-RED's goal is to enable anyone to build applications that collect, transform and visualize their data; building flows that can automate their world. Its low-code nature makes it accessible to users of any background, whether for home automation, industrial control systems or anything in between. By integrated Node-RED with reCamera, it provides a beginner-friendly development method that can let users drag and play with the device right the way. You can learn the [Node-RED Concept](https://nodered.org/docs/user-guide/concepts#:~:text=A%20Flow%20is%20represented%20as,(sets%20of%20connected%20nodes).) here or start with a [video tutorial](https://www.youtube.com/watch?v=DFNv91TTt68).
+
+### [Develop reCamera with c&cpp](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/)
+
+reCamera has limited resources and no compilation environment for C code is configured. If you want to use `C&CPP` to develop applications on the reCamera, you need to configure the cross-compilation environment on a linux machine. This wiki provides a simple example for configuring the compilation environment to help you get started quickly.
 
 ## Existing Wiki Updated
 
-### XIAO Open-Source Materials
+### [LoRaWAN® Gateway Module WM1302](https://wiki.seeedstudio.com/WM1302_module/)
 
-We have added examples for the following XIAO boards' open-source materials:
+We have added the [Run Semtech SX1302 packet forwarder example](https://wiki.seeedstudio.com/WM1302_module/#step4-run-semtech-sx1302-packet-forwarder).
 
-- [XIAO nRF52840 (Sense) Plus Open-Source Materials](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus)
-- [XIAO ESP32S3 Plus Open-Source Materials](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus)
+### [reComputer Mini Hardware and Interfaces Usage](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/)
 
-### [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
+We have added the [Ethernet](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#ethernet), [USB](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#usb), [UART](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#uart), and other examples for reComputer Mini hardware and interface usage.
 
-We have added the schematic for [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/#resources).
+### [Flash JetPack OS to J401 Carrier Board](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/)
 
-### [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/)
+We have added the [flashing JP6.2 example](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/#flash-the-device-step-by-step).
 
-We have added several [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/#q5-how-to-get-the-system-log-of-recomputer-j30j40).
+### [Getting Started with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_getting_started/)
 
-### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
-
-We have added an example for [reCamera Factory Reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset).
+We have added the [Preventing XIAO MG24 from Bricking During Deep Sleep](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#preventing-xiao-mg24-from-bricking-during-deep-sleep) and [Unbricking example](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#unbricking).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
+<!-- ### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
 
 <div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
+  <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images. -->
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -65,7 +92,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 
 <details><summary>Click here</summary>
 
-- [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
+<!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
 - [weekly wiki on 3.13th](/Seeed_Elderly/weekly_wiki/wiki313)
 - [weekly wiki on 3.20th](/Seeed_Elderly/weekly_wiki/wiki320)
@@ -102,7 +129,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 12.04th](/Seeed_Elderly/weekly_wiki/wiki1204)
 - [weekly wiki on 12.11th](/Seeed_Elderly/weekly_wiki/wiki1211)
 - [weekly wiki on 12.18th](/Seeed_Elderly/weekly_wiki/wiki1218)
-- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225)
+- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225) -->
 - [weekly wiki on 2024.1.08th](/Seeed_Elderly/weekly_wiki/wiki240108)
 - [weekly wiki on 2024.1.15th](/Seeed_Elderly/weekly_wiki/wiki240115)
 - [weekly wiki on 2024.1.22nd](/Seeed_Elderly/weekly_wiki/wiki240122)
@@ -155,5 +182,9 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
 - [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
+- [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
+- [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
+- [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
+- [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
 
 </details>
