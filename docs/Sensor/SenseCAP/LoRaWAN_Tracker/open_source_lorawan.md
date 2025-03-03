@@ -3,17 +3,13 @@ description: Get Started with SenseCAP Card Tracker T1000-E for LoRaWAN
 title: LoRaWAN Open Source Firmware
 keywords:
 - Tracker
-image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000-e-fpage.webp
+image: https://files.seeedstudio.com/wiki/SenseCAP/LoRaWAN_Tracker/lorawan_opensource.webp
 slug: /open_source_lorawan
-sidebar_position: 3
+sidebar_position: 2
 last_update:
   date: 1/2/2025
   author: Jessie
 ---
-
-
-Good news for all technology enthusiasts! The [SenseCAP T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) now has an open source **LoRaWAN version** of the firmware, which provides you with a lot of customization and innovation opportunities. This tutorial will guide you through flashing firmware and using example code.
-
 
 
 ## Preparation
@@ -75,11 +71,10 @@ Copy the `Seeed T1000-E Example file` to the following path of nRF5 SDK:
 
 
 
-### Flash Bootloader
+### Check the Bootloader info
 
+Before start, please check the bootloader info first.
 
-
-**[Bootloader Download](https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_bootloader_1th_ota_uf2.uf2)**
 
 * **Step 1:** Enter DFU mode
 
@@ -90,10 +85,7 @@ Copy the `Seeed T1000-E Example file` to the following path of nRF5 SDK:
 
  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/e-driver.png" alt="pir" width={600} height="auto" /></p>
 
-* **Step 2:** Flash Bootloader
-
-
- Copy `UF2` file to the DFU drive. Firmware should be flashed after the file is downloaded and the device reboots.
+* **Step 2:** Check the INFO_UF2.TXT
 
  The correct bootloader information is shown in the figure：
 
@@ -222,9 +214,9 @@ JoinEUI/DevEUI/APPEUI: Which you defined in the 'lorawan_key_config.h' file in t
 
 
 
-### Switch to Meshtastic Firmware
+### Restore the Factory Firmware
 
 
-If you want to use the Meshtastic back, after flashing the bootloader, refer to [flash the Meshtastic application firmware](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware) to use the Meshtastic network.
-
+* Use the factory firmware back, flash the `t1000_e_dev_kit_11_lorawan_tracker.uf2` firmware.
+* Use the SenseCAP cloud, need to import the SenseCAP keys by scanning the QR code on the device label.
 
