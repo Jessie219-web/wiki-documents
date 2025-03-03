@@ -1,6 +1,6 @@
 ---
 description: Meshtastic based on XIAO ESP32S3 & Wio-SX1262 Kit
-title: Get Started for Meshtastic
+title: XIAO ESP32S3 & Wio-SX1262 Kit
 image: https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png
 slug: /xiao_esp32s3_&_wio_SX1262_kit_for_meshtastic
 last_update:
@@ -9,7 +9,45 @@ last_update:
 ---
 
 
-Meshtastic is an open source, off-grid, decentralized, mesh network built to run on affordable, low-power devices. Seeed Studio provides a comprehensive range of ready-to-go Meshtastic devices for hobbyists and industrial users. XIAO ESP32S3 & Wio-SX1262 Kit is flexible solution for meshtastic developer and maker.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png" style={{width:600, height:'auto'}}/></div>
+
+
+This thumb-sized LoRa dev kit, featuring the XIAO ESP32S3 and Wio-SX1262 LoRa module, is an ideal starter kit for Meshtastic and LoRa/LoRaWAN projects. Supporting WiFi, BLE, and LoRa, it includes a built-in power management chip and can be extended via IIC, UART, and other GPIO interfaces, with compatibility for Arduino development.
+
+
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div>
+
+### Specification
+
+
+|**Specification**|**Parameter**|
+| :- | :- |
+|**Basic**||
+|Processor|ESP32-S3R8, Xtensa LX7 dual-core, 32-bit processor running up to 240 MHz|
+|Memory|On-chip 8M PSRAM & 8MB Flash|
+|Wireless|<p>Complete 2.4GHz Wi-Fi subsystem</p><p>BLE: Bluetooth 5.0, Bluetooth mesh,</p><p>LoRa: Based on Semtech SX1262, supports 862-930MHz</p>|
+|Interface|<p>1x UART, 1x IIC, 1x IIS, 1x SPI, 11x GPIOs (PWM), 9x ADC, 1x User LED, 1x Charge LED</p><p>1x Reset button, 1x Boot button</p>|
+|Power|<p>Input voltage (Type-C): 5V</p><p>Input voltage (BAT): 4.2V</p>|
+||Charging battery current: 100mA|
+|Operating Temperature|-40 ~ 65°C|
+|**Antenna**||
+|Type|SMA to I-PEX External Antenna|
+|Max Gain|2 dBi|
+|Dimension|13\.0x195mm|
+|Installation|Install on the outside of the enclosure|
+|Distance|2~5km in open environment|
+|Application|Suitable for most scenarios, designed for indoor and outdoor|
+
+
+
+
+
 
 ## Flash Firmware
 
@@ -25,18 +63,6 @@ Please flash the firmware onto your device if you purchased the XIAO ESP32S3 & W
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/flashfirmware1.gif" style={{width:700, height:'auto'}}/></div>
 
-## Software Overview
-
-Meshtastic provides multiple platform softwares for users to choose from, including Android app, Apple app, web client. It also provides Python CLI, Linux Native and integration methods for developers to use.
-
-For specific information, please refer to [the official website of Meshtastic](https://meshtastic.org/docs/software/).
-
-* [Android App](https://meshtastic.org/docs/category/android-app/): Android application is available on F-Droid repo and Google Play Store. This allows you to connect to your Meshtastic device from your Android phone via Bluetooth, Wi-Fi (if on the same network) or USB On-The-Go (OTG).
-* [Apple App](https://meshtastic.org/docs/category/apple-apps/): It is available on app store. By default, the Meshtastic app for iOS supports the use of native offline Apple Maps.
-* [Web Client](https://meshtastic.org/docs/software/web-client/): Meshtastic Web is a Meshtastic client that runs directly in your browser.
-* [Python CLI](https://meshtastic.org/docs/software/python/cli/): The python pip package installs a "meshtastic" command line executable, which displays packets sent over the network as JSON and lets you see serial debugging information from the meshtastic devices.
-* [Linux Native](https://meshtastic.org/docs/software/linux-native/): The device software can also run on a native Linux machine thanks to the Portduino framework.
-* [Meshtastic Integrations](https://meshtastic.org/docs/software/integrations/): The Meshtastic ecosystem is highly extensible and allows easy integration with a number of existing software products and projects.
 
 
 ## Device Connection
