@@ -531,6 +531,11 @@ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/releas
 ```
 
 **Step 2:** Assemble the Flashing Package
+
+Please note you will likely need to move the USB drivers you downloaded into the directory you have downloaded the Jetson Linux tools. For example if you opened your terminal and didn't change directories, you are likely in your user home `~/` folder, and if you downloaded the drivers via the browser, the drivers are likely in `~/Downloads`.
+
+If you just copy and paste these terminal commands and the drivers are NOT in the same directory, the commands will still mostly execute but without the USB drivers. If you flash the OS without the USB drivers, you're going to be sad.
+
 Execute the following commands in order:
 
 ```bash
