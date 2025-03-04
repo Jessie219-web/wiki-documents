@@ -4,7 +4,7 @@ title: Introducción a alwaysAI
 tags:
   - Etiquetado de datos
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /alwaysAI-Jetson-Getting-Started
+slug: /es/alwaysAI-Jetson-Getting-Started
 last_update:
   date: 1/16/2023
   author: jianjing Huang
