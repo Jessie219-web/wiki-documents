@@ -60,22 +60,6 @@ Thus, if the Sensecap Indicator plugged into the Computer you will be presented 
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/Indicator-Arduino/1.jpg"/></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Software Preparation
 
 We are using Arduino here.
