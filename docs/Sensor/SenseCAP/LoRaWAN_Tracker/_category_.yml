@@ -1,0 +1,10 @@
+position: 1 # float position is supported
+label: 'LoRaWAN Tracker'
+collapsible: true # make the category collapsible
+collapsed: true # keep the category open by default
+className: lorawan_tracker
+link:
+  type: generated-index
+  slug: lorawan_tracker
+  title: LoRaWAN Tracker
+  description: LoRaWAN Tracker(Software Open source)

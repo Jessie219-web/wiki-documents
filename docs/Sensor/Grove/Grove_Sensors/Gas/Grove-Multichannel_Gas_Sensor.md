@@ -198,7 +198,7 @@ void setup()
 {
     Serial.begin(115200);  // start serial for output
     Serial.println("power on!");
-    gas.begin(0x04);//the default I2C address of the slave is 0x04
+    gas.begin(0x04);//the default I2C address of the slave is 0x04 ; for verison 2 of the multichannel gas sensor the i2c address is 0x08
     gas.powerOn();
     Serial.print("Firmware Version = ");
     Serial.println(gas.getVersion());
