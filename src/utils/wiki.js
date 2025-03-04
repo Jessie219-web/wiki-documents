@@ -1,6 +1,20 @@
 const docList = [
   [
     {
+      "path": "/recamera_gimbal_getting_started",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp",
+      "title": "Getting Started",
+      "date": "02/27/2025"
+    },
+    {
+      "path": "/recamera_hardware_and_specs",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/image.webp",
+      "title": "reCamera Overview",
+      "date": "02/18/2025"
+    }
+  ],
+  [
+    {
       "path": "/WM1302_module",
       "image": "https://files.seeedstudio.com/wiki/WM1302_module/WM1302_3.webp",
       "title": "LoRaWAN® Gateway Module WM1302",
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.webp",
       "title": "Single Channel LoRaWAN Gateway - SenseCAP Indicator",
       "date": "02/11/2025"
-    }
-  ],
-  [
-    {
-      "path": "/deploy_deepseek_on_jetson",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp",
-      "title": "Quickly Deploy DeepSeek on reComputer Jetson",
-      "date": "02/08/2025"
-    },
-    {
-      "path": "/xiao_mg24_bluetooth",
-      "image": "https://files.seeedstudio.com/wiki/XIAO_MG24/Bluetooth/ble-cover.webp",
-      "title": "Bluetooth Usage with Seeed Studio XIAO MG24",
-      "date": "02/8/2025"
     }
   ]
 ];

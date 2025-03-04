@@ -5,7 +5,7 @@ keywords:
   - AI
   - reCamera
   - Gimbal
-image: https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.png
+image: https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp
 slug: /recamera_gimbal_getting_started
 sidebar_position: 1
 last_update:
