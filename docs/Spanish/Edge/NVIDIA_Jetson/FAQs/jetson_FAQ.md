@@ -1,8 +1,8 @@
 ---
 description: Jetson-FAQ
-title: FAQs for Jetson Usage
+title: FAQs para usar la Jetson
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Jetson_FAQ
+slug: /es/Jetson_FAQ
 last_update:
   date: 7/5/2023
   author: Seraphina

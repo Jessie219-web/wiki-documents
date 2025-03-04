@@ -1,13 +1,13 @@
 ---
-description: Deploy Riva and Llama2 on reComputer
-title: Finetune with Llama-Factory
+description: Implementar Riva y Llama2 en una reComputer
+title: Ajuste fino con Llama-Factory
 keywords:
 - reComputer
 - LLM
 - Chatbot
-- Finetune
+- Ajuste fino
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Finetune_LLM_on_Jetson
+slug: /es/Finetune_LLM_on_Jetson
 last_update:
   date: 07/03/2024
   author: Youjiang

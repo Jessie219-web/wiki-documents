@@ -1,10 +1,10 @@
 ---
-description: Flash Jetpack on A203E Mini PC
+description: Flashear Jetpack en una A203E Mini PC
 title: A203E Mini PC
 tags:
   - Mini PC Jetpack Flash
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_A203E_Flash_System
+slug: /es/reComputer_A203E_Flash_System
 last_update:
   date: 01/05/2023
   author: w0x7ce

@@ -1,10 +1,10 @@
 ---
-description: reServer Industrial Getting Started
+description: Primeros pasos con la reServer Industrial
 title: reServer Industrial
 keywords:
 - reServer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reServer_Industrial_Getting_Started
+slug: /es/reServer_Industrial_Getting_Started
 last_update:
   date: 09/22/2023
   author: Lakshantha

@@ -1,13 +1,13 @@
 ---
-description: This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework. 
-title: How to use the SO100Arm robotic arm in Lerobot
+description: Esta wiki proporciona el tutorial de ensamblaje y depuración del SO ARM100 y realiza la recopilación de datos y el entrenamiento dentro del marco de Lerobot.
+title: Cómo utilizar el brazo robótico SO100Arm en Lerobot
 keywords:
 - Lerobot
 - Huggingface
-- Arm
-- Robotics
+- Brazo Robótico
+- Robótica
 image: https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp
-slug: /lerobot_so100m
+slug: /es/lerobot_so100m
 last_update:
   date: 12/24/2024
   author: ZhuYaoHui

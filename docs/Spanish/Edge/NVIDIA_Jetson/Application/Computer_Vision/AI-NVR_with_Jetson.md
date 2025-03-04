@@ -1,6 +1,6 @@
 ---
-description: This article provides a comprehensive guide on implementing an AI NVR (Network Video Recorder) using the NVIDIA Jetson platform. It covers everything from hardware setup and software installation to configuring DeepStream and VST for real-time video analysis and display on a video wall.
-title: AI NVR with Jetson Orin
+description: Este artículo ofrece una guía completa sobre la implementación de un NVR (grabador de video en red) con IA mediante la plataforma NVIDIA Jetson. Abarca todo, desde la configuración del hardware y la instalación del software hasta la configuración de DeepStream y VST para el análisis de video en tiempo real y su visualización en una pared de video.
+title: AI NVR con reServer Jetson
 keywords:
 - reComputer
 - AI NVR

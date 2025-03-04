@@ -1,13 +1,13 @@
 ---
-description: Getting Started with Roboflow on NVIDIA Jetson Devices
-title: Getting Started with Roboflow
+description: Introducción a Roboflow en dispositivos NVIDIA Jetson
+title: Introducción a Roboflow en dispositivos NVIDIA Jetson
 tags:
-  - Data Label
-  - AI model train
-  - AI model deploy
+  - Etiquetado de datos
+  - Entrenamiento de modelo de IA
+  - Despliegue de modelo de IA
   - Roboflow
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Roboflow-Jetson-Getting-Started
+slug: /es/Roboflow-Jetson-Getting-Started
 last_update:
   date: 10/26/2023
   author: Lakshantha

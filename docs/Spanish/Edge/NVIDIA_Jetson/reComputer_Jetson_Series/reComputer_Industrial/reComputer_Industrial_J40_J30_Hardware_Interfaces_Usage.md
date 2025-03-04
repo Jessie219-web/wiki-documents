@@ -1,10 +1,10 @@
 ---
-description: Hardware and Interfaces Usage for reComputer Industrial J30 Series and J40 Series
-title: reComputer Industrial J40, J30 Hardware and Interfaces Usage
+description: Uso de hardware e interfaces para las series J30 y J40 de reComputer Industrial
+title: Uso de hardware e interfaces industriales J40 y J30 de reComputer
 tags:
   - reComputer Industrial
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage
+slug: /es/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage
 last_update:
   date: 05/16/2023
   author: Lakshantha

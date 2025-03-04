@@ -3,9 +3,9 @@ description: A205 Carrier Board
 title: A205 Carrier Board
 keywords:
   - Edge
-  - reComputer Carrier_Board_for_Jetson_Moudule
+  - reComputer Carrier_Board_para_Modulo_Jetson
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_A205_Flash_System
+slug: /es/reComputer_A205_Flash_System
 last_update:
   date: 01/05/2023
   author: w0x7ce

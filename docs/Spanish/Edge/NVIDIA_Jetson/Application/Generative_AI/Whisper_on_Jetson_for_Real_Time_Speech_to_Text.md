@@ -1,13 +1,13 @@
 ---
-description:  Deploy Whisper on NVIDIA Jetson Orin for Real time Speech to Text
-title:  Speech2Text with Whisper
+description: Implementa Whisper en una NVIDIA Jetson Orin para convertir voz a texto en tiempo real
+title:  Speech2Text con Whisper
 keywords:
   - Edge
   - reComputer
   - Jetson
   - whisper
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: Whisper_on_Jetson_for_Real_Time_Speech_to_Text
+slug: /es/Whisper_on_Jetson_for_Real_Time_Speech_to_Text
 
 last_update:
   date: 03/14/2024

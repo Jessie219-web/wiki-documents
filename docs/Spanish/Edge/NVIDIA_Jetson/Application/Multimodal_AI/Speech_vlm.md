@@ -1,13 +1,13 @@
 ---
-description: This wiki provides a tutorial on how to run a visual language model with speech interaction on the reComputer AGX Orin 64G.
-title: Run VLM with speech interaction
+description: Esta wiki proporciona un tutorial sobre cómo ejecutar un modelo de lenguaje visual con interacción de voz en la reComputer AGX Orin 64G.
+title: Ejecutar un VLM con interacción de voz
 keywords:
 - Multimodal 
 - NanoVLM
 - TTS
 - STT
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /speech_vlm
+slug: /es/speech_vlm
 last_update:
   date: 08/23/2024
   author: YaoHui Zhu

@@ -1,8 +1,8 @@
 ---
-description: reComputer for Jetson Series 
-title: reComputer for Jetson Series Introduction
+description: reComputer para la serie Jetson 
+title: Introducción a reComputer para la serie Jetson
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Jetson_Series_Introduction
+slug: /es/reComputer_Jetson_Series_Introduction
 last_update:
   date: 01/03/2023
   author: w0x7ce

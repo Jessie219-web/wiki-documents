@@ -1,10 +1,10 @@
 ---
-description: Deploy AI model with Lumeo on NVIDIA Jetson Devices
-title: Getting Started with Lumeo
+description: Implementa un modelo de IA con Lumeo en dispositivos NVIDIA Jetson
+title: Primeros pasos con Lumeo
 tags:
-  - AI model deploy
+  - Despliegue de modelos de IA
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Lumeo-Jetson-Getting-Started
+slug: /es/Lumeo-Jetson-Getting-Started
 last_update:
   date: 03/10/2023
   author: Lakshantha

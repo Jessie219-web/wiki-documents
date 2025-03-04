@@ -1,10 +1,10 @@
 ---
-description: List the possible causes of timeout issues during the Jetson flashing process.
-title: Timeout Issue during Flash Jetpack
+description: Enumera las posibles causas de los problemas de tiempo de espera durante el proceso de actualización de una Jetson.
+title: Problema de tiempo de espera durante Flasheo de Jetpack
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /usb_timeout_during_flash
+slug: /es/usb_timeout_during_flash
 last_update:
   date: 1/22/2025
   author: Youjiang

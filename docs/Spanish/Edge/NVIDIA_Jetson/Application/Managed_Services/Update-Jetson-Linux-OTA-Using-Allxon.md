@@ -1,10 +1,10 @@
 ---
-description: Update Jetson Linux Over-the-Air Using Allxon
-title: OTA Update NVIDIA Jetson Using Allxon
+description: Actualización de Jetson Linux por aire con Allxon
+title: Actualización OTA de NVIDIA Jetson usando Allxon
 keywords:
-- Sorftware Allxon
+- Software Allxon
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Update-Jetson-Linux-OTA-Using-Allxon
+slug: /es/Update-Jetson-Linux-OTA-Using-Allxon
 last_update:
   date: 1/13/2023
   author: jianjing Huang

@@ -1,12 +1,12 @@
 ---
-description: Real Time Subtitle Recoder on Nvidia Jetson
-title: Real Time Subtitle Recoder
+description: Subtítulos en tiempo real en una Nvidia Jetson
+title: Subtítulos en tiempo real en una Nvidia Jetson
 keywords:
   - Edge
   - reComputer
   - Jetson
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Real Time Subtitle Recoder on Nvidia Jetson
+slug: /es/Real Time Subtitle Recoder on Nvidia Jetson
 last_update:
   date: 02/23/2024
   author: Jiahao

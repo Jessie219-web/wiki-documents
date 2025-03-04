@@ -1,10 +1,10 @@
 ---
-description: Deploy AI model with Scailable on NVIDIA Jetson Devices
-title: Getting Started with Scailable
+description: Implementa un modelo de IA con Scailable en dispositivos NVIDIA Jetson
+title: Primeros pasos con Scailable
 tags:
-  - AI model deploy
+  - Despliegue de modelo de IA
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Scailable-Jetson-Getting-Started
+slug: /es/Scailable-Jetson-Getting-Started
 last_update:
   date: 03/10/2023
   author: Lakshantha

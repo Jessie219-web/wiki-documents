@@ -1,13 +1,13 @@
 ---
-description: This article covers the hardware and interfaces of the reComputer Mini J40 series, including power, display, M.2 slots for Wi-Fi and SSD, USB ports, RTC, fan management, and so on. It provides setup instructions and performance testing tips to help users expand their projects.
-title: reComputer Mini Hardware and Interfaces Usage
+description: Este artículo cubre el hardware y las interfaces de la serie reComputer Mini J40, incluidos la alimentación, la pantalla, las ranuras M.2 para Wi-Fi y SSD, los puertos USB, el RTC, la gestión de ventiladores, etc. Proporciona instrucciones de configuración y consejos de pruebas de rendimiento para ayudar a los usuarios a ampliar sus proyectos.
+title: Uso del hardware y las interfaces de reComputer Mini
 tags:
   - reComputer
   - reComputer mini
-  - embedded computer
+  - Computadora embebida
   - robots
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp
-slug: /recomputer_jetson_mini_hardware_interfaces_usage
+slug: /es/recomputer_jetson_mini_hardware_interfaces_usage
 last_update:
   date: 12/16/2024
   author: Youjiang

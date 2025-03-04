@@ -1,11 +1,11 @@
 ---
-description: Getting Started with Docker
-title: Getting Started with Docker
+description: Primeros pasos con Docker
+title: Primeros pasos con Docker
 keywords:
   - Edge
-  - reComputer Application
+  - Aplicación con la reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /jetson-docker-getting-started
+slug: /es/jetson-docker-getting-started
 last_update:
   date: 01/04/2023
   author: w0x7ce

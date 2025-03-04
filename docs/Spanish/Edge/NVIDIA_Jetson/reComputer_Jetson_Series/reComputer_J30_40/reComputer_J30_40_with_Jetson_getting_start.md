@@ -1,10 +1,10 @@
 ---
-description: Flash JetPack to reComputer J4012 (J401 carrier board)
-title: Getting start with reComputer J30/40
+description: Flashear JetPack a la reComputer J4012 (carrier boardJ401)
+title: Primeros pasos con la reComputer J30/40
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_J30_40_with_Jetson_getting_start
+slug: /es/reComputer_J30_40_with_Jetson_getting_start
 last_update:
   date: 6/29/2023
   author: Lakshantha

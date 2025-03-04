@@ -1,12 +1,12 @@
 ---
-description: How to Format the Output of LLM Using Langchain on Jetson
-title: Format Output with Langchain
+description: Cómo dar formato la salida de un LLM usando Langchain en Jetson
+title: Cómo dar formato la salida de un LLM usando Langchain en Jetson
 keywords:
 - reComputer
 - LLM
 - Langchain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson
+slug: /es/How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson
 last_update:
   date: 4/1/2024
   author: Youjiang

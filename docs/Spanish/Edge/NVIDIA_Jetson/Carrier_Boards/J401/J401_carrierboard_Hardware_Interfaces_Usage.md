@@ -1,10 +1,10 @@
 ---
-description: Hardware and Interfaces Usage for J401 carrier board
-title: Interfaces Usage
+description: Uso de hardware e interfaces para la Carrier Board J401
+title: Uso de interfaces
 tags:
   - J401 carrier board
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /J401_carrierboard_Hardware_Interfaces_Usage
+slug: /es/J401_carrierboard_Hardware_Interfaces_Usage
 last_update:
   date: 04/29/2024
   author: Jiahao

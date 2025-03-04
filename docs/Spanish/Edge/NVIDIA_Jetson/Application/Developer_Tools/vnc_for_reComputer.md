@@ -1,10 +1,10 @@
 ---
-description: This wiki describes how to use VNC remote desktop tools on reComputer Jetson step by step.
-title: Using VNC on reComputer Jetson
+description: Esta wiki describe cómo utilizar las herramientas de escritorio remoto VNC en una reComputer Jetson paso a paso.
+title: Uso de VNC en una reComputer Jetson
 tags:
-  - AI model deploy
+  - Despliegue de modelo de IA
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /vnc_for_recomputer
+slug: /es/vnc_for_recomputer
 last_update:
   date: 9/30/2024
   author: YaoHui Zhu

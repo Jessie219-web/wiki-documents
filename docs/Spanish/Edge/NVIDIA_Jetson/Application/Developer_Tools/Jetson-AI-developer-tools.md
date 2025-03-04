@@ -1,8 +1,8 @@
 ---
-description: Jetson AI Developer Tools
-title: Jetson AI Developer Tools
+description: Herramientas para desarrolladores de Jetson AI
+title: Herramientas para desarrolladores de Jetson AI
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Jetson-AI-developer-tools
+slug: /es/Jetson-AI-developer-tools
 last_update:
   date: 05/11/2023
   author: Lakshantha

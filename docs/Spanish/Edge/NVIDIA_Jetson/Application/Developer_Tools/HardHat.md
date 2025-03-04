@@ -1,12 +1,12 @@
 ---
-description: Hard Hat Decetection - Data Label, AI Model Train, AI Model Deploy with Edge Impulse on NVIDIA Jetson
-title: Getting Started with Edge Impulse
+description: Detección de cascos de seguridad, etiquetado de datos, entrenamiento de modelos de IA, implementación de modelos de IA con Edge Impulse en NVIDIA Jetson
+title: Primeros pasos con Edge Impulse
 tags:
-  - Data Label
-  - AI model train
-  - AI model deploy
+  - Etiquetado de datos
+  - Entrenamiento de modelo de IA
+  - Despliegue de modelo de IA
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /HardHat
+slug: /es/HardHat
 last_update:
   date: 01/04/2023
   author: Bill

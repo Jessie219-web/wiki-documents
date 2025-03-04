@@ -1,10 +1,10 @@
 ---
-description: Getting start with reComputer J20
-title: Getting start with reComputer J20
+description: Primeros pasos con la reComputer J20
+title: Primeros pasos con la reComputer J20
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /recomputer_j20_with_jetson_getting_start
+slug: /es/recomputer_j20_with_jetson_getting_start
 last_update:
   date: 9/3/2024
   author: Yaohui

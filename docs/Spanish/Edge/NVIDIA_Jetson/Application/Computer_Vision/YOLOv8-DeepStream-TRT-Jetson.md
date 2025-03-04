@@ -1,13 +1,13 @@
 ---
-description: Deploy YOLOv8 on NVIDIA Jetson using TensorRT and DeepStream SDK - Data Label, AI Model Train, AI Model Deploy
-title: Deploy YOLOv8 with TensorRT and DeepStream SDK
+description: Implementa YOLOv8 en la NVIDIA Jetson con TensorRT y DeepStream SDK, etiquetado de datos, entrenamiento de modelos de IA, implementación de modelos de IA
+title: Implementa YOLOv8 con TensorRT y DeepStream SDK
 tags:
-  - Data Label
-  - AI model train
-  - AI model deploy
+  - Etiquetado de datos
+  - Entrenamiento de modelo de IA
+  - Despliegue de modelo de IA
   - Yolov8
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /YOLOv8-DeepStream-TRT-Jetson
+slug: /es/YOLOv8-DeepStream-TRT-Jetson
 last_update:
   date: 04/21/2023
   author: Lakshantha

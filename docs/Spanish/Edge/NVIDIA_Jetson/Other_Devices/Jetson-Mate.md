@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reComputer Carrier_Board_for_Jetson_Moudule
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Jetson-Mate
+slug: /es/Jetson-Mate
 last_update:
   date: 01/05/2023
   author: w0x7ce

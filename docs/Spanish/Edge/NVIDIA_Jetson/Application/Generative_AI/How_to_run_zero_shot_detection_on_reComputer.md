@@ -1,11 +1,11 @@
 ---
-description: This wiki provides a tutorial on how to run Zero-Shot Detection on reComputer Jetson.
-title: How to Run Zero-Shot Detection on reComputer
+description: Esta wiki proporciona un tutorial sobre cómo ejecutar Zero-Shot Detection en una reComputer Jetson.
+title: Cómo ejecutar la detección de disparo cero en una reComputer
 keywords:
 - reComputer
-- Zero-Shot Detection
+- Detección de disparo cero
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /run_zero_shot_detection_on_recomputer
+slug: /es/run_zero_shot_detection_on_recomputer
 last_update:
   date: 7/24/2024
   author: ZhuYaoHui

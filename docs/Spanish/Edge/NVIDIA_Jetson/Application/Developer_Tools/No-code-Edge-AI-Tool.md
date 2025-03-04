@@ -1,11 +1,11 @@
 ---
-description: No code Edge AI Tool
-title: No code Edge AI Tool
+description: Herramientas para Edge AI sin código
+title: Herramientas para Edge AI sin código
 keywords:
   - Edge
-  - reComputer Application
+  - Aplicación con la reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /No-code-Edge-AI-Tool
+slug: /es/No-code-Edge-AI-Tool
 last_update:
   date: 01/04/2023
   author: w0x7ce

@@ -1,11 +1,11 @@
 ---
-description: Create a doc page with rich content.
-title: GPIO and Grove for reComputer Series
+description: Crea una página de documento con contenido enriquecido.
+title: GPIO y Grove para la serie reComputer
 keywords:
   - Edge
   - reComputer 
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Jetson_Series_GPIO_Grove
+slug: /es/reComputer_Jetson_Series_GPIO_Grove
 last_update:
   date: 11/21/2022
   author: w0x7ce

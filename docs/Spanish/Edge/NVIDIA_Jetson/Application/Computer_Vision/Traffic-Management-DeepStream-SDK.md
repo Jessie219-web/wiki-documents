@@ -1,11 +1,11 @@
 ---
-description: Traffic Management DeepStream SDK
-title: Traffic Management DeepStream SDK
+description: SDK de DeepStream para gestión de tráfico
+title: SDK de DeepStream para gestión de tráfico
 keywords:
   - Edge
-  - reComputer Application
+  - Aplicación con la reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Traffic-Management-DeepStream-SDK
+slug: /es/Traffic-Management-DeepStream-SDK
 last_update:
   date: 01/04/2023
   author: w0x7ce

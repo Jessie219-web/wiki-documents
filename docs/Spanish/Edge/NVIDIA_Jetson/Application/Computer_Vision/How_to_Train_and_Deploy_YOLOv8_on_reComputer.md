@@ -1,11 +1,11 @@
 ---
-description: Complete YOLOv8 Model Training on reComputer
-title: How to train and deploy YOLOv8 on reComputer
+description: Entrenamiento completo del modelo YOLOv8 en la reComputer
+title: ¿Como entrenar y desplegar Yolo V8 en la reComputer?
 keywords:
 - reComputer
-- Train YOLOv8
+- Entrenamiento con YOLOv8
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /How_to_Train_and_Deploy_YOLOv8_on_reComputer
+slug: /es/How_to_Train_and_Deploy_YOLOv8_on_reComputer
 last_update:
   date: 12/6/2023
   author: Youjiang

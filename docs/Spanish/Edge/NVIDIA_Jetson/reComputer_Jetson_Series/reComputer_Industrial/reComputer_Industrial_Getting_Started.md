@@ -1,10 +1,10 @@
 ---
-description: reComputer Industrial Getting Started
-title: Getting Started with reComputer Industrial
+description: Primeros pasos con la reComputer Industrial
+title: Primeros pasos con la reComputer Industrial
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Industrial_Getting_Started
+slug: /es/reComputer_Industrial_Getting_Started
 last_update:
   date: 05/16/2023
   author: Lakshantha

@@ -1,10 +1,10 @@
 ---
-description: Hardware and Interfaces Usage for reComputer Industrial J20 Series
-title: reComputer Industrial J20 Hardware and Interfaces Usage
+description: Uso de hardware e interfaces para la serie industrial J20 de reComputer
+title: Uso de hardware e interfaces industriales J20 de reComputer
 tags:
   - reComputer Industrial
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Industrial_J20_Hardware_Interfaces_Usage
+slug: /es/reComputer_Industrial_J20_Hardware_Interfaces_Usage
 last_update:
   date: 05/16/2023
   author: Lakshantha

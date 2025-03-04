@@ -1,10 +1,10 @@
 ---
-description: Deploy AI model with Cochl.Sense on NVIDIA Jetson Devices
-title: Getting Started with Cochl.Sense
+description: Implementa un modelo de IA con Cochl.Sense en dispositivos NVIDIA Jetson
+title: Introducción a Cochl.Sense
 tags:
-  - AI model deploy
+  - Despliegue de modelo de IA
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cochl.Sense-Jetson-Getting-Started
+slug: /es/Cochl.Sense-Jetson-Getting-Started
 last_update:
   date: 03/27/2023
   author: Lakshantha

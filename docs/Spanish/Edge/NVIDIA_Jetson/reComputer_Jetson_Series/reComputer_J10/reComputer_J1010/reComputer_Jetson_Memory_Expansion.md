@@ -1,8 +1,8 @@
 ---
-description: Memory Expansion
-title: Memory Expansion
+description: Expansión de memoria
+title: Expansión de memoria
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Jetson_Memory_Expansion
+slug: /es/reComputer_Jetson_Memory_Expansion
 last_update:
   date: 01/05/2023
   author: w0x7ce

@@ -1,10 +1,10 @@
 ---
-description: This article introduces how to use Gapi on NVIDIA Jetson devices, an embeddable API gateway designed to rapidly transform the achievements of the Jetson AI Lab into real-world applications through a low-code workflow engine and microservice framework.
-title: Getting Started with Gapi
+description: Este artículo presenta cómo usar Gapi en dispositivos NVIDIA Jetson, una puerta de enlace API integrable diseñada para transformar rápidamente los logros del Jetson AI Lab en aplicaciones del mundo real a través de un motor de flujo de trabajo de bajo código y un marco de microservicios.
+title: Primeros pasos con Gapi
 tags:
   - AI model optimize
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /gapi_getting_started-with_jetson
+slug: /es/gapi_getting_started-with_jetson
 last_update:
   date: 09/20/2024
   author: Youjiang

@@ -3,9 +3,9 @@ description: reComputer J1020 v1 | A206
 title: reComputer J1020v1 | A206
 keywords:
   - Edge
-  - reComputer JetPack™_OS_Installation
+  - reComputer JetPack™_OS_Instalación
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_J1020_A206_Flash_JetPack
+slug: /es/reComputer_J1020_A206_Flash_JetPack
 last_update:
   date: 01/05/2023
   author: w0x7ce

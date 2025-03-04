@@ -1,8 +1,8 @@
 ---
-description: Data Upload and Label with alwaysAI on NVIDIA Jetson devices
-title: Getting Started with alwaysAI
+description: Carga y etiquetado de datos con alwaysAI en dispositivos NVIDIA Jetson
+title: Introducción a alwaysAI
 tags:
-  - Data Label
+  - Etiquetado de datos
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /alwaysAI-Jetson-Getting-Started
 last_update:

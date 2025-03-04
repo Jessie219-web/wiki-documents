@@ -1,10 +1,10 @@
 ---
-description: Optimize AI model with Deci on NVIDIA Jetson Devices
-title: Getting Started with Deci
+description: Optimización de modelos de IA con Deci en dispositivos NVIDIA Jetson
+title: Primeros pasos con Deci
 tags:
-  - AI model optimize
+  - Optomización de modelo de IA
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /DeciAI-Getting-Started
+slug: /es/DeciAI-Getting-Started
 last_update:
   date: 01/04/2023
   author: w0x7ce

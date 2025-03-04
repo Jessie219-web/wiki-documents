@@ -2,7 +2,7 @@
 description: reComputer J1010 | J101
 title: J101 Carrier Board
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_J1010_J101_Flash_Jetpack
+slug: /es/reComputer_J1010_J101_Flash_Jetpack
 last_update:
   date: 01/05/2023
   author: w0x7ce

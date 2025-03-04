@@ -1,13 +1,13 @@
 ---
-description: This article provides a getting-started guide for the reComputer Mini (based on the NVIDIA Jetson Orin platform), including the device's specifications and the steps for initial setup and configuration.
-title: Getting Started with reComputer Mini
+description: Este artículo proporciona una guía de inicio rápido para la reComputer Mini (basada en la plataforma NVIDIA Jetson Orin), incluidas las especificaciones del dispositivo y los pasos para la configuración inicial.
+title: Primeros pasos con la reComputer Mini
 keywords:
   - reComputer
   - reComputer mini
-  - embedded computer
+  - Computadora embebida
   - robots
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/reComputer_mini.webp
-slug: /recomputer_jetson_mini_getting_started
+slug: /es/recomputer_jetson_mini_getting_started
 last_update:
   date: 12/11/2024
   author: Youjiang

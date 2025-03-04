@@ -1,11 +1,11 @@
 ---
-description: DashCamNet with Jetson Xavier NX Multicamera
-title: DashCamNet with Jetson Xavier NX Multicamera
+description: DashCamNet y PeopleNet con Jetson Xavier NX Multicamera
+title: DashCamNet y PeopleNet con Jetson Xavier NX Multicamera
 keywords:
   - Edge
   - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /DashCamNet-with-Jetson-Xavier-NX-Multicamera
+slug: /es/DashCamNet-with-Jetson-Xavier-NX-Multicamera
 last_update:
   date: 01/04/2023
   author: w0x7ce

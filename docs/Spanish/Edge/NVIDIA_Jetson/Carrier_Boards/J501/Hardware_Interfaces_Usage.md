@@ -1,12 +1,12 @@
 ---
-description: Hardware and Interfaces Usage for J501 carrier board
-title: Interfaces Usage
+description: Uso de hardware e interfaces para la Carrier Board J501
+title: Uso de interfaces
 tags:
   - J501
   - Jetson
-  - Interface
+  - Interfaz
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /j501_carrier_board_interfaces_usage
+slug: /es/j501_carrier_board_interfaces_usage
 last_update:
   date: 08/20/2024
   author: Youjiang

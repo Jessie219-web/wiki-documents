@@ -1,6 +1,6 @@
 ---
-description:  Local RAG based on Jetson with LlamaIndex
-title:  RAG with LlamaIndex
+description:  RAG local basado en una Jetson con LlamaIndex
+title:  RAG con LlamaIndex
 keywords:
   - Edge
   - reComputer
@@ -8,7 +8,7 @@ keywords:
   - LlamaIndex
   - RAG
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Local_RAG_based_on_Jetson_with_LlamaIndex
+slug: /es/Local_RAG_based_on_Jetson_with_LlamaIndex
 last_update:
   date: 05/15/2024
   author: Jiahao

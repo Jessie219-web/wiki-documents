@@ -1,10 +1,10 @@
 ---
-description: Flash Jetpack on T906 Mini PC
+description: Flashear Jetpack en una T906 Mini PC
 title: T906 Mini PC
 tags:
   - Mini PC Jetpack Flash
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Mini_AI_Computer_T906
+slug: /es/Mini_AI_Computer_T906
 last_update:
   date: 01/05/2022
   author: w0x7ce

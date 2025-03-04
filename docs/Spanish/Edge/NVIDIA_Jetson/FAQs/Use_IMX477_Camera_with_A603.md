@@ -1,12 +1,12 @@
 ---
-description: use IMX477 camera with A603 Jetson carrier board
-title: Use IMX477 Camera with A603 Jetson Carrier Board
+description: Utiliza la cámara IMX477 con la Carrier Board Jetson A603
+title: Utiliza la cámara IMX477 con la Carrier Board Jetson A603
 keywords:
 - reComputer
-- IMX477 Camera
+- Cámara IMX477
 - A603
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Use_IMX477_Camera_with_A603_Jetson_Carrier_Board
+slug: /es/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board
 last_update:
   date: 05/22/2024
   author: Youjiang

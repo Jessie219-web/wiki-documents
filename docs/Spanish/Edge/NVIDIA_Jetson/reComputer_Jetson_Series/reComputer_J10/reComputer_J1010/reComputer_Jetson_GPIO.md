@@ -1,11 +1,11 @@
 ---
-description: How to use 40-Pin GPIO on reComputer Jetson Boards
-title: How to use 40-Pin GPIO on reComputer Jetson Boards
+description: Cómo utilizar GPIO de 40 pines en placas Jetson de reComputer
+title: Cómo utilizar GPIO de 40 pines en placas Jetson de reComputer
 keywords:
   - Edge
   - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Jetson_GPIO
+slug: /es/reComputer_Jetson_GPIO
 last_update:
   date: 04/12/2023
   author: Lakshantha

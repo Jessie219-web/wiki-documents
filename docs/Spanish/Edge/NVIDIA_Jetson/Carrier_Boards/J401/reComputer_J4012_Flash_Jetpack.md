@@ -1,10 +1,10 @@
 ---
-description: Flash JetPack to reComputer J4012 (J401 carrier board)
-title: Flash Jetpack
+description: Flashear JetPack a una reComputer J4012 (J401 carrier board)
+title: Flashear Jetpack
 keywords:
 - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_J4012_Flash_Jetpack
+slug: /es/reComputer_J4012_Flash_Jetpack
 last_update:
   date: 6/12/2024
   author: Lakshantha/Youjiang

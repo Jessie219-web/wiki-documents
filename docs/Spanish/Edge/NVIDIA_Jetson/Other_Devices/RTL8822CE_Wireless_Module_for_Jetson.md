@@ -1,6 +1,6 @@
 ---
-description: This wiki introduces the features and specifications of the RTL8822CE wireless module, a dual-band Wi-Fi and Bluetooth v5.0 M.2 wireless module compatible with various embedded devices (e.g., reComputer J4012). The article provides detailed information on its technical specifications, supported devices, hardware installation steps, and methods to configure wireless networks and Bluetooth via the desktop interface or command line.
-title: RTL8822CE Wireless Module for Jetson
+description: Esta wiki presenta las características y especificaciones del módulo inalámbrico RTL8822CE, un módulo inalámbrico M.2 de banda dual Wi-Fi y Bluetooth v5.0 compatible con varios dispositivos integrados (por ejemplo, reComputer J4012). El artículo proporciona información detallada sobre sus especificaciones técnicas, dispositivos compatibles, pasos de instalación de hardware y métodos para configurar redes inalámbricas y Bluetooth a través de la interfaz de escritorio o la línea de comandos.
+title: Módulo inalámbrico RTL8822CE para dispositivos Jetson
 keywords:
   - Edge
   - reComputer
@@ -8,7 +8,7 @@ keywords:
   - Bluetooth
   - Wireless 
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/wifi/rtl8822ce.webp
-slug: /rtl8822ce_wireless_module_for_jetson
+slug: /es/rtl8822ce_wireless_module_for_jetson
 last_update:
   date: 12/3/2024
   author: Youjiang

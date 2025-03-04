@@ -1,13 +1,13 @@
 ---
-description: Few-shot Object Detection - Data Label, AI Model Train, AI Model Deploy with Yolov5 and roboflow on NVIDIA Jetson
-title: Getting started with Yolov5 and roboflow
+description: Detección de objetos con pocos disparos, etiquetado de datos, entrenamiento de modelos de IA, implementación de modelos de IA con Yolov5 y roboflow en dispositivos NVIDIA Jetson
+title: Introducción a Yolov5 y roboflow
 tags:
-  - Data Label
-  - AI model train
-  - AI model deploy
+  - Etiquetado de datos
+  - Entrenamiento de modelo de IA
+  - Despliegue de modelo de IA
   - Roboflow
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /YOLOv5-Object-Detection-Jetson
+slug: /es/YOLOv5-Object-Detection-Jetson
 last_update:
   date: 01/04/2023
   author: w0x7ce

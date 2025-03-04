@@ -1,10 +1,10 @@
 ---
-description: Remote Manage with Allxon on NVIDIA Jetson Devices
-title: Getting Started with Allxon
+description: Administración remota con Allxon en dispositivos NVIDIA Jetson
+title: Primeros pasos con Allxon
 tags:
-  - Remote Manage
+  - Administración remota
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Allxon-Jetson-Getting-Started
+slug: /es/Allxon-Jetson-Getting-Started
 last_update:
   date: 1/13/2023
   author: jianjing Huang

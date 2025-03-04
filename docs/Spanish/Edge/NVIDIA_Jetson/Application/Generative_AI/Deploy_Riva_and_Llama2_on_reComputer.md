@@ -1,12 +1,12 @@
 ---
-description: Deploy Riva and Llama2 on reComputer
-title: Local Voice Chatbot
+description: Implementar Riva y Llama2 en una reComputer
+title: Chatbot local
 keywords:
 - reComputer
 - LLM
 - Chatbot
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Local_Voice_Chatbot
+slug: /es/Local_Voice_Chatbot
 last_update:
   date: 01/14/2024
   author: Youjiang

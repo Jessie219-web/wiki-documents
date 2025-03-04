@@ -1,10 +1,10 @@
 ---
-description: Deploy AI model with CVEDIA-RT on NVIDIA Jetson Devices
-title: Getting Started with CVEDIA-RT
+description: Implementa un modelo de IA con CVEDIA-RT en dispositivos NVIDIA Jetson
+title: Introducción a CVEDIA-RT
 tags:
-  - AI model deploy
+  - Despliegue de modelo de IA
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /CVEDIA-Jetson-Getting-Started
+slug: /es/CVEDIA-Jetson-Getting-Started
 last_update:
   date: 03/10/2023
   author: Lakshantha

@@ -1,11 +1,11 @@
 ---
-description: This wiki introduces the features of the J501 carrier board and explains how to flash the Jetpack system onto the J501 carrier board.
-title: Flash Jetpack
+description: Esta wiki presenta las características de la Carrier Board J501 y explica cómo instalar el sistema Jetpack en la Carrier Board J501.
+title: Flashear Jetpack
 keywords:
 - reServer
 - Jetson
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reserver_j501_getting_started
+slug: /es/reserver_j501_getting_started
 last_update:
   date: 08/19/2024
   author: Youjiang

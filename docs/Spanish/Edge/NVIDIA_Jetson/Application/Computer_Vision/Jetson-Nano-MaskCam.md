@@ -3,9 +3,9 @@ description: MaskCam
 title: MaskCam
 keywords:
   - Edge
-  - reComputer Application
+  - Aplicación con la reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Jetson-Nano-MaskCam
+slug: /es/Jetson-Nano-MaskCam
 last_update:
   date: 01/04/2023
   author: w0x7ce

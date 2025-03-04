@@ -1,11 +1,11 @@
 ---
-description: This article provides a detailed guide on how to flash the JetPack operating system onto the A608 carrier board, which supports NVIDIA Jetson Orin NX/Nano modules. It covers everything from the prerequisites and entering force recovery mode, to downloading the system image and drivers, and finally flashing the operating system onto an NVMe SSD, USB flash drive, or SD card, ensuring that users can successfully complete the system installation and startup.
+description: Este artículo proporciona una guía detallada sobre cómo instalar el sistema operativo JetPack en la Carrier Board A608, que admite los módulos NVIDIA Jetson Orin NX/Nano. Abarca todo, desde los requisitos previos y el ingreso al modo de recuperación forzada, hasta la descarga de la imagen del sistema y los controladores, y finalmente la instalación del sistema operativo en un SSD NVMe, una unidad flash USB o una tarjeta SD, lo que garantiza que los usuarios puedan completar con éxito la instalación y el inicio del sistema.
 title: A608 Carrier Board
 keywords:
   - Edge
   - reComputer
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/A608CB.webp
-slug: /reComputer_A608_Flash_System
+slug: /es/reComputer_A608_Flash_System
 last_update:
   date: 12/4/2024
   author: Youjiang

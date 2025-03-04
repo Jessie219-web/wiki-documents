@@ -1,11 +1,11 @@
 ---
-description: Security Xray Scan Knife Detection
-title: Security Xray Scan Knife Detection
+description: Detección de cuchillos con escáner de rayos X de seguridad
+title: Detección de cuchillos con escáner de rayos X de seguridad
 keywords:
   - Edge
-  - reComputer Application
+  - Aplicación con la reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Security_Scan
+slug: /es/Security_Scan
 last_update:
   date: 01/04/2023
   author: w0x7ce

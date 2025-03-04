@@ -1,13 +1,13 @@
 ---
-description: Deploy YOLOv8 on NVIDIA Jetson using TensorRT - Data Label, AI Model Train, AI Model Deploy
-title: Deploy YOLOv8 with TensorRT
+description: Implementa YOLOv8 en la NVIDIA Jetson con TensorRT, etiquetado de datos, entrenamiento de modelos de IA, implementación de modelos de IA
+title: Implementación de YOLOv8 con TensorRT
 tags:
-  - Data Label
-  - AI model train
-  - AI model deploy
+  - Etiquetado de datos
+  - Entrenamiento de modelos de IA
+  - Despliegue de modelo de IA
   - Yolov8
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /YOLOv8-TRT-Jetson
+slug: /es/YOLOv8-TRT-Jetson
 last_update:
   date: 07/17/2023
   author: Lakshantha

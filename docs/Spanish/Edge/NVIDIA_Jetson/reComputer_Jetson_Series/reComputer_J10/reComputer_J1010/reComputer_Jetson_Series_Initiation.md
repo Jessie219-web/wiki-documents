@@ -1,11 +1,11 @@
 ---
-description: reComputer for Jetson Initiation
-title: reComputer for Jetson Initiation
+description: reComputer para iniciar con la plataforma Jetson
+title: reComputer para iniciar con la plataforma Jetson
 keywords:
   - Edge
   - reComputer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_Jetson_Series_Initiation
+slug: /es/reComputer_Jetson_Series_Initiation
 last_update:
   date: 01/04/2023
   author: w0x7ce
