@@ -3,7 +3,7 @@ const docList = [
     {
       "path": "/recamera_gimbal_getting_started",
       "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp",
-      "title": "Getting Started",
+      "title": "Getting Started with reCamera Gimbal",
       "date": "02/27/2025"
     },
     {

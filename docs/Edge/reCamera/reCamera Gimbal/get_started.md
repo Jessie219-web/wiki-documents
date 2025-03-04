@@ -13,6 +13,7 @@ last_update:
   author: Parker Hu
 ---
 
+# Getting Started with reCamera Gimbal
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.png" /></div>
 
