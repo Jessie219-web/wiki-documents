@@ -50,7 +50,7 @@ El modelo TTS es un modelo de aprendizaje profundo de alto rendimiento para tare
 
 - Dispositivo reComputer Jetson AGX Orin 64G o reComputer Jetson J4012 16G con más de 16GB de memoria.
 - Micrófono altavoz USB sin controlador
-- Una cámara IP que puede generar una dirección de transmisión RTSP. También hemos incluido instrucciones sobre [cómo utilizar la herramienta NVIDIA Nvstreamer](../Developer_Tools/NVStreamer_Getting_Started.md) para convertir videos locales en transmisiones RTSP.
+- Una cámara IP que puede generar una dirección de transmisión RTSP. También hemos incluido instrucciones sobre [cómo utilizar la herramienta NVIDIA Nvstreamer](../Developer_Tools/es_NVStreamer_Getting_Started.md) para convertir videos locales en transmisiones RTSP.
 
 :::nota
 Ya hemos probado la viabilidad de esta wiki en la reComputer [Orin NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) y [AGX Orin 64GB](https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html) Developer Kit.
@@ -85,7 +85,7 @@ Ya hemos probado la viabilidad de esta wiki en la reComputer [Orin NX 16GB](http
 
 ### Instalar el VLM
 
-La funcionalidad principal de este proyecto es el modelo de lenguaje visual (VLM). Hemos proporcionado una guía sobre [cómo usar VLM en la reComputer Nvidia Jetson](../Generative_AI/How_to_run_VLM_on_reComputer.md). Consulta este enlace para obtener instrucciones de instalación y uso. Asegúrate de comprender completamente cómo realizar inferencias utilizando descripciones de texto en VLM antes de continuar con los siguientes pasos.
+La funcionalidad principal de este proyecto es el modelo de lenguaje visual (VLM). Hemos proporcionado una guía sobre [cómo usar VLM en la reComputer Nvidia Jetson](../Generative_AI/es_How_to_run_VLM_on_reComputer.md). Consulta este enlace para obtener instrucciones de instalación y uso. Asegúrate de comprender completamente cómo realizar inferencias utilizando descripciones de texto en VLM antes de continuar con los siguientes pasos.
 
 ### Instalar Pytorch Torchaudio
 
@@ -158,7 +158,7 @@ curl --location 'http://192.168.49.227:5010/api/v1/live-stream' \
 --data '{"liveStreamUrl": "rtsp://admin:IHFXnM8k@192.168.49.15:554//Streaming/Channels/1"}'
 ```
 :::nota
-Si no tienes una cámara RTSP, te proporcionamos instrucciones sobre [cómo usar NVStreamer para transmitir videos locales como RTSP](../Developer_Tools/NVStreamer_Getting_Started.md) y [agregarlos al VLM](../Generative_AI/How_to_run_VLM_on_reComputer.md).
+Si no tienes una cámara RTSP, te proporcionamos instrucciones sobre [cómo usar NVStreamer para transmitir videos locales como RTSP](../Developer_Tools/es_NVStreamer_Getting_Started.md) y [agregarlos al VLM](../Generative_AI/es_How_to_run_VLM_on_reComputer.md).
 :::
 
 Ejecuta set_streamer_id.sh
