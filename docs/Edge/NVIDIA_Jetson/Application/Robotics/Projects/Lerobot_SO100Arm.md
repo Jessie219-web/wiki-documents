@@ -112,7 +112,7 @@ A variety of 3D printers are acceptable to print the parts necessary of the foll
 
 1. Choose a printer: The STL files provided ready to print on many FDM printers. Below are the tested and suggested settings though others may work.
     - Material: PLA
-    - Nozzle Diameter and Precision: 0.4mm nozzle diameter at 0.2mm layer height or 0.6mm nozzle at 0.4mm layer height.
+    - Nozzle Diameter and Precision: 0.2mm nozzle diameter at 0.2mm layer height or 0.4mm nozzle at 0.4mm layer height.
     - Infill Density: 13%
 
 2. Acquisition of 3D printing files: All the parts for the leader or follower are contained in a single file, correctly orientated for z upwards to minimize supports.
