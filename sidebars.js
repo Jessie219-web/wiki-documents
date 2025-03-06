@@ -1297,6 +1297,7 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee_arduino',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiaoc6_zigbee_led_ha',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/use_cursor_create_zigbee_prj',
               ],
             },
             {
