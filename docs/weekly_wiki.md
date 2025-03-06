@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 02/17/2025
+  date: 03/03/2025
   author: Frank
 ---
 
@@ -17,61 +17,67 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is February 17th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is March 3rd, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Deploy DeepSeek on reComputer Jetson with MLC](https://wiki.seeedstudio.com/deploy_deepseek_on_jetson_with_mlc/)
+### [Getting Started with reCamera Gimbal](https://wiki.seeedstudio.com/recamera_gimbal_getting_started/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.png" style={{width:600, height:'auto'}}/></div>
 
-This wiki provides a step-by-step guide to deploying [DeepSeek](https://www.deepseek.com/) on reComputer Jetson devices with [MLC](https://llm.mlc.ai/) for efficient AI inference on the edge.
+The reCamera gimbal 2002 series is the first open-source camera control system, composed of one tiny AI camera - reCamera 2002w 8GB/64GB, and one compatible 2-Axis gimbal basement with 2 brushless motors. It is powered by an RISC-V SoC, providing 1 TOPS AI performance with video encoding at 5MP @ 30 FPS. It offers a Lego-like self-assembly package and integrates the Sensecraft AI platform and Node-RED platform for smooth graphical programming and pipeline construction, enabling rapid self-training, model conversion, and deployment of AI models such as Yolo v5/v8/11.
 
-### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/os_upgrade_guideline/)
+### [reComputer R1100 Getting Started](https://wiki.seeedstudio.com/recomputer_r1100_intro/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.jpg" style={{width:600, height:'auto'}}/></div>
 
-This document outlines the reCamera OS upgrade and rollback process. Users can update via the web interface or command line, supporting OTA updates, specific version installations, or local package upgrades. It also includes commands for restoring factory settings and provides contact details for technical support.
+The reComputer R1100, powered by the Raspberry Pi CM4, is a versatile edge IoT gateway with AI capabilities. It features a comprehensive range of industrial interfaces, including **2x Ethernet, 2x USB, 2x RS485, 2x RS232, 2x DI, and 2x DO**, along with flexible wireless connectivity options such as **4G, LoRa®, and Wi-Fi/BLE**. These features make it an ideal choice for various industrial applications.
+
+### [reComputer R1100 Assembly Guide](https://wiki.seeedstudio.com/recomputer_r1100_assembly_guide/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/dissambly_guide.PNG" style={{width:600, height:'auto'}}/></div>
+
+This Wiki will show you how to Assemble and Disassemble the unit to install peripherals components, as well as the option for mounting.
+
+### [Configure reComputer R1100](https://wiki.seeedstudio.com/recomputer_r1100_configure_system/)
+
+Learn how to configure and test hardware components on the reComputer R1100 series after installing devices. This wiki covers GPIO mapping, USER LED testing, SPI communication, Wi-Fi and Bluetooth scanning, LoRa®, 4G, Zigbee over Mini-PCIe, RS485, RS232, DI/DO testing,UPS for safe shutdown and more.
 
 ## Existing Wiki Updated
 
-### Flashing JP6.2 on A603 and A608 Boards for Jetson Update
+### [XIAO ESP32S3 Sense Sleep Modes](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/)
 
-We have updated the flashing procedure for flashing JP6.2 on the [A603](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/#flash-to-jetson) and [A608](https://wiki.seeedstudio.com/reComputer_A608_Flash_System/#enter-force-recovery-mode) carrier boards.
+We have updated the example code for the [Deep-Sleep](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/#deep-sleep), [Light-Sleep](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/#light-sleep), and [Modem-Sleep](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/#modem-sleep) modes of the XIAO ESP32S3 Sense.
 
-### [Single Channel LoRaWAN Gateway - SenseCAP Indicator](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/)
+### [reComputer R1000 Raspbian OS to eMMC](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/)
 
-We have added the [SenseCAP Indicator Connect to ChirpStack example](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/#connect-to-chirpstack).
+We have added an operation example for [Boot from NVME](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#boot-from-nvme).
 
-### [Getting started with 60GHz mmWave Fall Detection Sensor Kit with XIAO ESP32C6 (MR60FDA2)](https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/)
+### [Flash JetPack OS to A603 Carrier Board](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/)
 
-We have added the [Module firmware upgrade example](https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/#module-firmware-upgrade).
+We have added an example for using [CAN Interfaces](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/#can-interfaces).
 
-### [Voice Assistant System for Home Assitant](https://wiki.seeedstudio.com/respeaker_lite_ha/)
+### [NVIDIA® Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/)
 
-We have added the [XMOS Firmware update example](https://wiki.seeedstudio.com/respeaker_lite_ha/#xmos-firmware-update) and optimized the [Add XIAO ESP32S3 to ESPHome example](https://wiki.seeedstudio.com/respeaker_lite_ha/#add-xiao-esp32s3-to-esphome).
-
-### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
-
-We have added the [OTA Upgrade from 0.1.3 to latest version example](https://wiki.seeedstudio.com/recamera_getting_started/#ota-upgrade-from-013-to-latest-version).
-
-### [Getting Started with ReSpeaker 2-Mics Pi HAT v2 on Raspberry Pi](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/)
-
-We have fixed and optimized the [Setup the driver on Raspberry Pi example](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/#2-setup-the-driver-on-raspberry-pi).
-
-### [Getting Started with Seeed Studio XIAO-RS485-Expansion-Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/)
-
-We have added the [schematic files for Seeed Studio XIAO RS485 Expansion Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/#resources).
+We have added relevant information about [Developer Tools](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/#developer-tools).
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
+### [Develop both chips with Arduino](https://wiki.seeedstudio.com/SenseCAP_Indicator_ESP32_Arduino/#hardware-preparation)
+
+<div style={{textAlign:'center'}}>
+  <img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_6.png" style={{width:800, height:'auto'}}/>
+</div>
+
+This tutorial will guide you to develop your own custom project/firmware for the Sensecap Indicator using the simplicity and Flexibility of the Arduino Framework.
+
+<!-- ### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
 
 <div style={{textAlign:'center'}}>
   <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -173,5 +179,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
 - [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
 - [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
+- [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
+- [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
 
 </details>

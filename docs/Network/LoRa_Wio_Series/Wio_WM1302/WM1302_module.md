@@ -4,7 +4,7 @@ title: LoRaWAN® Gateway Module WM1302
 keywords:
   - wio 
   - docusaurus
-image: https://wiki.seeedstudio.com/wio_gps_board/
+image: https://files.seeedstudio.com/wiki/WM1302_module/WM1302_3.webp
 slug: /WM1302_module
 last_update:
   date: 02/17/2025

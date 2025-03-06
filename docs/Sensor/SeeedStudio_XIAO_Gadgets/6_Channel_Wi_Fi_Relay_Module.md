@@ -170,9 +170,9 @@ With either method, you'll have your firmware updated and ready for integration 
 ### Step 3: Network Configuration
 
 1. **Enable Access Point**:
-   - Upon powering up for the first time, the module will create a Wi-Fi network (SSID: `seeedstudio-2-channel-relay`).
+   - Upon powering up for the first time, the module will create a Wi-Fi network (SSID: `seeedstudio-6-channel-relay`).
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_ac_relay/2ch_relay_wifi_list.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/6_channel_wifi_relay/ap-from-xiao-esp32c6-seeedstudio-6-channel-relay.png" style={{width:680, height:'auto', "border-radius": '15px'}}/></div>
 
 2. **Access Configuration**:
    - Connect to the network using a phone or PC.
