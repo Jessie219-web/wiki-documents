@@ -5,7 +5,7 @@ keywords:
   - Edge
   - reComputer R1100
   - Flash OS
-image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.webp
+image: https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.webp
 slug: /recomputer_r1100_flash_OS
 last_update:
   date: 3/3/2025
