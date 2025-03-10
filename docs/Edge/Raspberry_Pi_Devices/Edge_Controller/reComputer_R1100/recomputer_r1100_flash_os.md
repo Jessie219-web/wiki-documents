@@ -8,7 +8,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.webp
 slug: /recomputer_r1100_flash_OS
 last_update:
-  date: 3/3/2024
+  date: 3/3/2025
   author: Kasun Thushara
 ---
 

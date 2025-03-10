@@ -1,31 +1,45 @@
 ---
-description: Bluetooth usage with Seeed Studio XIAO ESP32C6.
-title: Uso de Bluetooth en ESP32C6
+description: Bluetooth usage with Seeed Studio XIAO ESP32S3.
+title: Bluetooth para ambas versiones
 keywords:
-- esp32c6
+- esp32s3
 - xiao
 - ble
 - bluetooth
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
-slug: /es/xiao_esp32c6_bluetooth
+slug: /es/xiao_esp32s3_bluetooth
 last_update:
-  date: 02/08/2025
+  date: 02/10/2025
   author: Guillermo
 ---
 
-# Uso de Bluetooth con XIAO ESP32C6 de Seeed Studio
+# Uso de Bluetooth con XIAO ESP32S3 (Sense) de Seeed Studio
+
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/64.jpg" style={{width:700, height:'auto'}}/></div>
+
+El XIAO ESP32S3 de Seeed Studio es una potente placa de desarrollo que admite Bluetooth 5, BLE y redes Mesh, lo que la convierte en una opción ideal para una amplia gama de aplicaciones IoT que requieren conectividad inalámbrica. Gracias a su excelente rendimiento en RF, el XIAO ESP32S3 ofrece una comunicación inalámbrica fiable y de alta velocidad en distintas distancias, siendo una solución versátil tanto para aplicaciones de corto como de largo alcance.  
+
+En este tutorial, exploraremos las funciones básicas de Bluetooth en el XIAO ESP32S3, incluyendo cómo escanear dispositivos Bluetooth cercanos, cómo establecer una conexión Bluetooth y cómo transmitir y recibir datos a través de dicha conexión.
 
 <div class="table-center">
   <table align="center">
     <tr>
-        <th>Seeed Studio XIAO ESP32C6</th>
+        <th>Seeed Studio XIAO ESP32S3</th>
+        <th>Seeed Studio XIAO ESP32S3 Sense</th>
     </tr>
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:250, height:'auto'}}/></div></td>
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
+          </a>
+      </div></td>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
               <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -33,7 +47,26 @@ last_update:
   </table>
 </div>
 
-La placa de desarrollo XIAO ESP32C6 de Seeed Studio es una potente opción que soporta Bluetooth 5, BLE y redes Mesh, lo que la convierte en una opción ideal para una amplia variedad de aplicaciones de IoT que requieren conectividad inalámbrica. Con su destacada rendimiento en RF, el XIAO ESP32C6 puede proporcionar comunicación inalámbrica confiable y de alta velocidad en diversas distancias, lo que lo convierte en una solución versátil tanto para aplicaciones de corto como de largo alcance. En este tutorial, nos enfocaremos en las características básicas de las capacidades de Bluetooth del XIAO ESP32C6, como cómo escanear dispositivos Bluetooth cercanos, cómo establecer una conexión Bluetooth y cómo transmitir y recibir datos a través de una conexión Bluetooth.
+## Primeros pasos
+
+### Instalación de la antena  
+
+En la parte inferior izquierda del frente del XIAO ESP32S3, hay un conector independiente etiquetado como **"WiFi/BT Antenna Connector"**. Para obtener una mejor señal de WiFi/Bluetooth, es necesario tomar la antena incluida en el paquete e instalarla en el conector.  
+
+Hay un pequeño truco para instalar la antena correctamente. Si intentas presionarla con fuerza directamente, notarás que es muy difícil y puede lastimarte los dedos. La manera correcta de instalar la antena es insertar primero un lado del conector de la antena en el bloque del conector y luego presionar ligeramente el otro lado hasta que encaje.  
+
+Para retirarla, el procedimiento es similar: no la jales con fuerza. En su lugar, levanta un lado con cuidado y la antena se soltará fácilmente.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/5.gif" style={{width:500, height:'auto'}}/></div>
+
+:::note
+Si no tienes instalada la antena, es posible que no puedas utilizar la función de Bluetooth.  
+
+Si tienes la posibilidad, te sugiero usar una antena de mayor tamaño (tipo "big stick"), ya que proporcionará una mejor experiencia.
+:::
+
+
+## Bluetooth Low Energy (BLE) Usage
 
 ## Uso de Bluetooth Low Energy (BLE)
 
@@ -58,7 +91,7 @@ Con Bluetooth Low Energy, existen dos tipos de dispositivos: el servidor y el cl
 
 El servidor anuncia su existencia, por lo que puede ser encontrado por otros dispositivos, y contiene los datos que el cliente puede leer. El cliente escanea los dispositivos cercanos, y cuando encuentra el servidor que está buscando, establece una conexión y escucha los datos entrantes. Esto se llama comunicación punto a punto.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/ble.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/49.png" style={{width:800, height:'auto'}}/></div>
 
 #### Atributo
 
@@ -106,8 +139,7 @@ Existen UUIDs abreviados para todos los tipos, servicios y perfiles especificado
 
 ### Escáner BLE
 
-Crear un escáner BLE para el XIAO ESP32C6 es sencillo. A continuación se muestra un programa de ejemplo para crear un escáner.
-
+Crear un escáner BLE para el XIAO ESP32S3 es sencillo. A continuación se muestra un programa de ejemplo para crear un escáner.
 
 ```cpp
 #include <BLEDevice.h>
@@ -153,7 +185,7 @@ Si ya has actualizado tu placa de desarrollo ESP32 a la versión 3.0.0 o superio
 2. ```Serial.println(foundDevices.getCount());``` cambia a ```Serial.println(foundDevices->getCount());```
 :::
 
-Ahora puedes seleccionar la placa XIAO ESP32C6 y cargar el programa. Si el programa se ejecuta correctamente, abre el monitor serial y ajusta la tasa de baudios a 115200, podrás ver el siguiente resultado.
+Ahora puedes seleccionar la placa XIAO ESP32S3 y cargar el programa. Si el programa se ejecuta correctamente, abre el monitor serial y ajusta la tasa de baudios a 115200, podrás ver el siguiente resultado.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/54.png" style={{width:700, height:'auto'}}/></div>
 
@@ -188,15 +220,15 @@ Finalmente, la función `loop` inicia el escaneo BLE con el tiempo de escaneo y 
 
 ```c
 BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
-Serial.print("Dispositivos encontrados: ");
+Serial.print("Devices found: ");
 Serial.println(foundDevices.getCount());
-Serial.println("Escanéo realizado!");
+Serial.println("Scan done!");
 pBLEScan->clearResults();
 ```
 
-### Servidor/cliente BLE
+### BLE server/client
 
-Como se mencionó anteriormente, XIAO ESP32C6 puede funcionar tanto como servidor como cliente. Veamos el programa en el que actúa como servidor y cómo usarlo. Después de cargar el siguiente programa en XIAO, funcionará como servidor y enviará un mensaje de "Hola Mundo" a todos los dispositivos Bluetooth conectados a XIAO.
+Como se mencionó anteriormente, XIAO ESP32S3 puede funcionar tanto como servidor como cliente. Veamos el programa en el que actúa como servidor y cómo usarlo. Después de cargar el siguiente programa en XIAO, funcionará como servidor y enviará un mensaje de "Hola Mundo" a todos los dispositivos Bluetooth conectados a XIAO.
 
 ```cpp
 // Código del Servidor
@@ -240,7 +272,7 @@ void loop() {
 
 Mientras tanto, puedes buscar y descargar la aplicación **nRF Connect** en las principales tiendas de aplicaciones móviles, que permite que tu teléfono busque y se conecte a dispositivos Bluetooth.
 
-- Android: [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=es)
+- Android: [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en)
 - IOS: [nRF Connect](https://apps.apple.com/us/app/nrf-connect-for-mobile/id1054362403)
 
 Después de descargar el software, sigue los pasos que se muestran a continuación para buscar y conectar XIAO ESP32C6, y verás el mensaje anunciado "Hola Mundo".
@@ -248,13 +280,13 @@ Después de descargar el software, sigue los pasos que se muestran a continuaci�
 <table align="center">
 	<tr>
 	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/55.jpg" style={{width:200, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/ble_app.png" style={{width:200, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/56.jpg" style={{width:200, height:'auto'}}/></div></td>
 		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/58.jpg" style={{width:200, height:'auto'}}/></div></td>
 		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/59.jpg" style={{width:200, height:'auto'}}/></div></td>
 	</tr>
 </table>
 
-Si deseas usar otro XIAO ESP32C6 como cliente para recibir mensajes del servidor, puedes seguir el siguiente procedimiento para el XIAO cliente.
+Si deseas usar otro XIAO ESP32S3 como cliente para recibir mensajes del servidor, puedes seguir el siguiente procedimiento para el XIAO cliente.
 
 ```cpp
 // Código del Cliente
@@ -417,10 +449,11 @@ Si ya has actualizado tu placa de desarrollo ESP32 a la versión 3.0.0 o superio
 1.  ```std::string value = pRemoteCharacteristic->readValue();``` cambia a ```String value = pRemoteCharacteristic->readValue();```
 :::
 
-
 El programa anterior convertirá a la XIAO en un cliente y buscará dispositivos Bluetooth cercanos. Cuando el UUID del dispositivo Bluetooth coincida con el UUID que proporcionaste, se conectará al dispositivo y obtendrá el valor de su característica.
 
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/60.png" style={{width:800, height:'auto'}}/></div>
+
 
 #### Anotación del programa
 
@@ -469,21 +502,28 @@ Para comodidad de cableado, utilizaremos dos placas de expansión XIAO. El progr
 
 <table align="center">
 	<tr>
-	    <th>Seeed Studio XIAO ESP32C6</th>
-      <th>Seeed Studio Base de Expansióm para XIAO con Grove OLED</th>
-      <th>Grove - Sensor Digital de Luz - TSL2561</th>
+	    <th>Seeed Studio XIAO ESP32S3</th>
+	    <th>Seeed Studio XIAO ESP32S3 Sense</th>
+        <th>Seeed Studio Base de Expansióm para XIAO con Grove OLED</th>
+        <th>Grove - Sensor Digital de Luz - TSL2561</th>
 	</tr>
 	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/img/xiaoc6.jpg" style={{width:250, height:'auto'}}/></div></td>
-      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:200, height:'auto'}}/></div></td>
-      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Digital_Light_Sensor/img/hardware%20overview.jpg" style={{width:180, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:200, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:200, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:200, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Digital_Light_Sensor/img/hardware%20overview.jpg" style={{width:180, height:'auto'}}/></div></td>
 	</tr>
     <tr>
 	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
-          </a>
-      </div></td>
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
+    		</a>
+		</div></td>
+	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
+    		</a>
+		</div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
     		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
@@ -542,7 +582,7 @@ Necesitamos preparar dos XIAO, uno como servidor y otro como cliente. Aquí est�
 U8X8_SSD1306_128X64_NONAME_HW_I2C u8x8(/* reloj=*/ SCL, /* datos=*/ SDA, /* reset=*/ U8X8_PIN_NONE);
 
 // Nombre del servidor BLE (el otro ESP32 que ejecuta el sketch del servidor)
-#define bleServerName "XIAOESP32C6_BLE"
+#define bleServerName "XIAOESP32S3_BLE"
 
 BLECharacteristic *pCharacteristic;
 bool deviceConnected = false;
@@ -611,9 +651,7 @@ void loop() {
 ```
 
 Después de cargar el programa en uno de los XIAO, si todo funciona correctamente, puedes sacar tu teléfono y usar la aplicación nRF Connect para buscar el dispositivo Bluetooth llamado **XIAOESP32C6_BLE**, conectarlo, y hacer clic en el botón mostrado a continuación. Recibirás la información de los datos del sensor.
-<!--
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/63.jpg" style={{width:300, height:'auto'}}/></div>
--->
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/63.jpg" style={{width:300, height:'auto'}}/></div>
 
 Aquí encontrarás que la manera en que operamos el software no será exactamente la misma que en el ejemplo anterior, porque, generalmente, cuando enviamos un mensaje de tipo sensor, elegimos usar la propiedad **notify** para garantizar que el mensaje sea eficiente.
@@ -637,7 +675,7 @@ BLEClient*  pClient;
 bool doconnect = false;
 
 //Nombre del servidor BLE (el nombre del otro ESP32 que ejecuta el sketch del servidor)
-#define bleServerName "XIAOESP32C6_BLE"
+#define bleServerName "XIAOESP32S3_BLE"
 
 //Dirección del dispositivo periférico. La dirección se encontrará durante el escaneo...
 static BLEAddress *pServerAddress;
@@ -677,9 +715,10 @@ void setup() {
   
   Serial.println("Iniciando cliente BLE...");
 
-  BLEDevice::init("XIAOESP32C6_Client");
 
-  // Obtener un escáner y establecer la función de retorno que queremos usar para ser informados cuando
+  BLEDevice::init("XIAOESP32S3_Client");
+
+    // Obtener un escáner y establecer la función de retorno que queremos usar para ser informados cuando
   // detectemos un nuevo dispositivo. Especificar que queremos escaneo activo y comenzar el
   // escaneo para que se ejecute durante 30 segundos.
   BLEScan* pBLEScan = BLEDevice::getScan();
@@ -754,7 +793,7 @@ Para los programas anteriores, seleccionaremos las partes más importantes para 
 Al principio del programa, definimos el nombre del servidor Bluetooth, este nombre puede ser el que configures, pero debes recordarlo porque necesitarás este nombre para buscar este dispositivo Bluetooth.
 
 ```c
-#define bleServerName "XIAOESP32C6_BLE"
+#define bleServerName "XIAOESP32S3_BLE"
 ```
 
 En las secciones anteriores del tutorial, hemos hablado de que bajo el servidor habrá Características, y bajo Característica estarán los valores y el resto del contenido. Así que necesitamos seguir este principio al crear anuncios.
@@ -767,6 +806,7 @@ BLEService *pService = pServer->createService(BLEUUID((uint16_t)0x181A)); // Cen
   );
   pCharacteristic->addDescriptor(new BLE2902());
 ```
+
 
 En el programa anterior, puedes ver que se utiliza `createService()` para crear un servidor. El parámetro es un UUID específico: **0x181A**. En las reglas de GATT, **0x181A** indica datos del tipo de monitoreo ambiental, y el UUID de la misma Característica: **0x2A59** también tiene un significado especial. En GATT, indica la salida analógica. Esto se ajusta al caso de los valores de nuestro sensor de luz, por lo que aquí lo defino de esta manera. Puedes leer [aquí](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/GATT.pdf) lo que significan algunos de los UUIDs específicos que GATT ha preparado para nosotros.
 
@@ -841,11 +881,15 @@ El ejemplo anterior ofrece el caso más simple de un solo valor para un solo sen
 - [ESP32 BLE Server and Client (Bluetooth Low Energy)](https://randomnerdtutorials.com/esp32-ble-server-client/)
 :::
 
+## Solución de problemas  
 
+### P1: ¿BluetoothSerial no está disponible en los ejemplos de XIAO ESP32S3?  
 
-## Soporte técnico y discusión de productos
+[El ESP32-S3 no tiene hardware de Bluetooth Clásico en el chip](https://github.com/espressif/arduino-esp32/issues/8023). Solo el "viejo" ESP32 puede hacerlo; ningún otro SoC de Espressif tiene BT Clásico.  
 
-¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte y asegurarnos de que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para adaptarnos a diferentes preferencias y necesidades.
+## Soporte técnico y discusión sobre el producto  
+
+¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes formas de soporte para garantizar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para adaptarnos a diferentes preferencias y necesidades.
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
