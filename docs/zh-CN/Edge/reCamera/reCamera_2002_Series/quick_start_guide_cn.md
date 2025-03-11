@@ -7,7 +7,7 @@ keywords:
   - 边缘计算
   - AI摄像机
 image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
-slug: /recamera_getting_started_cn
+slug: /cn/recamera_getting_started
 sidebar_position: 1
 last_update:
   date: 03/11/2025
