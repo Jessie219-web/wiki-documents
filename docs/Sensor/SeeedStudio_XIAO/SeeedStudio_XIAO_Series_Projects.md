@@ -657,7 +657,6 @@ We can't do it without the love, contribution that we get from the community, an
             <th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/XIAOEI/">XIAO nRF52840 (Sense)-Motion Recognition</a></th>
 		</tr>
 		<tr>
-			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/XIAO-BLE-PDM-EI/">XIAO nRF52840 (Sense)-Speech Recognition</a></th>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/tinyml_course_Key_Word_Spotting/">XIAO ESP32S3 Sense (Key Word Spotting)</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/">XIAO ESP32S3 Sense (Image Classification)</a></th>
 		</tr>

@@ -6,7 +6,7 @@ keywords:
   - reComputer R1100
   - Flash OS
 image: https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.webp
-slug: /recomputer_r1100_flash_OS
+slug: /recomputer_r1100_flash_os
 last_update:
   date: 3/3/2025
   author: Kasun Thushara
@@ -44,7 +44,7 @@ You need to prepare the following hardware
 
 ### Flash os to the NVME
 
-Please refer this [link](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#steps-for-flashing-raspbian-os), and then insert it into the M.2 slot.
+Please refer this [link](https://wiki.seeedstudio.com/recomputer_r1100_assembly_guide/#installing-an-ssd), and then insert it into the M.2 slot.
 
 ### Boot from emmc and update eeprom
 
@@ -162,7 +162,7 @@ Use `Ctrl`+`x` to save the file, and then reboot your machine.
 
 - **Step 2.** Please use the USB Type-C data cable connect to the Type-C port on the reComputer R1100, as shown in the below image,
 
-<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/33.png" /></div>
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/R1100/r11_usb.jpg"/></div>
 
 - **Step 3.** Please connect the Power Cord from the power supply to the reComputer R1100 power port.
 
