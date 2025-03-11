@@ -7,7 +7,7 @@ const docList = [
       "date": "03/04/2025"
     },
     {
-      "path": "/recomputer_r1100_flash_OS",
+      "path": "/recomputer_r1100_flash_os",
       "image": "https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.webp",
       "title": "reComputer R1100 Flash OS",
       "date": "3/3/2025"
