@@ -5839,6 +5839,17 @@ const sidebars = {
             'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/Lerobot_SO100Arm_zh',
           ]
         },
+        {
+          type: 'category',
+          label: 'reCamera',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
+          // },
+          items: [
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/quick_start_guide_cn',
+          ]
+        },
 
 
     //Jetson 这里
