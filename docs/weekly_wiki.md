@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 02/24/2025
+  date: 03/10/2025
   author: Frank
 ---
 
@@ -17,63 +17,27 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is February 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is March 10th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting Started with Wi-Fi HaLow Mini PCIe Module](https://wiki.seeedstudio.com/getting_started_with_wifi_halow_mini_pcie_module/)
+### [reComputer R1100 Flash OS](https://wiki.seeedstudio.com/recomputer_r1100_flash_os/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/0.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.jpg" style={{width:600, height:'auto'}}/></div>
 
-This guide will walk you through setting up and using the Wi-Fi HaLow Mini PCIe Module to build a Wi-Fi HaLow gateway. The Mini PCIe form factor makes it easy to integrate Wi-Fi HaLow connectivity into existing systems and create IoT gateways that can connect numerous low-power devices over long distances.
+This wiki provides step-by-step instructions for flashing an OS onto the reComputer R1100, an industrial IoT edge gateway powered by Raspberry Pi CM4. It covers hardware/software requirements, OS flashing (NVMe/eMMC), EEPROM updates, boot order configuration, and driver installation for Windows, Mac, and Linux users.
 
-### [Getting Started with Wi-Fi HaLow Module for XIAO](https://wiki.seeedstudio.com/getting_started_with_wifi_halow_module_for_xiao/)
+### [Using Cursor to Create Zigbee Projects with XIAO ESP32C6](https://wiki.seeedstudio.com/use_cursor_create_zigbee_prj/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wifi_halow/pic/20.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/cursor_zigbee_xiaoc6/13.webp" style={{width:800, height:'auto'}}/></div>
 
-This tutorial will guide you through setting up and using the Wio-WM6180 Wi-Fi HaLow Module with a XIAO ESP32S3 to build a Wi-Fi HaLow client. Wi-Fi HaLow (IEEE 802.11ah) is designed for long-range, low-power IoT applications, operating in the sub-1 GHz frequency band. We'll walk through the hardware setup, software configuration, and demonstrate how to establish Wi-Fi HaLow connectivity for your IoT projects.
-
-### [reServer Industrial Hardware Interface Usage](https://wiki.seeedstudio.com/reserver_industrial_hardware_interface_usage/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reServer-Industrial/2.jpg" style={{width:800, height:'auto'}}/></div>
-
-This guide covers the key features and setup of the reServer Industrial board, which offers versatile connectivity options, including 5 RJ-45 Ethernet ports (4 PoE PSE), and supports 2.5" SATA HDD/SSD storage. With its fanless design and passive heatsink, it’s built for harsh environments, offering efficient cooling and low power consumption, making it ideal for demanding, noise-sensitive applications.
-
-### [reCamera Software Structure](https://wiki.seeedstudio.com/recamera_os_structure/)
-
-The software comes with a stable reCamera OS that supports firmware OTA updates. Additionally, Node-RED and Sensecraft AI platform is integrated in the device for easier deployment experience. This integration offers novice developers a modular programming experience based on Node-RED nodes.  For advanced developers, the in-depth Linux-based development and python are also there for twist and play.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/recam_OS_structure.png" style={{width:800, height:'auto'}}/></div>
-
-We warmly welcome developers proficient in JavaScript, C/C++, Python, Linux OS, buildroot, as well as geeks, students, and beginners, to engage in further development and explore applications.
-
-### [Develop reCamera with Node-RED](https://wiki.seeedstudio.com/recamera_develop_with_node-red/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/example_flow.png" style={{width:800, height:'auto'}}/></div>
-
-Node-RED's goal is to enable anyone to build applications that collect, transform and visualize their data; building flows that can automate their world. Its low-code nature makes it accessible to users of any background, whether for home automation, industrial control systems or anything in between. By integrated Node-RED with reCamera, it provides a beginner-friendly development method that can let users drag and play with the device right the way. You can learn the [Node-RED Concept](https://nodered.org/docs/user-guide/concepts#:~:text=A%20Flow%20is%20represented%20as,(sets%20of%20connected%20nodes).) here or start with a [video tutorial](https://www.youtube.com/watch?v=DFNv91TTt68).
-
-### [Develop reCamera with c&cpp](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/)
-
-reCamera has limited resources and no compilation environment for C code is configured. If you want to use `C&CPP` to develop applications on the reCamera, you need to configure the cross-compilation environment on a linux machine. This wiki provides a simple example for configuring the compilation environment to help you get started quickly.
+This guide will walk you through using Cursor's AI-powered chat to develop Zigbee applications with XIAO ESP32C6 and sensors. By the end of this tutorial, you'll be able to independently use Cursor's Chat to develop Zigbee applications with your XIAO board and sensors.
 
 ## Existing Wiki Updated
 
-### [LoRaWAN® Gateway Module WM1302](https://wiki.seeedstudio.com/WM1302_module/)
+### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
 
-We have added the [Run Semtech SX1302 packet forwarder example](https://wiki.seeedstudio.com/WM1302_module/#step4-run-semtech-sx1302-packet-forwarder).
-
-### [reComputer Mini Hardware and Interfaces Usage](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/)
-
-We have added the [Ethernet](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#ethernet), [USB](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#usb), [UART](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#uart), and other examples for reComputer Mini hardware and interface usage.
-
-### [Flash JetPack OS to J401 Carrier Board](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/)
-
-We have added the [flashing JP6.2 example](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack/#flash-the-device-step-by-step).
-
-### [Getting Started with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_getting_started/)
-
-We have added the [Preventing XIAO MG24 from Bricking During Deep Sleep](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#preventing-xiao-mg24-from-bricking-during-deep-sleep) and [Unbricking example](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#unbricking).
+We have added the [IMU Advanced Demo](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/#imu-advanced-demo) to the XIAO MG24 Sense.
 
 ## The Efforts of Contributor
 
@@ -186,5 +150,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
 - [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
 - [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
+- [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
+- [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
 
 </details>
