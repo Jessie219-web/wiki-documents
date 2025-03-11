@@ -22,7 +22,7 @@ Also it have two On-board 120Ω terminating resistors which are controlled by th
 
 There are **3 versions** of the CAN BUS shield for Raspberry Pi. All 3 versions work perfectly on Raspberry Pi platform, and may skip this section if you're using RPi platform.
 
-The CAN BUS shield now also **supports the Nvidia Jetson Nano platform**, and different versions of the CAN BUS Shield **do affect the functionality**, please check the table below carefully if you're using with Jetson Nano Platform.
+The CAN BUS shield now only supports the Jetson Nano Developer Kit (SD card) and does not support Jetson Nano with eMMC (reComputer J1010/J1020v2). Different versions of the CAN BUS Shield **do affect the functionality**, please check the table below carefully if you're using with Jetson Nano Platform.
 
 |Product Name|Chip|RPi State|Jetson Nano State|
 |--|--|--|--|
