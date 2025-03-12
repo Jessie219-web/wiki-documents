@@ -233,7 +233,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
     version: 0.15-1
     ```
 
-5. **Start Docker Instance:**
+4. **Start Docker Instance:**
 
     ```bash
     $ docker compose -f frigate.yml up -d
