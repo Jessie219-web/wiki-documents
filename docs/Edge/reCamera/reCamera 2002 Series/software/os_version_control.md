@@ -63,7 +63,7 @@ If you are developing OS and you have your own branch in github, you can also up
 ### Device management by local package
 You can also update/upgrade the firmware manually using the local ota package. The ota firmwares can be [downloaded here](https://github.com/Seeed-Studio/reCamera-OS/releases/). Use tools like scp to transfer the files to reCamera.
 ```bash
-scp sg2002_reCamera_0.1.3_emmc_ota.zip recamera@ip_address
+scp sg2002_reCamera_0.1.3_emmc_ota.zip recamera@ip_address:~/
 ```
 Then use the bash to deploy.
 ```bash
