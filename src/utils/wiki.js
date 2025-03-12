@@ -1,10 +1,24 @@
 const docList = [
   [
     {
+      "path": "/SenseCAP_Indicator_Single_Channel_Gateway",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/61.webp",
+      "title": "Single Channel LoRaWAN Gateway - SenseCAP Indicator",
+      "date": "02/11/2025"
+    },
+    {
       "path": "/deploy_deepseek_on_jetson",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp",
       "title": "Quickly Deploy DeepSeek on reComputer Jetson",
       "date": "02/08/2025"
+    }
+  ],
+  [
+    {
+      "path": "/xiao_mg24_bluetooth",
+      "image": "https://files.seeedstudio.com/wiki/XIAO_MG24/Bluetooth/ble-cover.webp",
+      "title": "Bluetooth Usage with Seeed Studio XIAO MG24",
+      "date": "02/8/2025"
     },
     {
       "path": "/xiaoc6_zigbee_led_ha",
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/mobile-cop.webp",
       "title": "Setting Up OpenWrt on Raspberry Pi 5 with a 4G LTE Module",
       "date": "12/25/2024"
-    }
-  ],
-  [
-    {
-      "path": "/lerobot_so100m",
-      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/Arm_kit.webp",
-      "title": "How to use the SO-ARM100 robotic arm in Lerobot",
-      "date": "12/24/2024"
-    },
-    {
-      "path": "/raspberry_pi_5_uses_pcie_hat_dual_hat",
-      "image": "https://files.seeedstudio.com/wiki/M.2_Hat/new/m.2-dual-hat-for-raspberry-pi-5.webp",
-      "title": "Raspberry Pi 5 uses PCIe hat/dual hat",
-      "date": "12/24/2024"
     }
   ]
 ];

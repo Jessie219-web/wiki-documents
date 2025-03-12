@@ -14,6 +14,7 @@ const excludedPaths = [
 
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'USB_Timeout_during_Flashing.md'), // 排除指定文档
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Get_System_Log_of_reComputer_J30_and_J40.md'),
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'How_to_Upgrade_Software_Packages_for_Jetson.md'),
 ];
 
 // 递归函数，用于遍历多层文件夹

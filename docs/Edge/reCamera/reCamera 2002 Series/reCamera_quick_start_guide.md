@@ -8,8 +8,8 @@ image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
 slug: /recamera_getting_started
 sidebar_position: 1
 last_update:
-  date: 11/11/2024
-  author: Parker Hu
+  date: 02/10/2025
+  author: Evelyn Chen
 ---
 
 # reCamera Quick Start Guide
@@ -17,13 +17,71 @@ last_update:
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reCamera/recamera_banner.png" /></div>
 
 Welcome to reCamera! This guide will help you quickly set up your device and start using it to unlock powerful AI-Vision features. Whether you're a beginner or an experienced user, this step-by-step walkthrough will guide you through the installation, configuration, and first use.
+
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/reCamera-2002w-8GB-p-6250.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
     </a>
 </div>
 
-## Step 1: Unboxing and Power On
+# Product Series
+
+There are 4 version of reCamera:
+
+<table border="1">
+    <tr>
+        <th> </th>
+        <th>reCamera 2002 8GB</th>
+        <th>reCamera 2002 64GB</th>
+        <th>reCamera 2002w 8GB</th>
+        <th>reCamera 2002w 64GB</th>
+    </tr>
+    <tr>
+        <td>Core Board</td>
+        <td>Core 2002 8GB</td>
+        <td>Core 2002 64GB</td>
+        <td>Core 2002w 8GB</td>
+        <td>Core 2002w 64GB</td>
+    </tr>
+    <tr>
+        <td>Sensor Board</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+        <td>S101(OV5647)</td>
+    </tr>
+    <tr>
+        <td>Base Board</td>
+        <td>B101</td>
+        <td>B101</td>
+        <td>B101</td>
+        <td>B101</td>
+    </tr>
+    <tr>
+        <td>Wireless(Wi-Fi/BT)</td>
+        <td> </td>
+        <td> </td>
+        <td>✅</td>
+        <td>✅</td>
+    </tr>
+    <tr>
+        <td>Mounting Method</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+        <td>Magnetic/Camera Bracket Mount</td>
+    </tr>
+    <tr>
+        <td>Power Supply</td>
+        <td>Type - C cable</td>
+        <td>Type - C cable</td>
+        <td>Type - C cable</td>
+        <td>Type - C cable</td>
+    </tr>
+</table>
+
+
+## Unboxing and Power On
 
 Start by unpacking your reCamera. Inside the box, you should find:
 - reCamera
@@ -34,82 +92,108 @@ Make sure all parts are included.
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/part_list.jpg" /></div>
 
-Simply power on the device with the type-C cable provided. When you see the green light is on, that means the reCamera is ready to connnect to the world. 
+Simply power on the device with the type-C cable provided. When you see the green light is on, that means the reCamera is ready to connect to the world. 
 
 
 **Light Indicators Status**:
-- The green light in the middle means power-on.
-- The flashing red light stands for the heartbeat of CPU.
-- The blue light stands for the status of emmc. It flahses when reading or writing the emmc.
+
+| LED(color) | Status | Statement |
+| ---- | ---- | ---- |
+| LED1 - Green | ON | Power On |
+| LED2 - Red | Flashing | CPU Working(user define) |
+| LED3 - Blue | Flashing | eMMC Reading/Writing |
 
 
-## Step 2: Network Connection
+## Network Connection
 
-There are multiple methods to setup the network for reCamera, you can freely choose the one that suits for you. 
+There are three methods to connect the reCamera to your network:
 
-### Method 1: Wired Network Configuration via USB cable
+### Method 1: USB cable
+**Wired Network Configuration via USB cable**
 
-If the USB cable is directly connected to your PC, you can then visit ```192.168.42.1``` to view the page for reCamera then choose the desire network. If you encounter any problems, you can view the network troubleshoot page. 
+Connect the USB cable from reCamera to your PC, you can then visit ```192.168.42.1``` to view the loading page for reCamera.
+
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/usbmode.png" /></div>
+
+If you have reCamera with wireless function, we recommend to set up Wi-Fi connection. 
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Wi-Fi_list.png" /></div>
 
-### Method 2: WIreless Network Configuration in AP mode
+If you encounter any problems, please view the [network troubleshoot](https://wiki.seeedstudio.com/recamera_network_connection/). 
+
+
+### Method 2: Ethernet
+
+**Ethernet Port Network Configuration**
+
+If you would like use ethernet port, you can use the cable in the box to connect to your router. Note, this is not a POE (Power over Ethernet). You still need the type-c to power on the device. You can unscrew the back of the camera and connect through the port.
+
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/IPmode.png" /></div>
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/ethernet_cable.png" /></div>
+
+Once connected, you can find the IP of reCamera on your router backend, then visit the website and Node-RED platform.
+
+### Method 3: AP mode
+
+**Wireless Network Configuration in AP mode**
 
 When power-on, reCamera will turn on the Access Point(AP) for you to change the network preference. Open your phone or laptop's Wi-Fi list, you should be able to see a Wi-Fi name called ```reCamera_******```. The naming system is "recamera_" + the last six digits of the mac address on this device. Default password is 
 ```12345678```.
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/laptop_wifi_list.png" /></div>
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/laptop_wifi_list.png" /></div>
 
 Connect to this AP, and a website should automatically pop out for you. If not, you can always type **192.168.16.1** in your browser to visit the page. Then you can select which wifi you want the reCamera to connect to. If you have more than one reCamera, you can refer to the [Device Management](#jump1) to find out which one is which. 
 
-### Method 3: Ethernet Port Network Configuration
 
-If you would like use ethernet port, you can use the cable in the box to connect to your router. Note, this is not a POE (Power over Ethernet). You still need the type-c to power on the device. You can unscrew the back of the camera and connect through the port.
+## Website Access
+Once you have connected the reCamera to your network, you can visit the website by typing ```192.168.42.1``` in your browser. Please check your device OS version. The first batch of reCamera users received the OS with version 0.1.3. The second batch of users will be equipped with the system of version 0.1.5 or above. Please go to ```Sidebar -> System -> Software Update``` to check the software version, and apply and install the latest version of the OS. Update instruction please refer to [OTA upgrade guideline](https://wiki.seeedstudio.com/recamera_getting_started/#ota-upgrade-from-013-to-latest-version).
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/ethernet_cable.png" /></div>
 
-Once connected, you can find the IP of reCamera on your router backend, then visit the website and Node-red platform.
+## Access reCamera preview dashboard
 
-## SSH Remote Access
+We also provided a build-in dashboard UI example where you can preview the video stream, change the desire models. You can freely twist and integrate with your own application. 
 
-You can also visit the reCamera remotely, by using the following command:
-```
-ssh recamera@recamera.local
-```
+If you are the second batch user of reCamera with 0.1.5 or above OS version, the preview dashboard would be shown once you login in.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/ssh_connection.png" /></div>
+If you upgrade the OS by yourself, you should download the dashboard jsonflow from Sensecraft AI
 
-Default password is
-```
-recamera
-```
-Then hit ```Enter```, you should be able to now remotely control the reCamera.
+**Step 1**. Open loading page, click ```Download dashborad flow```
 
-### <span id="jump1"> Multi Devices Management </span>
-If you have more than one reCamera, you can distinguish them by the mac address on the back of the device.
+ <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload1.png" /></div>
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/mac_address_tag.png" /></div>
+**Step 2**. Navigate to Sensecraft AI platform, select the first official Dashboard Demo and click ```Clone```.
 
-Or, once you connect the device to your laptop through USB or AP, you can view the mac address by using the following command
-```
-ifconfig wlan0
-```
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload2.png" /></div>
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/last_six_digits.png" /></div>
+**Step 3**. Select the connection method you applied.
 
-## Access reCamera Web Client
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload3.png" /></div>
 
-## Access pre-built Node-RED dashboard
+**Step 4**. Then the Node-RED workspace with the pre-built flow would be shown.
 
-We have integrated reCamera with the Node-red platform for you to develop and integrated more conveniently. With the network connected, you can visit the Node-red Dashboard by visiting the ```ip_address:1880``` in your browser. In here you can preview model, switch to other model, or even build out the application you need with all the handy nodes. Here is step by step instruction of how you can get the preview working.
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload4.png" /></div>
 
-<!-- <div style={{textAlign:'center'}}><iframe width={1000} height={600} src="https://www.youtube.com/embed/XdgCt44UR1M" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div> -->
+**Step 5**. Click ```Deploy``` and check the flow is start already, then click ```dashboard```, that dashboard would be shown.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload5.png" /></div>
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload6.png" /></div>
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload7.png" /></div>
+
+
+For these provided workflow, YOLO11n detection model is pre-built, which is the latest computer vision model for real-time object detection model. You can also replace it with other models in the node.
+
+You are able to deploy object counting function quickly with the provided dashboard, and adjust the threshold to get the accurate result.
+
+### Model List
 
 There are other models that you can replace:
 
 
-| Model                              | Description                                                  | Download Link                                                |
-| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Model             | Description           | Download Link            |
+| ----------------- | --------------------- | ------------------------ |
 | yolo11n_cv181x_int8.cvimodel       | [Ultralytics](https://www.ultralytics.com/) [YOLO11](https://github.com/ultralytics/ultralytics) | [Yolo11n Download](https://files.seeedstudio.com/wiki/reCamera/models/yolo11n_cv181x_int8.cvimodel) |
 | yolov8n_cv181x_int8.cvimodel       | Ultralytics YOLOv8                                           | [Yolov8n Download](https://files.seeedstudio.com/wiki/reCamera/models/yolov8n_cv181x_int8.cvimodel) |
 | person_cv181x_int8.cvimodel        | Person recognition model                                     | [Person Detect Download](https://files.seeedstudio.com/wiki/reCamera/models/person_cv181x_int8.cvimodel) |
@@ -123,84 +207,118 @@ Yolo11n model classes:
 person, bicycle, car, motorcycle, airplane, bus, train, truck, boat, traffic light, fire hydrant, stop sign, parking meter, bench, bird, cat, dog, horse, sheep, cow, elephant, bear, zebra, giraffe, backpack, umbrella, handbag, tie, suitcase, frisbee, skis, snowboard, sports ball, kite, baseball bat, baseball glove, skateboard, surfboard, tennis racket, bottle, wine glass, cup, fork, knife, spoon, bowl, banana, apple, sandwich, orange, broccoli, carrot, hot dog, pizza, donut, cake, chair, couch, potted plant, bed, dining table, toilet, tv, laptop, mouse, remote, keyboard, cell phone, microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush
 ```
 
-We also provided a build-in dashboard UI example where you can preview the video stream, change the desire models. You can freely twist and integrate with your own application. [More work in progress...]
-## Factory Reset
+### Function Statement:
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-12.png" /></div>
+**Counting Selection**: So far 4 kinds of object are support to be counted. There are Person, Cat, Dog, and Bottle. Multiple objects are supported by downloading model from sensecraft model zoo or uploading your customized model.
 
-If you forget your device's passcode, you can reset the device by long pressing the **User** button and then connecting the  device to power. When the red light of the device is on, release the User button.
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboard1.png" /></div>
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-1.gif" /></div>
+**Intersection over Union (IoU)**: IoU is a metric used to evaluate the overlap between the predicted bounding box and the ground truth bounding box. It is calculated as the ratio of the intersection area of the two boxes to the union area of the two boxes. The value of IoU is typically in the range from 0 to 1. We standardized it to a scale of 0 - 100, an IoU value of 0 represents no overlap between the predicted box and the ground - truth box. A value of 100 indicates a perfect match, meaning the two boxes completely overlap.
 
-:::note
-This will delete user information, including applications you have developed. Please operate with caution.
-:::
+**Confidence**: Confidence in the YOLO model represents the probability that a predicted bounding box contains an object and how accurate the prediction is. It is a value between 0 and 100.
 
-If you want to restore the firmware of your device to a specific version, you can download the relevant system firmware on [GitHub](https://github.com/Seeed-Studio/reCamera-OS/releases) and follow [this tutorial](https://github.com/Seeed-Studio/reCamera-OS?tab=readme-ov-file#23-build) to manually burn the system firmware.
-:::note
-The burn tool currently only supports windows systems.
-:::
+**Step 6**. You can adjust the threshold of ```IoU``` and ```Confidence``` to get a more accurate result.
 
-## OS Upgrade Guideline
+- IoU=0,Confidence=0:
 
-You can check out the latest version of the [reCamera OS here.](https://github.com/Seeed-Studio/reCamera-OS)
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboard2.png" /></div>
 
-Manually update the latest OTA firmware:
-```bash
-/mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/latest 
+- IoU=25,Confidence=33:
 
-/mnt/system/upgrade.sh start
-```
-
-Manually update the specified version of OTA firmware. You can also update the system version in your branch.
-
-```bash
-/mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/download/0.1.3/sg2002_reccamera_emmc_md5sum.txt #Replace it with your branch link
-
-/mnt/system/upgrade.sh start
-```
-
-Update the firmware manually using the local ota package.
-
-```bash
-/mnt/system/upgrade.sh start sg2002_reCamera_0.1.3_emmc_ota.zip
-```
-You can change system files to be readable or writable by typing `rootfs_rw on/off`.
-
-Manually restore factory Settings.
-
-```bash
-/mnt/system/upgrade.sh recovery
-```
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboard3.png" /></div>
 
 
-## Multi Devices Management 
 
-If you have more than one reCamera, you can distinguish them by the mac addrss on the back of the device.
+## Customized your dashboard and share to Community
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/mac_address_tag.png" /></div>
+We encourage users to share the dashboards they develop and create in the community. We have created a folder on GitHub. We hope that everyone will share their dashboards there, and we will organize and display them. Next, I will take adding a fill light function to the dashboard as an example to simply add a node and control reCamera.
 
-Or, once you connect the device to your laptop through USB or AP, you can view the mac address by using the following command
-```
-ifconfig wlan0
-```
+**Step 1**. Drag the ```button group``` node to the workspace. and edit it by the following setting.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/last_six_digits.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard1.png" /></div>
 
-## Camera Orientation
-The default camera view orientation is like the image below where type-c is facing down. Please be awared that other orientation might effect the accuracy of model based on how you trained the detection model. 
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard2.png" /></div>
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/default_orientation.jpeg" /></div>
+**Step 2**. Add a new ui-group config node named "Control Button", then save it.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard3.png" /></div>
+
+**Step 3**. Go to the dashboard 2.0, and place the control button frame under the model selection.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard4.png" /></div>
+
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard5.png" /></div>
+
+**Step 4**. Deploy the flow and go to dashboard.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard6.png" /></div>
+
+**Demo**:
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard5.gif" /></div>
+
+**Step 5**: Don't forget to export json file of the flow and share it to the our github.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/customizeddashboard7.png" /></div>
+
+## OTA Upgrade from 0.1.3 to latest version
+
+If you got the first batch of reCamera, you can upgrade the OS to the latest version following this instruction.
+
+**Step 1**: Open the website and navigate to ```Sidebar -> System -> Software Update```
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade1.png" /></div>
+
+**Step 2**: Check your OS version, and click **Check** and **Apply**.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade2.png" /></div>
+
+**Step 3**: Wait for few minutes to update the system.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade3.png" /></div>
+
+**Step 4**: Restart the device and refresh the website.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade4.png" /></div>
+
+**Step 5**: You will enter the loading page to change the password.Now you can experience the newest version reCamera with Node-RED dashboard by following [this downloading instruction](https://wiki.seeedstudio.com/recamera_getting_started/#access-recamera-preview-dashboard).
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/OSupgrade5.png" /></div>
+
+## IP List
+
+The IP address of reCamera is ```192.168.42.1```. You can access the web interface of reCamera by typing the IP address in the browser for quickly access.
+
+- **Basic config web**: ```ip_address/#/init```
+- **Network config web**: ```ip_address/#/network```
+- **Terminal web**: ```ip_address/#/terminal```
+- **Security web**: ```ip_address/#/security```
+- **System web**: ```ip_address/#/system```
+- **Node-RED workspace**: ```ip_address/#/workspace```
+- **Dashboard**: ```ip_address/#/dashboard```
+- **Original Node-RED**: ```ip_address:1880```
+
+
+## Port List
+The following lists the ports used by reCamera:
+
+- **Port 22**: Utilized for remote SSH login and is open.
+- **Port 53**: Associated with DNS domain name resolution and is essential for web redirection. It is open by default.
+- **Port 80**: Serves as the web dashboard interface for HTTP display of the Node-RED Application.
+- **Port 554**: Employed for RTSP video streaming.
+- **Port 9090**: Intended for web terminal access, which requires a password for login.
+- **Port 1880**: Dedicated to Node-RED operations.
+
 
 ## Resources
 
-[reCamera Flyer](https://files.seeedstudio.com/wiki/reCamera/reCamera_one_pager.pdf)
+- [reCamera Flyer](https://files.seeedstudio.com/wiki/reCamera/reCamera_one_pager.pdf)
 
-[reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
+- [reCamera OS](https://github.com/Seeed-Studio/reCamera-OS)
 
-[reCamera Series](https://github.com/Seeed-Studio/OSHW-reCamera-Series)
+- [reCamera Series](https://github.com/Seeed-Studio/OSHW-reCamera-Series)
 
-[reCamera SSCMA](https://github.com/Seeed-Studio/sscma-example-sg200x)
+- [reCamera SSCMA](https://github.com/Seeed-Studio/sscma-example-sg200x)
 
 
 ## Tech Support & Product Discussion

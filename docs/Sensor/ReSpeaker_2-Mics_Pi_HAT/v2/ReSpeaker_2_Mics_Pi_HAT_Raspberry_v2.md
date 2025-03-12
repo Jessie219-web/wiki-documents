@@ -45,13 +45,17 @@ Make sure that you are running [the latest Raspberry Pi OS](https://www.raspberr
 $ curl https://raw.githubusercontent.com/Seeed-Studio/seeed-linux-dtoverlays/refs/heads/master/overlays/rpi/respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dts
 $ dtc -I dts respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dtbo
 $ sudo dtoverlay respeaker-2mic-v2_0-overlay.dtbo
+$ sudo cp respeaker-2mic-v2_0-overlay.dtbo /boot/firmware/overlays
 ```
 
 - Step 2: Edit `/boot/firmware/config.txt` and add the following lines:
 
 ```
 dtoverlay=respeaker-2mic-v2_0-overlay
+dtoverlay=i2s-mmap
 ```
+
+![config example](https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/dtoverlays.png)
 
 - Step 3: Reboot your Pi.
 

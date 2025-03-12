@@ -416,6 +416,94 @@ setting parameters is `2.2 m`, with a valid range typically between 1 and 5 mete
 - **`mmWave.getFall()`**:
   - Determines whether a fall has been detected. This function returns `true` if a fall is detected and `false` if not.
 
+## Module firmware upgrade
+
+First, connect the XIAO ESP32C6 and MR60FDA2 modules together. Then use the following code to program XIAO.
+
+```cpp
+#include <Arduino.h>
+#include "Seeed_Arduino_mmWave.h"
+
+// If the board is an ESP32, include the HardwareSerial library and create a
+// HardwareSerial object for the mmWave serial communication
+#ifdef ESP32
+#  include <HardwareSerial.h>
+HardwareSerial mmWaveSerial(0);
+#else
+// Otherwise, define mmWaveSerial as Serial1
+#  define mmWaveSerial Serial1
+#endif
+
+void setup() {
+  // Initialize the serial communication for debugging
+  Serial.begin(115200);
+  while (!Serial) {
+    ; // Wait for Serial to initialize
+  }
+
+  // Initialize the mmWaveSerial communication
+  mmWaveSerial.begin(115200);
+}
+
+void loop() {
+  // Check if there is data available from mmWaveSerial
+  while (mmWaveSerial.available() > 0) {
+    char receivedChar = mmWaveSerial.read();
+    Serial.write(receivedChar); // Forward data to Serial
+  }
+
+  // Check if there is data available from Serial
+  while (Serial.available() > 0) {
+    char receivedChar = Serial.read();
+    mmWaveSerial.write(receivedChar); // Forward data to mmWaveSerial
+  }
+}
+```
+
+:::tip
+The function of the above code is to transparently transmit the serial port of the module to the USB serial port of XIAO, so as to upgrade the firmware of the module through XIAO.  
+Please connect XIAO to your PC during the upgrade process.
+:::
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/passthrough-mode.png" style={{width:700, height:'auto'}}/></div>
+
+You will see the original data sent by the module.
+
+Then you need to download and unzip the OTA tool and the firmware here.
+
+- **MR60FDA2 Firmware upgrade tool**: [MR60FDA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_OTA.zip)
+- **MR60FDA2 Firmware v4.0.18**: [MR60FDA2_eeprom_v4.0.18.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_eeprom_v4.0.18.bin)
+
+1. Check and connect to the serial port (set the baud rate to 115200)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/1-check-and-connect-serial.png" style={{width:700, height:'auto'}}/></div>
+
+2. Click "REQUEST UPDATE" to enter the upgrade mode:
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/2-request-update.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/3-upgrade-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/4-baudrate-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+3. If "C" or "43" is printed, it means that the module has entered upgrade mode.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/5-module-enter-upgrade-mode.png" style={{width:700, height:'auto'}}/></div>
+
+4. Select the firmware to be upgraded. After selection, it will automatically enter the upgrade state. 
+
+After the upgrade is completed, it will automatically jump to normal mode. If it does not jump, power off and restart, and then use OTA tool to view the serial port data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/6-open-file.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/7-choose-file-fda2.png" style={{width:700, height:'auto'}}/></div>
+
+5. After the upgrade is complete, you can use OTA tool to read the version and raw data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/8-flash-done-fda2.png" style={{width:700, height:'auto'}}/></div>
+
+6. You need to re-flash the firmware of XIAO ESP32C6 after the upgrade is completed.
+
 ## Open for Customization
 
 Want to tailor-make the kit to fit your unique applications?
@@ -427,6 +515,9 @@ For more information about 3D point cloud data generation and interference zone 
 - **STL**: [mmWave 3D Case](https://files.seeedstudio.com/wiki/mmwave-for-xiao/Seeed_Studio_60GHz_mmWave_Human_Fall_Breating_and_Heartbeat_Detection_Sensor-MR60FDA2_MR60BHA2_Enclosure.stl)
 - **GitHub Repository**: Access the full codebase and documentation at the [Seeed mmWave Library GitHub page](https://github.com/Love4yzp/Seeed-mmWave-library).
 - **ESPHome Documentation**: For further customization and integration, refer to the [ESPHome documentation](https://esphome.io/).
+- **MR60FDA2 Firmware upgrade tool**: [MR60FDA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_OTA.zip)
+- **MR60FDA2 Firmware v4.0.18**: [MR60FDA2_eeprom_v4.0.18.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_eeprom_v4.0.18.bin)
+- **MR60FDA2 GUI Software**: [Seeed_Studio_mmWave_Sensor_MR60FDA2_GUI.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/Seeed_Studio_mmWave_Sensor_MR60FDA2_GUI.zip)
 - **mmWave Sensor SCH V1.0**: [mmWave_Sensor_SCH_V1.0.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/sch/mmWave_Sensor_SCH_V1.0.pdf)
 - **MR60FDA2 Module Technical Specification**: [MR60FDA2_Fall_Detection_Module_Datasheet.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/datasheet/MR60FDA2_Fall_Detection_Module_Datasheet.pdf)
 - **MR60FDA2 Tiny Frame Interface Manual**: [Seeed_Studio_TinyFrame_Interface_Fall_detection_V1.1.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/datasheet/Seeed_Studio_TinyFrame_Interface_Fall_detection_V1.1.pdf)

@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 01/27/2025
+  date: 02/10/2025
   author: Frank
 ---
 
@@ -17,36 +17,44 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is January 27th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is February 10th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Connect to Home Assistant via the Zigbee of the XIAO ESP32C6](https://wiki.seeedstudio.com/xiaoc6_zigbee_led_ha/)
+### [LoRaWAN Open Source Firmware](https://wiki.seeedstudio.com/open_source_lorawan/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6_zigbee_ha/1.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000-e-fpage.jpg" style={{width:800, height:'auto'}}/></div>
 
-The integration of Zigbee devices into smart home ecosystems has become increasingly popular due to Zigbee's low power consumption, reliability, and ease of use. In this wiki, we’ll guide you through connecting the **XIAO ESP32C6** to **Home Assistant** via its Zigbee functionality. By the end of this guide, you’ll have a working demo where the XIAO ESP32C6 acts as a Zigbee device that can be controlled directly from Home Assistant's dashboard.
+The [SenseCAP T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) now has an open source **LoRaWAN version** of the firmware, which provides you with a lot of customization and innovation opportunities. This tutorial will guide you through flashing firmware and using example code.
+
+### [Quickly Deploy DeepSeek on reComputer Jetson](https://wiki.seeedstudio.com/deploy_deepseek_on_jetson/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.png" style={{width:800, height:'auto'}}/></div>
+
+DeepSeek is a cutting-edge AI model suite optimized for efficiency, accuracy, and real-time processing. With advanced optimization for edge computing, DeepSeek enables fast, low-latency AI inference directly on Jetson devices, reducing dependency on cloud computing while maximizing performance.
+This wiki provides a step-by-step guide to deploying [DeepSeek](https://www.deepseek.com/) models on reComputer Jetson devices for efficient AI inference on the edge.
 
 ## Existing Wiki Updated
 
-### XIAO Open-Source Materials
+### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
 
-We have added examples for the following XIAO boards' open-source materials:
+We have added the [Silicon Labs Demo example for XIAO MG24 Sense Microphone](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/#xiao-mg24-sense-microphonesilicon-labs-demo).
 
-- [XIAO nRF52840 (Sense) Plus Open-Source Materials](https://wiki.seeedstudio.com/XIAO_BLE/#seeed-studio-xiao-nrf52840-sense-plus)
-- [XIAO ESP32S3 Plus Open-Source Materials](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#for-seeed-studio-xiao-esp32s3-plus)
+### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
 
-### [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
+We have corrected the code for the [Install Hailo PCIe Driver operation](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-hailo-pcie-driver) and the [Install Frigate NVR section](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-frigate-nvr).
 
-We have added the schematic for [RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/#resources).
+### [Getting Start with R2000 Series](https://wiki.seeedstudio.com/r2000_series_getting_start/)
 
-### [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/)
+We have added the example for [flashing Ubuntu to NVMe](https://wiki.seeedstudio.com/r2000_series_getting_start/#flash-ubuntu-to-nvme).
 
-We have added several [FAQs for Jetson Usage](https://wiki.seeedstudio.com/Jetson_FAQ/#q5-how-to-get-the-system-log-of-recomputer-j30j40).
+### [Pin Multiplexing with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/)
+
+We have added the example code for [analogRead with DMA on XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/#software-implementation-2).
 
 ### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
 
-We have added an example for [reCamera Factory Reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset).
+We have optimized the content for the [Factory Reset operation](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset) in reCamera.
 
 ## The Efforts of Contributor
 
@@ -156,5 +164,6 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
 - [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
+- [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
 
 </details>
