@@ -3463,6 +3463,7 @@ const sidebars = {
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l', 
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/clip_application_on_rpi_with_ai_kit',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/frigate_nvr_with_raspberrypi_5',
+          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Deploy_DeepSeek_on_Raspberry_Pi_AI_Box'
         ]
       },
 
