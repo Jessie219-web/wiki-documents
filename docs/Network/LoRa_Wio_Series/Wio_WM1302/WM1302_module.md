@@ -15,7 +15,7 @@ last_update:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/WM1302_module/WM1302_3.jpeg" alt="pir" width={600} height="auto" /></p>
 
 <!-- <p style="text-align:center"><a href="https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-EU868-p-4889.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now.png" border=0 /></a></p>  -->
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-EU868-p-4889.html) 
+[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/WM1302-LoRaWAN-Gateway-Module-SPI-EU868-p-4889.html)
 > LoRaWAN® is a mark used under license from the LoRa Alliance®.
 The LoRa® Mark is a trademark of Semtech Corporation or its subsidiaries.
 
@@ -23,33 +23,30 @@ The LoRa® Mark is a trademark of Semtech Corporation or its subsidiaries.
         We has recently released the Wio-E5 Series based on Wio-E5 module. Click [here](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3) to meet new members of the LoRa-E5 family from the [Wio-E5 Module](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/) [Grove module](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/), [mini Dev boards](https://wiki.seeedstudio.com/LoRa_E5_mini/) to [Development Kit](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/). To learn more on creating a LoRaWAN® End Node with STM32Cube MCU Package for STM32WL series(SDK), to join and to send data to LoRaWAN® Network, read more on wiki pages for [mini Dev boards](https://wiki.seeedstudio.com/LoRa_E5_mini/) and [Development Kit](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/).
 :::
 
-WM1302 module is a new generation of LoRaWAN® gateway module with mini-PCIe form-factor. Based on the Semtech® SX1302 baseband LoRaWAN® chip, WM1302 unlocks the greater potential capacity of long-range wireless transmission for gateway products. It features higher sensitivity, less power consumption, and lower operating temperature than the previous SX1301 and SX1308 LoRa® chip. 
-
+WM1302 module is a new generation of LoRaWAN® gateway module with mini-PCIe form-factor. Based on the Semtech® SX1302 baseband LoRaWAN® chip, WM1302 unlocks the greater potential capacity of long-range wireless transmission for gateway products. It features higher sensitivity, less power consumption, and lower operating temperature than the previous SX1301 and SX1308 LoRa® chip.
 
 WM1302 LoRaWAN® gateway module has SPI and USB versions on both US915 and EU868 frequency bands, enable you to have a wide-range of LoRaWAN® frequency plans options to choose including EU868, US915, AS923, AS920, AU915, KR920, and IN865.
 
-
 WM1302 module is CE, FCC and Telec certified, which helps simplify the development and certification process of the LoRaWAN® gateway devices.
- 
- 
-WM1302 is designed for M2M and IoT applications and can be widely applied in LPWAN gateway supported scenarios. It would be a perfect choice for you to significantly reduce the technical difficulties and time-consumption when developing the LoRa® gateway devices, including LoRaWAN® gateway, hotspots, etc.
 
+WM1302 is designed for M2M and IoT applications and can be widely applied in LPWAN gateway supported scenarios. It would be a perfect choice for you to significantly reduce the technical difficulties and time-consumption when developing the LoRa® gateway devices, including LoRaWAN® gateway, hotspots, etc.
 
 ## Features
 
 - **Powered by Semtech® SX1302 baseband LoRa® chip**, extremely low power consumption and high performance.
-- **Mini-PCIe form factor with the standard 52-pin golden finger**, easy to integrate with various gateway devices. 
+- **Mini-PCIe form factor with the standard 52-pin golden finger**, easy to integrate with various gateway devices.
 - **Ultra-low operating temperature**, no additional heat dissipation needed, reducing the size of LoRaWAN® gateway.
 - **High sensitivity** down to -139 dBm @SF12 with SX1250 TX/RX front-end; TX power up to 26 dBm @3.3V.
 - **Certified with CE, FCC, and TELEC**. Simplify the final product certification process.
 
-## Harware Overview 
+## Harware Overview
 
-### Diagram:
+### Diagram
 
 <!-- ![](https://files.seeedstudio.com/wiki/WM1302_module/diagram.jpg) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/WM1302_module/diagram.jpg" alt="pir" width={600} height="auto" /></p>
-### Pinout:
+
+### Pinout
 
 <!-- ![](https://files.seeedstudio.com/wiki/WM1302_module/WM1302_1.png) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/WM1302_module/WM1302_1.png" alt="pir" width={600} height="auto" /></p>
@@ -57,8 +54,6 @@ WM1302 is designed for M2M and IoT applications and can be widely applied in LPW
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/WM1302_module/WM1302_2.jpeg" alt="pir" width={600} height="auto" /></p>
 
 ## Specification
-
-
 
 <table class="tg">
 <thead>
@@ -119,8 +114,6 @@ WM1302 is designed for M2M and IoT applications and can be widely applied in LPW
 </tbody>
 </table>
 
-
-
 ## Application
 
 - LPWAN Gateway devices development
@@ -158,7 +151,7 @@ For WM1302 LoRaWAN® Gateway Module USB version, the Semtech SX1302 and SX126x c
 
 - A 8G or larger SD card and a card reader
 
-- A Type C USB cable if using WM1302 LoRaWAN® Gateway Module USB version 
+- A Type C USB cable if using WM1302 LoRaWAN® Gateway Module USB version
 
 #### Software Required
 
@@ -178,6 +171,7 @@ If USB version WM1302 module is using, please also connect its Type C port to th
 
 <!-- ![](https://files.seeedstudio.com/products/114992549/WM1302_Wiki2.jpg) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/products/114992549/WM1302_Wiki2.jpg" alt="pir" width={600} height="auto" /></p>
+
 #### Step2. Enable the Raspbian I2C and SPI interface
 
 WM1302 module communicates with Raspberry Pi with SPI and I2C. But these two interfaces are not enabled by default in Raspbian, so developer need to enable them before using WM1302. Here, we introduce a command line way to enable SPI and I2C interface.
@@ -190,6 +184,7 @@ sudo raspi-config
 
 <!-- ![](https://files.seeedstudio.com/products/114992549/WM1302_Wiki3.png) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/products/114992549/WM1302_Wiki3.png" alt="pir" width={600} height="auto" /></p>
+
 1. Select `Interface Options`
 
 2. Select `SPI`, then select `Yes` to enable it
@@ -339,7 +334,7 @@ cd packet_forwarder
 ./lora_pkt_fwd -c global_conf.json.sx1250.US915.USB
 ```
 
-Now, packet forwarder are able to run correctly. But there are still something to do if developers need to forward lora® packet to their LoRa® Server(e.g. TTN or chripstack). 
+Now, packet forwarder are able to run correctly. But there are still something to do if developers need to forward lora® packet to their LoRa® Server(e.g. TTN or chripstack).
 
 To achieve this target, developers must add the Raspberry Pi Gateway to Lora Server first. Take [TTNv3](https://www.thethingsindustries.com/docs/getting-started/) as an example, login [TTNv3 console](https://eu1.cloud.thethings.network/console), click `Go to gateways` and click `Add gateway`, in the `Add gateway` page you will find dozens of settings to fill. What you need to focus on are `Gateway EUI` and `Gateway Server address` and `Frequency plan`, the others just leave it to the default.
 
@@ -368,7 +363,7 @@ nano global_conf.json.sx1250.US915
 nano global_conf.json.sx1250.US915.USB
 ```
 
-Basically, you need to modify these parameters: `"gateway_ID" "server_address" "serv_port_up" "serv_port_down"`, which can be found at the tail of the config file. Copy `Gateway Server address` to `"server_address"`, change `"serv_port_up"` and `"serv_port_down"` to `1700`, these parameters should be edited like this: 
+Basically, you need to modify these parameters: `"gateway_ID" "server_address" "serv_port_up" "serv_port_down"`, which can be found at the tail of the config file. Copy `Gateway Server address` to `"server_address"`, change `"serv_port_up"` and `"serv_port_down"` to `1700`, these parameters should be edited like this:
 
 ```
 "gateway_conf": {
@@ -379,7 +374,7 @@ Basically, you need to modify these parameters: `"gateway_ID" "server_address" "
     "serv_port_down": 1700,
 ```
 
-Save these changes by pressing `CTRL + x`, and then `y`, finally pressing `Enter` to close the text editor. 
+Save these changes by pressing `CTRL + x`, and then `y`, finally pressing `Enter` to close the text editor.
 
 Restart `lora_pkt_fwd`, you will find your Raspberry Pi Gateway are conntected to TTNv3.
 
@@ -402,23 +397,23 @@ Restart `lora_pkt_fwd`, you will find your Raspberry Pi Gateway are conntected t
 
 - [Semtech SX1302 datasheet](https://semtech.my.salesforce.com/sfc/p/#E0000000JelG/a/2R000000Hkyg/U8CIV3e9yI9T_aILFMxuzLNs_6_0Io1WIaksrNYyCMQ)
 
-Certificates
+## Certificates
 
 - [WM1302(USB) CE Certificate](https://files.seeedstudio.com/products/114992549/SHEA587_EU_Cert.pdf)
 - [WM1302(SPI) CE Certificate](https://files.seeedstudio.com/products/114992549/SHEA588_EU_Cert.pdf)
 
 ## Tech Support & Product Discussion
 
-Please submit any technical issue into our [forum](http://forum.seeedstudio.com/). 
+Please submit any technical issue into our [forum](http://forum.seeedstudio.com/).
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
