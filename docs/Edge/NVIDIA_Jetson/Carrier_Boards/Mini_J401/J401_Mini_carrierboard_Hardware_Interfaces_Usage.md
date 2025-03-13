@@ -4,7 +4,7 @@ title: Interfaces Usage
 tags:
   - J401 Mini carrier board
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /J401_mini_carrierboard_Hardware_Interfaces_Usage
+slug: /j401_mini_carrierboard_hardware_interfaces_usage
 last_update:
   date: 03/05/2025
   author: Dayu
