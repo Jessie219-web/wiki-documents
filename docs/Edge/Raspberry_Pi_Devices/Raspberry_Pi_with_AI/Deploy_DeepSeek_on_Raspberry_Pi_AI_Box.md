@@ -19,7 +19,7 @@ no_comments: false # for Disqus
 
 ## Introduction
 
-This wiki explains how to deploy the [DeepSeek](https://github.com/deepseek-ai/DeepSeek-LLM) model on a Raspberry Pi AI Box using the [Ollama] (https://ollama.com/) deployment framework. DeepSeek is an AI model designed for advanced search and natural language processing, making it ideal for smart, edge-based applications. Ollama simplifies the process of installing and running AI models on compact hardware like the Raspberry Pi, handling dependency management and system configuration. In this guide, you will find clear, step-by-step instructions on setting up your environment, installing the necessary software, and launching the DeepSeek model. This resource is aimed at developers and AI enthusiasts who want to harness the power of AI on low-power devices.
+This wiki explains how to deploy the [DeepSeek](https://github.com/deepseek-ai/DeepSeek-LLM) model on a Raspberry Pi AI Box using the [Ollama](https://ollama.com/) deployment framework. DeepSeek is an AI model designed for advanced search and natural language processing, making it ideal for smart, edge-based applications. Ollama simplifies the process of installing and running AI models on compact hardware like the Raspberry Pi, handling dependency management and system configuration. In this guide, you will find clear, step-by-step instructions on setting up your environment, installing the necessary software, and launching the DeepSeek model. This resource is aimed at developers and AI enthusiasts who want to harness the power of AI on low-power devices.
 
 
 ## Prepare Hardware
