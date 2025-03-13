@@ -151,6 +151,9 @@ Use `Ctrl`+`x` to save the file, and then reboot your machine.
 
 ## Steps for Flashing Raspbian OS
 
+> **Note:** The latest system image packaged by Seeed, including the appropriate drivers: [pi-gen-expand](https://github.com/Seeed-Studio/pi-gen-expand)
+
+
 - **Step 1.** Make sure switch is set to `Flash mode` according to the diagram below:
 
 <div class="table-center">
