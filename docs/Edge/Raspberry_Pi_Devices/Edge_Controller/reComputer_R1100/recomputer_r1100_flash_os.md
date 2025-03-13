@@ -1,38 +1,34 @@
 ---
-description: reComputer R1000 Flash OS
-title: reComputer R1000 Flash OS
+description: reComputer R1100 Flash OS
+title: reComputer R1100 Flash OS
 keywords:
   - Edge
-  - reComputer R1000
+  - reComputer R1100
   - Flash OS
-image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.webp
-slug: /recomputer_r1000_flash_OS
+image: https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.webp
+slug: /recomputer_r1100_flash_os
 last_update:
-  date: 10/25/2024
-  author: Parker Hu
+  date: 3/3/2025
+  author: Kasun Thushara
 ---
-#  reComputer R1000 Raspbian OS to eMMC
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png" alt="pir" width="600" height="auto"/></p>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1124-10-p-6257.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
 
-<br />
-
-The reComputer R1000 edge IoT controller is built on the high-performance Raspberry Pi CM4 platform, featuring a quad-core A72 processor with a maximum support of 8GB RAM and 32GB eMMC. Equipped with dual Ethernet interfaces that can be flexibly configured, it also includes 3 isolated RS485 channels supporting BACnet, Modbus RTU, Modbus TCP/IP ,and KNX protocols. 
-With robust IoT network communication capabilities, the R1000 series supports multiple wireless communication options including 4G, LoRa®, Wi-Fi/BLE, allowing for flexible configurations to serve as corresponding wireless gateways. This controller is well-suited for remote device management, energy management, and various other scenarios in the field of smart buildings.
-
-
+The reComputer R1100, powered by the Raspberry Pi CM4, is a versatile edge IoT gateway with AI capabilities. It features a comprehensive range of industrial interfaces, including **2x Ethernet, 2x USB, 2x RS485, 2x RS232, 2x DI, and 2x DO**, along with flexible wireless connectivity options such as **4G, LoRa®, and Wi-Fi/BLE**. These features make it an ideal choice for various industrial applications.
+The reComputer R1100 series is widely used in IoT applications, including **data acquisition and process monitoring, automation and robotics control, intelligent manufacturing, and industrial communication and networking**. Its compact size, flexibility, low cost, and programmability provide strong support for **automation, IoT systems, and beyond**.
 
 ## Hardware Requirements
 
 You need to prepare the following hardware
 
-- reComputer R1000 x 1
+- reComputer R1100 x 1
 - Host Computer (Windows/Mac/Linux) x 1
 - Ethernet cable x 1
 - Power adapter (12V-24V) BYO
@@ -43,11 +39,12 @@ You need to prepare the following hardware
 - [usbboot tool](https://github.com/raspberrypi/usbboot)
 - [Raspberry Pi Imager APP](https://www.raspberrypi.com/software/)
 
+
 ## Boot from NVME
 
 ### Flash os to the NVME
 
-Please refer this [link](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#steps-for-flashing-raspbian-os), and then insert it into the M.2 slot.
+Please refer this [link](https://wiki.seeedstudio.com/recomputer_r1100_assembly_guide/#installing-an-ssd), and then insert it into the M.2 slot.
 
 ### Boot from emmc and update eeprom
 
@@ -149,6 +146,7 @@ BOOT_ORDER=0xf416
 Use `Ctrl`+`x` to save the file, and then reboot your machine.
 
 
+
 ## Steps for Flashing Raspbian OS
 
 - **Step 1.** Make sure switch is set to `Flash mode` according to the diagram below:
@@ -162,11 +160,11 @@ Use `Ctrl`+`x` to save the file, and then reboot your machine.
 
 </div>
 
-- **Step 2.** Please use the USB Type-C data cable connect to the Type-C port on the reComputer R1000, as shown in the below image,
+- **Step 2.** Please use the USB Type-C data cable connect to the Type-C port on the reComputer R1100, as shown in the below image,
 
-<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/33.png" /></div>
+<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/R1100/r11_usb.jpg"/></div>
 
-- **Step 3.** Please connect the Power Cord from the power supply to the reComputer R1000 power port.
+- **Step 3.** Please connect the Power Cord from the power supply to the reComputer R1100 power port.
 
 <div style={{ textAlign: 'left', marginLeft: '40px' }}>
     <img 
@@ -182,13 +180,17 @@ Use `Ctrl`+`x` to save the file, and then reboot your machine.
 The power solution utilizes a bridge rectifier diode for reverse polarity protection and is compatible with both AC and DC inputs. This ensures that regardless of how the power supply's positive and negative terminals are connected, the circuit will not be damaged. By using a bridge rectifier, the output voltage polarity remains fixed irrespective of the input DC polarity, providing effective reverse polarity protection.
 :::
 
+
+
+
+
 Now let's move on to software set up on your host computer. Please follow the steps according to your desired operating system
 
 ### For Windows
 
 - **Step 1.** Download the **rpiboot setup installer** by click **[here](https://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe)** to install the necessary drivers and the boot tool
 
-- **Step 2.** Connect reComputer R1000 the PC via USB Type-C cable
+- **Step 2.** Connect reComputer R1100 the PC via USB Type-C cable
 
 Windows will now find the hardware and install the necessary drivers
 
@@ -209,7 +211,7 @@ Windows will now find the hardware and install the necessary drivers
 Here you can **set a hostname, enable SSH, set a password, configure wiFi, set locale settings** and more
 
 :::note
-The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1000. 
+The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1100. 
 :::
 
 - **Step 8.** Click **CHOOSE OS** and select your preferred OS
@@ -235,7 +237,6 @@ Please wait a few minutes until the flashing process is complete.
 - **Step 11.** Flip the **Boot Mode switch** back to the **Normal mode** position
 
 Now you can skip to **[here](#install-drivers)**
-
 
 ### For MAC
 
@@ -275,7 +276,7 @@ make
 sudo ./rpiboot
 ```
 
-- **Step 6.** Connect reComputer R1000 to the your Mac computer via USB Type-C cable
+- **Step 6.** Connect reComputer R1100 to the your Mac computer via USB Type-C cable
 
 - **Step 7.** Download and Install **Raspberry Pi Imager** Application by visiting [this link](https://www.raspberrypi.org/software/)
 
@@ -289,7 +290,7 @@ sudo ./rpiboot
 
 Here you can **set a hostname, enable SSH, set a password, configure wifi, set locale settings** and more
 :::note
-The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1000. 
+The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1100. 
 :::
 
 - **Step 10.** Click **CHOOSE OS** and select your preferred OS
@@ -353,7 +354,7 @@ cd usbboot
 ```sh
 make
 ```
-- **Step 6.** Connect reComputer R1000 to the PC via USB Type-C cable
+- **Step 6.** Connect reComputer R1100 to the PC via USB Type-C cable
 
 - **Step 7.** Run the usbboot tool and it will wait for a connection
 
@@ -392,7 +393,7 @@ Enable SSH
 
 Here you can **set a hostname, enable SSH, set a password, configure wifi, set locale settings** and more
 :::note
-The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1000. 
+The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1100. 
 :::
 
 - **Step 11.** Click **CHOOSE OS** and select your preferred OS
@@ -423,7 +424,7 @@ The result is shown as below:
 
 ## Install Drivers
 
-### Access reComputer R1000 via SSH
+### Access reComputer R1100 via SSH
 
 :::note
 
@@ -431,13 +432,13 @@ The following steps require some basic Linux command line knowledge, Please prep
 
 :::
 
-As following the above flashing OS steps, the reComputer R1000 should have SSH enabled with the hostname of `raspberrypi.local`.
+As following the above flashing OS steps, the reComputer R1100 should have SSH enabled with the hostname of `raspberrypi.local`.
 
-Now please connect the Ethernet cable to the reComputer R1000 and a router which is on the same network as your host computer.
+Now please connect the Ethernet cable to the reComputer R1100 and a router which is on the same network as your host computer.
 
 :::tip
 
-To test if your reComputer R1000 is on the same network with host computer, you can use `ping raspberrypi.local`
+To test if your reComputer R1100 is on the same network with host computer, you can use `ping raspberrypi.local`
 
 if you see the following output after the ping command which means both devices are on the same network:
 
@@ -494,26 +495,26 @@ raspberry
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/SSH_WiFi_Linux.png" alt="pir" width="900" height="auto"/></p>
 
-### Install reComputer R1000 drivers after flashing new Raspbian OS
+### Install reComputer R1100 drivers after flashing new Raspbian OS
 
-reComputer R1000 comes with the necessary drivers pre-installed out-of-the-box so you don't need to install any additional drivers. However, if you flash new OS by yourself, you need to install the necessary drivers separately.
+reComputer R1100 comes with the necessary drivers pre-installed out-of-the-box so you don't need to install any additional drivers. However, if you flash new OS by yourself, you need to install the necessary drivers separately.
 
 :::tip
 
 **For install 32-bit OS driver, Please carefully follow the steps below:**
 
-The Operating System that pre-installed on reComputer R1000 is 64-bit, if you wish to install 32-bit OS please use the following method to install the DTS drivers.
+The Operating System that pre-installed on reComputer R1100 is 64-bit, if you wish to install 32-bit OS please use the following method to install the DTS drivers.
 
-Please follow the [**Access reComputer R1000 via SSH**](#access-recomputer-r1000-via-ssh) step, and then enter the following command:
+Please follow the [**Access reComputer R1100 via SSH**](#access-recomputer-r1100-via-ssh) step, and then enter the following command:
 
 ```sh
 echo arm_64bit=0 | sudo tee -a /boot/config.txt
 ```
-Then continue the [**Install drivers after flashing new Raspbian OS process**](#install-recomputer-r1000-drivers-after-flashing-new-raspbian-os)
+Then continue the [**Install drivers after flashing new Raspbian OS process**](#install-recomputer-r1100-drivers-after-flashing-new-raspbian-os)
 
 :::
 
-- **Step 1.** Clone the following repo in the ssh shell you have connected to reComputer R1000 from the above steps
+- **Step 1.** Clone the following repo in the ssh shell you have connected to reComputer R1100 from the above steps
 
 ```sh
 sudo apt install git -y
@@ -544,21 +545,6 @@ sudo reboot
 
 This process will ensure that your drivers are up to date before updating the firmware.
 
-For reComputer R1000 V1.0, it need to change the `/boot/firmware/config.txt` file after restarting and enter the following command:
-```shell
- sudo nano /boot/firmware/config.txt
-```
-Modify the final content of the file to:
-```shell
-  enable_uart=1
-  dtoverlay=dwc2,dr_mode=host
-  dtoverlay=vc4-kms-v3d
-  dtoverlay=reComputer-R100x,uart2
-```
-Then restart:
-```shell
-  sudo reboot
-```
 
 ## Tech Support & Product Discussion
 
@@ -573,3 +559,5 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
+
+

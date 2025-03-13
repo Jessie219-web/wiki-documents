@@ -469,7 +469,7 @@ The reComputer R1100 includes **two Digital Input (DI) ports**, which can be con
 
 **Ensure Proper Connection**  
 
-Make sure the **DI port** of the reComputer R1100 is properly connected to the **external load**.  
+Make sure the **DI port** of the reComputer R1100 is properly connected to the **external load**, also make sure that the **G_D** port is connected to the **power supply GND**.
 
 **Check the GPIO Status**  
 
@@ -503,7 +503,9 @@ The **reComputer R1100** includes **two Digital Output (DO) ports**, which can b
 **Steps to Test DO Functionality**  
 
 **Ensure Proper Connection**  
-Confirm that the **DO port** of the reComputer R1100 is properly connected to the **external load**.  
+Confirm that the **DO port** of the reComputer R1100 is properly connected to the **external load**.
+
+**Since the DO port is an open collector output and has no drive capability, please use an external resistor to pull it up to the power supply.**
 
 **Set the Output Level**  
 Run the following commands to set the output to **HIGH** or **LOW**:  

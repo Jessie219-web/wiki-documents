@@ -3,7 +3,7 @@ description: Develop SenseCAP Indicator both chips with Arduino
 title: Develop both chips with Arduino
 keywords:
   - SenseCAP Indicator
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_1.webp
 slug: /SenseCAP_Indicator_ESP32_Arduino
 last_update:
   date: 2/28/2025

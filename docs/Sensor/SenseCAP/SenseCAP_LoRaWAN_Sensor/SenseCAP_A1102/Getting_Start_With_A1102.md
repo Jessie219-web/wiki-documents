@@ -7,8 +7,8 @@ image: https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.web
 slug: /sensecap_a1102
 sidebar_position: 1
 last_update:
-  date: 12/23/2023
-  author: Jason
+  date: 3/12/2025
+  author: Zeke
 ---
 
 <div align="center"><img width ={500} src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/A1102_shop.jpg"/></div>
@@ -32,7 +32,7 @@ TinyML AI models locally, transmitting only inference results via LoRaWAN® (863
 
 - LoRaWAN® Connectivity: Supports global frequency bands (863-928 MHz) with transmission range up to 10 km in optimal conditions, enabling reliable long-distance communication.
 
-- 2 Power Options & Battery Life: Features a 19Ah SOCl2 D-size battery providing 279 days of operation at 5-minute intervals. Compatible with external DC power supply via optional junction box.
+- 2 Power Options & Battery Life: Fitted with a 19Ah SOCl2 D-size battery and also compatible with external DC power supply via optional junction box.
 
 - IP66 Rating Environmental Durability: Features IP66-rated protection against dust ingress and strong water jets. Operates reliably in temperatures from 0°C to 70°C, suitable for diverse indoor and outdoor deployments.
 
@@ -51,7 +51,7 @@ TinyML AI models locally, transmitting only inference results via LoRaWAN® (863
         <td align="center">
         <strong>Vision AI:</strong>Himax-6538 <br></br> 
         <strong>LoRaWAN Network:</strong>Wio-E5 (STM32WLE5JC)<br></br>
-        <strong>Network:</strong> XIAO ESP32C3<br></br></td>
+        <strong>Bluetooth:</strong> XIAO ESP32C3<br></br></td>
 	</tr>
     <tr>
         <th>Camera</th>
@@ -61,7 +61,7 @@ TinyML AI models locally, transmitting only inference results via LoRaWAN® (863
             <strong>Focal length:</strong>3.4 mm (adjustable)<br />
             <strong>Resolution:</strong> 2592 × 1944 pixels<br />
             <strong>Pixel size:</strong> 1.4 µm × 1.4 µm<br />
-            <strong>Maximum frame rate:</strong> 080p @ 30 fps, 720p @ 60 fps<br />
+            <strong>Maximum frame rate:</strong> 1080p @ 30 fps, 720p @ 60 fps<br />
             <strong>FOV:</strong>62°
         </td>
     </tr>
@@ -93,7 +93,6 @@ TinyML AI models locally, transmitting only inference results via LoRaWAN® (863
         <td align="center">
         <strong>Capacity:</strong> 19Ah (non-rechargeable)<br />
         <strong>Type:</strong> Standard D-size SOCl2 Battery<br />
-        <strong>Life:</strong> 279 Days (5 min interval)<br />
         </td>
 	</tr>
 	<tr>
@@ -170,7 +169,7 @@ Since our focus here is on describing the model training process, we won't go in
 
 **Is it possible to replace the camera or have a customized version of the SenseCAP Vision AI sensor?**
 
-- Yes, if you have a large-volume requirement, please contact us at iot@seeed.cc.
+- Yes, if you have a large-volume requirement, please contact us at sensecap@seeed.cc.
 
 
 ## Tech Support & Product Discussion
