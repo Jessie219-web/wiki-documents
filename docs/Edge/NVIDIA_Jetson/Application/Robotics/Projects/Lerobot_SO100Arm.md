@@ -556,7 +556,7 @@ python lerobot/scripts/train.py \
   --wandb.enable=true
 ```
 
-Note: If you didn't push your dataset yet, add `--control.local_files_only=true`.
+Note: If you didn't push your dataset yet, add `--datasets.local_files_only=true`.
 
 Let's explain it:
 
@@ -594,6 +594,55 @@ As you can see, it's almost the same command as previously used to record your t
 2. The name of dataset begins by `eval` to reflect that you are running inference (e.g. `${HF_USER}/eval_act_so100_test`).
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/wc-qh7UFkuQ?si=Y2SXU9T0DSmtz4ll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## FAQ
+
+- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `https://github.com/ZhuYaoHui1998/lerobot.git`. The repository recommended in this documentation is a verified stable version; the official Lerobot repository is continuously updated to the latest version, which may cause unforeseen issues such as different dataset versions, different commands, etc.
+
+- If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
+  ```bash
+  ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
+  ```
+
+- If the remote control functions normally but the remote control with Camera fails to display the image interface, please do not overlook the installation of ffmpeg and OpenCV in the [Lerobot Installation](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot) environment,
+  ```bash
+  conda install -y -c conda-forge ffmpeg
+  pip uninstall -y opencv-python
+  conda install -y -c conda-forge "opencv>=4.10.0" 
+  ```
+  If the image fails to display during data collection, please manually uninstall pyav,
+  ```bash
+  pip unisntall pyav
+  ```
+
+- If you encounter libtiff issues during dataset remote operation, please update the libtiff version.
+  ```bash
+  conda install libtiff==4.5.0  #for Ubuntu 22.04 is libtiff==4.5.1
+  ```
+
+- After executing the [Lerobot Installation](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot), the GPU version of pytorch may be automatically uninstalled, so you need to manually install torch-gpu.
+
+- For Jetson, please first install [Pytorch and Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) before executing `conda install -y -c conda-forge ffmpeg`, otherwise, when compiling torchvision, an ffmpeg version mismatch issue may occur.
+
+- If the following problem occurs, it means that your computer does not support this video codec format. You need to modify line 134 in the file `lerobot/lerobot/common/datasets
+/video_utils.py` by changing the value of `vcodec: str = "libsvtav1"` to `libx264` or `libopenh264`. Different computers may require different parameters, so you can try various options. [Issues 705](https://github.com/huggingface/lerobot/issues/705)
+  
+  ```bash
+  [vost#0:0 @ 0x13207240] Unknown encoder 'libsvtav1' [vost#0:0 @ 0x13207240] Error selecting an encoder Error opening output file /home/han/.cache/huggingface/lerobot/lyhhan/so100_test/videos/chunk-000/observation.images.laptop/episode_000000.mp4. Error opening output files: Encoder not found
+  ``` 
+
+- Important!!! If during execution the servo's cable becomes loose, please restore the servo to its initial position and then reconnect the servo cable. You can also individually calibrate a servo using the [Servo Initialization Command](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors), ensuring that only one cable is connected between the servo and the driver board during individual calibration. If you encounter
+  ```bash
+  Auto-correct calibration of motor 'wrist roll' by shifting value by 1 full turns, from '-270 < -312.451171875 < 270degrees' to'-270<-312.451171875 < 270 degrees'.
+  ```
+  or other errors during the robotic arm calibration process related to angles and exceeding limit values, this method is still applicable.
+
+- Training 50 sets of ACT data on an 8G 3060 laptop takes approximately 6 hours, while on a 4090 or A100 computer, training 50 sets of data takes about 2–3 hours.
+
+- During data collection, ensure that the camera's position, angle, and environmental lighting remain stable, and minimize capturing excessive unstable backgrounds and pedestrians; otherwise, significant environmental changes during deployment may cause the robotic arm to fail to grasp properly.
+
+- Ensure that the `num-episodes` parameter in the data collection command is set to collect sufficient data, and do not manually pause midway. This is because the mean and variance of the data are calculated only after data collection is complete, which is necessary for training.
+
 
 ## Citation
 
