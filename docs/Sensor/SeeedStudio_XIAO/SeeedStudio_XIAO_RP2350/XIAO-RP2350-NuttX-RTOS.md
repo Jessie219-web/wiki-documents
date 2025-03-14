@@ -5,6 +5,7 @@ keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp
 slug: /xiao-rp2350-nuttx
+sidebar_position: 3
 last_update:
     date: 03/11/2025
     author: rcsim
@@ -335,7 +336,7 @@ nsh> ws2812
 Check the video below with the demo for gpio, leds and ws2812 example:
 
 <div align="center"><video width={800} height={600} controls>
-    <source src="https://files.seeedstudio.com/wiki/XIAO-RP2350-NuttX/xiao-rp2350-nuttx-demo.mp4" type="video/mp4" />
+    <source src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/Nuttx/xiao-rp2350-nuttx-demo.mp4" type="video/mp4" />
 </video></div>
 
 For more information about NuttX RTOS, please visit [NuttX Documentation](https://nuttx.apache.org/docs/latest/index.html)
