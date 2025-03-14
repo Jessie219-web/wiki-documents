@@ -1,34 +1,32 @@
 ---
-description: Seeed Studio Iot Botton Connect To ESPHome
-title: Seeed Studio Iot Botton Connect To ESPHome
+description: Connect Seeed Studio IoT Button To ESPHome
+title: Connect Seeed Studio IoT Button To ESPHome
 keywords:
   - ESPHOME
+  - IoT Button
+  - ESP32-C6
 image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
 slug: /seeed_iot_botton_connect_to_esphome
 last_update:
-  date: 6/11/2024
-  author: qiuyu wei
+  date: 03/14/2025
+  author: qiuyu wei, Citric
 ---
 
-## Getting Started
+# Connect Seeed Studio IoT Button To ESPHome
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.jpg" style={{width:600, height:'auto'}}/></div>
 
-In this example, we will introduce how to connect the Iot Button to the home assistant and use the Iot Button to control the buzzer on and off.
+In this tutorial, we will show you how to connect the Seeed Studio IoT Button to Home Assistant using ESPHome. You'll learn how to set up the button to detect different press patterns (single click, double click, and long press) and trigger different actions in your smart home.
 
-### Materials Required
+## Materials Required
 
 <div class="table-center">
   <table align="center">
     <tr>
-      <th>Iot Button</th>
-      <th>XIAO ESP32C3</th>
-      <th>Expansion Board Base for XIAO</th>
+      <th>Seeed Studio IoT Button</th>
     </tr>
     <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button.jpg" style={{width:250, height:'auto'}}/></div></td>
-      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/XIAOESP32C3.png" style={{width:170, height:'auto'}}/></div></td>
-      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/BOARD.jpg" style={{width:250, height:'auto'}}/></div></td>
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -36,21 +34,11 @@ In this example, we will introduce how to connect the Iot Button to the home ass
         <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
-      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-      </div></td>
-       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
-        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-        </a>
-      </div></td>
     </tr>
   </table>
 </div>
 
-A powerful functional expansion board for Seeed Studio XIAO,  with its rich peripherals including buzzer. XIAO ESP32C3 was also selected as the master control, of course, you can also be based on the case of free play to create!
+The Seeed Studio IoT Button is a versatile smart button with a built-in ESP32-C6 chip. It's a complete, standalone device that can be integrated with Home Assistant to control various devices and trigger automations. With its ESP32-C6 chip, it offers low power consumption and reliable connectivity without requiring any additional development boards.
 
 ## Install ESPHome on Home Assistant
 
@@ -72,19 +60,19 @@ A powerful functional expansion board for Seeed Studio XIAO,  with its rich peri
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/4.png" style={{width:1000, height:'auto'}}/></div>
 
-## Adding the Iot button to ESPHome
+## Adding the IoT Button to ESPHome
 
 **Step 5**. Click **+NEW DEVICE**
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/5.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 6**. Click **NEXT** and give your device a name of your choice.
+**Step 6**. Click **NEXT** and give your device a name of your choice. We recommend using "seeedstudio-iot-button" or something similar.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/6.png" style={{width:800, height:'auto'}}/></div>
 
 **Step 7**. Select your device type
 
-Here we choose the first one for now, because ESPHome doesn't support ESP32C6 at the moment, so we can't find the ESP32C6 option in the list for the time being.
+For the IoT Button with its built-in ESP32-C6, select "ESP32" as the device type. We'll modify the configuration later to specify the correct ESP32 variant.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/7.png" style={{width:580, height:'auto'}}/></div>
 
@@ -92,173 +80,264 @@ Here we choose the first one for now, because ESPHome doesn't support ESP32C6 at
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/8.png" style={{width:780, height:'auto'}}/></div>
 
-## Configuring the IOT BUTTON
+## Configuring the IoT Button
 
-### Adding programs to the IOT BUTTON
+### Adding the ESPHome Configuration
 
 **Step 9**. The corresponding device card will appear on the ESPHome page, then click the **EDIT**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/9.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 10**. After entering the editing interface you need to configure the **ESP32**, you can copy the code directly.
+**Step 10**. Replace the entire configuration with the following code:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/10.png" style={{width:1000, height:'auto'}}/></div>
 
 ```yaml
+substitutions:
+  name: "seeedstudio-iot-button"
+  friendly_name: "Seeed Studio IoT Button"
+
+esphome:
+  name: "${name}"
+  friendly_name: "${friendly_name}"
+  name_add_mac_suffix: true
+  project:
+    name: "seeedstudio.iot_button"
+    version: "1.0"
+  platformio_options:
+    board_upload.maximum_size: 4194304
+  min_version: "2024.3.2" # Fix logger compile error on ESP32-C6 esphome#6323
+
 esp32:
   board: esp32-c6-devkitc-1
   variant: esp32c6
   flash_size: 4MB # upload.flash_size
   framework:
     type: esp-idf
-    platform_version: 6.5.0 # Need at least 6.4 for ESP32-C6
 
-    # Tasmota's release of 5.1.3 works, first-party release does not LOL
-    version: 5.1.3
-    source: https://github.com/tasmota/esp-idf/releases/download/v5.1.3.240325/esp-idf-v5.1.3.zip
+# Enable logging
+logger:
+  hardware_uart: USB_SERIAL_JTAG
+  level: DEBUG
 
-    # Fix flash size by ensuring IDF flash size is also set (was defaulting to 2MB?!?)
-    # See https://github.com/esphome/issues/issues/5404
-    sdkconfig_options:
-      CONFIG_ESPTOOLPY_FLASHSIZE_4MB: y
-```
+# Enable Home Assistant API
+api:
 
-**Step 11**. Adding corresponding components and initialising and configuring device pins.
+ota:
+  - platform: esphome
 
-:::note
-The WIFI ssid and password configuration should be the same as the server, to ensure that the connection is the same network!
-:::
+wifi:
+  # Replace with your WiFi credentials
+  ssid: "Your_WiFi_SSID"
+  password: "Your_WiFi_Password"
+  
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "seeedstudio-iot-button"
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/11.png" style={{width:1000, height:'auto'}}/></div>
+captive_portal:
 
-```yaml
 binary_sensor:
   - platform: gpio
     pin:
-      number: GPIO3
-      mode: INPUT_PULLUP
+      number: GPIO9
       inverted: True
-    name: "IoT Button"
+    name: "SeeedStudio IoT Button"
+    on_multi_click:
+      - timing:
+          - ON for at most 200ms
+          - OFF for at least 0.5s
+        then:
+          - logger.log: "Single Short Clicked"
+          - switch.toggle: virtual_toggle_1
+      - timing:
+          - ON for at most 200ms
+          - OFF for at most 0.5s
+          - ON for at most 200ms
+          - OFF for at least 0.2s
+        then:
+          - logger.log: "Double Clicked"
+          - switch.toggle: virtual_toggle_2
+      - timing:
+          - ON for 1s to 2.5s
+          - OFF for at least 0.5s
+        then:
+          - logger.log: "Long Press"
+          - switch.toggle: virtual_toggle_3
+
+switch:
+  - platform: template
+    name: "Switch 1"
+    id: virtual_toggle_1
+    optimistic: true
+    turn_on_action:
+      - logger.log: "Single Short Clicked"
+      - logger.log: "Switch 1 turned ON"
+      # Add your switch-on action
+    turn_off_action:
+      - logger.log: "Single Short Clicked"
+      - logger.log: "Switch 1 turned OFF"
+      # Add your closing action
+  
+  - platform: template
+    name: "Switch 2"
+    id: virtual_toggle_2
+    optimistic: true
+    turn_on_action:
+      - logger.log: "Double Clicked"
+      - logger.log: "Switch 2 turned ON"
+      # Add your switch-on action
+    turn_off_action:
+      - logger.log: "Double Clicked"
+      - logger.log: "Switch 2 turned OFF"
+      # Add your closing action
+  
+  - platform: template
+    name: "Switch 3"
+    id: virtual_toggle_3
+    optimistic: true
+    turn_on_action:
+      - logger.log: "Long Press"
+      - logger.log: "Switch 3 turned ON"
+      # Add your switch-on action
+    turn_off_action:
+      - logger.log: "Long Press"
+      - logger.log: "Switch 3 turned OFF"
+      # Add your closing action
 ```
 
-**Step 12**. After completing the above steps click on **INSTALL** in the upper right corner and then select **Plug into this computer**.
+:::note
+Make sure to replace "Your_WiFi_SSID" and "Your_WiFi_Password" with your actual WiFi credentials. The WiFi configuration should match the network where your Home Assistant server is running to ensure proper connectivity.
+:::
+
+### Understanding the Configuration
+
+Let's break down the key parts of this configuration:
+
+1. **ESP32 Configuration**: 
+   - Specifies the ESP32-C6 variant and board type for the IoT Button's built-in chip
+   - Sets the flash size to 4MB
+   - Uses the ESP-IDF framework which is required for ESP32-C6
+
+2. **Button Configuration**:
+   - Connects to GPIO9 where the physical button is wired internally
+   - Inverted: True means the pin is pulled high when not pressed and goes low when pressed
+   - Configures three different press patterns:
+     - Single short click (press and release quickly)
+     - Double click (two quick presses)
+     - Long press (hold for 1-2.5 seconds)
+
+3. **Virtual Switches**:
+   - Creates three template switches that will appear in Home Assistant
+   - Each switch corresponds to a different button press pattern
+   - These switches can be used in automations to control other devices
+
+**Step 11**. After completing the configuration, click on **INSTALL** in the upper right corner and then select **Plug into this computer**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/12.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 13**. Then please be patient, after the waiting time is over, click **Download project**, select **Factory format** to download the project file, and then click **Open ESPHome Web**.
+**Step 12**. Wait for the compilation process to complete. Then click **Download project**, select **Factory format** to download the project file, and then click **Open ESPHome Web**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.png" style={{width:1000, height:'auto'}}/></div>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.2.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 14**. At this point you need to connect the Iot Botton to the computer via usb, and then click **CONNECT** to select the **correct serial port**!
+**Step 13**. Connect the IoT Button to your computer via USB. Click **CONNECT** and select the correct serial port.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.3.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 15**. To get the **factory file** of your ESPHome project.
+**Step 14**. Click **INSTALL** to flash the firmware to your IoT Button.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/15.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 16**. If all goes well, you will be able to see the following image.
+**Step 15**. If all goes well, you will see a successful installation message.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/16.png" style={{width:1000, height:'auto'}}/></div>
 
-### Adding Iot Button to the dashboard
+## Adding the IoT Button to Home Assistant
 
-**Step 17**. Click on **Settings** and then select **Devices & services**
+**Step 16**. Go back to Home Assistant. Click on **Settings** and then select **Devices & services**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/17.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 18**. Select the corresponding device.
+**Step 17**. You should see a notification about a new device discovered. Click on **CONFIGURE**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/18.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 19**. Select the Iot Button to add, you can select the region for the device and click **FINISH**! The Iot Button appears in the **dashboard** on the homepage!
+**Step 18**. Follow the prompts to add the IoT Button to Home Assistant. You can select which area the device belongs to and click **FINISH**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/19.png" style={{width:1000, height:'auto'}}/></div>
 
+**Step 19**. The IoT Button and its three virtual switches will now appear in your Home Assistant dashboard.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/20.png" style={{width:1000, height:'auto'}}/></div>
 
-## Iot Button control Buzzer
+## Creating Automations with the IoT Button
 
-### Adding programs to the BUZZER
+Now that your IoT Button is set up, you can create automations to control devices in your smart home. Let's create a simple automation that turns on a light when you press the button.
 
-:::note
-Please make sure you have added buzzer in home assistant, you can refer to the above process to do so.
-:::
-
-Firstly, you need to add buzzer to esphome based on the process above. Then you can start to write the programme, you can refer to the example we provided, but you need to pay attention to the difference of the actual pins.
-
-```yaml
-esphome:
-  name: buzzer
-  friendly_name: buzzer
-
-esp32:
-  board: esp32-c3-devkitm-1
-  framework:
-    type: arduino
-
-# Enable logging
-logger:
-
-# Enable Home Assistant API
-api:
-  encryption:
-    key: "k13mbm4GBgaxe8yf5IHojn7am3imn0pFZrUwRe3IbRQ="
-
-ota:
-  - platform: esphome
-    password: "ba8bb045e584ddeb1803debf2cce1311"
-
-wifi:
-  ssid: !secret wifi_ssid
-  password: !secret wifi_password
-
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "Buzzer Fallback Hotspot"
-    password: "EL0JOgoaGbQq"
-
-captive_portal:
-
-output:
-  - platform: ledc
-    id: my_buzzer
-    pin: GPIO5
-
-switch:
-  - platform: template
-    name: "Buzzer"
-    turn_on_action:
-      - output.turn_on: my_buzzer
-      - output.ledc.set_frequency:
-          id: my_buzzer
-          frequency: 1000Hz
-      - output.set_level:
-          id: my_buzzer
-          level: 50%
-    turn_off_action:
-      - output.turn_off: my_buzzer
-```
-
-### Automations
-
-**Step 20**. Select **Automations & scenes**.
+**Step 20**. In Home Assistant, go to **Settings** > **Automations & scenes**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/21.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 21**. Click **CREATE AUTOMATION**, create new automation.
+**Step 21**. Click **CREATE AUTOMATION**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/22.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 22**. You can refer to the following configuration to create your own automation.
+**Step 22**. Set up your automation:
+
+1. **Name**: Give your automation a descriptive name, like "IoT Button Single Press - Turn On Light"
+2. **Trigger**: Select "State" as the trigger type
+   - Entity: Select "Switch 1" (for single press)
+   - From: "off"
+   - To: "on"
+3. **Action**: Choose the device you want to control
+   - For example, select a light and set it to turn on
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/23.png" style={{width:1000, height:'auto'}}/></div>
 
+**Step 23**. Click **SAVE** to create the automation.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/24.png" style={{width:1000, height:'auto'}}/></div>
 
-If you have successfully completed the above steps, when you press the button, the buzzer will successfully sound and last for two seconds.
+## Advanced Usage: Controlling Different Devices with Different Press Patterns
+
+One of the powerful features of the IoT Button configuration is the ability to detect different press patterns. Here are some ideas for using each pattern:
+
+1. **Single Press (Switch 1)**:
+   - Turn on/off lights in the current room
+   - Toggle a frequently used device
+
+2. **Double Press (Switch 2)**:
+   - Activate a scene (e.g., "Movie Night" that dims lights and turns on the TV)
+   - Control a group of devices simultaneously
+
+3. **Long Press (Switch 3)**:
+   - Activate security features (arm/disarm alarm)
+   - Trigger emergency routines
+   - Power off multiple devices at once
+
+To set up these advanced automations, create additional automations following the steps above, but select the appropriate switch (Switch 1, 2, or 3) as the trigger and configure the desired actions.
+
+## Troubleshooting
+
+If you encounter issues with your IoT Button, here are some common troubleshooting steps:
+
+1. **Button not connecting to WiFi**:
+   - Verify your WiFi credentials in the ESPHome configuration
+   - Ensure your WiFi network is 2.4GHz (ESP32-C6 supports both 2.4GHz and 5GHz, but 2.4GHz typically has better range)
+
+2. **Button not appearing in Home Assistant**:
+   - Check that the button and Home Assistant are on the same network
+   - Restart the ESPHome add-on and Home Assistant
+
+3. **Button presses not detected**:
+   - Verify the GPIO pin configuration (GPIO9 for the standard IoT Button)
+   - Check the logs in ESPHome to see if button presses are being detected
+
+4. **Automations not triggering**:
+   - Verify that the automation is enabled
+   - Check that the trigger conditions match exactly (state changes from "off" to "on")
 
 ## Tech Support & Product Discussion
 
