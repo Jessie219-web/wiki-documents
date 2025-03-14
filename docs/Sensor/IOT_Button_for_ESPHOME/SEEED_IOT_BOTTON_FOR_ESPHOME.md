@@ -68,7 +68,7 @@ The Seeed Studio IoT Button is a versatile smart button with a built-in ESP32-C6
 
 **Step 6**. Click **NEXT** and give your device a name of your choice. We recommend using "seeedstudio-iot-button" or something similar.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/6.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/6.png" style={{width:600, height:'auto'}}/></div>
 
 **Step 7**. Select your device type
 
@@ -78,17 +78,52 @@ For the IoT Button with its built-in ESP32-C6, select "ESP32" as the device type
 
 **Step 8**. Add device successfully, finally click **SKIP**.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/8.png" style={{width:780, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/8.png" style={{width:600, height:'auto'}}/></div>
 
 ## Configuring the IoT Button
 
+### Using Web Flasher (Recommended Method)
+
+The easiest way to get started with the IoT Button is to use the Web Flasher tool to install the pre-built ESPHome firmware directly from your browser.
+
+**Step 1**: Visit the [Seeed Studio IoT Button Firmware Flasher](https://seeed-projects.github.io/Seeed_IoT_Button/) website.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/iot_button_zigbee/3.png" style={{width:800, height:'auto'}}/></div>
+
+**Step 2**: Connect your IoT Button to your computer using a USB cable.
+
+**Step 3**: Click the "Install" button on the Web Flasher page.
+
+**Step 4**: Select the correct USB port from the popup dialog.
+
+**Step 5**: The browser will automatically download and flash the firmware to your device.
+
+**Step 6**: After flashing is complete, the IoT Button will create its own WiFi network. Connect to the WiFi network named "seeedstudio-iot-button" from your computer or smartphone.
+
+**Step 7**: Once connected, your device should automatically open a configuration page. If not, open a browser and navigate to `http://192.168.4.1`.
+
+**Step 8**: On the configuration page:
+   - Enter your home WiFi network name (SSID) and password
+   - Make sure this is the same network that your Home Assistant is connected to
+   - Click "Save" to apply the settings
+
+**Step 9**: The IoT Button will restart and connect to your home WiFi network.
+
+**Step 10**: In Home Assistant, go to Settings > Devices & Services. You should see a notification that a new ESPHome device has been discovered. Click "Configure" to add the device to Home Assistant.
+
+**Step 11**: Follow the prompts to complete the setup. The IoT Button will now appear in your Home Assistant dashboard with three virtual switches corresponding to the different button actions.
+
+### Alternative Method: Using ESPHome Dashboard
+
+If you prefer to use the ESPHome dashboard for more control over the configuration, follow the steps below.
+
 ### Adding the ESPHome Configuration
 
-**Step 9**. The corresponding device card will appear on the ESPHome page, then click the **EDIT**.
+**Step 1**. The corresponding device card will appear on the ESPHome page, then click the **EDIT**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/9.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 10**. Replace the entire configuration with the following code:
+**Step 2**. Replace the entire configuration with the following code:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/10.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -232,25 +267,25 @@ Let's break down the key parts of this configuration:
    - Each switch corresponds to a different button press pattern
    - These switches can be used in automations to control other devices
 
-**Step 11**. After completing the configuration, click on **INSTALL** in the upper right corner and then select **Plug into this computer**.
+**Step 3**. After completing the configuration, click on **INSTALL** in the upper right corner and then select **Plug into this computer**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/12.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 12**. Wait for the compilation process to complete. Then click **Download project**, select **Factory format** to download the project file, and then click **Open ESPHome Web**.
+**Step 4**. Wait for the compilation process to complete. Then click **Download project**, select **Factory format** to download the project file, and then click **Open ESPHome Web**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.png" style={{width:1000, height:'auto'}}/></div>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.2.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 13**. Connect the IoT Button to your computer via USB. Click **CONNECT** and select the correct serial port.
+**Step 5**. Connect the IoT Button to your computer via USB. Click **CONNECT** and select the correct serial port.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/13.3.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 14**. Click **INSTALL** to flash the firmware to your IoT Button.
+**Step 6**. Click **INSTALL** to flash the firmware to your IoT Button.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/15.png" style={{width:1000, height:'auto'}}/></div>
 
-**Step 15**. If all goes well, you will see a successful installation message.
+**Step 7**. If all goes well, you will see a successful installation message.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/16.png" style={{width:1000, height:'auto'}}/></div>
 
