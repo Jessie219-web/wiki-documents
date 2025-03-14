@@ -1,24 +1,24 @@
 ---
-description: Explore the world of RNDIS and 4G LTE on Raspberry Pi. This guide provides step-by-step instructions for configuring cellular connectivity, opening up a world of possibilities for your projects.
+description: Explore the world of ECM mode and 4G LTE on Raspberry Pi. This guide provides step-by-step instructions for configuring cellular connectivity using ECM (Ethernet Control Model), enabling seamless internet access for your projects.
 
-title: Mobile Internet for Your Pi - RNDIS 4G LTE Setup
+title: Mobile Internet for Your Pi - ECM  Setup
 
 keywords:
   - Raspberry Pi Hat
   - Getting started
   - IIoT
-  - RNDIS
+  - ECM
   - Mobile Data
 image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.webp
-slug: /raspberry_pi_4g_hat_rndis_mobile_internet
+slug: /raspberry_pi_4g_hat_ecm_mobile_internet
 last_update:
-  date: 12/13/2024
+  date: 3/14/2024
   author: Kasun Thushara
 ---
 
 ## Introduction
 
-**RNDIS (Remote Network Driver Interface Specification)** is a protocol that allows USB-connected devices, like the Quectel EG25-G 4G module, to act as network interfaces. By enabling RNDIS on a Raspberry Pi, the 4G module can provide cellular internet connectivity to the Pi. This setup is widely used in IoT applications, such as creating portable internet routers, IoT gateways, and remote monitoring systems. The Raspberry Pi communicates with the 4G module using AT commands to configure features like RNDIS mode, GNSS, and SMS. This approach simplifies internet access in scenarios where traditional wired or Wi-Fi connections are unavailable.
+**ECM (Ethernet Control Model)** is a USB networking protocol that allows devices like the Quectel EG25-G 4G module to function as a network interface on a Raspberry Pi. By enabling ECM mode, the module provides cellular internet connectivity, making it ideal for IoT applications such as portable internet routers, IoT gateways, and remote monitoring systems. The Raspberry Pi communicates with the module via AT commands to manage features like ECM mode, GNSS, and SMS, ensuring reliable internet access in areas without wired or Wi-Fi networks.
 
 ## Hardware Preparation
 
@@ -52,7 +52,7 @@ last_update:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/sms_setup.png" style={{width:800}}/></div>
 
-Setting up a Raspberry Pi for networking via RNDIS (Remote Network Driver Interface Specification) using **AT commands**  involves using Quectel Module.
+Setting up a Raspberry Pi for networking via ECM mode (Ethernet Control Model) using **AT commands**  involves using Quectel Module.
 
 :::note
 If the necessary drivers for communicating with AT commands are not installed, you will need to [install them](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#raspberry-pi).
@@ -67,7 +67,7 @@ sudo minicom -D /dev/ttyUSB2
 AT
 ```
 
-### Step 2 : Enable RNDIS Mode
+### Step 2 : Enable ECM  Mode
 
 ```bash
 AT+QCFG="usbnet",1
@@ -78,7 +78,7 @@ AT+QCFG="usbnet",1
 ```bash
 AT+QCFG="usbnet"?
 ```
-It should return **usbnet,1**, indicating RNDIS is active.
+It should return **usbnet,1**, indicating ECM mode is active.
 
 ### Step 4: Check Network Interfaces
 
@@ -86,7 +86,7 @@ It should return **usbnet,1**, indicating RNDIS is active.
 ifconfig
 ```
 
-You should see a new interface, usb0 or eth1, which is the RNDIS network interface. In this case it is usb0.
+You should see a new interface, usb0 or eth1, which is the ECM mode network interface. In this case it is usb0.
 
 <div style={{ textAlign: 'center' }}>
   <img 
