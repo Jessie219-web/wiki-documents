@@ -171,7 +171,7 @@ git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-对于Jetson设备（Jetson设备请先安装好步骤5的[安装Pytorch-gpu和Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)再执行这一步）:
+对于Jetson Jetpack6.0+设备（Jetson设备请先安装好步骤5的[安装Pytorch-gpu和Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)再执行这一步）:
 
 ```bash
 conda install -y -c conda-forge "opencv>=4.10.0.84"  #通过conda安装opencv其他依赖，这一步只针对Jetson Jetpack6.0+
@@ -585,7 +585,6 @@ python lerobot/scripts/control_robot.py \
 - 如果你维修或者更换过机械臂零件，请完全删除`~/lerobot/.cache/huggingface/calibration/so100`文件夹并重新校准机械臂
 
 - 如果遥操作正常，而带Camera的遥操作无法显示图像界面，请参考[这里](https://github.com/huggingface/lerobot/pull/757/files)
-  
 
 - 如果在数据集遥操作过程中出现libtiff的问题，请更新libtiff版本。
   ```bash
@@ -615,7 +614,7 @@ python lerobot/scripts/control_robot.py \
 
 - 数据采集命令的num-episodes要确保采集数据足够，不可中途手动暂停，因为在数据采集结束后才会计算数据的均值和方差，这在训练中是必要的数据。
 
-
+- 如果程序提示无法读取USB摄像头图像数据，请确保USB摄像头不是接在Hub上的，USB摄像头必须直接接入设备，确保图像传输速率快。
 
 
 ## 参考文档
