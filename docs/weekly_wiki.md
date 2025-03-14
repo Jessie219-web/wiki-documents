@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 03/03/2025
+  date: 03/10/2025
   author: Frank
 ---
 
@@ -17,59 +17,29 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is March 3rd, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is March 10th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting Started with reCamera Gimbal](https://wiki.seeedstudio.com/recamera_gimbal_getting_started/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.png" style={{width:600, height:'auto'}}/></div>
-
-The reCamera gimbal 2002 series is the first open-source camera control system, composed of one tiny AI camera - reCamera 2002w 8GB/64GB, and one compatible 2-Axis gimbal basement with 2 brushless motors. It is powered by an RISC-V SoC, providing 1 TOPS AI performance with video encoding at 5MP @ 30 FPS. It offers a Lego-like self-assembly package and integrates the Sensecraft AI platform and Node-RED platform for smooth graphical programming and pipeline construction, enabling rapid self-training, model conversion, and deployment of AI models such as Yolo v5/v8/11.
-
-### [reComputer R1100 Getting Started](https://wiki.seeedstudio.com/recomputer_r1100_intro/)
+### [reComputer R1100 Flash OS](https://wiki.seeedstudio.com/recomputer_r1100_flash_os/)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.jpg" style={{width:600, height:'auto'}}/></div>
 
-The reComputer R1100, powered by the Raspberry Pi CM4, is a versatile edge IoT gateway with AI capabilities. It features a comprehensive range of industrial interfaces, including **2x Ethernet, 2x USB, 2x RS485, 2x RS232, 2x DI, and 2x DO**, along with flexible wireless connectivity options such as **4G, LoRa®, and Wi-Fi/BLE**. These features make it an ideal choice for various industrial applications.
+This wiki provides step-by-step instructions for flashing an OS onto the reComputer R1100, an industrial IoT edge gateway powered by Raspberry Pi CM4. It covers hardware/software requirements, OS flashing (NVMe/eMMC), EEPROM updates, boot order configuration, and driver installation for Windows, Mac, and Linux users.
 
-### [reComputer R1100 Assembly Guide](https://wiki.seeedstudio.com/recomputer_r1100_assembly_guide/)
+### [Using Cursor to Create Zigbee Projects with XIAO ESP32C6](https://wiki.seeedstudio.com/use_cursor_create_zigbee_prj/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/dissambly_guide.PNG" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/cursor_zigbee_xiaoc6/13.webp" style={{width:800, height:'auto'}}/></div>
 
-This Wiki will show you how to Assemble and Disassemble the unit to install peripherals components, as well as the option for mounting.
-
-### [Configure reComputer R1100](https://wiki.seeedstudio.com/recomputer_r1100_configure_system/)
-
-Learn how to configure and test hardware components on the reComputer R1100 series after installing devices. This wiki covers GPIO mapping, USER LED testing, SPI communication, Wi-Fi and Bluetooth scanning, LoRa®, 4G, Zigbee over Mini-PCIe, RS485, RS232, DI/DO testing,UPS for safe shutdown and more.
+This guide will walk you through using Cursor's AI-powered chat to develop Zigbee applications with XIAO ESP32C6 and sensors. By the end of this tutorial, you'll be able to independently use Cursor's Chat to develop Zigbee applications with your XIAO board and sensors.
 
 ## Existing Wiki Updated
 
-### [XIAO ESP32S3 Sense Sleep Modes](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/)
+### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
 
-We have updated the example code for the [Deep-Sleep](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/#deep-sleep), [Light-Sleep](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/#light-sleep), and [Modem-Sleep](https://wiki.seeedstudio.com/XIAO_ESP32S3_Consumption/#modem-sleep) modes of the XIAO ESP32S3 Sense.
-
-### [reComputer R1000 Raspbian OS to eMMC](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/)
-
-We have added an operation example for [Boot from NVME](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#boot-from-nvme).
-
-### [Flash JetPack OS to A603 Carrier Board](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/)
-
-We have added an example for using [CAN Interfaces](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/#can-interfaces).
-
-### [NVIDIA® Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/)
-
-We have added relevant information about [Developer Tools](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack/#developer-tools).
+We have added the [IMU Advanced Demo](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/#imu-advanced-demo) to the XIAO MG24 Sense.
 
 ## The Efforts of Contributor
-
-### [Develop both chips with Arduino](https://wiki.seeedstudio.com/SenseCAP_Indicator_ESP32_Arduino/#hardware-preparation)
-
-<div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/SenseCAP_Indicator_6.png" style={{width:800, height:'auto'}}/>
-</div>
-
-This tutorial will guide you to develop your own custom project/firmware for the Sensecap Indicator using the simplicity and Flexibility of the Arduino Framework.
 
 <!-- ### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
 
@@ -181,5 +151,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
 - [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
 - [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
+- [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
 
 </details>

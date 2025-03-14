@@ -1148,9 +1148,9 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-Arduino',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-MicroPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-CircuitPython',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
               ],
             },
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-Zephyr-RTOS',
             {
               type: 'category',
@@ -1216,7 +1216,6 @@ const sidebars = {
               label: 'Embedded ML',
               items: [
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/XIAOEI',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/XIAO-BLE-PDM-EI',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/XIAO-BLE-Sense-TFLite-Getting-Started',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/XIAO-BLE-Sense-TFLite-Mic',
               ],
@@ -1307,6 +1306,7 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee_arduino',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiaoc6_zigbee_led_ha',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/use_cursor_create_zigbee_prj',
               ],
             },
             {
@@ -3463,6 +3463,7 @@ const sidebars = {
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l', 
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/clip_application_on_rpi_with_ai_kit',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/frigate_nvr_with_raspberrypi_5',
+          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Deploy_DeepSeek_on_Raspberry_Pi_AI_Box'
         ]
       },
 
@@ -5836,6 +5837,17 @@ const sidebars = {
           // },
           items: [
             'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/Lerobot_SO100Arm_zh',
+          ]
+        },
+        {
+          type: 'category',
+          label: 'reCamera',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
+          // },
+          items: [
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/quick_start_guide_cn',
           ]
         },
 

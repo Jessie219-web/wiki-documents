@@ -8,6 +8,10 @@ last_update:
   author: Bruno Santos (Feiticeir0)
 ---
 
+:::caution
+The content of this tutorial may no longer be valid and new software maintenance and technical support is no longer available.
+:::
+
 # Speech Recognition based on Edge Impulse using XIAO nRF52840
 
 In this wiki, I will show how to use Edge Impulse with the ML capabilities of the Seeed Studio XIAO nRF52840 for Speech Recognition. We will use the Microphone which is already on the XIAO nRF52840 Sense.
