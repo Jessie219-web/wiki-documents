@@ -2367,16 +2367,11 @@ const sidebars = {
         
         {
           type: 'category',
-          label: 'Seeed Studio Iot Botton',
+          label: 'Seeed Studio IoT Botton',
           items: [
-            {
-              type: 'category',
-              label: 'Application',
-              items: [
-                'Sensor/Seeed_Studio_Iot_Button/IOT_BOTTON_FOR_ESPHOME',
+                'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
+                'Sensor/IOT_Button_for_ESPHOME/seeed_iot_button_with_zigbee',
               ],
-            },
-          ],
         },
 
         {
