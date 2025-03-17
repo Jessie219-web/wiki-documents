@@ -55,7 +55,7 @@ export const startedList = [
   {
     title: 'reterminal',
     img: 'reterminal',
-    link: '/Raspberry_Pi_Powered_Devices',
+    link: '/raspberry-pi-devices',
     children: [
       {
         title: 'reTerminal',

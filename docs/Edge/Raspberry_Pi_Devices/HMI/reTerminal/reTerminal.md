@@ -334,6 +334,9 @@ You need to prepare the following hardware
 
 We can flash **Raspberry Pi OS/ 64-bit Ubuntu OS or other OS** on to the **eMMC storage** of the CM4 on the reTerminal. Once the necessary drivers are installed, you just have to connect the USB Type-C port of the reTerminal to your PC, and it will show as an external drive. Start by removing the reTerminal back shell.
 
+> **Note:** The latest system image packaged by Seeed, including the appropriate drivers: [pi-gen-expand](https://github.com/Seeed-Studio/pi-gen-expand)
+
+
 - **Step 1.** Remove the 4 rubber covers and open the reTerminal back shell unscrewing the 4 screws underneath
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/remove-screw-1.png" alt="pir" width="450" height="auto"/></p>

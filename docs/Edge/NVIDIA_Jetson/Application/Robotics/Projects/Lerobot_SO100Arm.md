@@ -174,6 +174,17 @@ git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
+For Jetson Jetpack6.0+ devices (please make sure to install [Pytorch-gpu and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) from step 5 before executing this step):
+
+```bash
+conda install -y -c conda-forge "opencv>=4.10.0.84"  # Install OpenCV and other dependencies through conda, this step is only for Jetson Jetpack 6.0+
+conda remove opencv   # Uninstall OpenCV 
+pip3 install opencv-python==4.10.0.84  # Then install opencv-python via pip3
+conda install -y -c conda-forge ffmpeg
+conda uninstall numpy
+pip3 install numpy==1.26.0  # This should match torchvision
+```
+
 For Linux only (not Mac), install extra dependencies for recording datasets:
 
 ```bash
@@ -256,7 +267,7 @@ Detailed video instructions are on the [HuggingFace Youtube](https://www.youtube
 
 ## Calibrate
 
-Next, you'll need to calibrate your SO-100 robot to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-100 robot to work on another.
+Next, you'll need to calibrate your SO-100 robot to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-100 robot to work on another. If you need to recalibrate the robotic arm, delete the `~/lerobot/.cache/huggingface/calibration/so100` folder.
 
 :::info
 The calibration of the robotic arm should be carried out strictly in accordance with the ["Calibrate"](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md#e-calibrate) steps in the official tutorial of Lerobot.
@@ -341,6 +352,13 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_leader"]'
 ```
 
+| **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
+|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_zero_position.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rotated_position.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rest_position.jpg) |
+| **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
+| ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_zero_position.jpg) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rotated_position.jpg) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rest_position.jpg) |
+
+
 ## Teleoperate
 
 **Simple teleop**
@@ -357,7 +375,7 @@ python lerobot/scripts/control_robot.py \
 
 ## Add cameras
 
-After inserting your two USB cameras, run the following script to check the port numbers of the cameras.
+After inserting your two USB cameras, run the following script to check the port numbers of the cameras, It is important to remember that the camera must not be connected to a USB Hub; instead, it should be plugged directly into the device. The slower speed of a USB Hub may result in the inability to read image data.
 
 ```bash
 python lerobot/common/robot_devices/cameras/opencv.py \
@@ -553,10 +571,11 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so100_test \
   --job_name=act_so100_test \
   --device=cuda \
-  --wandb.enable=true
+  --wandb.enable=false \
+  --datasets.local_files_only=true
 ```
 
-Note: If you didn't push your dataset yet, add `--control.local_files_only=true`.
+Note: If you didn't push your dataset yet, add `--dataset.local_files_only=true`.
 
 Let's explain it:
 
@@ -594,6 +613,49 @@ As you can see, it's almost the same command as previously used to record your t
 2. The name of dataset begins by `eval` to reflect that you are running inference (e.g. `${HF_USER}/eval_act_so100_test`).
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/wc-qh7UFkuQ?si=Y2SXU9T0DSmtz4ll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## FAQ
+
+- If you are following this documentation/tutorial, please git clone the recommended GitHub repository `https://github.com/ZhuYaoHui1998/lerobot.git`. The repository recommended in this documentation is a verified stable version; the official Lerobot repository is continuously updated to the latest version, which may cause unforeseen issues such as different dataset versions, different commands, etc.
+
+- If you encounter the following error, you need to check whether the robotic arm connected to the corresponding port is powered on and whether the bus servos have any loose or disconnected cables.
+  ```bash
+  ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
+  ```
+
+- If you have repaired or replaced any parts of the robotic arm, please completely delete the `~/lerobot/.cache/huggingface/calibration/so100` folder and recalibrate the robotic arm.
+
+- If the remote control functions normally but the remote control with Camera fails to display the image interface, you can find [here](https://github.com/huggingface/lerobot/pull/757/files)
+
+- If you encounter libtiff issues during dataset remote operation, please update the libtiff version.
+  ```bash
+  conda install libtiff==4.5.0  #for Ubuntu 22.04 is libtiff==4.5.1
+  ```
+
+- After executing the [Lerobot Installation](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot), the GPU version of pytorch may be automatically uninstalled, so you need to manually install torch-gpu.
+
+- For Jetson, please first install [Pytorch and Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) before executing `conda install -y -c conda-forge ffmpeg`, otherwise, when compiling torchvision, an ffmpeg version mismatch issue may occur.
+
+- If the following problem occurs, it means that your computer does not support this video codec format. You need to modify line 134 in the file `lerobot/lerobot/common/datasets
+/video_utils.py` by changing the value of `vcodec: str = "libsvtav1"` to `libx264` or `libopenh264`. Different computers may require different parameters, so you can try various options. [Issues 705](https://github.com/huggingface/lerobot/issues/705)
+  
+  ```bash
+  [vost#0:0 @ 0x13207240] Unknown encoder 'libsvtav1' [vost#0:0 @ 0x13207240] Error selecting an encoder Error opening output file /home/han/.cache/huggingface/lerobot/lyhhan/so100_test/videos/chunk-000/observation.images.laptop/episode_000000.mp4. Error opening output files: Encoder not found
+  ``` 
+
+- Important!!! If during execution the servo's cable becomes loose, please restore the servo to its initial position and then reconnect the servo cable. You can also individually calibrate a servo using the [Servo Initialization Command](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors), ensuring that only one cable is connected between the servo and the driver board during individual calibration. If you encounter
+  ```bash
+  Auto-correct calibration of motor 'wrist roll' by shifting value by 1 full turns, from '-270 < -312.451171875 < 270degrees' to'-270<-312.451171875 < 270 degrees'.
+  ```
+  or other errors during the robotic arm calibration process related to angles and exceeding limit values, this method is still applicable.
+
+- Training 50 sets of ACT data on an 8G 3060 laptop takes approximately 6 hours, while on a 4090 or A100 computer, training 50 sets of data takes about 2–3 hours.
+
+- During data collection, ensure that the camera's position, angle, and environmental lighting remain stable, and minimize capturing excessive unstable backgrounds and pedestrians; otherwise, significant environmental changes during deployment may cause the robotic arm to fail to grasp properly.
+
+- Ensure that the `num-episodes` parameter in the data collection command is set to collect sufficient data, and do not manually pause midway. This is because the mean and variance of the data are calculated only after data collection is complete, which is necessary for training.
+
+- If the program prompts that it cannot read the USB camera image data, please ensure that the USB camera is not connected to a hub. The USB camera must be directly connected to the device to ensure a fast image transmission rate.
 
 ## Citation
 
