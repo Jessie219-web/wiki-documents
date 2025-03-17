@@ -1148,9 +1148,9 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-Arduino',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-MicroPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-CircuitPython',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
               ],
             },
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-Zephyr-RTOS',
             {
               type: 'category',
@@ -2367,16 +2367,11 @@ const sidebars = {
         
         {
           type: 'category',
-          label: 'Seeed Studio Iot Botton',
+          label: 'Seeed Studio IoT Botton',
           items: [
-            {
-              type: 'category',
-              label: 'Application',
-              items: [
-                'Sensor/Seeed_Studio_Iot_Button/IOT_BOTTON_FOR_ESPHOME',
+                'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
+                'Sensor/IOT_Button_for_ESPHOME/seeed_iot_button_with_zigbee',
               ],
-            },
-          ],
         },
 
         {
@@ -2780,7 +2775,7 @@ const sidebars = {
             items: [
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/send_text_massages_lte_cat_hat_for_rpi',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mobile_internet_for_your_pi_rndis_4g_lte_set_up',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mobile_internet_for_your_pi_ecm_set_up',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_hotspot_on_rpi_os',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ftp_on_rpi_4g_lte_hat',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mqtt_on_rpi_4g_lte_hat',
@@ -3463,6 +3458,7 @@ const sidebars = {
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l', 
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/clip_application_on_rpi_with_ai_kit',
           'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/frigate_nvr_with_raspberrypi_5',
+          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Deploy_DeepSeek_on_Raspberry_Pi_AI_Box'
         ]
       },
 
