@@ -331,6 +331,14 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_leader"]'
 ```
 
+| **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
+|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_zero_position.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rotated_position.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rest_position.jpg) |
+| **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
+| ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_zero_position.jpg) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rotated_position.jpg) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rest_position.jpg) |
+
+
+
 ## 遥操作
 
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806571580&bvid=BV14M6JY6E72&cid=27744995936&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>

@@ -352,6 +352,13 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_leader"]'
 ```
 
+| **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
+|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_zero_position.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rotated_position.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rest_position.jpg) |
+| **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
+| ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_zero_position.jpg) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rotated_position.jpg) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rest_position.jpg) |
+
+
 ## Teleoperate
 
 **Simple teleop**
