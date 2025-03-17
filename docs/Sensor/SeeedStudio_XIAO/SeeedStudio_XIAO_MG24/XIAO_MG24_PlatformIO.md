@@ -3,7 +3,7 @@ description: Seeed Studio XIAO MG24 with PlatformIO
 title: XIAO MG24 with PlatformIO
 keywords:
 - xiao
-image: https://files.seeedstudio.com/wiki/mg24_platform/top_mg24_platform02.png
+image: https://files.seeedstudio.com/wiki/mg24_platform/top_mg24_platform02.webp
 slug: /xiao_mg24_with_platform_io
 last_update:
   date: 03/17/2024
@@ -12,7 +12,7 @@ last_update:
 ---
 
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/mg24_platform/top_mg24_platform02.png" /></div>
+<div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/mg24_platform/top_mg24_platform02.webp" /></div>
 
 ## PlatformIO Introduce
 
