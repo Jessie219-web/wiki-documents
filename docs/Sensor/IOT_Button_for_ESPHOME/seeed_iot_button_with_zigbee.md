@@ -6,7 +6,7 @@ keywords:
   - IoT Button
   - ESP32-C6
   - Home Assistant
-image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
+image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button.webp
 slug: /seeed_iot_button_with_zigbee
 last_update:
   date: 03/14/2025
