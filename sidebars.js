@@ -5842,7 +5842,8 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
           // },
           items: [
-            'zh-CN/Edge/reCamera/reCamera_2002_Series/quick_start_guide_cn',
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_quick_start_guide',
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_develop_with_nodered'
           ]
         },
 
