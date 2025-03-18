@@ -17,7 +17,7 @@ last_update:
 
 **MQTT (Message Queuing Telemetry Transport)** es un protocolo de mensajería ligero, ideal para aplicaciones IoT (Internet de las Cosas) gracias a su eficiencia y requerimientos mínimos de ancho de banda. Facilita la comunicación entre dispositivos en un modelo de publicación-suscripción, permitiendo el intercambio de datos en tiempo real incluso sobre redes poco confiables. Con Node-RED, la integración de MQTT posibilita una conectividad fluida entre dispositivos de borde y servidores centrales (u otros dispositivos), promoviendo una transmisión y procesamiento de datos eficientes. EdgeBox Edge Controller, al ser compatible con MQTT de manera nativa, elimina la necesidad de puertas de enlace de hardware adicionales al permitir la instalación de un broker MQTT directamente en el propio EdgeBox. Esto reduce la complejidad, minimiza la latencia y mejora la confiabilidad, ya que los datos pueden procesarse y utilizarse en el propio borde sin depender de intermediarios externos, optimizando así la arquitectura del sistema IoT.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/noderedmqtt.png" style="width:800, height:'auto'"/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/noderedmqtt.png" style={{width:800, height:'auto'}}/></div>
 
 ## Comenzando
 
@@ -32,16 +32,16 @@ Antes de iniciar este proyecto, puede que necesites preparar tu hardware y softw
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-102991599_edgebox-rpi-200-first.jpg" style="width:300, height:'auto'"/></div></td>
+			<td class="table-trnobg"><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-102991599_edgebox-rpi-200-first.jpg" style={{width:300, height:'auto'}}/></div></td>
 		</tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style="textAlign: 'center'"><a class="get_one_now_item" href="https://www.seeedstudio.com/EdgeBox-RPi-200-CM4104016-p-5486.html">
-              <strong><span><font color={'FFFFFF'} size="4"> Consíguelo ahora 🖱️</font></span></strong>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/EdgeBox-RPi-200-CM4104016-p-5486.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Consigue el tuyo! 🖱️</font></span></strong>
           </a></div></td>
-      </tr>
+        </tr>
     </table>
-</div>
+    </div>
 
 ### Preparación de Software
 
@@ -103,7 +103,7 @@ listener 1883
 ```
 Guarda los cambios con Ctrl+S y sal del editor con Ctrl+X.
 
-<div style="textAlign:'center'"><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqttconfig.PNG" style="width:800, height:'auto'" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqttconfig.PNG" style={{width:800, height:'auto'}}/></div>
 
 - **Paso 05**: Para crear nombres de usuario y contraseñas que otorguen acceso a los clientes MQTT, o restablecer contraseñas existentes, utiliza el siguiente comando:
 
@@ -159,9 +159,10 @@ El nodo MQTT in se suscribe a temas MQTT y recibe mensajes del broker. Cuando se
   - **Name**: Opcionalmente, asigna un nombre al nodo.
 - **Paso 04**: Haz clic en Done para guardar.
 
-<div style="textAlign:'center'"><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/connection.PNG" style="width:600, height:'auto'" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/connection.PNG" style={{width:600, height:'auto'}}/></div>
 
-<div style="textAlign:'center'"><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqttin.PNG" style="width:600, height:'auto'" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqttin.PNG" style={{width:600, height:'auto'}}/></div>
+
 
 **Nodo MQTT out**
 
@@ -183,17 +184,17 @@ El nodo MQTT out se usa para publicar mensajes en temas MQTT. Puedes configurar 
   - **Retain**: Si el mensaje publicado debe mantenerse en el broker (true/false).
   - **Name**: Un nombre descriptivo opcional.
 
-<div style="textAlign:'center'"><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqttout.PNG" style="width:600, height:'auto'" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqttout.PNG" style={{width:600, height:'auto'}}/></div>
 
 - **Paso 07**: Haz clic en Done para guardar la configuración.
 
 Utilizamos el nodo inject para inyectar mensajes a intervalos específicos, y el nodo debug para inspeccionar el mensaje publicado.
 
-<div style="textAlign:'center'"><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/debugnode.PNG" style="width:600, height:'auto'" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/debugnode.PNG" style={{width:600, height:'auto'}}/></div>
 
 A continuación se muestra una representación gráfica de cómo conectar y configurar los nodos MQTT in, MQTT out, debug e inject.
 
-<div style="textAlign:'center'"><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqtt-edgebox.gif" style="width:800, height:'auto'" /></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/mqtt-edgebox.gif" style={{width:800, height:'auto'}}/></div>
 
 
 ## Soporte Técnico y Discusión del Producto

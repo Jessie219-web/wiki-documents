@@ -32,6 +32,7 @@ tags:
 
 <br />
 
+
 El controlador IoT de borde reComputer R1000 está basado en la plataforma de alto rendimiento Raspberry Pi CM4, con un procesador de cuatro núcleos A72 y compatibilidad con hasta 8GB de RAM y 32GB de almacenamiento eMMC. 
 
 Equipado con dos interfaces Ethernet configurables de manera flexible, también incluye tres canales RS485 aislados que admiten los protocolos BACnet, Modbus RTU y Modbus TCP/IP. 
@@ -665,7 +666,15 @@ Si el hub USB funciona correctamente, verá sus detalles en la salida del comand
 
 ### Ranura para SIM
 
-<div align="left"><img width={40} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/fig19.png" style="transform: rotate(90deg);" /></div>
+<div style={{ position: 'relative', left: '150px' }}>
+    <img 
+        width="40" 
+        src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/fig19.png" 
+        style={{ transform: 'rotate(90deg)', position: 'absolute', top: '0', left: '0', transformOrigin: 'left top' }} 
+    />
+</div>
+<br />
+<br />
 
 El reComputer R1000 utiliza una ranura para tarjeta SIM de tamaño estándar, comúnmente encontrada en aplicaciones industriales, que requiere una tarjeta SIM estándar con dimensiones de 25mm x 15mm.
 

@@ -40,7 +40,7 @@ Antes de iniciar este proyecto, es posible que necesites preparar tu hardware y 
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-R1025-10-p-5895.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> Consigue el Tuyo! 🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> Consigue el tuyo! 🖱️</font></span></strong>
           </a></div></td>
         </tr>
     </table>
@@ -108,7 +108,7 @@ listener 1883
 
 Guarda las modificaciones presionando `Ctrl+S` y sal del editor con `Ctrl+X`.
 
-<center><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/nodered/mqttconfig.PNG" style="width:800px; height:auto"/></center>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/nodered/mqttconfig.PNG" style={{width:800, height:'auto'}}/></div>
 
 - **Paso 05**: Para establecer nombres de usuario y contraseñas que permitan el acceso a los clientes MQTT o restablecer contraseñas existentes, usa el siguiente comando en la terminal:
 
@@ -213,7 +213,7 @@ El nodo MQTT-out (salida MQTT) se utiliza para publicar mensajes en tópicos MQT
   
   - **Nombre**: Opcionalmente, asigna un nombre significativo a tu nodo.
 
-<center><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/nodered/mqttout.PNG" style="width:600px; height:auto"/></center>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/nodered/mqttout.PNG" style={{width:600, height:'auto'}}/></div>
 
 - **Paso 07**: Haz clic en "Done" para guardar la configuración.
 
