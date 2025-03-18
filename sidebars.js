@@ -2367,16 +2367,11 @@ const sidebars = {
         
         {
           type: 'category',
-          label: 'Seeed Studio Iot Botton',
+          label: 'Seeed Studio IoT Botton',
           items: [
-            {
-              type: 'category',
-              label: 'Application',
-              items: [
-                'Sensor/Seeed_Studio_Iot_Button/IOT_BOTTON_FOR_ESPHOME',
+                'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
+                'Sensor/IOT_Button_for_ESPHOME/seeed_iot_button_with_zigbee',
               ],
-            },
-          ],
         },
 
         {
@@ -5848,7 +5843,8 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
           // },
           items: [
-            'zh-CN/Edge/reCamera/reCamera_2002_Series/quick_start_guide_cn',
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_quick_start_guide',
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_develop_with_nodered'
           ]
         },
 

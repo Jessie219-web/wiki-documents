@@ -58,7 +58,8 @@ reCamera 有 4 个版本：
 如果你的 reCamera 具备无线功能，我们建议设置 Wi-Fi 连接。仅 2002w 版本提供 Wi-Fi 选择界面。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Wi-Fi_list.png" /></div>
-如果遇到任何问题，请参考 网络故障排除。
+
+如果遇到任何问题，请参考[网络故障排除](https://wiki.seeedstudio.com/recamera_network_connection/)。
 
 ### 方法2：以太网
 
