@@ -12,7 +12,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp
 slug: /raspberry_pi_4g_lte_hat_rndis
 last_update:
-  date: 3/17/2024
+  date: 3/17/2025
   author: Kasun Thushara
 ---
 
@@ -53,7 +53,7 @@ last_update:
 ## Software Prerequisites
 If you have already installed NDIS or any other driver on Windows, please uninstall it and install the RNDIS driver provided below.
 
-- [Download From Here](https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Quectel_Windows_USB_Driver%28Q%29_RNDIS_V1.1.12.zip)
+- [Download From Here](https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Quectel_Windows_RNDIS_V1.1.12.zip)
 - [Get Latest Updates](https://www.quectel.com/download-zone/?_sf_s=rndis)
 
 
