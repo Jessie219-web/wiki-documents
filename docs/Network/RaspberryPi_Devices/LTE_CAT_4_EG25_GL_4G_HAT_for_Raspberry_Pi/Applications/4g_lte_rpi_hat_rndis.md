@@ -86,12 +86,14 @@ To configure RNDIS mode, use the QCOM tool and follow these steps:
   />
 </div>
 
+### Connect with Network
+
 You should see a network interface (e.g., Network X) indicating the connection.
 
 <div style={{ textAlign: 'center' }}>
   <img 
     src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/connection.PNG" 
-    style={{ width: 600}} 
+    style={{ width: 400}} 
   />
 </div>
 
