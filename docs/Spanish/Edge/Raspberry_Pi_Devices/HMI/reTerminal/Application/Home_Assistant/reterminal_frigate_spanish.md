@@ -6,7 +6,7 @@ keywords:
   - Frigate
   - Home assistant
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reterminal_frigate_spanish
+slug: /es/reterminal_frigate_spanish
 last_update:
   date: 02/17/2025
   author: Erick González

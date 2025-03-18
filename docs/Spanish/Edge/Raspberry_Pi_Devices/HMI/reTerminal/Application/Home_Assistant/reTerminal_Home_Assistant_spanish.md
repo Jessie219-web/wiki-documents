@@ -2,7 +2,7 @@
 description: Cómo instalar Home Assistant en reTerminal
 title: Comenzando con Home Assistant
 image: https://avatars.githubusercontent.com/u/4452826?s=400&amp;v=4
-slug: /reTerminal_Home_Assistant_spanish
+slug: /es/reTerminal_Home_Assistant_spanish
 last_update:
   date: 02/17/2025
   author: Erick González

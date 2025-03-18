@@ -6,7 +6,7 @@ keywords:
   - Aplicación reTerminal
   - Embedded_ML
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reTerminal_ML_TFLite_spanish
+slug: /es/reTerminal_ML_TFLite_spanish
 last_update:
   date: 02/18/2025
   author: Erick González

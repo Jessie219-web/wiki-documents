@@ -11,7 +11,7 @@ keywords:
   - ThingsBoard
   - Edge Computing
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01.png
-slug: /recomputer_r1000_thingsboard_ce_spanish
+slug: /es/recomputer_r1000_thingsboard_ce
 last_update:
   date: 02/17/2025
   author: Erick González
