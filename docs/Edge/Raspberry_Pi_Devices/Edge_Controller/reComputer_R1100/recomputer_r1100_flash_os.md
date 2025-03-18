@@ -149,6 +149,9 @@ Use `Ctrl`+`x` to save the file, and then reboot your machine.
 
 ## Steps for Flashing Raspbian OS
 
+> **Note:** The latest system image packaged by Seeed, including the appropriate drivers: [pi-gen-expand](https://github.com/Seeed-Studio/pi-gen-expand)
+
+
 - **Step 1.** Make sure switch is set to `Flash mode` according to the diagram below:
 
 <div class="table-center">
@@ -242,7 +245,7 @@ Now you can skip to **[here](#install-drivers)**
 
 :::caution
 **You need to install [homebrew](https://brew.sh/) before proceed the following steps.**
-Please open a terminal and type ```brew -V``` to check if you have setup the correct homebrew environment, you should see the version of the homebrew environment you have installed.
+Please open a terminal and type ```brew -v``` to check if you have setup the correct homebrew environment, you should see the version of the homebrew environment you have installed.
 :::
 
 - **Step 1.** Clone the **usbboot** repository

@@ -21,6 +21,9 @@ last_update:
 
 The reCamera gimbal 2002 series is the first open-source camera control system, composed of one tiny AI camera - reCamera 2002w 8GB/64GB, and one compatible 2-Axis gimbal basement with 2 brushless motors. It is powered by an RISC-V SoC, providing 1 TOPS AI performance with video encoding at 5MP @ 30 FPS. It offers a Lego-like self-assembly package and integrates the Sensecraft AI platform and Node-RED platform for smooth graphical programming and pipeline construction, enabling rapid self-training, model conversion, and deployment of AI models such as Yolo v5/v8/11.
 
+:::note
+The 12VDC power adapter is not included in the set. You need to select the appropriate power adapter from our bazaar selection screen or purchase one yourself.
+:::
 
 ## Unboxing
 
@@ -41,7 +44,7 @@ Please make sure all screws are tightened, otherwise it will affect the operatio
 
 ### Setup device and login
 
-**Step1:** After assembling the Gimbal, connect the reCamera Gimbal via XT30 to DC jack cable to 12-19V power adapter, and connect the usb cable between your pc and device. Navigate to `192.168.42.1` on website and change the default password. 
+**Step1:** After assembling the Gimbal, connect the reCamera Gimbal via XT30 to DC jack cable to 12V power adapter, and connect the usb cable between your pc and device. Navigate to `192.168.42.1` on website and change the default password. 
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_1.png" /></div>
 
@@ -69,7 +72,7 @@ Please remember your password, otherwise all logs will be erased to reset your d
 
 :::note
 
-It should be connected the power adapter with voltage range between 12~24V.
+It should be connected the power adapter with voltage 12V.
 
 :::
 
@@ -256,14 +259,18 @@ You need to register an account before you can login through the platform to syn
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_14.png" /></div> 
 
+## Factory Reset
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/gimbal_usr_button.png" /></div> 
+
+If you would like to reset the device such as forgetting your device's passcode, you can long pressing the **User** button and then connecting the  device to power. When the `red light` of the device is **constantly on** instead of blinking, release the User button.
+
 
 ## Resources
 
 - [reCamera Gimbal User Manual](https://files.seeedstudio.com/gimbal/GIMBAL_Manual0206.pdf)
 
 - [Github](https://github.com/Seeed-Studio/OSHW-reCamera-Series)
-
-
 
 ## Tech Support & Product Discussion
 
