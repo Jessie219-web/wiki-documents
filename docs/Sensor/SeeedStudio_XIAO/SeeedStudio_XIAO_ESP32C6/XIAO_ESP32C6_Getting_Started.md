@@ -562,6 +562,9 @@ If you want to learn to use more of the deep sleep mode and wake-up functions, y
 
 - 🔗 **[Kicad]** [Seeed Studio XIAO ESP32C6 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 
+- **[STEP]** Seeed Studio XIAO ESP32C6 Step file](https://grabcad.com/library/seeed-studio-xiao-esp32-c6-1)
+
+
 ## Course Resources
 
 <div align="middle"><img width="400" src="https://mjrovai.github.io/XIAO_Big_Power_Small_Board-ebook/cover.jpg" /></div>
