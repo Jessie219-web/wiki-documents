@@ -137,8 +137,6 @@ Environments such as pytorch and torchvision need to be installed based on your 
 For Jetson:
 
 ```bash
-mkdir -p ~/miniconda3
-cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-aarch64.sh
 ./Miniconda3-latest-Linux-aarch64.sh

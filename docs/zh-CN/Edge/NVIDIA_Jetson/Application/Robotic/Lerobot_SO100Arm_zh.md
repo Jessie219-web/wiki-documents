@@ -28,7 +28,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html">
+<a class="get_one_now_item" href="https://s.click.taobao.com/j6b5cCs">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 </a></div>
 
@@ -135,8 +135,6 @@ For Jetson Orin:
 1. 安装Miniconda：
 
 ```bash
-mkdir -p ~/miniconda3
-cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-aarch64.sh
 ./Miniconda3-latest-Linux-aarch64.sh
@@ -204,12 +202,14 @@ print(torch.cuda.is_available())
 
 ## 校准舵机并组装机械臂
 
-官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也粗略的记录了我们的舵机校准和机械臂安装过程。
+官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也记录了我们的舵机校准和机械臂安装过程。
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114176236191787&bvid=BV1WiQiY1EYP&cid=28909307865&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114182410272948&bvid=BV1KFX5YREjU&cid=28929295238&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
 
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746789925626&bvid=BV1uP6JY5EH3&cid=27745060436&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
-
-要查找每个机械臂的正确端口，请运行脚本两次：
+在终端输入以下指令来找到两个机械臂对应的端口号：
 
 ```bash
 python lerobot/scripts/find_motors_bus_port.py
