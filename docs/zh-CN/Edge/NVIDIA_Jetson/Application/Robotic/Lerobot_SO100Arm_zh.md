@@ -208,6 +208,8 @@ print(torch.cuda.is_available())
 
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114182410272948&bvid=BV1KFX5YREjU&cid=28929295238&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187896425203&bvid=BV1MJQRYgEUw&cid=28947320683&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+
 
 在终端输入以下指令来找到两个机械臂对应的端口号：
 
@@ -253,7 +255,7 @@ python lerobot/scripts/configure_motor.py \
 
 接下来，你需要校准你的 SO-100 机器人，以确保领导臂和跟随臂在相同物理位置时具有相同的位置值。此校准至关重要，因为它允许在一个 SO-100 机器人上训练的神经网络在另一个机器人上运行，如果需要重新校准机械臂，请删除`~/lerobot/.cache/huggingface/calibration/so100`文件夹。
 
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806637856&bvid=BV12M6JY6EWf&cid=27627684047&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187913200955&bvid=BV1KWQRYqEdb&cid=28947516809&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
 
 > 机械臂的校准应严格按照 Lerobot 官方教程中的
@@ -262,6 +264,7 @@ python lerobot/scripts/configure_motor.py \
 
 
 首先，您需要确保 [SO100RobotConfig](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py) `lerobot/lerobot/common/robot_devices/robots /configs.py` 文件中机器人手臂的串口号与您的设备一致，如下图所示。您可以根据 `ls /dev/ttyACM*` 查看所有串口名称。
+
 
 ```python
 @RobotConfig.register_subclass("so100")
@@ -543,7 +546,7 @@ python lerobot/scripts/train.py \
   --job_name=act_so100_test \
   --device=cuda \
   --wandb.enable=false \
-  --datasets.local_files_only=false
+  --dataset.local_files_only=false
 ```
 
 如果你想训练本地数据集，在命令后加上`--dataset.local_files_only=true`即可。
