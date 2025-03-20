@@ -127,7 +127,7 @@ Here are the materials needed to run this tutorial.
 
 Additionally, you will need the following items:
 
-- **Mini PCIe to PCIe adapter** - For connecting the Wi-Fi HaLow Mini PCIe Module to Raspberry Pi.
+- **[Mini PCIe to PCIe adapter](https://www.seeedstudio.com/WM1302-Pi-Hat-p-4897.html)** - For connecting the Wi-Fi HaLow Mini PCIe Module to Raspberry Pi.
 - **Heatsink for Raspberry Pi** - Recommended for thermal management during continuous operation.
 - **MicroSD card (8GB or larger)** - For storing the OpenWrt firmware.
 - **MicroSD card reader** - For reading the MicroSD card.

@@ -397,6 +397,11 @@ export const exploreList = [
         link:
           '/cn/Getting_Started/',
       },
+      {
+        title: 'Plataforma Wiki de SeeedStudio (Español)',
+        link:
+          '/es/SeeedStudio_XIAO_Series_Introduction',
+      },
     ],
   },
 ]
