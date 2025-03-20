@@ -3819,6 +3819,7 @@ const sidebars = {
           // },
           items: [
             'Edge/NVIDIA_Jetson/FAQs/jetson_FAQ',
+            'Edge/NVIDIA_Jetson/FAQs/Updating_Jetpack_with_OTA',
             'Edge/NVIDIA_Jetson/FAQs/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
             'Edge/NVIDIA_Jetson/FAQs/Use_IMX477_Camera_with_A603',
           ]
