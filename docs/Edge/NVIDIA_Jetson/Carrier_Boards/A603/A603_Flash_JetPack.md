@@ -531,7 +531,10 @@ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/releas
 ```
 
 **Step 2:** Assemble the Flashing Package
-Execute the following commands in order:
+
+Please note that we need to put the Nvidia driver and the peripheral drivers in the same directory, and then open the terminal in that directory and execute the following code:
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/driver_files_directory_layout.png" /></div>
 
 ```bash
 tar xf Jetson_Linux_r36.4.3_aarch64.tbz2
