@@ -142,7 +142,7 @@ chmod +x Miniconda3-latest-Linux-aarch64.sh
 
 重新启动Shell或执行 `source ~/.bashrc`
 
-如果是Windows上的Ubuntu系统：
+如果是X86上的Ubuntu系统：
 
 ```bash
 mkdir -p ~/miniconda3
@@ -368,7 +368,7 @@ python lerobot/common/robot_devices/cameras/opencv.py \
 终端将打印出以下信息。
 
 ```markdown
-Mac or Windows detected. Finding available camera indices through scanning all indices from 0 to 60
+Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
 [...]
 Camera found at index 2
 Camera found at index 4
