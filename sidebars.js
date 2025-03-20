@@ -1148,9 +1148,9 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-Arduino',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-MicroPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-CircuitPython',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
               ],
             },
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-Zephyr-RTOS',
             {
               type: 'category',
@@ -2775,7 +2775,9 @@ const sidebars = {
             items: [
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/send_text_massages_lte_cat_hat_for_rpi',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
-              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mobile_internet_for_your_pi_rndis_4g_lte_set_up',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mobile_internet_for_your_pi_ecm_set_up',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_rndis',
+              'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_rpi_hat_mbim',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/4g_lte_hotspot_on_rpi_os',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ftp_on_rpi_4g_lte_hat',
               'Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/mqtt_on_rpi_4g_lte_hat',
@@ -5842,7 +5844,8 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
           // },
           items: [
-            'zh-CN/Edge/reCamera/reCamera_2002_Series/quick_start_guide_cn',
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_quick_start_guide',
+            'zh-CN/Edge/reCamera/reCamera_2002_Series/cn_develop_with_nodered'
           ]
         },
 
