@@ -6170,6 +6170,799 @@ const sidebars = {
 
 
   ],
+
+
+  //西班牙语文档
+  esSidebar: [
+    {
+      type: 'doc',
+      id: 'Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_SeeedStudio_XIAO_Series_Introduction',
+      label: 'Seeed Studio XIAO',
+      className: 'sideboard_calss',
+    },
+    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_SeeedStudio_XIAO_Series_Projects",
+    {
+      "type": "category",
+      "label": "XIAO SAMD21",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_XIAO-SAMD21-Zephyr-RTOS",
+        {
+          "type": "category",
+          "label": "Lenguaje de programación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-by-Nanase",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-CircuitPython",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_XIAO-SAMD21-MicroPython",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ML embebido",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/Embedded ML/es_Seeeduino-XIAO-TinyML"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "TuTorial",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_Seeeduino-XIAO-TinyUSB",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/es_XIAO-SPI-Communication-Interface",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/TuTorial/es_Seeeduino-XIAO-DAPLink",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_SAMD21/TuTorial/es_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI",
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO RA4M1",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/es_XIAO-RA4M1",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/es_XIAO_RA4M1_Pin_Multiplexing",
+        {
+          "type": "category",
+          "label": "Aplicación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/Application/es_XIAO_RA4M1_Clock",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RA4M1/Application/es_XIAO_RA4M1_Mouse"
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO MG24",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO_MG24_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO_MG24_Pin_Multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO-MG24-Example-Matter",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_MG24/es_XIAO-MG24-Built-in-Sensor",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO RP2040",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040",
+        {
+          "type": "category",
+          "label": "Lenguaje de programación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-Arduino",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-MicroPython",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-CircuitPython",
+          ]
+        },
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-with-NuttX-RTOS",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/es_XIAO-RP2040-Zephyr-RTOS",
+        {
+          "type": "category",
+          "label": "ML embebido",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2040/Embedded ML/es_XIAO-RP2040-EI"
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO RP2350",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350-with-Arduino",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO_RP2350_Pin_multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_RP2350/es_XIAO-RP2350-with-SDK",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO nRF52840 Series",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO_BLE",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-nRF52840-Zephyr-RTOS",
+        {
+          "type": "category",
+          "label": "Lenguaje de programación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE_CircutPython",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Platform",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-nRF52840_PlatformIO",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Uso de hardware",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-IMU-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-PDM-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE_QSPI-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-NFC-Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/es_XIAO-BLE-Sense-Pin-Multiplexing",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Bibliotecas de Bluetooth",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/es_XIAO-BLE-Sense-Bluetooth_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/es_XIAO-BLE-Sense-Bluetooth-Usage",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "ML embebido",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAOEI",
+            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-PDM-EI",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-Sense-TFLite-Getting-Started",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/es_XIAO-BLE-Sense-TFLite-Mic",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Aplicación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Application/es_XIAO-BLE-sidewalk",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_nRF52840-Sense/Application/es_XIAO_BLE_HA"
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO ESP32C3",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Pin_Multiplexing",
+        {
+          "type": "category",
+          "label": "Conexión inalámbrica",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_WiFi_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_Bluetooth_Usage",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Lenguaje de programación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO-ESP32C3-Zephyr",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_CircuitPython",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/es_XIAO_ESP32C3_with_MicroPython"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Aplicación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiao-esp32c3-esphome",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiao-esp32c3-prism-display",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiaoesp32c3-chatgpt",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_ESP32C3_Smart_Thermostat",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_xiaoesp32c3-flash-storage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_XIAO-ESP32C3-for-ESPHome-Support",
+            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C3/Application/es_XIAO_ESP32C3_ESPNOW",
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO ESP32C6",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Pin_Multiplexing",
+        {
+          "type": "category",
+          "label": "Conexión inalámbrica",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_WiFi_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Bluetooth_Usage_spanish",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Lenguaje de programación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_Embedded_Swift",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_CircuitPython",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_MicroPython",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Platform",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/es_XIAO_ESP32C6_with_PlatformIO",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Zigbee",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiao_esp32c6_zigbee",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiao_esp32c6_zigbee_arduino",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Zigbee/es_xiaoc6_zigbee_led_ha",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Aplicación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Application/es_xiao_esp32c6_aws_iot",
+            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Application/es_XIAO_ESP32C6_ESPNOW",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32C6/Application/es_xiao_esp32c6_kafka"
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO ESP32S3 Series",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Getting_Started",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Pin_Multiplexing",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Sense_Consumption",
+        {
+          "type": "category",
+          "label": "Conexión inalámbrica",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_WiFi_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Bluetooth_Usage",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Lenguaje de programación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO-ESP32S3-Zephyr-RTOS",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO-ESP32S3-FreeRTOS",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_with_MicroPython",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_CircuitPython",
+            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_Micropython",
+
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Uso de hardware",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_mic",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_tf_and_filesystem",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3_Sense/es_XIAO_ESP32S3_Sense_camera",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Aplicación",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            {
+              "type": "category",
+              "label": "Edgeimpulse",
+              "collapsed": true,
+              "collapsible": true,
+              "link": {
+                type: "doc",
+                id: "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_EdgeImpulse",
+              },
+              "items": [
+                "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_Key_Word_Spotting",
+                "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/es_Image_classification_project",
+              ]
+            },
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Speech2chatgpt",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/es_XIAO_ESP32S3_EdgeLab",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Geolocation",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_ESPHome",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_SSCMA",
+            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_ESPNOW",
+            // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_ESP32S3/Application/es_XIAO_ESP32S3_Keyword_Spotting",
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Placa de expansión para XIAO",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "Pantalla redonda para XIAO",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_SeeedStudio_Round_Display_for_XIAO",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_SeeedStudio_RoundDisplay_Usage",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/es_Draw_dials_with_Display_and_lvgl",
+            {
+              "type": "category",
+              "label": "Aplicación",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/Application/es_SeeedStudio_Round_Display_Christmas_ball"
+              ]
+            },
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Módulo GPS para XIAO",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/es_L76K_GNSS_Module",
+            "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/es_L76K_GNSS_Ubidots_Map_Track"
+          ]
+        },
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_Seeeduino-XIAO-Expansion-Board",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_XIAO-CAN-Bus-Expansion-Board",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_Grove-Shield-for-Seeeduino-XIAO-embedded-battery-management-chip",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_xiao-rgb-matrix",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_gpio_expander_for_xiao",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_XIAO-eInk-Expansion-Board",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_xiao_eink_expansion_board_v2",
+        // "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_gnss-for-xiao",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/SeeedStudio_XIAO_Expansion_board/es_XIAO-RS485-Expansion-Board",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "XIAO + ESP-IDF + ESP-Matter",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_xiao_esp32_idf_env",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_getting_started_with_matter",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_xiao_esp32_matter_env",
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Matter/es_matter_development_framework_overview",
+      ]
+    },
+    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_ESPNOW",
+    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_PCB_Design_XIAO",
+    {
+      "type": "category",
+      "label": "Kit con cursos",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Sensor/SeeedStudio_XIAO_Spanish/Kit_with_Courses/es_kit_with_courses"
+      ]
+    },
+    "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_FAQ",
+
+
+
+
+
+
+
+
+
+
+    {
+      type: 'doc',
+      id: 'Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/es_reComputer_Intro',
+      label: 'NVIDIA® Jetson™',
+      className: 'sideboard_calss',
+    },
+    {
+      "type": "category",
+      "label": "Carrier Boards",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J101/es_reComputer_J1010_J101_Flash_Jetpack",
+        "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J202/es_reComputer_J2021_J202_Flash_Jetpack",
+        {
+          "type": "category",
+          "label": "J401 Carrier Boards",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J401/es_reComputer_J4012_Flash_Jetpack",
+            "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J401/es_J401_carrierboard_Hardware_Interfaces_Usage",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "J501 Carrier Boards",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J501/es_reServer_Industrial_J501_Getting_Started",
+            "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J501/es_Hardware_Interfaces_Usage",
+          ]
+        },
+        "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/es_reComputer_A203_Flash_System",
+        "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/A205/es_reComputer_A205_Flash_System",
+        "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/A603/es_A603_Flash_JetPack",
+        "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/A607/es_A607_Flash_JetPack",
+        "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/A608/es_A608_Flash_JetPack",
+
+      ]
+    },
+    {
+      "type": "category",
+      "label": "reComputer Jetson Series",
+      "collapsed": true,
+      "collapsible": true,
+      "link": {
+        type: "doc",
+        id: "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/es_reComputer_Intro",
+      },
+      "items": [
+        {
+          "type": "category",
+          "label": "reComputer J10",
+          "collapsed": true,
+          "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/es_reComputer_Jetson_Series_Introduction",
+          },
+          "items": [
+            {
+              "type": "category",
+              "label": "reComputer J1010",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_reComputer_J1010_with_Jetson_getting_start",
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_J101_Enable_SD_Card",
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_J1010_Boot_From_SD_Card",
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_reComputer_Jetson_GPIO",
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_reComputer_Jetson_Memory_Expansion",
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_reComputer_Jetson_Series_Hardware_Layout",
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/es_reComputer_Jetson_Series_Initiation"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "reComputer J1020",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/es_reComputer_J1020v2_with_Jetson_getting_start",
+                "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/es_reComputer_J1020_A206_Flash_JetPack"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reComputer J20",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J20/es_reComputer_J20_with_Jetson_getting_start"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reComputer J30/40",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/es_reComputer_J30_40_with_Jetson_getting_start",
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/es_reComputer_Jetson_with_Infineon_Wi-Fi_Module"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reComputer Industrial",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/es_reComputer_Industrial_Getting_Started",
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/es_reComputer_Industrial_J20_Hardware_Interfaces_Usage",
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/es_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reComputer Mini",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/es_reComputer_Mini_Getting_Started",
+            "Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/es_reComputer_Mini_Hardware_Interfaces_Usage"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "reServer Jetson Series",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "reServer Industrial J30/J40",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/es_reServer_Industrial_Getting_Started"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reServer J2032",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/es_reServer_J2032_Flash_Jetpack",
+            "Spanish/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/es_reServer_J2032_Getting_Started"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Otros dispositivos",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_RTL8822CE_Wireless_Module_for_Jetson",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_Jetson_AGX_Orin_32GB_H01_Flash_Jetpack",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_Jetson_Xavier_AGX_H01_Driver_Installation",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_Jetson-Mate",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_Mini_AI_Computer_T906",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_reComputer_A203E_Flash_System",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_reComputer_A205E_Flash_System",
+        "Spanish/Edge/NVIDIA_Jetson/Other_Devices/es_reComputer_Jetson_Series_GPIO_Grove",
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Aplicación",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "Computer Vision",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_DashCamNet-with-Jetson-Xavier-NX-Multicamera",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_How_to_Train_and_Deploy_YOLOv8_on_reComputer",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_Jetson-Nano-MaskCam",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_Security_Scan",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_reComputer_Jetson_Series_Projects",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_Traffic-Management-DeepStream-SDK",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_YOLOv5-Object-Detection-Jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_YOLOv8-DeepStream-TRT-Jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_YOLOv8-TRT-Jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_YOLOv8_custom_classification_model",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_deploy_frigate_on_jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_AI-NVR_with_Jetson",
+            // "Spanish/Edge/NVIDIA_Jetson/Application/Computer_Vision/es_reComputer_Jetson_Series_Tutorials_Exercise",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Generative AI",
+          "collapsed": true,
+          "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Generative_AI_Intro",
+          },
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Finetune_LLM_by_Llama_Factory_on_Jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Quantized_Llama2_7B_with_MLC_LLM_on_Jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_How_to_run_local_llm_text_to_image_on_reComputer",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Whisper_on_Jetson_for_Real_Time_Speech_to_Text",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Local_RAG_based_on_Jetson_with_LlamaIndex",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_How_to_run_zero_shot_detection_on_reComputer",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_How_to_run_VLM_on_reComputer",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Deploy_Riva_and_Llama2_on_reComputer",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Real_Time_Subtitle_Recoder_on_Jetson",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Generative_AI/es_Deploy_Ollama_and_AnythingLLM_on_Jetson",
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Multimodal AI",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/Application/Multimodal_AI/es_Speech_vlm"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Robotics",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            {
+              "type": "category",
+              "label": "Software",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Software/es_Installing_ROS1",
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Software/es_A_Loam",
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Hardware",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/es_Robosense_Lidar",
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/es_MID360",
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/es_Orbbec_Depth_Camera",
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/es_CSI_Camera",
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Projects",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Projects/es_Lerobot_SO100Arm",
+                "Spanish/Edge/NVIDIA_Jetson/Application/Robotics/Projects/es_Lerobot_SO100Arm_Isaacsim"
+              ]
+            },
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Managed Services",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/Application/Managed_Services/es_Allxon-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Managed_Services/es_neqto_engine_for_linux_recomputer",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Managed_Services/es_Scailable-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Managed_Services/es_Update-Jetson-Linux-OTA-Using-Allxon"
+          ]
+        },
+        {
+          "type": "category",
+          "label": "Developer Tools",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Gapi-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_alwaysAI-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Cochl.Sense-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_CVEDIA-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_DeciAI-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_HardHat",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Jetson-AI-developer-tools",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_jetson-docker-getting-started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Lumeo-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_reComputer_Jetson_Series_Resource",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_NVStreamer_Getting_Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_Roboflow-Jetson-Getting-Started",
+            "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_vnc_for_reComputer",
+            // "Spanish/Edge/NVIDIA_Jetson/Application/Developer_Tools/es_No-code-Edge-AI-Tool",
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
+      "label": "FAQs",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Edge/NVIDIA_Jetson/FAQs/es_jetson_FAQ",
+        "Spanish/Edge/NVIDIA_Jetson/FAQs/es_Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera",
+        "Spanish/Edge/NVIDIA_Jetson/FAQs/es_Use_IMX477_Camera_with_A603",
+        // "Spanish/Edge/NVIDIA_Jetson/FAQs/es_Get_System_Log_of_reComputer_J30_and_J40",
+        // "Spanish/Edge/NVIDIA_Jetson/FAQs/es_USB_Timeout_during_Flashing",
+        // "Spanish/Edge/NVIDIA_Jetson/FAQs/es_How_to_Upgrade_Software_Packages_for_Jetson",
+      ]
+    },
+  ]
 }
+
+    
+
 
 module.exports = sidebars
