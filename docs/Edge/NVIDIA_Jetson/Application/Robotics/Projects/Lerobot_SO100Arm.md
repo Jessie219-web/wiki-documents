@@ -143,7 +143,7 @@ chmod +x Miniconda3-latest-Linux-aarch64.sh
 source ~/.bashrc
 ```
 
-Or, For Windows Linux:
+Or, For X86 Linux:
 ```bash
 mkdir -p ~/miniconda3
 cd miniconda3
@@ -383,7 +383,7 @@ python lerobot/common/robot_devices/cameras/opencv.py \
 The terminal will print out the following information.
 
 ```markdown
-Mac or Windows detected. Finding available camera indices through scanning all indices from 0 to 60
+Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
 [...]
 Camera found at index 2
 Camera found at index 4
