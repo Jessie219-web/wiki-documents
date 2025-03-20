@@ -21,20 +21,31 @@ Para más detalles, haz click [aquí](/solution_of_insufficient_space)
 
 #### P3: ¿Cómo resolver el problema de compatibilidad entre reComputer y la cámara VEYE?
 
-Para más detalles, haz click [aquí](/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)
+Para más detalles, haz click [aquí](/es/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera)
 
 #### P4: ¿Cómo resolver el problema de compatibilidad entre la cámara IMX477 y la Carrier Board A603?
 
-Para más detalles, haz click [aquí](/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)
+Para más detalles, haz click [aquí](/es/Use_IMX477_Camera_with_A603_Jetson_Carrier_Board)
 
 #### P5: ¿Cómo obtener el registro del sistema de la reComputer J30/J40?
 
-Para más detalles, haz click [aquí](/get_the_system_log_of_recomputer_j30_and_j40)
+Para más detalles, haz click [aquí](/es/get_the_system_log_of_recomputer_j30_and_j40)
 
-#### P6: Problema de tiempo de espera durante el flasheo de Jetpack.
+#### P6: Problema de tiempo de espera durante el flasheo de Jetpack
 
-Para más detalles, haz click [aquí](/usb_timeout_during_flash)
+Para más detalles, haz click [aquí](/es/usb_timeout_during_flash)
 
+#### P7: No puedo usar el puerto USB-A, el puerto Ethernet o no hay salida HDMI después de flashear el dispositivo  
+
+**R:** Por favor, verifique la integridad del archivo (por ejemplo, proporcionamos las sumas de verificación SHA256). Para algunas placas portadoras (especialmente la serie A60X), asegúrese de que el parche del controlador se haya copiado/aplicado correctamente en el directorio **Linux_for_Tegra**. Hay archivos que requieren permisos de **sudo**, y cuando copie directorios, asegúrese de incluir el parámetro **-r** en su comando.  
+
+#### P8: Mi sistema se bloqueó/no puede arrancar/pantalla negra/perdí los controladores de periféricos después de ejecutar los comandos "sudo apt-get update && sudo apt-get upgrade"  
+
+**R:** Estos problemas pueden resumirse como **"¿Por qué no puedo actualizar el sistema con apt upgrade en placas portadoras personalizadas?"** La respuesta corta es: **No** ejecute el comando apt upgrade en placas portadoras **personalizadas o de terceros**. Además, evite ejecutar scripts que incluyan comandos apt upgrade o usar herramientas de actualización gráfica en Ubuntu. Los paquetes Debian del servidor no tienen en cuenta el diseño específico de nuestras placas personalizadas, y forzar la actualización puede causar incompatibilidades que pueden inutilizar su dispositivo. Este proceso solo es compatible con el kit de desarrollo oficial. Para solucionar estos problemas, siga nuestra guía para volver a flashear JetPack.  
+
+#### P9: ¿Cómo puedo actualizar los paquetes de software si me dijeron que no puedo ejecutar apt upgrade? ¿Habrá riesgos de seguridad si no actualizo el software?  
+
+Para más detalles, haga clic [aquí](/es/upgrade_software_packages_for_jetson).
 
 ## Soporte Tech y discusión del producto
 

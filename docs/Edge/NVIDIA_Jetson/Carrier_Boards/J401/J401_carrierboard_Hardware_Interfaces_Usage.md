@@ -76,7 +76,7 @@ sudo dd if=/home/nvidia/test of=/dev/null bs=1M count=512
 
 ## M.2 Key E
 
-M.2 Key E is a specification for the physical and electrical layout of an M.2 connector that supports wireless communication modules, such as Wi-Fi and Bluetooth cards. The "Key E" designation refers to the specific pin configuration and keying of the M.2 connector, which is optimized for wireless networking devices. M.2 Key E connectors are commonly found on motherboards and other devices that require wireless connectivity options.Here we recommand [Intel wifi/bluetooth](https://www.intel.com/content/www/us/en/products/sku/94150/intel-dual-band-wirelessac-8265/specifications.html) module.
+M.2 Key E is a specification for the physical and electrical layout of an M.2 connector that supports wireless communication modules, such as Wi-Fi and Bluetooth cards. The "Key E" designation refers to the specific pin configuration and keying of the M.2 connector, which is optimized for wireless networking devices. M.2 Key E connectors are commonly found on motherboards and other devices that require wireless connectivity options.Here we recommand [Intel wifi/bluetooth](https://www.seeedstudio.com/RTL8822CE-Wireless-NIC-Kits-for-Nvidia-Jetson-Orin.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6Ijg4MjIiLCJjX3NlYXJjaF9yZXN1bHRfcG9zIjozLCJjX3RvdGFsX3Jlc3VsdHMiOjQsImNfc2VhcmNoX3Jlc3VsdF90eXBlIjoiUHJvZHVjdCIsImNfc2VhcmNoX2ZpbHRlcnMiOiJzdG9yZUNvZGU6W3JldGFpbGVyXSJ9) module.
 
 ### Connection Overview
 
