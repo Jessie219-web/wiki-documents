@@ -197,7 +197,7 @@ If your OS version is 0.1.5 or above OS version, the preview dashboard would be 
 
 If you upgrade the OS by yourself, you can download the dashboard jsonflow from Sensecraft AI
 
-**Step 1**. After upgrade finished, access the web either by 42.1 or network IP, then click ```Download dashborad flow```
+**Step 1**. After upgrade finished, access the web either by `192.168.42.1` or network IP, then click ```Download dashborad flow```
 
  <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload1.png" /></div>
 
@@ -217,7 +217,7 @@ If you upgrade the OS by yourself, you can download the dashboard jsonflow from 
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload5.png" /></div>
 
-Make sure to check the flow is started or not. Sometimes importing a flow will not automatically start the flow, thus dashboard will be empty.
+Make sure to check the flow is started or not. Sometimes importing a flow will not automatically start the flow, thus dashboard will be empty. Please click `Start`  in the dropdown menu.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/dashboarddownload6.png" /></div>
 
 Succeed!
