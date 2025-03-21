@@ -307,7 +307,7 @@ last_update:
         <td align="center">1.95μA</td>
 	</tr>
    <tr>
-	    <td colspan="11"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_topic_page/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Compatible Project</font></span></strong></a></div></td>        
+	    <td colspan="11"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/es/xiao_topic_page/"><strong><span><font color={'FFFFFF'} size={"3"}>📚 Compatible Project</font></span></strong></a></div></td>        
 	</tr>
     <tr>
 	    <th>Arduino</th>
@@ -407,8 +407,8 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
         <td><strong>Wikis para empezar</strong><br />Por el equipo de AE de Seeed Studio y la comunidad</td> <td>Potencia, placa pequeña: Dominando Arduino y TinyML<br />Por Marcelo Rovai y Leo Feng</td> <td>Fab XIAO: Cómo crear una placa de desarrollo desde cero<br />Por <a href="https://www.linkedin.com/in/adri%C3%A1n-torres-oma%C3%B1a/">ADRIÁN TORRES</a></td> <td>TinyML con el XIAO fr Seeed<br/>Por Jim Bob Bennett</td> <td>Curso Maker100-Eco (Económico): Robótica, IoT y aprendizaje automático TinyML<br />Por Jeremy Ellis</td> 
     </tr>
     <tr>
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_topic_page/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Wiki</font></span></strong></a></div></td>
-        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-Kit-Courses/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Courses</font></span></strong></a></div></td> 
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/es/xiao_topic_page/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Wiki</font></span></strong></a></div></td>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/es/XIAO-Kit-Courses/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Courses</font></span></strong></a></div></td> 
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://fabacademy.org/2020/labs/leon/students/adrian-torres/fabxiao.html"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Fab-Xiao</font></span></strong></a></div></td> 
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.youtube.com/watch?v=ZsQ0-jXdnRY"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Part1</font></span></strong></a></div><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.youtube.com/watch?v=-1EP3iqYYdU"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Part2</font></span></strong></a></div></td> 
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://github.com/hpssjellis/maker100-eco"><strong><span><font color={'FFFFFF'} size={"4"}>📚 GitHub</font></span></strong></a></div></td>  

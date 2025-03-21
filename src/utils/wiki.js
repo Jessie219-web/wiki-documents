@@ -1,6 +1,20 @@
 const docList = [
   [
     {
+      "path": "/raspberry_pi_4g_lte_hat_mbim",
+      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Raspberry-Pi-4G-LTE-CAT4-HAT.webp",
+      "title": "4G Raspberry Pi HAT - MBIM Mode Setup on Windows",
+      "date": "3/18/2025"
+    },
+    {
+      "path": "/raspberry_pi_4g_lte_hat_rndis",
+      "image": "https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp",
+      "title": "RNDIS on 4G LTE Raspberry pi HAT Windows",
+      "date": "3/17/2025"
+    }
+  ],
+  [
+    {
       "path": "/seeed_iot_botton_connect_to_esphome",
       "image": "https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.webp",
       "title": "Connect Seeed Studio IoT Button To ESPHome",
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp",
       "title": "Getting Started with reCamera Gimbal",
       "date": "02/27/2025"
-    }
-  ],
-  [
-    {
-      "path": "/get_started_with_lorawan_tracker",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/intro-e.webp",
-      "title": "Get Started with LoRaWAN Tracker",
-      "date": "2/27/2025"
-    },
-    {
-      "path": "/recamera_hardware_and_specs",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/image.webp",
-      "title": "reCamera Overview",
-      "date": "02/18/2025"
     }
   ]
 ];

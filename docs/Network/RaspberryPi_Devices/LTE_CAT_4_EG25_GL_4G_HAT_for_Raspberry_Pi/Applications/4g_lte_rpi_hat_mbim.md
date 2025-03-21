@@ -9,7 +9,7 @@ keywords:
   - MBIM
   - 4G LTE
   
-image: https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/4/_/4_16.jpg
+image: https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Raspberry-Pi-4G-LTE-CAT4-HAT.webp
 slug: /raspberry_pi_4g_lte_hat_mbim
 last_update:
   date: 3/18/2025

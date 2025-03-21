@@ -288,6 +288,10 @@ const config = {
                 label: '矽递科技 Wiki 文档平台',
                 to: '/cn/Getting_Started',
               },
+              {
+                label: 'Plataforma Wiki de SeeedStudio (Español)',
+                to: '/es/SeeedStudio_XIAO_Series_Introduction',
+              },
             ],
           },
 
