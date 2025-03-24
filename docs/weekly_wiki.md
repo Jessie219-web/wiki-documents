@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 03/17/2025
+  date: 03/24/2025
   author: Frank
 ---
 
@@ -17,65 +17,48 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is March 17th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is March 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [XIAO nRF52840 & Wio-SX1262 Kit](https://wiki.seeedstudio.com/xiao_nrf52840&_wio_SX1262_kit_for_meshtastic/)
+### [RNDIS on 4G LTE Raspberry pi HAT Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_rndis/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/52840-kit.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:800, height:'auto'}}/></div>
 
-This kit combines the XIAO nRF52840 and Wio-SX1262, supporting BLE5.0, Thread, Zigbee and LoRa (862-930MHz), and operates with low power consumption. It can be applied in various fields such as Meshtastic, sensor networks, environmental monitoring, asset tracking, education, and innovation.
+This document explains how to configure RNDIS on Windows to connect the **Raspberry Pi 4G LTE HAT** via USB for network and internet access. It covers driver installation, RNDIS mode setup, and connection verification, making it ideal for IIoT and remote communication applications.
 
-### [Connect Seeed Studio IoT Button To Home Assistant via Zigbee](https://wiki.seeedstudio.com/seeed_iot_button_with_zigbee/)
+### [4G Raspberry Pi HAT - MBIM Mode Setup on Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_mbim/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Raspberry-Pi-4G-LTE-CAT4-HAT.webp" style={{width:800, height:'auto'}}/></div>
 
-In this tutorial, we will show you how to connect the Seeed Studio IoT Button to Home Assistant using Zigbee. The Seeed Studio IoT Button features a built-in ESP32-C6 chip with Zigbee functionality, making it a versatile device for your smart home. You'll learn how to flash the Zigbee firmware, pair it with Home Assistant, and even customize the button's behavior through Arduino development.
+The **Quectel 4G Raspberry Pi HAT** supports internet connectivity on Windows by utilizing MBIM (Mobile Broadband Interface Model) mode. This mode enables Windows to recognize the 4G module as a native cellular modem, facilitating a stable and driver-supported network connection.
+This guide will walk you through the necessary steps to configure your Quectel module in MBIM mode and connect it to the internet on Windows 10/11 systems.
 
-### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/seeed_iot_botton_connect_to_esphome/)
+### [4G Raspberry Pi HAT - QMI Mode Setup on Raspberry Pi OS](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_qmi/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/ping.PNG" style={{width:800, height:'auto'}}/></div>
 
-In this tutorial, we will show you how to connect the Seeed Studio IoT Button to Home Assistant using ESPHome. You'll learn how to set up the button to detect different press patterns (single click, double click, and long press) and trigger different actions in your smart home.
+This guide explains how to configure internet access on a Raspberry Pi using a 4G HAT equipped with a Quectel EG25-G module. By following this guide, you will learn how to set up the module in QMI mode, compile and use the quectel-CM dial-up tool, and establish a stable 4G internet connection on your Raspberry Pi. This method is ideal for applications requiring mobile internet access, such as IoT deployments, remote monitoring, and edge computing.
 
-### [Deploy DeepSeek on Raspberry Pi AI Box](https://wiki.seeedstudio.com/deploy_deepseek_on_raspberry_pi_ai_box/)
+### [Updating Jetson Linux with Image-Based Over-the-Air Update](https://wiki.seeedstudio.com/updating_jetpack_with_ota/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/AI_box_deepseek/install_deepseek.webp" style={{width:800, height:'auto'}}/></div>
-
-This wiki explains how to deploy the [DeepSeek](https://github.com/deepseek-ai/DeepSeek-LLM) model on a Raspberry Pi AI Box using the [Ollama](https://ollama.com/) deployment framework.In this guide, you will find clear, step-by-step instructions on setting up your environment, installing the necessary software, and launching the DeepSeek model. This resource is aimed at developers and AI enthusiasts who want to harness the power of AI on low-power devices.
+This wiki will use the [reComputer J3010](https://www.seeedstudio.com/reComputer-J3010-p-5589.html) as an example to demonstrate how to update Jetson linux from jetpack5.1.3 to jetpack6.0 with image-based over-the-air.
 
 ## Existing Wiki Updated
 
-### [LoRaWAN® Gateway Module WM1302](https://wiki.seeedstudio.com/WM1302_module/)
+### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
 
-We have optimized the content of [running the Semtech SX1302 packet forwarder](https://wiki.seeedstudio.com/WM1302_module/#step4-run-semtech-sx1302-packet-forwarder).
+We have added relevant [resource files](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/#resources) to the Seeed Studio IoT Button.
 
-### [Deploying AI Models on SenseCAP A1102 Using SenseCraft AI](https://wiki.seeedstudio.com/train_ai_with_a1102/)
+### [Getting Started with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_getting_started/)
 
-We have added an operation example for [Access Advanced Settings](https://wiki.seeedstudio.com/train_ai_with_a1102/#access-advanced-settings).
+We have provided the [PCB & SCH files](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#resources) for XIAO MG24 and XIAO MG24 Sense.
 
-### [J101 carrier board](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/)
+### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/recamera_os_version_control/)
 
-We have added an operation example for [Flashing Jetpack OS with Seeed BSP](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/#flashing-jetpack-os-with-seeed-bsp).
-
-### [Getting Started with reComputer J202](https://wiki.seeedstudio.com/reComputer_J2021_J202_Flash_Jetpack/)
-
-We have added an operation example for [Flashing Jetpack OS with Seeed BSP](https://wiki.seeedstudio.com/reComputer_J2021_J202_Flash_Jetpack/#step-1-download-the-proper-nvidia-linux-driver-package).
-
-### [How to use the SO-ARM100 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
-
-We have added an [FAQ section](https://wiki.seeedstudio.com/lerobot_so100m/#faq).
+We have updated the [relevant operation examples](https://wiki.seeedstudio.com/recamera_os_version_control/#for-os-version-013-and-below) for OS version 0.1.3 and below.
 
 ## The Efforts of Contributor
-
-### [XIAO RP2350 With NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
-
-<div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp" style={{width:400, height:'auto'}}/>
-</div>
-
-This guide provides a step-by-step tutorial for using the **Seeed Studio XIAO RP2350** microcontroller with the **NuttX Real-Time Operating System (RTOS)**, a scalable and standards-compliant OS for embedded systems. It covers installation, configuration, and practical examples, including GPIO control, LED manipulation, and WS2812 addressable LEDs, using NuttX applications like **NuttShell (NSH)** and **COMBO**. Ideal for developers, this documentation helps you quickly get started with NuttX on the XIAO RP2350, offering insights into building efficient embedded systems.
 
 <!-- ### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
 
@@ -189,5 +172,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
 - [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
+- [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 
 </details>
