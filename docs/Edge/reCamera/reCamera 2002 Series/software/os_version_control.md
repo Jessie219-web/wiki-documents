@@ -59,6 +59,63 @@ If you are developing OS and you have your own branch in github, you can also up
 
 /mnt/system/upgrade.sh start
 ```
+#### For OS version 0.1.3 and below
+If you would like to OTA with `upgrade.sh` but your version is **0.1.3 and below**, please follow the below steps:
+
+1. Connect device with computer by USB-type C cable, then visit **192.168.42.1/#/terminal**. Find the upgrade.sh script in the folder
+```bash
+cd /mnt/system
+ls
+```
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/find_upgrade_script.png" /></div>
+
+2. Change the permission of this script
+```bash
+sudo rootfs_rw on
+sudo chmod +x upgrade.sh
+```
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/change_file_permission.png" /></div>
+
+3. Delete the old `upgrade.sh` file and check if it is removed successfully.
+```bash
+sudo rm upgrade.sh
+ls
+```
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/remove_script.png" /></div>
+
+4. Go to [Github](https://github.com/Seeed-Studio/reCamera-OS/blob/sg200x-reCamera/external/ramdisk/rootfs/overlay/cv181x_musl_riscv64/system/upgrade.sh) and download the latest `upgrade.sh` script.
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/download_sh_github.png" /></div>
+
+5. Change folder permission
+```bash
+sudo chmod 777 /mnt/system
+```
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/change_folder_permission.png" /></div>
+
+6. Open your desktop/pc terminal, then copy the downloaded script to reCamera under the same folder.
+```bash
+scp your_folder_address/upgrade.sh recamera@192.168.42.1:/mnt/system/
+```
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/scp_file.png" /></div>
+
+7. Go back to the web page to check if the new `upgrade.sh` is in
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/new_script.png" /></div>
+
+8. Change back the folder permission for safety
+```bash
+sudo chmod 755 /mnt/system
+```
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/chang_back_permission.png" /></div>
+
+9. Now you can try [OTA command](#device-management-by-ota) to do any version control.
 
 ### Device management by local package
 You can also update/upgrade the firmware manually using the local ota package. The ota firmwares can be [downloaded here](https://github.com/Seeed-Studio/reCamera-OS/releases/). Use tools like scp to transfer the files to reCamera.

@@ -28,7 +28,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html">
+<a class="get_one_now_item" href="https://s.click.taobao.com/j6b5cCs">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 </a></div>
 
@@ -135,8 +135,6 @@ For Jetson Orin:
 1. 安装Miniconda：
 
 ```bash
-mkdir -p ~/miniconda3
-cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-aarch64.sh
 ./Miniconda3-latest-Linux-aarch64.sh
@@ -144,7 +142,7 @@ chmod +x Miniconda3-latest-Linux-aarch64.sh
 
 重新启动Shell或执行 `source ~/.bashrc`
 
-如果是Windows上的Ubuntu系统：
+如果是X86上的Ubuntu系统：
 
 ```bash
 mkdir -p ~/miniconda3
@@ -204,12 +202,16 @@ print(torch.cuda.is_available())
 
 ## 校准舵机并组装机械臂
 
-官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也粗略的记录了我们的舵机校准和机械臂安装过程。
+官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也记录了我们的舵机校准和机械臂安装过程。
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114176236191787&bvid=BV1WiQiY1EYP&cid=28909307865&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114182410272948&bvid=BV1KFX5YREjU&cid=28929295238&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187896425203&bvid=BV1MJQRYgEUw&cid=28947320683&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
 
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746789925626&bvid=BV1uP6JY5EH3&cid=27745060436&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
-
-要查找每个机械臂的正确端口，请运行脚本两次：
+在终端输入以下指令来找到两个机械臂对应的端口号：
 
 ```bash
 python lerobot/scripts/find_motors_bus_port.py
@@ -253,7 +255,7 @@ python lerobot/scripts/configure_motor.py \
 
 接下来，你需要校准你的 SO-100 机器人，以确保领导臂和跟随臂在相同物理位置时具有相同的位置值。此校准至关重要，因为它允许在一个 SO-100 机器人上训练的神经网络在另一个机器人上运行，如果需要重新校准机械臂，请删除`~/lerobot/.cache/huggingface/calibration/so100`文件夹。
 
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806637856&bvid=BV12M6JY6EWf&cid=27627684047&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187913200955&bvid=BV1KWQRYqEdb&cid=28947516809&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
 
 > 机械臂的校准应严格按照 Lerobot 官方教程中的
@@ -262,6 +264,7 @@ python lerobot/scripts/configure_motor.py \
 
 
 首先，您需要确保 [SO100RobotConfig](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py) `lerobot/lerobot/common/robot_devices/robots /configs.py` 文件中机器人手臂的串口号与您的设备一致，如下图所示。您可以根据 `ls /dev/ttyACM*` 查看所有串口名称。
+
 
 ```python
 @RobotConfig.register_subclass("so100")
@@ -365,7 +368,7 @@ python lerobot/common/robot_devices/cameras/opencv.py \
 终端将打印出以下信息。
 
 ```markdown
-Mac or Windows detected. Finding available camera indices through scanning all indices from 0 to 60
+Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
 [...]
 Camera found at index 2
 Camera found at index 4
@@ -543,7 +546,7 @@ python lerobot/scripts/train.py \
   --job_name=act_so100_test \
   --device=cuda \
   --wandb.enable=false \
-  --datasets.local_files_only=false
+  --dataset.local_files_only=false
 ```
 
 如果你想训练本地数据集，在命令后加上`--dataset.local_files_only=true`即可。

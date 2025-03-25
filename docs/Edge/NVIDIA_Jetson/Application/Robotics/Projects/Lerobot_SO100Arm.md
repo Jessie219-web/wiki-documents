@@ -137,15 +137,13 @@ Environments such as pytorch and torchvision need to be installed based on your 
 For Jetson:
 
 ```bash
-mkdir -p ~/miniconda3
-cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-aarch64.sh
 ./Miniconda3-latest-Linux-aarch64.sh
 source ~/.bashrc
 ```
 
-Or, For Windows Linux:
+Or, For X86 Linux:
 ```bash
 mkdir -p ~/miniconda3
 cd miniconda3
@@ -385,7 +383,7 @@ python lerobot/common/robot_devices/cameras/opencv.py \
 The terminal will print out the following information.
 
 ```markdown
-Mac or Windows detected. Finding available camera indices through scanning all indices from 0 to 60
+Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
 [...]
 Camera found at index 2
 Camera found at index 4
@@ -572,7 +570,7 @@ python lerobot/scripts/train.py \
   --job_name=act_so100_test \
   --device=cuda \
   --wandb.enable=false \
-  --datasets.local_files_only=true
+  --dataset.local_files_only=true
 ```
 
 Note: If you didn't push your dataset yet, add `--dataset.local_files_only=true`.
