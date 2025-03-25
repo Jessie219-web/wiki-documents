@@ -5,7 +5,7 @@ keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp
 slug: /xiao-ra4m1-nuttx
-sidebar_position: 3
+sidebar_position: 2
 last_update:
     date: 03/11/2025
     author: rcsim
@@ -287,7 +287,7 @@ led_daemon: LED set 0x00
 Check the video below with the demo for gpio and leds:
 
 <div align="center"><video width={800} height={600} controls>
-    <source src="https://files.seeedstudio.com/wiki/XIAO-RA4M1/img/Nuttx/xiao-ra4m1-nuttx-demo.mp4" type="video/mp4" />
+    <source src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/xiao-ra4m1-nuttx-demo.mp4" type="video/mp4" />
 </video></div>
 
 For more information about NuttX RTOS, please visit [NuttX Documentation](https://nuttx.apache.org/docs/latest/index.html)
