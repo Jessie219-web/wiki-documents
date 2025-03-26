@@ -1,7 +1,7 @@
 ---
 description: Getting Started for reComputer Super
 title: reComputer Super
-tags:
+keywords:
   - reComputer Super
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /recomputer_jetson_super_getting_started
