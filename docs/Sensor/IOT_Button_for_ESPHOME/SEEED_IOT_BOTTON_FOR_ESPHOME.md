@@ -6,7 +6,7 @@ keywords:
   - IoT Button
   - ESP32-C6
 image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.webp
-slug: /seeed_iot_botton_connect_to_esphome
+slug: /getting_started_with_seeed_iot_button
 last_update:
   date: 03/14/2025
   author: qiuyu wei, Citric
