@@ -621,13 +621,7 @@ The rest of the example is addressing the logic for keystroke stabilisation and 
 
 ## Troubleshooting
 
-### Q1: Is it possible to program Zigbee on an Arduino?
-
-Theoretically it is possible, as Espressif has done a good job of supporting libraries on Zigbee and provides similar [Zigbee example programs](https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Zigbee/Zigbee_Light_Bulb).
-
-However, when we actually use these examples, we found that XIAO can't work properly, and we will encounter the problem of constant restart, and we have already [submitted Issue](https://github.com/espressif/arduino-esp32/issues/9716#issuecomment-2138491439) to Espressif, waiting for the official processing and solution.
-
-### Q2: Continuing to have issues with ESP_ZB_ON_OFF_LIGHT: Network steering was not successful to match another XIAO.
+### Q1: Continuing to have issues with ESP_ZB_ON_OFF_LIGHT: Network steering was not successful to match another XIAO.
 
 First of all, please troubleshoot the version of ESP-IDF you are using, make sure you are using **ESP-IDF v5.1.3** to compile the Zigbee sample application, if not, please change the IDF version.
 
@@ -642,7 +636,7 @@ idf.py erase_flash flash monitor
 If none of the above works, submit an issue to Espressif.
 
 
-### Q3: What should I do if I want to match a new device after a successful match?
+### Q2: What should I do if I want to match a new device after a successful match?
 
 Directly using the flash command uploader will not erase the historical pairing records saved by flash. Please use the following command to re-upload the programme to match the new device.
 
