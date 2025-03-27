@@ -5,8 +5,8 @@ keywords:
   - ESPHOME
   - IoT Button
   - ESP32-C6
-image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
-slug: /seeed_iot_botton_connect_to_esphome
+image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.webp
+slug: /getting_started_with_seeed_iot_button
 last_update:
   date: 03/14/2025
   author: qiuyu wei, Citric
@@ -373,6 +373,19 @@ If you encounter issues with your IoT Button, here are some common troubleshooti
 4. **Automations not triggering**:
    - Verify that the automation is enabled
    - Check that the trigger conditions match exactly (state changes from "off" to "on")
+
+## Troubleshooting
+
+### Q1: Why does my device keep dropping out and not being able to connect to the internet after replacing the battery? I can confirm that the battery is charged.
+
+After the battery has been removed, due to the chip protection strategy of the 18650 battery, it needs to be activated a bit by a charged USB power cable to work properly.
+
+## Resources
+
+- **[GITHUB]** [Seeed IoT Button Github Zigbee & ESPHome Repository](https://github.com/Seeed-Projects/Seeed_IoT_Button)
+- **[PDF]** [Seeed IoT Button SCH PDF](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH.pdf)
+- **[SCH&PCB]** [Seeed IoT Button SCH & PCB](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH&PCB.zip)
+
 
 ## Tech Support & Product Discussion
 

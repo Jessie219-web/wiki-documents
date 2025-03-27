@@ -625,6 +625,7 @@ The XIAO MG24 is currently the only XIAO model equipped with a serial port chip.
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Sense Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MGM240S_KICAD_Prj.pdf)
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Sense Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
 - 🔗 **[Kicad]** [Seeed Studio XIAO MG24 Sense FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+- 📄 **[ZIP]** [Seeed Studio XIAO MG24 Sense PCB&SCH](https://files.seeedstudio.com/wiki/XIAO_MG24/XIAO_MG24_Sense_v1.0_SCH&PCB.zip)
 
 
 ### For Seeed Studio XIAO MG24
@@ -632,7 +633,7 @@ The XIAO MG24 is currently the only XIAO model equipped with a serial port chip.
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MGM240S_KICAD_Prj.pdf)
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
 - 🔗 **[Kicad]** [Seeed Studio XIAO MG24 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
-
+- 📄 **[ZIP]** [Seeed Studio XIAO MG24 PCB&SCH](https://files.seeedstudio.com/wiki/XIAO_MG24/XIAO_MG24_v1.0_SCH&PCB.zip)
 
 
 ## Tech Support & Product Discussion

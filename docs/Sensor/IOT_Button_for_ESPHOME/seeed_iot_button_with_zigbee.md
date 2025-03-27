@@ -6,7 +6,7 @@ keywords:
   - IoT Button
   - ESP32-C6
   - Home Assistant
-image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/BUTTON/1.png
+image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button.webp
 slug: /seeed_iot_button_with_zigbee
 last_update:
   date: 03/14/2025
@@ -427,6 +427,18 @@ digitalWrite(LED_PIN, LOW);
 The Seeed Studio IoT Button with Zigbee functionality offers a versatile and power-efficient way to control your smart home. Whether you use the pre-built firmware or develop your own custom solution, the button provides a simple interface for triggering complex automations in Home Assistant.
 
 By leveraging the ESP32-C6's built-in Zigbee capabilities, the IoT Button can operate for extended periods on battery power while maintaining reliable connectivity with your smart home ecosystem.
+
+## Troubleshooting
+
+### Q1: Why does my device keep dropping out and not being able to connect to the internet after replacing the battery? I can confirm that the battery is charged.
+
+After the battery has been removed, due to the chip protection strategy of the 18650 battery, it needs to be activated a bit by a charged USB power cable to work properly.
+
+## Resources
+
+- **[GITHUB]** [Seeed IoT Button Github Zigbee & ESPHome Repository](https://github.com/Seeed-Projects/Seeed_IoT_Button)
+- **[PDF]** [Seeed IoT Button SCH PDF](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH.pdf)
+- **[SCH&PCB]** [Seeed IoT Button SCH & PCB](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH&PCB.zip)
 
 ## Tech Support & Product Discussion
 

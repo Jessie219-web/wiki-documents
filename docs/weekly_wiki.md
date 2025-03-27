@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 03/10/2025
+  date: 03/24/2025
   author: Frank
 ---
 
@@ -17,27 +17,46 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is March 10th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is March 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [reComputer R1100 Flash OS](https://wiki.seeedstudio.com/recomputer_r1100_flash_os/)
+### [RNDIS on 4G LTE Raspberry pi HAT Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_rndis/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/R1100/reComputer-R1125-1.jpg" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:800, height:'auto'}}/></div>
 
-This wiki provides step-by-step instructions for flashing an OS onto the reComputer R1100, an industrial IoT edge gateway powered by Raspberry Pi CM4. It covers hardware/software requirements, OS flashing (NVMe/eMMC), EEPROM updates, boot order configuration, and driver installation for Windows, Mac, and Linux users.
+This document explains how to configure RNDIS on Windows to connect the **Raspberry Pi 4G LTE HAT** via USB for network and internet access. It covers driver installation, RNDIS mode setup, and connection verification, making it ideal for IIoT and remote communication applications.
 
-### [Using Cursor to Create Zigbee Projects with XIAO ESP32C6](https://wiki.seeedstudio.com/use_cursor_create_zigbee_prj/)
+### [4G Raspberry Pi HAT - MBIM Mode Setup on Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_mbim/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/cursor_zigbee_xiaoc6/13.webp" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Raspberry-Pi-4G-LTE-CAT4-HAT.webp" style={{width:800, height:'auto'}}/></div>
 
-This guide will walk you through using Cursor's AI-powered chat to develop Zigbee applications with XIAO ESP32C6 and sensors. By the end of this tutorial, you'll be able to independently use Cursor's Chat to develop Zigbee applications with your XIAO board and sensors.
+The **Quectel 4G Raspberry Pi HAT** supports internet connectivity on Windows by utilizing MBIM (Mobile Broadband Interface Model) mode. This mode enables Windows to recognize the 4G module as a native cellular modem, facilitating a stable and driver-supported network connection.
+This guide will walk you through the necessary steps to configure your Quectel module in MBIM mode and connect it to the internet on Windows 10/11 systems.
+
+### [4G Raspberry Pi HAT - QMI Mode Setup on Raspberry Pi OS](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_qmi/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/ping.PNG" style={{width:800, height:'auto'}}/></div>
+
+This guide explains how to configure internet access on a Raspberry Pi using a 4G HAT equipped with a Quectel EG25-G module. By following this guide, you will learn how to set up the module in QMI mode, compile and use the quectel-CM dial-up tool, and establish a stable 4G internet connection on your Raspberry Pi. This method is ideal for applications requiring mobile internet access, such as IoT deployments, remote monitoring, and edge computing.
+
+### [Updating Jetson Linux with Image-Based Over-the-Air Update](https://wiki.seeedstudio.com/updating_jetpack_with_ota/)
+
+This wiki will use the [reComputer J3010](https://www.seeedstudio.com/reComputer-J3010-p-5589.html) as an example to demonstrate how to update Jetson linux from jetpack5.1.3 to jetpack6.0 with image-based over-the-air.
 
 ## Existing Wiki Updated
 
-### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
+### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
 
-We have added the [IMU Advanced Demo](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/#imu-advanced-demo) to the XIAO MG24 Sense.
+We have added relevant [resource files](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/#resources) to the Seeed Studio IoT Button.
+
+### [Getting Started with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_getting_started/)
+
+We have provided the [PCB & SCH files](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#resources) for XIAO MG24 and XIAO MG24 Sense.
+
+### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/recamera_os_version_control/)
+
+We have updated the [relevant operation examples](https://wiki.seeedstudio.com/recamera_os_version_control/#for-os-version-013-and-below) for OS version 0.1.3 and below.
 
 ## The Efforts of Contributor
 
@@ -152,5 +171,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
 - [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
 - [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
+- [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
+- [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 
 </details>

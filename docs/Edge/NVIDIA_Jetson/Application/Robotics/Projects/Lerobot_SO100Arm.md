@@ -137,15 +137,13 @@ Environments such as pytorch and torchvision need to be installed based on your 
 For Jetson:
 
 ```bash
-mkdir -p ~/miniconda3
-cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-aarch64.sh
 ./Miniconda3-latest-Linux-aarch64.sh
 source ~/.bashrc
 ```
 
-Or, For Windows Linux:
+Or, For X86 Linux:
 ```bash
 mkdir -p ~/miniconda3
 cd miniconda3
@@ -352,6 +350,13 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_leader"]'
 ```
 
+| **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
+|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_zero_position.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rotated_position.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rest_position.jpg) |
+| **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
+| ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_zero_position.jpg) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rotated_position.jpg) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rest_position.jpg) |
+
+
 ## Teleoperate
 
 **Simple teleop**
@@ -378,7 +383,7 @@ python lerobot/common/robot_devices/cameras/opencv.py \
 The terminal will print out the following information.
 
 ```markdown
-Mac or Windows detected. Finding available camera indices through scanning all indices from 0 to 60
+Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
 [...]
 Camera found at index 2
 Camera found at index 4
@@ -565,7 +570,7 @@ python lerobot/scripts/train.py \
   --job_name=act_so100_test \
   --device=cuda \
   --wandb.enable=false \
-  --datasets.local_files_only=true
+  --dataset.local_files_only=true
 ```
 
 Note: If you didn't push your dataset yet, add `--dataset.local_files_only=true`.
