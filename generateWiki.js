@@ -16,6 +16,7 @@ const excludedPaths = [
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Mini_J401', 'J401_Mini_carrierboard_Hardware_Interfaces_Usage.md'),// 排除指定文档
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Mini_J401', 'reComputer_Mini_J4012_Flash_Jetpack.md'),
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Updating_Jetpack_with_OTA.md'),
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'reComputer_Jetson_Series', 'reComputer_Super', 'reComputer_Super_Getting_Started.md'),
 
 ];
 
