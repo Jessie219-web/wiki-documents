@@ -104,7 +104,7 @@ Con esta información, puedes ajustar la dirección Modbus en la configuración 
    - **Port**: Puerto del servidor Modbus (normalmente 502)
    - **Unit-Id**: 255 (Unit-ID se usa para identificar dispositivos en una red Modbus, especialmente cuando varios dispositivos comparten la misma línea de comunicación)
 
-<div style="textAlign:'center'">
+<div style={{textAlign:'center'}}>
 <img width={600} src="https://files.seeedstudio.com/wiki/Edge_Box/nodered/server.PNG"/></div>
 
 **Paso 3**. **Asigna un nombre apropiado** al nodo, por ejemplo, "Network IP 1". Para este demo, estás controlando una entrada de red en el programa del PLC.
