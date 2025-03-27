@@ -3,7 +3,7 @@ description: Arduino examples for T1000-E user guide
 title: T1000-E Arduino Examples
 keywords:
 - Tracker
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/tracker-t1000-e-for-meshtastic.webp
 slug: /t1000_e_arduino_examples
 sidebar_position: 3
 last_update:
