@@ -73,7 +73,7 @@ This breakout board does not include an ePaper display; the display must be purc
 
 </div>
 
-### Supported ePaper
+### Supported eInk
 
 1. [1.54-inch E-paper - Dotmatix 200x200](https://www.seeedstudio.com/1-54-Monochrome-ePaper-Display-with-200x200-Pixels-p-5776.html)
 2. [2.13-inch E-Paper -Flexible Monochrome 212x104](https://www.seeedstudio.com/2-13-Flexible-Monochrome-ePaper-Display-with-212x104-Pixels-p-5781.html)
@@ -88,157 +88,14 @@ This breakout board does not include an ePaper display; the display must be purc
 11. [7.5-inch E-paper - Tri-Color 800x480](https://www.seeedstudio.com/7-5-3-Color-SPI-ePaper-Display-p-6399.html)
 
 
-## Getting Started
+## Use of the Image2lcd software
 
-### Hardware Preparation
+### How to Make Picture
 
-<table align="center">
-	<tr>
-		<th>Seeed Studio XIAO ESP32S3</th>
-	    <th>ePaper expansion board</th>
-	    <th>7.5 inch epaper screen</th>
-	</tr>
-	<tr>
-		<td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/2/-/2-102010634-seeed-studio-xiao-esp32s3-_pre-soldered_-45font.jpg" style={{width:500, height:'auto'}}/></div></td>
-		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/tableimg.jpg" style={{width:500, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-308030054-ink-7.5-monochrome-epaper-display-with-800x480-pixels-45font.jpg" style={{width:500, height:'auto'}}/></div></td>
-	</tr>
-    <tr>
-		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32S3-Pre-Soldered-p-6334.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/ePaper-breakout-Board-for-XIAO-V2-p-6374.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-    		<a class="get_one_now_item" href="https://www.seeedstudio.com/7-5-Monochrome-ePaper-Display-with-800x480-Pixels-p-5788.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    		</a>
-		</div></td>
-	</tr>
-</table>
-
-:::tip
-Except for XIAO SAMD21 haven't enough FLASH and RAM to run program in 5.65 and 7.5 inch epaper, all other XIAO support all kinds of sizes of epaper.
-:::
-
-Insert the ePaper into the FPC Connector: Carefully slide your E-paper into the 24-pin FPC connector on the ePaper Breakout Board.
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e3.png" style={{width:600, height:'auto'}}/></div>
-
-Insert the XIAO into the XIAO Socket: Align the pins and gently insert your XIAO into the XIAO socket on the board.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e4.png" style={{width:600, height:'auto'}}/></div>
+Use the build-in software **Paint** in Windows to create a picture with the **same resolution** as the screen you are using, and save it as`BMP` or  `JPG` file; 
 
 
-
-### Software Preparation
- The recommended programming tool is the Arduino IDE, and you need to configure the Arduino environment for the XIAO and add the on-board package.
-:::tip
-If this is your first time using Arduino, we highly recommend you to refer to [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/).
-:::
-
-**Step 1.** Launch the Arduino application.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
-
-<div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
-</div>
-
-**Step 2.** Select your development board model and add it to the Arduino IDE.
-
-- If you want to use **Seeed Studio XIAO RP2040** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)** to finish adding.
-
-- If you want to use **Seeed Studio XIAO nRF52840** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)** to finish adding.
-
-- If you want to use **Seeed Studio XIAO ESP32C3** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** to finish adding.
-
-- If you want to use **Seeed Studio XIAO ESP32S3** for the later routines, please refer to **[this tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
-
-For other XIAOs, please go to that XIAO's getting started page to finish adding.
-
-
-### Example Demo
-
-#### Demo 1.Display GUI
-
-##### Step 1.Download code
-
-Click the below button to download code
-
-<div class="github_container" style={{textAlign: 'center'}}>
-    <a class="github_item" href="https://github.com/Seeed-Projects/Seeed_ePaper-Driver-Board">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Download Code</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
-    </a>
-</div><br />
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e5.png" style={{width:700, height:'auto'}}/></div>
-
-Unzip the code and choose the size of the epaper you are using and open the **example.ino** file via Arduino IDE.
-
-:::tip
-Only 4.2-inch and 7.5-inch epaper support GUI function now.
-:::
-
-**Function Overview**
-
-Before we get started developing a sketch, let's look at the available functions 
-
-- `void EPD_HW_Init()`—— Full screen refresh initialization.
-
-- `void EPD_HW_Init_180()` ——Display rotation 180 degrees initialization.
-
-- `void EPD_WhiteScreen_ALL(const unsigned char *datas)` —— Full screen refresh display function.
-  - **Input Parameters:**
-
-    - **datas：** The image data that needs to be refreshed.
-- `void EPD_WhiteScreen_White()` —— Clear screen display.
-- `void EPD_WhiteScreen_Black()` —— Display all black.
-- `void EPD_DeepSleep()` —— Deep sleep function, enter the sleep mode and please do not delete it, otherwise it will reduce the lifespan of the screen.
-- `void EPD_Init_Part()` —— Partial refresh display.
-- `void EPD_SetRAMValue_BaseMap(const unsigned char * datas)` —— Partial refresh of background display.
-  - **Input Parameters:**
-
-    - **datas：** The image data that needs to be refreshed.
-- `void EPD_Dis_PartAll(const unsigned char *datas)`—— Full screen partial refresh display.
-- `void EPD_Dis_Part(unsigned int x_start,unsigned int y_start,const unsigned char * datas,unsigned int PART_COLUMN,unsigned int PART_LINE)` —— Partial refresh display.
-  - **Input Parameters:**
-
-    - **unsigned int x_start:** The x value of the starting point.
-    - **unsigned int y_start:** The y value of the starting point
-    - **const unsigned char * datas:** Data that needs to be changed
-    - **unsigned int PART_COLUMN:** The length of the area to be changed
-    - **unsigned int PART_LINE:** The width of the area to be changed
-
-- `void EPD_HW_Init_Fast()` —— Fast refresh display.
-- `void EPD_WhiteScreen_ALL_Fast(const unsigned char *datas)` —— Fast refresh display function.
-  - **Input Parameters:**
-
-    - **datas：** The image data that needs to be refreshed.
-- `void EPD_HW_Init_Fast2()` —— Fast refresh display function.
-
-##### Step 2. Run code
-
-Select the development board you are using and click **upload button** to upload the code to XIAO.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e7.png" style={{width:700, height:'auto'}}/></div>
-
-When it runs well, you will see the following effect.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/epaper_GUI_display.gif" style={{width:700, height:'auto'}}/></div>
-
-#### Demo 2. Display image
-
-##### Step 1.Make a picture
-
-Use the build-in software **Paint** in Windows to create a picture with the **same resolution(the resolution of different types of screens in below table)** as the screen you are using,  and save it as`BMP` or  `JPG` file; 
-
-:::tip
+:::note
 Your picture resolution must be the same as the screen you are using, for example, 4.2-inch E-paper is 400 x 300 pixels, then you can not use the size of 300 x 400, it will cause the iamge2lcd output `.h `file with an extra 200 bytes.
 :::
 
@@ -248,26 +105,26 @@ The colors of the picture should be consistent with the standard colors of the d
 
 |      E-paper      | Colors |
 |       ---      |  ---   |
-|1.54-inch E-paper - Dotmatix **200x200**           | pure black and white          |
-|2.13-inch E-Paper -Flexible Monochrome **212x104** | pure black and white          |
-|2.13-inch E-Paper - Quadruple **212x104**          | black, white, red, and yellow |
-|2.9 inch E-paper - Monocolor **128x296**           | pure black and white          |
-|2.9-inch e-paper - Quadruple color **128x296**     | black, white, red, and yellow |
-|4.2-inch E-Paper - Monocolor **400x300**           | pure black and white          |
-|4.26-inch E-Paper - Monocolor **800x480**          | pure black and white          |
-|5.65-inch E-paper -  Sevencolor **600x480**        | black, white, red, yellow, blue, green, orange|
-|5.83-inch E-paper - Monocolor **648x480**          | pure black and white          |
-|7.5-inch E-paper - Monocolor **800x480**           | pure black and white          |
-|7.5-inch E-paper - Tri-Color **800x480**           | black, white, and red         |
+|1.54-inch E-paper - Dotmatix 200x200           | pure black and white          |
+|2.13-inch E-Paper -Flexible Monochrome 212x104 | pure black and white          |
+|2.13-inch E-Paper - Quadruple 212x104          | black, white, red, and yellow |
+|2.9 inch E-paper - Monocolor 128x296           | pure black and white          |
+|2.9-inch e-paper - Quadruple color 128x296     | black, white, red, and yellow |
+|4.2-inch E-Paper - Monocolor 400x300           | pure black and white          |
+|4.26-inch E-Paper - Monocolor 800x480          | pure black and white          |
+|5.65-inch E-paper -  Sevencolor 600x480        | black, white, red, yellow, blue, green, orange|
+|5.83-inch E-paper - Monocolor 648x480          | pure black and white          |
+|7.5-inch E-paper - Monocolor 800x480           | pure black and white          |
+|7.5-inch E-paper - Tri-Color 800x480           | pure black and white          |
 
 </div>
 
-##### Step 2. Bitmap Conversion
+### Bitmap Conversion
 
-Open [Image2lcd.7z](https://files.seeedstudio.com/wiki/eInk/xiao-expansion/Image2Lcd.7z), extract it and open the application.
+**Step 1.** Open [Image2lcd.7z](https://files.seeedstudio.com/wiki/eInk/xiao-expansion/Image2Lcd.7z), extract it and open the application.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/1.png" style={{width:700, height:'auto'}}/></div>
 
-Open the picture, select the "Output file type" as the "C array (*.c)", select the "Scan mode" as the "Horizon Scan", the other parameters setting is show in follows:
+**Step 2.** Open the picture, select the "Output file type" as the "C array (*.c)", select the "Scan mode" as the "Horizon Scan", the other parameters setting is show in follows:
 
 <div class="table-center">
   <table align="center">
@@ -364,46 +221,174 @@ Open the picture, select the "Output file type" as the "C array (*.c)", select t
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/2.png" style={{width:700, height:'auto'}}/></div>
 :::
 
-Click "Save" to save the the lcd output array as a file of `.h`.
+**Step 3.** Click "Save" to save the the lcd output array as a file of `.h`.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/7.png" style={{width:500, height:'auto'}}/></div>
 
 
-##### Step 3.Display image
+## Getting Started
 
-Download the Demo Code, and open the code for your specific ePaper Screen. 
+ To use the **XIAO eInk Expansion Board**, we need to program the XIAO series. The table of different sizes E-paper supported by XIAO is as follows:
+
+<div class="table-center">
+
+|      E-paper / XIAO     | XIAO SAMD21 | XIAO RP2040|  XIAO nRF52840 | XIAO ESP32-C3 | XIAO ESP32-S3 |
+|       ---      |  ---  | --- | --- | --- | --- |
+|1.54-inch E-paper - Dotmatix 200x200           | ✅ | ✅ | ✅ | ✅ | ✅ |
+|2.13-inch E-Paper -Flexible Monochrome 212x104 | ✅ | ✅ | ✅ | ✅ | ✅ |
+|2.13-inch E-Paper - Quadruple 212x104          | ✅ | ✅ | ✅ | ✅ | ✅ |
+|2.9 inch E-paper - Monocolor 128x296           | ✅ | ✅ | ✅ | ✅ | ✅ |
+|2.9-inch e-paper - Quadruple color 128x296     | ✅ | ✅ | ✅ | ✅ | ✅ |
+|4.2-inch E-Paper - Monocolor 400x300           | ✅ | ✅ | ✅ | ✅ | ✅ |
+|4.26-inch E-Paper - Monocolor 800x480          | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
+|5.65-inch E-paper -  Sevencolor 600x480        | FLASH overflowd | ✅ | ✅ | ✅ | ✅ |
+|5.83-inch E-paper - Monocolor 648x480          | ✅ | ✅ | ✅ | ✅ | ✅ |
+|7.5-inch E-paper - Monocolor 800x480           | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
+|7.5-inch E-paper - Tri-Color 800x480           | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
+
+</div>
+
+
+### Hardware Preparation
+
+**Step 1.** Material preparation
+
+<table align="center">
+	<tr>
+		<th>Seeed Studio XIAO SAMD21</th>
+		<th>Seeed Studio XIAO RP2040</th>
+		<th>Seeed Studio XIAO nRF52840 (Sense)</th>
+		<th>Seeed Studio XIAO ESP32C3</th>
+	    <th>Seeed Studio XIAO ESP32S3 (Sense)</th>
+	</tr>
+	<tr>
+		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-preview-1.jpg" style={{width:400, height:'auto'}}/></div></td>
+		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/102010428_Preview-07.jpg" style={{width:500, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/xiaoblesense.jpg" style={{width:500, height:'auto'}}/></div></td>
+		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/xiaoesp32c3.jpg" style={{width:450, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:500, height:'auto'}}/></div></td>
+	</tr>
+    <tr>
+	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    		</a>
+		</div></td>
+		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    		</a>
+		</div></td>
+		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    		</a>
+		</div></td>
+		<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    		</a>
+		</div></td>
+	    <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+    		<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    		</a>
+		</div></td>
+	</tr>
+</table>
+
+
+
+**STEP 2.** Insert the XIAO into the XIAO Socket: Align the pins and gently insert your XIAO into the XIAO socket on the board.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/connect_xiao.gif" style={{width:700, height:'auto'}}/></div>
+
+**STEP 3.** Insert the eInk into the FPC Connector: Carefully slide your E-paper into the 24-pin FPC connector on the ePaper Breakout Board.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/connect_eink.gif" style={{width:700, height:'auto'}}/></div>
+
+
+
+### Software Preparation
+ The recommended programming tool is the Arduino IDE, and you need to configure the Arduino environment for the XIAO and add the on-board package.
+:::tip
+If this is your first time using Arduino, we highly recommend you to refer to [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/).
+:::
+
+**Step 1.** Launch the Arduino application.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
+
+<div class="download_arduino_container" style={{textAlign: 'center'}}>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    </a>
+</div>
+
+**Step 2.** Select your development board model and add it to the Arduino IDE.
+
+- If you want to use **Seeed Studio XIAO SAMD21** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)** to finish adding.
+
+- If you want to use **Seeed Studio XIAO RP2040** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)** to finish adding.
+
+- If you want to use **Seeed Studio XIAO nRF52840** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)** to finish adding.
+
+- If you want to use **Seeed Studio XIAO ESP32C3** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** to finish adding.
+
+- If you want to use **Seeed Studio XIAO ESP32S3** for the later routines, please refer to **[this tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
+
+
+## Using the Seeed_Arduino_LCD Library
+
+**Step 3.** Install Seeed Arduino LCD Library
+
+:::tip
+This library has same function as TFT library and no compatible with this library. If you have installed TFT library, please uninstall it first.
+:::
+
+Download and install the Seeed Arduino LCD library from GitHub.
 
 <div class="github_container" style={{textAlign: 'center'}}>
-    <a class="github_item" href="https://github.com/Allen-Kuang/Seeed_ePaper_driver_board_for_XIAO_V2">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Code</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    <a class="github_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_LCD">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div><br />
 
-Take a example of using 4.2-inch ePaper and a XIAO ESP32S3, once you have downloaded and extract the demo code, please navigate and open the "4.2 inch E-paper - Monocolor 400x300" folder. 
+After downloading the library, go to **Sketch** -> **Include Library** -> **Add .ZIP Library** and select the downloaded library.
 
-Then open the "example" folder and use Arduino IDE to open the "example.ino" file:
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/51.png" style={{width:800, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/3.png" style={{width:700, height:'auto'}}/></div>
+There are 4 basic examples, open a basic example you like:
+1. Bitmap: Display a bitmap image.
+2. Clock: Display a clock.
+3. Clock_digital: Display a digital clock.
+4. HelloWorld: Display basic patterns and text of different sizes on the e-ink screen.
+5. Shape: Display different sizes of words and shape randomly.
 
-Put the `.h` file outputed from image2lcd into the same folder of example. **Reopen the example.ino and include '.h' file.** Open image.h file and **copy the array name to EPD_WhiteScreen_ALL() function**.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/150.png" style={{width:800, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e1.png" style={{width:800, height:'auto'}}/></div>
+**Step 4.** Upload the Code
 
-Please click the Board selection dropdown menu, and then click on "Select other board and port...", 
+Before uploading the code, you need to open **User_Setup_Select.h** in Seeed_Arduino_LCD library.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/4.png" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/53.png" style={{width:800, height:'auto'}}/></div>
 
-Select the communication port for your XIAO, then search and select "XIAO_ESP32S3"
+Since this example uses a 2.9-inch e-ink screen, we need to comment out line 160 `#include <User_Setups/Setup666_XIAO_ILI9341.h>` in this file, and uncomment line 165 `#include <User_Setups/Setup504_Seeed_XIAO_EPaper_2inch9.h>`. If you are using other e-ink screens, please follow this approach to make modifications.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/5.png" style={{width:700, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/151.png" style={{width:1000, height:'auto'}}/></div>
 
-Please click "upload" to flash the firmware on to XIAO
+After that, go to **Tools** -> **Board** -> **XIAO ESP32C6** and **Tools** -> **Port** -> **Select the port your board is connected to**. Then click **Upload** to upload the code.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/e2.png" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/152.png" style={{width:1000, height:'auto'}}/></div>
 
-You should see the ePaper display refreahing the demo image as shown below:
+Now you will see the feedback in your epaper screen! Following are the results of Helloworld examples.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/8.png" style={{width:500, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/153.jpg" style={{width:600, height:'auto'}}/></div>
+
+
+:::caution
+If you are using a 1.54-inch or 2.9-inch e-ink screen, due to their driver chips, flickering may occur when using dynamic effects such as clocks. Please be assured this is not a program issue. However, it is not recommended to run dynamic effect examples for extended periods to avoid reducing the screen's lifespan.
+
+If you are using 5.83 and 7.5-inch screens, they have different chips, so they won't have the flickering phenomenon.
+:::
 
 ## Resources
 
