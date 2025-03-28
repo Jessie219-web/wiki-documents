@@ -6139,18 +6139,6 @@ const sidebars = {
       ],
     },
 
-
-
-
-
-
-
-
-
-
-
-    
-
     {
       type: 'doc',
       id: 'zh-CN/Edge/Quantum_Development_Board/CN_Quantum-Mini-Linux-Development-Kit',
@@ -6651,6 +6639,384 @@ const sidebars = {
       ]
     },
     "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_FAQ",
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      type: 'doc',
+      id: 'Spanish/Edge/Raspberry_Pi_Devices/es_RpiDevices',
+      label: 'Raspberry Pi Devices',
+      className: 'sideboard_calss',
+    },
+    {
+      "type": "category",
+      "label": "Edge AI Computer",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "reComputer-R2000",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_R2000/es_reComputer_R2000_getting_start"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "HMI",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "reTerminal",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            {
+              "type": "category",
+              "label": "Application",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                {
+                  "type": "category",
+                  "label": "Home Assistant",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reterminal_frigate",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reTerminal_Home_Assistant"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Embedded ML",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_MediaPipe",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_TFLite",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_Edgeimpulse",                  ]
+                },
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Edge Controller",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "EdgeBox-RPi-200",
+          "collapsed": true,
+          "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edge_Box_intro",
+          },
+          "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox_rpi_200_Introduction",
+            {
+              "type": "category",
+              "label": "Applications",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                {
+                  "type": "category",
+                  "label": "Industrial Edge",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "N3uron",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/N3uron/es_Edgebox-rpi-200-n3uron",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/N3uron/es_Edgebox-rpi-200-n3uron-aws",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/N3uron/es_Edgebox-rpi-200-n3uron-modbus-mqtt",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/N3uron/es_Edgebox-rpi-200-n3uron-bacnet",
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Node Red",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Node_Red/es_Edge_Box_rpi_200_Node_red_getting_started",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Node_Red/es_Edge_Box_rpi_200_Node_red_mqtt",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Node_Red/es_Edge_Box_rpi_200_Node_red_Modbus_tcp",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Node_Red/es_Edge_Box_rpi_200_Node_red_Modbus_rtu",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Node_Red/es_Edge_Box_rpi_200_Node_red_Bacnet_tcp",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Node_Red/es_Edge_Box_rpi_200_Node_red_influxdb",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Node_Red/es_Edge_box_rpi_200_grafana",
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Ignition Edge",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Ignition_Edge/es_Edgebox-rpi-200-ignition-edge"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Codesys",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox-rpi-200-codesys",
+                      ]
+                    },
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Cloud Solutions",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "AWS IoT Core",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox-rpi-200-AWS",
+                      ]
+                    },
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Hardware Guide",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Hardware/es_Edgebox-rpi-200-with-LoRaWAN-modules",
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/Hardware/es_Edgebox-rpi-200-boot-from-external-media",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Fleet Management",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox-rpi-200-balena-OS-setup",
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edge_Box_rpi_200_NEQTO_Engine_for_Linux",
+                  ]
+                },  
+              ]
+            },
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reComputer-R1000",
+          "collapsed": true,
+          "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_intro",
+          },
+          "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_pcn",
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r",
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_flash_os",
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_assembly_guide",
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_warranty",
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_how_to_use_rs485_modbus",
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_recomputer_r1000_use_bacnet_mstp",
+            "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_reComputer_R1000_FAQ",
+            {
+              "type": "category",
+              "label": "Applications",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                {
+                  "type": "category",
+                  "label": "Industrial Edge",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "NodeRED",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer-r1000-nodered-getting-start",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer-r1000-with-nodered-mqtt",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer_r1000_nodered_modbustcp",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer_r1000_with_node_red_and_bacnet",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer_r1000_nodered_opcua_server",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer_r1000_nodered_s7",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer-r1000-nodered-influxdb",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Node-RED/es_recomputer_r1000-grafana",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/flowfuse/es_recomputer_r1000_flowfuse_getting_start",
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "FUXA",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/fuxa/es_recomputer_r1000_with_fuxa_use_modbus",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/fuxa/es_recomputer_r1000_with_fuxa_use_mqtt",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/fuxa/es_recomputer_r1000_with_fuxa_use_opcua",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/fuxa/es_recomputer_r1000_with_fuxa_use_webapi",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/fuxa/es_recomputer_r1000_with_fuxa_to_achieve_SCADA",
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "FIN",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Fin/es_recomputer_r1000_install_fin",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Fin/es_recomputer_r1000_with_fin_use_modbus",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Fin/es_recomputer_r1000_with-_fin_use_logic_to_alarm",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Fin/es_recomputer_r1000_with_fin_top_level_graphic",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Fin/es_recomputer_r1000_with_fin_create_site_graphic",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Fin/es_recomputer_r1000_fin_create_f_graphic",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Fin/es_recomputer_r1000_with_fin_create_equip_graphic",                      
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "N3uron",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/n3uron/es_recomputer_r1000_n3uron_getting_started",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/n3uron/es_recomputer_r1000_n3uron_aws",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/n3uron/es_recomputer_r1000_n3uron_bacnet",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/n3uron/es_recomputer_r1000_n3uron_modbus_mqtt",
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "CODESYS",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/CODESYS/es_recomputer_r1000_install_codesys",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/CODESYS/es_recomputer_r1000_with_codesys_use_modbus_rtu"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "ThingsBoard",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/tb/es_recomputer_r1000_thingsboard_ce",
+                        "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/tb/es_recomputer_r1000_thingsboard_dashboard"
+                      ]
+                    },
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Fleet Management",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/balenaOS/es_recomputer_r1000_balena",
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/balenaOS/es_recomputer_r1000_build_seeed_balena_image"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Home Assistant",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Home-Assistant/es_recomputer-r1000-home-assistant",
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/Home-Assistant/es_recomputer-r1000-modbus-home-assistant"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Cloud Solutions",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/Applications/AWS/es_recomputer_r1000_aws"
+                  ]
+                },
+              ]
+            },
+          ]
+        }
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Raspberry Pi with AI",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_convert_model_to_edge_tpu_tflite_format_for_google_coral",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_install_m.2_coral_to_rpi5",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_pose_based_light_control_with_nodered_and_rpi_with_aikit",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_clip_application_on_rpi_with_ai_kit",
+        "Spanish/Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/es_frigate_nvr_with_raspberrypi_5",
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
