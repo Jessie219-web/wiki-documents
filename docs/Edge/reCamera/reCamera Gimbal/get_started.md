@@ -25,6 +25,12 @@ The reCamera gimbal 2002 series is the first open-source camera control system, 
 The 12VDC power adapter is not included in the set. You need to select the appropriate power adapter from our bazaar selection screen or purchase one yourself.
 :::
 
+## Prerequisites
+
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_prerequisites.png" /></div>
+
+
+
 ## Unboxing
 
 Start by unpacking your reCamera Gimbal. Inside the box, you should find:
