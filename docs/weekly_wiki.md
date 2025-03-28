@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 02/17/2025
+  date: 03/24/2025
   author: Frank
 ---
 
@@ -17,61 +17,56 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is February 17th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is March 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Deploy DeepSeek on reComputer Jetson with MLC](https://wiki.seeedstudio.com/deploy_deepseek_on_jetson_with_mlc/)
+### [RNDIS on 4G LTE Raspberry pi HAT Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_rndis/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:800, height:'auto'}}/></div>
 
-This wiki provides a step-by-step guide to deploying [DeepSeek](https://www.deepseek.com/) on reComputer Jetson devices with [MLC](https://llm.mlc.ai/) for efficient AI inference on the edge.
+This document explains how to configure RNDIS on Windows to connect the **Raspberry Pi 4G LTE HAT** via USB for network and internet access. It covers driver installation, RNDIS mode setup, and connection verification, making it ideal for IIoT and remote communication applications.
 
-### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/os_upgrade_guideline/)
+### [4G Raspberry Pi HAT - MBIM Mode Setup on Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_mbim/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/image-4.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Raspberry-Pi-4G-LTE-CAT4-HAT.webp" style={{width:800, height:'auto'}}/></div>
 
-This document outlines the reCamera OS upgrade and rollback process. Users can update via the web interface or command line, supporting OTA updates, specific version installations, or local package upgrades. It also includes commands for restoring factory settings and provides contact details for technical support.
+The **Quectel 4G Raspberry Pi HAT** supports internet connectivity on Windows by utilizing MBIM (Mobile Broadband Interface Model) mode. This mode enables Windows to recognize the 4G module as a native cellular modem, facilitating a stable and driver-supported network connection.
+This guide will walk you through the necessary steps to configure your Quectel module in MBIM mode and connect it to the internet on Windows 10/11 systems.
+
+### [4G Raspberry Pi HAT - QMI Mode Setup on Raspberry Pi OS](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_qmi/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/ping.PNG" style={{width:800, height:'auto'}}/></div>
+
+This guide explains how to configure internet access on a Raspberry Pi using a 4G HAT equipped with a Quectel EG25-G module. By following this guide, you will learn how to set up the module in QMI mode, compile and use the quectel-CM dial-up tool, and establish a stable 4G internet connection on your Raspberry Pi. This method is ideal for applications requiring mobile internet access, such as IoT deployments, remote monitoring, and edge computing.
+
+### [Updating Jetson Linux with Image-Based Over-the-Air Update](https://wiki.seeedstudio.com/updating_jetpack_with_ota/)
+
+This wiki will use the [reComputer J3010](https://www.seeedstudio.com/reComputer-J3010-p-5589.html) as an example to demonstrate how to update Jetson linux from jetpack5.1.3 to jetpack6.0 with image-based over-the-air.
 
 ## Existing Wiki Updated
 
-### Flashing JP6.2 on A603 and A608 Boards for Jetson Update
+### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
 
-We have updated the flashing procedure for flashing JP6.2 on the [A603](https://wiki.seeedstudio.com/reComputer_A603_Flash_System/#flash-to-jetson) and [A608](https://wiki.seeedstudio.com/reComputer_A608_Flash_System/#enter-force-recovery-mode) carrier boards.
+We have added relevant [resource files](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/#resources) to the Seeed Studio IoT Button.
 
-### [Single Channel LoRaWAN Gateway - SenseCAP Indicator](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/)
+### [Getting Started with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_getting_started/)
 
-We have added the [SenseCAP Indicator Connect to ChirpStack example](https://wiki.seeedstudio.com/SenseCAP_Indicator_Single_Channel_Gateway/#connect-to-chirpstack).
+We have provided the [PCB & SCH files](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#resources) for XIAO MG24 and XIAO MG24 Sense.
 
-### [Getting started with 60GHz mmWave Fall Detection Sensor Kit with XIAO ESP32C6 (MR60FDA2)](https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/)
+### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/recamera_os_version_control/)
 
-We have added the [Module firmware upgrade example](https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/#module-firmware-upgrade).
-
-### [Voice Assistant System for Home Assitant](https://wiki.seeedstudio.com/respeaker_lite_ha/)
-
-We have added the [XMOS Firmware update example](https://wiki.seeedstudio.com/respeaker_lite_ha/#xmos-firmware-update) and optimized the [Add XIAO ESP32S3 to ESPHome example](https://wiki.seeedstudio.com/respeaker_lite_ha/#add-xiao-esp32s3-to-esphome).
-
-### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
-
-We have added the [OTA Upgrade from 0.1.3 to latest version example](https://wiki.seeedstudio.com/recamera_getting_started/#ota-upgrade-from-013-to-latest-version).
-
-### [Getting Started with ReSpeaker 2-Mics Pi HAT v2 on Raspberry Pi](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/)
-
-We have fixed and optimized the [Setup the driver on Raspberry Pi example](https://wiki.seeedstudio.com/respeaker_2_mics_pi_hat_raspberry_v2/#2-setup-the-driver-on-raspberry-pi).
-
-### [Getting Started with Seeed Studio XIAO-RS485-Expansion-Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/)
-
-We have added the [schematic files for Seeed Studio XIAO RS485 Expansion Board](https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/#resources).
+We have updated the [relevant operation examples](https://wiki.seeedstudio.com/recamera_os_version_control/#for-os-version-013-and-below) for OS version 0.1.3 and below.
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
+<!-- ### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
 
 <div style={{textAlign:'center'}}>
   <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -173,5 +168,10 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
 - [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
 - [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
+- [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
+- [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
+- [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
+- [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
+- [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 
 </details>

@@ -115,7 +115,7 @@ last_update:
 	    <th>RAM</th>
 	    <td align="center">32 KB SRAM</td>
 	    <td align="center">264 KB SRAM</td>
-        <td align="center">520kB SRAM<br/>2MB PSRAM</td>
+        <td align="center">520kB SRAM<br/>2MB Flash</td>
 	    <td align="center">256 KB RAM</td>
 	    <td align="center">256 KB RAM</td>
         <td align="center">400 KB SRAM</td>
@@ -626,6 +626,30 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 - **[DXF]** [Seeed Studio XIAO RP2350 Dimension in DXF](https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO-RP2350-dimension-v1.0.dxf)
 
 - **[STEP]** [Seeed Studio XIAO RP2350 3D STEP File](https://grabcad.com/library/seeed-studio-xiao-rp2350-1)
+
+### Seeed Studio XIAO MG24 Sense Open-Source Materials
+
+- **[PDF]** [Seeed Studio XIAO MG24 Sense datasheet](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24-group-datasheet.PDF)
+
+- **[PDF]** [Seeed Studio XIAO MG24 Sense Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MGM240S_KICAD_Prj.pdf)
+
+- **[PDF]** [Seeed Studio XIAO MG24 Sense Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
+
+- **[Kicad]** [Seeed Studio XIAO MG24 Sense FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
+- **[ZIP]** [Seeed Studio XIAO MG24 Sense PCB&SCH](https://files.seeedstudio.com/wiki/XIAO_MG24/XIAO_MG24_Sense_v1.0_SCH&PCB.zip)
+
+### Seeed Studio XIAO MG24 Open-Source Materials
+
+- **[PDF]** [Seeed Studio XIAO MG24 datasheet](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24-group-datasheet.PDF)
+
+- **[PDF]** [Seeed Studio XIAO MG24 Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MGM240S_KICAD_Prj.pdf)
+
+- **[PDF]** [Seeed Studio XIAO MG24 Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
+
+- **[Kicad]** [Seeed Studio XIAO MG24 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
+- **[ZIP]** [Seeed Studio XIAO MG24 PCB&SCH](https://files.seeedstudio.com/wiki/XIAO_MG24/XIAO_MG24_v1.0_SCH&PCB.zip)
 
 ## Tech Support & Product Discussion
 

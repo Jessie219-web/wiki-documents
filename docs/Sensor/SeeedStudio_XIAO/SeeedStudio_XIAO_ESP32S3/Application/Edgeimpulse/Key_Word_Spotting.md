@@ -27,6 +27,12 @@ To carry out this project successfully, you need to prepare the following hardwa
 - microSD card reader
 - USB-C data cable
 
+:::info
+
+Use arduino-esp32 version 2.x as it's not compatible with 3.x.
+
+:::
+
 Insert the microSD card into the microSD card slot. Please note the direction of insertion, the side with the gold finger should face inward.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/66.jpg" style={{width:500, height:'auto'}}/></div>

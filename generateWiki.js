@@ -9,12 +9,15 @@ const docList = []
 const excludedPaths = [
   path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // weekly wiki 的历史目录
   path.join(docsDirectory, 'zh-CN'), // 排除中文文档的目录
+  path.join(docsDirectory, 'Spanish'), // 排除西班牙语文档的目录
   path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
-  
 
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'USB_Timeout_during_Flashing.md'), // 排除指定文档
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Get_System_Log_of_reComputer_J30_and_J40.md'),
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'How_to_Upgrade_Software_Packages_for_Jetson.md'),
+
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Mini_J401', 'J401_Mini_carrierboard_Hardware_Interfaces_Usage.md'),// 排除指定文档
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Mini_J401', 'reComputer_Mini_J4012_Flash_Jetpack.md'),
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Updating_Jetpack_with_OTA.md'),
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'reComputer_Jetson_Series', 'reComputer_Super', 'reComputer_Super_Getting_Started.md'),
+
 ];
 
 // 递归函数，用于遍历多层文件夹

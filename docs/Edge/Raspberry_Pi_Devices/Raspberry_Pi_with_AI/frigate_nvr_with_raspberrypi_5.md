@@ -1,5 +1,5 @@
 ---
-description: This wiki article provides a step-by-step guide on how to deploy Frigate NVR on Raspberry Pi 5 with Hailo 8 running yolov8n.
+description: This wiki article provides a step-by-step guide on how to deploy Frigate NVR on Raspberry Pi 5 with Hailo 8.
 title: Frigate NVR with Raspberry Pi 5
 keywords:
   - Edge
@@ -17,7 +17,7 @@ no_comments: false # for Disqus
 
 ## Introduction
 
-**Frigate NVR** is an open-source network video recorder designed for real-time object detection with AI models. Paired with the **Raspberry Pi 5**, it enables efficient video surveillance at the edge, powered by YOLOv8n. This guide will walk you through the installation and configuration process for an optimal setup.
+**Frigate NVR** is an open-source network video recorder designed for real-time object detection with AI models. Paired with the **Raspberry Pi 5**, it enables efficient video surveillance at the edge. This guide will walk you through the installation and configuration process for an optimal setup.
 
 ## Prepare Hardware
 
@@ -84,9 +84,9 @@ $ sudo apt install dkms
 Get Hailo PCIe Driver from [GitHub](https://github.com/hailo-ai/hailort-drivers).
 
 ```bash
-$ git clone --depth 1 https://github.com/hailo-ai/hailort-drivers
-$ git checkout 24e7ff2fb58fab7029024c1a1d3f2d1914f56d7b
+$ git clone https://github.com/hailo-ai/hailort-drivers
 $ cd hailort-drivers/linux/pcie
+$ git checkout 24e7ff2fb58fab7029024c1a1d3f2d1914f56d7b
 ```
 
 Then, install the Hailo PCIe driver.
@@ -187,16 +187,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
                 - 5000:5000
     ```
 
-3. **Download Model:**
-
-    Go to [Public Pre-Trained Models](https://github.com/hailo-ai/hailo_model_zoo/blob/master/docs/public_models/HAILO8/HAILO8_object_detection.rst) to download the model you want to use. Here is the example of using YOLOv8n model: `yolov8n`.
-
-    ```bash
-    $ mkdir -p ./config/model_cache
-    $ sudo wget https://hailo-model-zoo.s3.eu-west-2.amazonaws.com/ModelZoo/Compiled/v2.14.0/hailo8/yolov8n.hef -O ./config/model_cache/yolov8n.hef
-    ```
-
-4. **Edit Frigate Config:**
+3. **Edit Frigate Config:**
 
     Here is an example of the `config/config.yml` file, which is for the Frigate application:
 
@@ -212,7 +203,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
     cameras:
         home:
             ffmpeg:
-            inputs:
+              inputs:
                 - path: rtsp://admin:passw0rd@192.168.98.11:554/cam/realmonitor?channel=1&subtype=0
                   roles:
                     - record
@@ -230,18 +221,19 @@ In this part, we assume you have your camera set up and ready to stream with RTS
         hailo8l:
             type: hailo8l
             device: PCIe
-            model_path: /config/model_cache/yolov8n.hef
 
     model:
-        width: 640
-        height: 640
+        width: 300
+        height: 300
         input_tensor: nhwc
         input_pixel_format: bgr
+        model_type: ssd
+        path: /config/model_cache/h8l_cache/ssd_mobilenet_v1.hef
 
     version: 0.15-1
     ```
 
-5. **Start Docker Instance:**
+4. **Start Docker Instance:**
 
     ```bash
     $ docker compose -f frigate.yml up -d

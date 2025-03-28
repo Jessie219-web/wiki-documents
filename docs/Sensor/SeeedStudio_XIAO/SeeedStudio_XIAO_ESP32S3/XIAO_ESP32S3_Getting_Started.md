@@ -6,6 +6,8 @@ keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /xiao_esp32s3_getting_started
+sku: 113991114, 113991115, 102010671
+type: gettingstarted
 last_update:
   date: 08/14/2024
   author: Spencer
