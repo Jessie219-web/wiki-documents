@@ -3519,6 +3519,14 @@ const sidebars = {
                 },
                 {
                   type: 'category',
+                  label: 'J401-Mini Carrier Board',
+                  items: [
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/reComputer_Mini_J4012_Flash_Jetpack',
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/J401_Mini_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
                   label: 'J501 Carrier Board',
                   items: [
                     'Edge/NVIDIA_Jetson/Carrier_Boards/J501/reServer_Industrial_J501_Getting_Started',
