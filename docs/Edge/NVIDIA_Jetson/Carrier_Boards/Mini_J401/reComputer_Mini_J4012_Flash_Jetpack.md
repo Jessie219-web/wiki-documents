@@ -3,8 +3,8 @@ description: This article explains how to flash JetPack 6.0 on the J401-Mini Car
 title: Flash Jetpack
 keywords:
 - reComputer Mini
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/recomputer-mini-1.webp
-slug: /recomputer_mini_j401_getting_started
+image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /recomputer_mini_j4012_flash_jetpack
 last_update:
   date: 03/28/2025
   author: Dayu
