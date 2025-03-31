@@ -242,25 +242,25 @@ Top View             |  Bottom View
     <td >SENSOR</td>
     <td class="dbon">OV5647</td>
     <td class="dbon">CMOS SIZE</td>
-    <td class="dbon">1/4 inch</td>
+    <td class="dbon">1/4"</td>
 </tr>
 <tr >
     <td class="dbon">PIXELS</td>
     <td class="dbon">5MP</td>
     <td class="dbon">APERTURE</td>
-    <td class="dbon">F2.4</td>
+    <td class="dbon">F2.8</td>
 </tr>
 <tr >
     <td >FOCAL LENGTL</td>
-    <td class="dbon">3.89mm</td>
+    <td class="dbon">3.46mm</td>
     <td class="dbon">FIELD OF VIEW</td>
-    <td >72.9°</td>
+    <td >65°</td>
 </tr>
 <tr >
     <td >DISTORTION</td>
-    <td >&lt;1.5%</td>
-    <td >DEPTH OF FIELD</td>
-    <td >20cm ~∞</td>
+    <td >&lt;1%</td>
+    <td >Image</td>
+    <td >2592 x 1944(still picture)</td>
 </tr>
 <tr >
     <td >IMAGE</td>
@@ -293,7 +293,7 @@ Top View             |  Bottom View
 ## Hardware Interface
 
 - [Light](#jump2)
-- [Mic && Speaker](#jump3)
+- [Mic & Speaker](#jump3)
 - [WIFI](#jump4)
 - [SD Card](#jump5)
 - [Uart (Debug)](#jump6)
@@ -303,6 +303,14 @@ Top View             |  Bottom View
 ### <span id="jump2">Light</span>
 
 There are 3 indicators on the recamera, **red and blue** light are programmable indicators, and the **green** indicator is the power indicator which is not programmable. **Red** is the status indicator of the CPU and **blue** is the reading status indicator of the system emmc.
+
+**Light Indicators Status**:
+
+| LED(color) | Status | Statement |
+| ---- | ---- | ---- |
+| LED1 - Green | ON | Power On |
+| LED2 - Red | Flashing | CPU Working(user define) |
+| LED3 - Blue | Flashing | eMMC Reading/Writing |
 
 Example 1: Use linux command change the **red led** brightness to zero
 ``` bash
@@ -321,7 +329,7 @@ echo 1 > /sys/devices/platform/leds/leds/white/brightness //light on
 echo 0 > /sys/devices/platform/leds/leds/white/brightness //light off
 ```
 
-### <span id="jump3">Mic && Speaker</span>
+### <span id="jump3">Mic & Speaker</span>
 
 The recamera has a microphone and a speaker. You can invoke the microphone and speaker by following the command. The recamera can play audio files in **wav** format.
 
@@ -333,7 +341,7 @@ sudo arecord -D hw:0,0 -r 16000 -f S16_LE -c 1 -d 5 /home/recamera/test.wav //Re
 sudo aplay -D hw:1,0 /home/recamera/test.wav //Playing audio
 ```
 
-## <span id="jump4">Wi-Fi</span>
+### <span id="jump4">Wi-Fi</span>
 
 2002w version of reCamera has the Wi-Fi module in hardware.  The Wi-Fi is AP+STA dual mode, which can be used to configure the device network or configure the device in AP mode.
 
@@ -366,7 +374,7 @@ wpa_cli status                                  # Checking connection status
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-4.png" /></div>
 
-## <span id="jump5">SD Card</span>
+### <span id="jump5">SD Card</span>
 
 The SD card slot can expand the storage space of the recamera. After inserting the SD card, you can find the existence of your SD by using the `lsblk` command.
 
@@ -389,7 +397,7 @@ Check the mount result by `lsblk`
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-6.png" /></div>
 
-## <span id="jump6">Uart (Debug)</span>
+### <span id="jump6">Uart (Debug)</span>
 
 The base circuit board of the recamera has three contacts tx,rx, and gnd, which serve as the debug serial port of the recamera.
 
@@ -401,7 +409,7 @@ The device has a serial port baud rate of 115200 and can log into the recamera s
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-9.png" /></div>
 
-## <span id="jump7">User Button</span>
+### <span id="jump7">User Button</span>
 
 The reCamera's usr button can be customized by the user.
 
