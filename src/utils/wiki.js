@@ -1,7 +1,7 @@
 const docList = [
   [
     {
-      "path": "/recomputer_mini_j4012_flash_jetpack",
+      "path": "/recomputer_mini_j401_getting_started",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/recomputer-mini-1.webp",
       "title": "Flash JetPack to J401-Mini Carrier Board",
       "date": "03/28/2025"

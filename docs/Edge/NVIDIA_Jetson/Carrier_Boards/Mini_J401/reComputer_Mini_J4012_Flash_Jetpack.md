@@ -4,7 +4,7 @@ title: Flash Jetpack
 keywords:
 - reComputer Mini
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/recomputer-mini-1.webp
-slug: /recomputer_mini_j4012_flash_jetpack
+slug: /recomputer_mini_j401_getting_started
 last_update:
   date: 03/28/2025
   author: Dayu

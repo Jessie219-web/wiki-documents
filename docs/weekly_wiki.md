@@ -39,7 +39,7 @@ The 7.5 inch E-Ink display is a game-changer for Arduino users. It seamlessly in
 
 This wiki explains how to deploy the [DeepSeek](https://github.com/deepseek-ai/DeepSeek-LLM) model on Multiple Raspberry Pi AI Boxs with [distributed-llama](https://github.com/b4rtaz/distributed-llama).In this wiki, I used a Raspberry Pi with 8GB of RAM as the root node and three Raspberry Pis with 4GB of RAM** as worker nodes to run the DeepSeek 8B model. The inference speed reached 6.06 tokens per second.
 
-### [Flash JetPack to J401-Mini Carrier Board](https://wiki.seeedstudio.com/recomputer_mini_j4012_flash_jetpack/)
+### [Flash JetPack to J401-Mini Carrier Board](https://wiki.seeedstudio.com/recomputer_mini_j401_getting_started/)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/recomputer-mini-1.jpg" style={{width:800, height:'auto'}}/></div>
 
