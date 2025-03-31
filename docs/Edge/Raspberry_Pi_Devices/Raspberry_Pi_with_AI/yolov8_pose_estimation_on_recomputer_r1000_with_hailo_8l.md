@@ -18,7 +18,7 @@ no_comments: false # for Disqus
 
 ## Introduction
 
-[YOLOv8](https://github.com/ultralytics/ultralytics) (You Only Look Once version 8) is the popular most YOLO series of real-time pose estimation models. It builds upon the strengths of its predecessors by introducing several advancements in speed, accuracy, and flexibility. The [Raspberry-pi-AI-kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) is used to accelerate inference speed, featuring a 13 tera-operations per second (TOPS) neural network inference accelerator built around the Hailo-8L chip.
+[YOLOv8](https://github.com/ultralytics/ultralytics) (You Only Look Once version 8) is the popular most YOLO series of real-time pose estimation models. It builds upon the strengths of its predecessors by introducing several advancements in speed, accuracy, and flexibility. The [Raspberry-pi-AI-kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html) is used to accelerate inference speed, featuring a 13 TOPS neural network inference accelerator built around the Hailo-8L chip.
 
 This wiki demonstrates pose estimation using YOLOv8 on [reComputer R1000](https://www.seeedstudio.com/reComputer-R1000-Series-Optional-Accessories.html) with and without Raspberry-pi-AI-kit acceleration. The Raspberry Pi AI Kit enhances the performance of the Raspberry Pi and unlock its potential in artificial intelligence and machine learning applications, like smart retail, smart traffic and more. Although the Raspberry AI Kit is designed for Raspberry Pi 5, we have experimented it on our CM4-powered edge gateway. Excited about turning our edge device into an intelligent IoT gateway!
 
@@ -66,7 +66,7 @@ import TabItem from '@theme/TabItem';
 
 #### Updata system
 
-Open terminal on the reCompuer R1000, and input command as follows to update your system.
+Open terminal on the reComputer R1000, and input command as follows to update your system.
 
 ```
 sudo apt update
@@ -74,7 +74,7 @@ sudo apt full-upgrade
 ```
 #### Set pcie to gen3
 
-Open terminal on the reCompuer R1000, and input command as follows to config reCompuer R1000.
+Open terminal on the reComputer R1000, and input command as follows to config reComputer R1000.
 
 ```
 sudo raspi-config
@@ -100,7 +100,7 @@ Click "Finish" to exit
 
 #### Install Hailo Software
 
-Open terminal on the reCompuer R1000, and input command as follows to install Hailo software.
+Open terminal on the reComputer R1000, and input command as follows to install Hailo software.
 
 ```
 sudo apt install hailo-all
@@ -108,7 +108,7 @@ sudo reboot
 ```
 #### Check Software and Hardware
 
-Open terminal on the reCompuer R1000, and input command as follows to check if hailo-all have been installed.
+Open terminal on the reComputer R1000, and input command as follows to check if hailo-all have been installed.
 
 ```
 hailortcli fw-control identify
@@ -119,7 +119,7 @@ The right result show as bellow:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/YOLOV8/check_software.png" alt="pir" width={1000} height="auto"/></p>
 
 
-Open terminal on the reCompuer R1000, and input command as follows to check if hailo-8L have been connected.
+Open terminal on the reComputer R1000, and input command as follows to check if hailo-8L have been connected.
 
 ```
 lspci | grep Hailo
@@ -131,7 +131,7 @@ The right result show as bellow:
 
 ### Run YOLOv8
 
-Open terminal on the reCompuer R1000, and input command as follows to run YOLOv8.
+Open terminal on the reComputer R1000, and input command as follows to run YOLOv8.
 
 ```
 git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L.git
@@ -147,7 +147,7 @@ bash ./run.sh pose-estimation-hailo
 
 ### Run YOLOv8
 
-Open terminal on the reCompuer R1000, and input command as follows to run YOLOv8.
+Open terminal on the reComputer R1000, and input command as follows to run YOLOv8.
 
 ```
 git clone https://github.com/Seeed-Projects/Benchmarking-YOLOv8-on-Raspberry-PI-reComputer-r1000-and-AIkit-Hailo-8L.git

@@ -86,7 +86,7 @@ sudo rpi-eeprom-update -a
 The output is like below:
 
 ```
-recomputer@reComputer-R100x:~ $ sudo rpi-eeprom-update -a
+recomputer@reComputer-R110x:~ $ sudo rpi-eeprom-update -a
 BOOTLOADER: up to date
    CURRENT: Tue Feb 11 05:00:13 PM UTC 2025 (1739293213)
     LATEST: Tue Feb 11 05:00:13 PM UTC 2025 (1739293213)
@@ -504,7 +504,7 @@ reComputer R1100 comes with the necessary drivers pre-installed out-of-the-box s
 
 :::tip
 
-**For install 32-bit OS driver, Please carefully follow the steps below:**
+**Install 32-bit OS driver, Please carefully follow the steps below:**
 
 The Operating System that pre-installed on reComputer R1100 is 64-bit, if you wish to install 32-bit OS please use the following method to install the DTS drivers.
 
@@ -533,20 +533,20 @@ cd seeed-linux-dtoverlays
 - **Step 3.** Type the following to install the drivers
 
 ```sh
-sudo ./scripts/reTerminal.sh --device reComputer-R100x
+sudo ./scripts/reTerminal.sh --device reComputer-R110x
 ```
 
 <!-- You will see the following output if you have successfully installed the drivers
 
 <p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/ReTerminal/driver-success.png" alt="pir" width="1000" height="auto"/></p> -->
 
-- **Step 4.** Reboot the reComputer R1000
+- **Step 4.** Reboot the reComputer R1100
 
 ```sh
 sudo reboot
 ```
 
-This process will ensure that your drivers are up to date before updating the firmware.
+This process will ensure that your drivers are update before updating the firmware.
 
 
 ## Tech Support & Product Discussion
