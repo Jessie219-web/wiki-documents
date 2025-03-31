@@ -19,18 +19,18 @@ mmWave Human Detection Sensor Kit powered by Seeed Studio XIAO ESP32C3, it suppo
 
 I am using Raspberry Pi 4B as server to run HomeAssistant, using mmWave Human Detection Sensor Kit as the hardware here, along with multiple Grove Sensors.
 
-<table align="center" style={{ backgroundColor: 'white' }}>
+<table align="center">
   <tbody><tr>
       <th>mmWave Human Detection Sensor Kit</th>
       <th>Raspberry Pi 4B</th>
     </tr>
     <tr>
-      <td><div align="center" style={{ backgroundColor: 'white' }}><img src="https://files.seeedstudio.com/wiki/mmwave_kit_plus_grove/mmwavekit.png" style={{width:200, height:'auto'}}/></div></td>
-      <td><div align="center" style={{ backgroundColor: 'white' }}><img src="https://files.seeedstudio.com/wiki/mmwave_kit_plus_grove/pi.png" style={{width:200, height:'auto'}}/></div></td>
+      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/mmwave_kit_plus_grove/mmwavekit.png" style={{width:300, height:'auto'}}/></div></td>
+      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/mmwave_kit_plus_grove/pi.png" style={{width:350, height:'auto'}}/></div></td>
     </tr>
     <tr>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html">
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/mmWave-Human-Detection-Sensor-Kit-p-5773.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -40,7 +40,8 @@ I am using Raspberry Pi 4B as server to run HomeAssistant, using mmWave Human De
             </a>
         </div></td>
     </tr>
-  </tbody></table>
+  </tbody>
+</table>
 
 **Grove Sensors**
 
