@@ -74,7 +74,7 @@ sudo nice -n -20 ./dllama worker --port 9998 --nthreads 4
 
 ### Run on your root node
 
-#### Creat and activate python vitural environment
+#### Create and activate python virtual environment
 
 ```
 cd distributed-llama
@@ -95,7 +95,6 @@ pip install transformers
 #### Install deepseek 8b q40 model
 
 ```
-sudo mkdir model && cd model
 git lfs install
 git clone https://huggingface.co/b4rtaz/Llama-3_1-8B-Q40-Instruct-Distributed-Llama
 ```
@@ -106,7 +105,7 @@ git clone https://huggingface.co/b4rtaz/Llama-3_1-8B-Q40-Instruct-Distributed-Ll
 
 ```
 cd ..
-./dllama chat --model ./model/dllama_model_deepseek-r1-distill-llama-8b_q40.m --tokenizer ./model/dllama_tokenizer_deepseek-r1-distill-llama-8b.t  --buffer-float-type q80 --prompt "What is 5 plus 9 minus 3?" --nthreads 4 --max-seq-len 2048 --workers 10.0.0.139:9998 10.0.0.175:9998 10.0.0.124:9998  --steps 256
+./dllama chat --model ./Llama-3_1-8B-Q40-Instruct-Distributed-Llama/dllama_model_deepseek-r1-distill-llama-8b_q40.m --tokenizer ./Llama-3_1-8B-Q40-Instruct-Distributed-Llama/dllama_tokenizer_deepseek-r1-distill-llama-8b.t  --buffer-float-type q80 --prompt "What is 5 plus 9 minus 3?" --nthreads 4 --max-seq-len 2048 --workers 10.0.0.139:9998 10.0.0.175:9998 10.0.0.124:9998  --steps 256
 
 ```
 
