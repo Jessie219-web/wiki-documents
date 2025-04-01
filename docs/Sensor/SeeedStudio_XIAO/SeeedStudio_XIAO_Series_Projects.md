@@ -448,6 +448,11 @@ We can't do it without the love, contribution that we get from the community, an
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_esp32s3_zephyr_rtos/">XIAO ESP32S3 (Sense)</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://docs.zephyrproject.org/latest/boards/seeed/xiao_esp32c6/doc/index.html">XIAO ESP32C6</a></th>		
 		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://docs.zephyrproject.org/latest/boards/seeed/xiao_ra4m1/doc/index.html">XIAO RA4M1</a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>	
+		</tr>
 	</table>
 </div>
 
