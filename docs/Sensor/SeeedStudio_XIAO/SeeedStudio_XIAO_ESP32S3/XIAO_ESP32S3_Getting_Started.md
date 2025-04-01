@@ -215,6 +215,7 @@ The B2B connector of XIAO ESP32S3 Plus is compatible with [Wio-SX1262 extension 
 
 </Tabs>
 
+### Power Pins
 - 5V - This is 5v out from the USB port. You can also use this as a voltage input but you must have some sort of diode (schottky, signal, power) between your external power source and this pin with anode to battery, cathode to 5V pin.
 - 3V3 - This is the regulated output from the onboard regulator. You can draw 700mA
 - GND - Power/data/signal ground
@@ -251,10 +252,6 @@ Regarding the timing requirements for the strapping pins, there are such paramet
 ## Getting Started
 
 To enable you to get started with the XIAO ESP32S3 faster, please read the hardware and software preparation below to prepare the XIAO.
-
-### Factory procedure
-
-We pre-program each new XIAO ESP32S3 and XIAO ESP32S3 Sense with a simple factory program.
 
 1. **XIAO ESP32S3**
 
