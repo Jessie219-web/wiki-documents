@@ -547,7 +547,7 @@ When the program runs abnormally, you can press `Reset` once during power-up to 
 
 When you press and hold the `BOOT` key while powering up and then press the `Reset` key once, you can also enter BootLoader mode.
 
-## Run your first Blink program
+### Run your first Blink program
 
 By now, I believe you have a good understanding of the features and hardware of the XIAO ESP32S3. Next, let's take the simplest Blink program as an example and perform the first blink for your XIAO ESP32S3!
 
