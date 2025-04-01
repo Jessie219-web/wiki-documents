@@ -299,25 +299,51 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
       <th>Jetpack Version</th>
       <th>Jetson Module</th>
       <th>Download Link</th>
+      <th>SHA256</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td rowSpan={4}>5.1.3</td>
+      <td>Orin Nx 16GB</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDMO2dBwiJIjw82nlOmxpgBpaKBuRk2a2coH0sIl2rlAA?e=xF3X5M" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>8C3E89F54198DA2AC6094B7602C8AA2<br />CE14A2AB2C75A885A915BF2D04EDF2BD4</td>
+    </tr>
+    <tr>
+      <td>Orin Nx 8GB</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcvT_P3RFzRGtzWfQQrofw0Bi8CptGEHqKDIUs6j7kI5Tw?e=VWh5Ww" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>B7C50661695C7E42360B6DCD8E5679B<br />E2807DC1B10C94FF12BB43B223FF3CFCB</td>
+    </tr>
+    <tr>
+      <td>Orin Nano 8GB</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERyWCoUKxZ5NkussOSSiX4AB0uKN8Mo_DhKsXhi1x_SGqA?e=bdhxnE" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>9A7EEE111D8175EF8286A276BE2668A<br />AA9DE1AB4E850D722351B5BE76C8610B1</td>
+    </tr>
+    <tr>
+      <td>Orin Nano 4GB</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUJePP-bzqJAoQQ2pLw_VaABpJfj4K4EbCja9QH-OYqWSg?e=vI1M1K" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>24A37D1EB26B65CEA9830961F0270AA<br />CCF4909C06D8CC1FCC91DB560C1B9060E</td>
+    </tr>
+    <tr>
       <td rowSpan={4}>6.0</td>
       <td>Orin Nx 16GB</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZojl6PUN4FFkshyt9a8kFEBUVVrQVO669V-pB_PNJvCuQ?e=YzFd1Z" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>C579FF60F6F140E43C592F784EA5417<br />91DD8F7DDA49924F36EFBB63196FC1C35</td>
     </tr>
     <tr>
       <td>Orin Nx 8GB</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUNTXrMsDcJCnIN2RvmXg6EBBLY6PRZiegvUjqI_N2i0YQ?e=SXEXXz" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>3A96643CF7CF8D765FD7B1B43CA7BEE<br />AAD97AF6094E073CE392AF6E1BAD45B91</td>
     </tr>
     <tr>
       <td>Orin Nano 8GB</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EabRgwAjKaJFv11KtK2r06QB_fn91IFoC97qV0LGKGPyWQ?e=fy7LwO" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>C0D23150DE73F3E6D31203F7BA1B198<br />D26A7A67F109264D049B3E0F9EEE1EE7A</td>
     </tr>
     <tr>
       <td>Orin Nano 4GB</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EVGTsdS4n-RLhFxn6tx1NFgB4axESjVlifNXHaFzNAsmWw?e=1oNQeE" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>029F135F8A86E55892F1AD4C3049C9D<br />9908D4503C1BBEEAB324AB038A77B4027</td>
     </tr>
   </tbody>
 </table>
@@ -326,6 +352,13 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
 :::danger
 The Jetpack6 image file is approximately **16.7GB** in size and should take around 60 minutes to download. Please kindly wait for the download to complete.
 :::
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
 
 ### Enter Force Recovery Mode
 
