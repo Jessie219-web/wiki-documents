@@ -195,42 +195,141 @@ This power supply board provides dual functions of stable power delivery and ove
 #### Block Diagram
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/power_supply_block.png" /></div> 
 
-## Hardware Interfaces
+## Hardware Interface
 
-- [Light](#)
-- [Mic & Speaker](#)
-- [Wi-Fi](#)
-- [UART(Debug)](#)
-- [CAN](#)
-- [User Button](#)
-- [Reboot Button](#)
-- [IO](#)
-- [Motor](#)
+- [Light](#jump1)
+- [Mic & Speaker](#jump2)
+- [WIFI](#jump3)
+- [Button](#jump4)
+- [Motor](#jump5)
+- [CAN](#jump6)
 
+### <span id="jump1">Light</span>
+
+There are 3 indicators on the recamera, **red and blue** light are programmable indicators, and the **green** indicator is the power indicator which is not programmable. **Red** is the status indicator of the CPU and **blue** is the reading status indicator of the system emmc.
+
+**Light Indicators Status**:
+
+| LED(color) | Status | Statement |
+| ---- | ---- | ---- |
+| LED1 - Green | ON | Power On |
+| LED2 - Red | Flashing | CPU Working(user define) |
+| LED3 - Blue | Flashing | eMMC Reading/Writing |
+
+Example 1: Use linux command change the **red led** brightness to zero
+``` bash
+echo 0 | sudo tee /sys/class/leds/red/brightness
+```
+
+Example 2: completely turn **red light** off
+``` bash
+echo none | sudo tee /sys/class/leds/red/trigger
+```
+
+There are four **white** lights, which are the fill lights of the camera. The switch of the fill lights can be controlled by the following instructions.
+
+``` bash
+echo 1 > /sys/devices/platform/leds/leds/white/brightness //light on
+echo 0 > /sys/devices/platform/leds/leds/white/brightness //light off
+```
+
+### <span id="jump2">Mic & Speaker</span>
+
+The recamera has a microphone and a speaker. You can invoke the microphone and speaker by following the command. The recamera can play audio files in **wav** format.
+
+
+```bash
+sudo arecord -D hw:0,0 -r 16000 -f S16_LE -c 1 -d 5 /home/recamera/test.wav //Record five seconds of audio
+
+sudo aplay -D hw:1,0 /home/recamera/test.wav //Playing audio
+```
+
+Local mp3 audio files can be converted to wav files for playback in recamera by using [Convert audio online](https://www.aconvert.com/audio/).
+The default format of the player is: 16bit bitrate; The sampling rate is 16,000
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Convert_audio_online.png" /></div>
+
+### <span id="jump3">Wi-Fi</span>
+
+2002w version of reCamera has the Wi-Fi module in hardware.  The Wi-Fi is AP+STA dual mode, which can be used to configure the device network or configure the device in AP mode.
+
+The **SSID** of wifi in AP mode is: `reCamera_+ the last six bits of MAC`.
+
+The **Passwd** of wifi in AP mode is: `12345678`.
+
+The ssid and passwd of the WiFi_AP can be configured in the `/etc/hostapd_2g4.conf` file on the recamera system.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-2.png" /></div>
+
+The reCamera STA configuration file is in **/etc/wpa_supplicant.conf**, where you configure the Wi-Fi account and password to connect to.
+In STA mode, please connect to Wi-Fi in **5G** band.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-3.png" /></div>
+
+In the terminal, you can scan and connect to Wi-Fi with the following command:
+
+```bash
+wpa_cli -i wlan0 scan                           #Start a scan
+
+wpa_cli -i wlan0 scan_results                   #Returns wifi scan results
+
+wpa_cli add_network                             # Adding a new network,Returns a network ID
+wpa_cli set_network ID ssid "your_wifi_name"    # set network SSID
+wpa_cli set_network ID psk "your_wifi_password" # set network passwd
+wpa_cli enable_network ID                       # enable network and connect
+wpa_cli status                                  # Checking connection status
+```
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/image-4.png" /></div>
+
+### <span id="jump4">Button</span>
+
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Interface.png" /></div>
+
+#### User Button
+
+The **10 User Button** is located on the **reCamera Gimbal** Board-B401. If you would like to reset the device such as forgetting your device's passcode, you can long pressing the User button and then connecting the device to power. When the red light of the device is constantly on instead of blinking, release the User button.
+
+
+If you want to restore the firmware of your device to a specific version, please visit [os version control](https://wiki.seeedstudio.com/recamera_os_version_control).
+
+#### Reboot Button
+
+The **11 Reboot Button** is located on the **reCamera Gimbal** Board-B401. When the button is pressed, the system will reboot.
+
+### <span id="jump5">Motor</span>
+
+There is a Gimbal script in the reCamera Gimbal that can be used to debug and control the Gimbal's motors.
+To see the gimbal script in action, run the following command:
+
+```bash
+gimbal --help
+```
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/gimbal_script.png" /></div>
+
+`gimbal` is a bash script, you can modify to view and modify the script to achieve your secondary development needs.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/gimbal_script_content.png" /></div>
+
+### <span id="jump6">CAN</span>
+
+Use the `ifconfig` command to view the **can0** interface:
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/can_command_ifconfig.png" /></div>
+
+Use the `cansend can0 can_id#9C.00.00.00.00.00.00.00` command to send can messages:
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/can_command_cansend.png" /></div>
+
+Use the `candump can0` command to receive can messages:
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/can_command_candump.png" /></div>
 
 ## Part List
 
-●reCamera 2002w x 1
-●reCamera Gimbal Head x 1
-●reCamera Gimbal Arm x 1
-●reCamera Gimbal Base Cover x 1
-●reCamera Gimbal Base x 1
-●Power Supply Board x 1
-●Antenna x 1
-●Motor MS3506 x 1
-●Motor MS3008 x 1
-●Screw A(KAB3.0x10.0mm) x 5
-●Screw B(KM2.0x6.0mm) x 7
-●Screw C(M2.0x10.0mm) x 5
-●Screw D(KM2.5x4.0mm) x 9
-●Screw E(KA2.0x6.0mm) x 5
-●DC Power Female Jack(5521) to XT30 Connector x 1
-●XT30(2+2)-F Connector with Wire x 1
-●Micro JST PH 2.0 6-Pin Female to Female Wire x 1
-●Screw Driver(M2.5xL55mm) x 1
-●Hex Key x 1
-●Motor Adapter Board x 1
-●User Manual x 1
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_Partlist.png" /></div>
 
 
 ## Tech Support & Product Discussion

@@ -40,24 +40,24 @@ You can check out the latest version of the [reCamera OS here.](https://github.c
 Manually update/upgrade the latest OTA firmware:
 ```bash
 #Upgrade to the latest firmware version
-/mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/latest 
+sudo /mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/latest 
 
-/mnt/system/upgrade.sh start
+sudo /mnt/system/upgrade.sh start
 ```
 or
 #### Update/Upgrade or rollback to any specific OTA version
 If you have a speicific version you would like to deploy, you can use the command below.
 ```bash
 #E.g. install 0.1.4 as an example
-/mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/tag/0.1.4
+sudo /mnt/system/upgrade.sh latest https://github.com/Seeed-Studio/reCamera-OS/releases/tag/0.1.4
 
-/mnt/system/upgrade.sh start
+sudo /mnt/system/upgrade.sh start
 ```
 If you are developing OS and you have your own branch in github, you can also update/upgrade the system version with your branch link.
 ```bash
-/mnt/system/upgrade.sh latest https://github.com/your-user-name/reCamera-OS/releases/your-version-file-address
+sudo /mnt/system/upgrade.sh latest https://github.com/your-user-name/reCamera-OS/releases/your-version-file-address
 
-/mnt/system/upgrade.sh start
+sudo /mnt/system/upgrade.sh start
 ```
 #### For OS version 0.1.3 and below
 If you would like to OTA with `upgrade.sh` but your version is **0.1.3 and below**, please follow the below steps:
@@ -99,7 +99,7 @@ sudo chmod 777 /mnt/system
 
 6. Open your desktop/pc terminal, then copy the downloaded script to reCamera under the same folder.
 ```bash
-scp your_folder_address/upgrade.sh recamera@192.168.42.1:/mnt/system/
+sudo scp your_folder_address/upgrade.sh recamera@192.168.42.1:/mnt/system/
 ```
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reCamera/OS_upgrade/scp_file.png" /></div>
@@ -120,11 +120,11 @@ sudo chmod 755 /mnt/system
 ### Device management by local package
 You can also update/upgrade the firmware manually using the local ota package. The ota firmwares can be [downloaded here](https://github.com/Seeed-Studio/reCamera-OS/releases/). Use tools like scp to transfer the files to reCamera.
 ```bash
-scp sg2002_reCamera_0.1.3_emmc_ota.zip recamera@ip_address:~/
+sudo scp sg2002_reCamera_0.1.3_emmc_ota.zip recamera@ip_address:~/
 ```
 Then use the bash to deploy.
 ```bash
-/mnt/system/upgrade.sh start sg2002_reCamera_0.1.3_emmc_ota.zip
+sudo /mnt/system/upgrade.sh start sg2002_reCamera_0.1.3_emmc_ota.zip
 ```
 :::note
 If you don't have enough permissions to dump files into recamera, you can can change system files to be readable or writable by typing `rootfs_rw on/off`.
@@ -133,7 +133,7 @@ If you don't have enough permissions to dump files into recamera, you can can ch
 ### Manually restore factory Settings.
 This command can restore reCamera to facotry settings. If you use this, all of your user data will be removed such as Node-RED flow and local storage.
 ```bash
-/mnt/system/upgrade.sh recovery
+sudo /mnt/system/upgrade.sh recovery
 ```
 
 ## Tech Support & Product Discussion
