@@ -49,7 +49,7 @@ Remove the rest 2 screws, now you should be able to take the sub-board apart fro
 ![https://www.seeedstudio.com/blog/wp-content/uploads/2009/12/P1230031-300x225.jpg](https://www.seeedstudio.com/blog/wp-content/uploads/2009/12/P1230031-300x225.jpg)
 ![https://www.seeedstudio.com/blog/wp-content/uploads/2009/12/P1230028-300x225.jpg](https://www.seeedstudio.com/blog/wp-content/uploads/2009/12/P1230028-300x225.jpg)
 
-Sub-Board detailed pictures. 6 metal dome buttons were soldered on the top side, and 1×3.5MM TSR connector, 1X Mini usb connector on bottom.  There’s also a board to board connector to attach the 2 separated PCB.
+Sub-Board detailed pictures. 6 metal dome buttons were soldered on the top side, and 1×3.5MM TRS connector, 1X Mini usb connector on bottom.  There’s also a board to board connector to attach the 2 separated PCB.
 
 ![https://www.seeedstudio.com/blog/wp-content/uploads/2009/12/P1230019.jpg](https://www.seeedstudio.com/blog/wp-content/uploads/2009/12/P1230019.jpg)
 
