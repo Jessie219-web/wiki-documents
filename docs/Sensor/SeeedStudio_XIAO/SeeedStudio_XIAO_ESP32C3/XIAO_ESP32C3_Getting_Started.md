@@ -182,11 +182,6 @@ According to the chip manual of ESP32C3, **GPIO2**, **GPIO8** and **GPIO9** in t
 
 First, we are going to connect XIAO ESP32C3 to the computer, connect an LED to the board and upload a simple code from Arduino IDE to check whether the board is functioning well by blinking the connected LED.
 
-
-### Factory procedure
-
-We pre-program each new XIAO MG24 and XIAO MG24 Sense with a simple factory program.
-
 ### Hardware Preparation
 
 You need to prepare the following:
