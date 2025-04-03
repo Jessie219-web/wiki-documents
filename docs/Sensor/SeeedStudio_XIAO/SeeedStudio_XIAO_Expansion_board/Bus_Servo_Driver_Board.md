@@ -18,7 +18,7 @@ last_update:
 
 ### Getting Started with Bus Servo Driver Board
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:420, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:680, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="#">
@@ -83,12 +83,35 @@ This method is used when connecting to a computer or single-board computer with 
 
 **Step1:** Locate the soldering jumper on the back of the board. **For USB communication, you must ensure that the two pads are connected (there is a solder bridge between them).**
 
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-1.jpg" style={{width:400, height:'auto', "border-radius": '15px'}}/></div>
+<br />
+<div style={{ textAlign: 'center' }}>  
+    <img   
+        src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-1.png"   
+        style={{   
+            width: '400px',   
+            height: '400px',   
+            borderRadius: '15px',   
+            filter: 'drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3))'   
+        }}   
+    />  
+</div>  
+<br />
 
 **Step2:** Use a 2.54mm jumper cap to short-circuit the 2pin pin on the front of the board.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-2.jpg" style={{width:400, height:'auto', "border-radius": '15px'}}/></div>
+<br />
+<div style={{ textAlign: 'center' }}>  
+    <img   
+        src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-2.png"   
+        style={{   
+            width: '400px',   
+            height: '400px',   
+            borderRadius: '15px',   
+            filter: 'drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3))'   
+        }}   
+    />  
+</div>  
+<br />
 
 ### Required Components (Before You Start)
 
