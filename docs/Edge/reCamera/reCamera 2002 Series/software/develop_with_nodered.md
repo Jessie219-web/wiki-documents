@@ -186,7 +186,7 @@ Input: Wire the `camera` node to the `save` node to enable the saving.
 
 #### Save Parameters
 Storage: 
-- Local -> path: `recamera/userdata/VIDEO`
+- Local -> path: `/userdata/VIDEO`
 - External -> Stored in SD card.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/save_node_storage.png" /></div>

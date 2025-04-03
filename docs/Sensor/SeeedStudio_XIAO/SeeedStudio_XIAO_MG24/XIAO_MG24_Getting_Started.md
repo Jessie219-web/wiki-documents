@@ -107,7 +107,7 @@ sidebar_position: 0
 </table>
 
 
-## Features
+### Features
 
 - **Powerful CPU**:ARM Cortex-M33 core, with a maximum clock speed of 78MHz, supporting DSP instructions and FPU floating-point operations, 32-bit RISC architecture.
 - **Ultra-Low Power**:RX current 4.6mA/TX current 5mA (0dBm), multiple low-power sleep modes
@@ -115,7 +115,7 @@ sidebar_position: 0
 - **Multi style wireless transmission**:Integrated 2.4GHz multi protocol wireless transceiver, supporting multiple IoT protocols such as Matter, OpenThread, Zigbee, Bluetooth LE 5.3, Bluetooth mesh, etc.
 - **Better RF Performance**:Excellent RF performance, with a transmission power of up to+19.5 dBm and a reception sensitivity as low as -105.4 dBm (250kbps DSSS)
 - **Powerful security**:Powerful security features of Secure Vault, including secure boot, encryption, random number generation, tamper proof, secure debugging, etc.
-- **Ultra-small size**:
+- **Ultra-small size**:21 x 17.8mm.
 - **Rich on-chip resources**:Maximum 1536KB Flash and 256KB RAM, with ample storage space.
 - **Rich interfaces**:Integrated with 12 bit 1Msps ADC, temperature sensor, analog comparator, DCDC and other rich peripherals, and up to 22 Pin, 2 USART, 2 low-power UART, 1 IIC and other interfaces.
 
@@ -235,7 +235,7 @@ If you cannot find it after entering, please reopen the Arduino IDE.
 
 Now enjoy coding ✨.
 
-## Run your first Blink program
+#### Run your first Blink program
 
 - **Step 1.** Launch the Arduino application.
 
@@ -266,7 +266,9 @@ Once the program is successfully uploaded, you will see the following output mes
 
 ## Battery Usage
 
-The XIAO MG24 is capable of using a 3.7V lithium battery as the power supply input. You can refer to the following diagram for the wiring method.
+The XIAO MG24 has a built-in power management chip that allows the XIAO MG24 to be powered independently by using a battery or to charge the battery through the XIAO MG24's USB port.
+
+If you want to connect the battery for XIAO, we recommend you to purchase qualified rechargeable 3.7V lithium battery. When soldering the battery, please be careful to distinguish between the positive and negative terminals. The negative terminal of the power supply should be the side closest to the USB port, and the positive terminal of the power supply is the side away from the USB port.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/4444.png" alt="pir" width="800" height="auto"/></div>
 

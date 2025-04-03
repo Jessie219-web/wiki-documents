@@ -54,7 +54,7 @@ docker run --privileged --name MyName -v $PWD:/workspace -it sophgo/tpuc_dev:v3.
 Use `pip` to install `tpu_mlir` inside the Docker container, just like in `Method 1`:
 
 ```bash
-pip install tpu_mlir[all]
+pip install tpu_mlir[all]==1.14
 ```
 
 
@@ -157,7 +157,7 @@ Create the `model_yolo11n` directory at the same level as `tpu-mlir`. The image 
 Enter the following command in the terminal:
 
 ```bash
-git clone https://github.com/sophgo/tpu-mlir.git
+git clone -b v1.14 --depth 1 https://github.com/sophgo/tpu-mlir.git
 cd tpu-mlir
 source ./envsetup.sh
 ./build.sh
@@ -439,7 +439,7 @@ run_calibration \
   -o yolo11n_calib_table
 ```
 
-After running the command above, a file named `yolo11n_cali_table` will be generated, which
+After running the command above, a file named `yolo11n_calib_table` will be generated, which
 is used as the input file for subsequent compilation of the **INT8** model.
 
 Description of Main Parameters for `run_calibration`:

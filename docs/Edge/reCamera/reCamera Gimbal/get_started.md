@@ -25,6 +25,12 @@ The reCamera gimbal 2002 series is the first open-source camera control system, 
 The 12VDC power adapter is not included in the set. You need to select the appropriate power adapter from our bazaar selection screen or purchase one yourself.
 :::
 
+## Prerequisites
+
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_prerequisites.png" /></div>
+
+
+
 ## Unboxing
 
 Start by unpacking your reCamera Gimbal. Inside the box, you should find:
@@ -35,7 +41,7 @@ Make sure all parts are included.
 
 ### Hardware Assembly
 
-Assemble the reCamea Gimbal according to the assembly instructions on Box or [User manual](https://files.seeedstudio.com/gimbal/GIMBAL_Manual0206.pdf).
+Assemble the reCamea Gimbal according to the assembly instructions on Box or [User manual](#jump1).
 
 <div style={{textAlign:'center'}}><iframe width={560} height={315} src="https://www.youtube.com/embed/VAkhDHct0p4" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
 
@@ -270,7 +276,7 @@ If you would like to reset the device such as forgetting your device's passcode,
 
 ## Resources
 
-- [reCamera Gimbal User Manual](https://files.seeedstudio.com/gimbal/GIMBAL_Manual0206.pdf)
+- <span id="jump1"><a href="https://files.seeedstudio.com/gimbal/GIMBAL_Manual0311.pdf">reCamera Gimbal User Manual</a></span>
 
 - [Github](https://github.com/Seeed-Studio/OSHW-reCamera-Series)
 
