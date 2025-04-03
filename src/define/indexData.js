@@ -55,7 +55,7 @@ export const startedList = [
   {
     title: 'reterminal',
     img: 'reterminal',
-    link: '/Raspberry_Pi_Powered_Devices',
+    link: '/raspberry-pi-devices',
     children: [
       {
         title: 'reTerminal',
@@ -396,6 +396,11 @@ export const exploreList = [
         title: '矽递科技Wiki文档平台',
         link:
           '/cn/Getting_Started/',
+      },
+      {
+        title: 'Plataforma Wiki de SeeedStudio (Español)',
+        link:
+          '/es/SeeedStudio_XIAO_Series_Introduction',
       },
     ],
   },

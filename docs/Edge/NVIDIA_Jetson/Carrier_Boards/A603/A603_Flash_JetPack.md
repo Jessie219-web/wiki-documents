@@ -150,6 +150,13 @@ On an Ubuntu host machine, open the terminal and run the command `sha256sum <Fil
 
 ## Flash to Jetson 
 
+Here is a video for flashing JetPack 6.1 onto the A603 carrier board + Orin Nx 16GB module. You can refer to the video and the detailed steps below to flash your device.
+
+<div align="center">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/qN4GxscUGW0" title="A603 JetPack6.1 Installation Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+
 :::note
 Before moving onto flashing, it should be noted that Jetson Orin NX module only supports JetPack 5.1 and above, while Jetson Orin Nano module only supports JetPack 5.1.1 and above.
 :::
@@ -524,7 +531,10 @@ wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/releas
 ```
 
 **Step 2:** Assemble the Flashing Package
-Execute the following commands in order:
+
+Please note that we need to put the Nvidia driver and the peripheral drivers in the same directory, and then open the terminal in that directory and execute the following code:
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/driver_files_directory_layout.png" /></div>
 
 ```bash
 tar xf Jetson_Linux_r36.4.3_aarch64.tbz2
@@ -573,6 +583,69 @@ If you flashed the system onto the SSD, run the following commands:
 </TabItem>
 
 </Tabs>
+
+
+## CAN Interfaces
+
+Since there is a CAN transceiver on A603 carrier board, you don’t extra transceiver like dev kit. 
+
+**Step1.** Install `devmem2` to write values to registers:
+```sh
+sudo apt-get install devmem2
+```
+**Step2.** Write values according to [here](https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/HR/ControllerAreaNetworkCan.html#jetson-platform-details).
+```sh
+sudo devmem2 0x0c303010 w 0xc400
+sudo devmem2 0x0c303018 w 0xc458
+```
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/send1.png"/>
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/send2.png"/>
+</div>
+
+**Step3.** Load Kernel modules:
+```bash
+sudo modprobe can
+sudo modprobe can_raw
+sudo modprobe mttcan
+```
+After loading these modules, you should be able to see these logs in `sudo dmesg`:
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/check_can.png"/>
+</div>
+
+**Step4.** Bring up can0 interface:
+```sh
+sudo ip link set can0 type can bitrate 500000
+```
+Optionally, you can change the bitrate to 1000000. Then, bring up can0:
+```sh
+sudo ip link set can0 up
+```
+Check the interface with `ifconfig`:
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/ifconfig.png"/>
+</div>
+
+**Step5.** Sending data (require can-utils installed). On the other side, we used a MCU with CAN Expansion board to receive data.
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/hardware.png"/>
+</div>
+
+Run `cansend can0 123#11.22.33.50` on jetson terminal:
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/cansend.png"/>
+</div>
+
+**Step6.** Receiving data. On the other side, we used a MCU with CAN Expansion board to send data.
+
+Run `candump can0` on jetson terminal:
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/candump.png"/>
+</div>
 
 ## Tech Support & Product Discussion
 

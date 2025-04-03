@@ -38,7 +38,7 @@ Note: Please remember that the Grove - NFC (ST25DV64) does not come with an NFC 
 Whether you're new to NFC or an experienced developer looking for an easy-to-use NFC solution, the Grove - NFC (ST25DV64) is an excellent choice. Its open-source software and hardware, combined with its ease of use and versatility, make it an invaluable tool for any NFC project.
 
 :::tip
-We've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Sensor_gas/), it will help you choose the gas sensor that best suits your needs.
+We've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/), it will help you choose the gas sensor that best suits your needs.
 :::
 
 ## Features

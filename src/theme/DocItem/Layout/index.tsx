@@ -14,9 +14,10 @@ import type { Props } from '@theme/DocItem/Layout';
 
 import styles from './styles.module.css';
 import Comment from '../../../components/comment';
-import { useLocation } from '@docusaurus/router'
-import {judgeHomePath} from '../../../utils/jsUtils'
+import { useLocation } from '@docusaurus/router';
+import { judgeHomePath } from '../../../utils/jsUtils';
 import TopNav from '../../../components/topNav';
+import Head from '@docusaurus/Head';
 
 /**
  * Decide if the toc should be rendered, on mobile or desktop viewports
@@ -45,13 +46,19 @@ function useDocTOC() {
 export default function DocItemLayout({ children }: Props): JSX.Element {
   const docTOC = useDocTOC();
   const { frontMatter } = useDoc();
-  const { hide_comment: hideComment } = frontMatter;
-  const location = useLocation()
+  const { hide_comment: hideComment, sku, type } = frontMatter; // <-- 获取 sku 和 type
+  const location = useLocation();
+
   useEffect(() => {
-    judgeHomePath()
-  }, [location.pathname])
+    judgeHomePath();
+  }, [location.pathname]);
+
   return (
     <div className="row">
+      <Head>
+        {sku && <meta name="sku" content={sku} />}
+        {type && <meta name="type" content={type} />}
+      </Head>
       <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
@@ -66,7 +73,7 @@ export default function DocItemLayout({ children }: Props): JSX.Element {
         </div>
         {!hideComment && <Comment />}
       </div>
-      <TopNav></TopNav>
+      <TopNav />
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
     </div>
   );

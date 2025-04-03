@@ -288,6 +288,10 @@ const config = {
                 label: '矽递科技 Wiki 文档平台',
                 to: '/cn/Getting_Started',
               },
+              {
+                label: 'Plataforma Wiki de SeeedStudio (Español)',
+                to: '/es/SeeedStudio_XIAO_Series_Introduction',
+              },
             ],
           },
 
@@ -621,7 +625,7 @@ const config = {
         // Replace this with the name of your index/collection.
         // It should match the "index_name" entry in the scraper's "config.json" file.
         // typesenseCollectionName: 'wiki_platform_1713169217',
-        typesenseCollectionName: 'wiki_platform_1731303521',
+        typesenseCollectionName: 'wiki_platform_1742956928',
 
         typesenseServerConfig: {
           nodes: [
@@ -631,7 +635,7 @@ const config = {
               protocol: 'https',
             },
           ],
-          apiKey: 'Y11xmJ95OD11kDyXhfH9Wuc2pHvogzjU',
+          apiKey: 'f7FHXItd290yGupHRnQg4AKzT47bPiix',
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
         typesenseSearchParameters: {},
