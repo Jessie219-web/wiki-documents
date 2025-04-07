@@ -18,7 +18,7 @@ no_comments: false # for Disqus
 
 ## Introduction
 
-[YOLOv8](https://github.com/ultralytics/ultralytics) (You Only Look Once version 8) is the popular most YOLO series of real-time pose estimation and object detection models. It builds upon the strengths of its predecessors by introducing several advancements in speed, accuracy, and flexibility. The [Hailo8](https://www.seeedstudio.com/Raspberry-Pi-Al-HAT-26-TOPS-p-6243.html) is used to accelerate inference speed, featuring a 26 tera-operations per second (TOPS). 
+[YOLOv8](https://github.com/ultralytics/ultralytics) (You Only Look Once version 8) is the popular most YOLO series of real-time pose estimation and object detection models. It builds upon the strengths of its predecessors by introducing several advancements in speed, accuracy, and flexibility. The [Hailo8](https://www.seeedstudio.com/Raspberry-Pi-Al-HAT-26-TOPS-p-6243.html) is used to accelerate inference speed, featuring a 26 TOPS AI performance. 
 
 This wiki showcases benchmarking of YOLOv8m for object detection on Raspberry Pi 5 with hailo8. All tests utilize the same model (YOLOv8m), quantized to int8, with an input size of 640x640 resolution, batch size set to 8.
 
