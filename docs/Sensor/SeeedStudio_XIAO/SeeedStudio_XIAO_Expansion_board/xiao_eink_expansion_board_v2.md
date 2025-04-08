@@ -410,10 +410,3 @@ Thank you for choosing our products! We are here to provide you with different s
   </div>
 </div>
 
-
-
-
-
-
-
-
