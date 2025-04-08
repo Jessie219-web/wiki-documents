@@ -1,5 +1,5 @@
 ---
-description: AWS IoT Core: Integración con reTerminal DM
+description: AWS IoT Core Integración con reTerminal DM
 title: Integrar reTerminal DM con AWS IoT Core
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 keywords:
