@@ -20,7 +20,7 @@ Basado en Raspberry Pi CM4 y funcionando como un PC de panel, HMI, PLC y gateway
 
 Está equipado con una gran escalabilidad y conectividad híbrida, soportando bus CAN, RS485, RS232, puerto Ethernet Gigabit y otras interfaces, así como potentes capacidades de comunicación inalámbrica tales como 4G, LoRa®, WiFi y BLE.
 
-> \*Los módulos 4G y LoRa® no vienen incluidos por defecto en reTerminal DM; por favor, adquiere los módulos correspondientes. Para el 
+> \*Los módulos 4G y LoRa® no vienen incluidos por defecto en reTerminal DM; por favor, adquiere los módulos correspondientes. Para el
 > [4G bundle](https://www.seeedstudio.com/reTerminal-DM-LTE-Cat-4-EC25-Bundle-p-5675.html)
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -39,8 +39,6 @@ Está equipado con una gran escalabilidad y conectividad híbrida, soportando bu
 * [Garantía del producto: garantía de dos años](Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/reterminal-dm-warranty.md)
 
 > \*Los módulos 4G y LoRa® no vienen incluidos por defecto en reTerminal DM; por favor, adquiere los módulos correspondientes.
-
-
 
 ## Specifications
 
@@ -302,10 +300,11 @@ El reTerminal DM se suministra con un voltaje nominal de 12~24 V. La alimentaci�
 ### PoE (opcional)
 
 :::note
-El producto estándar no incluye un módulo PoE por defecto. Seeed ofrece servicios de soldadura y montaje PoE para pedidos de personalización en lote a solicitud; por favor, contacta a odm@seeed.cc.
+El producto estándar no incluye un módulo PoE por defecto. Seeed ofrece servicios de soldadura y montaje PoE para pedidos de personalización en lote a solicitud; por favor, contacta a <odm@seeed.cc>.
 :::
 
 Si se instala el módulo PoE, el puerto LAN1 del reTerminal DM puede recibir alimentación PoE, ofreciendo una forma cómoda y eficiente de alimentar el dispositivo a través de Ethernet. Esta opción simplifica el proceso de instalación y reduce la cantidad de cableado requerido, siendo ideal para aplicaciones con fuentes de alimentación limitadas o donde no haya tomas de corriente disponibles.
+
 * Entrada PoE: Rango de 44~57V; típico 48V.
 * Salida PoE: 12V, 1.1A máximo.
 
@@ -400,7 +399,7 @@ Si el LED ACT parpadea en un patrón irregular, entonces el arranque ha comenzad
 Si el LED ACT no parpadea, es posible que el código EEPROM esté dañado; intenta nuevamente sin tener nada conectado para asegurarte.<br/>
 Para más detalles, consulta el foro de Raspberry Pi:<br/>
 STICKY: Is your Pi not booting? (The Boot Problems Sticky) - Raspberry Pi Forums<br/>
-Para más información, visita: https://forums.raspberrypi.com//viewtopic.php?f=28&t=58151<br/>
+Para más información, visita: <https://forums.raspberrypi.com//viewtopic.php?f=28&t=58151><br/>
 :::
 
 Para activar el LED USER, utiliza el siguiente comando:
@@ -411,6 +410,7 @@ sudo -i
 echo 0 > /sys/class/leds/usr-led/brightness
 echo 1 > /sys/class/leds/usr-led/brightness
 ```
+
 Verás que el LED USER se enciende en color rojo.
 
 ### Sensor de Luz
@@ -423,13 +423,13 @@ La dirección I2C es **0x29**.
 
 Para interactuar con el sensor de luz:
 
-- **Paso 1.** Ingresa al siguiente directorio:
+* **Paso 1.** Ingresa al siguiente directorio:
 
 ```sh
 cd /sys/bus/iio/devices/iio:device0
 ```
 
-- **Paso 2.** Escribe el siguiente comando para obtener el valor de la intensidad luminosa en **Lux**:
+* **Paso 2.** Escribe el siguiente comando para obtener el valor de la intensidad luminosa en **Lux**:
 
 ```sh
 cat in_illuminance_input
@@ -452,6 +452,7 @@ Para probar y controlar el zumbador, puedes simplemente establecer `1` o `0` en 
 <div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/multi-functional-terminal.png" /></div>
 
 #### Tabla de comparación de terminal y señales
+
 <div class="table-center">
 
 | CANH | CANL | GND_ISO | RS485A | RS485B | GND_ISO | RS232_TX | RS232_RX | GND | GND |
@@ -528,6 +529,7 @@ La lógica negativa utilizada para las entradas y salidas digitales del reTermin
 | --------------------------- | -------------------------------  |
 | Alto                        | Bajo                             |
 | Bajo                        | Alto                             |
+
 :::
 
 En esta sección utilizaremos la herramienta `raspi-gpio` para probar los GPIO. Puedes usar el comando `raspi-gpio help` para ver el manual.
@@ -539,6 +541,7 @@ Para obtener el estado actual de todos los GPIOs, ingresa el siguiente comando e
 ```sh
 raspi-gpio get
 ```
+
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/raspi-gpio-get.png" /></div>
 
 ###### Entrada Digital
@@ -582,6 +585,7 @@ raspi-gpio set 24 op pd dh
 #get the pin state after set
 raspi-gpio get 24
 ```
+
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/gpio24-state-set.png" /></div>
 
 Esto configura el `GPIO24`, que corresponde a `DO1`, como salida y con "pull down", y el nivel del `GPIO24` se establece en `Alto`.
@@ -619,11 +623,11 @@ Ten en cuenta que el puerto RS485 es `/dev/ttyACM1` o `/dev/ttyCH340USB1`, depen
 
 Utiliza tu herramienta de comunicación serial favorita en la computadora host para realizar la prueba. Ejecuta el código Python en el reTerminal DM para testear la conexión serie RS485. Este código configurará el puerto RS485 con los siguientes parámetros:
 
-- Baudrate: 9600  
-- Tamaño de bytes: 8 bits  
-- Paridad: Ninguna  
-- Stopbits: 1  
-- Control de flujo por hardware: deshabilitado  
+* Baudrate: 9600  
+* Tamaño de bytes: 8 bits  
+* Paridad: Ninguna  
+* Stopbits: 1  
+* Control de flujo por hardware: deshabilitado  
 
 ```python
 import serial, time
@@ -732,7 +736,6 @@ except KeyboardInterrupt:
 
 Aquí está el script de prueba de python sobre la recepción de datos en reTerminal DM enviados desde la computadora host.
 
-
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/rs232-serial-receive-example.png" /></div>
 
 ```python
@@ -783,11 +786,12 @@ Conecta el adaptador USB a CAN como se muestra en la imagen a continuación:
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/canbus-connection.png" /></div>
 
-- **PASO 1:** Instala CAN-utils
- 
+* **PASO 1:** Instala CAN-utils
+
 ```sh
 sudo apt install can-utils
 ```
+
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminal_Bridge/image4.jpg" /></div>
 
 CAN-utils es una colección de herramientas de depuración muy útiles para utilizar la interfaz CAN. Incluye aplicaciones tales como:
@@ -800,7 +804,7 @@ CAN-utils es una colección de herramientas de depuración muy útiles para util
 
 El código fuente de CAN-utils se puede obtener del [repositorio de GitHub](https://github.com/linux-can/can-utils).
 
-- **PASO 2:** Configura la interfaz CAN utilizando el siguiente comando:
+* **PASO 2:** Configura la interfaz CAN utilizando el siguiente comando:
   
 ```sh
 sudo ip link set can0 up type can bitrate 500000
@@ -808,23 +812,25 @@ sudo ifconfig can0 txqueuelen 1000
 sudo ip link set can0 up
 ```
 
-- **PASO 3:** Descarga el código de prueba para el reTerminal DM usando git
+* **PASO 3:** Descarga el código de prueba para el reTerminal DM usando git
 
 ```sh
 git clone https://github.com/limengdu/Seeed_reTerminal_Bridge_CAN_exmaple
 ```
 
-- **PASO 4:** Compila y ejecuta el código que envía los datos:
+* **PASO 4:** Compila y ejecuta el código que envía los datos:
 
 ```sh
 cd Seeed_reTerminal_Bridge_CAN_exmaple/
 gcc cantransmit.c -o cantransmit
 ```
+
 En tu computadora host Linux o en otro reTerminal DM, compila y ejecuta el código que recibe los datos:
 
 ```sh
 gcc canreceive.c -o canreceive
 ```
+
 Podrás ver los resultados; la imagen a continuación muestra una prueba realizada con dos reTerminal DM:
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminal_Bridge/image8.jpg" /></div>
@@ -1114,10 +1120,10 @@ Es posible que experimentes un reinicio instantáneo si la opción `watchdog-tim
 
 ```sh
 # Descomenta esta línea para usar el acceso al "archivo" del driver del watchdog.
-watchdog-device		= /dev/watchdog1
+watchdog-device  = /dev/watchdog1
 
 # Descomenta y edita esta línea para valores de tiempo de espera diferentes al valor predeterminado de un minuto.
-watchdog-timeout	= 60
+watchdog-timeout = 60
 ```
 
 Por ejemplo, si deseas establecer el tiempo de espera del watchdog en 60 segundos, configura el valor de `watchdog-timeout` en `60`, lo que significa que, si el watchdog no recibe una señal de reinicio dentro de 60 segundos, se activará la operación de reinicio automático, asumiendo que el sistema se ha bloqueado.
@@ -1130,6 +1136,7 @@ sudo su
 echo 1 > /proc/sys/kernel/sysrq
 echo "c" > /proc/sysrq-trigger
 ```
+
 Ahora tu reTerminal DM debería reiniciarse después del tiempo establecido en el `watchdog-timeout`.
 :::
 
@@ -1166,9 +1173,8 @@ La interfaz CSI de la cámara está reservada en la placa principal del reTermin
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/camera_version.png" /></div>
 
 :::note
-Ten en cuenta que la versión estándar del reTerminal DM no incluye una abertura para cámara en el panel frontal; por lo tanto, la funcionalidad de la cámara no está disponible en el producto estándar. Si tienes un requerimiento de cámara personalizada, por favor contacta a odm@seeed.cc.
+Ten en cuenta que la versión estándar del reTerminal DM no incluye una abertura para cámara en el panel frontal; por lo tanto, la funcionalidad de la cámara no está disponible en el producto estándar. Si tienes un requerimiento de cámara personalizada, por favor contacta a <odm@seeed.cc>.
 :::
-
 
 ### Módulo 4G
 
@@ -1182,9 +1188,9 @@ Ten en cuenta que la versión estándar del reTerminal DM no incluye una abertur
 
 **Materiales Requeridos**
 
-- reTerminal DM x 1 
-- Módulo 4G EC25-EUX x 1
-- Tarjeta SIM x 1
+* reTerminal DM x 1
+* Módulo 4G EC25-EUX x 1
+* Tarjeta SIM x 1
 
 **Paso 1.** Consulta la [Guía de ensamblaje del Módulo 4G](/reterminal-dm-hardware-guide/#assembly-4g-module-and-antenna) para instalar el `Módulo 4G EC25` en la `ranura PCIe 4G/LTE`. Deberías ver en la serigrafía la indicación *`4G/LTE`*; además, inserta la tarjeta SIM habilitada para 4G en la [ranura para SIM](/reterminal-dm/#sim-card-slot) antes de encender el sistema.
 
@@ -1239,7 +1245,6 @@ También puedes utilizar el comando `ifconfig` para verificar el estado de la re
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reTerminal_Bridge/image33.png"/></div>
 
-
 ### Módulo LoraWAN®
 
 :::note
@@ -1272,10 +1277,10 @@ sudo apt-get install build-essential
 
 **Paso 2.** Escribe `sudo raspi-config` en la línea de comandos para abrir la herramienta de configuración del software de Raspberry Pi:
 
-- Selecciona "Interface Options".
-- Selecciona "SPI" y, a continuación, elige **Yes** para habilitarlo.
-- Selecciona "I2C" y, a continuación, elige **Yes** para habilitarlo.
-- Selecciona "Serial Port". Luego, elige **No** a "¿Desea un shell de login..." y **Yes** a "¿Desea habilitar el hardware del puerto serie...".
+* Selecciona "Interface Options".
+* Selecciona "SPI" y, a continuación, elige **Yes** para habilitarlo.
+* Selecciona "I2C" y, a continuación, elige **Yes** para habilitarlo.
+* Selecciona "Serial Port". Luego, elige **No** a "¿Desea un shell de login..." y **Yes** a "¿Desea habilitar el hardware del puerto serie...".
 
 Después de esto, reinicia la Raspberry Pi para asegurarte de que estos ajustes funcionen.
 
@@ -1304,92 +1309,11 @@ sed -i 's/spidev0.0/spidev0.1/g' global_conf.json.sx1250.US915
 Ejecuta el siguiente código para iniciar el Módulo LoraWAN® de acuerdo a la versión de frecuencia de operación de tu WM1302:
 
 ```sh
-cd ~/sx1302_hal/packet_forwarder
-./lora_pkt_fwd -c global_conf.json.sx1250.US915
+$ cd ~/sx1302_hal/packet_forwarder
+$ ./lora_pkt_fwd -c global_conf.json.sx1250.US915
 ```
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/wm1302-spi.png"/></div>
-
-Elige tu servidor de red Lora® preferido y utiliza el `EUI ID` mostrado en la imagen anterior para configurar las conexiones.
-
-### Módulo WM1302 USB
-
-<div class="table-center">
-<Tabs>
-<TabItem value="WM1302 SPI Module" label="WM1302 SPI Module">
-<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/1/114992967-spi-us915.jpg" alt="pir" width="600" height="auto" /></p>
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-WM1302-LoRaWAN-Gateway-Module-SPI-US-915-p-5454.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Consigue uno ahora 🖱️</font></span></strong>
-    </a>
-</div>
-**Paso 1.** Consulta la [Guía de ensamblaje del Módulo LoraWAN®](/reterminal-dm-hardware-guide/#assembly-lora-module-and-antenna) para instalar el `Módulo LoraWAN® WM1302 SPI` en la ranura Mini PCIe de LoraWAN®, donde deberías ver la serigrafía *`Lora`*.
-
-Instala el paquete build-essential (un paquete de Debian que contiene las herramientas necesarias para compilar el código fuente) ejecutando:
-```sh
-sudo apt update
-sudo apt install git
-sudo apt-get install build-essential
-```
-
-**Paso 2.** Escribe `sudo raspi-config` en la línea de comandos para abrir la Herramienta de Configuración del Software de Raspberry Pi:
-- Selecciona "Interface Options".
-- Selecciona "SPI" y elige **Yes** para habilitarlo.
-- Selecciona "I2C" y elige **Yes** para habilitarlo.
-- Selecciona "Serial Port", elige **No** cuando pregunte "¿Desea un shell de login..." y selecciona **Yes** cuando pregunte "¿Desea habilitar el hardware del puerto serie...".
-Después de esto, reinicia la Raspberry Pi para asegurarte de que estos ajustes funcionen.
-
-**Paso 3.** Descarga el [código WM1302](https://github.com/Lora-net/sx1302_hal) en el reTerminal y complílalo.
-```sh
-cd ~/
-git clone https://github.com/Lora-net/sx1302_hal
-cd sx1302_hal
-sudo make
-```
-
-**Paso 4.** Copia el script `reset_lgw.sh`:
-```sh
-cp ~/sx1302_hal/tools/reset_lgw.sh ~/sx1302_hal/packet_forwarder/
-```
-
-**Paso 5.** Reemplaza el puerto SPI predeterminado del Módulo LoraWAN® en el archivo de configuración `global_conf.json.sx1250.US915.USB`:
-**Paso 5-1.**
-Primero, para obtener el puerto USB específico, sigue los pasos a continuación:
-```sh
-lsusb
-```
-En mi caso, nuestro WM1302 utiliza el “STMicroelectronics Virtual COM Port” por lo que podemos obtener el ID de producto `5740`.
-**Paso 5-2.**
-Luego, obtén el dispositivo USB con el ID de producto `5740`. En mi caso se obtiene el número de puerto USB `1-1.4.1`:
-```sh
-sudo dmesg | grep 5740
-```
-Luego, podemos obtener el puerto del dispositivo con:
-```sh
-sudo dmesg | grep 1-1.4.1
-```
-Así, en mi caso, el dispositivo USB es `ttyACM2`.
-
-Modifica el dispositivo USB en el archivo de configuración `global_conf.json.sx1250.US915.USB` usando el comando sed siguiendo el patrón:
-`sed -i 's/ttyACM0/the_result_from_above/g' global_conf.json.sx1250.frequency_of_your_module.USB`
-Ten en cuenta que debes reemplazar `the_result_from_above` y `frequency_of_your_module` según tu aplicación.
-
-Por ejemplo, en mi caso:
-```sh
-sed -i 's/ttyACM0/ttyACM2/g'  global_conf.json.sx1250.US915.USB
-```
-
-Consulta los pasos mostrados en la imagen a continuación:
-<div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/find-lora-usb.png"/></div>
-
-**Paso 6.** Inicia el Módulo LoraWAN®.
-Luego, ejecuta el siguiente comando para iniciar el Módulo LoraWAN® de acuerdo a la versión de frecuencia de operación de tu WM1302:
-```sh
-# Versión USB
-cd ~/sx1302_hal/packet_forwarder
-./lora_pkt_fwd -c global_conf.json.sx1250.US915.USB
-```
-<div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/wm1302-usb.png"/></div>
 
 Elige tu servidor de red Lora® preferido y utiliza el `EUI ID` mostrado en la imagen anterior para configurar las conexiones.
 
@@ -1409,12 +1333,13 @@ Elige tu servidor de red Lora® preferido y utiliza el `EUI ID` mostrado en la i
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/dmlora.png"/></div>
 
 **Paso 2.** Escribe `sudo raspi-config` en la línea de comandos para abrir la Herramienta de Configuración de Software de Raspberry Pi:
-- Selecciona "Interface Options".
-- Selecciona "I2C" y activa **Yes**.
-- Selecciona "Serial Port", elige **No** a "¿Desea un shell de login..." y **Yes** a "¿Desea habilitar el hardware del puerto serie?".
+* Selecciona "Interface Options".
+* Selecciona "I2C" y activa **Yes**.
+* Selecciona "Serial Port", elige **No** a "¿Desea un shell de login..." y **Yes** a "¿Desea habilitar el hardware del puerto serie?".
 Después de esto, reinicia la Raspberry Pi para asegurarte de que estos ajustes funcionen.
 
 **Paso 3.** Descarga el [código WM1302](https://github.com/Lora-net/sx1302_hal) en el reTerminal y complílalo.
+
 ```sh
 cd ~/
 git clone https://github.com/Lora-net/sx1302_hal
@@ -1423,6 +1348,7 @@ sudo make
 ```
 
 **Paso 4.** Copia el script `reset_lgw.sh`:
+
 ```
 cp ~/sx1302_hal/tools/reset_lgw.sh ~/sx1302_hal/packet_forwarder/
 ```
@@ -1430,22 +1356,29 @@ cp ~/sx1302_hal/tools/reset_lgw.sh ~/sx1302_hal/packet_forwarder/
 **Paso 5.** Reemplaza el puerto USB del Módulo LoraWAN® en el archivo de configuración `global_conf.json.sx1250.US915.USB`:
   
 **Paso 5-1.** Primero, obtén el puerto USB específico utilizando:
+
 ```sh
 lsusb
 ```
+
 En mi caso, nuestro WM1302 utiliza el "STMicroelectronics Virtual COM Port", obteniendo el Product ID `5740`.
 
 **Paso 5-2.** Luego, busca el dispositivo USB con el Product ID `5740`. En mi caso, se obtiene el número de puerto USB `1-1.4.1`:
+
 ```sh
 sudo dmesg | grep 5740
 ```
+
 Luego, identifica el puerto USB utilizando:
+
 ```sh
 sudo dmesg | grep 1-1.4.1
 ```
+
 En mi caso, el dispositivo USB es `ttyACM2`.
 
 Modifica el dispositivo USB en el archivo de configuración usando el comando sed. Por ejemplo, en mi caso:
+
 ```sh
 sed -i 's/ttyACM0/ttyACM2/g'  global_conf.json.sx1250.US915.USB
 ```
@@ -1456,11 +1389,13 @@ Consulta la imagen siguiente para más detalles:
 **Paso 6.** Inicia el Módulo LoraWAN®.
 
 Ejecuta el siguiente comando para iniciar el Módulo LoraWAN® según la versión de frecuencia de operación de tu WM1302:
+
 ```sh
-# Versión USB
-cd ~/sx1302_hal/packet_forwarder
-./lora_pkt_fwd -c global_conf.json.sx1250.US915.USB
+USB version
+$ cd ~/sx1302_hal/packet_forwarder
+$ ./lora_pkt_fwd -c global_conf.json.sx1250.US915.USB
 ```
+
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reTerminalDM/interface/wm1302-usb.png"/></div>
 
 Elige tu servidor de red Lora® preferido y utiliza el `EUI ID` mostrado en la imagen para configurar las conexiones.
@@ -1494,10 +1429,10 @@ La versión estándar del reTerminal DM no soporta SSD y requiere la compra de u
 
 ## Recursos Adicionales
 
-*  [Hoja de Datos de reTerminal DM](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminalDM_datasheet.pdf)
-*  [Manual de Usuario de reTerminal DM](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminal-DM-User-Manual.pdf)
-*  [Diseño esquemático, diseño de PCB y archivos Gerber de reTerminal DM](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminal_DM_schematic_design_files.zip)
-*  [Archivo de Diseño Estructural de reTerminal DM (.stp)](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminal-DM-Structural-Design-File.stp)
+* [Hoja de Datos de reTerminal DM](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminalDM_datasheet.pdf)
+* [Manual de Usuario de reTerminal DM](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminal-DM-User-Manual.pdf)
+* [Diseño esquemático, diseño de PCB y archivos Gerber de reTerminal DM](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminal_DM_schematic_design_files.zip)
+* [Archivo de Diseño Estructural de reTerminal DM (.stp)](https://files.seeedstudio.com/wiki/reTerminalDM/reTerminal-DM-Structural-Design-File.stp)
 
 ## Soporte Técnico y Discusión del Producto
 

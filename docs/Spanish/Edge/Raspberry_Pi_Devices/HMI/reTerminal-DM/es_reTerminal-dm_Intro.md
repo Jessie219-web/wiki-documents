@@ -343,7 +343,6 @@ last_update:
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/raspberry-pi-devices/"><strong><span><font color={'FFFFFF'} size={"4"}>🔙 Regresar a Pi Devices</font></span></strong></a></div></td>
 		</tr>
 	</table>
-</div>
 
 ## ✨ Proyecto del Colaborador
 
