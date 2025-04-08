@@ -1,6 +1,6 @@
 ---
-description: Get Started with SenseCAP Card Tracker T1000-E for LoRaWAN
-title: LoRaWAN Open Source Firmware
+description: Get Started with SenseCAP Card Tracker T1000-E for LoRaWAN via SES
+title: Get Started with SES 
 keywords:
 - Tracker
 image: https://files.seeedstudio.com/wiki/SenseCAP/LoRaWAN_Tracker/lorawan_opensource.webp
