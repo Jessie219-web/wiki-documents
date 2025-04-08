@@ -747,8 +747,8 @@ Troubleshooting:
 
 - **[GITHUB]** [mm-iot-esp32 repository](https://github.com/Seeed-Studio/mm-iot-esp32.git)
 - **[GITHUB]** [mm-iot Document](https://github.com/Seeed-Studio/mm-iot-esp32/blob/main/documentation.html)
-- **[PDF]** [WI-FI_HALOW_FGH100M_EXT01_V20_SCH_PDF_240815](https://files.seeedstudio.com/wiki/wifi_halow/res/WI-FI_HALOW_FGH100M_EXT01_V20_SCH_PDF_240815.pdf)
-- **[ZIP]** [WI-FI_HALOW_FGH100M_EXT01_V20_SCH&PCB](https://files.seeedstudio.com/wiki/wifi_halow/res/WI-FI_HALOW_FGH100M_EXT01_V20_SCH&PCB.zip)
+- **[PDF]** [WI-FI_HALOW_FGH100M_EXT01_V30_SCH_20241107](https://files.seeedstudio.com/wiki/wifi_halow/res/WI-FI_HALOW_FGH100M_EXT01_V30_SCH_20241107.pdf)
+- **[KiCAD]** [WI-FI_HALOW_FGH100M_EXT01_V30 KiCAD PCB File](https://files.seeedstudio.com/wiki/wifi_halow/res/WI-FI_HALOW_FGH100M_EXT01_V30.kicad_pcb)
 - **[PDF]** [Quectel_FGH100M-H_Short-Range_Module_Specification_V1.0.0](https://files.seeedstudio.com/wiki/wifi_halow/res/Quectel_FGH100M-H_Short-Range_Module_Specification_V1.0.0_Preliminary_20241018.pdf)
 
 ## Tech Support & Product Discussion
