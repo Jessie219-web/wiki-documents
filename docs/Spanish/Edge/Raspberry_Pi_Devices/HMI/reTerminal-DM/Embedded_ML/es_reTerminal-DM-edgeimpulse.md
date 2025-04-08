@@ -41,7 +41,7 @@ Al final de esta guía, tendrás un entendimiento práctico de cómo aprovechar 
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/reTerminal-DM-With-Camera-p-5648.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> ¡Cómpralo Ahora 🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> Consigue el Tuyo! 🖱️</font></span></strong>
           </a>
       </div></td>
     </tr>
