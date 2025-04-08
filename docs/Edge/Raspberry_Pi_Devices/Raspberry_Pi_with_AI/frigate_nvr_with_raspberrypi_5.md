@@ -166,7 +166,7 @@ In this part, we assume you have your camera set up and ready to stream with RTS
 
     Here is an example of the `frigate.yml` file, the `hailo0` device is the one you created in the previous step, configuration files are in the `./config` directory and data files are in the `./data` directory.:
 
-    ```yaml
+    ```yml
     services:
         frigate-hailo:
             container_name: frigate-hailo
@@ -270,7 +270,7 @@ sudo usermod -aG docker $USER
 sudo apt install docker-compose-plugin
 ```
 
-### Create yaml file 
+### Create yml file 
 
 
 Create frigate.yml for docker compose to run frigate
@@ -308,15 +308,16 @@ services:
             - 5003:5003
 ```
 
-Download yolo model and create config.yaml.
+Download yolo model and create config.yml.
 ```
 mkdir config && cd config && mkdir model_cache
 cd model_cache && wget https://hailo-model-zoo.s3.eu-west-2.amazonaws.com/ModelZoo/Compiled/v2.14.0/hailo8/yolov8n.hef
 
-cd .. && nano config.yaml
+cd .. && nano config.yml
 ```
-Here is an example of config.yaml
-```
+Here is an example of config.yml
+
+```yml
 database:
   path: /data/db/frigate.db
 

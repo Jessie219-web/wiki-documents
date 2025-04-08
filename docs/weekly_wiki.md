@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 03/31/2025
+  date: 04/07/2025
   author: Frank
 ---
 
@@ -17,49 +17,33 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is March 31th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [ePaper Panel in Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/)
+### [Bus Servo Driver Board](https://wiki.seeedstudio.com/bus_servo_driver_board/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover.JPG" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:800, height:'auto'}}/></div>
 
-The XIAO ESP32C3-powered 7.5-inch E-Ink Display is a compact, energy-efficient solution for showcasing Home Assistant data. With seamless integration and crisp visuals, it's perfect for smart homes. Also compatible with Arduino for easy customization, it offers low power consumption and excellent readability in any light. Simplify your smart home setup with this versatile display.
+The Bus Servo Driver Board is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. This guide focuses on the hardware setup, physical connections, key specifications, and **critical jumper settings** to help users integrate the board into their projects effectively.
 
-### [ePaper Panel in Arduino](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel_arduino/)
+### [Differences in L4T between Seeed and NVIDIA](https://wiki.seeedstudio.com/differences_of_l4t_between_seeed_and_nvidia)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover2.png" style={{width:800, height:'auto'}}/></div>
-
-The 7.5 inch E-Ink display is a game-changer for Arduino users. It seamlessly integrates with Arduino, allowing you to easily showcase various data. With simple wiring and straightforward code, even beginners can get started quickly. It offers low power consumption and excellent readability in any light. Let's unlock endless creative projects with this accessible and versatile display ~
-
-### [Distributed Inference of DeepSeek model on Raspberry Pi](https://wiki.seeedstudio.com/distributed_inference_of_deepseek_model_on_raspberrypi/)
-
-<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:800, height:'auto'}}/></div>
-
-This wiki explains how to deploy the [DeepSeek](https://github.com/deepseek-ai/DeepSeek-LLM) model on Multiple Raspberry Pi AI Boxs with [distributed-llama](https://github.com/b4rtaz/distributed-llama).In this wiki, I used a Raspberry Pi with 8GB of RAM as the root node and three Raspberry Pis with 4GB of RAM** as worker nodes to run the DeepSeek 8B model. The inference speed reached 6.06 tokens per second.
-
-### [Flash JetPack to J401-Mini Carrier Board](https://wiki.seeedstudio.com/recomputer_mini_j401_getting_started/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/recomputer-mini-1.jpg" style={{width:800, height:'auto'}}/></div>
-
-This article explains how to flash JetPack 6.0 on the J401-Mini Carrier Board, covering device overview, preparation, entering Force Recovery mode, and using a one-click script for flashing, helping users quickly deploy NVIDIA Jetson Orin devices.
-
-### [reCamera Gimbal Overview](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp" style={{width:800, height:'auto'}}/></div>
-
-This wiki introduces the features, specifications, hardware interface, and part list of the Recamera Gimbal.
+Seeed’s Jetson Board Support Packages (BSPs) are based on NVIDIA’s Linux for Tegra (L4T) versions 35.3.1, 35.5, 36.3, 36.4, and 36.4.3, with modifications to support Seeed’s own Jetson series products. This article compares the differences between Seeed’s BSP and NVIDIA’s official BSP for each of these L4T versions.
 
 ## Existing Wiki Updated
 
-### [Flash JetPack OS to A608 Carrier Board (NVIDIA Jetson Orin NX/Nano supported)](https://wiki.seeedstudio.com/reComputer_A608_Flash_System/)
+### [reCamera Gimbal Overview](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/)
 
-We have added the [CAD file resources for A608](https://wiki.seeedstudio.com/reComputer_A608_Flash_System/#resources).
+We have added detailed information about the [Hardware Interface](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/#hardware-interface).
+
+### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
+
+We have added an example of the [Seeed Frigate](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#seeed-frigate).
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO RA4M1 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-ra4m1-nuttx/)
+<!-- ### [Seeed Studio XIAO RA4M1 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-ra4m1-nuttx/)
 
 <div style={{textAlign:'center'}}>
   <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
@@ -73,7 +57,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO RA4M1 board.
   <img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/tracker-t1000-e-for-meshtastic.webp" style={{width:800, height:'auto'}}/>
 </div>
 
-This wiki provides Arduino examples for the T1000-E Tracker, covering basic GPIO control, sensor data reading, GNSS positioning, and LoRaWAN communication, along with setup and upload instructions.
+This wiki provides Arduino examples for the T1000-E Tracker, covering basic GPIO control, sensor data reading, GNSS positioning, and LoRaWAN communication, along with setup and upload instructions. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -181,5 +165,6 @@ This wiki provides Arduino examples for the T1000-E Tracker, covering basic GPIO
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
+- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
 
 </details>
