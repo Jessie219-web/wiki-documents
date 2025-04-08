@@ -13,10 +13,6 @@ last_update:
 ---
 
 
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/52840-kit.png" alt="pir" width={800} height="auto" /></p>
-
-
 It's a solar-powered communication node that integrates the XIAO nRF52840 Plus main controller, the Wio-SX1262 LoRa module, and the XIAO L76K GPS module. It is specifically designed for areas without network coverage. With a built-in battery, it supports long-distance communication, precise positioning, and low-power operation. It's suitable for expanding network coverage in outdoor areas.
 
 
