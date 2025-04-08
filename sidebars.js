@@ -6694,10 +6694,19 @@ const sidebars = {
           "label": "reTerminal",
           "collapsed": true,
           "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal_Intro",
+          },
           "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-hardware-interfaces-usage",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-piCam",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-FAQ",
+            // "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-oldFAQ",
             {
               "type": "category",
-              "label": "Application",
+              "label": "Aplicación",
               "collapsed": true,
               "collapsible": true,
               "items": [
@@ -6708,19 +6717,221 @@ const sidebars = {
                   "collapsible": true,
                   "items": [
                     "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reterminal_frigate",
-                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reTerminal_Home_Assistant"
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reTerminal_Home_Assistant",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reTerminal-Home-Assistant-Customize",
                   ]
                 },
                 {
                   "type": "category",
-                  "label": "Embedded ML",
+                  "label": "Diseño del dashboard",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-Qt-for-Python",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-Flutter",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-Electron",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-LVGL",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_weather-dashboard-with-Grafana-reTerminal",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Visión artificial",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_opencv",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Face_detection",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Color_detection",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Shape_detection",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM-tracking",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Object_detection",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "ML embebido",
                   "collapsed": true,
                   "collapsible": true,
                   "items": [
                     "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_MediaPipe",
                     "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_TFLite",
-                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_Edgeimpulse",                  ]
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_Edgeimpulse",
+                  ]
                 },
+                {
+                  "type": "category",
+                  "label": "Servicios gestionados",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Managed_Services/es_neqto_engine_for_linux_reTerminal"
+                  ]
+                },
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/es_Mender-Client-reTerminal",
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Instalación de SO",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Buildroot-SDK",
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Yocto",
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_Streampi_OBS_On_reTerminal"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Placa de expansión",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminalBridge",
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminal_Mount_Options"
+              ]
+            },
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reTerminal-DM",
+          "collapsed": true,
+          "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reTerminal-dm_Intro",
+          },
+          "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-flash-OS",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-warranty",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-hardware-guide",
+            {
+              "type": "category",
+              "label": "Aplicación",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                {
+                  "type": "category",
+                  "label": "Home Assistant",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Home-Assistant/es_reterminal-DM-Frigate"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Edge AI",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Embedded_ML/es_reTerminal-DM-Yolo5",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Embedded_ML/es_reTerminal-DM-edgeimpulse",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Soluciones en la nube",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Azure IoT Edge",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Azure_IoT/es_reTerminal-DM_Azure_IoT"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "AWS IoT Core",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/AWS_IoT/es_reTerminal-DM_AWS_first"
+                      ]
+                    },
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "IIoT",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "SCADA",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/SCADA/es_reTerminal-DM_intro_FUXA",
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/SCADA/es_reTerminal-DM_intro_machinechat_jedi"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Borde industrial",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        {
+                          "type": "category",
+                          "label": "N3uron",
+                          "collapsed": true,
+                          "collapsible": true,
+                          "items": [
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminalDM_N3uron_Get_Start",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminal_DM_N3uron_AWS",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminal_DM_N3uron_modbus_mqtt",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminal_DM_N3uron_Historian",
+                          ]
+                        },
+                        {
+                          "type": "category",
+                          "label": "Ignition Edge",
+                          "collapsed": true,
+                          "collapsible": true,
+                          "items": [
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Ignition_Edge/es_reTerminal-DM-Getting-Started-with-Ignition-Edge",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Ignition_Edge/es_reTerminal-DM-Ignition-Edge-Panel-Builder",
+                          ]
+                        },
+                        {
+                          "type": "category",
+                          "label": "Node-Red",
+                          "collapsed": true,
+                          "collapsible": true,
+                          "items": [
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Getting-Started-with-Node-Red",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-RS485",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-mqtt",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-canbus",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-Modbus-TCP",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-Bacnet",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-influxdb",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-grafana",
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              "type": "category",
+              "label": "SenseCraft Edge",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/SenseCraft_Edge/es_reterminal-dm-sensecraft-edge-os-intro"
               ]
             }
           ]
@@ -6746,7 +6957,7 @@ const sidebars = {
             "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox_rpi_200_Introduction",
             {
               "type": "category",
-              "label": "Applications",
+              "label": "Aplicación",
               "collapsed": true,
               "collapsible": true,
               "items": [
@@ -6864,7 +7075,7 @@ const sidebars = {
             "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_reComputer_R1000_FAQ",
             {
               "type": "category",
-              "label": "Applications",
+              "label": "Aplicación",
               "collapsed": true,
               "collapsible": true,
               "items": [
@@ -6990,6 +7201,23 @@ const sidebars = {
     },
     {
       "type": "category",
+      "label": "Hat",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "M.2 Hat",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/M_2_Hat/es_m_2_hat_start_with_pi5"
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
       "label": "Raspberry Pi with AI",
       "collapsed": true,
       "collapsible": true,
@@ -7007,29 +7235,6 @@ const sidebars = {
       ]
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
       type: 'doc',
       id: 'Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/es_reComputer_Intro',
@@ -7046,7 +7251,7 @@ const sidebars = {
         "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J202/es_reComputer_J2021_J202_Flash_Jetpack",
         {
           "type": "category",
-          "label": "J401 Carrier Boards",
+          "label": "J401 Carrier Board",
           "collapsed": true,
           "collapsible": true,
           "items": [
@@ -7056,7 +7261,7 @@ const sidebars = {
         },
         {
           "type": "category",
-          "label": "J501 Carrier Boards",
+          "label": "J501 Carrier Board",
           "collapsed": true,
           "collapsible": true,
           "items": [
@@ -7213,7 +7418,7 @@ const sidebars = {
       "items": [
         {
           "type": "category",
-          "label": "Computer Vision",
+          "label": "Visión artificial",
           "collapsed": true,
           "collapsible": true,
           "items": [

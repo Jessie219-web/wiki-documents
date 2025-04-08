@@ -13,13 +13,13 @@ last_update:
 
 ---
 
-## Introduction
+## Introducción
 
-This tutorial primarily introduces the hardware connection configuration of the M.2 Hat/Dual Hat and how to boot the Raspberry Pi from an SSD. It also covers two installation methods: with and without a casing, and tests the SSD read/write speeds under different conditions.
+Este tutorial presenta principalmente la configuración de conexión de hardware del M.2 Hat/Dual Hat y cómo arrancar la Raspberry Pi desde un SSD. También cubre dos métodos de instalación: con y sin carcasa, y prueba las velocidades de lectura/escritura del SSD bajo diferentes condiciones.
 
-## Getting Start
+## Primeros Pasos
 
-### Hardware Preparation
+### Preparación del Hardware
 
 <div class="table-center">
 	<table align="center">
@@ -34,44 +34,44 @@ This tutorial primarily introduces the hardware connection configuration of the 
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/Raspberry-Pi-5-8GB-p-5810.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong>
 				</a>
 			</div></td>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
 				<a class="get_one_now_item" href="https://www.seeedstudio.com/PCIe-to-dual-M-2-hat-for-Raspberry-Pi-5-p-5973.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+				<strong><span><font color={'FFFFFF'} size={"4"}> Consíguelo Ahora 🖱️</font></span></strong>
 				</a>
 			</div></td>
 		</tr>
 	</table>
 </div>
 
-For installation without a casing, you need to prepare the following materials:
+Para la instalación sin carcasa, necesitas preparar los siguientes materiales:
 
 - ① Raspberry Pi 5
 - ② M.2 Hat/dual Hat
-- ③ SSD/AI Kit PCIe devices
-- ④ PCIe devices fixing screw
-- ⑤ PCIe connection cable between M.2 Hat and Raspberry Pi 
-- ⑥ Screw sleeve、long screws and nuts
+- ③ SSD/dispositivos PCIe del Kit AI
+- ④ Tornillo de fijación de dispositivos PCIe
+- ⑤ Cable de conexión PCIe entre M.2 Hat y Raspberry Pi 
+- ⑥ Manguito de tornillo, tornillos largos y tuercas
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/1.jpg" alt="pir" width="700" height="auto" /></div>
 
-For installation with a casing, you need to prepare the following materials:
+Para la instalación con carcasa, necesitas preparar los siguientes materiales:
 
 - ① Raspberry Pi 5
 - ② M.2 Hat/dual Hat
-- ③ SSD/AI Kit PCIe devices
-- ④ PCIe devices fixing screw
-- ⑤ PCIe connection cable between M.2 Hat and Raspberry Pi
-- ⑥ Long screws and nuts 
-- ⑦ [outer casing](https://files.seeedstudio.com/wiki/M.2_Hat/Seeed%20M.2%20hat%20with%20Pi5%20case_sam-20240827.stp)
+- ③ SSD/dispositivos PCIe del Kit AI
+- ④ Tornillo de fijación de dispositivos PCIe
+- ⑤ Cable de conexión PCIe entre M.2 Hat y Raspberry Pi
+- ⑥ Tornillos largos y tuercas 
+- ⑦ [carcasa exterior](https://files.seeedstudio.com/wiki/M.2_Hat/Seeed%20M.2%20hat%20with%20Pi5%20case_sam-20240827.stp)
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/1_2.jpg" alt="pir" width="700" height="auto" /></div>
 
-### Installation
+### Instalación
 
-> **Note:** This is a note. `Wipe pogo pin and GPIO pad with alcohol cotton, and then connect it before you using M.2 dual Hat on raspberrypi`
+> **Nota:** Esto es una nota. `Limpia el pin pogo y el pad GPIO con algodón con alcohol, y luego conéctalos antes de usar el M.2 dual Hat en la raspberrypi`
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/hat.jpg" alt="pir" width="700" height="auto" /></div>
 
@@ -82,186 +82,186 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="Method 1" label="Installation without housing">
+<TabItem value="Method 1" label="Instalación sin carcasa">
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/2.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 1**: Insert the PCIe connection cable into the M.2 Hat, paying attention to the insertion direction of the cable. Insert the PCIe interface of the M.2 Hat with the metal side facing downwards, as shown in the figure after insertion:
+**Paso 1**: Inserta el cable de conexión PCIe en el M.2 Hat, prestando atención a la dirección de inserción del cable. Inserta la interfaz PCIe del M.2 Hat con el lado metálico hacia abajo, como se muestra en la figura después de la inserción:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/3.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 2**: Insert the PCIe connection cable into Raspberry Pi 5.
+**Paso 2**: Inserta el cable de conexión PCIe en la Raspberry Pi 5.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/4.jpg" alt="pir" width="700" height="auto" /></div>
 
-Please pay attention to the insertion direction of the cable. Insert the PCIe interface of Raspberry Pi 5 with the metal side facing up, as shown in the figure after insertion:
+Presta atención a la dirección de inserción del cable. Inserta la interfaz PCIe de la Raspberry Pi 5 con el lado metálico hacia arriba, como se muestra en la figura después de la inserción:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/5.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 3**: Overlap the Raspberry Pi 5 with the M.2 Hat and insert the screw sleeve into the screw.
+**Paso 3**: Superpón la Raspberry Pi 5 con el M.2 Hat e inserta el manguito del tornillo en el tornillo.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/6.jpg" alt="pir" width="700" height="auto" /></div>
 
-Then insert the screws into the screw holes of Raspberry Pi 5 and M.2 Hat, as shown in the figure:
+Luego inserta los tornillos en los orificios de la Raspberry Pi 5 y el M.2 Hat, como se muestra en la figura:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/7.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 4**: Screw the stud into the screw and secure the screw to the circuit board, as shown in the figure:
+**Paso 4**: Atornilla el espárrago en el tornillo y asegura el tornillo a la placa de circuito, como se muestra en la figura:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/8.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 5**: Insert the SSD and AI Kit into M.2 dual Hat
+**Paso 5**: Inserta el SSD y el Kit AI en el M.2 dual Hat
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/10.jpg" alt="pir" width="700" height="auto" /></div>
 
-Then insert the fixing screws to secure the SSD and AI Kit in the M.2 Hat, as shown in the figure:
+Luego inserta los tornillos de fijación para asegurar el SSD y el Kit AI en el M.2 Hat, como se muestra en la figura:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/11.jpg" alt="pir" width="700" height="auto" /></div>
 </TabItem>
 
-<TabItem value="Method 2" label="Installation with housing">
+<TabItem value="Method 2" label="Instalación con carcasa">
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/2.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 1**: Insert the PCIe connection cable into the M.2 Hat. Please pay attention to the insertion direction of the cable. Plug the metal side downward into the PCIe interface of the M.2 Hat. After insertion, as shown in the figure:
+**Paso 1**: Inserta el cable de conexión PCIe en el M.2 Hat. Presta atención a la dirección de inserción del cable. Conecta el lado metálico hacia abajo en la interfaz PCIe del M.2 Hat. Después de la inserción, como se muestra en la figura:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/3.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 2**: Plug the PCIe connection cable into the Raspberry Pi 5.
+**Paso 2**: Conecta el cable de conexión PCIe a la Raspberry Pi 5.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/4.jpg" alt="pir" width="700" height="auto" /></div>
 
-Please pay attention to the insertion direction of the cable. Plug it into the PCIe interface of Raspberry Pi 5 with the metal side facing up. After insertion, it is as shown in the figure:
+Presta atención a la dirección de inserción del cable. Conéctalo a la interfaz PCIe de la Raspberry Pi 5 con el lado metálico hacia arriba. Después de la inserción, es como se muestra en la figura:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/5.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 3**: Overlap the Raspberry Pi 5 and M.2 Hat, and prepare the shell, screws, nuts and PCIe devices
+**Paso 3**: Superpón la Raspberry Pi 5 y el M.2 Hat, y prepara la carcasa, tornillos, tuercas y dispositivos PCIe
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/12.jpg" alt="pir" width="700" height="auto" /></div>
 
-Place the overlapping M.2 Hat and Raspberry Pi into the case, with the Raspberry Pi on top, as shown in the picture:
+Coloca el M.2 Hat superpuesto y la Raspberry Pi en la carcasa, con la Raspberry Pi en la parte superior, como se muestra en la imagen:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/13.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 4**: Screw the screws into the reserved screw holes in the casing. This hole will connect the M.2 Hat and the Raspberry Pi, thereby fixing the M.2 Hat, Raspberry Pi 5 and the casing.
+**Paso 4**: Atornilla los tornillos en los orificios de tornillo reservados en la carcasa. Este orificio conectará el M.2 Hat y la Raspberry Pi, fijando así el M.2 Hat, la Raspberry Pi 5 y la carcasa.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/14.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 5**: Screw the studs into the screws to fix the M.2 Hat, Raspberry Pi 5 and case
+**Paso 5**: Atornilla los espárragos en los tornillos para fijar el M.2 Hat, la Raspberry Pi 5 y la carcasa
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/15.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 6**: Insert the SSD and AI Kit into the M.2 Hat, as shown in the figure:
+**Paso 6**: Inserta el SSD y el Kit AI en el M.2 Hat, como se muestra en la figura:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/16.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 7**: Screw in the fixing screws to fix the SSD in the M.2 Hat
+**Paso 7**: Atornilla los tornillos de fijación para fijar el SSD en el M.2 Hat
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/17.jpg" alt="pir" width="700" height="auto" /></div>
 
-**Step 8**: Install the remaining shell
+**Paso 8**: Instala el resto de la carcasa
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/18.jpg" alt="pir" width="700" height="auto" /></div>
 </TabItem>
 </Tabs>
 
 
-### Use SD Card Copier tool to flash OS onto the NVME SSD On Raspberry Pi OS
+### Usar la herramienta SD Card Copier para grabar el SO en el SSD NVME en Raspberry Pi OS
 
-*This method works if you have an SD card and have booted the device successfully. Please make sure your system is the latest Raspberry Pi system (Bookworm or later) and and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer, otherwise it may not recognize the NVME-related configurations.*
+*Este método funciona si tienes una tarjeta SD y has arrancado el dispositivo correctamente. Asegúrate de que tu sistema sea el último sistema Raspberry Pi (Bookworm o posterior) y que el firmware de tu RPi 5 esté actualizado al 2023-12-06 (6 de diciembre) o más reciente, de lo contrario es posible que no reconozca las configuraciones relacionadas con NVME.*
 
 
-**Step 1**:Ensure that your Raspberry Pi system is up-to-date (Bookworm or later), enter the following command to update the RPi 5 firmware:
+**Paso 1**: Asegúrate de que tu sistema Raspberry Pi esté actualizado (Bookworm o posterior), ingresa el siguiente comando para actualizar el firmware de RPi 5:
 ```shell
   sudo apt update && sudo apt upgrade -y
-  sudo rpi-eeprom-update  # If it is not post-December 2023 type the following into a terminal to start the configuration tool
+  sudo rpi-eeprom-update  # Si no es posterior a diciembre de 2023, escribe lo siguiente en una terminal para iniciar la herramienta de configuración
   sudo raspi-config
 ```
-Scroll down to `Advanced Options` and press Enter:
+Desplázate hacia abajo hasta `Advanced Options` y presiona Enter:
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_1.png" alt="pir" width="700" height="auto" /></div>
 
-Scroll down to `Bootloader Version` and press Enter:
+Desplázate hacia abajo hasta `Bootloader Version` y presiona Enter:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_2.png" alt="pir" width="700" height="auto" /></div>
 
-And finally choose `Latest`, and press Enter:
+Y finalmente elige `Latest`, y presiona Enter:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_3.png" alt="pir" width="700" height="auto" /></div>
 
-Select `No` here - you want the `latest` bootloader.
+Selecciona `No` aquí - quieres el bootloader `latest`.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_4.png" alt="pir" width="700" height="auto" /></div>
 
-And exit from the tool by selecting `Finish`:
+Y sal de la herramienta seleccionando `Finish`:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_5.png" alt="pir" width="700" height="auto" /></div>
 
-If asked to reboot, select `Yes`.
+Si se te solicita reiniciar, selecciona `Yes`.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_6.png" alt="pir" width="700" height="auto" /></div>
 
-**Step 2**：Cick **Applications** =>**Accessories** =>**SD Card Copier** on the main screen, run the **SD Card Copier** program, and copy the OS to the NVME ssd as shown in the figure below.
+**Paso 2**: Haz clic en **Applications** =>**Accessories** =>**SD Card Copier** en la pantalla principal, ejecuta el programa **SD Card Copier**, y copia el SO al SSD NVME como se muestra en la figura a continuación.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/copy.gif" alt="pir" width="700" height="auto" /></div>
 
-### Setting the Raspberry Pi to boot from the NVMe SSD
+### Configurar la Raspberry Pi para arrancar desde el SSD NVMe
 
-If you have easy access to your SD card slot you could turn off your Pi, pop out the SD card and (if everything's working as expected) it should automagically boot from your NVMe drive the next time you start it up. If you want to leave the SD card where it is and still boot from NVMe though, you'll need to change the boot order.
+Si tienes fácil acceso a la ranura de tu tarjeta SD, podrías apagar tu Pi, sacar la tarjeta SD y (si todo funciona como se espera) debería arrancar automáticamente desde tu unidad NVMe la próxima vez que la inicies. Si quieres dejar la tarjeta SD donde está y aún así arrancar desde NVMe, necesitarás cambiar el orden de arranque.
 
-**Step 1**:Enter the following command:
+**Paso 1**: Ingresa el siguiente comando:
 ```shell
   sudo raspi-config
 ```
-Scroll down to `Advanced Options` and press Enter:
+Desplázate hacia abajo hasta `Advanced Options` y presiona Enter:
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_1.png" alt="pir" width="700" height="auto" /></div>
 
-**Step 2**:Scroll down to `Boot Order` and press Enter:
+**Paso 2**: Desplázate hacia abajo hasta `Boot Order` y presiona Enter:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_2.png" alt="pir" width="700" height="auto" /></div>
 
-**Step 3**:Choose `NVMe/USB Boot` and press Enter:
+**Paso 3**: Elige `NVMe/USB Boot` y presiona Enter:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_3.png" alt="pir" width="700" height="auto" /></div>
 
-Configuration will be confirmed. Press Enter:
+La configuración será confirmada. Presiona Enter:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_4.png" alt="pir" width="700" height="auto" /></div>
 
-**Step 4**:Return to the first screen by selecting `Back` or pressing the Esc key. Then navigate to Finish using the right cursor key.
+**Paso 4**: Regresa a la primera pantalla seleccionando `Back` o presionando la tecla Esc. Luego navega a Finish usando la tecla del cursor derecho.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_5.png" alt="pir" width="700" height="auto" /></div>
 
-You will be asked whether you want to reboot now. Click `Yes`:
+Se te preguntará si quieres reiniciar ahora. Haz clic en `Yes`:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_6.png" alt="pir" width="700" height="auto" /></div>
 
 
-### Modify PCIe
+### Modificar PCIe
 
 <Tabs>
 <TabItem value="Method 1" label="M.2 Hat">
-M.2 Hat supports PCIe Gen 2 and PCIe Gen 3 modes
+M.2 Hat soporta modos PCIe Gen 2 y PCIe Gen 3
 
-**Step 1**: Enter the following command to open the `/boot/firmware/config.txt` file
+**Paso 1**: Ingresa el siguiente comando para abrir el archivo `/boot/firmware/config.txt`
 ```shell
 sudo nano /boot/firmware/config.txt
 ```
 
-**Step 2**:Add the following to the [all] section at the end of the `/boot/firmware/config.txt` file:
+**Paso 2**: Agrega lo siguiente a la sección [all] al final del archivo `/boot/firmware/config.txt`:
 ```shell
 dtparam=pciex1_gen=3
 ```
-Save the file and reboot again, you may see a speed increase!.
+Guarda el archivo y reinicia de nuevo, ¡podrías ver un aumento de velocidad!.
 </TabItem>
 
 <TabItem value="Method 2" label="M.2 dual Hat">
 
-PCIe2.0 M.2 dual Hat supports PCIe Gen 2, and PCIe3.0 M.2 dual Hat supports PCIe Gen 2 and PCIe 3.
+PCIe2.0 M.2 dual Hat soporta PCIe Gen 2, y PCIe3.0 M.2 dual Hat soporta PCIe Gen 2 y PCIe 3.
 
-**Step 1**: Enter the following command to open the `/boot/firmware/config.txt` file
+**Paso 1**: Ingresa el siguiente comando para abrir el archivo `/boot/firmware/config.txt`
 ```shell
 sudo nano /boot/firmware/config.txt
 ```
 
-**Step 2**:Add the following to the [all] section at the end of the `/boot/firmware/config.txt` file:
+**Paso 2**: Agrega lo siguiente a la sección [all] al final del archivo `/boot/firmware/config.txt`:
 
 ```shell
 dtparam=pciex1_gen=3
@@ -272,21 +272,21 @@ dtoverlay=pciex1-compat-pi5,no-mip
 </TabItem>
 </Tabs>
 
-### Speed Benchmark 
+### Benchmark de Velocidad 
 
 <Tabs>
 <TabItem value="Method 1" label="M.2 hat">
 
-This test show that raspberrypi boot from the SD card and use the SSD as backup storage:
+Esta prueba muestra que la raspberrypi arranca desde la tarjeta SD y usa el SSD como almacenamiento de respaldo:
 ```
-# write speed command
+# comando de velocidad de escritura
 sudo dd if=/dev/zero of=/mnt/nvme/testfile bs=1M count=1024 oflag=direct
 
-# read speed command
+# comando de velocidad de lectura
 sudo dd if=/mnt/nvme/testfile of=/dev/null bs=1M iflag=direc
 ```
 
-| M.2 hat | Read Speed| Write Speed|
+| M.2 hat | Velocidad de Lectura| Velocidad de Escritura|
 |:-------------|:--------------:|--------------:|
 | PCIe 3.0       | 822MB/s       | 716MB/s         |
 | PCIe 2.0       | 431 MB/s      | 389MB/s         |
@@ -296,50 +296,50 @@ sudo dd if=/mnt/nvme/testfile of=/dev/null bs=1M iflag=direc
 
 <TabItem value="Method 2" label="M.2 dual Hat">
 
-This test show that raspberrypi boot from the SSD and use another SSD as backup storage:
+Esta prueba muestra que la raspberrypi arranca desde el SSD y usa otro SSD como almacenamiento de respaldo:
 
 ```
-# write speed command
+# comando de velocidad de escritura
 dd if=/dev/zero of=tempfile bs=1M count=1024 oflag=direct
-# read speed command
+# comando de velocidad de lectura
 dd if=/dev/zero of=tempfile bs=1M count=1024 
 ```
 
-| M.2 dual Hat | Read & Read | Write & Write | Read & Write |
+| M.2 dual Hat | Lectura & Lectura | Escritura & Escritura | Lectura & Escritura |
 |:-------------|:--------------:|--------------:|--------------:|
-| PCIe 3.0       | average 454MB/s      | average 407MB/s        |   697MB/s 663MB/s|
-| PCIe 2.0       | average 234MB/s      | average 214MB/s        |      414MB/s 324MB/s|
+| PCIe 3.0       | promedio 454MB/s      | promedio 407MB/s        |   697MB/s 663MB/s|
+| PCIe 2.0       | promedio 234MB/s      | promedio 214MB/s        |      414MB/s 324MB/s|
 
 
 </TabItem>
 
-<TabItem value="Method 3" label="M.2 dual Hat with hailo8">
+<TabItem value="Method 3" label="M.2 dual Hat con hailo8">
 
-This test show that raspberrypi boot from the SSD and Hailo8 AI accelerator:
+Esta prueba muestra que la raspberrypi arranca desde el SSD y el acelerador AI Hailo8:
 
 
 ```
-# write speed command
+# comando de velocidad de escritura
 dd if=/dev/zero of=tempfile bs=1M count=1024 oflag=direct
-# read speed command
+# comando de velocidad de lectura
 dd if=/dev/zero of=tempfile bs=1M count=1024 
 ```
 
-| M.2 dual Hat with hailo8| Read | Read & Hailo8 | Write |Write & Hailo8|
+| M.2 dual Hat con hailo8| Lectura | Lectura & Hailo8 | Escritura |Escritura & Hailo8|
 |:-------------|:--------------:|--------------:|--------------:|--------------:|
 | PCIe 3.0       | 812MB/S     | 416MB/S 187FPS      |   701MB/s |  340MB/s  188FPS|
 | PCIe 2.0       | 429MB/S      | 233MB/S/s 128FPS       |      372MB/S|  273MB/S 111FPS|
 
-> **Note:** To test Hailo8 please check this [link](https://github.com/hailo-ai/hailo-rpi5-examples) and prepare a video with 240 FPS.
+> **Nota:** Para probar Hailo8, consulta este [enlace](https://github.com/hailo-ai/hailo-rpi5-examples) y prepara un video con 240 FPS.
 
 
 </TabItem>
 </Tabs>
 
 
-## Tech Support & Product Discussion
+## Soporte Técnico & Discusión de Productos
 
-Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte para asegurar que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para atender diferentes preferencias y necesidades.
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
