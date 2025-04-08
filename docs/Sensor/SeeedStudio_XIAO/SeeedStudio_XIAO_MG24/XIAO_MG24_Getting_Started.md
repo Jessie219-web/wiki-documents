@@ -293,8 +293,9 @@ At the same time, we designed a red indicator light for battery charging, throug
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/battery_mg24.jpg" style={{width:600, height:'auto'}}/></div>
 
-## Test voltage
-### Software code
+## Reading Battery Voltage
+
+**Software code**
 ```cpp
 /*
   AnalogReadSerial
@@ -325,7 +326,7 @@ void loop() {
   delay(1000);  // delay in between reads for stability
 }
 ```
-### Display Result
+**Display Result**
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/55.png" alt="pir" width="800" height="auto"/></div>
 
