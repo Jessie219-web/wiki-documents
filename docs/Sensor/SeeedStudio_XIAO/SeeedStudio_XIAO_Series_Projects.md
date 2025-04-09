@@ -117,7 +117,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_samd21"><strong><font color={'FFFFFF'} size={"4"}>XIAO SAMD21</font></strong></span>
+<span id="xiao_samd21"><strong><font size={"4"}>XIAO SAMD21</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -131,7 +131,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_rp2040"><strong><font color={'FFFFFF'} size={"4"}>XIAO RP2040</font></strong></span>
+<span id="xiao_rp2040"><strong><font  size={"4"}>XIAO RP2040</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -145,7 +145,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_nrf52840_(sense)"><strong><font color={'FFFFFF'} size={"4"}>XIAO nRF52840 (Sense)</font></strong></span>
+<span id="xiao_nrf52840_(sense)"><strong><font  size={"4"}>XIAO nRF52840 (Sense)</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -169,7 +169,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_esp32c3"><strong><font color={'FFFFFF'} size={"4"}>XIAO ESP32C3</font></strong></span>
+<span id="xiao_esp32c3"><strong><font  size={"4"}>XIAO ESP32C3</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -188,7 +188,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_esp32s3_(sense)"><strong><font color={'FFFFFF'} size={"4"}>XIAO ESP32S3 (Sense)</font></strong></span>
+<span id="xiao_esp32s3_(sense)"><strong><font  size={"4"}>XIAO ESP32S3 (Sense)</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -212,7 +212,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_esp32c6"><strong><font color={'FFFFFF'} size={"4"}>XIAO ESP32C6</font></strong></span>
+<span id="xiao_esp32c6"><strong><font  size={"4"}>XIAO ESP32C6</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -231,7 +231,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_rp2350"><strong><font color={'FFFFFF'} size={"4"}>XIAO RP2350</font></strong></span>
+<span id="xiao_rp2350"><strong><font  size={"4"}>XIAO RP2350</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -245,7 +245,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_ra4m1"><strong><font color={'FFFFFF'} size={"4"}>XIAO RA4M1</font></strong></span>
+<span id="xiao_ra4m1"><strong><font  size={"4"}>XIAO RA4M1</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -259,7 +259,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_mg24_(sense)"><strong><font color={'FFFFFF'} size={"4"}>XIAO MG24 (Sense)</font></strong></span>
+<span id="xiao_mg24_(sense)"><strong><font  size={"4"}>XIAO MG24 (Sense)</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
