@@ -1087,6 +1087,7 @@ const sidebars = {
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Seeeduino-XIAO',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/XIAO-SAMD21-Zephyr-RTOS',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/XIAO_SAMD21_with_PlatformIO',
             {
               type: 'category',
               label: 'Programming Language',
@@ -1150,14 +1151,10 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-CircuitPython',
               ],
             },
-            {
-              type: 'category',
-              label: 'RTOS',
-              items: [
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-Zephyr-RTOS',
-              ],
-            },
+          
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-Zephyr-RTOS',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO_RP2040_with_PlatformIO',
             {
               type: 'category',
               label: 'Embedded ML',
@@ -6674,28 +6671,11 @@ const sidebars = {
       ]
     },
     "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_FAQ",
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     {
       type: 'doc',
       id: 'Spanish/Edge/Raspberry_Pi_Devices/es_RpiDevices',
-      label: 'Raspberry Pi Devices',
+      label: 'Dispositivos Raspberry Pi',
       className: 'sideboard_calss',
     },
     {
@@ -7593,8 +7573,6 @@ const sidebars = {
     },
   ]
 }
-
-    
 
 
 module.exports = sidebars
