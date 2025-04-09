@@ -302,9 +302,12 @@ led_daemon: LED set 0x00
 
 Check the video below with the demo for gpio and leds:
 
-<div align="center"><video width={800} height={600} controls>
-    <source src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3/img/xiao-esp32s3-nuttx-demo.mp4" type="video/mp4" />
-</video></div>
+<div style={{ maxWidth: '100%', textAlign: 'center' }}>
+  <video style={{ width: '100%', height: 'auto' }} controls>
+    <source src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiao-esp32s3-nuttx-demo.mp4" type="video/mp4" />
+  </video>
+</div>
+
 
 For more information about NuttX RTOS, please visit [NuttX Documentation](https://nuttx.apache.org/docs/latest/index.html)
 
