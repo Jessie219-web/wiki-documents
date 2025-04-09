@@ -24,7 +24,7 @@ last_update:
         <font size={"2.1"}>The Seeed Studio XIAO Series is a collection of thumb-sized, powerful microcontroller units (MCUs) tailor-made for space-conscious projects requiring high performance and wireless connectivity. Embodying the essence of popular hardware platforms such as ESP32, RP2350, RP2040, nRF52840, and SAMD21, the Arduino-compatible XIAO series is the perfect toolset for you to embrace tiny machine learning (TinyML) on the Edge.</font>
     </div>
 </div>
-<br/> 
+<br/> <br/>
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/xiao-series-page"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Learn More </font></span></strong></a>
 </div>
