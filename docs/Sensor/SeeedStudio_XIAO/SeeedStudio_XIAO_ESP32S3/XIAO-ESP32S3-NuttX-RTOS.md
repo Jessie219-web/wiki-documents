@@ -1,17 +1,17 @@
 ---
-description: XIAO RP2350 With NuttX(RTOS)
-title: XIAO RP2350 With NuttX(RTOS)
+description: XIAO ESP32S3 With NuttX(RTOS)
+title: XIAO ESP32S3 With NuttX(RTOS)
 keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp
-slug: /xiao-rp2350-nuttx
-sidebar_position: 3
+slug: /xiao-esp32s3-nuttx
+sidebar_position: 2
 last_update:
-    date: 03/11/2025
+    date: 04/08/2025
     author: rcsim
 ---
 
-# Seeed Studio XIAO RP2350 with NuttX(RTOS)
+# Seeed Studio XIAO ESP32S3 with NuttX(RTOS)
 
 ## Introduction
 
@@ -23,22 +23,18 @@ Additionally, NuttX offers many advanced and useful features, such as USB, Ether
 
 NuttX supports a vast and continually expanding number of boards. [The official documentation](https://nuttx.apache.org/docs/latest/platforms/) provides a comprehensive list of supported boards, organized by architecture and System-on-Chip (SoC) series.
 
-For instance, the [Seeed Studio XIAO RP2350](https://nuttx.apache.org/docs/latest/platforms/arm/rp23xx/boards/xiao-rp2350/index.html) page in the NuttX documentation offers detailed descriptions of each supported feature and instructions on how to utilize them. Also there is a specific page in the NuttX documentation for [Raspberry Pi RP2350](https://nuttx.apache.org/docs/latest/platforms/arm/rp23xx/index.html) series chips.
+For instance, the [Seeed Studio XIAO ESP32S3](https://nuttx.apache.org/docs/latest/platforms/arm/esp32s3/boards/xiao-esp32s3/index.html) page in the NuttX documentation offers detailed descriptions of each supported feature and instructions on how to utilize them. Also there is a specific page in the NuttX documentation for [Espressif ESP32S3](https://nuttx.apache.org/docs/latest/platforms/xtensa/esp32s3/index.html) series chips, where you can find the list of MCUs and peripherals supported.
 
 ## Installation
 
-The Nuttx documentation provides a [guide](https://nuttx.apache.org/docs/latest/quickstart/install.html) to different platforms.For Seeed Studio XIAO RP2350 please follow these steps:
+The Nuttx documentation provides a [guide](https://nuttx.apache.org/docs/latest/quickstart/install.html) to different platforms.For Seeed Studio XIAO ESP32S3 please follow these steps:
 
-1. Download picotool tools (optional):
+1. Download Espressif esptool(https://docs.espressif.com/projects/esptool/en/latest/esp32/): 
 
     ```bash
-    git clone https://github.com/raspberrypi/picotool.git picotool
-    cd picotool
-    mkdir build
-    cd build
-    cmake ..
-    make
-    cp picotool ~/local/bin # somewhere in your PATH
+    ~/nuttxspace/nuttx$ esptool.py version
+    esptool.py v4.8.1
+    4.8.1
     ```
 
 2. Create a workspace
@@ -79,25 +75,24 @@ Also it's possible to check the list of board-supported a running the command:
     ```bash
     cd nuttx
     make distclean
-    ./tools/configure.sh xiao-rp2350:nsh
+    ./tools/configure.sh xiao-esp32s3:nsh
     make V=1
     ```
+5. The RESET and BOOT buttons can be used to enter “Bootloader” mode by press and hold the BOOT key while powering up and then press the RESET key once.
 
-5. Load the firmware using picotool:
+6. Load the firmware using esptool.py:
 
     ```bash
-    picotool load nuttx -t elf
+    make flash ESPTOOL_PORT=/dev/ttyACM0 ESPTOOL_BINDIR=./
     ```
-
-6. The RESET and BOOT buttons can be used to enter bootloader mode by press and hold BOOT buttons and then press and release RESET button. Then, the board will enumerate as a storage device to a computer connected via USB. Saving a .UF2 file to this device will replace the Flash ROM contents on the RP2350.
 
 ## Hands-on
 
-It's time to explore NuttX practically. In this session, three applications are available: NSH, USBNSH, and COMBO.
+It's time to explore NuttX practically. In this session, two applications are available: USBNSH and COMBO.
 
 ### NSH
 
-The NuttShell(NSH) is a shell system to be used in NuttX, similar to bash and other similar options. It supports a rich set of included commands, scripting and the ability to run your own applications as “builtin” (part of the same NuttX binary). The NSH configuration enables console at UART0 using 115200 bps.
+The NuttShell(NSH) is a shell system to be used in NuttX, similar to bash and other similar options. It supports a rich set of included commands, scripting and the ability to run your own applications as “builtin” (part of the same NuttX binary). The NSH configuration enables console at USB using 115200 bps.
 
 We can start the build process clearing the previous configuration
 
@@ -106,10 +101,10 @@ cd ~/nuttxspace/nuttx
 make distclean
 ```
 
-Now we select the NSH configuration to the xiao-nrf5200 board:
+Now we select the NSH configuration to the xiao-esp32s3 board:
 
 ```bash
-./tools/configurate.sh xiao-rp2350:nsh
+./tools/configurate.sh xiao-esp32s3:usbnsh
 ```
 
 Compile the source code.
@@ -118,16 +113,19 @@ Compile the source code.
 make -j
 ```
 
-Load the firmware into you board and connect the USB-to-Serial to TX and RX pins, then run a serial communication program such as minicon or picocom:
+Load the firmware into you board, reboot the board and connect NuttShell (NSH) console over USB using
+the CDC/ACM serial interface:
 
 ```bash
-picocom -b 115200 /dev/ttyUSB0
+picocom -b 115200 /dev/ttyACM0
 ```
 
 Access the NuttShell console:
 
 ```bash
 NuttShell (NSH) NuttX-12.8.0
+nsh> uname -a
+NuttX 12.8.0 2c845426da-dirty Apr  6 2025 22:53:57 xtensa esp32s3-xiao
 nsh> 
 ```
 
@@ -160,55 +158,19 @@ Hello, World!!
 
 Congratulations, your first interation with NuttX was completed.
 
-### USBNSH
-
-Similar to NSH configuration, but using CDC/ACM serial (console enabled in USB Port, at 115200 bps).
-
-We can start the build process clearing the previous configuration
-
-```bash
-cd ~/nuttxspace/nuttx
-make distclean
-```
-
-Now we select the NSH configuration to the xiao-nrf5200 board:
-
-```bash
-./tools/configurate.sh xiao-rp2350:usbnsh
-```
-
-Compile the source code.
-
-```bash
-make -j
-```
-
-Load the firmware into you board, run a serial communication program such as minicon or picocom:
-
-```bash
-picocom -b 115200 /dev/ttyACM0
-```
-
-You must to press Enter 3 times, and then this message will show in the terminal.
-
-```bash
-NuttShell (NSH) NuttX-12.8.0
-nsh> 
-```
-
 ### COMBO
 
-This configuration enables three example applications, gpio, leds and ws2812. The General Purpose Input/Output (GPIO) is a microcontroller's most fundamental part, allowing it to connect to the external world. This way we will use the NSH to access and configure those pins as we wish. But first, let's clear the previous configuration.
+This configuration enables three example applications, gpio and leds. The General Purpose Input/Output (GPIO) is a microcontroller's most fundamental part, allowing it to connect to the external world. This way we will use the NSH to access and configure those pins as we wish. But first, let's clear the previous configuration.
 
 ```bash
 cd ~/nuttxspace/nuttx
 make distclean
 ```
 
-Select the combo configuration to the xiao-rp2350 board.
+Select the combo configuration to the xiao-esp32s3 board.
 
 ```bash
-./tools/configurate.sh xiao-rp2350:combo
+./tools/configurate.sh xiao-esp32s3:combo
 ```
 
 Compile de the source code.
@@ -220,7 +182,7 @@ make -j
 Load the firmware into you board, run a serial communication program such as minicon or picocom:
 
 ```bash
-picocom -b 115200 /dev/ttyUSB0
+picocom -b 115200 /dev/ttyACM0
 ```
 
 ```bash
@@ -255,54 +217,63 @@ IO_INPUT_PIN_PULLDOWN
  10: GPIO_INTERRUPT_BOTH_PIN
 ```
 
-To confirm the GPIO device files were created, type `ls/dev`. After typing, you can see some gpios were declared define on boards/arm/rp23xx/xiao-rp2350/include/board.h, which represent :
+To confirm the GPIO device files were created, type `ls/dev`. After typing, you can see some gpios were declared define on boards/arm/ra/xiao-esp32s3/include/board.h, which represent :
 
 - On board LED:
-  - Yellow            -> GPIO25
+  - Yellow            -> GPIO21
  
 - GPIOs
-  - 1 Input           -> GPIO27
-  - 1 Interrupt Input -> GPIO26
-  - 1 Output          -> GPIO28
+  - 1 Input           -> GPIO1
+  - 1 Input w/ IRQ    -> GPIO3
+  - 1 Output          -> GPIO2
 
 ```bash
 nsh> ls /dev
 /dev:
  console
- gpio26
- gpio27
- gpio28
- leds0
+ gpio0
+ gpio1
+ gpio2
  null
+ ttyACM0
  ttyS0
  userleds
  zero
 nsh> 
 ```
 
-Following these commands to read gpio27 and gpio26 (with interruption) and write at gpio28.
+Following these commands to read GPIO1(/dev/gpio1) and GPIO3(/dev/gpio2) (with interruption)
+and write at GPIO2(/dev/gpio0).
 
 ```bash
-nsh> gpio -w 1 /dev/gpio26
-Driver: /dev/gpio26
-  Interrupt pin: Value=0
-  Verify:        Value=0
-nsh> gpio /dev/gpio27
-Driver: /dev/gpio27
-  Input pin:     Value=0
-nsh> gpio /dev/gpio27
-Driver: /dev/gpio27
-  Input pin:     Value=1
-nsh> gpio -o 1 /dev/gpio28
-Driver: /dev/gpio28
+NuttShell (NSH) NuttX-12.8.0
+nsh> gpio -o 1 /dev/gpio0
+Driver: /dev/gpio0
   Output pin:    Value=0
   Writing:       Value=1
   Verify:        Value=1
-nsh> gpio -o 0 /dev/gpio28
-Driver: /dev/gpio28
+nsh> gpio -o 0 /dev/gpio0
+  Driver: /dev/gpio0
   Output pin:    Value=1
   Writing:       Value=0
   Verify:        Value=0
+nsh> gpio /dev/gpio1
+Driver: /dev/gpio1
+  Input pin:     Value=0
+nsh> gpio /dev/gpio1
+Driver: /dev/gpio1
+  Input pin:     Value=1
+nsh> gpio /dev/gpio1
+Driver: /dev/gpio1
+  Input pin:     Value=0
+nsh> gpio -w 1 /dev/gpio2
+Driver: /dev/gpio2
+  Interrupt pin: Value=0
+  Verify:        Value=1
+nsh> gpio -w 1 /dev/gpio2
+Driver: /dev/gpio2
+  Interrupt pin: Value=0
+  Verify:        Value=1
 ```
 
 The USERLEDS is a subsystem that allows to control of the LEDs with single operation. Also, you can use commands-line like the printf. In this demo we will turn on and turn off the Yellow LED on-board each 1 seconds.
@@ -315,7 +286,7 @@ nsh> leds
 leds_main: Starting the led_daemon
 leds_main: led_daemon started
 
-led_daemon (pid# 3): Running
+led_daemon (pid# 7): Running
 led_daemon: Opening /dev/userleds
 led_daemon: Supported LEDs 0x01
 led_daemon: LED set 0x01
@@ -324,20 +295,16 @@ led_daemon: LED set 0x01
 led_daemon: LED set 0x00
 led_daemon: LED set 0x01
 led_daemon: LED set 0x00
+led_daemon: LED set 0x01
+led_daemon: LED set 0x00
+
 ```
 
-The Seeed Studio XIAO RP2350 also has a WS2812 addressable LED that can be tested using ws2812 application:
-```bash
-NuttShell (NSH) NuttX-12.8.0
-nsh> ws2812
-```
-
-
-Check the video below with the demo for gpio, leds and ws2812 example:
+Check the video below with the demo for gpio and leds:
 
 <div style={{ maxWidth: '100%', textAlign: 'center' }}>
   <video style={{ width: '100%', height: 'auto' }} controls>
-    <source src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/Nuttx/xiao-rp2350-nuttx-demo.mp4" type="video/mp4" />
+    <source src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiao-esp32s3-nuttx-demo.mp4" type="video/mp4" />
   </video>
 </div>
 
