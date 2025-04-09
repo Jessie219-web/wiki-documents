@@ -6659,28 +6659,11 @@ const sidebars = {
       ]
     },
     "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_FAQ",
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     {
       type: 'doc',
       id: 'Spanish/Edge/Raspberry_Pi_Devices/es_RpiDevices',
-      label: 'Raspberry Pi Devices',
+      label: 'Dispositivos Raspberry Pi',
       className: 'sideboard_calss',
     },
     {
@@ -7578,8 +7561,6 @@ const sidebars = {
     },
   ]
 }
-
-    
 
 
 module.exports = sidebars

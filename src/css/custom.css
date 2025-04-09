@@ -429,6 +429,20 @@
 	flex-wrap: nowrap;
 }
 
+@media (max-width: 600px) {
+	.button_tech_support_container {
+	  flex-wrap: nowrap;
+	  justify-content: center;/* 居中按钮 */
+	  gap: 1px;              /* 按钮之间间距（可选） */
+	}
+  
+	.button_tech_support_container a {
+	  width: 160px;            /* 缩小按钮尺寸（可选） */
+	  height: 75px;
+	}
+  }
+  
+
 .button_forum {
 	display: inline-block;
 	background-image: url('https://files.seeedstudio.com/wiki/wiki-platform/tech_support1.png');
