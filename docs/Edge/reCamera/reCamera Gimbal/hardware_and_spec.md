@@ -309,7 +309,12 @@ gimbal --help
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/gimbal_script.png" /></div>
 
-`gimbal` is a bash script, you can modify to view and modify the script to achieve your secondary development needs.
+`gimbal` is a bash script, you can modify to view and modify the script to achieve your secondary development needs. Script location is:
+
+```bash
+cd /usr/bin
+cat gimbal
+```
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/gimbal_script_content.png" /></div>
 
