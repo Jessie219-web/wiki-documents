@@ -1,5 +1,5 @@
 ---
-description: 
+description: Gimbal prebuilt Node-red Flow description
 title: Node-RED Nodes for Gimbal
 keywords:
   - AI
