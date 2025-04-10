@@ -335,9 +335,12 @@ nsh> ws2812
 
 Check the video below with the demo for gpio, leds and ws2812 example:
 
-<div align="center"><video width={800} height={600} controls>
+<div style={{ maxWidth: '100%', textAlign: 'center' }}>
+  <video style={{ width: '100%', height: 'auto' }} controls>
     <source src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/Nuttx/xiao-rp2350-nuttx-demo.mp4" type="video/mp4" />
-</video></div>
+  </video>
+</div>
+
 
 For more information about NuttX RTOS, please visit [NuttX Documentation](https://nuttx.apache.org/docs/latest/index.html)
 
