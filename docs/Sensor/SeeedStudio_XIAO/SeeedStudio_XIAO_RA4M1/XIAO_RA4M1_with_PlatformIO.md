@@ -3,7 +3,7 @@ description: Seeed Studio XIAO RA4M1 with PlatformIO
 title: XIAO RA4M1 with PlatformIO
 keywords:
 - xiao
-image: https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/ra4m1_with_platformio.jpg
+image: https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/ra4m1_with_platformio.webp
 slug: /xiao_ra4m1_with_platform_io
 last_update:
   date: 04/07/2025

@@ -2,7 +2,7 @@
 title: XIAO 2-Channel Wi-Fi AC Energy Meter In Home Assistant
 description: |
   A smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances.
-image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.jpg
+image: https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.webp
 slug: /2_channel_wifi_ac_energy_meter
 keywords:
   - XIAO
