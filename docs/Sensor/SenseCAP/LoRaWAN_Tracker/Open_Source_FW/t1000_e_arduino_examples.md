@@ -1,6 +1,6 @@
 ---
 description: Arduino examples for T1000-E user guide
-title: T1000-E Arduino Examples
+title: Get Started with Arduino
 keywords:
 - Tracker
 image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/tracker-t1000-e-for-meshtastic.webp
@@ -11,7 +11,6 @@ last_update:
   author: Frederik Funk
 ---
 
-# T1000-E Arduino Examples
 
 The following Arduino examples are available:
 
@@ -68,33 +67,68 @@ The following Arduino examples are available:
   </table>
 </div>
 
-## Prerequisites
 
-Before starting, make sure to have completed the following steps:
+## Preparation
 
-1. Install the Arduino IDE
-2. Add the Seeed Arduino core to the IDE as described [here](https://github.com/Seeed-Studio/Adafruit_nRF52_Arduino?tab=readme-ov-file#bsp-installation)
-3. Connect the Tracker T1000-E to your computer using the USB cable
+### Hardware Preparation
 
-## Building an example
+* SenseCAP T1000-E x 1
+* USB Cable x 1
+* Computer x 1
 
-Open the Arduino IDE and select the T1000-E board:
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/board_select.png" alt="pir" width={800} height="auto" /></p>
+### Software Preparation
 
-Then open an example of your choice (in this case the accelerator example):
+Before you can start developing，the following software tools are required.
+
+Check here for to [Get Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/).
+
+:::tip
+The version needs to be newer than v1.6.12.
+:::
+
+
+## Get Started
+
+### Prerequisites
+
+1. Add URL
+ 
+Navigate to `File` -> `Preferences`, and add the following URL to `Additional Boards Manager URLs`: 
+
+```
+https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
+```
+
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/add-url.png" alt="pir" width={800} height="auto" /></p>
+
+
+2. Install Board
+
+Navigate to `Boards Manager`, search`seeed nrf52`, select the latest version and install it. 
+
+
+
+
+
+### Building an Example
+
+1. Select board and port
+
+**Board**: Seeed Tracker T1000 E <br/>
+**Port**: Your device port
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/board-select.png" alt="pir" width={800} height="auto" /></p>
+
+2. build example
+
+Navigate to `File` -> `Examples` -> `Seeed Tracker T1000 E LoRaWAN`, Then open an example of your choice (in this case the accelerator example):
+
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/example_select.png" alt="pir" width={800} height="auto" /></p>
 
-Save the example to a place of your choice by clicking `File -> Save As`. This step is necessary to easily retrieve the compiled `.hex` file later on which is exported to the same location as the example code and to allow potential changes to the example.
-
-Now, we are ready to compile the example by clicking the "Verify" button. Do not use "Upload"; this will fail as the binary cannot be uploaded directly to the device by the Arduino IDE (see [this section](#uploading-to-target-device)):
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/example_compile.png" alt="pir" width={800} height="auto" /></p>
-
-The example should compile without any errors, and the output in the terminal should look similar as in the screenshot above.
-
-## Uploading to target device
+### Uploading to target device
 
 As the T1000-E bootloader _only_ supports flashing via `.uf2` drag&drop, it is not possible upload the examples directly via the Arduino IDE.
 Instead, follow these steps:
@@ -187,3 +221,9 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
+
+
+
+
+
+

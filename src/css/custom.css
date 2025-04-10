@@ -429,6 +429,20 @@
 	flex-wrap: nowrap;
 }
 
+@media (max-width: 600px) {
+	.button_tech_support_container {
+	  flex-wrap: nowrap;
+	  justify-content: center;/* 居中按钮 */
+	  gap: 1px;              /* 按钮之间间距（可选） */
+	}
+  
+	.button_tech_support_container a {
+	  width: 160px;            /* 缩小按钮尺寸（可选） */
+	  height: 75px;
+	}
+  }
+  
+
 .button_forum {
 	display: inline-block;
 	background-image: url('https://files.seeedstudio.com/wiki/wiki-platform/tech_support1.png');
@@ -991,6 +1005,59 @@ a.getting_started:hover .getting_started_label3 {
 	height: 10em; /* 最小按钮高度 */
 	text-decoration: none;
 }
+
+/* 移动端适配 */
+@media screen and (max-width: 768px) {
+	.all_container {
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 0 1em;
+	}
+  
+	.xiao_topic_page_font1 {
+	  margin: 20px 0 0 0;
+	  padding: 0 1em;
+	  text-align: left;
+	  width: 100%;
+	}
+  
+	.xiao_topic_page_pic {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.xiao_topic_page_pic img {
+	  width: 100%;
+	  height: auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.xiao_topic_page_font1 {
+	  font-size: 0.9rem;
+	  line-height: 1.4;
+	  padding: 0 1em;
+	  margin-top: 20px;
+	  position: relative;
+	  z-index: 2; /* 确保在图片上层 */
+	}
+  
+	.xiao_topic_page_pic {
+	  margin-bottom: 1em;
+	  z-index: 1;
+	}
+  
+	.xiao_topic_page_pic img {
+	  display: block;
+	  width: 100%;
+	  height: auto;
+	}
+}
+  
+
+  
+  
+  
 
 .feature1 {
 	display: inline-block;
