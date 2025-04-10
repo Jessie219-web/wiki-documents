@@ -109,7 +109,7 @@ This wiki will show you how you can quickly get started with XIAO ESP32C3!
         </tr>
         <tr>
             <th>Battery Charge Chip</th>
-            <td>Built-in</td>
+            <td>ETA4054S2F</td>
             <td>N/A</td>
             <td>N/A</td>
             <td>BQ25101</td>
