@@ -184,7 +184,7 @@ substitutions:
   voice_assist_not_ready_phase_id: '10'
   # The voice assistant encountered an error
   voice_assist_error_phase_id: '11'
-  # Change this to true in case you ahve a hidden SSID at home.
+  # Change this to true in case you have a hidden SSID at home.
   hidden_ssid: "false"
 
 esphome:
