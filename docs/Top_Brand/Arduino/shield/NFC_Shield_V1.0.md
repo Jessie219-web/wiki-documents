@@ -441,8 +441,6 @@ This method is used to transmit and receive data to and from initiator. This cod
 ## Resources ##
 
 - **[Library]**[PN532_SPI Library For NFC Shield](https://files.seeedstudio.com/wiki/NFC_Shield_V1.0/res/PN532_SPI_V2.zip)
-- **[Eagle]**[NFC Shield - Schematic and Board Files in Eagle Format](https://wiki.seeedstudio.com/images/8/81/NFC_Shield_V0.9b_Schematic_Board_Files.zip)
-- **[PDF]**[NFC Shield - Schematic in PDF format](https://wiki.seeedstudio.com/images/4/48/NFC_Shield_V0.9b.pdf)
 - **[PDF]**[NXP PN532 - User Manual](https://www.nxp.com/docs/en/user-guide/141520.pdf)
 - **[Links]**[NFC Forum](http://www.nfc-forum.org)
 
