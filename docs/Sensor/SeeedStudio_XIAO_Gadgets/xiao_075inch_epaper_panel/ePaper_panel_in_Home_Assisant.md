@@ -163,7 +163,7 @@ Use USB cable to **connect the ePaper panel to your computer** and click **CONNE
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/66.png" style={{width:800, height:'auto'}}/></div>
 
-Select usbmodemxxx(Windows is COMxxx) and click connect. [Encountered a problem? Click here.](#Q4)
+Select usbmodemxxx(Windows is COMxxx) and click connect. [Encountered a problem? Click here.](#Q5)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/67.png" style={{width:800, height:'auto'}}/></div>
 
@@ -171,7 +171,7 @@ Click **INSTALL** and select the firmware you just downloaded.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/69.png" style={{width:500, height:'auto'}}/></div>
 
-Finally, you will see 'Hellow world!' on the display ～
+Wait a moment and you will see 'Hellow world!' on the display ～
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/71.png" style={{width:'100%', height:'auto'}}/></div>
@@ -195,7 +195,7 @@ Click the options following the image to install the code to the device. [Haven'
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/7.png" style={{width:'100%', height:'auto'}}/></div>
 </div>
 
-When you see the feedback like the following image, it means the code is running successfully.
+Wait a moment and you will see the feedback like the following image. It means the code is running successfully.
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/9.png" style={{width:'100%', height:'auto'}}/></div>
@@ -204,7 +204,7 @@ When you see the feedback like the following image, it means the code is running
 
 </TabItem>
 
-<TabItem value='Install through wifi'>
+<TabItem value='Install through Wi-Fi'>
 
 :::tip
 This is the simplest way, but on the premise that when installing the program for the first time, you should first upload the program to the ePaper Panel using the method on the left. After that, you can upload it via wifi.
@@ -216,7 +216,7 @@ Click the option and then the firmware will be installed to ePaper penal automat
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/72.png" style={{width:500, height:'auto'}}/></div>
 
-Finally, you will see the feedback like the following image. If it fails, it may be due to a weak signal. Please move the device closer to your router. Or install it in one of the two ways on the left.
+Wait a moment and you will see the feedback like the following image. If it fails, it may be due to a weak signal. Please move the device closer to your router. [Encountered a problem? Click here.](#Q5)
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/73.png" style={{width:'100%', height:'auto'}}/></div>
@@ -461,7 +461,83 @@ Copy the code and paste it to ** captive_portal** part as the following image.
 
 ##### 4. <span id="image">Display image</span>
 
-This example will show image on the display.
+<Tabs>
+<TabItem value='Display screenshot of HA'>
+
+This example will show the screenshot of HA on the display.
+
+First, you need to install an screenshot Add-on **Puppet**, [click here to install.](https://github.com/balloob/home-assistant-addons/tree/main/puppet)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/83.jpg" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/75.jpg" style={{width:800, height:'auto'}}/></div>
+
+Starting the add-on will launch a new server on port 10000. Any path you request will return a screenshot of that page. You will need to specify the viewport size you want.
+
+For example, to get a 1000px x 1000px screenshot of your default dashboard, fetch:
+
+```python
+# http://homeassistant.local:10000/lovelace/0?viewport=1000x1000
+
+http://192.168.1.191:10000/lovelace/0?viewport=1000x1000
+```
+
+Besides, you can also screenshot other page, for example **To-do lists** page in HA:
+
+```python
+http://192.168.1.191:10000/todo?viewport=800x480
+```
+
+You can take a look the effect of the screenshot by input this link in your browser.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/77.jpg" style={{width:800, height:'auto'}}/></div>
+
+After that, you can copy the code below and paste it to ** captive_portal** part as the following image.
+<details>
+
+<summary> Click here to copy the code. </summary> 
+
+```yaml
+
+image:
+  - file: http://192.168.1.191:10000/todo?viewport=800x480  # the path you want to screenshot and the size
+    id: myImage
+    type: BINARY
+    resize: 800x480    # how big you want to show, the biggest size should be as same as epaper pixel
+    invert_alpha: true   # invert color 
+
+spi:
+  clk_pin: GPIO8
+  mosi_pin: GPIO10
+
+display:
+  - platform: waveshare_epaper
+    cs_pin: GPIO3
+    dc_pin: GPIO5
+    busy_pin: GPIO4
+    reset_pin: GPIO2
+    model: 7.50inv2
+    update_interval: 3min 
+    lambda: |-
+      it.image(0, 0, id(myImage));
+      
+```
+
+</details>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/78.jpg" style={{width:800, height:'auto'}}/></div>
+
+When you see the feedback like the following image, it means the code is running successfully.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/79.JPG" style={{width:800, height:'auto'}}/></div>
+
+
+</TabItem>
+
+<TabItem value='Display other images'>
+
+
+This example will show any images you like on the display.
 
 Like the previous example, we need to install **Studio Code Server** and create a new folder call **image** to save the image.
 
@@ -513,6 +589,10 @@ display:
 When you see the feedback like the following image, it means the code is running successfully.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/wifi.png" style={{width:600, height:'auto'}}/></div>
+
+
+</TabItem>
+</Tabs>
 
 #### Step 5.Comperhensive example
 
@@ -1017,7 +1097,7 @@ When device in deep sleep mode, you can't upload a new program derectly.
 
 3. After that, turn off the battery switch and unplug the power cable.
 
-4. Last, connect the device to Raspberry Pi, and upload a new program.
+4. Last, replug the cable and upload a new program.
 
 #### Q4: How long does the battery last?
 
@@ -1027,11 +1107,17 @@ Remember to turn on the battery button when charging. Otherwise, the battery won
 
 After our tests, refresh screen per 6 hours and the battery will last 3 months in deep sleep mode.
 
-#### <span id="Q4">Q4</span>: ePaper Penel can't connect to you computer?
+#### <span id="Q5">Q5</span>: ePaper Penel can't connect to you computer?
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/68.png" style={{width:600, height:'auto'}}/></div>
 
 Try unplugging and replugging it several times, or just install the driver according to the prompts.
+
+#### <span id="Q6">Q6</span>: Wi-Fi upload program failed?
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/74.png" style={{width:800, height:'auto'}}/></div>
+
+In this case, you epaper penal is offline or in deep sleep mode. Please get it online or wake it up.
 
 ## Resources
 
