@@ -9,13 +9,15 @@ const docList = []
 const excludedPaths = [
   path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // weekly wiki 的历史目录
   path.join(docsDirectory, 'zh-CN'), // 排除中文文档的目录
+  path.join(docsDirectory, 'Spanish'), // 排除西班牙语文档的目录
   path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
-  
-  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera_model_conversion.md'), // 排除指定文档
-  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'SenseCraft_AI_main_page.md'),
-  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'Output', 'xiao_esp32s3_sense', 'sensecraft_xiao_esp32s3_libraries.md'),
-  path.join(docsDirectory, 'Cloud_Chain', 'SenseCraft', 'SenseCraft_AI', 'Output', 'xiao_esp32s3_sense', 'sensecraft_xiao_esp32s3_mqtt.md'),
-  path.join(docsDirectory, 'FAQ', 'reTerminal', 'Wakeup_reTerminal_LCD_after_sleep.md'),
+
+
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Mini_J401', 'J401_Mini_carrierboard_Hardware_Interfaces_Usage.md'),// 排除指定文档
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Updating_Jetpack_with_OTA.md'),
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'reComputer_Jetson_Series', 'reComputer_Super', 'reComputer_Super_Getting_Started.md'),
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Differences_of_L4T_Between_Seeed_and_NVIDIA.md'),
+  path.join(docsDirectory, 'Network', 'Meshtastic_Network', 'solar_node.md'),
 ];
 
 // 递归函数，用于遍历多层文件夹

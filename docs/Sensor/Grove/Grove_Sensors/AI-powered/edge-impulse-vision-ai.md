@@ -68,7 +68,7 @@ BL702 is the USB-UART chip which enables the communication between the PC and th
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/edge-impulse-visionai/4.png" /></div>
 
-5. Click **Refresh**, choose the **Port** related to the connected board, set **Chip Erase** to **True**, click **Open UART**, click **Creat & Download** and wait for the process to be completed .
+5. Click **Refresh**, choose the **Port** related to the connected board, set **Chip Erase** to **True**, click **Open UART**, click **Create & Download** and wait for the process to be completed .
 
 <div align="center"><img width ={200} src="https://files.seeedstudio.com/wiki/edge-impulse-visionai/5.png"/></div>
 

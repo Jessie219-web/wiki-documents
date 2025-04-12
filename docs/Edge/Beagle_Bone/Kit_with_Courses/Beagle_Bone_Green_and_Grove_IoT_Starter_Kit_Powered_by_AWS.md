@@ -79,7 +79,7 @@ At the very beginning, we need to get an AWS IoT service account, and do some co
 
     ![](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_LinkIt_starter_kit_click_get_started.jpg)
 
-    3.Click on **Create a Resource** and then click **Creat a thing**.
+    3.Click on **Create a Resource** and then click **Create a thing**.
 
     ![](https://files.seeedstudio.com/wiki/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/AWS_LinkIt_starter_kit_click_create_a_thing.jpg)
 

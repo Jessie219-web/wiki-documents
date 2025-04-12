@@ -8,7 +8,7 @@ keywords:
   - Home Assistant
   - AC Relay
   - Smart Home
-sidebar_position: 2
+sidebar_position: 3
 last_update:
   author: Allen
   date: 12/02/2024

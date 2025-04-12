@@ -410,7 +410,7 @@ The RP2040 Development Tool leverages Arduino to enhance your coding experience.
 
 - **Step 2**: Add the Raspberry Pi Pico Board
 
-Open your Arduino IDE, click on **Arduino IDE** > **Reference**, and copy the below URL to **Additional Boards Manager URLs**:
+Open your Arduino IDE, click on **Arduino IDE** > **Preferences**, and copy the below URL to **Additional Boards Manager URLs**:
 
 `https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json`
 

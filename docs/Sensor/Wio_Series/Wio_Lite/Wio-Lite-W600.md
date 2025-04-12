@@ -173,7 +173,7 @@ Download the [W600 Library](https://github.com/Seeed-Studio/Seeed_Arduino_W600/a
 ![](https://files.seeedstudio.com/wiki/Wio-Lite-W600/img/IDE3.png)
 
 
-## Step 6. Modify the code with your own AP and Station. In the following picture, Wio Lite W600 work as a station to join the AP marked **A** and the the Wio Lite W600 will creat the **B AP** for other devieces. You should change both AP name and password.
+## Step 6. Modify the code with your own AP and Station. In the following picture, Wio Lite W600 work as a station to join the AP marked **A** and the the Wio Lite W600 will create the **B AP** for other devieces. You should change both AP name and password.
 
 
 ![](https://files.seeedstudio.com/wiki/Wio-Lite-W600/img/IDE-4.jpg)

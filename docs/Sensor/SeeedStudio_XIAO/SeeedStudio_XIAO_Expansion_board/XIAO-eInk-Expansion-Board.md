@@ -1,6 +1,6 @@
 ---
-description: Getting Started XIAO eInk Expansion Board
-title: XIAO eInk Expansion Board
+description: Getting Started with ePaper Breakout Board
+title: ePaper Breakout Board
 keywords:
 - XIAO eInk Expansion
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
@@ -10,7 +10,7 @@ last_update:
   author: Carla
 ---
 
-# Getting Started XIAO eInk Expansion Board
+# Getting Started with ePaper Breakout Board
 
 <div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/4/-/4-105990172-epaper-breakout-board-45back.jpg" style={{width:700, height:'auto'}}/></div>
 
@@ -77,16 +77,18 @@ This breakout board does not include an eInk display; the display must be purcha
 4. [2.9 inch E-paper - Monocolor 128x296](https://www.seeedstudio.com/2-9-Monochrome-ePaper-Display-with-296x128-Pixels-p-5782.html)
 5. [2.9-inch e-paper - Quadruple color 128x296](https://www.seeedstudio.com/2-9-Quadruple-Color-ePaper-Display-with-128x296-Pixels-p-5783.html)
 6. [4.2-inch E-Paper - Monocolor 400x300](https://www.seeedstudio.com/4-2-Monochrome-ePaper-Display-with-400x300-Pixels-p-5784.html)
-7. [5.65-inch E-paper -  Sevencolor 600x480](https://www.seeedstudio.com/5-65-Seven-Color-ePaper-Display-with-600x480-Pixels-p-5786.html)
-8. [5.83-inch E-paper - Monocolor 648x480](https://www.seeedstudio.com/5-83-Monochrome-ePaper-Display-with-648x480-Pixels-p-5785.html)
-9. [7.5-inch E-paper - Monocolor 800x480](https://www.seeedstudio.com/7-5-Monochrome-ePaper-Display-with-800x480-Pixels-p-5788.html)
+7. [4.26-inch E-Paper - Monocolor 800x480](https://www.seeedstudio.com/4-26-Monochrome-SPI-ePaper-Display-p-6398.html)
+8. [5.65-inch E-paper -  Sevencolor 600x480](https://www.seeedstudio.com/5-65-Seven-Color-ePaper-Display-with-600x480-Pixels-p-5786.html)
+9. [5.83-inch E-paper - Monocolor 648x480](https://www.seeedstudio.com/5-83-Monochrome-ePaper-Display-with-648x480-Pixels-p-5785.html)
+10. [7.5-inch E-paper - Monocolor 800x480](https://www.seeedstudio.com/7-5-Monochrome-ePaper-Display-with-800x480-Pixels-p-5788.html)
+11. [7.5-inch E-paper - Tri-Color 800x480](https://www.seeedstudio.com/7-5-3-Color-SPI-ePaper-Display-p-6399.html)
 
 
 ## Use of the Image2lcd software
 
 ### How to Make Picture
 
-Use the build-in software **Paint** in Windows to creat a picture with the **same resolution** as the screen you are using, and save it as`BMP` or  `JPG` file; 
+Use the build-in software **Paint** in Windows to create a picture with the **same resolution** as the screen you are using, and save it as`BMP` or  `JPG` file; 
 
 
 :::note
@@ -105,9 +107,11 @@ The colors of the picture should be consistent with the standard colors of the d
 |2.9 inch E-paper - Monocolor 128x296           | pure black and white          |
 |2.9-inch e-paper - Quadruple color 128x296     | black, white, red, and yellow |
 |4.2-inch E-Paper - Monocolor 400x300           | pure black and white          |
+|4.26-inch E-Paper - Monocolor 800x480          | pure black and white          |
 |5.65-inch E-paper -  Sevencolor 600x480        | black, white, red, yellow, blue, green, orange|
 |5.83-inch E-paper - Monocolor 648x480          | pure black and white          |
 |7.5-inch E-paper - Monocolor 800x480           | pure black and white          |
+|7.5-inch E-paper - Tri-Color 800x480           | pure black and white          |
 
 </div>
 
@@ -162,33 +166,47 @@ The colors of the picture should be consistent with the standard colors of the d
         <td align="center">/</td>
         <td align="center">Normal</td>       
     </tr>
-      <tr>
+    <tr>
         <th>4.2-inch E-Paper - Monocolor 400x300</th>
         <td align="center">Monochrome</td>
         <td align="center">400x300</td>
         <td align="center">✅</td>
         <td align="center">Mirror left-right</td>        
     </tr>
-      <tr>
+    <tr>
+        <th>4.26-inch E-Paper - Monocolor 800x480</th>
+        <td align="center">Monochrome</td>
+        <td align="center">800x480</td>
+        <td align="center">/</td>
+        <td align="center">Mirror left-right</td>        
+    </tr>
+    <tr>
         <th>5.65-inch E-paper -  Sevencolor 600x480</th>
         <td align="center">256 colors</td>
         <td align="center">600x448</td>
         <td align="center">/</td>
         <td align="center">Normal</td>        
     </tr>
-      <tr>
+    <tr>
         <th>5.83-inch E-paper - Monocolor 648x480</th>
         <td align="center">Monochrome</td>
         <td align="center">600x480</td>
         <td align="center">✅</td>
         <td align="center">Mirror left-right</td>        
     </tr>
-        <tr>
+    <tr>
         <th>7.5-inch E-paper - Monocolor 800x480</th>
         <td align="center">Monochrome</td>
         <td align="center">800x480</td>
         <td align="center">✅</td>
         <td align="center">Mirror left-right</td>     
+    </tr>
+    <tr>
+        <th>7.5-inch E-paper - Tri-Color 800x480</th>
+        <td align="center">Monochrome</td>
+        <td align="center">800x480</td>
+        <td align="center">/</td>
+        <td align="center">Normal</td>     
     </tr>
   </table>
 </div>
@@ -218,9 +236,11 @@ The colors of the picture should be consistent with the standard colors of the d
 |2.9 inch E-paper - Monocolor 128x296           | ✅ | ✅ | ✅ | ✅ | ✅ |
 |2.9-inch e-paper - Quadruple color 128x296     | ✅ | ✅ | ✅ | ✅ | ✅ |
 |4.2-inch E-Paper - Monocolor 400x300           | ✅ | ✅ | ✅ | ✅ | ✅ |
+|4.26-inch E-Paper - Monocolor 800x480          | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
 |5.65-inch E-paper -  Sevencolor 600x480        | FLASH overflowd | ✅ | ✅ | ✅ | ✅ |
 |5.83-inch E-paper - Monocolor 648x480          | ✅ | ✅ | ✅ | ✅ | ✅ |
 |7.5-inch E-paper - Monocolor 800x480           | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
+|7.5-inch E-paper - Tri-Color 800x480           | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
 
 </div>
 
@@ -312,83 +332,59 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 - If you want to use **Seeed Studio XIAO ESP32S3** for the later routines, please refer to **[this tutorial](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** to finish adding.
 
 
+## Using the Seeed_Arduino_LCD Library
 
-### Function Overview
+**Step 3.** Install Seeed Arduino LCD Library
 
-Before we get started developing a sketch, let's look at the available functions 
+:::tip
+This library has same function as TFT library and no compatible with this library. If you have installed TFT library, please uninstall it first.
+:::
 
-- `void EPD_HW_Init()`—— Full screen refresh initialization.
-
-- `void EPD_HW_Init_180()` ——Display rotation 180 degrees initialization.
-
-- `void EPD_WhiteScreen_ALL(const unsigned char *datas)` —— Full screen refresh display function.
-  - **Input Parameters:**
-
-    - **datas：** The image data that needs to be refreshed.
-- `void EPD_WhiteScreen_White()` —— Clear screen display.
-- `void EPD_WhiteScreen_Black()` —— Display all black.
-- `void EPD_DeepSleep()` —— Deep sleep function, enter the sleep mode and please do not delete it, otherwise it will reduce the lifespan of the screen.
-- `void EPD_Init_Part()` —— Partial refresh display.
-- `void EPD_SetRAMValue_BaseMap(const unsigned char * datas)` —— Partial refresh of background display.
-  - **Input Parameters:**
-
-    - **datas：** The image data that needs to be refreshed.
-- `void EPD_Dis_PartAll(const unsigned char *datas)`—— Full screen partial refresh display.
-- `void EPD_Dis_Part(unsigned int x_start,unsigned int y_start,const unsigned char * datas,unsigned int PART_COLUMN,unsigned int PART_LINE)` —— Partial refresh display.
-  - **Input Parameters:**
-
-    - **unsigned int x_start:** The x value of the starting point.
-    - **unsigned int y_start:** The y value of the starting point
-    - **const unsigned char * datas:** Data that needs to be changed
-    - **unsigned int PART_COLUMN:** The length of the area to be changed
-    - **unsigned int PART_LINE:** The width of the area to be changed
-
-- `void EPD_HW_Init_Fast()` —— Fast refresh display.
-- `void EPD_WhiteScreen_ALL_Fast(const unsigned char *datas)` —— Fast refresh display function.
-  - **Input Parameters:**
-
-    - **datas：** The image data that needs to be refreshed.
-- `void EPD_HW_Init_Fast2()` —— Fast refresh display function.
-
-### Example Demo
-
-
-**Step 1.** Download the Demo Code, and open the code for your specific eInk Screen. 
+Download and install the Seeed Arduino LCD library from GitHub.
 
 <div class="github_container" style={{textAlign: 'center'}}>
-    <a class="github_item" href="https://github.com/Allen-Kuang/e-ink_Demo">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Code</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    <a class="github_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_LCD">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
     </a>
 </div><br />
 
+After downloading the library, go to **Sketch** -> **Include Library** -> **Add .ZIP Library** and select the downloaded library.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/51.png" style={{width:800, height:'auto'}}/></div>
+
+There are 4 basic examples, open a basic example you like:
+1. Bitmap: Display a bitmap image.
+2. Clock: Display a clock.
+3. Clock_digital: Display a digital clock.
+4. HelloWorld: Display basic patterns and text of different sizes on the e-ink screen.
+5. Shape: Display different sizes of words and shape randomly.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/150.png" style={{width:800, height:'auto'}}/></div>
+
+**Step 4.** Upload the Code
+
+Before uploading the code, you need to open **User_Setup_Select.h** in Seeed_Arduino_LCD library.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/53.png" style={{width:800, height:'auto'}}/></div>
+
+Since this example uses a 2.9-inch e-ink screen, we need to comment out line 160 `#include <User_Setups/Setup666_XIAO_ILI9341.h>` in this file, and uncomment line 165 `#include <User_Setups/Setup504_Seeed_XIAO_EPaper_2inch9.h>`. If you are using other e-ink screens, please follow this approach to make modifications.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/151.png" style={{width:1000, height:'auto'}}/></div>
+
+After that, go to **Tools** -> **Board** -> **XIAO ESP32C6** and **Tools** -> **Port** -> **Select the port your board is connected to**. Then click **Upload** to upload the code.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/152.png" style={{width:1000, height:'auto'}}/></div>
+
+Now you will see the feedback in your epaper screen! Following are the results of Helloworld examples.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/153.jpg" style={{width:600, height:'auto'}}/></div>
 
 
+:::caution
+If you are using a 1.54-inch or 2.9-inch e-ink screen, due to their driver chips, flickering may occur when using dynamic effects such as clocks. Please be assured this is not a program issue. However, it is not recommended to run dynamic effect examples for extended periods to avoid reducing the screen's lifespan.
 
-**Step 2.** Take a example of using 4.2-inch eInk and a XIAO ESP32S3, once you have downloaded and extract the demo code, please navigate and open the "4.2 inch E-paper - Monocolor 400x300" folder. Then open the "example" folder, use Arduino to open the "example.ino" file:
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/3.png" style={{width:700, height:'auto'}}/></div>
-
-**Step 3.** Put the `.h` file outputed from image2lcd into the same folder as example, and include it:
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/9.png" style={{width:500, height:'auto'}}/></div>
-
-**Step 4.** Please click the Board selection dropdown menu, and then click on "Select other board and port...", 
-
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/4.png" style={{width:500, height:'auto'}}/></div>
-
-**Step 5.** Select the communication port for your XIAO, then search and select "XIAO_ESP32S3"
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/5.png" style={{width:700, height:'auto'}}/></div>
-
-
-**Step 6.** Please click "upload" to flash the firmware on to XIAO
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/6.png" style={{width:500, height:'auto'}}/></div>
-
-
-**Step 7.** You should see the eInk display refreahing the demo image as shown below:
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/8.png" style={{width:500, height:'auto'}}/></div>
+If you are using 5.83 and 7.5-inch screens, they have different chips, so they won't have the flickering phenomenon.
+:::
 
 ## Resources
 
@@ -399,16 +395,14 @@ Before we get started developing a sketch, let's look at the available functions
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
-<div class="table-center">
-  <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
 
-  <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
 
 

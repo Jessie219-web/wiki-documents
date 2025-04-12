@@ -64,7 +64,7 @@ SenseCAP团队主要专注于传感器和网络组件，致力于提供一流的
 
 凭借着这一深厚的专业知识和与多样化客户群体的持续互动，SenseCAP团队战略性地决定将LoRa功能集成到SenseCAP Indicator中。
 
-[^2]: [SenseCAP Products - Bazzar](https://www.seeedstudio.com/SenseCAP-c-1825.html)
+[^2]: [SenseCAP Products - Bazaar](https://www.seeedstudio.com/SenseCAP-c-1825.html)
 [^3]: [SenseCAP MX](https://www.sensecapmx.com/)
 
 让我们更仔细地了解[SenseCAP Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)的LoRaWAN功能。

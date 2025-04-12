@@ -66,7 +66,7 @@ last_update:
 
 ![](https://files.seeedstudio.com/wiki/CCandAzure/cc6.png)
 
-- **步骤 4** 打开 [Azure 网站](https://ide.tinkergen.com/) 并 **creat a new app**
+- **步骤 4** 打开 [Azure 网站](https://ide.tinkergen.com/) 并 **create a new app**
 
 点击左侧的 **"Build"** ，这里的信息是自定义的，并不是非常重要。
 

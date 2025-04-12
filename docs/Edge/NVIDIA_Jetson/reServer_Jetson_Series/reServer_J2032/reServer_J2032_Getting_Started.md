@@ -869,6 +869,11 @@ reServer J2032 comes with two ethernet ports which the connection speed are 1000
 ## Resources
 
 - **[PDF]** [reServer Assembly Guide](https://files.seeedstudio.com/wiki/reComputer/reServer_Jetson_Assembly_Guide.pdf)
+- [Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+- [Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
+- [Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
+- [Seeed Jetson Devices One Page](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+
 
 ## Tech Support & Product Discussion
 

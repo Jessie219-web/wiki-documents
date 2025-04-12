@@ -63,7 +63,9 @@ Select the frequency plan according to your device.
 
 
 
-Paste the Device EUI/APP EUI/APP Key of your device, and then click 'Register end device'.
+Paste the Device EUI/APP EUI/APP Key from the SenseCraft App, and then click `Register end device`.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker_appconfig.png" alt="pir" width={300} height="auto" /></p>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/add_new.png" alt="pir" width={800} height="auto" /></p>
 

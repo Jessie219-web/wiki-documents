@@ -50,7 +50,7 @@ last_update:
 
 要充分发挥Grove Vision AI V2的功能，您可能需要单独购买CSI摄像头，我们推荐使用[**OV5647-62 FOV树莓派相机模块**](https://www.seeedstudio.com/OV5647-69-1-FOV-Camera-module-for-Raspberry-Pi-3B-4B-p-5484.html)。
 
-#### 连接到CSI接口摄像头
+### 连接到CSI接口摄像头
 
 一旦您准备好Grove Vision AI V2和摄像头，您就可以通过CSI连接电缆将它们连接起来。连接时，请注意排针的方向，不要插反。
 
@@ -125,7 +125,8 @@ last_update:
 - **[PDF]** [数据手册](https://files.seeedstudio.com/wiki/grove-vision-ai-v2/HX6538_datasheet.pdf)
 - **[GitHub]** [Seeed Grove Vision AI模块V2 SDK](https://github.com/HimaxWiseEyePlus/Seeed_Grove_Vision_AI_Module_V2)
 - **[PDF]** [电路图](https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Circuit_Diagram.pdf)
-- **[Zip]** [布局图](https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module
+- **[Zip]** [布局图](https://files.seeedstudio.com/wiki/grove-vision-ai-v2/Grove_Vision_AI_Module_V2_Layout.zip)
+- **[STP]** [Grove Vision AI V2 套件外壳 3D 模型](https://files.seeedstudio.com/wiki/grove-vision-ai-v2/grove_vision_ai_v2_kit_case.stp)
 
 ## **技术支持与产品讨论**
 
@@ -133,13 +134,12 @@ last_update:
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
   <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
 
   <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>
-

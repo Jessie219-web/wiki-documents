@@ -63,7 +63,7 @@ In the realm of the Helium network, the team's contributions are particularly no
 
 Leveraging this profound expertise and continual engagement with a diverse customer base, the SenseCAP Team has strategically decided to integrate LoRa functionality into the SenseCAP Indicator.
 
-[^2]: [SenseCAP Products - Bazzar](https://www.seeedstudio.com/SenseCAP-c-1825.html)
+[^2]: [SenseCAP Products - Bazaar](https://www.seeedstudio.com/SenseCAP-c-1825.html)
 [^3]: [SenseCAP MX](https://www.sensecapmx.com/)
 
 Let's take a closer look at the [SenseCAP Indicator](https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html)'s LoRaWAN functionality.

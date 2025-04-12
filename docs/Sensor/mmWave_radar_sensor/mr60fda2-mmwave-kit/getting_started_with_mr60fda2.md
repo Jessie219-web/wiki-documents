@@ -198,70 +198,193 @@ if (mmWave.update(100)) {
 This example shows how to use the **MR60FDA2** sensor for fall detection.
 
 ```cpp
+#include <Adafruit_NeoPixel.h>
 #include <Arduino.h>
+#include <hp_BH1750.h>  //inlude the library
 #include "Seeed_Arduino_mmWave.h"
 
 #ifdef ESP32
 #  include <HardwareSerial.h>
-HardwareSerial mmWaveSerial(0);
+HardwareSerial mmwaveSerial(0);
 #else
-#  define mmWaveSerial Serial1
+#  define mmwaveSerial Serial1
 #endif
+
+#define LIGHT_GPIO D0
+
+/****** instance ******/
+
+hp_BH1750 BH1750;  // create the sensor object
 
 SEEED_MR60FDA2 mmWave;
 
-void setup() {
-Serial.begin(115200);
-mmWave.begin(&mmWaveSerial);
+Adafruit_NeoPixel pixels =
+    Adafruit_NeoPixel(1, /* pixelPin */ D1, NEO_GRB + NEO_KHZ800);
 
-delay(1000);
+/****** funtions ******/
 
+void relay_init();
+void relay_on();
+void relay_off();
+
+/****** variables ******/
 uint32_t sensitivity = 15;
-float height = 3.0, threshold = 1.0;
+float height = 2.8, threshold = 1.0;
 float rect_XL, rect_XR, rect_ZF, rect_ZB;
 
-if (mmWave.setInstallationHeight(height)) {
- Serial.printf("setInstallationHeight success: %.2f\n", height);
-} else {
- Serial.println("setInstallationHeight failed");
+const uint8_t dark_lux = 10;
+
+void setup() {
+  bool result;
+  Serial.begin(115200);
+  mmWave.begin(&mmwaveSerial);
+  /* init relay device*/
+  relay_init();
+
+  /* init RGB LED */
+  pixels.begin();
+  pixels.clear();
+  pixels.setBrightness(8);
+  pixels.show();
+  pixels.setPixelColor(0, pixels.Color(125, 125, 125));
+  /* init built-in light ambient light sensor */
+  BH1750.begin(BH1750_TO_GROUND);  // will be false no sensor found
+                                   // | already connected to I2C
+  BH1750.calibrateTiming();
+  BH1750.start(BH1750_QUALITY_HIGH2,
+               254);  // start the first measurement in setup
+  /* set mmwave-fall parameters */
+  mmWave.setUserLog(0);
+
+  /** set the height of the installation **/
+  if (mmWave.setInstallationHeight(height)) {
+    Serial.printf("setInstallationHeight success: %.2f\n", height);
+  } else {
+    Serial.println("setInstallationHeight failed");
+  }
+
+  /** Set threshold **/
+  if (mmWave.setThreshold(threshold)) {
+    Serial.printf("setThreshold success: %.2f\n", threshold);
+  } else {
+    Serial.println("setThreshold failed");
+  }
+
+  /** Set sensitivity **/
+  if (mmWave.setSensitivity(sensitivity)) {
+    Serial.printf("setSensitivity success %d\n", sensitivity);
+  } else {
+    Serial.println("setSensitivity failed");
+  }
+
+  /** get new parameters of mmwave **/
+  if (mmWave.getRadarParameters(height, threshold, sensitivity, rect_XL,
+                                rect_XR, rect_ZF, rect_ZB)) {
+    Serial.printf("height: %.2f\tthreshold: %.2f\tsensitivity: %d\n", height,
+                  threshold, sensitivity);
+    Serial.printf(
+        "rect_XL: %.2f\trect_XR: %.2f\trect_ZF: %.2f\trect_ZB: %.2f\n", rect_XL,
+        rect_XR, rect_ZF, rect_ZB);
+  } else {
+    Serial.println("getRadarParameters failed");
+  }
 }
 
-if (mmWave.setThreshold(threshold)) {
- Serial.printf("setThreshold success: %.2f\n", threshold);
-} else {
- Serial.println("setThreshold failed");
-}
+typedef enum {
+  EXIST_PEOPLE,
+  NO_PEOPLE,
+  PEOPLE_FALL,
+} MMWAVE_STATUS;
 
-if (mmWave.setSensitivity(sensitivity)) {
- Serial.printf("setSensitivity success %d\n", sensitivity);
-} else {
- Serial.println("setSensitivity failed");
-}
-
-if (mmWave.getRadarParameters(height, threshold, sensitivity, rect_XL,
-                             rect_XR, rect_ZF, rect_ZB)) {
- Serial.printf("height: %.2f\tthreshold: %.2f\tsensitivity: %d\n", height,
-               threshold, sensitivity);
- Serial.printf(
-     "rect_XL: %.2f\trect_XR: %.2f\trect_ZF: %.2f\trect_ZB: %.2f\n", rect_XL,
-     rect_XR, rect_ZF, rect_ZB);
-} else {
- Serial.println("getRadarParameters failed");
-}
-}
-
+MMWAVE_STATUS status = NO_PEOPLE, last_status = NO_PEOPLE;
+float lux = 100;
 void loop() {
-if (mmWave.update(100)) {
- bool is_human = mmWave.getHuman();
- if (is_human) {
-   Serial.printf("People Exist: %s\n", is_human ? "true" : "false");
- }
+  /* get status */
+  if (mmWave.update(100)) {
+    bool is_human, is_fall;
+    // Get the human detection status
+    if (mmWave.getHuman(is_human)) {
+      // Get the fall detection status
+      if (mmWave.getFall(is_fall)) {
+        // Determine the status based on human and fall detection
+        if (!is_human && !is_fall) {
+          status = NO_PEOPLE;  // No human and no fall detected
+        } else if (is_fall) {
+          status = PEOPLE_FALL;  // Fall detected
+        } else {
+          status = EXIST_PEOPLE;  // Human detected without fall
+        }
+      }
+    }
+    // Get the human detection status
+    if (!mmWave.getHuman(is_human) && !mmWave.getFall(is_fall)) {
+      status = NO_PEOPLE;  // No human and no fall detected
+    } else if (is_fall) {
+      status = PEOPLE_FALL;  // Fall detected
+    } else {
+      status = EXIST_PEOPLE;  // Human detected without fall
+    }
+  }
 
- bool is_fall = mmWave.getFall();
- if (is_fall) {
-   Serial.printf("isFall: %s\n", is_fall ? "true" : "false");
- }
+  switch (status) {
+    case NO_PEOPLE:
+      Serial.printf("Waiting for people");
+      break;
+    case EXIST_PEOPLE:
+      Serial.printf("PEOPLE !!!");
+      break;
+    case PEOPLE_FALL:
+      Serial.printf("FALL !!!");
+      break;
+    default:
+      break;
+  }
+  Serial.print("\n");
+
+  /* change interactive Light*/
+  if (status != last_status) {  // switching LED
+    switch (status) {
+      case NO_PEOPLE:
+        pixels.setPixelColor(0, pixels.Color(0, 0, 255));  // BLUE
+        break;
+      case EXIST_PEOPLE:
+        pixels.setPixelColor(0, pixels.Color(0, 255, 0));  // GREEN
+        break;
+      case PEOPLE_FALL:
+        pixels.setPixelColor(0, pixels.Color(255, 0, 0));  // RED
+        break;
+      default:
+        break;
+    }
+    pixels.show();
+    last_status = status;
+  }
+
+  /* update lux value */
+  if (BH1750.hasValue() == true) {
+    lux = BH1750.getLux();
+    BH1750.start(BH1750_QUALITY_HIGH2, 254);
+  }
+
+  Serial.print("LUX: ");
+  Serial.print(lux);
+  Serial.print("\t");
+
+  if ((status == EXIST_PEOPLE || status == PEOPLE_FALL) && lux < dark_lux) {
+    relay_on();
+  } else {
+    relay_off();
+  }
 }
+
+void relay_init() {
+  pinMode(LIGHT_GPIO, OUTPUT);
+}
+void relay_on() {
+  digitalWrite(LIGHT_GPIO, HIGH);
+}
+void relay_off() {
+  digitalWrite(LIGHT_GPIO, LOW);
 }
 ```
 
@@ -416,6 +539,94 @@ setting parameters is `2.2 m`, with a valid range typically between 1 and 5 mete
 - **`mmWave.getFall()`**:
   - Determines whether a fall has been detected. This function returns `true` if a fall is detected and `false` if not.
 
+## Module firmware upgrade
+
+First, connect the XIAO ESP32C6 and MR60FDA2 modules together. Then use the following code to program XIAO.
+
+```cpp
+#include <Arduino.h>
+#include "Seeed_Arduino_mmWave.h"
+
+// If the board is an ESP32, include the HardwareSerial library and create a
+// HardwareSerial object for the mmWave serial communication
+#ifdef ESP32
+#  include <HardwareSerial.h>
+HardwareSerial mmWaveSerial(0);
+#else
+// Otherwise, define mmWaveSerial as Serial1
+#  define mmWaveSerial Serial1
+#endif
+
+void setup() {
+  // Initialize the serial communication for debugging
+  Serial.begin(115200);
+  while (!Serial) {
+    ; // Wait for Serial to initialize
+  }
+
+  // Initialize the mmWaveSerial communication
+  mmWaveSerial.begin(115200);
+}
+
+void loop() {
+  // Check if there is data available from mmWaveSerial
+  while (mmWaveSerial.available() > 0) {
+    char receivedChar = mmWaveSerial.read();
+    Serial.write(receivedChar); // Forward data to Serial
+  }
+
+  // Check if there is data available from Serial
+  while (Serial.available() > 0) {
+    char receivedChar = Serial.read();
+    mmWaveSerial.write(receivedChar); // Forward data to mmWaveSerial
+  }
+}
+```
+
+:::tip
+The function of the above code is to transparently transmit the serial port of the module to the USB serial port of XIAO, so as to upgrade the firmware of the module through XIAO.  
+Please connect XIAO to your PC during the upgrade process.
+:::
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/passthrough-mode.png" style={{width:700, height:'auto'}}/></div>
+
+You will see the original data sent by the module.
+
+Then you need to download and unzip the OTA tool and the firmware here.
+
+- **MR60FDA2 Firmware upgrade tool**: [MR60FDA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_OTA.zip)
+- **MR60FDA2 Firmware v4.0.18**: [MR60FDA2_eeprom_v4.0.18.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_eeprom_v4.0.18.bin)
+
+1. Check and connect to the serial port (set the baud rate to 115200)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/1-check-and-connect-serial.png" style={{width:700, height:'auto'}}/></div>
+
+2. Click "REQUEST UPDATE" to enter the upgrade mode:
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/2-request-update.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/3-upgrade-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/4-baudrate-confirm.png" style={{width:700, height:'auto'}}/></div>
+
+3. If "C" or "43" is printed, it means that the module has entered upgrade mode.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/5-module-enter-upgrade-mode.png" style={{width:700, height:'auto'}}/></div>
+
+4. Select the firmware to be upgraded. After selection, it will automatically enter the upgrade state. 
+
+After the upgrade is completed, it will automatically jump to normal mode. If it does not jump, power off and restart, and then use OTA tool to view the serial port data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/6-open-file.png" style={{width:700, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/7-choose-file-fda2.png" style={{width:700, height:'auto'}}/></div>
+
+5. After the upgrade is complete, you can use OTA tool to read the version and raw data.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware-update/8-flash-done-fda2.png" style={{width:700, height:'auto'}}/></div>
+
+6. You need to re-flash the firmware of XIAO ESP32C6 after the upgrade is completed.
+
 ## Open for Customization
 
 Want to tailor-make the kit to fit your unique applications?
@@ -427,6 +638,9 @@ For more information about 3D point cloud data generation and interference zone 
 - **STL**: [mmWave 3D Case](https://files.seeedstudio.com/wiki/mmwave-for-xiao/Seeed_Studio_60GHz_mmWave_Human_Fall_Breating_and_Heartbeat_Detection_Sensor-MR60FDA2_MR60BHA2_Enclosure.stl)
 - **GitHub Repository**: Access the full codebase and documentation at the [Seeed mmWave Library GitHub page](https://github.com/Love4yzp/Seeed-mmWave-library).
 - **ESPHome Documentation**: For further customization and integration, refer to the [ESPHome documentation](https://esphome.io/).
+- **MR60FDA2 Firmware upgrade tool**: [MR60FDA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_OTA.zip)
+- **MR60FDA2 Firmware v4.0.18**: [MR60FDA2_eeprom_v4.0.18.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60FDA2_eeprom_v4.0.18.bin)
+- **MR60FDA2 GUI Software**: [Seeed_Studio_mmWave_Sensor_MR60FDA2_GUI.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/Seeed_Studio_mmWave_Sensor_MR60FDA2_GUI.zip)
 - **mmWave Sensor SCH V1.0**: [mmWave_Sensor_SCH_V1.0.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/sch/mmWave_Sensor_SCH_V1.0.pdf)
 - **MR60FDA2 Module Technical Specification**: [MR60FDA2_Fall_Detection_Module_Datasheet.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/datasheet/MR60FDA2_Fall_Detection_Module_Datasheet.pdf)
 - **MR60FDA2 Tiny Frame Interface Manual**: [Seeed_Studio_TinyFrame_Interface_Fall_detection_V1.1.pdf](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/datasheet/Seeed_Studio_TinyFrame_Interface_Fall_detection_V1.1.pdf)

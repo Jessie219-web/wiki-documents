@@ -130,14 +130,32 @@ First of all, you need to install the peripheral drivers for this board. These a
       <td>36.4</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EdmS2OfqVg5IpQt9MeiBoT0BdS3Uft6DlJ1GPTJqZHoVNQ?e=ocmcHG">Download</a></td>
     </tr>
+    <tr>
+      <td>Jetson Orin NX 8GB/ 16GB,<br />Jetson Orin Nano 4GB/ 8GB</td>
+      <td>6.2</td>
+      <td>36.4.3</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQLFs4vd8N5Lp0nhbP_KU-gB6kYGlXu3_N3KLiL25ze52Q?e=CWhIaE">Download</a></td>
+    </tr>
   </tbody>
 </table>
 </div>
 
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided [here](https://seeedstudio88-my.sharepoint.com/:x:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXljqlpW3ZNNplIPBwJuyvsBdkW92geUmV7_7VN4SDlggA?e=Xea32u), it confirms that the firmware you downloaded is complete and intact.
+:::
 
 **Note:** Currently we provide the above drivers. We will keep updating the drivers in the future with the release of new JetPack versions.
 
 ## Flash to Jetson 
+
+Here is a video for flashing JetPack 6.1 onto the A603 carrier board + Orin Nx 16GB module. You can refer to the video and the detailed steps below to flash your device.
+
+<div align="center">
+<iframe width="800" height="450" src="https://www.youtube.com/embed/qN4GxscUGW0" title="A603 JetPack6.1 Installation Walkthrough" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 
 :::note
 Before moving onto flashing, it should be noted that Jetson Orin NX module only supports JetPack 5.1 and above, while Jetson Orin Nano module only supports JetPack 5.1.1 and above.
@@ -484,23 +502,150 @@ sudo ./tools/l4t_flash_prerequisites.sh
 sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml"   --showlogs --network usb0 jetson-orin-nano-devkit internal
 ```
 
-**Tips:** Backup the System and Flash Using the Backup Image
+:::info
+Backup the System and Flash Using the Backup Image
 
-1. If you flashed the system onto the SSD, run the following commands:
+If you flashed the system onto the SSD, run the following commands:
    - To backup the image (requires recovery mode):
      ```bash
-     sudo ./tools/backup_restore/l4t_backup_restore.sh -e nvme0n1  -b jetson-orin-nano-devkit
+     sudo ./tools/backup_restore/l4t_backup_restore.sh -e nvme0n1 -b jetson-orin-nano-devkit
      ```
    - To flash using the backup image (requires recovery mode):
      ```bash
      sudo ./tools/backup_restore/l4t_backup_restore.sh -e nvme0n1 -r jetson-orin-nano-devkit
      ```
    Once completed, the device can boot into the system.
+:::
 
 </TabItem>
 
+<TabItem value="JP6.2" label="JP6.2">
+
+Here we will install **Jetpack 6.2** on the A603 Carrier Board with Jetson Orin module.
+
+**Step 1:** Download the NVIDIA drivers on the host PC:
+
+```bash
+wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Jetson_Linux_r36.4.3_aarch64.tbz2
+wget https://developer.nvidia.com/downloads/embedded/l4t/r36_release_v4.3/release/Tegra_Linux_Sample-Root-Filesystem_r36.4.3_aarch64.tbz2
+```
+
+**Step 2:** Assemble the Flashing Package
+
+Please note that we need to put the Nvidia driver and the peripheral drivers in the same directory, and then open the terminal in that directory and execute the following code:
+
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/driver_files_directory_layout.png" /></div>
+
+```bash
+tar xf Jetson_Linux_r36.4.3_aarch64.tbz2
+sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_r36.4.3_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
+sudo tar zxpf 603_jp62.tar.gz
+sudo cp -r 603_jp62/Linux_for_Tegra/* Linux_for_Tegra/
+cd Linux_for_Tegra/
+sudo ./tools/l4t_flash_prerequisites.sh
+sudo ./apply_binaries.sh
+```
+
+**Step 3:** Put the Device in Recovery Mode. The device must be in recovery mode for flashing. Follow these steps to enter recovery mode:
+
+1. Short-circuit the REC pin and GND pin on the carrier board.
+2. Connect the carrier board to the PC using a Micro USB data cable.
+3. Power on the device.
+4. On the PC, run `lsusb` and check if the product ID is one of the following: 7323, 7423, 7523, or 7623. This indicates the device is in recovery mode:
+   - 7323: Orin NX 16G
+   - 7423: Orin NX 8G
+   - 7523: Orin Nano 8G
+   - 7623: Orin Nano 4G
+
+**Step 4:** Flash the Device.
+
+```bash
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
+  -c tools/kernel_flash/flash_l4t_t234_nvme.xml -p "-c bootloader/generic/cfg/flash_t234_qspi.xml" \
+  --showlogs --network usb0 jetson-orin-nano-devkit-super internal
+```
+
+:::info
+Tips: Backup the System and Flash Using the Backup Image
+
+If you flashed the system onto the SSD, run the following commands:
+   - To backup the image (requires recovery mode):
+     ```bash
+     sudo ./tools/backup_restore/l4t_backup_restore.sh -e nvme0n1 -b jetson-orin-nano-devkit-super
+     ```
+   - To flash using the backup image (requires recovery mode):
+     ```bash
+     sudo ./tools/backup_restore/l4t_backup_restore.sh -e nvme0n1 -r jetson-orin-nano-devkit-super
+     ```
+   Once completed, the device can boot into the system.
+:::
+
+</TabItem>
 
 </Tabs>
+
+
+## CAN Interfaces
+
+Since there is a CAN transceiver on A603 carrier board, you don’t extra transceiver like dev kit. 
+
+**Step1.** Install `devmem2` to write values to registers:
+```sh
+sudo apt-get install devmem2
+```
+**Step2.** Write values according to [here](https://docs.nvidia.com/jetson/archives/r36.4/DeveloperGuide/HR/ControllerAreaNetworkCan.html#jetson-platform-details).
+```sh
+sudo devmem2 0x0c303010 w 0xc400
+sudo devmem2 0x0c303018 w 0xc458
+```
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/send1.png"/>
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/send2.png"/>
+</div>
+
+**Step3.** Load Kernel modules:
+```bash
+sudo modprobe can
+sudo modprobe can_raw
+sudo modprobe mttcan
+```
+After loading these modules, you should be able to see these logs in `sudo dmesg`:
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/check_can.png"/>
+</div>
+
+**Step4.** Bring up can0 interface:
+```sh
+sudo ip link set can0 type can bitrate 500000
+```
+Optionally, you can change the bitrate to 1000000. Then, bring up can0:
+```sh
+sudo ip link set can0 up
+```
+Check the interface with `ifconfig`:
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/ifconfig.png"/>
+</div>
+
+**Step5.** Sending data (require can-utils installed). On the other side, we used a MCU with CAN Expansion board to receive data.
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/hardware.png"/>
+</div>
+
+Run `cansend can0 123#11.22.33.50` on jetson terminal:
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/cansend.png"/>
+</div>
+
+**Step6.** Receiving data. On the other side, we used a MCU with CAN Expansion board to send data.
+
+Run `candump can0` on jetson terminal:
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A603/candump.png"/>
+</div>
 
 ## Tech Support & Product Discussion
 

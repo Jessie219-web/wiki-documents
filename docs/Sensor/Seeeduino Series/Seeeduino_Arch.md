@@ -410,7 +410,7 @@ Here we show you an easy demo: **water lights** using Seeeduino Arch to get you 
 * Open [https://mbed.org/compiler/](https://mbed.org/compiler/) and you will get mbed online IDE. Before programming, you'd better read mbed Complier Getting started.
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Arch/img/Open_Compiler.jpg)
 
-* Click "New" to creat new program and select the device "mbed NXP LPC11U24". I believe that this picture explains better.
+* Click "New" to create new program and select the device "mbed NXP LPC11U24". I believe that this picture explains better.
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Arch/img/Compiler.jpg)
 
 The below is my code to control the four leds of seeeduino arch.

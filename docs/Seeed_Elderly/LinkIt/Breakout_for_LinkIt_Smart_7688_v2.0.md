@@ -97,7 +97,7 @@ Note that to use the recording functionality, you need to update on-board firmwa
 In this tutorial, you are going to make a simple MP3 player with Breakout for LinkIt Smart 7688 V2.0.
 
 ### Material required
-Except Breakout for Linkit Smart 7688 V2.0, here are other materials that is needed for the application. Before you start, please make sure you have every thing on hand, or you can visit Seeed [Bazzar](https://www.seeedstudio.com/) to get them.
+Except Breakout for Linkit Smart 7688 V2.0, here are other materials that is needed for the application. Before you start, please make sure you have every thing on hand, or you can visit Seeed [Bazaar](https://www.seeedstudio.com/) to get them.
 
 |LinkIt Smart 7688 × 1|USB cable (type A to micro type-B) × 2|UARTBee × 1|Jumper wires × 3
 |:---:|:---:|:---:|:---:|

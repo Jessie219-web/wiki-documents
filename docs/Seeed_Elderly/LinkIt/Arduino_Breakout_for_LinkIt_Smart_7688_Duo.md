@@ -58,7 +58,7 @@ LinkIt Smart 7688 Duo is an open development board based on the OpenWrt Linux di
 
 
 ## Get Started
-In this simple application, you are going to make a buzzer to buzz different sounds. Before getting started, Apart from Arduino Breakout for LinkIt Smart 7688 Duo, please check if you have below materials on hand. You can get them from our Bazzar.
+In this simple application, you are going to make a buzzer to buzz different sounds. Before getting started, Apart from Arduino Breakout for LinkIt Smart 7688 Duo, please check if you have below materials on hand. You can get them from our Bazaar.
 
 |LinkIt Smart 7688 Duo|USB cable|UARTBee |Jumper wires x 3|Grove - Buzzer
 |---|---|---|---|---|

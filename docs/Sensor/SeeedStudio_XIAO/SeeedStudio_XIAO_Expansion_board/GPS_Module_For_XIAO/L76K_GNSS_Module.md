@@ -23,7 +23,7 @@ last_update:
     </a>
 </div>
 
-<!-- TODO Add bazzar link -->
+<!-- TODO Add bazaar link -->
 
 ## Introduction
 

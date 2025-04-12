@@ -503,7 +503,7 @@ ai.begin(ALGO_ OBJECT_DETECTION, (MODEL_INDEX_T)0x05)
 
   <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_AI_Module/GroveAI06.png" style={{width:600, height:'auto'}}/></div>
 
-- **步骤 5**。返回 PC 上的 BLDevCube 软件，点击 **Refresh** 并选择一个适当的端口。然后点击 **Open UART** 并将 **Chip Erase** 设置为 **True**，然后点击 **Creat&Program**，等待进程完成。
+- **步骤 5**。返回 PC 上的 BLDevCube 软件，点击 **Refresh** 并选择一个适当的端口。然后点击 **Open UART** 并将 **Chip Erase** 设置为 **True**，然后点击 **Create&Program**，等待进程完成。
 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_AI_Module/GroveAI07.png" style={{width:800, height:'auto'}}/></div>

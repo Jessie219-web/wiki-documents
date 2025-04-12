@@ -19,7 +19,7 @@ The Helium Console is a web-based device management tool hosted by the Helium Fo
 
 
 ## Connect to Helium Network
-### Creat a New account
+### Create a New account
 Please go to <https://console.helium.com/>  , and register your account.
 ### Setup the Sensor
 (1) Open the SenseCAP Mate App

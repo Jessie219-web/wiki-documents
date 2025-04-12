@@ -5,7 +5,7 @@ keywords:
 - Raspberry pi
 - Edge AI Computer
 - reComputer R2000
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/recomputer-r2000-getting-start/1_24_1.webp
 slug: /r2000_series_getting_start
 last_update:
   date: 1/09/2025
@@ -21,17 +21,17 @@ last_update:
 </div>
 
 reComputer AI R2000 is a powerful Edge AI Computer based on the Raspberry Pi 5. With quad-core Arm Cortex-A76 processor 8GB RAM, M.2 SSD support, and an Hailo-8 AI acceleration module providing up to 26 TOPS, Enabling real-time, low latency & high-efficiency AI inferencing. it's the perfect chioce for a wide range of AI applications, including AI-powered video analytics, machine vision, and intelligent edge computing.
- 
-# Getting Start
+
 ## Features
-● **Powerful Cooling Capabilities**: The compact design and optimized thermal architecture make it highly suitable for deployment in resource-constrained environments, providing excellent cooling performance.
 
-● **Powerful Performance**: Powered by Raspberry Pi 5 with quad-core Cortex-A76 CPU, up to 8GB RAM.
+- **Powerful Cooling Capabilities**: The compact design and optimized thermal architecture make it highly suitable for deployment in resource-constrained environments, providing excellent cooling performance.
 
-● **26 Tera-Operations Per Second**: Powered by Hailo AI Accelerator Offering Integrated Computing Power of Up to 26 Tops.
+- **Powerful Performance**: Powered by Raspberry Pi 5 with quad-core Cortex-A76 CPU, up to 8GB RAM.
+
+- **26 Tera-Operations Per Second**: Powered by Hailo AI Accelerator Offering Integrated Computing Power of Up to 26 Tops.
 Extensive Interfaces: 2x HDMI 4Kp60,1x Ethernet Port, 2x USB 3.0, 2x USB 2.0.
 
-● **Wireless Connectivity**: Dual-band Wi-Fi and Bluetooth 5.0/BLE.
+- **Wireless Connectivity**: Dual-band Wi-Fi and Bluetooth 5.0/BLE.
 Flexible Storage Options: The PCIe2.0 dual M.2 Slot supports both AI accelerator and SSD storage.
 
 ## Specifications
@@ -76,12 +76,10 @@ Flexible Storage Options: The PCIe2.0 dual M.2 Slot supports both AI accelerator
 
 ![](https://seeed-projects.github.io/Tutorial-of-AI-Kit-with-Raspberry-Pi-From-Zero-to-Hero/assets/images/architecture-2bfc6ed440e1add56388738e87558050.png)
 
-The Hailo AI Software Suite provides powerful tools to run AI models efficiently on hardware accelerators. It is designed to integrate seamlessly with existing deep learning frameworks, offering smooth workflows for developers.The process involves generating a HEF (Hailo Executable Binary File) from an ONNX file in the Model Build Environment. Once created, the HEF file is transferred to the inference machine (Runtime Environment), where it is used to execute inference with the HailoRT API. The provided script facilitates the conversion of an ONNX file into a HEF file within the Model Build Environment. 
-
+The Hailo AI Software Suite provides powerful tools to run AI models efficiently on hardware accelerators. It is designed to integrate seamlessly with existing deep learning frameworks, offering smooth workflows for developers.The process involves generating a HEF (Hailo Executable Binary File) from an ONNX file in the Model Build Environment. Once created, the HEF file is transferred to the inference machine (Runtime Environment), where it is used to execute inference with the HailoRT API. The provided script facilitates the conversion of an ONNX file into a HEF file within the Model Build Environment.
 
 > **Note:**
 > **If you want to learn more about examples of using Hailo NPU, please click this [link](https://github.com/Seeed-Projects/Tutorial-of-AI-Kit-with-Raspberry-Pi-From-Zero-to-Hero).**
-
 
 ## Hardware Overview
 
@@ -94,33 +92,17 @@ The Hailo AI Software Suite provides powerful tools to run AI models efficiently
 
 ### For Windows host computer
 
-- **Step 1.** Download the **rpiboot setup installer** by click **[here](https://github.com/raspberrypi/usbboot/raw/master/win32/rpiboot_setup.exe)** to install the necessary drivers and the boot tool
+- **Step 1.** Download **Raspberry Pi Imager** software from **[here](https://www.raspberrypi.org/software/)**
 
-- **Step 2.** Connect reComputer R1000 the PC via USB Type-C cable
-
-Windows will now find the hardware and install the necessary drivers
-
-- **Step 3.** Search for **rpiboot** tool that we installed before and open it
-
-- **Step 4.** Open **file explorer** and you will see the eMMC of the Computer Module 4 shown as a **USB mass storage device**
-
-- **Step 5.** Download **Raspberry Pi Imager** software from **[here](https://www.raspberrypi.org/software/)**
-
-- **Step 6.** Open Raspberry Pi Imager software
+- **Step 2.** Open Raspberry Pi Imager software
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/RPI_Imager.png" alt="pir" width="600" height="auto"/></p>
 
-- **Step 7.** Press **CTRL + SHIFT + X** on the keyboard to open **Advanced options** window
+- **Step 3.** Press **CTRL + SHIFT + X** on the keyboard to open **Advanced options** window
 
 <p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/ReTerminal/rpi-imager-advanced.png" alt="pir" width="600" height="auto"/></p>
 
-Here you can **set a hostname, enable SSH, set a password, configure wiFi, set locale settings** and more
-
-:::note
-The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1000. 
-:::
-
-- **Step 8.** Click **CHOOSE OS** and select your preferred OS
+- **Step 4.** Click **CHOOSE OS** and select your preferred OS
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/OS-select.png" alt="pir" width="600" height="auto"/></p>
 
@@ -132,18 +114,13 @@ Or you can use this link to download the image file:
 
 [Ubuntun for raspberry-pi](https://ubuntu.com/download/raspberry-pi/thank-you?version=24.04&architecture=desktop-arm64+raspi)
 
-- **Step 9.** Click **CHOOSE STORAGE** and select the connected eMMC drive
+- **Step 5.** Click **CHOOSE STORAGE**
 
-- **Step 10.** Finally, click **WRITE**
+- **Step 6.** Finally, click **WRITE**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/RPI_Imager_Final.png" alt="pir" width="600" height="auto"/></p>
 
 Please wait a few minutes until the flashing process is complete.
-
-- **Step 11.** Flip the **Boot Mode switch** back to the **Normal mode** position
-
-Now you can skip to **[here](#install-drivers)**
-
 
 ### For MAC host computer
 
@@ -152,55 +129,19 @@ Now you can skip to **[here](#install-drivers)**
 Please open a terminal and type ```brew -V``` to check if you have setup the correct homebrew environment, you should see the version of the homebrew environment you have installed.
 :::
 
-- **Step 1.** Clone the **usbboot** repository
+- **Step 1.** Download and Install **Raspberry Pi Imager** Application by visiting [this link](https://www.raspberrypi.org/software/)
 
-```sh
-git clone --depth=1 https://github.com/raspberrypi/usbboot
-cd usbboot
-```
-
-- **Step 2.** Install **libusb**
-
-```sh
-brew install libusb
-```
-
-- **Step 3.** Install **pkg-config**
-
-```sh
-brew install pkg-config
-```
-
-- **Step 4.** Build using make
-
-```sh
-make
-```
-
-- **Step 5.** Run the binary
-
-```sh
-sudo ./rpiboot
-```
-
-- **Step 6.** Connect reComputer R1000 to the your Mac computer via USB Type-C cable
-
-- **Step 7.** Download and Install **Raspberry Pi Imager** Application by visiting [this link](https://www.raspberrypi.org/software/)
-
-- **Step 8.** Open the **Raspberry Pi Imager** Application
+- **Step 2.** Open the **Raspberry Pi Imager** Application
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/RPI_Imager.png" alt="pir" width="600" height="auto"/></p>
 
-- **Step 9.** Press **CTRL + SHIFT + X** on the keyboard to open **Advanced options** window
+- **Step 3.** Press **CTRL + SHIFT + X** on the keyboard to open **Advanced options** window
 
 <p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/ReTerminal/rpi-imager-advanced.png" alt="pir" width="600" height="auto"/></p>
 
-Here you can **set a hostname, enable SSH, set a password, configure wifi, set locale settings** and more
-:::note
-The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1000. 
-:::
+Here you can **set a hostname, enable SSH, set a password, configure wifi, set local settings** and more
 
-- **Step 10.** Click **CHOOSE OS** and select your preferred OS
+- **Step 4.** Click **CHOOSE OS** and select your preferred OS
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/OS-select.png" alt="pir" width="600" height="auto"/></p>
 
@@ -212,98 +153,42 @@ Or you can use this link to download the image file:
 
 [Ubuntun for raspberry-pi](https://ubuntu.com/download/raspberry-pi/thank-you?version=24.04&architecture=desktop-arm64+raspi)
 
-- **Step 11.** Click **CHOOSE STORAGE** and select the connected eMMC drive
+- **Step 5.** Click **CHOOSE STORAGE**
 
-- **Step 12.** Finally, click **WRITE**
+- **Step 6.** Finally, click **WRITE**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/102110497/RPI_Imager_Final.png" alt="pir" width="600" height="auto"/></p>
 
-Please wait a few minutes until the flashing process is complete.
-
-- **Step 13.** Flip the **Boot Mode switch** back to the **Normal mode** position
-
-Now you can skip to **[here](#install-drivers)**
-
-
 ### For Linux host computer
 
-We will use Git to obtain the **rpiboot** source code, so make sure Git is installed
+- **Step 1.** Download snap
 
-- **Step 1.** Open a **Terminal** window and type the following to update the **packages list**
-
-```sh
-sudo apt-get update
-```
-
-- **Step 2.** Install **Git** by the following command
-
-```sh
-sudo apt install git pkg-config make gcc libusb-1.0-0-dev
-```
-
-- **Step 3.** Git might produce an error if the date is not set properly. Type the following to correct this
-
-```sh
-sudo date MMDDhhmm
-```
-
-**NOTE:** Where **MM** is the month, **DD** is the date, and **hh** and **mm** are hours and minutes respectively.
-
-- **Step 4.** Clone the **usbboot** tool repository
-
-```sh
-git clone --depth=1 https://github.com/raspberrypi/usbboot
-cd usbboot
-```
-
-- **Step 5.** Build and install the usbboot tool
-
-```sh
-make
-```
-- **Step 6.** Connect reComputer R1000 to the PC via USB Type-C cable
-
-- **Step 7.** Run the usbboot tool and it will wait for a connection
-
-```sh
-sudo ./rpiboot
-```
-The result is shown as below:
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/result_of_command.png" alt="pir" width="1000" height="auto"/></p>
-
-- **Step 8.** Download snap 
 ```sh
 sudo apt install snap
 ```
-- **Step 9.** Download **rpi-imager** 
+
+- **Step 2.** Download **rpi-imager**
+
 ```sh
 snap install rpi-imager
 ```
 
-- **Step 10.** Open Raspberry Pi Imager software
+- **Step 3.** Open Raspberry Pi Imager software
 
 ```sh
 rpi-imager
 ```
+
 The result is shown as below:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/linux_interface.png" alt="pir" width="1000" height="auto"/></p>
 
-- **Step 11.** Press **CTRL + SHIFT + X** on the keyboard to open **Advanced options** window
+- **Step 4.** Press **CTRL + SHIFT + X** on the keyboard to open **Advanced options** window
 
-Set a hostname, set a password, configure wifi, set locale settings
+<p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/ReTerminal/rpi-imager-advanced.png" alt="pir" width="600" height="auto"/></p>
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/cltaltx.png" alt="pir" width="600" height="auto"/></p>
+Here you can **set a hostname, enable SSH, set a password, configure wifi, set local settings** and more
 
-Enable SSH
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/enable_ssh.png" alt="pir" width="600" height="auto"/></p>
-
-Here you can **set a hostname, enable SSH, set a password, configure wifi, set locale settings** and more
-:::note
-The system has preset a username and password. Please set the default username to "**recomputer**" and the default password to "**12345678**" when logging in. If you set different credentials and encounter issues, please reflash OS if your purchase the first batch of reComputer R1000. 
-:::
-
-- **Step 11.** Click **CHOOSE OS** and select your preferred OS
+- **Step 5.** Click **CHOOSE OS** and select your preferred OS
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/system.png" /></div>
 
@@ -317,9 +202,9 @@ Or you can use this link to download the image file:
 
 [Ubuntun for raspberry-pi](https://ubuntu.com/download/raspberry-pi/thank-you?version=24.04&architecture=desktop-arm64+raspi)
 
-- **Step 12.** Click **CHOOSE STORAGE** and select the connected eMMC drive
+- **Step 6.** Click **CHOOSE STORAGE** and select the connected eMMC drive
 
-- **Step 13.** Finally, click **NEXT** and **YES**
+- **Step 7.** Finally, click **NEXT** and **YES**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/next-yes.png" alt="pir" width="600" height="auto"/></p>
 
@@ -333,13 +218,14 @@ The result is shown as below:
 
 *This method works if you have an SD card and have booted the device successfully. Please make sure your system is the latest Raspberry Pi system (Bookworm or later) and and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer, otherwise it may not recognize the NVME-related configurations.*
 
-
 **Step 1**:Ensure that your Raspberry Pi system is up-to-date (Bookworm or later), enter the following command to update the RPi 5 firmware:
+
 ```shell
   sudo apt update && sudo apt upgrade -y
   sudo rpi-eeprom-update  # If it is not post-December 2023 type the following into a terminal to start the configuration tool
   sudo raspi-config
 ```
+
 Scroll down to `Advanced Options` and press Enter:
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_1.png" alt="pir" width="700" height="auto" /></div>
 
@@ -368,12 +254,15 @@ If asked to reboot, select `Yes`.
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/copy.gif" alt="pir" width="700" height="auto" /></div>
 
 ### Setting the Raspberry Pi to boot from the NVMe SSD
+
 If you have easy access to your SD card slot you could turn off your Pi, pop out the SD card and (if everything's working as expected) it should automagically boot from your NVMe drive the next time you start it up. If you want to leave the SD card where it is and still boot from NVMe though, you'll need to change the boot order.
 
 **Step 1**:Enter the following command:
+
 ```shell
   sudo raspi-config
 ```
+
 Scroll down to `Advanced Options` and press Enter:
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_1.png" alt="pir" width="700" height="auto" /></div>
 
@@ -397,10 +286,61 @@ You will be asked whether you want to reboot now. Click `Yes`:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/s_6.png" alt="pir" width="700" height="auto" /></div>
 
+## Flash ubuntu to NVME
+
+### First: Update EEPROM with SD card
+
+Please refer this [link](https://wiki.seeedstudio.com/r2000_series_getting_start/#update-eeprom).
+
+To set the NVMe boot order as the highest priority, use the following command:
+
+```
+sudo rpi-eeprom-config --edit
+```
+
+And then change rpi-eeprom-config like below:
+
+```
+BOOT_UART=1
+BOOT_ORDER=0xf461
+NET_INSTALL_AT_POWER_ON=1
+PCIE_PROBE=1
+```
+
+Use `Ctrl+X` and input `y` to store the result. And the result is as follows:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R2000/chang_eeprom.png" alt="pir" width="700" height="auto" /></div>
+
+### Second: Burn Ubuntu onto the NVMe
+
+Open Raspberry Pi Imager:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R2000/flashos1.png" alt="pir" width="700" height="auto" /></div>
+
+Choose Ubuntu os:
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R2000/flashos2.png" alt="pir" width="700" height="auto" /></div>
+
+Finally, click `Next` and wait for the flashing process to complete.
+
+### Third: Replace the OS file
+
+Install `pcie-fix.dtbo` with this [link](https://files.seeedstudio.com/wiki/reComputer-R2000/pcie-fix.dtbo)
+
+
+Copy pcie-fix.dtbo to /overlays file like below:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R2000/replace_file1.png" alt="pir" width="700" height="auto" /></div>
+
+Modify the `config.txt`, add `dtoverlay=pcie-fix` at the end of the file like below:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R2000/replace_file2.png" alt="pir" width="700" height="auto" /></div>
+
+And then Use `Ctrl+X` and input `y` to store this file.
+
 ## Power consumption and temperature
 
-
 :warning: **Note:** The standby state was tested under the following conditions: the graphical interface was disabled, Bluetooth was turned off, and Wi-Fi was disabled. The command is shown as below:
+
 ```
 sudo ifconfig wlan0 down
 sudo systemctl stop bluetooth
@@ -417,13 +357,12 @@ sudo systemctl stop lightdm
 
 ### Frigate
 
-Frigate is an open-source NVR (Network Video Recorder) designed for real-time object detection using AI. It integrates with existing cameras and uses machine learning models, like TensorFlow and Coral, to perform object detection on video feeds. Frigate is optimized for low-latency and high-performance video processing, offering features like motion detection, live video streams, and automated alerts. 
+Frigate is an open-source NVR (Network Video Recorder) designed for real-time object detection using AI. It integrates with existing cameras and uses machine learning models, like TensorFlow and Coral, to perform object detection on video feeds. Frigate is optimized for low-latency and high-performance video processing, offering features like motion detection, live video streams, and automated alerts.
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/thmI3dz9Ugs" title="Cost-Effective AI Surveillance: Frigate on Raspberry Pi 5 with Hailo8 on PCIe3.0 to Dual M.2 hat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > **Note:**
 > **If you want to learn more about this project, please refer to this [link](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/).**
-
 
 ### YOLO
 
@@ -434,27 +373,25 @@ The YOLO (You Only Look Once) series of models are a family of real-time object 
 > **Note:**
 > **If you want to learn more about this project, please refer to this [link](https://wiki.seeedstudio.com/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)**.
 
-
 ### Clip
 
-CLIP (Contrastive Language-Image Pretraining) is a machine learning model developed by OpenAI that can understand images and text together. It is trained to associate images with corresponding textual descriptions, allowing it to perform tasks that involve both modalities. CLIP is capable of zero-shot learning, meaning it can recognize objects and concepts in images without needing to be specifically trained on those categories. It has shown strong performance in a variety of tasks, such as image classification, object detection, and even generating textual descriptions of images. 
+CLIP (Contrastive Language-Image Pretraining) is a machine learning model developed by OpenAI that can understand images and text together. It is trained to associate images with corresponding textual descriptions, allowing it to perform tasks that involve both modalities. CLIP is capable of zero-shot learning, meaning it can recognize objects and concepts in images without needing to be specifically trained on those categories. It has shown strong performance in a variety of tasks, such as image classification, object detection, and even generating textual descriptions of images.
 
 <iframe width="800" height="500" src="https://www.youtube.com/embed/JMHtqSmAGCA" title="CLIP Zero Shot Classification on Raspberry Pi 5 with Hailo AI Accelerator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > **Note:**
 > **If you want to learn more about this project, please refer to this [link](https://wiki.seeedstudio.com/clip_application_on_rpi5_with_ai_kit/).**
 
-
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>

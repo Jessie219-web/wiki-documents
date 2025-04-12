@@ -4,7 +4,7 @@ title: reComputer R1000 Getting Started
 keywords:
   - Edge
   - reComputer R1000
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/113991274-2_3.webp
 slug: /recomputer_r
 last_update:
   date: 01/08/2025

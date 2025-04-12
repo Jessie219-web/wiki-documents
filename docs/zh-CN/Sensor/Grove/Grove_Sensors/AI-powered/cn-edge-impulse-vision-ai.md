@@ -67,7 +67,7 @@ BL702是USB-UART芯片，负责在PC和Himax芯片之间进行通信。您需要
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/edge-impulse-visionai/4.png" /></div>
 
-5. 点击 **Refresh**, 选择与已连接板相关的 **Port** 将 **Chip Erase** 设置**True**, 点击 **Open UART**,点击 **Creat & Download** 等待过程完成。
+5. 点击 **Refresh**, 选择与已连接板相关的 **Port** 将 **Chip Erase** 设置**True**, 点击 **Open UART**,点击 **Create & Download** 等待过程完成。
 
 <div align="center"><img width ={200} src="https://files.seeedstudio.com/wiki/edge-impulse-visionai/5.png"/></div>
 

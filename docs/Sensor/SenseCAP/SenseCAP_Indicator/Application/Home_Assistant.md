@@ -320,7 +320,7 @@ To modify the `configuration.yaml` file:
 
 
 ```yaml
-# SenseCAP Indicator MQTT Configuration
+# Example configuration.yaml entry | SenseCAP Indicator MQTT Configuration
 mqtt:
   sensor:
     - unique_id: indicator_temperature
@@ -354,7 +354,51 @@ mqtt:
       payload_off: '{"switch1":0}'
       state_on: 1
       state_off: 0
-    # ... (similar configurations for switches 2, 3, 4, 6, and 7)
+    - unique_id: indicator_switch2
+      name: "Indicator Switch2"
+      state_topic: "indicator/switch/state"
+      command_topic: "indicator/switch/set"
+      value_template: "{{ value_json.switch2 }}"
+      payload_on: '{"switch2":1}'
+      payload_off: '{"switch2":0}'
+      state_on: 1
+      state_off: 0
+    - unique_id: indicator_switch3
+      name: "Indicator Switch3"
+      state_topic: "indicator/switch/state"
+      command_topic: "indicator/switch/set"
+      value_template: "{{ value_json.switch3 }}"
+      payload_on: '{"switch3":1}'
+      payload_off: '{"switch3":0}'
+      state_on: 1
+      state_off: 0
+    - unique_id: indicator_switch4
+      name: "Indicator Switch4"
+      state_topic: "indicator/switch/state"
+      command_topic: "indicator/switch/set"
+      value_template: "{{ value_json.switch4 }}"
+      payload_on: '{"switch4":1}'
+      payload_off: '{"switch4":0}'
+      state_on: 1
+      state_off: 0
+    - unique_id: indicator_switch6
+      name: "Indicator Switch6"
+      state_topic: "indicator/switch/state"
+      command_topic: "indicator/switch/set"
+      value_template: "{{ value_json.switch6 }}"
+      payload_on: '{"switch6":1}'
+      payload_off: '{"switch6":0}'
+      state_on: 1
+      state_off: 0
+    - unique_id: indicator_switch7
+      name: "Indicator Switch7"
+      state_topic: "indicator/switch/state"
+      command_topic: "indicator/switch/set"
+      value_template: "{{ value_json.switch7 }}"
+      payload_on: '{"switch7":1}'
+      payload_off: '{"switch7":0}'
+      state_on: 1
+      state_off: 0
   number:
     - unique_id: indicator_switch5
       name: "Indicator Switch5"

@@ -85,7 +85,7 @@ Once you have pushed the changes to your github repository, there is a column sh
 
 ![image6](https://files.seeedstudio.com/wiki/wiki-platform/contributor/PR_Guide/6.jpg)
 
-Show us what you have edited and click "creat pull request" button to us.
+Show us what you have edited and click "create pull request" button to us.
 
 ![image7](https://files.seeedstudio.com/wiki/wiki-platform/contributor/PR_Guide/7.jpg)
 

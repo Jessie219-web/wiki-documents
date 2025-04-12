@@ -117,7 +117,7 @@ Wio Link has an inbuilt LiPo battery charger, so you can charge 3.7v LiPo batter
 ![](https://files.seeedstudio.com/wiki/Wio_Link/image/500px-Wio_Link_Battery.jpg)
 
 :::note
-     * Battery needs to be bought separately. Please visit [Bazzar](https://www.seeedstudio.com/s/Battery.html) where we arranged many choices for you.
+     * Battery needs to be bought separately. Please visit [Bazaar](https://www.seeedstudio.com/s/Battery.html) where we arranged many choices for you.
 :::
 ## Get Started
 ---
@@ -306,7 +306,7 @@ Here are some questions that we usually received from new users. If you have any
 
 **1. Power & Battery － Does Wio Link come with a Lipo battery?**
 
-Nope. Each Wio Link goes with a micro USB cable for charging or you can purchase a 3.7V Lipo battery from our Bazzar. Here’s the specs for your reference:
+Nope. Each Wio Link goes with a micro USB cable for charging or you can purchase a 3.7V Lipo battery from our Bazaar. Here’s the specs for your reference:
 - maximum input voltage: 4.2V;
 - maximum charging current: 500mA.
 

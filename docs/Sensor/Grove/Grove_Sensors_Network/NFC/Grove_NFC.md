@@ -218,7 +218,7 @@ NfcAdapter nfc = NfcAdapter(pn532_i2c);
 
 - **Step 3.**  Open “WriteTag” code via the path: **File --> Examples --> WriteTag**.
 
-- **Step 4.**  Modify the code as below to enable SPI communication.
+- **Step 4.**  Modify the code as below to enable I2C communication.
 
 ```cpp
 #if 0

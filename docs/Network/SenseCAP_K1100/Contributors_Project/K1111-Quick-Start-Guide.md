@@ -205,7 +205,7 @@ We can integrate another platform **Azure IoT** to present and manage our data, 
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit15.png" /></div>
 
-- **Step 2**. Creat a new application on the <a href="https://apps.azureiotcentral.com/" target="_blank"><span>Azure IoT Central</span></a>
+- **Step 2**. Create a new application on the <a href="https://apps.azureiotcentral.com/" target="_blank"><span>Azure IoT Central</span></a>
 . And then integrate the Azure IoT Central in the Helium by filling the required information below:
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit16.png" /></div>
@@ -228,7 +228,7 @@ We have our continous data displaying, but is it possible to display them in a s
 
 We can manage all the data from the Helium and choose the ones that we care about to build an auto email alert based on it.
 
-- **Step 1**. Click the "Unformated data" on the "Devices" page and creat an auto device template.
+- **Step 1**. Click the "Unformated data" on the "Devices" page and create an auto device template.
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit20.png" /></div>
 
@@ -248,7 +248,7 @@ Remember to click **"Save"** and then click **"Pubilsh"** to save the template a
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit23.png" /></div>
 
-- **Step 4**. Move to the "Rules" on the left and creat a new one.
+- **Step 4**. Move to the "Rules" on the left and create a new one.
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit24.png" /></div>
 

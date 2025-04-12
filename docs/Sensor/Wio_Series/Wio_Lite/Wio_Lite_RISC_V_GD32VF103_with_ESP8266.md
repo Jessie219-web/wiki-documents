@@ -92,7 +92,7 @@ Type "platformIO" in the search engine to install it.
 
 - **Step 2**
 
-Open PlatformIO IDE and click "New project" to creat the project. Type the project name and choose GD32VF103V-EVAL(Sipeed) for the board. The framework is Arduino. click "finish".
+Open PlatformIO IDE and click "New project" to create the project. Type the project name and choose GD32VF103V-EVAL(Sipeed) for the board. The framework is Arduino. click "finish".
 
 - **Step 3**
 

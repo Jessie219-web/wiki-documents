@@ -86,7 +86,7 @@ The 4G LTE HAT package includes everything needed for installation and operation
 - Supports dial-up, SMS, TCP, UDP, PPP, FTP, HTTP, NTP, PING, QMI, NITZ, SMTP, MQTT, CMUX, HTTPS, FTPS, SMTPS, SSL, MMS, FILE.
 - Supports GNSS: GPS, GLONASS, BDS, Galileo, QZSS.
 - Enables high-speed 4G communication with Raspberry Pi/PC via USB 2.0 interface.
-- Additional USB-C power interface, which can be enabled by DIP Switch to provide separate power supply for the module, offering higher load capability.
+- Additional USB-C power interface that supports PD protocol can provide up to 27W of power separately for the 4G hat and  Raspberry Pi, offering higher load capacity.
 - On-board LED PWR/NET status lights for easy monitoring of network status and module operation.
 - On-board RST PWR button for quick manual reset and module on/off control.
 - RST/PWR/RX/TX pins connected to Raspberry Pi via 40-pin GPIO, enabling control of Reset, module on/off, and UART communication when enabled by DIP Switch.
@@ -168,7 +168,7 @@ The 4G LTE HAT supports multiple power supply modes to ensure flexibility and co
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/power2.jpg" style={{width:600}}/></div>
 
-3. **External USB-C Power Supply**:  An independent USB-C power source (5V, 3A) can be connected to the HAT for high-power applications. By using a jumper wire, the HAT can also supply power directly to the Raspberry Pi through the 40-pin GPIO header.
+3. **External USB-C Power Supply**:  An independent USB-C power source, which can provide a 5-15V PD power supply and deliver up to 27W of power, can be connected to the HAT for high-power applications. By using a jumper wire, the HAT can also supply power directly to the Raspberry Pi through the 40-pin GPIO header.
 These options provide flexibility to accommodate different application requirements and power needs.It is important to note that the DIP switches on the PCB need to be adjusted. The future settings will be discussed in detail under the DIP switches section later.
 
 `Power the 4G HAT separately`
@@ -520,7 +520,7 @@ OK
 
 - **[Web Page]** [LTE EG25-G](https://www.quectel.com/product/lte-eg25-g/)
 
-- **[Web Page]** [AT Commands Manual V2.0](https://www.quectel.com/download/quectel_ec2xeg9xeg2x-gem05_series_at_commands_manual_v2-0-2/)
+- **[DOC ]** [AT Commands Manual V2.0](https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Quectel_EC2xEG9xEG2x-GEM05_Series_AT_Commands_Manual_V2.0.pdf)
 
 ## Tech Support & Product Discussion
 

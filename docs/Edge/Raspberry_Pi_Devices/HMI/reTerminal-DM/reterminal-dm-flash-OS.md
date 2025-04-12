@@ -51,6 +51,9 @@ You need to prepare the following hardware
 
 ## Steps for Flashing Raspbian OS
 
+> **Note:** The latest system image packaged by Seeed, including the appropriate drivers: [pi-gen-expand](https://github.com/Seeed-Studio/pi-gen-expand)
+
+
 - **Step 1.** Flip the `boot mode switch` located next to the USB Type-C port, make sure switch is set to `disable eMMC boot mode` according to the diagram below:
 
  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reTerminalDM/flash.png" alt="pir" width="800" height="auto"/></p>

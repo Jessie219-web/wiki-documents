@@ -410,7 +410,7 @@ Here we show you an easy demo: **water lights** using Seeeduino Arch to get you 
 
 
 
-*   Click "New" to creat new program and select the device "mbed NXP LPC11U24". I believe that this picture explains better.
+*   Click "New" to create new program and select the device "mbed NXP LPC11U24". I believe that this picture explains better.
 ![enter image description here](https://files.seeedstudio.com/wiki/Seeeduino_Arch_V1.0/img/Compiler.jpg)
 
 

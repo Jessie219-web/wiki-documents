@@ -333,7 +333,7 @@ Let's begin DIY.
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-RGB_LED_Matrix_w-Driver/img/DIY.jpg) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-RGB_LED_Matrix_w-Driver/img/DIY.jpg" alt="pir" width={600} height="auto" /></p>
 
-- **Step 3.** Creat your own images, when you finish one, click **Insert** in the control panel, the you can edit anothor one, when you finish all the image sequence you can copy the code in the code zone.
+- **Step 3.** Create your own images, when you finish one, click **Insert** in the control panel, the you can edit anothor one, when you finish all the image sequence you can copy the code in the code zone.
 
 - **Step 4.** Replace the following code block line 9 **unit64_t example[]** with your own code.
 

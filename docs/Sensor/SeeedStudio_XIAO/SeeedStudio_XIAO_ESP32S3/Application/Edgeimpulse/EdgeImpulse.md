@@ -41,7 +41,7 @@ Before start using the Edge impulse libraies, we need to setup XIAO ESPS3 on Ard
 
 #### Compile and Upload Blink Example 
 
-```
+```cpp
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
@@ -55,7 +55,6 @@ void loop() {
   digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
   delay(1000);                      // wait for a second
 }
-
 ```
 
 Makesure to select the right board and correct port before uploading. 
@@ -106,8 +105,7 @@ Choose the zip file you just downloaded，and if the library install correct, yo
 
 #### Step 3. Run Inferencing Sketch
 
-```
-
+```cpp
 /* Edge Impulse Arduino examples
  * Copyright (c) 2022 EdgeImpulse Inc.
  *
@@ -386,8 +384,7 @@ void loop() {
 ```
 Copy the above code or download from [here](https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-esp32-S3-Sense/KeyWordSpotting(KWS)/src/XIAO_esp32_s3_sense_kWS_Yes_No.ino) and then upload the code to the XIAO. 
 
-```
-
+```cpp
  // print the predictions
   ei_printf("Predictions ");
   ei_printf("(DSP: %d ms., Classification: %d ms., Anomaly: %d ms.)",
@@ -412,7 +409,6 @@ Copy the above code or download from [here](https://github.com/salmanfarisvp/Tin
     } else {
       //nothing to do. 
     }
-
 ```
 
 In the above code, we can see where did make the decisions to **TURN ON** the **LED**, and **OFF** it. We can also put other logic here and make KWS to control our projects.

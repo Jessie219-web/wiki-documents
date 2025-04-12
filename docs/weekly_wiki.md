@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 01/06/2025
+  date: 04/07/2025
   author: Frank
 ---
 
@@ -17,43 +17,47 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is January 6th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting with RS485 Vision AI Camera](https://wiki.seeedstudio.com/getting_started_with_rs485_vision_ai_cam/)
+### [Bus Servo Driver Board](https://wiki.seeedstudio.com/bus_servo_driver_board/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/top.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:800, height:'auto'}}/></div>
 
-The Seeed Studio RS485 Vision AI Camera is an intelligent device that combines an ESP32-C3 MCU (Seeed Studio XIAO) with a Himax WiseEye2 HX6538 processor, featuring dual-core Arm Cortex-M55 and an integrated Ethos-U55 neural processor. This advanced camera delivers high-performance AI recognition at 480×480 resolution and 10 FPS, while maintaining low power consumption through flexible options for transmitting inference results. With its standard Modbus RS485 interface, it seamlessly integrates with industrial systems and supports both LoRaWAN and 4G connectivity through SenseCAP DTUs or other standard RS485 DTU devices.
+The Bus Servo Driver Board is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. This guide focuses on the hardware setup, physical connections, key specifications, and **critical jumper settings** to help users integrate the board into their projects effectively.
 
-### [Getting Started with SenseCAP Vision AI V2](https://wiki.seeedstudio.com/sensecap_a1102/)
+### [Differences in L4T between Seeed and NVIDIA](https://wiki.seeedstudio.com/differences_of_l4t_between_seeed_and_nvidia)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/A1102_shop.jpg" style={{width:800, height:'auto'}}/></div>
-
-TinyML AI models run locally, transmitting only inference results via LoRaWAN® (863-928MHz) for privacy and power efficiency. Operating at 480×480 resolution and 10 FPS, it features pre-deployed models for human detection, people counting, and meter reading. Users can access 300+ pre-trained models or train custom models via the [SenseCraft AI](https://sensecraft.seeed.cc/ai/#/home) platform, and deploy models from [TensorFlow Lite](https://www.tensorflow.org/) or [PyTorch](https://pytorch.org/). The device is configurable via the [SenseCraft App](https://sensecap-mate-download.seeed.cn/), IP66-rated, and suitable for both indoor and outdoor use with long-range communication, powered by a built-in battery.
-
-### [Deploying models to SenseCAP A1102 with SenseCraft AI](https://wiki.seeedstudio.com/train_ai_with_a1102/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/A1102/SenseCraft_AI_With_A1102/20.jpg" style={{width:800, height:'auto'}}/></div>
-
-SenseCraft AI with A1102 enables easy deployment of AI models on the SenseCAP A1102 device. With Vision AI V2 and 8GB of memory, it supports image recognition, real-time data processing, and local storage. This guide provides step-by-step instructions for pairing the device, selecting AI models, and configuring settings for efficient operation. Perfect for anyone looking to implement AI-driven applications on the A1102.
+Seeed’s Jetson Board Support Packages (BSPs) are based on NVIDIA’s Linux for Tegra (L4T) versions 35.3.1, 35.5, 36.3, 36.4, and 36.4.3, with modifications to support Seeed’s own Jetson series products. This article compares the differences between Seeed’s BSP and NVIDIA’s official BSP for each of these L4T versions.
 
 ## Existing Wiki Updated
 
-### [Hardware and Interfaces Usage for J501 carrier board](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/)
+### [reCamera Gimbal Overview](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/)
 
-We have added more details about the [Usage Instruction with USB to CAN Adapter](https://wiki.seeedstudio.com/j501_carrier_board_interfaces_usage/#usage-instruction-with-usb-to-can-adapter).
+We have added detailed information about the [Hardware Interface](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/#hardware-interface).
+
+### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
+
+We have added an example of the [Seeed Frigate](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#seeed-frigate).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
+<!-- ### [Seeed Studio XIAO RA4M1 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-ra4m1-nuttx/)
 
 <div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
+  <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images. -->
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO RA4M1 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+
+### [T1000-E Arduino Examples](https://wiki.seeedstudio.com/t1000_e_arduino_examples/)
+
+<div style={{textAlign:'center'}}>
+  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/tracker-t1000-e-for-meshtastic.webp" style={{width:800, height:'auto'}}/>
+</div>
+
+This wiki provides Arduino examples for the T1000-E Tracker, covering basic GPIO control, sensor data reading, GNSS positioning, and LoRaWAN communication, along with setup and upload instructions. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -62,7 +66,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 
 <details><summary>Click here</summary>
 
-- [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
+<!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
 - [weekly wiki on 3.13th](/Seeed_Elderly/weekly_wiki/wiki313)
 - [weekly wiki on 3.20th](/Seeed_Elderly/weekly_wiki/wiki320)
@@ -99,7 +103,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 12.04th](/Seeed_Elderly/weekly_wiki/wiki1204)
 - [weekly wiki on 12.11th](/Seeed_Elderly/weekly_wiki/wiki1211)
 - [weekly wiki on 12.18th](/Seeed_Elderly/weekly_wiki/wiki1218)
-- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225)
+- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225) -->
 - [weekly wiki on 2024.1.08th](/Seeed_Elderly/weekly_wiki/wiki240108)
 - [weekly wiki on 2024.1.15th](/Seeed_Elderly/weekly_wiki/wiki240115)
 - [weekly wiki on 2024.1.22nd](/Seeed_Elderly/weekly_wiki/wiki240122)
@@ -150,5 +154,17 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
 - [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
+- [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
+- [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
+- [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
+- [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
+- [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
+- [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
+- [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
+- [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
+- [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
+- [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
+- [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
+- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
 
 </details>

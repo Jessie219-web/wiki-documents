@@ -266,10 +266,63 @@ sudo ./flash.sh jetson-nano-devkit-emmc mmcblk0p1
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/19.png" /></div>
 
-!!!Tip
-    Flashing L4T takes about 10 minutes, or more under a slow host computer.
+Flashing L4T takes about 10 minutes, or more under a slow host computer.
 
 At this moment, we can unplug the jumper and then power up the reComputer again to use it.
+
+
+## Flashing Jetpack OS with Seeed BSP
+:::info
+
+Recently, NVIDIA has updated the DRAM model, and Seeed has currently released a new firmware that is compatible with this module update.
+
+If, during the process of flashing the official NVIDIA image, the system freezes due to the DP signal (manifested as an inability to flash and getting stuck on the NVIDIA interface), it proves that you have purchased the updated module. In this case, you need to flash the factory image we currently provide.
+
+The current differences between this factory image and the original one are as follows:
+1. The DP configuration has been modified (to prevent the system from freezing due to the DP signal on some modules).
+2. The SD card slot is set to the available state by default, and there is no need to additionally modify the device tree to enable the SD card slot function.
+3. The image contains Jetpack4.6.6.
+4. The latest PCN has been incorporated.
+
+:::
+
+### Step 1. Download the proper NVIDIA Linux Driver Package
+
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>JetPack Version</th>
+      <th>Download Link</th>
+      <th>SHA265</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>4.6.6</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EV7LGr3R0VRDsgfFibgOgfsBam44-zEqOrQJoUKpHXEmRw?e=gJEHhU" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>138547DF526D19F737DEC27856C078217D15FE9160F2669DF57823916BAA260E</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+### Step 2.  Unzip Package Files and Assemble the Rootfs via Command Line
+
+On the Linux host PC, we should find a folder and store the package files we download before. Then open a command line window(Terminal) at the folder and use the command line below to unzip the files and assemble the rootfs:
+
+```sh
+tar xpf  mfi_recomputer-nano-4g-4.6.6-32.7.6-2024-12-23.tbz2
+cd mfi_jetson-nano-devkit-emmc
+```
+
+### Step 3.  Flash the System to reComputer
+
+Since we alreadly force the reComputer J1010 into the recovery mode and the module is Jetson Nano. We can directly flash the system into the reComputer execute following command:
+
+```bash
+sudo ./nvmflash.sh --showlogs
+```
 
 ## Troubleshooting
 
@@ -314,6 +367,23 @@ If you can't get into the system in **Flashing to eMMC with command-line -- Step
 :::note
 If more storage space is needed, we can use SD card to expand the capacity, or burn the system on SD card, you can refer to our recommended solution [Flash System on SD card](https://wiki.seeedstudio.com/J1010_Boot_From_SD_Card/)
 :::
+
+## Resources
+[reComputer J1010 datasheet](https://files.seeedstudio.com/wiki/reComputer/reComputer-J1010-datasheet.pdf)
+
+[reComptuer J101 Carrier Boards Schematic](https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer%20J101_V2.0_SCH_240822.pdf)
+
+[reComputer J1010 3D file](https://files.seeedstudio.com/products/NVIDIA-Jetson/J1010-Jetson-Nano.stp)
+
+[Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
+
+[Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
+
+[Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
+
+[Seeed Jetson Devices One Page](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
+
+
 
 ## Tech Support & Product Discussion
 

@@ -107,7 +107,7 @@ sidebar_position: 0
 </table>
 
 
-## Features
+### Features
 
 - **Powerful CPU**:ARM Cortex-M33 core, with a maximum clock speed of 78MHz, supporting DSP instructions and FPU floating-point operations, 32-bit RISC architecture.
 - **Ultra-Low Power**:RX current 4.6mA/TX current 5mA (0dBm), multiple low-power sleep modes
@@ -115,7 +115,7 @@ sidebar_position: 0
 - **Multi style wireless transmission**:Integrated 2.4GHz multi protocol wireless transceiver, supporting multiple IoT protocols such as Matter, OpenThread, Zigbee, Bluetooth LE 5.3, Bluetooth mesh, etc.
 - **Better RF Performance**:Excellent RF performance, with a transmission power of up to+19.5 dBm and a reception sensitivity as low as -105.4 dBm (250kbps DSSS)
 - **Powerful security**:Powerful security features of Secure Vault, including secure boot, encryption, random number generation, tamper proof, secure debugging, etc.
-- **Ultra-small size**:
+- **Ultra-small size**:21 x 17.8mm.
 - **Rich on-chip resources**:Maximum 1536KB Flash and 256KB RAM, with ample storage space.
 - **Rich interfaces**:Integrated with 12 bit 1Msps ADC, temperature sensor, analog comparator, DCDC and other rich peripherals, and up to 22 Pin, 2 USART, 2 low-power UART, 1 IIC and other interfaces.
 
@@ -129,13 +129,13 @@ sidebar_position: 0
 	    <th>XIAO MG24 Sense indication diagram</th>
 	</tr>
 	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_Sense_indication_diagram.png" style={{width:700, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24sense_pinlist.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
   	<tr>
 	    <th>XIAO MG24 indication diagram</th>
 	</tr>
 	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MG24_indication_diagram.png" style={{width:700, height:'auto'}}/></div></td>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/mg24_pinlist.png" style={{width:700, height:'auto'}}/></div></td>
 	</tr>
     <tr>
 	    <th>XIAO MG24/ XIAO MG24(Sense) Pin List</th>
@@ -235,7 +235,7 @@ If you cannot find it after entering, please reopen the Arduino IDE.
 
 Now enjoy coding ✨.
 
-## Run your first Blink program
+#### Run your first Blink program
 
 - **Step 1.** Launch the Arduino application.
 
@@ -266,13 +266,17 @@ Once the program is successfully uploaded, you will see the following output mes
 
 ## Battery Usage
 
-The XIAO MG24 is capable of using a 3.7V lithium battery as the power supply input. You can refer to the following diagram for the wiring method.
+The XIAO MG24 has a built-in power management chip that allows the XIAO MG24 to be powered independently by using a battery or to charge the battery through the XIAO MG24's USB port.
+
+If you want to connect the battery for XIAO, we recommend you to purchase qualified rechargeable 3.7V lithium battery. When soldering the battery, please be careful to distinguish between the positive and negative terminals. The negative terminal of the power supply should be the side closest to the USB port, and the positive terminal of the power supply is the side away from the USB port.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/4444.png" alt="pir" width="800" height="auto"/></div>
 
 :::caution
 Please be careful not to short-circuit the positive and negative terminals and burn the battery and equipment when soldering.
 :::
+
+
 
 **Instructions on the use of batteries:**
 
@@ -281,8 +285,17 @@ Please be careful not to short-circuit the positive and negative terminals and b
 3. The XIAO MG24 will not have any LED on when it is battery powered (unless you have written a specific program), please do not judge whether the XIAO MG24 is working or not by the condition of the LED, please judge it reasonably by your program.
 4. Sorry, we currently have no way to help you check the remaining battery level through software (because there are no more chip pins available), you need to charge the battery regularly or use a multimeter to check the battery level.
 
-## Test voltage
-### Software code
+At the same time, we designed a red indicator light for battery charging, through the indicator light display to inform the user of the current state of the battery in the charge.
+
+1. When XIAO MG24 is not connected to the battery, the red light comes on when the Type-C cable is connected and goes off after 30 seconds.
+2. The red light flashes when the battery is connected and the Type-C cable is connected for charging.
+3. When connecting Type-C to charge the battery fully, the red light turns off.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/battery_mg24.jpg" style={{width:600, height:'auto'}}/></div>
+
+## Reading Battery Voltage
+
+**Software code**
 ```cpp
 /*
   AnalogReadSerial
@@ -313,7 +326,7 @@ void loop() {
   delay(1000);  // delay in between reads for stability
 }
 ```
-### Display Result
+**Display Result**
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/55.png" alt="pir" width="800" height="auto"/></div>
 
@@ -492,6 +505,121 @@ void loop()
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/100.png" style={{width:1000, height:'auto'}}/></div>
 
+### Preventing XIAO MG24 from Bricking During Deep Sleep
+
+The **XIAO MG24** is a powerful microcontroller board from Seeed Studio, but users have reported issues where the device becomes unresponsive ("bricked") after entering Deep Sleep mode. This tutorial explains the cause of the problem, provides a detailed recovery method, and offers preventive measures to avoid bricking your XIAO MG24.
+
+
+The XIAO MG24 enters a **Deep Sleep mode** (EM4) to conserve power, but in some cases, it fails to wake up properly, preventing new sketches from being uploaded. Unlike other XIAO boards, the MG24 does not have a dedicated **BOOT button** or a documented method to enter boot mode, making recovery challenging.
+
+
+#### Preventive Measures
+
+To avoid bricking your XIAO MG24 while using Deep Sleep mode, follow these steps:
+
+1. Use the Escape Pin (PC0)
+
+The XIAO MG24 has a built-in **escape mechanism** to prevent bricking. If **PC0** is pulled **LOW** during reset, the device enters an infinite loop, allowing you to upload a new sketch.  
+- Connect **PC0** to **GND** before resetting the device.  
+- After resetting, upload your sketch while the device is in the loop.  
+
+2. Modify Your Sketch
+Add the following code to your sketch to detect a user switch and enter an infinite loop if pressed. This allows you to upload a new sketch while the device is looping:
+
+```cpp
+#define USER_SW  PC3   // Example pin for user switch
+
+void setup() {
+  // Other setup code...
+
+  pinMode(USER_SW, INPUT_PULLUP);
+  if (digitalRead(USER_SW) == LOW) {
+    Serial.println("Enable to upload new sketch");
+    while (true) {
+      digitalWrite(LED_BUILTIN, LOW);
+      delay(50);
+      digitalWrite(LED_BUILTIN, HIGH);
+      delay(50);
+    }
+  }
+}
+```
+
+3. Avoid Unnecessary Flash Sleep
+
+Ensure that your sketch does not put the flash memory into sleep mode (`Deep Power Down`) unless absolutely necessary. This can prevent issues with uploading new sketches.
+
+#### Acknowledgments
+Special thanks to the **Seeed Studio community** for their valuable contributions and solutions to this issue. The recovery methods and preventive measures discussed in this tutorial were developed based on insights from community members like **[msfujino](https://forum.seeedstudio.com/u/msfujino)** and **[PJ_Glasso](https://forum.seeedstudio.com/u/PJ_Glasso)**.  
+
+For more details and discussions, visit the original forum thread:  
+[DeepSleep bricks XIAO_MG24 - Seeed Studio Forum](https://forum.seeedstudio.com/t/deepsleep-bricks-xiao-mg24/284889)
+
+## Unbricking
+
+The XIAO MG24 is currently the only XIAO model equipped with a serial port chip. Unlike other XIAO models, it does not have a BOOT button or a BOOT recovery method. This design oversight can cause issues when the device enters sleep mode or encounters software anomalies, making it impossible to upload a program via the serial port. To address this, we’ve provided a method to wake up the serial port and restore functionality.
+
+### Solution for Windows
+
+1. **Download and Extract the Package**  
+   - Download the provided ZIP file.
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/XIAO_MG24/xiao_mg24_flash_erase_windows.zip">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Download the ZIP 🖱️</font></span></strong>
+    </a>
+</div><br />
+   - Extract the contents to a folder on your computer.
+
+2. **Connect the XIAO MG24**  
+   - Use a USB cable to connect the unresponsive XIAO MG24 to your computer.
+
+3. **Run the Script**  
+   - Open the extracted folder and locate the script `flash_erase.bat`.  
+   - Double-click the script to run it.  
+   - The script will erase the flash memory and reset the device.
+
+4. **Verify Recovery**  
+   - After the script completes, the XIAO MG24 should be restored and ready for use.
+
+### Solution for macOS
+
+1. **Download and Extract the Package**  
+   - Download the provided ZIP file (link will be added here).
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/XIAO_MG24/xiao_mg24_flash_erase_macos.zip">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Download the ZIP 🖱️</font></span></strong>
+    </a>
+</div><br />
+   - Extract the contents to a folder on your computer.
+
+2. **Connect the XIAO MG24**  
+   - Use a USB cable to connect the unresponsive XIAO MG24 to your computer.
+
+3. **Allow Terminal Access**  
+   - Open **System Preferences** > **Security & Privacy** > **Privacy**.  
+   - Under **Accessibility**, ensure that **Terminal** is allowed to control your computer.  
+   - If Terminal is not listed, click the **+** button to add it manually.
+
+4. **Run the Script**  
+   - Open **Terminal**.  
+   - Navigate to the extracted folder using the `cd` command. For example:  
+     ```bash
+     cd /path/to/extracted/folder
+     ```  
+   - Run the script `xiao_mg24_erase.sh` using the following command:  
+     ```bash
+     ./xiao_mg24_erase.sh
+     ```  
+   - The script will use OpenOCD to erase the flash memory and reset the device.  
+
+5. **Verify Recovery**  
+   - After the script completes, the XIAO MG24 should be restored and ready for use.
+
+:::note
+- If macOS fails to recognize OpenOCD, ensure OpenOCD is installed and the correct path is used in the script.  
+- The scripts provided are designed specifically for the XIAO MG24 and should not be used with other XIAO models.  
+:::
+
 ## Resources
 
 ### For Seeed Studio XIAO MG24 Sense
@@ -500,6 +628,7 @@ void loop()
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Sense Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MGM240S_KICAD_Prj.pdf)
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Sense Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
 - 🔗 **[Kicad]** [Seeed Studio XIAO MG24 Sense FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+- 📄 **[ZIP]** [Seeed Studio XIAO MG24 Sense PCB&SCH](https://files.seeedstudio.com/wiki/XIAO_MG24/XIAO_MG24_Sense_v1.0_SCH&PCB.zip)
 
 
 ### For Seeed Studio XIAO MG24
@@ -507,7 +636,7 @@ void loop()
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Schematic](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/XIAO_MGM240S_KICAD_Prj.pdf)
 - 📄 **[PDF]** [Seeed Studio XIAO MG24 Wireless SoC](https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/efr32xg24_rm.pdf)
 - 🔗 **[Kicad]** [Seeed Studio XIAO MG24 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
-
+- 📄 **[ZIP]** [Seeed Studio XIAO MG24 PCB&SCH](https://files.seeedstudio.com/wiki/XIAO_MG24/XIAO_MG24_v1.0_SCH&PCB.zip)
 
 
 ## Tech Support & Product Discussion

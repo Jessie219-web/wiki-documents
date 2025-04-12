@@ -76,7 +76,7 @@ BL702 is the USB-UART chip which enables the communication between the PC and th
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/SenseCAP-A1101/edge-impulse-A1101/p5.png" /></div>
 
-5. Click **Refresh**, choose the **Port** related to the connected A1101, set **Chip Erase** to **True**, click **Open UART**, click **Creat & Download** and wait for the process to be completed .
+5. Click **Refresh**, choose the **Port** related to the connected A1101, set **Chip Erase** to **True**, click **Open UART**, click **Create & Download** and wait for the process to be completed .
 
 <div align="center"><img width ={300} src="https://files.seeedstudio.com/wiki/SenseCAP-A1101/edge-impulse-A1101/p6.png"/></div>
 

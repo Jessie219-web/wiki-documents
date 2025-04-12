@@ -124,7 +124,7 @@ Wio Node has an inbuilt LiPo battery charger, so you can charge 3.7v LiPo batter
 
 - Please handle the USB micro type-B socket gently, or you may break the socket apart from the board.
 
-- Battery is not included in the package. But we have arranged plenty of choices for you in [Bazzar](https://www.seeedstudio.com/s/battery.html).
+- Battery is not included in the package. But we have arranged plenty of choices for you in [Bazaar](https://www.seeedstudio.com/s/battery.html).
 :::
 
 ## Get Started
@@ -345,7 +345,7 @@ Here are some questions that we usually received from new users. If you have any
 
 **4. If I want to connect more than 1 I2C devices, what should I do?**
 
->We can not connect 2 Grove-I2C devices to Wio node 2 Grove-I2C Port at the same time. [Grove-I2C hub](https://www.seeedstudio.com/s/I2C%20hub.html) can branch 1 I2C port into 4. Come to [Bazzar](https://www.seeedstudio.com/s/I2C%20hub.html) to get one!
+>We can not connect 2 Grove-I2C devices to Wio node 2 Grove-I2C Port at the same time. [Grove-I2C hub](https://www.seeedstudio.com/s/I2C%20hub.html) can branch 1 I2C port into 4. Come to [Bazaar](https://www.seeedstudio.com/s/I2C%20hub.html) to get one!
 
 **5. Can I change Wio Node into sleep mode?**
 

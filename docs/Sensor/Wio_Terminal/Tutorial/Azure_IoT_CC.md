@@ -65,7 +65,7 @@ As you may see, Wi-Fi and **Azure IoT Central scope id** here we need to set up.
 
 ![](https://files.seeedstudio.com/wiki/CCandAzure/cc6.png)
 
-- **Step 4** Open the [Azure website](https://ide.tinkergen.com/) and **creat a new app**
+- **Step 4** Open the [Azure website](https://ide.tinkergen.com/) and **create a new app**
 
 Click the **"Build"** on the left side, the information here is customized and not very important.
 

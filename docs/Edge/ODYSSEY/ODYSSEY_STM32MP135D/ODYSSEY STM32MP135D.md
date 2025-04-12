@@ -70,6 +70,8 @@ cable to the board, then connect the other end to your computer. Plug the
 ethernet cable into eth1 port of the ODYSSEY, and the other end into your 
 router or network switch.
 
+>### NOTE:If you want to use the precompiled package, please click this [link](http://files.seeedstudio.com/wiki/102110859_ODYSSEY_MP135D_img.zip).
+
 ### Software ###
 This guide will use the following software components:
 * [buildroot version 2023.02 or later](https://buildroot.org/download.html).

@@ -15,29 +15,57 @@ last_update:
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-LED_Matrix_Driver-HT16K33/img/main.jpg) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-LED_Matrix_Driver-HT16K33/img/main.jpg" alt="pir" width={600} height="auto" /></p>
 
-LED Matrix is low cost and usually used to display simple numbers and images. The Grove - LED Matrix Driver is the I^2^C based product which allows you to control the LED matrix with our prepared and easy-to-use libraries, or you can create your own library to control it to satisfy your need. The 8*8 LED Matrix can be assembled and unassembled from the driver board easily, so it is convenient to change different color LED matrix display based on your need.
+LED Matrix is low cost and usually used to display simple numbers and images. The Grove - LED Matrix Driver is the I2C based product which allows you to control the LED matrix with our prepared and easy-to-use libraries, or you can create your own library to control it to satisfy your need. The 8*8 LED Matrix can be assembled and unassembled from the driver board easily, so it is convenient to change different color LED matrix display based on your need.
 
 
 
 <!-- <p style=":center"><a href="https://www.seeedstudio.com/Grove-LED-Matrix-Driver-HT16K33.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p> -->
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-LED-Matrix-Driver-HT16K33.html)
+<!-- [<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-LED-Matrix-Driver-HT16K33.html) -->
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-LED-Matrix-Driver-HT16K33.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div><br />
+
 ## Version
 
-| Product Version  | Changes                                                                                               | Released Date |
+<!-- | Product Version  | Changes                                                                                               | Released Date |
 |------------------|-------------------------------------------------------------------------------------------------------|---------------|
-| Grove - LED Matrix Driver (HT16K33) | Initial                                                                                               | Sep 2018      |
+| Grove - LED Matrix Driver (HT16K33) | Initial                                                                                               | Sep 2018      | -->
+
+<div class="table-center">
+<table align="center">
+    <thead>
+        <tr>
+            <th>Product Version</th>
+            <th>Changes</th>
+            <th>Released Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Grove - LED Matrix Driver (HT16K33)</td>
+            <td>Initial</td>
+            <td>Sep 2018</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+
 
 ## Feature 
 
 - Integrated RC oscillator
 - R/W address auto increment
 - Max. 8 x 8 patterns
-- I^2^C-bus interface
+- I2C-bus interface
 
 
-##Specification
+## Specification
 
-|Item|Value|
+<!-- |Item|Value|
 |---|---|
 |Supply Voltage|3.3V / 5V|
 |LED Matrix Dot NO.|8 * 8|
@@ -48,13 +76,66 @@ LED Matrix is low cost and usually used to display simple numbers and images. Th
 |size|L: 40mm W: 40mm H: 17mm| 
 |Weight|8.8g|
 |Package size|L: 140mm W: 90mm H: 18mm|
-|Gross Weight|15g|
+|Gross Weight|15g| -->
+
+<div class="table-center">  
+    <table align="center">  
+        <thead>  
+            <tr>  
+                <th>Item</th>  
+                <th>Value</th>  
+            </tr>  
+        </thead>  
+        <tbody>  
+            <tr>  
+                <td>Supply Voltage</td>  
+                <td>3.3V / 5V</td>  
+            </tr>  
+            <tr>  
+                <td>LED Matrix Dot NO.</td>  
+                <td>8 * 8</td>  
+            </tr>  
+            <tr>  
+                <td>Operating temperature</td>  
+                <td>-40～85℃</td>  
+            </tr>  
+            <tr>  
+                <td>Storage temperature</td>  
+                <td>-50～125℃</td>  
+            </tr>  
+            <tr>  
+                <td>Interface</td>  
+                <td>I2C</td>  
+            </tr>  
+            <tr>  
+                <td>I2C address</td>  
+                <td>0x70 (default) 0x71~0x77 (configurable)</td>  
+            </tr>  
+            <tr>  
+                <td>Size</td>  
+                <td>L: 40mm W: 40mm H: 17mm</td>  
+            </tr>  
+            <tr>  
+                <td>Weight</td>  
+                <td>8.8g</td>  
+            </tr>  
+            <tr>  
+                <td>Package size</td>  
+                <td>L: 140mm W: 90mm H: 18mm</td>  
+            </tr>  
+            <tr>  
+                <td>Gross Weight</td>  
+                <td>15g</td>  
+            </tr>  
+        </tbody>  
+    </table>  
+</div>  
 
 
 :::note
-         There are 8 possible I2C address of this grove, from 0x70 to 0x77. The defult I^2^C address is 0x77. You can change the I2C address by do some soldering as instructed in the below table. 
+There are 8 possible I2C address of this grove, from 0x70 to 0x77. The defult I2C address is 0x77. You can change the I2C address by do some soldering as instructed in the below table. 
 :::
-|I^2^C address|Connection|
+<!-- |I2C address|Connection|
 |---|---|
 |0x70|Disconnect: A0 A1 A2|
 |0x71|Disconnect: A1 A2, Connect: A0|
@@ -63,7 +144,52 @@ LED Matrix is low cost and usually used to display simple numbers and images. Th
 |0x74|Disconnect: A0 A1, Connect: A2|
 |0x75|Disconnect: A1, Connect: A0 A2|
 |0x76|Disconnect: A0, Connect: A1 A2|
-|0x77|Connect: A0 A1 A2|
+|0x77|Connect: A0 A1 A2| -->
+
+<div class="table-center">  
+    <table align="center">  
+        <thead>  
+            <tr>  
+                <th>I2C address</th>  
+                <th>Connection</th>  
+            </tr>  
+        </thead>  
+        <tbody>  
+            <tr>  
+                <td>0x70</td>  
+                <td>Disconnect: A0 A1 A2</td>  
+            </tr>  
+            <tr>  
+                <td>0x71</td>  
+                <td>Disconnect: A1 A2, Connect: A0</td>  
+            </tr>  
+            <tr>  
+                <td>0x72</td>  
+                <td>Disconnect: A0 A2, Connect: A1</td>  
+            </tr>  
+            <tr>  
+                <td>0x73</td>  
+                <td>Disconnect: A2, Connect: A1 A0</td>  
+            </tr>  
+            <tr>  
+                <td>0x74</td>  
+                <td>Disconnect: A0 A1, Connect: A2</td>  
+            </tr>  
+            <tr>  
+                <td>0x75</td>  
+                <td>Disconnect: A1, Connect: A0 A2</td>  
+            </tr>  
+            <tr>  
+                <td>0x76</td>  
+                <td>Disconnect: A0, Connect: A1 A2</td>  
+            </tr>  
+            <tr>  
+                <td>0x77</td>  
+                <td>Connect: A0 A1 A2</td>  
+            </tr>  
+        </tbody>  
+    </table>  
+</div>  
 
 For example, if I want to change the address to 0x73, I need to connect pad A1,A0 and disconnect pad A2. Then I will get address 0b01110011, that is 0x73.
 
@@ -114,14 +240,14 @@ For example, if I want to change the address to 0x73, I need to connect pad A1,A
 
 
 :::note
-      **1.** Please plug the USB cable gently, otherwise you may damage the port. Please use the USB cable with 4 wires inside, the 2 wires cable can't transfer data. If you are not sure about the wire you have, you can click [here](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html) to buy 
+**1.** Please plug the USB cable gently, otherwise you may damage the port. Please use the USB cable with 4 wires inside, the 2 wires cable can't transfer data. If you are not sure about the wire you have, you can click [here](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html) to buy 
     
-      **2.** Each Grove module comes with a Grove cable when you buy. In case you lose the Grove cable, you can click [here](https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-%285-PCs-pack%29-p-936.html) to buy.
+**2.** Each Grove module comes with a Grove cable when you buy. In case you lose the Grove cable, you can click [here](https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-%285-PCs-pack%29-p-936.html) to buy.
 :::
 
 - **Step 1.** Connect red square matrix LED to the Grove-LED Matrix Driver.
 
-- **Step 2.** Connect the Grove - LED Matrix Driver to port **I^2^C** of Grove-Base Shield.
+- **Step 2.** Connect the Grove - LED Matrix Driver to port **I2C** of Grove-Base Shield.
 
 - **Step 3.** Plug Grove - Base Shield into Seeeduino.
 
@@ -134,7 +260,7 @@ For example, if I want to change the address to 0x73, I need to connect pad A1,A
 #### Software
 
 :::note
-        If this is the first time you work with Arduino, we strongly recommend you to see [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
+If this is the first time you work with Arduino, we strongly recommend you to see [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) before the start.
 :::
 
 - **Step 1.** Download the [Grove_LED_Matrix_Driver_HT16K33](https://github.com/Seeed-Studio/Grove_LED_Matrix_Driver_HT16K33.git) Library from Github.
@@ -160,43 +286,40 @@ For example, if I want to change the address to 0x73, I need to connect pad A1,A
 
 
 ```cpp
-
-
 #include <Wire.h>
 #include "Grove_LED_Matrix_Driver_HT16K33.h"
 
+#include "SoftI2C.h"
+#include "I2Cdev.h"
 
+Default_IIC_Adapter hard_ware_iic;
 Matrix_8x8 matrix;
 
-void setup()
-{
-    Wire.begin();
-    matrix.init();
+void setup() {
+    hard_ware_iic.begin();
+    matrix.init(&hard_ware_iic,0x70);
     matrix.setBrightness(0);
     matrix.setBlinkRate(BLINK_OFF);
 }
 
-void loop()
-{
-    for (int i=0;i<33;i++)
-    {
+void loop() {
+    for (int i = 0; i < 33; i++) {
         // The input range of writeBar is [0-32]
         matrix.writeBar(i);
         matrix.display();
         delay(150);
     }
 }
-
-
 ```
 
 :::note
-        The library file may be updated. This code may not be applicable to the updated library file, so we recommend that you use the first two methods.
+The library file may be updated. This code may not be applicable to the updated library file, so we recommend that you use the first two methods.
 :::
 
 :::success
-		If everything goes well, you will be able to see various bars display on the LED matrix.
+If everything goes well, you will be able to see various bars display on the LED matrix.
 :::
+
 If you would like to run other examples, you may do similar processes and be able to see different displays.
 
 
@@ -223,27 +346,28 @@ Are you willing to let the LED matrix to display the emoji? Now, it is your turn
 
 
 ```cpp
-
 #include "Grove_LED_Matrix_Driver_HT16K33.h"
 #include <Wire.h>
 
+#include "SoftI2C.h"
+#include "I2Cdev.h"
+
 //put your own design hex group here.
-const uint64_t Emoji[] = 
-{
+const uint64_t Emoji[] = {
   0x3c4299a581a5423c,
   0x3c4281bd81a5423c,
   0x3c42a59981a5423c,
 };
 
+Default_IIC_Adapter hard_ware_iic;
 Matrix_8x8 matrix;
 
-
 void setup() {
-    Wire.begin();
-    matrix.init();
-    matrix.setBrightness(0);
-    matrix.setBlinkRate(BLINK_OFF);
-    /*************************************************************
+  Wire.begin();
+  matrix.init(&hard_ware_iic, 0x70);
+  matrix.setBrightness(0);
+  matrix.setBlinkRate(BLINK_OFF);
+  /*************************************************************
     * Description
     *    Setting the blink rate of matrix
     * Parameter
@@ -254,10 +378,9 @@ void setup() {
 }
 
 void loop() {
-  for (int i = 0;i < 3;i++)
-    {
-        matrix.writeOnePicture(Emoji[i]);
-        /*************************************************************
+  for (int i = 0; i < 3; i++) {
+    matrix.writeOnePicture(Emoji[i]);
+    /*************************************************************
         * Description
         *    Write a picture in display buffer.
         *    Call display() to show display buffer.
@@ -267,8 +390,8 @@ void loop() {
         * Return
         *    Null.
         *************************************************************/
-        matrix.display();
-        /*************************************************************
+    matrix.display();
+    /*************************************************************
         * Description
         *    Clear the display buffer.
         *    This function will display nothing on 8x8 Matrix after call display().
@@ -277,18 +400,16 @@ void loop() {
         * Return
         *    Null.
         *************************************************************/
-        delay(500);
-    }
+    delay(500);
+  }
 }
-
 ```
 
 - **Step 6.** Upload your project to your seeeduino.
 
 
 :::success
-
-         If everything goes well, your LED Matrix will display as below.
+If everything goes well, your LED Matrix will display as below.
 :::
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-LED_Matrix_Driver-HT16K33/img/display.gif) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-LED_Matrix_Driver-HT16K33/img/display.gif" alt="pir" width={600} height="auto" /></p>
