@@ -6,8 +6,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680
 last_update:
-  date: 1/4/2023
-  author: jianjing Huang
+  date: 4/14/2025
+  author: Priyanshu Roy
 ---
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Pressure-Gas-Sensor_BME680/img/main.jpg" /></div>
@@ -76,9 +76,9 @@ SenseCAP S210x series industrial sensors provide an out-of-box experience for en
 
 ## Platforms Supported
 
-| Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
-|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-|<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" /></div>|<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg" /></div> | <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg" /></div>| <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg" /></div>| <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg" /></div>|
+| Arduino                                                                                             | Raspberry Pi                                                                                                                                                                                              |ESP-IDF                                                                                             |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+|<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" /></div>|<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg" /></div> |<div align="center"><img width={1000} src="../../../../Contribution/Contributor_Files/esp_idf.png" /></div>|
 
 :::caution
 The platforms mentioned above as supported is/are an indication of the module's software or theoritical compatibility. We only provide software library or code examples for Arduino platform in most cases. It is not possible to provide software library / demo code for all possible MCU platforms. Hence, users have to write their own software library.
@@ -175,6 +175,133 @@ gas ===>> 101.76 Kohms
         2 - For the gas part, it's a variable resistance which reflect the value of the VOC gas, so the unit is Kohms. 
         
         3 - If you want to get a reliable result for gas part, please use Arduino Mega and check [here](https://github.com/Seeed-Studio/Seeed_BME680_V1)
+:::
+
+### Play With ESP-IDF
+
+#### Hardware
+
+**Materials required**
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+        <th>Seeed Studio XIAO ESP32C3</th>
+        <th>Seeed Studio Grove Base for XIAO</th>
+			<th>Grove BME680 Environmental Sensor</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Pressure-Gas-Sensor_BME680/img/main.jpg" style={{width:250, height:'auto'}}/></div></td>
+		</tr>
+    <tr>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html">
+                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+            </a>
+        </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-Humidity-Pressure-and-Gas-Sensor-for-Arduino-BME680.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
+
+:::note
+**1** Please plug the USB cable gently, otherwise you may damage the port. Please use the USB cable with 4 wires inside, the 2 wires cable can't transfer data. If you are not sure about the wire you have, you can click [here](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html) to buy
+
+**2** Each Grove module comes with a Grove cable when you buy. In case you lose the Grove cable, you can click [here](https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-%285-PCs-pack%29-p-936.html) to buy.
+:::
+
+- **Step 1.** Connect the Grove-Temperature&Humidity&Pressure&Gas Sensor(BME680) to the Grove Base for XIAO using the Grove cable.
+
+<p style={{textAlign: 'center'}}><img src="../../../../Contribution/Contributor_Files/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/1.png" alt="pir" width={600} height="auto" /></p>
+
+- **Step 2.** Connect XIAO ESP32C3 to PC via a USB cable.
+
+#### Software
+
+:::note
+If this is the first time you work with ESP-IDF, we strongly recommend you to see [Getting Started with ESP-IDF](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html) before the start.
+:::
+
+- **Step 1.** Install ESP-IDF following the [official guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html).
+
+- **Step 2.** Create a new project using ESP-IDF template.
+
+- **Step 3.** Clone the BME680 component repository:
+```bash
+cd <your_project>/components
+git clone --recursive https://github.com/Priyanshu0901/grove_bme680.git
+```
+
+- **Step 4.** Configure the I2C pins in your project's `sdkconfig` file or using menuconfig:
+```bash
+idf.py menuconfig
+```
+Navigate to `Component config -> BME680 Sensor Configuration` and set:
+- I2C SDA Pin: 6
+- I2C SCL Pin: 7
+
+- **Step 5.** Copy the example code from the component's `examples` directory to your project's `main` directory.
+
+- **Step 6.** Build and flash the project:
+```bash
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
+
+The output should be similar to:
+
+```
+I (251) main_task: Started on CPU0
+I (251) main_task: Calling app_main()
+I (251) BME680_EXAMPLE: BME680 sensor example started
+I (261) BME680_EXAMPLE: Initializing BME680 sensor...
+I (261) BME680_IF: I2C interface initialized with address: 0x76
+I (271) BME680_IF: BME680 interface initialized successfully
+I (281) BME680: BME680 configured successfully
+I (281) BME680: BME680 initialized successfully
+I (281) BME680_EXAMPLE: BME680 initialized, waiting for sensor to stabilize...
+I (1291) BME680_EXAMPLE: Performing first sensor reading...
+I (1411) BME680_EXAMPLE: First sensor reading successful on attempt 1
+I (1411) BME680_EXAMPLE: Sensor Data:
+I (1411) BME680_EXAMPLE:   Temperature: 30.46 °C
+I (1411) BME680_EXAMPLE:   Pressure: 910.34 hPa
+I (1411) BME680_EXAMPLE:   Humidity: 51.17 %
+I (1421) BME680_EXAMPLE:   Gas Resistance: 12561.98 kOhm
+I (1421) BME680_EXAMPLE:   Gas Valid: Yes
+I (1431) BME680_EXAMPLE:   Data Valid: Yes
+I (1561) BME680_EXAMPLE: Sensor Data:
+I (1561) BME680_EXAMPLE:   Temperature: 30.50 °C
+I (1561) BME680_EXAMPLE:   Pressure: 910.33 hPa
+I (1561) BME680_EXAMPLE:   Humidity: 51.20 %
+I (1561) BME680_EXAMPLE:   Gas Resistance: 136.83 kOhm
+I (1571) BME680_EXAMPLE:   Gas Valid: Yes
+I (1571) BME680_EXAMPLE:   Data Valid: Yes
+I (3691) BME680_EXAMPLE: Sensor Data:
+I (3691) BME680_EXAMPLE:   Temperature: 30.50 °C
+I (3691) BME680_EXAMPLE:   Pressure: 910.33 hPa
+I (3691) BME680_EXAMPLE:   Humidity: 51.04 %
+I (3691) BME680_EXAMPLE:   Gas Resistance: 96.77 kOhm
+I (3701) BME680_EXAMPLE:   Gas Valid: Yes
+I (3701) BME680_EXAMPLE:   Data Valid: Yes
+```
+
+:::note
+1. The example code includes error handling and recovery mechanisms for sensor read failures.
+2. The sensor requires some time to stabilize after initialization, so the first few readings might not be accurate.
+3. The gas resistance value is in kOhms and represents the air quality.
+4. The sensor supports both I2C and SPI interfaces, but the example uses I2C by default.
+5. Make sure to use the correct I2C pins (GPIO6 for SDA and GPIO7 for SCL) when using with XIAO ESP32C3.
 :::
 
 ## Schematic Online Viewer

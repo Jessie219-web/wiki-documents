@@ -6,8 +6,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /Grove-Air_Quality_Sensor_v1.3
 last_update:
-  date: 1/5/2023
-  author: shuxu hu
+  date: 4/14/2025
+  author: Priyanshu Roy
 ---
 
 
@@ -46,13 +46,9 @@ This sensor is designed for comprehensive monitor over indoor air condition. It'
 
 ## Platforms Supported
 
-<!-- | Arduino                                                                                             | Raspberry Pi                                                                                             |                                                                                                 |                                                                                                          |                                                                                                    |
-|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/bbg_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/wio_logo_n.jpg) | ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/linkit_logo_n.jpg) | -->
-
-|Arduino|Raspberry Pi|
-|---|---|
-|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" alt="pir" width={200} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg" alt="pir" width={200} height="auto" /></p>|
+|Arduino|Raspberry Pi|ESP-IDF|
+|---|---|---|
+|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/arduino_logo.jpg" alt="pir" width={200} height="auto" /></p>|<p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/raspberry_pi_logo_n.jpg" alt="pir" width={200} height="auto" /></p>|<p><img src="../../../../Contribution/Contributor_Files/esp_idf.png" alt="esp-idf" width={200} height="auto" /></p>|
 
 :::caution
     The platforms mentioned above as supported is/are an indication of the module's software or theoritical compatibility. We only provide software library or code examples for Arduino platform in most cases. It is not possible to provide software library / demo code for all possible MCU platforms. Hence, users have to write their own software library.
@@ -445,6 +441,158 @@ sudo python grove_air_quality_sensor.py
 
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/img/pi_result.png" alt="pir" width={600} height="auto" /></p>
 
+
+### Play With ESP-IDF
+
+#### Hardware
+
+- **Step 1.** Prepare the below stuffs:
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+        <th>Seeed Studio XIAO ESP32C3</th>
+        <th>Seeed Studio Grove Base for XIAO</th>
+        <th>Grove Air Quality Sensor v1.3</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Preview-25.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/img/Grove%20Air%20Quality%20Sensor_big.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html">
+                <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+            </a>
+        </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Air-quality-sensor-v1.3-p-2439.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
+
+- **Step 2.** Connect the Grove - Air Quality Sensor to your ESP32 board:
+  - Connect the sensor's VCC to 3.3V
+  - Connect the sensor's GND to GND
+  - Connect the sensor's SIG to an ADC-capable GPIO pin (e.g., GPIO34)
+<p style={{textAlign: 'center'}}><img src="../../../../Contribution/Contributor_Files/Grove-Air_Quality_Sensor_v1_3/1.png" alt="pir" width={600} height="auto" /></p>
+
+
+#### Software
+
+- **Step 1.** Install ESP-IDF following the [official guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
+
+- **Step 2.** Clone the Grove Analog Air Quality Sensor component:
+
+```bash
+cd your_project/components
+git clone https://github.com/Priyanshu0901/grove_analog_aqs.git
+```
+
+- **Step 3.** Configure the component using menuconfig:
+
+```bash
+idf.py menuconfig
+```
+
+Navigate to "Component config → Grove Analog Air Quality Sensor" to configure:
+- ADC unit number (0 for ADC1, 1 for ADC2)
+- ADC channel (matching your GPIO connection)
+- ADC attenuation (default: ADC_ATTEN_DB_12 for 3.3V)
+- Air quality thresholds
+- Power management options (optional)
+
+- **Step 4.** Create a new project and use the component:
+
+```c
+#include "grove_analog_aqs.h"
+
+void app_main(void)
+{
+    // Initialize with default configuration
+    grove_aqs_config_t config = GROVE_AQS_DEFAULT_CONFIG();
+    esp_err_t ret = grove_aqs_init(&config);
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "Sensor initialization failed: %d", ret);
+        return;
+    }
+    
+    // Read sensor data
+    grove_aqs_data_t data;
+    ret = grove_aqs_read_data(&data);
+    if (ret == ESP_OK) {
+        ESP_LOGI(TAG, "Raw ADC value: %d", data.raw_value);
+        ESP_LOGI(TAG, "Voltage: %d mV", data.voltage_mv);
+        ESP_LOGI(TAG, "Air quality: %s", grove_aqs_quality_to_string(data.quality));
+    }
+    
+    // Cleanup when done
+    grove_aqs_deinit();
+}
+```
+
+- **Step 5.** Build and flash the project:
+
+```bash
+idf.py build
+idf.py -p /dev/ttyUSB0 flash monitor
+```
+
+:::note
+    Replace /dev/ttyUSB0 with your ESP32's serial port.
+:::
+
+#### Expected Output
+
+```
+I (242) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (249) main_task: Started on CPU0
+I (249) main_task: Calling app_main()
+I (249) grove_aqs_example: Initializing Grove Analog Air Quality Sensor
+I (259) grove_aqs_example: Using ADC Unit: 0, ADC Channel: 2
+I (259) grove_aqs: Initializing with ADC Unit: 0, ADC Channel: 2
+I (269) grove_aqs: ADC calibration enabled
+I (269) grove_aqs: Grove Analog Air Quality Sensor initialized successfully
+I (279) grove_aqs_example: Waiting for sensor to stabilize...
+I (3279) grove_aqs: Air quality reading: Raw=300, Voltage=218mV, Quality=Fresh
+I (3279) grove_aqs_example: Reading #1:
+I (3279) grove_aqs_example:   Raw ADC value: 300
+I (3279) grove_aqs_example:   Voltage: 218 mV
+I (3279) grove_aqs_example:   Air quality: Fresh
+I (3289) grove_aqs_example:   Advice: Air is fresh and clean!
+I (4289) grove_aqs: Air quality reading: Raw=298, Voltage=216mV, Quality=Fresh
+I (4289) grove_aqs_example: Reading #2:
+I (4289) grove_aqs_example:   Raw ADC value: 298
+I (4289) grove_aqs_example:   Voltage: 216 mV
+I (4289) grove_aqs_example:   Air quality: Fresh
+I (4299) grove_aqs_example:   Advice: Air is fresh and clean!
+I (5299) grove_aqs: Air quality reading: Raw=286, Voltage=208mV, Quality=Fresh
+I (5299) grove_aqs_example: Reading #3:
+I (5299) grove_aqs_example:   Raw ADC value: 286
+I (5299) grove_aqs_example:   Voltage: 208 mV
+I (5299) grove_aqs_example:   Air quality: Fresh
+I (5309) grove_aqs_example:   Advice: Air is fresh and clean!
+I (6309) grove_aqs: Air quality reading: Raw=283, Voltage=206mV, Quality=Fresh
+```
+
+:::tip
+    The component provides the following features:
+    - Automatic ADC calibration
+    - Configurable air quality thresholds
+    - Optional GPIO power control
+    - Error handling and logging
+    - Support for both ADC1 and ADC2
+:::
+
 ## Schematic Online Viewer
 
 <div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/res/Grove_-_Air_quality_sensor_v1.3_sch_pcb.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
@@ -458,6 +606,8 @@ sudo python grove_air_quality_sensor.py
 - **[PDF]** [Air_quality_sensor_MP503_Chinese](https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/res/Air_quality_sensor_MP503%20Chinese.pdf)
 - **[PDF]** [Air_quality sensor_MP503_English](https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/res/Mp503%20English.pdf)
 - **[Codecraft]** [CDC File](https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/res/Grove_Air_Quality_Sensor_CDC_File.zip)
+- **[ESP-IDF]** [Grove Analog Air Quality Sensor Component](https://github.com/Priyanshu0901/grove_analog_aqs.git) - ESP-IDF component for Grove Air Quality Sensor
+- **[ESP-IDF]** [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html) - Official ESP-IDF programming guide
 
 ## Projects
 
