@@ -28,10 +28,11 @@ The Wio-SX1262 is a low-cost, ultra-low-power, and ultra-compact LoRa® Pure RF 
 - Wio SX1262 support LoRa® modulation for LPWAN use cases and (G)FSK modulation for legacy use cases.
 - Frequency coverage from 868 MHz to 960 MHz.
 - With SPI interface.
+- Wio SX1272-N has SMT-packaged RF pins for easy PCB design, which is means it does not contain IPEX connector. 
 
 ### Comparison with other modules
 
-<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/36.png" style={{width:500, height:'auto'}}/></div></td>
+<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/69.png" style={{width:500, height:'auto'}}/></div></td>
 
 ## Hardware Overview
 
@@ -50,7 +51,7 @@ The Wio-SX1262 module is based on SX1262, making it ideal for designing various 
 <td>
 <div style={{textAlign:'center'}}>
 <img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/30.png" style={{width:500, height:'auto'}}/>
-<img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/32.png" style={{width:700, height:'auto'}}/>
+<img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/68.jpg" style={{width:700, height:'auto'}}/>
 </div>
 </td>
 
@@ -60,16 +61,15 @@ The following is typical reference design using the Wio-SX1262 module, just conn
 
 Antenna design considerations: The antenna interface is designed with a 50Ω impedance, and it is recommended that users reserve a π-type matching network for the antenna.
 
-**The reference design:** 
+**The reference design:**
 
 <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/35.png" style={{width:700, height:'auto'}}/></div></td>
 
-
 ## Resource
 
-* [Wio SX1262 Module Datasheet](https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Wio-SX1262_Module_Datasheet.pdf)
-* [Wio SX1262 Schemetic Diagram](https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Schematic_Diagram_Wio-SX1262_for_XIAO.pdf)
-* [Wio SX1262 symbol and package file](https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Wio-SX1262_symbol_and_package_file.zip)
+- [Wio SX1262 Module Datasheet](https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Wio-SX1262-N_Module_Datasheet.pdf)
+- [Wio SX1262 Schemetic Diagram](https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Schematic_Diagram_Wio-SX1262_for_XIAO.pdf)
+- [Wio SX1262 symbol and package file](https://files.seeedstudio.com/products/SenseCAP/Wio_SX1262/Wio-SX1262_symbol_and_package_file.zip)
 
 ## Tech Support & Product Discussion
 
@@ -77,12 +77,12 @@ Thank you for choosing our products! We are here to provide you with different s
 
 <div class="table-center">
   <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a>
   <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
   </div>
 
   <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
   <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
   </div>
 </div>

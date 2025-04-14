@@ -1,6 +1,6 @@
 ---
 description: Getting Started with reCamera Gimbal
-title: Getting Started
+title: Quick Start Guide
 keywords:
   - AI
   - reCamera
@@ -9,8 +9,8 @@ image: https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp
 slug: /recamera_gimbal_getting_started
 sidebar_position: 1
 last_update:
-  date: 02/27/2025
-  author: Parker Hu
+  date: 04/09/2025
+  author: Dawn Yao
 ---
 
 # Getting Started with reCamera Gimbal
@@ -19,11 +19,27 @@ last_update:
 
 ## Introduction
 
-The reCamera gimbal 2002 series is the first open-source camera control system, composed of one tiny AI camera - reCamera 2002w 8GB/64GB, and one compatible 2-Axis gimbal basement with 2 brushless motors. It is powered by an RISC-V SoC, providing 1 TOPS AI performance with video encoding at 5MP @ 30 FPS. It offers a Lego-like self-assembly package and integrates the Sensecraft AI platform and Node-RED platform for smooth graphical programming and pipeline construction, enabling rapid self-training, model conversion, and deployment of AI models such as Yolo v5/v8/11.
+Welcome to reCamera Gimbal! The reCamera gimbal 2002 series is the first open-source camera control system, composed of one tiny AI camera - reCamera 2002w 8GB/64GB, and one compatible 2-Axis gimbal basement with 2 brushless motors. It is powered by an RISC-V SoC, providing 1 TOPS AI performance with video encoding at 5MP @ 30 FPS. It offers a Lego-like self-assembly package and integrates the Sensecraft AI platform and Node-RED platform for smooth graphical programming and pipeline construction, enabling rapid self-training, model conversion, and deployment of AI models such as Yolo v5/v8/11. 
 
-:::note
-The 12VDC power adapter is not included in the set. You need to select the appropriate power adapter from our bazaar selection screen or purchase one yourself.
-:::
+This guide will help you quickly set up your device and start using it to unlock powerful AI-Vision features. Whether you're a beginner or an experienced user, this step-by-step walkthrough will guide you through the installation, configuration, and first use.
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reCamera-gimbal-2002w-optional-accessories.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
+    </a>
+</div>
+
+## Prerequisites
+
+<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_prerequisites.png" /></div>
+
+- reCamera Gimbal
+- User manual (inside the box)
+- 12V DC power adapter to 5521 DC Plug ([Purchase link](https://www.seeedstudio.com/Power-Adapter-12V-2A-US-p-5731.html))
+- USB Type C ([Purchase lini](https://www.seeedstudio.com/USB-3-1-Type-C-to-A-Cable-1-Meter-3-1A-p-4085.html))
+- Wi-Fi Connection
+- Eletrical screw driver (Optional for better assembling experience)
+
 
 ## Unboxing
 
@@ -35,9 +51,9 @@ Make sure all parts are included.
 
 ### Hardware Assembly
 
-Assemble the reCamea Gimbal according to the assembly instructions on Box or [User manual](https://files.seeedstudio.com/gimbal/GIMBAL_Manual0206.pdf).
+Assemble the reCamea Gimbal according to the assembly instructions on Box or [User manual](#jump1).
 
-<div style={{textAlign:'center'}}><iframe width={560} height={315} src="https://www.youtube.com/embed/VAkhDHct0p4" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
+<!-- <div style={{textAlign:'center'}}><iframe width={560} height={315} src="https://www.youtube.com/embed/VAkhDHct0p4" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div> -->
 
 :::note
 Please make sure all screws are tightened, otherwise it will affect the operation of the motor.
@@ -46,31 +62,27 @@ Please make sure all screws are tightened, otherwise it will affect the operatio
 
 ### Setup device and login
 
-**Step1:** After assembling the Gimbal, connect the reCamera Gimbal via XT30 to DC jack cable to 12V power adapter, and connect the usb cable between your pc and device. Navigate to `192.168.42.1` on website and change the default password. 
+**Step1:** After assembling the Gimbal, connect the usb cable from reCamera Gimbal to your PC. Navigate to `192.168.42.1` on website and change the default password. 
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_1.png" /></div>
 
 :::note
-Please remember your password, otherwise all logs will be erased to reset your device. Please [factory reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset) your device, if you forget the password.
+Please remember your password, otherwise all logs will be erased to reset your device. If you forget the password, please [factory reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset) your device.
 :::
 
-**Step2:** Here you'll be taken to the Gimbal Preview Dashboard. Click the button at the bottom right to take you to the workspace.
+**Step2:** Here you'll be taken to the Gimbal Preview Dashboard. Before experiencing some motor movements with the controls on Dashboard, please go to `Network` to set up Wi-Fi.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_2.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/dashboard_network.png" /></div>
 
-**Step3:** If you log in for the first time, you'll be introduced to Node-RED 4.0, keep clicking `Next` or log out.
+**Step3:** Connect to your Wi-Fi. After successfully connect to Wi-FI, click the `lock icon` to view the device IP address.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_3.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/view_wifi_IP.png" /></div>
 
-**Step4:** Then configure the network and connect to Wi-Fi.
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_4.png" /></div>
-
-**Step5:**  Click on the network you are connecting to and remember the IP address of the network you are connecting to.
+**Step4:** Open a new browser tab and use this IP address to access the device.
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_5.png" /></div>
 
-**Step6:**  Then you can disconnect the USB connection and remove the USB cable, which will impede the motor operation. And access the `IP address` on website just after power on. 
+**Step6:**  Connect the power to the base first, then remove the USB type C cable for best motor movements. 
 
 :::note
 
@@ -78,17 +90,45 @@ It should be connected the power adapter with voltage 12V.
 
 :::
 
-<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_6.jpg" /></div>
+<div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/switch_power.png" /></div>
 
-**Step7:** Once power on the device, it will automatically calibrate the motors. 
+**Step7:** Go back to your `ip address` browser to visit the dashboard, then hit `Calibrate button` on the right side to let your Gimbal calibrate itself. 
 
 :::note
 
-During automatic calibration, avoid interfering with the device's operation as this could result in calibration failure.
+During calibration, avoid interfering with the device's operation as this could result in calibration failure. Calibration is performed automatically each time the gimbal is powered on.
 
 :::
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_preview.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/gimbal_calibrate.png" /></div>
+
+### Calibration Behavior
+The yaw axis has a movement range of 0–360°, although the actual mechanical range is limited to approximately 345° due to structural constraints. However, the vision coverage remains 360°. The pitch axis supports a movement range of 0–180°.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/movement_range.png" /></div>
+
+Upon powering on, the gimbal will begin its automatic calibration sequence:
+
+- **Yaw Axis**: The gimbal will first rotate clockwise toward its mechanical limit (positioned above the power cable), then rotate counterclockwise to the opposite limit. After reaching both ends, it will return to the center position.
+
+- **Pitch Axis**: The gimbal will tilt upward to the 0° position, then downward to reach the 180° limit, and finally return to the center.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/calibrate.gif" /></div>
+
+This sequence completes the gimbal's self-calibration process.
+
+You can also calibrate by enter this command in the terminal
+```bash
+gimbal cali
+```
+
+### Troubleshooting Calibration Issues
+
+If the gimbal does not perform the calibration sequence correctly, there may be several potential causes:
+
+- **Verify the Mechanical Limitations**: Manually check the gimbal to ensure that the movement range is not obstructed or limited incorrectly.
+
+- **Check Resistance From 3D Printed Parts**: Feel for any resistance when the motor moves. If the resistance is excessive, you may need to adjust the motor's PID settings to increase motor force. You can view [how to adjust PID here](https://wiki.seeedstudio.com/recamera_pid_adjustment). Alternatively, reduce friction by sanding any parts or slightly loosening screws to improve movement.
 
 ## Basic Web Access
 
@@ -105,32 +145,46 @@ Web urls:
 - **Power**: `ip_address/#/power`
 - **Original Node-RED**: `ip_address:1880`
 
-### OTA OS upgrade
-Please refer to the [OTA Upgrade Instruction](https://wiki.seeedstudio.com/recamera_getting_started/#ota-upgrade-from-013-to-latest-version).
-
-### Quick Start with Gimbal flow:
-
-Visit this address to access Gimbal's preview screen: `ip_address/#/dashboard`
+### Quick Start with Gimbal Dashboard:
+#### Motors control
+After setup and calibration are complete, you can control the gimbal using the available options in the dashboard. Visit `ip_address/#/dashboard` or `ip_address` to access Gimbal's preview dashboard made with Node-RED nodes: 
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_preview.png" /></div>
 
-#### Parameters
-**Yaw Abosilute Angle**(Left and right): The absolute angle of the yaw axis, which is the angle of rotation around the yaw axis. The range of this value is from 0 to 360 degrees for absolute position.
+- **Joystick**: Controls the direction of the camera's view. For example, dragging the joystick to the right causes the image to move right accordingly.
+- **Sliders**: 
+  - Yaw and Pitch Sliders: Move the gimbal to a specified absolute angle.
 
-Example: parsing in `180` to the `Yaw Axis Absolute Position`, the motor will rotate to 180 degrees. 
+    Yaw range: 0–360°
 
-**Pitch Abosilute Angle**(up and down): The absolute angle of the pitch axis, which is the angle of rotation around the pitch axis. The range of this value is from 0 to 180 degrees for absolute position.
-
-Example: parsing in `5` to the `Pitch Axis Absolute Position`, the motor will rotate to 5 degrees.
-
-**Motor Speed**: The speed of the motor. The range of this value is from 0 to 65535 dps/LSB.
-
-Example: parsing in `100` to the `Pitch Axis Speed Setpoint`, means that the yaw axis speed will be set to `10000 dps/LSB`.
+    Pitch range: 0–180°
 
 :::note
-Please do not set the motor to extreme values such as 0, 180, or 360. Prolonged stay at these angles may cause damage to the motor.
+Due to structural constraints, the yaw range is limited to 0–345° and the pitch range is limited to 0–180°. Any values entered outside of these ranges will be adjusted to the closest boundary. For example, if you input 360° for yaw, the system will automatically execute the movement as 345°.
 :::
 
+  - Speed Slider: Adjusts the speed of both motors simultaneously.
+
+    Speed range: 0–720°/s (degrees per second)
+- **Auto-Tracking**: Select a target object from the dropdown menu (e.g., person, car, cat, dog, bottle), then click `Start Tracking` to initiate automatic object tracking. Click `Stop Tracking` to end tracking.
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_tarck.png" /></div>
+
+- **Sleep Button**: Moves the gimbal to an absolute position of (Yaw: 180°, Pitch: 180°).
+
+:::note
+
+The Sleep button does not activate a low-power sleep mode. It simply repositions the camera to face downward.
+
+:::
+
+- **Standby Button**: Moves the gimbal to an absolute position of (Yaw: 180°, Pitch: 90°).
+- **Calibrate Button**: Initiates the gimbal calibration process.
+- **Emergency Stop Button**:Immediately disables both motors during movement.
+
+    ⚠️ Note: This will not interrupt the calibration process.
+
+#### AI Model Parameters
 **Confidence**: Confidence in the YOLO model represents the probability that a predicted bounding box contains an object and how accurate the prediction is. It is a value between 0 and 100.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_confidence.png" /></div>
@@ -140,100 +194,64 @@ Please do not set the motor to extreme values such as 0, 180, or 360. Prolonged 
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_iou.png" /></div>
 
-#### Manual Control
 
-Yaw axis slider is used to control the left and right movement of the motor; Pitch axis slider is used to control the pitch motor moving up and down; The Speed axis slider is used to control the movement speed of the motor.
+### Quick start with Gimbal Dashboard Flow:
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_manual_control.png" /></div>
+If you would like to know how the dashboard is made with Node-RED nodes, click the bottom right corner or visit `ip_address/#/workspace` to access Gimbal's Node-RED workspace
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_manual_control2.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/dashboard_to_workspace.png" /></div>
 
-#### Target Track
+Then you will see the default gimbal dashboard flow, you can double click in each node to view the detail of the node. The dashboard flow will look like this:
 
-Select the object to be tracked, click `Start Tracking` to start Tracking the identified object, and click `Stop Tracking` to stop tracking the object.
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/workspace_flow.png" /></div>
 
-:::note
+**Model Settings**: 
+  - Slider nodes allow you to adjust the IoU (Intersection over Union) and confidence threshold for the YOLO AI model.
 
-This function is currently being optimized and will be updated in the next OS version.
+**Dashboard UI Display**:
+  - The UI template node displays text showing the current model settings.
+  - It also renders the base64 image from the camera, including detection boxes for objects identified by YOLO.
 
-:::
+**Auto Tracking with Target**:
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_tarck.png" /></div>
+  - Function nodes retrieve information about the target object (e.g., width, height, coordinates) and process this data using a tracking algorithm.
 
-#### Shortcut Button
+  - The algorithm function node calculates the offset of the target box center relative to the vision center and sends this offset to the set motor angle node to move the gimbal to the desired position.
 
-Click the `Sleep` button to set the yaw motor angle as 180 degrees and the pitch motor angle as 175 degrees, then will exit the camera recording mode.
+**Manual Motor Control**:
 
-:::note
+  - Use slider nodes to manually set motor angles, moving the gimbal by a specific degree.
 
-The Sleep button does not put the device into a low-power sleep state.
+  - Alternatively, the joystick UI node allows manual control by adjusting the gimbal's position in small increments (offset-by-offset).
 
-:::
+**Shortcut Buttons**:
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_sleep.png" /></div>
+  - Button UI nodes send specific positions to the set motor angle node, triggering behaviors like Sleep or Standby.
 
-Click the `Standby` button to set the yaw motor angle as 180 degrees and the pitch motor angle as 90 degrees. This value is the middle value of the Yaw axis and Pitch axis of the Gimbal.
+  - These buttons can also trigger exec nodes running bash scripts such as `gimbal cali` for calibration or `gimbal stop 1; gimbal stop 2` for an emergency stop.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_standby.png" /></div>
+**Basic Web Iframe Subflow**:
 
+  - An iframe subflow displays basic web pages like network settings, system info, and device information.
 
+  - Note that these may consume CPU resources as it renders the page with multiple nodes. It can be deleted if not needed.
 
-### Quick start with Gimbal Node
+## Apply cloud management and backup
 
-Visit this address to access Gimbal's Node-RED workspace : `ip_address/#/workspace`
-
-You would be asked to login sensecraft account and click the `+` icon sign to add a new application. Then you can start working on your flow.
+If you would like to create new application or save applications to SenseCraft cloud service, you can login sensecraft account at the bottom left, and then click the `+` icon sign to add a new application. Then you can start working on your flow.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_7.png" /></div>
 
-#### Node Modules
+You can view and manage your apps [reCamera - SenseCraft AI](https://sensecraft.seeed.cc/ai/#/recamera).
 
-Gimbal adds four new modules over the default reCamera:
+:::note
 
-- CAN read : Send out all the input data from CANBus.
-- CAN write: Write data frame to CANBus.
-- CAN response：Read the response of the specified CAN request frame in CAN response node.
-- Motor Config：Set the control command of the Gimbal motor.
+You need to register an account before you can login through the platform to sync your applications.
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_8.png" /></div>
+:::
 
-You can copy and import the jsonflow below to test the preliminary control of the yaw-pitch motor.
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_14.png" /></div> 
 
-The first input can control the motor to rotate to 90 degrees. The second input can increase the motor angle by 5 degrees. And the third input can control the motor operation speed.
-
-```json
-[{"id":"90baeaed20766129","type":"tab","label":"Flow 1","disabled":false,"info":"","env":[]},{"id":"3594e777fcc5b427","type":"motor-config","z":"90baeaed20766129","name":"","input":"payload","input-type":"msg","output":"0","outputs":1,"x":290,"y":160,"wires":[["0feecb3a12148d2e"]]},{"id":"0feecb3a12148d2e","type":"can-response","z":"90baeaed20766129","name":"","client":"cee3b964b8e66e49","x":480,"y":160,"wires":[["71115d1a5921fa8d"]]},{"id":"184c323b8bcfde15","type":"inject","z":"90baeaed20766129","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"90","payloadType":"num","x":110,"y":160,"wires":[["3594e777fcc5b427"]]},{"id":"71115d1a5921fa8d","type":"debug","z":"90baeaed20766129","name":"debug 1","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":680,"y":160,"wires":[]},{"id":"a375a76518432903","type":"motor-config","z":"90baeaed20766129","name":"","input":"payload","input-type":"msg","output":"1","outputs":1,"x":290,"y":240,"wires":[["76f0f22a496a619e"]]},{"id":"76f0f22a496a619e","type":"can-response","z":"90baeaed20766129","name":"","client":"cee3b964b8e66e49","x":480,"y":240,"wires":[["e110ae6b3b6169de"]]},{"id":"e110ae6b3b6169de","type":"debug","z":"90baeaed20766129","name":"debug 2","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":680,"y":240,"wires":[]},{"id":"c6cfc31c419ed9d0","type":"motor-config","z":"90baeaed20766129","name":"","input":"payload","input-type":"msg","output":"2","outputs":0,"x":290,"y":300,"wires":[]},{"id":"9025c238e9b8c14b","type":"inject","z":"90baeaed20766129","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"5","payloadType":"num","x":110,"y":240,"wires":[["a375a76518432903"]]},{"id":"07b201c6f852db04","type":"inject","z":"90baeaed20766129","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"180","payloadType":"num","x":110,"y":300,"wires":[["c6cfc31c419ed9d0"]]},{"id":"cee3b964b8e66e49","type":"can-config","name":"","baud":"1000000","interface":"can0"}]
-```
-
-#### Motor Config
-
-In the Input Node, enter payload and below that, select the configuration you want to control the motor.
-
-The input value of this module is digital, and the output is the CAN protocol control command frame of the motor.
-
-The outlet CAN access `CAN write` or `CAN response` to execute control instructions.
-
-More instructions on motor control can be found in this [document](https://github.com/Seeed-Studio/OSHW-reCamera-Series/blob/main/reCamera_Gimbal/MotorTools/CN/通讯协议/瓴控电机CAN协议说明 V2.36.pdf).
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_9.png" /></div>
-
-#### CAN response
-
-Click the plus icon to configure the CANBus interface as `can0` and `Baud rate` as 1000k bps.
-
-The configuration of `CAN write` and `CAN read` is the same as that of this module.
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_10.png" /></div>
-
-<div align="center"><img width={300} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_11.png" /></div>
-
-The communication mode of the CAN protocol is request-response, and the CAN response will return the reply frame of the command you sent. After the CAN response, access the debug module to view the content of the reply frame.
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_12.png" /></div>
-
-CAN write and CAN read are the write and read operations to CAN bus data.
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_13.png" /></div>
 
 ## Port List
 
@@ -246,20 +264,9 @@ The following lists the ports used by reCamera Gimbal:
 - **Port 9090**: Intended for web terminal access, which requires a password for login.
 - **Port 1880**: Dedicated to Node-RED operations.
 
+## OTA OS upgrade
+Please refer to the [OTA Upgrade Instruction](https://wiki.seeedstudio.com/recamera_getting_started/#ota-upgrade-from-013-to-latest-version).
 
-
-
-## Apply cloud management and backup
-
-You can view and manage your apps [reCamera - SenseCraft AI](https://sensecraft.seeed.cc/ai/#/recamera).
-
-:::note
-
-You need to register an account before you can login through the platform to sync your applications.
-
-:::
-
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_14.png" /></div> 
 
 ## Factory Reset
 
@@ -270,7 +277,7 @@ If you would like to reset the device such as forgetting your device's passcode,
 
 ## Resources
 
-- [reCamera Gimbal User Manual](https://files.seeedstudio.com/gimbal/GIMBAL_Manual0206.pdf)
+- <span id="jump1"><a href="https://files.seeedstudio.com/gimbal/GIMBAL_Manual0311.pdf">reCamera Gimbal User Manual</a></span>
 
 - [Github](https://github.com/Seeed-Studio/OSHW-reCamera-Series)
 

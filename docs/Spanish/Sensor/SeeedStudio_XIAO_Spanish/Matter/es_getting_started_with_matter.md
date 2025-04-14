@@ -228,16 +228,14 @@ Además, podría haber problemas de red. Asegúrate de que el XIAO y tu iPhone e
 
 ¡Gracias por elegir nuestros productos! Estamos aquí para brindarte diferentes tipos de soporte y asegurarnos de que tu experiencia con nuestros productos sea lo más fluida posible. Ofrecemos varios canales de comunicación para adaptarnos a diferentes preferencias y necesidades.
 
-<div class="table-center">
-  <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
 
-  <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
 
 

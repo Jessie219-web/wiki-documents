@@ -26,7 +26,7 @@ if you have not install software of PlatformIO , you can click on the link above
 
 ### Setup 2 . Create any project in PlatformIO
 
-Because the platform already has our XIAO ESP32S3 and XIAO ESP32C3 development board options, we can choose one of them to create our files. Of course, other files are also fine, it doesn't matter. The project name can also be chosen arbitrarily.
+Because the platform already has our XIAO ESP32S3 and XIAO ESP32C3 development board options, we can choose one of them to create our files. Of course, other files are also fine, it doesn't matter. The project name can also be chosen arbitrarily.Here I use the XIAO ESP32 C3 as an example.
 
 <table align="center">
   <tr>
@@ -51,7 +51,7 @@ When you successfully create the PlatformIO file, there will be many files appea
       <th>Operation three</th>
   </tr>
   <tr>
-<div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/esp32c6_platformio/2.png" /></div>
+<div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/XIAO_PlatformIO/platformIO_file.jpg" /></div>
   </tr>
 </table>
 

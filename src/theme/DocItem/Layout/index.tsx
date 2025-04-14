@@ -11,7 +11,6 @@ import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop';
 import DocItemContent from '@theme/DocItem/Content';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import type { Props } from '@theme/DocItem/Layout';
-
 import styles from './styles.module.css';
 import Comment from '../../../components/comment';
 import { useLocation } from '@docusaurus/router';
@@ -25,17 +24,13 @@ import Head from '@docusaurus/Head';
 function useDocTOC() {
   const { frontMatter, toc } = useDoc();
   const windowSize = useWindowSize();
-
   const hidden = frontMatter.hide_table_of_contents;
   const canRender = !hidden && toc.length > 0;
-
   const mobile = canRender ? <DocItemTOCMobile /> : undefined;
-
   const desktop =
     canRender && (windowSize === 'desktop' || windowSize === 'ssr') ? (
       <DocItemTOCDesktop />
     ) : undefined;
-
   return {
     hidden,
     mobile,
@@ -46,20 +41,29 @@ function useDocTOC() {
 export default function DocItemLayout({ children }: Props): JSX.Element {
   const docTOC = useDocTOC();
   const { frontMatter } = useDoc();
-  const { hide_comment: hideComment, sku, type } = frontMatter; // <-- 获取 sku 和 type
-  const location = useLocation();
-
+  
+  // 使用类型断言解决 TypeScript 错误
+  const { hide_comment: hideComment, sku, type: docType } = frontMatter as any;
+  
+  const location = useLocation()
   useEffect(() => {
     judgeHomePath();
   }, [location.pathname]);
-
+  
   return (
     <div className="row">
+      {/* 添加 Head 组件用于动态 meta 标签 */}
       <Head>
         {sku && <meta name="sku" content={sku} />}
-        {type && <meta name="type" content={type} />}
+        {docType && <meta name="type" content={docType} />}
       </Head>
-      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+      
+      {/* 添加数据属性到静态 HTML 元素 */}
+      <div 
+        className={clsx('col', !docTOC.hidden && styles.docItemCol)}
+        data-sku={sku || ''}
+        data-doc-type={docType || ''}
+      >
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
           <article>
@@ -73,7 +77,7 @@ export default function DocItemLayout({ children }: Props): JSX.Element {
         </div>
         {!hideComment && <Comment />}
       </div>
-      <TopNav />
+      <TopNav></TopNav>
       {docTOC.desktop && <div className="col col--3">{docTOC.desktop}</div>}
     </div>
   );
