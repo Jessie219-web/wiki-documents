@@ -625,7 +625,7 @@ const config = {
         // Replace this with the name of your index/collection.
         // It should match the "index_name" entry in the scraper's "config.json" file.
         // typesenseCollectionName: 'wiki_platform_1713169217',
-        typesenseCollectionName: 'wiki_platform_1742956928',
+        typesenseCollectionName: 'wiki_platform_test_1743938099',
 
         typesenseServerConfig: {
           nodes: [
@@ -635,12 +635,29 @@ const config = {
               protocol: 'https',
             },
           ],
-          apiKey: 'f7FHXItd290yGupHRnQg4AKzT47bPiix',
+          apiKey: 'eCZrVYUXCKtGb3DTiSm5JkZSxhPUUPMH',
         },
         // Optional: Typesense search parameters: https://typesense.org/docs/0.24.0/api/search.html#search-parameters
-        typesenseSearchParameters: {},
-        query_by: 'hierarchy.lvl0,hierarchy.lvl2,content',
-        sort_by: '',
+        typesenseSearchParameters: {
+          query_by: 'hierarchy.lvl0,hierarchy.lvl2,content,sku',
+        },
+
+        // 添加处理 SKU 搜索的函数
+        transformSearchParameters: (inputString, searchParameters) => {
+          // 检查输入是否"只包含"5位或以上数字
+          if (/^\d{5,}$/.test(inputString)) {
+            console.log('检测到 SKU 搜索:', inputString);
+            return {
+              ...searchParameters,
+              query_by: 'sku',
+              query: inputString,
+              filter_by: 'doc_type:=gettingstarted && !doc_type:=project', // 限制 doc_type
+            };
+          }
+
+          // 非 SKU 搜索，返回默认的搜索参数
+          return searchParameters;
+        },
 
         // Optional
         contextualSearch: true,

@@ -49,6 +49,9 @@ For details, please click [here](/upgrade_software_packages_for_jetson)
 
 <!-- For details, please click [here](/updating_jetpack_with_ota) -->
 
+#### Q11: What modifications does Seeed make to NVIDIA's Jetson BSP.
+
+For details, please click [here](/differences_of_l4t_between_seeed_and_nvidia)
 
 
 # Tech support

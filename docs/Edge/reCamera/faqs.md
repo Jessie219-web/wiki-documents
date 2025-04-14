@@ -1,6 +1,6 @@
 ---
 description: Connecting network and some potential troubleshoot
-title: Network Connection and Troubleshoot
+title: FAQs
 keywords:
   - Edge
   - reCamera
@@ -8,9 +8,9 @@ keywords:
   - network troubleshoot
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /recamera_network_connection
-sidebar_position: 5
+sidebar_position: 4
 last_update:
-  date: 09/29/2024
+  date: 04/08/2025
   author: Parker Hu
 ---
 

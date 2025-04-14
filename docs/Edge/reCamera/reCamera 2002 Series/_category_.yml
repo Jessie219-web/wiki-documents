@@ -1,10 +1,10 @@
 position: 1 # float position is supported
-label: 'LoRaWAN Tracker'
+label: 'reCamera 2002 Series'
 collapsible: true # make the category collapsible
 collapsed: true # keep the category open by default
-className: lorawan_tracker
+className: recamera_2002_series
 link:
   type: generated-index
-  slug: lorawan_tracker
-  title: LoRaWAN Tracker
-  description: LoRaWAN Tracker(Software Open source)
+  slug: recamera_2002_series
+  title: reCamera 2002 Series
+  description: reCamera 2002 Series documentation

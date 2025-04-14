@@ -6,7 +6,7 @@ keywords:
   - IoT Button
   - ESP32-C6
 image: https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.webp
-slug: /getting_started_with_seeed_iot_button
+slug: /iot_button_for_esphome
 last_update:
   date: 03/14/2025
   author: qiuyu wei, Citric
@@ -30,7 +30,7 @@ In this tutorial, we will show you how to connect the Seeed Studio IoT Button to
     </tr>
     <tr>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-        <a class="get_one_now_item" href="https://files.seeedstudio.com/seeed_iot_botton_connect_to_esphome">
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-IoT-Button-p-6419.html">
         <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
         </a>
       </div></td>
