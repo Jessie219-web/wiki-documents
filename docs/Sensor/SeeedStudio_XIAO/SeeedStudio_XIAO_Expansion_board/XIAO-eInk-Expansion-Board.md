@@ -83,168 +83,6 @@ This breakout board does not include an eInk display; the display must be purcha
 10. [7.5-inch E-paper - Monocolor 800x480](https://www.seeedstudio.com/7-5-Monochrome-ePaper-Display-with-800x480-Pixels-p-5788.html)
 11. [7.5-inch E-paper - Tri-Color 800x480](https://www.seeedstudio.com/7-5-3-Color-SPI-ePaper-Display-p-6399.html)
 
-
-## Use of the Image2lcd software
-
-### How to Make Picture
-
-Use the build-in software **Paint** in Windows to create a picture with the **same resolution** as the screen you are using, and save it as`BMP` or  `JPG` file; 
-
-
-:::note
-Your picture resolution must be the same as the screen you are using, for example, 4.2-inch E-paper is 400 x 300 pixels, then you can not use the size of 300 x 400, it will cause the iamge2lcd output `.h `file with an extra 200 bytes.
-:::
-
-The colors of the picture should be consistent with the standard colors of the drawing board that come with Windows.The color of the drawing board is as follows:
-
-<div class="table-center">
-
-|      E-paper      | Colors |
-|       ---      |  ---   |
-|1.54-inch E-paper - Dotmatix 200x200           | pure black and white          |
-|2.13-inch E-Paper -Flexible Monochrome 212x104 | pure black and white          |
-|2.13-inch E-Paper - Quadruple 212x104          | black, white, red, and yellow |
-|2.9 inch E-paper - Monocolor 128x296           | pure black and white          |
-|2.9-inch e-paper - Quadruple color 128x296     | black, white, red, and yellow |
-|4.2-inch E-Paper - Monocolor 400x300           | pure black and white          |
-|4.26-inch E-Paper - Monocolor 800x480          | pure black and white          |
-|5.65-inch E-paper -  Sevencolor 600x480        | black, white, red, yellow, blue, green, orange|
-|5.83-inch E-paper - Monocolor 648x480          | pure black and white          |
-|7.5-inch E-paper - Monocolor 800x480           | pure black and white          |
-|7.5-inch E-paper - Tri-Color 800x480           | pure black and white          |
-
-</div>
-
-### Bitmap Conversion
-
-**Step 1.** Open [Image2lcd.7z](https://files.seeedstudio.com/wiki/eInk/xiao-expansion/Image2Lcd.7z), extract it and open the application.
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/1.png" style={{width:700, height:'auto'}}/></div>
-
-**Step 2.** Open the picture, select the "Output file type" as the "C array (*.c)", select the "Scan mode" as the "Horizon Scan", the other parameters setting is show in follows:
-
-<div class="table-center">
-  <table align="center">
-    <tr>
-        <th>Epaper</th>
-        <th>BitPixl</th>
-        <th>Max Width and Height</th>
-        <th>Reverse color</th>
-        <th>Display mode</th>    
-    </tr>
-    <tr>
-        <th>1.54-inch E-paper - Dotmatix 200x200</th>
-        <td align="center">Monochrome</td>
-        <td align="center">200x200</td>
-        <td align="center">✅</td>
-        <td align="center">Mirror left-right</td>
-    </tr>
-    <tr>
-        <th>2.13-inch E-Paper -Flexible Monochrome 212x104</th>
-        <td align="center">Monochrome</td>
-        <td align="center">104x212</td>
-        <td align="center">✅</td>
-        <td align="center">Normal</td>
-    </tr>
-    <tr>
-        <th>2.13-inch E-Paper - Quadruple 212x104 </th>
-        <td align="center">4 Gray</td>
-        <td align="center">104x212</td>
-        <td align="center">/</td>
-        <td align="center">Normal</td>     
-    </tr>
-    <tr>
-        <th>2.9 inch E-paper - Monocolor 128x296</th>
-         <td align="center">Monochrome</td>
-        <td align="center">128x296</td>
-        <td align="center">✅</td>
-        <td align="center">Normal</td>   
-    </tr>
-    <tr>
-        <th>2.9-inch e-paper - Quadruple color 128x296 </th>
-        <td align="center">4 Gray</td>
-        <td align="center">128x296</td>
-        <td align="center">/</td>
-        <td align="center">Normal</td>       
-    </tr>
-    <tr>
-        <th>4.2-inch E-Paper - Monocolor 400x300</th>
-        <td align="center">Monochrome</td>
-        <td align="center">400x300</td>
-        <td align="center">✅</td>
-        <td align="center">Mirror left-right</td>        
-    </tr>
-    <tr>
-        <th>4.26-inch E-Paper - Monocolor 800x480</th>
-        <td align="center">Monochrome</td>
-        <td align="center">800x480</td>
-        <td align="center">/</td>
-        <td align="center">Mirror left-right</td>        
-    </tr>
-    <tr>
-        <th>5.65-inch E-paper -  Sevencolor 600x480</th>
-        <td align="center">256 colors</td>
-        <td align="center">600x448</td>
-        <td align="center">/</td>
-        <td align="center">Normal</td>        
-    </tr>
-    <tr>
-        <th>5.83-inch E-paper - Monocolor 648x480</th>
-        <td align="center">Monochrome</td>
-        <td align="center">600x480</td>
-        <td align="center">✅</td>
-        <td align="center">Mirror left-right</td>        
-    </tr>
-    <tr>
-        <th>7.5-inch E-paper - Monocolor 800x480</th>
-        <td align="center">Monochrome</td>
-        <td align="center">800x480</td>
-        <td align="center">✅</td>
-        <td align="center">Mirror left-right</td>     
-    </tr>
-    <tr>
-        <th>7.5-inch E-paper - Tri-Color 800x480</th>
-        <td align="center">Monochrome</td>
-        <td align="center">800x480</td>
-        <td align="center">/</td>
-        <td align="center">Normal</td>     
-    </tr>
-  </table>
-</div>
-
-:::tip
-- After set the Max Width and Height, it need to click the arrow to confirm. 
-- Don't include head data.
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/2.png" style={{width:700, height:'auto'}}/></div>
-:::
-
-**Step 3.** Click "Save" to save the the lcd output array as a file of `.h`.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/7.png" style={{width:500, height:'auto'}}/></div>
-
-
-## Getting Started
-
- To use the **XIAO eInk Expansion Board**, we need to program the XIAO series. The table of different sizes E-paper supported by XIAO is as follows:
-
-<div class="table-center">
-
-|      E-paper / XIAO     | XIAO SAMD21 | XIAO RP2040|  XIAO nRF52840 | XIAO ESP32-C3 | XIAO ESP32-S3 |
-|       ---      |  ---  | --- | --- | --- | --- |
-|1.54-inch E-paper - Dotmatix 200x200           | ✅ | ✅ | ✅ | ✅ | ✅ |
-|2.13-inch E-Paper -Flexible Monochrome 212x104 | ✅ | ✅ | ✅ | ✅ | ✅ |
-|2.13-inch E-Paper - Quadruple 212x104          | ✅ | ✅ | ✅ | ✅ | ✅ |
-|2.9 inch E-paper - Monocolor 128x296           | ✅ | ✅ | ✅ | ✅ | ✅ |
-|2.9-inch e-paper - Quadruple color 128x296     | ✅ | ✅ | ✅ | ✅ | ✅ |
-|4.2-inch E-Paper - Monocolor 400x300           | ✅ | ✅ | ✅ | ✅ | ✅ |
-|4.26-inch E-Paper - Monocolor 800x480          | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
-|5.65-inch E-paper -  Sevencolor 600x480        | FLASH overflowd | ✅ | ✅ | ✅ | ✅ |
-|5.83-inch E-paper - Monocolor 648x480          | ✅ | ✅ | ✅ | ✅ | ✅ |
-|7.5-inch E-paper - Monocolor 800x480           | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
-|7.5-inch E-paper - Tri-Color 800x480           | RAM overflowed | ✅ | ✅ | ✅ | ✅ |
-
-</div>
-
-
 ### Hardware Preparation
 
 **Step 1.** Material preparation
@@ -385,6 +223,201 @@ If you are using a 1.54-inch or 2.9-inch e-ink screen, due to their driver chips
 
 If you are using 5.83 and 7.5-inch screens, they have different chips, so they won't have the flickering phenomenon.
 :::
+
+## Image Extraction Software
+
+### Use Of the Websites(testimonials)
+
+Here I'm using a 7.5-inch inked screen for the test
+
+#### How to Make Picture
+
+This [URL](https://jlamch.net/MXChipWelcome/) provides a very convenient image extraction operation, which can easily help us realize displaying a variety of images on top of the ink screen, let's get started!
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/9191.jpg" style={{width:700, height:'auto'}}/></div>
+
+**Step 1**.Select image
+
+First pick the image you want, try not to exceed the size of 800*480.
+
+**Step 2**.Image Settings
+
+- Canvas Size(s)
+    - Canvas Size: Set the dimensions of the canvas. For example, 800 x 480 pixels means the canvas width is 800 pixels and the height is 480 pixels.
+
+- Background Color
+    - Background Color: Choose the background color of the canvas. Options include:
+
+    - White: White background
+    - Black: Black background
+
+- Transparent: Transparent background
+    - Invert Image Color
+    - Invert Image Color: This option is used to invert the colors of the image. When selected, the colors of the image will be reversed.
+
+- Brightness / Alpha Threshold
+    - Brightness / Alpha Threshold: Set the brightness value of the pixels, ranging from 0 to 255. Higher values make the pixels brighter; pixels below this value will turn black.
+
+- Scaling
+    - Scaling: Choose the scaling method for the image. Options include:
+
+- Original size: Maintain the original size
+    - Other scaling options (specific options may need further explanation)
+- Center
+    - Center: Choose whether to center the image on the canvas. Note: This option only works if the image is larger than the original size.
+
+**Step 3**.Preview
+
+Once the settings are complete, you can see a preview of how your image will appear here
+
+**Step 4**.Output
+
+- Copy the converted code
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/9090.jpg" style={{width:700, height:'auto'}}/></div>
+- Replace the image code in this header file
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/image_h.jpg" style={{width:700, height:'auto'}}/></div>
+
+
+
+#### Display Effect
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/epaper_display.jpg" style={{width:700, height:'auto'}}/></div>
+
+
+### Use of the Image2lcd software
+
+#### How to Make Picture
+
+Use the build-in software **Paint** in Windows to create a picture with the **same resolution** as the screen you are using, and save it as`BMP` or  `JPG` file; 
+
+
+:::note
+Your picture resolution must be the same as the screen you are using, for example, 4.2-inch E-paper is 400 x 300 pixels, then you can not use the size of 300 x 400, it will cause the iamge2lcd output `.h `file with an extra 200 bytes.
+:::
+
+The colors of the picture should be consistent with the standard colors of the drawing board that come with Windows.The color of the drawing board is as follows:
+
+<div class="table-center">
+
+|      E-paper      | Colors |
+|       ---      |  ---   |
+|1.54-inch E-paper - Dotmatix 200x200           | pure black and white          |
+|2.13-inch E-Paper -Flexible Monochrome 212x104 | pure black and white          |
+|2.13-inch E-Paper - Quadruple 212x104          | black, white, red, and yellow |
+|2.9 inch E-paper - Monocolor 128x296           | pure black and white          |
+|2.9-inch e-paper - Quadruple color 128x296     | black, white, red, and yellow |
+|4.2-inch E-Paper - Monocolor 400x300           | pure black and white          |
+|4.26-inch E-Paper - Monocolor 800x480          | pure black and white          |
+|5.65-inch E-paper -  Sevencolor 600x480        | black, white, red, yellow, blue, green, orange|
+|5.83-inch E-paper - Monocolor 648x480          | pure black and white          |
+|7.5-inch E-paper - Monocolor 800x480           | pure black and white          |
+|7.5-inch E-paper - Tri-Color 800x480           | pure black and white          |
+
+</div>
+
+#### Bitmap Conversion
+
+**Step 1.** Open [Image2lcd.7z](https://files.seeedstudio.com/wiki/eInk/xiao-expansion/Image2Lcd.7z), extract it and open the application.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/1.png" style={{width:700, height:'auto'}}/></div>
+
+**Step 2.** Open the picture, select the "Output file type" as the "C array (*.c)", select the "Scan mode" as the "Horizon Scan", the other parameters setting is show in follows:
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+        <th>Epaper</th>
+        <th>BitPixl</th>
+        <th>Max Width and Height</th>
+        <th>Reverse color</th>
+        <th>Display mode</th>    
+    </tr>
+    <tr>
+        <th>1.54-inch E-paper - Dotmatix 200x200</th>
+        <td align="center">Monochrome</td>
+        <td align="center">200x200</td>
+        <td align="center">✅</td>
+        <td align="center">Mirror left-right</td>
+    </tr>
+    <tr>
+        <th>2.13-inch E-Paper -Flexible Monochrome 212x104</th>
+        <td align="center">Monochrome</td>
+        <td align="center">104x212</td>
+        <td align="center">✅</td>
+        <td align="center">Normal</td>
+    </tr>
+    <tr>
+        <th>2.13-inch E-Paper - Quadruple 212x104 </th>
+        <td align="center">4 Gray</td>
+        <td align="center">104x212</td>
+        <td align="center">/</td>
+        <td align="center">Normal</td>     
+    </tr>
+    <tr>
+        <th>2.9 inch E-paper - Monocolor 128x296</th>
+         <td align="center">Monochrome</td>
+        <td align="center">128x296</td>
+        <td align="center">✅</td>
+        <td align="center">Normal</td>   
+    </tr>
+    <tr>
+        <th>2.9-inch e-paper - Quadruple color 128x296 </th>
+        <td align="center">4 Gray</td>
+        <td align="center">128x296</td>
+        <td align="center">/</td>
+        <td align="center">Normal</td>       
+    </tr>
+    <tr>
+        <th>4.2-inch E-Paper - Monocolor 400x300</th>
+        <td align="center">Monochrome</td>
+        <td align="center">400x300</td>
+        <td align="center">✅</td>
+        <td align="center">Mirror left-right</td>        
+    </tr>
+    <tr>
+        <th>4.26-inch E-Paper - Monocolor 800x480</th>
+        <td align="center">Monochrome</td>
+        <td align="center">800x480</td>
+        <td align="center">/</td>
+        <td align="center">Mirror left-right</td>        
+    </tr>
+    <tr>
+        <th>5.65-inch E-paper -  Sevencolor 600x480</th>
+        <td align="center">256 colors</td>
+        <td align="center">600x448</td>
+        <td align="center">/</td>
+        <td align="center">Normal</td>        
+    </tr>
+    <tr>
+        <th>5.83-inch E-paper - Monocolor 648x480</th>
+        <td align="center">Monochrome</td>
+        <td align="center">600x480</td>
+        <td align="center">✅</td>
+        <td align="center">Mirror left-right</td>        
+    </tr>
+    <tr>
+        <th>7.5-inch E-paper - Monocolor 800x480</th>
+        <td align="center">Monochrome</td>
+        <td align="center">800x480</td>
+        <td align="center">✅</td>
+        <td align="center">Mirror left-right</td>     
+    </tr>
+    <tr>
+        <th>7.5-inch E-paper - Tri-Color 800x480</th>
+        <td align="center">Monochrome</td>
+        <td align="center">800x480</td>
+        <td align="center">/</td>
+        <td align="center">Normal</td>     
+    </tr>
+  </table>
+</div>
+
+:::tip
+- After set the Max Width and Height, it need to click the arrow to confirm. 
+- Don't include head data.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/2.png" style={{width:700, height:'auto'}}/></div>
+:::
+
+**Step 3.** Click "Save" to save the the lcd output array as a file of `.h`.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/7.png" style={{width:500, height:'auto'}}/></div>
 
 ## Resources
 
