@@ -226,13 +226,13 @@ If you are using 5.83 and 7.5-inch screens, they have different chips, so they w
 
 ## Image Extraction Software
 
-### Use Of the Websites(testimonials)
+### Usage of the Websites(recommend)
 
-Here I'm using a 7.5-inch inked screen for the test
+Here I'm using a 7.5-inch e-inked screen for the test
 
 #### How to Make Picture
 
-This [URL](https://jlamch.net/MXChipWelcome/) provides a very convenient image extraction operation, which can easily help us realize displaying a variety of images on top of the ink screen, let's get started!
+This [URL](https://jlamch.net/MXChipWelcome/) provides a very convenient image extraction operation, which can easily help us realize displaying a variety of images on top of the e-ink screen, let's get started!
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/9191.jpg" style={{width:700, height:'auto'}}/></div>
 
 **Step 1**.Select image
@@ -282,7 +282,7 @@ Once the settings are complete, you can see a preview of how your image will app
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/epaper_display.jpg" style={{width:700, height:'auto'}}/></div>
 
 
-### Use of the Image2lcd software
+### Usage of the Image2lcd software
 
 #### How to Make Picture
 
