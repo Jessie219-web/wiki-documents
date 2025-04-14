@@ -224,7 +224,7 @@ The operators in the YOLO's `head` have very low accuracy after **INT8** quantiz
 
 **Since the subsequent sections of this article will provide examples of mixed-precision quantization, and this section uses a single quantization precision for the example**, the outputs before the `head` are chosen as parameters. By visualizing the ONNX model in [Netron](https://netron.app/), you can see the positions of the six output names:
 <div align="center">
-  <img width="400" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion02.png" />
+  <img width="400" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion.00.png" />
 </div>
 <div align="center">
   <img width="400" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion.01png" />
