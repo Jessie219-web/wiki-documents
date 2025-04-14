@@ -6,7 +6,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/esp32c6_circuitpython/title.png
 slug: /xiao_esp32c6_with_platform_io
 last_update:
-  date: 08/14/2024
+  date: 08/13/2024
   author: Jason
 ---
 
