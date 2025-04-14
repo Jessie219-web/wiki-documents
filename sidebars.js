@@ -1087,6 +1087,7 @@ const sidebars = {
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Seeeduino-XIAO',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/XIAO-SAMD21-Zephyr-RTOS',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/XIAO_SAMD21_with_PlatformIO',
             {
               type: 'category',
               label: 'Programming Language',
@@ -1150,8 +1151,15 @@ const sidebars = {
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-CircuitPython',
               ],
             },
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-Zephyr-RTOS',
+            {
+              type: 'category',
+              label: 'RTOS',
+              items: [
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-with-NuttX-RTOS',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO-RP2040-Zephyr-RTOS',
+              ],
+            },
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/XIAO_RP2040_with_PlatformIO',
             {
               type: 'category',
               label: 'Embedded ML',
@@ -1176,8 +1184,14 @@ const sidebars = {
           label: 'XIAO nRF52840 Series',
           items: [
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO_BLE',
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-nRF52840-NuttX-RTOS',
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-nRF52840-Zephyr-RTOS',
+            {
+              type: 'category',
+              label: 'RTOS',
+              items: [
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-nRF52840-NuttX-RTOS',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/XIAO-nRF52840-Zephyr-RTOS',
+              ],
+            },
             {
               type: 'category',
               label: 'Programming Language',
@@ -1237,6 +1251,7 @@ const sidebars = {
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_Getting_Started',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_Pin_Multiplexing',
      //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO-ESP32C3-Zephyr',
             {
               type: 'category',
               label: 'Wireless Connection',
@@ -1249,7 +1264,6 @@ const sidebars = {
               type: 'category',
               label: 'Programming Language',
               items: [
-            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO-ESP32C3-Zephyr',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_with_CircuitPython',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_with_MicroPython',
               ],
@@ -1327,7 +1341,6 @@ const sidebars = {
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Getting_Started',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Pin_Multiplexing',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Sense_Consumption',
-  
             {
               type: 'category',
               label: 'Wireless Connection',
@@ -1340,11 +1353,18 @@ const sidebars = {
               type: 'category',
               label: 'Programming Language',
               items: [
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO-ESP32S3-Zephyr-RTOS',
-                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO-ESP32S3-FreeRTOS',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_with_MicroPython',
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_CircuitPython',
                 // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'RTOS',
+              items: [
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO-ESP32S3-Zephyr-RTOS',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO-ESP32S3-FreeRTOS',
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO-ESP32S3-NuttX-RTOS',
               ],
             },
             {
@@ -1425,6 +1445,8 @@ const sidebars = {
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/XIAO-eInk-Expansion-Board',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/xiao_eink_expansion_board_v2',
             'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/XIAO-RS485-Expansion-Board',
+            'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Bus_Servo_Driver_Board',
+            
           ],
         },
         {
@@ -2369,6 +2391,7 @@ const sidebars = {
           type: 'category',
           label: 'Seeed Studio IoT Botton',
           items: [
+                'Sensor/IOT_Button_for_ESPHOME/getting_started_with_iot_button',
                 'Sensor/IOT_Button_for_ESPHOME/SEEED_IOT_BOTTON_FOR_ESPHOME',
                 'Sensor/IOT_Button_for_ESPHOME/seeed_iot_button_with_zigbee',
               ],
@@ -3466,18 +3489,31 @@ const sidebars = {
         collapsed: true,
         collapsible: true,
         items: [
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/convert_model_to_edge_tpu_tflite_format_for_google_coral',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/install_m.2_coral_to_rpi5',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/pose_based_light_control_with_nodered_and_rpi_with_aikit',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l', 
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/clip_application_on_rpi_with_ai_kit',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/frigate_nvr_with_raspberrypi_5',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/deploy_deepseek_on_raspberry_ri_ai_box',
-          'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/distributed_inference_of_deepseek_model_on_raspberrypi'
+          {
+            type: 'category',
+            label: 'Computer Vision',
+            items: [
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/convert_model_to_edge_tpu_tflite_format_for_google_coral',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/install_m.2_coral_to_rpi5',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/pose_based_light_control_with_nodered_and_rpi_with_aikit',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l', 
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/clip_application_on_rpi_with_ai_kit',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Computer_Vision/frigate_nvr_with_raspberrypi_5',
+            ]
+          },
+          {
+            type: 'category',
+            label: 'Large language Model',
+            items:[
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Large_language_Model/deploy_deepseek_on_raspberry_pi_ai_box',
+              'Edge/Raspberry_Pi_Devices/Raspberry_Pi_with_AI/Large_language_Model/distributed_inference_of_deepseek_model_on_raspberrypi'
+
+            ]
+          }
         ]
       },
 
@@ -3847,6 +3883,7 @@ const sidebars = {
             'Edge/NVIDIA_Jetson/FAQs/Updating_Jetpack_with_OTA',
             'Edge/NVIDIA_Jetson/FAQs/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
             'Edge/NVIDIA_Jetson/FAQs/Use_IMX477_Camera_with_A603',
+            'Edge/NVIDIA_Jetson/FAQs/Differences_of_L4T_Between_Seeed_and_NVIDIA',
           ]
         }
       ],
@@ -6639,28 +6676,11 @@ const sidebars = {
       ]
     },
     "Spanish/Sensor/SeeedStudio_XIAO_Spanish/es_XIAO_FAQ",
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     {
       type: 'doc',
       id: 'Spanish/Edge/Raspberry_Pi_Devices/es_RpiDevices',
-      label: 'Raspberry Pi Devices',
+      label: 'Dispositivos Raspberry Pi',
       className: 'sideboard_calss',
     },
     {
@@ -6691,10 +6711,19 @@ const sidebars = {
           "label": "reTerminal",
           "collapsed": true,
           "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal_Intro",
+          },
           "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-hardware-interfaces-usage",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-piCam",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-FAQ",
+            // "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/es_reTerminal-oldFAQ",
             {
               "type": "category",
-              "label": "Application",
+              "label": "Aplicación",
               "collapsed": true,
               "collapsible": true,
               "items": [
@@ -6705,19 +6734,221 @@ const sidebars = {
                   "collapsible": true,
                   "items": [
                     "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reterminal_frigate",
-                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reTerminal_Home_Assistant"
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reTerminal_Home_Assistant",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Home_Assistant/es_reTerminal-Home-Assistant-Customize",
                   ]
                 },
                 {
                   "type": "category",
-                  "label": "Embedded ML",
+                  "label": "Diseño del dashboard",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-Qt-for-Python",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-Flutter",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-Electron",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_reTerminal-build-UI-using-LVGL",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/UI_design/es_weather-dashboard-with-Grafana-reTerminal",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Visión artificial",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_opencv",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Face_detection",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Color_detection",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Shape_detection",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM-tracking",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/OpenCV/es_reTerminal_DM_Object_detection",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "ML embebido",
                   "collapsed": true,
                   "collapsible": true,
                   "items": [
                     "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_MediaPipe",
                     "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_TFLite",
-                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_Edgeimpulse",                  ]
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Embedded_ML/es_reTerminal_ML_Edgeimpulse",
+                  ]
                 },
+                {
+                  "type": "category",
+                  "label": "Servicios gestionados",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/Managed_Services/es_neqto_engine_for_linux_reTerminal"
+                  ]
+                },
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Application/es_Mender-Client-reTerminal",
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Instalación de SO",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Buildroot-SDK",
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_reTerminal-Yocto",
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/es_Streampi_OBS_On_reTerminal"
+              ]
+            },
+            {
+              "type": "category",
+              "label": "Placa de expansión",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminalBridge",
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/es_reTerminal_Mount_Options"
+              ]
+            },
+          ]
+        },
+        {
+          "type": "category",
+          "label": "reTerminal-DM",
+          "collapsed": true,
+          "collapsible": true,
+          "link": {
+            type: "doc",
+            id: "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reTerminal-dm_Intro",
+          },
+          "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-flash-OS",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-warranty",
+            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/es_reterminal-dm-hardware-guide",
+            {
+              "type": "category",
+              "label": "Aplicación",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                {
+                  "type": "category",
+                  "label": "Home Assistant",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Home-Assistant/es_reterminal-DM-Frigate"
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Edge AI",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Embedded_ML/es_reTerminal-DM-Yolo5",
+                    "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Embedded_ML/es_reTerminal-DM-edgeimpulse",
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "Soluciones en la nube",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "Azure IoT Edge",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Azure_IoT/es_reTerminal-DM_Azure_IoT"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "AWS IoT Core",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/AWS_IoT/es_reTerminal-DM_AWS_first"
+                      ]
+                    },
+                  ]
+                },
+                {
+                  "type": "category",
+                  "label": "IIoT",
+                  "collapsed": true,
+                  "collapsible": true,
+                  "items": [
+                    {
+                      "type": "category",
+                      "label": "SCADA",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/SCADA/es_reTerminal-DM_intro_FUXA",
+                        "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/SCADA/es_reTerminal-DM_intro_machinechat_jedi"
+                      ]
+                    },
+                    {
+                      "type": "category",
+                      "label": "Borde industrial",
+                      "collapsed": true,
+                      "collapsible": true,
+                      "items": [
+                        {
+                          "type": "category",
+                          "label": "N3uron",
+                          "collapsed": true,
+                          "collapsible": true,
+                          "items": [
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminalDM_N3uron_Get_Start",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminal_DM_N3uron_AWS",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminal_DM_N3uron_modbus_mqtt",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/N3uron/es_reTerminal_DM_N3uron_Historian",
+                          ]
+                        },
+                        {
+                          "type": "category",
+                          "label": "Ignition Edge",
+                          "collapsed": true,
+                          "collapsible": true,
+                          "items": [
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Ignition_Edge/es_reTerminal-DM-Getting-Started-with-Ignition-Edge",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Ignition_Edge/es_reTerminal-DM-Ignition-Edge-Panel-Builder",
+                          ]
+                        },
+                        {
+                          "type": "category",
+                          "label": "Node-Red",
+                          "collapsed": true,
+                          "collapsible": true,
+                          "items": [
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Getting-Started-with-Node-Red",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-RS485",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-mqtt",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-canbus",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-Modbus-TCP",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-Bacnet",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-influxdb",
+                            "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/Node-Red/es_reTerminal-DM-Node-Red-grafana",
+                          ]
+                        },
+                      ]
+                    },
+                  ]
+                },
+              ]
+            },
+            {
+              "type": "category",
+              "label": "SenseCraft Edge",
+              "collapsed": true,
+              "collapsible": true,
+              "items": [
+                "Spanish/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/SenseCraft_Edge/es_reterminal-dm-sensecraft-edge-os-intro"
               ]
             }
           ]
@@ -6743,7 +6974,7 @@ const sidebars = {
             "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/es_Edgebox_rpi_200_Introduction",
             {
               "type": "category",
-              "label": "Applications",
+              "label": "Aplicación",
               "collapsed": true,
               "collapsible": true,
               "items": [
@@ -6861,7 +7092,7 @@ const sidebars = {
             "Spanish/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/es_reComputer_R1000_FAQ",
             {
               "type": "category",
-              "label": "Applications",
+              "label": "Aplicación",
               "collapsed": true,
               "collapsible": true,
               "items": [
@@ -6987,6 +7218,23 @@ const sidebars = {
     },
     {
       "type": "category",
+      "label": "Hat",
+      "collapsed": true,
+      "collapsible": true,
+      "items": [
+        {
+          "type": "category",
+          "label": "M.2 Hat",
+          "collapsed": true,
+          "collapsible": true,
+          "items": [
+            "Spanish/Edge/Raspberry_Pi_Devices/M_2_Hat/es_m_2_hat_start_with_pi5"
+          ]
+        },
+      ]
+    },
+    {
+      "type": "category",
       "label": "Raspberry Pi with AI",
       "collapsed": true,
       "collapsible": true,
@@ -7004,29 +7252,6 @@ const sidebars = {
       ]
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     {
       type: 'doc',
       id: 'Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/es_reComputer_Intro',
@@ -7043,7 +7268,7 @@ const sidebars = {
         "Spanish/Edge/NVIDIA_Jetson/Carrier_Boards/J202/es_reComputer_J2021_J202_Flash_Jetpack",
         {
           "type": "category",
-          "label": "J401 Carrier Boards",
+          "label": "J401 Carrier Board",
           "collapsed": true,
           "collapsible": true,
           "items": [
@@ -7053,7 +7278,7 @@ const sidebars = {
         },
         {
           "type": "category",
-          "label": "J501 Carrier Boards",
+          "label": "J501 Carrier Board",
           "collapsed": true,
           "collapsible": true,
           "items": [
@@ -7210,7 +7435,7 @@ const sidebars = {
       "items": [
         {
           "type": "category",
-          "label": "Computer Vision",
+          "label": "Visión artificial",
           "collapsed": true,
           "collapsible": true,
           "items": [
@@ -7353,8 +7578,6 @@ const sidebars = {
     },
   ]
 }
-
-    
 
 
 module.exports = sidebars

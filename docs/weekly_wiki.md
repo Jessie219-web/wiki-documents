@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 03/24/2025
+  date: 04/07/2025
   author: Frank
 ---
 
@@ -17,56 +17,47 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is March 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [RNDIS on 4G LTE Raspberry pi HAT Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_rndis/)
+### [Bus Servo Driver Board](https://wiki.seeedstudio.com/bus_servo_driver_board/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:800, height:'auto'}}/></div>
 
-This document explains how to configure RNDIS on Windows to connect the **Raspberry Pi 4G LTE HAT** via USB for network and internet access. It covers driver installation, RNDIS mode setup, and connection verification, making it ideal for IIoT and remote communication applications.
+The Bus Servo Driver Board is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. This guide focuses on the hardware setup, physical connections, key specifications, and **critical jumper settings** to help users integrate the board into their projects effectively.
 
-### [4G Raspberry Pi HAT - MBIM Mode Setup on Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_mbim/)
+### [Differences in L4T between Seeed and NVIDIA](https://wiki.seeedstudio.com/differences_of_l4t_between_seeed_and_nvidia)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Raspberry-Pi-4G-LTE-CAT4-HAT.webp" style={{width:800, height:'auto'}}/></div>
-
-The **Quectel 4G Raspberry Pi HAT** supports internet connectivity on Windows by utilizing MBIM (Mobile Broadband Interface Model) mode. This mode enables Windows to recognize the 4G module as a native cellular modem, facilitating a stable and driver-supported network connection.
-This guide will walk you through the necessary steps to configure your Quectel module in MBIM mode and connect it to the internet on Windows 10/11 systems.
-
-### [4G Raspberry Pi HAT - QMI Mode Setup on Raspberry Pi OS](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_qmi/)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/ping.PNG" style={{width:800, height:'auto'}}/></div>
-
-This guide explains how to configure internet access on a Raspberry Pi using a 4G HAT equipped with a Quectel EG25-G module. By following this guide, you will learn how to set up the module in QMI mode, compile and use the quectel-CM dial-up tool, and establish a stable 4G internet connection on your Raspberry Pi. This method is ideal for applications requiring mobile internet access, such as IoT deployments, remote monitoring, and edge computing.
-
-### [Updating Jetson Linux with Image-Based Over-the-Air Update](https://wiki.seeedstudio.com/updating_jetpack_with_ota/)
-
-This wiki will use the [reComputer J3010](https://www.seeedstudio.com/reComputer-J3010-p-5589.html) as an example to demonstrate how to update Jetson linux from jetpack5.1.3 to jetpack6.0 with image-based over-the-air.
+Seeed’s Jetson Board Support Packages (BSPs) are based on NVIDIA’s Linux for Tegra (L4T) versions 35.3.1, 35.5, 36.3, 36.4, and 36.4.3, with modifications to support Seeed’s own Jetson series products. This article compares the differences between Seeed’s BSP and NVIDIA’s official BSP for each of these L4T versions.
 
 ## Existing Wiki Updated
 
-### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
+### [reCamera Gimbal Overview](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/)
 
-We have added relevant [resource files](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/#resources) to the Seeed Studio IoT Button.
+We have added detailed information about the [Hardware Interface](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/#hardware-interface).
 
-### [Getting Started with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_getting_started/)
+### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
 
-We have provided the [PCB & SCH files](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#resources) for XIAO MG24 and XIAO MG24 Sense.
-
-### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/recamera_os_version_control/)
-
-We have updated the [relevant operation examples](https://wiki.seeedstudio.com/recamera_os_version_control/#for-os-version-013-and-below) for OS version 0.1.3 and below.
+We have added an example of the [Seeed Frigate](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#seeed-frigate).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
+<!-- ### [Seeed Studio XIAO RA4M1 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-ra4m1-nuttx/)
 
 <div style={{textAlign:'center'}}>
   <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO RA4M1 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+
+### [T1000-E Arduino Examples](https://wiki.seeedstudio.com/t1000_e_arduino_examples/)
+
+<div style={{textAlign:'center'}}>
+  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/tracker-t1000-e-for-meshtastic.webp" style={{width:800, height:'auto'}}/>
+</div>
+
+This wiki provides Arduino examples for the T1000-E Tracker, covering basic GPIO control, sensor data reading, GNSS positioning, and LoRaWAN communication, along with setup and upload instructions. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -173,5 +164,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
+- [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
+- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
 
 </details>

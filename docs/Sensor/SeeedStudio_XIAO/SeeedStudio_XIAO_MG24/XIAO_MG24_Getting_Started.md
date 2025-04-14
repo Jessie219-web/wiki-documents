@@ -107,7 +107,7 @@ sidebar_position: 0
 </table>
 
 
-## Features
+### Features
 
 - **Powerful CPU**:ARM Cortex-M33 core, with a maximum clock speed of 78MHz, supporting DSP instructions and FPU floating-point operations, 32-bit RISC architecture.
 - **Ultra-Low Power**:RX current 4.6mA/TX current 5mA (0dBm), multiple low-power sleep modes
@@ -235,7 +235,7 @@ If you cannot find it after entering, please reopen the Arduino IDE.
 
 Now enjoy coding ✨.
 
-## Run your first Blink program
+#### Run your first Blink program
 
 - **Step 1.** Launch the Arduino application.
 
@@ -266,7 +266,9 @@ Once the program is successfully uploaded, you will see the following output mes
 
 ## Battery Usage
 
-The XIAO MG24 is capable of using a 3.7V lithium battery as the power supply input. You can refer to the following diagram for the wiring method.
+The XIAO MG24 has a built-in power management chip that allows the XIAO MG24 to be powered independently by using a battery or to charge the battery through the XIAO MG24's USB port.
+
+If you want to connect the battery for XIAO, we recommend you to purchase qualified rechargeable 3.7V lithium battery. When soldering the battery, please be careful to distinguish between the positive and negative terminals. The negative terminal of the power supply should be the side closest to the USB port, and the positive terminal of the power supply is the side away from the USB port.
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/4444.png" alt="pir" width="800" height="auto"/></div>
 
@@ -291,8 +293,9 @@ At the same time, we designed a red indicator light for battery charging, throug
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/battery_mg24.jpg" style={{width:600, height:'auto'}}/></div>
 
-## Test voltage
-### Software code
+## Reading Battery Voltage
+
+**Software code**
 ```cpp
 /*
   AnalogReadSerial
@@ -323,7 +326,7 @@ void loop() {
   delay(1000);  // delay in between reads for stability
 }
 ```
-### Display Result
+**Display Result**
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_MG24/Getting_Start/55.png" alt="pir" width="800" height="auto"/></div>
 

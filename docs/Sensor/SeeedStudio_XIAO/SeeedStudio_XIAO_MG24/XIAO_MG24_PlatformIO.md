@@ -28,7 +28,7 @@ if you have not install software of PlatformIO , you can click on the link above
 
 ### Setup 2 . Create any project in PlatformIO
 
-Because the platform already has our XIAO ESP32C6 development board options, we can choose one of them to create our files. Of course, other files are also fine, it doesn't matter. The project name can also be chosen arbitrarily.
+Here you can choose any one of the development version to create a project file, I take XIAO ESP32 C3 for example.
 
 <table align="center">
   <tr>
@@ -37,7 +37,7 @@ Because the platform already has our XIAO ESP32C6 development board options, we 
   </tr>
   <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_platform/mg24patform2.jpg" style={{width:400, height:'auto'}}/></div></td>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mg24_platform/mg24platform1.jpg" style={{width:400, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_PlatformIO/mg24_platformIO.jpg" style={{width:500, height:'auto'}}/></div></td>
   </tr>
 </table>
 

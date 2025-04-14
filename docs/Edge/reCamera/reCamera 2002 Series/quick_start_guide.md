@@ -95,14 +95,6 @@ Make sure all parts are included.
 Simply power on the device with the type-C cable provided. When you see the green light is on, that means the reCamera is ready to connect to the world. 
 
 
-**Light Indicators Status**:
-
-| LED(color) | Status | Statement |
-| ---- | ---- | ---- |
-| LED1 - Green | ON | Power On |
-| LED2 - Red | Flashing | CPU Working(user define) |
-| LED3 - Blue | Flashing | eMMC Reading/Writing |
-
 
 ## Network Connection
 
