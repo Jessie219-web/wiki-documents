@@ -19,7 +19,7 @@ In this tutorial, we'll build a low-power temperature monitoring system that bro
 
 Our system will:
 
-1. Read temperature, humidity, pressure, and gas resistance from the BME680 sensor
+1. Read temperature, humidity and pressure from the BME680 sensor
 2. Package this data into BLE advertisement packets
 3. Periodically wake up, take measurements, advertise data, and go back to sleep to conserve battery power
 
@@ -106,11 +106,23 @@ This flowchart illustrates the main operation cycle of our system, from waking u
    ```
 
 2. **Clone the project repository**:
+
    ```bash
    cd ~/Desktop
    git clone --recurse-submodules https://github.com/Priyanshu0901/xiao_ibeacon.git
    cd xiao_ibeacon
    ```
+
+   :::caution
+   The `--recurse-submodules` flag is critical as the project relies on external libraries included as Git submodules. Without this, compilation will fail.
+
+   If you've already cloned without submodules, run:
+
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+   :::
 
 ## Step 3: Project Structure and Understanding the Components
 
@@ -120,7 +132,7 @@ The project consists of three main components:
 
    - Handles communication with the BME680 sensor
    - Manages sensor initialization, reading, and data processing
-   - Provides temperature, humidity, pressure, and gas resistance data
+   - Provides temperature, humidity, and pressure data
 
 2. **BLE Beacon Component (`ble_beacon`)**:
 
@@ -389,7 +401,6 @@ To change the BLE device name, you need to modify the `DEVICE_NAME` macro in `co
    - Temperature (in degrees Celsius, scaled by 100)
    - Humidity (in percent)
    - Pressure (in hPa, scaled by 10)
-   - Gas resistance (indicating air quality, if configured)
 
 4. **Expected Behavior**:
    - The device wakes up approximately every 30 seconds
@@ -687,6 +698,29 @@ To integrate a different sensor into this project, follow these steps:
 By following this structured approach, you can seamlessly integrate additional sensors while maintaining the project's modular architecture.
 
 ## Troubleshooting
+
+### Important Tips
+
+:::tip
+**No Serial Output During Normal Operation**  
+For optimal power efficiency, the device doesn't output debug information through the serial port during normal operation. The LED will also not flash when the device is in deep sleep mode. This is intentional to minimize power consumption.
+
+**Reflashing the Device**  
+To reflash the device:
+
+1. Press the reset button on the XIAO board when you start the flash process
+2. Time your flash command to coincide with the brief active period (when the device is not in deep sleep)
+3. Alternatively, hold the reset button, start the flash command, and release the reset button when the flash begins
+
+**Re-enabling Debug Output for Development**  
+When developing your own modules or debugging, you can re-enable serial output:
+
+1. Run `idf.py menuconfig`
+2. Navigate to `Component config` → `Log output`
+3. Set the default log level to `INFO` or `DEBUG`
+4. Configure the log output destination as `UART0`
+5. Remember to disable verbose logging again before deploying to preserve battery life
+   :::
 
 ### Sensor Not Detected
 
