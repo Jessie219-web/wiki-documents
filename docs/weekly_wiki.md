@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 04/07/2025
+  date: 04/14/2025
   author: Frank
 ---
 
@@ -17,47 +17,53 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is April 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Bus Servo Driver Board](https://wiki.seeedstudio.com/bus_servo_driver_board/)
+### [XIAO RP2040 with PlatformIO](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/rp2040_with_platformio.jpg" style={{width:800, height:'auto'}}/></div>
 
-The Bus Servo Driver Board is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. This guide focuses on the hardware setup, physical connections, key specifications, and **critical jumper settings** to help users integrate the board into their projects effectively.
+PlatformIO is a development platform that integrates many types of development boards and has good scalability. If the platform does not have the type you need, you can manually add the type of development board yourself. The code you write on Arduino can use it, just add the corresponding library.
 
-### [Differences in L4T between Seeed and NVIDIA](https://wiki.seeedstudio.com/differences_of_l4t_between_seeed_and_nvidia)
+In this wiki, we will introduce how to install PlatformIO for the [XIAO RP2040](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/) and run the sample code. In addition, we have also updated the tutorials for the [XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_with_platform_io/), [XIAO RP2350](https://wiki.seeedstudio.com/xiao_rp2350_with_platform_io/), and [XIAO SAMD21](https://wiki.seeedstudio.com/xiao_samd21_with_platform_io/).
 
-Seeed’s Jetson Board Support Packages (BSPs) are based on NVIDIA’s Linux for Tegra (L4T) versions 35.3.1, 35.5, 36.3, 36.4, and 36.4.3, with modifications to support Seeed’s own Jetson series products. This article compares the differences between Seeed’s BSP and NVIDIA’s official BSP for each of these L4T versions.
+### [Getting started with XIAO 2-Channel Wi-Fi AC Energy Meter In Home Assistant](https://wiki.seeedstudio.com/2_channel_wifi_ac_energy_meter/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.jpg" style={{width:800, height:'auto'}}/></div>
+
+The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments. This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
+
+### [Getting Started with Seeed Studio IoT Button](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/1.jpg" style={{width:800, height:'auto'}}/></div>
+
+The IoT Button is a versatile smart switch offering dual Home Assistant integrations through ESPHome and Zigbee. Powered by ESP32-C6, it features customizable RGB LED indicators, programmable event triggers, USB-C charging, and flexible mounting options - everything you need for intuitive smart home control.
 
 ## Existing Wiki Updated
 
-### [reCamera Gimbal Overview](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/)
+### [Getting Started with ODYSSEY – STM32MP135D](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/)
 
-We have added detailed information about the [Hardware Interface](https://wiki.seeedstudio.com/recamera_gimbal_hardware_and_specs/#hardware-interface).
+We have provided a [precompiled package](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/#noteif-you-want-to-use-the-precompiled-package-please-click-this-link) for the ODYSSEY STM32MP135D.
 
-### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
+### [Voice Assistant System for Home Assitant](https://wiki.seeedstudio.com/respeaker_lite_ha/)
 
-We have added an example of the [Seeed Frigate](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#seeed-frigate).
+We have updated the `.yaml` example for [adding the XIAO ESP32S3 to ESPHome](https://wiki.seeedstudio.com/respeaker_lite_ha/#add-xiao-esp32s3-to-esphome).
+
+### [ePaper Panel in Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/)
+
+We have added an example of [displaying a screenshot of Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/#4-display-image).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio XIAO RA4M1 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-ra4m1-nuttx/)
+### [Seeed Studio XIAO ESP32S3 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-esp32s3-nuttx/)
 
 <div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
+  <img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO RA4M1 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
-
-### [T1000-E Arduino Examples](https://wiki.seeedstudio.com/t1000_e_arduino_examples/)
-
-<div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000_e_arduino_examples/tracker-t1000-e-for-meshtastic.webp" style={{width:800, height:'auto'}}/>
-</div>
-
-This wiki provides Arduino examples for the T1000-E Tracker, covering basic GPIO control, sensor data reading, GNSS positioning, and LoRaWAN communication, along with setup and upload instructions. -->
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -166,5 +172,6 @@ This wiki provides Arduino examples for the T1000-E Tracker, covering basic GPIO
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
 - [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
+- [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 
 </details>
