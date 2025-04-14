@@ -287,7 +287,6 @@ You can, of course, open the serial monitor to view the voltage values stream by
 
 ```cpp
 #define DAC_PIN A0 // Make code a bit more legible
-
 float x = 0; // Value to take the sin of
 float increment = 0.02;  // Value to increment x by each time
 int frequency = 440; // Frequency of sine wave
