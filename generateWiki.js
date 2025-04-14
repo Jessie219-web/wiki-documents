@@ -18,6 +18,8 @@ const excludedPaths = [
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'reComputer_Jetson_Series', 'reComputer_Super', 'reComputer_Super_Getting_Started.md'),
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Differences_of_L4T_Between_Seeed_and_NVIDIA.md'),
   path.join(docsDirectory, 'Network', 'Meshtastic_Network', 'solar_node.md'),
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera Gimbal', '_gimbal_node_red.md'),
+  path.join(docsDirectory, 'Edge', 'reCamera', 'faqs.md'),
 ];
 
 // 递归函数，用于遍历多层文件夹

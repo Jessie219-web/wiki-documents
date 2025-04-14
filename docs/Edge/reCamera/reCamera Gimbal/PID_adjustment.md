@@ -7,7 +7,7 @@ keywords:
   - Gimbal
   - PID
   - Motor
-image: https://files.seeedstudio.com/wiki/reCamera/Gimbal/PID_nodered.png
+image: https://files.seeedstudio.com/wiki/reCamera/Gimbal/PID_nodered.webp
 slug: /recamera_pid_adjustment
 sidebar_position: 5
 last_update:
