@@ -509,13 +509,6 @@ This example uses the `SEEED_MR60FDA2` class to interface with the MR60FDA2 sens
 
 ## Module firmware upgrade
 
-:::note
-The new firmware has the following update:
-1. Optimized the breathing and heart rate detection feature, fixing the bug where small body movements caused data loss.  
-2. Enhanced the 3D presence detection function: breathing and heart rate can be detected within 1.5 meters, and presence can be detected within a range of 1.5 to 6 meters.  
-3. Added a personnel detection feature, capable of detecting up to three individuals within a range of 6 meters.
-:::
-
 First, connect the XIAO ESP32C6 and MR60BHA2 modules together. Then use the following code to program XIAO.
 
 ```cpp
@@ -569,8 +562,28 @@ You will see the original data sent by the module.
 
 Then you need to download and unzip the OTA tool and the firmware here.
 
+:::note
+The firmware 1.6.5 has the following update:
+1. Fixed the issue that breathing and heart rate were sometimes not detected when the human body was at rest.
+:::
+
 - **MR60BHA2 Firmware upgrade tool**: [MR60BHA2_OTA.zip](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_OTA.zip)
+- **MR60BHA2 Firmware v1.6.5**: [MR60BHA2_eeprom_1.6.5.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_eeprom_1.6.5.bin)
+
+<details>
+
+<summary>Click here to preview the old version</summary>
+
 - **MR60BHA2 Firmware v1.6.4**: [MR60BHA2_eeprom_1.6.4.bin](https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/firmware/MR60BHA2_eeprom_1.6.4.bin)
+
+:::note
+The firmware 1.6.4 has the following update:
+1. Optimized the breathing and heart rate detection feature, fixing the bug where small body movements caused data loss.  
+2. Enhanced the 3D presence detection function: breathing and heart rate can be detected within 1.5 meters, and presence can be detected within a range of 1.5 to 6 meters.  
+3. Added a personnel detection feature, capable of detecting up to three individuals within a range of 6 meters.
+:::
+
+</details>
 
 1. Check and connect to the serial port (set the baud rate to 115200)
 
