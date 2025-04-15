@@ -57,16 +57,7 @@ First, we are going to connect the Seeed Studio XIAO SAMD21 to the computer and 
 
 - **Step 2**. Flash the firmware
 
-For windows:
-
-Copy the [Seeed XIAO SAMD21 firmware for MicroPython Support ](https://micropython.org/resources/firmware/SEEED_XIAO-20220618-v1.19.1.uf2) and place it in this folder
-
-For Linux:
-
-```bash
-wget "https://micropython.org/resources/firmware/SEEED_XIAO-20220618-v1.19.1.uf2"
-cp SEEED_XIAO-20220618-v1.19.1.uf2 /media/$USER/Arduino/
-```
+Just go to the official [link](https://micropython.org/download/SEEED_XIAO_SAMD21/) and download the latest firmware
 
 It is also possible to [compile your own firmware](https://wiki.seeedstudio.com/Compiling_MicroPython_for_embedded_devices/) in order to ensure security and support for the latest features, but this is not necessary.
 

@@ -283,11 +283,13 @@ You can, of course, open the serial monitor to view the voltage values stream by
 
 <div align="center"><img width="{600}" src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/XIAO_DAC_wave.gif" /></div>
 
-**Code**
+#### **DAC**
+
+Thank you to [Aleksei Tertychnyi](https://github.com/WeSpeakEnglish) for submitting the code, all related functionalities were developed and contributed by him.
+
 
 ```cpp
 #define DAC_PIN A0 // Make code a bit more legible
-
 float x = 0; // Value to take the sin of
 float increment = 0.02;  // Value to increment x by each time
 int frequency = 440; // Frequency of sine wave
@@ -319,6 +321,10 @@ void loop()
   delay(1); // Delay 1ms
 }
 ```
+
+**Result**
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/THonny_DAC.jpg" alt="pir" width={600} height="auto" /></p>
 
 ## **Getting Started**
 
@@ -395,7 +401,7 @@ Select the serial device of the Arduino board from the Tools | Serial Port menu.
 
 Now, simply click the "Upload" button in the environment. Wait a few seconds and if the upload is successful, the message "Done uploading." will appear in the status bar.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/upload_image.png" alt="pir" width={600} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/upload_image.png" alt="pir" width={800} height="auto" /></p>
 
  A few seconds after the upload finishes, you should see the pin 13 (L) LED on the board start to blink (in orange). If it does, congratulations! You've gotten Arduino up-and-running. If you have problems, please see the troubleshooting suggestions.
 
