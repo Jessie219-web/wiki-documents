@@ -1,6 +1,20 @@
 const docList = [
   [
     {
+      "path": "/recamera_gimbal_getting_started",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp",
+      "title": "Getting Started with reCamera Gimbal",
+      "date": "04/09/2025"
+    },
+    {
+      "path": "/recamera_pid_adjustment",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/PID_nodered.webp",
+      "title": "reCamera Gimbal PID Settings",
+      "date": "04/08/2025"
+    }
+  ],
+  [
+    {
       "path": "/getting_started_with_seeed_iot_button",
       "image": "https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.webp",
       "title": "Getting Started with Seeed Studio IoT Button",
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/2-mmWave-45font.webp",
       "title": "mmWave Radar Sensor Introdution",
       "date": "03/28/2025"
-    }
-  ],
-  [
-    {
-      "path": "/recamera_gimbal_hardware_and_specs",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp",
-      "title": "reCamera Gimbal Overview",
-      "date": "03/27/2025"
-    },
-    {
-      "path": "/xiao_075inch_epaper_panel_arduino",
-      "image": "https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover2.webp",
-      "title": "ePaper Panel in Arduino",
-      "date": "03/26/2025"
     }
   ]
 ];

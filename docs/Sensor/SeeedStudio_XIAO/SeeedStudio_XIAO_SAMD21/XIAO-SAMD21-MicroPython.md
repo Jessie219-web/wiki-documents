@@ -57,16 +57,7 @@ First, we are going to connect the Seeed Studio XIAO SAMD21 to the computer and 
 
 - **Step 2**. Flash the firmware
 
-For windows:
-
-Copy the [Seeed XIAO SAMD21 firmware for MicroPython Support ](https://micropython.org/resources/firmware/SEEED_XIAO-20220618-v1.19.1.uf2) and place it in this folder
-
-For Linux:
-
-```bash
-wget "https://micropython.org/resources/firmware/SEEED_XIAO-20220618-v1.19.1.uf2"
-cp SEEED_XIAO-20220618-v1.19.1.uf2 /media/$USER/Arduino/
-```
+Just go to the official [link](https://micropython.org/download/SEEED_XIAO_SAMD21/) and download the latest firmware
 
 It is also possible to [compile your own firmware](https://wiki.seeedstudio.com/Compiling_MicroPython_for_embedded_devices/) in order to ensure security and support for the latest features, but this is not necessary.
 
@@ -230,6 +221,28 @@ print(i2c.readfrom(0x51, 4))
 
 
 Familiarity with micropython allows you to do more , we are looking forward to creating more value for you. Feel free to share your projects with us too!
+
+### DAC Support
+```python
+from machine import Pin, Timer, DAC
+ 
+led = Pin(18, Pin.OUT)
+counter = 0
+
+dac = DAC(0) #DAC on A0 output
+ 
+def loop(tim):
+    global counter
+    led.value(counter%2)
+    print('DAC value: ', end =" ")
+    print(counter)
+    dac.write(counter%1024)
+    counter = counter + 1
+ 
+tim = Timer(-1)
+tim.init(period=1000, mode=Timer.PERIODIC, callback=loop)
+```
+Voltage on **pin A0** will start to gradually increase, after reaching maximum at appoximately *3.3V*, will drop to *0V* and cycle will repeat.
 
 ## MicroPython Device Console
 

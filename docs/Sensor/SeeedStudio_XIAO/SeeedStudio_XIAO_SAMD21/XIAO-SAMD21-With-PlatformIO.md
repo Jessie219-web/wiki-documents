@@ -1,16 +1,16 @@
 ---
-description: Seeed Studio XIAO ESP32C6 with PlatformIO
-title: XIAO ESP32C6 with PlatformIO
+description: Seeed Studio XIAO SAMD21 with PlatformIO
+title: XIAO SAMD21 with PlatformIO
 keywords:
 - xiao
-image: https://files.seeedstudio.com/wiki/esp32c6_circuitpython/title.png
-slug: /xiao_esp32c6_with_platform_io
+image: https://files.seeedstudio.com/wiki/esp32c6_circuitpython/PlatformIOSAMD21.png
+slug: /xiao_samd21_with_platform_io
 last_update:
-  date: 08/13/2024
+  date: 04/13/2025
   author: Jason
 ---
 
-<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c6_platformio/7.png" /></div>
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c6_platformio/PlatformIOSAMD21.png" /></div>
 
 ## PlatformIO Introduce
 
@@ -18,7 +18,7 @@ PlatformIO is a development platform that integrates many types of development b
 
 In this wiki , we wiil introduce how to install and run the sample code in PlatformIO
 
-## Use PlatformIO For XIAO ESP32C6
+## Use PlatformIO For XIAO SAMD21
 
 ### Setup 1 . Install [PlatformIO](https://platformio.org/platformio-ide) in official website
 
@@ -26,7 +26,7 @@ if you have not install software of PlatformIO , you can click on the link above
 
 ### Setup 2 . Create any project in PlatformIO
 
-Because the platform already has our XIAO ESP32S3 and XIAO ESP32C3 development board options, we can choose one of them to create our files. Of course, other files are also fine, it doesn't matter. The project name can also be chosen arbitrarily.Here I use the XIAO ESP32 C3 as an example.
+Because the platform already has our XIAO ESP32S3 and XIAO ESP32C3 development board options, we can choose one of them to create our files. Of course, other files are also fine, it doesn't matter. The project name can also be chosen arbitrarily.
 
 <table align="center">
   <tr>
@@ -39,9 +39,6 @@ Because the platform already has our XIAO ESP32S3 and XIAO ESP32C3 development b
   </tr>
 </table>
 
-:::tip
-Before this, I had already installed the XIAO ESP32C6 installation package, so you can see that the image in operation two has the option for XIAO ESP32C6, but you don't have it when you perform the operation
-:::
 
 ### Setup 3 . Modify platformio.ini file
 
@@ -51,16 +48,16 @@ When you successfully create the PlatformIO file, there will be many files appea
       <th>Operation three</th>
   </tr>
   <tr>
-<div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/XIAO_PlatformIO/platformIO_file.jpg" /></div>
+<div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/esp32c6_platformio/2.png" /></div>
   </tr>
 </table>
 
 You need to copy the following code and replace the content in platform.ini file
 
 ```
-[env:seeed_xiao_esp32_c6]
+[env:seeed_xiao_samd]
 platform = https://github.com/Seeed-Studio/platform-seeedboards.git
-board = seeed-xiao-c6
+board = seeed-xiao-samd
 framework = arduino
 ```
 :::tip
@@ -78,7 +75,7 @@ Remember save the file , ctrl+s , it will loading
   </tr>
 </table>
 
-In the end of , if you have the same result following picture , that mean you add it XIAO ESP32C6 Development Board successfuly.when you create project again , the XIAO ESP32C6 operations
+In the end of , if you have the same result following picture , that mean you add it XIAO SAMD21 Development Board successfuly.
 
 ## Tech Support & Product Discussion
 
