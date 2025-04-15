@@ -226,13 +226,13 @@ If you are using 5.83 and 7.5-inch screens, they have different chips, so they w
 
 ## Image Extraction Software
 
-### Use Of the Websites(testimonials)
+### Usage of the Websites(recommend)
 
-Here I'm using a 7.5-inch inked screen for the test
+Here I'm using a 7.5-inch e-inked screen for the test
 
 #### How to Make Picture
 
-This [URL](https://jlamch.net/MXChipWelcome/) provides a very convenient image extraction operation, which can easily help us realize displaying a variety of images on top of the ink screen, let's get started!
+This [URL](https://jlamch.net/MXChipWelcome/) provides a very convenient image extraction operation, which can easily help us realize displaying a variety of images on top of the e-ink screen, let's get started!
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/9191.jpg" style={{width:700, height:'auto'}}/></div>
 
 **Step 1**.Select image
@@ -282,7 +282,7 @@ Once the settings are complete, you can see a preview of how your image will app
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/eInk/xiao-expansion/epaper_display.jpg" style={{width:700, height:'auto'}}/></div>
 
 
-### Use of the Image2lcd software
+### Usage of the Image2lcd software
 
 #### How to Make Picture
 
@@ -428,16 +428,14 @@ The colors of the picture should be consistent with the standard colors of the d
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
-<div class="table-center">
-  <div class="button_tech_support_container">
-  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
-  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
 
-  <div class="button_tech_support_container">
-  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
-  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
-  </div>
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
 
 

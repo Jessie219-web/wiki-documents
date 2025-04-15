@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 03/24/2025
+  date: 04/14/2025
   author: Frank
 ---
 
@@ -17,56 +17,53 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is March 24th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [RNDIS on 4G LTE Raspberry pi HAT Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_rndis/)
+### [XIAO RP2040 with PlatformIO](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/1-114993408-LTE-CAT-4-EG25-GL-4G-HAT-for-Raspberry-Pi.webp" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/rp2040_with_platformio.jpg" style={{width:800, height:'auto'}}/></div>
 
-This document explains how to configure RNDIS on Windows to connect the **Raspberry Pi 4G LTE HAT** via USB for network and internet access. It covers driver installation, RNDIS mode setup, and connection verification, making it ideal for IIoT and remote communication applications.
+PlatformIO is a development platform that integrates many types of development boards and has good scalability. If the platform does not have the type you need, you can manually add the type of development board yourself. The code you write on Arduino can use it, just add the corresponding library.
 
-### [4G Raspberry Pi HAT - MBIM Mode Setup on Windows](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_mbim/)
+In this wiki, we will introduce how to install PlatformIO for the [XIAO RP2040](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/) and run the sample code. In addition, we have also updated the tutorials for the [XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_with_platform_io/), [XIAO RP2350](https://wiki.seeedstudio.com/xiao_rp2350_with_platform_io/), and [XIAO SAMD21](https://wiki.seeedstudio.com/xiao_samd21_with_platform_io/).
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/Raspberry-Pi-4G-LTE-CAT4-HAT.webp" style={{width:800, height:'auto'}}/></div>
+### [Getting started with XIAO 2-Channel Wi-Fi AC Energy Meter In Home Assistant](https://wiki.seeedstudio.com/2_channel_wifi_ac_energy_meter/)
 
-The **Quectel 4G Raspberry Pi HAT** supports internet connectivity on Windows by utilizing MBIM (Mobile Broadband Interface Model) mode. This mode enables Windows to recognize the 4G module as a native cellular modem, facilitating a stable and driver-supported network connection.
-This guide will walk you through the necessary steps to configure your Quectel module in MBIM mode and connect it to the internet on Windows 10/11 systems.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.jpg" style={{width:800, height:'auto'}}/></div>
 
-### [4G Raspberry Pi HAT - QMI Mode Setup on Raspberry Pi OS](https://wiki.seeedstudio.com/raspberry_pi_4g_lte_hat_qmi/)
+The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments. This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/4g_hat_raspberry_pi_eg25_gl/ping.PNG" style={{width:800, height:'auto'}}/></div>
+### [Getting Started with Seeed Studio IoT Button](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
 
-This guide explains how to configure internet access on a Raspberry Pi using a 4G HAT equipped with a Quectel EG25-G module. By following this guide, you will learn how to set up the module in QMI mode, compile and use the quectel-CM dial-up tool, and establish a stable 4G internet connection on your Raspberry Pi. This method is ideal for applications requiring mobile internet access, such as IoT deployments, remote monitoring, and edge computing.
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/1.jpg" style={{width:800, height:'auto'}}/></div>
 
-### [Updating Jetson Linux with Image-Based Over-the-Air Update](https://wiki.seeedstudio.com/updating_jetpack_with_ota/)
-
-This wiki will use the [reComputer J3010](https://www.seeedstudio.com/reComputer-J3010-p-5589.html) as an example to demonstrate how to update Jetson linux from jetpack5.1.3 to jetpack6.0 with image-based over-the-air.
+The IoT Button is a versatile smart switch offering dual Home Assistant integrations through ESPHome and Zigbee. Powered by ESP32-C6, it features customizable RGB LED indicators, programmable event triggers, USB-C charging, and flexible mounting options - everything you need for intuitive smart home control.
 
 ## Existing Wiki Updated
 
-### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
+### [Getting Started with ODYSSEY – STM32MP135D](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/)
 
-We have added relevant [resource files](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/#resources) to the Seeed Studio IoT Button.
+We have provided a [precompiled package](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/#noteif-you-want-to-use-the-precompiled-package-please-click-this-link) for the ODYSSEY STM32MP135D.
 
-### [Getting Started with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_getting_started/)
+### [Voice Assistant System for Home Assitant](https://wiki.seeedstudio.com/respeaker_lite_ha/)
 
-We have provided the [PCB & SCH files](https://wiki.seeedstudio.com/xiao_mg24_getting_started/#resources) for XIAO MG24 and XIAO MG24 Sense.
+We have updated the `.yaml` example for [adding the XIAO ESP32S3 to ESPHome](https://wiki.seeedstudio.com/respeaker_lite_ha/#add-xiao-esp32s3-to-esphome).
 
-### [OS Update/Upgrade Guideline with Web](https://wiki.seeedstudio.com/recamera_os_version_control/)
+### [ePaper Panel in Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/)
 
-We have updated the [relevant operation examples](https://wiki.seeedstudio.com/recamera_os_version_control/#for-os-version-013-and-below) for OS version 0.1.3 and below.
+We have added an example of [displaying a screenshot of Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/#4-display-image).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio XIAO nRF52840 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-nrf52840-nuttx/)
+### [Seeed Studio XIAO ESP32S3 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-esp32s3-nuttx/)
 
 <div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
+  <img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
 </div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -173,5 +170,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO nRF52840 boa
 - [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
+- [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
+- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
+- [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 
 </details>

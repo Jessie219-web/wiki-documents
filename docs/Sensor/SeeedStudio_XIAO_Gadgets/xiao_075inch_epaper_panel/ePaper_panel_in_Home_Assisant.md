@@ -11,7 +11,17 @@ last_update:
   author: Allen
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover.JPG" style={{width:1000, height:'auto'}}/></div>
+
+<br></br>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div>
 
 ## Hardware Overview
 
@@ -31,11 +41,12 @@ The XIAO ESP32C3-powered 7.5-inch E-Ink Display is a compact, energy-efficient s
 ### Specifications
 | Item | Description |
 | --- | --- |
-| MCU | XIAO ESP32 C3 |
+| MCU | [XIAO ESP32 C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/) |
 | Display | 7.5-inch ePaper Display |
 | Resolution | 800x480 |
-| Battery | 3.7V 2000mAh |
-| Dimension | 180x20x130mm |
+| Battery | 2000mAh |
+| Dimension | 178x131x19mm |
+| Weight | 218g |
 | Operating Temperature | -40°C to 85°C |
 | Operating Voltage | 3.3V to 5V |
 
@@ -44,6 +55,8 @@ The XIAO ESP32C3-powered 7.5-inch E-Ink Display is a compact, energy-efficient s
 ### Usage in Home Assistant
 
 #### Step 1.Install ESPHome
+
+If you have already installed ESPHome, you can skip this step.
 
 Go to **Settings** -> **Add-ons** -> **ADD-ON STORE**
 
@@ -78,17 +91,15 @@ After you create a new devcie, click **EDIT**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/4.png" style={{width:800, height:'auto'}}/></div>
 
-And then, you can follow **step 3** to explore different usages of this device.
 
 
+#### Step 3.Install firmware
 
-#### Step 3.Basic usage
+This is a very basic example and will show "Hello World!" on the display. 
 
-##### 1. Display "Hello World!"
+**The main purpose is to show you different ways to install firmware to the device.**
 
-This is a very basic example and will show "Hello World!" on the display.
-
-After installing ESPHome and add a new device, you can copy the code below and paste it to **captive_portal** part as the following image.
+After installing ESPHome and adding a new device, you can copy the code below and paste it to **captive_portal** part as the following image.
 
 <details>
 
@@ -119,33 +130,109 @@ display:
       it.print(0, 0, id(font1), "Hello World!");
 ```
 
-
 </details>
-
-
-:::tip
-Before you install the code to the device, you need to connect this device to your **Raspberry Pi** or **HA Green(Yellow)** which is running Home Assistant.
-:::
-
-Click **INSTALL** to install the code to the device.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/5.png" style={{width:1000, height:'auto'}}/></div>
 
-Click the options following the image to install the code to the device.
+Click **INSTALL** to install the code to the device and you will see the follwing image.
+
+<Tabs>
+<TabItem value='Install through browser'>
+
+:::tip
+If your Home Assistant Host (Raspberry PI/Green/Yellow etc.) is far away from you, we recommend using this method. You can install it with the computer you have on hand.
+:::
+
+First, you need to click **Manual download** to download the compiled firmware.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/62.png" style={{width:500, height:'auto'}}/></div>
+
+Open this website where we will upload the firmware to the ePaper panel.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/63.png" style={{width:800, height:'auto'}}/></div>
+
+Go back to ESPHome to download the firmware.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/64.png" style={{width:800, height:'auto'}}/></div>
+
+Select Factory format.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/65.png" style={{width:500, height:'auto'}}/></div>
+
+Use USB cable to **connect the ePaper panel to your computer** and click **CONNECT**. 
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/66.png" style={{width:800, height:'auto'}}/></div>
+
+Select usbmodemxxx(Windows is COMxxx) and click connect. [Encountered a problem? Click here.](#Q5)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/67.png" style={{width:800, height:'auto'}}/></div>
+
+Click **INSTALL** and select the firmware you just downloaded.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/69.png" style={{width:500, height:'auto'}}/></div>
+
+Wait a moment and you will see 'Hellow world!' on the display ～
+
+<div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
+  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/71.png" style={{width:'100%', height:'auto'}}/></div>
+  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/></div>
+</div>
+
+</TabItem>
+
+<TabItem value='Install through host'>
+
+:::tip
+If your Home Assistant Host (Raspberry PI/Green/Yellow etc.) is nearby, we recommend using this method as it is simpler.
+:::
+
+Before you install the code to the device, you need to use USB cable to **connect this device to your Raspberry Pi or HA Green(Yellow) etc** which is running Home Assistant.
+
+Click the options following the image to install the code to the device. [Haven't found port when device in deep sleep mode?](#port)
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/6.png" style={{width:'70%', height:'auto'}}/></div>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/7.png" style={{width:'100%', height:'auto'}}/></div>
 </div>
 
-When you see the feedback like the following image, it means the code is running successfully.
+Wait a moment and you will see the feedback like the following image. It means the code is running successfully.
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/9.png" style={{width:'100%', height:'auto'}}/></div>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/></div>
 </div>
 
-##### 2. Display shape
+</TabItem>
+
+<TabItem value='Install through Wi-Fi'>
+
+:::tip
+This is the simplest way, but on the premise that when installing the program for the first time, you should first upload the program to the ePaper Panel using the method on the left. After that, you can upload it via wifi.
+:::
+
+In this way, you don't need to connect the ePaper panel to anything, just make sure it is online.
+
+Click the option and then the firmware will be installed to ePaper penal automatically.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/72.png" style={{width:500, height:'auto'}}/></div>
+
+Wait a moment and you will see the feedback like the following image. If it fails, it may be due to a weak signal. Please move the device closer to your router. [Encountered a problem? Click here.](#Q5)
+
+<div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
+  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/73.png" style={{width:'100%', height:'auto'}}/></div>
+  <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/33.png" style={{width:'80%', height:'auto'}}/></div>
+</div>
+
+</TabItem>
+</Tabs>
+
+
+
+
+
+#### Step 4.Basic usages
+
+##### 1. Display shape
 
 This example will show shape on the display.
 
@@ -189,7 +276,7 @@ You can also [click here](https://esphome.io/components/display/) to see more us
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/37.png" style={{width:600, height:'auto'}}/></div>
 
 
-##### 3. Display information in HA
+##### 2. Display information in HA
 
 This example will show the information in HA on the display.
 
@@ -289,7 +376,7 @@ When you see the feedback like the following image, it means the code is running
 
 
 
-##### 4. Display icon
+##### 3. <span id="ttf">Display icon</span>
 
 This example will show icon on the display.
 
@@ -299,10 +386,10 @@ First, we need to install a File Editor add-on. Search **Studio Code Server** an
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/18.png" style={{width:800, height:'auto'}}/></div>
 
-And then, create a new folder call **fonts** and download this file and **put it into fonts folder**.
+And <span id="ttf">then</span>, create a new folder call **fonts** and download this file and **put it into fonts folder**.
 
 <div align="center">
-<a href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/MaterialDesignIcons-webfont.ttf" target="_blank">
+<a href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/font_ttf.zip" target="_blank">
 <p style={{textAlign: 'center'}}><button type="button" className="download" style={{backgroundColor: '#00A418', borderRadius: '8px', border: 'none', color: '#fff', padding: '12px 24px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: '16px', margin: '4px 2px', cursor: 'pointer'}}>Click here to download</button></p>
 </a>
 </div>
@@ -372,13 +459,95 @@ Copy the code and paste it to ** captive_portal** part as the following image.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/43.png" style={{width:800, height:'auto'}}/></div>
 
-##### 5. Display image
+##### 4. <span id="image">Display image</span>
 
-This example will show image on the display.
+<Tabs>
+<TabItem value='Display screenshot of HA'>
+
+This example will show the screenshot of HA on the display.
+
+First, you need to install an screenshot Add-on **Puppet**, [click here to install.](https://github.com/balloob/home-assistant-addons/tree/main/puppet)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/83.jpg" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/75.jpg" style={{width:800, height:'auto'}}/></div>
+
+Starting the add-on will launch a new server on port 10000. Any path you request will return a screenshot of that page. You will need to specify the viewport size you want.
+
+For example, to get a 1000px x 1000px screenshot of your default dashboard, fetch:
+
+```python
+# http://homeassistant.local:10000/lovelace/0?viewport=1000x1000
+
+http://192.168.1.191:10000/lovelace/0?viewport=1000x1000
+```
+
+Besides, you can also screenshot other page, for example **To-do lists** page in HA:
+
+```python
+http://192.168.1.191:10000/todo?viewport=800x480
+```
+
+You can take a look the effect of the screenshot by input this link in your browser.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/77.jpg" style={{width:800, height:'auto'}}/></div>
+
+After that, you can copy the code below and paste it to ** captive_portal** part as the following image.
+<details>
+
+<summary> Click here to copy the code. </summary> 
+
+```yaml
+
+image:
+  - file: http://192.168.1.191:10000/todo?viewport=800x480  # the path you want to screenshot and the size
+    id: myImage
+    type: BINARY
+    resize: 800x480    # how big you want to show, the biggest size should be as same as epaper pixel
+    invert_alpha: true   # invert color 
+
+spi:
+  clk_pin: GPIO8
+  mosi_pin: GPIO10
+
+display:
+  - platform: waveshare_epaper
+    cs_pin: GPIO3
+    dc_pin: GPIO5
+    busy_pin: GPIO4
+    reset_pin: GPIO2
+    model: 7.50inv2
+    update_interval: 3min 
+    lambda: |-
+      it.image(0, 0, id(myImage));
+      
+```
+
+</details>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/78.jpg" style={{width:800, height:'auto'}}/></div>
+
+When you see the feedback like the following image, it means the code is running successfully.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/79.JPG" style={{width:800, height:'auto'}}/></div>
+
+
+</TabItem>
+
+<TabItem value='Display other images'>
+
+
+This example will show any images you like on the display.
 
 Like the previous example, we need to install **Studio Code Server** and create a new folder call **image** to save the image.
 
-And then put a 800x480 pixel image into **image** folder because the display size is 800x480 pixel.
+And then put a image into **image** folder. You can click the below button to download an image to have a try.
+
+<div align="center">
+<a href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/wifi.jpg" target="_blank">
+<p style={{textAlign: 'center'}}><button type="button" className="download" style={{backgroundColor: '#00A418', borderRadius: '8px', border: 'none', color: '#fff', padding: '12px 24px', textAlign: 'center', textDecoration: 'none', display: 'inline-block', fontSize: '16px', margin: '4px 2px', cursor: 'pointer'}}>Click here to download</button></p>
+</a>
+</div>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/20.png" style={{width:800, height:'auto'}}/></div>
 
@@ -391,10 +560,10 @@ After that, you can copy the code below and paste it to ** captive_portal** part
 ```yaml
 
 image:
-  - file: /config/esphome/image/hand.jpg    # the path where you save the image, png or jpg format
+  - file: /config/esphome/image/wifi.jpg    # the path where you save the image, png or jpg format
     id: myImage
     type: BINARY
-    resize: 800x480    # how big you want to show, the biggest size should be as same as epaper pixel
+    resize: 800x480    # how big you want to show, the biggest size should be as same as ePaper Penal pixel(800x480)
     invert_alpha: true   # invert color 
 
 spi:
@@ -419,11 +588,19 @@ display:
 
 When you see the feedback like the following image, it means the code is running successfully.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/36.png" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/wifi.png" style={{width:600, height:'auto'}}/></div>
 
-#### Step 4.Comperhensive example
 
-This example will show how to get weather information and calendar information from HA and display them on the display. What's more, it will use deep sleep mode to save power. Update info per hour, 2000mAh battery can last 30 days.
+</TabItem>
+</Tabs>
+
+#### Step 5.Comperhensive example
+
+:::tip
+For you to understand better, we strongly recommend that you run the basic usages above first.
+:::
+
+This example will show how to get weather information and calendar information from HA and display them on the display. What's more, it will use **deep sleep mode** to save power. Update info per 6 hours, 2000mAh battery can last 3 months.
 
 First, you need to check if you have weather component in HA. Normally, you will have one when you install HA.
 
@@ -457,6 +634,10 @@ Click Calendar in your sidebar and create 3 new calendars name **calender**, **e
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/27.png" style={{width:800, height:'auto'}}/></div>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/26.png" style={{width:800, height:'auto'}}/></div>
+
+:::tip
+Before copy the code, please put [wifi.jpg](#image), [icon ttf file and font ttf file](#ttf) into **image** folder and **fonts** folder.
+:::
 
 <details>
 <summary> Click here to copy the code. </summary>  
@@ -890,14 +1071,13 @@ When you see the feedback like the following image, it means the code is running
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.png" style={{width:'100%', height:'auto'}}/></div>
 </div>
 
-In this case, you should go to Settings -> Devices & Services -> Integrations to **RECONGFIGURE** device.
+In this case, you should go to Settings -> Devices & Services -> Integrations to **RECONGFIGURE** device. Haven't found your ePaper Penal? Try to reboot HA.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/101.png" style={{width:800, height:'auto'}}/></div>
-
+<div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/101.png" style={{width:'100%', height:'auto'}}/></div>
 
 #### Q2: Why can't I get those data in Home Assistant?
 
-In this case, you should go to Settings -> Devices & Services -> Integrations to **ADD** your device to HA.
+In this case, you should go to Settings -> Devices & Services -> Integrations to **ADD** your device to <span id="port">HA.</span>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/11.png" style={{width:800, height:'auto'}}/></div>
 
@@ -917,11 +1097,27 @@ When device in deep sleep mode, you can't upload a new program derectly.
 
 3. After that, turn off the battery switch and unplug the power cable.
 
-4. Last, connect the device to Raspberry Pi, and upload a new program.
+4. Last, replug the cable and upload a new program.
 
 #### Q4: How long does the battery last?
 
-During deep sleep mode, refresh screen per 6 hours and the battery will last 3 months.
+:::tip
+Remember to turn on the battery button when charging. Otherwise, the battery won't be able to charge.
+:::
+
+After our tests, refresh screen per 6 hours and the battery will last 3 months in deep sleep mode.
+
+#### <span id="Q5">Q5</span>: ePaper Penel can't connect to you computer?
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/68.png" style={{width:600, height:'auto'}}/></div>
+
+Try unplugging and replugging it several times, or just install the driver according to the prompts.
+
+#### <span id="Q6">Q6</span>: Wi-Fi upload program failed?
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/74.png" style={{width:800, height:'auto'}}/></div>
+
+In this case, you epaper penal is offline or in deep sleep mode. Please get it online or wake it up.
 
 ## Resources
 

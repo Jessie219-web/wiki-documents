@@ -45,10 +45,13 @@ For details, please click [here](/usb_timeout_during_flash)
 
 For details, please click [here](/upgrade_software_packages_for_jetson)
 
-#### Q10: How to use the OTA (Over-the-Air) method to upgrade the system version of the Jetson device.
+<!-- #### Q10: How to use the OTA (Over-the-Air) method to upgrade the system version of the Jetson device. -->
 
-For details, please click [here](/updating_jetpack_with_ota)
+<!-- For details, please click [here](/updating_jetpack_with_ota) -->
 
+#### Q11: What modifications does Seeed make to NVIDIA's Jetson BSP.
+
+For details, please click [here](/differences_of_l4t_between_seeed_and_nvidia)
 
 
 # Tech support

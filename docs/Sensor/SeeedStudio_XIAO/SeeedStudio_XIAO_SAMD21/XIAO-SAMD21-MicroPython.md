@@ -222,6 +222,28 @@ print(i2c.readfrom(0x51, 4))
 
 Familiarity with micropython allows you to do more , we are looking forward to creating more value for you. Feel free to share your projects with us too!
 
+### DAC Support
+```python
+from machine import Pin, Timer, DAC
+ 
+led = Pin(18, Pin.OUT)
+counter = 0
+
+dac = DAC(0) #DAC on A0 output
+ 
+def loop(tim):
+    global counter
+    led.value(counter%2)
+    print('DAC value: ', end =" ")
+    print(counter)
+    dac.write(counter%1024)
+    counter = counter + 1
+ 
+tim = Timer(-1)
+tim.init(period=1000, mode=Timer.PERIODIC, callback=loop)
+```
+Voltage on **pin A0** will start to gradually increase, after reaching maximum at appoximately *3.3V*, will drop to *0V* and cycle will repeat.
+
 ## MicroPython Device Console
 
 Our partner **Neil** has written a command line console program for XIAO using MicroPython. With this programme you can easily upload, download and delete files. We thank him for his contribution to XIAO!
