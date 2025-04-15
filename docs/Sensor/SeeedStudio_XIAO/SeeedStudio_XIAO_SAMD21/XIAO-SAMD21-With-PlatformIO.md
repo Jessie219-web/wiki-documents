@@ -6,7 +6,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/esp32c6_circuitpython/PlatformIOSAMD21.png
 slug: /xiao_samd21_with_platform_io
 last_update:
-  date: 04/14/2025
+  date: 04/13/2025
   author: Jason
 ---
 
