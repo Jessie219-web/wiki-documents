@@ -285,6 +285,9 @@ You can, of course, open the serial monitor to view the voltage values stream by
 
 #### **DAC**
 
+Thank you to [Aleksei Tertychnyi](https://github.com/WeSpeakEnglish) for submitting the code, all related functionalities were developed and contributed by him.
+
+
 ```cpp
 #define DAC_PIN A0 // Make code a bit more legible
 float x = 0; // Value to take the sin of
