@@ -115,15 +115,15 @@ font:
 
 # define SPI interface
 spi:
-  clk_pin: GPIO7
-  mosi_pin: GPIO9
+  clk_pin: GPIO8
+  mosi_pin: GPIO10
 
 display:
   - platform: waveshare_epaper
-    cs_pin: GPIO2
-    dc_pin: GPIO4
-    busy_pin: GPIO3
-    reset_pin: GPIO1
+    cs_pin: GPIO3
+    dc_pin: GPIO5
+    busy_pin: GPIO4
+    reset_pin: GPIO2
     model: 7.50inv2    
     update_interval: 30s
     lambda: |-
