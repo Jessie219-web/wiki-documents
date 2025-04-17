@@ -470,6 +470,18 @@ First, you need to install an screenshot Add-on **Puppet**, [click here to insta
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/83.jpg" style={{width:800, height:'auto'}}/></div>
 
+After installation, go to **Configuration page**. We need to create a access_token for this add-on.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/87.jpg" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/88.jpg" style={{width:800, height:'auto'}}/></div>
+
+Go to the bottom of **Security page** and create a token, and then copy and paste it to **Puppet** add-on.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/85.jpg" style={{width:800, height:'auto'}}/></div>
+
+Remember to **restart** the Puppet add-on.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/75.jpg" style={{width:800, height:'auto'}}/></div>
 
 Starting the add-on will launch a new server on port 10000. Any path you request will return a screenshot of that page. You will need to specify the viewport size you want.
