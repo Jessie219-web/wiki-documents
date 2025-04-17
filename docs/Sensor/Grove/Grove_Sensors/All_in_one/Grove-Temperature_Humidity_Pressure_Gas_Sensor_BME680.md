@@ -3,7 +3,7 @@ description: Grove - Temperature Humidity Pressure Gas Sensor(BME680)
 title: Grove - Temperature Humidity Pressure Gas Sensor(BME680)
 keywords:
 - Grove
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Pressure-Gas-Sensor_BME680/img/main.webp
 slug: /Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680
 last_update:
   date: 4/14/2025
