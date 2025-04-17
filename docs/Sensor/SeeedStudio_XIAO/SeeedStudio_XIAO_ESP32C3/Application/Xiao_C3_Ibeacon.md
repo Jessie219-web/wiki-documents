@@ -4,7 +4,7 @@ title: XIAO ESP32-C3 iBeacon with BME680 Sensor Using ESP-IDF
 keywords:
   - ESP-IDF
   - XIAO
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/xiao-c3-ibeacon/8.webp
 slug: /xiao-c3-ibeacon
 last_update:
   date: 04/14/2025
