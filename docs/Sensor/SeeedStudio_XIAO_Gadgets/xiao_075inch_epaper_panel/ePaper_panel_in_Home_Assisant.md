@@ -396,7 +396,7 @@ And <span id="ttf">then</span>, create a new folder call **fonts** and download 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/19.png" style={{width:800, height:'auto'}}/></div>
 
-Go back to your ESPHome file and copy the code below and paste it to ** captive_portal** part as the following image.
+Go back to your ESPHome file and copy the code below and paste it to **captive_portal** part as the following image.
 
 <details>
 
@@ -453,7 +453,7 @@ Select a icon you want.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/41.png" style={{width:800, height:'auto'}}/></div>
 
-Copy the code and paste it to ** captive_portal** part as the following image.
+Copy the code and paste it to **captive_portal** part as the following image.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/42.png" style={{width:800, height:'auto'}}/></div>
 
@@ -504,7 +504,7 @@ You can take a look the effect of the screenshot by input this link in your brow
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/77.jpg" style={{width:800, height:'auto'}}/></div>
 
-After that, you can copy the code below and paste it to ** captive_portal** part as the following image.
+After that, you can copy the code below and paste it to **captive_portal** part as the following image.
 <details>
 
 <summary> Click here to copy the code. </summary> 
@@ -563,7 +563,7 @@ And then put a image into **image** folder. You can click the below button to do
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/20.png" style={{width:800, height:'auto'}}/></div>
 
-After that, you can copy the code below and paste it to ** captive_portal** part as the following image.
+After that, you can copy the code below and paste it to **captive_portal** part as the following image.
 
 <details>
 
@@ -606,13 +606,75 @@ When you see the feedback like the following image, it means the code is running
 </TabItem>
 </Tabs>
 
+##### 5. Deep sleep mode
+
+:::tip
+During deep sleep mode, you can't upload code to the device derectly. You need to enter the download mode.[Click here jump to Q3.](#port)
+:::
+
+This example will show how to use deep sleep mode to save power. Update info every 6 hours. A 2000mAh battery can last about 3 months.
+
+Copy the code below and paste it to **captive_portal** part as the following image.
+
+<details>
+
+<summary> Click here to copy the code. </summary> 
+
+```yaml
+globals:
+  - id: sleep_counter
+    type: int
+    restore_value: yes  # key parameter, to use RTC storage
+    initial_value: '0'
+    
+# Here is deep sleep part
+deep_sleep:
+  id: deep_sleep_1
+  run_duration: 30s  # Device wake up and run 30s (enough to display)
+  sleep_duration: 3min  # deep sleep for 3min
+
+interval:
+  - interval: 29s  # run this command before the end of run_duration
+    then:
+      - logger.log: "Entering deep sleep now..."
+
+font:
+  - file: "gfonts://Inter@700"
+    id: font1
+    size: 24
+
+spi:
+  clk_pin: GPIO8
+  mosi_pin: GPIO10
+
+display:
+  - platform: waveshare_epaper
+    cs_pin: GPIO3
+    dc_pin: GPIO5
+    busy_pin: GPIO4
+    reset_pin: GPIO2
+    model: 7.50inv2    
+    update_interval: 3min   
+    lambda: |-
+      id(sleep_counter) += 1;
+      ESP_LOGD("main", "Wakeup count: %d", id(sleep_counter));
+      it.printf(100, 100, id(font1), "Wakeup count: %d", id(sleep_counter));
+```
+</details>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/89.jpg" style={{width:800, height:'auto'}}/></div>
+
+You'll see a counter. It will increment by one every time it wakes up.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/90.jpg" style={{width:600, height:'auto'}}/></div>
+
 #### Step 5.Comperhensive example
 
 :::tip
 For you to understand better, we strongly recommend that you run the basic usages above first.
 :::
 
-This example will show how to get weather information and calendar information from HA and display them on the display. What's more, it will use **deep sleep mode** to save power. Update info per 6 hours, 2000mAh battery can last 3 months.
+This example will show how to get weather information and calendar information from HA and display them on the display. What's more, it will use **deep sleep mode** to save power. Update info every 6 hours. A 2000mAh battery can last about 3 months.
 
 First, you need to check if you have weather component in HA. Normally, you will have one when you install HA.
 
@@ -1094,7 +1156,7 @@ In this case, you should go to Settings -> Devices & Services -> Integrations to
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/11.png" style={{width:800, height:'auto'}}/></div>
 
 
-#### Q3: How can I upload a new program when device in deep sleep mode?
+#### <span id="deepmode">Q3</span>: How can I upload a new program when device in deep sleep mode?
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/103.png" style={{width:'100%', height:'auto'}}/></div>
@@ -1117,7 +1179,7 @@ When device in deep sleep mode, you can't upload a new program derectly.
 Remember to turn on the battery button when charging. Otherwise, the battery won't be able to charge.
 :::
 
-After our tests, refresh screen per 6 hours and the battery will last 3 months in deep sleep mode.
+After our tests, refresh screen per 6 hours and the battery will last about 3 months in deep sleep mode.
 
 #### <span id="Q5">Q5</span>: ePaper Penel can't connect to you computer?
 
