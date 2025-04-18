@@ -53,7 +53,7 @@ Make sure all parts are included.
 
 Assemble the reCamea Gimbal according to the assembly instructions on Box or [User manual](#jump1).
 
-<!-- <div style={{textAlign:'center'}}><iframe width={560} height={315} src="https://www.youtube.com/embed/VAkhDHct0p4" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div> -->
+<div style={{textAlign:'center'}}><iframe width={560} height={315} src="https://www.youtube.com/embed/VAkhDHct0p4" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
 
 :::note
 Please make sure all screws are tightened, otherwise it will affect the operation of the motor.
