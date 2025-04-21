@@ -511,12 +511,21 @@ After that, you can copy the code below and paste it to **captive_portal** part 
 
 ```yaml
 
-image:
-  - file: http://192.168.1.191:10000/todo?viewport=800x480  # the path you want to screenshot and the size
-    id: myImage
+http_request:
+  verify_ssl: false
+  timeout: 10s
+  watchdog_timeout: 15s
+
+online_image:
+  - id: dashboard_image
+    format: PNG
     type: BINARY
-    resize: 800x480    # how big you want to show, the biggest size should be as same as epaper pixel
-    invert_alpha: true   # invert color 
+    buffer_size: 30000
+    url: http://192.168.1.191:10000/todo?viewport=800x480 #change this link to your screenshot link
+    update_interval: 30s
+    on_download_finished:
+      - delay: 0ms
+      - component.update: main_display
 
 spi:
   clk_pin: GPIO8
@@ -524,24 +533,25 @@ spi:
 
 display:
   - platform: waveshare_epaper
+    id: main_display
     cs_pin: GPIO3
     dc_pin: GPIO5
     busy_pin: GPIO4
     reset_pin: GPIO2
     model: 7.50inv2
-    update_interval: 3min 
+    update_interval: never
     lambda: |-
-      it.image(0, 0, id(myImage));
+      it.image(0, 0, id(dashboard_image));
       
 ```
 
 </details>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/78.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/91.jpg" style={{width:800, height:'auto'}}/></div>
 
 When you see the feedback like the following image, it means the code is running successfully.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/79.JPG" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/79.JPG" style={{width:600, height:'auto'}}/></div>
 
 
 </TabItem>
