@@ -16,7 +16,7 @@ last_update:
 
 # Develop reCamera with Node-RED
 
-## Nodered Introduction
+## Node-RED Introduction
 Node-RED's goal is to enable anyone to build applications that collect, transform and visualize their data; building flows that can automate their world. Its low-code nature makes it accessible to users of any background, whether for home automation, industrial control systems or anything in between. By integrated Node-RED with reCamera, it provides a beginner-friendly development method that can let users drag and play with the device right the way.
 
 You can learn the [Node-RED Concept](https://nodered.org/docs/user-guide/concepts#:~:text=A%20Flow%20is%20represented%20as,(sets%20of%20connected%20nodes).) here or start with a [video tutorial](https://www.youtube.com/watch?v=DFNv91TTt68).
