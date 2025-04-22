@@ -6,8 +6,8 @@ keywords:
 image: https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/social-image.webp
 slug: /respeaker_2_mics_pi_hat_raspberry_v2
 last_update:
-  date: 12/11/2024
-  author: Joshua Lee
+  date: 04/18/2025
+  author: Jiahao
 ---
 
 :::caution
@@ -38,6 +38,54 @@ Raspberry Pi Zero Connection
 ### 2. Setup the driver on Raspberry Pi
 
 Make sure that you are running [the latest Raspberry Pi OS](https://www.raspberrypi.com/software/operating-systems/) on your Pi. *(updated at 2024.11.19)*
+<details>
+<summary style={{ color: 'red' }}>Prepare for Raspberry Pi Zero W</summary>
+
+```sh
+## Install kernel 
+sudo apt install flex bison libssl-dev bc build-essential libncurses5-dev libncursesw5-dev linux-headers-6.6.51+rpt-rpi-v6
+git clone --depth=1 --branch rpi-6.6.y https://github.com/raspberrypi/linux.git
+
+## Make target directory
+mkdir ~/tlv320aic3x_i2c_driver
+cd ~/tlv320aic3x_i2c_driver
+## Copy code
+cp ~/linux/sound/soc/codecs/tlv320aic3x.c ~/tlv320aic3x_i2c_driver/
+cp ~/linux/sound/soc/codecs/tlv320aic3x.h ~/tlv320aic3x_i2c_driver/
+cp ~/linux/sound/soc/codecs/tlv320aic3x-i2c.c ~/tlv320aic3x_i2c_driver/
+## Modify Makefile
+nano Makefile
+-------------------
+obj-m += snd-soc-tlv320aic3x-i2c.o
+snd-soc-tlv320aic3x-i2c-objs := tlv320aic3x.o tlv320aic3x-i2c.o
+
+KDIR := /lib/modules/$(shell uname -r)/build
+PWD := $(shell pwd)
+
+all:
+        $(MAKE) -C $(KDIR) M=$(PWD) modules
+
+clean:
+        $(MAKE) -C $(KDIR) M=$(PWD) clean
+
+install:
+        sudo cp snd-soc-tlv320aic3x-i2c.ko /lib/modules/$(shell uname -r)/kernel/sound/soc/codecs/
+        sudo depmod -a
+
+-------------------
+
+## Compile the driver 
+make
+sudo make install
+sudo modprobe snd-soc-tlv320aic3x-i2c
+
+## Check logs
+lsmod | grep tlv320
+dmesg | grep tlv320
+
+```
+</details>
+
 
 - Step 1: Get Device Tree Source (DTS) for the ReSpeaker 2-Mics Pi HAT (V2.0), compile it and install the device tree overlay.
 

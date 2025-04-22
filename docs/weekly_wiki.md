@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 04/14/2025
+  date: 04/21/2025
   author: Frank
 ---
 
@@ -17,53 +17,53 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is April 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 21th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [XIAO RP2040 with PlatformIO](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/)
+### [Create Backup and Restore on reComputer](https://wiki.seeedstudio.com/create_backup_and_restore_on_recomputer/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/rp2040_with_platformio.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer_backup/jtop2.png" style={{width:800, height:'auto'}}/></div>
 
-PlatformIO is a development platform that integrates many types of development boards and has good scalability. If the platform does not have the type you need, you can manually add the type of development board yourself. The code you write on Arduino can use it, just add the corresponding library.
+This wiki page will use [reComputer J3011](https://www.seeedstudio.com/reComputer-J3011B-p-6405.html) to introduce how to back up your existing software and environment on the recomputer series, making it convenient for you to restore and transplant it to the new recomputer.
 
-In this wiki, we will introduce how to install PlatformIO for the [XIAO RP2040](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/) and run the sample code. In addition, we have also updated the tutorials for the [XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_with_platform_io/), [XIAO RP2350](https://wiki.seeedstudio.com/xiao_rp2350_with_platform_io/), and [XIAO SAMD21](https://wiki.seeedstudio.com/xiao_samd21_with_platform_io/).
+### [Node-RED Introduction for Gimbal](https://wiki.seeedstudio.com/recamera_gimbal_node_red/)
 
-### [Getting started with XIAO 2-Channel Wi-Fi AC Energy Meter In Home Assistant](https://wiki.seeedstudio.com/2_channel_wifi_ac_energy_meter/)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/workspace_flow.png" style={{width:600, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.jpg" style={{width:800, height:'auto'}}/></div>
+This wiki provides step-by-step guidance on how to use Node-RED nodes to operate and control the motors on the reCamera Gimbal. The default flow on the Device is a more comprehensive example of how you can use UI nodes with gimbal nodes, but we are going to break down the nodes one by one to explain how you can use it.
 
-The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments. This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
+### [LoRaWAN Tracker Bluetooth AT Command Instruction](https://wiki.seeedstudio.com/tracker_at_command/)
 
-### [Getting Started with Seeed Studio IoT Button](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/intro-e.webp" style={{width:600, height:'auto'}}/></div>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/1.jpg" style={{width:800, height:'auto'}}/></div>
+This chapter will briefly explain the use of Bluetooth AT commands, establish a Bluetooth connection and query/configure device information through the Blueooth AT commands.
 
-The IoT Button is a versatile smart switch offering dual Home Assistant integrations through ESPHome and Zigbee. Powered by ESP32-C6, it features customizable RGB LED indicators, programmable event triggers, USB-C charging, and flexible mounting options - everything you need for intuitive smart home control.
+### [Deep development of Gimbal with C](https://wiki.seeedstudio.com/gimbal_development_c/)
+
+This document will provide a comprehensive guide on how to develop for reCamera Gimbal using C programming.
 
 ## Existing Wiki Updated
 
-### [Getting Started with ODYSSEY – STM32MP135D](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/)
+### [Grove - Air Quality Sensor v1.3](https://wiki.seeedstudio.com/Grove-Air_Quality_Sensor_v1.3/)
 
-We have provided a [precompiled package](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/#noteif-you-want-to-use-the-precompiled-package-please-click-this-link) for the ODYSSEY STM32MP135D.
+We have added an [example](https://wiki.seeedstudio.com/Grove-Air_Quality_Sensor_v1.3/#play-with-esp-idf) demonstrating how to use the device with ESP-IDF.
 
-### [Voice Assistant System for Home Assitant](https://wiki.seeedstudio.com/respeaker_lite_ha/)
+### [Grove - Temperature Humidity Pressure Gas Sensor(BME680)](https://wiki.seeedstudio.com/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/)
 
-We have updated the `.yaml` example for [adding the XIAO ESP32S3 to ESPHome](https://wiki.seeedstudio.com/respeaker_lite_ha/#add-xiao-esp32s3-to-esphome).
+We have added an [example](https://wiki.seeedstudio.com/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/#play-with-esp-idf) demonstrating how to use the device with ESP-IDF.
 
 ### [ePaper Panel in Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/)
 
-We have added an example of [displaying a screenshot of Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/#4-display-image).
+We have added an example for the [Deep Sleep mode](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/#5-deep-sleep-mode).
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO ESP32S3 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-esp32s3-nuttx/)
+### [XIAO ESP32-C3 iBeacon with BME680 Sensor Using ESP-IDF](https://wiki.seeedstudio.com/xiao-c3-ibeacon/)
 
-<div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
-</div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-c3-ibeacon/2.webp" style={{width:600, height:'auto'}}/></div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+In this tutorial, we'll build a low-power temperature monitoring system that broadcasts environmental data using Bluetooth Low Energy (BLE) in iBeacon format. We'll use the Seeed Studio XIAO ESP32-C3, the XIAO expansion board, and a Grove BME680 environmental sensor. This project demonstrates how to build robust embedded applications using ESP-IDF—Espressif's official development framework.
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -109,7 +109,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 boar
 - [weekly wiki on 12.04th](/Seeed_Elderly/weekly_wiki/wiki1204)
 - [weekly wiki on 12.11th](/Seeed_Elderly/weekly_wiki/wiki1211)
 - [weekly wiki on 12.18th](/Seeed_Elderly/weekly_wiki/wiki1218)
-- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225) -->
+- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225)
 - [weekly wiki on 2024.1.08th](/Seeed_Elderly/weekly_wiki/wiki240108)
 - [weekly wiki on 2024.1.15th](/Seeed_Elderly/weekly_wiki/wiki240115)
 - [weekly wiki on 2024.1.22nd](/Seeed_Elderly/weekly_wiki/wiki240122)
@@ -119,7 +119,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 boar
 - [weekly wiki on 2024.3.04th](/Seeed_Elderly/weekly_wiki/wiki240304)
 - [weekly wiki on 2024.3.11th](/Seeed_Elderly/weekly_wiki/wiki240311)
 - [weekly wiki on 2024.3.18th](/Seeed_Elderly/weekly_wiki/wiki240318)
-- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325)
+- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325) -->
 - [weekly wiki on 2024.4.01st](/Seeed_Elderly/weekly_wiki/wiki240401)
 - [weekly wiki on 2024.4.08th](/Seeed_Elderly/weekly_wiki/wiki240408)
 - [weekly wiki on 2024.4.15th](/Seeed_Elderly/weekly_wiki/wiki240415)
@@ -173,5 +173,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 boar
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
 - [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
+- [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
 
 </details>
