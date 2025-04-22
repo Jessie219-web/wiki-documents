@@ -13,13 +13,11 @@ const excludedPaths = [
   path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
 
 
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Mini_J401', 'J401_Mini_carrierboard_Hardware_Interfaces_Usage.md'),// 排除指定文档
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Updating_Jetpack_with_OTA.md'),
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'reComputer_Jetson_Series', 'reComputer_Super', 'reComputer_Super_Getting_Started.md'),
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Differences_of_L4T_Between_Seeed_and_NVIDIA.md'),
-  path.join(docsDirectory, 'Network', 'Meshtastic_Network', 'solar_node.md'),
-  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera Gimbal', '_gimbal_node_red.md'),
-  path.join(docsDirectory, 'Edge', 'reCamera', 'faqs.md'),
+  // 排除指定文档
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera Gimbal', '_gimbal_node_red.md'), //4.9
+  path.join(docsDirectory, 'Edge', 'reCamera', 'faqs.md'), //4.8
+  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera Gimbal', 'gimbal_development_c.md'), //4.15
+  path.join(docsDirectory, 'Sensor', 'SeeedStudio_XIAO', 'SeeedStudio_XIAO_ESP32S3', 'Application', 'XIAO_ESP32S3_Voice_Pomodoro.md'), //4.17
 ];
 
 // 递归函数，用于遍历多层文件夹

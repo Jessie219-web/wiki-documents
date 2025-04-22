@@ -223,6 +223,7 @@ print(i2c.readfrom(0x51, 4))
 Familiarity with micropython allows you to do more , we are looking forward to creating more value for you. Feel free to share your projects with us too!
 
 ### DAC Support
+Thank you to Aleksei Tertychnyi for submitting the code, all related functionalities were developed and contributed by him.
 ```python
 from machine import Pin, Timer, DAC
  

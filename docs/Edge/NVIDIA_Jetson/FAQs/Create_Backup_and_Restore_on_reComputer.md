@@ -7,7 +7,7 @@ keywords:
 - L4T
 - Backup
 - Restore
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer_backup/jtop2.webp
 slug: /create_backup_and_restore_on_recomputer
 last_update:
   date: 04/11/2025
