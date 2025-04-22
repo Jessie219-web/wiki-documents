@@ -1,6 +1,6 @@
 ---
-description: SenseCAP Solar Node P1-Pro for Meshtastic & LoRa
-title:  SenseCAP Solar Node P1-Pro for Meshtastic
+description: SenseCAP Solar Node for Meshtastic & LoRa
+title:  SenseCAP Solar Node
 keywords:
 - Meshtastic
 - Solar
@@ -17,21 +17,27 @@ last_update:
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.png" alt="pir" width={800} height="auto" /></p>
 
 
-It's a solar-powered communication node that integrates the XIAO nRF52840 Plus main controller, the Wio-SX1262 LoRa module, and the XIAO L76K GPS module. It is specifically designed for areas without network coverage. With a built-in battery, it supports long-distance communication, precise positioning, and low-power operation. It's suitable for expanding network coverage in outdoor areas.
 
+It is an economical solar-powered comms node or repeater based on Meshtastic, integrates the XIAO nRF52840 Plus main controller, the Wio-SX1262 LoRa module. It is specifically designed for areas without network coverage. It supports long-distance communication, precise positioning, and low-power operation. It's suitable for expanding network coverage in outdoor areas.
+
+## Version Comparison
  
+The Solar Node is available in two variants: [SenseCAP Solar Node P1](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-for-Meshtastic-LoRa-p-6425.html) and [SenseCAP Solar Node P1-Pro](https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html).
+
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image-114993633-1_1.jpeg" alt="pir" width={800} height="auto" /></p>
 
 
 ## Overview
 
 ### Features
 
-* **Efficient Solar Power Supply**: Utilizes a 5W solar panel in combination with 4 18650 batteries with a capacity of 3350mAh each. This setup ensures continuous operation even in the absence of sunlight, effectively solving the problem of outdoor power supply.
-* **Pre-installed Meshtastic Firmware**: The device comes pre-flashed with Meshtastic firmware at the factory. 
-* **Precise Positioning and Tracking**: Features a built-in XIAO L76K GPS module, enabling high - precision real - time positioning. It supports real - time sharing of location information, providing reliable location assurance for outdoor activities.
-* **Flexible Modular Expansion**: Equipped with a Grove interface, it is convenient to connect various sensors, such as temperature and humidity sensors. This meets diverse monitoring needs and enables easy functional expansion.
-* **Robust Waterproof Design**: With an IPX5 protection rating, it can effectively resist dust and water splashing. It can adapt to various harsh outdoor environments, ensuring stable operation of the device.
-* **Supports long - range transmission**: Up to 8 - 9 km between two devices in open areas. It can seamlessly integrate into the Meshtastic ecosystem and be used as an outdoor node or repeater to easily expand the Mesh network, enhancing network coverage.
+* Integrated with a 5W solar panel, and supports external batteries (which need to be provided by users themselves).
+* The device comes pre-installed with Meshtastic firmware at the factory. It can be seamlessly integrated into the Meshtastic ecosystem.
+* Compatible with the Grove ecosystem, and supports plug-and-play of sensors such as temperature and humidity sensors, light sensors, etc.
+* It is suitable for long-term outdoor use.
+* Supports 8 to 9KM Transmission in open areas. It can be used as an outdoor node or repeater, easily expanding the Mesh network and enhancing network coverage.
+
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image-114993633-3.png" alt="pir" width={800} height="auto" /></p>
 
 
 ### Specification
@@ -53,7 +59,7 @@ It's a solar-powered communication node that integrates the XIAO nRF52840 Plus m
     </td>
   </tr>
   <tr>
-    <td><b>GPS Module</b></td>
+    <td><b>GPS Module(for P1-Pro version)</b></td>
     <td>
       <a href="https://www.seeedstudio.com/L76K-GNSS-Module-for-Seeed-Studio-XIAO-p-5864.html" target="_blank">XIAO L76K</a><br />
       (Support GPS/GLONASS/Galileo)
@@ -126,9 +132,9 @@ It's a solar-powered communication node that integrates the XIAO nRF52840 Plus m
     <td>IPX5</td>
   </tr>
   <tr>
-    <td><b>Battery</b></td>
+    <td><b>Battery(for P1-Pro version)</b></td>
     <td>
-      <p>4 x 18650 lithium batteries (3350mAh each)</p>
+      <p>- 4 x 18650 lithium batteries (3350mAh each)</p>
       <p>- Supporting Type-C and solar charging.</p>
       <p>- Discharge environment: -40～60°C</p>
       <p>- Charging environment: 0-50°C</p>
