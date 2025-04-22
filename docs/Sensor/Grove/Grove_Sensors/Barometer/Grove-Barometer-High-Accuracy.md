@@ -6,7 +6,7 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /Grove-Barometer-High-Accuracy
 last_update:
-  date: 22/4/2025
+  date: 4/22/2025
   author: carla guo
 ---
 
