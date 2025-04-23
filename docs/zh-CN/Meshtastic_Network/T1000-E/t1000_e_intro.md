@@ -5,7 +5,7 @@ keywords:
 - Meshtastic
 - Tracker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /t1000_e_intro_cn
+slug: /cn/t1000_e_intro
 sidebar_position: 1
 last_update:
   date: 4/22/2025

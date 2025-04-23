@@ -4,7 +4,7 @@ title:  Meshtastic® 网络介绍
 keywords:
 - Meshtastic
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /meshtastic_introduction_cn
+slug: /cn/meshtastic_introduction
 sidebar_position: 1
 last_update:
   date: 4/22/2025
