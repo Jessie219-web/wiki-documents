@@ -5932,7 +5932,9 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
           // },
           items: [
+            'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/XiaoPi_zh',
             'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/Lerobot_SO100Arm_zh',
+
           ]
         },
         {
