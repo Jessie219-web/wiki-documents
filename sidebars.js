@@ -5757,14 +5757,47 @@ const sidebars = {
     // 'zh-CN/Sensor/SeeedStudio_XIAO/CN_PCB_Design_XIAO',
     'zh-CN/Sensor/SeeedStudio_XIAO/CN_SeeedStudio_XIAO_Series_Projects',
     'zh-CN/Sensor/SeeedStudio_XIAO/CN_XIAO_FAQ',
-
+  
+    {
+      type: 'doc',
+      id: 'zh-CN/Meshtastic_Network/meshtastic_intro',
+      label: 'Meshtastic 网络',
+      className: 'sideboard_calss',
+    },
+    {
+      type: 'category',
+      label: 'Meshtastic 网络',
+      className: 'sideboard_calss',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'zh-CN/Meshtastic_Network/meshtastic_intro',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'SenseCAP T1000-E Tracker',
+          items: [
+            'zh-CN/Meshtastic_Network/T1000-E/t1000_e_intro',
+            'zh-CN/Meshtastic_Network/T1000-E/sensecap_t1000_e',
+          ]
+        },  
+        {
+          type: 'category',
+          label: 'SenseCAP太阳能节点',
+          items: [
+            'zh-CN/Meshtastic_Network/Solar_Node/solar_node',
+          ]
+        },  
+      ]
+    },
     {
       type: 'doc',
       id: 'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Intro',
       label: 'NVIDIA Jetson 套件',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'reComputer 英伟达系列',
