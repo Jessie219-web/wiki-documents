@@ -5764,17 +5764,7 @@ const sidebars = {
       label: 'Meshtastic 网络',
       className: 'sideboard_calss',
     },
-    {
-      type: 'category',
-      label: 'Meshtastic 网络',
-      className: 'sideboard_calss',
-      collapsed: true,
-      collapsible: true,
-      link: {
-        type: "doc",
-        id: 'zh-CN/Meshtastic_Network/meshtastic_intro',
-      },
-      items: [
+
         {
           type: 'category',
           label: 'SenseCAP T1000-E Tracker',
@@ -5790,8 +5780,7 @@ const sidebars = {
             'zh-CN/Meshtastic_Network/Solar_Node/solar_node',
           ]
         },  
-      ]
-    },
+
     {
       type: 'doc',
       id: 'zh-CN/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Intro',

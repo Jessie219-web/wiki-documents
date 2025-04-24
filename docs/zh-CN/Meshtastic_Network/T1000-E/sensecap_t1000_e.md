@@ -4,7 +4,7 @@ title: T1000-E Tracker入门指南
 keywords:
 - Tracker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /sensecap_t1000_e_cn
+slug: /cn/sensecap_t1000_e
 sidebar_position: 2
 last_update:
   date: 7/1/2024
@@ -372,9 +372,9 @@ import TabItem from '@theme/TabItem';
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/dfu-mode2.gif" alt="pir" width={600} height="auto" /></p>
 
-* Step 2: ！重要步骤：[擦除flash](https://wiki.seeedstudio.com/sensecap_t1000_e_cn/#step-2-擦除flash).
+* Step 2: ！重要步骤：[擦除flash](https://wiki.seeedstudio.com/cn/sensecap_t1000_e/#step-2-擦除flash).
 
-* Step 3: [烧录固件](https://wiki.seeedstudio.com/sensecap_t1000_e_cn/#step-3-烧录固件).
+* Step 3: [烧录固件](https://wiki.seeedstudio.com/cn/sensecap_t1000_e/#step-3-烧录固件).
 
 
 
@@ -500,7 +500,7 @@ adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g4887
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/flash-success.png" alt="pir" width={800} height="auto" /></p>
 
 
-Bootloader烧录完成后，请按照步骤[擦除flash](https://wiki.seeedstudio.com/sensecap_t1000_e_cn/#step-2-擦除flash)和[烧录固件](https://wiki.seeedstudio.com/sensecap_t1000_e_cn/#step-3-烧录固件)。
+Bootloader烧录完成后，请按照步骤[擦除flash](https://wiki.seeedstudio.com/cn/sensecap_t1000_e/#step-2-擦除flash)和[烧录固件](https://wiki.seeedstudio.com/cn/sensecap_t1000_e/#step-3-烧录固件)。
 
 
 
@@ -511,7 +511,7 @@ Bootloader烧录完成后，请按照步骤[擦除flash](https://wiki.seeedstudi
 
 * 波特率设置为 `1200`.
 
-* 连接设备到电脑，点击连接串口，此时设备的LED会短暂闪烁一下，持续点击连接，直到设备的LED常亮绿灯，此时表示设备已经进入DFU模式，接下来请按照步骤[烧录Bootloader](https://wiki.seeedstudio.com/sensecap_t1000_e_cn/#烧录bootloader) -> [擦除flash](https://wiki.seeedstudio.com/sensecap_t1000_e_cn/#step-2-擦除flash) -> [烧录固件](https://wiki.seeedstudio.com/sensecap_t1000_e_cn/#step-3-烧录固件)
+* 连接设备到电脑，点击连接串口，此时设备的LED会短暂闪烁一下，持续点击连接，直到设备的LED常亮绿灯，此时表示设备已经进入DFU模式，接下来请按照步骤[烧录Bootloader](https://wiki.seeedstudio.com/cn/sensecap_t1000_e/#烧录bootloader) -> [擦除flash](https://wiki.seeedstudio.com/cn/sensecap_t1000_e/#step-2-擦除flash) -> [烧录固件](https://wiki.seeedstudio.com/cn/sensecap_t1000_e/#step-3-烧录固件)
 
 
 <div class="table-center">
