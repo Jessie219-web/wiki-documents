@@ -5719,7 +5719,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '基于 XIAO 的毫米波雷达',
+          label: '基于 XIAO 的 GPS 模块',
           items: [
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/CN_L76K_GNSS_Module',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/CN_L76K_GNSS_Ubidots_Map_Track'

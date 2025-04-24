@@ -3,7 +3,7 @@ description: Grove - Barometer (High-Accuracy)
 title: Grove - Barometer (High-Accuracy)
 keywords:
 - Grove
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/Grove-Barometer-High-Accuracy/img/main.webp
 slug: /Grove-Barometer-High-Accuracy
 last_update:
   date: 4/22/2025
