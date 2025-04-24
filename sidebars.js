@@ -904,6 +904,7 @@ const sidebars = {
               },
               items: [
                 'Sensor/SenseCAP/SenseCAP_Probe/SenseCAP_Sensor_Probes_Product_Catalogue',
+                'Sensor/SenseCAP/SenseCAP_Probe/Total_Solar_Radiation_Sensor',
                 'Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor',
                 'Sensor/SenseCAP/SenseCAP_Probe/Water-Leak-Detector',
                 'Sensor/SenseCAP/SenseCAP_Probe/Industrial-ph-Sensor',
