@@ -69,7 +69,7 @@ The XIAO RP2350 packs the power of the Raspberry Pi RP2350 (dual Cortex-M33 core
     <tr>
         <td>Flash</td>
         <td>2MB Onboard</td>
-        <td>2MB PSRAM</td>
+        <td>2MB Flash</td>
     </tr>
     <tr>
         <td>LEDs</td>

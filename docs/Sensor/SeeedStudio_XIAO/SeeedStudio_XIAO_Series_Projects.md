@@ -117,7 +117,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_samd21"><strong><font color={'FFFFFF'} size={"4"}>XIAO SAMD21</font></strong></span>
+<span id="xiao_samd21"><strong><font size={"4"}>XIAO SAMD21</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -131,7 +131,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_rp2040"><strong><font color={'FFFFFF'} size={"4"}>XIAO RP2040</font></strong></span>
+<span id="xiao_rp2040"><strong><font  size={"4"}>XIAO RP2040</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -145,7 +145,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_nrf52840_(sense)"><strong><font color={'FFFFFF'} size={"4"}>XIAO nRF52840 (Sense)</font></strong></span>
+<span id="xiao_nrf52840_(sense)"><strong><font  size={"4"}>XIAO nRF52840 (Sense)</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -169,7 +169,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_esp32c3"><strong><font color={'FFFFFF'} size={"4"}>XIAO ESP32C3</font></strong></span>
+<span id="xiao_esp32c3"><strong><font  size={"4"}>XIAO ESP32C3</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -188,7 +188,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_esp32s3_(sense)"><strong><font color={'FFFFFF'} size={"4"}>XIAO ESP32S3 (Sense)</font></strong></span>
+<span id="xiao_esp32s3_(sense)"><strong><font  size={"4"}>XIAO ESP32S3 (Sense)</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -212,7 +212,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_esp32c6"><strong><font color={'FFFFFF'} size={"4"}>XIAO ESP32C6</font></strong></span>
+<span id="xiao_esp32c6"><strong><font  size={"4"}>XIAO ESP32C6</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -231,7 +231,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_rp2350"><strong><font color={'FFFFFF'} size={"4"}>XIAO RP2350</font></strong></span>
+<span id="xiao_rp2350"><strong><font  size={"4"}>XIAO RP2350</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -245,7 +245,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_ra4m1"><strong><font color={'FFFFFF'} size={"4"}>XIAO RA4M1</font></strong></span>
+<span id="xiao_ra4m1"><strong><font  size={"4"}>XIAO RA4M1</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -259,7 +259,7 @@ We can't do it without the love, contribution that we get from the community, an
 
 <br></br>
 
-<span id="xiao_mg24_(sense)"><strong><font color={'FFFFFF'} size={"4"}>XIAO MG24 (Sense)</font></strong></span>
+<span id="xiao_mg24_(sense)"><strong><font  size={"4"}>XIAO MG24 (Sense)</font></strong></span>
 
 <div class="table-center">
 	<table align="center">
@@ -448,6 +448,11 @@ We can't do it without the love, contribution that we get from the community, an
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_esp32s3_zephyr_rtos/">XIAO ESP32S3 (Sense)</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://docs.zephyrproject.org/latest/boards/seeed/xiao_esp32c6/doc/index.html">XIAO ESP32C6</a></th>		
 		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://docs.zephyrproject.org/latest/boards/seeed/xiao_ra4m1/doc/index.html">XIAO RA4M1</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://docs.zephyrproject.org/latest/boards/seeed/xiao_mg24/doc/index.html">XIAO MG24</a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>	
+		</tr>
 	</table>
 </div>
 
@@ -479,7 +484,12 @@ We can't do it without the love, contribution that we get from the community, an
 		<tr>
 			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/samd2l2/boards/xiao-seeeduino/index.html">XIAO SAMD21</a></th>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao-rp2040-with-nuttx/">XIAO RP2040</a></th>
-            <th style={{width:333, height:'auto'}}><a href=""></a></th>
+            <th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/nrf52/boards/xiao-nrf52840/index.html">XIAO nRF52840</a></th>
+		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/rp23xx/boards/xiao-rp2350/index.html">XIAO RP2350</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/ra4m1/boards/xiao-ra4m1/index.html ">XIAO RA4M1</a></th>
+            <th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/xtensa/esp32s3/boards/esp32s3-xiao/index.html">XIAO ESP32S3</a></th>
 		</tr>
 	</table>
 </div>
@@ -657,7 +667,6 @@ We can't do it without the love, contribution that we get from the community, an
             <th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/XIAOEI/">XIAO nRF52840 (Sense)-Motion Recognition</a></th>
 		</tr>
 		<tr>
-			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/XIAO-BLE-PDM-EI/">XIAO nRF52840 (Sense)-Speech Recognition</a></th>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/tinyml_course_Key_Word_Spotting/">XIAO ESP32S3 Sense (Key Word Spotting)</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/">XIAO ESP32S3 Sense (Image Classification)</a></th>
 		</tr>

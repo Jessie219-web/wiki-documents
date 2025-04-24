@@ -463,10 +463,11 @@ sudo tools/l4t_create_default_user.sh -u nvidia -p nvidia -a -n nvidia-desktop -
 
 **Step 6:** Flash the system to the NVMe SSD
 
-```sh
-sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 \
-  -c tools/kernel_flash/flash_l4t_external.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml" \
-  --showlogs --network usb0 p3509-a02+p3767-0000 internal
+```bash
+
+cp p3509-a02+p3767-0000.conf p3509-a02-p3767-0000.conf
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1   -c tools/kernel_flash/flash_l4t_nvme.xml -p "-c bootloader/t186ref/cfg/flash_t234_qspi.xml --no-systemimg"   --showlogs --network usb0 p3509-a02-p3767-0000 external
+
 ```
 
 You will see the following output if the flashing process is successful
@@ -487,6 +488,90 @@ Please open the terminal on the **Jetson device** and execute the following comm
 sudo apt update
 sudo apt install nvidia-jetpack
 ```
+
+</TabItem>
+
+<TabItem value="JP5.1.3" label="JP5.1.3">
+
+Here we will install Jetpack 5.1.3 on the reComputer.
+
+**Step 1:** Download the system image to your Ubuntu PC corresponding to the Jetson module you are using:
+
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>Jetson Module</th>
+      <th>Download Link</th>
+      <th>SHA256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Orin NX 16GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXpnEetKYeNEkVs_mrG161IBNt4Rn84D2l1mvX-RS6hBog?e=OUpkC2" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>28877E13DE9E029C4E4328F836C7D534E182849714CCA2930C3712757DDD6CD1</td>
+    </tr>
+    <tr>
+      <td>Orin NX 8GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EdchzEJ2fYJClYD680qFaosBNkYRXjHBLpYykpxYBi2_0Q?e=LEHd41" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>E4C5611164475D86E2F128826F993F251491368168218A2D660E6D23DEE63D53</td>
+    </tr>
+    <tr>
+      <td>Orin Nano 8GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUPTqRpD_fVGmw-qKTrRl4gBUB9YvlytoRGwxe7aCqhF9w?e=Bsr1GU" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>A3F0C30EFDFB612F1EAB5B01E01B7E6FDFACA6A27A596C3B0AABD82C0EFE94D4</td>
+    </tr>
+    <tr>
+      <td>Orin Nano 4GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ER4pJqYIOGVGiu1ticFeYMoBFaSpmI_JISciXqqvI-lzAA?e=nBRhmh" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>EDCDA822B59BB6FAC8E7AD301757C6801FC29481DE274DEE370CFDA4874AC0B0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
+**Step 2:** Extract the downloaded image file:
+```bash
+sudo tar xpf mfi_xxxx.tar.gz
+# For example: sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.0-36.3.0-2024-06-07.tar.gz
+```
+
+**Step 3:** Navigate to the unzipped directory and execute the following command to flash jetpack system to the NVMe SSD: 
+
+```bash
+cd mfi_xxxx
+# For example: cd mfi_recomputer-orin-j401
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0  --showlogs
+```
+
+You will see the following output if the flashing process is successful
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/4.png"/></div>
+
+:::note
+The flash command may run for 2-10 minutes.
+:::
+
+**Step 4:** Connect the J401 to a display using the HDMI connector on the board and finish the initial configuration setup.
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
 
 </TabItem>
 
@@ -662,6 +747,85 @@ On an Ubuntu host machine, open the terminal and run the command `sha256sum <Fil
 ```bash
 sudo tar xpf mfi_xxxx.tar.gz
 # For example: sudo tar xpf mfi_recomputer-orin-nx-16g-j401-6.1-36.4.0-2024-12-04.tar
+```
+
+**Step 3:** Navigate to the unzipped directory and execute the following command to flash jetpack system to the NVMe SSD: 
+
+```bash
+cd mfi_xxxx
+# For example: cd mfi_recomputer-orin-j401
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0  --showlogs
+```
+
+You will see the following output if the flashing process is successful
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/4.png"/></div>
+
+:::note
+The flash command may run for 2-10 minutes.
+:::
+
+**Step 4:** Connect the J401 to a display using the HDMI connector on the board and finish the initial configuration setup:
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
+
+</TabItem>
+
+<TabItem value="JP6.2" label="JP6.2">
+
+Here we will use NVIDIA L4T 36.4.3 to install Jetpack 6.2 on the reComputer
+
+**Step 1:** Download the system image to your Ubuntu PC corresponding to the Jetson module you are using:
+
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>Jetson Module</th>
+      <th>Download Link</th>
+      <th>SHA256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Orin Nano 8GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Ea8wqK7OE0VGtclEw1J0FIYB8I6qJEH_n1facfwl9AlhkQ?e=UoHjcf" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> D9ECF85D0BD52E6E90E9C567A52688C7FAEE7DD1BDC87ED557184086FD605249 </td>
+    </tr>
+    <tr>
+      <td>Orin Nano 4GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYuzr4pFfZ5Lp2WIqG_tZ7ABIYU9A0KuFl1nAs9FiGmZBQ?e=WALXR5" target="_blank" rel="noopener noreferrer">Download
+        </a>
+      </td>
+      <td> 00B881683FD2D61A22BD2D0326E7B5E39CB5C4F249BF2CD18A272766CB6612E7 </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
+:::note
+Please note that due to the increased power consumption and heat generation after enabling `super mode`, the [reComputer J4011](https://www.seeedstudio.com/reComputer-J4011-p-5585.html) and [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6Iko0MDEyIiwiY19zZWFyY2hfcmVzdWx0X3BvcyI6MiwiY190b3RhbF9yZXN1bHRzIjo4LCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0ifQ%3D%3D) cannot operate stably in the highest mode. Therefore, this update does not include these two products.
+We are currently designing a new version of reComputer. Stay tuned!
+:::
+
+**Step 2:** Extract the downloaded image file:
+```bash
+sudo tar xpf mfi_xxxx.tar.gz
+# For example: sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.2-36.4.3-2025-02-08.tar.gz
 ```
 
 **Step 3:** Navigate to the unzipped directory and execute the following command to flash jetpack system to the NVMe SSD: 

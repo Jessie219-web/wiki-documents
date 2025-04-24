@@ -277,6 +277,13 @@ Now, we need to install the driver as well to make sure each component on the bo
       <td align="center">35.1.0</td>
       <td align="center"><a href="https://files.seeedstudio.com/wiki/A203_V.2/203_jp5.0.2.zip">Download</a></td>
     </tr>
+    <tr>
+      <td align="center">A203/ A203V2</td>
+      <td align="center">Jetson Xavier NX eMMC</td>
+      <td align="center">5.1.4</td>
+      <td align="center">35.6.0</td>
+      <td align="center"><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ETrn1ItMYHVPmWPvDgMyXbABcpzAgQHQpgwf5CFecVDscA?e=gHOJ4T">Download</a></td>
+    </tr>
   </tbody>
 </table>
 
@@ -446,12 +453,20 @@ After we unzip the package, we need to install the driver as well to make sure e
       <td align="center">4.6</td>
       <td align="center">32.6.1</td>
       <td align="center"><a href="https://files.seeedstudio.com/wiki/NVIDIA/A203_jp4.6_tx2nx.zip">Download</a></td>
-    </tr><tr>
+    </tr>
+    <tr>
+      <td align="center">A203/ A203V2</td>
+      <td align="center">Jetson TX2NX eMMC</td>
+      <td align="center">4.6.6</td>
+      <td align="center">32.7.6</td>
+      <td align="center"><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQmiemIe-7tIjZmUDZ85E8sB81pOtZIyBe9WvdzzE3kPyA?e=8V7Sxt">Download</a></td>
+    </tr>
+    <tr>
       <td align="center">A203/ A203V2</td>
       <td align="center">Jetson Xavier NX eMMC</td>
-      <td align="center">5.0.2</td>
-      <td align="center">35.1.0</td>
-      <td align="center"><a href="https://files.seeedstudio.com/wiki/A203_V.2/203_jp5.0.2.zip">Download</a></td>
+      <td align="center">5.1.4</td>
+      <td align="center">35.6.0</td>
+      <td align="center"><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZY6h_VrBrBFhyaMpOGVX3oBDH0eeWQfIk15UB6uI_Ujsg?e=qVCggN">Download</a></td>
     </tr>
   </tbody>
 </table>

@@ -34,7 +34,7 @@ The sensor value only reflects the approximated trend of gas concentration in a 
 [<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-p-2502.html)
 
 :::tip
-     We have updated the product to [Multichannel Gas Sensor v2](https://wiki.seeedstudio.com/Grove-Multichannel-Gas-Sensor-V2/) with more detailed documents and more onboard sensor modules. What's more, we've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Sensor_gas/), it will help you choose the gas sensor that best suits your needs.
+     We have updated the product to [Multichannel Gas Sensor v2](https://wiki.seeedstudio.com/Grove-Multichannel-Gas-Sensor-V2/) with more detailed documents and more onboard sensor modules. What's more, we've released the [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/), it will help you choose the gas sensor that best suits your needs.
 :::
 
 ## Before usage
@@ -198,7 +198,7 @@ void setup()
 {
     Serial.begin(115200);  // start serial for output
     Serial.println("power on!");
-    gas.begin(0x04);//the default I2C address of the slave is 0x04
+    gas.begin(0x04);//the default I2C address of the slave is 0x04 ; for verison 2 of the multichannel gas sensor the i2c address is 0x08
     gas.powerOn();
     Serial.print("Firmware Version = ");
     Serial.println(gas.getVersion());

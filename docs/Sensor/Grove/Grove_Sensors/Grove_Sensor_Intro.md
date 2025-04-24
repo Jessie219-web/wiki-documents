@@ -1252,7 +1252,7 @@ The Grove - Gas Sensor module is useful for gas leakage detecting(in home and in
         <img src="https://files.seeedstudio.com/wiki/Grove-Barometer-High-Accuracy/img/main.jpg" style={{width:900, height:'auto'}}/>
     </div>
     <div class="xiao_topic_page_font1">
-        <font size={"2.1"}>This Grove - Barometer (High-Accuracy) Sensor features an HP206C high-accuracy chip to detect barometric pressure, Altimeter, and temperature. It can widely measure pressure ranging from 300mbar~1200mbar, with super high accuracy of 0.01mbar(0.1m) in ultra-high resolution mode. </font>
+        <font size={"2.1"}>This Grove - Barometer (High-Accuracy) Sensor features an HP206F high-accuracy chip to detect barometric pressure, Altimeter, and temperature. It can widely measure pressure ranging from 300mbar~1200mbar, with super high accuracy of 0.01mbar(0.1m) in ultra-high resolution mode. </font>
     </div>
 </div>
 

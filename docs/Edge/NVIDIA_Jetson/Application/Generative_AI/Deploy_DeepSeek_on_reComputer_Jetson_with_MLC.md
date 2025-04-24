@@ -7,7 +7,7 @@ keywords:
 - LLM
 - MLC
 - deepseek
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/mlc/deploy_deepseek.webp
 slug: /deploy_deepseek_on_jetson_with_mlc
 last_update:
   date: 02/13/2025

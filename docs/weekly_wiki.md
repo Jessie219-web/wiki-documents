@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 02/10/2025
+  date: 04/21/2025
   author: Frank
 ---
 
@@ -17,54 +17,53 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is February 10th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 21th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [LoRaWAN Open Source Firmware](https://wiki.seeedstudio.com/open_source_lorawan/)
+### [Create Backup and Restore on reComputer](https://wiki.seeedstudio.com/create_backup_and_restore_on_recomputer/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/t1000-e-fpage.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer_backup/jtop2.png" style={{width:800, height:'auto'}}/></div>
 
-The [SenseCAP T1000-E](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-Meshtastic-p-5913.html) now has an open source **LoRaWAN version** of the firmware, which provides you with a lot of customization and innovation opportunities. This tutorial will guide you through flashing firmware and using example code.
+This wiki page will use [reComputer J3011](https://www.seeedstudio.com/reComputer-J3011B-p-6405.html) to introduce how to back up your existing software and environment on the recomputer series, making it convenient for you to restore and transplant it to the new recomputer.
 
-### [Quickly Deploy DeepSeek on reComputer Jetson](https://wiki.seeedstudio.com/deploy_deepseek_on_jetson/)
+### [Node-RED Introduction for Gimbal](https://wiki.seeedstudio.com/recamera_gimbal_node_red/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/deepseek/deepseek.png" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/workspace_flow.png" style={{width:600, height:'auto'}}/></div>
 
-DeepSeek is a cutting-edge AI model suite optimized for efficiency, accuracy, and real-time processing. With advanced optimization for edge computing, DeepSeek enables fast, low-latency AI inference directly on Jetson devices, reducing dependency on cloud computing while maximizing performance.
-This wiki provides a step-by-step guide to deploying [DeepSeek](https://www.deepseek.com/) models on reComputer Jetson devices for efficient AI inference on the edge.
+This wiki provides step-by-step guidance on how to use Node-RED nodes to operate and control the motors on the reCamera Gimbal. The default flow on the Device is a more comprehensive example of how you can use UI nodes with gimbal nodes, but we are going to break down the nodes one by one to explain how you can use it.
+
+### [LoRaWAN Tracker Bluetooth AT Command Instruction](https://wiki.seeedstudio.com/tracker_at_command/)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/intro-e.webp" style={{width:600, height:'auto'}}/></div>
+
+This chapter will briefly explain the use of Bluetooth AT commands, establish a Bluetooth connection and query/configure device information through the Blueooth AT commands.
+
+### [Deep development of Gimbal with C](https://wiki.seeedstudio.com/gimbal_development_c/)
+
+This document will provide a comprehensive guide on how to develop for reCamera Gimbal using C programming.
 
 ## Existing Wiki Updated
 
-### [Usage of Seeed Studio XIAO MG24 Sense built-in Sensor](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/)
+### [Grove - Air Quality Sensor v1.3](https://wiki.seeedstudio.com/Grove-Air_Quality_Sensor_v1.3/)
 
-We have added the [Silicon Labs Demo example for XIAO MG24 Sense Microphone](https://wiki.seeedstudio.com/xiao_mg24_sense_built_in_sensor/#xiao-mg24-sense-microphonesilicon-labs-demo).
+We have added an [example](https://wiki.seeedstudio.com/Grove-Air_Quality_Sensor_v1.3/#play-with-esp-idf) demonstrating how to use the device with ESP-IDF.
 
-### [Frigate NVR with Raspberry Pi 5](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)
+### [Grove - Temperature Humidity Pressure Gas Sensor(BME680)](https://wiki.seeedstudio.com/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/)
 
-We have corrected the code for the [Install Hailo PCIe Driver operation](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-hailo-pcie-driver) and the [Install Frigate NVR section](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/#install-frigate-nvr).
+We have added an [example](https://wiki.seeedstudio.com/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/#play-with-esp-idf) demonstrating how to use the device with ESP-IDF.
 
-### [Getting Start with R2000 Series](https://wiki.seeedstudio.com/r2000_series_getting_start/)
+### [ePaper Panel in Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/)
 
-We have added the example for [flashing Ubuntu to NVMe](https://wiki.seeedstudio.com/r2000_series_getting_start/#flash-ubuntu-to-nvme).
-
-### [Pin Multiplexing with Seeed Studio XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/)
-
-We have added the example code for [analogRead with DMA on XIAO MG24](https://wiki.seeedstudio.com/xiao_mg24_pin_multiplexing/#software-implementation-2).
-
-### [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started/)
-
-We have optimized the content for the [Factory Reset operation](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset) in reCamera.
+We have added an example for the [Deep Sleep mode](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/#5-deep-sleep-mode).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio Round Display for XIAO Christmas Ball](https://wiki.seeedstudio.com/round_display_christmas_ball/)
+### [XIAO ESP32-C3 iBeacon with BME680 Sensor Using ESP-IDF](https://wiki.seeedstudio.com/xiao-c3-ibeacon/)
 
-<div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/Christmas_round_display/Christmas_ball.gif" style={{width:400, height:'auto'}}/>
-</div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-c3-ibeacon/2.webp" style={{width:600, height:'auto'}}/></div>
 
-On this tutorial I'm going to show you how you can create a Christmas ball with falling snow and changing background images. -->
+In this tutorial, we'll build a low-power temperature monitoring system that broadcasts environmental data using Bluetooth Low Energy (BLE) in iBeacon format. We'll use the Seeed Studio XIAO ESP32-C3, the XIAO expansion board, and a Grove BME680 environmental sensor. This project demonstrates how to build robust embedded applications using ESP-IDF—Espressif's official development framework.
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -73,7 +72,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 
 <details><summary>Click here</summary>
 
-- [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
+<!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
 - [weekly wiki on 3.13th](/Seeed_Elderly/weekly_wiki/wiki313)
 - [weekly wiki on 3.20th](/Seeed_Elderly/weekly_wiki/wiki320)
@@ -120,7 +119,7 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2024.3.04th](/Seeed_Elderly/weekly_wiki/wiki240304)
 - [weekly wiki on 2024.3.11th](/Seeed_Elderly/weekly_wiki/wiki240311)
 - [weekly wiki on 2024.3.18th](/Seeed_Elderly/weekly_wiki/wiki240318)
-- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325)
+- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325) -->
 - [weekly wiki on 2024.4.01st](/Seeed_Elderly/weekly_wiki/wiki240401)
 - [weekly wiki on 2024.4.08th](/Seeed_Elderly/weekly_wiki/wiki240408)
 - [weekly wiki on 2024.4.15th](/Seeed_Elderly/weekly_wiki/wiki240415)
@@ -165,5 +164,15 @@ On this tutorial I'm going to show you how you can create a Christmas ball with 
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
 - [weekly wiki on 2025.1.20th](/Seeed_Elderly/weekly_wiki/wiki250120)
 - [weekly wiki on 2025.1.27th](/Seeed_Elderly/weekly_wiki/wiki250127)
+- [weekly wiki on 2025.2.10th](/Seeed_Elderly/weekly_wiki/wiki250210)
+- [weekly wiki on 2025.2.17th](/Seeed_Elderly/weekly_wiki/wiki250217)
+- [weekly wiki on 2025.2.24th](/Seeed_Elderly/weekly_wiki/wiki250224)
+- [weekly wiki on 2025.3.03rd](/Seeed_Elderly/weekly_wiki/wiki250303)
+- [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
+- [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
+- [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
+- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
+- [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
+- [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
 
 </details>

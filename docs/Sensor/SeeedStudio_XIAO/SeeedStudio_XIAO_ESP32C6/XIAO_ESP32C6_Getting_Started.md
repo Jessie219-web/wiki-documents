@@ -53,7 +53,7 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
-## Specifications comparison
+### Specifications
 
 <table class="sp-table-c6">
     <thead>
@@ -153,7 +153,7 @@ export const Highlight = ({children, color}) => (
     </tbody>
 </table>
 
-## Features
+### Features
 
 - **Enhanced Connectivity**: Integrates ***2.4*** GHz Wi-Fi 6 (802.11ax), Bluetooth 5(LE), and IEEE 802.15.4 radio connectivity, allowing for the application of **Thread** and **Zigbee** protocols.
 - **Matter Native**: Supports the building of Matter-compliant smart home projects, ensuring interoperability among different smart devices.
@@ -192,7 +192,7 @@ By default, `GPIO14` is set to a low level, enabling the built-in antenna. To us
 ```cpp
 void setup() {
   pinMode(WIFI_ENABLE, OUTPUT); // pinMode(3, OUTPUT);
-  digitalWrite(WIFI_ENABLE, LOW) // digitalWrite(3, LOW); // Activate RF switch control
+  digitalWrite(WIFI_ENABLE, LOW); // digitalWrite(3, LOW); // Activate RF switch control
 
   delay(100);
 
@@ -225,7 +225,7 @@ XIAO ESP32C6 is shipped without pin headers by default, you need to prepare your
 
 Due to the miniature size of XIAO ESP32C6, please be careful when soldering headers, do not stick different pins together, and do not stick solder to the shield or other components. Otherwise, it may cause XIAO to short circuit or not work properly, and the consequences caused by this will be borne by the user.
 
-### BootLoader Mode
+#### BootLoader Mode
 
 There are times when we use the wrong program to make XIAO appear to lose ports or not work properly. The specific performance is:
 
@@ -238,7 +238,7 @@ When you encounter the above two situations, you can try to put XIAO into BootLo
 - **Step 2**. Keep the BOOT button pressed and then connect to the computer via the data cable. Release the BOOT button after connecting to the computer.
 - **Step 3**. Upload the **Blink** program to check the operation of the XIAO ESP32C6.
 
-### Reset
+#### Reset
 
 When the program runs abnormally, you can press Reset once during power-up to let XIAO re-execute the uploaded program.
 
@@ -293,7 +293,7 @@ Only available if the version of the esp32 board is greater than `3.0.0`.
 
 Now enjoy coding ✨.
 
-## Run your first Blink program
+#### Run your first Blink program
 
 - **Step 1.** Launch the Arduino application.
 
@@ -561,6 +561,9 @@ If you want to learn to use more of the deep sleep mode and wake-up functions, y
 - **[ZIP]** [Seeed Studio XIAO ESP32C6 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/SeeedStudio_XIAO_ESP32C6_Certification.zip)
 
 - 🔗 **[Kicad]** [Seeed Studio XIAO ESP32C6 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
+
+- **[STEP]** [Seeed Studio XIAO ESP32C6 Step file](https://grabcad.com/library/seeed-studio-xiao-esp32-c6-1)
+
 
 ## Course Resources
 

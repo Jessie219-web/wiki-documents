@@ -43,7 +43,116 @@ You need to prepare the following hardware
 - [usbboot tool](https://github.com/raspberrypi/usbboot)
 - [Raspberry Pi Imager APP](https://www.raspberrypi.com/software/)
 
+## Boot from NVME
+
+### Flash os to the NVME
+
+Please refer this [link](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#steps-for-flashing-raspbian-os), and then insert it into the M.2 slot.
+
+### Boot from emmc and update eeprom
+
+Use command like below to open the file
+```
+sudo nano /etc/default/rpi-eeprom-update
+```
+
+Modify as shown below:
+
+```
+FIRMWARE_RELEASE_STATUS="latest"
+RPI_EEPROM_USE_FLASHROM=1
+CM4_ENABLE_RPI_EEPROM_UPDATE=1
+```
+Use `Ctrl`+`x` to save the file.
+
+Use command like below to open the file
+```
+sudo nano /boot/firmware/config.txt
+```
+Modify `[cm4]` part as shown below:
+
+```
+[cm4]
+dtparam=spi=on
+dtoverlay=audremap
+dtoverlay=spi-gpio40-45
+```
+Use `Ctrl`+`x` to save the file, and reboot the machine use command:
+```
+sudo reboot
+```
+Then update the eeprom use command like below:
+
+```
+sudo rpi-eeprom-update -a
+```
+The output is like below:
+
+```
+recomputer@reComputer-R100x:~ $ sudo rpi-eeprom-update -a
+BOOTLOADER: up to date
+   CURRENT: Tue Feb 11 05:00:13 PM UTC 2025 (1739293213)
+    LATEST: Tue Feb 11 05:00:13 PM UTC 2025 (1739293213)
+   RELEASE: latest (/usr/lib/firmware/raspberrypi/bootloader-2711/latest)
+            Use raspi-config to change the release.
+
+  VL805_FW: Using bootloader EEPROM
+     VL805: up to date
+   CURRENT: 
+    LATEST: 
+```
+
+### Flash the lastest eeprom and modify the boot order
+
+Use command like below to open the raspi-config:
+
+```
+sudo raspi-config 
+```
+Scroll down to `Advanced Options` and press Enter:
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_1.png" alt="pir" width="700" height="auto" /></div>
+
+Scroll down to `Bootloader Version` and press Enter:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_2.png" alt="pir" width="700" height="auto" /></div>
+
+And finally choose `Latest`, and press Enter:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_3.png" alt="pir" width="700" height="auto" /></div>
+
+Select `No` here - you want the `latest` bootloader.
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_4.png" alt="pir" width="700" height="auto" /></div>
+
+And exit from the tool by selecting `Finish`:
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_5.png" alt="pir" width="700" height="auto" /></div>
+
+If asked to reboot, select `Yes`.
+
+<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/g_6.png" alt="pir" width="700" height="auto" /></div>
+
+Then modify the boot order with command like below:
+
+```
+sudo -E rpi-eeprom-config --edit
+```
+Modify the file like below:
+
+```
+[all]
+BOOT_UART=0
+WAKE_ON_GPIO=1
+POWER_OFF_ON_HALT=0
+BOOT_ORDER=0xf416
+```
+Use `Ctrl`+`x` to save the file, and then reboot your machine.
+
+
 ## Steps for Flashing Raspbian OS
+
+> **Note:** The latest system image packaged by Seeed, including the appropriate drivers: [pi-gen-expand](https://github.com/Seeed-Studio/pi-gen-expand)
+
 
 - **Step 1.** Make sure switch is set to `Flash mode` according to the diagram below:
 
@@ -135,7 +244,7 @@ Now you can skip to **[here](#install-drivers)**
 
 :::caution
 **You need to install [homebrew](https://brew.sh/) before proceed the following steps.**
-Please open a terminal and type ```brew -V``` to check if you have setup the correct homebrew environment, you should see the version of the homebrew environment you have installed.
+Please open a terminal and type ```brew -v``` to check if you have setup the correct homebrew environment, you should see the version of the homebrew environment you have installed.
 :::
 
 - **Step 1.** Clone the **usbboot** repository

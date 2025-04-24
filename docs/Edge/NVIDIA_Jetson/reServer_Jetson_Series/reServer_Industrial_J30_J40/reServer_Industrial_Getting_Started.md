@@ -1,6 +1,6 @@
 ---
 description: reServer Industrial Getting Started
-title: reServer Industrial
+title: reServer Industrial Getting Started
 keywords:
 - reServer
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
@@ -15,8 +15,6 @@ last_update:
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/reServer-Industrial/1.png"/></div>
 
 reServer Industrial series offers fanless, compact, AI-enabled NVR (Network Video Recorder) servers including NVIDIA Jetson™ Orin Nano/Orin NX modules, ranging from 20 TOPS to 100 TOPS AI performance. reServer Industrial is preinstalled with Jetpack 5.1.1, simplifies development, ideal for bulding VMS (Video Management System) together with powerful AI capabilities, which brings digital transformantion across industries of smart cities, security, industrial automation, smart factories.
-
-reServer Industrial features 2x 2.5" SATA HDD/ SSD drive bays to easily store hundreds of local video footages in a video analytics application. Also it enables multiple connectivity options including 5 RJ-45 Ethernet ports, 1 RS232/422/485, 4x Isolated DI/DO, 1x CAN, 4* USB3.1. Fanless design with versatile mounting options allows deployment from -20 to 60 ℃, which is ideal for more harsh environments and heavier loads.
 
 reServer Industrial comes with a passive heatsink and a fanless design, making it ideal for use in demanding environments. The passive heatsink allows for efficient cooling without the need for a fan, reducing the risk of component failure due to dust or other contaminants. The fanless design also reduces noise levels and power consumption, making it suitable for use in noise-sensitive environments and minimizing energy costs.
 
@@ -314,7 +312,7 @@ import TabItem from '@theme/TabItem';
     </thead>
     <tbody>
       <tr>
-        <td rowSpan={3}>reServer Industrial J4012</td>
+        <td rowSpan={4}>reServer Industrial J4012</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -323,6 +321,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EWxVw3rZF-JPuKp0ksJZkGABWmsSxVizaJIqQBL5TDL1JA?e=4JJ2XV" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaRzlOF50wRDvR-1NIgs61YBKz-py02JpUSoa2xKw8i0YQ?e=Lg5LgL" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
@@ -346,7 +354,7 @@ import TabItem from '@theme/TabItem';
         </td>
       </tr>
       <tr>
-        <td rowSpan={3}>reServer Industrial J4011</td>
+        <td rowSpan={4}>reServer Industrial J4011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -355,6 +363,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EW5Dood6aQ9DpT6ZaXWF50QBmyAyOowCktzqZj48sQeyhw?e=VVP56J" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ES3YbJVFEWBMjaDiE49HNIwB99DwjtfX4QUl3j9Y2eG5KA?e=uBlimq" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
@@ -380,7 +398,7 @@ import TabItem from '@theme/TabItem';
         </td>
       </tr>
       <tr>
-        <td rowSpan={3}>reServer Industrial J3011</td>
+        <td rowSpan={5}>reServer Industrial J3011</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -389,6 +407,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/Eb6xTuWGRdlDpJfgLSWS7S4BpnKYxkI9RKl6tJbU0xI4FQ?e=m84vbP" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERyNbY0Uv3FDpjaziT2Ni3QBZJvs-v5gQ1RXcYwH4x-UxQ?e=jlBd3I" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
@@ -413,7 +441,18 @@ import TabItem from '@theme/TabItem';
         </td>
       </tr>
       <tr>
-        <td rowSpan={3}>reServer Industrial J3010</td>
+        <td>6.2</td>
+        <td>36.4.3</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESNHrERy6DJCotXjFJT_5yYBbRzp7AHYujEsbcT4B4ZNCg?e=d1BePF" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td rowSpan={5}>reServer Industrial J3010</td>
         <td>5.1.1</td>
         <td>35.3.1</td>
         <td>
@@ -421,6 +460,16 @@ import TabItem from '@theme/TabItem';
         </td>
         <td>
           <a href="https://szseeedstudio-my.sharepoint.cn/:u:/g/personal/youjiang_yu_szseeedstudio_partner_onmschina_cn/EfzhFgx4V3NGu3q1MBtdqFkBdIxC0emeKmE22AHQL1GxhQ?e=KNHsQm" target="_blank" rel="noopener noreferrer">Download2</a>
+        </td>
+      </tr>
+      <tr>
+        <td>5.1.3</td>
+        <td>35.5.0</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQwZP5Sc6YZDrhcE6BFeMjoBVVq5BLwhT9qXhRKzk8_oyA?e=oSzcOc" target="_blank" rel="noopener noreferrer">Download1</a>
+        </td>
+        <td>
+          -
         </td>
       </tr>
       <tr>
@@ -438,6 +487,17 @@ import TabItem from '@theme/TabItem';
         <td>36.4</td>
         <td>
           <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYKvmiXvDrZKnyrWpGDKBXMByXVFfgOkbl0NyF3LY8bEWQ?e=ydwLF5" target="_blank" rel="noopener noreferrer">Download1
+          </a>
+        </td>
+        <td>
+          -
+        </td>
+      </tr>
+      <tr>
+        <td>6.2</td>
+        <td>36.4.3</td>
+        <td>
+          <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaZE000_qQJMvjwjHeCNLxsBh7Uip9Gb5taPt5YqH5TMhg?e=Pfup2v" target="_blank" rel="noopener noreferrer">Download1
           </a>
         </td>
         <td>
@@ -641,112 +701,15 @@ There are 2 LEDs (green and yellow) on each Ethernet port which indicates the fo
   </TabItem>
   </Tabs>
 
-
-### Binding Physical Network Ports to eth Numbers
-
-- Step 1: Create udev Rule File
-
-  Create a file in the `/etc/udev/rules.d/` directory named `10-persistent-net.rules` with the following content:
-
-  ```bash
-  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0008:01:00.0", NAME="eth0"
-  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0001:01:00.0", NAME="eth1"
-  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0007:03:00.0", NAME="eth2"
-  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0007:04:00.0", NAME="eth3"
-  SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", KERNELS=="0007:05:00.0", NAME="eth4"
-  ```
-
--  Step 2: Create Network Configuration Files
-
-    In the `/etc/systemd/network/` directory, create the following files for each `eth` interface:
-
-    - `eth1.network`
-    - `eth2.network`
-    - `eth3.network`
-    - `eth4.network`
-
-    #### Sample Content for Each `.network` File
-
-    For **eth1**:
-
-    ```ini
-    [Match]
-    Name=eth1
-
-    [Link]
-    MACAddress=<MAC address of the first port from the right>
-
-    [Network]
-    DHCP=yes
-    ```
-
-    For **eth2**:
-
-    ```ini
-    [Match]
-    Name=eth2
-
-    [Link]
-    MACAddress=<MAC address of the second port from the right>
-
-    [Network]
-    DHCP=yes
-    ```
-
-    For **eth3**:
-
-    ```ini
-    [Match]
-    Name=eth3
-
-    [Link]
-    MACAddress=<MAC address of the third port from the right>
-
-    [Network]
-    DHCP=yes
-    ```
-
-    For **eth4**:
-
-    ```ini
-    [Match]
-    Name=eth4
-
-    [Link]
-    MACAddress=<MAC address of the fourth port from the right>
-
-    [Network]
-    DHCP=yes
-    ```
-
-    You can copy the MAC address for each port from the system settings and paste it in the relevant `[Link]` section.
-
--  Step 3: Enable and Start the systemd-networkd Service
-
-    Enable and start the `systemd-networkd` service with the following commands:
-
-    ```bash
-    sudo systemctl enable systemd-networkd
-    sudo systemctl start systemd-networkd
-    ```
-
-  -  Step 4: Reboot the System
-
-      Finally, reboot the system to apply the changes:
-
-      ```bash
-      sudo reboot
-      ```
-
-      Once the system restarts, the new eth interface bindings will take effect.
-
 ### Binding Physical Network IP to eth Numbers
+  **The interfaces eth0 to eth3 are designated for PoE, with eth3 specifically referred to as PoE4.**
+
   If you need to configure different IP addresses for each POE interface, follow these instructions:
 
   **Step 1**: Connect the POE to the reServer Industrial device. For example, to configure eth3, set the name of eth3 to POE3.
 
   ```bash
-  sudo nmcli connection add type ethernet ifname eth3 con-name POE3
+  sudo nmcli connection add type ethernet ifname eth4 con-name POE3
   ```
 
   **Step 2**: Configure the IP address of POE3 to **192.168.6.6**. The IP address can be customized according to actual usage.
@@ -923,14 +886,14 @@ We will explain how to do a simple benchmark on the connected SSD
 - **Step 1:** Check the write speed by executing the below command
 
 ```sh
-sudo dd if=/dev/zero of=/home/nvidia/test bs=1M count=512 conv=fdatasync
+sudo dd if=/dev/zero of=/home/$USER/test bs=1M count=512 conv=fdatasync
 ```
 
 - **Step 2:** Check the read speed by executing the below commands. Make sure to execute this after executing the above command for write speed.
 
 ```sh
 sudo sh -c "sync && echo 3 > /proc/sys/vm/drop_caches"
-sudo dd if=/home/nvidia/test of=/dev/null bs=1M count=512
+sudo dd if=/home/$USER/test of=/dev/null bs=1M count=512
 ```
 
 ### mini PCIe
@@ -2441,12 +2404,8 @@ gpiochip0: GPIOs 348-511, parent: platform/2200000.gpio, tegra234-gpio:
 (change the links)
 - [reServer Industrial Datasheet](https://files.seeedstudio.com/wiki/reServer-Industrial/reServer-Industrial-Datasheet.pdf)
 - [reServer Industrial Reference Guide](https://files.seeedstudio.com/wiki/reServer-Industrial/reServer-Industrial-Reference-Guide.pdf)
+- [NVIDIA Jetson Devices and Carrier Boards Comparison](https://files.seeedstudio.com/products/NVIDIA/NVIDIA-Jetson-Devices-and-carrier-boards-comparision.pdf)
 - [reServer Industrial 3D File](https://files.seeedstudio.com/wiki/reServer-Industrial/reServer-Industrial-3D.stp)
-- [Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
-- [Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
-- [Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)
-- [Seeed Jetson Devices One Page](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-Jetson-one-pager.pdf)
-
 
 ## Tech Support
 

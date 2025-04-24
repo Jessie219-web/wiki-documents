@@ -28,7 +28,7 @@ SO-ARM100 和 reComputer Jetson AI 智能机器人套件无缝结合了高精度
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html">
+<a class="get_one_now_item" href="https://s.click.taobao.com/j6b5cCs">
             <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
 </a></div>
 
@@ -97,11 +97,14 @@ For Ubuntu X86:
   - CUDA 11.5+
   - Python 3.10
   - Troch 2.5.0+
+  - libtiff 4.5.0/4.5.1
+  - Opencv 3.11.0
 
 For Jetson Orin:
   - Jetson Jetpack 5.1.3+
   - Python 3.10
   - Torch 2.5.0+
+  - Opencv 3.11.0
 
 ## 3D打印指南
 
@@ -109,7 +112,7 @@ For Jetson Orin:
 
 1. **选择打印机**: 提供的STL文件可直接在多种FDM打印机上打印。以下为测试和建议设置，其他设置也可能有效：
     - 材料: PLA
-    - 喷嘴直径和精度: 0.2mm喷嘴直径，层高0.2mm；或0.6mm喷嘴直径，层高0.4mm。
+    - 喷嘴直径和精度: 0.4mm喷嘴直径，层高0.2mm；或0.6mm喷嘴直径，层高0.4mm。
     - 填充密度: 13%
 
 2. **获取3D打印文件**: 从动和主动手臂的所有部件均包含在单个文件中，并以Z轴向上正确定向，最小化支撑需求。
@@ -132,8 +135,6 @@ For Jetson Orin:
 1. 安装Miniconda：
 
 ```bash
-mkdir -p ~/miniconda3
-cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
 chmod +x Miniconda3-latest-Linux-aarch64.sh
 ./Miniconda3-latest-Linux-aarch64.sh
@@ -141,12 +142,11 @@ chmod +x Miniconda3-latest-Linux-aarch64.sh
 
 重新启动Shell或执行 `source ~/.bashrc`
 
-
-
-如果是Windows上的Ubuntu系统：
+如果是X86上的Ubuntu系统：
 
 ```bash
 mkdir -p ~/miniconda3
+cd ~/miniconda3
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm ~/miniconda3/miniconda.sh
@@ -168,7 +168,19 @@ git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 ```bash
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
-Linux用户需额外安装录制数据集的依赖项：
+
+对于Jetson Jetpack6.0+设备（Jetson设备请先安装好步骤5的[安装Pytorch-gpu和Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)再执行这一步）:
+
+```bash
+conda install -y -c conda-forge "opencv>=4.10.0.84"  #通过conda安装opencv其他依赖，这一步只针对Jetson Jetpack6.0+
+conda remove opencv   # 卸载opencv 
+pip3 install opencv-python==4.10.0.84  #再通过pip3 来安装opencv-python
+conda install -y -c conda-forge ffmpeg
+conda uninstall numpy
+pip3 install numpy==1.26.0  #要和torchvision相匹配
+```
+
+X86的Linux用户需额外安装录制数据集的依赖项：
 ```bash
 conda install -y -c conda-forge ffmpeg
 pip uninstall -y opencv-python
@@ -190,12 +202,16 @@ print(torch.cuda.is_available())
 
 ## 校准舵机并组装机械臂
 
-官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也粗略的记录了我们的舵机校准和机械臂安装过程。
+官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也记录了我们的舵机校准和机械臂安装过程。
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114176236191787&bvid=BV1WiQiY1EYP&cid=28909307865&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114182410272948&bvid=BV1KFX5YREjU&cid=28929295238&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187896425203&bvid=BV1MJQRYgEUw&cid=28947320683&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
 
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746789925626&bvid=BV1uP6JY5EH3&cid=27745060436&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
-
-要查找每个机械臂的正确端口，请运行脚本两次：
+在终端输入以下指令来找到两个机械臂对应的端口号：
 
 ```bash
 python lerobot/scripts/find_motors_bus_port.py
@@ -237,9 +253,9 @@ python lerobot/scripts/configure_motor.py \
 
 ## 校准机械臂
 
-接下来，你需要校准你的 SO-100 机器人，以确保领导臂和跟随臂在相同物理位置时具有相同的位置值。此校准至关重要，因为它允许在一个 SO-100 机器人上训练的神经网络在另一个机器人上运行。
+接下来，你需要校准你的 SO-100 机器人，以确保领导臂和跟随臂在相同物理位置时具有相同的位置值。此校准至关重要，因为它允许在一个 SO-100 机器人上训练的神经网络在另一个机器人上运行，如果需要重新校准机械臂，请删除`~/lerobot/.cache/huggingface/calibration/so100`文件夹。
 
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806637856&bvid=BV12M6JY6EWf&cid=27627684047&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187913200955&bvid=BV1KWQRYqEdb&cid=28947516809&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
 
 > 机械臂的校准应严格按照 Lerobot 官方教程中的
@@ -248,6 +264,7 @@ python lerobot/scripts/configure_motor.py \
 
 
 首先，您需要确保 [SO100RobotConfig](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py) `lerobot/lerobot/common/robot_devices/robots /configs.py` 文件中机器人手臂的串口号与您的设备一致，如下图所示。您可以根据 `ls /dev/ttyACM*` 查看所有串口名称。
+
 
 ```python
 @RobotConfig.register_subclass("so100")
@@ -317,6 +334,14 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_leader"]'
 ```
 
+| **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
+|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_zero_position.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rotated_position.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rest_position.jpg) |
+| **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
+| ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_zero_position.jpg) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rotated_position.jpg) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rest_position.jpg) |
+
+
+
 ## 遥操作
 
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806571580&bvid=BV14M6JY6E72&cid=27744995936&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
@@ -334,7 +359,7 @@ python lerobot/scripts/control_robot.py \
 
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806636901&bvid=BV12M6JY6Erv&cid=27744931613&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
-在插入您的两个 USB 摄像头后，运行以下脚本以检查摄像头的端口号。
+在插入您的两个 USB 摄像头后，运行以下脚本以检查摄像头的端口号，切记摄像头不能插在USB Hub上，要直接插在设备上，USB Hub速率太慢会导致读不到图像数据。
 ```bash
 python lerobot/common/robot_devices/cameras/opencv.py \
     --images-dir outputs/images_from_opencv_cameras
@@ -343,7 +368,7 @@ python lerobot/common/robot_devices/cameras/opencv.py \
 终端将打印出以下信息。
 
 ```markdown
-Mac or Windows detected. Finding available camera indices through scanning all indices from 0 to 60
+Mac or X86 Ubuntu detected. Finding available camera indices through scanning all indices from 0 to 60
 [...]
 Camera found at index 2
 Camera found at index 4
@@ -520,8 +545,11 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so100_test \
   --job_name=act_so100_test \
   --device=cuda \
-  --wandb.enable=true
+  --wandb.enable=false \
+  --dataset.local_files_only=false
 ```
+
+如果你想训练本地数据集，在命令后加上`--dataset.local_files_only=true`即可。
 
 让我们解释一下：
 1. 我们使用 `--dataset.repo_id=${HF_USER}/so100_test` 提供了数据集本地路径或上传到Huggingface的数据集ID作为参数。
@@ -546,7 +574,7 @@ python lerobot/scripts/control_robot.py \
   --control.episode_time_s=30 \
   --control.reset_time_s=30 \
   --control.num_episodes=10 \
-  --control.push_to_hub=true \
+  --control.push_to_hub=false \
   --control.policy.path=outputs/train/act_so100_test/checkpoints/last/pretrained_model
 ```
 
@@ -555,6 +583,50 @@ python lerobot/scripts/control_robot.py \
 2. 数据集的名称以 `eval` 开头，以反映您正在运行推理（例如 `${HF_USER}/eval_act_so100_test`）。
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113746806575007&bvid=BV1xM6JY6Ess&cid=27744930563&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+## FAQ
+
+- 如果实用本文档教程，请git clone本文档推荐的github仓库`https://github.com/ZhuYaoHui1998/lerobot.git`，本文档推荐的仓库是验证过后的稳定版本，Lerobot官方仓库是实时更新的最新版本，会出现一些无法预知的问题，例如数据集版本不同，指令不同等。
+
+- 如果遇到以下报错，需要检查对应端口号的机械臂是否接通电源，总线舵机是否出现数据线松动或者脱落。
+  ```bash
+  ConnectionError: Read failed due to comunication eror on port /dev/ttyACM0 for group key Present_Position_Shoulder_pan_Shoulder_lift_elbow_flex_wrist_flex_wrist_roll_griper: [TxRxResult] There is no status packet!
+  ```
+
+- 如果你维修或者更换过机械臂零件，请完全删除`~/lerobot/.cache/huggingface/calibration/so100`文件夹并重新校准机械臂
+
+- 如果遥操作正常，而带Camera的遥操作无法显示图像界面，请参考[这里](https://github.com/huggingface/lerobot/pull/757/files)
+
+- 如果在数据集遥操作过程中出现libtiff的问题，请更新libtiff版本。
+  ```bash
+  conda install libtiff==4.5.0  #for Ubuntu 22.04 is libtiff==4.5.1
+  ```
+
+- 执行完[安装Lerobot](https://wiki.seeedstudio.com/cn/lerobot_so100m/#%E5%AE%89%E8%A3%85lerobot)可能会自动卸载gpu版本的pytorch，所以需要在手动安装torch-gpu。
+
+- 对于Jetson，请先安装[Pytorch和Torchvsion](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson)再执行`conda install -y -c conda-forge ffmpeg`,否则编译torchvision的时候会出现ffmpeg版本不匹配的问题。
+
+- 如果出现如下问题，是电脑的不支持此格式的视频编码，需要修改`lerobot/lerobot/common/datasets
+/video_utils.py`文件134行`vcodec: str = "libsvtav1"`的值修改为`libx264`或者`libopenh264`,不同电脑参数不同，可以进行尝试。 [Issues 705](https://github.com/huggingface/lerobot/issues/705)
+
+  ```bash
+  [vost#0:0 @ 0x13207240] Unknown encoder 'libsvtav1' [vost#0:0 @ 0x13207240] Error selecting an encoder Error opening output file /home/han/.cache/huggingface/lerobot/lyhhan/so100_test/videos/chunk-000/observation.images.laptop/episode_000000.mp4. Error opening output files: Encoder not found
+  ``` 
+
+- 重要的事！！！如果再执行过程中舵机的数据线松动，请恢复这个舵机到初始位置再重新链接舵机数据线，也可以通过[初始化舵机命令](https://wiki.seeedstudio.com/cn/lerobot_so100m/#%E6%A0%A1%E5%87%86%E8%88%B5%E6%9C%BA%E5%B9%B6%E7%BB%84%E8%A3%85%E6%9C%BA%E6%A2%B0%E8%87%82)单独校准某个舵机，校准单独的舵机的时候确保舵机上只有一个数据线与驱动板相连。如果出现
+  ```bash
+  Auto-correct calibration of motor 'wrist roll' by shifting value by 1 full turns, from '-270 < -312.451171875 < 270degrees' to'-270<-312.451171875 < 270 degrees'.
+  ```
+  或者校准机械臂过程中的其他关于角度和超出限位值的报错，这个方法依然适用。
+
+- 在3060的8G笔记本上训练ACT的50组数据的时间大概为6小时，在4090和A100的电脑上训练50组数据时间大概为2~3小时。
+
+- 数据采集过程中要确保摄像头位置和角度和环境光线的稳定，并且减少摄像头采集到过多的不稳定背景和行人，否则部署的环境变化过大会导致机械臂无法正常抓取。
+
+- 数据采集命令的num-episodes要确保采集数据足够，不可中途手动暂停，因为在数据采集结束后才会计算数据的均值和方差，这在训练中是必要的数据。
+
+- 如果程序提示无法读取USB摄像头图像数据，请确保USB摄像头不是接在Hub上的，USB摄像头必须直接接入设备，确保图像传输速率快。
+
 
 ## 参考文档
 矽递科技英文Wiki文档：[How to use the SO100Arm robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)

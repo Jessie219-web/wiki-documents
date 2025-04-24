@@ -17,3 +17,5 @@ The eMMC versions of ODYSSEY-X86 will have Windows 10 pre-installed into the dev
   - This image supports **Auto Flash**. Simply download the above image and unzip the files and place in the **root location of a USB drive**.
 
   - Plug in the USB drive to ODYSSEY-X86 and boot up from the USB Drive. This will auto flash the Original Windows 10 Image back in the eMMC.
+
+- [**Windows 11 Por Image**](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EakKcMn5yvhMkKtm7Fw6JcYBl5L-lGsCgjo_OWJ9L7ts7Q?e=5Dzi3v)
