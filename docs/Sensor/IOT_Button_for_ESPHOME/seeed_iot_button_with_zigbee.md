@@ -68,7 +68,7 @@ The easiest way to get started is to use the pre-built Zigbee firmware for the I
 
 ### Step 1: Download the Pre-built Firmware
 
-1. Visit the [Seeed IoT Button GitHub repository](https://github.com/Seeed-Projects/Seeed_IoT_Button)
+1. Visit the [Seeed IoT Button GitHub repository](https://github.com/Seeed-Projects/Seeed_IoT_Button_Zigbee)
 2. Navigate to the `Zigbee_Seeed_IoT_Button/build/factory_firmware_zigbee` directory
 3. Download the firmware files:
    - `Zigbee_Seeed_IoT_Button.merged.bin` (for single-file flashing)
@@ -188,7 +188,7 @@ The IoT Button uses Espressif's Zigbee SDK which is included in the ESP32 Arduin
 
 ### Step 4: Set Up the Zigbee Multi-Button Files
 
-1. Download the `ZigbeeMultiButton.h` and `ZigbeeMultiButton.cpp` files from the [Seeed IoT Button GitHub repository](https://github.com/Seeed-Projects/Seeed_IoT_Button/tree/main/Zigbee_Seeed_IoT_Button)
+1. Download the `ZigbeeMultiButton.h` and `ZigbeeMultiButton.cpp` files from the [Seeed IoT Button GitHub repository](https://github.com/Seeed-Projects/Seeed_IoT_Button_Zigbee/tree/main/Zigbee_Seeed_IoT_Button)
 2. Copy these files to the Arduino Zigbee endpoint directory:
    ```
    <Arduino_Installation_Path>/libraries/Zigbee/src/ep/
@@ -436,7 +436,8 @@ After the battery has been removed, due to the chip protection strategy of the 1
 
 ## Resources
 
-- **[GITHUB]** [Seeed IoT Button Github Zigbee & ESPHome Repository](https://github.com/Seeed-Projects/Seeed_IoT_Button)
+- **[GITHUB]** [Seeed IoT Button Github Zigbee Repository](https://github.com/Seeed-Projects/Seeed_IoT_Button_Zigbee)
+- **[GITHUB]** [Seeed IoT Button Github ESPHome Repository](https://github.com/Seeed-Studio/xiao-esphome-projects/tree/main/projects/seeedstudio-iot-button)
 - **[PDF]** [Seeed IoT Button SCH PDF](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH.pdf)
 - **[SCH&PCB]** [Seeed IoT Button SCH & PCB](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH&PCB.zip)
 
