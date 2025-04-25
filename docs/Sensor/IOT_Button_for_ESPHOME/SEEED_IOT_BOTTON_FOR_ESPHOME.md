@@ -86,7 +86,7 @@ For the IoT Button with its built-in ESP32-C6, select "ESP32" as the device type
 
 The easiest way to get started with the IoT Button is to use the Web Flasher tool to install the pre-built ESPHome firmware directly from your browser.
 
-**Step 1**: Visit the [Seeed Studio IoT Button Firmware Flasher](https://seeed-projects.github.io/Seeed_IoT_Button/) website.
+**Step 1**: Visit the [Seeed Studio IoT Button Firmware Flasher](https://gadgets.seeed.cc/) website.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/iot_button_zigbee/3.png" style={{width:800, height:'auto'}}/></div>
 
@@ -620,7 +620,8 @@ After the battery has been removed, due to the chip protection strategy of the 1
 
 ## Resources
 
-- **[GITHUB]** [Seeed IoT Button Github Zigbee & ESPHome Repository](https://github.com/Seeed-Projects/Seeed_IoT_Button)
+- **[GITHUB]** [Seeed IoT Button Github Zigbee Repository](https://github.com/Seeed-Projects/Seeed_IoT_Button_Zigbee)
+- **[GITHUB]** [Seeed IoT Button Github ESPHome Repository](https://github.com/Seeed-Studio/xiao-esphome-projects/tree/main/projects/seeedstudio-iot-button)
 - **[PDF]** [Seeed IoT Button SCH PDF](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH.pdf)
 - **[SCH&PCB]** [Seeed IoT Button SCH & PCB](https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/Seeed_IoT_Button_SCH&PCB.zip)
 

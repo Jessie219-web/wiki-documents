@@ -218,7 +218,7 @@ Grove Beginner Kit for Arduino is one of the best Arduino Beginner Kit for begin
 
 
 :::tip
-For more kits about Ardunio, please click [here](https://www.seeedstudio.com/shopby/grove.html).
+For more kits about Arduino, please click [here](https://www.seeedstudio.com/shopby/grove.html).
 :::
 
 #### Raspberry Pi Board-based
