@@ -904,6 +904,7 @@ const sidebars = {
               },
               items: [
                 'Sensor/SenseCAP/SenseCAP_Probe/SenseCAP_Sensor_Probes_Product_Catalogue',
+                'Sensor/SenseCAP/SenseCAP_Probe/Total_Solar_Radiation_Sensor',
                 'Sensor/SenseCAP/SenseCAP_Probe/Liquid-Level-Sensor',
                 'Sensor/SenseCAP/SenseCAP_Probe/Water-Leak-Detector',
                 'Sensor/SenseCAP/SenseCAP_Probe/Industrial-ph-Sensor',
@@ -5719,7 +5720,7 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: '基于 XIAO 的毫米波雷达',
+          label: '基于 XIAO 的 GPS 模块',
           items: [
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/CN_L76K_GNSS_Module',
             'zh-CN/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO/CN_L76K_GNSS_Ubidots_Map_Track'
@@ -5757,6 +5758,29 @@ const sidebars = {
     // 'zh-CN/Sensor/SeeedStudio_XIAO/CN_PCB_Design_XIAO',
     'zh-CN/Sensor/SeeedStudio_XIAO/CN_SeeedStudio_XIAO_Series_Projects',
     'zh-CN/Sensor/SeeedStudio_XIAO/CN_XIAO_FAQ',
+  
+    {
+      type: 'doc',
+      id: 'zh-CN/Meshtastic_Network/meshtastic_intro',
+      label: 'Meshtastic 网络',
+      className: 'sideboard_calss',
+    },
+
+        {
+          type: 'category',
+          label: 'SenseCAP T1000-E Tracker',
+          items: [
+            'zh-CN/Meshtastic_Network/T1000-E/t1000_e_intro',
+            'zh-CN/Meshtastic_Network/T1000-E/sensecap_t1000_e',
+          ]
+        },  
+        {
+          type: 'category',
+          label: 'SenseCAP太阳能节点',
+          items: [
+            'zh-CN/Meshtastic_Network/Solar_Node/solar_node',
+          ]
+        },  
 
     {
       type: 'doc',
@@ -5764,7 +5788,6 @@ const sidebars = {
       label: 'NVIDIA Jetson 套件',
       className: 'sideboard_calss',
     },
-
     {
       type: 'category',
       label: 'reComputer 英伟达系列',
@@ -5899,7 +5922,9 @@ const sidebars = {
           //   id: 'Edge/NVIDIA_Jetson/Application/Computer_Vision',
           // },
           items: [
+            'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/XiaoPi_zh',
             'zh-CN/Edge/NVIDIA_Jetson/Application/Robotic/Lerobot_SO100Arm_zh',
+
           ]
         },
         {

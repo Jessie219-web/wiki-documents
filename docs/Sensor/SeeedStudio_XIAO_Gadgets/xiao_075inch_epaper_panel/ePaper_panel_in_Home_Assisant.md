@@ -470,9 +470,11 @@ First, you need to install an screenshot Add-on **Puppet**, [click here to insta
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/83.jpg" style={{width:800, height:'auto'}}/></div>
 
-After installation, go to **Configuration page**. We need to create a access_token for this add-on.
+Please note that the version should be **higher than or equal to 1.11.4**. After installation, go to **Configuration page**. We need to create a access_token for this add-on.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/87.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/96.jpg" style={{width:800, height:'auto'}}/></div>
+
+See next step to create a token and paste here.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/88.jpg" style={{width:800, height:'auto'}}/></div>
 
@@ -482,27 +484,39 @@ Go to the bottom of **Security page** and create a token, and then copy and past
 
 Remember to **restart** the Puppet add-on.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/75.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/95.jpg" style={{width:800, height:'auto'}}/></div>
 
 Starting the add-on will launch a new server on port 10000. Any path you request will return a screenshot of that page. You will need to specify the viewport size you want.
 
 For example, to get a 1000px x 1000px screenshot of your default dashboard, fetch:
 
 ```python
-# http://homeassistant.local:10000/lovelace/0?viewport=1000x1000
+# http://192.168.1.191:10000/lovelace/0?viewport=1000x1000(My address)
 
-http://192.168.1.191:10000/lovelace/0?viewport=1000x1000
+http://homeassistant.local:10000/lovelace/0?viewport=1000x1000
+```
+
+To reduce the color palette for e-ink displays, you can add the eink parameter. The value represents the number of colors (including black) to use. For example, for a 2-color e-ink display:
+
+```python
+http://homeassistant.local:10000/lovelace/0?viewport=1000x1000&eink=2
+```
+
+If you are using eink=2, you can also invert the colors by adding the invert parameter:
+
+```python
+http://homeassistant.local:10000/lovelace/0?viewport=1000x1000&eink=2&invert
 ```
 
 Besides, you can also screenshot other page, for example **To-do lists** page in HA:
 
 ```python
-http://192.168.1.191:10000/todo?viewport=800x480
+http://192.168.1.191:10000/todo?viewport=800x480&eink=2&invert
 ```
 
 You can take a look the effect of the screenshot by input this link in your browser.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/77.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/92.jpg" style={{width:800, height:'auto'}}/></div>
 
 After that, you can copy the code below and paste it to **captive_portal** part as the following image.
 <details>
@@ -521,7 +535,7 @@ online_image:
     format: PNG
     type: BINARY
     buffer_size: 30000
-    url: http://192.168.1.191:10000/todo?viewport=800x480 #change this link to your screenshot link
+    url: http://192.168.1.191:10000/todo?viewport=800x480&eink=2&invert #change this link to your screenshot link
     update_interval: 30s
     on_download_finished:
       - delay: 0ms
@@ -547,11 +561,11 @@ display:
 
 </details>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/91.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/93.jpg" style={{width:800, height:'auto'}}/></div>
 
 When you see the feedback like the following image, it means the code is running successfully.
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/79.JPG" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/94.jpg" style={{width:600, height:'auto'}}/></div>
 
 
 </TabItem>

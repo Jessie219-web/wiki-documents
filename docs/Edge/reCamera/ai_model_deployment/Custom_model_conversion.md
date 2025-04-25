@@ -26,7 +26,7 @@ This article introduces how to use reCamera's AI model conversion tool through s
 
 ### Method 1: Installation in a Docker Image (recommend)
 
-Download the required image from [DockerHub (click here)](https://hub.docker.com/r/sophgo/tpuc_dev) and enter a command similar to the following:
+Download the required image from [DockerHub (click here)](https://hub.docker.com/r/sophgo/tpuc_dev) and we recommend using **version 3.1**:
 
 ```bash
 docker pull sophgo/tpuc_dev:v3.1
@@ -56,7 +56,6 @@ Use `pip` to install `tpu_mlir` inside the Docker container, just like in `Metho
 ```bash
 pip install tpu_mlir[all]==1.14
 ```
-
 
 ### Method 2: Local Installation
 
@@ -92,10 +91,10 @@ When the tpu_mlir-{version}.whl file already exists locally, you can also use th
 pip install path/to/tpu_mlir-{version}.whl[all]
 ```
 
-
 ## Convert and Quantize AI Models to the cvimodel Format
 
 ### Preparing the ONNX
+
 reCamera has already adapted the YOLO series for local inference. Therefore, this section uses `yolo11n.onnx` as an example to demonstrate how to convert an ONNX model to the `cvimodel`.
 **The `cvimodel` is the AI model format used for local inference on reCamera.**
 
@@ -103,48 +102,57 @@ The method for converting and quantizing PyTorch, TFLite, and Caffe models is th
 
 Here is the download link for yolo11n.onnx. You can click the link to download the model and copy it to your `Workspace` for further use.
 
-Download the model:  
-[Download yolo11n.onnx](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESj2_zJM4oxOiv62Hh1XKu8BA9gWPQy6zAGSXWd4VL--9w?e=tagPRA)  
+Download the model:
+[Download yolo11n.onnx](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ESj2_zJM4oxOiv62Hh1XKu8BA9gWPQy6zAGSXWd4VL--9w?e=tagPRA)
 **This ONNX file can be directly used for the examples in the following sections without the need to modify the IR version or Opset version.**
 :::info
 Currently, ONNX in this wiki is based on **IR version 8 and Opset version 17**. If your ONNX file is converted from an example by Ultralytics after December 2024, it may in subsequent processes due to a higher version.
 :::
 
-You can view the information of the ONNX file using [Netron](https://netron.app/): 
+You can view the information of the ONNX file using [Netron](https://netron.app/):
+
 <div align="center">
   <img width="800" src="https://files.seeedstudio.com/wiki/reCamera/ONNX_IR_opset.jpg" />
 </div>
 
+**If your ONNX file is higher than IR v8 and Opset v17, , we provide a example here to help you downgrade it.** Firstly, installing `onnx` via pip:
 
-**If your ONNX file is higher than IR v8 and Opset v17, , we provide a example here to help you downgrade it.** Firstly, installing `onnx` via pip: 
 ```bash
 pip install onnx
 ```
+
 Pull the program for modifying the version of the ONNX file from GitHub:
+
 ```bash
 git clone https://github.com/jjjadand/ONNX_Downgrade.git
 cd ONNX_Downgrade/
 ```
+
 Run the script by providing the input and output model file paths as command-line arguments:
 
 ```bash
 python downgrade_onnx.py <input_model_path> <output_model_path> --target_ir_version <IR_version> --target_opset_version <Opset_version>
 ```
+
 - `<input_model_path>`: The path to the original ONNX model you want to downgrade.
 - `<output_model_path>`: The path where the downgraded model will be saved.
 - --target_ir_version `<IR_version>`: Optional. The target IR version to downgrade to. Default is 8.
 - --target_opset_version `<Opset_version>`: Optional. The target Opset version to downgrade to. Default is 17.
 
 For example, using Default Versions (IR v8, Opset v17):
+
 ```bash
 python downgrade_onnx.py model_v12.onnx model_v8.onnx
 ```
+
 This will load `model_v12.onnx`, downgrade it to IR version 8, set opset version 17, validate, and save the new model as `model_v8.onnx`.
 
 Using Custom Versions (IR v9, Opset v11):
+
 ```bash
 python downgrade_onnx.py model_v12.onnx model_v9.onnx --target_ir_version 9 --target_opset_version 11
 ```
+
 This will load `model_v12.onnx`, downgrade it to IR version 9, set opset version 11, validate, and save the new model as `model_v9.onnx`.
 
 <p style={{ fontSize: '1.2em', color: 'yellow' , textAlign: 'left'}}>
@@ -167,7 +175,7 @@ cp -rf ${REGRESSION_PATH}/image .
 mkdir Workspace && cd Workspace
 ```
 
-After obtaining a usable ONNX file, place it in the `Workspace` directory you created.The directory structure is as follows: 
+After obtaining a usable ONNX file, place it in the `Workspace` directory you created.The directory structure is as follows:
 
 ```bash
 model_yolo11n
@@ -218,11 +226,13 @@ After converting to an `mlir` file, a `${model_name}_in_f32.npz` file will be ge
 is the input file for the subsequent models.
 
 Regarding the selection of the `--output_names` parameter, the YOLO11 model conversion in this example does not choose the final output named output0. Instead, it selects the six outputs before the model's head as the parameter. You can import the `ONNX` file into [Netron](https://netron.app/) to view the model structure.
+
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion04.png" /></div>
 
 The operators in the YOLO's `head` have very low accuracy after **INT8** quantization. If `output0` at the very end were chosen as the parameter, mixed-precision quantization would be required.
 
 **Since the subsequent sections of this article will provide examples of mixed-precision quantization, and this section uses a single quantization precision for the example**, the outputs before the `head` are chosen as parameters. By visualizing the ONNX model in [Netron](https://netron.app/), you can see the positions of the six output names:
+
 <div align="center">
   <img width="400" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion.00.png" />
 </div>
@@ -232,7 +242,6 @@ The operators in the YOLO's `head` have very low accuracy after **INT8** quantiz
 <div align="center">
   <img width="400" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion02.png" />
 </div>
-
 
 Description of Main Parameters for `model_transform`:
 
@@ -519,11 +528,13 @@ You can use Node-RED on reCamera for visualization to quickly verify the convert
 <div style={{textAlign:'center'}}><iframe width={600} height={300} src="https://www.youtube.com/embed/XdgCt44UR1M" title="YouTube video player" frameBorder={0} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
 
 You need to select the `yolo11n_1684x_int8_sym.cvimodel` in the `model` node for quick verification. Double-click the model node, click `"Upload"` to import the quantized model, then click `"Done"`, and finally click `"Deploy"`.
+
 <div align="center">
   <img width="600" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion05.png" />
 </div>
 
 We can view the inference results of the **INT8** quantized model in the `preview` node. The `cvimodel` obtained through correct conversion and quantization methods is still reliable:
+
 <div align="center">
   <img width="600" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion06.png" />
 </div>
@@ -542,10 +553,11 @@ Next, we will use `yolov5s.onnx` as an example to demonstrate how to quickly con
 
 Here is the download link for `yolov5s.onnx`. You can click the link to download the model and copy it to your workspace for further use.
 
-Download the model:  
+Download the model:
 [Download yolov5s.onnx](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EdX8QYfqMnFEvXGUQ-_NjCoBmOalVQNKPWnZpFxcdNchrw?e=KDUkUP)
 
 After downloading the model, please place it into your `workspace` for the next steps.
+
 ```bash
 mkdir model_yolov5s && cd model_yolov5s
 cp -rf ${REGRESSION_PATH}/dataset/COCO2017 .
@@ -553,13 +565,14 @@ cp -rf ${REGRESSION_PATH}/image .
 mkdir workspace && cd workspace
 ```
 
-The first step is still to convert the model to the `.mlir` file. Because the precision loss in the YOLO's `head` is minimal when using **mixed-precision** quantization, unlike the previous approach, we will choose the final output name at the end rather than the outputs before the `head` in the `--output_names` parameter.Visualize the `ONNx` in [Netron](https://netron.app/): 
+The first step is still to convert the model to the `.mlir` file. Because the precision loss in the YOLO's `head` is minimal when using **mixed-precision** quantization, unlike the previous approach, we will choose the final output name at the end rather than the outputs before the `head` in the `--output_names` parameter.Visualize the `ONNx` in [Netron](https://netron.app/):
 
 <div align="center">
   <img width="600" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion07.png" />
 </div>
 
 Since the normalization parameters of yolov5 are the same as those of yolo11, we can obtain the following command for model_transform:
+
 ```bash
 model_transform \
   --model_name yolov5s \
@@ -574,7 +587,9 @@ model_transform \
   --test_result yolov5s_top_outputs.npz \
   --mlir yolov5s.mlir
 ```
-Then we also need to generate the calibration table, and this step is the same as in the previous section: 
+
+Then we also need to generate the calibration table, and this step is the same as in the previous section:
+
 ```bash
 run_calibration \
   yolov5s.mlir \
@@ -582,7 +597,9 @@ run_calibration \
   --input_num 100 \
   -o yolov5s_calib_table
 ```
+
 **Unlike the section where we converted the int8 symmetric quantized yolo11 model, before executing model_deploy, we need to generate a mixed-precision quantization table**.** The reference command is as follows:
+
 ```bash
 run_qtable \
   yolov5s.mlir \
@@ -593,6 +610,7 @@ run_qtable \
   --expected_cos 0.999 \
   -o yolov5s_qtable
 ```
+
 The parameter description for `run_qtable` is shown in the table below:
 
 <table style={{ width: '80%', fontSize: '14px', borderCollapse: 'collapse', margin: '20px auto' }}>
@@ -667,12 +685,12 @@ The parameter description for `run_qtable` is shown in the table below:
   </tbody>
 </table>
 
-
 After each layer's predecessor layer is converted to the corresponding floating-point mode based on its `cos`, the `cos` value calculated for that layer is checked. If the cos is still smaller than the `min_layer_cos` parameter, the current layer and its direct successor layers will be set to use floating-point operations.
 
 `run_qtable` recalculates the cos of the entire network's output after setting each pair of adjacent layers to use floating-point computation. If the cos exceeds the specified `expected_cos` parameter, the search terminates. Therefore, setting a larger `expected_cos` will result in more layers being attempted for floating-point operations.
 
 Finally, run `model_deploy` to obtain the **mixed-precision** `cvimodel`:
+
 ```bash
 model_deploy \
   --mlir yolov5s.mlir \
@@ -685,29 +703,37 @@ model_deploy \
   --processor cv181x \
   --model yolov5s_mix-precision.cvimodel
 ```
+
 After obtaining `yolov5s_mix-precision.cvimodel`, we can use `model_tool` to view detailed information about the model:
+
 ```bash
 model_tool --info yolov5s_mix-precision.cvimodel
 ```
 
 Key information such as `TensorMap` and `WeightMap` will be printed to the terminal:
+
 <div align="center">
   <img width="500" src="https://files.seeedstudio.com/wiki/reCamera/recamera_model_conversion08.png" />
 </div>
 
 We can run an example in reCamera to verify the mixed-precision quantized YOLOv5 model. Pull the compiled test example:
+
 ```bash
 git clone https://github.com/jjjadand/yolov5_Test_reCamera.git
 ```
+
 Copy the compiled examples and `yolov5s_mix-precision.cvimodel`using software like [FileZilla](https://filezilla-project.org/) to reCamera. (You can review [Getting Started with reCamera](https://wiki.seeedstudio.com/recamera_getting_started/))
 
 After the copy is complete, **run the command in the recamera terminal:**
+
 ```bash
 cp /path/to/yolov5s_mix-precision.cvimodel /path/to/yolov5_Test_reCamera/solutions/sscma-model/build/
 cd yolov5_Test_reCamera/solutions/sscma-model/build/
 sudo ./sscma-model yolov5s_mix-precision.cvimodel Dog.jpg Out.jpg
 ```
+
 Preview `Out.jog`, the `mixed-precision` quantized yolov5 model inference results are as follows:
+
 <div align="center">
   <img width="500" src="https://files.seeedstudio.com/wiki/reCamera/yolov5Out.jpg" />
 </div>
@@ -733,3 +759,4 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
+
