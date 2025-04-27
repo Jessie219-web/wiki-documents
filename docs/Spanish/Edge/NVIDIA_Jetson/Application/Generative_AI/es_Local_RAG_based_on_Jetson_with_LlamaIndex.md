@@ -89,7 +89,7 @@ Después de ejecutar ```pip install chromadb==0.3.29``` obtendrás la interfaz c
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/RAG_Install_ChromaDB.png" alt="pir" width={1000} height="auto"/></p>
 
-:::nota
+:::note
 Está bien ignorar el error.
 :::
 

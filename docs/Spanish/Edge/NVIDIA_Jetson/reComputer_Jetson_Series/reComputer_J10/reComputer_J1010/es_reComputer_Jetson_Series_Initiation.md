@@ -26,7 +26,7 @@ Conecta la reComputer a un teclado y mouse mediante USB y conéctalo a la pantal
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/recomputerzhongwen/rekaiji1.jpg" alt="pir" width={600} height="auto" /></p>
 
-:::nota
+:::note
 Para la reComputer con interfaz HDMI o DP, aunque tiene dos puertos de salida de pantalla, no admite salida de pantalla doble, lo que significa que solo se puede usar una pantalla.
 :::
 
@@ -38,7 +38,7 @@ Después de conectar los periféricos, conecta la alimentación a la reComputer.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/dc1.png" alt="pir" width={600} height="auto" /></p>
 
-:::nota
+:::note
 La [reComputer J1010](https://www.seeedstudio.com/Jetson-10-1-A0-p-5336.html) tiene un puerto tipo C en ambos lados, el de la derecha, cerca del puerto LAN, es el puerto de transmisión de datos. Está estrictamente prohibido insertar la fuente de alimentación en el puerto de transmisión de datos de la derecha, esto puede causar daños a los componentes.
 :::
 
@@ -98,7 +98,7 @@ Lo último que elegirá es el voltaje de suministro mientras la reComputer está
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/recomputerzhongwen/rekaiji12.jpg" alt="pir" width={600} height="auto" /></p>
 
-:::nota
+:::note
 La siguiente tabla muestra los modos de energía predefinidos de NVIDIA y los límites de uso de recursos del módulo asociado.
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/21.jpg" /></div>
 :::

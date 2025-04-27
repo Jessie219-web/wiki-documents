@@ -99,7 +99,7 @@ The Base Shield is tested and fully compatible with following boards:
 - Intel Edison 5V
 - Linkit One
 
-:::cautionAttention
+:::caution
 The default I2C pins of Grove Base Shield are D70/D71, but the default I2C Wire of Arduino DUE is defined as D20/D21, so when using both together, you will not be able to use the I2C pins of the expansion board properly if you use the `Wire` definition, you need to use `Wire1`.
 :::
 
