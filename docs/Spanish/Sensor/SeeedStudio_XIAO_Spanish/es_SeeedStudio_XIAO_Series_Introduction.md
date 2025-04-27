@@ -461,7 +461,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO RP2040 3D Model](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/seeed-studio-xiao-rp2040-3d-model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO RP2040 Certification files](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO-RP2040-Certification.zip)
+
 
 ### Recursos Open-Source XIAO nRF52840
 
@@ -479,7 +479,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[XLSX]** [Seeed Studio XIAO nRF52840 pinout sheet](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-pinout_sheet.xlsx)
 
-- **[ZIP]** [Seeed Studio XIAO nRF52840 Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Certification.zip)
+
 
 ### Recursos Open-Source XIAO nRF52840 Sense
 
@@ -499,7 +499,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO nRF52840 Sense 3D Model](https://files.seeedstudio.com/wiki/XIAO-BLE/seeed-studio-xiao-nrf52840-3d-model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO nRF52840 Sense Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Sense-Certification.zip)
+
 
 ### Recursos Open-Source XIAO ESP32C3
 
@@ -523,7 +523,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO ESP32C3 3D Model](https://grabcad.com/library/seeed-studio-xiao-esp32-c3-1)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32C3 Certification files](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-Certification.zip)
+
 
 ### Recursos Open-Source XIAO ESP32C6 
 
@@ -535,7 +535,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[XLSX]** [Seeed Studio XIAO ESP32C6 pinout sheet](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/XIAO_ESP32C6_Pinout.xlsx)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32C6 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/SeeedStudio_XIAO_ESP32C6_Certification.zip)
+
 
 ### Recursos Open-Source XIAO ESP32S3 
 
@@ -553,7 +553,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO ESP32S3 3D Model](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/seeed-studio-xiao-esp32s3-3d_model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32S3 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Certification.zip)
+
 
 ### Recursos Open-Source XIAO ESP32S3 Sense 
 
@@ -577,7 +577,7 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO ESP32S3 Sense 3D Model](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/seeed-studio-xiao-esp32s3-sense-3d_model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32S3 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Certification.zip)
+
 
 ### Recursos Open-Source XIAO RP2350
 
