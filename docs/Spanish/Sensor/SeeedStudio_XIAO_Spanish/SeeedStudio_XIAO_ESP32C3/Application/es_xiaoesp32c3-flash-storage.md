@@ -498,7 +498,7 @@ La EEPROM es una memoria interna del microcontrolador ESP32 que permite mantener
 
 El microcontrolador ESP32 tiene un área de memoria Flash que puede ser interfazada de manera similar a la EEPROM de un Arduino para mantener datos en memoria incluso después de apagar la placa.
 
-:::cautionAttention
+:::caution
 Es importante destacar que la EEPROM tiene un tamaño y una vida útil limitados. Las celdas de memoria pueden ser leídas tantas veces como sea necesario, pero el número de ciclos de escritura está limitado a **100,000**. Es recomendable prestar mucha atención al tamaño de los datos almacenados y con qué frecuencia deseas actualizarlos. La memoria EEPROM puede almacenar 512 valores de 0 a 255 o 128 direcciones IP o etiquetas RFID.
 :::
 
@@ -685,7 +685,7 @@ EEPROM.commit();
 
 Lo siguiente es el procedimiento completo.
 
-:::cautionAttention
+:::caution
 Ten en cuenta que **no deberías** ejecutar este ejemplo durante mucho tiempo. En este ejemplo, escribiremos en la EEPROM cada diez segundos, y ejecutar este ejemplo durante mucho tiempo **reducirá significativamente** la vida útil de la EEPROM.
 :::
 

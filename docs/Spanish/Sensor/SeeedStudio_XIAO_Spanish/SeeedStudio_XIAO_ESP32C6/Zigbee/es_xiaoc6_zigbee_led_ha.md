@@ -116,7 +116,7 @@ Los puertos USB 3.0 y los discos USB 3.0 pueden causar interferencias con los pr
 
 - Instala la última versión de Arduino IDE y agrega soporte para el XIAO ESP32C6 incluyendo el paquete de placas de Espressif.
 
-:::nota
+:::note
 Si estás usando el XIAO ESP32C6 por primera vez, por favor lee el siguiente enlace del wiki para agregar correctamente la placa de desarrollo.
 
 [Introducción al XIAO ESP32C6](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)

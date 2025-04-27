@@ -75,7 +75,7 @@ AlwaysAI es compatible con el siguiente hardware Jetson:
 
 Ahora necesitas configurar el entorno de desarrollo. Aquí puedes utilizar una computadora con Windows, Linux o Mac OS.
 
-:::nota
+:::note
 En esta guía, usaremos una computadora de desarrollo con Windows. Sin embargo, si deseas configurar Mac o Linux como tu PC de desarrollo, [visita este link](https://alwaysai.co/docs/get_started/development_computer_setup.html) para obtener más información.
 :::
 
@@ -179,7 +179,7 @@ Ahora implementaremos el proyecto que creamos antes en el dispositivo Jetson usa
 aai app configure
 ```
 
-:::nota
+:::note
 Se te pedirá que ingreses el nombre de usuario y la contraseña de la cuenta AlwaysAI cuando ejecutes el comando anterior por primera vez.
 :::
 
@@ -215,7 +215,7 @@ lakshanthad@192.168.2.156
 
 <div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/37.png"/></div>
 
-:::nota
+:::note
 Aquí el nombre de usuario del dispositivo Jetson es **laksanthad** y la dirección IP es **192.168.2.156**
 :::
 
@@ -251,7 +251,7 @@ Verás el siguiente output si la instalación se logró exitosamente:
 
 <div align="center"><img width= "{600}" src="https://files.seeedstudio.com/wiki/alwaysAI/pics/40.png"/></div>
 
-:::nota
+:::note
 Si encuentras errores en este paso, primero puedes intentar volver a implementar usando el método `aai app install --clean`. Verifica que la versión del jetpack sea la **versión solicitada 4.6. Esto se puede comprobar escribiendo el comando `sudo apt-cache show nvidia-jetpack`. Si el número de versión es correcto, asegúrate de haber completado la instalación del sistema Jetson junto con los** componentes Jetson SDK**. Esto te ayudará a resolver la mayoría de los problemas.
 :::
 
@@ -371,7 +371,7 @@ def main():
 aai app configure
 ```
 
-:::nota
+:::note
 Se te pedirá que ingreses el nombre de usuario y la contraseña de la cuenta AlwaysAI cuando ejecutes el comando anterior por primera vez.
 :::
 

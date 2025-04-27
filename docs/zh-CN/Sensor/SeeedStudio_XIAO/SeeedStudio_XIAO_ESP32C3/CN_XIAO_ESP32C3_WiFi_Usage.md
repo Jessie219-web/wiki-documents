@@ -14,7 +14,7 @@ last_update:
 
 Seeed Studio XIAO ESP32C3支持IEEE 802.11b/g/n的WiFi连接。本wiki将介绍该板子上WiFi使用的基本知识。
 
-:::cautionATTENTION
+:::caution
 ⚠️ 当您尝试使用该板作为热点(接入点)时，请小心。可能会有过热的问题，导致烧伤。
 :::
 
