@@ -108,7 +108,7 @@ Para el puerto CAM1
 nvgstcapture-1.0 sensor-id=1  
 ```
 
-:::nota
+:::note
 Si deseas cambiar más configuraciones de la cámara, puedes escribir **"nvgstcapture-1.0 --help"** para acceder a todas las opciones configurables disponibles
 :::
 
@@ -126,7 +126,7 @@ Para el puerto CAM1
 gst-launch-1.0 nvarguscamerasrc sensor-id=1 sensor-mode=0 ! 'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=20/1, format=NV12' ! nvvidconv ! xvimagesink
 ```
 
-:::nota
+:::note
 Si deseas cambiar más configuraciones de la cámara, puedes actualizar los argumentos como **ancho, alto, velocidad de fotogramas, formato**, etc.
 :::
 
@@ -158,7 +158,7 @@ Conecta una **batería de tipo CR2302 de 3 V con conector JST** al conector JST 
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/13.png"/></div>
 
-:::nota
+:::note
 Si no te has conectado a Internet a través de Ethernet, puedes configurar manualmente la fecha/hora aquí
 :::
 
@@ -309,7 +309,7 @@ Actualmente esta placa admite módulos EC25EUXGA y EC20CEHCLG.
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/19.png"/></div>
 
-:::nota
+:::note
 Si deseas quitar la tarjeta SIM, empújala hacia adentro para golpear el resorte interno para que la SIM salga de la ranura.
 :::
 
@@ -453,7 +453,7 @@ Actualmente esta placa admite el módulo SPI WM1302. Puedes usar [versión de EE
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/26.png"/></div>
 
-:::nota
+:::note
 Asegúrate de que no haya ningún puente entre los pines **SIM_MUX_SEL** y **GND** en el encabezado **J8 (Control y UART)**. Este puente sólo es necesario cuando se utilizan módulos 4G.
 :::
 
@@ -554,7 +554,7 @@ Después de ejecutar el comando anterior, verás el siguiente resultado con la �
 
 <div align="center"><img width ="500" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/85.jpg"/></div>
 
-:::nota
+:::note
 El **Gateway ID** se ha completado automáticamente. Sin embargo, puedes cambiarlo a lo que prefieras. **Gateway name** no es obligatorio. Sin embargo, también puedes llenarlo según tu preferencia.
 :::
 
@@ -605,7 +605,7 @@ La reComputer industrial viene con un conector M.2 Key B que admite módulos 4G 
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/19.png"/></div>
 
-:::nota
+:::note
 Si deseas quitar la tarjeta SIM, empújala hacia adentro para golpear el resorte interno para que la SIM salga de la ranura.
 :::
 
@@ -809,7 +809,7 @@ echo 440 > export
 cd PQ.05
 ```
 
-:::nota
+:::note
 Puedes consultar la **Tabla de asignación de pines DI/DO** para encontrar el número GPIO y el número BGA. En el ejemplo anterior, para el pin DI1, el número GPIO es 440 y el número BGA es PQ.05
 :::
 
@@ -843,7 +843,7 @@ cd PT.06
 echo out > direction
 ```
 
-:::nota
+:::note
 Puedes consultar la **Tabla de asignación de pines DI/DO** para encontrar el número GPIO y el número BGA. En el ejemplo anterior, para el pin DO1, el número GPIO es 463 y el número BGA es PT.06
 :::
 
@@ -993,7 +993,7 @@ Puedes ver el panel de interruptores DIP como se muestra a continuación:
 
 <div align="center"><img width ="350" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/51.png"/></div>
 
-:::nota
+:::note
 Asegúrate de quitar la cubierta de plástico amarilla antes de usar el panel de interruptores DIP.
 :::
 
@@ -1090,7 +1090,7 @@ Y la siguiente tabla explica los diferentes modos según las posiciones del inte
   </tbody>
 </table>
 
-:::nota
+:::note
 Fuera de la caja, el modo predeterminado de los interruptores se configurará en RS485 con 010 de fábrica.
 :::
 

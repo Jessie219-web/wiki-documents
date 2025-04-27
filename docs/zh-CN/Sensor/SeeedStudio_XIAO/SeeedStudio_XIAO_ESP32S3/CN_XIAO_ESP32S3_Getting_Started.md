@@ -693,7 +693,7 @@ XIAO ESP32S3是所有XIAO中最复杂的一个，因为它的集成度很高，�
 
 - **[STEP]** [Seeed Studio XIAO ESP32S3 3D Model](https://grabcad.com/library/seeed-studio-xiao-esp32s3-1)
 
-<!-- - **[ZIP]** [Seeed Studio XIAO ESP32S3 Certification files]() -->
+
 
 ### For Seeed Studio XIAO ESP32S3 Sense
 
@@ -713,7 +713,7 @@ XIAO ESP32S3是所有XIAO中最复杂的一个，因为它的集成度很高，�
 
 - **[STEP]** [Seeed Studio XIAO ESP32S3 Sense 3D Model](https://grabcad.com/library/seeed-studio-xiao-esp32s3-sense-1)
 
-<!-- - **[ZIP]** [Seeed Studio XIAO ESP32S3 Sense Certification files]() -->
+
 
 ### 课程资料
 

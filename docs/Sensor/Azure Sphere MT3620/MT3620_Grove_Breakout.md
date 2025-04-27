@@ -226,7 +226,7 @@ A0: 2057 A1: 2647
 
 ![](https://files.seeedstudio.com/wiki/MT3620_Mini_Dev_Board/img/demo3_connection.png)
 
-:::cautionwarning
+:::caution
 Please make sure the plug the MT3620 Mini Dev Board into MT3620 Grove Breakout in the correct way. There is USB silk screen on the MT3620 Grove Breakout and make sure it at the same side as USB port of MT3620 Mini Dev Board.
 :::
 

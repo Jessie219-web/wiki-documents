@@ -270,7 +270,7 @@ Upload the program to your Arduino/Seeeduino.
 
 #### Software
 
-:::cautionattention
+:::caution
      If you are using **Raspberry Pi with Raspberrypi OS >= Bullseye**, you have to use this command line **only with Python3**.
 :::
 

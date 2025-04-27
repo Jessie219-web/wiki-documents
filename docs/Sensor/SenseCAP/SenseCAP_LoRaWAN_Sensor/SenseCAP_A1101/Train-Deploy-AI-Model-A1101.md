@@ -182,7 +182,7 @@ wget https://conda.anaconda.org/conda-forge/osx-arm64/libusb-1.0.26-h1c322ee_100
 conda install libusb-1.0.26-h1c322ee_100.tar.bz2
 ```
 
-:::cautionwarning
+:::caution
 You need to make sure your BootLoader version is greater than 2.0.0 before you can change the firmware to do the following. If you are not sure, please check the BootLoader version by following the steps mentioned in [this section](#check-bootloader-version), and if the version is less than 2.0.0, please update the BootLoader by following the steps mentioned in [this section](#update-bootloader)
 :::
 

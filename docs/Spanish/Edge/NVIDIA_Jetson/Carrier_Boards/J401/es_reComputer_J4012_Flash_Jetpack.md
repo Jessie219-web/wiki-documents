@@ -231,7 +231,7 @@ Consulta la siguiente tabla para preparar la máquina host.
 
 ### Entrar a modo de recuperación forzada
 
-:::nota
+:::note
 - No recomendamos utilizar máquinas virtuales y arquitectura ARM Ubuntu para flashear.
 - Antes de continuar con los pasos de instalación, debemos asegurarnos de que la placa esté en modo de recuperación forzada.
 :::
@@ -337,7 +337,7 @@ El script de flasheo con un solo click tiene como objetivo hacer que el flasheo 
 
 ### Flashear el dispositivo paso a paso.
 
-:::nota
+:::note
 Antes de pasar al flasheo, cabe señalar que el módulo Jetson Orin NX solo admite JetPack 5.1 y superiores, mientras que el módulo Jetson Orin Nano solo admite JetPack 5.1.1 y superiores.
 :::
 
@@ -579,7 +579,7 @@ Verás el siguiente resultado si el proceso de actualización es exitoso
 
 <div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/4.png"/></div>
 
-:::nota
+:::note
 El comando flash puede finalizarse en un periodo de 2 a 10 minutos.
 :::
 
@@ -676,7 +676,7 @@ Verás el siguiente resultado si el proceso de actualización es exitoso
 
 <div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/4.png"/></div>
 
-:::nota
+:::note
 El comando flash puede ejecutarse en un periodo de 2 a 10 minutos.
 :::
 

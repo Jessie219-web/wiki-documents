@@ -153,7 +153,7 @@ g++ -fopenmp examples/sense-stream.cc -I./sense/include/ -lsense-core -L./sense/
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/Cochl.Sense/14.png" /></div>
 
-:::nota
+:::note
 Ten en cuenta que la detección de disparos no se puede detectar bien cuando se reproduce desde altavoces, ya que el modelo fue entrenado para funcionar mejor con disparos reales.
 :::
 
