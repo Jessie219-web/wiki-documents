@@ -3,7 +3,7 @@ description: The reComputer J401B is a compact, high-performance edge AI device 
 title: Getting start with reComputer J401B
 keywords:
 - reComputer
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.webp
 slug: /recomputer_j401b_getting_start
 last_update:
   date: 4/27/2025

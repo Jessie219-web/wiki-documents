@@ -3,7 +3,7 @@ description: Total Solar Radiation Sensor
 title: Total Solar Radiation Sensor
 keywords:
 - SenseCAP
-image: https://files.seeedstudio.com/wiki/Total_Solar_Radiation_Sensor/image1.png
+image: https://files.seeedstudio.com/wiki/Total_Solar_Radiation_Sensor/image1.webp
 slug: /total_solar_radiation_sensor
 last_update:
   date: 4/23/2025

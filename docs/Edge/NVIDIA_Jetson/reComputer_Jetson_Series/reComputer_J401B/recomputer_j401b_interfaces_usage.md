@@ -3,7 +3,7 @@ description: This wiki provides a comprehensive guide to the hardware interfaces
 title: J401B Interfaces Usage
 tags:
   - J401 carrier board
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/j401b_interfaces.webp
 slug: /recomputer_j401b_interfaces_usage
 last_update:
   date: 4/27/2025

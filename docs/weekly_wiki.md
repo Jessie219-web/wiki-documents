@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 04/21/2025
+  date: 04/28/2025
   author: Frank
 ---
 
@@ -17,53 +17,50 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is April 21th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is April 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Create Backup and Restore on reComputer](https://wiki.seeedstudio.com/create_backup_and_restore_on_recomputer/)
+### [Getting start with reComputer J401B](https://wiki.seeedstudio.com/recomputer_j401b_getting_start/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer_backup/jtop2.png" style={{width:800, height:'auto'}}/></div>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.jpg" alt="pir" width={800} height="auto" /></p>
 
-This wiki page will use [reComputer J3011](https://www.seeedstudio.com/reComputer-J3011B-p-6405.html) to introduce how to back up your existing software and environment on the recomputer series, making it convenient for you to restore and transplant it to the new recomputer.
+The reComputer J401B series is an iteration on reComputer Classic series. The reComputer J4011B with NVIDIA Jetson Orin NX 8GB modules is a powerful and compact edge AI device with rich interfaces: 2x USB 3.2, HDMI, Ethernet, M.2 Key E for Wi-Fi module, M.2 Key M for SSD, mini-PCIe for LTE module, CAN, 40-pin and more.
 
-### [Node-RED Introduction for Gimbal](https://wiki.seeedstudio.com/recamera_gimbal_node_red/)
+### [J401B Interfaces](https://wiki.seeedstudio.com/recomputer_j401b_interfaces_usage/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/workspace_flow.png" style={{width:600, height:'auto'}}/></div>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/j401b_interfaces.png" alt="pir" width={800} height="auto" /></p>
 
-This wiki provides step-by-step guidance on how to use Node-RED nodes to operate and control the motors on the reCamera Gimbal. The default flow on the Device is a more comprehensive example of how you can use UI nodes with gimbal nodes, but we are going to break down the nodes one by one to explain how you can use it.
+This wiki introduces the various different hardware and interfaces on the reComputer J401B and how to use them to expand your project ideas.
 
-### [LoRaWAN Tracker Bluetooth AT Command Instruction](https://wiki.seeedstudio.com/tracker_at_command/)
+### [Total Solar Radiation Sensor](https://wiki.seeedstudio.com/total_solar_radiation_sensor/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/intro-e.webp" style={{width:600, height:'auto'}}/></div>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Total_Solar_Radiation_Sensor/image1.png" alt="pir" width={800} height="auto" /></p>
 
-This chapter will briefly explain the use of Bluetooth AT commands, establish a Bluetooth connection and query/configure device information through the Blueooth AT commands.
-
-### [Deep development of Gimbal with C](https://wiki.seeedstudio.com/gimbal_development_c/)
-
-This document will provide a comprehensive guide on how to develop for reCamera Gimbal using C programming.
+The IP68 RS485 Total Solar Radiation Sensor measures real-time solar total radiation from 300 to 1100 nanometers. It's ideal for environmental monitoring and agriculture. Pair it with the SenseCAP Sensor Hub 4G Data Logger or SenseCAP S2100 LoRaWAN® Data Logger for seamless data collection and management.
+On this page, we'll guide you through the process of connecting the S2100 LoRaWAN Data Logger with a Total Solar Radiation Sensor, enabling you to create a robust, industrial-grade LoRaWAN wireless sensor that can be used commercially in just five minutes.
 
 ## Existing Wiki Updated
 
-### [Grove - Air Quality Sensor v1.3](https://wiki.seeedstudio.com/Grove-Air_Quality_Sensor_v1.3/)
+### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/iot_button_for_esphome/)
 
-We have added an [example](https://wiki.seeedstudio.com/Grove-Air_Quality_Sensor_v1.3/#play-with-esp-idf) demonstrating how to use the device with ESP-IDF.
+We have modified the configuration code in the '[Adding the ESPHome Configuration](https://wiki.seeedstudio.com/iot_button_for_esphome/#adding-the-esphome-configuration)' section.
 
-### [Grove - Temperature Humidity Pressure Gas Sensor(BME680)](https://wiki.seeedstudio.com/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/)
+### [Grove - Barometer (High-Accuracy)](https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/)
 
-We have added an [example](https://wiki.seeedstudio.com/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/#play-with-esp-idf) demonstrating how to use the device with ESP-IDF.
+We have corrected the example steps related to '[Play With Raspberry Pi](https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/#software-1)' and adjusted the sample code.
 
-### [ePaper Panel in Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/)
+### [Flash Opensource Firmware to M2 Gateway](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/)
 
-We have added an example for the [Deep Sleep mode](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/#5-deep-sleep-mode).
+We have added a sample reference for [flashing firmware via Luci](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/#flash-firmware-via-luci).
 
 ## The Efforts of Contributor
 
-### [XIAO ESP32-C3 iBeacon with BME680 Sensor Using ESP-IDF](https://wiki.seeedstudio.com/xiao-c3-ibeacon/)
+<!-- ### [Seeed Studio XIAO ESP32C3 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-esp32c3-nuttx/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-c3-ibeacon/2.webp" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/></div>
 
-In this tutorial, we'll build a low-power temperature monitoring system that broadcasts environmental data using Bluetooth Low Energy (BLE) in iBeacon format. We'll use the Seeed Studio XIAO ESP32-C3, the XIAO expansion board, and a Grove BME680 environmental sensor. This project demonstrates how to build robust embedded applications using ESP-IDF—Espressif's official development framework.
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C3 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -174,5 +171,6 @@ In this tutorial, we'll build a low-power temperature monitoring system that bro
 - [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 - [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
+- [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
 
 </details>
