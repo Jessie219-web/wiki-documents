@@ -430,9 +430,9 @@ We can't do it without the love, contribution that we get from the community, an
 ## <span id="supported_rtos">Supported RTOS</span>
 
 <br></br>
-<div><a href="https://zephyrproject.org/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/zephyr.png" style={{width:'auto', height:70}} /></a></div>
+<div><a href="https://docs.zephyrproject.org/latest/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/zephyr.png" style={{width:'auto', height:70}} /></a></div>
 
-<span id="zephyr"><strong><a href="https://zephyrproject.org/">Zephyr</a></strong></span>, a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind.
+<span id="zephyr"><strong><a href="https://docs.zephyrproject.org/latest/">Zephyr</a></strong></span>, a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind.
 <br></br>
 <br></br>
 
