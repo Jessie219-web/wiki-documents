@@ -1,6 +1,6 @@
 ---
 description: This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework. 
-title: How to use the SO100Arm robotic arm in Lerobot
+title: How to use the SO10xArm robotic arm in Lerobot
 keywords:
 - Lerobot
 - Huggingface
@@ -13,18 +13,18 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# How to use the SO-ARM100 robotic arm in Lerobot
+# How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot
 
 ## Introduction
 
-The [SO-100ARM](https://github.com/TheRobotStudio/SO-ARM100) is a fully open-source robotic arm project launched by [TheRobotStudio](https://www.therobotstudio.com/). It includes the follower arm and the leader robotic arm, and also provides detailed 3D printing files and operation guides. [LeRobot](https://github.com/huggingface/lerobot/tree/main) is committed to providing models, datasets and tools for real-world robotics in PyTorch. Its aim is to reduce the entry barrier of robotics, enabling everyone to contribute and benefit from sharing datasets and pretrained models. LeRobot integrates cutting-edge methodologies validated for real-world application, centering on imitation learning and reinforcement learning. It has furnished a suite of pre-trained models, datasets featuring human-gathered demonstrations, and simulation environments, enabling users to commence without the necessity of robot assembly. In the forthcoming weeks, the intention is to augment support for real-world robotics on the most cost-effective and competent robots presently accessible.
+The [SO-10xARM](https://github.com/TheRobotStudio/SO-ARM100) is a fully open-source robotic arm project launched by [TheRobotStudio](https://www.therobotstudio.com/). It includes the follower arm and the leader robotic arm, and also provides detailed 3D printing files and operation guides. [LeRobot](https://github.com/huggingface/lerobot/tree/main) is committed to providing models, datasets and tools for real-world robotics in PyTorch. Its aim is to reduce the entry barrier of robotics, enabling everyone to contribute and benefit from sharing datasets and pretrained models. LeRobot integrates cutting-edge methodologies validated for real-world application, centering on imitation learning. It has furnished a suite of pre-trained models, datasets featuring human-gathered demonstrations, and simulation environments, enabling users to commence without the necessity of robot assembly. In the forthcoming weeks, the intention is to augment support for real-world robotics on the most cost-effective and competent robots presently accessible.
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/sD34HnAkGNc?si=hqKd_sH5Oc9sdcwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Projects Introduction
 
-The SO-ARM100 and reComputer Jetson AI intelligent robot kit seamlessly combine high-precision robotic arm control with a powerful AI computing platform, providing a comprehensive robot development solution. This kit is based on the Jetson Orin or AGX Orin platform, combined with the SO-ARM100 robotic arm and the LeRobot AI framework, offering users an intelligent robot system applicable to multiple scenarios such as education, research, and industrial automation.
-This wiki provides the assembly and debugging tutorial for the SO ARM100 and realizes data collection and training within the Lerobot framework.
+The SO-ARM10x and reComputer Jetson AI intelligent robot kit seamlessly combine high-precision robotic arm control with a powerful AI computing platform, providing a comprehensive robot development solution. This kit is based on the Jetson Orin or AGX Orin platform, combined with the SO-ARM10x robotic arm and the LeRobot AI framework, offering users an intelligent robot system applicable to multiple scenarios such as education, research, and industrial automation.
+This wiki provides the assembly and debugging tutorial for the SO ARM10x and realizes data collection and training within the Lerobot framework.
 
   <div align="center">
       <img width={800}
@@ -37,43 +37,119 @@ This wiki provides the assembly and debugging tutorial for the SO ARM100 and rea
 </a></div>
 
 ## Main Features
-
-1. **High-Precision Robotic Arm**: The SO-ARM100 robotic arm employs high-precision servo motors and advanced motion control algorithms, and is suitable for a variety of tasks such as grasping, assembly, and inspection.
-2. **reComputer Jetson Platform**: It uses the SeeedStudio reComputer Jetson Orin or AGX Orin Dev Kit as the AI computing platform, which supports deep learning, computer vision, and data processing tasks, providing powerful computing capabilities.
-3. **AI-Driven**: It integrates the LeRobot AI framework of Hugging Face, supports natural language processing (NLP) and computer vision, enabling the robot to intelligently understand instructions and perceive the environment.
-4. **Open Source and Flexible Expansion**: It is an open-source platform that is easy to customize and expand, suitable for developers and researchers to conduct secondary development, and supports the integration of multiple sensors and tools.
+ 
+1. **Open-source and low-cost**:  It is an open-source, low-cost robotic arm solution from [TheRobotStudio](https://github.com/TheRobotStudio/SO-ARM100)
+2. **Integration with LeRobot**: Designed for integration with [LeRobot platform](https://github.com/huggingface/lerobot)
+3. **Abundant learning resources**: Provides comprehensive open-source learning resources like assembly and calibration guides, and tutorials for testing, data collection, training and deployment to assist users in quickly getting started and developing robotic applications.
+4. **Compatible with Nvidia**: Deploy this arm kit with reComputer Mini J4012 Orin NX 16 GB.
 5. **Multi-Scene Application**: It is applicable to fields such as education, scientific research, automated production, and robotics, helping users achieve efficient and precise robot operations in various complex tasks.
+
+## What's news：
+- Wiring optimization: Compared to SO-ARM100, SO-ARM101 features improved wiring that prevents disconnection issues previously seen at joint 3. The new wiring design also no longer limits the range of motion of the joints.
+- Different gear ratios for the leader arm: The leader arm now uses motors with optimized gear ratios, improving performance and eliminating the need for external gearboxes.
+- New functionality support: The leader arm can now follow the follower arm in real-time, which is crucial for the upcoming learning policy, where a human can intervene and correct the robot’s actions.
+
+
+:::caution
+
+Seeed Studio is only responsible for the quality of the hardware itself. The tutorials are strictly updated in accordance with the official documentation. If you encounter software issues or environment dependency problems that cannot be resolved, in addition to checking the FAQ section at the end of this tutorial, please promptly report the issue to the [LeRobot platform](https://github.com/huggingface/lerobot) or the [LeRobot Discord channel](https://discord.gg/8TnwDdjFGU).
+
+:::
+
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/JrF_ymUvrqc?si=vslu5NNI-ZIzVXLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Specification
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th colSpan="2">SO-ARM100</th>
+      <th colSpan="2">SO-ARM101</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th><a href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html" target="_blank">Arm Kit</a></th>
+      <th><a href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit-Pro-p-6343.html" target="_blank">Arm Kit Pro</a></th>
+      <th><a href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit.html" target="_blank">Arm Kit</a></th>
+      <th><a href="https://www.seeedstudio.com/SO-ARM100-Low-Cost-AI-Arm-Kit-Pro-p-6343.html" target="_blank">Arm Kit Pro</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Leader Arm</td>
+      <td rowSpan="2">12x ST-3215- C001 (7.4V) motors with 1:345 gear ratio for all joints</td>
+      <td rowSpan="2">12x ST-3215-C018/ST-3215-C047 (12V) motors with 1:345 gear ratio for all joints</td>
+      <td colSpan="2">
+        1x ST-3215- C001 (7.4V) motor with 1:345 gear ratio for joint 2 only<br />
+        2x ST-3215-C044 (7.4V) motors with 1:191 gear ratio for joints 1 and 3<br />
+        3x ST-3215-C046 (7.4V) motors with 1:147 gear ratio for joints 4, 5, and gripper (joint 6)
+      </td>
+    </tr>
+    <tr>
+      <td>Follower Arm</td>
+      <td colSpan="2">Same as SO-ARM100</td>
+    </tr>
+    <tr>
+      <td>Power Supply</td>
+      <td>5.5 mm × 2.1 mm DC 5 V 4 A</td>
+      <td>5.5 mm × 2.1 mm DC 12 V 2 A</td>
+      <td>5.5 mm × 2.1 mm DC 5 V 4 A</td>
+      <td>
+        5.5 mm × 2.1 mm DC 12 V 2 A (Leader Arm)<br />
+        5.5 mm × 2.1 mm DC 5 V 4 A (Follower Arm)
+      </td>
+    </tr>
+    <tr>
+      <td>Angle Sensor</td>
+      <td colSpan="4">12-bit magnetic encoder</td>
+    </tr>
+    <tr>
+      <td>Recommended Operating Temperature</td>
+      <td colSpan="4">0 °C to 40 °C</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td colSpan="4">UART</td>
+    </tr>
+    <tr>
+      <td>Control Method</td>
+      <td colSpan="4">PC</td>
+    </tr>
+  </tbody>
+</table>
 
-| Specification | Arm Kit | Arm Kit Pro |
-|--|--|--|
-| Type | Arm Kit | Arm Kit Pro |
-| Degree of freedom | 6 | 6 |
-| Max Torque | 19.5kg.cm 7.4V | 30kg.cm 12V |
-| Servo | STS3215 Bus Servo | STS3215 Bus Servo |
-| Power Supply | 5.5mm*2.1mm DC 5V4A | 5.5mm*2.1mm DC 12V1A |
-| Angle sensor | 12-bit magnetic encoder | 12-bit magnetic encoder |
-| Recommended Operating Temperature Range | 0℃～40℃ | 0℃～40℃ |
-| Communication Method | UART | UART |
-| Control Method | PC | PC |
+:::danger
+
+If you purchase the Arm Kit version, both power supplies are 5V. If you purchase the Arm Kit Pro version, please use the 5V power supply for the calibration and every step of the Leader robotic arm, and the 12V power supply for the calibration and every step of the Follower robotic arm.
+
+:::
+
 
 ## Bill of Materials(BOM)
 
 | Part | Amount | Included|
 |--|--|--|
-| STS3215 Servo1 | 12 | ✅ |
+|  Servo Motos | 12 | ✅ |
 | Motor Control Board | 2 | ✅ |
 | USB-C Cable 2 pcs | 1 | ✅ |
 | Power Supply2 | 2 | ✅ |
-| Table Clamp| 1 | ❌ |
+| Table Clamp| 4 | ✅ |
 | 3D printed parts of the arm | 1 | ❌ |
 
-:::caution
-The 3D printed parts and table clamps are not included in the product. However, the SO-100ARM provides detailed [3D printing STL files](https://github.com/TheRobotStudio/SO-ARM100/tree/main/stl_files_for_3dprinting) and printing parameters. Besides, we also offer the [3D printed parts of the Table Clamp](https://makerworld.com/zh/models/908660).
-:::
+## Initial System Environment
+
+**For Ubuntu x86:**
+- Ubuntu 22.04  
+- CUDA 12+  
+- Python 3.10  
+- Torch 2.6  
+
+**For Jetson Orin:**
+- Jetson JetPack 6.2  
+- Python 3.10  
+- Torch 2.6  
+
 
 ## Table of Contents
   [A. 3D Printing Guide](https://wiki.seeedstudio.com/lerobot_so100m/#install-lerobot)
@@ -100,39 +176,47 @@ The 3D printed parts and table clamps are not included in the product. However, 
 
   [L. Evaluate your policy](https://wiki.seeedstudio.com/lerobot_so100m/#evaluate-your-policy)
 
-:::caution
-
-On February 13, 2025, we fully updated the algorithms in the GitHub repository following the official guidelines of Huggingface. These algorithms are now compatible with and adapted to the Pi0 Vision-Action Large Model. Previous users are required to reinstall the Lerobot environment and re - calibrate and initialize each servo. 
-
-:::
 
 ## 3D Printing Guide
 
-A variety of 3D printers are acceptable to print the parts necessary of the follower and leader arm. Follow the steps below to ensure a good print.
+:::caution
+Following the official update of SO101, SO100 will no longer support it and the source files will be deleted as per the official, but the source files can still be found in our [Makerworld](https://makerworld.com/zh/models/908660). However, for users who have previously purchased SO100, the tutorials and installation methods remain compatible. The print of SO101 is fully compatible with the motor kit installation of SO100.
+:::
 
-1. Choose a printer: The STL files provided ready to print on many FDM printers. Below are the tested and suggested settings though others may work.
-    - Material: PLA
-    - Nozzle Diameter and Precision: 0.4mm nozzle diameter at 0.2mm layer height or 0.6mm nozzle at 0.4mm layer height.
-    - Infill Density: 13%
 
-2. Acquisition of 3D printing files: All the parts for the leader or follower are contained in a single file, correctly orientated for z upwards to minimize supports.
+### Step 1: Choose a printer
 
-    For printer bed sizes of 220mmx220mm (such as the Ender), print:
-    - [Print_Follower_SO_ARM100_08_Ender.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Follower/Print_Follower_SO_ARM100_08k_Ender.STL)
-    - [Print_Leader_SO_ARM100_08_Ender.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Leader/Print_Leader_SO_ARM100_08k_Ender.STL)
+The STL files provided are ready to print on many FDM printers. Below are the tested and suggested settings though others may work.
+- Material: PLA+ 
+- Nozzle Diameter and Precision: 0.4mm nozzle diameter at 0.2mm layer height or 0.6mm nozzle at 0.4mm layer height.
+- Infill Density: 15%  
 
-    For printer bed sizes of 205mm x 250mm (such as the Prusa/Up), print:
-    - [Print_Follower_SO_ARM100_08_UP_Prusa.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Follower/Print_Follower_SO_ARM100_08k_UP_Prusa.STL)
-    - [Print_Leader_SO_ARM100_08_UP_Prusa.STL](https://github.com/TheRobotStudio/SO-ARM100/blob/main/stl_files_for_3dprinting/Leader/Print_Leader_SO_ARM100_08k_UP_Prusa.STL)
+### Step 2: Set up the printer
 
-There will be certain precision errors in the printed parts, which may make disassembly and assembly rather difficult. You can use a grinding machine to polish the interior.
+- Ensure that the printer is calibrated and the bed level is correctly set using the printer specific instructions.
+- Clean the print bed, making sure it is free from dust, or grease. If cleaning the bed using water, or other liquid, dry the bed.
+- If your printer recommends it, use a standard glue stick and apply a thin, even layer of glue across the print area of the bed. Avoid clumping or uneven application.
+- Load the printer filament using printer specific instructions.
+- Ensure the printer settings match the ones suggested above (most printers have multiple settings so choose the ones that most closely match).
+- Set for supports everywhere but ignore slopes greater than 45 degrees to the horizontal.
+- There should be no supports in the screw holes with horizontal axes.
 
-For easier download, we provide the optimized 3D model of Lerobot to [Makerworld platform](https://makerworld.com/zh/models/908660), including the Table Clamps.
+### Step 3: Print the parts
+All the parts for the leader or follower are for easy 3D printing already contained in a single file, correctly orientated for z upwards to minimize supports.
+
+- For printer bed sizes of 220mmx220mm (such as the Ender), print these files:
+  - [Follower](https://github.com/TheRobotStudio/SO-ARM100/blob/main/STL/SO101/Follower/Ender_Follower_SO101.stl)
+  - [Leader](https://github.com/TheRobotStudio/SO-ARM100/blob/main/STL/SO101/Leader/Ender_Leader_SO101.stl)
+
+- For printer bed sizes of 205mm x 250mm (such as the Prusa/Up):
+  - [Follower](https://github.com/TheRobotStudio/SO-ARM100/blob/main/STL/SO101/Follower/Prusa_Follower_SO101.stl)
+  - [Leader](https://github.com/TheRobotStudio/SO-ARM100/blob/main/STL/SO101/Leader/Prusa_Leader_SO101.stl)
+
+
 
 ## Install LeRobot
 
-Environments such as pytorch and torchvision need to be installed based on your CUDA. Then, on your reComputer Nvidia Jetson:
-
+Environments such as pytorch and torchvision need to be installed based on your CUDA.
 1. Install Miniconda:
 For Jetson:
 
@@ -143,7 +227,7 @@ chmod +x Miniconda3-latest-Linux-aarch64.sh
 source ~/.bashrc
 ```
 
-Or, For X86 Linux:
+Or, For X86 Ubuntu 22.04:
 ```bash
 mkdir -p ~/miniconda3
 cd miniconda3
@@ -166,13 +250,31 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 ```
 
-4. Install LeRobot with dependencies for the feetech motors:
+4. When using miniconda, install ffmpeg in your environment:
+
+```bash
+conda install ffmpeg -c conda-forge
+```
+
+:::tip
+This usually installs ffmpeg 7.X for your platform compiled with the libsvtav1 encoder. If libsvtav1 is not supported (check supported encoders with ffmpeg -encoders), you can:
+- [On any platform] Explicitly install ffmpeg 7.X using:
+```bash
+conda install ffmpeg=7.1.1 -c conda-forge
+```
+- [On Linux only] Install ffmpeg build dependencies and compile ffmpeg from source with libsvtav1, and make sure you use the corresponding ffmpeg binary to your install with which ffmpeg.
+
+
+:::
+
+5. Install LeRobot with dependencies for the feetech motors:
 
 ```bash
 cd ~/lerobot && pip install -e ".[feetech]"
 ```
 
-For Jetson Jetpack6.0+ devices (please make sure to install [Pytorch-gpu and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) from step 5 before executing this step):
+
+For Jetson Jetpack devices (please make sure to install [Pytorch-gpu and Torchvision](https://github.com/Seeed-Projects/reComputer-Jetson-for-Beginners/blob/main/3-Basic-Tools-and-Getting-Started/3.3-Pytorch-and-Tensorflow/README.md#installing-pytorch-on-recomputer-nvidia-jetson) from step 5 before executing this step):
 
 ```bash
 conda install -y -c conda-forge "opencv>=4.10.0.84"  # Install OpenCV and other dependencies through conda, this step is only for Jetson Jetpack 6.0+
@@ -183,15 +285,8 @@ conda uninstall numpy
 pip3 install numpy==1.26.0  # This should match torchvision
 ```
 
-For Linux only (not Mac), install extra dependencies for recording datasets:
 
-```bash
-conda install -y -c conda-forge ffmpeg
-pip uninstall -y opencv-python
-conda install -y -c conda-forge "opencv>=4.10.0"
-```
-
-5. Check Pytorch and Torchvision
+6. Check Pytorch and Torchvision
 
 Since installing the lerobot environment via pip will uninstall the original Pytorch and Torchvision and install the CPU versions of Pytorch and Torchvision, you need to perform a check in Python.
 
@@ -207,9 +302,111 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 
 ## Configure the motors
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="SO100" label="SO100">
+
+Designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6 (F1...F6 and L1...L6).
+
 Follow steps 1 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the use of our scripts below.
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+**Find USB ports associated to your arms**
+To find the correct ports for each arm, run the utility script twice:
+
+```bash
+python lerobot/scripts/find_motors_bus_port.py
+```
+
+Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
+
+Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
+
+Troubleshooting: On Linux, you might need to give access to the USB ports by running:
+
+```bash
+sudo chmod 666 /dev/ttyACM0
+sudo chmod 666 /dev/ttyACM1
+```
+
+**Configure your motors**
+
+Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 1
+```
+
+:::note
+Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
+:::
+
+Then unplug your motor and plug the second motor and set its ID to 2.
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 2
+```
+
+Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
+</TabItem>
+
+
+<TabItem value="SO101" label="SO101">
+
+
+The servo calibration and initialization process for SO-ARM101 is the same as that of SO-ARM100 in terms of both method and code. However, please note that the gear ratios for the first three joints of the SO-ARM101 Leader Arm differ from those of SO-ARM100, so it’s important to distinguish and calibrate them carefully.
+
+To configure the motors designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6. We use **F1–F6** to represent joints 1 to 6 of the **Follower Arm**, and **L1–L6** to represent joints 1 to 6 of the **Leader Arm**. The corresponding servo model, joint assignments, and gear ratio details are as follows:
+
+| Servo Model                            | Gear Ratio | Corresponding Joints         |
+|----------------------------------------|------------|------------------------------|
+| ST-3215-C044(7.4V)                            | 1:191      | L1                           |
+| ST-3215-C001(7.4V)                       | 1:345      | L2                           |
+| ST-3215-C044(7.4V)                           | 1:191      | L3                           |
+| ST-3215-C046(7.4V)                           | 1:147      | L4–L6                        |
+| ST-3215-C001(7.4V) / C018(12V) / C047(12V)             | 1:345      | F1–F6                        |
+
+:::danger
+You now should plug the 5V or 12V power supply to the motor bus. 5V for the STS3215 7.4V motors and 12V for the STS3215 12V motors. Note that the leader arm always uses the 7.4V motors, so watch out that you plug in the right power supply if you have 12V and 7.4V motors, otherwise you might burn your motors! Now, connect the motor bus to your computer via USB. Note that the USB doesn't provide any power, and both the power supply and USB have to be plugged in.
+:::
+
+<div align="center">
+    <img width={800} 
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/all_motos.png" />
+</div>
+
+
+:::danger
+Please use a 5V power supply for calibrating Leader motors (ST-3215-C046, C044, 001).
+:::
+
+| **Leader Arm Joint 1 Calibration** | **Leader Arm Joint 2 Calibration** | **Leader Arm Joint 3 Calibration** | **Leader Arm Joint 4 Calibration** | **Leader Arm Joint 5 Calibration** | **Leader Arm Joint 6 Calibration** |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L1.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L2.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L3.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L4.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L5.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L6.jpg) |
+
+
+:::danger
+If you buy the Arm Kit version (ST-3215-C001), use a 5V power supply. If you buy the Arm Kit Pro version, please use a 12V power supply to calibrate the servo (ST-3215-C047/ST-3215-C018).
+:::
+
+| **Follower Arm Joint 1 Calibration** | **Follower Arm Joint 2 Calibration** | **Follower Arm Joint 3 Calibration** | **Follower Arm Joint 4 Calibration** | **Follower Arm Joint 5 Calibration** | **Follower Arm Joint 6 Calibration** |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F1.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F2.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F3.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F4.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F5.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_F6.jpg) |
+
+You can also refer to our SO-ARM100 servo calibration video, but please make sure that the servo joint IDs and gear ratios strictly correspond to those of the SO-ARM101.
 
 **Find USB ports associated to your arms**
 To find the correct ports for each arm, run the utility script twice:
@@ -256,31 +453,67 @@ python lerobot/scripts/configure_motor.py \
 ```
 
 Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
+</TabItem>
+</Tabs>
+
 
 ## Assembly
 
-Detailed video instructions are on the [HuggingFace Youtube](https://www.youtube.com/watch?v=FioA2oeFZ5I)
+**Assemble Leader Arm**
 
-<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+:::tip
+- The dual-arm assembly process of SO-ARM101 is the same as that of SO-ARM100. The only differences are the addition of cable clips on SO-ARM101 and the different gear ratios of the joint servos on the Leader Arm. So both SO100 and SO101 can be installed by referring to the following content
+- After calibrating the servos, do not rotate them before tightening the screws. Make sure the orientation of the 3D printed parts matches the reference direction in the images and that the motors are in their middle positions.
+:::
+
+
+| **Step 1** | **Step 2** | **Step 3** | **Step 4** | **Step 5** | **Step 6** |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L1.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L2.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L3.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L4.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L5.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L6.jpg) |
+| **Step 7** | **Step 8** | **Step 9** | **Step 10** | **Step 11** | **Step 12** |
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L7.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L8.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L9.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L10.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L11.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L12.jpg) |
+| **Step 13** | **Step 14** | **Step 15** | **Step 16** | **Step 17** | **Step 18** |
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L13.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L14.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L15.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L16.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L18.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L21.jpg) |
+| **Step 19** | **Step 20** | 
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L22.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_L23.jpg) |
+
+**Assemble Follower Arm**
+
+:::tip
+- The steps for assembling the Follower Arm are generally the same as those for the Leader Arm. The only difference lies in the installation method of the end-effector (gripper and handle) after Step 12.
+:::
+
+
+| **Step 1** | **Step 2** | **Step 3** | **Step 4** | **Step 5** | **Step 6** |
+|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F1.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F2.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F3.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F3.5.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F4.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F5.jpg) |
+| **Step 7** | **Step 8** | **Step 9** | **Step 10** | **Step 11** | **Step 12** |
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F6.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F7.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F8.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F9.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F11.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F12.jpg) |
+| **Step 13** | **Step 14** | **Step 15** | **Step 16** | **Step 17** | 
+| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F13.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F14.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F15.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F16.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/install_F17.jpg) |
+
 
 ## Calibrate
 
-Next, you'll need to calibrate your SO-100 robot to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-100 robot to work on another. If you need to recalibrate the robotic arm, delete the `~/lerobot/.cache/huggingface/calibration/so100` folder.
-
-:::info
-The calibration of the robotic arm should be carried out strictly in accordance with the ["Calibrate"](https://github.com/huggingface/lerobot/blob/main/examples/10_use_so100.md#e-calibrate) steps in the official tutorial of Lerobot.
+:::tip
+The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
 :::
+
+:::danger
+If you purchased the **SO101 Arm Kit Standard Edition**, all power supplies are 5V. If you purchased the **SO101 Arm Kit Pro Edition**, the Leader Arm should be calibrated and operated at every step using a 5V power supply, while the Follower Arm should be calibrated and operated at every step using a 12V power supply.
+:::
+
+Next, you need to connect the power supply and data cable to your SO-10x robot for calibration to ensure that the leader and follower arms have the same position values when they are in the same physical position. This calibration is essential because it allows a neural network trained on one SO-10x robot to work on another. If you need to recalibrate the robotic arm, delete the `~/lerobot/.cache/huggingface/calibration/so101` folder.
 
 **Manual calibration of follower arm**
 
-IMPORTANTLY: Now that you have your ports, update the port default values of [SO100RobotConfig](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py)(`lerobot/lerobot/common/robot_devices/robots
-/configs.py`). You will find something like:
+IMPORTANTLY: Now that you have your ports, update the port default values of [SO101RobotConfig](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/robots/configs.py) (`lerobot/lerobot/common/robot_devices/robots/configs.py`). You will find something like:
 
 ```python
-@RobotConfig.register_subclass("so100")
+@RobotConfig.register_subclass("so101")
 @dataclass
-class So100RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so100"
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
     # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
     # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
     # the number of motors in your follower arms.
@@ -289,7 +522,7 @@ class So100RobotConfig(ManipulatorRobotConfig):
     leader_arms: dict[str, MotorsBusConfig] = field(
         default_factory=lambda: {
             "main": FeetechMotorsBusConfig(
-                port="/dev/tty.usbmodem58760431091",  <-- UPDATE HERE
+                port="/dev/ttyACM0",  <-- UPDATE HERE
                 motors={
                     # name: (index, model)
                     "shoulder_pan": [1, "sts3215"],
@@ -306,7 +539,7 @@ class So100RobotConfig(ManipulatorRobotConfig):
     follower_arms: dict[str, MotorsBusConfig] = field(
         default_factory=lambda: {
             "main": FeetechMotorsBusConfig(
-                port="/dev/tty.usbmodem585A0076891",  <-- UPDATE HERE
+                port="/dev//dev/ttyACM1",  <-- UPDATE HERE
                 motors={
                     # name: (index, model)
                     "shoulder_pan": [1, "sts3215"],
@@ -321,16 +554,15 @@ class So100RobotConfig(ManipulatorRobotConfig):
     )
 ```
 
+```bash
+sudo chmod 666 /dev/ttyACM*
+```
 
-You will need to move the follower arm to these positions sequentially:
-
-<iframe width="900" height="600" src="https://www.youtube.com/embed/m1z9Dlk1gW8?si=Ln2PFmPnap2AeDZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Make sure both arms are connected and run this script to launch manual calibration:
+**Manual calibration of Follower arm**
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
+  --robot.type=so101 \
   --robot.cameras='{}' \
   --control.type=calibrate \
   --control.arms='["main_follower"]'
@@ -338,23 +570,20 @@ python lerobot/scripts/control_robot.py \
 
 **Manual calibration of leader arm**
 
-Follow step 6 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the manual calibration. You will need to move the leader arm to these positions sequentially:
-
-Run this script to launch manual calibration:
-
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
+  --robot.type=so101 \
   --robot.cameras='{}' \
   --control.type=calibrate \
   --control.arms='["main_leader"]'
 ```
 
-| **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
-|:---------:|:---------:|:---------:|
-| ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_zero_position.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rotated_position.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/follower_rest_position.jpg) |
-| **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
-| ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_zero_position.jpg) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rotated_position.jpg) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/leader_rest_position.jpg) |
+| **Follower Middle Position** | **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
+|:---------:|:---------:|:---------:|:---------:|
+| ![fig7](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_middle.webp) | ![fig1](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_zero.webp) | ![fig2](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_rotated.webp) | ![fig3](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_rest.webp) |
+| **LeaderMiddle Position** | **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
+| ![fig8](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_middle.webp) | ![fig4](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_zero.webp) | ![fig5](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_rotated.webp) | ![fig6](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_rest.webp) |
+
 
 
 ## Teleoperate
@@ -364,7 +593,7 @@ Then you are ready to teleoperate your robot! Run this simple script (it won't c
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
+  --robot.type=so101 \
   --robot.cameras='{}' \
   --control.type=teleoperate
 ```
@@ -372,6 +601,10 @@ python lerobot/scripts/control_robot.py \
 <iframe width="900" height="600" src="https://www.youtube.com/embed/hnRwfcyX1ZI?si=RuzYjP_FUTK16lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Add cameras
+
+:::tip
+The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
+:::
 
 After inserting your two USB cameras, run the following script to check the port numbers of the cameras, It is important to remember that the camera must not be connected to a USB Hub; instead, it should be plugged directly into the device. The slower speed of a USB Hub may result in the inability to read image data.
 
@@ -398,53 +631,17 @@ Frame: 0046 Latency (ms): 40.07
 Images have been saved to outputs/images_from_opencv_cameras
 ```
 
-You can find the pictures taken by each camera in the `outputs/images_from_opencv_cameras` directory, and confirm the port index information corresponding to the cameras at different positions. Then complete the alignment of the camera parameters in the `lerobot/lerobot/common/robot_devices/robots
-/configs.py` file.
+You can find the pictures taken by each camera in the `outputs/images_from_opencv_cameras` directory, and confirm the port index information corresponding to the cameras at different positions. Then complete the alignment of the camera parameters in the `lerobot/lerobot/common/robot_devices/robots/configs.py` file.
 
 ```python
-@RobotConfig.register_subclass("so100")
+@RobotConfig.register_subclass("so101")
 @dataclass
-class So100RobotConfig(ManipulatorRobotConfig):
-    calibration_dir: str = ".cache/calibration/so100"
-    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
-    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
-    # the number of motors in your follower arms.
-    max_relative_target: int | None = None
-
-    leader_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/ttyACM0",
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
-    follower_arms: dict[str, MotorsBusConfig] = field(
-        default_factory=lambda: {
-            "main": FeetechMotorsBusConfig(
-                port="/dev/ttyttyACM1",
-                motors={
-                    # name: (index, model)
-                    "shoulder_pan": [1, "sts3215"],
-                    "shoulder_lift": [2, "sts3215"],
-                    "elbow_flex": [3, "sts3215"],
-                    "wrist_flex": [4, "sts3215"],
-                    "wrist_roll": [5, "sts3215"],
-                    "gripper": [6, "sts3215"],
-                },
-            ),
-        }
-    )
-
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
     cameras: dict[str, CameraConfig] = field(
         default_factory=lambda: {
             "laptop": OpenCVCameraConfig(
@@ -470,15 +667,23 @@ Then you will be able to display the cameras on your computer while you are tele
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
-  --control.type=teleoperate
+  --robot.type=so101 \  
+  --control.type=teleoperate \
+  --control.display_data=true
 ```
+
+
+
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/EUcXlLlOjGE?si=6ncQ7o5ZFLR4PGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Record the dataset
+:::tip
+The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
+:::
 
-Once you're familiar with teleoperation, you can record your first dataset with SO-100.
+
+Once you're familiar with teleoperation, you can record your first dataset with SO-10x.
 
 If you want to use the Hugging Face hub features for uploading your dataset and you haven't previously done it, make sure you've logged in using a write-access token, which can be generated from the [Hugging Face settings](https://huggingface.co/settings/tokens):
 
@@ -497,18 +702,25 @@ Record 2 episodes and upload your dataset to the hub:
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
+  --robot.type=so101 \
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=${HF_USER}/so100_test \
-  --control.tags='["so100","tutorial"]' \
+  --control.repo_id=${HF_USER}/so101_test \
+  --control.tags='["so101","tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
   --control.reset_time_s=30 \
   --control.num_episodes=2 \
+  --control.display_data=true \
   --control.push_to_hub=true
 ```
+
+You will see a lot of lines appearing like this one:
+```bash
+INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5hz) dtWfoll: 0.25 (3963.7hz) dtRfoll: 6.22 (160.7hz) dtRlaptop: 32.57 (30.7hz) dtRphone: 33.84 (29.5hz)
+```
+
 
 **Parameter Explanations**
 - wormup-time-s: It refers to the initialization time.
@@ -517,39 +729,62 @@ python lerobot/scripts/control_robot.py \
 - num-episodes: It indicates how many groups of data are expected to be collected.
 - push-to-hub: It determines whether to upload the data to the HuggingFace Hub. 
 
-Note: You can resume recording by adding --control.resume=true. Also if you didn't push your dataset yet, add --control.local_files_only=true.
+:::tip
+
+- **"If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/so101_test` with a custom local folder name, such as `--control.repo_id=seeed_123/so101_test`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."**  
+
+- If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
+
+- Note: You can resume recording by adding --control.resume=true. Also if you didn't push your dataset yet, add --control.local_files_only=true.
+
+:::
 
 
 <iframe width="900" height="600" src="https://www.youtube.com/embed/wc-qh7UFkuQ?si=-eDB73KgUksyJXa-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Visualize the dataset
-
-If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
+:::tip
+The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
+:::
 
 ```bash
-echo ${HF_USER}/so100_test
+echo ${HF_USER}/so101_test  
 ```
 
 If you didn't upload with `--control.push_to_hub=false`, you can also visualize it locally with:
 
+
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id ${HF_USER}/so100_test \
-  --local-files-only 1
+  --repo-id ${HF_USER}/so101_test \ 
+  --local-files-only 1 
 ```
 
-  <div align="center">
-      <img width={800}
-      src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/visualize_datasets.png" />
-  </div>
+If you upload with `--control.push_to_hub=false`, you can also visualize it locally with:
+
+```bash
+python lerobot/scripts/visualize_dataset_html.py \
+  --repo-id seeed_123/so101_test \
+  --local-files-only 1
+```
+**Here, `seeed_123` is the custom `repo_id` name defined when collecting data.**
+
+<div align="center">
+    <img width={800}
+    src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/visualize_datasets.png" />
+</div>
+
 
 ## Replay an episode
+:::tip
+The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
+:::
 
 Now try to replay the first episode on your robot:
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
+  --robot.type=so101 \
   --control.type=replay \
   --control.fps=30 \
   --control.repo_id=${HF_USER}/so100_test \
@@ -559,50 +794,72 @@ python lerobot/scripts/control_robot.py \
 Note: If you didn't push your dataset yet, add `--control.local_files_only=true` .
 
 ## Train a policy
+:::tip
+The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
+:::
+
 
 To train a policy to control your robot, use the `python lerobot/scripts/train.py` script. A few arguments are required. Here is an example command:
 
 ```bash
 python lerobot/scripts/train.py \
-  --dataset.repo_id=${HF_USER}/so100_test \
-  --policy.type=act \     #[act,diffusion,pi0,tdmpc,vqbet]
-  --output_dir=outputs/train/act_so100_test \
-  --job_name=act_so100_test \
-  --device=cuda \
-  --wandb.enable=false \
-  --dataset.local_files_only=true
+  --dataset.repo_id=${HF_USER}/so101_test \
+  --policy.type=act \
+  --output_dir=outputs/train/act_so101_test \
+  --job_name=act_so101_test \
+  --policy.device=cuda \
+  --wandb.enable=true
+  --dataset.local_files_only=false
 ```
 
-Note: If you didn't push your dataset yet, add `--dataset.local_files_only=true`.
+**If you want to train on a local dataset, add `--dataset.local_files_only=true` to the command, and make sure the `repo_id` matches the one used during data collection.**
+
 
 Let's explain it:
 
-1. We provided the dataset as argument with `--dataset.repo_id=${HF_USER}/so100_test`.
-2. We provided the policy with `policy.type=act`. This loads configurations from [`lerobot/lerobot/common/policies/act
-/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py). Importantly, this policy uses 2 cameras as input `laptop`, `phone`.
-3. We provided `device=cuda` since we are training on a Nvidia GPU, but you can also use `device=mps` if you are using a Mac with Apple silicon, or `device=cpu` otherwise.
+1. We provided the dataset as argument with `--dataset.repo_id=${HF_USER}/so101_test`.
+2. We provide the policy using `policy.type=act`, which will load the configuration from [`lerobot/lerobot/common/policies/act/configuration_act.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/common/policies/act/configuration_act.py). Currently, ACT has been tested, but you can also try other policies such as diffusion, pi0, pi0fast, tdmpc, and vqbet.
+3. We provided policy.device=cuda since we are training on a Nvidia GPU, but you could use policy.device=mps to train on Apple silicon.
 5. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
 
 Training should take several hours. You will find checkpoints in `outputs/train/act_so100_test/checkpoints`.
 
+To resume training from a checkpoint, below is an example command to resume from last checkpoint of the act_so101_test policy:
+```bash
+python lerobot/scripts/train.py \
+  --config_path=outputs/train/act_so101_test/checkpoints/last/pretrained_model/train_config.json \
+  --resume=true
+```
+
+**Upload policy checkpoints**
+Once training is done, upload the latest checkpoint with:
+```bash
+huggingface-cli upload ${HF_USER}/act_so101_test \
+  outputs/train/act_so101_test/checkpoints/last/pretrained_model
+```
+
+
 ## Evaluate your policy
+:::tip
+The SO100 and SO101 codes are compatible. Users of SO100 can directly utilize SO101's parameters and code for operation.
+:::
 
 You can use the `record` function from [`lerobot/scripts/control_robot.py`](https://github.com/huggingface/lerobot/blob/main/lerobot/scripts/control_robot.py) but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so100 \
+  --robot.type=so101 \ 
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \
-  --control.repo_id=${HF_USER}/eval_act_so100_test \
+  --control.repo_id=${HF_USER}/eval_act_so101_test \
   --control.tags='["tutorial"]' \
   --control.warmup_time_s=5 \
   --control.episode_time_s=30 \
   --control.reset_time_s=30 \
   --control.num_episodes=10 \
   --control.push_to_hub=true \
-  --control.policy.path=outputs/train/act_so100_test/checkpoints/last/pretrained_model
+  --control.policy.path=outputs/train/act_so101_test/checkpoints/last/pretrained_model
 ```
 
 As you can see, it's almost the same command as previously used to record your training dataset. Two things changed:
@@ -655,9 +912,15 @@ As you can see, it's almost the same command as previously used to record your t
 
 - If the program prompts that it cannot read the USB camera image data, please ensure that the USB camera is not connected to a hub. The USB camera must be directly connected to the device to ensure a fast image transmission rate.
 
+:::tip
+If you encounter software issues or environment dependency problems that cannot be resolved, in addition to checking the FAQ section at the end of this tutorial, please promptly report the issue to the [LeRobot platform](https://github.com/huggingface/lerobot) or the [LeRobot Discord channel](https://discord.gg/8TnwDdjFGU).
+:::
+
 ## Citation
 
-TheRobotStudio Project: [SO-ARM100](https://github.com/TheRobotStudio/SO-ARM100)
+[中文文档](http://localhost:3000/cn/lerobot_so100m/#%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D)
+
+TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 
 Huggingface Project: [Lerobot](https://github.com/huggingface/lerobot/tree/main)
 
