@@ -3627,7 +3627,8 @@ const sidebars = {
                   label: 'reComputer J20',
                   items: [
                     'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J20/reComputer_J20_with_Jetson_getting_start',
-                  ]},
+                  ]
+                },
                 {
                   type: 'category',
                   label: 'reComputer J30/40',
@@ -3656,6 +3657,14 @@ const sidebars = {
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started',
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Hardware_Interfaces_Usage'
                   ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer J401B',
+                  items: [
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/recomputer_j401b_getting_start',
+                    'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/recomputer_j401b_interfaces_usage'
+                  ]
                 },
             ]},
             
