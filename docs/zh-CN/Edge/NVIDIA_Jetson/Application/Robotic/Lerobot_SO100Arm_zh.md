@@ -554,11 +554,11 @@ python lerobot/scripts/control_robot.py \
   --control.arms='["main_leader"]'
 ```
 
-| **Follower 中位位置** | **Follower 零位位置** | **Follower 旋转位置** | **Follower 休息位置** |
+| **Follower Middle Position** | **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
 |:---------:|:---------:|:---------:|:---------:|
-| ![fig7](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_middle.webp) | ![fig1](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_zero.webp) | ![fig2](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_rotated.webp) | ![fig3](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/follower_rest.webp) |
-| **Leader 中位位置** | **Leader 零位位置** | **Leader 旋转位置** | **Leader 休息位置** |
-| ![fig8](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_middle.webp) | ![fig4](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_zero.webp) | ![fig5](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_rotated.webp) | ![fig6](https://raw.githubusercontent.com/huggingface/lerobot/refs/heads/main/media/so101/leader_rest.webp) |
+| ![fig7](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_middle.webp) | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_zero.webp) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rotated.webp) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rest.webp) |
+| **LeaderMiddle Position** | **Leader Zero Position** | **Leader Rotated Position** | **Leader Rest Position** |
+| ![fig8](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_middle.webp) | ![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_zero.webp) | ![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_rotated.webp) | ![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/leader_rest.webp) |
 
 
 ## 遥操作
