@@ -1,33 +1,40 @@
 ---
-description: Flash JetPack to reComputer J4012 (J401 carrier board)
-title: Flash Jetpack
+description: The reComputer J401B is a compact, high-performance edge AI device featuring NVIDIA Jetson Orin modules, offering rich I/O interfaces and supporting JetPack 5.1.3 through 6.2 for versatile AI applications. This guide covers its specifications, flashing instructions, and interface usage for development and deployment.
+title: Getting start with reComputer J401B
 keywords:
 - reComputer
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reComputer_J4012_Flash_Jetpack
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.webp
+slug: /recomputer_j401b_getting_start
 last_update:
-  date: 6/12/2024
-  author: Lakshantha/Youjiang
+  date: 4/27/2025
+  author: Youjiang
 ---
 
-# Flash JetPack OS to J401 Carrier Board
+# Getting start with reComputer J401B
 
-<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/recomputer-j401.png"/></div>
+<div align="center">
+  <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.jpg"/>
+</div>
+
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-<a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401-Carrier-Board-for-Jetson-Orin-NX-Orin-Nano-without-Power-Adapter-p-5637.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-</a></div>
+  <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-J401B-optional-accessories.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
+</div>
 
-The J401 carrier board is a powerful extension board that supports NVIDIA Jetson Orin NX/Nano modules. It features 1xGbE port, 1x CAN for data transfer, M.2 Key M for SSD, M.2 Key E for WiFi/BlueTooth, 2 CSI, and 1 HDMI for high-quality video capture and display. It also contains 4x USB 3.2 ports, a fan, RTC, and a flexible 9-19V power supply. All of these make it reliable for a variety of industrial automation systems, building powerful AI applications.
+## Introduction
+The reComputer J401B series is an iteration on reComputer Classic series. The reComputer J4011B with NVIDIA Jetson Orin NX 8GB modules is a powerful and compact edge AI device with rich interfaces: 2x USB 3.2, HDMI, Ethernet, M.2 Key E for Wi-Fi module, M.2 Key M for SSD, mini-PCIe for LTE module, CAN, 40-pin and more.
 
-## Features 
+## Features
 
-- **Exceptional Performance Carrier Board:** Support the NVIDIA Jetson Orin NX/Nano module, leveraging powerful computing power to take on tough tasks with ease
-- **Versatile Connectivity:** Offer 1x Gigabit Ethernet port for networking, 4x USB 3.2 Type-A (10Gbps) ports,1x USB2.0 Type-C port, 1x CAN connector for fast data transfer
-- **Flexible Storage and Wireless Expansion:** Mount with 1x M.2 Key M 2280 and 1x M.2 Key E slots, offering ample space for flexible storage and wireless connectivity expansion
-- **Advanced Peripherals Supported:** Assemble 2x 15 pins CSI camera connector, 1x HDMI 2.1, 1x fan, 1x RTC for multiple peripherals
-- **Wide Range of Input Voltages:** From 9-19V DC, providing flexibility in power supply options
+- **Build the Most Powerful Embedded AI Platform:** Compatible with the Jetson Orin NX module, offering up to 100 TOPS.
+
+- **Design for Both Development and Production:** Equip with rich set of I/Os: 2x USB3.2, HDMI, Ethernet, M.2 Key M, M.2 Key E, mini-PCIe, 40-pin GPIO, etc. Support multiple wired and wireless commnucation including Wi-Fi and LTE
+
+- **Immediately Go-to-Market:** Pre-installed JetPack5.1.3, Linux OS BSP ready
+
+- **Certification includes** ROHS, CE, FCC, KC, UKCA, REACH
+
+- **Long Life Time Supply:**Production Lifetime: until at least 2032
 
 ## Specifications
 
@@ -35,10 +42,10 @@ The J401 carrier board is a powerful extension board that supports NVIDIA Jetson
   <thead>
     <tr>
       <th>Specifications</th>
-      <th><a href="https://www.seeedstudio.com/reComputer-J3010-w-o-power-adapter-p-5631.html?queryID=e8d0ae9b2e338e8a860f07dacef58f6e&objectID=5631&indexName=bazaar_retailer_products">reComputer J3010</a></th>
-      <th><a href="https://www.seeedstudio.com/reComputer-J3011-p-5590.html">reComputer J3011</a></th>
-      <th><a href="https://www.seeedstudio.com/reComputer-J4011-w-o-power-adapter-p-5629.html?queryID=5577f61da645361a7aad9179bc04efc2&objectID=5629&indexName=bazaar_retailer_products">reComputer J4011</a></th>
-      <th><a href="https://www.seeedstudio.com/reComputer-J4012-w-o-power-adapter-p-5628.html?queryID=639ef60cde4a38ccc9ff2f82070d4854&objectID=5628&indexName=bazaar_retailer_products">reComputer J4012</a></th>
+      <th><a href="https://www.seeedstudio.com/reComputer-J3010B-p-6404.html">reComputer J3010B</a></th>
+      <th><a href="https://www.seeedstudio.com/reComputer-J3011B-p-6405.html">reComputer J3011B</a></th>
+      <th><a href="https://www.seeedstudio.com/reComputer-J4011B-p-6407.html">reComputer J4011B</a></th>
+      <th><a href="https://www.seeedstudio.com/reComputer-J4012B-p-6406.html">reComputer J4012B</a></th>
     </tr>
   </thead>
   <tbody>
@@ -60,24 +67,24 @@ The J401 carrier board is a powerful extension board that supports NVIDIA Jetson
       <td>GPU</td>
       <td>512-core NVIDIA Ampere architecture GPU with 16 Tensor Cores</td>
       <td>1024-core NVIDIA Ampere architecture GPU with 32 Tensor Cores</td>
-      <td colSpan={2}>1024-core NVIDIA Ampere architecture GPU with 32 Tensor Cores</td>
+      <td colspan='2' align='center'>1024-core NVIDIA Ampere architecture GPU with 32 Tensor Cores</td>
     </tr>
     <tr>
       <td>GPU Max Frequency</td>
-      <td colSpan={2}>625 MHz</td>
+      <td colSpan='2' align='center'>625 MHz</td>
       <td>765 MHz</td>
       <td>918 MHz</td>
     </tr>
     <tr>
       <td>CPU</td>
-      <td colSpan={2}>6-core Arm® Cortex®-A78AE v8.2 64-bit CPU<br />1.5MB L2 + 4MB L3</td>
+      <td colSpan='2'>6-core Arm® Cortex®-A78AE v8.2 64-bit CPU<br />1.5MB L2 + 4MB L3</td>
       <td>6-core Arm® Cortex®-A78AE v8.2 64-bit CPU 1.5MB L2 + 4MB L3</td>
       <td>8-core Arm® Cortex®-A78AE v8.2 64-bit CPU 2MB L2 + 4MB L3</td>
     </tr>
     <tr>
       <td>CPU Max Frequency</td>
-      <td colSpan={2}>1.5 GHz</td>
-      <td colSpan={2}>2 GHz</td>
+      <td colSpan='2' align='center'>1.5 GHz</td>
+      <td colSpan='2' align='center'>2 GHz</td>
     </tr>
     <tr>
       <td>Memory</td>
@@ -88,102 +95,104 @@ The J401 carrier board is a powerful extension board that supports NVIDIA Jetson
     </tr>
     <tr>
       <td>DL Accelerator</td>
-      <td colSpan={2}>/</td>
+      <td colSpan='2' align='center'>/</td>
       <td>1x NVDLA v2</td>
       <td>2x NVDLA v2</td>
     </tr>
     <tr>
       <td>DLA Max Frequency</td>
-      <td colSpan={2}>/</td>
-      <td colSpan={2}>614 MHz</td>
+      <td colSpan='2' align='center'>/</td>
+      <td colSpan='2' align='center'>614 MHz</td>
     </tr>
     <tr>
       <td>Vision Accelerator</td>
-      <td colSpan={2}>/</td>
-      <td colSpan={2}>1x PVA v2</td>
+      <td colSpan='2' align='center'>/</td>
+      <td colSpan='2' align='center'>1x PVA v2</td>
     </tr>
     <tr>
       <td>Storage</td>
-      <td colSpan={4}>128GB NVMe SSD</td>
+      <td colSpan='4' align='center'>128GB NVMe SSD</td>
     </tr>
     <tr>
       <td>Video Encoder</td>
-      <td colSpan={2}>1080p30 supported by 1-2 CPU cores</td>
-      <td colSpan={2}>1x 4K60 (H.265) | 3x 4K30 (H.265)<br />6x 1080p60 (H.265) | 12x 1080p30 (H.265)</td>
+      <td colSpan='2' align='center'>1080p30 supported by 1-2 CPU cores</td>
+      <td colSpan='2' align='center'>1x 4K60 (H.265) | 3x 4K30 (H.265)<br />6x 1080p60 (H.265) | 12x 1080p30 (H.265)</td>
     </tr>
     <tr>
       <td>Video Decoder</td>
-      <td colSpan={2}>1x 4K60 (H.265)<br />2x 4K30 (H.265)<br />5x 1080p60 (H.265)<br />11x 1080p30 (H.265)</td>
-      <td colSpan={2}>1x 8K30 (H.265) | 2x 4K60 (H.265) | 4x 4K30 (H.265)<br />9x 1080p60 (H.265) | 18x 1080p30 (H.265)</td>
+      <td colSpan='2' align='center'>1x 4K60 (H.265)<br />2x 4K30 (H.265)<br />5x 1080p60 (H.265)<br />11x 1080p30 (H.265)</td>
+      <td colSpan='2' align='center'>1x 8K30 (H.265) | 2x 4K60 (H.265) | 4x 4K30 (H.265)<br />9x 1080p60 (H.265) | 18x 1080p30 (H.265)</td>
     </tr>
     <tr>
       <td>Display</td>
-      <td colSpan={4}>1* HDMI 2.1</td>
+      <td colSpan='4' align='center'>1* HDMI 2.1</td>
     </tr>
     <tr>
       <td>CSI Camera</td>
-      <td colSpan={4}>2* CSI （2-lane 15pin）</td>
+      <td colSpan='4' align='center'>2* CSI （2-lane 15pin）</td>
     </tr>
     <tr>
       <td>Networking</td>
-      <td colSpan={4}>1* Gigabit Ethernet (10/100/1000M)</td>
+      <td colSpan='4' align='center'>1* Gigabit Ethernet (10/100/1000M)</td>
     </tr>
     <tr>
       <td>USB</td>
-      <td colSpan={4}>4* USB 3.2 Type-A (10Gbps); 1* USB2.0 Type-C (Device Mode)</td>
+      <td colSpan='4' align='center'>2* USB 3.2 Type-A (10Gbps); 1* USB2.0 Type-C (Device Mode)</td>
     </tr>
     <tr>
       <td>M.2 Key M</td>
-      <td colSpan={4}>1* M.2 Key M</td>
+      <td colSpan='4' align='center'>1* M.2 Key M</td>
     </tr>
     <tr>
       <td>M.2 Key E</td>
-      <td colSpan={4}>1* M.2 Key E</td>
+      <td colSpan='4' align='center'>1* M.2 Key E</td>
+    </tr>
+    <tr>
+      <td>Mini PCIe</td>
+      <td colSpan='4' align='center'>1* mini-PCIe for LTE module</td>
     </tr>
     <tr>
       <td>Fan</td>
-      <td colSpan={4}>1* 4 pin Fan Connector(5V PWM)</td>
+      <td colSpan='4' align='center'>1* 4 pin Fan Connector(5V PWM)</td>
     </tr>
     <tr>
       <td>CAN</td>
-      <td colSpan={4}>1* CAN</td>
+      <td colSpan='4' align='center'>1* CAN</td>
     </tr>
     <tr>
       <td>Multifunctional Port</td>
-      <td colSpan={4}>1* 40-Pin Expansion header,1* 12-Pin Control and UART header</td>
+      <td colSpan='4' align='center'>1* 40-Pin Expansion header,1* 12-Pin Control and UART header</td>
     </tr>
     <tr>
       <td>RTC</td>
-      <td colSpan={4}>RTC 2-pin, RTC socket (supports CR1220 but not included)</td>
+      <td colSpan='4' align='center'>RTC 2-pin, RTC socket (supports CR1220 but not included)</td>
     </tr>
     <tr>
       <td>Power</td>
-      <td colSpan={4}>9-19V</td>
+      <td colSpan='4' align='center'>	DC 9-19V via 5525 DC jack </td>
     </tr>
     <tr>
       <td>Power Supply</td>
-      <td colSpan={4}>Power adapter not included</td>
+      <td colSpan='4' align='center'>Power adapter not included</td>
     </tr>
     <tr>
       <td>Temperature</td>
-      <td colSpan={4}>-10℃~60℃</td>
+      <td colSpan='4' align='center'>-10℃~60℃</td>
     </tr>
     <tr>
       <td>Mechanical</td>
-      <td colSpan={4}>130mm x120mm x 58.5mm</td>
+      <td colSpan='4' align='center'>130mm x120mm x 58.5mm</td>
     </tr>
   </tbody>
 </table>
 
-## Hardware Overview 
-
-<div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-J4012/6.png"/></div>
-
 ## Flash JetPack
 
-Here, we will show you how to flash [Jetpack](https://developer.nvidia.com/embedded/jetpack) to an NVMe SSD connected to the reComputer J4012/ J4011/ J3010 and J3011. All these devices come with J401 carrier board inside and the flashing procedure is the same for all.
+Here, we will show you how to flash [Jetpack](https://developer.nvidia.com/embedded/jetpack) to an NVMe SSD connected to the reComputer J4012B/ J4011B/ J3010B and J3011B. All these devices come with J401B carrier board inside and the flashing procedure is the same for all.
 
-reComputer J40/ J30 series comes with JetPack 5.1 pre-installed on the included NVMe SSD, so that you do not need to flash it. However, if you want to flash it again with JetPack, you can follow this guide.
+:::danger
+reComputer J401B series comes with JetPack 5.1.3 pre-installed on the included NVMe SSD, so that you do not need to flash it. However, if you want to flash it again with JetPack, you can follow this guide.
+:::
 
 ### Supported Module
 - [NVIDIA® Jetson Orin™ Nano Module 4GB](https://www.seeedstudio.com/NVIDIA-JETSON-ORIN-NANO-4GB-Module-p-5553.html) 
@@ -194,7 +203,7 @@ reComputer J40/ J30 series comes with JetPack 5.1 pre-installed on the included 
 ### Prerequisites
 
 - Ubuntu Host Computer
-- reComputer J4012/ J4011/ J3010 or J3011
+- reComputer J4012B/ J4011B/ J3010B or J3011B
 - USB Type-C data transmission cable
 
 :::info
@@ -229,14 +238,21 @@ Please refer to the table below to prepare the host machine.
 
 :::
 
-### Enter Force Recovery Mode
-
 :::note
 - We do not recommend using virtual machines and ARM architecture Ubuntu for flashing.
-- Before we can move on to the installation steps, we need to make sure that the board is in force recovery mode.
 :::
 
+### Enter Force Recovery Mode
+
+Before we can move on to the installation steps, we need to make sure that the jetson device is in force recovery mode.
+
+Please refer to the following steps to set the jetson device into forced recovery mode.
+
 <div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/j401_set_recovery.gif" /></div>
+
+:::note
+The carrier board in the animated GIF is the J401, but don't worry — the steps to enter forced recovery mode are the same for both the J401 and J401B carrier boards.
+:::
 
 <details>
 
@@ -314,28 +330,7 @@ The below image is for Orin NX 16GB
 
 </details>
 
-
-### Flash the device with a single command.
-
-<details>
-
-<summary> Flash the device with a single command. </summary>
-
-The reComputer Jetson J30/40 has launched a one-click flashing script, which supports flashing Jetpack 5.1.1, 5.1.2 and 6.0. Currently, the one-click flashing for Jetpack 6.1 and other series of reComputer Jetson is under testing and will be available to everyone in the near future. 
-
-```bash
-wget -O ./flashing.sh https://files.seeedstudio.com/OSHW_Jetson/flashing.sh  && sudo chmod 777 ./flashing.sh && ./flashing.sh
-```
-
-<iframe width="960" height="480" src="https://www.youtube.com/embed/_YfpJAhhT-g?si=OJxCcPqWauYEp9LR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-:::caution
-Disclaimer: The one-click flashing script aims to make jetpack flashing quicker. The current version is a beta one and may have many problems. We hope for your understanding. If there are flashing issues, follow the `Flash The Device Step by Step` below and give feedback in our [Discord Jetson channel](https://discord.com/channels/862602258452578314/930732339624026152). We'll fix them promptly and improve this function in the near future. 
-:::
-
-</details>
-
-### Flash the device step by step.
+### Flash Jetpack OS
 
 :::note
 Before moving onto flashing, it should be noted that Jetson Orin NX module only supports JetPack 5.1 and above, while Jetson Orin Nano module only supports JetPack 5.1.1 and above.
@@ -412,7 +407,6 @@ sudo apt install nvidia-jetpack
 
 
 </TabItem>
-
 <TabItem value="JP5.1.2" label="JP5.1.2">
 
 Here we will use NVIDIA L4T 35.4.1 to install Jetpack 5.1.2 on the reComputer
@@ -819,7 +813,7 @@ On an Ubuntu host machine, open the terminal and run the command `sha256sum <Fil
 :::
 
 :::note
-Please note that due to the increased power consumption and heat generation after enabling `super mode`, the [reComputer J4011](https://www.seeedstudio.com/reComputer-J4011-p-5585.html) and [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6Iko0MDEyIiwiY19zZWFyY2hfcmVzdWx0X3BvcyI6MiwiY190b3RhbF9yZXN1bHRzIjo4LCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0ifQ%3D%3D) cannot operate stably in the highest mode. Therefore, this update does not include these two products.
+Please note that due to the increased power consumption and heat generation after enabling `super mode`, the [reComputer J4011B](https://www.seeedstudio.com/reComputer-J4011B-p-6407.html) and [reComputer J4012B](https://www.seeedstudio.com/reComputer-J4012B-p-6406.html) cannot operate stably in the highest mode. Therefore, this update does not include these two products.
 We are currently designing a new version of reComputer. Stay tuned!
 :::
 
@@ -857,14 +851,17 @@ Please complete the **System Configuration** according to your needs.
 
 </Tabs>
 
-<!-- Code END -->
+## Interfaces Usage
+
+:::info
+Please refer to this [wiki page](/recomputer_j401b_interfaces_usage) for more information about Interfaces Usage.
+:::
 
 
 ## Resources
-- [reComputer J30x Datasheet](https://files.seeedstudio.com/products/NVIDIA/reComputer-J301x-datasheet.pdf)
-- [reComputer J40x Datasheet](https://files.seeedstudio.com/products/NVIDIA/reComputer-J401x-datasheet.pdf)
-- [reComputer J30/J40 Schematic](https://files.seeedstudio.com/wiki/J401/reComputer_J401_SCH_V1.0.pdf)
-- [reComputer J30/J40 3D File](https://files.seeedstudio.com/wiki/reComputer-J4012/reComputer-J4012.stp)
+- [reComputer J401B Datasheet](https://files.seeedstudio.com/wiki/reComputer/reComputer_J401B_datasheet_v1.pdf)
+- [reComputer J401B Schematic](https://files.seeedstudio.com/products/NVIDIA/reComputer_J401B_CarrierBoard_SCH_V1.0.pdf)
+- [LTE board Schematics](https://files.seeedstudio.com/products/NVIDIA/reComputer_J401B_LTE_SCH_V1.0.pdf)
 - [Seeed Jetson Serials Catalog](https://files.seeedstudio.com/wiki/Seeed_Jetson/Seeed-NVIDIA_Jetson_Catalog_V1.4.pdf)
 - [Seeed Studio Edge AI Success Stories](https://www.seeedstudio.com/blog/wp-content/uploads/2023/07/Seeed_NVIDIA_Jetson_Success_Cases_and_Examples.pdf)
 - [Seeed Jetson Serials Comparision](https://www.seeedstudio.com/blog/nvidia-jetson-comparison-nano-tx2-nx-xavier-nx-agx-orin/)

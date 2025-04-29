@@ -455,7 +455,7 @@ Después de descomprimir el paquete, también debemos instalar el controlador pa
   </tbody>
 </table>
 
-:::nota
+:::note
 
  Hay dos controladores JetPack 5.0.2 para A203 incluidos en los archivos descargados. Ambos funcionan bien, excepto que uno de ellos admite **cámara IMX-219** y el otro admite **cámara IMX-477**.
 :::

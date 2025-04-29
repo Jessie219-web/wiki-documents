@@ -148,7 +148,7 @@ For step 3 you are able to connect the touch sensor to **any GPIO Port** but mak
 
 #### Software
 
-:::cautionattention
+:::caution
 If you are using **Raspberry Pi with Raspberrypi OS >= Bullseye**, you have to use this command line **only with Python3**.
 :::
 

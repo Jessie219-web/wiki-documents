@@ -14,8 +14,6 @@ const excludedPaths = [
 
 
   // 排除指定文档
-  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera Gimbal', '_gimbal_node_red.md'), //4.9
-  path.join(docsDirectory, 'Edge', 'reCamera', 'faqs.md'), //4.8
   path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera Gimbal', 'gimbal_development_c.md'), //4.15
   path.join(docsDirectory, 'Sensor', 'SeeedStudio_XIAO', 'SeeedStudio_XIAO_ESP32S3', 'Application', 'XIAO_ESP32S3_Voice_Pomodoro.md'), //4.17
 ];
