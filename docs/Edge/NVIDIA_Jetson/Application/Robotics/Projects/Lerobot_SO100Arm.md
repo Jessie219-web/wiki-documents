@@ -918,7 +918,7 @@ If you encounter software issues or environment dependency problems that cannot 
 
 ## Citation
 
-[中文文档](http://localhost:3000/cn/lerobot_so100m/#%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D)
+[中文文档](https://wiki.seeedstudio.com/cn/lerobot_so100m/)
 
 TheRobotStudio Project: [SO-ARM10x](https://github.com/TheRobotStudio/SO-ARM100)
 
