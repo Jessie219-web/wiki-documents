@@ -292,6 +292,11 @@ We can't do it without the love, contribution that we get from the community, an
 			<th style={{width:333, height:'auto'}}><a href="https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32s3.html">XIAO ESP32S3</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://taunoerik.art/2023/05/15/start-seeed-xiao-rp2040-on-platformio/">XIAO RP2040</a></th>
 		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_rp2350_with_platform_io/">XIAO RP2350</a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+		</tr>
 	</table>
 </div>
 
@@ -316,7 +321,7 @@ We can't do it without the love, contribution that we get from the community, an
 		</tr>
 		<tr>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_esp32c6_micropython/">XIAO ESP32C6</a></th>
-			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://micropython.org/download/SEEED_XIAO_RP2350/">XIAO RP2350</a></th>
             <th style={{width:333, height:'auto'}}><a href=""></a></th>
 		</tr>
 	</table>

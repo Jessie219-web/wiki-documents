@@ -328,7 +328,7 @@ last_update:
 	    <th>PlatformIO</th>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
-        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
@@ -358,7 +358,7 @@ last_update:
         <th>CircuitPython</th>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
-        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
