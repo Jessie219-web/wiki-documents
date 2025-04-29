@@ -412,6 +412,7 @@ sudo apt install nvidia-jetpack
 
 
 </TabItem>
+
 <TabItem value="JP5.1.2" label="JP5.1.2">
 
 Here we will use NVIDIA L4T 35.4.1 to install Jetpack 5.1.2 on the reComputer
