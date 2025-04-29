@@ -3,8 +3,8 @@ description: XIAO ESP32C3 With NuttX(RTOS)
 title: XIAO ESP32C3 With NuttX(RTOS)
 keywords:
 - xiao
-image: https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp
-slug: /XIAO-ESP32C3-NuttX
+image: https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.webp
+slug: /xiao_esp32c3_nuttx
 last_update:
     date: 04/28/2025
     author: rcsim
@@ -16,7 +16,7 @@ last_update:
 
 [NuttX](https://nuttx.apache.org/) is a mature real-time operating system (RTOS) widely recognized for its standards compliance and small footprint. One of NuttX's main features is its scalability, which allows it to be used in environments ranging from 8-bit microcontrollers to 64-bit systems. This flexibility is achieved through adherence to POSIX and ANSI standards, enabling you to experiment with similar NuttX features across a wide range of chips from different architectures, families, and semiconductor vendors.
 
-<div align="center"><img width ="{200}" src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/NuttX/nuttx.svg"/></div>
+<div align="center"><img width ="{200}" src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.svg"/></div>
 
 Additionally, NuttX offers many advanced and useful features, such as USB, Ethernet, Audio, and Graphics subsystems. These characteristics make NuttX an attractive choice for developers seeking a versatile, robust RTOS capable of operating on various types of hardware.
 
@@ -28,7 +28,7 @@ For instance, the [Seeed Studio XIAO ESP32C3](https://nuttx.apache.org/docs/late
 
 The Nuttx documentation provides a [guide](https://nuttx.apache.org/docs/latest/quickstart/install.html) to different platforms. For Seeed Studio XIAO ESP32C3 please follow these steps:
 
-1. Download Espressif esptool(https://docs.espressif.com/projects/esptool/en/latest/esp32/): 
+1. Download Espressif esptool(https://docs.espressif.com/projects/esptool/en/latest/esp32/):
 
     ```bash
     ~/nuttxspace/nuttx$ esptool.py version
@@ -262,7 +262,7 @@ Check the video below with the demo for gpio:
 
 <div style={{ maxWidth: '100%', textAlign: 'center' }}>
   <video style={{ width: '100%', height: 'auto' }} controls>
-    <source src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C3/img/xiao-esp32c3-nuttx-gpio.mp4" type="video/mp4" />
+    <source src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/xiao-esp32c3-nuttx-gpio.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -344,7 +344,7 @@ Check the video below with the demo for wifi:
 
 <div style={{ maxWidth: '100%', textAlign: 'center' }}>
   <video style={{ width: '100%', height: 'auto' }} controls>
-    <source src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C3/img/xiao-esp32c3-nuttx-wifi.mp4" type="video/mp4" />
+    <source src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/xiao-esp32c3-nuttx-wifi.mp4" type="video/mp4" />
   </video>
 </div>
 
@@ -418,7 +418,7 @@ Check the video below with the demo for ble:
 
 <div style={{ maxWidth: '100%', textAlign: 'center' }}>
   <video style={{ width: '100%', height: 'auto' }} controls>
-    <source src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C3/img/xiao-esp32c3-nuttx-ble.mp4" type="video/mp4" />
+    <source src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/xiao-esp32c3-nuttx-ble.mp4" type="video/mp4" />
   </video>
 </div>
 
