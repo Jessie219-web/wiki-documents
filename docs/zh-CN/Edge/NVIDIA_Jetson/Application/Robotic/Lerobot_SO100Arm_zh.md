@@ -530,6 +530,121 @@ class So101RobotConfig(ManipulatorRobotConfig):
     )
 ```
 
+
+
+<details>
+
+<summary> 双臂遥操作. (可选) </summary>
+
+假如你想实现双臂遥操作，意味着你需要2个Leader机械臂和两个Follower机械臂，那么你需要分别在`leader_arms dick`和 `follower_arms dick`中添加机械臂类名以及对应的端口号，例如  
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
+    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
+    # the number of motors in your follower arms.
+    max_relative_target: int | None = None
+
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev/ttyACM0",  <-- 这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev/ttyACM1",  <--  这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM2",  <--  这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM3",  <-- 这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+```
+
+:::caution
+这里需要对应好双臂的left right名字以及确认每个机械臂在设备上的串口号。
+:::
+
+在下一步校准机械臂的时候则需要单独校准四个机械臂，命令为如下:
+
+
+```bash
+sudo chmod 666 /dev/ttyACM*
+```
+
+```bash
+python lerobot/scripts/control_robot.py \
+  --robot.type=so101 \
+  --robot.cameras='{}' \
+  --control.type=calibrate \
+  --control.arms='["left_follower"]'
+  #  --control.arms='["right_follower"]'
+  #  --control.arms='["left_leader"]'
+  #  --control.arms='["right_leader"]'
+```
+
+标定完成后可在‘.cache/calibration/so101’目录下查看。
+```bash
+`-- calibration
+    `-- so101
+        |-- left_follower.json
+        |-- left_leader.json
+        |-- right_follower.json
+        `-- right_leader.json
+```
+
+后续步骤与单臂一致.
+
+</details>
+
+
 ```bash
 sudo chmod 666 /dev/ttyACM*
 ```
@@ -640,6 +755,52 @@ class So101RobotConfig(ManipulatorRobotConfig):
     mock: bool = False
   
 ```
+
+
+
+<details>
+
+<summary> 添加两个以上的摄像头 (可选) </summary>
+如果你想添加更多摄像头，在USB输入允许的情况下可以在camera dick中继续添加不同摄像头名称和camera_index。请注意，摄像头不推荐使用USB HUB。
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(
+                camera_index=1,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "new_camera": OpenCVCameraConfig( ##### 添加新的名称
+                camera_index=3,             ##### 填写对应的indexID号
+                fps=30,
+                width=640,
+                height=480,
+            ),
+        }
+    )
+
+    mock: bool = False
+  
+```
+
+</details>
+
 
 
 然后，您将能够在遥操作时在计算机上显示摄像头：

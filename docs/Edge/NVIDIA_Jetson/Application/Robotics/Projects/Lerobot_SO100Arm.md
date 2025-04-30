@@ -554,6 +554,121 @@ class So101RobotConfig(ManipulatorRobotConfig):
     )
 ```
 
+
+
+<details>
+
+<summary> Dual-Arm Teleoperation. (Option) </summary>
+
+If you want to implement dual-arm teleoperation, it means you need two Leader robotic arms and two Follower robotic arms. Therefore, you need to add the class names of the robotic arms and their corresponding port numbers in the `leader_arms dick` and `follower_arms dick`, for example:
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
+    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
+    # the number of motors in your follower arms.
+    max_relative_target: int | None = None
+
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev/ttyACM0",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev/ttyACM1",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM2",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM3",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+```
+
+:::caution
+You need to correctly match the left and right names of the dual arms and ensure that each robotic arm’s serial port number on the device is correctly assigned.
+:::
+
+In the next step, when calibrating the robotic arms, you need to calibrate all four arms individually. The command is as follows:
+
+
+```bash
+sudo chmod 666 /dev/ttyACM*
+```
+
+```bash
+python lerobot/scripts/control_robot.py \
+  --robot.type=so101 \
+  --robot.cameras='{}' \
+  --control.type=calibrate \
+  --control.arms='["left_follower"]'
+  #  --control.arms='["right_follower"]'
+  #  --control.arms='["left_leader"]'
+  #  --control.arms='["right_leader"]'
+```
+
+After the calibration is completed, you can view the results in the .cache/calibration/so101 directory.
+```bash
+`-- calibration
+    `-- so101
+        |-- left_follower.json
+        |-- left_leader.json
+        |-- right_follower.json
+        `-- right_leader.json
+```
+
+The subsequent steps are the same as for the single-arm setup.
+
+</details>
+
+
 ```bash
 sudo chmod 666 /dev/ttyACM*
 ```
@@ -577,6 +692,7 @@ python lerobot/scripts/control_robot.py \
   --control.type=calibrate \
   --control.arms='["main_leader"]'
 ```
+
 
 | **Follower Middle Position** | **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
 |:---------:|:---------:|:---------:|:---------:|
@@ -662,6 +778,52 @@ class So101RobotConfig(ManipulatorRobotConfig):
     mock: bool = False
   
 ```
+
+
+<details>
+
+<summary> Add two or more additional cameras. (Option) </summary>
+If you want to add more cameras, you can continue adding different camera names and `camera_index` values in the camera dictionary, as long as the USB input allows it. Please note that using a USB hub for cameras is not recommended.
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(
+                camera_index=1,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "new_camera": OpenCVCameraConfig( ##### UPDATE HEARE
+                camera_index=3,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+        }
+    )
+
+    mock: bool = False
+  
+```
+
+</details>
+
+
 
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
