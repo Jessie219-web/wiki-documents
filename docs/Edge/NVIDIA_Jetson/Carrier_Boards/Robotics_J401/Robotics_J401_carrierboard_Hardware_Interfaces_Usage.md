@@ -5,7 +5,7 @@ tags:
   - Robotics J401 carrier board
   - Jetson
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /recomputer_jetson_robotics_J401_getting_started
+slug: /recomputer_jetson_robotics_j401_getting_started
 last_update:
   date: 04/29/2025
   author: Yaohui
