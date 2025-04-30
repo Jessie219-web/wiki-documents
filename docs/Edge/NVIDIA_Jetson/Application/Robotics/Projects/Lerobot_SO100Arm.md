@@ -731,11 +731,25 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 :::tip
 
-- **"If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/so101_test` with a custom local folder name, such as `--control.repo_id=seeed_123/so101_test`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."**  
+- "If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/so101_test` with a custom local folder name, such as `--control.repo_id=seeed_123/so101_test`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."
 
 - If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 
-- Note: You can resume recording by adding --control.resume=true. Also if you didn't push your dataset yet, add --control.local_files_only=true.
+- Press right arrow -> at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
+
+- Press left arrow <- at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
+
+- Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
+
+- Note: You can resume recording by adding --control.resume=true. Also if you didn't push your dataset yet, add --control.local_files_only=true. You will need to manually delete the dataset directory if you want to start recording from scratch.
+
+- Once you're comfortable with data recording, you can create a larger dataset for training. A good starting task is grasping an object at different locations and placing it in a bin. We suggest recording at least 50 episodes, with 10 episodes per location. Keep the cameras fixed and maintain consistent grasping behavior throughout the recordings. Also make sure the object you are manipulating is visible on the camera's. A good rule of thumb is you should be able to do the task yourself by only looking at the camera images.
+
+- In the following sections, you’ll train your neural network. After achieving reliable grasping performance, you can start introducing more variations during data collection, such as additional grasp locations, different grasping techniques, and altering camera positions.
+
+- Avoid adding too much variation too quickly, as it may hinder your results.
+
+- On Linux, if the left and right arrow keys and escape key don't have any effect during data recording, make sure you've set the $DISPLAY environment variable. See [pynput limitations](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
 
 :::
 
