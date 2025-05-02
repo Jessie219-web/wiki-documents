@@ -62,12 +62,16 @@ Please make sure all screws are tightened, otherwise it will affect the operatio
 
 ### Setup device and login
 
-**Step1:** After assembling the Gimbal, connect the usb cable from reCamera Gimbal to your PC. Navigate to `192.168.42.1` on website and change the default password. 
+**Step1:** After assembling the Gimbal, connect the usb cable from reCamera Gimbal to your PC. Navigate to `192.168.42.1` on website and change the default password.  If you are using the WiFi AP setup mode, navigate instead to `192.168.16.1`
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_1.png" /></div>
 
 :::note
 Please remember your password, otherwise all logs will be erased to reset your device. If you forget the password, please [factory reset](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset) your device.
+:::
+
+:::note
+The default username and password are both `recamera`.  If you perform a factory reset or are using a new (unconfigured) device, these are the username and password to use.
 :::
 
 **Step2:** Here you'll be taken to the Gimbal Preview Dashboard. Before experiencing some motor movements with the controls on Dashboard, please go to `Network` to set up Wi-Fi.
