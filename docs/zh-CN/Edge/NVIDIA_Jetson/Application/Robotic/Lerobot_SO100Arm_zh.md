@@ -807,7 +807,7 @@ class So101RobotConfig(ManipulatorRobotConfig):
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \  
+  --robot.type=so101 \
   --control.type=teleoperate \
   --control.display_data=true
 ```
@@ -904,7 +904,7 @@ echo ${HF_USER}/so101_test
 你也可以使用命令行来可视化:
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id ${HF_USER}/so101_test \ 
+  --repo-id ${HF_USER}/so101_test \
   --local-files-only 1 
 ```
 
@@ -958,7 +958,7 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true
+  --wandb.enable=true \
   --dataset.local_files_only=false
 ```
 

@@ -824,12 +824,11 @@ class So101RobotConfig(ManipulatorRobotConfig):
 </details>
 
 
-
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \  
+  --robot.type=so101 \
   --control.type=teleoperate \
   --control.display_data=true
 ```
@@ -932,7 +931,7 @@ If you didn't upload with `--control.push_to_hub=false`, you can also visualize 
 
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id ${HF_USER}/so101_test \ 
+  --repo-id ${HF_USER}/so101_test \
   --local-files-only 1 
 ```
 
@@ -984,7 +983,7 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true
+  --wandb.enable=true \
   --dataset.local_files_only=false
 ```
 
@@ -1024,7 +1023,7 @@ You can use the `record` function from [`lerobot/scripts/control_robot.py`](http
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \ 
+  --robot.type=so101 \
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \
