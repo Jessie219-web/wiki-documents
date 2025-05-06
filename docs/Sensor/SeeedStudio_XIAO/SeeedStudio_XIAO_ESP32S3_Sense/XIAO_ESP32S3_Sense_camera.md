@@ -1641,6 +1641,10 @@ void loop() {
 }
 ```
 
+:::tip
+Mode 1 is recommended because it has a more pronounced focusing effect than Mode 2 and provides a sharper image.
+:::
+
 ## Troubleshooting
 
 ### Q1: When XIAO ESP32S3 Sense and Round Display are used together, do I have to cut the J3 pin? Which SD card slot can be used?
