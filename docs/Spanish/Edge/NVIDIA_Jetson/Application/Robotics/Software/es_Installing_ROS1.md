@@ -23,7 +23,7 @@ En esta wiki, aprenderás cómo instalar ROS Noetic en la serie [reComputer J30/
 ## Prerequisitos
 - __[reComputer J30/40 Series](https://www.seeedstudio.com/reComputer-J4012-p-5586.html)__.
 
-  :::nota
+  :::note
   Asegúrate de que tu dispositivo reComputer esté instalado con _JetPack 5.x_, incluidos todos los CUDA necesarios y los controladores relacionados. Sigue la configuración de la conexión de hardware como se describe a continuación.
   :::
 

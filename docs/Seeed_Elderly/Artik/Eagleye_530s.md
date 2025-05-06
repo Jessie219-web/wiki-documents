@@ -691,7 +691,7 @@ waveFile.writeframes(b''.join(frames))
 waveFile.close()
 ```
 
-:::cautionwarning
+:::caution
 For more information, such as play with google assistant, please refer to [ReSpeaker 2-Mics Pi HAT](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/).
 :::
 
@@ -747,7 +747,7 @@ For more information, such as play with google assistant, please refer to [ReSpe
 [root@artik seeed-voicecard]# alsactl --file=ac108_asound.state restore
 ```
 
-:::cautionwarning
+:::caution
 Please run Step 3 again after the rebooting, or else it can't detect the seeed voicecard.
 :::
 
@@ -851,7 +851,7 @@ waveFile.writeframes(b''.join(frames))
 waveFile.close()
 ```
 
-:::cautionwarning
+:::caution
 For more information, such as play with Alexa/DuerOS, please refer to [ReSpeaker 4-Mic Array for Raspberry Pi](https://wiki.seeedstudio.com/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/).
 :::
 
@@ -954,7 +954,7 @@ wf.writeframes(b''.join(frames))
 wf.close()
 ```
 
-:::cautionwarning
+:::caution
 For more information, such as play with DOA/LEDs, please refer to [ReSpeaker Mic Array v2.0](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/).
 :::
 
@@ -1032,7 +1032,7 @@ mkdir /sys/kernel/config/device-tree/overlays/i2c
 cat /boot/overlays/s5p4418-artik533-compy-i2c1.dtbo > /sys/kernel/config/device-tree/overlays/i2c/dtbo
 ```
 
-:::cautionwarning
+:::caution
     Please run Step 4 commands after rebooting.
 :::
 
@@ -1115,7 +1115,7 @@ sensor_value = 363 voltage = 1.77 degrees = 106.2 brightness = 90
 sensor_value = 387 voltage = 1.89 degrees = 113.4 brightness = 96
 ```
 
-:::cautionwarning:
+:::caution:
 For more Grove sensors, please refer to [DexterInd Python Library](https://github.com/DexterInd/GrovePi). We do not test all the sensors' compatiblity with Eagleye 530s. Please contact techsupport if any issue.  
 :::
 
@@ -1136,7 +1136,7 @@ mkdir /sys/kernel/config/device-tree/overlays/i2c
 cat /boot/overlays/s5p4418-artik533-compy-i2c1.dtbo > /sys/kernel/config/device-tree/overlays/i2c/dtbo
 ```
 
-:::cautionwarning
+:::caution
 Every time we reset the board, run the following two commands. Put them in a bash file to make it automatic.
 :::
 
@@ -1174,7 +1174,7 @@ Turning relay 4 ON
 Turning relay 4 OFF
 ```
 
-:::cautionwarning
+:::caution
 For more information, please refer to [Raspberry Pi Relay Board v1.0](https://wiki.seeedstudio.com/Raspberry_Pi_Relay_Board_v1.0/).
 :::
 
@@ -1207,7 +1207,7 @@ For more information, please refer to [Raspberry Pi Relay Board v1.0](https://wi
 
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/Putty_normal_boot.png)
 
-:::cautionwarning
+:::caution
 For more information, please refer to [Raspberry Pi RS232 Board v1.0](https://wiki.seeedstudio.com/Raspberry_Pi_R232_Board_v1.0/).
 :::
 
@@ -1217,7 +1217,7 @@ Raspberry Pi Breakout Board, it also provides power, state indicator light, butt
 
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/breakout_shield.jpg)
 
-:::cautionwarning
+:::caution
 For more information, please refer to [Raspberry Pi Breakout Board v1.0](https://wiki.seeedstudio.com/Raspberry_Pi_Breakout_Board_v1.0/).
 :::
 

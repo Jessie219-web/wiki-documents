@@ -82,7 +82,7 @@ media-ctl -d /dev/media0 --set-v4l2 '"des_1_ch_2":0[fmt:YUYV8_1X16/1920x1536]'
 media-ctl -d /dev/media0 --set-v4l2 '"des_1_ch_3":0[fmt:YUYV8_1X16/1920x1536]'
 ```
 
-:::nota
+:::note
 Necesitamos configurar el formato de canal para el serializador y deserializador cada vez que se reinicia el dispositivo.
 :::
 
@@ -226,7 +226,7 @@ La Carrier Board J501 viene con un conector mini PCIe que admite módulos 4G y L
 
 - **Paso 3.** Inserta una tarjeta nano SIM habilitada para 4G en la ranura para tarjeta SIM de la placa.
 
-:::nota
+:::note
 Si deseas quitar la tarjeta SIM, empújala hacia adentro para golpear el resorte interno para que la SIM salga de la ranura.
 :::
 
@@ -343,7 +343,7 @@ La Carrier Board J501 admite 4 canales de entrada digital y 4 canales de salida 
   </tbody>
 </table>
 
-:::nota
+:::note
 - Entrada digital de 12 V, la señal de tierra debe conectarse a **GND_DI**.
 
 - Salida digital, voltaje máximo soportado 40 V, la señal de tierra debe conectarse a **GND_DO**.
@@ -374,7 +374,7 @@ echo 444 > export
 cd PP.04
 ```
 
-:::nota
+:::note
 Podemos consultar la tabla de asignación de pines DI/DO para encontrar el número de GPIO y el número de BGA. En el ejemplo anterior, para el pin DI1, el número GPIO es 444 y el número BGA es PP.04.
 :::
 
@@ -423,7 +423,7 @@ Si la carga está encendida o el multímetro muestra la lectura de voltaje que i
 
 La Carrier Board J501 cuenta con dos interfaces CAN que admiten el protocolo CAN FD (Velocidad de datos flexible de la red de área del controlador) a 5 Mbps. La interfaz CAN está aislada mediante aislamiento capacitivo, lo que proporciona una excelente protección EMI y garantiza una comunicación confiable en aplicaciones industriales y de automatización. Se ha instalado una resistencia de 120 Ω de forma predeterminada y puedes activarla y desactivarla mediante GPIO.
 
-:::nota
+:::note
 La interfaz CAN utiliza una fuente de alimentación aislada, lo que significa que la señal de tierra para dispositivos externos conectados a la interfaz CAN debe conectarse al pin **GND_ISO**.
 :::
 
@@ -558,7 +558,7 @@ Podemos ingresar `watch -n 1 lsusb -tv` en la terminal de la Jetson para monitor
 
 Además, puedes consultar [M.2 Key M](#m2-key-m) para probar la velocidad de lectura y escritura de los dispositivos de almacenamiento USB.
 
-:::nota
+:::note
 Antes de realizar la prueba, utiliza el comando `cd` para navegar a la carpeta donde está montado el dispositivo de almacenamiento USB.
 :::
 
@@ -609,7 +609,7 @@ Conecta una batería de tipo CR2302 de 3 V con conector JST al conector JST **2 
   <img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/13.png"/>
 </div>
 
-:::nota
+:::note
 Si no te has conectado a Internet a través de Ethernet, puedes configurar manualmente la fecha/hora aquí.
 :::
 
@@ -706,7 +706,7 @@ sudo systemctl status hwtosys.service
 
 La interfaz del ventilador integrada de la placa J501 es administrada por el daemon nvfancontrol, que ajusta de forma adaptativa la velocidad del ventilador según el estado operativo del módulo Jetson. Podemos configurar el modo de trabajo del daemon a través de su archivo de configuración `/etc/nvfancontrol.conf`.
 
-:::nota
+:::note
 Para más información, haz click [aquí](https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/text/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html?highlight=fan#fan-profile-control).
 :::
 

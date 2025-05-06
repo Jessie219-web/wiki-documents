@@ -124,7 +124,7 @@ Podemos ingresar `watch -n 1 lsusb -tv` en la terminal Jetson para sondear los p
 
 Además, puedes consultar [M.2 Key M](#m2-key-m-for-ssd) para probar la velocidad de lectura y escritura de los dispositivos de almacenamiento USB.
 
-:::nota
+:::note
 Ten en cuenta que, antes de realizar la prueba, utiliza el comando `cd` para navegar a la carpeta donde está montado el dispositivo de almacenamiento USB.
 :::
 
@@ -155,7 +155,7 @@ Conecta una batería de tipo botón CR2032 de 3 V con conector JST al conector J
 
 La interfaz del ventilador integrada de la reComputer Mini es administrada por el daemon nvfancontrol, que ajusta de forma adaptativa la velocidad del ventilador según el estado operativo del módulo Jetson. Podemos configurar el modo de trabajo del daemon a través de su archivo de configuración `/etc/nvfancontrol.conf`.
 
-:::nota
+:::note
 Para más información haz click [aquí](https://docs.nvidia.com/jetson/archives/r36.3/DeveloperGuide/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html?highlight=fan#fan-profile-control).
 :::
 

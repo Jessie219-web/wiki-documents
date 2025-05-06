@@ -29,7 +29,7 @@ Software de puerta de enlace API integrable que se ejecuta en segundo plano con 
 
 <div align="center"><img width ="800" src="https://genainerds.com/assets/img/GapiDiagram3.png"/></div>
 
-:::nota
+:::note
 Un microservicio es un proceso que ejecuta algunos scripts de Python wrapper que integran códigos/modelos personalizados en flujos de trabajo mediante una API de transmisión.
 :::
 

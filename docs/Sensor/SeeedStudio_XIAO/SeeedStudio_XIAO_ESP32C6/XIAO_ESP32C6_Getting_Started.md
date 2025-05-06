@@ -558,7 +558,6 @@ If you want to learn to use more of the deep sleep mode and wake-up functions, y
 
 - **[XLSX]** [Seeed Studio XIAO ESP32C6 pinout sheet](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/XIAO_ESP32C6_Pinout.xlsx)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32C6 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/SeeedStudio_XIAO_ESP32C6_Certification.zip)
 
 - 🔗 **[Kicad]** [Seeed Studio XIAO ESP32C6 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 
