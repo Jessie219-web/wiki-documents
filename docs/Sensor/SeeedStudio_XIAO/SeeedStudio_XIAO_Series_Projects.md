@@ -496,6 +496,11 @@ We can't do it without the love, contribution that we get from the community, an
 			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/ra4m1/boards/xiao-ra4m1/index.html ">XIAO RA4M1</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/xtensa/esp32s3/boards/esp32s3-xiao/index.html">XIAO ESP32S3</a></th>
 		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/risc-v/esp32c3/boards/esp32c3-xiao/index.html">XIAO ESP32C3</a></th>
+            <th style={{width:333, height:'auto'}}><a href=""></a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+		</tr>
 	</table>
 </div>
 
