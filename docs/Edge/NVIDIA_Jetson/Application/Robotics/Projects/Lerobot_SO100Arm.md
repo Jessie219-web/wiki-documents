@@ -554,6 +554,121 @@ class So101RobotConfig(ManipulatorRobotConfig):
     )
 ```
 
+
+
+<details>
+
+<summary> Dual-Arm Teleoperation. (Option) </summary>
+
+If you want to implement dual-arm teleoperation, it means you need two Leader robotic arms and two Follower robotic arms. Therefore, you need to add the class names of the robotic arms and their corresponding port numbers in the `leader_arms dick` and `follower_arms dick`, for example:
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
+    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
+    # the number of motors in your follower arms.
+    max_relative_target: int | None = None
+
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev/ttyACM0",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev/ttyACM1",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM2",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM3",  <-- UPDATE HERE
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+```
+
+:::caution
+You need to correctly match the left and right names of the dual arms and ensure that each robotic arm’s serial port number on the device is correctly assigned.
+:::
+
+In the next step, when calibrating the robotic arms, you need to calibrate all four arms individually. The command is as follows:
+
+
+```bash
+sudo chmod 666 /dev/ttyACM*
+```
+
+```bash
+python lerobot/scripts/control_robot.py \
+  --robot.type=so101 \
+  --robot.cameras='{}' \
+  --control.type=calibrate \
+  --control.arms='["left_follower"]'
+  #  --control.arms='["right_follower"]'
+  #  --control.arms='["left_leader"]'
+  #  --control.arms='["right_leader"]'
+```
+
+After the calibration is completed, you can view the results in the .cache/calibration/so101 directory.
+```bash
+`-- calibration
+    `-- so101
+        |-- left_follower.json
+        |-- left_leader.json
+        |-- right_follower.json
+        `-- right_leader.json
+```
+
+The subsequent steps are the same as for the single-arm setup.
+
+</details>
+
+
 ```bash
 sudo chmod 666 /dev/ttyACM*
 ```
@@ -577,6 +692,7 @@ python lerobot/scripts/control_robot.py \
   --control.type=calibrate \
   --control.arms='["main_leader"]'
 ```
+
 
 | **Follower Middle Position** | **Follower Zero Position** | **Follower Rotated Position** | **Follower Rest Position** |
 |:---------:|:---------:|:---------:|:---------:|
@@ -663,11 +779,56 @@ class So101RobotConfig(ManipulatorRobotConfig):
   
 ```
 
+
+<details>
+
+<summary> Add two or more additional cameras. (Option) </summary>
+If you want to add more cameras, you can continue adding different camera names and `camera_index` values in the camera dictionary, as long as the USB input allows it. Please note that using a USB hub for cameras is not recommended.
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(
+                camera_index=1,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "new_camera": OpenCVCameraConfig( ##### UPDATE HEARE
+                camera_index=3,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+        }
+    )
+
+    mock: bool = False
+  
+```
+
+</details>
+
+
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \  
+  --robot.type=so101 \
   --control.type=teleoperate \
   --control.display_data=true
 ```
@@ -731,11 +892,25 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 :::tip
 
-- **"If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/so101_test` with a custom local folder name, such as `--control.repo_id=seeed_123/so101_test`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."**  
+- "If you want to save the data locally (`--control.push_to_hub=false`), replace `--control.repo_id=${HF_USER}/so101_test` with a custom local folder name, such as `--control.repo_id=seeed_123/so101_test`. It will then be stored in the system's home directory at `~/.cache/huggingface/lerobot`."
 
 - If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 
-- Note: You can resume recording by adding --control.resume=true. Also if you didn't push your dataset yet, add --control.local_files_only=true.
+- Press right arrow -> at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
+
+- Press left arrow <- at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
+
+- Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
+
+- Note: You can resume recording by adding --control.resume=true. Also if you didn't push your dataset yet, add --control.local_files_only=true. You will need to manually delete the dataset directory if you want to start recording from scratch.
+
+- Once you're comfortable with data recording, you can create a larger dataset for training. A good starting task is grasping an object at different locations and placing it in a bin. We suggest recording at least 50 episodes, with 10 episodes per location. Keep the cameras fixed and maintain consistent grasping behavior throughout the recordings. Also make sure the object you are manipulating is visible on the camera's. A good rule of thumb is you should be able to do the task yourself by only looking at the camera images.
+
+- In the following sections, you’ll train your neural network. After achieving reliable grasping performance, you can start introducing more variations during data collection, such as additional grasp locations, different grasping techniques, and altering camera positions.
+
+- Avoid adding too much variation too quickly, as it may hinder your results.
+
+- On Linux, if the left and right arrow keys and escape key don't have any effect during data recording, make sure you've set the $DISPLAY environment variable. See [pynput limitations](https://pynput.readthedocs.io/en/latest/limitations.html#linux).
 
 :::
 
@@ -756,7 +931,7 @@ If you didn't upload with `--control.push_to_hub=false`, you can also visualize 
 
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id ${HF_USER}/so101_test \ 
+  --repo-id ${HF_USER}/so101_test \
   --local-files-only 1 
 ```
 
@@ -808,7 +983,7 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true
+  --wandb.enable=true \
   --dataset.local_files_only=false
 ```
 
@@ -848,7 +1023,7 @@ You can use the `record` function from [`lerobot/scripts/control_robot.py`](http
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \ 
+  --robot.type=so101 \
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \

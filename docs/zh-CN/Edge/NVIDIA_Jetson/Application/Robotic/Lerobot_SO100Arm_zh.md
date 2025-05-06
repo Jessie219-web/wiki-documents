@@ -530,6 +530,121 @@ class So101RobotConfig(ManipulatorRobotConfig):
     )
 ```
 
+
+
+<details>
+
+<summary> 双臂遥操作. (可选) </summary>
+
+假如你想实现双臂遥操作，意味着你需要2个Leader机械臂和两个Follower机械臂，那么你需要分别在`leader_arms dick`和 `follower_arms dick`中添加机械臂类名以及对应的端口号，例如  
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    # `max_relative_target` limits the magnitude of the relative positional target vector for safety purposes.
+    # Set this to a positive scalar to have the same value for all motors, or a list that is the same length as
+    # the number of motors in your follower arms.
+    max_relative_target: int | None = None
+
+    leader_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev/ttyACM0",  <-- 这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev/ttyACM1",  <--  这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+    follower_arms: dict[str, MotorsBusConfig] = field(
+        default_factory=lambda: {
+            "left": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM2",  <--  这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+            "right": FeetechMotorsBusConfig(
+                port="/dev//dev/ttyACM3",  <-- 这里
+                motors={
+                    # name: (index, model)
+                    "shoulder_pan": [1, "sts3215"],
+                    "shoulder_lift": [2, "sts3215"],
+                    "elbow_flex": [3, "sts3215"],
+                    "wrist_flex": [4, "sts3215"],
+                    "wrist_roll": [5, "sts3215"],
+                    "gripper": [6, "sts3215"],
+                },
+            ),
+        }
+    )
+
+```
+
+:::caution
+这里需要对应好双臂的left right名字以及确认每个机械臂在设备上的串口号。
+:::
+
+在下一步校准机械臂的时候则需要单独校准四个机械臂，命令为如下:
+
+
+```bash
+sudo chmod 666 /dev/ttyACM*
+```
+
+```bash
+python lerobot/scripts/control_robot.py \
+  --robot.type=so101 \
+  --robot.cameras='{}' \
+  --control.type=calibrate \
+  --control.arms='["left_follower"]'
+  #  --control.arms='["right_follower"]'
+  #  --control.arms='["left_leader"]'
+  #  --control.arms='["right_leader"]'
+```
+
+标定完成后可在‘.cache/calibration/so101’目录下查看。
+```bash
+`-- calibration
+    `-- so101
+        |-- left_follower.json
+        |-- left_leader.json
+        |-- right_follower.json
+        `-- right_leader.json
+```
+
+后续步骤与单臂一致.
+
+</details>
+
+
 ```bash
 sudo chmod 666 /dev/ttyACM*
 ```
@@ -642,11 +757,57 @@ class So101RobotConfig(ManipulatorRobotConfig):
 ```
 
 
+
+<details>
+
+<summary> 添加两个以上的摄像头 (可选) </summary>
+如果你想添加更多摄像头，在USB输入允许的情况下可以在camera dick中继续添加不同摄像头名称和camera_index。请注意，摄像头不推荐使用USB HUB。
+
+```python
+@RobotConfig.register_subclass("so101")
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(
+                camera_index=1,             ##### UPDATE HEARE
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "new_camera": OpenCVCameraConfig( ##### 添加新的名称
+                camera_index=3,             ##### 填写对应的indexID号
+                fps=30,
+                width=640,
+                height=480,
+            ),
+        }
+    )
+
+    mock: bool = False
+  
+```
+
+</details>
+
+
+
 然后，您将能够在遥操作时在计算机上显示摄像头：
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \  
+  --robot.type=so101 \
   --control.type=teleoperate \
   --control.display_data=true
 ```
@@ -713,6 +874,20 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - 注意：你可以通过添加 `--control.resume=true` 来继续录制。如果你还没有上传数据集，还需要添加 `--control.local_files_only=true`。
 
+- 在回合记录过程中任何时候按下右箭头 -> 可提前停止并进入重置状态。重置过程中同样，可提前停止并进入下一个回合记录。
+
+- 在录制或重置到早期阶段时，随时按左箭头 <- 可提前停止当前剧集，并重新录制。
+
+- 在录制过程中随时按 ESCAPE ESC 可提前结束会话，直接进入视频编码和数据集上传。
+
+- 一旦你熟悉了数据记录，你就可以创建一个更大的数据集进行训练。一个不错的起始任务是在不同的位置抓取物体并将其放入箱子中。我们建议至少记录 50 个场景，每个位置 10 个场景。保持相机固定，并在整个录制过程中保持一致的抓取行为。同时确保你正在操作的物体在相机视野中可见。一个很好的经验法则是，你应该仅通过查看相机图像就能完成这项任务。
+
+- 在接下来的章节中，你将训练你的神经网络。在实现可靠的抓取性能后，你可以在数据收集过程中引入更多变化，例如增加抓取位置、不同的抓取技巧以及改变相机位置。
+
+- 避免快速添加过多变化，因为这可能会阻碍您的结果。
+
+- 在 Linux 上，如果在数据记录期间左右箭头键和 Esc 键没有效果，请确保您已设置 $DISPLAY 环境变量。参见 [pynput 限制](https://pynput.readthedocs.io/en/latest/limitations.html#linux)。
+
 :::
 
 ## 可视化数据集
@@ -729,7 +904,7 @@ echo ${HF_USER}/so101_test
 你也可以使用命令行来可视化:
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
-  --repo-id ${HF_USER}/so101_test \ 
+  --repo-id ${HF_USER}/so101_test \
   --local-files-only 1 
 ```
 
@@ -783,7 +958,7 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true
+  --wandb.enable=true \
   --dataset.local_files_only=false
 ```
 
