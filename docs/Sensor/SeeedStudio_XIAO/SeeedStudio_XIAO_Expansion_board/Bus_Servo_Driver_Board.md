@@ -18,13 +18,23 @@ last_update:
 
 ### Getting Started with Bus Servo Driver Board
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:680, height:'auto'}}/></div>
-
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="#">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
-</div><br />
+<div class="table-center">
+  <table align="center">
+    <tr>
+        <th>OV5640 Camera for XIAO ESP32S3 Sense</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+      <tr>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
 
 
 ### Overview
@@ -151,12 +161,7 @@ The board and servo may malfunction or sustain damage. Always match the input vo
 </details> <details> <summary>Can I connect multiple servos at once?</summary>
 
 Yes, multiple servos are supported, but ensure your power supply can handle the combined current draw.
-</details> <details> <summary>What happens if I set the jumper incorrectly?</summary>
 
-The board won’t communicate properly. For direct UART communication, ensure the two pads are connected (soldered together), and for USB communication, ensure the two pads are disconnected (no solder bridge between them). You must solder/desolder the jumper pads to match the selected mode.
-</details> <details> <summary>How do I solder/desolder the jumper pads?</summary>
-
-Use a soldering iron with a fine tip. To solder, apply a small amount of solder to bridge the pads. To desolder, heat the existing solder joint and use a solder sucker or desoldering braid to remove the solder.
 </details> <br/>
 
 ### Resources
