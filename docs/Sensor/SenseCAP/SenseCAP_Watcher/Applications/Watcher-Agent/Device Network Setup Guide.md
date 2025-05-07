@@ -8,7 +8,7 @@ keywords:
   - Network Setup
   - IoT Configuration
   - WiFi Configuration
-image: https://files.seeedstudio.com/wiki/SenseCAP/sensecap_watcher_agent.jpg
+image: http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp
 slug: /device_network_setup
 last_update:
   date: 04/25/2024
@@ -128,5 +128,12 @@ A: Manually navigate to `http://192.168.4.1` in web browser while connected to t
 
 ## Technical Support
 
-If you encounter any issues during the flashing process, please contact us through:
-- Email: [support@sensecapmx.com](mailto:support@sensecapmx.com)
+<div class="button_tech_support_container">
+<a href="https://discord.com/invite/QqMgVwHT3X" class="button_tech_support_sensecap"></a>
+<a href="https://support.sensecapmx.com/portal/en/home" class="button_tech_support_sensecap3"></a>
+</div>
+
+<div class="button_tech_support_container">
+<a href="mailto:support@sensecapmx.com" class="button_tech_support_sensecap2"></a>
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+</div>
