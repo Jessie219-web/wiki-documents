@@ -73,11 +73,6 @@ The Assistant Nickname set above will only work if {{assistant_nickname}} is add
 To get the current time, you need to add: __DATE__
 :::
 
-## LLM Selection(Beta)
-
-The Web Control Panel allows you to select different Language Learning Models
-
-## Chat History
 
 ### Viewing&Managing History
 - Access chat logs
