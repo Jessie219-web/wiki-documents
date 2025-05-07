@@ -434,7 +434,7 @@ unsigned int sensor_report = 0, bodysign_val = 0, total_detect = 0, height_0005 
 
 - If you want to use **XIAO ESP32C3** for the later routines, please refer to [this tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#software-setup) to finish adding.
 
-:::cautionAttention
+:::caution
 For **XIAO nRF52840**, please select **Seeed nRF52 mbed-enabled Boards**, otherwise an error may be reported when running programs.
 <div align="center"><img width ="700" src="https://files.seeedstudio.com/wiki/XIAO-BLE/SeeednRFmbed.png"/></div>
 :::
@@ -1012,7 +1012,7 @@ At the same time, you can also send data frames to the Sensor via the software's
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/60GHzradar/40.png"/></div>
 
-:::cautionAttention
+:::caution
 If you choose **ASCII** as the format for sending data, each data set needs to be prefixed with **0x**. If you choose **HEX**, then each set of data does not need to be prefixed with **0x**.
 :::
 

@@ -40,11 +40,11 @@ reServer es un dispositivo de edge computing basado en la plataforma de Nvidia J
 - Dispositivo Jetson Orin(con el [jetpack 6.0](https://developer.nvidia.com/embedded/jetson-linux-r363) OS).
 - Cámara IP.
 
-:::nota
+:::note
 En esta wiki, seguiremos los siguientes pasos utilizando la [reServer Industrial J4012](https://www.seeedstudio.com/reServer-industrial-J4012-p-5747.html), pero puedes intentarlo utilizando otros dispositivos Jetson.
 :::
 
-:::nota
+:::note
 Puedes seguir las instrucciones en [esta wiki](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#flash-jetpack) para grabar la última versión JetPack 6.0 en la reServer.
 :::
 
@@ -65,7 +65,7 @@ Puedes seguir las instrucciones en [esta wiki](https://wiki.seeedstudio.com/reSe
 - Conectar la cámara IP a la red.
 
 
-:::nota
+:::note
 Por su puesto, también puedes acceder remotamente al dispositivo Jetson usando SSH a través de la red local.
 :::
 
@@ -299,7 +299,7 @@ deepstream:
 
 </details>
 
-:::nota
+:::note
 Por favor identifica el modelo de tu dispositivo Jetson. En este caso, la Orin Nx 16GB está siendo usada. Si estás utilizando un modelo diferente, encuentra el archivo de configuración correspondiente y realiza las modificaciones pertinentes.
 :::
 

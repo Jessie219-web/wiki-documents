@@ -34,7 +34,7 @@ Grove - Ultrasonic ranger is a non-contact distance measurement module which wor
 
 <div align="center"><img width ={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML-EI-4/Ultrasonic_Working_Principle.png"/></div>
 
-:::cautionWarning
+:::caution
 Do not hot plug Grove-Ultrasonic-Ranger, otherwise it will damage the  sensor. The measured area must be no less than 0.5 square meters and smooth.
 :::
 

@@ -550,7 +550,7 @@ Asegúrate de reemplazar **"#include <XIAO_esp32S3_CatDog2_inferencing.h>"** con
 
 <!-- - **[STEP]** [Seeed Studio XIAO ESP32S3 3D Model]() -->
 
-<!-- - **[ZIP]** [Seeed Studio XIAO ESP32S3 Certification files]() -->
+
 
 ### Para XIAO ESP32S3 Sense de Seeed Studio
 
@@ -570,7 +570,7 @@ Asegúrate de reemplazar **"#include <XIAO_esp32S3_CatDog2_inferencing.h>"** con
 
 <!-- - **[STEP]** [Seeed Studio XIAO ESP32S3 Sense 3D Model]() -->
 
-<!-- - **[ZIP]** [Seeed Studio XIAO ESP32S3 Sense Certification files]() -->
+
 
 ### Otras
 

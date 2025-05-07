@@ -38,7 +38,7 @@ La reComputer J202 tiene casi el mismo diseño y funcionalidades que la Carrier 
 - **Certificados integrales:** Incluye FCC, CE, RoHS.
 - **Customización flexible:** Proporciona servicios de modificación de módulos accesorios, logotipos e interfaces de hardware basados ​​en el diseño original de J202.
 
-:::nota
+:::note
 
 Dado que la Jetson Nano tiene solo un puerto PCIe, si el módulo usa la Jetson Nano para conectarse a la Carrier Board J202, solo puedes seleccionar la clave M.2 M para SSD.
 
@@ -211,7 +211,7 @@ Antes de que podamos continuar con los pasos de instalación, debemos asegurarno
 
 <div align="center"><img width={700} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/5.png" /></div>
 
-:::nota
+:::note
 - Para NVIDIA® Jetson Nano™: 0955:7f21 NVidia Corp
 - Para NVIDIA® Jetson Xavier™ NX: 0955:7e19 NVidia Corp
 :::
@@ -231,7 +231,7 @@ import TabItem from '@theme/TabItem';
 
 NVIDIA SDK Manager es una herramienta todo en uno que incluye software de desarrollador y proporciona una solución de configuración del entorno de desarrollo de un extremo a otro para los SDK de NVIDIA. Es recomendable para principiantes.
 
-:::nota
+:::note
   En este tutorial, usaremos el sistema operativo Ubuntu 18.04 LTS en la computadora host y la versión Jetpack que se instalará es la 4.6.1.
 :::
 
@@ -249,7 +249,7 @@ En la pantalla de la PC host de Linux, podemos hacer click con el botón derecho
 sdkmanager
 ```
 
-:::nota
+:::note
 La primera vez que utilices NVIDIA SDK Manager, aparecerá una página web solicitándote que inicies sesión con tu cuenta NVIDIA.
 :::
 
@@ -344,7 +344,7 @@ Cuando veas aparecer la siguiente ventana, la instalación habrá finalizado. Pu
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/17.png" /></div>
 
-:::nota
+:::note
 Asegúrate de desconectar el puente y salir del modo de recuperación forzada antes de volver a encender el sistema.
 :::
 </TabItem>
@@ -384,7 +384,7 @@ cd ..
 sudo ./apply_binaries.sh
 ```
 
-:::nota
+:::note
 `${}` Es donde debes colocar los nombres de los archivos.
 :::
 
@@ -412,7 +412,7 @@ sudo ./flash.sh jetson-xavier-nx-devkit-emmc mmcblk0p1
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/19.png" /></div>
 
-:::nota
+:::note
 La actualización de L4T tarda unos 10 minutos, o más en una computadora host lenta.
 :::
 
@@ -461,7 +461,7 @@ Si no puedes ingresar al sistema en **Actualizar a eMMC con la línea de comando
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
-:::nota
+:::note
 Si se necesita más espacio de almacenamiento, podemos usar una tarjeta SD para ampliar la memoria o grabar el sistema en una tarjeta SD. Puedes consultar nuestra solución recomendada [Sistema Flash en tarjeta SD](/J101_Enable_SD_Card)
 :::
 

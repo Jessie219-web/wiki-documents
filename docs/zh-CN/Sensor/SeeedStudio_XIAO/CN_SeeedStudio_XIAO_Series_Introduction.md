@@ -613,8 +613,6 @@ last_update:
 
 - **[STEP]** [Seeed Studio XIAO SAMD21 3D 模型](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/seeeduino-xiao-samd21-3d-model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO SAMD21认证文件](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/XIAO-SAMD21-Certification.zip)
-
 ### Seeed Studio XIAO RP2040 开源资料
 
 - **[PDF]** [RP2040 数据表](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/rp2040_datasheet.pdf)

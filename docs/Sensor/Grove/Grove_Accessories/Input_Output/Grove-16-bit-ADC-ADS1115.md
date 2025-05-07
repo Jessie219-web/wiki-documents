@@ -302,7 +302,7 @@ The channel3 value is : 1562.0
 
 ## Precautions
 
-:::cautionWarning
+:::caution
 When using multi-channel on **A0** and **A1** on screw terminal， please remember to not connect anything on the Grove Interface as they are also using A0 and A1. THIS MAY BE DANGEROUS WHEN DEALING WITH BATTERIES。
 :::
 

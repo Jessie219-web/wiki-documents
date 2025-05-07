@@ -39,7 +39,7 @@ Esta wiki te explicará cómo puedes instalar fácilmente Scailable AI Manager e
 sudo bash -ic "$(wget -q -O - https://get.sclbl.net)"
 ```
 
-:::nota
+:::note
 Durante la instalación, debes ingresar "y" en el mensaje que te solicita que habilites la compatibilidad con JetPack 5.
 :::
 
