@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 04/28/2025
+  date: 05/05/2025
   author: Frank
 ---
 
@@ -17,42 +17,35 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is April 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is May 5th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting start with reComputer J401B](https://wiki.seeedstudio.com/recomputer_j401b_getting_start/)
+### [Flash Watcher Agent Firmware](https://wiki.seeedstudio.com/flash_watcher_agent_firmware/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp" alt="pir" width={800} height="auto" /></p>
 
-The reComputer J401B series is an iteration on reComputer Classic series. The reComputer J4011B with NVIDIA Jetson Orin NX 8GB modules is a powerful and compact edge AI device with rich interfaces: 2x USB 3.2, HDMI, Ethernet, M.2 Key E for Wi-Fi module, M.2 Key M for SSD, mini-PCIe for LTE module, CAN, 40-pin and more.
+This guide provides instructions for flashing the Watcher Agent firmware to your SenseCAP Watcher device using Espressif's Flash Download Tool.
 
-### [J401B Interfaces](https://wiki.seeedstudio.com/recomputer_j401b_interfaces_usage/)
+### [Network Setup Guide for Watcher Agent](https://wiki.seeedstudio.com/device_network_setup/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/j401b_interfaces.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="http://files.seeedstudio.com/wiki/Watcher_Agent/firmware/wifi%20config.jpg" alt="pir" width={300} height="auto" /></p>
 
-This wiki introduces the various different hardware and interfaces on the reComputer J401B and how to use them to expand your project ideas.
+This document will guide you through the network configuration process for your SenseCAP Watcher Agent. Follow these steps to easily connect your device to your network and get started.
 
-### [Total Solar Radiation Sensor](https://wiki.seeedstudio.com/total_solar_radiation_sensor/)
+### [Web Control Panel Guide for Watcher Agent(Beta)](https://wiki.seeedstudio.com/watcher_web_control_panel/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Total_Solar_Radiation_Sensor/image1.png" alt="pir" width={800} height="auto" /></p>
-
-The IP68 RS485 Total Solar Radiation Sensor measures real-time solar total radiation from 300 to 1100 nanometers. It's ideal for environmental monitoring and agriculture. Pair it with the SenseCAP Sensor Hub 4G Data Logger or SenseCAP S2100 LoRaWAN® Data Logger for seamless data collection and management.
-On this page, we'll guide you through the process of connecting the S2100 LoRaWAN Data Logger with a Total Solar Radiation Sensor, enabling you to create a robust, industrial-grade LoRaWAN wireless sensor that can be used commercially in just five minutes.
+The SenseCAP Watcher Web Control Panel (Beta) provides a web-based interface for managing your Watcher device and configuring its Agent settings. This beta version includes essential features for device management and Agent customization.
 
 ## Existing Wiki Updated
 
-### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/iot_button_for_esphome/)
+### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
 
-We have modified the configuration code in the '[Adding the ESPHome Configuration](https://wiki.seeedstudio.com/iot_button_for_esphome/#adding-the-esphome-configuration)' section.
+We added examples related to [Configure the motors](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors).
 
-### [Grove - Barometer (High-Accuracy)](https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/)
+### [Camera Usage in Seeed Studio XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/)
 
-We have corrected the example steps related to '[Play With Raspberry Pi](https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/#software-1)' and adjusted the sample code.
-
-### [Flash Opensource Firmware to M2 Gateway](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/)
-
-We have added a sample reference for [flashing firmware via Luci](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/#flash-firmware-via-luci).
+We added examples related to [OV5640 AutoFocus operations](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/#ov5640-autofocus).
 
 ## The Efforts of Contributor
 
@@ -172,5 +165,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C3 boar
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 - [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
 - [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
+- [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
 
 </details>
