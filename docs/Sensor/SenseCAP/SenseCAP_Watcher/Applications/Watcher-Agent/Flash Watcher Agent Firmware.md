@@ -19,6 +19,8 @@ last_update:
 
 ## Overview
 
+Special thanks to [XiaoZhi AI Chatbot](https://github.com/78/xiaozhi-esp32) for their open-source contributions that made this project possible.
+
 This guide provides instructions for flashing the Watcher Agent firmware to your SenseCAP Watcher device using Espressif's Flash Download Tool.
 
 :::danger Warning
