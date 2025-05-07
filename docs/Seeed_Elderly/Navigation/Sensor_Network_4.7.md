@@ -320,7 +320,7 @@ You can discover this page with two large portions.
 <div class="intro_container">
     <a class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>Barometer</font></div>
-            <a href="Grove-Barometer-High-Accuracy" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HP206C  </font></span></a>
+            <a href="Grove-Barometer-High-Accuracy" target="_blank"><span><font color={'FFFFFF'} size={"2"}> HP206F  </font></span></a>
             <br/>
             <a href="/Grove-Barometer_Sensor-BME280" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  BME280  </font></span></a>,
             <a href="/Grove-Barometer_Sensor-BMP280" target="_blank"><span><font color={'FFFFFF'} size={"2"}>  BMP280  </font></span></a>

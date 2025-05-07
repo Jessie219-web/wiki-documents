@@ -202,7 +202,7 @@ Aquí usaremos **NVIDIA L4T 36.4** para instalar **Jetpack 6.1** en el kit Jetso
   <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/Orin-AGX-H01/a605_jp6.1.png"/>
 </div>
 
-:::nota
+:::note
 Puedes utilizar el siguiente comando para verificar que el archivo descargado esté completo.
 
 <div align="center">

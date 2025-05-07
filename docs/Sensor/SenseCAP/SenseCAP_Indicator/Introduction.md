@@ -65,7 +65,7 @@ Seeed Studio also provides one-stop ODM service for quick customization and scal
 ### Grove
 
 There are two Grove interfaces for connecting Grove modules, providing more possibilities for developers.
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/grove.png"/></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/new-grove.png"/></div>
 
 Grove is a modular, standardized connector prototyping system and a strong open source hardware ecosystem. Click [**here**](https://www.seeedstudio.com/category/Grove-c-1003.html) to learn more
 

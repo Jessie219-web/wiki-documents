@@ -34,7 +34,7 @@ En esta wiki, demostraremos cómo configurar una base de conocimientos local en 
 - Dispositivo Jetson con más de 16GB de memoria.
 - El dispositivo debe ser previamente flasheado con el sistema operativo jetpack [5.1.1](https://wiki.seeedstudio.com/reComputer_Intro/).
 
-:::nota
+:::note
 En esta wiki, trabajaremos utilizando el [NVIDIA® Jetson AGX Orin™ 64GB Developer Kit](https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html), pero también puedes intentar usar otros dispositivos Jetson.
 :::
 
@@ -53,7 +53,7 @@ En esta wiki, trabajaremos utilizando el [NVIDIA® Jetson AGX Orin™ 64GB Devel
 ### Conexiones de Hardware
 - Conecta el dispositivo Jetson a la red, también cablea: el mouse, el teclado y el monitor.
 
-:::nota
+:::note
 Por supuesto, también puedes acceder de forma remota al dispositivo Jetson a través de SSH mediante la red local.
 :::
 
@@ -109,7 +109,7 @@ docker run -d -p 3001:3001 --cap-add SYS_ADMIN \
 
 Para acceder a la aplicación completa, visita `http://<jetson-ip>:3001` en tu navegador.
 
-:::nota
+:::note
 Puedes ingresar el comando `ifconfig` en la terminal de la Jetson para encontrar tu dirección IP.
 :::
 
@@ -140,7 +140,7 @@ Finalmente, importa los documentos necesarios. Luego, el LLM responderá pregunt
 
 En este punto, has configurado con éxito tu propia base de conocimientos local.
 
-:::nota
+:::note
 Para obtener tutoriales de configuración más detallados, consulta [este enlace](https://docs.anythingllm.com/).
 :::
 

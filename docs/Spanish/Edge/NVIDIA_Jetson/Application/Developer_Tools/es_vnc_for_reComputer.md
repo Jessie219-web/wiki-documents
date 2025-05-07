@@ -26,7 +26,7 @@ VNC Viewer es una herramienta de escritorio remoto que te permite controlar de f
 </div>
 
 -  [Un Hdmi Dummy Plug](https://www.cytron.io/p-full-size-hdmi-dummy-plug-for-headless-setup). 
-:::nota
+:::note
 Si no deseas conectar un monitor, debes usar un **`HDMI Dummy Plug`** para habilitar el control de escritorio remoto.
 :::
 

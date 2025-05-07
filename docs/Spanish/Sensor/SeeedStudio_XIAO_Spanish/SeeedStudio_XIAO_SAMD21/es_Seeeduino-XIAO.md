@@ -434,8 +434,6 @@ El tamaño máximo de la memoria flash es de 8 KB. Más información en la hoja 
 
 - **[STEP]** [Modelo 3D de Seeed Studio XIAO SAMD21](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/seeeduino-xiao-samd21-3d-model.zip)
 
-- **[ZIP]** [Archivos de certificación de Seeed Studio XIAO SAMD21](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/XIAO-SAMD21-Certification.zip)
-
 - 🔗 **[Kicad]** [Footprint de Seeed Studio XIAO SAMD21](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 
 
