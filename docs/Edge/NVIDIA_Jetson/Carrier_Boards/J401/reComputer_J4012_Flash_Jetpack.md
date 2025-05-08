@@ -798,7 +798,7 @@ Here we will use NVIDIA L4T 36.4.3 to install Jetpack 6.2 on the reComputer
         <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Ea8wqK7OE0VGtclEw1J0FIYB8I6qJEH_n1facfwl9AlhkQ?e=UoHjcf" target="_blank" rel="noopener noreferrer">Download
         </a>
       </td>
-      <td> D9ECF85D0BD52E6E90E9C567A52688C7FAEE7DD1BDC87ED557184086FD605249 </td>
+      <td> D00349D7698A8BFEDB23B655B496117A650C18472A7E60365E0EF86889EDD301 </td>
     </tr>
     <tr>
       <td>Orin Nano 4GB</td>
@@ -806,7 +806,7 @@ Here we will use NVIDIA L4T 36.4.3 to install Jetpack 6.2 on the reComputer
         <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYuzr4pFfZ5Lp2WIqG_tZ7ABIYU9A0KuFl1nAs9FiGmZBQ?e=WALXR5" target="_blank" rel="noopener noreferrer">Download
         </a>
       </td>
-      <td> 00B881683FD2D61A22BD2D0326E7B5E39CB5C4F249BF2CD18A272766CB6612E7 </td>
+      <td> 2495E2275999283415F523D0F3D35594B21EAAD71CF87E4AA3BDC072A830B871 </td>
     </tr>
   </tbody>
 </table>
@@ -826,7 +826,7 @@ We are currently designing a new version of reComputer. Stay tuned!
 **Step 2:** Extract the downloaded image file:
 ```bash
 sudo tar xpf mfi_xxxx.tar.gz
-# For example: sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.2-36.4.3-2025-02-08.tar.gz
+# For example: sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.2-36.4.3-2025-04-07.tar.gz
 ```
 
 **Step 3:** Navigate to the unzipped directory and execute the following command to flash jetpack system to the NVMe SSD: 

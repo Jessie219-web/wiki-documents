@@ -256,7 +256,7 @@ You will see the following output if the flashing process is successful:
 :::info
 We can also run the following command to install the system onto the SSD:
 ```bash
-sudo ./tooLs/kerneL_fash/L4t_initrd_fash.sh --externaL-device nvme0nlp1 -c tools/kernel_fash/flash_L4t_t234_nvme.xml --showlogs --network usb0 jetson-agx-orin-devkit external
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c tools/kernel_flash/flash_l4t_t234_nvme.xml --showlogs --network usb0 jetson-agx-orin-devkit external
 ```
 :::
 

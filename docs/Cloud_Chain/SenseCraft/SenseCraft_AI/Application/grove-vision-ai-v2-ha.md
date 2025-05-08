@@ -198,10 +198,10 @@ Then select **XIAO ESP32S3** and click **Connect**.
 Note that although the XIAO ESP32S3 is selected here, we are still using the XIAO ESP32C3!
 :::
 
-Click the button below to download the firmware file and click the **Add File** button on the web page to flash the `XIAO_C3_as_AT_module.bin` firmware for the `0x0` address.
+Click the button below to download the firmware file and click the **Add File** button on the web page to flash the `SSCMA_XIAO_ESP32C3_adapter_sensecraft_v1.1.8.bin` firmware for the `0x0` address.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/visionai-v2-ha/res/XIAO_C3_as_AT_module_v241209.bin">
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/visionai-v2-ha/res/SSCMA_XIAO_ESP32C3_adapter_sensecraft_v1.1.8.bin">
             <strong><span><font color={'FFFFFF'} size={"4"}>Download the file</font></span></strong>
     </a>
 </div>
@@ -362,11 +362,13 @@ Click on SenseCraft and select Action as **Add device using host/id**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/39.png" style={{width:500, height:'auto'}}/></div>
 
-Click **SUBMIT**, then select your device type from the dropdown menu, such as `grove_vision_ai_we2`, and click **SUBMIT** again.
+Click **SUBMIT**, then select your device type from the dropdown menu, such as `Grove Vision AI V2`, and click **SUBMIT** again.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/40.png" style={{width:500, height:'auto'}}/></div>
 
 In the following input field, enter the exact ID of your device. This ID is usually found on the device itself or on the SenseCraft AI website.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/70.png" style={{width:500, height:'auto'}}/></div>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/58.png" style={{width:1000, height:'auto'}}/></div>
 
