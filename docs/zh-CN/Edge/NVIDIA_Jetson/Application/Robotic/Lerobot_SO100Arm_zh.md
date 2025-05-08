@@ -935,7 +935,7 @@ python lerobot/scripts/control_robot.py \
   --robot.type=so101 \
   --control.type=replay \
   --control.fps=30 \
-  --control.repo_id=${HF_USER}/so100_test \
+  --control.repo_id=${HF_USER}/so101_test \
   --control.episode=0
 ```
 如果你将数据保存在本地，请添加`--control.local_files_only=true` .
@@ -958,12 +958,11 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true \
-  --dataset.local_files_only=false
+  --wandb.enable=true
 ```
 
 
-如果你想训练本地数据集，在命令后加上`--dataset.local_files_only=true`,然后repo_id与采集数据的repo_id对齐即可。
+如果你想训练本地数据集，repo_id与采集数据的repo_id对齐即可。
 
 让我们解释一下：
 1. 我们使用 `--dataset.repo_id=${HF_USER}/so101_test` 提供了数据集本地路径或上传到Huggingface的数据集ID作为参数。

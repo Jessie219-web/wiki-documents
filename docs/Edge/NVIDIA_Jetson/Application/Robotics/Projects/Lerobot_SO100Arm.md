@@ -962,7 +962,7 @@ python lerobot/scripts/control_robot.py \
   --robot.type=so101 \
   --control.type=replay \
   --control.fps=30 \
-  --control.repo_id=${HF_USER}/so100_test \
+  --control.repo_id=${HF_USER}/so101_test \
   --control.episode=0
 ```
 
@@ -983,11 +983,10 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true \
-  --dataset.local_files_only=false
+  --wandb.enable=true
 ```
 
-**If you want to train on a local dataset, add `--dataset.local_files_only=true` to the command, and make sure the `repo_id` matches the one used during data collection.**
+**If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection.**
 
 
 Let's explain it:
