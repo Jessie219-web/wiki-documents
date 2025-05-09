@@ -93,7 +93,7 @@ XIAO RP2350 将 Raspberry Pi RP2350（双 Cortex-M33 核心，运行频率 150MH
     <tr>
         <td>低功耗</td>
        <td align="center"> - </td>
-        <td>27μA</td>
+        <td>50μA</td>
     </tr>
     <tr>
         <td>软件兼容性</td>
