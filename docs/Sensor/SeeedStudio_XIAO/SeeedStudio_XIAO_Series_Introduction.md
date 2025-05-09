@@ -295,7 +295,7 @@ last_update:
 	    <th>Low Power Mode</th>
 	    <td align="center"><font size={"3"}>❌</font></td>
 	    <td align="center"><font size={"3"}>❌</font></td>
-        <td align="center">27μA</td>
+        <td align="center">50μA</td>
 	    <td align="center">5μA</td>
 	    <td align="center">5μA</td>
         <td align="center">44μA</td>
