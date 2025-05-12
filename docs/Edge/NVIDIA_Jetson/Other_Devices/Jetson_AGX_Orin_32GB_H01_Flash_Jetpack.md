@@ -150,6 +150,8 @@ You will see the following output if the flashing process is successful
   - Beside materials mentioned in Wiki, please download [Overlay_PCN210361_PCN210100_r35.3.1.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v3.1/overlay_pcn210361_pcn210100_r35.3.1.tbz2) at bottom of the page Jetson Linux 35.3.1.
   - After extracting *Jetson_Linux* and before applying binaries, please extract *Overlay_PCN210361_PCN210100_r35.3.1.tbz2*. Then copy all files, folders to *Linux_For_Tegra* (merge, not skip).
   - Then continue remaining steps in guidances.
+
+
 </TabItem>
 
 <TabItem value="JP6.0" label="JP6.0">
