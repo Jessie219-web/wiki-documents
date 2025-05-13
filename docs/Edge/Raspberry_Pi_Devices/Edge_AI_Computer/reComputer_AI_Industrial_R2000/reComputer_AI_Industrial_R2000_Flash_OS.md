@@ -6,7 +6,7 @@ keywords:
   - reComputer AI Industrial R2000
   - Flash OS
 image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.webp
-slug: /reComputer_AI_Industrial_R2000_Flash_OS
+slug: /recomputer_ai_industrial_r2000_flash_os
 last_update:
   date: 05/06/2025
   author: Jiahao Li

@@ -5,8 +5,8 @@ keywords:
 - Raspberry pi
 - Edge AI Computer
 - reComputer R2000
-image: https://files.seeedstudio.com/wiki/recomputer-r2000-getting-start/1_24_1.webp
-slug: /reComputer_AI_Industrial_R2000_getting_start
+image: https://files.seeedstudio.com/wiki/AI-box-cm5/r2135.webp
+slug: /recomputer_ai_industrial_r2135_getting_start
 last_update:
   date: 05/06/2025
   author: Jiahao Li
