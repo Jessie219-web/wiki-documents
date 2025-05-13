@@ -1,18 +1,19 @@
 ---
-description: reComputer AI R2000 is a powerful Edge AI Computer based on the Raspberry Pi 5. With quad-core Arm Cortex-A76 processor 8GB RAM, M.2 SSD support, and an Hailo-8 AI acceleration module providing up to 26 TOPS, Enabling real-time, low latency & high-efficiency AI inferencing. it's the perfect chioce for a wide range of AI applications, including AI-powered video analytics, machine vision, and intelligent edge computing.
-title: Getting Start with R2000 Series
+description: reComputer AI Industrial R2000 Flash OS
+title: reComputer AI Industrial R2000 Flash OS
 keywords:
-- Raspberry pi
-- Edge AI Computer
-- reComputer R2000
-image: https://files.seeedstudio.com/wiki/recomputer-r2000-getting-start/1_24_1.webp
-slug: /r2000_series_getting_start
+  - Edge
+  - reComputer AI Industrial R2000
+  - Flash OS
+image: https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/01_1.webp
+slug: /reComputer_AI_Industrial_R2000_Flash_OS
 last_update:
-  date: 1/09/2025
+  date: 05/06/2025
   author: Jiahao Li
 ---
+#  reComputer AI Industrial R2000 Flash OS
 
-<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/_/1_24_1.jpg" style={{width:800, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/7/-/7-114993595-recomputer-ai-industrial-r2135-12.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-AI-R2130-12-p-6368.html">
@@ -20,75 +21,23 @@ last_update:
     </a>
 </div>
 
-reComputer AI R2000 is a powerful Edge AI Computer based on the Raspberry Pi 5. With quad-core Arm Cortex-A76 processor 8GB RAM, M.2 SSD support, and an Hailo-8 AI acceleration module providing up to 26 TOPS, Enabling real-time, low latency & high-efficiency AI inferencing. it's the perfect chioce for a wide range of AI applications, including AI-powered video analytics, machine vision, and intelligent edge computing.
+reComputer AI Industrial R2000 series is powered by Raspberry Pi CM5 and Hailo-8 AI accelerator, this compact edge AI system delivers 26 TOPS for real-time multi-channel vision processing. With a quad-core Cortex-A76 CPU, up to 16GB RAM, 64GB eMMC, and a versatile interface, it ensures seamless integration into industrial AI applications.
 
-## Features
+## Hardware Requirements
 
-- **Powerful Cooling Capabilities**: The compact design and optimized thermal architecture make it highly suitable for deployment in resource-constrained environments, providing excellent cooling performance.
+You need to prepare the following hardware
 
-- **Powerful Performance**: Powered by Raspberry Pi 5 with quad-core Cortex-A76 CPU, up to 8GB RAM.
+- reComputer AI Industrial R2000 x 1
+- Host Computer (Windows/Mac/Linux) x 1
+- Ethernet cable x 1
+- Power adapter (12V-24V) BYO
+- USB Type-C cable x 1 
 
-- **26 Tera-Operations Per Second**: Powered by Hailo AI Accelerator Offering Integrated Computing Power of Up to 26 Tops.
-Extensive Interfaces: 2x HDMI 4Kp60,1x Ethernet Port, 2x USB 3.0, 2x USB 2.0.
+## Software Requirements
 
-- **Wireless Connectivity**: Dual-band Wi-Fi and Bluetooth 5.0/BLE.
-Flexible Storage Options: The PCIe2.0 dual M.2 Slot supports both AI accelerator and SSD storage.
-
-## Specifications
-
-| **Parameters**        | **Description**                                                          |
-|-----------------------|--------------------------------------------------------------------------|
-| **Hardware Spec**      |                                                                          |
-| **CPU**                | Raspberry Pi 5, 2.4GHz quad-core 64-bit Arm Cortex-A76                    |
-| **GPU**                | Raspberry Pi 5, VideoCore VII                                             |
-| **AI Processor**       | Hailo-8 M.2 Acceleration Module, 26 Tera-Operations Per Second           |
-| **RAM**                | 8GB SDRAM                                                                |
-| **Operating System**   | Raspberry Pi OS, Ubuntu                                                  |
-| **System Spec**        |                                                                          |
-| **Power Supply**       | 5V/5A DC power via USB-C, Power Delivery supported                       |
-| **Video Decoder**      | 4Kp60 HEVC decoder                                                       |
-| **Wi-Fi**              | Dual-band 802.11ac Wi-Fi®                                                |
-| **Bluetooth**          | Bluetooth 5.0/ BLE                                                       |
-| **Power Button**       | On/Off included                                                          |
-| **Interface**          |                                                                          |
-| **Storage**            | 1 x microSD card slot, with support for high-speed SDR104 mode           |
-| **M.2 Slot**           | 2 x M.2 Slot, supports M.2 NVMe SSD/Hailo M.2 Acceleration Module        |
-| **USB Ports**          | 2 × USB 3.0 ports                                                        |
-|                       | 2 × USB 2.0 ports                                                        |
-| **Ethernet**           | 1 x 10/100/1000 Mbps                                                     |
-| **Camera/Display**     | 2 × 4-lane MIPI camera/display transceivers                               |
-| **Display Output**     | 2 x micro HDMI ports (4Kp60)                                             |
-| **Ambient Conditions** |                                                                          |
-| **Ingress Protection** | IP40                                                                     |
-| **Operating Temperature** | 0-45°C                                                                  |
-| **Others**             |                                                                          |
-| **Warranty**           | 1 Year                                                                   |
-| **Production Lifetime**| Until at least January 2036                                              |
-| **Certification**      | CE, FCC, Telec, RoHS, REACH                                              |
-
-## Hailo introduction
-
-### Hardware introduction
-
-[Hailo](https://hailo.ai/) offers cutting-edge AI processors uniquely tailored for high-performance deep learning applications on edge devices. The company's solutions focus on enabling the next era of generative AI on the edge, alongside perception and video enhancement, powered by advanced AI accelerators and vision processors. And The reComputer_R2000, equipped with the Hailo-8 NPU accelerator providing 26 TOPs of AI performance, is capable of achieving over 200 FPS with YOLOv8s.
-
-### Software introduction
-
-![](https://seeed-projects.github.io/Tutorial-of-AI-Kit-with-Raspberry-Pi-From-Zero-to-Hero/assets/images/architecture-2bfc6ed440e1add56388738e87558050.png)
-
-The Hailo AI Software Suite provides powerful tools to run AI models efficiently on hardware accelerators. It is designed to integrate seamlessly with existing deep learning frameworks, offering smooth workflows for developers.The process involves generating a HEF (Hailo Executable Binary File) from an ONNX file in the Model Build Environment. Once created, the HEF file is transferred to the inference machine (Runtime Environment), where it is used to execute inference with the HailoRT API. The provided script facilitates the conversion of an ONNX file into a HEF file within the Model Build Environment.
-
-> **Note:**
-> **If you want to learn more about examples of using Hailo NPU, please click this [link](https://github.com/Seeed-Projects/Tutorial-of-AI-Kit-with-Raspberry-Pi-From-Zero-to-Hero).**
-
-## Hardware Overview
-
-![image1](https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image3_1.jpeg)
-![image2](https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image4_1.jpeg)
-
+- [usbboot tool](https://github.com/raspberrypi/usbboot)
+- [Raspberry Pi Imager APP](https://www.raspberrypi.com/software/)
 ## Flash OS
-
-*You need an SD card and a card reader. Insert the SD card into the card reader, and then plug the card reader's USB interface into the USB port of your host machine.*
 
 ### For Windows host computer
 
@@ -192,7 +141,6 @@ Here you can **set a hostname, enable SSH, set a password, configure wifi, set l
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/recomputer_r_images/system.png" /></div>
 
-<!-- <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/OS-select.png" alt="pir" width="600" height="auto"/></p> -->
 
 **NOTE:** You can select other OS such as **64-bit Ubuntu** by navigating into **Other general purpose OS**
 
@@ -216,7 +164,7 @@ The result is shown as below:
 
 ### Update EEPROM
 
-*This method works if you have an SD card and have booted the device successfully. Please make sure your system is the latest Raspberry Pi system (Bookworm or later) and and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer, otherwise it may not recognize the NVME-related configurations.*
+*This method works if you have an SSD and have booted the device successfully with emmc. Please make sure your system is the latest Raspberry Pi system (Bookworm or later) and and your RPi 5 firmware is updated to 2023-12-06 (Dec 6th) or newer, otherwise it may not recognize the NVME-related configurations.*
 
 **Step 1**:Ensure that your Raspberry Pi system is up-to-date (Bookworm or later), enter the following command to update the RPi 5 firmware:
 
@@ -337,61 +285,17 @@ Modify the `config.txt`, add `dtoverlay=pcie-fix` at the end of the file like be
 
 And then Use `Ctrl+X` and input `y` to store this file.
 
-## Power consumption and temperature
-
-:warning: **Note:** The standby state was tested under the following conditions: the graphical interface was disabled, Bluetooth was turned off, and Wi-Fi was disabled. The command is shown as below:
-
-```
-sudo ifconfig wlan0 down
-sudo systemctl stop bluetooth
-sudo systemctl stop lightdm
-```
-
-| **Condition**        | **Power consumption** | **Temperature** |
-|----------------------|----------------------|----------------------|
-|**Standby**|5.9w   |   cpu:46°C|
-|**Normal Operation**|6.3w|cpu:53°C|
-|**Max Load**|16.2w|cpu:75°C hailo8:81°C|
-
-## Application
-
-### Frigate
-
-Frigate is an open-source NVR (Network Video Recorder) designed for real-time object detection using AI. It integrates with existing cameras and uses machine learning models, like TensorFlow and Coral, to perform object detection on video feeds. Frigate is optimized for low-latency and high-performance video processing, offering features like motion detection, live video streams, and automated alerts.
-
-<iframe width="800" height="500" src="https://www.youtube.com/embed/thmI3dz9Ugs" title="Cost-Effective AI Surveillance: Frigate on Raspberry Pi 5 with Hailo8 on PCIe3.0 to Dual M.2 hat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> **Note:**
-> **If you want to learn more about this project, please refer to this [link](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/).**
-
-### YOLO
-
-The YOLO (You Only Look Once) series of models are a family of real-time object detection models designed for speed and accuracy. Unlike traditional object detection methods that perform region proposal and classification separately, YOLO performs both tasks in a single forward pass of the neural network, making it much faster. YOLO models divide the image into a grid and predict bounding boxes and class probabilities for each grid cell. Over the years, YOLO has evolved through various versions, with improvements in accuracy, speed, and the ability to detect smaller objects. YOLOv4, YOLOv5, and the recent YOLOv7 and YOLOv8 models are widely used for applications like surveillance, autonomous vehicles, and robotics.
-
-<iframe width="800" height="500" src="https://www.youtube.com/embed/olaSVKmt9YI" title="Raspberry Pi AI: YOLOv8 Object Detection - 240fps Video Input, Pi 5 PCIe Gen2 vs Gen3 Benchmark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> **Note:**
-> **If you want to learn more about this project, please refer to this [link](https://wiki.seeedstudio.com/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)**.
-
-### Clip
-
-CLIP (Contrastive Language-Image Pretraining) is a machine learning model developed by OpenAI that can understand images and text together. It is trained to associate images with corresponding textual descriptions, allowing it to perform tasks that involve both modalities. CLIP is capable of zero-shot learning, meaning it can recognize objects and concepts in images without needing to be specifically trained on those categories. It has shown strong performance in a variety of tasks, such as image classification, object detection, and even generating textual descriptions of images.
-
-<iframe width="800" height="500" src="https://www.youtube.com/embed/JMHtqSmAGCA" title="CLIP Zero Shot Classification on Raspberry Pi 5 with Hailo AI Accelerator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-> **Note:**
-> **If you want to learn more about this project, please refer to this [link](https://wiki.seeedstudio.com/clip_application_on_rpi5_with_ai_kit/).**
 
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
