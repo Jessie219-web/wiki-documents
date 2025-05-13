@@ -193,6 +193,7 @@ void setup()
   while(!Serial);   
 
    /* Scan I2C device detect device address */
+   relay.begin();
   uint8_t old_address = relay.scanI2CDevice();
   if((0x00 == old_address) || (0xff == old_address)) {
     while(1);

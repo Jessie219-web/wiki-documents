@@ -1318,6 +1318,13 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'RTOS',
+              items: [
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO-ESP32C6-NuttX',
+              ],
+            },
+            {
+              type: 'category',
               label: 'Zigbee',
               items: [
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee',

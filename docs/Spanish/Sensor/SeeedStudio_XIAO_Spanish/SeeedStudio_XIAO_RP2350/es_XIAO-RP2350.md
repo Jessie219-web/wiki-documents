@@ -31,7 +31,7 @@ import TabItem from '@theme/TabItem';
   </a>
 </div><br></br>
 
-El XIAO RP2350 integra el poder del Raspberry Pi RP2350 (dos núcleos Cortex-M33 que funcionan a 150 MHz con FPU, seguridad mejorada y cifrado) en el formato clásico de XIAO. Con unas dimensiones de solo 21x17.8mm, cuenta con 19 pines GPIO multifuncionales, un LED RGB y un Sistema de Gestión de Batería con un consumo de energía ultra bajo de 27μA, suministro de energía mediante batería y medición directa del voltaje de la batería. Gracias al ecosistema XIAO, el XIAO RP2350 es compatible con una amplia gama de complementos, como pantallas, matrices de LED, módulos Grove, CAN Bus, sensores de Vision AI y sensores mmWave. Con soporte nativo para MicroPython, C y C++, el XIAO RP2350 es ideal para desarrolladores de todos los niveles que buscan crear aplicaciones compactas y alimentadas por batería para control inteligente, dispositivos portátiles, teclados DIY y más.
+El XIAO RP2350 integra el poder del Raspberry Pi RP2350 (dos núcleos Cortex-M33 que funcionan a 150 MHz con FPU, seguridad mejorada y cifrado) en el formato clásico de XIAO. Con unas dimensiones de solo 21x17.8mm, cuenta con 19 pines GPIO multifuncionales, un LED RGB y un Sistema de Gestión de Batería con un consumo de energía ultra bajo de 50μA, suministro de energía mediante batería y medición directa del voltaje de la batería. Gracias al ecosistema XIAO, el XIAO RP2350 es compatible con una amplia gama de complementos, como pantallas, matrices de LED, módulos Grove, CAN Bus, sensores de Vision AI y sensores mmWave. Con soporte nativo para MicroPython, C y C++, el XIAO RP2350 es ideal para desarrolladores de todos los niveles que buscan crear aplicaciones compactas y alimentadas por batería para control inteligente, dispositivos portátiles, teclados DIY y más.
 
 ## Características
 
@@ -40,7 +40,7 @@ El XIAO RP2350 integra el poder del Raspberry Pi RP2350 (dos núcleos Cortex-M33
 - **Soporte de Software:** Compatible con C/C++ y MicroPython, lo que facilita el desarrollo de proyectos y prototipos.
 - **Recursos Integrados Ricos:** Incluye un LED RGB, 2 MB de Flash, 520 kB de SRAM y 19 pines GPIO multifuncionales (Analógicos, Digitales, I²C, UART, SPI, PWM).
 - **Expansión de 8 Nuevos Pinos de E/S:** Comparado con los microcontroladores XIAO anteriores, la adición de 8 pines de E/S en la parte posterior admite aplicaciones más complejas.
-- **Diseño Eficiente en Términos de Energía:** Consumo ultra bajo de solo 27μA en modo de suspensión, lo que permite el suministro de energía mediante batería. La medición directa del voltaje de la batería a través de un E/S interno mejora el sistema de gestión de baterías (BMS).
+- **Diseño Eficiente en Términos de Energía:** Consumo ultra bajo de solo 50μA en modo de suspensión, lo que permite el suministro de energía mediante batería. La medición directa del voltaje de la batería a través de un E/S interno mejora el sistema de gestión de baterías (BMS).
 - **Diseño Compacto del Tamaño de un Pulgar:** Con unas dimensiones de 21 x 17.8 mm, adoptando el clásico formato de XIAO de Seeed Studio, ideal para aplicaciones que requieren poco espacio.
 - **Amigable con la Producción:** Diseño SMD (Surface Mount Device) con todos los componentes en la parte frontal y agujeros de sellado en ambos lados, lo que facilita una producción en masa eficiente.
 

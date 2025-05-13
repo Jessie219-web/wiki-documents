@@ -1331,6 +1331,320 @@ Oh, my big face is circled.
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/100.png" style={{width:600, height:'auto'}}/></div>
 
 
+
+## OV5640 AutoFocus
+
+### Hadware Preparation
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+        <th>OV5640 Camera for XIAO ESP32S3 Sense</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/OV5640.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+      <tr>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/OV5640-Camera-for-XIAO-ESP32S3-Sense-With-Heat-Sink-p-5739.html?qid=UXYOXT_08tfc9pt_1746512260418">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
+
+### Software Preparation
+
+#### Method 1
+Special thanks to **@Eric** for providing the open source code
+
+<div class="github_container" style={{textAlign: 'center'}}>
+    <a class="github_item" href="https://github.com/0015/ESP32-OV5640-AF/tree/main">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Libraries</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
+</div>
+
+**Code Example**
+``` cpp
+#include "esp_camera.h"
+#include <WiFi.h>
+#include "ESP32_OV5640_AF.h"
+
+#define CAMERA_MODEL_XIAO_ESP32S3 // Has PSRAM
+
+#include "camera_pins.h"
+
+const char* ssid = "";
+const char* password = "";
+
+void startCameraServer();
+void setupLedFlash(int pin);
+OV5640 ov5640 = OV5640();
+
+void setup() {
+  Serial.begin(115200);
+  while(!Serial);
+  Serial.setDebugOutput(true);
+  Serial.println();
+
+  camera_config_t config;
+  config.ledc_channel = LEDC_CHANNEL_0;
+  config.ledc_timer = LEDC_TIMER_0;
+  config.pin_d0 = Y2_GPIO_NUM;
+  config.pin_d1 = Y3_GPIO_NUM;
+  config.pin_d2 = Y4_GPIO_NUM;
+  config.pin_d3 = Y5_GPIO_NUM;
+  config.pin_d4 = Y6_GPIO_NUM;
+  config.pin_d5 = Y7_GPIO_NUM;
+  config.pin_d6 = Y8_GPIO_NUM;
+  config.pin_d7 = Y9_GPIO_NUM;
+  config.pin_xclk = XCLK_GPIO_NUM;
+  config.pin_pclk = PCLK_GPIO_NUM;
+  config.pin_vsync = VSYNC_GPIO_NUM;
+  config.pin_href = HREF_GPIO_NUM;
+  config.pin_sscb_sda = SIOD_GPIO_NUM;
+  config.pin_sscb_scl = SIOC_GPIO_NUM;
+  config.pin_pwdn = PWDN_GPIO_NUM;
+  config.pin_reset = RESET_GPIO_NUM;
+  config.xclk_freq_hz = 20000000;
+  config.frame_size = FRAMESIZE_UXGA;
+  config.pixel_format = PIXFORMAT_JPEG; // for streaming
+  //config.pixel_format = PIXFORMAT_RGB565; // for face detection/recognition
+  config.grab_mode = CAMERA_GRAB_WHEN_EMPTY;
+  config.fb_location = CAMERA_FB_IN_PSRAM;
+  config.jpeg_quality = 12;
+  config.fb_count = 1;
+  
+  // if PSRAM IC present, init with UXGA resolution and higher JPEG quality
+  //                      for larger pre-allocated frame buffer.
+  if(config.pixel_format == PIXFORMAT_JPEG){
+    if(psramFound()){
+      config.jpeg_quality = 10;
+      config.fb_count = 2;
+      config.grab_mode = CAMERA_GRAB_LATEST;
+    } else {
+      // Limit the frame size when PSRAM is not available
+      config.frame_size = FRAMESIZE_SVGA;
+      config.fb_location = CAMERA_FB_IN_DRAM;
+    }
+  } else {
+    // Best option for face detection/recognition
+    config.frame_size = FRAMESIZE_240X240;
+#if CONFIG_IDF_TARGET_ESP32S3
+    config.fb_count = 2;
+#endif
+  }
+
+  // camera init
+  esp_err_t err = esp_camera_init(&config);
+  if (err != ESP_OK) {
+    Serial.printf("Camera init failed with error 0x%x", err);
+    return;
+  }
+
+  sensor_t * s = esp_camera_sensor_get();
+  ov5640.start(s);
+
+    if (ov5640.focusInit() == 0) {
+    Serial.println("OV5640_Focus_Init Successful!");
+  }
+
+  if (ov5640.autoFocusMode() == 0) {
+    Serial.println("OV5640_Auto_Focus Successful!");
+  }
+
+// Setup LED FLash if LED pin is defined in camera_pins.h
+#if defined(LED_GPIO_NUM)
+  setupLedFlash(LED_GPIO_NUM);
+#endif
+
+  WiFi.begin(ssid, password);
+  WiFi.setSleep(false);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected");
+
+  startCameraServer();
+
+  Serial.print("Camera Ready! Use 'http://");
+  Serial.print(WiFi.localIP());
+  Serial.println("' to connect");
+}
+
+void loop() {
+  uint8_t rc = ov5640.getFWStatus();
+  Serial.printf("FW_STATUS = 0x%x\n", rc);
+
+  if (rc == -1) {
+    Serial.println("Check your OV5640");
+  } else if (rc == FW_STATUS_S_FOCUSED) {
+    Serial.println("Focused!");
+  } else if (rc == FW_STATUS_S_FOCUSING) {
+    Serial.println("Focusing!");
+  }
+}
+
+```
+
+### Results Chart
+
+:::tip
+The resolution needs to be above 1280*1024 to see the focusing effect, the screen will lag and you need to wait for the screen for a while when focusing.
+:::
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/OV5640.gif" style={{width:700, height:'auto'}}/></div>
+
+#### Method 2
+
+:::tip
+The resolution needs to be above 1600*1200 to see the focusing effect, the screen will lag and you need to wait for the screen for a while when focusing.
+:::
+
+Download the following zip file and add it to Arudino
+- **[ZIP]** [OV5640 Auto](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/OV5640_AF.zip)
+
+:::tip
+The OV5640 in the libraries of method 1 and method 2 cannot exist at the same time
+:::
+
+```cpp
+#include "esp_camera.h"
+#include <WiFi.h>
+#include "ESP32_OV5640_AF.h"
+
+#define CAMERA_MODEL_XIAO_ESP32S3 // Has PSRAM
+
+#include "camera_pins.h"
+
+const char *ssid = "";
+const char *password = "";
+
+void startCameraServer();
+void setupLedFlash(int pin);
+OV5640 ov5640 = OV5640();
+
+void setup() {
+  Serial.begin(115200);
+
+  camera_config_t config;
+  config.ledc_channel = LEDC_CHANNEL_0;
+  config.ledc_timer = LEDC_TIMER_0;
+  config.pin_d0 = Y2_GPIO_NUM;
+  config.pin_d1 = Y3_GPIO_NUM;
+  config.pin_d2 = Y4_GPIO_NUM;
+  config.pin_d3 = Y5_GPIO_NUM;
+  config.pin_d4 = Y6_GPIO_NUM;
+  config.pin_d5 = Y7_GPIO_NUM;
+  config.pin_d6 = Y8_GPIO_NUM;
+  config.pin_d7 = Y9_GPIO_NUM;
+  config.pin_xclk = XCLK_GPIO_NUM;
+  config.pin_pclk = PCLK_GPIO_NUM;
+  config.pin_vsync = VSYNC_GPIO_NUM;
+  config.pin_href = HREF_GPIO_NUM;
+  config.pin_sscb_sda = SIOD_GPIO_NUM;
+  config.pin_sscb_scl = SIOC_GPIO_NUM;
+  config.pin_pwdn = PWDN_GPIO_NUM;
+  config.pin_reset = RESET_GPIO_NUM;
+  config.xclk_freq_hz = 20000000;
+  config.frame_size = FRAMESIZE_UXGA;
+  config.pixel_format = PIXFORMAT_JPEG;
+  config.grab_mode = CAMERA_GRAB_LATEST;
+  config.fb_location = CAMERA_FB_IN_PSRAM;
+  config.jpeg_quality = 10;
+  config.fb_count = 2;
+
+  if(psramFound()){
+    config.jpeg_quality = 10;
+    config.fb_count = 2;
+    config.grab_mode = CAMERA_GRAB_LATEST;
+  } else {
+    // Limit the frame size when PSRAM is not available
+    config.frame_size = FRAMESIZE_SVGA;
+    config.fb_location = CAMERA_FB_IN_DRAM;
+  }
+
+  esp_err_t err = esp_camera_init(&config);
+  if (err != ESP_OK) {
+    Serial.printf("Camera init failed with error 0x%x", err);
+    return;
+  }
+
+  // auto focus
+#if 1
+  sensor_t* sensor = esp_camera_sensor_get();
+  int ret = 0;
+  ov5640.start(sensor);
+
+  if (ov5640.focusInit() == 0) {
+      Serial.println("OV5640_Focus_Init Successful!");
+  } else {
+      Serial.println("OV5640_Focus_Init Failed!");
+  }
+
+  ret = ov5640.autoFocusMode(false);
+  if (ret == 0) {
+    Serial.println("OV5640_Auto_Focus Successful!");
+  } else {
+    Serial.printf("OV5640_Auto_Focus Failed! - [%d]\n", ret);
+  }
+#endif
+
+  WiFi.begin(ssid, password);
+  WiFi.setSleep(false);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("\nWiFi connected");
+
+  startCameraServer();
+
+  Serial.printf("Camera Ready! Use 'http://%s' to connect\n", WiFi.localIP().toString().c_str());
+}
+
+void loop() {
+  if (Serial.available()) {
+    sensor_t* sensor = esp_camera_sensor_get();
+    int ret = 0;
+
+    switch (Serial.read()) {
+      case 'b':
+        ret = sensor->set_reg(sensor, 0x3022, 0xff, 0x03);
+        Serial.printf("begin to auto focus - %d\n", ret);
+        break;
+      case 's':
+        ret = sensor->set_reg(sensor, 0x3022, 0xff, 0x06);
+        Serial.printf("focus stop here - %d\n", ret);
+        break;
+    }
+  }
+
+  uint8_t rc = ov5640.getFWStatus();
+  Serial.printf("FW_STATUS = 0x%x\n", rc);
+
+  if (rc == -1) {
+    Serial.println("Check your OV5640");
+  } else if (rc == FW_STATUS_S_FOCUSED) {
+    Serial.println("Focused!");
+  } else if (rc == FW_STATUS_S_FOCUSING) {
+    Serial.println("Focusing!");
+  } else {
+  }
+
+  delay(1000);
+}
+```
+
+:::tip
+Mode 1 is recommended because it has a more pronounced focusing effect than Mode 2 and provides a sharper image.
+:::
+
 ## Troubleshooting
 
 ### Q1: When XIAO ESP32S3 Sense and Round Display are used together, do I have to cut the J3 pin? Which SD card slot can be used?

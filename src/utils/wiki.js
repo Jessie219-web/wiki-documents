@@ -1,24 +1,38 @@
 const docList = [
   [
     {
-      "path": "/xiao_esp32c3_nuttx",
-      "image": "https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.webp",
-      "title": "Seeed Studio XIAO ESP32C3 with NuttX(RTOS)",
-      "date": "04/28/2025"
+      "path": "/xiao_esp32c6_nuttx",
+      "image": "https://files.seeedstudio.com/wiki/XIAO-ESP32C6-NuttX/nuttx.webp",
+      "title": "Seeed Studio XIAO ESP32C6 with NuttX(RTOS)",
+      "date": "05/08/2025"
     },
+    {
+      "path": "/xiao_mg24_ha_openthread",
+      "image": "https://files.seeedstudio.com/wiki/HA_OpenThread/Group11.webp",
+      "title": "Seeed Studio XIAO MG24 Connect HomeAssistant With Matter",
+      "date": "05/5/2025"
+    }
+  ],
+  [
     {
       "path": "/recomputer_j401b_getting_start",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.webp",
       "title": "Getting start with reComputer J401B",
       "date": "4/27/2025"
-    }
-  ],
-  [
+    },
     {
       "path": "/recomputer_j401b_interfaces_usage",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/j401b_interfaces.webp",
       "title": "J401B Interfaces Usage",
       "date": "4/27/2025"
+    }
+  ],
+  [
+    {
+      "path": "/flash_watcher_agent_firmware",
+      "image": "http://files.seeedstudio.com/wiki/Watcher_Agent/Watcher_Agent.webp",
+      "title": "Flash Watcher Agent Firmware",
+      "date": "2025/04/25"
     },
     {
       "path": "/WM1302_module",
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/img/Grove-Air_Quality_Sensor_v1.3.webp",
       "title": "Grove - Air Quality Sensor v1.3",
       "date": "4/14/2025"
-    }
-  ],
-  [
-    {
-      "path": "/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680",
-      "image": "https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Pressure-Gas-Sensor_BME680/img/main.webp",
-      "title": "Grove - Temperature Humidity Pressure Gas Sensor(BME680)",
-      "date": "4/14/2025"
-    },
-    {
-      "path": "/xiao-c3-ibeacon",
-      "image": "https://files.seeedstudio.com/wiki/xiao-c3-ibeacon/8.webp",
-      "title": "XIAO ESP32-C3 iBeacon with BME680 Sensor Using ESP-IDF",
-      "date": "04/14/2025"
     }
   ]
 ];
