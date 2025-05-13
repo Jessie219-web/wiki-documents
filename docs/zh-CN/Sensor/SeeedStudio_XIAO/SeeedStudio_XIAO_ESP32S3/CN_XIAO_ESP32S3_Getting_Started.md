@@ -13,30 +13,28 @@ last_update:
 
 # Seeed Studio XIAO ESP32S3 (Sense) 开发板
 
-<div class="table-center">
-	<table align="center">
-		<tr>
-			<th>Seeed Studio XIAO ESP32S3</th>
-			<th>Seeed Studio XIAO ESP32S3 Sense</th>
-		</tr>
-		<tr>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:250, height:'auto'}}/></div></td>
-			<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:250, height:'auto'}}/></div></td>
-		</tr>
-		<tr>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> 点击购买 🖱️</font></span></strong>
-				</a>
-			</div></td>
-			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
-				<strong><span><font color={'FFFFFF'} size={"4"}> 点击购买 🖱️</font></span></strong>
-				</a>
-			</div></td>
-		</tr>
-	</table>
-</div>
+<table align="center">
+    <tr>
+        <th>Seeed Studio XIAO ESP32S3</th>
+        <th>Seeed Studio XIAO ESP32S3 Sense</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3sense.jpg" style={{width:250, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 点击购买 🖱️</font></span></strong>
+            </a>
+        </div></td>
+        <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+            <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> 点击购买 🖱️</font></span></strong>
+            </a>
+        </div></td>
+    </tr>
+</table>
 
 
 ## 介绍
@@ -44,7 +42,7 @@ last_update:
 Seeed Studio XIAO系列是小型开发板，共享类似的硬件结构，尺寸实际上是拇指大小。这里的代号“小”代表它的一半特征“小”，另一半将是“羊角面包”。
 Seeed Studio XIAO ESP32S3 Sense集成了摄像头传感器、数字麦克风和SD卡支持。结合嵌入式ML计算能力和摄影能力，这款开发板可以成为您开始使用智能语音和视觉AI的绝佳工具。
 
-###规范
+### 规范
 
 <table align="center">
 	<tr>
