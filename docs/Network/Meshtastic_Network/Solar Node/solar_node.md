@@ -150,6 +150,18 @@ The Solar Node is available in two variants: [SenseCAP Solar Node P1](https://ww
   </tr>
 </table>
 
+
+### Button
+
+|Button Action|Description|
+|--|--|
+|Press for 3s|Power on|
+|Press twice|Update node/location info|
+|Press three times|Switch on/off the GPS|
+|Press for 5s|Power off|
+
+
+
 ### Hardware Overview
 
 **Interactive items**
