@@ -2988,7 +2988,8 @@ const sidebars = {
                 id:'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start'
               },
               items: [
-                'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start'
+                'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start',
+                'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2000_Flash_OS'
               ]},
             
 
