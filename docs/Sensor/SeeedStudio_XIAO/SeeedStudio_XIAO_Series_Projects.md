@@ -289,13 +289,13 @@ We can't do it without the love, contribution that we get from the community, an
 		</tr>
 		<tr>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_esp32c6_with_platform_io/">XIAO ESP32C6</a></th>
-			<th style={{width:333, height:'auto'}}><a href="https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32s3.html">XIAO ESP32S3</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32s3.html">XIAO ESP32S3 (Sense)</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://taunoerik.art/2023/05/15/start-seeed-xiao-rp2040-on-platformio/">XIAO RP2040</a></th>
 		</tr>
 		<tr>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_rp2350_with_platform_io/">XIAO RP2350</a></th>
-			<th style={{width:333, height:'auto'}}><a href=""></a></th>
-			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_mg24_with_platform_io/"> XIAO MG24 (Sense)</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_ra4m1_with_platform_io/">XIAO RA4M1</a></th>
 		</tr>
 	</table>
 </div>
@@ -495,6 +495,11 @@ We can't do it without the love, contribution that we get from the community, an
 			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/rp23xx/boards/xiao-rp2350/index.html">XIAO RP2350</a></th>
 			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/ra4m1/boards/xiao-ra4m1/index.html ">XIAO RA4M1</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/xtensa/esp32s3/boards/esp32s3-xiao/index.html">XIAO ESP32S3</a></th>
+		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/risc-v/esp32c3/boards/esp32c3-xiao/index.html">XIAO ESP32C3</a></th>
+            <th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/risc-v/esp32c6/boards/esp32c6-xiao/index.html">XIAO ESP32C6</a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>
 		</tr>
 	</table>
 </div>

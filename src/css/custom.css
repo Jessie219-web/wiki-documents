@@ -714,6 +714,23 @@
 	}
 }
 
+.video-container {
+	position: relative;
+	width: 100%;
+	padding-bottom: 66.67%; /* 高度 = 宽度 * (640 / 960)，即 2/3 = 66.67% */
+	height: 0;
+	overflow: hidden;
+  }
+  
+  .video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+  }
+
 .button-container {
 	display: flex; /* 使用flex布局 */
 	justify-content: center; /* 水平居中 */

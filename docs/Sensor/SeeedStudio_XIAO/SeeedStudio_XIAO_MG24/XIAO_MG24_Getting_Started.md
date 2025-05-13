@@ -97,8 +97,8 @@ sidebar_position: 0
 	</tr>
     <tr>
         <th>Low Power Consumption Model</th>
-        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Model: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Model: <strong>3.7V/1.95μA</strong></td>
-        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Model: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Model: <strong>3.7V/1.95μA</strong></td>
+        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Mode: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Mode: <strong>3.7V/1.95μA</strong></td>
+        <td>Normal: <strong>3.7V/6.71 mA</strong> <br></br> Sleep Mode: <strong>3.7V/1.91mA</strong> <br></br> Deep Sleep Mode: <strong>3.7V/1.95μA</strong></td>
     </tr>
     <tr>
         <th>Working Temperature</th>

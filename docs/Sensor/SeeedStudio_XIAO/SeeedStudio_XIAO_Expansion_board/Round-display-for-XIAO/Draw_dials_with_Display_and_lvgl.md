@@ -413,13 +413,15 @@ In addition to reading the extensive LVGL official documentation and writing our
 Next, we will give you a brief introduction to the use of the software on the round screen, configuration methods, to help you can quickly get started using the software to design some interfaces.
 
 :::caution
-We recommend you to use the **v1.2.3** version of SquareLine Studio. After testing, the v1.3.0 version can have compatibility problems with the tft_eSPI library.
+We recommend you to use the **v1.5.1** version of SquareLine Studio. This is also the latest software version at the time of writing this Wiki.
 
 Environment used in the preparation of this tutorial:
 
-1. **[TFT_eSPI library](https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/blob/main/libraries/TFT_eSPI.zip)** by Bodmer, version: **2.5.22**
+1. **[SeeedStudio_TFT_eSPI library](https://github.com/Seeed-Projects/SeeedStudio_TFT_eSPI)** by Bodmer, modified by Seeed Studio, version: **2.5.43**
 
-2. **[LVGL library](https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/tree/main/libraries/lvgl)** by kisvegabor, embeddedt, pete-pjb, version: **8.2.0**
+2. **[LVGL library](https://github.com/lvgl/lvgl/releases/tag/v8.3.11)** by kisvegabor, embeddedt, pete-pjb, version: **8.3.11**
+
+The **LVGL** libraries can be downloaded as version 8.3.11 by searching directly through the Library Version Manager. The **SeeedStudio_TFT_eSPI** library needs to be downloaded from Github and added to the Arduino IDE environment.
 
 :::
 
@@ -788,39 +790,51 @@ Once your dial UI is drawn, you can consider exporting the UI to a program and u
 
 Then select the path to save and the code will be exported automatically. The exported project template will have the following files in it.
 
-- libraries
-- ui
+- **libraries**: This folder directory provides all the libraries you need to use in your project. For our tutorial, the *lvgl* and *TFT_eSPI* libraries in this directory are **not needed**, but the *ui* and *lv_conf.h* are **useful** for us.
+- **ui**: Inside is the project program for Arduino, the .ino file.
 - REANME.md
 
-And what we need are the files under the ui folder. We can open the ino file directly under the ui folder. Then, we need to make changes to the following files to ensure that the program will compile smoothly.
+What we need to do, then, is to first put the required libraries and configuration files into the Arduino's libraries folder. Then modify the .ino file to make sure the functionality works.
 
-- **ui.h**: The section that contains the library, only `#include "lvgl.h"` is kept.
+Please copy the **ui** folder and the **lv_conf.h** file from the libraries folder directory exported by SquareLine Studio to the root directory of your Arduino library.
 
-<table align="center">
-	<tr>
-	    <th>Before modification</th>
-	    <th>After Modification</th>
-	</tr>
-	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/32.png" style={{width:600, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/33.png" style={{width:600, height:'auto'}}/></div></td>
-	</tr>
-</table>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/101.png" style={{width:1000, height:'auto'}}/></div>
 
-- **ui.ino**: Turn on the touch screen function and set the dial rotation direction.
+
+Then, we can open the .ino file directly under the ui folder. Then, we need to make changes to the following files to ensure that the program will compile smoothly.
+
+- **ui.ino**:
 
 <table align="center">
 	<tr>
-	    <th>Before modification</th>
-	    <th>After Modification</th>
+		<th>Descriptions</th>
+	    <th>Screenshot</th>
+	    <th>Code Segment</th>
 	</tr>
 	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/34.png" style={{width:600, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/35.png" style={{width:600, height:'auto'}}/></div></td>
+		<th>Defining the TFT library to be used and importing the round screen library</th>
+		<td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/102.png" style={{width:600, height:'auto'}}/></div></td>
+		<td><a href="https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/blob/f286996e967549de94891a63b58327e488bd46a3/ui/ui.ino#L1" target="_blank"><b>View Example Code</b></a></td>
 	</tr>
     <tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/36.png" style={{width:600, height:'auto'}}/></div></td>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/37.png" style={{width:600, height:'auto'}}/></div></td>
+		<th>Comment out duplicate definitions of the tft class</th>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/103.png" style={{width:600, height:'auto'}}/></div></td>
+		<td><a href="https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/blob/f286996e967549de94891a63b58327e488bd46a3/ui/ui.ino#L20" target="_blank"><b>View Example Code</b></a></td>
+	</tr>
+	<tr>
+		<th>Rewriting touch functions</th>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/104.png" style={{width:600, height:'auto'}}/></div></td>
+		<td><a href="https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/blob/f286996e967549de94891a63b58327e488bd46a3/ui/ui.ino#L46" target="_blank"><b>View Example Code</b></a></td>
+	</tr>
+	<tr>
+		<th>Add Initialise screen function and initialise touch function</th>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/105.png" style={{width:600, height:'auto'}}/></div></td>
+		<td><a href="https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/blob/f286996e967549de94891a63b58327e488bd46a3/ui/ui.ino#L86" target="_blank"><b>View Example Code</b></a></td>
+	</tr>
+	<tr>
+		<th>Screen rotate</th>
+	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/106.png" style={{width:600, height:'auto'}}/></div></td>
+		<td><a href="https://github.com/limengdu/Seeed-Studio-XIAO-Round-Display-lvgl8.3.5/blob/f286996e967549de94891a63b58327e488bd46a3/ui/ui.ino#L94" target="_blank"><b>View Example Code</b></a></td>
 	</tr>
 </table>
 
@@ -828,15 +842,15 @@ Then you can choose which XIAO you use to compile and upload.
 
 ### About the LVGL library customization options
 
-If you follow the steps above and still get some "Undefined" error messages during compilation, you may not have configured `lvconf.h` for customization.
+If you encounter an error message that some components are not defined after compiling, then you most likely did not replace the **lv_conf.h** file in the root directory of the Arduino library with the **lv_conf.h** file exported by SquareLine Studio.
 
-To save memory on the motherboard, the lvconf.h file we provide disables some of the lvgl features. But if you use these functions in your dial drawing, you need to turn them on manually.
+To save memory on the motherboard, the lv_conf.h file default provide disables some of the lvgl features. But if you use these functions in your dial drawing, you need to turn them on manually.
 
-- The default path for the `lvconf.h` on **Windows** systems is: 
+- The default path for the `lv_conf.h` on **Windows** systems is: 
 
 `C:\Users\{UserName}\Documents\Arduino\libraries`
 
-- The default path for the `lvconf.h` on **MacOS** systems is: 
+- The default path for the `lv_conf.h` on **MacOS** systems is: 
 
 `\Users\{UserName}\Documents\Arduino\libraries`
 
