@@ -6,27 +6,24 @@ keywords:
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /Grove-Barometer_Sensor-SPA06-003
 last_update:
-  date: 13/5/2025
+  date: 2025-05-13
   author: robben
-
 ---
 
-<!-- <div align=center><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.png"/><figcaption><b></b><i></i></figcaption></a>
-</figure></div> -->
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.png" style={{width:600, height:'auto'}}/></div>
 
- <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.png" alt="pir" width={600} height="auto" /></p>
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="/Grove-Barometer_Sensor-SPA06-003">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div>
 
-<p style={{ textAlign: 'center' }}>
-110992164 Grove Temperature and Barometer Sensor(SPA06-003) - Supports I2C and SPI
-</p>
+## Description
 
 **Grove - Temperature and Barometer Sensor(SPA06-003)** is a high-precision and a low-current environmental sensor measures the temperature and barometer. It supports both I2C and SPI communication and we provide the SPA06-003 Arduino library.
 
-[<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-Barometer-Sensor-BMP280.html)
-
-
-
 :::note
+
 As the sensor is quite sensitive to the environmental conditions, **please DO NOT touch it with your fingers**.
 :::
 
@@ -38,40 +35,153 @@ As the sensor is quite sensitive to the environmental conditions, **please DO NO
 -   **Grove Interface:** Features a [Grove 4-pin connector, ensuring a "Plug and Play"](https://wiki.seeedstudio.com/Grove_System/) experience to connect with mainstream hardware platforms like Arduino, Raspberry Pi, Micro:bit and many more.
 
 :::tip
-     More details about Grove modules please refer to [Grove System](https://wiki.seeedstudio.com/Grove_System/).
+More details about Grove modules please refer to [Grove System](https://wiki.seeedstudio.com/Grove_System/).
 :::
 
 ## Specification
 
+<div class="table-center">
+  <table align="center" border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <th>Parameter</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>Supply Voltage</td>
+      <td>5V or 3.3V</td>
+    </tr>
+    <tr>
+      <td>Interface</td>
+      <td>I2C and SPI</td>
+    </tr>
+    <tr>
+      <td>I2C address</td>
+      <td>0x77 (default) or 0x76</td>
+    </tr>
+    <tr>
+      <th colspan="2">Barometric Pressure Measure</th>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>300~1100 hPa</td>
+    </tr>
+    <tr>
+      <td>Absolute Accuracy</td>
+      <td>±0.3 hPa</td>
+    </tr>
+    <tr>
+      <th colspan="2">Temperature Measurement</th>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>-40℃ to +85℃</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>±1℃</td>
+    </tr>
+    <tr>
+      <td>Dimensions</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
 
-|            Parameter            |    **Description**    |
-| :-----------------------------: | :-------------------: |
-|         Supply Voltage          |      5V or 3.3V       |
-|            Interface            |      I2C and SPI      |
-|           I2C address           | 0x77(default) or 0x76 |
-| **Barometric Pressure Measure** |           -           |
-|              Range              |     300~1100 hPa      |
-|        Absolute Accuracy        |       ±0.3 hPa        |
-|   **Temperature Measurement**   |           -           |
-|              Range              |     -40℃ to +85℃      |
-|            Accuracy             |          ±1℃          |
-|           Dimensions            |                       |
+### **BMP280 vs. BME280 vs. DPS310 vs. SPA06-003**
 
-## **BMP280 vs. BME280 vs. DPS310 vs. SPA06-003**
+<div class="table-center">
+  <table align="center" border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <th>ITEM</th>
+      <th>Grove-BMP280</th>
+      <th>Grove-BME280</th>
+      <th>Grove-DPS310</th>
+      <th>Grove-SPA06-003</th>
+    </tr>
+    <tr>
+      <td>Pressure Range</td>
+      <td>300 ~ 1100 hPa</td>
+      <td>300 ~ 1100 hPa</td>
+      <td>300 ~ 1200 hPa</td>
+      <td>300 ~ 1100 hPa</td>
+    </tr>
+    <tr>
+      <td>Temperature Range</td>
+      <td>-40 ~ 85 ℃</td>
+      <td>-40 ~ 85 ℃</td>
+      <td>-40 ~ 85 °C</td>
+      <td>-40 ~ 85 °C</td>
+    </tr>
+    <tr>
+      <td>Pressure Precision</td>
+      <td>-</td>
+      <td>-</td>
+      <td>± 0.002 hPa (or ±0.02 m)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Pressure Accuracy (Absolute)</td>
+      <td>± 1 hPa (or ±8 m)</td>
+      <td>± 1 hPa (or ±8 m)</td>
+      <td>± 1 hPa (or ±8 m)</td>
+      <td>± 0.3 hPa</td>
+    </tr>
+    <tr>
+      <td>Pressure Accuracy (Relative)</td>
+      <td>± 0.12 hPa</td>
+      <td>± 0.12 hPa</td>
+      <td>± 0.06 hPa (or ±0.5 m)</td>
+      <td>± 0.03 hPa (or ±0.25 m)</td>
+    </tr>
+    <tr>
+      <td>Pressure Resolution</td>
+      <td>0.18 Pa</td>
+      <td>0.18 Pa</td>
+      <td>0.06 Pa</td>
+      <td>0.06 Pa</td>
+    </tr>
+    <tr>
+      <td>Humidity</td>
+      <td>-</td>
+      <td>0 ~ 100%</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Communication</td>
+      <td>I2C/SPI</td>
+      <td>I2C/SPI</td>
+      <td>I2C/SPI</td>
+      <td>I2C/SPI</td>
+    </tr>
+    <tr>
+      <td>Price</td>
+      <td>$8.9</td>
+      <td>$17.0</td>
+      <td>$5.9</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
 
-| ITEM                        | Grove-BMP280      | Grove-BME280      | Grove-DPS310             | Grove-SPA06-003         |
-| --------------------------- | ----------------- | ----------------- | ------------------------ | ----------------------- |
-| Pressure Range              | 300 ~ 1100 hPa    | 300 ~ 1100 hPa    | 300 ~ 1200 hPa           | 300 ~ 1100 hPa          |
-| Temperature Range           | -40 ~ 85 ℃        | -40 ~ 85 ℃        | -40 ~ 85 °C              | -40 ~ 85 °C             |
-| Pressure Precision          | -                 | -                 | ± 0.002 hPa (or ±0.02 m) | -                       |
-| Pressure Accuracy(Absolute) | ± 1 hPa (or ±8 m) | ± 1 hPa (or ±8 m) | ± 1 hPa (or ±8 m)        | ± 0.3 hPa               |
-| Pressure Accuracy(Relative) | ± 0.12 hPa        | ± 0.12 hPa        | ± 0.06 hPa (or ±0.5 m)   | ± 0.03hPa(or to ±0.25 m |
-| Pressure Resolution         | 0.18 Pa           | 0.18 Pa           | 0.06 Pa                  | 0.06 Pa                 |
-| Humidity                    | -                 | 0 ~ 100%          | -                        | -                       |
-| Communication               | I2C/SPI           | I2C/SPI           | I2C/SPI                  | I2C/SPI                 |
-| Price                       | $8.9              | $17.0             | $5.9                     |                         |
+### **Part List**
 
-## Hardware overview
+<div class="table-center">
+  <table align="center" border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <th>Item</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>Grove Temperature and Barometer Sensor (SPA06-003)</td>
+      <td>×1</td>
+    </tr>
+    <tr>
+      <td>Grove - 20cm Cable</td>
+      <td>×1</td>
+    </tr>
+  </table>
+</div>
 
 ## Application
 
@@ -81,117 +191,249 @@ As the sensor is quite sensitive to the environmental conditions, **please DO NO
 - Weather forecast
 - Vertical velocity indication (rise/sink speed)
 
-#### **One More Thing**
-
-With the SenseCAP [S2110 controller](https://www.seeedstudio.com/SenseCAP-XIAO-LoRaWAN-Controller-p-5474.html) and [S2100 data logger](https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html), you can easily turn the Grove into a LoRaWAN® sensor. Seeed not only helps you with prototyping but also offers you the possibility to expand your project with the SenseCAP series of robust [industrial sensors](https://www.seeedstudio.com/catalogsearch/result/?q=sensecap&categories=SenseCAP&application=Temperature%2FHumidity~Soil~Gas~Light~Weather~Water~Automation~Positioning~Machine Learning~Voice Recognition&compatibility=SenseCAP).
-
-The IP66 housing, Bluetooth configuration, compatibility with the global LoRaWAN® network, built-in 19 Ah battery, and powerful support from APP make the [SenseCAP S210x](https://www.seeedstudio.com/catalogsearch/result/?q=S21&categories=SenseCAP&product_module=Device) the best choice for industrial applications. The series includes sensors for soil moisture, air temperature and humidity, light intensity, CO2, EC, and an 8-in-1 weather station. Try the latest SenseCAP S210x for your next successful industrial project.
-
-<!-- ![](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/application_sensecap.png) -->
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/application_sensecap.png" alt="pir" width={600} height="auto" /></p>
-
-## **Document**
-
-[Grove Temperature and Barometer Sensor(SPA06-003)_V1.0_SCH&PCB](https://drive.weixin.qq.com/s?k=AGEAZwfLABE53sgp5AAUsAPwayALA)
-
-[SPA06-003 Datasheet.PDF](https://drive.weixin.qq.com/s?k=AGEAZwfLABEGoLUy4jAUsAPwayALA)
-
-## **Attribute**
-
-## **Part List**
-
-|                       Item                        | Quantity |
-| :-----------------------------------------------: | :------: |
-| Grove Temperature and Barometer Sensor(SPA06-003) |    ×1    |
-|                Grove - 20cm Cable                 |    ×1    |
-
 ## Getting Started
 
-### Play with Arduino
+### indication diagram
 
-#### Materials required
-
-| Seeeduino V4.2                                               | Base Shield                                                  | Grove-Barometer_Sensor-SPA06-003                             |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width={600} height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width={600} height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" alt="pir" width={500} height="auto" /></p> |
-| [Get One Now](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html) | [Get One Now](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html) | [Get One Now](https://www.seeedstudio.com/depot/Grove-Barometer-Sensor-BMP280-p-2652.html) |
-
-#### Hardware Overview
-
-<!-- ![](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/Grove-Barometer_Sensor-SPA06-003-Components.png) -->
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/Grove-Barometer_Sensor-SPA06-003-Components.png" alt="pir" width={600} height="auto" /></p>
-
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/Grove-Barometer_Sensor-SPA06-003-Components.png" style={{width:800, height:'auto'}}/></div>
 
 -   **SPI soldering pads**, a voltage monitoring circuit.
 -   **Interface bus selection pads** , to select I<sup>2</sup>C bus, connect the two pads by soldering (this is connected by default); to select SPI bus, cut the two pads with a sharp knife or a soldering iron.
 -   **Slave board address selection pads**, to select slave board address to avoid address collision.
 
 :::tip
-      * If you have selected I2C bus, the default address for slave board is **0x77**(right-two pads are connected). If you want to use the address **0x76**, connect only left two (disconnect right two) by soldering.
 
-      * You can disconnect pads with just a sharp knife.
-    
-      * If you have selected SPI bus, the default address for slave board is **0x77**(right-two pads are connected). If you want to use the address **0x76**, disconnect all three pads.
+- If you have selected I2C bus, the default address for slave board is 0x77(right-two pads are connected). If you want to use the address 0x76, connect only left two (disconnect right two) by soldering.
+- You can disconnect pads with just a sharp knife.
+- If you have selected SPI bus, the default address for slave board is 0x77(right-two pads are connected). If you want to use the address 0x76, disconnect all three pads.
 
 :::
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+### Hardware
+
+**Prepare the below stuffs:**
+
+- *Play with Arduino*
+
+| Seeeduino V4.2                                               | Base Shield                                                  | Grove-Barometer_Sensor-SPA06-003                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width="500" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width="500" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" alt="pir" width="500" height="auto" /></p> |
+| [Get One Now](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html) | [Get One Now](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html) | [Get One Now](https://www.seeedstudio.com/depot/Grove-Barometer-Sensor-BMP280-p-2652.html) |
+
+- *Connect Grove with Arduino*
+
+<div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/grove_with_arduino.png" /></div>
+
+- *Play with XIAO ESP32 Series*
+
+| Seeed Studio Grove Base for XIAO                             | XIAO ESP32-S3                                                | Grove-Barometer_Sensor-SPA06-003                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <div align="center"><img width="900" src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Thumbnail-27.png"/></div> | <div align="center"><img width="900" src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" /></div> | <div align="center"><img width="900" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" /></div> |
+| [Get One Now](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html) | [Get One Now](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) | [Get One Now](https://www.seeedstudio.com/Grove-Line-Finder-v1.1-p-2712.html) |
+
+- _Connect Grove with XIAO ESP32S3_
+
+<div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/grove_with_esp32.png" /></div>
+
+Two different combinations, but using the same code.
+
+:::tip
+
 Do not touch or shake or let this product in vibration when it works. This will cause interference and will affect the accuracy of data collected.
+
+:::
+
+This connection table applies to all boards with I2C support.
+
+<div className="table-center" style={{ textAlign: 'center' }}>
+  <table style={{ borderCollapse: 'collapse', margin: 'auto' }} border="1" cellPadding="6">
+    <thead>
+      <tr>
+        <th>Boards</th>
+        <th>Grove-Barometer_Sensor-SPA06-003</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5V</td>
+        <td>VCC</td>
+      </tr>
+      <tr>
+        <td>GND</td>
+        <td>GND</td>
+      </tr>
+      <tr>
+        <td>SDA</td>
+        <td>SDA</td>
+      </tr>
+      <tr>
+        <td>SCL</td>
+        <td>SCL</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-**Step 1.** Connect Grove-Barometer_Sensor-SPA06-003 to port **I2C** of Grove-Base Shield.
 
-**Step 2.** Plug Grove - Base Shield into Seeeduino and connect Seeeduino to PC via a USB cable.
-
-<!-- ![with_ardu](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-BMP280/img/with_ardu.jpg) -->
-
-  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/with_ardu.jpg" alt="pir" width={600} height="auto" /></p>
-
-:::note
-	If you don't have a Grove Base Shield, you can also directly connect this module to [Seeeduino](https://www.seeedstudio.com/catalogsearch/result/?q=Seeeduino) as below.
-:::
-<!--I2C-->
-
-| Seeeduino_v4 | Grove-Barometer_Sensor-SPA06-003 |
-| ------------ | -------------------------------- |
-| 5V           | VCC                              |
-| GND          | GND                              |
-| SDA          | SDA                              |
-| SCL          | SCL                              |
-
-
-#### Software
+### Software
 
 **Step 1.** Download the [library](https://github.com/Seeed-Studio/Seeed_Arduino_SPA06) from Github.
+<div class="github_container" style={{textAlign: 'center'}}>
+    <a class="github_item" href="https://github.com/Seeed-Studio/Seeed_Arduino_SPA06">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
+</div><br />
 
 **Step 2.** Refer [How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) to install library for Arduino.
 
-**Step 3.** Create a new Arduino sketch and paste the codes below to it or open the code directly by the path:File -> Example ->SPA06-003_example->SPA06-003_example
-
-**Here is the code:**
-
-```cpp
-
-```
+**Step 3.** Create a new Arduino sketch and paste the codes below to it or open the code directly by the path:File -> Example ->Seeed Arduino SPA06>Example1_BasicRead
 
 **Step 4.** Upload the code. If you do not know how to upload the code, please check [how to upload code](https://wiki.seeedstudio.com/Upload_Code/).
 
 **Step 5.** Open the serial monitor to receive the sensor's data including temperature, barometric pressure value, and altitude.
 
 :::success
-        The outcome will display on the **Serial Port** as following if everything goes well.
+The outcome will display on the **Serial Port** as following if everything goes well.
 :::
-<!-- <div align=center><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/outcome.png"/><figcaption><b></b><i></i></figcaption></a>
-</figure></div> -->
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/outcome.png" alt="pir" width={600} height="auto" /></p>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/outcome.png" style={{width:400, height:'auto'}}/></div>
 
+### Fuction
+
+**Here is the code:**
+
+```cpp
+/*
+ * Author: Kennan / Kenneract
+ * GitHub: https://github.com/Kenneract/SPL07-003-Arduino-Library
+ * Created: Mar.15.2025
+ * Updated: Apr.14.2025, V1.0.0
+ * Purpose: Example usage for the SPL07-003 sensor library. Connects
+ *          to the sensor, configures the measurement and oversampling
+ *          rate, sets the SPL07-003 to continuous sampling mode, then
+ *          prints pressure/temperature measurements to the serial monitor.
+ */
+
+#include <Wire.h>
+#include "SPL07-003.h"
+
+// Define SPL07-006 I2C address
+#define SPL07_ADDR SPL07_ADDR_DEF // Default I2C address (SDO=high)
+// #define SPL07_ADDR SPL07_ADDR_ALT // Alternate I2C address (SDO=low)
+
+// Create SPL07-003 sensor instance
+SPL07_003 spl;
+
+//HardwareSerial SerialOut(PA10, PA9); //for STM32F103C8Tx
+
+// Runs at startup
+void setup() {
+
+  // Begin Serial
+  Serial.begin(115200);
+
+  // Configure & start I2C
+  //Wire.setSDA(PB7); //for STM32F103C8Tx
+  //Wire.setSCL(PB6); //for STM32F103C8Tx
+  Wire.begin();
+
+  // Connect to SPL07-003
+  if (spl.begin(SPL07_ADDR) == false) {
+    Serial.println("Error initializing SPL07-003 :(");
+    while (1) {}
+  }//if
+  Serial.println("Connected to SPL07-003! :)");
+
+  // Set pressure & temperature sampling settings
+  spl.setPressureConfig(SPL07_4HZ, SPL07_32SAMPLES);
+  spl.setTemperatureConfig(SPL07_4HZ, SPL07_1SAMPLE);
+
+  // Set SPL07-003 to continuous measurements
+  spl.setMode(SPL07_CONT_PRES_TEMP);
+
+}//setup()
+
+
+// Runs continuously
+void loop() {
+
+  // Wait for available reading
+  if (spl.pressureAvailable() || spl.temperatureAvailable()) {
+    // Read latest values
+    double pres = spl.readPressure();
+    double temp = spl.readTemperature();
+    double altitude = spl.calcAltitude();
+    // Print to serial
+    Serial.print("Pres: ");
+    Serial.print(pres, 3);
+    Serial.print(" Pa, Temp: ");
+    Serial.print(temp, 3);
+    Serial.print(" C, Altitude: ");
+    Serial.print(altitude, 3);
+    Serial.println(" m");
+  }//if
+
+}//loop()
+```
+
+The following functions are used in the example code above. Here's a breakdown of what each function does:
+```cpp
+Serial.begin(115200)
+```
+Initializes serial communication between the ESP32 and your computer, with a baud rate of 115200. This allows debug messages to be printed to the Serial Monitor.
+```cpp
+Wire.begin()
+```
+Initializes the I²C bus using default pins (on most platforms: SDA and SCL). This is required before communicating with the SPL07-003 sensor.
+```cpp
+spl.begin(SPL07_ADDR)
+```
+Initializes the SPL07-003 sensor using the specified I²C address. It returns false if the sensor is not found on the bus.
+
+- Parameter: SPL07_ADDR – the I²C address (0x76 or 0x77)
+
+- Return: true on success, false if the sensor is not detected
+
+```cpp
+spl.setPressureConfig(SPL07_4HZ, SPL07_32SAMPLES)
+```
+Configures the pressure sensor with:
+
+- 4 Hz output data rate
+- 32 samples averaging for noise reduction
+
+Higher sample count improves accuracy but increases response time.
+```cpp
+spl.setTemperatureConfig(SPL07_4HZ, SPL07_1SAMPLE)
+```
+Configures the temperature sensor with:
+
+- 4 Hz update rate
+- 1 sample averaging (faster response, less smoothing)
+```cpp
+spl.setMode(SPL07_CONT_PRES_TEMP)
+```
+Sets the SPL07-003 to continuous pressure and temperature measurement mode, so it updates data automatically without manual triggering.
+```cpp
+spl.pressureAvailable(), spl.temperatureAvailable()
+```
+Checks if a new pressure or temperature measurement is available from the sensor. These return true when fresh data is ready to read.
+```cpp
+spl.readPressure()
+```
+Reads the latest pressure value from the sensor in Pascals (Pa).
+```cpp
+spl.readTemperature()
+```
+Reads the current temperature in degrees Celsius (°C).
+```cpp
+spl.calcAltitude()
+```
+Estimates altitude (in meters) based on the current pressure reading using the standard atmosphere model.
+Useful in applications like barometric altitude estimation for drones or weather stations.
 
 ## Resources
 
 - **[KiCAD]** [Grove-Barometer Sensor SPA06-003 SCH&PCB](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/res/SCH&PCB.zip)
 - **[Datasheet]** [SPA06-003 Datasheet](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/res/Datasheet.pdf)
-- **[References]**  [I<sup>2</sup>C how-to for Arduino](https://www.arduino.cc/en/Reference/Wire)
+- **[References]** [I<sup>2</sup>C how-to for Arduino](https://www.arduino.cc/en/Reference/Wire)

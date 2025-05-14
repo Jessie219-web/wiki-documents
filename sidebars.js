@@ -307,6 +307,7 @@ const sidebars = {
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-BME280',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-BMP180',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-BMP280',
+                'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-SPA06-003',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Integrated-Pressure-Sensor-Kit',
               ],
