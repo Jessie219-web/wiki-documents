@@ -1318,6 +1318,13 @@ const sidebars = {
             },
             {
               type: 'category',
+              label: 'RTOS',
+              items: [
+                'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/XIAO-ESP32C6-NuttX',
+              ],
+            },
+            {
+              type: 'category',
               label: 'Zigbee',
               items: [
                 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/xiao_esp32c6_zigbee',
@@ -2961,18 +2968,32 @@ const sidebars = {
           items:[
             {
             type: 'category',
-            label: 'reComputer-R2000',
+            label: 'reComputer-AI-R2000',
             collapsed: true,
             collapsible: true,
             link:{
               type:"doc",
-              id:'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_R2000/reComputer_R2000_getting_start'
+              id:'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/reComputer_AI_R2000_getting_start'
             },
             items: [
-              'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_R2000/reComputer_R2000_getting_start'
-            ]
-        }]
-      },
+              'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/reComputer_AI_R2000_getting_start'
+            ]},
+            {
+              type: 'category',
+              label: 'reComputer-AI-Industrial-R2000',
+              collapsed: true,
+              collapsible: true,
+              link:{
+                type:"doc",
+                id:'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start'
+              },
+              items: [
+                'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2135_getting_start',
+                'Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/reComputer_AI_Industrial_R2000_Flash_OS'
+              ]},
+            
+
+      ]},
         {
         type: 'category',
         label: 'HMI',

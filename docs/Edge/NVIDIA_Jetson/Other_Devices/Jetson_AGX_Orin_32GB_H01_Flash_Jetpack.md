@@ -34,8 +34,8 @@ This wiki will guide you how to install JetPack to Jetson AGX Orin 32GB H01 Kit.
 
 ## Prerequisites
 
-- Ubuntu Host PC (native or VM using VMware Workstation Player)
-- Jetson AGX Xavier H01 Kit
+- [Ubuntu Host PC](https://developer.nvidia.com/sdk-manager) (native or VM using VMware Workstation Player).
+- Jetson AGX Xavier H01 Kit.
 - USB Type-C data transmission cable
 
 ## Enter Force Recovery Mode
@@ -59,7 +59,8 @@ First of all, you need to install the peripheral drivers for this board. These a
     <tr>
       <th>JetPack Version</th>
       <th>L4T Version</th>
-      <th>Download Link</th>
+      <th>Driver Download Link</th>
+      <th>L4T Download Link </th>
     </tr>
   </thead>
   <tbody>
@@ -67,21 +68,25 @@ First of all, you need to install the peripheral drivers for this board. These a
       <td>5.0.2</td>
       <td>35.1</td>
       <td><a href="https://sourceforge.net/projects/nvidia-jetson/files/Jetson-AGX-Orin-32GB-H01-Kit/Driver-for-JP-5.0.2/AGX-Orin-32GB-H01-JP5.0.2.zip/download" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://developer.nvidia.com/embedded/jetson-linux-r351" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>
     <tr>
       <td>5.1.1</td>
       <td>35.3.1</td>
       <td><a href="https://sourceforge.net/projects/nvidia-jetson/files/Jetson-AGX-Orin-32GB-H01-Kit/Driver-for-JP-5.1.1/AGX-Orin-32GB-H01-JP5.1.1.zip/download" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://developer.nvidia.com/embedded/jetson-linux-r3531" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>
     <tr>
       <td>6.0</td>
       <td>36.3</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfdaZCD6wMZPrW_LtMm3eQgBXnPq_8ri8WmKw3nsxXVf1Q?e=uvKRhE" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://developer.nvidia.com/embedded/jetson-linux-r363" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>
     <tr>
       <td>6.1</td>
       <td>36.4</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbYu41kk-LNNmsssNIuM5AoBLYjTFZo_mEUTUtIJlCCnyw?e=dvCgKk" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://developer.nvidia.com/embedded/jetson-linux-r3640" target="_blank" rel="noopener noreferrer">Download</a></td>
     </tr>
   </tbody>
 </table>
@@ -95,9 +100,9 @@ import TabItem from '@theme/TabItem';
 <Tabs>
 <TabItem value="JP5.0.2/JP5.1.1" label="JP5.0.2/JP5.1.1">
 
-Here we will use **NVIDIA L4T 35.1** to install **Jetpack 5.0.2** on the Jetson AGX Orin 32GB H01 Kit.
+Here we will use: **NVIDIA L4T 35.1** to install **Jetpack 5.0.2** or **NVIDIA L4T 35.3.1** to install **Jetpack 5.1.1** on the Jetson AGX Orin 32GB H01 Kit.
 
-- **Step 1:** [Download](https://developer.nvidia.com/embedded/jetson-linux-r351) the NVIDIA drivers on the host PC. The required drivers are shown below:
+- **Step 1:** Download appropriate NVIDIA drivers on the host PC. The required drivers are shown below:
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/Jetson-AGX-Orin-32GB-H01-Kit/2.jpg"/></div>
 
@@ -138,6 +143,13 @@ sudo ./flash.sh jetson‐agx‐orin‐devkit mmcblk0p1
 You will see the following output if the flashing process is successful
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/Jetson-AGX-Orin-32GB-H01-Kit/9.jpg"/></div>
+
+### Encountered Errors:
+- **ERROR: failed to read rcm_state** on **AGX Orin** and **NX Orin** for *Jetpack 5.1.1*
+  - There is PCN changes on Jetson AGX Orin made by NVidia, but it's not Seeed's PCN changes.
+  - Beside materials mentioned in Wiki, please download [Overlay_PCN210361_PCN210100_r35.3.1.tbz2](https://developer.nvidia.com/downloads/embedded/l4t/r35_release_v3.1/overlay_pcn210361_pcn210100_r35.3.1.tbz2) at bottom of the page Jetson Linux 35.3.1.
+  - After extracting *Jetson_Linux* and before applying binaries, please extract *Overlay_PCN210361_PCN210100_r35.3.1.tbz2*. Then copy all files, folders to *Linux_For_Tegra* (merge, not skip).
+  - Then continue remaining steps in guidances.
 
 </TabItem>
 

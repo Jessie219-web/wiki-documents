@@ -4,6 +4,7 @@ title: Soil Moisture & Temperature & EC Sensor
 keywords:
 - SenseCAP Sensor_Probe&Accessories
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Sensor/SenseCAP/SenseCAP_Probe/Soil-Moisture-Temperature-EC-Sensor
 last_update:
   date: 1/16/2023
   author: jianjing Huang
