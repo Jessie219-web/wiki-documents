@@ -1,4 +1,4 @@
-﻿---
+---
 description: Connect S210X Sensor to Microsoft Azure IoT Central Via Node-RED
 title: Connect S210X Sensor to Microsoft Azure IoT Central Via Node-RED
 keywords:
