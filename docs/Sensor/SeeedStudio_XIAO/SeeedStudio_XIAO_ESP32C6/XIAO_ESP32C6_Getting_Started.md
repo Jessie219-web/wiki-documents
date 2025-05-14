@@ -99,7 +99,7 @@ export const Highlight = ({children, color}) => (
         </tr>
         <tr>
             <th colspan="2" rowspan="2" >Interface</th>
-            <td>1x UART,1x LP_UART, 1x IIC, 1x LP_IIC, 1x SPI,11x GPIO(PWM), 7x ADC, 1xSDIO</td>
+            <td>1x UART,1x LP_UART, 1x IIC, 1x LP_IIC, 1x SPI,11x GPIO(PWM), 7x ADC, 1xSDIO 2.0 Slave</td>
             <td>1x UART, 1x IIC, 1x SPI,11x GPIO(PWM), 4x ADC</td>
             <td>1x UART, 1x IIC, 1x IIS, 1x SPI,11x GPIO(PWM), 9x ADC, 1x User LED, 1x Charge LED</td>
         </tr>
