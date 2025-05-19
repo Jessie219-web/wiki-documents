@@ -4,7 +4,7 @@ title:  SenseCAP Solar Node
 keywords:
 - Meshtastic
 - Solar
-image: https://files.seeedstudio.com/wiki/wiki-platform/solar-node.webp
+image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.webp
 slug: /meshtastic_solar_node
 sidebar_position: 1
 last_update:
