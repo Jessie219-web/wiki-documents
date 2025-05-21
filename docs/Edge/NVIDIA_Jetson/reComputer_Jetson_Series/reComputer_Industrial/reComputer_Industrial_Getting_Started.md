@@ -684,7 +684,7 @@ Please complete the **System Configuration** according to your needs.
 :::
 
 </TabItem>
-{/*
+
 <TabItem value="Jetpack 6.2" label="Jetpack6.2">
 
 - **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using
@@ -754,9 +754,6 @@ Please complete the **System Configuration** according to your needs.
 :::
 
 </TabItem>
-*/}
-
-<!--6.2 is under maintenance, temporarily commenting out the paragraph-->
 
 </Tabs>
 

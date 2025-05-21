@@ -4,6 +4,7 @@ title: Optical Rain Gauge RG-9
 keywords:
 - SenseCAP Sensor_Probe&Accessories
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Sensor/SenseCAP/Accessories/Optical-Rain-Gauge-RG-9
 last_update:
   date: 10/18/2023
   author: Yvonne
