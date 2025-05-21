@@ -10,7 +10,7 @@ last_update:
   author: robben
 ---
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.png" style={{width:600, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.jpg" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/Grove-Barometer_Sensor-SPA06-003">
@@ -48,7 +48,7 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
     </tr>
     <tr>
       <td>Supply Voltage</td>
-      <td>5V or 3.3V</td>
+      <td>3.3V</td>
     </tr>
     <tr>
       <td>Interface</td>
@@ -56,7 +56,7 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
     </tr>
     <tr>
       <td>I2C address</td>
-      <td>0x77 (default) or 0x76</td>
+  	  <td>0x77 (default)<br />0x76</td>
     </tr>
     <tr>
       <th colspan="2">Barometric Pressure Measure</th>
@@ -82,10 +82,13 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
     </tr>
     <tr>
       <td>Dimensions</td>
-      <td></td>
+      <td>40mm x 20mm x 6.5mm</td>
     </tr>
   </table>
 </div>
+
+
+
 
 ### **BMP280 vs. BME280 vs. DPS310 vs. SPA06-003**
 
@@ -156,13 +159,15 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
     </tr>
     <tr>
       <td>Price</td>
-      <td>$8.9</td>
-      <td>$17.0</td>
-      <td>$5.9</td>
-      <td></td>
+      <td>$9.8</td>
+      <td>$18.7</td>
+      <td>$7.5</td>
+      <td>$4.5</td>
     </tr>
   </table>
 </div>
+
+
 
 ### **Part List**
 
@@ -193,11 +198,11 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
 
 ## Getting Started
 
-### indication diagram
+### Indication diagram
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/Grove-Barometer_Sensor-SPA06-003-Components.png" style={{width:800, height:'auto'}}/></div>
 
--   **SPI soldering pads**, a voltage monitoring circuit.
+-   **SPI soldering pads**.
 -   **Interface bus selection pads** , to select I<sup>2</sup>C bus, connect the two pads by soldering (this is connected by default); to select SPI bus, cut the two pads with a sharp knife or a soldering iron.
 -   **Slave board address selection pads**, to select slave board address to avoid address collision.
 
@@ -215,25 +220,25 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
 
 - *Play with Arduino*
 
-| Seeeduino V4.2                                               | Base Shield                                                  | Grove-Barometer_Sensor-SPA06-003                             |
+| Seeeduino V4.2                                               | Base Shield                                                  | Grove-Barometer Sensor SPA06-003                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width="500" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width="500" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" alt="pir" width="500" height="auto" /></p> |
+| <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width="400" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width="400" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" alt="pir" width="350" height="auto" /></p> |
 | [Get One Now](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html) | [Get One Now](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html) | [Get One Now](https://www.seeedstudio.com/depot/Grove-Barometer-Sensor-BMP280-p-2652.html) |
 
 - *Connect Grove with Arduino*
 
-<div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/grove_with_arduino.png" /></div>
+<div align="center"><img width="500" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/grove_with_arduino.png" /></div>
 
 - *Play with XIAO ESP32 Series*
 
-| Seeed Studio Grove Base for XIAO                             | XIAO ESP32-S3                                                | Grove-Barometer_Sensor-SPA06-003                             |
+| Seeed Studio Grove Base for XIAO                             | XIAO ESP32-S3                                                | Grove-Barometer Sensor SPA06-003                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <div align="center"><img width="900" src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Thumbnail-27.png"/></div> | <div align="center"><img width="900" src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" /></div> | <div align="center"><img width="900" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" /></div> |
+| <div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Thumbnail-27.png"/></div> | <div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" /></div> | <div align="center"><img width="500" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" /></div> |
 | [Get One Now](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html) | [Get One Now](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) | [Get One Now](https://www.seeedstudio.com/Grove-Line-Finder-v1.1-p-2712.html) |
 
-- _Connect Grove with XIAO ESP32S3_
+- _Connect Grove with ESP32 Series_
 
-<div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/grove_with_esp32.png" /></div>
+<div align="center"><img width="500" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/grove_with_esp32.png" /></div>
 
 Two different combinations, but using the same code.
 
@@ -255,7 +260,7 @@ This connection table applies to all boards with I2C support.
     </thead>
     <tbody>
       <tr>
-        <td>5V</td>
+        <td>3.3V</td>
         <td>VCC</td>
       </tr>
       <tr>
@@ -273,6 +278,7 @@ This connection table applies to all boards with I2C support.
     </tbody>
   </table>
 </div>
+
 
 
 ### Software
@@ -435,5 +441,21 @@ Useful in applications like barometric altitude estimation for drones or weather
 ## Resources
 
 - **[KiCAD]** [Grove-Barometer Sensor SPA06-003 SCH&PCB](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/res/SCH&PCB.zip)
-- **[Datasheet]** [SPA06-003 Datasheet](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/res/Datasheet.pdf)
+- **[Datasheet]** [SPA06-003 Datasheet](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/res/Datasheet.PDF)
 - **[References]** [I<sup>2</sup>C how-to for Arduino](https://www.arduino.cc/en/Reference/Wire)
+
+## Tech Support & Product Discussion
+
+Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+
+<div class="table-center">
+  <div class="button_tech_support_container">
+  <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+  <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+  </div>
+
+  <div class="button_tech_support_container">
+  <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+  <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+  </div>
+</div>
