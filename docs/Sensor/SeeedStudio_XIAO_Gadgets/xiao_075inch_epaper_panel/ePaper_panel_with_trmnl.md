@@ -22,23 +22,23 @@ last_update:
 </div>
 
 
-## What is TRMNL?
+## What is [TRMNL](https://trmnl.app/)?
 
-TRMNL is an innovative platform designed to help people stay focused and calm in our increasingly distracting digital world. Founded in 2023, TRMNL has quickly become a leading solution for e-ink dashboard management, offering a unique approach to displaying information without the constant notifications and distractions of traditional screens.
+TRMNL is an innovative platform designed to help people stay focused and calm in our increasingly distracting digital world. Founded in 2023, TRMNL has quickly become a leading solution for E Ink® dashboard management, offering a unique approach to displaying information without the constant notifications and distractions of traditional screens.
 
-At its core, TRMNL is built on the philosophy that technology should enhance our lives without demanding constant attention. The platform provides an elegant way to view important information at a glance through e-ink displays, creating a more mindful and less intrusive technological experience.
+At its core, TRMNL is built on the philosophy that technology should enhance our lives without demanding constant attention. The platform provides an elegant way to view important information at a glance through E Ink® displays, creating a more mindful and less intrusive technological experience.
 
 ### Why Integrate TRMNL with the XIAO 7.5" ePaper Panel?
 
 The integration of TRMNL with our XIAO 7.5" ePaper Panel brings several compelling benefits:
 
 - **Simplified Dashboard Creation**: TRMNL's growing library of apps and integrations makes it easy to create custom information displays without complex programming
-- **Low Power Consumption**: The combination of TRMNL's efficient software with our e-ink display's minimal power requirements creates an extremely energy-efficient solution
+- **Low Power Consumption**: The combination of TRMNL's efficient software with our E Ink® display's minimal power requirements creates an extremely energy-efficient solution
 - **Distraction-Free Information**: Get the information you need without the constant notifications and eye strain associated with traditional screens
 - **Regular Updates**: TRMNL's active development means new features and integrations are added weekly, continuously expanding the possibilities for your display
 - **Developer-Friendly**: With TRMNL's open API and developer tools, you can create custom plugins and integrations for your specific needs
 
-By combining TRMNL's powerful platform with our high-quality e-ink display, we're offering users an elegant solution for creating personalized, low-power information dashboards that respect both their attention and their time.
+By combining TRMNL's powerful platform with our high-quality E Ink® display, we're offering users an elegant solution for creating personalized, low-power information dashboards that respect both their attention and their time.
 
 ## Getting Started with TRMNL
 
@@ -118,7 +118,7 @@ To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the app
 
 3. **Connect Your Device**
 
-   - Plug your XIAO 7.5" ePaper Panel (with ESP32C3) into your computer via USB.
+   - Plug your XIAO 7.5" ePaper Panel (with XIAO ESP32-C3) into your computer via USB.
 
 4. **Flash the Firmware**
 
