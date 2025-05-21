@@ -3267,6 +3267,7 @@ const sidebars = {
                   'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reTerminal-DM-Getting-Started-with-Ignition-Edge',
                   'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reTerminal-DM-Ignition-Edge-Panel-Builder',
                   'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reterminal-dm-sensecraft-edge-os-intro',
+                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/recomputer_use_ups'
                 ]
               },
             ]
