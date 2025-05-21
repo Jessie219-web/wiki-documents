@@ -190,11 +190,8 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
 
 ## Application
 
-- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)
-- In-door and out-door navigation 
-- Leisure and sports
-- Weather forecast
-- Vertical velocity indication (rise/sink speed)
+- Weather Station and Weather Sensing
+- Measure Temperature, Pressure, and Altitude
 
 ## Getting Started
 
