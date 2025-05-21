@@ -3,7 +3,7 @@ description: Grove - Barometer Sensor (SPA06-003)
 title: Grove - Barometer Sensor (SPA06-003)
 keywords:
 - Grove
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/show.webp
 slug: /Grove-Barometer_Sensor-SPA06-003
 last_update:
   date: 2025-05-13
