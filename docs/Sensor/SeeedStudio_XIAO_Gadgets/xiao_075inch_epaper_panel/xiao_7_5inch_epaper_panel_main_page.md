@@ -18,12 +18,12 @@ last_update:
 
 ## Introduction
 
-Powered by XIAO ESP32-C3, this 7.5 inch ePaper display is a versatile, energy-efficient smart e-ink screen supporting a wide range of popular community applications including Home Assistant, trmnl, Arduino, and more. This flexible display solution is perfect for showcasing dashboard data, weather updates, schedules, and custom information. With crisp visuals, exceptional 3-months battery life (2000mAh) in deep sleep mode, and extensive customization possibilities, this compact device adapts to diverse use cases. Perfect for modern living spaces and project environments, it combines functionality with elegant design for an enhanced visual experience across multiple platforms.
+Powered by XIAO ESP32-C3, this 7.5 inch ePaper display is a versatile, energy-efficient smart E Ink® screen supporting a wide range of popular community applications including [Home Assistant](https://www.home-assistant.io/), [TRMNL](https://trmnl.app/), Arduino, and more. This flexible display solution is perfect for showcasing dashboard data, weather updates, schedules, and custom information. With crisp visuals, exceptional 3-months battery life (2000mAh) in deep sleep mode, and extensive customization possibilities, this compact device adapts to diverse use cases. Perfect for modern living spaces and project environments, it combines functionality with elegant design for an enhanced visual experience across multiple platforms.
 
 ### Features
 
 - Native Home Assistant Integration
-- 7.5" e-Ink Display for Home Automation
+- 7.5" E Ink® Display for Home Automation
 - Energy-Efficient Design with Low-Power Consumption
 - Arduino Development Support
 - Elegant Form Factor

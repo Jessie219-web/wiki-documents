@@ -1,5 +1,5 @@
 ---
-description: The XIAO ESP32C3-powered 7.5-inch E-Ink Display is a compact, energy-efficient solution for showcasing Home Assistant data.
+description: The XIAO ESP32C3-powered 7.5-inch E Ink® Display is a compact, energy-efficient solution for showcasing Home Assistant data.
 title: Works with ESPHome in Home Assistant
 keywords:
 - ePaper display
@@ -609,7 +609,7 @@ For example, to get a 1000px x 1000px screenshot of your default dashboard, fetc
 http://homeassistant.local:10000/lovelace/0?viewport=1000x1000
 ```
 
-To reduce the color palette for e-ink displays, you can add the eink parameter. The value represents the number of colors (including black) to use. For example, for a 2-color e-ink display:
+To reduce the color palette for E Ink® displays, you can add the eink parameter. The value represents the number of colors (including black) to use. For example, for a 2-color E Ink® display:
 
 ```python
 http://homeassistant.local:10000/lovelace/0?viewport=1000x1000&eink=2
