@@ -8,7 +8,7 @@ keywords:
 - Matter
 - OpenThread
 - Sonoff Zigbee 3.0 USB Dongle Plus–ZBDongle-E
-image: https://files.seeedstudio.com/wiki/HA_OpenThread/Group11.webp
+image: https://files.seeedstudio.com/wiki/HA_OpenThread/Wiki-XIAO-MG24-HA-Matter.webp
 slug: /xiao_mg24_ha_openthread
 sidebar_position: 8
 last_update:
@@ -19,7 +19,7 @@ last_update:
 
 
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/HA_OpenThread/Group10.png" style={{width:900, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/HA_OpenThread/Wiki XIAO MG24-HA-Matter.png" style={{width:900, height:'auto'}}/></div>
 
 ## Introduction
 

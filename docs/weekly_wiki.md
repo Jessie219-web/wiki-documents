@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 05/12/2025
+  date: 05/19/2025
   author: Frank
 ---
 
@@ -17,33 +17,41 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is May 12th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is May 19th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Seeed Studio XIAO MG24 Connect HomeAssistant With Matter](https://wiki.seeedstudio.com/xiao_mg24_ha_openthread/)
+### [Getting Start with reComputer AI Industrial R2135 Series](https://wiki.seeedstudio.com/recomputer_ai_industrial_r2135_getting_start/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/HA_OpenThread/Group10.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/7/-/7-114993595-recomputer-ai-industrial-r2135-12.jpg" alt="pir" width={800} height="auto" /></p>
 
-In this wiki, we will utilize the Sonoff Zigbee 3.0 USB Dongle to access the HomeAssistant and thus act as a border router, while the Seeed Studio XIAO MG24 will act as a Matter protocol device with the Thread network.
+The reComputer AI Industrial R2135 is powered by Raspberry Pi CM5 and Hailo AI accelerator, this compact edge AI system delivers 26 TOPS for real-time multi-channel vision processing. With a quad-core Cortex-A76 CPU, up to 16GB RAM, 64GB eMMC, and a versatile interface, it ensures seamless integration into industrial AI applications.
+
+### [reComputer AI Industrial R2000 Flash OS](https://wiki.seeedstudio.com/recomputer_ai_industrial_r2000_flash_os/)
+
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/3/-/3-114993595-recomputer-ai-industrial-r2135-12.jpg" alt="pir" width={800} height="auto" /></p>
+
+This guide provides step-by-step instructions on how to flash an operating system onto the reComputer AI Industrial R2000 series, powered by Raspberry Pi CM5 and Hailo-8 AI accelerator. It covers OS flashing using Raspberry Pi Imager on Windows, macOS, and Linux, as well as how to configure NVMe SSD booting and update EEPROM for optimal performance in industrial AI applications.
+
+### [Get Started with SenseCAP Solar Node](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.png" alt="pir" width={800} height="auto" /></p>
+
+This document walks you through setting up and deploying the SenseCAP Solar Node, covering battery and GPS installation, app pairing, LoRa region configuration, and hardware assembly—helping you quickly build an off-grid communication network with Meshtastic and LoRa.
 
 ## Existing Wiki Updated
 
-<!-- ### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+### [Getting Started with reComputer Industrial](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/)
 
-We added examples related to [Configure the motors](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors).
-
-### [Camera Usage in Seeed Studio XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/)
-
-We added examples related to [OV5640 AutoFocus operations](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/#ov5640-autofocus). -->
+We added an example for [flashing JetPack 6.2](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/#flash-to-jetson).
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO ESP32C6 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao_esp32c6_nuttx/)
+<!-- ### [Seeed Studio XIAO ESP32C6 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao_esp32c6_nuttx/)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/></div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -157,5 +165,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
 - [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
+- [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
 
 </details>
