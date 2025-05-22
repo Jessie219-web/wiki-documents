@@ -13,10 +13,11 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.jpg" style={{width:500, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/Grove-Barometer_Sensor-SPA06-003">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Temperature-and-Barometer-Sensor-SPA06-003-p-6441.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
+
 
 ## Description
 
@@ -220,7 +221,7 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
 | Seeeduino V4.2                                               | Base Shield                                                  | Grove-Barometer Sensor SPA06-003                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/seeeduino_v4.2.jpg" alt="pir" width="400" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/base_shield.jpg" alt="pir" width="400" height="auto" /></p> | <p><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" alt="pir" width="350" height="auto" /></p> |
-| [Get One Now](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html) | [Get One Now](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html) | [Get One Now](https://www.seeedstudio.com/depot/Grove-Barometer-Sensor-BMP280-p-2652.html) |
+| [Get One Now](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html) | [Get One Now](https://www.seeedstudio.com/Base-Shield-V2-p-1378.html) | [Get One Now](https://www.seeedstudio.com/Grove-Temperature-and-Barometer-Sensor-SPA06-003-p-6441.html) |
 
 - *Connect Grove with Arduino*
 
@@ -231,7 +232,7 @@ More details about Grove modules please refer to [Grove System](https://wiki.see
 | Seeed Studio Grove Base for XIAO                             | XIAO ESP32-S3                                                | Grove-Barometer Sensor SPA06-003                             |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/Grove-Shield-for-Seeeduino-XIAO/img/xiao_-Thumbnail-27.png"/></div> | <div align="center"><img width="700" src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" /></div> | <div align="center"><img width="500" src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/small.jpg" /></div> |
-| [Get One Now](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html) | [Get One Now](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) | [Get One Now](https://www.seeedstudio.com/Grove-Line-Finder-v1.1-p-2712.html) |
+| [Get One Now](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html) | [Get One Now](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) | [Get One Now](https://www.seeedstudio.com/Grove-Temperature-and-Barometer-Sensor-SPA06-003-p-6441.html) |
 
 - _Connect Grove with ESP32 Series_
 
