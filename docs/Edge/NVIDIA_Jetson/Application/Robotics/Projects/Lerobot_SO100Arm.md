@@ -314,64 +314,6 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="SO100" label="SO100">
-
-Designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6 (F1...F6 and L1...L6).
-
-Follow steps 1 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the use of our scripts below.
-
-<div class="video-container">
-<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-
-**Find USB ports associated to your arms**
-To find the correct ports for each arm, run the utility script twice:
-
-```bash
-python lerobot/scripts/find_motors_bus_port.py
-```
-
-Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
-
-Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
-
-Troubleshooting: On Linux, you might need to give access to the USB ports by running:
-
-```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1
-```
-
-**Configure your motors**
-
-Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 1
-```
-
-:::note
-Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
-:::
-
-Then unplug your motor and plug the second motor and set its ID to 2.
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 2
-```
-
-Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
-</TabItem>
 
 
 <TabItem value="SO101" label="SO101">
@@ -464,18 +406,90 @@ python lerobot/scripts/configure_motor.py \
 
 Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
 </TabItem>
+
+<TabItem value="SO100" label="SO100">
+
+Designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6 (F1...F6 and L1...L6).
+
+Follow steps 1 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the use of our scripts below.
+
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+**Find USB ports associated to your arms**
+To find the correct ports for each arm, run the utility script twice:
+
+```bash
+python lerobot/scripts/find_motors_bus_port.py
+```
+
+Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
+
+Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
+
+Troubleshooting: On Linux, you might need to give access to the USB ports by running:
+
+```bash
+sudo chmod 666 /dev/ttyACM0
+sudo chmod 666 /dev/ttyACM1
+```
+
+**Configure your motors**
+
+Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 1
+```
+
+:::note
+Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
+:::
+
+Then unplug your motor and plug the second motor and set its ID to 2.
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 2
+```
+
+Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
+</TabItem>
 </Tabs>
 
 
 ## Assembly
 
-**Assemble Leader Arm**
-
 :::tip
 - The dual-arm assembly process of SO-ARM101 is the same as that of SO-ARM100. The only differences are the addition of cable clips on SO-ARM101 and the different gear ratios of the joint servos on the Leader Arm. So both SO100 and SO101 can be installed by referring to the following content
 - After calibrating the servos, do not rotate them before tightening the screws. Make sure the orientation of the 3D printed parts matches the reference direction in the images and that the motors are in their middle positions.
+
+- Before assembly, please check your motor model and reduction ratio again. If you have purchased SO100, you can ignore this step. If you have purchased SO101, please check the following table to distinguish F1 to F6 and L1 to L6. 
 :::
 
+  | Servo Model                            | Gear Ratio | Corresponding Joints         |
+|----------------------------------------|------------|------------------------------|
+| ST-3215-C044(7.4V)                            | 1:191      | L1                           |
+| ST-3215-C001(7.4V)                       | 1:345      | L2                           |
+| ST-3215-C044(7.4V)                           | 1:191      | L3                           |
+| ST-3215-C046(7.4V)                           | 1:147      | L4–L6                        |
+| ST-3215-C001(7.4V) / C018(12V) / C047(12V)             | 1:345      | F1–F6                        |
+
+:::danger
+If you purchased the **SO101 Arm Kit Standard Edition**, all power supplies are 5V. If you purchased the **SO101 Arm Kit Pro Edition**, the Leader Arm should be calibrated and operated at every step using a 5V power supply, while the Follower Arm should be calibrated and operated at every step using a 12V power supply.
+:::
+
+**Assemble Leader Arm**
 
 | **Step 1** | **Step 2** | **Step 3** | **Step 4** | **Step 5** | **Step 6** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|

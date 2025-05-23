@@ -681,7 +681,69 @@ When you see the feedback like the following image, it means the code is running
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/94.jpg" style={{width:600, height:'auto'}}/></div>
 
-## Demo 2. Comprehensive example
+## Demo2. Deep sleep mode
+
+:::tip
+During deep sleep mode, you can't upload code to the device directly. You need to enter the download mode.[Click here jump to Q3.](#port)
+:::
+
+This example will show how to use deep sleep mode to save power. Update info every 6 hours. A 2000mAh battery can last about 3 months.
+
+After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
+
+<details>
+
+<summary>Click here to preview the full code</summary>
+
+```yaml
+globals:
+  - id: sleep_counter
+    type: int
+    restore_value: yes  # key parameter, to use RTC storage
+    initial_value: '0'
+
+# Here is deep sleep part
+deep_sleep:
+  id: deep_sleep_1
+  run_duration: 30s  # Device wake up and run 30s (enough to display)
+  sleep_duration: 3min  # deep sleep for 3min
+
+interval:
+  - interval: 29s  # run this command before the end of run_duration
+    then:
+      - logger.log: "Entering deep sleep now..."
+
+font:
+  - file: "gfonts://Inter@700"
+    id: font1
+    size: 24
+
+spi:
+  clk_pin: GPIO8
+  mosi_pin: GPIO10
+
+display:
+  - platform: waveshare_epaper
+    cs_pin: GPIO3
+    dc_pin: GPIO5
+    busy_pin: GPIO4
+    reset_pin: GPIO2
+    model: 7.50inv2
+    update_interval: 3min
+    lambda: |-
+      id(sleep_counter) += 1;
+      ESP_LOGD("main", "Wakeup count: %d", id(sleep_counter));
+      it.printf(100, 100, id(font1), "Wakeup count: %d", id(sleep_counter));
+```
+</details>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/89.jpg" style={{width:800, height:'auto'}}/></div>
+
+You'll see a counter. It will increment by one every time it wakes up.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/90.jpg" style={{width:600, height:'auto'}}/></div>
+
+## Demo 3. Comprehensive example
 
 :::tip
 For you to understand better, we strongly recommend that you run the basic usages above first.
@@ -1150,67 +1212,7 @@ When you see the feedback like the following image, it means the code is running
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/38.png" style={{width:600, height:'auto'}}/></div>
 
-## Deep sleep mode
 
-:::tip
-During deep sleep mode, you can't upload code to the device directly. You need to enter the download mode.[Click here jump to Q3.](#port)
-:::
-
-This example will show how to use deep sleep mode to save power. Update info every 6 hours. A 2000mAh battery can last about 3 months.
-
-After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
-
-<details>
-
-<summary>Click here to preview the full code</summary>
-
-```yaml
-globals:
-  - id: sleep_counter
-    type: int
-    restore_value: yes  # key parameter, to use RTC storage
-    initial_value: '0'
-
-# Here is deep sleep part
-deep_sleep:
-  id: deep_sleep_1
-  run_duration: 30s  # Device wake up and run 30s (enough to display)
-  sleep_duration: 3min  # deep sleep for 3min
-
-interval:
-  - interval: 29s  # run this command before the end of run_duration
-    then:
-      - logger.log: "Entering deep sleep now..."
-
-font:
-  - file: "gfonts://Inter@700"
-    id: font1
-    size: 24
-
-spi:
-  clk_pin: GPIO8
-  mosi_pin: GPIO10
-
-display:
-  - platform: waveshare_epaper
-    cs_pin: GPIO3
-    dc_pin: GPIO5
-    busy_pin: GPIO4
-    reset_pin: GPIO2
-    model: 7.50inv2
-    update_interval: 3min
-    lambda: |-
-      id(sleep_counter) += 1;
-      ESP_LOGD("main", "Wakeup count: %d", id(sleep_counter));
-      it.printf(100, 100, id(font1), "Wakeup count: %d", id(sleep_counter));
-```
-</details>
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/89.jpg" style={{width:800, height:'auto'}}/></div>
-
-You'll see a counter. It will increment by one every time it wakes up.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/90.jpg" style={{width:600, height:'auto'}}/></div>
 
 ## FAQ
 

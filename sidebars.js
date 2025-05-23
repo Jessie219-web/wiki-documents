@@ -307,6 +307,7 @@ const sidebars = {
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-BME280',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-BMP180',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-BMP280',
+                'Sensor/Grove/Grove_Sensors/Barometer/Grove-Barometer_Sensor-SPA06-003',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310',
                 'Sensor/Grove/Grove_Sensors/Barometer/Grove-Integrated-Pressure-Sensor-Kit',
               ],
@@ -3266,6 +3267,7 @@ const sidebars = {
                   'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reTerminal-DM-Getting-Started-with-Ignition-Edge',
                   'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reTerminal-DM-Ignition-Edge-Panel-Builder',
                   'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/reterminal-dm-sensecraft-edge-os-intro',
+                  'Edge/Raspberry_Pi_Devices/Application/AIoT/Others/recomputer_use_ups'
                 ]
               },
             ]

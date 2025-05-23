@@ -23,7 +23,7 @@ import TabItem from '@theme/TabItem';
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.jpg" style={{width:680, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Dual-Smart-Relay-Module-for-XIAO-p-6309.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-2-Channel-Wi-Fi-AC-Energy-Meter-Bundle-Kit.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div><br />
@@ -181,7 +181,7 @@ Firefox does not support flashing firmware on ESP devices. Please use Google Chr
 <Tabs>
 <TabItem value='Web Tool'>
 
-You can use this [Web Tool](https://seeed-projects.github.io/6-Channel_Relay_based_on_XIAO_ESP32C6/) for an easy and direct method to flash your firmware. Simply follow the on-screen instructions.
+You can use this [Web Tool](https://gadgets.seeed.cc/) for an easy and direct method to flash your firmware. Simply follow the on-screen instructions. (Please choose **SeeedStuido-2CH-EM**)
 
 - Click the `CONNECT` button to initiate the connection. The tool will automatically update the firmware.
 
@@ -190,7 +190,7 @@ If something goes wrong, follow the on-screen troubleshooting steps or switch to
 </TabItem>
 <TabItem value='ESPHome Web'>
 
-For this method, you'll need to download the `bin` firmware file from [here](https://github.com/Seeed-Projects/6-Channel_Relay_based_on_XIAO_ESP32C6/releases)(you'll need to unzip the downloaded file).
+For this method, you'll need to download the `bin` firmware file from [here](https://github.com/Seeed-Studio/xiao-esphome-projects/releases)(you'll need to unzip the downloaded file).
 
 1. Connect the sensor kit to your PC.
 2. Visit the [ESPHome Web](https://web.esphome.io/) page.
