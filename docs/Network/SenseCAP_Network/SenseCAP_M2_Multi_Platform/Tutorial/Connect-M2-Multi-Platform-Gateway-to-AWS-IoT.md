@@ -1,4 +1,4 @@
-﻿---
+---
 description: Connect SenseCAP M2 Multi-Platform Gateway to AWS
 title: Connecting to AWS IoT
 keywords:

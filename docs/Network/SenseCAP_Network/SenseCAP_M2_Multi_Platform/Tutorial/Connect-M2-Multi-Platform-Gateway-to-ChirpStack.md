@@ -1,4 +1,4 @@
-﻿---
+---
 description: Connect SenseCAP M2 Multi-Platform Gateway to ChirpStack
 title: Connecting to ChirpStack
 keywords:

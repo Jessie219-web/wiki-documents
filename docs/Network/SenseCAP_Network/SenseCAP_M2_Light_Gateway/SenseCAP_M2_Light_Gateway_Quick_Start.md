@@ -1,4 +1,4 @@
-﻿---
+---
 description: SenseCAP M2 Light Gateway Quick Start
 title: SenseCAP M2 Light Gateway Quick Start
 keywords:
