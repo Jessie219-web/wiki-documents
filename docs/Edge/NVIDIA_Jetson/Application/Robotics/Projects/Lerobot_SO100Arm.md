@@ -253,6 +253,20 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 ```
 
+**We adapted the Orbbec Gemini2 depth camera and found that a single depth camera performs better than two RGB cameras. If you are also using this camera, please clone the conversion repository branch to Orbbec and follow our subsequent steps to configure the camera.**  
+
+```bash  
+cd ~/lerobot  
+git checkout orbbec  
+```  
+
+**If you are only using RGB, do not switch branches, otherwise dependency-related errors may occur. If you have already switched to `orbbec` and want to revert to the original version:**  
+
+```bash  
+cd ~/lerobot  
+git checkout main  
+```
+
 4. When using miniconda, install ffmpeg in your environment:
 
 ```bash
@@ -849,6 +863,111 @@ class So101RobotConfig(ManipulatorRobotConfig):
 
 </details>
 
+<details>
+
+<summary>Using a Single Orbbec Gemini 2 Depth Camera</summary>
+
+:::tip
+This project was initiated by Orbbec with valuable guidance, and implemented by Jiaquan Zhang, Wenzhao Wang, and Jinpeng Huang from South China Normal University. It enables the use of Orbbec cameras to collect depth data within the lerobot framework, thereby enriching the environmental perception of robotic arms.
+If you already have an Orbbec Gemini2 depth camera, our current testing configuration places the depth camera at the front upper position. Please follow the installation instructions below.
+:::
+
+**Install and Compile Gemini 2 Depth Camera Python SDK**
+
+1. Clone pyOrbbecsdk
+
+```bash
+cd ~/
+git clone https://github.com/orbbec/pyorbbecsdk.git
+cd pyorbbecsdk
+```
+
+2. Install dependencies and compile pyOrbbecsdk
+
+```bash
+conda activate lerobot
+sudo apt-get install python3-dev python3-venv python3-pip python3-opencv
+pip3 install -r requirements.txt
+mkdir build
+cd build
+cmake -Dpybind11_DIR=`pybind11-config --cmakedir` ..
+make -j4
+make install
+```
+
+3. Test if the depth camera works properly
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+python3 examples/depth.py
+```
+
+However, you need to run these commands again when opening a new terminal:
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+
+You can also add the following to the end of your `.bashrc` file:
+```bash
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ~/pyorbbecsdk/scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+This will automatically load the depth camera environment when starting a terminal.
+
+After connecting your Orbbec depth camera, run the following script to check the depth data stream and color data stream. Two windows will pop up, allowing you to adjust the camera position. Use Ctrl+C in the terminal to exit. Important: The camera must be connected directly to your device, not through a USB hub, as the hub's bandwidth may be too slow for image data transmission.
+
+```bash
+cd ~/lerobot
+python lerobot/common/robot_devices/OrbbecCamera.py
+```
+
+After adjusting the camera, align the camera parameters in the configuration file at `lerobot/lerobot/common/robot_devices/robots/configs.py`.
+
+```python
+@RobotConfig.register_subclass("so101")  # Also compatible with so100
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,            
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(    # Regular camera, compatible with Orbbec camera
+                camera_index=1,             
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "Orbbec":OrbbecCameraConfig(    # Add Orbbec camera configuration here
+                fps=30,
+                use_depth=True              # Whether to use depth
+                width = 640                 # Resolution automatically adapts to width. Only 640 or 1280 (untested) are valid values
+                Hi_resolution_mode = False  # High resolution mode (may reduce visualization quality but improves depth data resolution)
+            ),
+
+        }
+    )
+
+    mock: bool = False
+```
+
+</details>
+
+
 
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
@@ -960,7 +1079,6 @@ If you didn't upload with `--control.push_to_hub=false`, you can also visualize 
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id ${HF_USER}/so101_test \
-  --local-files-only 1 
 ```
 
 If you upload with `--control.push_to_hub=false`, you can also visualize it locally with:
@@ -968,7 +1086,6 @@ If you upload with `--control.push_to_hub=false`, you can also visualize it loca
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id seeed_123/so101_test \
-  --local-files-only 1
 ```
 **Here, `seeed_123` is the custom `repo_id` name defined when collecting data.**
 
