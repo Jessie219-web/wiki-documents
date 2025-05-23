@@ -74,13 +74,13 @@ Before connecting your ePaper Panel to TRMNL, you'll need to:
 
    - Buy access to the TRMNL web app + device capabilities at: [https://shop.usetrmnl.com/products/byod](https://shop.usetrmnl.com/products/byod)
    - This provides you with the necessary credentials to use TRMNL's platform
-   - Go to [https://usetrmnl.com/claim-a-device](https://usetrmnl.com/claim-a-device) to activate a virtual device
+   - Go to [https://usetrmnl.com/claim-a-device](https://usetrmnl.com/claim-a-device) to activate a virtual device (may take up to 10 minutes following purchase)
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/211.png" style={{width:700, height:'auto'}}/></div>
 
 2. **Create a TRMNL Account**
 
-   - Visit [TRMNL's website](https://trmnl.app)
+   - Visit [TRMNL's website](https://usetrmnl.com)
    - Click on "Sign Up" to create a new account
    - Follow the registration process
 
@@ -186,7 +186,7 @@ To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the app
 
 ## Configure Wi-Fi and Send Playlists to TRMNL
 
-To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need to connect the device to your Wi-Fi network. This process is called "provisioning" and is done through a simple captive portal. Please follow the steps below:
+To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need to connect the device to your Wi-Fi network. This process is called "WiFi pairing mode" and is done through a simple captive portal. Please follow the steps below:
 
 > 💡 **Troubleshooting Wi-Fi?** If you encounter issues connecting your device to Wi-Fi, please refer to the [TRMNL Device Wi-Fi Troubleshooting Guide](https://help.usetrmnl.com/en/articles/10193157-device-wifi-troubleshooting) for solutions to common networking and router compatibility issues.
 
@@ -223,9 +223,16 @@ To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need
 
 - The device will attempt to connect to your Wi-Fi.
 - Once successful, it will disconnect from the TRMNL Wi-Fi and join your home network.
-- The window will show the device's MAC address. Please record the MAC address, as you will need it in a later step.
+- The window will show the device's MAC address. **Please record the MAC address**, as you will need it in a later step.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/219.png" style={{width:800, height:'auto'}}/></div>
+
+> ⚠️ **Note:** The MAC address is only visible in the captive portal for 1-2 seconds. If you miss it, you can also:
+> - Retrieve it from the VS Code > PlatformIO build/upload logs.
+> - Use the [usetrmnl.com/flash](https://usetrmnl.com/flash) method and check the Chrome/Edge/Firefox developer console for the MAC address during flashing.
+> - Find it in your router or Mesh network app's list of connected devices.
+>
+> For more details and screenshots, see the official guide: [Finding your TRMNL MAC address](https://help.usetrmnl.com/en/articles/10614205-finding-your-trmnl-mac-address)
 
 ### Access the TRMNL Web Interface
 
@@ -306,6 +313,8 @@ For each item, you have several controls:
 
 ### Smart Playlist
 - **Smart Playlist Option**: At the bottom, you can choose whether to automatically skip screens whose content hasn't changed (e.g., "Never skip screens").
+
+> 📖 Want to learn more? Read the [Smart Playlists blog post](https://usetrmnl.com/blog/smart-playlists) for advanced tips and details.
 
 This flexible playlist system lets you fully customize what your ePaper Panel displays, how often it updates, and in what order. You can mix and match different plugins to create a personalized dashboard that fits your needs.
 
