@@ -98,7 +98,7 @@ LED Driver Board for XIAO is a compact yet powerful solution supporting both 5V 
         <td>D3</td>
     </tr>
     <tr>
-        <td>User header</td>
+        <td>User Pin Header</td>
         <td>SPI x1, Uart x1, Digital x2</td>
     </tr>
 </table>
