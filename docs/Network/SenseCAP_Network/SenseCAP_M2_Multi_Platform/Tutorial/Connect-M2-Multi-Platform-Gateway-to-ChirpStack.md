@@ -4,6 +4,7 @@ title: Connecting to ChirpStack
 keywords:
 - SenseCAP Network
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack
 last_update:
   date: 08/29/2023
   author: Jessie
