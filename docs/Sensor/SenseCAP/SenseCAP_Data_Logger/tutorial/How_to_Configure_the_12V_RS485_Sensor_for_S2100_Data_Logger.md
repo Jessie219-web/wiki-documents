@@ -2,6 +2,7 @@
 description: Configure the 12V RS485 Sensor
 title: Configure the 12V RS485 Sensor
 image: https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/f/i/first_page_all-22.jpg
+slug: /Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger
 keywords: [SenseCAP data logger, data logger, collector]
 last_update:
   date: 08/17/2024

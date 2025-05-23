@@ -4,6 +4,7 @@ title:  SenseCAP Sensor Hub Data Logger
 keywords:
 - SenseCAP
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger
 last_update:
   date: 4/11/2023
   author: Yvonne
