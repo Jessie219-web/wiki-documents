@@ -4,6 +4,7 @@ title: SenseCAP CO2 Sensor
 keywords:
 - SenseCAP Sensor_Probe&Accessories
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP-SOLO-CO2-Sensor
 last_update:
   date: 1/16/2023
   author: jianjing Huang
