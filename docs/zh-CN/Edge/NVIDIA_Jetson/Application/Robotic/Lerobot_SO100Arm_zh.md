@@ -240,6 +240,20 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 ```
 
+  **我们适配了奥比中光Orbbec Gemini2深度相机，发现单个深度相机效果优于2个RGB相机，如果你也使用这款相机，请克隆转换仓库分支到Orbbec,并按我们后续流程来配置相机。**
+
+  ```bash
+  cd ~/lerobot
+  git checkout orbbec
+  ```
+
+  如果你只是使用RGB，请不要切换分支，否则会报依赖相关的错误。如果你已经切换到了orbbec，想切换回原始版本
+
+  ```bash
+  cd ~/lerobot
+  git checkout main
+  ```
+
 4. 使用 miniconda 时，在环境中安装 ffmpeg：
 
 ```bash
@@ -786,8 +800,6 @@ class So101RobotConfig(ManipulatorRobotConfig):
   
 ```
 
-
-
 <details>
 
 <summary> 添加两个以上的摄像头 (可选) </summary>
@@ -831,6 +843,109 @@ class So101RobotConfig(ManipulatorRobotConfig):
 
 </details>
 
+<details>
+
+<summary> 使用单个奥比中光摄像头 </summary>
+
+:::tip
+该项目由奥比中光发起并提供宝贵指导，由华南师范大学张家铨、王文钊、黄锦鹏 完成，实现lerobot框架下使用Orbbec相机采集深度数据，从而使机械臂的环境感知更加丰富的效果
+如果你手上已经有了奥比中光Gemini2的深度相机，目前我们测试过是将深度相机放在正前上方，并进行以下的环境安装。
+:::
+
+**安装并编译Gemini 2深度相机Python SDK**
+
+1.克隆pyOrbbecsdk
+
+```bash
+cd ~/
+git clone https://github.com/orbbec/pyorbbecsdk.git
+cd pyorbbecsdk
+```
+
+2.安装 pyOrbbecsdk 的依赖并编译
+
+```bash
+conda activate lerobot
+sudo apt-get install python3-dev python3-venv python3-pip python3-opencv
+pip3 install -r requirements.txt
+mkdir build
+cd build
+cmake -Dpybind11_DIR=`pybind11-config --cmakedir` ..
+make -j4
+make install
+```
+
+3.进行深度相机是否正常运行的测试
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+python3 examples/depth.py
+```
+
+但是每次新建终端需要再次运行
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+
+你也可以在主目录`.bashrc`文件末尾添加
+```bash
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ~/pyorbbecsdk/scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+这样每次启动终端会自动加载深度相机环境。
+
+在插入您的 Orbbec 深度相机后，运行以下脚本以检查深度相机的深度数据流及彩色数据流，电脑将会有两个窗口弹出，您可以根据这两个窗口调整摄像头位置，在终端使用Ctrl+C退出按切记摄像头不能插在USB Hub上，要直接插在设备上，USB Hub速率太慢会导致读不到图像数据。
+
+```bash
+cd ~/lerobot
+python lerobot/common/robot_devices/OrbbecCamera.py
+```
+
+完成摄像头的调整后，完成 lerobot/lerobot/common/robot_devices/robots/configs.py 文件中摄像头参数的对齐。
+
+```python
+@RobotConfig.register_subclass("so101")  #so100也兼容
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,            
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(    #这是普通摄像头，与奥比相机兼容，您仍然可以正常添加
+                camera_index=1,             
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "Orbbec":OrbbecCameraConfig(    #在这里添加奥比摄像头信息
+                fps=30,
+                use_depth=True              #是否采用深度
+                width = 640                 #这里会根据宽度自动适配分辨率，不用填高度信息，宽度的值必须为640或者1280（未测试）中的一个
+                Hi_resolution_mode = False  #高分辨率模式，会导致可视化效果不是那么地好，可以进一步提升深度数据的分辨率
+            )，
+
+        }
+    )
+
+    mock: bool = False
+```
+
+</details>
 
 
 然后，您将能够在遥操作时在计算机上显示摄像头：
@@ -937,7 +1052,6 @@ echo ${HF_USER}/so101_test
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id ${HF_USER}/so101_test \
-  --local-files-only 1 
 ```
 
 如果您数据集保存在本地，并且数据采集时运行超参数为 `--control.push_to_hub=false` ，您也可以使用以下命令在本地进行可视化：
@@ -945,7 +1059,6 @@ python lerobot/scripts/visualize_dataset_html.py \
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id seeed_123/so101_test \
-  --local-files-only 1
 ```
 这里的`seeed_123`为采集数据时候自定义的repo_id名。
 
@@ -1033,7 +1146,7 @@ SO100 和 SO101 的代码是兼容的。SO100 用户可以直接使用 SO101 的
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \ 
+  --robot.type=so101 \
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \
