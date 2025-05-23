@@ -70,21 +70,21 @@ For this integration, you'll need:
 
 Before connecting your ePaper Panel to TRMNL, you'll need to:
 
-1. **Create a TRMNL Account**
-
-   - Visit [TRMNL's website](https://trmnl.app)
-   - Click on "Sign Up" to create a new account
-   - Follow the registration process
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/210.png" style={{width:900, height:'auto'}}/></div>
-
-2. **Purchase TRMNL Access**
+1. **Purchase TRMNL Access**
 
    - Buy access to the TRMNL web app + device capabilities at: [https://shop.usetrmnl.com/products/byod](https://shop.usetrmnl.com/products/byod)
    - This provides you with the necessary credentials to use TRMNL's platform
    - Go to [https://usetrmnl.com/claim-a-device](https://usetrmnl.com/claim-a-device) to activate a virtual device
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/211.png" style={{width:700, height:'auto'}}/></div>
+   <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/211.png" style={{width:700, height:'auto'}}/></div>
+
+2. **Create a TRMNL Account**
+
+   - Visit [TRMNL's website](https://trmnl.app)
+   - Click on "Sign Up" to create a new account
+   - Follow the registration process
+
+   <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/210.png" style={{width:900, height:'auto'}}/></div>
 
 :::note
 Your TRMNL credentials are sensitive information. Never share them publicly or commit them to version control systems.
@@ -95,9 +95,21 @@ Once you have your materials and purchased TRMNL access, you can proceed with co
 
 ### Firmware Flashing
 
-To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the appropriate firmware onto your device. There are two recommended methods:
+To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the appropriate firmware onto your device. There are three recommended methods:
 
-#### Method 1: Flash Pre-built Firmware (Recommended for Beginners)
+#### Method 1: Flash via TRMNL Web Flasher (Easiest)
+
+1. **Go to the TRMNL Web Flasher**
+
+   - Visit [https://usetrmnl.com/flash](https://usetrmnl.com/flash)
+   - This tool allows you to flash your device directly from your browser.
+   - Follow the on-screen instructions to complete the flashing process.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/224.png" style={{width:700, height:'auto'}}/></div>
+
+---
+
+#### Method 2: Flash Pre-built Firmware
 
 1. **Download the Firmware Package**
 
@@ -133,7 +145,7 @@ To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the app
 
 ---
 
-#### Method 2: Build and Flash from Source (For Advanced Users/Developers)
+#### Method 3: Build and Flash from Source (For Advanced Users/Developers)
 
 1. **Clone the Firmware Repository**
 
@@ -175,6 +187,8 @@ To get your XIAO 7.5" ePaper Panel working with TRMNL, you need to flash the app
 ## Configure Wi-Fi and Send Playlists to TRMNL
 
 To use your XIAO 7.5" ePaper Panel with TRMNL and send playlists, you first need to connect the device to your Wi-Fi network. This process is called "provisioning" and is done through a simple captive portal. Please follow the steps below:
+
+> 💡 **Troubleshooting Wi-Fi?** If you encounter issues connecting your device to Wi-Fi, please refer to the [TRMNL Device Wi-Fi Troubleshooting Guide](https://help.usetrmnl.com/en/articles/10193157-device-wifi-troubleshooting) for solutions to common networking and router compatibility issues.
 
 ### Power On and Enter Provisioning Mode
 
@@ -234,9 +248,16 @@ After your XIAO 7.5" ePaper Panel is connected to your Wi-Fi and you have record
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/212.png" style={{width:700, height:'auto'}}/></div>
 
-5. **Configure Your Device**  
-   - Once added, you can click on the device in the list to open its configuration page.
-   - Here, you can set a custom name for your ePaper Panel and adjust other settings as needed.
+5. **Register XIAO 7.5" Device MAC Address**
+
+   In order to build a connection between the XIAO epaper panel and TRMNL, we need to bind the correct device MAC address inside the TRMNL settings page.
+
+   <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/223.png" style={{width:900, height:'auto'}}/></div>
+
+   - You can retrieve the MAC address during the PlatformIO upload process (check the upload logs), or from the provisioning portal (it will be displayed after Wi-Fi setup).
+   - Adding your MAC address early helps ensure a smooth onboarding process and device management.
+
+   - Then you can set a custom name for your ePaper Panel and adjust other settings as needed.
 
    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/213.png" style={{width:700, height:'auto'}}/></div>
 
@@ -291,7 +312,7 @@ This flexible playlist system lets you fully customize what your ePaper Panel di
 
 ## Exploring TRMNL Plugins
 
-TRMNL’s plugin system is what makes your ePaper Panel truly powerful and customizable. Plugins are modular apps or widgets that you can add to your device to display a wide variety of information and content.
+TRMNL's plugin system is what makes your ePaper Panel truly powerful and customizable. Plugins are modular apps or widgets that you can add to your device to display a wide variety of information and content.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/222.png" style={{width:900, height:'auto'}}/></div>
 
@@ -299,7 +320,7 @@ TRMNL’s plugin system is what makes your ePaper Panel truly powerful and custo
 Plugins are individual content blocks that can show things like weather, calendar events, stock prices, RSS feeds, motivational quotes, GitHub activity, and much more. You can mix and match plugins to create a dashboard that fits your needs.
 
 ### Connected Plugins
-At the top of the Plugins page, you’ll see all the plugins you’ve already connected to your TRMNL account. These are ready to be added to your playlist and displayed on your ePaper Panel. Examples include:
+At the top of the Plugins page, you'll see all the plugins you've already connected to your TRMNL account. These are ready to be added to your playlist and displayed on your ePaper Panel. Examples include:
 - **Weather**: Show current weather conditions.
 - **Days Left This Year**: Countdown to the end of the year.
 - **Stock Price**: Track your favorite stocks.
@@ -308,7 +329,7 @@ At the top of the Plugins page, you’ll see all the plugins you’ve already co
 - **Language Learning, Motivational Quote, Custom Text**: Personalize your display with learning tools or custom messages.
 
 ### Plugin Marketplace
-Below your connected plugins, you’ll find the plugin marketplace. Here you can browse, search, and discover new plugins to add to your device. Plugins are organized by categories and tags (such as #productivity, #news, #ecommerce, etc.), making it easy to find what you need.
+Below your connected plugins, you'll find the plugin marketplace. Here you can browse, search, and discover new plugins to add to your device. Plugins are organized by categories and tags (such as #productivity, #news, #ecommerce, etc.), making it easy to find what you need.
 
 - **Browse & Search**: Use the search bar or tags to quickly find plugins that interest you.
 - **Add Plugins**: Click on any plugin to connect it to your account and start using it in your playlist.
