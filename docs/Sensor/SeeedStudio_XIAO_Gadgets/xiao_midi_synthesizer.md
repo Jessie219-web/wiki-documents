@@ -7,7 +7,7 @@ keywords:
   - ESP32-C3
   - SAM2695
   - synthesizer
-image: https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/2.webp
+image: https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/1.webp
 slug: /xiao_midi_synthesizer
 last_update:
   date: 05/15/2025
@@ -22,11 +22,11 @@ last_update:
     </a>
 </div>
 
-# Introduction
+## Introduction
 
 The **XIAO MIDI Synthesizer** is a compact, all-in-one music creation gadget powered by the XIAO ESP32-C3 and the professional-grade SAM2695 MIDI chip. Despite its small size, it delivers rich, expressive sound, supports up to 64-voice polyphony, and offers hundreds of instrument timbres. Whether you're a developer experimenting with sound or a musician composing new tunes, this synthesizer is designed to make music creation smooth and inspiring.
 
-### Features
+## Features
 
 - Zero-Barrier Creation, Perfect for Music Beginners
 - All-in-One MIDI + Metronome -- Smarter, Smoother Workflow

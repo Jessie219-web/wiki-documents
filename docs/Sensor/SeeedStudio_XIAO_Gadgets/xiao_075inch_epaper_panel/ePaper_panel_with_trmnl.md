@@ -4,13 +4,15 @@ title: Works with TRMNL
 keywords:
 - ePaper display
 - TRMNL
-image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover.webp
+image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/216.webp
 slug: /xiao_7_5_inch_epaper_panel_with_trmnl
 sidebar_position: 4
 last_update:
   date: 05/19/2025
   author: Citric
 ---
+
+# XIAO 7.5-Inch ePaper Panel Works with TRMNL
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/202.png" style={{width:900, height:'auto'}}/></div>
 
