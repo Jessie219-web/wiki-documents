@@ -7417,6 +7417,4301 @@ const sidebars = {
         // "Spanish/Edge/NVIDIA_Jetson/FAQs/es_How_to_Upgrade_Software_Packages_for_Jetson",
       ]
     },
+  ],
+
+
+  //日语文档
+  jaSidebar: [
+    {
+      type: 'doc',
+      id: 'translate-ja/ja_Getting_Started',
+      label: 'はじめに',
+      className: 'sideboard_calss',
+    },
+
+
+ 
+    {
+      type: 'doc',
+      id: 'translate-ja/ja_Sensor',
+      label: 'センシング',
+      className: 'sideboard_calss',
+    },
+
+    {
+      type: 'category',
+      label: 'Grove',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: "translate-ja/Sensor/Grove/ja_Grove_System"
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'Grove センサー',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: "translate-ja/Sensor/Grove/Grove_Sensors/ja_Grove_Sensor_Intro"
+          },
+          items: [
+            {
+              type: 'category',
+              label: '複数をまとめて',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/All_in_one/ja_Grove_SEN5X_All_in_One',
+                'translate-ja/Sensor/Grove/Grove_Sensors/All_in_one/ja_Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680',
+                'translate-ja/Sensor/Grove/Grove_Sensors/All_in_one/ja_Grove-CO2&Temperature&HumiditySensor-SCD41',
+                'translate-ja/Sensor/Grove/Grove_Sensors/All_in_one/ja_Grove-CO2_Temperature_Humidity_Sensor-SCD30',
+                'translate-ja/Sensor/Grove/Grove_Sensors/All_in_one/ja_Grove-Light-Gesture-Color-Proximity_Sensor-TMG39931',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'AI対応',
+              items: [        
+                {
+                  type: 'category',
+                  label: 'Grove Vision AI',
+                  collapsed: true,
+                  collapsible: true,
+                  link: {
+                    type: "doc",
+                    id: "translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/ja_Grove-Vision-AI-Module"
+                  },
+                  items: [
+                    'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/ja_Train-Deploy-AI-Model-Grove-Vision-AI',
+                    'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/ja_edge-impulse-vision-ai',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Grove Vision AI V2',
+                  collapsed: true,
+                  collapsible: true,
+                  link: {
+                    type: "doc",
+                    id: "translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/ja_Grove-vision-ai-v2"
+                  },
+                  items: [
+                    'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/ja_Grove-vision-ai-v2-software-supported',
+                    'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/ja_Grove-vision-ai-v2-camera-supported',
+                    'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/ja_grove_vision_ai_v2_sscma',
+                    'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/ja_Grove_vision_ai_v2_RS485',
+                    {
+                      type: 'category',
+                      label: '開発',
+                      items: [
+                        'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Development/ja_grove-vision-ai-v2-himax-sdk',
+                        'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Development/ja_grove_vision_ai_v2_at_library',
+                      ],
+                    },
+                    {
+                      type: 'category',
+                      label: 'アプリケーション',
+                      items: [
+                        'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove-vision-ai-v2-sensecap-app',
+                        // 'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove-vision-ai-v2-ha',
+                        'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove-vision-ai-v2-demo',
+                        'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove_vision_ai_v2_webcamera',
+                        'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_vision_ai_v2_crowd_heat_map',
+                        'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/Grove-vision-ai-v2/Application/ja_grove_vision_ai_v2_telegram',
+                      ],
+                    },
+                  ],
+                },
+                'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/ja_Grove-Gesture_sensor_paj7660',
+                // 'translate-ja/Sensor/Grove/Grove_Sensors/AI-powered/ja_Gesture_control_music_application',
+              ],
+            },
+            {
+              type: 'category',
+              label: '温度 & 湿度',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-TempAndHumi_Sensor-SHT31',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-I2C_High_Accuracy_Temp&Humi_Sensor-SHT35',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-Temperature_and_Humidity_Sensor_Pro',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-TemperatureAndHumidity_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-Temperature-Humidity-Sensor-DH20',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-TemperatureAndHumidity_Sensor-HDC1000',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temp&Humi/ja_Grove-SHT4x',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '温度',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-1-Wire_Thermocouple_Amplifier-MAX31850K',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-I2C_Thermocouple_Amplifier-MCP9600',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_One-Wire-Temperature-Sensor-DS18B20',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-High_Temperature_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Thermal-Imaging-Camera-IR-Array',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Digital_Infrared_Temperature_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Infrared_Temperature_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Infrared_Temperature_Sensor_Array-AMG8833',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Temperature_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-Temperature_Sensor_V1.2',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808',
+
+                // 'translate-ja/Sensor/Grove/Grove_Sensors/Temperature/ja_Sensor_temperature',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '土壌湿度',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Soli_Humidity/ja_Grove-Capacitive_Moisture_Sensor-Corrosion-Resistant',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Soli_Humidity/ja_Grove-Moisture_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '近接',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-Ultrasonic_Sensor_SMS812',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Sensor_distance',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-Ultrasonic_Ranger',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-IR_Distance_Interrupter_v1.2',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-TF_Mini_LiDAR',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-Doppler-Radar',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-Time_of_Flight_Distance_Sensor-VL53L0X',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-80cm_Infrared_Proximity_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-Gesture_v1.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Proximity/ja_Grove-Adjustable_PIR_Motion_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '空気質',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Air_Quality/ja_Grove-Laser_PM2.5_Sensor-HM3301',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Air_Quality/ja_Grove-Dust_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Air_Quality/ja_Grove-Air_Quality_Sensor_v1.3',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Air_Quality/ja_Grove-Formaldehyde-Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'ガス',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Sensor_gas',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Gas_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Multichannel-Gas-Sensor-V2',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Gas_Sensor-MQ2',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Gas_Sensor-MQ3',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Gas_Sensor-MQ5',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Gas_Sensor-MQ9',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Gas_Sensor-O2',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Gas_Sensor-O2-MIX8410',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Oxygen-Sensor-Pro',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Alcohol_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-CO2_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-smart_air_quality_sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-VOC_and_eCO2_Gas_Sensor-SGP30',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-VOC_Gas_Sensor-SGP40',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-HCHO_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Gas/ja_Grove-Multichannel_Gas_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '気圧計',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Sensor_barometer',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-Barometer-High-Accuracy',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-Barometer_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-Barometer_Sensor-BME280',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-Barometer_Sensor-BMP180',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-Barometer_Sensor-BMP280',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-Barometer_Sensor-SPA06-003',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-High-Precision-Barometric-Pressure-Sensor-DPS310',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Barometer/ja_Grove-Integrated-Pressure-Sensor-Kit',
+              ],
+            },
+            {
+              type: 'category',
+              label: '加速度センサー',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-D7S-Vibration-Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Sensor_accelerometer',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digital_Accelerometer-16g',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Analog_Accelerometer',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Compass_V1.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digitial_Compass_v2.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digital_Accelerometer-1.5g',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digital_Accelerometer-400g',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Analog_Accelerometer_20g-ADXL356B',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis-Digital-Accelerometer-LIS3DHTR',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Analog_Accelerometer_40g-ADXL356C',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digital_Accelerometer_40g-ADXL357',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digital_Accelerometer_200g-ADXL372',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digital_Gyro',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-3-Axis_Digital_Accelerometer±16g_Ultra-low_Power-BMA400',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-6-Axis_AccelerometerAndCompass_V2.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-6-Axis_AccelerometerAndGyroscope',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-6-Axis_Accelerometer&Gyroscope_BMI088',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-IMU_10DOF',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-IMU_10DOF_v2.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-IMU_9DOF_v2.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-IMU_9DOF-lcm20600+AK09918',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Accelerometer/ja_Grove-Single_Axis_Analog_Gyro',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'ライト',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Lightning-Sensor-AS3935',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Sensor_light',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Digital_Light_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Heelight_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Light_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Sunlight_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-UV_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-I2C_UV_Sensor-VEML6070',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Luminance_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Infrared_Receiver',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Line_Finder',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-IR_Line_Follower_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Flame_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-Infrared_Reflective_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove-I2C_Color_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Light/ja_Grove_Color_Sensor'
+              ],
+            },
+            {
+              type: 'category',
+              label: '生体認証',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Sensor_biomedicine',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Finger-clip_Heart_Rate_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Finger-clip_Heart_Rate_Sensor_with_shell',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-EMG_Detector',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Ear-clip_Heart_Rate_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Chest_Strap_Heart_Rate_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Capacitive-Fingerprint-Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Fingerprint_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-GSR_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Biometric/ja_Grove-Human_Presence_Sensor-AK9753',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'サウンド',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Sensor_sound',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Sound_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Loudness_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Speech_Recognizer',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Sound_Recorder',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Analog-Microphone',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Recorder_v2.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Sound/ja_Grove-Offline-Voice-Recognition',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'タッチ',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-Touch_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-Rotary_Angle_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-Round_Force_Sensor_FSR402',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-2_Channel_Inductive_Sensor-LDC1612',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-12_Key_Capacitive_I2C_Touch_Sensor_V2-MPR121',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-12-Key-Capacitive-I2C-Touch-Sensor-V3-MPR121',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-12-Channel-Capacitive-Touch-Keypad-ATtiny1616-',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-Capacitive_Touch_Slide_Sensor-CY8C4014LQI',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Touch/ja_Grove-I2C_Touch_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: '液体',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Sensor_liquid',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-ORP-Sensor-Pro',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-Water_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-Water-Level-Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_G1-1-4_Water_Flow_sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-PH-Sensor-kit',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-EC-Sensor-kit',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-TDS-Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-Turbidity-Sensor-Meter-for-Arduino-V1.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-ORP-Sensor-kit',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Liquid/ja_Grove-PH_Sensor',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'モーション',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Sensor_motion',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-PIR_Motion_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Digital-PIR-Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Collision_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Tilt_Switch',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Mini_Track_Ball',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Mouse_Encoder',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Piezo_Vibration_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Slide_Potentiometer',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Optical_Rotary_Encoder-TCUT1600X01',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-12-bit-Magnetic-Rotary-Position-Sensor-AS5600',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Vibration_Sensor_SW-420',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Encoder',
+                'translate-ja/Sensor/Grove/Grove_Sensors/Motion/ja_Grove-Step_Counter-BMA456',
+              ],
+            },
+             {
+              type: 'category',
+              label: '重量',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors/Weight/ja_Grove-ADC_for_Load_Cell-HX711',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Grove ネットワークモジュール',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: "translate-ja/Sensor/Grove/Grove_Sensors_Network/ja_Grove_network_module_intro"
+          },
+          items: [
+            {
+              type: 'category',
+              label: 'LoRa',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: "translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/ja_Grove_LoRa_E5_New_Version"
+              },
+              items: [
+                    'translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/ja_Grove_LoRa_E5_New_Version',
+                    'translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_P2P',
+                    'translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_TTN_Demo',
+                    'translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_Helium_Demo',
+                    'translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_Helium_tinyML_Demo',
+                    'translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_SenseCAP_Cloud_Demo',
+                    'translate-ja/Sensor/Grove/Grove_Sensors_Network/LoRa/demo/ja_Grove_Wio_E5_SenseCAP_XIAO_ESP32S3',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Bluetooth',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Bluetooth/ja_Grove-BLE-dual_model-v1.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Bluetooth/ja_Grove-Serial_Bluetooth_v3.0',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Bluetooth/ja_Grove-BLE_v1',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Bluetooth/ja_Grove-Serial_Bluetooth',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wi-Fi',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Wi-Fi/ja_Grove-UART_Wifi',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Wi-Fi/ja_Grove-UART_Wifi_V2',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'NFC',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/NFC/ja_Grove_NFC_ST25',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/NFC/ja_Grove_NFC',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/NFC/ja_Grove_NFC_Tag',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'GPS',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/GPS/ja_Grove-GPS',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/GPS/ja_Grove-GPS-Air530',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'RF',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/RF/ja_Grove-125KHz_RFID_Reader',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/RF/ja_Grove-315MHz_RF_Kit',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/RF/ja_Grove-433MHz_Simple_RF_Link_Kit',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/RF/ja_Grove_LoRa_Radio',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/RF/ja_Grove-Serial_RF_Pro',
+              ],
+            },
+            {
+              type: 'category',
+              label: '標準プロトコル',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/ja_Grove-DMX512',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/ja_Grove-I2C_ADC',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/ja_Grove-I2C_FM_Receiver',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/ja_Grove-I2C_FM_Receiver_v1.1',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/ja_Grove-Protoshield',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/ja_Grove-RJ45_Adapter',
+                'translate-ja/Sensor/Grove/Grove_Sensors_Network/Standard_Protocol/ja_Grove-Node',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Grove アクセサリー',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: "translate-ja/Sensor/Grove/Grove_Accessories/ja_Grove_Accessories_Intro"
+          },
+          items: [
+            {
+              type: 'category',
+              label: '表示',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-1.2_inch_IPS_Display',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-4-Digit_Display',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-0.54_inch_Red_Dual_Alphanumeric_Display',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-0.54_inch_Red_Quad_Alphanumeric_Display',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-16x2_LCD_Series',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-LCD_RGB_Backlight',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-OLED-Display-0.66-SSD1306_v1.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-OLED_Display_0.96inch',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-OLED-Display-0.96-SSD1315',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-OLED-Yellow&Blue-Display-0.96-SSD1315_V1.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-OLED_Display_1.12inch',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-OLED-Display-1.12-SH1107_V3.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_I2C_LCD',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-Triple_Color_E-Ink_Display_2_13',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-Triple_Color_E-Ink_Display_1_54',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-Serial_LCD_V1.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-BlinkM',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Display/ja_Grove-Serial_Camera_Kit',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'アクチュエータ',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-2-Coil_Latching_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Buzzer',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Passive-Buzzer',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Chainable_RGB_LED',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Dry-Reed_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-EL_Driver',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Haptic_Motor',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-I2C_Motor_Driver',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-I2C_Motor_Driver_V1.2',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-I2C_Motor_Driver_V1.3',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-I2C-Motor-Driver-L298P',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Infrared_Emitter',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-LED_Matrix_Driver_v1.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-MP3_v2.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-MP3-v3',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-mp3-v4',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Mini_Fan',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Mini_I2C_Motor_Driver_v1.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove_Recorder',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Recorder_v3.0',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-4-Channel_SPDT_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-2-Channel_SPDT_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Solid_State_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Solid_State_Relay_V2',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-2-Channel_Solid_State_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-4-Channel_Solid_State_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-8-Channel_Solid_State_Relay',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Optocoupler_Relay-M281',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Serial_MP3_Player',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Servo',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Speaker',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Speaker-Plus',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Variable_Color_LED',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Vibration_Motor',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Water_Atomization',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-16-Channel_PWM_Driver-PCA9685',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-I2C_Motor_Driver-TB6612FNG',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Hall_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Actuator/ja_Grove-Voltage_Divider',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '時間',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Accessories/Time/ja_Grove-RTC',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Time/ja_Grove_High_Precision_RTC',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '現在',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-10A_DC_Current_Sensor-ACS725',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-5A_DC_AC_Current_Sensor-ACS70331',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-2.5A-DC-Current-Sensor-ACS70331',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-Electricity_Sensor',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-Coulomb_Counter_3.3V_to_5V-LTC2941',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-MOSFET',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-SPDT_Relay_30A',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-Screw_Terminal',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Current/ja_Grove-Electromagnet',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'LED',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-Red_LED',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-Circular_LED',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-LED_Bar',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-RGB_LED_Stick-10-WS2813_Mini',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-LED_ring',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-LED_Socket_Kit',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-LED_String_Light',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-LED_Strip_Driver',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-RGB_LED_Matrix_w-Driver',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-LED_Matrix_Driver-HT16K33',
+                'translate-ja/Sensor/Grove/Grove_Accessories/LED/ja_Grove-Red_LED_Matrix_w_Driver',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'スイッチ & ボタン',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-6-Position_DIP_Switch',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Button',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Switch-P',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-LED_Button',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Dual-Button',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-5-Way_Switch',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Mech_Keycap',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Thumb_Joystick',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Magnetic_Switch',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Switch&Button/ja_Grove-Joint_v2.0',
+              ],
+            },
+            {
+              type: 'category',
+              label: '入力/出力',
+              items: [
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-Differential_Amplifier_v1.2',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-I2C_Hub',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-I2C-Hub-6Port',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-AND',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-OR',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-DC_Jack_Power',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-Qwiic-Hub',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-NunChuck',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-PS_2_Adapter',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-Mini_Camera',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-Serial_Camera',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-16-bit-ADC-ADS1115',
+                'translate-ja/Sensor/Grove/Grove_Accessories/Input_Output/ja_Grove-NOT',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'ケース',
+              items: ['translate-ja/Sensor/Grove/Grove_Accessories/Case/ja_Grove-Wrapper'],
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'SenseCAP',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: "translate-ja/Sensor/SenseCAP/ja_Industrial-IoT-SenseCAP-Introduction",
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'SenseCAP T1000 トラッカー',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_SenseCAP_T1000_intro',
+          },
+          items: [
+            'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_SenseCAP_T1000_Tracker_Introduction',
+            {
+            type: 'category',
+            label: 'ユーザーガイド',
+            items: [
+              'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Get_Started',
+              'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Payload',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Tracker_WiFi_Geolocation',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_E5_Bluetooth_Location_Beacon',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/ja_Indoor_Positioning_Guide',
+                   ],
+          },
+          {
+            type: 'category',
+            label: 'LoRaWANネットワークサーバーと統合',
+            items: [
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_Helium',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_The_Things_Network',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_Connect_to_Loriot',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_AWS_Service',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_LoRaWAN_Network_Server/ja_TTN_Mapper',
+                   ],
+          },
+          {
+            type: 'category',
+            label: '人気のあるDashboardと統合',
+            items: [
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Datacake_Integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Ubidots_Integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_thingsboard_integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Ubidots_Integrated(Helium)',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Qubitro_Integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_TagoIO_Integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_InfluxDB_Integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Akenza_Integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_Trackpac_Integrated',
+           'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/Integrated_with_Popular_Dashboard/ja_sensecap_t1000_tracker_wialon',
+                   ],
+          },
+          'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_FAQ',
+          'translate-ja/Sensor/SenseCAP/SenseCAP_T1000_Tracker/ja_Firmware_release_note',
+              ],
+        },
+
+         {
+          type: 'category',
+          label: 'SenseCAP センサー',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: "translate-ja/Sensor/SenseCAP/SenseCAP_Intro/ja_SenseCAP_Sensor_Intro",
+          },
+          items: [
+
+            {
+              type: 'category',
+              label: 'SenseCAP LoRaWAN センサー',
+              items: [
+                {
+                  type: 'category',
+                  label: 'SenseCAP S210X シリーズ',
+                  items: [
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/ja_SenseCAP_LoRaWAN_S210X_Series_Sensor',
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/ja_SenseCAP_S2107',
+                    {
+                      type: 'category',
+                      label: 'チュートリアル',
+                      items: [
+                        'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/ja_Connect-S210X-Sensor-to-Microsoft-Azure-IoT-Central',
+                        'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/ja_How-to-Connect-SenseCAP-S210X-to-Helium-Network',
+                        'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/ja_How-to-Connect-SenseCAP-S210X-to-The-Things-Network',
+                      ],
+                    },
+                  ],
+                },
+
+                {
+                  type: 'category',
+                  label: 'SenseCAP S2120 8-in-1 LoRaWAN 気象センサー',
+                  items: [
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/ja_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor_Introduction',
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor/ja_Tutorials-Getting_Started_with_SenseCAP_S2120_8-in-1_LoRaWAN_Weather_Sensor',
+                  ],
+                },
+
+                {
+                  type: 'category',
+                  label: 'SenseCAP A1101',
+                  items: [
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_SenseCAP-Vision-AI-Get-Started',
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_Train-Deploy-AI-Model-A1101',
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_One-Stop-Model-Training-with-Edge-Impulse',
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_Train-Water-Meter-Digits-Recognition-Model-with-SenseCAP-A1101',
+                    //'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1101/ja_Train_and_Deploy_Your_Own_AI_Model_with_Edge_Impulse_into_A1101',
+                  ],
+                },
+
+
+                {
+                  type: 'category',
+                  label: 'SenseCAP A1102',
+                  items: [
+                    {
+                      type: 'autogenerated',
+                      dirName: 'translate-ja/Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_A1102',
+                    },
+                  ],
+                },
+
+
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'SenseCAP ONE 気象センサー',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: "translate-ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ja_ONE_intro",
+              },
+              items: [
+                'translate-ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ja_SenseCAP-One-Series-Meteorological-Sensors',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/ja_ORCH-S4-Weather-Station',
+                {
+                  type: 'category',
+                  label: 'SenseCAP コンパクト気象ステーション',
+                  items: [
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Introduction',
+                    'translate-ja/Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/ja_Tutorials-Getting Started with SenseCAP ONE Compact Weather Sensor',
+                  ],
+                },
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'SenseCAP センサープローブ',
+              collapsed: true,
+              collapsible: true,
+              link: {
+                type: "doc",
+                id: "translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_Probe_intro",
+              },
+              items: [
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_SenseCAP_Sensor_Probes_Product_Catalogue',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_Total_Solar_Radiation_Sensor',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_Liquid-Level-Sensor',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_Water-Leak-Detector',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_Industrial-ph-Sensor',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_RS485_Air_Temperature_Humidity_and_Barometric_Pressure_Sensor(S-THP-01A)',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_Soil-Moisture-Temperature-EC-Sensor',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_Soil-Moisture-Temperature-Sensor',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_RS485_500cm_Ultrasonic_Sensor',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Probe/ja_RS485_750cm_Ultrasonic_Sensor-1',
+                'translate-ja/Sensor/SenseCAP/Accessories/ja_Industrial-Grade-Optical-Rain-Gauge-RG-15',
+                'translate-ja/Sensor/SenseCAP/Accessories/ja_Optical-Rain-Gauge-RG-9',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'SenseCAP センサービルダー',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'translate-ja/Sensor/SenseCAP/SenseCAP_Sensor_Builder/ja_Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger',
+          },
+          items: [
+            'translate-ja/Sensor/SenseCAP/SenseCAP_Sensor_Builder/ja_SenseCAP_Builder_build_LoRaWAN_Sensors',
+            'translate-ja/Sensor/SenseCAP/SenseCAP_Sensor_Builder/ja_list_of_seeed_grove_for_builder'
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'SenseCAP データロガー',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'translate-ja/Sensor/SenseCAP/SenseCAP_Intro/ja_SenseCAP_Data_Logger_Intro',
+          },
+          items: [
+            'translate-ja/Sensor/SenseCAP/SenseCAP_Data_Logger/ja_SenseCAP-Sensor-Hub-Data-Logger',
+            'translate-ja/Sensor/SenseCAP/SenseCAP_Data_Logger/ja_Data_Logger',
+            {
+              type: 'category',
+              label: 'チュートリアル',
+              items: [
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/ja_How_to_Configure_the_12V_RS485_Sensor_for_S2100_Data_Logger',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/ja_How_to_Configure_the_Analog_Sensor_for_S2100_Data_Logger',
+                'translate-ja/Sensor/SenseCAP/SenseCAP_Data_Logger/tutorial/ja_How_to_Configure_the_Counter&GPIO_Sensor_for_S2100_Data_Logger',
+              ],
+            },
+          ],
+        },
+        'translate-ja/Sensor/SenseCAP/ja_SenseCAP_Decoder',
+        {
+          type: 'category',
+          label: 'アプリケーション',
+          items: [
+            'translate-ja/Sensor/SenseCAP/Applications/ja_Home_Assistant_X_SenseCAP_LoRaWAN_Sensors',
+            'translate-ja/Sensor/SenseCAP/Applications/ja_Develop_an_Industrial_LoRaWAN_Sensor',
+          ],
+        },
+        {
+          type: 'category',
+          label: '学ぶ',
+          items: [
+            'translate-ja/Sensor/SenseCAP/Learn/ja_How_to_Select_the_LoRaWAN_Network',
+         ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'LoRaWAN トラッカー',
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Sensor/SenseCAP/LoRaWAN_Tracker',
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP インジケーター',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Sensor/SenseCAP/SenseCAP_Indicator/ja_Introduction',
+      },
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Sensor/SenseCAP/SenseCAP_Indicator',
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP ウォッチャー',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Sensor/SenseCAP/SenseCAP_Watcher/ja_watcher_main_page',
+      },
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Sensor/SenseCAP/SenseCAP_Watcher',
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'mmWaveレーダーセンサー',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Sensor/mmWave_radar_sensor/ja_mmwave_radar_Intro',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'mmWave for XIAO',
+          items: [
+            'translate-ja/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/ja_mmwave-for-xiao',
+            'translate-ja/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/ja_mmwave-for-xiao_arduino',
+            'translate-ja/Sensor/mmWave_radar_sensor/mmwave-for-XIAO/ja_mmwave-for-xiao-connect-to-HA',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MR60FDA2 mmWaveキット',
+          items: [
+            'translate-ja/Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/ja_getting_started_with_mr60fda2',
+            'translate-ja/Sensor/mmWave_radar_sensor/mr60fda2-mmwave-kit/ja_ha_with_mr60fda2',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MR60BHA2 mmWaveキット',
+          items: [
+            'translate-ja/Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/ja_getting_started_with_mr60bha2',
+            'translate-ja/Sensor/mmWave_radar_sensor/mr60bha2-mmwave-kit/ja_ha_with_mr60bha2',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'MR24HPC1 mmWaveキット',
+          items: [
+            'translate-ja/Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/ja_mr24hpc1-mmwave_human_kit',
+            'translate-ja/Sensor/mmWave_radar_sensor/mr24hpc1-mmwave-kit/ja_mr24hpc1-mmWave_Kit_And_Grove_Connect_To_ESPHome',
+          ],
+        },
+        'translate-ja/Sensor/mmWave_radar_sensor/ja_Radar_MR24HPC1',
+        'translate-ja/Sensor/mmWave_radar_sensor/ja_Radar_MR60BHA1',
+        'translate-ja/Sensor/mmWave_radar_sensor/ja_Radar_MR60FDA1',
+        'translate-ja/Sensor/mmWave_radar_sensor/ja_Radar_MR24BSD1',
+        'translate-ja/Sensor/mmWave_radar_sensor/ja_Radar_MR24HPB1',
+        'translate-ja/Sensor/mmWave_radar_sensor/ja_Radar_MR24FDB1',
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'XIAO',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Sensor/SeeedStudio_XIAO/ja_SeeedStudio_XIAO_Series_Introduction',
+      },
+      items: [
+        'translate-ja/Sensor/SeeedStudio_XIAO/ja_SeeedStudio_XIAO_Series_Projects',
+
+        {
+          type: 'category',
+          label: 'XIAO SAMD21',
+          items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_Seeeduino-XIAO',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_XIAO-SAMD21-Zephyr-RTOS',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_XIAO_SAMD21_with_PlatformIO',
+            {
+              type: 'category',
+              label: 'プログラミング言語',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_Seeeduino-XIAO-by-Nanase',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_Seeeduino-XIAO-CircuitPython',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_XIAO-SAMD21-MicroPython',
+
+              ],
+            },
+            {
+              type: 'category',
+              label: '組み込み型ML',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/Embedded ML/ja_Seeeduino-XIAO-TinyML',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'チュートリアル',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_Seeeduino-XIAO-TinyUSB',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/ja_XIAO-SPI-Communication-Interface',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/ja_Seeeduino-XIAO-DAPLink',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_SAMD21/TuTorial/ja_How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI',
+              ],
+            },
+          ],
+        },
+        { // XIAO RA4M1
+          type: 'category',
+          label: 'XIAO RA4M1',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RA4M1',
+            }
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO MG24',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_MG24',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO RP2040',
+          items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040',
+            {
+              type: 'category',
+              label: 'プログラミング言語',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-Arduino',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-MicroPython',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-CircuitPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'リアルタイムOS',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-with-NuttX-RTOS',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO-RP2040-Zephyr-RTOS',
+              ],
+            },
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/ja_XIAO_RP2040_with_PlatformIO',
+            {
+              type: 'category',
+              label: '組み込み型ML',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2040/Embedded ML/ja_XIAO-RP2040-EI',
+              ],
+            },
+          ],
+        },
+        { // XIAO RP2350
+          type: 'category',
+          label: 'XIAO RP2350',
+          items: [
+            {
+              type: 'autogenerated',
+              dirName: 'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_RP2350',
+            },
+          ]
+        },
+        {
+          type: 'category',
+          label: 'XIAO nRF52840 シリーズ',
+          items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO_BLE',
+            {
+              type: 'category',
+              label: 'RTOS',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-nRF52840-NuttX-RTOS',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-nRF52840-Zephyr-RTOS',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'プログラミング言語',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE_CircutPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'プラットフォーム',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-nRF52840_PlatformIO',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'ハードウェアの使用',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE-Sense-IMU-Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE-Sense-PDM-Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE_QSPI-Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE-Sense-Pin-Multiplexing',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/ja_XIAO-BLE-Sense-NFC-Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Bluetoothライブラリ',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/ja_XIAO-BLE-Sense-Bluetooth_Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Bluetooth Libraries/ja_XIAO-BLE-Sense-Bluetooth-Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: '組み込みML',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/ja_XIAOEI',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/ja_XIAO-BLE-Sense-TFLite-Getting-Started',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Embedded ML/ja_XIAO-BLE-Sense-TFLite-Mic',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/ja_XIAO-BLE-sidewalk',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_nRF52840-Sense/Application/ja_XIAO_BLE_HA',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO ESP32C3',
+          items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_Getting_Started',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_Pin_Multiplexing',
+     //       'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/XIAO_ESP32C3_MicroPython',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO-ESP32C3-NuttX',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO-ESP32C3-Zephyr',
+            {
+              type: 'category',
+              label: 'ワイヤレス接続',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_WiFi_Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'プログラミング言語',
+              items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_with_CircuitPython',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/ja_XIAO_ESP32C3_with_MicroPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/ja_xiao-esp32c3-esphome',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/ja_xiao-esp32c3-prism-display',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/ja_xiaoesp32c3-chatgpt',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/ja_ESP32C3_Smart_Thermostat',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/ja_xiaoesp32c3-flash-storage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/ja_XIAO-ESP32C3-for-ESPHome-Support',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C3/Application/ja_Xiao_C3_Ibeacon',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO ESP32C6',
+          items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_Getting_Started',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_Pin_Multiplexing',
+      
+            {
+              type: 'category',
+              label: 'ワイヤレス接続',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_WiFi_Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'プログラミング言語',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_Embedded_Swift',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_with_CircuitPython',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_with_MicroPython',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'プラットフォーム',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO_ESP32C6_with_PlatformIO',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'RTOS',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/ja_XIAO-ESP32C6-NuttX',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Zigbee',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/ja_xiao_esp32c6_zigbee',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/ja_xiao_esp32c6_zigbee_arduino',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/ja_xiaoc6_zigbee_led_ha',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Zigbee/ja_use_cursor_create_zigbee_prj',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/ja_xiao_esp32c6_aws_iot',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32C6/Application/ja_xiao_esp32c6_kafka',
+              ],
+            },
+            
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO ESP32S3 シリーズ',
+          items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_Getting_Started',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_Pin_Multiplexing',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_Sense_Consumption',
+            {
+              type: 'category',
+              label: 'ワイヤレス接続',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_WiFi_Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_Bluetooth_Usage',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'プログラミング言語',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_with_MicroPython',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_CircuitPython',
+                // 'Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/XIAO_ESP32S3_Micropython',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'リアルタイムOS',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO-ESP32S3-Zephyr-RTOS',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO-ESP32S3-FreeRTOS',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO-ESP32S3-NuttX-RTOS',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'ハードウェアの使用',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/ja_XIAO_ESP32S3_Sense_mic',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/ja_XIAO_ESP32S3_Sense_tf_and_filesystem',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3_Sense/ja_XIAO_ESP32S3_Sense_camera',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Edge Impulse',
+                  collapsed: true,
+                  collapsible: true,
+                  link: {
+                    type: "doc",
+                    id: 'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/ja_EdgeImpulse',
+                  },
+                  items: [
+                    'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/ja_Key_Word_Spotting',
+                    'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/Edgeimpulse/ja_Image_classification_project',
+                  ],
+                },
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/ja_XIAO_ESP32S3_Speech2chatgpt',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/ja_XIAO_ESP32S3_EdgeLab',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/ja_XIAO_ESP32S3_Geolocation',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/ja_XIAO_ESP32S3_ESPHome',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/ja_XIAO_ESP32S3_SSCMA',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_ESP32S3/Application/ja_XIAO_ESP32S3_Voice_Pomodoro',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO用拡張ボード',
+          items: [
+            {
+              type: 'category',
+              label: 'ラウンドディスプレイ for XIAO',
+              items: [
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/ja_SeeedStudio_Round_Display_for_XIAO',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/ja_SeeedStudio_RoundDisplay_Usage',
+                'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/ja_Draw_dials_with_Display_and_lvgl',
+                {
+                  type: 'category',
+                  label: 'アプリケーション',
+                  items: [
+                    'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/Round-display-for-XIAO/Application/ja_SeeedStudio_Round_Display_Christmas_ball',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'GPSモジュール for XIAO',
+              // link: {
+              //   type: "doc",
+              //   id: 'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_Introduction',
+              // },
+              items: [
+                {
+                  type: 'autogenerated',
+                  dirName: 'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/GPS_Module_For_XIAO',
+                },
+              ]
+            },
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_Seeeduino-XIAO-Expansion-Board',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_XIAO-CAN-Bus-Expansion-Board',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_Grove-Shield-for-Seeeduino-XIAO-embedded-battery-management-chip',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_xiao-rgb-matrix',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_gpio_expander_for_xiao',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_XIAO-eInk-Expansion-Board',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_xiao_eink_expansion_board_v2',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_XIAO-RS485-Expansion-Board',
+            'translate-ja/Sensor/SeeedStudio_XIAO/SeeedStudio_XIAO_Expansion_board/ja_Bus_Servo_Driver_Board',
+            
+          ],
+        },
+        {
+          type: 'category',
+          label: 'XIAO + ESP-IDF + ESP-Matter',
+          items: [
+            'translate-ja/Sensor/SeeedStudio_XIAO/Matter/ja_xiao_esp32_idf_env',
+            'translate-ja/Sensor/SeeedStudio_XIAO/Matter/ja_getting_started_with_matter',
+            'translate-ja/Sensor/SeeedStudio_XIAO/Matter/ja_xiao_esp32_matter_env',
+            'translate-ja/Sensor/SeeedStudio_XIAO/Matter/ja_matter_development_framework_overview',
+          ],
+        },
+        'translate-ja/Sensor/SeeedStudio_XIAO/ja_XIAO_ESPNOW',
+        'translate-ja/Sensor/SeeedStudio_XIAO/ja_PCB_Design_XIAO',
+        {
+          type: 'category',
+          label: 'コース付きキット',
+          items: ['translate-ja/Sensor/SeeedStudio_XIAO/Kit_with_Courses/ja_XIAO-Kit-Courses'],
+        },
+        'translate-ja/Sensor/SeeedStudio_XIAO/ja_XIAO_FAQ',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'XIAO ガジェット',
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Sensor/SeeedStudio_XIAO_Gadgets',
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Wio Terminal',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Sensor/Wio_Terminal/ja_Wio_Terminal_Intro',
+      },
+      items: [
+        'translate-ja/Sensor/Wio_Terminal/ja_Wio-Terminal-Getting-Started',
+        'translate-ja/Sensor/Wio_Terminal/ja_Wio-Terminal-CircuitPython',
+        'translate-ja/Sensor/Wio_Terminal/ja_Software-FreeRTOS',
+        'translate-ja/Sensor/Wio_Terminal/ja_wio_terminal_faq',
+
+        {
+          type: 'category',
+          label: 'ハードウェア概要',
+          items: [
+            {
+              type: 'category',
+              label: 'LCDの使用',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Basic',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Graphics',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Fonts',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Anti-aliased-Fonts',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Loading-Image',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Linecharts',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-Histogram',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LCD-APIs',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/LCD_Usage/ja_Wio-Terminal-LVGL',
+              ],
+            },
+            {
+              type: 'category',
+              label: '入出力',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/ja_Wio-Terminal-IO-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/ja_Wio-Terminal-IO-Analog',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/ja_Wio-Terminal-IO-Digital',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/ja_Wio-Terminal-IO-I2C',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/ja_Wio-Terminal-IO-SPI',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Input&Output/ja_Wio-Terminal-Grove',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'IMUの使用',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/IMU/ja_Wio-Terminal-IMU-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/IMU/ja_Wio-Terminal-IMU-Basic',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/IMU/ja_Wio-Terminal-IMU-Tapping',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'SDカード',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/SD_Card/ja_Wio-Terminal-FS-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/SD_Card/ja_Wio-Terminal-FS-ReadWrite',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wi-Fi',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/ja_Wio-Terminal-Network-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/ja_Wio-Terminal-Wi-Fi',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Wi-Fi/ja_Wio-Terminal-Advanced-Wi-Fi',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Bluetooth',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/ja_Wio-Terminal-Bluetooth-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/ja_Wio-terminal-BLE-introduction',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/ja_Wio-Terminal-Web-Bluetooth',
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Bluetooth/ja_BLE-ibeacon-using-Wio-terminal',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'RTC',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/RTC/ja_Wio-Terminal-RTC',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'ボタン',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Buttons/ja_Wio-Terminal-Buttons',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '5方向スイッチ',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/five_Way_Switch/ja_Wio-Terminal-Switch',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '光センサー',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Light_Sensor/ja_Wio-Terminal-Light',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: '赤外線エミッター',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Infrared_Emitter/ja_Wio-Terminal-Infrared-Emitter',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'マイク',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Microphone/ja_Wio-Terminal-Mic',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'ブザー',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Hardware_Overview/Buzzer/ja_Wio-Terminal-Buzzer',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'アプリケーション',
+          items: [
+            {
+              type: 'category',
+              label: '簡単IoT',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Application/Easy_IoT/ja_Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central',
+                'translate-ja/Sensor/Wio_Terminal/Application/Easy_IoT/ja_Wio-Terminal-Azure-IOT',
+                'translate-ja/Sensor/Wio_Terminal/Application/Easy_IoT/ja_Connect-Wio-Terminal-to-Google-Cloud-IoT-Core',
+                'translate-ja/Sensor/Wio_Terminal/Application/Easy_IoT/ja_Get-Started-with-Wio-Terminal-and-Wappsto-IoT',
+                'translate-ja/Sensor/Wio_Terminal/Application/Easy_IoT/ja_CyberDeck_Wio-Terminal',
+              ],
+            },
+            {
+              type: 'category',
+              label: '組み込み型ML',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Edge Impulse ベースのプロジェクト',
+                  items: [
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-1',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-2',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-3',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-4',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-5',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_Edge_Impulse/ja_Wio-Terminal-TinyML-EI-6',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'TensorFlow Liteを使用したプロジェクト',
+                  items: [
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/ja_Wio-Terminal-TinyML-TFLM-1',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/ja_Wio-Terminal-TinyML-TFLM-2',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/ja_Wio-Terminal-TinyML-TFLM-3',
+                    'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/Projects_based_TensorFlow_Lite/ja_Wio-Terminal-Gesture-Recognition',
+                  ],
+                },
+                'translate-ja/Sensor/Wio_Terminal/Application/Embedded_ML/ja_AIoTs_GPS_state_tester',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '拡張ボード',
+          items: [
+            'translate-ja/Sensor/Wio_Terminal/Extension_Board/ja_Wio-Terminal-Battery-Chassis',
+            'translate-ja/Sensor/Wio_Terminal/Extension_Board/ja_Wio-Terminal-Chassis-Battery_650mAh',
+            'translate-ja/Sensor/Wio_Terminal/Extension_Board/ja_Wio_Terminal_LoRaWan_Chassis_with_Antenna-built-in_LoRa-E5_and_GNSS_EU868_US915',
+            'translate-ja/Sensor/Wio_Terminal/Extension_Board/ja_Wio-Terminal-Ethernet',
+            {
+              type: 'category',
+              label: 'オーディオ拡張ボード',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Extension_Board/Audio_Extension_Board/ja_Wio-Terminal-Audio-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Extension_Board/Audio_Extension_Board/ja_Wio-Terminal-Audio-Play-Record',
+                'translate-ja/Sensor/Wio_Terminal/Extension_Board/Audio_Extension_Board/ja_Wio-Terminal-Audio-GUI',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'コース付きキット',
+          items: [
+            'translate-ja/Sensor/Wio_Terminal/Kit_with_Courses/ja_Wio-Terminal-TinyML-Kit-Course',
+            'translate-ja/Sensor/Wio_Terminal/Kit_with_Courses/ja_Wio-Terminal-TinyML',
+            'translate-ja/Sensor/Wio_Terminal/Kit_with_Courses/ja_Introduction_to_Artificial_Intelligence_for_Makers',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'チュートリアル',
+          items: [
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Firmware',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Azure_IoT_CC',
+            {
+              type: 'category',
+              label: 'Wio Terminal 用 Blynk',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/ja_Wio-Terminal-Blynk',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Blynk_for_Wio_Terminal/ja_Blynk-wireless-OTA-functionality-to-Wio-Terminal',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Terminal USBホスト',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/ja_Wio-Terminal-USBH-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/ja_Wio-Terminal-USBH-Keyboard',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/ja_Wio-Terminal-USBH-Mouse',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Host/ja_Wio-Terminal-USBH-Xbox',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Terminal USBクライアント',
+              items: [
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-USBCLIENT-Overview',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-USBCLIENT-Keyboard',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-USBCLIENT-Mouse',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-USBCLIENT-MIDI',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-HMI-Usermode-SDK',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-DAPLink',
+                'translate-ja/Sensor/Wio_Terminal/Tutorial/Wio_Terminal_USB_Client/ja_Wio-Terminal-Reading-Raspberry-Pi',
+              ],
+            },
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Displaying-Gyro',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Storting-Analog-Data',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Displaying-Photos',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Interactive-Face',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Barometric-Pressure-sensor-using-the-Wio-terminal',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Reading-COVID19',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Thermal-Camera',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-HMI',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Sound-Meter',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Getting_started_wizard',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Edge-Impulse-Tuner',
+            'translate-ja/Sensor/Wio_Terminal/Tutorial/ja_Wio-Terminal-Reading-Github',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'ReSpeaker 2-Mics Pi HAT',
+        items: [
+        'translate-ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/ja_ReSpeaker_2_Mics_Pi_HAT',
+        {
+          type: 'category',
+          label: 'v1ユーザー向け（非推奨）',
+          items: [
+            'translate-ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry',
+            'translate-ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v1-deprecated/ja_ReSpeaker_2_Mics_Pi_HAT_Jetson',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'v2ユーザー向け',
+          items: [
+            'translate-ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ja_ReSpeaker_2_Mics_Pi_HAT_Raspberry_v2',
+            'translate-ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/v2/ja_ReSpeaker_2_Mics_Pi_Hat_v2_Speech_Recognition',
+          ],
+        },
+        'translate-ja/Sensor/ReSpeaker_2-Mics_Pi_HAT/ja_ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'ReSpeaker Lite',
+      items: [
+        'translate-ja/Sensor/ReSpeaker_Lite/ja_reSpeaker_lite_introduction',
+        {
+          type: 'category',
+          label: 'ReSpeaker Lite with XIAO ESP32S3',
+          link: {
+            type: "doc",
+            id: 'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_xiao_respeaker',
+          },
+          items: [
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_i2s_test',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_rgb_test',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_volume',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_button',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_record_and_play',
+           // 'Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/respeaker_i2s_rgb',
+            {
+              type: 'doc', 
+              id: 'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_generator',
+              label: 'ストリームジェネレーター', 
+            },
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_print',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_memory',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_player_spiffs',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_mqtt',
+            'translate-ja/Sensor/ReSpeaker_Lite/XIAO_ESP32_S3/ja_respeaker_streams_i2s_tflite',
+          ],
+        },
+        {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'translate-ja/Sensor/ReSpeaker_Lite/Application/ja_respeaker_lite_ha',
+                'translate-ja/Sensor/ReSpeaker_Lite/Application/ja_respeaker_lite_pi5',
+              ],
+        },
+        'translate-ja/Sensor/ReSpeaker_Lite/ja_respeaker_enclosure',
+          ],
+    },
+
+    {
+      type: 'category',
+      label: 'その他のセンサーモジュール',
+      items: [
+        {
+          type: 'category',
+          label: 'センサー',
+          items: [
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_Ultra_Sonic_range_measurement_module',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_Water-Flow-Sensor',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_Weight_Sensor_Load_Cell_0-500g',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_G1_Water_Flow_Sensor',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_G1_and_2_inch_Water_Flow_Sensor',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_G1-8_Water_Flow_Sensor',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_G3-4_Water_Flow_sensor',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_M11_1.25_Water_flow_Sensor',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_PIR_Motion_Sensor_Large_Lens_version',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_Photo_Reflective_Sensor',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_Photo_interrupter_OS25B10',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_Piezo_Sensor-MiniSense_100',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_RF-Transmitter-and-Receiver-Link-Kit-315MHz-433MHz',
+            'translate-ja/Sensor/Beyond_Grove/Sensors/ja_Gear_Stepper_Motor_Driver_Pack',
+            'translate-ja/Seeed_Elderly/Radar_Sensor/ja_Microwave-Sensor-24GHz-Doppler-Radar-Motion-Sensor-MW2401TR11',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'センサーネットワーク',
+          items: [
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_2KM_Long_Range_RF_link_kits_w_encoder_and_decoder',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_315Mhz_RF_link_kit',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_315MHz_Simple_RF_Link_Kit',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_315Mhz_Wireless_car_key_fob_with_key_chain',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_315Mhz_remote_relay_switch_kits-2_channels',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_433Mhz_RF_Link_Kit',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_SDLogger-Open_Hardware_Data_Logger',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_WiFi_Serial_Transceiver_Module',
+            'translate-ja/Sensor/Beyond_Grove/Sensor_Network/ja_Wireless_Sensor_Node-Solar_Kit',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'EcoEye_Vision_Camera',
+          items: [
+            'translate-ja/Sensor/Beyond_Grove/EcoEye_Embedded_Vison_Camera/ja_Get_Started_with_EcoEye',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'アクセサリー',
+          items: [
+            {
+              type: 'category',
+              label: '充電',
+              items: [
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Essentials',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Battery_Detector_with_Polymer_Lithium_Ion_1050mAh_3.7V',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Battery_Detector_with_Polymer_Lithium_Ion_5100mAh_3.8V',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Lipo_Rider_Pro',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Lipo-Rider-Plus',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Lipo_Rider_V1.3',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_DC_framework_miniature_solenoid_VL-0063',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_DC_framework_solenoid_HCNE1-0520',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_DC_framework_solenoid_HCNE1-0630',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_0.5w_Solar_Panel_55x70',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_1.5W_Solar_Panel_81x137',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_1w_Solar_Panel_80x100',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_2.5W_Solar_Panel_116x160',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_3W_Solar_Panel_138x160',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_3.6V_Micro_hydro_generator',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Bicycle_Dynamo_With_Bracket-6V_3W',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Battery_kit_3.7V_520_mAh',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Logic_DC_Jack',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Qi_Wireless_Charger_Transmitter',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Lipo_Rider',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_Lipo_Rider_V1.1',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_5V-3.3V_Breadboard_Power_Supply',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Charge/ja_5V-3.3V_Breadboard_Power_Supply_v1.1',
+              ],
+            },
+            {
+              type: 'category',
+              label: '入出力',
+              items: [
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_USB_To_Uart_5V_3V3',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_125Khz_RFID_module-UART',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_13.56Mhz_RFID_module-IOS-IEC_14443_type_a',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_AVR_USB_Programmer',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_Scream_out_loud-110dBA_fixed_tone_Siren',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_2.8inch-TFT_Touch_Shield_V1.0',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_USB_To_Uart_3V3',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_USB_To_Uart_5V',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_Bus_Pirate_v3_assembled',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Input_Output/ja_Codec-Adaptive_Wireless_Relay',
+              ],
+            },
+            {
+              type: 'category',
+              label: '現在',
+              items: [
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Current/ja_Adjustable_DC_DC_Power_Converter_1V-12V-1.5A',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Current/ja_Capacitance_Meter_Kit',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Current/ja_RS-232_To_TTL_Conveter-MAX3232IDR',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'ケース',
+              items: [
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Case/ja_Bracket_for_Infrared_Proximity_Sensor',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Case/ja_Shield-MaTrix-V0.9b',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'LED',
+              items: ['translate-ja/Sensor/Beyond_Grove/Accessories/LED/ja_FSM-55'],
+            },
+            {
+              type: 'category',
+              label: 'ツール',
+              items: [
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_Bluetooth_Multimeter',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Nano',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_Dfu-util',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_Replacement_LCD_Screen_for_DSO_nano',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Nano_v3',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Nano-Development',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Nano-OpenOCD_gdb',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Nano-Qemu_gdb',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Nano-gcc',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Quad',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Quad_Manual_by_the_community',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Quad-Beta_HW',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Quad-Building_Firmware',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_DSO_Quad-Calibration',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_Mini_Soldering_Iron',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Tools/ja_RF_Explorer_Software',
+              ],
+            },
+            {
+              type: 'category',
+              label: '表示',
+              items: [
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Display/ja_1-69inch_LCD_SPI_display',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Display/ja_1-47inch_LCD_SPI_display',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Display/ja_LCD_16-2_Characters-Green_Yellow_back_light',
+                'translate-ja/Sensor/Beyond_Grove/Accessories/Display/ja_LCD_8-2_Characters-Blue_back_light',
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    
+    {
+      type: 'category',
+      label: 'その他のマイクロコントローラー',
+      items: [
+        {
+          type: 'category',
+          label: 'Wioシリーズ',
+          items: [
+            'translate-ja/Sensor/Wio_Series/ja_Wio',
+            {
+              type: 'category',
+              label: 'LPWAN Dev Kit for Sidewalk',
+              items: [
+                'translate-ja/Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/ja_LPWAN_Dev_Kit_for_Sidewalk',
+                'translate-ja/Sensor/Wio_Series/LPWAN_Dev_Kit_for_Sidewalk/ja_Switch_to_Wio_Tracker',
+              ],
+            },
+
+
+
+            {
+              type: 'category',
+              label: 'Wio RP2040',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Wio RP2040モジュール',
+                  items: [
+                    'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_Module/ja_Wio_RP2040_Module_Build-in_Wireless_2.4G',
+                  ],
+                },
+
+                {
+                  type: 'category',
+                  label: 'Wio RP2040 mini 開発ボード',
+                  items: [
+                    'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/ja_Wio_RP2040_mini_Dev_Board-Onboard_Wifi',
+                    'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/ja_Wio-RP2040-with-Arduino-WIFI',
+                    'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/ja_LAN_Communications',
+                    {
+                      type: 'category',
+                      label: 'アプリケーション',
+                      items: [
+                        'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/ja_Use_MQTT_to_remotely_light_up_LED_lights',
+                        'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/ja_Use_Socket_to_connect_to_the_forum',
+                        'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/ja_Wireless-Fall-Detection-Device',
+                        'translate-ja/Sensor/Wio_Series/Wio_RP2040/Wio_RP2040_mini_Dev_Board/Application/ja_Wireless-desktop-atmosphere-lamp',
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'Wio Link',
+              items: [
+                'translate-ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link',
+                'translate-ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link_Bootcamp_Kit',
+                'translate-ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link_Deluxe_Kit',
+                'translate-ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link_Deluxe_Plus_Kit',
+                'translate-ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link_Environment_Kit',
+                'translate-ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link_Event_Kit',
+                'translate-ja/Sensor/Wio_Series/Wio_Link/ja_Wio_Link_Starter_Kit',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'Wio Tracker',
+              items: [
+                'translate-ja/Sensor/Wio_Series/Wio_Tracker/ja_Wio_Tracker',
+                'translate-ja/Sensor/Wio_Series/Wio_Tracker/ja_Wio_LTE_Cat.1',
+                'translate-ja/Sensor/Wio_Series/Wio_Tracker/ja_wio_gps_board',
+                'translate-ja/Sensor/Wio_Series/Wio_Tracker/ja_LTE_Cat_1_Pi_HAT',
+                'translate-ja/Sensor/Wio_Series/Wio_Tracker/ja_Wio_LTE_Cat_M1_NB-IoT_Tracker',
+                'translate-ja/Sensor/Wio_Series/Wio_Tracker/ja_Wio-Extension-RTC',
+                'translate-ja/Sensor/Wio_Series/Wio_Tracker/ja_Grove_Starter_Kit_for_Wio_LTE',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'Wio Lite',
+              items: [
+                'translate-ja/Sensor/Wio_Series/Wio_Lite/ja_Wio-Lite-AI-Getting-Started',
+                'translate-ja/Sensor/Wio_Series/Wio_Lite/ja_Wio-Lite-W600',
+                'translate-ja/Sensor/Wio_Series/Wio_Lite/ja_Wio-Lite-MG126',
+                'translate-ja/Sensor/Wio_Series/Wio_Lite/ja_Wio_Lite_RISC_V_GD32VF103_with_ESP8266',
+                'translate-ja/Sensor/Wio_Series/Wio_Lite/ja_Grove-Shield-for-Wio-Lite',
+                'translate-ja/Sensor/Wio_Series/Wio_Lite/ja_Grove_Base_Shield_for_NodeMCU_V1.0',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Wio Node',
+              items: ['translate-ja/Sensor/Wio_Series/Wio_Node/ja_Wio_Node'],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Seeeduinoシリーズ',
+          items: [
+            'translate-ja/Sensor/Seeeduino Series/ja_Getting_Started_with_Seeeduino',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeed_Arduino_Boards',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Buying_Guide',
+            {
+              type: 'category',
+              label: 'Seeeduino',
+              items: [
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino/ja_Seeeduino_v4.2',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino/ja_Seeeduino_v4.0',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino/ja_Seeeduino_V2.2_Atmega-168P',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino/ja_Seeeduino_V2.2',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino/ja_Seeeduino_v2.21',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino/ja_Seeeduino_v3.0',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino/ja_Seeeduino',
+              ],
+            },
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Cloud',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino-Cortex-M0',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Ethernet',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_GPRS',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Lite',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_LoRAWAN',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Lotus',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Lotus_Cortex-M0-',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Mega',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Mega_Protoshield_Kit',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino-Nano',
+            {
+              type: 'category',
+              label: 'Seeeduino Stalker',
+              items: [
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino Stalker/ja_Seeeduino_Stalker_V3-Waterproof_Solar_Kit',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino Stalker/ja_Seeeduino_Stalker_V3.1',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino Stalker/ja_Seeeduino_Stalker_v3_enclosure',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino Stalker/ja_Seeeduino_Stalker_v1.0',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino Stalker/ja_Seeeduino_Stalker_v2.3',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino Stalker/ja_Seeeduino_Stalker',
+                'translate-ja/Sensor/Seeeduino Series/Seeeduino Stalker/ja_Seeeduino-Stalker_v3',
+              ],
+            },
+            'translate-ja/Sensor/Seeeduino Series/ja_SeeedStudio-GD32-RISC-V-Dev-Board',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino-Crypto-ATmega4809-ECC608',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Arch',
+            'translate-ja/Sensor/Seeeduino Series/ja_Seeeduino_Arch_V1.0',
+
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'translate-ja/Sensor/Seeeduino Series/Application/ja_Driver_for_Seeeduino',
+                'translate-ja/Sensor/Seeeduino Series/Application/ja_FM_Receiver',
+                'translate-ja/Sensor/Seeeduino Series/Application/ja_Grove-SGP41-with-AHT20'
+              ],
+            },
+            {
+              type: 'category',
+              label: 'コース付きキット',
+              items: [
+                'translate-ja/Sensor/Seeeduino Series/Kit with Courses/ja_Grove_IoT_Starter_Kits_Powered_by_AWS',
+                'translate-ja/Sensor/Seeeduino Series/Kit with Courses/ja_Seeeduino_Cloud_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'LinkIt',
+          items: [
+            'translate-ja/Seeed_Elderly/LinkIt/ja_LinkIt',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_LinkIt_Smart_7688',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_LinkIt_Smart_7688_Duo',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_Linkit_Connect_7681',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_Breakout_for_LinkIt_Smart_7688',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_Breakout_for_LinkIt_Smart_7688_v2.0',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_Arduino_Breakout_for_LinkIt_Smart_7688_Duo',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_Grove_Breakout_for_LinkIt_Smart_7688_Duo',
+            'translate-ja/Seeed_Elderly/LinkIt/ja_Grove_Starter_kit_for_LinkIt_Smart7688_Duo',
+            {
+              type: 'category',
+              label: 'Linklt ONE',
+              items: [
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-Analog_Interface',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-Colorful_World',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-Get_temperature_with_Webpage',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-Hello_World',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-Light-Sensor',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-Marquee',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt-ONE-Tutorial---Mini-Servo',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-Push_Button',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-SMS_control_the_LED',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_LinkIt_ONE_Tutorial-The_Basics',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_Sidekick_Basic_Kit_for_LinkIt_ONE',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_Grove-Starter_Kit_for_LinkIt_ONE',
+                'translate-ja/Seeed_Elderly/LinkIt/Linklt ONE/ja_Secret_Box',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'アーキ',
+          items: [
+            'translate-ja/Sensor/Arch/ja_Arch_Mix',
+            'translate-ja/Sensor/Arch/ja_Arch_V1.1',
+            'translate-ja/Sensor/Arch/ja_Arch_Pro',
+            'translate-ja/Sensor/Arch/ja_Arch_BLE',
+            'translate-ja/Sensor/Arch/ja_Arch_Link',
+            'translate-ja/Sensor/Arch/ja_Arch_GPRS',
+            'translate-ja/Sensor/Arch/ja_Arch_GPRS_V2',
+            'translate-ja/Sensor/Arch/ja_Arch_Max',
+            'translate-ja/Sensor/Arch/ja_Arch_Max_v1.1',
+            'translate-ja/Sensor/Arch/ja_Heart-Sound_Sensor',
+            'translate-ja/Sensor/Arch/ja_Grove-Starter_Kit_for_mbed',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Azure Sphere MT3620',
+          items: [
+            'translate-ja/Sensor/Azure Sphere MT3620/ja_Azure_Sphere_MT3620_Development_Kit',
+            'translate-ja/Sensor/Azure Sphere MT3620/ja_Grove_Starter_Kit_for_Azure_Sphere_MT3620_Development_Kit',
+            'translate-ja/Sensor/Azure Sphere MT3620/ja_MT3620_Ethernet_Shield_v1.0',
+            'translate-ja/Sensor/Azure Sphere MT3620/ja_MT3620_Mini_Dev_Board',
+            'translate-ja/Sensor/Azure Sphere MT3620/ja_MT3620_Grove_Breakout',
+          ],
+        },
+        
+        {
+          type: 'category',
+          label: 'Seeed Studio IoTボタン',
+          items: [
+                'translate-ja/Sensor/IOT_Button_for_ESPHOME/ja_getting_started_with_iot_button',
+                'translate-ja/Sensor/IOT_Button_for_ESPHOME/ja_SEEED_IOT_BOTTON_FOR_ESPHOME',
+                'translate-ja/Sensor/IOT_Button_for_ESPHOME/ja_seeed_iot_button_with_zigbee',
+              ],
+        },
+
+        {
+          type: 'category',
+          label: 'IOTボタン for AWS',
+          items: ['translate-ja/Sensor/IOT_Button_For_AWS/ja_SEEED-IOT-BUTTON-FOR-AWS'],
+        },
+
+        {
+          type: 'category',
+          label: 'Pi Pico',
+          items: ['translate-ja/Sensor/Pi_Pico/ja_Grove-Starter-Kit-for-Raspberry-Pi-Pico'],
+        },
+      ],
+    },
+
+    {
+      type: 'doc',
+      id: 'translate-ja/ja_Network',
+      label: 'ネットワーク',
+      className: 'sideboard_calss',
+    },
+    {
+      type: 'category',
+      label: 'Meshtastic Network',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Network/Meshtastic_Network/ja_meshtastic_intro',
+      },
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Network/Meshtastic_Network',
+        },
+      ]
+    },
+
+    {
+      type: 'category',
+      label: 'LoRa Wioシリーズ',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Network/LoRa_Wio_Series',
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP ゲートウェイ',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Network/SenseCAP_Network/ja_SenseCAP_Gateway_Intro',
+      },
+      items: [
+
+        {
+          type: 'category',
+          label: 'SenseCAP M2 マルチプラットフォームゲートウェイ',
+          items: [
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_SenseCAP_M2_Multi_Platform_Overview',
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_SenseCAP_M2_MP_Gateway_LNS_Configuration',
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_Quick_Start',
+            {
+              type: 'category',
+              label: 'チュートリアル',
+              items: [
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/ja_Connect-M2-Multi-Platform-Gateway-to-AWS-IoT',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/ja_Connect-M2-Multi-Platform-Gateway-to-The-Things-Network',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/ja_Connect-M2-Multi-Platform-Gateway-to-ChirpStack',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_traffic_saving_config',
+              ],
+            },
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/ja_flash_opensource_firmware_to_m2_gateway'
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Heliumゲートウェイ',
+          items: [
+            {
+              type: 'category',
+              label: 'SenseCAP M1ゲートウェイ',
+              items: [
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/ja_SenseCAP_M1_Overview',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/ja_SenseCAP_M1_Quick_Start',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/ja_SenseCAP_M1_Local_Console',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/ja_SenseCAP_M1_FAQ',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/ja_SenseCAP_M1_Troubleshooting',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'SenseCAP M2 データのみ',
+              items: [
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/ja_SenseCAP_M2_Data_Only_Overview',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/ja_SenseCAP_M2_Data_Only_Quick_Start',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/ja_M2_Local_Console',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'SenseCAP M2 Light Gateway',
+              items: [
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/ja_SenseCAP_M2_Light_Gateway_Overview',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/ja_SenseCAP_M2_Light_Gateway_Quick_Start',
+                'translate-ja/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/ja_SenseCAP_M2_Light_Gateway_FAQ',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Fluxゲートウェイ',
+          items: [
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/ja_SenseCAP_M4_Overview',
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/ja_SenseCAP_M4_Quick_Start',
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/ja_SenseCAP_M4_FAQ',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: '屋外ゲートウェイ',
+          items: [
+            'translate-ja/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/ja_SenseCAP_LoRaWAN_Outdoor_Gateway_Overview',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'SenseCAP K1100',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Network/SenseCAP_K1100/ja_SenseCAP_K1100_Intro',
+      },
+      items: [
+        'translate-ja/Network/SenseCAP_K1100/ja_K1100-quickstart',
+        'translate-ja/Network/SenseCAP_K1100/ja_K1100_Getting_Started',
+        {
+          type: 'category',
+          label: 'LoRaWANネットワークアプリケーション',
+          items: [
+            {
+              type: 'category',
+              label: 'Arduinoでのセンサー基本使用方法',
+              items: [
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/ja_K1100-Light-Sensor-Grove-LoRa-E5',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/ja_K1100-IMU-Sensor-Grove-LoRa-E5',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/ja_K1100-Soil-Moisture-Sensor-Grove-LoRa-E5',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/ja_K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/ja_K1100-Temp-Humi-Sensor-Grove-LoRa-E5',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Sensors_Basic_Usage_with_Arduino/ja_K1100-Vision-AI-Module-Grove-LoRa-E5',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Helium クラウドサービス',
+              items: [
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/ja_Helium-Introduction',
+                {
+                  type: 'category',
+                  label: 'Helium 接続済み & Azure 統合済み',
+                  items: [
+                    'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/ja_Connecting-to-Helium',
+                    'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/ja_Integrate-into-Azure-IoT-Hub',
+                    'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/Helium_Connected&Azure_Integrated/ja_Configuring-Web-APP-Visualization',
+                  ],
+                },
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/ja_Integrate_into_Google_Sheets_via_Helium',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/Helium_Cloud_Services/ja_Connect_AWS_via_helium',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'TTNクラウドサービス',
+              items: [
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/TTN_Cloud_Services/ja_TTN-Introduction',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/TTN_Cloud_Services/ja_Connecting-to-TTN',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'SenseCAP & Node-Red を使用したクラウドサービス',
+              items: [
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_sensecap_node-red',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_SenseCAP_to_Azure_IoT_Central',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_SenseCAP_to_PowerBI',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_SenseCAP_to_influxdb',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_SenseCAP_to_twilio',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_SenseCAP_to_datacake',
+                'translate-ja/Network/SenseCAP_K1100/LoRaWAN-Network_Application/SenseCAP&Node-Red_for_Cloud_Services/ja_K1100_SenseCAP_to_grafana',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Wi-Fiネットワークアプリケーション',
+          items: [
+            'translate-ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/ja_Wio-Terminal-Advanced-WiFi',
+            {
+              type: 'category',
+              label: 'クラウドサービス',
+              items: [
+                'translate-ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Cloud_Service/ja_Getting_started_with_Ubidots',
+                'translate-ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Cloud_Service/ja_Quick-Start-to-using-Blynk',
+                'translate-ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Cloud_Service/ja_Connect-Wio-Terminal-to-Google-Cloud',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Azure IoTプラットフォームの使用',
+              items: [
+                'translate-ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/ja_Connect-Wio-Terminal-to-Azure-IoT-Central',
+                'translate-ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/ja_Develop-in-Microsoft-Azure-IoT-Central',
+                'translate-ja/Network/SenseCAP_K1100/Wi-Fi-Network_Application/Azure_IoT_Platform_Usage/ja_K1100_Azure_to_PowerBI',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: '組み込み型MLアプリケーション',
+          items: [
+            'translate-ja/Network/SenseCAP_K1100/Embedded_ML_Application/ja_K1111-Edge-Impulse',
+            'translate-ja/Network/SenseCAP_K1100/Embedded_ML_Application/ja_Vision_AI_with_Customizable_Models',
+          ],
+        },
+        {
+          type: 'category',
+          label: '貢献者プロジェクト',
+          items: [
+            'translate-ja/Network/SenseCAP_K1100/Contributors_Project/ja_IoT-into-the-wild-contest',
+            'translate-ja/Network/SenseCAP_K1100/Contributors_Project/ja_K1111-Quick-Start-Guide',
+          ],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP LoRaWAN スターターキット',
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Network/SenseCAP_LoRaWAN_Starter_Kit',
+        },
+      ]
+    },
+
+    {
+      type: 'category',
+      label: 'Raspberry Pi ソリューション',
+      collapsed: true,
+      collapsible: true,
+      items: [
+      {
+        type: 'category',
+        label: 'reRouter',
+        collapsed: true,
+        collapsible: true,
+        link: {
+          type: "doc",
+          id: 'translate-ja/Network/RaspberryPi_Devices/reRouter/ja_reRouter_Intro',
+        },
+        items: [
+          'translate-ja/Network/RaspberryPi_Devices/reRouter/ja_Raspberry-OpenWrt-Getting-Started',
+          'translate-ja/Network/RaspberryPi_Devices/reRouter/ja_Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4',
+          'translate-ja/Network/RaspberryPi_Devices/reRouter/ja_FAQs_For_openWrt',
+          {
+            type: 'category',
+            label: 'アプリケーション',
+            items: [
+              'translate-ja/Network/RaspberryPi_Devices/reRouter/Application/ja_OpenWrt-Getting-Started',
+              'translate-ja/Network/RaspberryPi_Devices/reRouter/Application/ja_OpenWrt-Plex-Media-Server-on-Docker',
+              'translate-ja/Network/RaspberryPi_Devices/reRouter/Application/ja_Mender-Client-dual-GbE-CM4',
+            ],
+          },
+        ],
+       },  
+
+       {
+        type: 'category',
+        label: 'Raspberry Pi 4G LTE Hat',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/ja_Getting_Started_LTE_CAT_4_EG25-GL_4G_Hat_for_rpi',
+
+          {
+            type: 'category',
+            label: 'アプリケーション',
+            items: [
+              {
+                type: 'category',
+                label: 'Windowsネットワーク設定',
+                items: [
+                  'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_rndis',
+                  'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_mbim',
+                ],
+              },
+              {
+                type: 'category',
+                label: 'Raspberry Pi OS ネットワーク設定',
+                items: [
+                  'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_mobile_internet_for_your_pi_ecm_set_up',
+                  'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_qmi',
+                  
+
+                ],
+              },
+
+              'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_send_text_massages_lte_cat_hat_for_rpi',
+              'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_getting_start_with_raspberry_pi_4g_hat_and_quectel_gnss',
+              'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_hotspot_on_rpi_os',
+              'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_ftp_on_rpi_4g_lte_hat',
+              'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_mqtt_on_rpi_4g_lte_hat',
+              'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_tcp_ip_rpi_4g_lte_hat',
+              'translate-ja/Network/RaspberryPi_Devices/LTE_CAT_4_EG25_GL_4G_HAT_for_Raspberry_Pi/Applications/ja_4g_lte_rpi_hat_openwrt',
+
+            ],
+          },
+        ],
+       },  
+
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Rockchipソリューション',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Network/RK_Devices/ja_RK_intro',
+      },
+      items: [
+      {
+        type: 'category',
+        label: 'LinkStar-H68K',
+        collapsed: true,
+        collapsible: true,
+        link: {
+          type: "doc",
+          id: 'translate-ja/Network/RK_Devices/LinkStar/ja_Linkstar_Intro',
+        },
+        items: [
+          'translate-ja/Network/RK_Devices/LinkStar/ja_Linkstar_Datasheet',
+          'translate-ja/Network/RK_Devices/LinkStar/ja_linkstar-install-system',
+          {
+            type: 'category',
+            label: 'アプリケーション',
+            items: [
+              'translate-ja/Network/RK_Devices/LinkStar/Application/ja_h68k-ha-esphome',
+              'translate-ja/Network/RK_Devices/LinkStar/Application/ja_plex_media_server',
+              'translate-ja/Network/RK_Devices/LinkStar/Application/ja_wordpress_linkstar',
+              'translate-ja/Network/RK_Devices/LinkStar/Application/ja_grocy-bookstack-linkstar',
+            ],
+          },
+        ],
+      },
+      {
+        type: 'category',
+        label: 'LinkStar-H68K-V2',
+        collapsed: true,
+        collapsible: true,
+        link: {
+          type: "doc",
+          id: 'translate-ja/Network/RK_Devices/H68K_V2/ja_H68KV2_Datasheet',
+        },
+        items: [
+          'translate-ja/Network/RK_Devices/H68K_V2/ja_H68KV2_Datasheet',
+          'translate-ja/Network/RK_Devices/H68K_V2/ja_H68KV2_install_system',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'LinkStar-H28K',
+        collapsed: true,
+        collapsible: true,
+        link: {
+          type: "doc",
+          id: 'translate-ja/Network/RK_Devices/H28K/ja_H28K_Datasheet',
+        },
+        items: [
+          'translate-ja/Network/RK_Devices/H28K/ja_H28K_Datasheet',
+          'translate-ja/Network/RK_Devices/H28K/ja_H28K-install-system',
+        ],
+      },
+
+      ],
+    },
+
+
+    {
+      type: 'category',
+      label: 'その他のネットワークデバイス',
+      items: [
+        'translate-ja/Network/TTN_Gateway/ja_The-Things-Indoor-Gateway',
+        {
+          type: 'category',
+          label: 'Wio-WM6180 WiFi-Halow デバイス',
+          items: [
+            'translate-ja/Network/WiFi-Halow/ja_wifi-halow-module-for-xiao',
+            'translate-ja/Network/WiFi-Halow/ja_wifi-halow-mini-pcie-module',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'doc',
+      id: 'translate-ja/ja_Edge_Computing',
+      label: 'エッジコンピューティング',
+      className: 'sideboard_calss',
+    },
+
+    {
+      type: 'category',
+      label: 'Raspberry Pi デバイス',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Edge/Raspberry_Pi_Devices/ja_RpiDevices',
+      },
+      items:[
+        {
+          type: 'category',
+          label: 'エッジAIコンピュータ',
+          collapsed: true,
+          collapsible: true,
+          items:[
+            {
+            type: 'category',
+            label: 'reComputer-AI-R2000',
+            collapsed: true,
+            collapsible: true,
+            link:{
+              type:"doc",
+              id: 'translate-ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/ja_reComputer_AI_R2000_getting_start'
+            },
+            items: [
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_R2000/ja_reComputer_AI_R2000_getting_start'
+            ]},
+            {
+              type: 'category',
+              label: 'reComputer-AI-産業用-R2000',
+              collapsed: true,
+              collapsible: true,
+              link:{
+                type:"doc",
+                id: 'translate-ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/ja_reComputer_AI_Industrial_R2135_getting_start'
+              },
+              items: [
+                'translate-ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/ja_reComputer_AI_Industrial_R2135_getting_start',
+                'translate-ja/Edge/Raspberry_Pi_Devices/Edge_AI_Computer/reComputer_AI_Industrial_R2000/ja_reComputer_AI_Industrial_R2000_Flash_OS'
+              ]},
+            
+
+      ]},
+        {
+        type: 'category',
+        label: 'HMI',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          {
+        type: 'category',
+        label: 'reTerminal',
+        collapsed: true,
+        collapsible: true,
+        link: {
+              type: "doc",
+              id: 'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal_Intro',
+            },
+
+            items: [
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal',
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-hardware-interfaces-usage',
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-piCam',
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/ja_reTerminal-FAQ',
+              {
+                type: 'category',
+                label: 'OSインストール',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_reTerminal-Buildroot-SDK',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_reTerminal-Yocto',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/OS_Installation/ja_Streampi_OBS_On_reTerminal',
+                  // 'Edge/reTerminal/OS_Installation/',
+                ],
+              },
+              {
+                type: 'category',
+                label: '拡張ボード',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/ja_reTerminalBridge',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal/Extension_Board/ja_reTerminal_Mount_Options',
+                ],
+              },
+            ],
+          },
+          {
+            type: 'category',
+            label: 'reTerminal DM',
+            collapsed: true,
+            collapsible: true,
+            link: {
+              type: "doc",
+              id: 'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reTerminal-dm_Intro',
+            },
+            items: [
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm',
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-flash-OS',
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-warranty',
+              'translate-ja/Edge/Raspberry_Pi_Devices/HMI/reTerminal-DM/ja_reterminal-dm-hardware-guide',
+                        ],
+          },
+
+        ],
+
+      },
+      {
+        type: 'category',
+        label: 'エッジコントローラー',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          {
+            type: 'category',
+            label: 'EdgeBox-RPI-200',
+            collapsed: true,
+            collapsible: true,
+            link: {
+              type: "doc",
+              id: 'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/ja_Edge_Box_intro',
+            },
+            items: [
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/Edge_Box_RPi_200/ja_Edgebox_rpi_200_Introduction',
+            
+            ],
+          },
+
+          {
+            type: 'category',
+            label: 'reComputer-R1000',
+            collapsed: true,
+            collapsible: true,
+            link: {
+              type: "doc",
+              id: 'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_intro',
+            },
+            items: [
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_pcn',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_flash_os',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_assembly_guide',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_warranty',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_how_to_use_rs485_modbus',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_recomputer_r1000_use_bacnet_mstp',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1000/ja_reComputer_R1000_FAQ',
+            ],
+          },
+          {
+            type: 'category',
+            label: 'reComputer R1100',
+            collapsed: true,
+            collapsible: true,
+            items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_reComputer_R1100',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_flash_os',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_configure_system',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Edge_Controller/reComputer_R1100/ja_recomputer_r1100_assembly_guide',
+            ],
+          },
+
+        ],
+      },
+
+      {
+        type: 'category',
+        label: 'ハット',
+        collapsed: true,
+        collapsible: true,
+        items: [
+            {
+              type: 'category',
+              label: 'M.2 Hat',
+              items: [
+                    'translate-ja/Edge/Raspberry_Pi_Devices/M_2_Hat/ja_m_2_hat_start_with_pi5',
+              ],
+            },
+          
+        ],
+      },
+
+      {
+        type: 'category',
+        label: 'アプリケーション',
+        collapsed: true,
+        collapsible: true,
+        items: [
+          {
+            type: 'category',
+            label: 'AIoT',
+            items: [
+              {
+                type: 'category',
+                label: 'BalenaOS',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/ja_recomputer_r1000_build_seeed_balena_image',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/BalenaOS/ja_recomputer_r1000_balena',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'クラウドソリューション',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/ja_recomputer_r1000_aws',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/ja_reTerminal-DM_AWS_first',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Cloud_Solution/ja_reTerminal-DM_Azure_IoT',
+                ]
+              },
+              {
+                type: 'category',
+                label: '終了',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_install_fin',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_create_equip_graphic',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_create_site_graphic',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_top_level_graphic',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with_fin_use_modbus',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with-_fin_use_logic_to_alarm',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fin/ja_recomputer_r1000_with-fin_create_floor_graphic',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'Fuxa',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_to_achieve_SCADA',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_modbus',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_mqtt',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_opcua',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_recomputer_r1000_with_fuxa_use_webapi',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Fuxa/ja_reTerminal-DM_intro_FUXA',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'ホームアシスタント',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_recomputer-r1000-home-assistant',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_recomputer-r1000-modbus-home-assistant',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_reTerminal_Home_Assistant',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Home-Assistant/ja_reTerminal-Home-Assistant-Customize',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'N3uron',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-aws',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-bacnet',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron-modbus-mqtt',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_Edgebox-rpi-200-n3uron',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_aws',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_bacnet',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_getting_started',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_recomputer_r1000_n3uron_modbus_mqtt',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_AWS',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_Historian',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminal_DM_N3uron_modbus_mqtt',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/N3uron/ja_reTerminalDM_N3uron_Get_Start',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'Node-RED',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_box_rpi_200_grafana',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Bacnet_tcp',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_getting_started',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_influxdb',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Modbus_rtu',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_Modbus_tcp',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_Edge_Box_rpi_200_Node_red_mqtt',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_neqto_engine_for_linux_reTerminal',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_modbustcp',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_opcua_server',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_nodered_s7',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000_with_node_red_and_bacnet',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer_r1000-grafana',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_recomputer-r1000-nodered-getting-start',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-Bacnet',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-canbus',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-grafana',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-influxdb',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-Modbus-TCP',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-mqtt',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Node-Red/ja_reTerminal-DM-Node-Red-RS485',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'UIデザイン',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Electron',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Flutter',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-LVGL',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_reTerminal-build-UI-using-Qt-for-Python',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/UI_design/ja_weather-dashboard-with-Grafana-reTerminal',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'その他',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_Edgebox-rpi-200-ignition-edge',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_Mender-Client-reTerminal',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_r1000_flowfuse_getting_start',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_r1000_install_codesys',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_r1000_thingsboard_ce',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_r1000_thingsboard_dashboard',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_r1000_with_codesys_use_modbus_rtu',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reTerminal-DM_intro_machinechat_jedi',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reTerminal-DM-Getting-Started-with-Ignition-Edge',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reTerminal-DM-Ignition-Edge-Panel-Builder',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_reterminal-dm-sensecraft-edge-os-intro',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/AIoT/Others/ja_recomputer_use_ups'
+                ]
+              },
+            ]
+          },
+          {
+            type: 'category',
+            label: 'コンピュータビジョン',
+            items: [
+              {
+                type: 'category',
+                label: 'ベンチマーク',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/ja_benchmark_of_multistream_inference_on_raspberrypi5_with_hailo8',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/Benchmark/ja_benchmark_on_rpi5_and_cm4_running_yolov8s_with_rpi_ai_kit',
+                ]
+              },
+              {
+                type: 'category',
+                label: 'OpenCV',
+                items: [
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/ja_reTerminal_DM_Color_detection',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/ja_reTerminal_DM_Face_detection',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/ja_reTerminal_DM_Object_detection',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/ja_reTerminal_DM_opencv',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/ja_reTerminal_DM_Shape_detection',
+                  'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/OpenCV/ja_reTerminal_DM-tracking',
+                ]
+              },
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_clip_application_on_rpi_with_ai_kit',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_convert_model_to_edge_tpu_tflite_format_for_google_coral',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_frigate_nvr_with_raspberrypi_5',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_install_m.2_coral_to_rpi5',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_pose_based_light_control_with_nodered_and_rpi_with_aikit',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_reterminal_frigate',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_reTerminal_ML_Edgeimpulse',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_reTerminal_ML_TFLite',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_reTerminal-DM-edgeimpulse',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_reterminal-DM-Frigate',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_reTerminal-DM-Yolo5',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Computer_Vision/ja_yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l'
+            ]
+          },
+          {
+            type: 'category',
+            label: '大規模言語モデル',
+            items:[
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/ja_deploy_deepseek_on_raspberry_pi_ai_box',
+              'translate-ja/Edge/Raspberry_Pi_Devices/Application/Large_language_Model/ja_distributed_inference_of_deepseek_model_on_raspberrypi'
+
+            ]
+          }
+        ]
+      },
+
+      ],
+
+
+    },
+
+
+    {
+      type: 'category',
+      label: 'NVIDIA® Jetson™',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Edge/NVIDIA_Jetson/ja_RecomputerPage',
+      },
+      items: [
+        // Getting Started
+        {
+          type: 'category',
+          label: 'はじめに',
+          items: [
+            // Carrier Boards
+            {
+              type: 'category',
+              label: 'キャリアボード',
+              items: [
+                'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/J101/ja_reComputer_J1010_J101_Flash_Jetpack',
+                'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/J202/ja_reComputer_J2021_J202_Flash_Jetpack',
+                {
+                  type: 'category',
+                  label: 'J401キャリアボード',
+                  items: [
+                    'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/J401/ja_reComputer_J4012_Flash_Jetpack',
+                    'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/J401/ja_J401_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'J401-Mini キャリアボード',
+                  items: [
+                    'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/ja_reComputer_Mini_J4012_Flash_Jetpack',
+                    'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/ja_J401_Mini_carrierboard_Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'J501 キャリアボード',
+                  items: [
+                    'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/J501/ja_reServer_Industrial_J501_Getting_Started',
+                    'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/J501/ja_Hardware_Interfaces_Usage',
+                  ],
+                },
+                'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/ja_reComputer_A203_Flash_System',
+                'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/A205/ja_reComputer_A205_Flash_System',
+                'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/A603/ja_A603_Flash_JetPack',
+                'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/A607/ja_A607_Flash_JetPack',
+                'translate-ja/Edge/NVIDIA_Jetson/Carrier_Boards/A608/ja_A608_Flash_JetPack',
+                
+              ],
+            },
+
+            // reComputer Jetson Series
+            {
+              type: 'category',
+              label: 'reComputer Jetson',
+              link: {
+                type: "doc",
+                id: 'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/ja_reComputer_Intro',
+              },
+              items: [
+                {
+                  type: 'category',
+                  label: 'reComputer J10',
+                  link: {
+                    type: "doc",
+                    id: 'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/ja_reComputer_Jetson_Series_Introduction',
+                  },
+                  items: [
+                    {
+                      type: 'category',
+                      label: 'reComputer J1010',
+                      items: [
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_J1010_with_Jetson_getting_start',
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_J101_Enable_SD_Card',
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_J1010_Boot_From_SD_Card',
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_GPIO',
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Memory_Expansion',
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Series_Hardware_Layout',
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1010/ja_reComputer_Jetson_Series_Initiation',
+                      ],
+                    },
+
+                    {
+                      type: 'category',
+                      label: 'reComputer J1020',
+                      items: [
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/ja_reComputer_J1020v2_with_Jetson_getting_start',
+                      'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J10/reComputer_J1020v2/ja_reComputer_J1020_A206_Flash_JetPack',
+                      ],
+                    },
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer J20',
+                  items: [
+                    'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J20/ja_reComputer_J20_with_Jetson_getting_start',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer J30/40',
+                  items: [
+                    'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/ja_reComputer_J30_40_with_Jetson_getting_start',
+                    'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J30_40/ja_reComputer_Jetson_with_Infineon_Wi-Fi_Module'
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer 工業用',
+                  items: [
+                  'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_Getting_Started',
+                  'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_J20_Hardware_Interfaces_Usage',
+                  'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Industrial/ja_reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage'
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer Mini',
+                  items: [
+                  'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/ja_reComputer_Mini_Getting_Started',
+                  'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/ja_reComputer_Mini_Hardware_Interfaces_Usage'
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'reComputer J401B',
+                  items: [
+                    'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/ja_recomputer_j401b_getting_start',
+                    'translate-ja/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/ja_recomputer_j401b_interfaces_usage'
+                  ]
+                },
+            ]},
+            
+            // reServer Jetson Series
+            {
+              type: 'category',
+              label: 'reServer Jetson',
+              items: [
+                //'Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/reServer_Industrial_Getting_Started',
+                {
+                  type: 'category',
+                  label: 'reServer Industrial J30/40',
+                  items: [
+                  'translate-ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/ja_reServer_Industrial_Getting_Started',
+                  'translate-ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_Industrial_J30_J40/ja_reServer_Industrial_Hardware_Interface_Usage'
+                  ],
+                },
+
+                {
+                  type: 'category',
+                  label: 'reServer J2032',
+                  items: [
+                  'translate-ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/ja_reServer_J2032_Flash_Jetpack',
+                  'translate-ja/Edge/NVIDIA_Jetson/reServer_Jetson_Series/reServer_J2032/ja_reServer_J2032_Getting_Started'
+                  ],
+                },
+
+
+            ]},
+
+            // Other Devices
+            {
+              type: 'category',
+              label: 'その他のデバイス',
+              items: [
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_How_to_Update_Orin_Nano_Developer_Kit_to_Super_Kit',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_RTL8822CE_Wireless_Module_for_Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_Jetson_AGX_Orin_32GB_H01_Flash_Jetpack',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_Jetson_Xavier_AGX_H01_Driver_Installation',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_Jetson-Mate',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_Mini_AI_Computer_T906',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_reComputer_A203E_Flash_System',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_reComputer_A205E_Flash_System',
+                'translate-ja/Edge/NVIDIA_Jetson/Other_Devices/ja_reComputer_Jetson_Series_GPIO_Grove'
+              ]
+            },
+
+          ]
+        },
+
+        // Applications
+        {
+          type: 'category',
+          label: 'アプリケーション',
+          items: [
+            // Computer Vision
+            {
+              type: 'category',
+              label: 'コンピュータビジョン',
+              items: [
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_DashCamNet-with-Jetson-Xavier-NX-Multicamera',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_How_to_Train_and_Deploy_YOLOv8_on_reComputer',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_Jetson-Nano-MaskCam',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_Security_Scan',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_reComputer_Jetson_Series_Projects',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_Traffic-Management-DeepStream-SDK',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_YOLOv5-Object-Detection-Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_YOLOv8-DeepStream-TRT-Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_YOLOv8-TRT-Jetson',
+                // 'Edge/NVIDIA_Jetson/Application/Computer_Vision/reComputer_Jetson_Series_Tutorials_Exercise',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_YOLOv8_custom_classification_model',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_deploy_frigate_on_jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Computer_Vision/ja_AI-NVR_with_Jetson',
+              ]
+            },
+
+            // Generative AI
+            {
+              type: 'category',
+              label: '生成AI',
+              link: {
+                type: "doc",
+                id: 'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Generative_AI_Intro',
+              },
+              
+              items: [
+                // Models
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Finetune_LLM_by_Llama_Factory_on_Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Quantized_Llama2_7B_with_MLC_LLM_on_Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_How_to_run_local_llm_text_to_image_on_reComputer',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Whisper_on_Jetson_for_Real_Time_Speech_to_Text',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Local_RAG_based_on_Jetson_with_LlamaIndex',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_How_to_run_zero_shot_detection_on_reComputer',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_How_to_run_VLM_on_reComputer',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_How_to_Format_the_Output_of_LLM_Using_Langchain_on_Jetson',
+                
+                // Projects
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Deploy_Riva_and_Llama2_on_reComputer',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Real_Time_Subtitle_Recoder_on_Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Deploy_Ollama_and_AnythingLLM_on_Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Quickly_Deploy_DeepSeek_on_reComputer_Jetson',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Generative_AI/ja_Deploy_DeepSeek_on_reComputer_Jetson_with_MLC',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'マルチモーダルAI',
+              items: [
+                // Models
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Multimodal_AI/ja_Speech_vlm',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'ロボティクス',
+              items: [
+                {
+                  type: 'category',
+                  label: 'ソフトウェア',
+                  items: [
+                      'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Software/ja_Installing_ROS1',
+                      'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Software/ja_A_Loam',
+                    ]},
+                  
+                {
+                  type: 'category',
+                  label: 'ハードウェア',
+                  items: [
+                    'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/ja_Robosense_Lidar',
+                    'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/ja_MID360',
+                    'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/ja_Orbbec_Depth_Camera',
+                    'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Hardware/ja_CSI_Camera'
+                      ]},
+                      {
+                        type: 'category',
+                        label: 'プロジェクト',
+                        items: [
+                          'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Projects/ja_Lerobot_SO100Arm',
+                          'translate-ja/Edge/NVIDIA_Jetson/Application/Robotics/Projects/ja_Lerobot_SO100Arm_Isaacsim',
+                            ]},
+                
+                ]},
+
+            // Managed Services
+            {
+              type: 'category',
+              label: 'マネージドサービス',
+              items: [
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_Allxon-Jetson-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_neqto_engine_for_linux_recomputer',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_Scailable-Jetson-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Managed_Services/ja_Update-Jetson-Linux-OTA-Using-Allxon'
+              ]
+            },
+
+            // Developer Tools
+            {
+              type: 'category',
+              label: '開発者ツール',
+              items: [
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Gapi-Jetson-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_alwaysAI-Jetson-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Cochl.Sense-Jetson-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_CVEDIA-Jetson-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_DeciAI-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_HardHat',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Jetson-AI-developer-tools',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_jetson-docker-getting-started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Lumeo-Jetson-Getting-Started',
+                // 'Edge/NVIDIA_Jetson/Application/Developer_Tools/No-code-Edge-AI-Tool',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_reComputer_Jetson_Series_Resource',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_NVStreamer_Getting_Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_Roboflow-Jetson-Getting-Started',
+                'translate-ja/Edge/NVIDIA_Jetson/Application/Developer_Tools/ja_vnc_for_reComputer'
+
+              ]
+            },
+          ]
+        },
+
+        // FAQs
+        {
+          type: 'category',
+          label: 'よくある質問',
+          items: [
+            'translate-ja/Edge/NVIDIA_Jetson/FAQs/ja_jetson_FAQ',
+            'translate-ja/Edge/NVIDIA_Jetson/FAQs/ja_Create_Backup_and_Restore_on_reComputer',
+            // 'Edge/NVIDIA_Jetson/FAQs/Updating_Jetpack_with_OTA',
+            'translate-ja/Edge/NVIDIA_Jetson/FAQs/ja_Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
+            'translate-ja/Edge/NVIDIA_Jetson/FAQs/ja_Use_IMX477_Camera_with_A603',
+            'translate-ja/Edge/NVIDIA_Jetson/FAQs/ja_Differences_of_L4T_Between_Seeed_and_NVIDIA',
+          ]
+        }
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'ESPデバイス',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'category',
+          label: 'EdgeBox-ESP-100',
+          items: ['translate-ja/Edge/Edge_Series/Edge_Box_ESP_100/ja_Edgebox-ESP-100-Arduino'],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'BeagleBone®',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Edge/Beagle_Bone/ja_BeagleBone',
+      },
+      items: [
+        'translate-ja/Edge/Beagle_Bone/ja_BeagleBone_Blue',
+        'translate-ja/Edge/Beagle_Bone/ja_BeagleBone_Green',
+        'translate-ja/Edge/Beagle_Bone/ja_BeagleBone_Green_Wireless',
+        'translate-ja/Edge/Beagle_Bone/ja_BeagleBone-Green-Gateway',
+        'translate-ja/Edge/Beagle_Bone/ja_Beaglebone_Case',
+        {
+          type: 'category',
+          label: 'アプリケーション',
+          items: [
+            'translate-ja/Edge/Beagle_Bone/Application/ja_BeagleBone_Solutions',
+            'translate-ja/Edge/Beagle_Bone/Application/ja_ChatGPT_and_BeagleBone',
+
+          ],
+        },
+        {
+          type: 'category',
+          label: '拡張ボード',
+          items: [
+            'translate-ja/Edge/Beagle_Bone/Extension_Board/ja_Grove_Cape_for_BeagleBone_Series',
+            'translate-ja/Edge/Beagle_Bone/Extension_Board/ja_Grove_Base_Cape_for_BeagleBone_v2',
+            'translate-ja/Edge/Beagle_Bone/Extension_Board/ja_Motor_Bridge_Cape_v1.0',
+            'translate-ja/Edge/Beagle_Bone/Extension_Board/ja_Skeleton_box_for_Beaglebone',
+            'translate-ja/Edge/Beagle_Bone/Extension_Board/ja_BeagleBone_Green_HDMI_Cape',
+            'translate-ja/Edge/Beagle_Bone/Extension_Board/ja_Seeed-Studio-BeagleBone-Green-LCD-Cape-with-Resistive-Touch',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'コース付きキット',
+          items: [
+            'translate-ja/Edge/Beagle_Bone/Kit_with_Courses/ja_Grove_Starter_Kit_for_BeagleBone_Green',
+            'translate-ja/Edge/Beagle_Bone/Kit_with_Courses/ja_Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'ODYSSEY',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Edge/ODYSSEY/ja_ODYSSEY_Intro',
+      },
+      items: [
+        //  'Edge/ODYSSEY/ODYSSEY_Getting_Started',
+        {
+          type: 'category',
+          label: 'ODYSSEY STM32MP135D',
+          items: [
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_STM32MP135D/ja_ODYSSEY STM32MP135D',
+          ],
+          },
+
+        {
+          type: 'category',
+          label: 'ODYSSEY X86J4105',
+          items: [
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/ja_ODYSSEY-X86J4105',
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/ja_ODYSSEY-X86J4105-GPIO',
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/ja_ODYSSEY-X86J4105-Accessories',
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/ja_Coral-Mini-PCIe-Accelerator-on-ODYSSEY-X86J4105',
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/ja_ODYSSEY-X86J4105-LTE-Module',
+            'translate-ja/Edge/ODYSSEY/ja_ODYSSEY_FAQ',
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Home Assistant for ODYSSEY',
+                  items: [
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Home-Assistant_for_ODYSSEY/ja_ODYSSEY-X86-Home-Assistant',
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Home-Assistant_for_ODYSSEY/ja_ODYSSEY-Home-Assistant-Customize',
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Home-Assistant_for_ODYSSEY/ja_Connect-Grove-to-Home-Assistant-ESPHome',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Azure IoT for ODYSSEY',
+                  items: [
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Azure_IoT_for_ODYSSEY/ja_ODYSSEY-X86J4105-AzureIOT',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Mender for ODYSSEY',
+                  items: [
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Mender_for_ODYSSEY/ja_Mender-Client-ODYSSEY-X86',
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Mender_for_ODYSSEY/ja_Mender-Server-ODYSSEY-X86',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'コンピュータ版',
+                  items: [
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/ja_ODYSSEY-X86J4105-Intel-OpenVINO',
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/ja_ODYSSEY-X86J4105-NCS2',
+                    'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/Application/Computer_Version/ja_ODYSSEY-X86J4105-Frigate',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'OSインストール',
+              items: [
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-Installing-OS',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-Updating-Firmware',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_Jellyfin-on-Docker-Ubuntu-X86',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-Installing-openwrt',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86-OPNsense',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-pfSense',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86-TrueNAS',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-Installing-Android',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_ODYSSEY-X86J4105-Installing-FreeNAS',
+                'translate-ja/Edge/ODYSSEY/ODYSSEY_X86J4105/OS_Installation/ja_BalenaOS-X86-Getting-Started',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'ODYSSEY STM32MP157C',
+          items: [
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_STM32MP157C/ja_ODYSSEY-STM32MP157C',
+            'translate-ja/Edge/ODYSSEY/ODYSSEY_STM32MP157C/ja_SEEED-SOM-STM32MP157C',
+          ],
+        },
+      ],
+    },
+    
+    {
+      type: 'category',
+      label: 'reCamera',
+      collapsed: true,
+      collapsible: true,
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Edge/reCamera',
+        },
+      ]
+    },
+
+    {
+      type: 'category',
+      label: 'その他のエッジデバイス',
+      items: [
+          {
+            type: 'category',
+            label: 'reServer X86',
+            items: [
+              'translate-ja/Edge/reServer/reServer_X86/ja_reServer-Getting-Started',
+              'translate-ja/Edge/reServer/reServer_X86/ja_reServer-Update-BIOS-Install-Drivers',
+            ],
+          },
+        'translate-ja/Edge/Quantum_Development_Board/ja_Quantum-Mini-Linux-Development-Kit',
+      ],
+    },
+
+    {
+      type: 'doc',
+      id: 'translate-ja/ja_Cloud',
+      label: 'クラウド',
+      className: 'sideboard_calss',
+    },
+    {
+      type: 'category',
+      label: 'SenseCraft AI',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Cloud_Chain/SenseCraft/SenseCraft_AI/ja_SenseCraft_AI_main_page',
+      },
+      items: [
+        {
+          type: 'autogenerated',
+          dirName: 'translate-ja/Cloud_Chain/SenseCraft/SenseCraft_AI',
+        },
+      ]
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP ダッシュボード',
+      items: [
+        'translate-ja/Cloud_Chain/SenseCAP_Dashboard/ja_Dashboard_Basics',
+        'translate-ja/Cloud_Chain/SenseCAP_Dashboard/ja_Dashboard_Registration',
+        'translate-ja/Cloud_Chain/SenseCAP_Dashboard/ja_Hotspot_Registration',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP ポータル',
+      items: [
+        'translate-ja/Cloud_Chain/SenseCAP_Portal/ja_QuickStart',
+        {
+          type: 'category',
+          label: '管理',
+          items: [
+            'translate-ja/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/ja_Dashboard',
+            'translate-ja/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/ja_Data_Management',
+            'translate-ja/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/ja_Device_Management',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'SenseCAP Hotspot アプリ',
+      items: [
+        'translate-ja/Cloud_Chain/SenseCAP_Hotspot_APP/ja_Introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCraft アプリ',
+      items: [
+        'translate-ja/Cloud_Chain/SenseCAP_Mate_APP/ja_sensecraft_app',
+    //    'Cloud_Chain/SenseCAP_Mate_APP/sensecap_mate_app_event',
+         'translate-ja/Cloud_Chain/SenseCAP_Mate_APP/ja_sensecraft_cloud_fee',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP AI',
+      items: [
+        'translate-ja/Cloud_Chain/SenseCAP_AI/ja_How_to_Use SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP',
+        'translate-ja/Cloud_Chain/SenseCAP_AI/ja_xiao-esp32c3-sensecapai',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'SenseCAP API',
+      items: [
+        'translate-ja/Cloud_Chain/SenseCAP_API/ja_SenseCAP_API_Introduction',
+        'translate-ja/Cloud_Chain/SenseCAP_API/ja_API_pricing',
+        {
+          type: 'category',
+          label: 'HTTP API',
+          items: [
+            'translate-ja/Cloud_Chain/SenseCAP_API/HTTP_API/ja_Quick_Start',
+            'translate-ja/Cloud_Chain/SenseCAP_API/HTTP_API/ja_HTTP_API_Access_Guide',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'データ OpenStream API',
+          items: [
+            'translate-ja/Cloud_Chain/SenseCAP_API/Data_OpenStream_API/ja_Data_OpenStream_API_Quickstart',
+            'translate-ja/Cloud_Chain/SenseCAP_API/Data_OpenStream_API/ja_Data_OpenStream_API_Reference',
+          ],
+        },
+        {
+          type: 'category',
+          label: '付録',
+          items: [
+            'translate-ja/Cloud_Chain/SenseCAP_API/Appendix/ja_List_of_Sensor_Types',
+            'translate-ja/Cloud_Chain/SenseCAP_API/Appendix/ja_List_of_Measurement_IDs',
+            'translate-ja/Cloud_Chain/SenseCAP_API/Appendix/ja_List_of_Device_Status_IDs',
+            'translate-ja/Cloud_Chain/SenseCAP_API/Appendix/ja_List_of_Error_Code',
+          ],
+        },
+      ],
+    },
+    
+    /*
+    {
+      type: 'html',
+      value: `
+    <style>
+      .sub_item {
+        width: 275px;
+        display:inline-block;
+        text-align:center;
+        font-size:20px;
+        margin-top: 10px;
+      }
+    </style>
+    <div style="width:100px;text-align:center">
+      <div class="sub_item"><strong> Popular Platform </strong></div>
+    </div>
+    `,
+    },
+    */
+
+
+    {
+      type: 'doc',
+      id: 'translate-ja/Topics/ja_Topic_introduction',
+      label: '技術トピック',
+      className: 'sideboard_calss',
+    },
+
+    {
+      type: 'category',
+      label: 'ホームアシスタント',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Topics/Home_Assistant/ja_Home_Assistant_Topic',
+      },
+      items: [
+        'translate-ja/Topics/Home_Assistant/Home_Assistant_Tutorials/ja_home_assistant_sensecap',
+        'translate-ja/Topics/Home_Assistant/Home_Assistant_Tutorials/ja_Extend_Home_Assistant_with_LoRaWAN_device',
+        'translate-ja/Topics/Home_Assistant/Home_Assistant_Tutorials/ja_sensecraft_homeassistant_userguide',
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'TinyML',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Topics/TinyML/ja_TinyML_Topic',
+      },
+      items: [
+        {
+          type: 'category',
+          label: 'AIワークショップ',
+          collapsed: true,
+          collapsible: true,
+          link: {
+            type: "doc",
+            id: 'translate-ja/Topics/TinyML/TinyML_Workshop/ja_TinyML_workshop_course',
+          },
+          items: [
+              'translate-ja/Topics/TinyML/TinyML_Workshop/ja_sscma',
+              'translate-ja/Topics/TinyML/TinyML_Workshop/ja_TrainModel',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'モデルアシスタント',
+          collapsed: true,
+          collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: '概要',
+              collapsed: false,
+              items: [
+              'translate-ja/Topics/TinyML/ModelAssistant/introduction/ja_overview',
+              'translate-ja/Topics/TinyML/ModelAssistant/introduction/ja_quick_start',
+              'translate-ja/Topics/TinyML/ModelAssistant/introduction/ja_installation',
+              ]
+            },
+            {
+              type: 'category',
+              label: 'チュートリアル',
+              collapsed: false,
+              items: [
+                'translate-ja/Topics/TinyML/ModelAssistant/tutorials/ja_config',
+                'translate-ja/Topics/TinyML/ModelAssistant/tutorials/ja_datasets',
+                {
+                  type: 'category',
+                  label: 'トレーニング',
+                  collapsed: true,
+                  link: {
+                    type: "doc",
+                    id: 'translate-ja/Topics/TinyML/ModelAssistant/tutorials/training/ja_overview',
+                  },
+                  items: [
+                    'translate-ja/Topics/TinyML/ModelAssistant/tutorials/training/ja_yolo',
+                    'translate-ja/Topics/TinyML/ModelAssistant/tutorials/training/ja_fomo',
+                    'translate-ja/Topics/TinyML/ModelAssistant/tutorials/training/ja_pfld',
+                  ]
+                },
+                {
+                  type: 'category',
+                  label: 'エクスポート',
+                  collapsed: true,
+                  link: {
+                    type: "doc",
+                    id: 'translate-ja/Topics/TinyML/ModelAssistant/tutorials/export/ja_overview',
+                  },
+                  items: [
+                    'translate-ja/Topics/TinyML/ModelAssistant/tutorials/export/ja_pytorch_2_onnx',
+                    'translate-ja/Topics/TinyML/ModelAssistant/tutorials/export/ja_pytorch_2_tflite',
+                  ]
+                },
+              ]
+            },
+            {
+              type: 'category',
+              label: '開発',
+              collapsed: true,
+              collapsible: true,
+              link: {
+               type: "doc",
+               id: 'translate-ja/Topics/TinyML/ModelAssistant/deploy/ja_overview',
+              },
+              items: [
+              'translate-ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov5',
+              'translate-ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov8',
+              'translate-ja/Topics/TinyML/ModelAssistant/deploy/ja_ma_deploy_yolov8_pose',
+              ]
+            },
+          ],
+        },
+      ],
+    },
+
+  
+
+    'translate-ja/Topics/Open_Source/ja_Open_Source_Topic',
+    'translate-ja/Topics/Edge_AI/ja_Edge_AI_Topic',
+
+    /*
+      {
+      type: 'doc',
+      id: 'translate-ja/Topics/Edge_AI/ja_Edge_AI_Topic',
+      label: 'エッジAI',
+      className: 'sideboard_calss',
+      },
+*/
+
+
+{
+  type: 'doc',
+  id: 'translate-ja/ja_Contributor',
+  label: '貢献',
+  className: 'sideboard_calss',
+},
+
+{
+  type: 'category',
+  label: 'Github 貢献ガイド',
+  collapsed: true,
+  collapsible: true,
+  link: {
+    type: "doc",
+    id: 'translate-ja/Contribution/Contributors/Contribution-Guide/ja_Contribution-Guide',
+  },
+  items: [
+    'translate-ja/Contribution/Contributors/Deploy_Page_Locally/ja_Deploy_Page_Locally',
+    'translate-ja/Contribution/Contributors/Contribution-Guide/ja_full_steps_pull_request',
+    'translate-ja/Contribution/Contributors/Contribution-Guide/ja_quick_pull_request',
+
+  ],
+},
+
+
+
+
+// 'Contribution/Contributors/community_sourced_projects',
+'translate-ja/Contribution/Contributors/ja_Scale-up-Your-Creation-with-Fusion',
+
+
+    {
+      type: 'doc',
+      id: 'translate-ja/Top_Brand/ja_PopularPlatforms',
+      label: '人気のプラットフォーム',
+      className: 'sideboard_calss',
+    },
+
+    {
+      type: 'category',
+      label: 'Arduino',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Top_Brand/Arduino/ja_Arduino',
+      },
+      items: [
+        'translate-ja/Top_Brand/Arduino/ja_Getting_Started_with_Arduino',
+        {
+          type: 'category',
+          label: 'シールド',
+          items: [
+            'translate-ja/Top_Brand/Arduino/shield/ja_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_2.8inch_TFT_Touch_Shield_v2.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_4A_Motor_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Base_Shield_V2',
+            //   'Top_Brand/Arduino/shield/Bluetooth_Shield_V2',
+            'translate-ja/Top_Brand/Arduino/shield/ja_CAN-BUS_Shield_V2.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Camera_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Energy_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Motor_Shield_V2.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Brushless_Motor_Shield_TB6605FTG',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Music_Shield_V2.2',
+            'translate-ja/Top_Brand/Arduino/shield/ja_NFC_Shield_V2.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Grove-Mega_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Protoshield_Kit_for_Arduino',
+            'translate-ja/Top_Brand/Arduino/shield/ja_RS232_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Relay_Shield_v3',
+            'translate-ja/Top_Brand/Arduino/shield/ja_SD_Card_shield_V4.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Solar_Charger_Shield_V2.2',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Spartan_Edge_Accelerator_Board',
+            'translate-ja/Top_Brand/Arduino/shield/ja_W5500_Ethernet_Shield_v1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Grove_Shield_for_Arduino_Nano',
+            'translate-ja/Top_Brand/Arduino/shield/ja_RGBW_Stripe_WireLess_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Renbotics_ServoShield_Rev',
+            'translate-ja/Top_Brand/Arduino/shield/ja_WireLess_Gate_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_2.7inch-Triple-Color-E-Ink-Shield-for-Arduino',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Bluetooth_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Motor_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Motor_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_NFC_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_NFC_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Energy_Monitor_Shield_V0.9b',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Ethernet_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Ethernet_Shield_V2.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Ethernet_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_GPRS-Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_GPRS_Shield_v1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_GPRS_Shield_V2.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_GPRS_Shield_V3.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Music_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Music_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Relay_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Relay_Shield_V1',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Relay_Shield_V2',
+            'translate-ja/Top_Brand/Arduino/shield/ja_SD_Card_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_SD_Card_Shield_V3.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Small_e-Paper_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Solar_Charger_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Starter_Shield_EN',
+            'translate-ja/Top_Brand/Arduino/shield/ja_TFT_Touch_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Wifi_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Wifi_Shield_V1.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Wifi_Shield_V1.1',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Wifi_Shield_V1.2',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Wifi_Shield_Fi250_V1.1',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Wifi_Shield_V2.0',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Shield_Bot_V1.1',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Shield_Bot_V1.2',
+            'translate-ja/Top_Brand/Arduino/shield/ja_CAN-BUS_Shield_V1.2',
+            'translate-ja/Top_Brand/Arduino/shield/ja_EL_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Seeed_BLE_Shield',
+            'translate-ja/Top_Brand/Arduino/shield/ja_Small_e-Paper_Shield_V2',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'チュートリアル',
+          items: [
+            {
+              type: 'category',
+              label: 'Arduino 基本使用方法',
+              items: [
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Download-Arduino-and-install-Arduino_Driver',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_A_Handy_Serial_Library',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_How_to_install_Arduino_Library',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_How_to_use_and_write_a_library',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Upload_Code',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Use_External_Editor',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_How_To_Use_Sketchbook',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Sketchbook_of_Sidekick_Advanced_Kit',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Guide_to_use_demos_downloaded_from_Seeed-s_Github',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Software-Serial',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Arduino_Software_I2C_user_guide',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Software-SPI',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Software-Static-Library',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Arduino_Common_Error',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_How-to-Choose-A-Gas-Sensor',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_A_Comparison_of_Different_Grove_Temperature_Sensors',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_GPS-Modules-Selection-Guide',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_How_to_detect_finger_touch',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Seeed_Relay_Page',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_Barometer-Selection-Guide',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Basic_Usage/ja_How_To_Choose_The_Right_Cable',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'Arduino 拡張使用',
+              items: [
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Suli',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Seeed_Arduino_Serial',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_I2C_And_I2C_Address_of_Seeed_Product',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_ODYSSEY-X86J4105-Firmata',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Software-SWD',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Arduino-AWS-IOT-Bridge',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Arduino-DAPLink',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Flashing-Arduino-Bootloader-DAPLink',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Enhanced_Usage/ja_Xadow_IO_pin_mapping',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Arduinoボードプロジェクト',
+              items: [
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_IR_Remote',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Joystick_Control_RGB_Led',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Light_Sensor_and_LED_Bar',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_LightView_201k_Digital_display_module',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_RFID_Control_LED',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Relay_Control_LED',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Sound_Sensor_And_LED_Bar',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_temperature_sensor',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_One-Blink',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_One-Double_Blink',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Two-Digital_Input',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Two-Digital_Input_v1.0b',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Three-Analog_Input_v1b',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Four-Noise_Maker',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Five-Relay_Control',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Six-LCD_Demonstration',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Seven-Temperature',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Arduino_Boards_Projects/ja_Project_Eight-Thermostat',
+              ],
+            },
+
+            {
+              type: 'category',
+              label: 'プラットフォームのコンパイル',
+              items: [
+                'translate-ja/Top_Brand/Arduino/Tutorials/Compiling_Platform/ja_Compiling_MicroPython_for_embedded_devices',
+                'translate-ja/Top_Brand/Arduino/Tutorials/Compiling_Platform/ja_Software-PlatformIO',
+                {
+                  type: 'category',
+                  label: 'コンパイルプラットフォーム',
+                  items: [
+                    'translate-ja/Top_Brand/Arduino/Tutorials/Compiling_Platform/Codecraft_Platform_for_Arduino/ja_Guide_for_Codecraft_using_Arduino',
+                    'translate-ja/Top_Brand/Arduino/Tutorials/Compiling_Platform/Codecraft_Platform_for_Arduino/ja_Codecraft_Grove_Compatible_List',
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'コース付きキット',
+          items: [
+            {
+              type: 'category',
+              label: 'Grove 初心者向けキット for Arduino',
+              items: [
+                'translate-ja/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/ja_Grove-Beginner-Kit-For-Arduino',
+                'translate-ja/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/ja_Grove-Beginner-Kit-for-Arduino-education-pack',
+                'translate-ja/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/ja_Grove-Beginner-Kit-for-Arduino-Upverter-Guide',
+                'translate-ja/Top_Brand/Arduino/Kit with Courses/Grove Beginner Kit for Arduino/ja_Grove_Beginner_Kit_for_Arduino',
+              ],
+            },
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove_Speech_Recognizer_Kit_for_Arduino',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Sidekick_Basic_Kit_for_Arduino_V2',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove_Starter_kit_for_Arduino_101',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Intel_Edison_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove_Indoor_Environment_Kit_for_Edison',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove_Smart_Plant_Care_Kit',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Techbox_Tricks',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove_Starter_Kit_Plus',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove_Starter_Kit_v3',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove-Creator-Kit-1',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove-Mixer_Pack_V2',
+            'translate-ja/Top_Brand/Arduino/Kit with Courses/ja_Grove-Toy_Kit',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Raspberry Pi',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Top_Brand/Raspberry_Pi/ja_Raspberry_Pi',
+      },
+      items: [
+        {
+          type: 'category',
+          label: '公式 Raspberry Pi ボード',
+          items: [
+            'translate-ja/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Board/ja_Raspberry_Pi_3_Model_B',
+            'translate-ja/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Board/ja_remote_connect',
+          ],
+        },
+        {
+          type: 'category',
+          label: '公式 Raspberry Pi モジュール',
+          items: [
+            'translate-ja/Top_Brand/Raspberry_Pi/Official_Raspberry_Pi_Module/ja_Raspberry_pi_CM4_update_eeprom',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'Pi HAT',
+          items: [
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Grove_Base_Hat_for_Raspberry_Pi',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Grove_Base_Hat_for_Raspberry_Pi_Zero',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_3D-Gesture-Tracking-Shield-for-Raspberry-Pi-MGC3130',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Grove_Base_HAT',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_GrovePi_Plus',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Raspberry_Pi_Breakout_Board_v1.0',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Raspberry_Pi_Motor_Driver_Board_v1.0',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Pi_RTC-DS1307',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_High_Accuracy_Pi_RTC-DS3231',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Raspberry_Pi_R232_Board_v1.0',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Raspberry_Pi_Relay_Board_v1.0',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_four-Channel_16-Bit_ADC_for_Raspberry_Pi-ADS1115',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_eight-Channel_12-Bit_ADC_for_Raspberry_Pi-STM32F030',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_RS-485_Shield_for_Raspberry_Pi',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_Grove_AI_HAT_for_Edge_Computing',
+            'translate-ja/Top_Brand/Raspberry_Pi/Pi_HAT/ja_two-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'アクセサリー',
+          items: [
+            'translate-ja/Top_Brand/Raspberry_Pi/Accessories/ja_Skeleton_Box_for_Raspberry_Pi_Compute_Module_Development_Kit',
+            'translate-ja/Top_Brand/Raspberry_Pi/Accessories/ja_Skeleton_box_for_Rasberry_Pi',
+            'translate-ja/Top_Brand/Raspberry_Pi/Accessories/ja_Raspberry_PI_Bplus_Case',
+          ],
+        },
+        {
+          type: 'category',
+          label: '冷却デバイス',
+          items: [
+            'translate-ja/Top_Brand/Raspberry_Pi/Cooler_Device/ja_Water_Cooling_Kit',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'コース付きキット',
+          items: [
+            'translate-ja/Top_Brand/Raspberry_Pi/Kit/ja_Grove_Base_Kit_for_Raspberry_Pi',
+            'translate-ja/Top_Brand/Raspberry_Pi/Kit/ja_LoRa_LoRaWan_Gateway_Kit',
+            'translate-ja/Top_Brand/Raspberry_Pi/Kit/ja_Grove_Starter_Kit_for_IoT_based_on_Raspberry_Pi',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'アプリケーション',
+          items: [
+            'translate-ja/Top_Brand/Raspberry_Pi/Application/ja_Raspberry_Pi_as_a_NAS',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Micro:bit',
+      collapsed: true,
+      collapsible: true,
+      link: {
+        type: "doc",
+        id: 'translate-ja/Top_Brand/Micro_bit/ja_microbit_wiki_page',
+      },
+      items: [
+        'translate-ja/Top_Brand/Micro_bit/ja_Grove_Inventor_Kit_for_microbit',
+        'translate-ja/Top_Brand/Micro_bit/ja_Microsoft_MakeCode',
+        {
+          type: 'category',
+          label: '拡張ボード',
+          items: [
+            'translate-ja/Top_Brand/Micro_bit/expansion_board/ja_BitWear',
+            'translate-ja/Top_Brand/Micro_bit/expansion_board/ja_BitMaker',
+            'translate-ja/Top_Brand/Micro_bit/expansion_board/ja_BitMaker_Lite',
+            'translate-ja/Top_Brand/Micro_bit/expansion_board/ja_BitPlayer',
+            'translate-ja/Top_Brand/Micro_bit/expansion_board/ja_BitCar',
+          ],
+        },
+      ],
+    },
+
+    {
+      type: 'doc',
+      id: 'translate-ja/Seeed_Elderly/ja_DiscontinuedProducts',
+      label: '販売終了製品',
+      className: 'sideboard_calss',
+    },
+    {
+      type: 'category',
+      label: '製品一覧',
+      items: [
+        {
+          type: 'category',
+          label: 'reSpeaker',
+          items: [
+            //'Seeed_Elderly/reSpeaker/reSpeaker_Getting_Started',
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker',
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_Product_Guide',
+            {
+              type: 'category',
+              label: 'アプリケーション',
+              items: [
+                'translate-ja/Seeed_Elderly/reSpeaker/Application/ja_ReSpeaker_Solutions',
+                'translate-ja/Seeed_Elderly/reSpeaker/Application/ja_Google_Assistant',
+                'translate-ja/Seeed_Elderly/reSpeaker/Application/ja_Voice_Interaction',
+                'translate-ja/Seeed_Elderly/reSpeaker/Application/ja_ReSpeaker_Core_V2_&_Wio_Link',
+              ],
+            },
+            {
+              type: 'category',
+              label: '拡張ボード',
+              items: [
+                'translate-ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Drive_Unit',
+                'translate-ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Mic_Array_v2.0',
+                'translate-ja/Seeed_Elderly/reSpeaker/Extension Board/ja_ReSpeaker_Mic_Array',
+              ],
+            },
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_4_Mic_Array_for_Raspberry_Pi',
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_4-Mic_Linear_Array_Kit_for_Raspberry_Pi',
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi',
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_Core',
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker_Core_v2.0',
+            'translate-ja/Seeed_Elderly/reSpeaker/ja_ReSpeaker-USB-Mic-Array',
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'rePhone',
+          items: [
+            'translate-ja/Seeed_Elderly/rePhone/ja_RePhone',
+            'translate-ja/Seeed_Elderly/rePhone/ja_RePhone_Geo_Kit',
+            'translate-ja/Seeed_Elderly/rePhone/ja_RePhone_Lumi_Kit',
+            'translate-ja/Seeed_Elderly/rePhone/ja_RePhone_Strap_Kit_for_Pebble',
+            'translate-ja/Seeed_Elderly/rePhone/ja_RePhone_core_2G-Atmel32u4',
+            'translate-ja/Seeed_Elderly/rePhone/ja_Rephone_core_2G-AtmelSAMD21',
+            'translate-ja/Seeed_Elderly/rePhone/ja_Retro Phone Kit',
+            {
+              type: 'category',
+              label: 'rePhoneでプログラム',
+              items: [
+                'translate-ja/Seeed_Elderly/rePhone/Program with rePhone/ja_Arduino_IDE_for_RePhone_Kit',
+                'translate-ja/Seeed_Elderly/rePhone/Program with rePhone/ja_Eclipse_IDE_for_RePhone_Kit',
+                'translate-ja/Seeed_Elderly/rePhone/Program with rePhone/ja_JavaScript_for_RePhone',
+                'translate-ja/Seeed_Elderly/rePhone/Program with rePhone/ja_Lua_for_RePhone',
+                'translate-ja/Seeed_Elderly/rePhone/Program with rePhone/ja_RePhone_APIs-Audio',
+              ],
+            },
+          ],
+        },
+
+        {
+          type: 'category',
+          label: 'ビー',
+          items: [
+            'translate-ja/Seeed_Elderly/Bee/ja_Mesh_Bee',
+            'translate-ja/Seeed_Elderly/Bee/ja_RFbee_V1.1-Wireless_Arduino_compatible_node',
+            'translate-ja/Seeed_Elderly/Bee/ja_Zigbee_Networking_with_XBee_Series_2_and_Seeeds_Products',
+            'translate-ja/Seeed_Elderly/Bee/ja_Bees_Shield',
+            'translate-ja/Seeed_Elderly/Bee/ja_UartSBee_V3.1',
+            'translate-ja/Seeed_Elderly/Bee/ja_UartSBee_V4',
+            'translate-ja/Seeed_Elderly/Bee/ja_UartSBee_v5',
+            'translate-ja/Seeed_Elderly/Bee/ja_BLE_Bee',
+            'translate-ja/Seeed_Elderly/Bee/ja_BLE_dual_Bee_v1.0',
+            'translate-ja/Seeed_Elderly/Bee/ja_Bluetooth_Bee_v2.0',
+            'translate-ja/Seeed_Elderly/Bee/ja_Bluetooth_Bee_Standalone',
+            'translate-ja/Seeed_Elderly/Bee/ja_Bluetooth_Bee',
+            'translate-ja/Seeed_Elderly/Bee/ja_Wifi_Bee',
+            'translate-ja/Seeed_Elderly/Bee/ja_Wifi_Bee_v2.0',
+            'translate-ja/Seeed_Elderly/Bee/ja_XBee_Shield',
+            'translate-ja/Seeed_Elderly/Bee/ja_XBee_Shield_V2.0',
+            'translate-ja/Seeed_Elderly/Bee/ja_Atom_Node',
+            'translate-ja/Seeed_Elderly/Bee/ja_Bluetooth_V4.0_HM_11_BLE_Module',
+            'translate-ja/Seeed_Elderly/Bee/ja_GPS_Bee_kit',
+            'translate-ja/Seeed_Elderly/Bee/ja_Grove-XBee_Carrier',
+            'translate-ja/Seeed_Elderly/Bee/ja_Grove-Bee_Socket',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Xadow',
+          items: [
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_3_Aixs_Accelerometer',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_3_Aixs_Digital_Accelerometer_plusandminus_400g',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_BLE_Dual_Model_V1.0',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_BLE_Slave',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Breakout',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Buzzer',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Compass',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Edison_Kit',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_GPS',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_GPS_V2',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Gesture_v1.0',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Grove_Adaptor',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_IMU_6DOF',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_IMU_9DOF',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_IMU_10DOF',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_LED_5x7',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_LED_5_multiply_7_v1.0',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_M0',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Main_Board',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Multichannel_Gas_Sensor',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xado_OLED_128multiply64',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_RGB_OLED_96multiply64',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_RTC',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Storage',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_UV_Sensor',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Vibrator_Motor',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_1.54_inch_Touchscreen',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Audio',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_BLE',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Barometer',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Barometer_BMP180',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Basic_Sensors',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Duino',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_GSM_Breakout',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_GSMPlusBLE',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Metal_Frame',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_NFC',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_NFC_tag',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_NFC_v2',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Pebble_Time_Adapter',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Q_Touch_Sensor',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Tutorial_Acceleration_Detector',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Tutorial_Communicate_via_BLE',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Tutorial_Shaking_Shaking',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Wearable_Kit_For_Edison',
+            'translate-ja/Seeed_Elderly/Xadow/ja_Xadow_Motor_Driver',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Rainbowduino',
+          items: [
+            'translate-ja/Seeed_Elderly/Rainbowduino/ja_Rainbowduino_v3.0',
+            'translate-ja/Seeed_Elderly/Rainbowduino/ja_Rainbowduino_Extension_Board_v0.9b',
+            'translate-ja/Seeed_Elderly/Rainbowduino/ja_Rainbow_Cube_Kit_Acrylic_Harness',
+            'translate-ja/Seeed_Elderly/Rainbowduino/ja_Rainbowduino_LED_driver_platform-ATmega328',
+            'translate-ja/Seeed_Elderly/Rainbowduino/ja_Rainbowduino',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'reComputer Alpha',
+          items: [
+            'translate-ja/Seeed_Elderly/reComputer_Alpha/ja_How-to-build-a-home-soft-router-and-NAS-With-ReComputer',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Air シリアル',
+          items: [
+            'translate-ja/Seeed_Elderly/Air_Serial/ja_Air602_WiFi_Development_Board',
+            'translate-ja/Seeed_Elderly/Air_Serial/ja_Air602_Firmware_Programming_Manual',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'NPi-i',
+          items: ['translate-ja/Seeed_Elderly/NPi-i/ja_NPi-i.MX6ULL-Dev-Board-Linux-SBC'],
+        },
+        {
+          type: 'category',
+          label: 'W600',
+          items: ['translate-ja/Seeed_Elderly/W600/ja_W600_Module'],
+        },
+        {
+          type: 'category',
+          label: 'Artik',
+          items: [
+            'translate-ja/Seeed_Elderly/Artik/ja_Artik',
+            'translate-ja/Seeed_Elderly/Artik/ja_Eagleye_530s',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'その他',
+          items: [
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_ESP32_Breakout_Kit',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_UartSB_Frame',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_IoT_Fast_Prototyping_Kit S5D9',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Grove_IoT_Developer_Kit-Microsoft_Azure_Edition',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Atmel_AVRISP_STK500_USB_ISP_Programmer',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_AT_Command_Tester',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_AT_Command_Tester_Application',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Tiny_BLE',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Edison_4WD_Auto_Robotic_Platform_2.0',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Edison_4WD_Auto_Robotic_Platform',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Mini_GSM_GPRS_GPS_Breakout_SIM808',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Nose_LED_Kit',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Serial_port_bluetooth_module_Master-Slave',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Sidekick_Advanced_Kit',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Stepper_Motor_Driver',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Stepper_Motor_Driver_v2.3',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_4WD_Driver_Platform_V1.0',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_4WD_Mecanum_Wheel_Robot_Kit_Series',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Hercules_Dual_15A_6-20V_Motor_Controller',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Basic_Fastener_Kit',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Sidekick_Basic_Kit_for_TI_LaunchPad',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Grove Maker Kit for Intel Joule',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Grove_Shield_for_Intel_Joule',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Grove_Base_BoosterPack',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Grove_Base_Shield_for_Photon',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Tricycle_Bot',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_mbed_Shield',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_BLE_Carbon',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_BLE_Micro',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_BLE_Nitrogen',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Fubarino_SD',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_LoNet_808-Mini_GSM_GPRS_Plus_GPS_Breakout',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Matrix_Clock',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Bugduino',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_CUI32Stem',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Danger_Shield_Complete_Kits',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_FST-01',
+            'translate-ja/Seeed_Elderly/Discrete Product/ja_Grove-Base_Shield_for_IOIO-OTG',
+          ],
+        },
+      ],
+    },
+
+
+    
+
+    'translate-ja/ja_About',
+    'translate-ja/ja_License',
   ]
 }
 
