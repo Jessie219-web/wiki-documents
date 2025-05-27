@@ -19,15 +19,6 @@ last_update:
 The Wio Tracker L1 Series is a low-power, highly extensible Meshtastic node featuring LoRa (862–930 MHz), the nRF52840 for efficient processing, and an L76K GPS module for accurate location tracking. Designed for flexibility, it supports OLED and E-Ink displays, as well as solar panels and battery power, making it ideal for a wide range of IoT and off-grid applications.
 
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
-</div>
-
-
-
-
 ## Version Comparison
  
 :::tip
@@ -36,12 +27,13 @@ The Wio Tracker L1 Series is available in 4 versions—choose the one that best 
 
 |Product Name|Wio Tracker L1 Lite|Wio Tracker L1|Wio Tracker L1 Pro|Wio Tracker L1 E-Ink|
 |------------------|------------------|--------------------------|-----------------------|-----------------------|
-|Image|<img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993653-wio-tracker-l1-lite.jpg" alt="pir" width={300} height="auto" /><p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/Wio-Tracker-L1-Lite-p-6455.html)</p>|<img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993648-wio-tracker-l1.jpg" alt="pir" width={300} height="auto" /><p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html)</p>|<img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993649-wio-tracker-l1-pro.jpg" alt="pir" width={300} height="auto" /><p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html)</p>|<img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/L1-e-ink.png" alt="pir" width={300} height="auto" /><p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/Wio-Tracker-L1-Lite-p-6455.html)</p>|
+|Image|<img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993653-wio-tracker-l1-lite.jpg" alt="pir" width={300} height="auto" />|<img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993648-wio-tracker-l1.jpg" alt="pir" width={300} height="auto" />|<img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993649-wio-tracker-l1-pro.jpg" alt="pir" width={300} height="auto" />|<img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/L1-e-ink.png" alt="pir" width={300} height="auto" />|
+|Purchase Link|<p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/Wio-Tracker-L1-Lite-p-6455.html)</p>|<p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/SenseCAP-S2102-LoRaWAN-Light-Intensity-Sensor-p-5355.html)</p>|<p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/Wio-Tracker-L1-Pro-p-6454.html)</p>|<p style={{textAlign: 'center'}}>[Get One Now!](https://www.seeedstudio.com/Wio-Tracker-L1-Lite-p-6455.html)</p>|
 |LoRa|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|
 |GPS|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|
-|Screen|<p style={{textAlign: 'center'}}>1.3-inch OLED</p><br/><p style={{textAlign: 'center'}}>Resolution: 128 × 64 pixels</p>|<p style={{textAlign: 'center'}}>1.3-inch OLED</p><br/><p style={{textAlign: 'center'}}>Resolution: 128 × 64 pixels</p>|<p style={{textAlign: 'center'}}>-</p>|<p style={{textAlign: 'center'}}>2.13-inch E-ink</p><br/><p style={{textAlign: 'center'}}>Resolution: 122 × 250 pixels</p>|
-|Solar+Battery Connector|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>Built-in 2000mAh battery</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|
-|Shell|<p style={{textAlign: 'center'}}>-</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>-</p>|<p style={{textAlign: 'center'}}>-</p>|
+|Screen|<p style={{textAlign: 'center'}}>-</p>|<p style={{textAlign: 'center'}}>1.3-inch OLED</p><br/><p style={{textAlign: 'center'}}>Resolution: 128 × 64 pixels</p>|<p style={{textAlign: 'center'}}>1.3-inch OLED</p><br/><p style={{textAlign: 'center'}}>Resolution: 128 × 64 pixels</p>|<p style={{textAlign: 'center'}}>2.13-inch E-ink</p><br/><p style={{textAlign: 'center'}}>Resolution: 122 × 250 pixels</p>|
+|Solar+Battery Connector|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>Built-in 2000mAh battery</p>|<p style={{textAlign: 'center'}}>✅</p>|
+|Shell|<p style={{textAlign: 'center'}}>-</p>|<p style={{textAlign: 'center'}}>-</p>|<p style={{textAlign: 'center'}}>✅</p>|<p style={{textAlign: 'center'}}>-</p>|
 
 
 ## Overview
@@ -100,14 +92,14 @@ Fully compatible with the Grove ecosystem, and includes PTH headers and an SWD d
     <td colspan="1">Soldering pads reserved for SWD</td>
   </tr>
   <tr>
-    <td colspan="1" rowspan="3">Power</td>
-    <td colspan="1">Type-C: 5V — 1A</td>
+    <td colspan="1" rowspan="3">Power Input</td>
+    <td colspan="1">USB Type-C: 5V — 1A</td>
   </tr>
   <tr>
-    <td colspan="1">Solar energy interface: 5V — 1A</td>
+    <td colspan="1">Solar Panel: 5V — 1A</td>
   </tr>
   <tr>
-    <td colspan="1">Battery interface: 3.7V — 1A</td>
+    <td colspan="1">Lithium Battery: 3.7V — 1A</td>
   </tr>
   <tr>
     <td colspan="1" rowspan="3">OLED Screen</td>
