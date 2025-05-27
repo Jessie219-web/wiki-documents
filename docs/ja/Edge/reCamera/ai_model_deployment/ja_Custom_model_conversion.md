@@ -165,7 +165,6 @@ python downgrade_onnx.py model_v12.onnx model_v9.onnx --target_ir_version 9 --ta
 
 ### ワークスペースの準備
 
-
 `model_yolo11n` ディレクトリを `tpu-mlir` と同じ階層に作成します。画像ファイルは通常、モデルのトレーニングデータセットの一部であり、後続の量子化プロセス中にキャリブレーションに使用されます。以下のコマンドをターミナルで入力してください：
 
 ```bash
@@ -247,86 +246,86 @@ YOLO の `head` 内の演算子は、**INT8** 量子化後に非常に低い精�
 <table style={{ width: '80%', fontSize: '14px', borderCollapse: 'collapse', margin: '20px auto' }}>
   <thead>
     <tr>
-      <th style="border: 1px solid #000; padding: 8px;">パラメータ名</th>
-      <th style="border: 1px solid #000; padding: 8px;">必須か？</th>
-      <th style="border: 1px solid #000; padding: 8px;">説明</th>
+      <th style={{ border: '1px solid #000', padding: '8px' }}>パラメータ名</th>
+      <th style={{ border: '1px solid #000', padding: '8px' }}>必須か？</th>
+      <th style={{ border: '1px solid #000', padding: '8px' }}>説明</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">model_name</td>
-      <td style="border: 1px solid #000; padding: 8px;">はい</td>
-      <td style="border: 1px solid #000; padding: 8px;">モデル名を指定します。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>model_name</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>はい</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>モデル名を指定します。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">model_def</td>
-      <td style="border: 1px solid #000; padding: 8px;">はい</td>
-      <td style="border: 1px solid #000; padding: 8px;">モデル定義ファイルを指定します（例：'.onnx', '.tflite', '.prototxt'）。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>model_def</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>はい</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>モデル定義ファイルを指定します（例：'.onnx', '.tflite', '.prototxt'）。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">input_shapes</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">入力形状を指定します（例：[[1,3,640,640]]）。複数入力をサポートする2次元配列。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>input_shapes</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>入力形状を指定します（例：[[1,3,640,640]]）。複数入力をサポートする2次元配列。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">input_types</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">入力タイプを指定します（例：int32）。複数入力の場合はカンマで区切ります。デフォルトは float32。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>input_types</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>入力タイプを指定します（例：int32）。複数入力の場合はカンマで区切ります。デフォルトは float32。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">resize_dims</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">元画像をリサイズする寸法を指定します。指定しない場合、モデルの入力サイズにリサイズされます。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>resize_dims</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>元画像をリサイズする寸法を指定します。指定しない場合、モデルの入力サイズにリサイズされます。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">keep_aspect_ratio</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">リサイズ時にアスペクト比を保持するかどうか。デフォルトは false。true の場合、不足部分はゼロで埋められます。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>keep_aspect_ratio</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>リサイズ時にアスペクト比を保持するかどうか。デフォルトは false。true の場合、不足部分はゼロで埋められます。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">mean</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">画像の各チャンネルの平均値。デフォルトは 0,0,0,0。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>mean</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>画像の各チャンネルの平均値。デフォルトは 0,0,0,0。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">scale</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">画像の各チャンネルのスケール値。デフォルトは 1.0,1.0,1.0。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>scale</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>画像の各チャンネルのスケール値。デフォルトは 1.0,1.0,1.0。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">pixel_format</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">画像タイプ（例：'rgb', 'bgr', 'gray', 'rgbd'）。デフォルトは 'bgr'。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>pixel_format</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>画像タイプ（例：'rgb', 'bgr', 'gray', 'rgbd'）。デフォルトは 'bgr'。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">channel_format</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">画像入力のチャンネルタイプ（例：'nhwc', 'nchw'）。画像以外の入力の場合は 'none' を使用。デフォルトは 'nchw'。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>channel_format</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>画像入力のチャンネルタイプ（例：'nhwc', 'nchw'）。画像以外の入力の場合は 'none' を使用。デフォルトは 'nchw'。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">output_names</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">出力名を指定します。指定しない場合、モデルのデフォルト出力名が使用されます。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>output_names</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>出力名を指定します。指定しない場合、モデルのデフォルト出力名が使用されます。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">test_input</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">検証用の入力ファイルを指定します（例：画像、npy、npz ファイル）。指定しない場合、精度検証は行われません。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>test_input</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>検証用の入力ファイルを指定します（例：画像、npy、npz ファイル）。指定しない場合、精度検証は行われません。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">test_result</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">検証結果の出力ファイルを指定します。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>test_result</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>検証結果の出力ファイルを指定します。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">excepts</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">検証から除外するネットワーク層をカンマで区切って指定します。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>excepts</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>検証から除外するネットワーク層をカンマで区切って指定します。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">mlir</td>
-      <td style="border: 1px solid #000; padding: 8px;">はい</td>
-      <td style="border: 1px solid #000; padding: 8px;">出力 MLIR ファイルの名前とパスを指定します。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>mlir</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>はい</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>出力 MLIR ファイルの名前とパスを指定します。</td>
     </tr>
   </tbody>
 </table>
@@ -611,71 +610,71 @@ run_qtable \
 <table style={{ width: '80%', fontSize: '14px', borderCollapse: 'collapse', margin: '20px auto' }}>
   <thead>
     <tr>
-      <th style="border: 1px solid #000; padding: 8px;">パラメータ</th>
-      <th style="border: 1px solid #000; padding: 8px;">必須？</th>
-      <th style="border: 1px solid #000; padding: 8px;">説明</th>
+      <th style={{ border: '1px solid #000', padding: '8px' }}>パラメータ</th>
+      <th style={{ border: '1px solid #000', padding: '8px' }}>必須？</th>
+      <th style={{ border: '1px solid #000', padding: '8px' }}>説明</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">N/A</td>
-      <td style="border: 1px solid #000; padding: 8px;">はい</td>
-      <td style="border: 1px solid #000; padding: 8px;">MLIR ファイルを指定</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>N/A</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>はい</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>MLIR ファイルを指定</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">dataset</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">入力サンプルディレクトリを指定（画像、npz、または npy ファイルを含む）</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>dataset</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>入力サンプルディレクトリを指定（画像、npz、または npy ファイルを含む）</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">data_list</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">サンプルリストを指定；`dataset` または `data_list` のいずれかを選択する必要があります</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>data_list</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>サンプルリストを指定；`dataset` または `data_list` のいずれかを選択する必要があります</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">calibration_table</td>
-      <td style="border: 1px solid #000; padding: 8px;">はい</td>
-      <td style="border: 1px solid #000; padding: 8px;">キャリブレーションテーブルを入力</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>calibration_table</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>はい</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>キャリブレーションテーブルを入力</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">processor</td>
-      <td style="border: 1px solid #000; padding: 8px;">はい</td>
-      <td style="border: 1px solid #000; padding: 8px;">使用するプラットフォームに依存します。reCamera の 2024 バージョンでは "cv181x" をパラメータとして選択します。</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>processor</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>はい</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>使用するプラットフォームに依存します。reCamera の 2024 バージョンでは "cv181x" をパラメータとして選択します。</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">fp_type</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">混合精度の浮動小数点精度タイプを指定；auto、F16、F32、BF16 をサポート；デフォルトは auto</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>fp_type</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>混合精度の浮動小数点精度タイプを指定；auto、F16、F32、BF16 をサポート；デフォルトは auto</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">input_num</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">入力サンプル数を指定；デフォルトは 10</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>input_num</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>入力サンプル数を指定；デフォルトは 10</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">expected_cos</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">最終ネットワーク出力層の期待される最小コサイン類似度を指定；デフォルトは 0.99</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>expected_cos</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>最終ネットワーク出力層の期待される最小コサイン類似度を指定；デフォルトは 0.99</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">min_layer_cos</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">各層の出力の最小コサイン類似度を指定；この閾値を下回る場合は浮動小数点計算を使用；デフォルトは 0.99</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>min_layer_cos</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>各層の出力の最小コサイン類似度を指定；この閾値を下回る場合は浮動小数点計算を使用；デフォルトは 0.99</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">debug_cmd</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">開発用のデバッグコマンド文字列を指定；デフォルトは空</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>debug_cmd</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>開発用のデバッグコマンド文字列を指定；デフォルトは空</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">global_compare_layers</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">最終出力比較のために置き換える層を指定；例：'layer1,layer2' または 'layer1:0.3,layer2:0.7'</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>global_compare_layers</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>最終出力比較のために置き換える層を指定；例：'layer1,layer2' または 'layer1:0.3,layer2:0.7'</td>
     </tr>
     <tr>
-      <td style="border: 1px solid #000; padding: 8px;">loss_table</td>
-      <td style="border: 1px solid #000; padding: 8px;">いいえ</td>
-      <td style="border: 1px solid #000; padding: 8px;">浮動小数点型に量子化されたすべての層の損失値を保存するファイル名を指定；デフォルトは full_loss_table.txt</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>loss_table</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>いいえ</td>
+      <td style={{ border: '1px solid #000', padding: '8px' }}>浮動小数点型に量子化されたすべての層の損失値を保存するファイル名を指定；デフォルトは full_loss_table.txt</td>
     </tr>
   </tbody>
 </table>

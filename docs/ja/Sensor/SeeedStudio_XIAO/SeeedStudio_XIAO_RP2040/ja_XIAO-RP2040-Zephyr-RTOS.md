@@ -342,7 +342,7 @@ x_value: 1.4137159*2^1, y_value: 1.8977352*2^-3
 #### Grove - 拡張ボード - I2Cディスプレイ
 
 <!-- <div style={{textAlign:'center'}}><img src="https://github.com/Cosmic-Bee/xiao-zephyr-examples/blob/main/images/rp2040/xiao_expansion_oled.jpg?raw=true" style={{width:300, height:'auto'}}/></div> -->
-<div style="text-align:center;"><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_rp2040_zephyr/xiao_expansion_oled.jpg" style="width:300px; height:auto;" /></div>
+<div style="text-align:center;"><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_rp2040_zephyr/xiao_expansion_oled.jpg" style={{width:300, height:'auto'}}/></div>
 
 このセットアップをテストするために、Zephyrの既存のサンプルを使用します：
 

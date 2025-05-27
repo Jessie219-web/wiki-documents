@@ -133,8 +133,8 @@ git clone https://github.com/Cosmic-Bee/xiao-zephyr-examples
       <th>Seeed Studio 拡張ボード</th>
     </tr>
     <tr>
-      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/102010469_Front-14.jpg" style="width:300px; height:auto;"/></div></td>
-      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style="width:210px; height:auto;"/></div></td>
+      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/102010469_Front-14.jpg" style={{width:300, height:'auto'}}/></div></td>
+      <td><div align="center"><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:210, height:'auto'}}/></div></td>
     </tr>
     <tr>
         <td align="center"><div class="get_one_now_container" style="text-align: center;">
@@ -158,13 +158,13 @@ Seeed Studio XIAO nrf52840 で Grove モジュールを使用するには、[See
 
 その後、ボード上の Grove コネクタを使用して Grove モジュールを接続できます。
 
-<div style="text-align:center;"><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-full_function/29.png" style="width:700px; height:auto;"/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/C3-ESPHome-full_function/29.png"style={{width:700, height:'auto'}}/></div>
 
 #### ピン定義
 
 Grove Shield for Seeed Studio XIAO の Grove コネクタに Grove モジュールを接続する際には、以下の図を参照して適切な内部ピン番号を使用してください。
 
-<div style="text-align:center;"><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/pinout2.png" style="width:900px; height:auto;"/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE/pinout2.png"style={{width:900, height:'auto'}}/></div>
 
 ### 主な機能
 
