@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - ホールディングタイムの調整可能
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 仕様
@@ -61,7 +61,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -97,7 +97,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### ソフトウェア
 
-- 以下のコードをArduino IDEにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- 以下のコードをArduino IDEにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```c
 /*
@@ -154,7 +154,7 @@ void loop()
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)もご覧ください。
+    Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)もご覧ください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
@@ -192,7 +192,7 @@ void loop()
 
 #### ソフトウェア
 
-- **ステップ1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構築します。
+- **ステップ1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構築します。
 - **ステップ2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

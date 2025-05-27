@@ -38,10 +38,10 @@ Grove - IMU 10DOF は、Grove - IMU 9DOF と [Grove - Barometer Sensor (BMP180)]
 -   I2C アドレス: デフォルト 0x68、ハードウェア概要を参照して 0x69 に変更可能
 
 :::note
-    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/) を参照してください。
+    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/) を参照してください。
 :::
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 ## 対応プラットフォーム
 
@@ -106,7 +106,7 @@ Grove - IMU 10DOF は、Grove - IMU 9DOF と [Grove - Barometer Sensor (BMP180)]
 
 **ステップ 1.** [ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_IMU10DOF) を Github からダウンロードします。
 
-**ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
+**ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
 
 **ステップ 3.** 次のパスからコードを直接開きます：File -> Example -> IMU_10DOF_Test。
 

@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## デバイス設定
 
-Heliumに接続する前に、SenseCAP Mateアプリでデバイスの基本パラメータを設定する必要があります。詳細については、[Get Started](https://wiki.seeedstudio.com/Get_Started_with_SenseCAP_T1000_tracker)を参照してください。
+Heliumに接続する前に、SenseCAP Mateアプリでデバイスの基本パラメータを設定する必要があります。詳細については、[Get Started](https://wiki.seeedstudio.com/ja/Get_Started_with_SenseCAP_T1000_tracker)を参照してください。
 
 * プラットフォームを`Helium`に設定し、`Device EUI`、`APP EUI`、`APP Key`をコピーします。
 

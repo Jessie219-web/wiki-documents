@@ -47,7 +47,7 @@ Grove - Thumb Joystick は、PS2（PlayStation 2）コントローラーの「�
 | 出力アナログ値（Y座標）             | 203    | 507    | 797    | \    |
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 対応プラットフォーム
@@ -64,7 +64,7 @@ Grove モジュールの詳細については、[Grove System](https://wiki.seee
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -151,7 +151,7 @@ R=(float)(1023-sensorValue)\*10/sensorValue
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)もご覧ください。
+Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)もご覧ください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
@@ -191,7 +191,7 @@ Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用する
 **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3**でのみこのコマンドラインを使用してください。
 :::
 
-- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ 2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

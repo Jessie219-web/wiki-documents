@@ -59,11 +59,11 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 - I2Cアドレス 0x44
 
 :::note
-    複数のI2Cデバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/)を参照してください。
+    複数のI2Cデバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/)を参照してください。
 :::
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 仕様
@@ -131,7 +131,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 
 - **ステップ 1.** [ライブラリ](https://github.com/Seeed-Studio/Grove_SHT31_Temp_Humi_Sensor)をGithubからダウンロードします。
 
-- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。新しいスケッチを開き、以下のコードを新しいスケッチにコピーします。
 
@@ -163,7 +163,7 @@ void loop() {
 }
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDEの**シリアルモニタ**を開きます。**ツール -> シリアルモニタ**をクリックするか、++ctrl+shift+m++キーを同時に押します。ボーレートを**9600**に設定します。すべてが正常に動作していれば、結果が表示されます。
 
@@ -190,7 +190,7 @@ void loop() {
 
 #### ソフトウェア
 
-- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ 2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

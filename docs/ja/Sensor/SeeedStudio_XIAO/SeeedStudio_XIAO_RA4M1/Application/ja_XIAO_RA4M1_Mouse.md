@@ -57,7 +57,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### XIAO RA4M1 の内蔵 LED を点灯する
 
-もし XIAO RA4M1 を初めて使用する場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/getting_started_xiao_ra4m1/)。内蔵 LED を点灯させる方法を学び、開発環境が正常に動作していることを確認します。
+もし XIAO RA4M1 を初めて使用する場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/ja/getting_started_xiao_ra4m1/)。内蔵 LED を点灯させる方法を学び、開発環境が正常に動作していることを確認します。
 
 ### Grove ジョイスティックの X 軸と Y 軸データを読み取る
 

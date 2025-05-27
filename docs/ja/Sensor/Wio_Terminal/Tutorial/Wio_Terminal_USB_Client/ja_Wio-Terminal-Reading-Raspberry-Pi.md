@@ -139,7 +139,7 @@ if __name__ == '__main__':
 
 ### 必要な Arduino ライブラリ
 
-- LCD スクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) を参照してください。
+- LCD スクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) を参照してください。
 
 - [`Free_Fonts.h`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/Free_Fonts.h) ヘッダーファイルをダウンロードし、LCD ライブラリに含まれるフリーフォントの略語を使用できるようにします。このヘッダーファイルを Arduino スケッチと同じ場所に配置してください。
 

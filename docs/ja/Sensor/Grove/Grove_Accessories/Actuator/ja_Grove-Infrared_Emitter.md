@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Infrared_Emitter/
+image: https://wiki.seeedstudio.com/ja/Grove-Infrared_Emitter/
 slug: /ja/Grove-Infrared_Emitter
 last_update:
   date: 05/15/2025
@@ -17,7 +17,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Grove-Infrared_Emitter/img/main.jpg)
 
-赤外線エミッターは、赤外線LEDを通じて赤外線信号を送信するために使用されます。一方で、信号を受信するための**赤外線受信機**があります。赤外線LEDは他のLEDと同様で、その色は940nm付近に集中しています。このエミッターを使用してデータやコマンドを送信するだけでなく、リモコンをエミュレートしてArduinoを使用して家庭用電化製品を制御することもできます。赤外線エミッターは最大10メートルまで信号を確実に送信できますが、10メートルを超えると受信機が信号を受け取れない場合があります。通常、[赤外線受信機](https://wiki.seeedstudio.com/Grove-Infrared_Receiver)とGrove - 赤外線エミッターの2つのGroveモジュールを組み合わせて使用します。
+赤外線エミッターは、赤外線LEDを通じて赤外線信号を送信するために使用されます。一方で、信号を受信するための**赤外線受信機**があります。赤外線LEDは他のLEDと同様で、その色は940nm付近に集中しています。このエミッターを使用してデータやコマンドを送信するだけでなく、リモコンをエミュレートしてArduinoを使用して家庭用電化製品を制御することもできます。赤外線エミッターは最大10メートルまで信号を確実に送信できますが、10メートルを超えると受信機が信号を受け取れない場合があります。通常、[赤外線受信機](https://wiki.seeedstudio.com/ja/Grove-Infrared_Receiver)とGrove - 赤外線エミッターの2つのGroveモジュールを組み合わせて使用します。
 
 <p style={{}}><a href="https://www.seeedstudio.com/Grove-Infrared-Emitter-p-993.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now_small.png" width={210} height={41} border={0} /></a></p>
 
@@ -48,7 +48,7 @@ Grove - 赤外線エミッター v1.2 | C1の値を変更して電力をより�
 | サイズ                 | 20mmX20mm     |
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -68,7 +68,7 @@ Grove - 赤外線エミッターはデータを送信でき、Grove - 赤外線�
 ### Arduinoで遊ぶ
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 #### ハードウェア
@@ -112,7 +112,7 @@ Grove - 赤外線エミッターはデータを送信でき、Grove - 赤外線�
 
 - **ステップ 1.** [Seeed_Arduino_IR](https://github.com/Seeed-Studio/Seeed_Arduino_IR)をGithubからダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 以下の**送信例コード**をArduino IDEにコピーします：
 

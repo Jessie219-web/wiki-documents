@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-I2C_Hub/
+image: https://wiki.seeedstudio.com/ja/Grove-I2C_Hub/
 slug: /ja/Grove-I2C_Hub
 last_update:
   date: 05/15/2025
@@ -60,7 +60,7 @@ I2C Hub Groveは、複数のI2CデバイスをGrove Base Shieldに接続する�
 ここでは具体的な例を挙げていません。
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## オンライン回路図ビューア

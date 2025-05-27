@@ -53,7 +53,7 @@ Type-Cケーブルを使用してコンピュータに接続します。
 
 ### Wio Terminalでの機械学習
 
-ここでは、Wio Terminalを使用して機械学習モデルを訓練し、使用する方法を紹介します。このプロジェクトはArduinoプラットフォームに基づいており、Arduino IDEとさまざまなArduinoライブラリが必要です。初めてWio Terminalを使用する場合は、[Wio Terminalのクイックスタートガイド](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)を参照することをお勧めします。
+ここでは、Wio Terminalを使用して機械学習モデルを訓練し、使用する方法を紹介します。このプロジェクトはArduinoプラットフォームに基づいており、Arduino IDEとさまざまなArduinoライブラリが必要です。初めてWio Terminalを使用する場合は、[Wio Terminalのクイックスタートガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)を参照することをお勧めします。
 
 Arduinoライブラリをダウンロードしてインストールしてください：
 
@@ -77,7 +77,7 @@ Arduinoライブラリをダウンロードしてインストールしてくだ�
 
 - **ステップ3**. 接続準備のためにファームウェア[wio-terminal-ei-1.4.0.uf2](https://files.seeedstudio.com/wiki/Alots/wio-terminal-ei-1.4.0.uf2)をダウンロードします。
 
-[Wio Terminalのクイックスタートガイド](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)の指示に従ってください：
+[Wio Terminalのクイックスタートガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)の指示に従ってください：
 
 Wio Terminal（すでにPCに接続済み）の左下をダブルクリックすると、コンピュータにドライバ（以下のような`Arduino (F:)`）がポップアップ表示されます。その後、[wio-terminal-ei-1.4.0.uf2](https://files.seeedstudio.com/wiki/Alots/wio-terminal-ei-1.4.0.uf2)ファームウェアをドライバにドラッグします。ドライバが消えるのを確認したら、ファームウェアがプログラムされたことを意味します。これでウェブサイトにアクセスしてWio Terminalを接続できます。
 
@@ -177,7 +177,7 @@ Edge Impulseでデータを収集できます。
 ![](https://files.seeedstudio.com/wiki/Alots/connect1.jpg)
 
 :::note
-Edge Impulseについてもっと知りたい場合や、まだ不明な点がある場合は、[Wio Terminal Edge Impulse Getting Started](https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-1/) を参照してください。
+Edge Impulseについてもっと知りたい場合や、まだ不明な点がある場合は、[Wio Terminal Edge Impulse Getting Started](https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-1/) を参照してください。
 :::
 
 ### LoRaを使用してTheThingsNetworkにデータを表示する

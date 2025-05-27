@@ -17,7 +17,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ![](https://files.seeedstudio.com/wiki/Arch_GPRS_V2/img/Arch_GPRS_V2.jpg)
 
 **Arch GPRS V2**は、[Seeed Studio](https://www.seeedstudio.com)によるArch GPRS開発ボードの新しく改良されたバージョンです。元のArch GPRSと同様に、[mbed](http://mbed.org/handbook/mbed-SDK)対応の開発ボードであり、セルラー通信モジュールとマイクロコントローラーを搭載しています。Arch GPRS V2は、Arch GPRSで使用されていたLPC11U24の代わりにLPC11U37マイクロコントローラーを使用しています。mbed C/C++ SDK、ライブラリ、オンライン開発ツールを活用して、Arch GPRS V2をベースにしたプロトタイプを迅速に構築できます。Arch GPRSのセルラー通信モジュールは、SIMComのSIM900クアッドバンドGSM/GPRSエンジンに基づいています。これにより、2G GSM/GPRSベースのセルラー通信ネットワークを使用してデータ収集機能を簡単に実行できます。
-Arch GPRS V2は標準的なArduinoインターフェースと[Grove](https://wiki.seeedstudio.com/Grove_System/ "Grove")コネクタを搭載しています。既存のシールドや[Grove](https://wiki.seeedstudio.com/Grove_System/ "Grove")製品をArch GPRS V2に簡単に接続できます。さらに、ソーラーパネルを直接ボードに接続してバッテリーを充電することも可能です。低消費電力設計により、屋外での簡単な充電と長時間の動作が保証されます。
+Arch GPRS V2は標準的なArduinoインターフェースと[Grove](https://wiki.seeedstudio.com/ja/Grove_System/ "Grove")コネクタを搭載しています。既存のシールドや[Grove](https://wiki.seeedstudio.com/ja/Grove_System/ "Grove")製品をArch GPRS V2に簡単に接続できます。さらに、ソーラーパネルを直接ボードに接続してバッテリーを充電することも可能です。低消費電力設計により、屋外での簡単な充電と長時間の動作が保証されます。
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/Arch-GPRS-V2-p-2026.html)
 

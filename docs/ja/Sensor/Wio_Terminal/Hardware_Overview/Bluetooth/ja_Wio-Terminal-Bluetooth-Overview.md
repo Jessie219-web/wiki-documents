@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## ワイヤレスコアファームウェアの更新
 
-Wio Terminal のワイヤレスコアファームウェアを更新するには、[こちらのガイド](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/#update-the-wireless-core-firmware)に従ってください。
+Wio Terminal のワイヤレスコアファームウェアを更新するには、[こちらのガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/#update-the-wireless-core-firmware)に従ってください。
 
 :::note
 このファームウェアにより、Wi-Fi と Bluetooth を同時に使用することができます！

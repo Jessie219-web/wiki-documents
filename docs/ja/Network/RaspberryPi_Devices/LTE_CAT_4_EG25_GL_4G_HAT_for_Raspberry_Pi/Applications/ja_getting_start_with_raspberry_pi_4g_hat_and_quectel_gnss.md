@@ -62,7 +62,7 @@ GNSSアンテナを接続する必要があります。さらに、Python APIを
 </div>
 
 :::note
-ATコマンドと通信するための必要なドライバーがインストールされていない場合は、[インストールしてください](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#software-preparation)
+ATコマンドと通信するための必要なドライバーがインストールされていない場合は、[インストールしてください](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#software-preparation)
 :::
 
 ## セットアップ

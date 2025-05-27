@@ -338,11 +338,11 @@ XIAO ESP32 シリーズボードにコードをアップロードするには、
 
 2. Arduino IDE を開き、XIAO ESP32 シリーズ用の必要なボードサポートパッケージがインストールされていることを確認します。
 
-   - **Seeed Studio XIAO ESP32C3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して追加を完了してください。
+   - **Seeed Studio XIAO ESP32C3** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して追加を完了してください。
 
    - **Seeed Studio XIAO ESP32S3** を使用する場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 
-   - **Seeed Studio XIAO ESP32C6** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)** を参照して追加を完了してください。
+   - **Seeed Studio XIAO ESP32C6** を使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32c6_getting_started/)** を参照して追加を完了してください。
 
 3. Arduino IDE のツールメニューから適切なボードとポートを選択します。
 
@@ -753,19 +753,19 @@ sudo python watcher_uart.py
 
 ## リソース
 
-- [SenseCAP Watcherの使い方](https://wiki.seeedstudio.com/getting_started_with_watcher/)
+- [SenseCAP Watcherの使い方](https://wiki.seeedstudio.com/ja/getting_started_with_watcher/)
 
-- [Watcherクイックスタートシリーズ1#: Watcherにタスクを割り当てる方法](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)
+- [Watcherクイックスタートシリーズ1#: Watcherにタスクを割り当てる方法](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)
 
-- [Watcherクイックスタートシリーズ2#: Watcherの外観とSenseCraftツール](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool)
+- [Watcherクイックスタートシリーズ2#: Watcherの外観とSenseCraftツール](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_look_tool)
 
-- [Watcherクイックスタートシリーズ3#: センサーとしての使用 & Groveの利用](https://wiki.seeedstudio.com/watcher_as_grove)
+- [Watcherクイックスタートシリーズ3#: センサーとしての使用 & Groveの利用](https://wiki.seeedstudio.com/ja/watcher_as_grove)
 
-- [Watcherクイックスタートシリーズ4#: WatcherのAI機能をローカルで展開する](https://wiki.seeedstudio.com/watcher_local_deploy)
+- [Watcherクイックスタートシリーズ4#: WatcherのAI機能をローカルで展開する](https://wiki.seeedstudio.com/ja/watcher_local_deploy)
 
 - Watcherクイックスタートシリーズ5#: Watcher用のモデルをトレーニングする
 
-- [Watcherクイックスタートシリーズ6#: Watcherの機能](https://wiki.seeedstudio.com/what_does_watcher_do)
+- [Watcherクイックスタートシリーズ6#: Watcherの機能](https://wiki.seeedstudio.com/ja/what_does_watcher_do)
 
 
 ## 技術サポート & 製品ディスカッション

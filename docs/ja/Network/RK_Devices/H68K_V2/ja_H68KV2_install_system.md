@@ -38,7 +38,7 @@ LinkStar-H68K-V2 ルーターは、クアッドコア Cortex-A55 RK3568 チッ�
 
 ## LinkStar-V2 に必要なシステムを選択する
 
-強力な LinkStar-V2 は、OpenWRT、Armbian などの幅広いオペレーティングシステムをサポートしています。このセクションでは、各システムのインストール方法を紹介します。また、旧バージョンの LinkStar H68K のすべての [ファームウェア](https://wiki.seeedstudio.com/linkstar-install-system/#flash-android--ubuntu-to-emmc) と互換性があります。
+強力な LinkStar-V2 は、OpenWRT、Armbian などの幅広いオペレーティングシステムをサポートしています。このセクションでは、各システムのインストール方法を紹介します。また、旧バージョンの LinkStar H68K のすべての [ファームウェア](https://wiki.seeedstudio.com/ja/linkstar-install-system/#flash-android--ubuntu-to-emmc) と互換性があります。
 
 ### 注意事項と手順
 

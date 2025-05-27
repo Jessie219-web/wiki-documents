@@ -22,9 +22,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 Wio terminalは、クラシックBluetoothとBluetooth Low Energy（BLE）の両方をサポートする強力なIoTデバイスです。クラシックBluetoothはBluetoothオーディオモジュール、ファイル、または大容量コードストリームデータの送信に使用され、BLEはバッテリー最適化されたアプリケーション、例えばBluetoothビーコン、フィットネスバンド、近接広告などに使用されます。そのため、ユーザーの要求に応じて特定の機能モジュールと接続し、特定の場面でビーコンとして使用することが可能です。
 
-以前のWio terminalチュートリアルでは、クライアントモードとサーバーモードを紹介しました。もし疑問がある場合は、[**クライアントとサーバーの紹介**](https://wiki.seeedstudio.com/Wio-terminal-BLE-introduction/)をご覧ください。
+以前のWio terminalチュートリアルでは、クライアントモードとサーバーモードを紹介しました。もし疑問がある場合は、[**クライアントとサーバーの紹介**](https://wiki.seeedstudio.com/ja/Wio-terminal-BLE-introduction/)をご覧ください。
 
-このチュートリアルでは、Wio terminalを使用してBLE iBeaconを構築します。さらに、スマートフォンを使用してiBeacon情報を表示します。Arduino IDEを使用してWio terminalを操作する方法を既に知っていることを前提としています。もし知らない場合は、[**Wio terminalの始め方**](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)に戻ってください。
+このチュートリアルでは、Wio terminalを使用してBLE iBeaconを構築します。さらに、スマートフォンを使用してiBeacon情報を表示します。Arduino IDEを使用してWio terminalを操作する方法を既に知っていることを前提としています。もし知らない場合は、[**Wio terminalの始め方**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)に戻ってください。
 
 ## 必要なハードウェア
 
@@ -42,7 +42,7 @@ Wio terminalは、クラシックBluetoothとBluetooth Low Energy（BLE）の両
 - スマートフォンに[**nRF Connect APP**](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en_US)をダウンロード
 
 :::note
-nRF Connect APPの使用方法に不慣れな場合は、[**このチュートリアル**](https://wiki.seeedstudio.com/Wio-terminal-BLE-introduction/#nrf-connect-app-usage)をご覧ください。
+nRF Connect APPの使用方法に不慣れな場合は、[**このチュートリアル**](https://wiki.seeedstudio.com/ja/Wio-terminal-BLE-introduction/#nrf-connect-app-usage)をご覧ください。
 :::
 
 ## 手順

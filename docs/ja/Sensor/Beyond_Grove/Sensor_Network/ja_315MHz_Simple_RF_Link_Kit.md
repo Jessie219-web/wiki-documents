@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/315MHz_Simple_RF_Link_Kit/
+image: https://wiki.seeedstudio.com/ja/315MHz_Simple_RF_Link_Kit/
 slug: /ja/315MHz_Simple_RF_Link_Kit
 last_update:
   date: 05/15/2025

@@ -243,7 +243,7 @@ SDカードスロットに簡単にアクセスできる場合は、Piをオフ�
 
 ### 第一段階: SDカードでEEPROMを更新する
 
-こちらの[リンク](https://wiki.seeedstudio.com/r2000_series_getting_start/#update-eeprom)を参照してください。
+こちらの[リンク](https://wiki.seeedstudio.com/ja/r2000_series_getting_start/#update-eeprom)を参照してください。
 
 NVMeのブート順序を最優先に設定するには、以下のコマンドを使用します:
 

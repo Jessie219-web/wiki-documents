@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wireless-Fall-Detection-Device/
+image: https://wiki.seeedstudio.com/ja/Wireless-Fall-Detection-Device/
 slug: /ja/Wireless-Fall-Detection-Device
 last_update:
   date: 05/15/2025
@@ -38,7 +38,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ![image.png](https://files.seeedstudio.com/wiki/Wio_RP2040_mini_Dev_Board-Onboard_Wifi/Wireless-Fall-Detection-Device/wiring.jpg)
 ​
 
-## [ソフトウェア](https://wiki.seeedstudio.com/Wio_RP2040_mini_Dev_Board-Onboard_Wifi/#software)
+## [ソフトウェア](https://wiki.seeedstudio.com/ja/Wio_RP2040_mini_Dev_Board-Onboard_Wifi/#software)
 ### 1. Thonnyのインストール
 簡単に始められます。ThonnyにはPython 3.7が組み込まれているため、シンプルなインストーラーを1つダウンロードするだけでプログラミングを学ぶ準備が整います。まず、[Thonny.org](https://thonny.org/) をクリックしてダウンロードページにアクセスします。ページの右上隅で、使用しているオペレーティングシステムに応じたThonnyインストールパッケージを選択してダウンロードします。ダウンロードしたインストールパッケージをダブルクリックして開き、手順に従ってインストールします。
 

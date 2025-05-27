@@ -33,7 +33,7 @@ DeepSeek は、効率性、精度、リアルタイム処理に最適化され�
 ## 前提条件
 
 - 8GB 以上のメモリを搭載した Jetson デバイス。
-- Jetson デバイスには、Jetpack [5.1.1](https://wiki.seeedstudio.com/reComputer_Intro/) オペレーティングシステムまたはそれ以降のバージョンが事前にフラッシュされている必要があります。
+- Jetson デバイスには、Jetpack [5.1.1](https://wiki.seeedstudio.com/ja/reComputer_Intro/) オペレーティングシステムまたはそれ以降のバージョンが事前にフラッシュされている必要があります。
 
 :::note
 このウィキでは、[reComputer J4012 - Edge AI Computer with NVIDIA® Jetson™ Orin™ NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6InJlQ29tcHV0ZXIgSjQwMTIiLCJjX3NlYXJjaF9yZXN1bHRfcG9zIjo0LCJjX3RvdGFsX3Jlc3VsdHMiOjUyLCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0gJiYgcXVhbnRpdHlfYW5kX3N0b2NrX3N0YXR1czpbMV0ifQ%3D%3D) を使用してタスクを実行しますが、他の Jetson デバイスを使用することも可能です。
@@ -106,7 +106,7 @@ ollama run deepseek-r1
 ## 参考資料
 - https://www.deepseek.com/
 - https://ollama.com/library/deepseek-r1
-- https://wiki.seeedstudio.com/local_ai_ssistant/
+- https://wiki.seeedstudio.com/ja/local_ai_ssistant/
 - https://www.seeedstudio.com/tag/nvidia.html
 
 ## 技術サポートと製品ディスカッション

@@ -158,7 +158,7 @@ Grove Base Shieldがない場合は、以下のようにこのモジュールを
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を確認することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を確認することを強くお勧めします。
 :::
 
 - **ステップ 1.** Arduino IDEを開き、新しいファイルを作成し、以下のコードを新しいファイルにコピーします。
@@ -195,7 +195,7 @@ void loop(){
 
 ```
 
-- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 3.** Arduino IDEの**シリアルモニター**を開きます。**ツール->シリアルモニター**をクリックするか、++ctrl+shift+m++キーを同時に押します。すべてが正常に動作している場合、A0の出力が表示されます。また、Round Force Sensorを強く押すとLEDが明るくなるのが確認できます。
 

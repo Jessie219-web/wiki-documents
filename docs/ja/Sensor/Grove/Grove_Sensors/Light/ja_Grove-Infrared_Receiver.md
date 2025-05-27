@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Infrared_Receiver/img/Grove-Infrared_Receiver.jpg" /></div>
 
-赤外線受信モジュールは赤外線信号を受信し、リモコンの検出にも使用されます。このモジュールには赤外線検出器が搭載されており、赤外線送信モジュールから発せられる赤外線光を受信します。赤外線検出器には38kHzで変調された赤外線を検出するためのデモジュレーターが内蔵されています。赤外線受信モジュールは10メートル以内で信号を良好に受信できますが、10メートルを超えると信号を受信できない場合があります。通常、[Grove - 赤外線送信モジュール](https://wiki.seeedstudio.com/Grove-Infrared_Emitter)と赤外線受信モジュールを組み合わせて使用します。
+赤外線受信モジュールは赤外線信号を受信し、リモコンの検出にも使用されます。このモジュールには赤外線検出器が搭載されており、赤外線送信モジュールから発せられる赤外線光を受信します。赤外線検出器には38kHzで変調された赤外線を検出するためのデモジュレーターが内蔵されています。赤外線受信モジュールは10メートル以内で信号を良好に受信できますが、10メートルを超えると信号を受信できない場合があります。通常、[Grove - 赤外線送信モジュール](https://wiki.seeedstudio.com/ja/Grove-Infrared_Emitter)と赤外線受信モジュールを組み合わせて使用します。
 
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/Grove-Infrared-Receiver-p-994.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" /></a></p>
 
@@ -33,7 +33,7 @@ Grove - 赤外線受信モジュール v1.1 | シルクスクリーンの変更 
 - 距離: 10m
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -53,7 +53,7 @@ Grove - 赤外線エミッターはデータを送信でき、Grove - 赤外線�
 ### Arduinoで遊ぶ
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 #### ハードウェア
@@ -97,7 +97,7 @@ Groveベースシールドがない場合は、以下のようにこのモジュ
 
 - **ステップ 1.** [Seeed_Arduino_IR](https://github.com/Seeed-Studio/Seeed_Arduino_IR)をGithubからダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 以下の**送信例コード**をArduino IDEにコピーします：
 

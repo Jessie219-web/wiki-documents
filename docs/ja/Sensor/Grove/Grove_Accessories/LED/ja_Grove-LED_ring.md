@@ -131,11 +131,11 @@ WS2813-Miniは、制御回路とRGBチップが3535コンポーネントのパ�
 #### ソフトウェア
 
 :::note
-		Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+		Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 - **ステップ 1.** [Grove-RGB_LED_Ring-20-WS2813Mini](https://github.com/Seeed-Studio/Seeed_LED_Ring.git)ライブラリをGithubからダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。例を開きます。以下の3つの方法で開くことができます：
     1. Arduino IDEで直接開きます。パスは次の通りです：**File --> Examples --> Adafruit NeoPixel --> buttoncycler**。

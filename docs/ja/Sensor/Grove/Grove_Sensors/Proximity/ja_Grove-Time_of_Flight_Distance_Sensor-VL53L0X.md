@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/
+image: https://wiki.seeedstudio.com/ja/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/
 slug: /ja/Grove-Time_of_Flight_Distance_Sensor-VL53L0X
 last_update:
   date: 05/15/2025
@@ -84,7 +84,7 @@ IICアドレス|0x29
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -145,7 +145,7 @@ IICアドレス|0x29
   このデモでは`high_accuracy_ranging.ino`を使用します。
 :::
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDEの**シリアルモニター**を開くには、**ツール->シリアルモニター**をクリックします。または++ctrl+shift+m++キーを同時に押します。すべてが正常に動作していれば、結果が表示されます。
 

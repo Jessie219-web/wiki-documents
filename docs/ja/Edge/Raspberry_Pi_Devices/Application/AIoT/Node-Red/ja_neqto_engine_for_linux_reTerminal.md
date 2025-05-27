@@ -54,7 +54,7 @@ NEQTOがインストールされたデバイスは、APIまたはすぐに使用
 
 ## 始め方
 ### ハードウェア接続
-reTerminalの始め方 (https://wiki.seeedstudio.com/reTerminal/) を参照してください。
+reTerminalの始め方 (https://wiki.seeedstudio.com/ja/reTerminal/) を参照してください。
 
 ### NEQTOアカウントの登録:
 - ステップ1. このページ (https://console.neqto.com/register) にアクセスしてNEQTOアカウントを登録します。

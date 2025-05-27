@@ -71,7 +71,7 @@ SenseCAPセンサーをSenseCAPプラットフォームに接続することで�
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/introduction/AIGC.PNG" alt="pir" width={300} height="auto" /></p>
 
 
-詳細については[こちら](https://wiki.seeedstudio.com/How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP/)をクリックしてください。
+詳細については[こちら](https://wiki.seeedstudio.com/ja/How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP/)をクリックしてください。
 
 ## MALL
 

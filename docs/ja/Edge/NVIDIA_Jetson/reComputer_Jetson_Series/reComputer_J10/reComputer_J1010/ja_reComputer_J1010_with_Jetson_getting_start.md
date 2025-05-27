@@ -28,12 +28,12 @@ reComputer J1010は、NVIDIA Jetson Nano 4GBプロダクションモジュール
 
 Jetsonモジュールに加えて、reComputer J1010には、オンボードmicroSDカードスロット、1*USB 3.0、2*USB2.0、HDMI、WiFi、LTE、Bluetooth用のM.2 Key E、RTC、Raspberry Pi GPIO 40ピンなどを備えた[J101キャリアボード](https://www.seeedstudio.com/reComputer-J101-v2-Carrier-Board-for-Jetson-Nano-p-5396.html)、ヒートシンク、アルミケースが含まれています。デバイスにはJetpack 4.6.1がプリインストールされており、USB C 5V/3A電源、キーボード、マウス、イーサネットケーブルを接続するだけで、組み込みAIの旅を始める準備が整います！より多くのUSB 3.0ポートやSSD接続用のオンボードM.2 Key Mが必要な場合は、reComputer J1020を選択できます。
 
-注意：16GB eMMCではストレージが不足するというお客様からの問い合わせを受け、2022年7月30日以降の注文分には、[キャリアボード](https://www.seeedstudio.com/reComputer-J101-v2-Carrier-Board-for-Jetson-Nano-p-5396.html)にmicroSDカードスロットを追加しました。microSDカードへのブートイメージの書き込みやI/O速度の調整については、[ガイド](https://wiki.seeedstudio.com/J1010_Boot_From_SD_Card/#flashing-system-from-j101-to-sd-card)をご確認ください。
+注意：16GB eMMCではストレージが不足するというお客様からの問い合わせを受け、2022年7月30日以降の注文分には、[キャリアボード](https://www.seeedstudio.com/reComputer-J101-v2-Carrier-Board-for-Jetson-Nano-p-5396.html)にmicroSDカードスロットを追加しました。microSDカードへのブートイメージの書き込みやI/O速度の調整については、[ガイド](https://wiki.seeedstudio.com/ja/J1010_Boot_From_SD_Card/#flashing-system-from-j101-to-sd-card)をご確認ください。
 
 ## 特徴
 
 - **手のひらサイズのエッジAIフルシステム：** 0.5 TFLOPs（FP16）の最新AI性能を提供し、組み込み開発向けの豊富なインターフェースを搭載。
-- **開発と展開に対応：** NVIDIA JetPackがプリインストールされており、[Jetsonソフトウェアスタック](https://developer.nvidia.com/embedded/develop/software)全体と業界をリードする[AI開発ツール](https://wiki.seeedstudio.com/Jetson-AI-developer-tools/)をサポート。物流、小売、サービス、農業、スマートシティ、ヘルスケア、ライフサイエンスなどの堅牢なAIアプリケーション構築に最適。
+- **開発と展開に対応：** NVIDIA JetPackがプリインストールされており、[Jetsonソフトウェアスタック](https://developer.nvidia.com/embedded/develop/software)全体と業界をリードする[AI開発ツール](https://wiki.seeedstudio.com/ja/Jetson-AI-developer-tools/)をサポート。物流、小売、サービス、農業、スマートシティ、ヘルスケア、ライフサイエンスなどの堅牢なAIアプリケーション構築に最適。
 - **省電力：** Type C 5V/3Aで駆動し、消費電力はわずか5ワット。
 - **拡張性：** オンボードインターフェースとreComputerケースを使用して、背面の取り付け穴で壁に取り付け可能。
 

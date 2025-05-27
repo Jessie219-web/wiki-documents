@@ -71,7 +71,7 @@ Grove ホルムアルデヒドセンサーは、0～1000 ppb の範囲でホル�
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -107,9 +107,9 @@ Groveベースシールドがない場合でも、以下のようにGrove-ホル
 
 #### **ソフトウェア**
 
-- **ステップ1.** Groveホルムアルデヒドセンサーの使用のために[Grove-Formaldehyde Sensor Library](https://github.com/Sensirion/arduino-i2c-sfa3x)をダウンロードし、[インストール](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)してください。
+- **ステップ1.** Groveホルムアルデヒドセンサーの使用のために[Grove-Formaldehyde Sensor Library](https://github.com/Sensirion/arduino-i2c-sfa3x)をダウンロードし、[インストール](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)してください。
 
-- **ステップ2.** Arduino IDEを開きます。以下のコードをArduino IDEにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)に関するガイドをご覧ください。
+- **ステップ2.** Arduino IDEを開きます。以下のコードをArduino IDEにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)に関するガイドをご覧ください。
 
 :::tip
 ライブラリマネージャで**Sensirion I2C SFA3X**を検索してライブラリを直接ダウンロードすることもできます。

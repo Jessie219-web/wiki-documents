@@ -30,7 +30,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## 必要なハードウェア
 
 * ReSpeaker Lite Voice Assistant Kit
-* [Home Assistantデバイス](https://wiki.seeedstudio.com/home_assistant_topic/)
+* [Home Assistantデバイス](https://wiki.seeedstudio.com/ja/home_assistant_topic/)
 * [Sonoff BASICR2](https://sonoff.tech/product/diy-smart-switches/basicr2/)
 
 ## XMOSファームウェアの更新

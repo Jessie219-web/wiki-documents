@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-I2C_Motor_Driver_V1.3/
+image: https://wiki.seeedstudio.com/ja/Grove-I2C_Motor_Driver_V1.3/
 slug: /ja/Grove-I2C_Motor_Driver_V1.3
 last_update:
   date: 05/15/2025
@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 Grove - I2C モータードライバ V1.3（最新バージョン）は、ステッピングモーターまたは DC モーターを直接制御できます。その中心には、デュアルチャネル H ブリッジドライバチップ（L298N）があり、各チャネルで最大 2A の電流を処理できます。これは Atmel ATmega8L によって制御され、Arduino などのプラットフォームとの I2C 通信を処理します。両方のモーターを同時に異なる速度と方向で駆動することができます。2 つのブラシ付き DC モーターまたは 1 つの 4 線式 2 相ステッピングモーターを駆動できます。モーターを駆動するには 6V から 15V の電源が必要で、オンボードの 5V 電圧レギュレータが I2C バスと Arduino に電力を供給できます（ジャンパーで選択可能）。すべてのドライバラインは、逆起電力からダイオードで保護されています。
 
-[Grove - I2C モータードライバ V1.2](https://wiki.seeedstudio.com/Grove-I2C_Motor_Driver_V1.2/) と比較して、V1.3 はステッピングモーターの制御をより簡単にします。ステッピングモーターを常に制御する必要はなくなり、I2C モータードライバ V1.3 にコマンドを送信するだけで、ステッピングモーターがそのコマンドに従って動作します。これにより、Arduino のリソースを節約し、コードを簡素化できます。
+[Grove - I2C モータードライバ V1.2](https://wiki.seeedstudio.com/ja/Grove-I2C_Motor_Driver_V1.2/) と比較して、V1.3 はステッピングモーターの制御をより簡単にします。ステッピングモーターを常に制御する必要はなくなり、I2C モータードライバ V1.3 にコマンドを送信するだけで、ステッピングモーターがそのコマンドに従って動作します。これにより、Arduino のリソースを節約し、コードを簡素化できます。
 
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/Grove-I2C-Motor-Driver-p-907.html)
 
@@ -39,7 +39,7 @@ Grove - I2C モータードライバ V1.3（最新バージョン）は、ステ
 - ハードウェアによるスレーブアドレスの変更可能
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 仕様
@@ -126,7 +126,7 @@ I2C
 </table>
 
 :::note
-    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/) を参照してください。
+    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/) を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -169,7 +169,7 @@ I2C
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -213,8 +213,8 @@ I2Cモータードライバは、L298チップをベースにしたモーター�
 #### ソフトウェア
 
 - **ステップ1.** [Grove_I2C_Motor_Driver_v1_3ライブラリ](https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3/archive/master.zip)をGithubからダウンロードします。
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
-- **ステップ3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 ```c
 // デフォルトのI2Cアドレスは0x0f
@@ -283,7 +283,7 @@ void StepperRun(int _step);
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[Codecraftを使用したArduinoのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[Codecraftを使用したArduinoのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。

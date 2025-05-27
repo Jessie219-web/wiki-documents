@@ -179,7 +179,7 @@ void loop() {
 
 ### ChirpStack の設定
 
-ChirpStackは、LoRaWANネットワークを構築および管理するために設計されたオープンソースのIoT（モノのインターネット）ソリューションです。ゲートウェイ、ネットワークサーバー、アプリケーションサーバー、デバイスを含むLoRaWANネットワークの展開、管理、監視を支援するための包括的なツールとサービスを提供します。ChirpStackへの接続方法については、こちらの[リンク](https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack/#chirpstack-configuration)をご参照ください。
+ChirpStackは、LoRaWANネットワークを構築および管理するために設計されたオープンソースのIoT（モノのインターネット）ソリューションです。ゲートウェイ、ネットワークサーバー、アプリケーションサーバー、デバイスを含むLoRaWANネットワークの展開、管理、監視を支援するための包括的なツールとサービスを提供します。ChirpStackへの接続方法については、こちらの[リンク](https://wiki.seeedstudio.com/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack/#chirpstack-configuration)をご参照ください。
 
 ChirpStackで新しいデバイスプロファイルを作成した後、以下のコードをペイロードコーデックに入力してください：
 
@@ -276,7 +276,7 @@ function bytes2HexString(arrBytes) {
 
 ChirpStackとHome Assistantの両方には、組み込みのMQTTプラグイン統合機能があります。これにより、MQTTプロトコルを介してデータを通信し、ゲートウェイ（MQTTプラグインを搭載）からHome Assistantへのセンサーデータの送信を容易にします。
 
-また、Wio-E5とXIAO-ESP32-S3をHome Assistantに統合することも可能です。詳細については、こちらの[チュートリアル](https://wiki.seeedstudio.com/home_assistant_sensecap/)をご参照ください。
+また、Wio-E5とXIAO-ESP32-S3をHome Assistantに統合することも可能です。詳細については、こちらの[チュートリアル](https://wiki.seeedstudio.com/ja/home_assistant_sensecap/)をご参照ください。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/RS485_500cm%20ultrasonic_sensor/image%2016.png"/></div>
 

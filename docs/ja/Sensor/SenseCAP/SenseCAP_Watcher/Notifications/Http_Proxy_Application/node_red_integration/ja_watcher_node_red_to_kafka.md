@@ -133,7 +133,7 @@ kafka-console-consumer.sh --bootstrap-server kafka:9092 --from-beginning --topic
 
 ### ステップ 4. Kafkaメッセージモジュールをインストールする
 
-1. **Manage palette**（パレットの管理）をクリックします。まだNode-REDをインストールしていない場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/watcher_to_node_red/)。
+1. **Manage palette**（パレットの管理）をクリックします。まだNode-REDをインストールしていない場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/ja/watcher_to_node_red/)。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_to_kafka_image/3.png" style={{width:600, height:'auto'}}/></div>
 
@@ -171,13 +171,13 @@ kafka-console-consumer.sh --bootstrap-server kafka:9092 --from-beginning --topic
 
 ## Part 4. Watcherでタスクを実行する
 
-1. まず最初に、以下のビデオに従ってWatcherでタスクを実行する必要があります。詳細を知りたい場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)。
+1. まず最初に、以下のビデオに従ってWatcherでタスクを実行する必要があります。詳細を知りたい場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)。
 
 <div class="table-center">
 <iframe width="600" height="338" src="https://files.seeedstudio.com/wiki/watcher_to_open_interpreter_image/run_task.mp4?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
-2. Watcherでタスクを実行した後、[このリンク](https://wiki.seeedstudio.com/watcher_to_node_red/)を参照して、WatcherメッセージをNode-REDに送信してください。
+2. Watcherでタスクを実行した後、[このリンク](https://wiki.seeedstudio.com/ja/watcher_to_node_red/)を参照して、WatcherメッセージをNode-REDに送信してください。
 
 ## Part 5. Kafkaでデータを受信する
 

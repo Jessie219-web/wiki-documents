@@ -32,7 +32,7 @@ Grove - 16 x 2 LCD は、Arduino および Raspberry Pi 用の高コントラス
 
 
 :::note 
-         [Grove - LCD RGB バックライト](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/) は発売以来好評を博しています。お客様のフィードバックに基づき、今回はよりコストパフォーマンスの高い単色バックライト派生製品をお届けします。
+         [Grove - LCD RGB バックライト](https://wiki.seeedstudio.com/ja/Grove-LCD_RGB_Backlight/) は発売以来好評を博しています。お客様のフィードバックに基づき、今回はよりコストパフォーマンスの高い単色バックライト派生製品をお届けします。
 ::: 
 RGB バックライトを除けば、これらの 3 製品は Grove - LCD RGB バックライトとほぼ同一で、いずれも 16 文字幅、2 行、高輝度バックライトを備えています。
 
@@ -129,16 +129,16 @@ Grove - 16 x 2 LCDシリーズの初期バージョンには内蔵プルアッ�
 #### ソフトウェア
 
 :::tip
-   Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+   Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 - **ステップ1.** Githubから[Grove-LCD RGB Backlight](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip)ライブラリをダウンロードします。
 
 :::tip
-        Grove - 16 x 2 LCDは[Grove-LCD RGB Backlight](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/)と同じライブラリを共有しています。使用方法はほぼ同じですが、Grove - 16 x 2 LCDは**setRGB()**のようなRGBカラーAPIをサポートしていません。
+        Grove - 16 x 2 LCDは[Grove-LCD RGB Backlight](https://wiki.seeedstudio.com/ja/Grove-LCD_RGB_Backlight/)と同じライブラリを共有しています。使用方法はほぼ同じですが、Grove - 16 x 2 LCDは**setRGB()**のようなRGBカラーAPIをサポートしていません。
 :::
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。以下の3つの方法のいずれかでサンプルを開きます：
 
@@ -198,7 +198,7 @@ void loop()
         * **Grove - 16 x 2 LCD**シリーズはすべてモノクロバックライトを使用しているため、RGBカラーに関連するコードをコメントアウトする必要があります。上記のデモコードでは、例えば6行目と17行目をコメントアウトしてください。
 :::
 
-- **ステップ 4.** デモコードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモコードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::success
         すべてが正常に動作すれば、LCDにクラシックな文章「**hello world**」が表示されます。
@@ -256,7 +256,7 @@ void loop()
 
 #### ソフトウェア
 
-- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成し、grove.pyをRaspberry Piにインストールします。
+- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成し、grove.pyをRaspberry Piにインストールします。
 - **ステップ 2.** 以下のコマンドを実行してコードを動作させます。
 
 ```
@@ -455,9 +455,9 @@ ABCDEFGHIJKLMNOP
 
 #### ソフトウェア
 
-- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ArduPy/)に従って、Wio Terminal上でArduPy開発環境を構成します。
+- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ja/ArduPy/)に従って、Wio Terminal上でArduPy開発環境を構成します。
 
-- **ステップ 2.** 以下のコマンドを使用して、ArduPyファームウェアにGrove - 16 x 2 LCD ArduPyライブラリが含まれていることを確認します。詳細については[**こちら**](https://wiki.seeedstudio.com/ArduPy/#using-aip-to-include-other-ardupy-librariesfrom-arduino-libraries-example)を参照してください。
+- **ステップ 2.** 以下のコマンドを使用して、ArduPyファームウェアにGrove - 16 x 2 LCD ArduPyライブラリが含まれていることを確認します。詳細については[**こちら**](https://wiki.seeedstudio.com/ja/ArduPy/#using-aip-to-include-other-ardupy-librariesfrom-arduino-libraries-example)を参照してください。
 
 ```sh
 aip install Seeed-Studio/seeed-ardupy-lcd1602

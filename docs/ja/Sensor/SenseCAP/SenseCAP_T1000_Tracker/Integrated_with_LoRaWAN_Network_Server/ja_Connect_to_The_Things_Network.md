@@ -18,7 +18,7 @@ The Things Stack（TTS）は、あらゆるLoRaWAN®ソリューションにお�
 
 ## デバイス設定
 
-TTSに接続する前に、SenseCAP Mateアプリでデバイスの基本パラメータを設定する必要があります。詳細は[Get Started](https://wiki.seeedstudio.com/Get_Started_with_SenseCAP_T1000_tracker)をご確認ください。
+TTSに接続する前に、SenseCAP Mateアプリでデバイスの基本パラメータを設定する必要があります。詳細は[Get Started](https://wiki.seeedstudio.com/ja/Get_Started_with_SenseCAP_T1000_tracker)をご確認ください。
 
 * プラットフォームをTTNに設定し、Device EUI/APP EUI/APP Keyをコピーします。
 

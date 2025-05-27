@@ -88,7 +88,7 @@ DeepStream SDK は以下のハードウェアをサポートしています：
 
 > 以下のワークフローは、[reComputer J1010](https://www.seeedstudio.com/Jetson-10-1-H0-p-5335.html) で [JetPack 4.6.1](https://developer.nvidia.com/embedded/jetpack-sdk-461) を実行してテストされています。
 
-**ステップ 1:** Jetson デバイスに **SDK コンポーネント** と **DeepStream SDK** が正しくインストールされていることを確認してください。（インストールの参考として [この wiki](https://wiki.seeedstudio.com/reComputer_J1020_A206_Flash_JetPack/) を参照してください）
+**ステップ 1:** Jetson デバイスに **SDK コンポーネント** と **DeepStream SDK** が正しくインストールされていることを確認してください。（インストールの参考として [この wiki](https://wiki.seeedstudio.com/ja/reComputer_J1020_A206_Flash_JetPack/) を参照してください）
 
 **注意:** すべての SDK コンポーネントと DeepStream SDK をインストールするには、**NVIDIA SDK Manager** を使用することを推奨します。
 

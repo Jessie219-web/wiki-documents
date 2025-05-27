@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-Fonts/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Fonts/
 slug: /ja/Wio-Terminal-LCD-Fonts
 last_update:
   date: 05/15/2025
@@ -27,7 +27,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## Wio Terminalでのフォントの使用
 
-これらのフォントを簡単に使用するために、[Seeed_Arduino_LCDリポジトリ](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/#installing-the-tft-lcd-library-separately)から`Free_Fonts.h`ファイルをコピーすることを強くお勧めします。リポジトリをすでにダウンロードしていると仮定し、パスが`~/Arduino/libraries/Seeed_LCD_master/examples/320 x 240/All_Free_Fonts_Demo`である場合、このヘッダーファイルをスケッチの場所に添付できます。これにより、フォントの参照が非常に簡単になります。
+これらのフォントを簡単に使用するために、[Seeed_Arduino_LCDリポジトリ](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/#installing-the-tft-lcd-library-separately)から`Free_Fonts.h`ファイルをコピーすることを強くお勧めします。リポジトリをすでにダウンロードしていると仮定し、パスが`~/Arduino/libraries/Seeed_LCD_master/examples/320 x 240/All_Free_Fonts_Demo`である場合、このヘッダーファイルをスケッチの場所に添付できます。これにより、フォントの参照が非常に簡単になります。
 
 タイピングを大幅に節約するために、各フォントは以下の3つの方法でスケッチ内で参照できます：
 

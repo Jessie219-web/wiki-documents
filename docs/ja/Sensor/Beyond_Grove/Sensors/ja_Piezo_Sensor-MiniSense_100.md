@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Piezo_Sensor-MiniSense_100/
+image: https://wiki.seeedstudio.com/ja/Piezo_Sensor-MiniSense_100/
 slug: /ja/Piezo_Sensor-MiniSense_100
 last_update:
   date: 05/15/2025

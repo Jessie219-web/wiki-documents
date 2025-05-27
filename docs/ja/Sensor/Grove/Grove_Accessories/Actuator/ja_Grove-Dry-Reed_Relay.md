@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Dry-Reed_Relay/
+image: https://wiki.seeedstudio.com/ja/Grove-Dry-Reed_Relay/
 slug: /ja/Grove-Dry-Reed_Relay
 last_update:
   date: 05/15/2025
@@ -31,7 +31,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - 接点が完全に密閉
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 仕様

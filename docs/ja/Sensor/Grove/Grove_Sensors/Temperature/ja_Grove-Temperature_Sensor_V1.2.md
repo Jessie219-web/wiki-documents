@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 Grove - 温度センサーは、[サーミスタ](https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor_V1.2/res/NCP18WF104F03RC.pdf)を使用して周囲温度を検出します。サーミスタの抵抗値は周囲温度が低下すると増加します。この特性を利用して周囲温度を計算します。このセンサーの検出可能範囲は -40 ～ 125ºC で、精度は ±1.5ºC です。
 
-注意: このWikiはGrove - 温度センサー V1.1にも対応しています。V1.0については[Grove - Temperature Sensor](https://wiki.seeedstudio.com/Grove-Temperature_Sensor)をご参照ください。
+注意: このWikiはGrove - 温度センサー V1.1にも対応しています。V1.0については[Grove - Temperature Sensor](https://wiki.seeedstudio.com/ja/Grove-Temperature_Sensor)をご参照ください。
 
 <p style={{textAlign: 'center' }}><a href="https://www.seeedstudio.com/Grove-Temperature-Sensor-p-774.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now_small.png" width="210" height="41"  border="0" /></a></p>
 
@@ -51,7 +51,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 - 公称B定数：4250 ~ 4299K
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -72,7 +72,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 このセクションの後、Grove - Temperature Sensor V1.1/1.2を数ステップで動作させることができます。
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -107,7 +107,7 @@ Grove Base Shieldがない場合は、以下のようにGrove_Ultrasonic_Ranger�
 
 #### ソフトウェア
 
-- **ステップ1.** Arduino IDEを起動し、**File>New**をクリックして新しいページを開きます。以下のコードを新しいページにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[How to upload code](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ1.** Arduino IDEを起動し、**File>New**をクリックして新しいページを開きます。以下のコードを新しいページにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[How to upload code](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```cpp
 // Grove - Temperature Sensor V1.1/1.2のデモコード
@@ -181,7 +181,7 @@ void loop()
 **Raspberry PiでRaspberrypi OS >= Bullseye**を使用している場合、このコマンドラインは**Python3のみ**で使用してください。
 :::
 
-- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従い、開発環境を構成します。
+- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従い、開発環境を構成します。
 - **ステップ 2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```sh
@@ -371,9 +371,9 @@ pi@raspberrypi:~/GrovePi/Software/Python $ sudo python3 grove_temperature_sensor
 
 #### ソフトウェア
 
-- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ArduPy/) に従って、Wio Terminal 上で ArduPy 開発環境を構成します。
+- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ja/ArduPy/) に従って、Wio Terminal 上で ArduPy 開発環境を構成します。
 
-- **ステップ 2.** ArduPy ファームウェアが Wio Terminal にフラッシュされていることを確認してください。詳細については、[**こちら**](https://wiki.seeedstudio.com/ArduPy/#ardupy-aip-cli-getting-started) を参照してください。
+- **ステップ 2.** ArduPy ファームウェアが Wio Terminal にフラッシュされていることを確認してください。詳細については、[**こちら**](https://wiki.seeedstudio.com/ja/ArduPy/#ardupy-aip-cli-getting-started) を参照してください。
 
 ```sh
 aip build

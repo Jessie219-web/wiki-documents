@@ -174,7 +174,7 @@ SDカードシールドをArduinoに差し込みます。SDカードをソケッ
 
 ## SDカードシールド v3.0 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/images/0/09/Eagle_file_of_SD_Card_Shield_v3.0.ZIP" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/ja/images/0/09/Eagle_file_of_SD_Card_Shield_v3.0.ZIP" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## リソース  
@@ -185,7 +185,7 @@ SDカードシールドをArduinoに差し込みます。SDカードをソケッ
 
 * **[PDF]**   [SDカードシールド v3.1のPDFファイル](https://files.seeedstudio.com/wiki/SD_Card_Shield_V3.0/res/SD_Card_Shield.pdf)
 
-* **[Eagle]**   [SDカードシールド v3.0のEagleファイル](https://wiki.seeedstudio.com/images/0/09/Eagle_file_of_SD_Card_Shield_v3.0.ZIP).
+* **[Eagle]**   [SDカードシールド v3.0のEagleファイル](https://wiki.seeedstudio.com/ja/images/0/09/Eagle_file_of_SD_Card_Shield_v3.0.ZIP).
 
 ## 技術サポートと製品ディスカッション
 

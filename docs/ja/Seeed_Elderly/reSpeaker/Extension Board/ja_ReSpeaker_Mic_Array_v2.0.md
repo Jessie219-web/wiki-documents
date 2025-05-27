@@ -438,7 +438,7 @@ pi@raspberrypi:~/usb_4_mic_array $ sudo python VAD.py
 ```
 
 :::note
-VAD のしきい値については、GAMMAVAD_SR を使用して設定することもできます。詳細は [Tuning](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/#tuning) を参照してください。
+VAD のしきい値については、GAMMAVAD_SR を使用して設定することもできます。詳細は [Tuning](https://wiki.seeedstudio.com/ja/ReSpeaker_Mic_Array_v2.0/#tuning) を参照してください。
 :::
 
 ### 音声の抽出
@@ -806,7 +806,7 @@ A4: はい、Yuki さんが共有してくださった [ReSpeaker Mic Array v2 �
 
 **Q5: 3.5mm オーディオポートを USB ポートと同時に信号を受信できるようにする方法は？**
 
-A5: [新しいファームウェア](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/i2s_i1o2.bin) をダウンロードし、[ファームウェアの更新方法](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/#update-firmware) に従って XMOS を書き込んでください。
+A5: [新しいファームウェア](https://files.seeedstudio.com/wiki/ReSpeaker_Mic_Array_V2/res/i2s_i1o2.bin) をダウンロードし、[ファームウェアの更新方法](https://wiki.seeedstudio.com/ja/ReSpeaker_Mic_Array_v2.0/#update-firmware) に従って XMOS を書き込んでください。
 
 ## リソース
 

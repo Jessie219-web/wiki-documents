@@ -111,14 +111,14 @@ Grove - トリプルカラー E-Ink ディスプレイ 2.13'' は、電源を切
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** Githubから[デモコード](https://github.com/Seeed-Studio/Grove_Triple_Color_E-lnk_2.13/tree/master/examples/Eink_factory_code_213)をダウンロードします。
 
 - **ステップ 2.** Arduino IDEで**Eink_factory_code_213.ino**ファイルを開きます。
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::success
 すべてが正常に動作すれば、ディスプレイが点滅し、Seeedのロゴが表示されます。

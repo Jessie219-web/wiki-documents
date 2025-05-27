@@ -630,7 +630,7 @@ aplay hello3.wav
 
 ## Wio Link を使って遊ぶ
 
-[ReSpeaker Core V2 & Wio Link チュートリアル](https://wiki.seeedstudio.com/ReSpeaker_Core_V2_&_Wio_Link/) に従って、ReSpeaker Core V2 を使用して IFTTT 経由で Wio Link を制御してください。
+[ReSpeaker Core V2 & Wio Link チュートリアル](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_V2_&_Wio_Link/) に従って、ReSpeaker Core V2 を使用して IFTTT 経由で Wio Link を制御してください。
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/OJ0i6QrZCSM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -879,7 +879,7 @@ sudo reboot -f
 
 ![](https://files.seeedstudio.com/wiki/Respeaker_V2/img/AP2.png)
 
-- **ステップ4.** シリアルコンソールにアクセスしたら、[WiFiを設定](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0/#a-wi-fi-setting-up)することができます。
+- **ステップ4.** シリアルコンソールにアクセスしたら、[WiFiを設定](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/#a-wi-fi-setting-up)することができます。
 
 **Q3: 音量を調整する方法は？**
 

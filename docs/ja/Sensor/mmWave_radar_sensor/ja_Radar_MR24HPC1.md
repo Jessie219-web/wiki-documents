@@ -316,7 +316,7 @@ J-link は高価であり、レーダーファームウェアを更新するだ�
 ### Arduinoライブラリ概要
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 この例で使用されるライブラリコードは、以下のアイコンをクリックしてダウンロードできます。
@@ -437,15 +437,15 @@ const unsigned char reset_frame[10] = {0x53, 0x59, 0x01, 0x02, 0x00, 0x01, 0x0F,
 
 **ステップ 3.** 開発ボードモデルを選択し、Arduino IDEに追加します。
 
-- 後のルーチンで**Seeeduino V4.2**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を参照して追加を完了してください。
+- 後のルーチンで**Seeeduino V4.2**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を参照して追加を完了してください。
 
-- 後のルーチンで**Seeeduino XIAO**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)を参照して追加を完了してください。
+- 後のルーチンで**Seeeduino XIAO**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/#software)を参照して追加を完了してください。
 
-- 後のルーチンで**XIAO RP2040**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
+- 後のルーチンで**XIAO RP2040**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
 
-- 後のルーチンで**XIAO nRF52840**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)を参照して追加を完了してください。
+- 後のルーチンで**XIAO nRF52840**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_BLE/#software-setup)を参照して追加を完了してください。
 
-- 後のルーチンで**XIAO ESP32C3**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#software-setup)を参照して追加を完了してください。
+- 後のルーチンで**XIAO ESP32C3**を使用したい場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/#software-setup)を参照して追加を完了してください。
 
 :::caution
 **XIAO nRF52840**の場合は、**Seeed nRF52 mbed-enabled Boards**を選択してください。そうしないと、プログラム実行時にエラーが報告される可能性があります。
@@ -1010,11 +1010,11 @@ MR24HPC1センサーは5Vの電源供給が必要です。そうでない場合�
 
 このレーダーとXIAO ESP32C3をESPHomeおよびHome Assistantに接続するためのチュートリアルを作成しました。興味がある場合は、以下のチュートリアルを参照してください。
 
-- [XIAO ESP32C3がESPHomeサービスを介してHome Assistantにアクセスする](https://wiki.seeedstudio.com/xiao-esp32c3-esphome)
+- [XIAO ESP32C3がESPHomeサービスを介してHome Assistantにアクセスする](https://wiki.seeedstudio.com/ja/xiao-esp32c3-esphome)
 
 ### デモ 8: XIAO ESP32C3でセンサーを使用する {#demo8}
 
-XIAO ESP32C3のハードウェアシリアルポートの[特殊な設計](https://wiki.seeedstudio.com/XIAO_ESP32C3_Pin_Multiplexing/#special-way---use-usb-serial-and-uart0uart1-at-the-same-time)により、センサーとのUART通信でデータメッセージを送受信するには以下のコードを使用する必要があります。
+XIAO ESP32C3のハードウェアシリアルポートの[特殊な設計](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Pin_Multiplexing/#special-way---use-usb-serial-and-uart0uart1-at-the-same-time)により、センサーとのUART通信でデータメッセージを送受信するには以下のコードを使用する必要があります。
 
 ```cpp
 #include "Arduino.h"
@@ -1064,7 +1064,7 @@ void loop() {
 
 ### FAQ 2: XIAO ESP32C3でシリアルモニターに何も表示されないのはなぜですか？ {#faq2}
 
-> XIAO ESP32C3のシリアルポート機能は一般的なArduinoハードウェアと完全には一致しておらず、Serial1を直接使用するとUSBシリアルポートが動作しない可能性があります。関連する適用例については、[XIAO ESP32C3のシリアル章](https://wiki.seeedstudio.com/XIAO_ESP32C3_Pin_Multiplexing/#serial)をご覧ください。
+> XIAO ESP32C3のシリアルポート機能は一般的なArduinoハードウェアと完全には一致しておらず、Serial1を直接使用するとUSBシリアルポートが動作しない可能性があります。関連する適用例については、[XIAO ESP32C3のシリアル章](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Pin_Multiplexing/#serial)をご覧ください。
 
 ### FAQ 3: ライブラリを使用する際にXIAO ESP32-C3以外のチップを使用することは可能ですか？ {#faq3}
 

@@ -30,7 +30,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
     </a>
 </div>
 
-本ドキュメントでは、[reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=f6de8f6c8d814c021e13f4455d041d03&objectID=5586&indexName=bazaar_retailer_products)を使用して交通シーンの物体検出モデルをトレーニングおよびデプロイします。本ドキュメントでは、[YOLOv8](https://www.ultralytics.com/)物体検出アルゴリズムを例として使用し、全プロセスの詳細な概要を提供します。以下に記載されているすべての操作は、Jetsonエッジコンピューティングデバイス上で行われることに注意してください。Jetsonデバイスには、[JetPack 5.0](https://wiki.seeedstudio.com/NVIDIA_Jetson/)以上のオペレーティングシステムがインストールされている必要があります。
+本ドキュメントでは、[reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?queryID=f6de8f6c8d814c021e13f4455d041d03&objectID=5586&indexName=bazaar_retailer_products)を使用して交通シーンの物体検出モデルをトレーニングおよびデプロイします。本ドキュメントでは、[YOLOv8](https://www.ultralytics.com/)物体検出アルゴリズムを例として使用し、全プロセスの詳細な概要を提供します。以下に記載されているすべての操作は、Jetsonエッジコンピューティングデバイス上で行われることに注意してください。Jetsonデバイスには、[JetPack 5.0](https://wiki.seeedstudio.com/ja/NVIDIA_Jetson/)以上のオペレーティングシステムがインストールされている必要があります。
 
 ## データセット
 機械学習のプロセスは、与えられたデータ内のパターンを見つけ、それらのパターンを捉える関数を使用することに関係します。したがって、データセットの品質はモデルの性能に直接影響を与えます。一般的に、トレーニングデータの質と量が良いほど、トレーニングされたモデルも良くなります。そのため、データセットの準備は非常に重要です。

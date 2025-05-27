@@ -64,11 +64,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 もしこれが初めて XIAO ESP32C3 を使用する場合は、Arduino で適切な開発環境を構築する方法を学ぶために、まずこの Wiki を読む必要があります。
 
-- [Seeed Studio XIAO ESP32C3 の使い方](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#software-setup)
+- [Seeed Studio XIAO ESP32C3 の使い方](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/#software-setup)
 
 また、このチュートリアルは [XIAO ESP32S3](https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html) とも互換性があります。このチュートリアルの内容を XIAO ESP32S3 を使用しても完了できます。
 
-- [Seeed Studio XIAO ESP32S3 の使い方](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#software-preparation)
+- [Seeed Studio XIAO ESP32S3 の使い方](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/#software-preparation)
 
 SHT40 センサーを使用するため、Arduino で以下の 2 つのライブラリを追加して、プログラムがスムーズに動作するようにする必要があります。
 

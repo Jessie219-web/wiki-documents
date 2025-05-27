@@ -174,7 +174,7 @@ Heliumに戻り、コンソールでGoogle Sheets統合を追加します。左�
   </tbody></table>
 
 :::note
-Googleフォームで使用されるデコーダーは、[Connecting to Helium](https://wiki.seeedstudio.com/Connecting-to-Helium/#write-decoders-function-for-different-sensors)で提供されるデコーダーとは互換性がありません。
+Googleフォームで使用されるデコーダーは、[Connecting to Helium](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/#write-decoders-function-for-different-sensors)で提供されるデコーダーとは互換性がありません。
 :::
 前のステップから続けて、使用しているセンサーのコーデックをHeliumのコードエリアにコピーして置き換えます。その後、右側の「Add Integration」をクリックするだけです。
 
@@ -186,7 +186,7 @@ Googleフォームで使用されるデコーダーは、[Connecting to Helium](
 
 ## コードをアップロードしてデータをHeliumに送信する
 
-センサー値をHeliumに送信するコードをアップロードするには、[Connecting to Helium tutorial](https://wiki.seeedstudio.com/Connecting-to-Helium/#upload-code-send-data-to-helium)の指示に従ってください。
+センサー値をHeliumに送信するコードをアップロードするには、[Connecting to Helium tutorial](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/#upload-code-send-data-to-helium)の指示に従ってください。
 
 データの送信が開始されると、Google Sheetsでデータがリアルタイムで更新されるのを確認できます。
 

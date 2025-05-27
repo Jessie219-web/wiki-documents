@@ -1013,7 +1013,7 @@ candump can0 &
 
 ### reTerminal DMの使用方法
 
-- **ステップ 1:** reTerminal DMを使用する前に、[このWiki](https://wiki.seeedstudio.com/reterminal-dm)を参照してreTerminal DMのセットアップを行ってください。
+- **ステップ 1:** reTerminal DMを使用する前に、[このWiki](https://wiki.seeedstudio.com/ja/reterminal-dm)を参照してreTerminal DMのセットアップを行ってください。
 
 - **ステップ 2:** reComputer Industrial上でターミナルウィンドウを開き、以下のコマンドを実行してCANインターフェースを設定および有効化します。
 

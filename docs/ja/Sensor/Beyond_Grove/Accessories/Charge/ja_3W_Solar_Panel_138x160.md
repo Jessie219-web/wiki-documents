@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウラス
-image: https://wiki.seeedstudio.com/3W_Solar_Panel_138x160/
+image: https://wiki.seeedstudio.com/ja/3W_Solar_Panel_138x160/
 slug: /ja/3W_Solar_Panel_138x160
 last_update:
   date: 05/15/2025

@@ -43,7 +43,7 @@ Grove - 赤外線反射センサーは、特定の範囲内で物体の存在を
 - 様々な用途に合わせて感度を調整可能
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 仕様
@@ -143,7 +143,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 
 - **ステップ 1.** [Arduino timer1 *ライブラリ*](https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/res/TimerOne-ArduinoLib.zip) をダウンロードし、Arduino IDE のライブラリフォルダに追加します。デモコードの実行方法については[ガイド](/Guide_to_use_demos_downloaded_from_Seeed-s_Github/)を参照してください。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino 用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino 用のライブラリをインストールします。
 
 - **ステップ 3.** 新しいスケッチを開き、以下のコードをスケッチにコピーします。
 
@@ -175,7 +175,7 @@ void loop()
 }
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、++ctrl+shift+m++ キーを同時に押します。すべてが正常に動作していれば、速度が表示されます。
 

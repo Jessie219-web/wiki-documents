@@ -29,7 +29,7 @@ Grove-傾きスイッチはボタンに相当し、デジタル入力として�
 -   シンプルなGroveモジュール
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::   
 仕様
 --------------
@@ -178,7 +178,7 @@ void loop()
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[Codecraftを使用したArduinoのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[Codecraftを使用したArduinoのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ2.** 以下の図のようにブロックをドラッグするか、このページの最後でダウンロード可能なcdcファイルを開いてください。
 
@@ -218,7 +218,7 @@ void loop()
 :::note
      **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3のみ**で以下のコマンドラインを使用してください。
 :::
-- **ステップ1.** [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成してください。
+- **ステップ1.** [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成してください。
 - **ステップ2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

@@ -124,7 +124,7 @@ XIAOのピンが未ハンダ付けの場合、直接SMD方式を選択してXIAO
 
 ハンダ付けが完了したら、拡張ボードをXIAO RP2040メインコントローラーに接続する準備が整います。
 
-XIAO RP2040をプログラミングするには、TYPE-C USBデータケーブルが必要です。一端をXIAO RP2040に、もう一端をコンピューターに接続してください。XIAO RP2040のプログラミングに関する詳細なガイドについては、こちらの[Wiki](https://wiki.seeedstudio.com/XIAO-RP2040/)をご参照ください。
+XIAO RP2040をプログラミングするには、TYPE-C USBデータケーブルが必要です。一端をXIAO RP2040に、もう一端をコンピューターに接続してください。XIAO RP2040のプログラミングに関する詳細なガイドについては、こちらの[Wiki](https://wiki.seeedstudio.com/ja/XIAO-RP2040/)をご参照ください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/gpio-expander-for-xiao/3.jpg" alt="pir" width={600} height="auto" /></p>
 

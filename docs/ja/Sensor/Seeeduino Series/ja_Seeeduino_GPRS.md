@@ -144,7 +144,7 @@ USBケーブルを使用してArduinoボードをコンピュータに接続し�
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、[Arduinoのはじめ方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoのはじめ方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino)を参照することを強くお勧めします。
 :::
 
 まず、Arduinoソフトウェアをインストールする必要があります。
@@ -168,7 +168,7 @@ LED点滅の例を開きます：**ファイル > Examples > 01.Basics > Blink**
 **ボードを選択する**
 
 **ツール > ボード**メニューで、使用しているArduinoに対応する項目を選択してください。  
-**Arduino Leonardo**を選択します。Arduino Leonardoが見つからない場合は、[Arduino IDEにSeeedボードを追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を確認してください。
+**Arduino Leonardo**を選択します。Arduino Leonardoが見つからない場合は、[Arduino IDEにSeeedボードを追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を確認してください。
 
 ![画像説明を入力してください](https://files.seeedstudio.com/wiki/Seeeduino_GPRS/img/seeeduino_gprs_select_board.png)
 

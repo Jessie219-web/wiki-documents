@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/influx_sense.png" alt="pir" width={800} height="auto" /></p>
 
-セットアップを開始する前に、まず [Connect SenseCAP T1000 to TTS](https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN) を確認して、SenseCAP T1000 TrackerをTTSに接続してください。
+セットアップを開始する前に、まず [Connect SenseCAP T1000 to TTS](https://wiki.seeedstudio.com/ja/SenseCAP_T1000_tracker_TTN) を確認して、SenseCAP T1000 TrackerをTTSに接続してください。
 
 ## 準備
 

@@ -65,7 +65,7 @@ XIAO nRF52840は、Amazon Sidewalkに対応したワイヤレスモジュール�
 
 このモデルは、Amazon Sidewalk統合のための強力でコンパクトなSoM（System-on-Module）設計を備えています。内蔵のnRF52840チップセットにより、このモジュールはBLE機能を提供し、IoTアプリケーションのシームレスな接続を可能にします。Seeed Studio XIAOは小型のフォームファクターを持ち、スペースが限られた展開に最適です。その信頼性の高いパフォーマンスとAmazon Sidewalkのサポートにより、安全で信頼性の高いIoTソリューションの開発を簡素化し、加速します。
 
-モジュールの技術仕様の詳細については、[こちら](https://wiki.seeedstudio.com/XIAO_BLE/)をクリックしてください。
+モジュールの技術仕様の詳細については、[こちら](https://wiki.seeedstudio.com/ja/XIAO_BLE/)をクリックしてください。
 
 このドキュメントでは以下の内容を案内します：
 
@@ -618,7 +618,7 @@ SWDインターフェースを介してXIAO nRF52840をJLinkに接続してく�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE-sidewalk/24.jpg" style={{width:600, height:'auto'}}/></div><br />
 
-XIAO拡張ボードを使用しない場合は、SWDインターフェースの使用について[XIAO nRF52840 Wiki](https://wiki.seeedstudio.com/XIAO_BLE#access-the-swd-pins-for-debugging-and-reflashing-bootloader)を参照し、JLinkにデュプレックスワイヤを追加でハンダ付けしてください。
+XIAO拡張ボードを使用しない場合は、SWDインターフェースの使用について[XIAO nRF52840 Wiki](https://wiki.seeedstudio.com/ja/XIAO_BLE#access-the-swd-pins-for-debugging-and-reflashing-bootloader)を参照し、JLinkにデュプレックスワイヤを追加でハンダ付けしてください。
 
 **ステップ 3**. Programmerを開き、両方のファームウェアをXIAO nRF52840に書き込みます。
 

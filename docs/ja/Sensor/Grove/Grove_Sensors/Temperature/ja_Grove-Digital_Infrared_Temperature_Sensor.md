@@ -144,7 +144,7 @@ mm
 ここでは、このセンサーを使用してセンサーの前にある対象物の温度を測定し、その結果をシリアルモニターに表示する方法を示す例を提供します。
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 #### ハードウェア
@@ -176,7 +176,7 @@ mm
 #### ソフトウェア
 
 - **ステップ 1.** ライブラリとデモコードをダウンロードします：[Digital_Infrared_Temperature_Sensor_MLX90615](https://github.com/Seeed-Studio/Digital_Infrared_Temperature_Sensor_MLX90615)。
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 - **ステップ 3.** 次のパスからデモコードを直接開きます：
 
   **File -> Examples -> Digital_Infrared_Temperature_Sensor_MLX90615 -> MLX90615Soft**。以下の画像のように表示されます：
@@ -185,7 +185,7 @@ mm
 
 センサーは工場出荷時にデジタルSMBus互換インターフェースが有効化された状態でキャリブレーションされていますが、ライブラリはソフトi2cライブラリに基づいているため、任意のAVRチップのデジタルピンを使用して**SDA**および**SCL**ラインを駆動できます。このデモコードでは**D2**を**SCL**ピンとして、**D3**を**SDA**ピンとして使用しています。他のポートを使用する場合は、コードを対応するピンに合わせて修正してください。
 
-- **ステップ 4.** コードをArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** コードをArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 - **ステップ 5.** **Tool -> Serial Monitor**をクリックしてシリアルモニターを起動します。結果が表示されます。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Digital_Infrared_Temperature_Sensor/img/Digital_Infrared_Temperature_Sensor_Serial_Monitor.jpg" /></div>
@@ -193,7 +193,7 @@ mm
 これで、このセンサーを使用して温度を測定できます。周囲温度はMLX90615パッケージの温度であり、対象物温度は対象物の温度です。実験によると、センサーを通常の室内温度に置き、センサーの1M範囲内に熱源がないことを確認すると、対象物温度は周囲温度とほぼ等しくなります。対象物温度を測定する際は、対象物をセンサーにできるだけ近づける必要がありますが、センサーの表面には触れないようにしてください。推奨距離は3cm未満です。楽しい試みをお楽しみください。
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 回路図オンラインビューア

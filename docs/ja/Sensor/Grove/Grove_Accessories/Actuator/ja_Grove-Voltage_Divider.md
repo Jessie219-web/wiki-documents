@@ -3,7 +3,7 @@ title: Grove - 電圧分圧器
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Voltage_Divider//
+image: https://wiki.seeedstudio.com/ja/Grove-Voltage_Divider//
 slug: /ja/Grove-Voltage_Divider
 last_update:
   date: 05/15/2025
@@ -28,7 +28,7 @@ Grove – 電圧分圧器は、外部電圧を測定するためのインター�
 - ゲインの調整が可能
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -55,14 +55,14 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 ## はじめに
 ---
 外部電圧を測定する際は、外部電圧をJ1に接続し、オンボードのGroveコネクタをArduino/Seeeduinoのアナログポートに接続します：
-- モジュールを[Base Shield](https://wiki.seeedstudio.com/Base_Shield_V2)のA0ポートにユニバーサルGroveケーブルで接続します。
-- [Base Shield](https://wiki.seeedstudio.com/Base_Shield_V2)をArduino/Seeeduinoに接続します。
+- モジュールを[Base Shield](https://wiki.seeedstudio.com/ja/Base_Shield_V2)のA0ポートにユニバーサルGroveケーブルで接続します。
+- [Base Shield](https://wiki.seeedstudio.com/ja/Base_Shield_V2)をArduino/Seeeduinoに接続します。
 
 このモジュールの精度をテストするために、いくつかの電圧入力をテストし、以下のデータを取得しました：
 
 ![](https://files.seeedstudio.com/wiki/Grove-Voltage_Divider/img/Voltage_Divider_Test_Score.jpg)
 
-- ご覧の通り、入力が測定範囲内の場合、電圧分圧器は高い精度（<1%、"OK"とマーク）を持っています。しかし、入力が範囲外の場合、精度が低下します（"NO"とマーク）。具体的な測定範囲については[仕様](https://wiki.seeedstudio.com/Grove-Voltage_Divider/#specification)をご参照ください。
+- ご覧の通り、入力が測定範囲内の場合、電圧分圧器は高い精度（<1%、"OK"とマーク）を持っています。しかし、入力が範囲外の場合、精度が低下します（"NO"とマーク）。具体的な測定範囲については[仕様](https://wiki.seeedstudio.com/ja/Grove-Voltage_Divider/#specification)をご参照ください。
 
 また、電圧分圧器の出力電圧がVCC（Grove動作電圧およびアナログ読み取りの基準）を超える場合、エラーを示すインジケータが点灯します。
 
@@ -111,7 +111,7 @@ void loop()
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メイン手順を作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[CodecraftをArduinoで使用するためのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+Codecraftを初めて使用する場合は、[CodecraftをArduinoで使用するためのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロード可能なcdcファイルを開きます。

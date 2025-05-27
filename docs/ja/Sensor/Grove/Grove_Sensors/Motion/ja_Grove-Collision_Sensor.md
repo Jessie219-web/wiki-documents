@@ -29,7 +29,7 @@ Grove - 衝突センサーは、衝突運動や振動が発生したかどうか
 -   電圧: 3.3/5V
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::   
 ## 対応プラットフォーム
 
@@ -135,7 +135,7 @@ return false;
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[Codecraftを使用したArduinoのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[Codecraftを使用したArduinoのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
@@ -174,7 +174,7 @@ return false;
 
 #### ソフトウェア
 
-- **ステップ1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

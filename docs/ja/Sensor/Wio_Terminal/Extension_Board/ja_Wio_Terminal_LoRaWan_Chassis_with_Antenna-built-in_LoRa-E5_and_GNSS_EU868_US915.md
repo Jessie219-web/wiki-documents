@@ -22,7 +22,7 @@ Wio Terminal LoRaWan シャーシ（アンテナ内蔵 LoRa-E5 および GNSS、
 
 旧バージョン [Grove - LoRa Radio](https://www.seeedstudio.com/Grove-LoRa-Radio-868MHz.html)（[RFM95 超長距離トランシーバーモジュール](https://www.seeedstudio.com/RFM95-Ultra-long-Range-Transceiver-Module-LoRa-Module-support-868M-frequency-p-2807.html) によって駆動）をアップグレードしたものとして、Grove LoRa-E5 は [LoRa-E5 STM32WLE5JC モジュール](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html) を組み込んだ高性能で使いやすい無線 LoRa モジュールであり、LoRaWAN プロトコルをサポートしています。
 
-LoRa-E5 LoRaWAN STM32WLE5JC モジュールは、Wio Terminal LoRaWan シャーシ（アンテナ内蔵 LoRa-E5 および GNSS、EU868/US915）に統合された主要な機能部分です。このモジュールは、ARM Cortex M4 超低消費電力 MCU コアと LoRa SX126x を組み込んだ LoRaWAN モジュールであり、世界初の LoRa RF と MCU チップを1つの小型モジュールに統合したものです。(G)FSK、BPSK、(G)MSK、LoRa 変調をサポートし、FCC および CE 認証を取得しています。（[LoRa-E5 wiki](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/) で LoRa-E5 の詳細を学ぶ）
+LoRa-E5 LoRaWAN STM32WLE5JC モジュールは、Wio Terminal LoRaWan シャーシ（アンテナ内蔵 LoRa-E5 および GNSS、EU868/US915）に統合された主要な機能部分です。このモジュールは、ARM Cortex M4 超低消費電力 MCU コアと LoRa SX126x を組み込んだ LoRaWAN モジュールであり、世界初の LoRa RF と MCU チップを1つの小型モジュールに統合したものです。(G)FSK、BPSK、(G)MSK、LoRa 変調をサポートし、FCC および CE 認証を取得しています。（[LoRa-E5 wiki](https://wiki.seeedstudio.com/ja/LoRa-E5_STM32WLE5JC_Module/) で LoRa-E5 の詳細を学ぶ）
 
 LoRa-E5 と RFM95 チップの比較:
 ![](https://files.seeedstudio.com/products/113990934/%E8%8A%AF%E7%89%87%E5%AF%B9%E6%AF%94_2021.3.4.png)
@@ -130,7 +130,7 @@ LoRaWAN ゲートウェイテスターは、多目的なポータブルツール
 ### Wio Terminal の説明
 
 LoRaWAN Gateway Testerは基本的に、定期的にゲートウェイにフレームを送信し、その後サーバーに転送します（アップリンク）。その後、ACKステータスを待機します。LoRaテスターが応答を受信しない場合、設定された回数に達するまで同じフレームを送信し続けます。一方、ACKはLoRaテスターに応答（ダウンリンク）を返し、メッセージがバックエンドサービスに転送されたことを示します。この情報は最終的にWio Terminalの画面に表示されます。
-このプロジェクトはArduinoプラットフォームに基づいているため、Arduino IDEとさまざまなArduinoライブラリを使用します。Wio Terminalを初めて使用する場合は、こちらのガイドを参考にしてください：[**Wio Terminal の使い方**](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)。
+このプロジェクトはArduinoプラットフォームに基づいているため、Arduino IDEとさまざまなArduinoライブラリを使用します。Wio Terminalを初めて使用する場合は、こちらのガイドを参考にしてください：[**Wio Terminal の使い方**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)。
 
 必要なライブラリ:
 
@@ -281,7 +281,7 @@ IoTスマートガーデンモニターは、Wio Terminalシャーシ-LoRa-E5お
 
 ## 使用方法
 
-このプロジェクトはArduinoプラットフォームに基づいており、Arduino IDEとさまざまなArduinoライブラリを使用します。Wio Terminalを初めて使用する場合は、[**Wio Terminalのクイックスタートガイド**](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)をご覧ください。
+このプロジェクトはArduinoプラットフォームに基づいており、Arduino IDEとさまざまなArduinoライブラリを使用します。Wio Terminalを初めて使用する場合は、[**Wio Terminalのクイックスタートガイド**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)をご覧ください。
 
 必要なライブラリ：
 

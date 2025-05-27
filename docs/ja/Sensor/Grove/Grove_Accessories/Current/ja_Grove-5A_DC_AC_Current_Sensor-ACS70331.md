@@ -152,7 +152,7 @@ ACS70331 QFNパッケージの内部構造は図1に示されています。ダ�
 ##### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 - **ステップ1.** Githubから[Grove Current Sensor](https://github.com/Seeed-Studio/Grove_Current_Sensor)ライブラリをダウンロードします。
@@ -239,7 +239,7 @@ void loop()
 
 ```
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 4.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、++ctrl+shift+m++ キーを同時に押します。ボーレートを **9600** に設定してください。
 

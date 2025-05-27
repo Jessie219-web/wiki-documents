@@ -66,7 +66,7 @@ import TabItem from '@theme/TabItem';
 元のOSイメージをバックアップし、Sourceforgeでファイルをリリースしました。[このページ](https://sourceforge.net/projects/edgebox-rpi-200/files/edgeboxrpi200.img/download)にアクセスしてイメージファイルを取得できます。
 :::
 
-[Raspberry Pi公式イメージャー](https://www.raspberrypi.com/software/)を使用して、[こちらの手順](https://wiki.seeedstudio.com/Raspberry_Pi_3_Model_B/)に従い、起動可能なRaspbian OSデバイスをセットアップしてください。
+[Raspberry Pi公式イメージャー](https://www.raspberrypi.com/software/)を使用して、[こちらの手順](https://wiki.seeedstudio.com/ja/Raspberry_Pi_3_Model_B/)に従い、起動可能なRaspbian OSデバイスをセットアップしてください。
 
 #### USBから起動する
 

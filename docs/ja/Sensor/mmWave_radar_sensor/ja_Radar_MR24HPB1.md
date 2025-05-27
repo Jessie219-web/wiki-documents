@@ -73,7 +73,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ### Arduino ライブラリ概要
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 この例で使用されるライブラリコードは、以下のアイコンをクリックしてダウンロードできます。
@@ -132,13 +132,13 @@ Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.se
 
 **ステップ 3.** 開発ボードモデルを選択し、Arduino IDEに追加します。
 
-- **Seeeduino V4.2** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を参照して追加を完了してください。
+- **Seeeduino V4.2** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を参照して追加を完了してください。
 
-- **Seeeduino XIAO** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)を参照して追加を完了してください。
+- **Seeeduino XIAO** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/#software)を参照して追加を完了してください。
 
-- **XIAO RP2040** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
+- **XIAO RP2040** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
 
-- **XIAO BLE** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)を参照して追加を完了してください。
+- **XIAO BLE** を後のルーチンで使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_BLE/#software-setup)を参照して追加を完了してください。
 
 **ステップ 4.** Arduinoコードライブラリをインストールします。
 

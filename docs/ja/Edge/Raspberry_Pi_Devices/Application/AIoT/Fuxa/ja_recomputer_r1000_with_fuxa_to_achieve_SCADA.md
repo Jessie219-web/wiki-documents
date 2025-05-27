@@ -62,8 +62,8 @@ FUXAは、ウェブベースのプロセス可視化（SCADA/HMI/Dashboard）ソ
     sudo npm install -g --unsafe-perm @frangoteam/fuxa
     sudo fuxa
   ```
-* fuxaを使用してOPC-UAデータのやり取りを実現する方法については、この[wiki](https://wiki.seeedstudio.com/reComputer_r1000_fuxa_opc_ua/)を参照してください。
-* fuxaを使用してmqttクライアントとのデータやり取りを実現する方法については、この[wiki](https://wiki.seeedstudio.com/reComputer_r1000_fuxa_mqtt_client/)を参照してください。このwikiとは異なり、`node-red`で公開するデータは`function`モジュールで処理され、`loop`モジュールを使用して継続的に公開されます。`function`モジュールのコードは以下の通りです：
+* fuxaを使用してOPC-UAデータのやり取りを実現する方法については、この[wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_fuxa_opc_ua/)を参照してください。
+* fuxaを使用してmqttクライアントとのデータやり取りを実現する方法については、この[wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_fuxa_mqtt_client/)を参照してください。このwikiとは異なり、`node-red`で公開するデータは`function`モジュールで処理され、`loop`モジュールを使用して継続的に公開されます。`function`モジュールのコードは以下の通りです：
   ```java
   ## 起動時
     global.set('firstTank', '10000');

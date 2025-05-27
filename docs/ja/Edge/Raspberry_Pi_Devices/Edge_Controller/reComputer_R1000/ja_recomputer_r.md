@@ -561,7 +561,7 @@ echo 1 | sudo tee /sys/class/leds/led-green/brightness
 reComputer R1000 にはアクティブブザーが搭載されており、アラームやイベント通知などのさまざまな目的で使用できます。ブザーは reComputer R1000 v1.0 では GPIO21、reComputer R1000 v1.1 では GPIO20 を介して CM4 によって制御されます。
 
 :::note
-ハードウェアのリビジョン（v1.0 と v1.1）を区別するには、[reComputer R1000 V1.1 製品変更詳細](https://wiki.seeedstudio.com/recomputer_r1000_v1_1_description/) を参照してください。
+ハードウェアのリビジョン（v1.0 と v1.1）を区別するには、[reComputer R1000 V1.1 製品変更詳細](https://wiki.seeedstudio.com/ja/recomputer_r1000_v1_1_description/) を参照してください。
 :::
 
 reComputer R1000 v1.0 ユーザーの場合、ブザーは GPIO-21 に接続されています。ブザーをオン/オフするには、ターミナルで以下のコマンドを入力してください：

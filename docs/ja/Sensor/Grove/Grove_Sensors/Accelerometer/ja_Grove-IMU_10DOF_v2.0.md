@@ -41,10 +41,10 @@ Grove-IMU 10DOF v2.0は、Grove-IMU-10DOFのアップグレードバージョン
 -   I2Cアドレス：デフォルトではI2Cセレクトパッドのaとbが接続されている場合は0x68、bとcが接続されている場合は0x69
 
 :::note
-    複数のI2Cデバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/)を参照してください。
+    複数のI2Cデバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/)を参照してください。
 :::
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -93,7 +93,7 @@ Grove-IMU 10DOF v2.0は、Grove-IMU-10DOFのアップグレードバージョン
 #### ソフトウェア
 
 - **ステップ 1.** [Grove-IMU_10DOF_v2 ライブラリ](https://github.com/Seeed-Studio/Grove_IMU_10DOF_v2.0/archive/master.zip)をダウンロードします。
-- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)に従ってライブラリをインストールしてください。
+- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)に従ってライブラリをインストールしてください。
 - **ステップ 3.** Arduino IDEを再起動します。次のパスから「IMM_10DOF_Test」例を開きます：**File -> Example -> GROVE_IMU_10DOF_V2-master -> IMU_10DOF_V2_Test**。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-IMU_10DOF_v2.0/img/library%20example.jpg) -->

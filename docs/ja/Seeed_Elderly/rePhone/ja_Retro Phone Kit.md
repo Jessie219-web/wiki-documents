@@ -42,7 +42,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 **Rephone Core 2G-Atmel32u4**
 
-このモジュールの詳細については、[Rephone Core 2G-Atmel32u4](https://wiki.seeedstudio.com/RePhone_core_2G-Atmel32u4/)をご覧ください。
+このモジュールの詳細については、[Rephone Core 2G-Atmel32u4](https://wiki.seeedstudio.com/ja/RePhone_core_2G-Atmel32u4/)をご覧ください。
 
 |項目|値|
 |---|---|
@@ -74,7 +74,7 @@ Rephone Core 2G-Atmel32u4は、Xadow 36ピンコネクタとXadow 11ピンコネ
 
 **RePhone_Menu_GSM**
 
-Step1. Rephone Core 2G-Atmel32u4をインストールします。完全な手順については[こちら](https://wiki.seeedstudio.com/RePhone_core_2G-Atmel32u4/#arduino-ide)をクリックしてください。
+Step1. Rephone Core 2G-Atmel32u4をインストールします。完全な手順については[こちら](https://wiki.seeedstudio.com/ja/RePhone_core_2G-Atmel32u4/#arduino-ide)をクリックしてください。
 
 Step2. サンプルを見つけてボードにアップロードします。
 

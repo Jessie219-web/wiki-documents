@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Multichannel_Gas_Sensor/img/Xadow_-_Multichannel_Gas_Sensor_photo.jpg)
 
-Xadow – マルチチャンネルガスセンサーは、コンパクトなMOSセンサーであるMiCS-6814を搭載した非常に小型のセンサーボードです。MiCS-6814は、自動車排気ガスや農業/工業の臭気による汚染を検出するための堅牢なMEMSセンサーです。このセンサーボードには2つの標準的なXadowインターフェースがあり、[Xadow - メインボード](https://wiki.seeedstudio.com/Xadow_Main_Board)と非常に簡単に使用できます。
+Xadow – マルチチャンネルガスセンサーは、コンパクトなMOSセンサーであるMiCS-6814を搭載した非常に小型のセンサーボードです。MiCS-6814は、自動車排気ガスや農業/工業の臭気による汚染を検出するための堅牢なMEMSセンサーです。このセンサーボードには2つの標準的なXadowインターフェースがあり、[Xadow - メインボード](https://wiki.seeedstudio.com/ja/Xadow_Main_Board)と非常に簡単に使用できます。
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Xadow-Multichannel-Gas-Sensor-p-2459.html)
 
@@ -80,13 +80,13 @@ Xadow – マルチチャンネルガスセンサーは、コンパクトなMOS�
 
 ## デモンストレーション
 
-[Xadow - メインボード](https://wiki.seeedstudio.com/Xadow_Main_Board)を使用して開始できます。
+[Xadow - メインボード](https://wiki.seeedstudio.com/ja/Xadow_Main_Board)を使用して開始できます。
 
 **ハードウェアのインストール:**
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Multichannel_Gas_Sensor/img/Xadow_-_Mutichannel_Gas_Sensor_connect_to_Xadow.JPG)
 
-1) Xadow - マルチチャンネルガスセンサーを[Xadow - メインボード](https://wiki.seeedstudio.com/Xadow_Main_Board)に接続します。Xadowドライバーをインストールすることを忘れないでください。注意: Xadow - マルチチャンネルガスセンサーを[Xadow - メインボード](https://wiki.seeedstudio.com/Xadow_Main_Board)に接続する際には、接続方向に注意してください。接続方法は、1つのXadowモジュールの未充填の角を別のモジュールの直角に接続する必要があります（各Xadowモジュールの4つの角を参照）。
+1) Xadow - マルチチャンネルガスセンサーを[Xadow - メインボード](https://wiki.seeedstudio.com/ja/Xadow_Main_Board)に接続します。Xadowドライバーをインストールすることを忘れないでください。注意: Xadow - マルチチャンネルガスセンサーを[Xadow - メインボード](https://wiki.seeedstudio.com/ja/Xadow_Main_Board)に接続する際には、接続方向に注意してください。接続方法は、1つのXadowモジュールの未充填の角を別のモジュールの直角に接続する必要があります（各Xadowモジュールの4つの角を参照）。
 
 コードのアップロード:
 
@@ -168,7 +168,7 @@ void loop()
 }
 ```
 
-4) コードをアップロードします。Arduino環境の[ツール | ボード]メニューからSeeeduino Xadowを選択し、[Xadow - メインボード](https://wiki.seeedstudio.com/Xadow_Main_Board)が使用している正しいシリアルポートを選択してください。または、代わりにArduino Leonardoを選択することもできます。
+4) コードをアップロードします。Arduino環境の[ツール | ボード]メニューからSeeeduino Xadowを選択し、[Xadow - メインボード](https://wiki.seeedstudio.com/ja/Xadow_Main_Board)が使用している正しいシリアルポートを選択してください。または、代わりにArduino Leonardoを選択することもできます。
 
 シリアルモニターを開くことで、センサーから読み取った生データを確認することができます。
 

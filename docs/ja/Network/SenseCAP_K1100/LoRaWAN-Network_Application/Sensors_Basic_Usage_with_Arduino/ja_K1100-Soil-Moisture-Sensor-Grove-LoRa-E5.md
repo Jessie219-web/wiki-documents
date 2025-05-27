@@ -69,7 +69,7 @@ Grove - 土壌水分センサーは、植物のための土壌水分を測定す
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/162.jpg" /></div>
 
-土壌水分センサーの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/Grove-Moisture_Sensor/)を参照してください。
+土壌水分センサーの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/ja/Grove-Moisture_Sensor/)を参照してください。
 
 ## 必要な材料
 
@@ -222,7 +222,7 @@ Grove - Wio-E5のコードを組み合わせてLoRa®ネットワークに接続
 </div>
 
 :::tip
-このコードを今すぐアップロードして結果を確認することはお勧めしません。現時点ではHelium/TTNの設定がまだ完了していないため、「Join failed」という結果が得られます。[Connecting to Helium](https://wiki.seeedstudio.com/Connecting-to-Helium/)または[Connecting to TTN](https://wiki.seeedstudio.com/Connecting-to-TTN/)の章を完了してから、このコードをアップロードし、完全なデータ送信プロセスを完了することをお勧めします。
+このコードを今すぐアップロードして結果を確認することはお勧めしません。現時点ではHelium/TTNの設定がまだ完了していないため、「Join failed」という結果が得られます。[Connecting to Helium](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/)または[Connecting to TTN](https://wiki.seeedstudio.com/ja/Connecting-to-TTN/)の章を完了してから、このコードをアップロードし、完全なデータ送信プロセスを完了することをお勧めします。
 :::
 
 土壌湿度センサーの動作とデータ形式を理解したら、次のステップであるLoRaWAN®への参加に進んでください。
@@ -233,11 +233,11 @@ Grove - Wio-E5のコードを組み合わせてLoRa®ネットワークに接続
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/178.jpeg" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Heliumコンソールの操作方法を紹介し、Heliumコンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/Helium-Introduction">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Heliumコンソールの操作方法を紹介し、Heliumコンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/helium.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Heliumへの接続</strong><br /><br />このセクションでは、Heliumを設定してセンサーデータを正常にアップロードし、Heliumに表示する方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-Helium">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Heliumへの接続</strong><br /><br />このセクションでは、Heliumを設定してセンサーデータを正常にアップロードし、Heliumに表示する方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td colSpan={2} bgcolor="8FBC8F"><b>TTN セクション</b></td>
@@ -245,12 +245,12 @@ Grove - Wio-E5のコードを組み合わせてLoRa®ネットワークに接続
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-TTN/TTN.png" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN の紹介</strong><br /><br />この章では、TTNコンソールの操作方法を紹介し、TTNコンソールの第一印象を得ることができます。
-        <br /><br /><a href="https://wiki.seeedstudio.com/TTN-Introduction">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/ttncon.jpg" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTNへの接続</strong><br /><br />このセクションでは、TTNを設定してセンサーデータを正常にアップロードし、TTNに表示する方法を説明します。
-        <br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-TTN">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN">章にジャンプ &gt;</a></td>
     </tr>
   </tbody></table>
 

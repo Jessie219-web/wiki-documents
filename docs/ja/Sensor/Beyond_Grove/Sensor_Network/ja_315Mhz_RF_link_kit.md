@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/315Mhz_RF_link_kit/
+image: https://wiki.seeedstudio.com/ja/315Mhz_RF_link_kit/
 slug: /ja/315Mhz_RF_link_kit
 last_update:
   date: 05/15/2025

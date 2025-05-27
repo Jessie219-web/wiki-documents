@@ -127,7 +127,7 @@ void loop() {
 
 #### サンプルコード
 
-[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Play-Record/#peak-detection)をご確認ください。
+[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Audio-Play-Record/#peak-detection)をご確認ください。
 
 ### オーディオスペクトラムビジュアライザー
 
@@ -145,7 +145,7 @@ void loop() {
 
 #### サンプルコード
 
-[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Play-Record/#audio-spectrum-visualizer)をご確認ください。
+[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Audio-Play-Record/#audio-spectrum-visualizer)をご確認ください。
 
 ### リアルタイムで録音と再生
 
@@ -161,4 +161,4 @@ void loop() {
 
 #### サンプルコード
 
-[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Play-Record/#record-and-play-at-real-time)をご確認ください。
+[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Audio-Play-Record/#record-and-play-at-real-time)をご確認ください。

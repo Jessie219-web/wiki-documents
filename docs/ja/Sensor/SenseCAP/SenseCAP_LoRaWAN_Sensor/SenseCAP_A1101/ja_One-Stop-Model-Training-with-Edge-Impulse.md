@@ -54,7 +54,7 @@ A1101 を Edge Impulse に設定するには、以下のソフトウェアをイ
 すべてのソフトウェアが準備できたら、A1101 を Edge Impulse に接続します。
 
 :::caution **注意：**  
-**2023年3月30日以降**にデバイスを購入した場合、EI のファームウェアを更新する必要はありません。直接 [STEP3](https://wiki.seeedstudio.com/One-Stop-Model-Training-with-Edge-Impulse/#step-3-setting-keys) のキー設定に進んでください。EI のファームウェアを更新すると、デフォルトモデルが上書きされることに注意してください。
+**2023年3月30日以降**にデバイスを購入した場合、EI のファームウェアを更新する必要はありません。直接 [STEP3](https://wiki.seeedstudio.com/ja/One-Stop-Model-Training-with-Edge-Impulse/#step-3-setting-keys) のキー設定に進んでください。EI のファームウェアを更新すると、デフォルトモデルが上書きされることに注意してください。
 :::
 
 ### ステップ 1. BL702 チップのファームウェアを更新
@@ -150,7 +150,7 @@ URL をクリックするよう求められ、その後デバイスのカメラ�
 
 ## SenseCap Mate でモデルを設定する
 
-- [SenseCAP Mate](https://wiki.seeedstudio.com/Cloud_Chain/SenseCAP_Mate_APP/SenseCAP_APP/#docusaurus_skipToContent_fallback) をダウンロード
+- [SenseCAP Mate](https://wiki.seeedstudio.com/ja/Cloud_Chain/SenseCAP_Mate_APP/SenseCAP_APP/#docusaurus_skipToContent_fallback) をダウンロード
    - [Android](https://play.google.com/store/apps/details?id=cc.seeed.sensecapmate&hl=en&gl=US)
    - [iOS](https://apps.apple.com/gb/app/sensecap-mate/id1619944834)
 - SenseCAP Mate を開き、ログインします

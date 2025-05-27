@@ -62,7 +62,7 @@ Cブロックは「C」の形をしたブロックです。「ラップブロッ
 
 ### 対応するGrove
 
-お使いのGroveがサポートされているかどうかを確認するには、[CodeCraft Grove Compatible List](https://wiki.seeedstudio.com/Codecraft_Grove_Compatible_List/)をご参照ください。
+お使いのGroveがサポートされているかどうかを確認するには、[CodeCraft Grove Compatible List](https://wiki.seeedstudio.com/ja/Codecraft_Grove_Compatible_List/)をご参照ください。
 
 ### 基本チュートリアル
 

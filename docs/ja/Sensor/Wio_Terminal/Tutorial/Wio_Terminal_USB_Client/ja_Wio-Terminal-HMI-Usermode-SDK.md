@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このWikiでは、[**Wio Terminal**](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)を使用して、Windows/Linux/MacOS上で動作する**ユーザーモードSDK**を利用してHMIディスプレイを構築する方法を紹介します。これにより、Wio Terminalの産業用途での可能性が広がります！
 
-Raspberry PiとWio Terminalを組み合わせてHMIディスプレイとして使用したい場合は、[こちらのWiki](https://wiki.seeedstudio.com/Wio-Terminal-HMI/)をご覧ください。
+Raspberry PiとWio Terminalを組み合わせてHMIディスプレイとして使用したい場合は、[こちらのWiki](https://wiki.seeedstudio.com/ja/Wio-Terminal-HMI/)をご覧ください。
 
 ## 必要なハードウェア
 
@@ -49,7 +49,7 @@ Raspberry PiとWio Terminalを組み合わせてHMIディスプレイとして�
 
 - [USBDisplayAndMouseControl](https://files.seeedstudio.com/wiki/Wio-Terminal-HMI-SDK/USBDisplayAndMouseControl-sdk.uf2) の`uf2`ファイルをダウンロード。
 
-電源スイッチを素早く2回スライドさせてブートローダーモードに入ります。詳細については[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#faq)も参照してください。
+電源スイッチを素早く2回スライドさせてブートローダーモードに入ります。詳細については[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#faq)も参照してください。
 
 PCに`Arduino`という名前の外部ドライブが表示されます。ダウンロードした`uf2`ファイルを`Arduino`ドライブにドラッグしてください。
 

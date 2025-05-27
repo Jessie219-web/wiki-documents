@@ -22,7 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## **ReSpeaker の選択**
 
-ReSpeaker ラインの目的や使用方法について、[ソリューションページ](https://wiki.seeedstudio.com/ReSpeaker_Solutions/)や[紹介ページ](https://wiki.seeedstudio.com/ReSpeaker/)で少し学んだかもしれませんが、実際にどの製品があなたのニーズに合うのでしょうか？心配しないでください。この自己認識型ページがその選択をお手伝いします。
+ReSpeaker ラインの目的や使用方法について、[ソリューションページ](https://wiki.seeedstudio.com/ja/ReSpeaker_Solutions/)や[紹介ページ](https://wiki.seeedstudio.com/ja/ReSpeaker/)で少し学んだかもしれませんが、実際にどの製品があなたのニーズに合うのでしょうか？心配しないでください。この自己認識型ページがその選択をお手伝いします。
 
 ## **3つのカテゴリ**
 
@@ -40,7 +40,7 @@ ReSpeaker ラインの目的や使用方法について、[ソリューション
 
 推奨対象: 開発者、企業
 
-**[ReSpeaker Core v2.0](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0/)** は、強力な処理能力と統合された6マイクの円形アレイを備えています。ボードの中央には SoC、メモリ（RAM）、PMU を含むコアモジュールがあり、ボードの外縁にはコネクタ、WiFi モジュール、LED、マイクアレイなどの周辺機器があります。これによりカスタマイズが容易になり、ReSpeaker Core v2.0 はプロジェクトのスケールアップ時にコストを削減する優れたオールインワンボードソリューションとなります。
+**[ReSpeaker Core v2.0](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/)** は、強力な処理能力と統合された6マイクの円形アレイを備えています。ボードの中央には SoC、メモリ（RAM）、PMU を含むコアモジュールがあり、ボードの外縁にはコネクタ、WiFi モジュール、LED、マイクアレイなどの周辺機器があります。これによりカスタマイズが容易になり、ReSpeaker Core v2.0 はプロジェクトのスケールアップ時にコストを削減する優れたオールインワンボードソリューションとなります。
 
 ### **マイクアレイソリューション**
 
@@ -50,7 +50,7 @@ ReSpeaker Mic Array ラインは、フロントエンドの加速のためにハ
 
 推奨対象: 開発者、プロのメイカー、企業
 
-**[ReSpeaker Mic Array v2.0](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/)** は、XMOS XVF3000 によって駆動される円形マイクアレイです。ハードウェア対応のフロントエンドオーディオ処理を特徴とし、Windows、macOS、多くの Linux ディストリビューションを含むほとんどの一般的な OS と互換性があります。また、オーディオ出力も可能で、使用時には AEC を実現します。マイクの構成は設定およびカスタマイズ可能です。
+**[ReSpeaker Mic Array v2.0](https://wiki.seeedstudio.com/ja/ReSpeaker_Mic_Array_v2.0/)** は、XMOS XVF3000 によって駆動される円形マイクアレイです。ハードウェア対応のフロントエンドオーディオ処理を特徴とし、Windows、macOS、多くの Linux ディストリビューションを含むほとんどの一般的な OS と互換性があります。また、オーディオ出力も可能で、使用時には AEC を実現します。マイクの構成は設定およびカスタマイズ可能です。
 
 ### **Raspberry Pi マイクアレイソリューション**
 
@@ -60,7 +60,7 @@ Raspberry Pi 用にいくつかの ReSpeaker シールドを作成しました�
 
 推奨対象: メイカー、プロのメイカー、開発者
 
-**[ReSpeaker 4-Mic Linear Array Kit](https://wiki.seeedstudio.com/ReSpeaker_4-Mic_Linear_Array_Kit_for_Raspberry_Pi/)** は、壁に固定されたプロジェクトに最適です。180°の音声検出が可能で、相対的な位置を検出したり、特定の方向に焦点を合わせて他の音声入力を無視することができます。このキットには柔軟なケーブルが付属しており、さまざまな方向に配置できるため、エンクロージャーデザインの選択肢が広がります。他のボードとは異なり、青色 LED が1つだけ含まれています。
+**[ReSpeaker 4-Mic Linear Array Kit](https://wiki.seeedstudio.com/ja/ReSpeaker_4-Mic_Linear_Array_Kit_for_Raspberry_Pi/)** は、壁に固定されたプロジェクトに最適です。180°の音声検出が可能で、相対的な位置を検出したり、特定の方向に焦点を合わせて他の音声入力を無視することができます。このキットには柔軟なケーブルが付属しており、さまざまな方向に配置できるため、エンクロージャーデザインの選択肢が広がります。他のボードとは異なり、青色 LED が1つだけ含まれています。
 
 主な特徴:
 
@@ -71,7 +71,7 @@ Raspberry Pi 用にいくつかの ReSpeaker シールドを作成しました�
 - 1 x 3.5mm オーディオジャック (ステレオ)
 - 1 x JST スピーカーコネクタ (モノラル)
 
-**[ReSpeaker 6-Mic Circular Array Kit](https://wiki.seeedstudio.com/ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi/)** は、人々の中心に配置されるプロジェクトに最適です。360°の音声検出が可能で、相対的な位置を検出したり、特定の方向に焦点を合わせて他の音声入力を無視することができます。このアレイには柔軟なケーブルが付属しており、さまざまな方向に配置できるため、エンクロージャーデザインの選択肢が広がります。
+**[ReSpeaker 6-Mic Circular Array Kit](https://wiki.seeedstudio.com/ja/ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi/)** は、人々の中心に配置されるプロジェクトに最適です。360°の音声検出が可能で、相対的な位置を検出したり、特定の方向に焦点を合わせて他の音声入力を無視することができます。このアレイには柔軟なケーブルが付属しており、さまざまな方向に配置できるため、エンクロージャーデザインの選択肢が広がります。
 
 主な特徴:
 
@@ -82,7 +82,7 @@ Raspberry Pi 用にいくつかの ReSpeaker シールドを作成しました�
 - 1 x 3.5mm オーディオジャック (ステレオ)
 - 1 x JST スピーカーコネクタ (モノラル)
 
-**[ReSpeaker 4-Mic Array](https://wiki.seeedstudio.com/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/)**（円形）は、360°の音声検出が可能です。ただし、他のボードとは異なり、オーディオ出力機能がないため、Raspberry Pi がすべてのオーディオ出力をサポートする必要があります。このボードには4つのマイク、12個の RGB LED、および2つの Grove コネクタが搭載されています。
+**[ReSpeaker 4-Mic Array](https://wiki.seeedstudio.com/ja/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/)**（円形）は、360°の音声検出が可能です。ただし、他のボードとは異なり、オーディオ出力機能がないため、Raspberry Pi がすべてのオーディオ出力をサポートする必要があります。このボードには4つのマイク、12個の RGB LED、および2つの Grove コネクタが搭載されています。
 
 主な特徴:
 
@@ -94,7 +94,7 @@ Raspberry Pi 用にいくつかの ReSpeaker シールドを作成しました�
 Raspberry Pi 用 ReSpeaker 4-Mic Array にはオーディオ出力インターフェースがありません。これは音声キャプチャ専用です。オーディオ出力には [Raspberry Pi のヘッドフォンジャック](https://www.raspberrypi.org/documentation/configuration/audio-config.md) を使用できます。プロジェクトで高品質のオーディオ出力が必要な場合は、別の製品を選択してください。
 :::
 
-**[ReSpeaker 2-Mic Pi HAT](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/)** は、エントリーレベルとして非常に優れた選択肢です。ただし、このカテゴリの他のアイテムとは異なり、2-Mic HAT は話者の方向を検出することはできません。遠距離の音声入力専用に設計されています。
+**[ReSpeaker 2-Mic Pi HAT](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT/)** は、エントリーレベルとして非常に優れた選択肢です。ただし、このカテゴリの他のアイテムとは異なり、2-Mic HAT は話者の方向を検出することはできません。遠距離の音声入力専用に設計されています。
 
 主な特徴:
 

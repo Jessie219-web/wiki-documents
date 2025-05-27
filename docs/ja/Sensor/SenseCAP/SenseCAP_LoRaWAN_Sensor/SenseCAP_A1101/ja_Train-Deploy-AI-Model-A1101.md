@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 このWikiでは、特定のアプリケーション向けに独自のAIモデルをトレーニングし、それを簡単にSenseCAP A1101 - LoRaWAN Vision AI Sensorにデプロイする方法を説明します。それでは始めましょう！
 
 :::caution **注意:**
-現在のデバイスファームウェアは[EI](https://wiki.seeedstudio.com/One-Stop-Model-Training-with-Edge-Impulse/)と互換性があります。**2023年3月30日以降**にデバイスを購入した場合、このWikiに従うためにデバイスを[デフォルトファームウェア](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#change-device-firmware-after-image-collection)に戻す必要があります。
+現在のデバイスファームウェアは[EI](https://wiki.seeedstudio.com/ja/One-Stop-Model-Training-with-Edge-Impulse/)と互換性があります。**2023年3月30日以降**にデバイスを購入した場合、このWikiに従うためにデバイスを[デフォルトファームウェア](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101/#change-device-firmware-after-image-collection)に戻す必要があります。
 :::
 
 ## ハードウェアの紹介
@@ -58,16 +58,16 @@ YOLOは「You Only Look Once（1度見るだけ）」の略です。これはリ
 
 このWikiは以下の3つの主要セクションに分かれています。
 
-1. [公開データセットを使用して独自のAIモデルをトレーニングする](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)
-2. [独自のデータセットを使用して独自のAIモデルをトレーニングする](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)
-3. [トレーニング済みのAIモデルをSenseCAP A1101にデプロイする](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)
+1. [公開データセットを使用して独自のAIモデルをトレーニングする](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)
+2. [独自のデータセットを使用して独自のAIモデルをトレーニングする](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)
+3. [トレーニング済みのAIモデルをSenseCAP A1101にデプロイする](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)
 
 最初のセクションでは、最小限のステップで独自のAIモデルを構築する最速の方法を紹介します。2番目のセクションでは、独自のAIモデルを構築するために時間と労力が必要ですが、その知識は確実に価値があります。3番目のセクションでは、トレーニング済みのAIモデルをデプロイする方法を説明しており、これは最初のセクションまたは2番目のセクションの後に実行できます。
 
 このWikiを進めるには2つの方法があります：
 
-1. [セクション1](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)を進めた後に[セクション3](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)を進める - 簡単に進められる方法
-2. [セクション2](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)を進めた後に[セクション3](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)を進める - 時間がかかる方法
+1. [セクション1](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101#1-train-your-own-ai-model-with-a-public-dataset)を進めた後に[セクション3](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)を進める - 簡単に進められる方法
+2. [セクション2](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101#2-train-your-own-ai-model-with-your-own-dataset)を進めた後に[セクション3](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101#3-deploy-the-trained-model-and-perform-inference)を進める - 時間がかかる方法
 
 ただし、最初は1つ目の方法を進め、その後2つ目の方法に進むことをお勧めします。
 
@@ -130,7 +130,7 @@ YOLOは「You Only Look Once（1度見るだけ）」の略です。これはリ
 
 ### デプロイと推論
 
-トレーニング済みのAIモデルをSenseCAP A1101にデプロイして推論を実行する方法を説明する**セクション3**に直接進みたい場合は、[こちらをクリック](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#3-deploy-the-trained-model-and-perform-inference)してください。
+トレーニング済みのAIモデルをSenseCAP A1101にデプロイして推論を実行する方法を説明する**セクション3**に直接進みたい場合は、[こちらをクリック](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101/#3-deploy-the-trained-model-and-perform-inference)してください。
 
 ## 2. 独自のデータセットでAIモデルをトレーニングする
 
@@ -336,7 +336,7 @@ Roboflow には **Label Assist** という機能があり、ラベルを事前�
 
 ### Google Colab で YOLOv5 を使用してトレーニング
 
-データセットのアノテーションが完了したら、次はデータセットをトレーニングする必要があります。[こちらのセクション](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#train-using-yolov5-on-google-colab)に進み、Google Colab 上で YOLOv5 を使用して AI モデルをトレーニングする方法を確認してください。
+データセットのアノテーションが完了したら、次はデータセットをトレーニングする必要があります。[こちらのセクション](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101/#train-using-yolov5-on-google-colab)に進み、Google Colab 上で YOLOv5 を使用して AI モデルをトレーニングする方法を確認してください。
 
 ## 3. 訓練済みモデルをデプロイして推論を実行する
 

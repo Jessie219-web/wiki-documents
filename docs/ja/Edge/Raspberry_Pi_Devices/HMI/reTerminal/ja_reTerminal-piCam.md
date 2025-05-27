@@ -69,7 +69,7 @@ Seeed Studio reTerminal に PiCam をインストールするには、Seeed Stud
 
 :::
 
-- **ステップ 1** Seeed Studio の reTerminal 専用 Wiki ページにアクセスし、事前構築済みイメージを提供しているセクションに移動します。（イメージを取得し、インストール手順を確認するには[こちらのリンク](https://wiki.seeedstudio.com/reTerminal-FAQ/#q2-how-can-i-flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)を参照してください。すでに実施済みの場合は、このステップをスキップしてください。）
+- **ステップ 1** Seeed Studio の reTerminal 専用 Wiki ページにアクセスし、事前構築済みイメージを提供しているセクションに移動します。（イメージを取得し、インストール手順を確認するには[こちらのリンク](https://wiki.seeedstudio.com/ja/reTerminal-FAQ/#q2-how-can-i-flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)を参照してください。すでに実施済みの場合は、このステップをスキップしてください。）
 
 - **ステップ 2** reTerminal の電源をオフにし、PiCam v1 モジュールを reTerminal のカメラインターフェースに接続します。しっかりと接続されていることを確認してください。
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/Picam/reterminal_inside.png" alt="pir" width="600" height="auto"/></p>
@@ -87,7 +87,7 @@ raspistill -o Desktop/image.jpg
 
 Seeed Studio reTerminal には、Raspberry Pi の公式ウェブサイトから提供される Raspbian Bullseye 64-bit の新しいイメージを推奨します。
 
-- **ステップ 1** Seeed Studio は、新しい Raspberry Pi OS またはその他の OS をフラッシュした後にドライバーをインストールする方法について詳細な手順を提供しています。Seeed Studio の reTerminal Wiki ページを参照し、["新しい Raspberry Pi OS をフラッシュする"](https://wiki.seeedstudio.com/reTerminal#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)セクションおよび["reTerminal ドライバーをインストールする方法"](https://wiki.seeedstudio.com/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)セクションの指示に従ってください。すでに実施済みの場合は、このステップをスキップしてください。
+- **ステップ 1** Seeed Studio は、新しい Raspberry Pi OS またはその他の OS をフラッシュした後にドライバーをインストールする方法について詳細な手順を提供しています。Seeed Studio の reTerminal Wiki ページを参照し、["新しい Raspberry Pi OS をフラッシュする"](https://wiki.seeedstudio.com/ja/reTerminal#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)セクションおよび["reTerminal ドライバーをインストールする方法"](https://wiki.seeedstudio.com/ja/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)セクションの指示に従ってください。すでに実施済みの場合は、このステップをスキップしてください。
 
 - **ステップ 2** reTerminal の電源をオフにし、PiCam モジュールを reTerminal のカメラインターフェースに接続します。しっかりと接続されていることを確認してください。
 

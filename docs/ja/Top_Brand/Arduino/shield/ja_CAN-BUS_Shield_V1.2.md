@@ -178,7 +178,7 @@ CAN-BUS Shieldの動作を示す簡単な例を以下に示します。この例
 
 **STEP3: ソフトウェア**
 
-[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)の手順に従ってCAN BUS Shieldライブラリをインストールしてください。
+[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)の手順に従ってCAN BUS Shieldライブラリをインストールしてください。
 
 以下のボタンをクリックしてライブラリをダウンロードしてください。
 

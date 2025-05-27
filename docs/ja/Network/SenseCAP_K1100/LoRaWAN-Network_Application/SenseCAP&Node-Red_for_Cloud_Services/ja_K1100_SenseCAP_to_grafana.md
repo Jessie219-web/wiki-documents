@@ -78,9 +78,9 @@ Grafanaは、データ分析を実行し、大量のデータを理解するた�
 
 その前に、以下を準備してください。
 
-1. Node-REDをインストールしていない、またはNode-REDが何か分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/)を参照してください。
+1. Node-REDをインストールしていない、またはNode-REDが何か分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/)を参照してください。
 
-2. Node-REDを使用してSenseCAPをInfluxDBにデプロイすることから始めてください。その詳細は、wikiの[Node-REDを介してSenseCAPをInfluxDBに接続する](https://wiki.seeedstudio.com/K1100_SenseCAP_to_influxdb/)で確認できます。
+2. Node-REDを使用してSenseCAPをInfluxDBにデプロイすることから始めてください。その詳細は、wikiの[Node-REDを介してSenseCAPをInfluxDBに接続する](https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_influxdb/)で確認できます。
 
 ## MQTTノードの作成
 
@@ -90,7 +90,7 @@ Grafanaは、データ分析を実行し、大量のデータを理解するた�
 
 **ステップ2.** MQTTノードを作成する
 
-**Network -> mqtt in**ノードを使用し、[前回のチュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/#mqtt-node)で説明したSenseCAP APIの形式に従ってmqttを設定します。
+**Network -> mqtt in**ノードを使用し、[前回のチュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/#mqtt-node)で説明したSenseCAP APIの形式に従ってmqttを設定します。
 
 - サーバー: openstream.api.sensecap.seeed.cc
 - ポート: 1883

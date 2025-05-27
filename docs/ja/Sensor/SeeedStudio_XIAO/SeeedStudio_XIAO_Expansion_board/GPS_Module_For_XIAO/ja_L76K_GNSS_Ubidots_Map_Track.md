@@ -24,7 +24,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 </p>
 
 ## はじめに
-[L76K GNSSモジュールを使用したSeeedStudio XIAOの使い方](https://wiki.seeedstudio.com/get_start_l76k_gnss/)を学んだ後、L76K GNSSモジュールを使用してオブジェクトの位置を特定し、地図上で経路を表示したいと思うかもしれません。この目的のために、SeeedStudio XIAO開発ボードとUbidots IoTデータプラットフォームを組み合わせて実現できます。
+[L76K GNSSモジュールを使用したSeeedStudio XIAOの使い方](https://wiki.seeedstudio.com/ja/get_start_l76k_gnss/)を学んだ後、L76K GNSSモジュールを使用してオブジェクトの位置を特定し、地図上で経路を表示したいと思うかもしれません。この目的のために、SeeedStudio XIAO開発ボードとUbidots IoTデータプラットフォームを組み合わせて実現できます。
 
 [Ubidots](https://ubidots.com/)は、エンジニアや開発者が完全なプロダクション対応のIoTアプリケーションを自分で構築する時間や労力を節約するためのローコードIoT開発プラットフォームです。デバイスに優しいAPIからエンドユーザー向けのクリーンなUIまで、Ubidotsは市場投入を迅速化するための基本的な構成要素を提供し、高価なエンジニアチームを雇ってカスタマイズソリューションを開発・維持する必要をなくします。
 

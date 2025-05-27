@@ -93,7 +93,7 @@ M.2 Accelerator はデュアルキー M.2 カード（B+M キー）で、互換�
 
 * x86-64、ARMv7 (32ビット)、または ARMv8 (64ビット) システムを選択できます。
 
-   ODYSSEY - X86J41x5 に Linux OS (Ubuntu Desktop 18.04) をインストールする方法については、[ブータブル USB ドライブを作成して Linux OS をインストールする方法](https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Installing-OS/)を参照してください。
+   ODYSSEY - X86J41x5 に Linux OS (Ubuntu Desktop 18.04) をインストールする方法については、[ブータブル USB ドライブを作成して Linux OS をインストールする方法](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Installing-OS/)を参照してください。
 
 * ODYSSEY X86J41x5 上で利用可能な Coral Mini PCIe Accelerator
 

@@ -118,12 +118,12 @@ Grove Base Shieldがない場合は、以下のようにこのモジュールを
 #### ソフトウェア
 
 :::注意
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** Githubから[Seeed_Arduino_KCT202](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202)ライブラリをダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。例を開きます。以下の3つの方法で開くことができます：
     1. Arduino IDEで直接開きます。パスは次の通りです：**File --> Examples --> Seeed_Arduino_KCT202 --> full_process**。
@@ -224,7 +224,7 @@ void loop() {
 ライブラリファイルが更新される可能性があります。このコードは更新されたライブラリファイルには適用されない場合があるため、最初の方法を使用することをお勧めします。
 :::
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、++ctrl+shift+m++ キーを同時に押します。ボーレートを **115200** に設定してください。
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-4-Channel_SPDT_Relay/
+image: https://wiki.seeedstudio.com/ja/Grove-4-Channel_SPDT_Relay/
 slug: /ja/Grove-4-Channel_SPDT_Relay
 last_update:
   date: 05/15/2025
@@ -138,12 +138,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 + **ステップ 1.** Githubから[Multi_Channel_Relay_Arduino](https://github.com/Seeed-Studio/Multi_Channel_Relay_Arduino_Library)ライブラリをダウンロードします。
 
-+ **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールします。
++ **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールします。
 
 + **ステップ 3.** Arduino IDEを再起動します。次のパスで例を開きます：**File --> Examples --> Multi Channel Relay Arduino Library --> four_channel_relay_control**。
 
@@ -242,7 +242,7 @@ void loop()
 ライブラリファイルが更新される可能性があります。このコードは更新されたライブラリファイルには適用されない場合があるため、最初の方法を使用することをお勧めします。
 :::
 
-+ **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
++ **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 + **ステップ 5.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、++ctrl+shift+m++ キーを同時に押してください。
 
@@ -276,7 +276,7 @@ Grove - 4-Channel SPDT Relay が正常に動作している場合、以下のよ
 </div>
 
 :::note
-このデモでは負荷を追加していません。負荷の追加方法を確認したい場合は、[Grove - 2-Channel SPDT Relay](https://wiki.seeedstudio.com/Grove-2-Channel_SPDT_Relay/) を確認してください。
+このデモでは負荷を追加していません。負荷の追加方法を確認したい場合は、[Grove - 2-Channel SPDT Relay](https://wiki.seeedstudio.com/ja/Grove-2-Channel_SPDT_Relay/) を確認してください。
 :::
 
 #### 関数の説明

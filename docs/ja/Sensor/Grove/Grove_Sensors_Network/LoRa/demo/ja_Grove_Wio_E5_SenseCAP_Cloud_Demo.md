@@ -329,7 +329,7 @@ void loop() {
 
 #### ChirpStackの設定
 
-**ChirpStack** は、LoRaWANネットワークを構築および管理するために設計されたオープンソースのIoT（モノのインターネット）ソリューションです。ゲートウェイ、ネットワークサーバー、アプリケーションサーバー、デバイスを含むLoRaWANネットワークの展開、管理、監視を支援するための包括的なツールとサービスを提供します。ChirpStackへの接続方法については、以下のリンクを参照してください：[Chirpstack-Configuration](https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack/#chirpstack-configuration)
+**ChirpStack** は、LoRaWANネットワークを構築および管理するために設計されたオープンソースのIoT（モノのインターネット）ソリューションです。ゲートウェイ、ネットワークサーバー、アプリケーションサーバー、デバイスを含むLoRaWANネットワークの展開、管理、監視を支援するための包括的なツールとサービスを提供します。ChirpStackへの接続方法については、以下のリンクを参照してください：[Chirpstack-Configuration](https://wiki.seeedstudio.com/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack/#chirpstack-configuration)
 
 ChirpStackで新しいデバイスプロファイルを作成した後、以下のコードをペイロードコーデックに入力してください：
 
@@ -421,6 +421,6 @@ Home Assistantは、さまざまなスマートデバイスやサービスを統
 
 ChirpStackとHome Assistantの両方には、組み込みのMQTTプラグイン統合が備わっています。これにより、MQTTプロトコルを介してデータを通信し、ゲートウェイ（MQTTプラグインを搭載）からHome Assistantへのセンサーデータの送信を容易にします。
 
-また、Arduino Uno R4をHome Assistantに統合することも可能です。以下のチュートリアルを参照してください：[home_assistant_sensecap](https://wiki.seeedstudio.com/home_assistant_sensecap/)
+また、Arduino Uno R4をHome Assistantに統合することも可能です。以下のチュートリアルを参照してください：[home_assistant_sensecap](https://wiki.seeedstudio.com/ja/home_assistant_sensecap/)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_LoRaWAN/r4_8.png" alt="pir" width={700} height="auto" /></p>

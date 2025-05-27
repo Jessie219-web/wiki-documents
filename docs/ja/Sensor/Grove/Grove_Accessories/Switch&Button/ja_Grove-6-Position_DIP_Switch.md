@@ -108,12 +108,12 @@ Grove Base Shieldがない場合でも、以下のようにこのモジュール
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** Githubから[Grove Multi Switch](https://github.com/Seeed-Studio/Grove_Multi_Switch)ライブラリをダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。以下のパスから例を開きます：**File --> Examples --> Grove Multi Switch Library --> Grove_Switch_Events**。
 
@@ -245,7 +245,7 @@ void loop()
 
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニタ** を開くには、**ツール -> シリアルモニタ** をクリックします。または `ctrl`+`shift`+`m` キーを同時に押します。ボーレートを **115200** に設定してください。
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-16-Channel_PWM_Driver-PCA9685/
+image: https://wiki.seeedstudio.com/ja/Grove-16-Channel_PWM_Driver-PCA9685/
 slug: /ja/Grove-16-Channel_PWM_Driver-PCA9685
 last_update:
   date: 05/15/2025
@@ -160,12 +160,12 @@ ___
 #### ソフトウェア
 
 :::caution
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** Githubから[Grove-16-Channel_PWM_Driver-PCA9685](https://github.com/Seeed-Studio/Seeed_PCA9685/archive/master.zip)ライブラリをダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。例を開きます。以下の3つの方法で開くことができます：
     1. Arduino IDEで直接開く：**File --> Examples -->Seeed_PCA9685 --> led** のパスを使用します。

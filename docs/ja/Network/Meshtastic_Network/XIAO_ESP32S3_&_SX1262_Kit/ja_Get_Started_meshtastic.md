@@ -80,7 +80,7 @@ nodenumの最後の4桁は、Meshtastic アプリで検出されたデバイス�
 
 ## Wio Tracker T1000-Eとの通信
 
-**ステップ1**. [wiki](https://wiki.seeedstudio.com/sensecap_t1000_e/#get-started-1) に従って Wio Tracker T1000-E を接続します。
+**ステップ1**. [wiki](https://wiki.seeedstudio.com/ja/sensecap_t1000_e/#get-started-1) に従って Wio Tracker T1000-E を接続します。
 
 **ステップ2**. 以下の設定が XIAO ESP32S3 for Meshtastic の設定と一致していることを確認します。
 

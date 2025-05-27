@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Qwiic-Hub/
+image: https://wiki.seeedstudio.com/ja/Grove-Qwiic-Hub/
 slug: /ja/Grove-Qwiic-Hub
 last_update:
   date: 05/15/2025

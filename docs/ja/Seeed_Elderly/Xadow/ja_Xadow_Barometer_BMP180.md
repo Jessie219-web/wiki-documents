@@ -45,7 +45,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## ライブラリのダウンロード
 ---
 - Xadow 気圧計 BMP180はGrove - 気圧センサーとライブラリを共有しています。GitHubから直接[ライブラリ](https://github.com/Seeed-Studio/Grove_Barometer_Sensor)をダウンロードできます。
-- コードを開いてXadowメインボードにアップロードできます。Xadowドライバーをインストールしていない場合は、Wikiメインページの[Getting Started](https://wiki.seeedstudio.com/Getting_Started_with_Seeeduino/)を参照して操作手順を学ぶことができます。
+- コードを開いてXadowメインボードにアップロードできます。Xadowドライバーをインストールしていない場合は、Wikiメインページの[Getting Started](https://wiki.seeedstudio.com/ja/Getting_Started_with_Seeeduino/)を参照して操作手順を学ぶことができます。
 
 ```
 /*

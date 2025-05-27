@@ -111,7 +111,7 @@ sudo docker run -d --name influxdb -p 8086:8086 influxdb:2.1.1
 
 ![ESP32 Circuit Diagram](https://www.the-diy-life.com/wp-content/uploads/2021/12/ESP32-Circuit-Diagram-1024x576.jpg)
 
-- **ステップ 1.** [Arduino IDE](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) を開き、[ライブラリをインストール](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) します。以下の 2 つの方法を提供します。
+- **ステップ 1.** [Arduino IDE](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) を開き、[ライブラリをインストール](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) します。以下の 2 つの方法を提供します。
 
 1. ライブラリマネージャーを使用
 

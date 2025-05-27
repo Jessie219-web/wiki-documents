@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Bluetooth_Multimeter/
+image: https://wiki.seeedstudio.com/ja/Bluetooth_Multimeter/
 slug: /ja/Bluetooth_Multimeter
 last_update:
   date: 05/15/2025

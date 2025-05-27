@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Vibration_Motor/
+image: https://wiki.seeedstudio.com/ja/Grove-Vibration_Motor/
 slug: /ja/Grove-Vibration_Motor
 last_update:
   date: 05/15/2025
@@ -37,7 +37,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - 高信頼性
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -103,7 +103,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -137,7 +137,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### ソフトウェア
 
-- **ステップ 1.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 1.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```c
 int MoPin = 2;    // 振動モーターがデジタルピン9に接続されています
@@ -173,7 +173,7 @@ void loop()  {
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[ArduinoでのCodecraftの使い方](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)もご覧ください。
+    Codecraftを初めて使用する場合は、[ArduinoでのCodecraftの使い方](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)もご覧ください。
 :::
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後からダウンロードできるcdcファイルを開きます。
 

@@ -71,7 +71,7 @@ SGP30の検知部分（MEMS）は、金属酸化物（MOx）ナノ粒子の加�
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/168.png" /></div>
 
-Grove VOCおよびeCO2ガスセンサーの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/)をご参照ください。
+Grove VOCおよびeCO2ガスセンサーの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/ja/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/)をご参照ください。
 
 ## 必要な材料
 
@@ -273,7 +273,7 @@ Grove - Wio-E5 の以前のコードを組み合わせて、LoRa® ネットワ�
 </div>
 
 :::tip
-現時点でコードをアップロードして結果を確認することはお勧めしません。なぜなら、この時点ではまだ Helium/TTN の設定が完了しておらず、「Join failed」という結果が得られるためです。[Connecting to Helium](https://wiki.seeedstudio.com/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/Connecting-to-TTN/) の章を完了してから、このコードをアップロードして完全なデータ送信プロセスを完了することをお勧めします。
+現時点でコードをアップロードして結果を確認することはお勧めしません。なぜなら、この時点ではまだ Helium/TTN の設定が完了しておらず、「Join failed」という結果が得られるためです。[Connecting to Helium](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/ja/Connecting-to-TTN/) の章を完了してから、このコードをアップロードして完全なデータ送信プロセスを完了することをお勧めします。
 :::
 
 Grove VOC および eCO2 ガスセンサーの動作とデータ形式を理解したら、次のステップである LoRaWAN® への参加に進んでください。
@@ -284,11 +284,11 @@ Grove VOC および eCO2 ガスセンサーの動作とデータ形式を理解�
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/178.jpeg" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作方法を紹介し、Helium コンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/Helium-Introduction">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作方法を紹介し、Helium コンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/helium.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium への接続</strong><br /><br />このセクションでは、センサーデータを Helium に正常にアップロードして表示できるようにするための Helium の設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-Helium">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium への接続</strong><br /><br />このセクションでは、センサーデータを Helium に正常にアップロードして表示できるようにするための Helium の設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td colSpan={2} bgcolor="8FBC8F"><b>TTN セクション</b></td>
@@ -296,12 +296,12 @@ Grove VOC および eCO2 ガスセンサーの動作とデータ形式を理解�
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-TTN/TTN.png" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN の紹介</strong><br /><br />この章では、TTN コンソールの操作方法を紹介し、TTN コンソールの第一印象を得ることができます。
-        <br /><br /><a href="https://wiki.seeedstudio.com/TTN-Introduction">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/ttncon.jpg" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN への接続</strong><br /><br />このセクションでは、センサーデータを TTN に正常にアップロードして表示できるようにするための TTN の設定方法について説明します。
-        <br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-TTN">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN">章にジャンプ &gt;</a></td>
     </tr>
   </tbody></table>
 

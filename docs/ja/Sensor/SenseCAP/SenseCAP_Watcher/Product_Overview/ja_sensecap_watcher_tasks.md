@@ -96,7 +96,7 @@ Watcherタスクでオブジェクトとして「ろうそく」を設定した�
 :::danger
 SenseCraft AIの一部のサービスを使用する際には料金が発生する場合があります。詳細については以下のドキュメントを参照してください：
 
-**[SenseCraft AI for Watcherのプランと特典](https://wiki.seeedstudio.com/watcher_price/)**
+**[SenseCraft AI for Watcherのプランと特典](https://wiki.seeedstudio.com/ja/watcher_price/)**
 :::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/task_3.png" style={{width:1000, height:'auto'}}/></div>
@@ -126,7 +126,7 @@ Watcherデバイスの3番目の動作モードは、ローカルAIサービス�
 :::danger
 SenseCraft AIの一部のサービスを利用する際には料金が発生する場合があります。詳細については以下のドキュメントを参照してください：
 
-**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/watcher_price/)**
+**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/ja/watcher_price/)**
 :::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/task_4.png" style={{width:1000, height:'auto'}}/></div>
@@ -191,12 +191,12 @@ LLMクラウドサービスが猫が食事中であることを確認すると�
 :::danger
 SenseCraft AIの一部のサービスを利用する際には料金が発生する場合があります。詳細については以下のドキュメントをご参照ください：
 
-**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/watcher_price/)**
+**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/ja/watcher_price/)**
 :::
 
 ## SenseCraft APPを使用してタスクを配置する
 
-タスクの分類と基本概念を理解した後、SenseCraft APPでWatcherにコマンドを発行する方法を詳しく見ていきましょう。Watcherのマッチングプロセスを完了し、Watcherのチャットページに到達したと仮定します。まだデバイスをバインドする方法がわからない場合は、[デバイスのバインドとOTAアップグレード](https://wiki.seeedstudio.com/getting_started_with_watcher/#device-binding-and-ota-upgrade)をご参照ください。
+タスクの分類と基本概念を理解した後、SenseCraft APPでWatcherにコマンドを発行する方法を詳しく見ていきましょう。Watcherのマッチングプロセスを完了し、Watcherのチャットページに到達したと仮定します。まだデバイスをバインドする方法がわからない場合は、[デバイスのバインドとOTAアップグレード](https://wiki.seeedstudio.com/ja/getting_started_with_watcher/#device-binding-and-ota-upgrade)をご参照ください。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/workflow.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -229,7 +229,7 @@ Pure CloudベースのLLMサービスのテキストベースのチャット機�
 :::danger
 SenseCraft AIの一部のサービスを利用する際には料金が発生する場合があります。詳細については以下のドキュメントをご参照ください：
 
-**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/watcher_price/)**
+**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/ja/watcher_price/)**
 :::
 
 ### 分解タスクを識別または設定する

@@ -170,7 +170,7 @@ puttyログイン
     - このセクションでは、いくつかの簡単な機能を実装したデモを紹介します。
     - 前のセクションで開発環境を正常に構築したことを確認し、Arduinoプラットフォームに関する基本的な知識を持っていることを前提としています。
 :::
-4WD Driver Platform V1.0を使用した実用的なアプリケーションについては、[Edison 4WD Auto Robotic Platform 2.0](https://wiki.seeedstudio.com/Edison_4WD_Auto_Robotic_Platform_2.0/)を参照してください。
+4WD Driver Platform V1.0を使用した実用的なアプリケーションについては、[Edison 4WD Auto Robotic Platform 2.0](https://wiki.seeedstudio.com/ja/Edison_4WD_Auto_Robotic_Platform_2.0/)を参照してください。
 
 ## 回路図オンラインビューア
 

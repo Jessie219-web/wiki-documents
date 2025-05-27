@@ -160,7 +160,7 @@ reComputer J1010 には **NVIDIA Jetson Nano 4GB モジュール**が搭載さ�
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/9.png" /></div>
     実際のテストでは、SDK コンポーネントをフルセットでインストールした後、eMMC の空き容量は約 500MB しか残りません。
     <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/10_1.jpg" /></div>
-    容量不足の問題を解決する方法については、[トラブルシューティング](https://wiki.seeedstudio.com/reComputer_Jetson_Series_Initiation/#q1-the-remaining-space-in-the-emmc-in-the-received-recomputer-jetson-is-only-about-2gb-how-can-i-solve-the-problem-of-insufficient-space) を参照してください。
+    容量不足の問題を解決する方法については、[トラブルシューティング](https://wiki.seeedstudio.com/ja/reComputer_Jetson_Series_Initiation/#q1-the-remaining-space-in-the-emmc-in-the-received-recomputer-jetson-is-only-about-2gb-how-can-i-solve-the-problem-of-insufficient-space) を参照してください。
 
 SDK Manager にすべてのファイルをデフォルトパス以外の場所にダウンロードさせたい場合は、画面下部にある Download & Install Options に移動し、使用したいパスを選択します。
 
@@ -369,7 +369,7 @@ sudo ./nvmflash.sh --showlogs
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
 :::note
-より多くのストレージスペースが必要な場合、SD カードを使用して容量を拡張するか、システムを SD カードに書き込むことができます。推奨ソリューションについては [Flash System on SD card](https://wiki.seeedstudio.com/J1010_Boot_From_SD_Card/) を参照してください。
+より多くのストレージスペースが必要な場合、SD カードを使用して容量を拡張するか、システムを SD カードに書き込むことができます。推奨ソリューションについては [Flash System on SD card](https://wiki.seeedstudio.com/ja/J1010_Boot_From_SD_Card/) を参照してください。
 :::
 
 ## リソース

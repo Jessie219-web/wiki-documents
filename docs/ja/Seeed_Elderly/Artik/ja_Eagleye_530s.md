@@ -706,7 +706,7 @@ waveFile.close()
 ```
 
 :::caution
-詳細情報については、Google アシスタントとの連携など、[ReSpeaker 2-Mics Pi HAT](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/) を参照してください。
+詳細情報については、Google アシスタントとの連携など、[ReSpeaker 2-Mics Pi HAT](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT/) を参照してください。
 :::
 
 **4 Mics Pi HAT を使用する**
@@ -866,7 +866,7 @@ waveFile.close()
 ```
 
 :::caution
-詳細情報については、Alexa/DuerOS との連携など、[ReSpeaker 4-Mic Array for Raspberry Pi](https://wiki.seeedstudio.com/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/) を参照してください。
+詳細情報については、Alexa/DuerOS との連携など、[ReSpeaker 4-Mic Array for Raspberry Pi](https://wiki.seeedstudio.com/ja/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/) を参照してください。
 :::
 
 **Mic Array v2.0 を使用する**
@@ -969,7 +969,7 @@ wf.close()
 ```
 
 :::caution
-DOA/LEDs などの詳細については、[ReSpeaker Mic Array v2.0](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/) を参照してください。
+DOA/LEDs などの詳細については、[ReSpeaker Mic Array v2.0](https://wiki.seeedstudio.com/ja/ReSpeaker_Mic_Array_v2.0/) を参照してください。
 :::
 
 ## GrovePi+ を使用する
@@ -1188,7 +1188,7 @@ Turning relay 4 OFF
 ```
 
 :::caution
-詳細については、[Raspberry Pi Relay Board v1.0](https://wiki.seeedstudio.com/Raspberry_Pi_Relay_Board_v1.0/) を参照してください。
+詳細については、[Raspberry Pi Relay Board v1.0](https://wiki.seeedstudio.com/ja/Raspberry_Pi_Relay_Board_v1.0/) を参照してください。
 :::
 
 **RS232基板を使う**
@@ -1221,7 +1221,7 @@ Turning relay 4 OFF
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/Putty_normal_boot.png)
 
 :::caution
-詳細については、[Raspberry Pi RS232 Board v1.0](https://wiki.seeedstudio.com/Raspberry_Pi_R232_Board_v1.0/) を参照してください。
+詳細については、[Raspberry Pi RS232 Board v1.0](https://wiki.seeedstudio.com/ja/Raspberry_Pi_R232_Board_v1.0/) を参照してください。
 :::
 
 **ブレイクアウトボードを使う**
@@ -1231,7 +1231,7 @@ Raspberry Pi ブレイクアウトボードは、電源、状態インジケー�
 ![](https://files.seeedstudio.com/wiki/Eagleye_530s/img/breakout_shield.jpg)
 
 :::caution
-詳細については、[Raspberry Pi Breakout Board v1.0](https://wiki.seeedstudio.com/Raspberry_Pi_Breakout_Board_v1.0/) を参照してください。
+詳細については、[Raspberry Pi Breakout Board v1.0](https://wiki.seeedstudio.com/ja/Raspberry_Pi_Breakout_Board_v1.0/) を参照してください。
 :::
 
 ## FAQs

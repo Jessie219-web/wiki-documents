@@ -3,7 +3,7 @@ title: DSO Quad:キャリブレーション
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/DSO_Quad-Calibration/
+image: https://wiki.seeedstudio.com/ja/DSO_Quad-Calibration/
 slug: /ja/DSO_Quad-Calibration
 last_update:
   date: 05/15/2025

@@ -570,7 +570,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>SenseCAP S2110センサービルダー</font></div>
             <span><font color={'FFFFFF'} size={"4"}> 🔧 Groveエコシステムを使用してRS485センサーを構築するためのオープンソースツール </font></span>
             <br/>
-            <a href="https://wiki.seeedstudio.com/Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger/" target="_blank"><span><font color={'FFFFFF'} size={"3"}>  > SenseCAP S2110センサービルダーとSenseCAPデータロガーを使用してLoRaWANセンサーを構築する</font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/Build-LoRaWAN-Sensors-SenseCAP-XIAO-Controller-Data-Logger/" target="_blank"><span><font color={'FFFFFF'} size={"3"}>  > SenseCAP S2110センサービルダーとSenseCAPデータロガーを使用してLoRaWANセンサーを構築する</font></span></a>
     </div>
 </div>
 

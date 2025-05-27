@@ -420,7 +420,7 @@ Blynkを始めるには、アプリをダウンロードし、新しいアカウ
 
 <p> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> </p>
 
-次に、Wio TerminalのWiFiライブラリとファームウェアを[こちらのガイド](https://wiki.seeedstudio.com/Wio-Terminal-Blynk/)に従って設定してください。そのチュートリアルで説明されているようにBlynkライブラリをダウンロードします。
+次に、Wio TerminalのWiFiライブラリとファームウェアを[こちらのガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Blynk/)に従って設定してください。そのチュートリアルで説明されているようにBlynkライブラリをダウンロードします。
 
 WiFiのSSID、パスワード、およびBlynk APIトークン（アプリで取得可能）を変更して、簡単なプッシュボタンの例をコンパイルしてアップロードしてセットアップをテストします。
 

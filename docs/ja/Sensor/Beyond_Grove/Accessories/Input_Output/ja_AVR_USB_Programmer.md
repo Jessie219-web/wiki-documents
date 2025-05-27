@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/AVR_USB_Programmer/
+image: https://wiki.seeedstudio.com/ja/AVR_USB_Programmer/
 slug: /ja/AVR_USB_Programmer
 last_update:
   date: 05/15/2025

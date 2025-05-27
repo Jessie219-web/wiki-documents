@@ -118,7 +118,7 @@ W5500とSDカードはどちらもSPIバスを介してArduinoと通信します
 
 ### ソフトウェア
 
-- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)の手順に従ってライブラリをインストールしてください。
+- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)の手順に従ってライブラリをインストールしてください。
 - 以下のボタンをクリックしてW5500 Ethernet Shieldライブラリをダウンロードしてください。
 
 <p style={{textAlign: 'center'}}><a href="https://files.seeedstudio.com/wiki/W5500_Ethernet_Shield_v1.0/res/WIZ_Ethernet_Library-IDE1.6.x-master.zip" target="_blank"><img src="https://files.seeedstudio.com/wiki/W5500_Ethernet_Shield_v1.0/img/download%20W5500%20library.png" /></a></p>

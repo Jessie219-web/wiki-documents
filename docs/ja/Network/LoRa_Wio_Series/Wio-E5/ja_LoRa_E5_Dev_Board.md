@@ -3,7 +3,7 @@ description: Wio-E5 開発ボードの使い方を始めましょう。
 title: Wio-E5 開発キット
 keywords:
   - wio 
-image: https://wiki.seeedstudio.com/wio_gps_board/
+image: https://wiki.seeedstudio.com/ja/wio_gps_board/
 slug: /ja/LoRa_E5_Dev_Board
 last_update:
   date: 05/15/2025
@@ -33,7 +33,7 @@ Wio-E5 開発ボードは、LoRaWAN® プロトコルをグローバル周波数
 
 Wio-E5 開発ボードは、[Wio-E5 STM32WLE5JC モジュール](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html) を搭載しており、これは世界初の LoRa RF と MCU チップを1つの小型チップに統合したもので、FCC および CE 認証を取得しています。ARM Cortex-M4 コアと Semtech SX126X LoRa® チップを搭載し、LoRaWAN® および LoRa® プロトコルをグローバル周波数帯域でサポートし、(G)FSK、BPSK、(G)MSK、LoRa® 変調をサポートします。
 
-[Wio-E5](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/) についてさらに詳しく学ぶことができます。
+[Wio-E5](https://wiki.seeedstudio.com/ja/LoRa-E5_STM32WLE5JC_Module/) についてさらに詳しく学ぶことができます。
 
 Wio-E5 開発ボードは、開けた場所で最大 10km の長距離伝送範囲を持っています。ボード上の Wio-E5 モジュールのスリープ電流は 2.1 uA（WOR モード）と非常に低く、-40 ℃ ～ 85 ℃ の広い動作温度範囲、高感度（-116.5 dBm ～ -136 dBm）、および 3.3V で最大 +20.8dBm の出力を備えた産業基準で設計されています。
 
@@ -305,7 +305,7 @@ Rx: +KEY: APPKEY 2B7E151628AED2A6ABF7158809CF4F3C
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoRa-E5-Module/12.png" alt="pir" width={600} height="auto" /></p>
 
-- **ステップ 12.** TTNコンソールでLoRaWAN®ゲートウェイを登録します。詳細な手順は[こちら](https://wiki.seeedstudio.com/The-Things-Indoor-Gateway/#step-2-gateway-registration-on-ttn-console)を参照してください。
+- **ステップ 12.** TTNコンソールでLoRaWAN®ゲートウェイを登録します。詳細な手順は[こちら](https://wiki.seeedstudio.com/ja/The-Things-Indoor-Gateway/#step-2-gateway-registration-on-ttn-console)を参照してください。
 
 - **ステップ 13.** 以下のATコマンドを入力してTTNに接続します：
 
@@ -371,7 +371,7 @@ ATコマンドに関する詳細情報については、[Wio-E5 AT Command Speci
 **注意:** 現在、STM32WLシリーズ用の最新バージョンであるv1.1.0をサポートするようにライブラリを更新しました。
 
 :::note
-[Erase Factory AT Firmware](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/#application-notes) セクションを最初にお読みください。SDKでプログラムする前に、工場出荷時のATファームウェアを消去する必要がある場合があります。工場出荷時のATファームウェアを消去すると、復元することはできません。
+[Erase Factory AT Firmware](https://wiki.seeedstudio.com/ja/LoRa_E5_Dev_Board/#application-notes) セクションを最初にお読みください。SDKでプログラムする前に、工場出荷時のATファームウェアを消去する必要がある場合があります。工場出荷時のATファームウェアを消去すると、復元することはできません。
 :::
 
 #### 準備
@@ -443,7 +443,7 @@ ATコマンドに関する詳細情報については、[Wio-E5 AT Command Speci
 
 次に、**Device EUI**、**Application EUI**、**Application KEY**、および**LoRaWAN Region**を変更します。
 
-- **ステップ7.** [こちらのガイド](https://wiki.seeedstudio.com/LoRa_E5_mini/#13-connect-and-send-data-to-the-things-network)に従ってTTNアプリケーションを設定し、**Application EUI**を取得して`LoRaWAN/App/se-identity.h`のマクロ定義`LORAWAN_JOIN_EUI`にコピーします。例えば、ここでのApplication EUIは`80 00 00 00 00 00 00 0x07`です。
+- **ステップ7.** [こちらのガイド](https://wiki.seeedstudio.com/ja/LoRa_E5_mini/#13-connect-and-send-data-to-the-things-network)に従ってTTNアプリケーションを設定し、**Application EUI**を取得して`LoRaWAN/App/se-identity.h`のマクロ定義`LORAWAN_JOIN_EUI`にコピーします。例えば、ここでのApplication EUIは`80 00 00 00 00 00 00 0x07`です。
 
 ```cpp
 // LoRaWAN/App/se-identity.h

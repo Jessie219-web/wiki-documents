@@ -45,10 +45,10 @@ Grove - 3軸デジタルコンパスは、Bosch BMM150をベースにしたデ�
 |I2Cアドレス|0x13|
 
 :::note
-    複数のI2Cデバイスを使用したい場合は、[ソフトウェアI2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/)を参照してください。
+    複数のI2Cデバイスを使用したい場合は、[ソフトウェアI2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/)を参照してください。
 :::
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 ## 対応プラットフォーム
 
@@ -101,7 +101,7 @@ USBケーブルを優しく差し込んでください。そうしないとイ�
 #### ソフトウェア
 **ステップ 1.** [ライブラリ](https://github.com/Seeed-Studio/Grove_3_Axis_Compass_V2.0_BMM150)をGithubからダウンロードします。
 
-**ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+**ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 **ステップ 3.** 新しいArduinoスケッチを作成し、以下のコードを貼り付けるか、**File->Examples->Grove_3_Axis_Compass_V2.0_BMM150-master->compass**のパスから直接コードを開きます。
 
@@ -160,7 +160,7 @@ void loop()
 }
 ```
 
-**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 **ステップ 5.** シリアルモニターを開いてセンサーのデータを受信します。
 
@@ -205,7 +205,7 @@ void loop()
 
 #### ソフトウェア
 
-- **ステップ 1**. [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従い、開発環境を構築し、grove.py を Raspberry Pi にインストールします。
+- **ステップ 1**. [Setting Software](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従い、開発環境を構築し、grove.py を Raspberry Pi にインストールします。
 
 - **ステップ 2**. 以下のコマンドを実行してコードを動かします。
 

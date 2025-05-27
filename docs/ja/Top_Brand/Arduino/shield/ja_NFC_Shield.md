@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 |![](https://files.seeedstudio.com/wiki/NFC_Shield/img/NFC_Shield1.bmp)|![](https://files.seeedstudio.com/wiki/NFC_Shield/img/NFCshield.jpg)|
 |---|---|
-|[NFCシールド V1.0](https://wiki.seeedstudio.com/NFC_Shield_V1.0/) |[NFCシールド V2.0](https://wiki.seeedstudio.com/NFC_Shield_V2.0/) |
+|[NFCシールド V1.0](https://wiki.seeedstudio.com/ja/NFC_Shield_V1.0/) |[NFCシールド V2.0](https://wiki.seeedstudio.com/ja/NFC_Shield_V2.0/) |
 
 ## 技術サポートと製品ディスカッション
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Lite-MG126/
+image: https://wiki.seeedstudio.com/ja/Wio-Lite-MG126/
 slug: /ja/Wio-Lite-MG126
 last_update:
   date: 05/15/2025
@@ -150,7 +150,7 @@ Arduinoボードのシリアルデバイスを**ツール > シリアルポー�
 
 ### ステップ 4. デモを開く
 
-Seeed Githubから[MG126ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_MG126)をダウンロードしてください。その後、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールしてください。**ファイル > 例 > Seeeduino Wio Lite MG126 > analog_output**をクリックします。
+Seeed Githubから[MG126ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_MG126)をダウンロードしてください。その後、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールしてください。**ファイル > 例 > Seeeduino Wio Lite MG126 > analog_output**をクリックします。
 
 ![](https://files.seeedstudio.com/wiki/Wio-Lite-MG126/img/IDE-5.png)
 

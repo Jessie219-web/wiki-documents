@@ -56,7 +56,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェアの準備
 
-公式ウェブサイトから最新バージョンのRaspberry Pi 64ビットOSをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[ガイド](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/)に従ってください。
+公式ウェブサイトから最新バージョンのRaspberry Pi 64ビットOSをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[ガイド](https://wiki.seeedstudio.com/ja/reterminal-dm-flash-OS/)に従ってください。
 
 ### Roboflow
 

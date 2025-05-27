@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Ultra_Sonic_range_measurement_module/
+image: https://wiki.seeedstudio.com/ja/Ultra_Sonic_range_measurement_module/
 slug: /ja/Ultra_Sonic_range_measurement_module
 last_update:
   date: 05/15/2025

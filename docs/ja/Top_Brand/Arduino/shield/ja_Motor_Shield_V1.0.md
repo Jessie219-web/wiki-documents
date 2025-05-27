@@ -227,7 +227,7 @@ void loop() {
 
 ## リソース ##
 
-- **[データシート]** [L298データシート](https://wiki.seeedstudio.com/images/5/5e/L298datasheet.pdf)
+- **[データシート]** [L298データシート](https://wiki.seeedstudio.com/ja/images/5/5e/L298datasheet.pdf)
 - **[EAGLE]**  [モーターシールド EAGLE ファイル](https://files.seeedstudio.com/wiki/Motor-Shield_V1.0/res/Motorshield09gerber.zip)
 - **[PDF]** [モータードライバ PCB](https://files.seeedstudio.com/wiki/Motor-Shield_V1.0/res/Motor%20Driver.pdf)
 - **[PDF]** [モータードライバ回路図](https://files.seeedstudio.com/wiki/Motor-Shield_V1.0/res/Motor%20Driver%20SCH.pdf)

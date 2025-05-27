@@ -36,7 +36,7 @@ Grove - ガスセンサーモジュールは、家庭や産業におけるガス
 -   動作温度: -25~70 ℃
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::   
 
 はじめに

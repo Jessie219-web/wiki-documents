@@ -502,9 +502,9 @@ FT232RLのビットバングモードは、AVR ISP、JTAG、SPI、I2Cポート�
 
 ## リソース  
 
-- **[Eagle]** [Eagleでの回路図および基板ファイル](https://wiki.seeedstudio.com/images/d/d3/UartSBs_Frame_Schematic_Board.zip)
+- **[Eagle]** [Eagleでの回路図および基板ファイル](https://wiki.seeedstudio.com/ja/images/d/d3/UartSBs_Frame_Schematic_Board.zip)
 
-- **[PDF]** [PDF回路図](https://wiki.seeedstudio.com/images/9/91/UartSBs_0.9b_Schematic.pdf)
+- **[PDF]** [PDF回路図](https://wiki.seeedstudio.com/ja/images/9/91/UartSBs_0.9b_Schematic.pdf)
 
 ## 購入方法  
 

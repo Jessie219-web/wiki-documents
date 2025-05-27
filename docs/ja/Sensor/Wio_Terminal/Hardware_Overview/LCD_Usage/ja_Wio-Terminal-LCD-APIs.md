@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-APIs/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-APIs/
 slug: /ja/Wio-Terminal-LCD-APIs
 last_update:
   date: 05/15/2025
@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このリポジトリでは、TFT LCDライブラリの例に関するGIFを提供しています。すべての例は `File` -> `Example` -> `Seeed_Arduino_LCD` -> `320 x 240` の下にあります。これらの例を使用して、デザインに実装することができます。
 
-TFT LCDスクリーンに関する詳細情報については、[TFT LCDスクリーンの基本](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Basic/)をご覧ください。
+TFT LCDスクリーンに関する詳細情報については、[TFT LCDスクリーンの基本](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Basic/)をご覧ください。
 
 ## 有用なグラフィックス
 

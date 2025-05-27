@@ -240,7 +240,7 @@ candump can0
 
 このデモでは、2つのチャンネルのうち1つだけを使用します。
 
-Arduino CAN BUS シールド用に Arduino コードを提供しています。Arduino の使い方がわからない場合は、[こちら](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照してください。
+Arduino CAN BUS シールド用に Arduino コードを提供しています。Arduino の使い方がわからない場合は、[こちら](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照してください。
 
 2 チャンネル Pi Hat では、送信と受信に 2 つの方法があります。**can-util**/**cangen** と **Python コード**の両方を使用できます。
 
@@ -515,7 +515,7 @@ Raspberry Pi を再起動してすべての設定を適用してください
 
 ## Jetson NanoでCAN-BUSシールドを使用する
 
-現在、CAN-BUSシールドはJetson Nanoプラットフォームもサポートしていますが、ハードウェアのバージョンによっていくつかの制限があります。Jetson Nanoプラットフォームを使用している場合は、[**バージョン宣言**](https://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#version-declare)を参照してください！
+現在、CAN-BUSシールドはJetson Nanoプラットフォームもサポートしていますが、ハードウェアのバージョンによっていくつかの制限があります。Jetson Nanoプラットフォームを使用している場合は、[**バージョン宣言**](https://wiki.seeedstudio.com/ja/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#version-declare)を参照してください！
 
 - リポジトリをクローンする:
 
@@ -666,7 +666,7 @@ CAN-BUS Pi Hat を SBC と一緒に使用するだけでなく、[**Wio Terminal
 
 以下のWikiを確認して、Wio Terminalについてさらに詳しく知ることができます：
 
-- [Wio Terminal 入門ガイド](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)
+- [Wio Terminal 入門ガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)
 
 ### 必要なハードウェア
 

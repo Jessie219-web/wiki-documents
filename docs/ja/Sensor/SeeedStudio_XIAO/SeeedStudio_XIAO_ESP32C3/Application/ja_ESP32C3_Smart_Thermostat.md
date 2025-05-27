@@ -47,7 +47,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-">
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-">
             <strong><span><font color={'FFFFFF'} size={"4"}> 詳細を確認 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -99,7 +99,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### Home Assistant のインストール
 
-Home Assistant がすでに動作していることを確認してください。ここでは、[製品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-)に Home Assistant をフラッシュする方法を紹介する複数の Wiki があります。私は Raspberry Pi CM4 を搭載した Home Assistant Yellow を使用しているため、[公式の方法を使用して OS を Home Assistant Yellow にフラッシュすることができます](https://yellow.home-assistant.io/power-supply/)。
+Home Assistant がすでに動作していることを確認してください。ここでは、[製品](https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-)に Home Assistant をフラッシュする方法を紹介する複数の Wiki があります。私は Raspberry Pi CM4 を搭載した Home Assistant Yellow を使用しているため、[公式の方法を使用して OS を Home Assistant Yellow にフラッシュすることができます](https://yellow.home-assistant.io/power-supply/)。
 
 ### Home Assistant に ESPHome をインストール
 
@@ -575,7 +575,7 @@ M2x4 および M2x6 のネジを使用して、リストされたすべてのコ
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- Chris の尽力に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/Honorary-Contributors/) に展示されます。
+- Chris の尽力に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/ja/Honorary-Contributors/) に展示されます。
 
 ## 技術サポート & 製品ディスカッション
 

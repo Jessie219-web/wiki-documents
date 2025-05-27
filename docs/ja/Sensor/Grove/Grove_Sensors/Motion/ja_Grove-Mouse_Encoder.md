@@ -37,7 +37,7 @@ Grove - マウスエンコーダは、回転方向と回転速度のフィード
 -   高精度で信頼性が高い。
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 用途
 ------------

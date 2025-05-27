@@ -52,7 +52,7 @@ Seeeduino LiteはATmega32U4をベースとしたマイクロコントローラ�
 ---
 
 :::note
-    Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino)を参照することを強くお勧めします。
+    Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino)を参照することを強くお勧めします。
 :::
 
 

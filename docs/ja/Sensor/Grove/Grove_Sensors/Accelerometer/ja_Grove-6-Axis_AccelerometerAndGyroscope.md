@@ -40,7 +40,7 @@ Grove - 6軸加速度計＆ジャイロスコープは、3軸デジタル加速�
 -   8 kBのデータバッファリング。
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 応用例

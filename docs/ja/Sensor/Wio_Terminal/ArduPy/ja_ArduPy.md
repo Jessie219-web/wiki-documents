@@ -32,8 +32,8 @@ ArduPy を始めるには、まず **`aip` - ArduPy Integrated Platform** をイ
 
 デバイスを USB 接続で PC に接続します。デバイスを素早くリセットしてブートローダーモードに入ります。
 
-  1. **Wio Terminal** の場合は、[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#faq)を参照してください。
-  2. **Seeeduino XIAO** の場合は、[こちら](https://wiki.seeedstudio.com/Seeeduino-XIAO/#reset)を参照してください。
+  1. **Wio Terminal** の場合は、[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#faq)を参照してください。
+  2. **Seeeduino XIAO** の場合は、[こちら](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/#reset)を参照してください。
 
 PC に **`Arduino`** という名前の USB ドライブが表示されるはずです。Arduino USB ドライブの場所に移動してください。
 
@@ -429,7 +429,7 @@ dac2.write(128)         # DACに値を書き込む、128/255*3.3 = 1.65V
 
 ## LCD
 
-Wio Terminalでは、TFT LCDディスプレイを以下のように使用できます。LCDに関する詳細なリファレンスについては、[**ArduPy LCD API Reference**](https://wiki.seeedstudio.com/ArduPy-LCD/)をご覧ください。
+Wio Terminalでは、TFT LCDディスプレイを以下のように使用できます。LCDに関する詳細なリファレンスについては、[**ArduPy LCD API Reference**](https://wiki.seeedstudio.com/ja/ArduPy-LCD/)をご覧ください。
 
 - LCDモジュールの使用例：
 

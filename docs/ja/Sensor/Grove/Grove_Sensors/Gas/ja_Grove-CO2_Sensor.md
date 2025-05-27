@@ -31,7 +31,7 @@ Grove - CO2 センサーモジュールは、高感度・高解像度の赤外�
 
 
 :::tip
-    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しています。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
+    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しています。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
 :::
 仕様
 -------------
@@ -49,7 +49,7 @@ Grove - CO2 センサーモジュールは、高感度・高解像度の赤外�
 -   出力モード：UART
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 対応プラットフォーム
 -------------------

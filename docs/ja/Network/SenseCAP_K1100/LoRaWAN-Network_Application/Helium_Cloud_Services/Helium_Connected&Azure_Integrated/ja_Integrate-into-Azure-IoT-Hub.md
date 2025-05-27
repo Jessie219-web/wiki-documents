@@ -175,11 +175,11 @@ IoT Hub へのアクセスを管理する方法を選択します。共有アク
 
 ## 統合の接続
 
-次に、Helium コンソールのクリック＆ドラッグインターフェースを使用して、デバイスを関数（デコーダー）に接続し、Azure 統合に接続します。詳細は[こちら](https://wiki.seeedstudio.com/Helium-Introduction/#helium-console-flows)をご覧ください。
+次に、Helium コンソールのクリック＆ドラッグインターフェースを使用して、デバイスを関数（デコーダー）に接続し、Azure 統合に接続します。詳細は[こちら](https://wiki.seeedstudio.com/ja/Helium-Introduction/#helium-console-flows)をご覧ください。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/21.jpg" /></div>
 
-この時点で、[以前の手順](https://wiki.seeedstudio.com/Connecting-to-Helium/#upload-code-send-data-to-helium)に従ってコードを再度アップロードし、Wio Terminal が Helium に再接続してデータをアップロードします。
+この時点で、[以前の手順](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/#upload-code-send-data-to-helium)に従ってコードを再度アップロードし、Wio Terminal が Helium に再接続してデータをアップロードします。
 
 統合が完了し、デバイスが LoRaWAN® に参加して常に Helium にデータを送信するようになると、Azure IoT Hub のデバイス ペインに Helium ネットワークからのデバイス ID を持つデバイスが表示されます。
 
@@ -205,7 +205,7 @@ IoT Hub の「Overview」をクリックすると、IoT Hub を通じてメッ�
 <table align="center">
   <tbody><tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/webapp.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Web APP 可視化の設定</strong><br /><br />このセクションでは、Microsoft Azure が受信したデータ情報を無料の Web APP 統合を使用して可視化する方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Configuring-Web-APP-Visualization">始めましょう &gt;</a></td>
+      <td align="left"><strong>Web APP 可視化の設定</strong><br /><br />このセクションでは、Microsoft Azure が受信したデータ情報を無料の Web APP 統合を使用して可視化する方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Configuring-Web-APP-Visualization">始めましょう &gt;</a></td>
     </tr>
   </tbody></table>
 

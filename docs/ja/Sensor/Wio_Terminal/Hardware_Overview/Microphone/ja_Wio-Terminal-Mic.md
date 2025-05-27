@@ -45,9 +45,9 @@ void loop() {
 
 ### ライブラリのインストール
 
-- [LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) ライブラリをインストールしてください。
+- [LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) ライブラリをインストールしてください。
 
-- [Linechart](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) ライブラリをインストールしてください。
+- [Linechart](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/) ライブラリをインストールしてください。
 
 ```cpp
 #include"seeed_line_chart.h" // ライブラリをインクルード

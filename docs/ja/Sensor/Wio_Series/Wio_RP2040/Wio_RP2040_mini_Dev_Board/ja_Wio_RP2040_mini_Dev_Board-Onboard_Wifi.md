@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio_RP2040_mini_Dev_Board-Onboard_Wifi/
+image: https://wiki.seeedstudio.com/ja/Wio_RP2040_mini_Dev_Board-Onboard_Wifi/
 slug: /ja/Wio_RP2040_mini_Dev_Board-Onboard_Wifi
 last_update:
   date: 05/15/2025

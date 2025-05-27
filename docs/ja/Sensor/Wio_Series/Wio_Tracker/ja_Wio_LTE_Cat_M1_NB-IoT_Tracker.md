@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio_LTE_Cat_M1_NB-IoT_Tracker/
+image: https://wiki.seeedstudio.com/ja/Wio_LTE_Cat_M1_NB-IoT_Tracker/
 slug: /ja/Wio_LTE_Cat_M1-NB-IoT_Tracker
 last_update:
   date: 05/15/2025
@@ -67,7 +67,7 @@ Wio LTE CAT M1/NB-IoTは、衛星ナビゲーションシステムに接続し�
     - 1 x I2C
 
 :::tip
-Groveモジュールを使用してアプリケーションを拡張してください。ボード上には6つのGroveコネクタがあります。Groveについて初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご覧ください。簡単に言えば、Groveは標準スタイルのセンサーで構成されており、センサー、アクチュエータ、ディスプレイ、通信モジュールが含まれています。
+Groveモジュールを使用してアプリケーションを拡張してください。ボード上には6つのGroveコネクタがあります。Groveについて初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご覧ください。簡単に言えば、Groveは標準スタイルのセンサーで構成されており、センサー、アクチュエータ、ディスプレイ、通信モジュールが含まれています。
 :::
 
 ## アプリケーション
@@ -129,9 +129,9 @@ Groveモジュールを使用してアプリケーションを拡張してくだ
 **1. ソフトウェア設定**
 
 - ステップ 1. Arduino IDE をインストールします。バージョン 1.8.0 以上を推奨します。
-- ステップ 2. [Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/) に従って、Seeed STM32F4 ボードを Arduino ボードマネージャに追加します。
+- ステップ 2. [Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/) に従って、Seeed STM32F4 ボードを Arduino ボードマネージャに追加します。
 - ステップ 3. [WioLTE_Cat_NB1_Arduino_Library](https://github.com/lanselambor/WioLTE_Cat_NB1_Arduino_Library) を Github からダウンロードします。
-- ステップ 4. [Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino 用ライブラリをインストールします。
+- ステップ 4. [Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino 用ライブラリをインストールします。
 - ステップ 5. スケッチをアップロードする前に、BOOT0 ボタンと RST ボタンの両方を押し続け、RST ボタンを先に離してから BOOT0 ボタンを離します。この方法でボードは STM ブートローダーモードに入ります。
 - ステップ 6. ツールメニューでシリアルポートを選択せずに、アップロードアイコンをクリックしてスケッチをアップロードします。
 

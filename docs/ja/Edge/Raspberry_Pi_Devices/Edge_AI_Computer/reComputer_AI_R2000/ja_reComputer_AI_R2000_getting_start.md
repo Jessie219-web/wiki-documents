@@ -294,7 +294,7 @@ SDカードスロットに簡単にアクセスできる場合は、Piの電源�
 
 ### 第1ステップ: SDカードでEEPROMを更新する
 
-この[リンク](https://wiki.seeedstudio.com/r2000_series_getting_start/#update-eeprom)を参照してください。
+この[リンク](https://wiki.seeedstudio.com/ja/r2000_series_getting_start/#update-eeprom)を参照してください。
 
 NVMeのブート順序を最優先に設定するには、以下のコマンドを使用します:
 
@@ -365,7 +365,7 @@ Frigateは、AIを使用したリアルタイムの物体検出に特化した�
 <iframe width="800" height="500" src="https://www.youtube.com/embed/thmI3dz9Ugs" title="Cost-Effective AI Surveillance: Frigate on Raspberry Pi 5 with Hailo8 on PCIe3.0 to Dual M.2 hat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > **注意:**
-> **このプロジェクトについてさらに詳しく知りたい場合は、この[リンク](https://wiki.seeedstudio.com/frigate_nvr_with_raspberrypi_5/)を参照してください。**
+> **このプロジェクトについてさらに詳しく知りたい場合は、この[リンク](https://wiki.seeedstudio.com/ja/frigate_nvr_with_raspberrypi_5/)を参照してください。**
 
 ### YOLO
 
@@ -374,7 +374,7 @@ YOLO（You Only Look Once）シリーズのモデルは、速度と精度を重�
 <iframe width="800" height="500" src="https://www.youtube.com/embed/olaSVKmt9YI" title="Raspberry Pi AI: YOLOv8 Object Detection - 240fps Video Input, Pi 5 PCIe Gen2 vs Gen3 Benchmark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > **注意:**
-> **このプロジェクトについてさらに詳しく知りたい場合は、この[リンク](https://wiki.seeedstudio.com/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)を参照してください。**
+> **このプロジェクトについてさらに詳しく知りたい場合は、この[リンク](https://wiki.seeedstudio.com/ja/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)を参照してください。**
 
 ### Clip
 
@@ -383,7 +383,7 @@ CLIP（Contrastive Language-Image Pretraining）は、OpenAIによって開発�
 <iframe width="800" height="500" src="https://www.youtube.com/embed/JMHtqSmAGCA" title="CLIP Zero Shot Classification on Raspberry Pi 5 with Hailo AI Accelerator" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > **注意:**
-> **このプロジェクトについてさらに詳しく知りたい場合は、この[リンク](https://wiki.seeedstudio.com/clip_application_on_rpi5_with_ai_kit/)を参照してください。**
+> **このプロジェクトについてさらに詳しく知りたい場合は、この[リンク](https://wiki.seeedstudio.com/ja/clip_application_on_rpi5_with_ai_kit/)を参照してください。**
 
 ## 技術サポートと製品ディスカッション
 

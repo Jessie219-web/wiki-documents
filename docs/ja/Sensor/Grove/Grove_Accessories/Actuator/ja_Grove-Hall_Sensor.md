@@ -46,7 +46,7 @@ tags: grove_digital, io_5v, plat_duino, plat_linkit
 - 逆バッテリー保護
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -75,7 +75,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -114,7 +114,7 @@ Grove Base Shieldがない場合は、以下のようにGrove - Hall SensorをSe
 
 - **ステップ2.** 2つのコードのうち1つを開きます。例えば、デモ**MagnetControlLED**。
 
-- **ステップ3.** コードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ3.** コードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```c
 /****************************************************************************/ 
@@ -207,7 +207,7 @@ void turnOffLED()
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[ArduinoでのCodecraft使用ガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)もご覧ください。
+Codecraftを初めて使用する場合は、[ArduinoでのCodecraft使用ガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)もご覧ください。
 :::
 
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。

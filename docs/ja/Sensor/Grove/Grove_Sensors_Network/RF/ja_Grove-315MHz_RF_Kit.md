@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-315MHz_RF_Kit/
+image: https://wiki.seeedstudio.com/ja/Grove-315MHz_RF_Kit/
 slug: /ja/Grove-315MHz_RF_Kit
 last_update:
   date: 05/15/2025
@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - 一方向通信
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 応用例

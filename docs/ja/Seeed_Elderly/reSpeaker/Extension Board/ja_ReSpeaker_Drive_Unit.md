@@ -47,7 +47,7 @@ ReSpeaker Coreは強力な拡張性を備えており、プロトタイプや製
 
 Meow Kingドライブユニットを駆動するには、ReSpeaker Coreのファームウェアを更新する必要があります。元のストックファームウェアとこのファームウェアの違いについては、[こちらの変更ログ](https://onedrive.live.com/?authkey=%21AKD3ZD6g0DE2M9E&cid=5219529519B9B6A1&id=5219529519B9B6A1%21720&parId=5219529519B9B6A1%21721&o=OneUp)を参照してください。
 
-では、ファームウェアを更新しましょう。まず、[OneDrive](https://1drv.ms/f/s!AqG2uRmVUhlShUyg92Q-oNAxNjPR)から`ramips-openwrt-v1.0.01-LinkIt7688-squashfs-sysupgrade.bin`をダウンロードします。ファームウェアをSDカードにコピーし、SDカードをReSpeaker Coreに挿入します。[こちらの手順](https://wiki.seeedstudio.com/ReSpeaker_Core/#2-connect-to-serial-console)に従ってシリアルコンソールに接続してください。なお、USBシリアルを動作させるには、Arduinoチップ（ATMega32U4）の[デフォルトファームウェア](https://files.seeedstudio.com/wiki/ReSpeaker_Drive_Unit/res/respeaker_arduino_library/examples/pixels_pattern/pixels_pattern.ino)を復元する必要があります（変更している場合）。USBシリアルが取得できたら、以下のコマンドを入力してファームウェアを更新します：
+では、ファームウェアを更新しましょう。まず、[OneDrive](https://1drv.ms/f/s!AqG2uRmVUhlShUyg92Q-oNAxNjPR)から`ramips-openwrt-v1.0.01-LinkIt7688-squashfs-sysupgrade.bin`をダウンロードします。ファームウェアをSDカードにコピーし、SDカードをReSpeaker Coreに挿入します。[こちらの手順](https://wiki.seeedstudio.com/ja/ReSpeaker_Core/#2-connect-to-serial-console)に従ってシリアルコンソールに接続してください。なお、USBシリアルを動作させるには、Arduinoチップ（ATMega32U4）の[デフォルトファームウェア](https://files.seeedstudio.com/wiki/ReSpeaker_Drive_Unit/res/respeaker_arduino_library/examples/pixels_pattern/pixels_pattern.ino)を復元する必要があります（変更している場合）。USBシリアルが取得できたら、以下のコマンドを入力してファームウェアを更新します：
 
 ```shell
 mount /dev/mmcblk0p1 /mnt

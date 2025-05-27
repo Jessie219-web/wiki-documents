@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Sensor_sound/
+image: https://wiki.seeedstudio.com/ja/Sensor_sound/
 slug: /ja/Sensor_sound
 last_update:
   date: 05/15/2025
@@ -60,11 +60,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 |名前|サムネイル|動作電圧|測定範囲|感度|出力|信号周波数|購入リンク|
 |----|-----|-----|------|------|------|-----|------|
-|[Grove - Sound Sensor](https://wiki.seeedstudio.com/Grove-Sound_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove_Sound_Sensor/img/page_small.jpg"/>|5V|/|48dB-52dB|/|16kHz-20 kHz|[購入する](https://www.seeedstudio.com/Grove-Sound-Sensor-Based-on-LM386-amplifier-Arduino-Compatible.html)|
-|[Grove - Speech Recognizer](https://wiki.seeedstudio.com/Grove-Speech_Recognizer/)|<img src="https://files.seeedstudio.com/wiki/Grove-Speech_Recognizer/img/stuff1.jpg" />|3V-5V|/|-43dB-(-37dB)|/|32.768MHz-50MHz|[購入する](https://www.seeedstudio.com/Grove-Speech-Recognizer.html)|
-|[Grove - Loudness Sensor](https://wiki.seeedstudio.com/Grove-Loudness_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Loudness_Sensor/img/LoudnessSensor_s.jpg" />|3.5V-10VDC|/|-48dB~66 dB|アナログ信号|50Hz~2000 Hz|[購入する](https://www.seeedstudio.com/Grove-Loudness-Sensor.html)|
-|[Grove - Heelight Sensor](https://wiki.seeedstudio.com/Grove-Heelight_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove_Heelight_Sensor/img/heelight sensor.png" />|3.3V-5V|0.1m-10m|/|TTLロジックレベル|/|[購入する](https://www.seeedstudio.com/Grove-Heelight-Sensor.html)|
-|[Grove - Sound Recorder](https://wiki.seeedstudio.com/Grove-Sound_Recorder/)|<img src="https://files.seeedstudio.com/wiki/Grove-Sound_Recorder/img/Sound recorder.png" />|3V-5.5V|±1.5g|/|/|/|[購入する](https://www.seeedstudio.com/Grove-Sound-Recorder-p-904.html)|
+|[Grove - Sound Sensor](https://wiki.seeedstudio.com/ja/Grove-Sound_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove_Sound_Sensor/img/page_small.jpg"/>|5V|/|48dB-52dB|/|16kHz-20 kHz|[購入する](https://www.seeedstudio.com/Grove-Sound-Sensor-Based-on-LM386-amplifier-Arduino-Compatible.html)|
+|[Grove - Speech Recognizer](https://wiki.seeedstudio.com/ja/Grove-Speech_Recognizer/)|<img src="https://files.seeedstudio.com/wiki/Grove-Speech_Recognizer/img/stuff1.jpg" />|3V-5V|/|-43dB-(-37dB)|/|32.768MHz-50MHz|[購入する](https://www.seeedstudio.com/Grove-Speech-Recognizer.html)|
+|[Grove - Loudness Sensor](https://wiki.seeedstudio.com/ja/Grove-Loudness_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Loudness_Sensor/img/LoudnessSensor_s.jpg" />|3.5V-10VDC|/|-48dB~66 dB|アナログ信号|50Hz~2000 Hz|[購入する](https://www.seeedstudio.com/Grove-Loudness-Sensor.html)|
+|[Grove - Heelight Sensor](https://wiki.seeedstudio.com/ja/Grove-Heelight_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove_Heelight_Sensor/img/heelight sensor.png" />|3.3V-5V|0.1m-10m|/|TTLロジックレベル|/|[購入する](https://www.seeedstudio.com/Grove-Heelight-Sensor.html)|
+|[Grove - Sound Recorder](https://wiki.seeedstudio.com/ja/Grove-Sound_Recorder/)|<img src="https://files.seeedstudio.com/wiki/Grove-Sound_Recorder/img/Sound recorder.png" />|3V-5.5V|±1.5g|/|/|/|[購入する](https://www.seeedstudio.com/Grove-Sound-Recorder-p-904.html)|
 
 ### 注意事項
 

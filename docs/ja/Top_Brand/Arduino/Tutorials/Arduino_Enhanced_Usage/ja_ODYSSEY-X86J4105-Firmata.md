@@ -41,7 +41,7 @@ Arduino IDEバージョン1.6.X以降にはFirmataファームウェアが含ま
 - `StandardFirmata.ino`が表示されます。正しいボードとポートを選択し、**Upload**をクリックします:
 
 :::note
-Odyssey用のボードライブラリをインストールしていない場合は、[**こちら**](https://wiki.seeedstudio.com/ODYSSEY-X86J4105/#using-the-arduino-core-atsamd21g18-in-windows)を参照してインストールしてください。
+Odyssey用のボードライブラリをインストールしていない場合は、[**こちら**](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105/#using-the-arduino-core-atsamd21g18-in-windows)を参照してインストールしてください。
 :::
 
 <div align="center"><img width ="{600}" src="https://files.seeedstudio.com/wiki/ODYSSEY-X86J4105864/img/firmata-2.jpg"/></div>

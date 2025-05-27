@@ -979,7 +979,7 @@ void loop() {
 
 このセクションはXIAO ESP32C3向けに書かれていますが、新しいXIAO ESP32S3とも完全に互換性があるため、ここでのルーチンを直接使用できます。そのため、ここでは再度説明しません。
 
-- [XIAO ESP32C3 データを永続的に保存する方法](https://wiki.seeedstudio.com/xiaoesp32c3-flash-storage/)
+- [XIAO ESP32C3 データを永続的に保存する方法](https://wiki.seeedstudio.com/ja/xiaoesp32c3-flash-storage/)
 
 ## トラブルシューティング
 

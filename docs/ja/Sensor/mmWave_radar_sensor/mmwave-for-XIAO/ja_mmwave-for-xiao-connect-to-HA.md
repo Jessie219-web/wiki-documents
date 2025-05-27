@@ -23,7 +23,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 24GHz mmWave Sensor for XIAO - Human Static Presenceは、Seeed Studio XIAOシリーズ向けの拡張ボードです。このセンサーはアンテナ統合型で高感度のmmWaveセンサーであり、FMCW原理に基づいています。センサー信号処理と正確な人体検知アルゴリズムを組み合わせることで、動いている状態と静止している状態の人体を識別することができます。
 
-この章では主に、24GHz mmWave Sensor for XIAOをBluetooth経由でHome Assistantに接続する方法を紹介します。24GHz mmWave Sensor for XIAOの詳細な機能については、[こちら](https://wiki.seeedstudio.com/mmwave_for_xiao/)をご参照ください。
+この章では主に、24GHz mmWave Sensor for XIAOをBluetooth経由でHome Assistantに接続する方法を紹介します。24GHz mmWave Sensor for XIAOの詳細な機能については、[こちら](https://wiki.seeedstudio.com/ja/mmwave_for_xiao/)をご参照ください。
 
 :::caution
 このWikiの内容は24GHz mmWave for XIAOにのみ適用され、他のミリ波センサーには使用できません。

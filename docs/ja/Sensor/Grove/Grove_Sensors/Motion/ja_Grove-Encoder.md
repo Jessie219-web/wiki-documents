@@ -57,7 +57,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -104,8 +104,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 #### ソフトウェア
 
 - **ステップ 1.** [Encoderライブラリ](https://files.seeedstudio.com/wiki/Grove-Encoder/res/Encoder.zip)、[CircularLEDライブラリ](https://files.seeedstudio.com/wiki/Grove-Encoder/res/CircularLED.zip)、[TimerOneライブラリ](https://files.seeedstudio.com/wiki/Grove-Encoder/res/TimerOne.zip)をGithubからダウンロードします。
-- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduinoにライブラリをインストールします。
-- **ステップ 3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduinoにライブラリをインストールします。
+- **ステップ 3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 ```cpp
 #include <CircularLED.h>

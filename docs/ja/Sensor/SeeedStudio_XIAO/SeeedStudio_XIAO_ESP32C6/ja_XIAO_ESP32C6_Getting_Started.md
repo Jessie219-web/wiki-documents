@@ -253,7 +253,7 @@ BOOTキーを押しながら電源を投入し、その後リセットキーを1
 XIAO ESP32C6の推奨プログラミングツールはArduino IDEです。そのため、ソフトウェア準備の一環としてArduinoのインストールを完了する必要があります。
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 
 また、XIAO ESP32C6のオンボードパッケージはバージョン**2.0.8**以上が必要です。
 

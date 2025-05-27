@@ -32,7 +32,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### SPIFFS へのファイルのアップロード
 
-[Wiki](https://wiki.seeedstudio.com/xiao_esp32s3_sense_filesystem/#serial-peripheral-interface-flash-file-system-spiffs) を参照してください。
+[Wiki](https://wiki.seeedstudio.com/ja/xiao_esp32s3_sense_filesystem/#serial-peripheral-interface-flash-file-system-spiffs) を参照してください。
 
 SPIFFS にファイルをアップロードするための必要なツールを準備してください。Arduino IDE の "ESP32 Sketch Data Upload" ツールや "ESP32 File Uploader" のような外部ツールを使用できます。
 

@@ -44,7 +44,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア準備
 
-[InfluxDB データベースの作成方法](https://wiki.seeedstudio.com/edge_box_rpi_200_node_red_influxdb/) に関する以前のチュートリアルを参照することをお勧めします。このチュートリアルでは、既存の InfluxDB 接続を使用してセットアップを行います。
+[InfluxDB データベースの作成方法](https://wiki.seeedstudio.com/ja/edge_box_rpi_200_node_red_influxdb/) に関する以前のチュートリアルを参照することをお勧めします。このチュートリアルでは、既存の InfluxDB 接続を使用してセットアップを行います。
 
 ## Grafana リポジトリの追加
 

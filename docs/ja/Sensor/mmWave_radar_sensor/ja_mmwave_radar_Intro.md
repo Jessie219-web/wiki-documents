@@ -87,11 +87,11 @@ Seeedでは、mmWaveの力を活用して、転倒検出や睡眠呼吸モニタ
 <font size={"2"}>
     <tr>
         <th></th>
-        <th><a href="https://wiki.seeedstudio.com/getting_started_with_mr60fda2_mmwave_kit/">XIAO 60GHz mmWave 人間転倒検出センサー <strong>MR60FDA2</strong></a></th>
-        <th><a href="https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/">XIAO 60GHz mmWave 人間呼吸および心拍センサー <strong>MR60BHA2</strong></a></th>
-        <th><a href="https://wiki.seeedstudio.com/mmwave_for_xiao/">24GHz mmWave 人間静的存在センサー for XIAO</a></th>
-        <th><a href="https://wiki.seeedstudio.com/mmwave_human_detection_kit/">mmWave 人間検出センサーキット <strong>MR24HPC1</strong></a></th>
-        <th><a href="https://wiki.seeedstudio.com/Radar_MR24HPC1/">24GHz mmWave 人間静的存在センサーモジュール <strong>MR24HPC1 Lite</strong></a></th>
+        <th><a href="https://wiki.seeedstudio.com/ja/getting_started_with_mr60fda2_mmwave_kit/">XIAO 60GHz mmWave 人間転倒検出センサー <strong>MR60FDA2</strong></a></th>
+        <th><a href="https://wiki.seeedstudio.com/ja/getting_started_with_mr60bha2_mmwave_kit/">XIAO 60GHz mmWave 人間呼吸および心拍センサー <strong>MR60BHA2</strong></a></th>
+        <th><a href="https://wiki.seeedstudio.com/ja/mmwave_for_xiao/">24GHz mmWave 人間静的存在センサー for XIAO</a></th>
+        <th><a href="https://wiki.seeedstudio.com/ja/mmwave_human_detection_kit/">mmWave 人間検出センサーキット <strong>MR24HPC1</strong></a></th>
+        <th><a href="https://wiki.seeedstudio.com/ja/Radar_MR24HPC1/">24GHz mmWave 人間静的存在センサーモジュール <strong>MR24HPC1 Lite</strong></a></th>
     </tr>
     <tr>
         <th>主な機能</th>
@@ -185,7 +185,7 @@ Seeedでは、mmWaveの力を活用して、転倒検出や睡眠呼吸モニタ
         <th>ESPHomeサポート</th>
         <td><a href="https://github.com/limengdu/MR60FDA2_ESPHome_external_components">ネイティブファームウェアサポート</a></td>
         <td><a href="https://github.com/limengdu/MR60BHA2_ESPHome_external_components">ネイティブファームウェアサポート</a></td>
-        <td><a href="https://wiki.seeedstudio.com/mmwave_for_xiao/">ガイド</a></td>
+        <td><a href="https://wiki.seeedstudio.com/ja/mmwave_for_xiao/">ガイド</a></td>
         <td><a href="https://github.com/thefipster/esphome-mmwave-sensors">GitHub</a></td>
         <td><a href="https://github.com/thefipster/esphome-mmwave-sensors">GitHub</a></td>
     </tr>
@@ -416,10 +416,10 @@ mmWaveレーダーセンサーは、さまざまな業界で革新的なプロ�
 
 もちろん、mmWaveレーダーセンサーモジュールをHomeAssistantに接続することも可能です。以下は使用例です：
 
-- [MR60FDA2転倒検知センサーとHome Assistant](https://wiki.seeedstudio.com/ha_with_mr60fda2/)
-- [MR60BHA2呼吸・心拍センサーとHome Assistant](https://wiki.seeedstudio.com/ha_with_mr60bha2/)
-- [mmWaveキットとGroveをESPHomeに接続](https://wiki.seeedstudio.com/mmWave_Kit_And_Grove_Connect_To_ESPHome/)
-- [mmWaveをXIAOからBluetooth経由でHome Assistantに接続](https://wiki.seeedstudio.com/mmwave_for_xiao_to_ha_bt/)
+- [MR60FDA2転倒検知センサーとHome Assistant](https://wiki.seeedstudio.com/ja/ha_with_mr60fda2/)
+- [MR60BHA2呼吸・心拍センサーとHome Assistant](https://wiki.seeedstudio.com/ja/ha_with_mr60bha2/)
+- [mmWaveキットとGroveをESPHomeに接続](https://wiki.seeedstudio.com/ja/mmWave_Kit_And_Grove_Connect_To_ESPHome/)
+- [mmWaveをXIAOからBluetooth経由でHome Assistantに接続](https://wiki.seeedstudio.com/ja/mmwave_for_xiao_to_ha_bt/)
 
 ## mmWaveレーダーセンサーの設置方法
 

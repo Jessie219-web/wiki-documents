@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/DC_framework_solenoid_HCNE1-0630/
+image: https://wiki.seeedstudio.com/ja/DC_framework_solenoid_HCNE1-0630/
 slug: /ja/DC_framework_solenoid_HCNE1-0630
 last_update:
   date: 05/15/2025

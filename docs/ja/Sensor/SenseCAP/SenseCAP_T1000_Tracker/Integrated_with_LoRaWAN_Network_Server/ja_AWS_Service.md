@@ -145,7 +145,7 @@ CUPS URL をコピーします。この URL は次のステップで使用しま
 
 `Wireless device specification`: OTAAv1.0x
 
-`DevEUI/APP EUI/APP key`: SenseCAP Mate アプリで確認できます。詳細は [Get_Started](https://wiki.seeedstudio.com/Get_Started_with_SenseCAP_T1000_tracker/#get-started) を参照してください。
+`DevEUI/APP EUI/APP key`: SenseCAP Mate アプリで確認できます。詳細は [Get_Started](https://wiki.seeedstudio.com/ja/Get_Started_with_SenseCAP_T1000_tracker/#get-started) を参照してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/AWS17.PNG" alt="pir" width={800} height="auto" /></p>
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/M2_Multi-Platform/AWS20.PNG" alt="pir" width={800} height="auto" /></p>

@@ -176,12 +176,12 @@ Grove Base Shieldがない場合は、以下のように直接このモジュー
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を確認することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を確認することを強くお勧めします。
 :::
 
 - **ステップ 1.** Githubから[Grove touch sensor MPR121](https://github.com/linux-downey/Grove_touch_sensor_MPR121)ライブラリをダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。例を開くには、以下の3つの方法があります：
     1. Arduino IDEで直接開く：**File --> Examples --> Grove touch sensor MPR121 --> MPR121_demo**のパスをたどります。
@@ -249,7 +249,7 @@ void loop()
 }
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、`ctrl`+`shift`+`m` キーを同時に押します。ボーレートを **115200** に設定してください。
 
@@ -291,7 +291,7 @@ key 2release
 **Raspberry Pi OS >= Bullseye** を使用している場合は、**Python3** のみで以下のコマンドラインを使用してください。
 :::
 
-- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
+- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
 - **ステップ 2.** grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

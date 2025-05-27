@@ -24,7 +24,7 @@ SGP30は、空気清浄機、需要制御換気、およびIoTアプリケーシ
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/-Grove-VOC-and-eCO2-Gas-Sensor-(SGP30)-p-3071.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
 
 :::tip
-[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
+[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
 :::
 
 ## 産業用センサーへのアップグレード可能
@@ -174,7 +174,7 @@ SGP30の標準動作電圧は1.8Vです。安定した3.3VをMCP9600に供給す
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -218,7 +218,7 @@ SGP30の標準動作電圧は1.8Vです。安定した3.3VをMCP9600に供給す
 
 - **ステップ1.** [Seeed SGP30ライブラリ](https://github.com/Seeed-Studio/SGP30_Gas_Sensor)をGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** ダウンロードした`SGP30_Gas_Sensor-master.zip`を解凍すると、`examples`フォルダ内に3つのサブフォルダが表示されます。
 
@@ -233,7 +233,7 @@ SGP30の標準動作電圧は1.8Vです。安定した3.3VをMCP9600に供給す
 
 `baseline_operation_example`を使用することをお勧めします。その後、`xxx.ino`ファイルをクリックして例を開きます。
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ5.** Arduino IDEの**シリアルモニター**を開きます。**ツール->シリアルモニター**をクリックするか、++ctrl+shift+m++キーを同時に押します。すべてが正常に動作していれば、結果が表示されます。
 
@@ -296,7 +296,7 @@ CO2eq 濃度:502ppm
      **Raspberry Pi OS >= Bullseye** を搭載した **Raspberry Pi** を使用している場合は、**Python3** のみでこのコマンドラインを使用する必要があります。
 :::
 
-- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
+- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
 - **ステップ 2**. grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

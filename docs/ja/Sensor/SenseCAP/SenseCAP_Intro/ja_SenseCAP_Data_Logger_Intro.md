@@ -30,7 +30,7 @@ SenseCAP センサーハブは、遠隔環境モニタリングのためのコ�
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Sensor-Hub-4G-Data-Logger-with-builtin-battery-p-4852.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Sensor/SenseCAP/SenseCAP_Data_Logger/SenseCAP-Sensor-Hub-Data-Logger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 
@@ -47,7 +47,7 @@ SenseCAP S2100 データロガーは、MODBUS-RTU RS485/アナログ/GPIOセン�
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-S2100-LoRaWAN-Data-Logger-p-5361.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Sensor/SenseCAP/SenseCAP_Data_Logger/Data_Logger/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 

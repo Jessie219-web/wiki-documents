@@ -117,11 +117,11 @@ Wappstoに接続することで、以下の機能を操作できます。詳細�
 
 ### ソフトウェア要件
 
-この[リンク](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#software)を確認してください。
+この[リンク](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#software)を確認してください。
 
 ## Wio Terminal WiFiファームウェアの更新
 
-この[リンク](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/#update-the-wireless-core-firmware)を確認してください。
+この[リンク](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/#update-the-wireless-core-firmware)を確認してください。
 
 ## Wappstoの前提条件
 

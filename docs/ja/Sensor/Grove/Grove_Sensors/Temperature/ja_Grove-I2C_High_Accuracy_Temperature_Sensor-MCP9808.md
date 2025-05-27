@@ -125,7 +125,7 @@ PCBの裏面には<span style={{textDecoration: 'overline'}}>ALE</span>パッド
 これは、I2Cバスの異なる電圧セクションを接続するための典型的な双方向レベルシフター回路です。このセンサーのI<sup>2</sup>Cバスは3.3Vを使用しますが、ArduinoのI<sup>2</sup>Cバスが5Vを使用する場合、この回路が必要になります。上記の回路図では、**Q6**および**Q5**はNチャネルMOSFET [2N7002A](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/2N7002A_datasheet.pdf)であり、双方向スイッチとして機能します。この部分をよりよく理解するために、[AN10441](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/AN10441.pdf)を参照してください。
 
 :::tip
-このセクションでは回路図の一部のみを表示しています。完全なドキュメントについては、[Resources](https://wiki.seeedstudio.com/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/#resources)を参照してください。
+このセクションでは回路図の一部のみを表示しています。完全なドキュメントについては、[Resources](https://wiki.seeedstudio.com/ja/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/#resources)を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -180,12 +180,12 @@ PCBの裏面には<span style={{textDecoration: 'overline'}}>ALE</span>パッド
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** [Grove MCP9808](https://github.com/Seeed-Studio/Grove_Temperature_sensor_MCP9808)ライブラリをGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。以下のパスで例を開きます: **File --> Examples --> Grove Temperature Sensor MCP9808 --> MCP9808_demo_with_limit**。
 
@@ -196,7 +196,7 @@ PCBの裏面には<span style={{textDecoration: 'overline'}}>ALE</span>パッド
         **MCP9808_demo_with_limit**デモでは、アラート機能が有効です。温度のみが必要な場合は、basic_demoで十分です。アラート機能を使用したい場合は、limit_demoを選択してください。
 :::
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ5.** Arduino IDEの**シリアルモニター**を開きます。**Tool-> Serial Monitor**をクリックするか、++ctrl+shift+m++キーを同時に押します。すべてが正常に動作していれば、結果が表示されます。
 
@@ -324,7 +324,7 @@ delay(10);
 **Raspberry Pi OS >= Bullseye** を使用している場合、**Python3** のみでこのコマンドラインを使用する必要があります。
 :::
 
-- **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成し、grove.py を Raspberry Pi にインストールします。
+- **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成し、grove.py を Raspberry Pi にインストールします。
 
 - **ステップ2**. 以下のコマンドを実行してコードを動かします。
 

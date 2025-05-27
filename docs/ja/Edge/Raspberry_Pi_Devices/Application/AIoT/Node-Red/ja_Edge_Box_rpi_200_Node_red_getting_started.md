@@ -46,7 +46,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェアの準備
 
-Edge Box-200 は、Raspberry Pi OS がプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/Edge_Box_introduction/) Wiki をご覧ください。
+Edge Box-200 は、Raspberry Pi OS がプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/ja/Edge_Box_introduction/) Wiki をご覧ください。
 
 ## Edge Box に Node-RED をインストールする
 

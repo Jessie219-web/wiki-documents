@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove_Recorder/
+image: https://wiki.seeedstudio.com/ja/Grove_Recorder/
 slug: /ja/Grove_Recorder
 last_update:
   date: 05/15/2025

@@ -183,7 +183,7 @@ Seeed Studio XIAO用拡張ベースはバッテリーで電源供給が可能で
 
 **ステップ1**. Seeed Studio XIAO SAMD21を拡張ボードに取り付け、Type-Cケーブルを接続します。
 
-**ステップ2**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino)ライブラリをインストールします。ライブラリのインストール方法については[**こちらのガイド**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)をご覧ください。
+**ステップ2**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino)ライブラリをインストールします。ライブラリのインストール方法については[**こちらのガイド**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)をご覧ください。
 
 **ステップ3**. 以下のコードをコピーしてArduino IDEに貼り付け、アップロードします。
 
@@ -373,7 +373,7 @@ void loop() {
 
 **Step 1**. Seeed Studio XIAO SAMD21 を拡張ボードに取り付け、Type-C ケーブルを接続します。
 
-**Step 2**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino) と [**PCF8563**](https://github.com/Bill2462/PCF8563-Arduino-Library) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください: [**ライブラリのインストール方法**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+**Step 2**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino) と [**PCF8563**](https://github.com/Bill2462/PCF8563-Arduino-Library) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください: [**ライブラリのインストール方法**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)。
 
 **Step 3**. 以下のコードをコピーして Arduino IDE に貼り付け、アップロードします。
 
@@ -658,7 +658,7 @@ MicroSD カードのシステムフォーマットは FAT または exFAT であ
 
 **ステップ 1.** Seeed Studio XIAO SAMD21 拡張ボードに MicroSD カードを準備して挿入します。
 
-**ステップ 2.** まだ [**CircuitPython ファイル**](https://circuitpython.org/board/seeeduino_xiao/) をダウンロードしていない場合は、[**CircuitPython のインストール**](https://wiki.seeedstudio.com/Seeeduino-XIAO-Expansion-Board/#installing-circuitpython) の章を参照してください。
+**ステップ 2.** まだ [**CircuitPython ファイル**](https://circuitpython.org/board/seeeduino_xiao/) をダウンロードしていない場合は、[**CircuitPython のインストール**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO-Expansion-Board/#installing-circuitpython) の章を参照してください。
 
 **ステップ 3.** [**lib**](https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/lib.zip) をダウンロードしてファイルを解凍し、新しい lib を `CIRCUITPY` に置き換えてください。
 
@@ -752,7 +752,7 @@ Arduinoモードに戻りたい場合は、Arduino IDEで任意のプログラ�
 
 **ステップ 1.** 接続図に従って、すべてのセンサーをボードに接続してください。
 
-**ステップ 2.** [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+**ステップ 2.** [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)。
 
 **ステップ 3.** コードをArduino IDEにコピーしてアップロードしてください。
 
@@ -870,7 +870,7 @@ void loop() {
 
 **ステップ 2**. [**Arduino IDE**](https://www.arduino.cc/en/Main/software) をダウンロードします。
 
-**ステップ 3**. [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) と [**Motor driver**](https://github.com/Seeed-Studio/Drv8830_Motor_Driver) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+**ステップ 3**. [**Arduino-IRremote**](https://github.com/Seeed-Studio/Seeed_Arduino_IRSendRev) と [**Motor driver**](https://github.com/Seeed-Studio/Drv8830_Motor_Driver) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)。
 
 **ステップ 4**. 以下のコードを Arduino IDE にコピーしてアップロードします。
 
@@ -995,7 +995,7 @@ NeoPixel リングは、3 本の異なる色のワイヤーを通じて XIAO 開
 
 **ステップ 2**. [**Arduino IDE**](https://www.arduino.cc/en/Main/software) をダウンロードしてください。
 
-**ステップ 3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Servo**](https://github.com/arduino-libraries/Servo)、[**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202)、および [**Seeed_LED_Ring**](https://github.com/Seeed-Studio/Seeed_LED_Ring) ライブラリをインストールしてください。ライブラリのインストール方法については、[**こちらのガイド**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)をご参照ください。
+**ステップ 3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Servo**](https://github.com/arduino-libraries/Servo)、[**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202)、および [**Seeed_LED_Ring**](https://github.com/Seeed-Studio/Seeed_LED_Ring) ライブラリをインストールしてください。ライブラリのインストール方法については、[**こちらのガイド**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)をご参照ください。
 
 **ステップ 4**. コードをコピーして Arduino IDE に貼り付け、アップロードしてください。
 
@@ -1201,7 +1201,7 @@ void colorWipe(uint32_t c, uint8_t wait) {
 
 **ステップ2**. [**Arduino IDE**](https://www.arduino.cc/en/Main/software) をダウンロードします。
 
-**ステップ3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino) と [**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202) ライブラリをインストールします。ライブラリのインストール方法については、[**こちらのガイド**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)を参照してください。
+**ステップ3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino) と [**Seeed_Arduino_KCT202**](https://github.com/Seeed-Studio/Seeed_Arduino_KCT202) ライブラリをインストールします。ライブラリのインストール方法については、[**こちらのガイド**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)を参照してください。
 
 **ステップ4**. 以下のコードをArduino IDEにコピーしてアップロードします。
 
@@ -1328,7 +1328,7 @@ void loop() {
 
 **ステップ2**. [**Arduino IDE**](https://www.arduino.cc/en/Main/software) をダウンロードします。
 
-**ステップ 3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Seeed_PM2_5_sensor_HM3301**](https://github.com/Seeed-Studio/Seeed_PM2_5_sensor_HM3301)、および [**Seeed_SCD30**](https://github.com/Seeed-Studio/Seeed_SCD30) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+**ステップ 3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino)、[**Seeed_PM2_5_sensor_HM3301**](https://github.com/Seeed-Studio/Seeed_PM2_5_sensor_HM3301)、および [**Seeed_SCD30**](https://github.com/Seeed-Studio/Seeed_SCD30) ライブラリをインストールします。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)。
 
 **ステップ 4**. 以下のコードを Arduino IDE にコピーしてアップロードします。
 
@@ -1553,7 +1553,7 @@ void loop() {
 
 **ステップ2**. [**Arduino IDE**](https://www.arduino.cc/en/Main/software) をダウンロードしてください。
 
-**ステップ3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino) ライブラリをインストールしてください。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+**ステップ3**. [**u8g2**](https://github.com/olikraus/U8g2_Arduino) ライブラリをインストールしてください。ライブラリのインストール方法については、こちらのガイドをご覧ください：[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)。
 
 **ステップ4**. 以下のコードをArduino IDEにコピーしてアップロードしてください。
 

@@ -694,7 +694,7 @@ if(camera_sign && sd_sign){
   </table>
 </div>
 
-このプロジェクトではRound Display for XIAOを使用するため、**[ディスプレイ拡張ボードのWiki環境設定](https://wiki.seeedstudio.com/get_start_round_display#software-preparation)**の内容を読み、必要なライブラリをインストールし、TFT環境を設定してから、このプロジェクトのルーチンを実行してください。
+このプロジェクトではRound Display for XIAOを使用するため、**[ディスプレイ拡張ボードのWiki環境設定](https://wiki.seeedstudio.com/ja/get_start_round_display#software-preparation)**の内容を読み、必要なライブラリをインストールし、TFT環境を設定してから、このプロジェクトのルーチンを実行してください。
 
 XIAO ESP32S3 Senseは、SDカードスロットに接続された3つのプルアップ抵抗（R4～R6）を備えており、Round Displayにもプルアップ抵抗があるため、両方を同時に使用するとSDカードを読み取ることができません。この問題を解決するために、XIAO ESP32S3 Sense拡張ボードのJ3を切断する必要があります。
 
@@ -916,7 +916,7 @@ XIAO ESP32S3 Sense にプログラムをアップロードします。アップ�
 
 ### プログラムの注釈
 
-カメラとmicroSDカードの設定は前の内容で説明済みなので、ここでは繰り返しません。microSDカードの使用方法については、[XIAO ESP32S3 Sense ファイルシステム](https://wiki.seeedstudio.com/xiao_esp32s3_sense_filesystem) Wiki を参照して使用方法を学んでください。
+カメラとmicroSDカードの設定は前の内容で説明済みなので、ここでは繰り返しません。microSDカードの使用方法については、[XIAO ESP32S3 Sense ファイルシステム](https://wiki.seeedstudio.com/ja/xiao_esp32s3_sense_filesystem) Wiki を参照して使用方法を学んでください。
 
 ```cpp
 // 写真を撮る

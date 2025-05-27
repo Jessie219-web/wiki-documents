@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/5V-3.3V_Breadboard_Power_Supply/
+image: https://wiki.seeedstudio.com/ja/5V-3.3V_Breadboard_Power_Supply/
 slug: /ja/5V-3.3V_Breadboard_Power_Supply
 last_update:
   date: 05/15/2025

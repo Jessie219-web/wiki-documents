@@ -81,7 +81,7 @@ conda install libusb-1.0.26-h1c322ee_100.tar.bz2
 ```
 
 :::caution
-ファームウェアを変更する前に、BootLoaderのバージョンが2.0.0以上であることを確認する必要があります。バージョンが不明な場合は、[このセクション](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#check-bootloader-version)に記載されている手順に従ってBootLoaderのバージョンを確認してください。バージョンが2.0.0未満の場合は、[このセクション](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/#update-bootloader)に記載されている手順に従ってBootLoaderを更新してください。
+ファームウェアを変更する前に、BootLoaderのバージョンが2.0.0以上であることを確認する必要があります。バージョンが不明な場合は、[このセクション](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101/#check-bootloader-version)に記載されている手順に従ってBootLoaderのバージョンを確認してください。バージョンが2.0.0未満の場合は、[このセクション](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101/#update-bootloader)に記載されている手順に従ってBootLoaderを更新してください。
 :::
 
 

@@ -28,7 +28,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### **接続**
 
-向きを確認し、reTerminal を reTerminal E10-1 に取り付け、しっかりと固定してください。この時点で reTerminal E10-1 に電源が入っている場合、reTerminal は起動してシステムに入ります。reTerminal について詳しく知りたい場合は、[**reTerminal**](https://wiki.seeedstudio.com/reTerminal/) をクリックしてください。
+向きを確認し、reTerminal を reTerminal E10-1 に取り付け、しっかりと固定してください。この時点で reTerminal E10-1 に電源が入っている場合、reTerminal は起動してシステムに入ります。reTerminal について詳しく知りたい場合は、[**reTerminal**](https://wiki.seeedstudio.com/ja/reTerminal/) をクリックしてください。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/reTerminal_Bridge/image3.png"/></div>
 

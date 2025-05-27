@@ -124,7 +124,7 @@ Bluetoothがオンになっていることを確認してください。そう�
 
 これでAWS 1-Clickサービスを使用して楽しむ準備が整いました！
 
-最新のファームウェアに更新するには、[**こちら**](https://wiki.seeedstudio.com/SEEED-IOT-BUTTON-FOR-AWS/#ota-update)を参照してください。
+最新のファームウェアに更新するには、[**こちら**](https://wiki.seeedstudio.com/ja/SEEED-IOT-BUTTON-FOR-AWS/#ota-update)を参照してください。
 
 ### 操作手順
 

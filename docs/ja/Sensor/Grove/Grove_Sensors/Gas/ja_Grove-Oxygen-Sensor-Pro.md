@@ -27,7 +27,7 @@ Grove - Oxygen Sensor Pro(GGC2330-O2)は、Grove - Oxygen Sensor(GG2020-O2)の�
 [<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-Oxygen-Sensor-Pro-Pre-calibration-p-4896.html)
 
 :::tip
-    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しています。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
+    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しています。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
 :::
 ## 特徴
 
@@ -39,7 +39,7 @@ Grove - Oxygen Sensor Pro(GGC2330-O2)は、Grove - Oxygen Sensor(GG2020-O2)の�
 * UART信号出力
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 
@@ -85,7 +85,7 @@ Grove - Oxygen Sensor Pro(GGC2330-O2)は、Grove - Oxygen Sensor(GG2020-O2)の�
 :::note
     この章はWin10とArduino IDE 1.7.9を基にしています。
 :::
-この新しいGrove - Oxygen Sensor Pro(GGC2330-O2)の使用方法は、Grove - Oxygen Sensor(GG2020-O2) [GG2020-O2](https://wiki.seeedstudio.com/Grove-Gas_Sensor-O2-MIX8410/)とは異なります。
+この新しいGrove - Oxygen Sensor Pro(GGC2330-O2)の使用方法は、Grove - Oxygen Sensor(GG2020-O2) [GG2020-O2](https://wiki.seeedstudio.com/ja/Grove-Gas_Sensor-O2-MIX8410/)とは異なります。
 
 ここでは、このGrove - Oxygen Sensor Pro(GGC2330-O2)がどのように動作するかを簡単なデモを通じて説明します。まず、以下のものを準備する必要があります：
 

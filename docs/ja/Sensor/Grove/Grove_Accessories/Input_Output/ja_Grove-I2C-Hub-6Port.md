@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-I2C-Hub-6Port/
+image: https://wiki.seeedstudio.com/ja/Grove-I2C-Hub-6Port/
 slug: /ja/Grove-I2C-Hub-6Port
 last_update:
   date: 05/15/2025
@@ -60,7 +60,7 @@ Grove I2C Hub と同様に、同じ I2C ソケットを同時に使用しても�
 ここでは具体的な例を挙げていません。
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## オンライン回路図ビューア

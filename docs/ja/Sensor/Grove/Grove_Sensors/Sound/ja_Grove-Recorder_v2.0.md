@@ -3,7 +3,7 @@ description: Grove - Recorder v2.0
 title: Grove - Recorder v2.0
 keywords:
   - Grove Grove_Sensors Sound
-image: https://wiki.seeedstudio.com/Grove-Loudness_Sensor/
+image: https://wiki.seeedstudio.com/ja/Grove-Loudness_Sensor/
 slug: /ja/Grove-Recorder_v2.0
 last_update:
   date: 05/15/2025
@@ -39,7 +39,7 @@ Grove - Recorder v2.0は、機能が強化されたアップグレード版の�
 - スピーカー（8Ω/2W）付きで出荷。
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 アプリケーションアイデア

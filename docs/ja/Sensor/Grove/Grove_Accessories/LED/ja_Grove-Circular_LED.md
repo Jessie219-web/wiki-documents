@@ -112,11 +112,11 @@ Grove Base Shieldがない場合でも、以下のようにGrove - Circular LED�
 ### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** [Grove - LED Bar Library](https://github.com/Seeed-Studio/Grove_LED_Bar)をGithubからダウンロードします。
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 - **ステップ3.** **Arduino IDE -> File -> Examples -> Grove_LED_Bar -> BasicControl**を開きます。
 - **ステップ4.** 以下のように**define MY9221_LED_NUM 24**をアンコメントし、**#define MY9221_LED_NUM 10**をコメントアウトします。
 
@@ -125,7 +125,7 @@ Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い�
 #define MY9221_LED_NUM 24
 ```
 
-- **ステップ5.** サンプルコードをArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ5.** サンプルコードをArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 - **ステップ6.** LEDがC、23、ABを繰り返し点灯するのが確認できます。
 
 ### Codecraftで遊ぶ
@@ -143,7 +143,7 @@ Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い�
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[Arduino用Codecraftガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+Codecraftを初めて使用する場合は、[Arduino用Codecraftガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。

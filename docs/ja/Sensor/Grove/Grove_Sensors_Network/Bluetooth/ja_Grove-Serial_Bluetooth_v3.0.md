@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Serial_Bluetooth_v3.0/
+image: https://wiki.seeedstudio.com/ja/Grove-Serial_Bluetooth_v3.0/
 slug: /ja/Grove-Serial_Bluetooth_v3.0
 last_update:
   date: 05/15/2025
@@ -33,7 +33,7 @@ Grove - Serial Bluetoothは、既存のGrove Base Shieldと互換性があり、
 - 接続範囲外になった場合、30分以内に自動再接続
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 デモンストレーション

@@ -58,11 +58,11 @@ SenseCAP S210xシリーズの産業用センサーは、環境センサーとし
 - I2C アドレス：0x29
 
 :::note
-複数の I2C デバイスを使用したい場合は、[ソフトウェア I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/)を参照してください。
+複数の I2C デバイスを使用したい場合は、[ソフトウェア I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/)を参照してください。
 :::
 
 :::tip
-Grove モジュールの詳細については、[Grove システム](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+Grove モジュールの詳細については、[Grove システム](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 仕様
@@ -111,7 +111,7 @@ Grove モジュールの詳細については、[Grove システム](https://wik
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -134,7 +134,7 @@ Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](htt
 #### ソフトウェア
 
 - **ステップ1.** こちらからライブラリをダウンロードしてください：[Digital Light Sensor Library](https://github.com/Seeed-Studio/Grove_Digital_Light_Sensor/archive/master.zip);
-- **ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)の手順に従ってライブラリをインストールしてください。
+- **ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)の手順に従ってライブラリをインストールしてください。
 - **ステップ3.** 以下のパスからコードを直接開きます：**File -> Example ->Digital_Light_Sensor->Digital_Light_Sensor**。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Digital_Light_Sensor/img/library%20example.jpg" /></div>
@@ -197,7 +197,7 @@ void loop()
 |<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/rasp.jpg" /></div>|<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/wiki_english/docs/images/Grovepi%2B.jpg" /></div>|<div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Digital_Light_Sensor/img/digital%20light%20sensor_small.jpg" /></div>|
 |[今すぐ購入](https://www.seeedstudio.com/Raspberry-Pi-3-Model-B-p-2625.html)|[今すぐ購入](https://www.seeedstudio.com/GrovePi%2B-p-2241.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-p-1281.html)|
 
-- [手順](https://wiki.seeedstudio.com/GrovePi_Plus/)に従って開発環境を構成してください。
+- [手順](https://wiki.seeedstudio.com/ja/GrovePi_Plus/)に従って開発環境を構成してください。
 - Groveケーブルを使用してセンサーをGrovePi+の**I2C**ソケットに接続します。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Digital_Light_Sensor/img/pi%20connection.jpg" /></div>

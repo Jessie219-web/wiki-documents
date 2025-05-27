@@ -80,7 +80,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** [デモコード](https://files.seeedstudio.com/wiki/Grove-PH_Sensor_kit/Grove-PH_Sensor_kit.zip)をダウンロードします。
@@ -89,7 +89,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 - **ステップ 3.** Arduino IDEで**pH_meter_V1_1**ファイルを開きます。
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 #### ソフトウェアコード
 ```cpp

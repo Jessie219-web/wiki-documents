@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/3.6V_Micro_hydro_generator/
+image: https://wiki.seeedstudio.com/ja/3.6V_Micro_hydro_generator/
 slug: /ja/3.6V_Micro_hydro_generator
 last_update:
   date: 05/15/2025

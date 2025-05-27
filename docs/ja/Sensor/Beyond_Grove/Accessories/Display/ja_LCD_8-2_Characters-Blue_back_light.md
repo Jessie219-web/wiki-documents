@@ -3,7 +3,7 @@ title: LCD 8*2 キャラクター - 青色バックライト
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/LCD_8-2_Characters-Blue_back_light/
+image: https://wiki.seeedstudio.com/ja/LCD_8-2_Characters-Blue_back_light/
 slug: /ja/LCD_8-2_Characters-Blue_back_light
 last_update:
   date: 05/15/2025

@@ -56,7 +56,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 - Bookworm OS がインストールされた Raspberry Pi が必要です。
 
-- インターネットアクセス用に設定された Quectel LTE 4G モジュール。RNIDS などの設定を使用して LTE 接続が適切に設定されていることを確認してください。[リンク](https://wiki.seeedstudio.com/raspberry_pi_4g_hat_rndis_mobile_internet/)
+- インターネットアクセス用に設定された Quectel LTE 4G モジュール。RNIDS などの設定を使用して LTE 接続が適切に設定されていることを確認してください。[リンク](https://wiki.seeedstudio.com/ja/raspberry_pi_4g_hat_rndis_mobile_internet/)
 
 ## ホットスポットを有効にする手順
 

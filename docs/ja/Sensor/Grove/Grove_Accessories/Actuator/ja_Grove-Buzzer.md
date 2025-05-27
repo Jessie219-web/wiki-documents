@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Buzzer/
+image: https://wiki.seeedstudio.com/ja/Grove-Buzzer/
 slug: /ja/Grove-Buzzer
 last_update:
   date: 05/15/2025
@@ -34,7 +34,7 @@ Grove - ブザーモジュールは、[圧電ブザー](https://en.wikipedia.org
 - 標準的な4ピンのGroveケーブルを使用して、GroveパワーモジュールやGrove - ベースシールドなどの他のGroveモジュールに接続可能
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -120,7 +120,7 @@ void loop()
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[CodecraftでArduinoを使用するためのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[CodecraftでArduinoを使用するためのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後からダウンロードできるcdcファイルを開きます。
 
@@ -154,7 +154,7 @@ void loop()
      **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3のみ**で以下のコマンドラインを使用してください。
 :::
 
-- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成し、grove.pyをRaspberry Piにインストールします。
+- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成し、grove.pyをRaspberry Piにインストールします。
 
 - **ステップ 2.** 以下のコマンドを実行してコードを実行します。
 

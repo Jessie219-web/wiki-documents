@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/DSO_Quad-Building_Firmware/
+image: https://wiki.seeedstudio.com/ja/DSO_Quad-Building_Firmware/
 slug: /ja/DSO_Quad-Building_Firmware
 last_update:
   date: 05/15/2025

@@ -17,7 +17,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 name: ODYSSEY - X86J41x5
 category: ODYSSEY
 bzurl: https://www.seeedstudio.com/ODYSSEY-X86J4105800-p-4445.html
-wikiurl: https://wiki.seeedstudio.com/ODYSSEY-X86J4105/
+wikiurl: https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105/
 sku: 102110399
 --- -->
 
@@ -530,7 +530,7 @@ ODYSSEY-X86J4105、ODYSSEY-X86J4125、ODYSSEY-X86J4125 V2には、すべてプ�
 ### Odysseyがシャットダウンした後もGPIOが動作しているのはなぜですか？
 
 
-これを設定するには、提供されている[最新のBIOSに更新](https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Updating-Firmware/)する必要があります。最新のBIOSでは、GPIOとODYSSEYの両方をオフにするために、ここで有効から無効に変更することができます。
+これを設定するには、提供されている[最新のBIOSに更新](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Updating-Firmware/)する必要があります。最新のBIOSでは、GPIOとODYSSEYの両方をオフにするために、ここで有効から無効に変更することができます。
 
 ![](https://files.seeedstudio.com/wiki/ODYSSEY-X86J4105/OdysseyFAQ1.png)
 

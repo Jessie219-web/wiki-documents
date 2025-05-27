@@ -263,7 +263,7 @@ py -m esptool --chip esp32s3 -p COM -b 460800 --before=default_reset --after=har
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image4.png" style={{width:600, height:'auto'}}/></div>
 
-**ステップ4:** インジケーターのシングルチャネルゲートウェイを追加した後、`Applications`をクリックしてデバイスを追加します。この例では、`SenseCAP T1000 Tracker`をノードデバイスとして使用します。詳細な接続手順については、Wiki: https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN/ を参照してください。`End devices`->`General settings`->`Network layer`->`Advanced MAC settings`で、`Adaptive data rate (ADR)`を**Static mode**に設定し、`ADR data rate index`をインジケーターで設定された`spreading factor`に応じて構成する必要があります。例えば、`spreading factor`が9に設定されている場合、`ADR data rate index`は3に設定する必要があります。他の値についても同様です。
+**ステップ4:** インジケーターのシングルチャネルゲートウェイを追加した後、`Applications`をクリックしてデバイスを追加します。この例では、`SenseCAP T1000 Tracker`をノードデバイスとして使用します。詳細な接続手順については、Wiki: https://wiki.seeedstudio.com/ja/SenseCAP_T1000_tracker_TTN/ を参照してください。`End devices`->`General settings`->`Network layer`->`Advanced MAC settings`で、`Adaptive data rate (ADR)`を**Static mode**に設定し、`ADR data rate index`をインジケーターで設定された`spreading factor`に応じて構成する必要があります。例えば、`spreading factor`が9に設定されている場合、`ADR data rate index`は3に設定する必要があります。他の値についても同様です。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/pics/image5.png" style={{width:600, height:'auto'}}/></div>
 

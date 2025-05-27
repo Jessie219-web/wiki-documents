@@ -40,7 +40,7 @@ Grove – LED Barは、10セグメントのLEDゲージバーとMY9221 LED制御
 -   Suli互換ライブラリ
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -77,7 +77,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 -------------
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 ### Arduinoで遊ぶ
 
@@ -111,14 +111,14 @@ Arduinoを初めて使用する場合は、開始前に[Getting Started with Ard
 
 - **ステップ 1.** [Grove - LED Bar ライブラリ](https://github.com/Seeed-Studio/Grove_LED_Bar) を Github からダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDE を再起動します。次のパスから「Level」サンプルを開きます：**File --> Examples --> Grove LED Bar --> Level**。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove-LED_Bar/img/LED_BAR_IDE.png) -->
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-LED_Bar/img/LED_BAR_IDE.png" alt="pir" width={600} height="auto" /></p>
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 結果は以下のようになります：
 

@@ -126,7 +126,7 @@ The Things Stack Community Edition は、LoRaWAN® テクノロジーに慣れ�
 デバイスは現在アクティブ化されており、アップリンクを送信すると The Things Stack に接続されていると表示されます。
 
 - デバイスを追加するための詳細な手順は、公式の [The Things Stack ドキュメントページ](https://www.thethingsindustries.com/docs/devices/) にあります。
-- TTN に K1100 キットを追加する方法については、[Connecting to TTN](https://wiki.seeedstudio.com/Connecting-to-TTN/) を参照してください。
+- TTN に K1100 キットを追加する方法については、[Connecting to TTN](https://wiki.seeedstudio.com/ja/Connecting-to-TTN/) を参照してください。
 
 ### TTN アプリケーション - 統合
 
@@ -168,12 +168,12 @@ TTN でのゲートウェイの使用および構成に関する詳細情報に�
 世界の地域によって異なる [周波数プラン](https://www.thethingsindustries.com/docs/reference/frequency-plans/) が使用されています。例えば、ヨーロッパでは 863-870 MHz、北米では 902-928 MHz などです。購入前に、ハードウェアが地域の無線周波数に適合していることを必ず確認してください！
 :::
 
-チュートリアルの次のステップ [TTN への接続](https://wiki.seeedstudio.com/Connecting-to-TTN/) に進んでください。
+チュートリアルの次のステップ [TTN への接続](https://wiki.seeedstudio.com/ja/Connecting-to-TTN/) に進んでください。
 
 <table align="center">
   <tbody><tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/ttncon.jpg" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>TTN への接続</strong><br /><br />このセクションでは、センサーデータを TTN に正常にアップロードし、表示できるように TTN を構成する方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-TTN">さあ始めましょう &gt;</a></td>
+      <td align="left"><strong>TTN への接続</strong><br /><br />このセクションでは、センサーデータを TTN に正常にアップロードし、表示できるように TTN を構成する方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN">さあ始めましょう &gt;</a></td>
     </tr></tbody></table>
 
 ## 技術サポートと製品ディスカッション

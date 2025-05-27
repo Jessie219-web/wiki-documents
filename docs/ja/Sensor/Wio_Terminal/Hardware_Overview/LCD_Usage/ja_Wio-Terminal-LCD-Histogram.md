@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-Histogram/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Histogram/
 slug: /ja/Wio-Terminal-LCD-Histogram
 last_update:
   date: 05/15/2025

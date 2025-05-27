@@ -46,7 +46,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェアの準備
 
-[InfluxDB データベースの作成方法](https://wiki.seeedstudio.com/recomputer_r1000_node_red_influxdb/) に関する以前のチュートリアルを参照することをお勧めします。このチュートリアルでは、既存の InfluxDB 接続を使用してセットアップを行います。
+[InfluxDB データベースの作成方法](https://wiki.seeedstudio.com/ja/recomputer_r1000_node_red_influxdb/) に関する以前のチュートリアルを参照することをお勧めします。このチュートリアルでは、既存の InfluxDB 接続を使用してセットアップを行います。
 
 ## Grafana リポジトリの追加
 

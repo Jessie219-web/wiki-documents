@@ -72,7 +72,7 @@ Datacakeは、プログラミングスキルを必要とせず、最小限の時
 
 この章の内容では、前述のNode-REDを引き続き使用し、Node-REDを通じてK1100キットをDatacakeで管理する方法を説明します。
 
-もしNode-REDをインストールしていない、またはNode-REDが何かわからない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/)を参照してください。
+もしNode-REDをインストールしていない、またはNode-REDが何かわからない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/)を参照してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/k1100_sensecap_datacake/1.png" alt="pir" width={600} height="auto" /></p>
 
@@ -84,7 +84,7 @@ Datacakeは、プログラミングスキルを必要とせず、最小限の時
 
 **ステップ2.** MQTTノードを作成する
 
-**Network -> mqtt in**ノードを使用し、[前のチュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/#mqtt-node)で説明したSenseCAP APIの形式に従ってmqttを設定します。
+**Network -> mqtt in**ノードを使用し、[前のチュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/#mqtt-node)で説明したSenseCAP APIの形式に従ってmqttを設定します。
 
 - サーバー: openstream.api.sensecap.seeed.cc
 - ポート: 1883

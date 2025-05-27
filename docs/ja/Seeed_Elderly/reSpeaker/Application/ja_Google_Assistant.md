@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Google-Assitant/img/Front.jpg)
 
-この Wiki は ReSpeaker Core v2.0 用です。まず [ReSpeaker Core v2.0 の Wiki](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0/#preparation) を読むことをお勧めします。
+この Wiki は ReSpeaker Core v2.0 用です。まず [ReSpeaker Core v2.0 の Wiki](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/#preparation) を読むことをお勧めします。
 
 ## 始める前に
 
@@ -28,7 +28,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - Micro-USB ケーブル 1 本
 - [PUTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-[準備](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0/#preparation) を読み、WiFi とシリアルの設定をすでに完了しているものとします。
+[準備](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/#preparation) を読み、WiFi とシリアルの設定をすでに完了しているものとします。
 
 では、始めましょう 😃
 

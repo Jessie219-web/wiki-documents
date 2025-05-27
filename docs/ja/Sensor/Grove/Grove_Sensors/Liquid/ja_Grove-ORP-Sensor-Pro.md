@@ -133,15 +133,15 @@ Grove ORP Sensor Proを使用する前に、Groveボードにプローブを取�
 
 **ステップ 2.** 開発ボードモデルを選択し、Arduino IDEに追加します。
 
-- **Seeeduino**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を参照して追加を完了してください。
+- **Seeeduino**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を参照して追加を完了してください。
 
-- **Seeed Studio XIAO SAMD21**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)を参照して追加を完了してください。
+- **Seeed Studio XIAO SAMD21**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/#software)を参照して追加を完了してください。
 
-- **Seeed Studio XIAO RP2040**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
+- **Seeed Studio XIAO RP2040**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
 
-- **Seeed Studio XIAO nRF52840**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)を参照して追加を完了してください。
+- **Seeed Studio XIAO nRF52840**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_BLE/#software-setup)を参照して追加を完了してください。
 
-- **Seeed Studio XIAO ESP32C3**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#software-setup)を参照して追加を完了してください。
+- **Seeed Studio XIAO ESP32C3**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/#software-setup)を参照して追加を完了してください。
 
 ### Seeed Studio XIAO SAMD21でGrove ORP Sensor Proを使用する
 

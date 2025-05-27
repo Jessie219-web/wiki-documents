@@ -27,7 +27,7 @@ SPDTリレー(30A)は、高品質な単極双投リレー(SPDT)です。この�
 - 常閉リレー
 
 :::tip
-  Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+  Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -47,7 +47,7 @@ SPDTリレー(30A)は、高品質な単極双投リレー(SPDT)です。この�
 ---
 **Arduinoでの使用**
 
-なぜリレーを使用する必要があるのか、また本当に必要なのか？高電流を消費するデバイスや高電圧で動作するデバイスをオン/オフする場合、リレーが必要です。つまり、リレーは「低電圧で制御される高電圧または高電流スイッチ」です。私たちが最も一般的に使用するSPDTリレーのコイルは非常に少ない電流を消費します（[Grove - Relay](https://wiki.seeedstudio.com/Grove-Relay/)は10Aをサポート）。この30Aリレーを使用すれば、ヘッドライト、駐車灯、ホーンなど、さらに高電流のスイッチデバイスを制御できます。
+なぜリレーを使用する必要があるのか、また本当に必要なのか？高電流を消費するデバイスや高電圧で動作するデバイスをオン/オフする場合、リレーが必要です。つまり、リレーは「低電圧で制御される高電圧または高電流スイッチ」です。私たちが最も一般的に使用するSPDTリレーのコイルは非常に少ない電流を消費します（[Grove - Relay](https://wiki.seeedstudio.com/ja/Grove-Relay/)は10Aをサポート）。この30Aリレーを使用すれば、ヘッドライト、駐車灯、ホーンなど、さらに高電流のスイッチデバイスを制御できます。
 
 SPDTリレーの内部構造：
 
@@ -61,7 +61,7 @@ SPDTリレーの内部構造：
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-SPDT_Relay_30A/img/SPDT_Relay.jpg" /></div>
 
-このリレーを制御するためのコードは、[Grove - Relay](https://wiki.seeedstudio.com/Grove-Relay/)と同じです。
+このリレーを制御するためのコードは、[Grove - Relay](https://wiki.seeedstudio.com/ja/Grove-Relay/)と同じです。
 
 ArduinoとGrove - SPDTリレー(30A)を使用して、エアコンや洗濯機を制御する際の成功を祈ります。
 
@@ -69,7 +69,7 @@ ArduinoとGrove - SPDTリレー(30A)を使用して、エアコンや洗濯機�
 
 1. Raspberry PiとGrovePiまたはGrovePi+を用意してください。
 
-2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](https://wiki.seeedstudio.com/GrovePi_Plus#Introducing_the_GrovePi.2B)を参照してください。
+2. 開発環境の設定を完了している必要があります。設定がまだの場合は[こちら](https://wiki.seeedstudio.com/ja/GrovePi_Plus#Introducing_the_GrovePi.2B)を参照してください。
 
 3. 接続
 

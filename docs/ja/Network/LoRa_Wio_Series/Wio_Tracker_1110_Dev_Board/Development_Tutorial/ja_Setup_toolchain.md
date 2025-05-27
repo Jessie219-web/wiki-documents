@@ -32,7 +32,7 @@ Arduino IDE（統合開発環境）はオープンソースのソフトウェア
 </div>
 
 :::tip
-Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 #### Seeed ボードの追加

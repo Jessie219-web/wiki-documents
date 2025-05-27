@@ -126,7 +126,7 @@ Watcherのプッシュ・トゥ・トーク機能を使用すると、どの画�
 
 2. Watcherがタスクを実行中に対話を開始した場合、Watcherはまず現在のタスクを一時停止し、対話が終了すると元のタスクに戻ります。
 
-3. タスクの割り当て方法については、**[Run - Sending Task to Watcher by Speaking](#run---sending-task-to-watcher-by-speaking)**および**[How to assign tasks to Watcher](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)**のチュートリアルを最初にお読みください。
+3. タスクの割り当て方法については、**[Run - Sending Task to Watcher by Speaking](#run---sending-task-to-watcher-by-speaking)**および**[How to assign tasks to Watcher](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)**のチュートリアルを最初にお読みください。
 :::
 
 ## 機能概要

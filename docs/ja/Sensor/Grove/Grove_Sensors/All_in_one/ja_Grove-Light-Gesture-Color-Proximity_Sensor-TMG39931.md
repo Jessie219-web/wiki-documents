@@ -120,7 +120,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 :::tip
@@ -131,7 +131,7 @@ Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い�
 
 - **ステップ 1.** [Seeed_TMG3993](https://github.com/Seeed-Studio/Seeed_TMG3993.git)ライブラリをGithubからダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。例を開くには、以下の3つの方法があります：
     1. Arduino IDEで直接開く：**File --> Examples --> Seeed TMG3993(Grove - Light&Gesture&Color&Proximity Sensor) --> Example1-ProximityPullRaw**のパスを使用します。
@@ -199,7 +199,7 @@ void loop()
 
 - **ステップ 1.** [Seeed_TMG3993](https://github.com/Seeed-Studio/Seeed_TMG3993.git)ライブラリをGithubからダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。例を開く方法は例1と同じですが、今回は"Example2-ProximityInterrupt"を選択してください。または以下のコードをArduino IDEにコピーしてください：
 
@@ -268,7 +268,7 @@ void loop()
 
 - **ステップ1.** [Seeed_TMG3993](https://github.com/Seeed-Studio/Seeed_TMG3993.git) ライブラリをGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。例1と同じ方法で例を開きますが、今回は「Example1」ではなく「Example3-Color-Light」を選択します。または、以下のコードをArduino IDEにコピーしてください：
 

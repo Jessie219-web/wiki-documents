@@ -42,7 +42,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 必要な Arduino ライブラリ
 
-- LCD スクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) を参照してください。
+- LCD スクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) を参照してください。
 
 - [Seeed_AMG8833](https://github.com/Seeed-Studio/Seeed_AMG8833) リポジトリを訪問し、リポジトリ全体をローカルドライブにダウンロードしてください。
 

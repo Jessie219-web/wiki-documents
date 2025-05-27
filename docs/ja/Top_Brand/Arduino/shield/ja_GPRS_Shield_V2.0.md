@@ -219,7 +219,7 @@ GPRS Shieldには、GSMネットワークを介してデータを送信するた
 ほとんどのATコマンドは**キャリッジリターン**を付けて送信する必要があり、シリアルポートターミナルで「+CR」オプションを選択する必要があります。
 :::
 
-ATコマンドを実験するには、GPRS Shieldを電源オンして通信する方法が必要です。以下に説明するArduino Duemilanoveボードを使用するのが最適です。同じ手順は[Seeeduino](https://wiki.seeedstudio.com/Seeeduino_v4.2/)や[Seeeduino Stalker](https://wiki.seeedstudio.com/Seeeduino_Stalker_V3.1/)にも適用されます。
+ATコマンドを実験するには、GPRS Shieldを電源オンして通信する方法が必要です。以下に説明するArduino Duemilanoveボードを使用するのが最適です。同じ手順は[Seeeduino](https://wiki.seeedstudio.com/ja/Seeeduino_v4.2/)や[Seeeduino Stalker](https://wiki.seeedstudio.com/ja/Seeeduino_Stalker_V3.1/)にも適用されます。
 
 - 前述のハードウェアインストール手順に従ってハードウェアシステムをセットアップします。
 - GPRS ShieldのGPRS_TX & GPRS_RXジャンパーがSWSerial位置に取り付けられていることを確認します。これにより、GPRS_TXがD7（RX）に、GPRS_RXがD8（TX）に接続されます。
@@ -273,8 +273,8 @@ void clearBufferArray()              // バッファ配列をクリアする関�
 }
 ```
 
-- スケッチをArduinoボードにアップロードします。コードのアップロード方法がわからない場合は、[こちらの手順](https://wiki.seeedstudio.com/Upload_Code/)を参照してください。
-- シリアルツールがない場合は、[シリアルツール](https://files.seeedstudio.com/wiki/GPRS_Shield_V2.0/res/Sscom32E.zip)をダウンロードして起動してください。Arduinoの正しいCOMポートを選択し、**19200** 8-N-1で動作するように設定してから「Open COM」をクリックします。また、AT Command Testerを使用してATコマンドを送信することもできます。興味がある場合は[こちら](https://wiki.seeedstudio.com/AT_Command_Tester_Application/)をクリックしてください。
+- スケッチをArduinoボードにアップロードします。コードのアップロード方法がわからない場合は、[こちらの手順](https://wiki.seeedstudio.com/ja/Upload_Code/)を参照してください。
+- シリアルツールがない場合は、[シリアルツール](https://files.seeedstudio.com/wiki/GPRS_Shield_V2.0/res/Sscom32E.zip)をダウンロードして起動してください。Arduinoの正しいCOMポートを選択し、**19200** 8-N-1で動作するように設定してから「Open COM」をクリックします。また、AT Command Testerを使用してATコマンドを送信することもできます。興味がある場合は[こちら](https://wiki.seeedstudio.com/ja/AT_Command_Tester_Application/)をクリックしてください。
 - 約2秒間電源ボタンを押してSIM900を電源オンします。赤いLEDが点灯し、その隣の緑のLEDが点滅します。シールドがネットワークに正常に接続されると、緑のLEDが3秒ごとに点滅します。
 - SIM900がネットワークに接続したことを通知するメッセージがシリアルモニターに表示されるはずです。
 
@@ -481,10 +481,10 @@ SIM900 AT コマンドセットシートによると、音声通話のために�
 - **[Library]** [GPRS_Shield ライブラリ（Suli ベース） - GitHub](https://github.com/Seeed-Studio/GPRS_Shield_Suli)
 - **[Library]** [GPRS_SIM900 ライブラリ（非 Suli） - GitHub](https://github.com/Seeed-Studio/GPRS_SIM900)
 - **[Document]** [AT コマンド v1.11](https://files.seeedstudio.com/wiki/GPRS_Shield_V2.0/res/AT_Commands_v1.11.pdf)
-- **[Document]** [SIM900 ハードウェア設計](https://wiki.seeedstudio.com/images/e/e3/SIM900_HD_V1.05.pdf)
+- **[Document]** [SIM900 ハードウェア設計](https://wiki.seeedstudio.com/ja/images/e/e3/SIM900_HD_V1.05.pdf)
 - **[Datasheet]** [Si5902BDC](http://www.vishay.com/docs/70415/si5902bd.pdf)
 - **[Datasheet]** [SIM900 データシート](https://www.seeedstudio.com/document/SIM900datasheeet.zip)
-- **[Tools]** [SIM900 ファームウェアとツール（ファームウェア: 1137B08SIM900M64_ST）](https://wiki.seeedstudio.com/images/8/87/SIM900_firmware_and_tool.zip)
+- **[Tools]** [SIM900 ファームウェアとツール（ファームウェア: 1137B08SIM900M64_ST）](https://wiki.seeedstudio.com/ja/images/8/87/SIM900_firmware_and_tool.zip)
 
 ## 技術サポート & 製品ディスカッション
 

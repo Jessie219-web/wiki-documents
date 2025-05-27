@@ -364,7 +364,7 @@ Groveはモジュール式で標準化されたコネクタプロトタイピン
 |101020082 |Grove - Finger-clip Heart Rate Sensor with shell |I2C|[リンク](https://www.seeedstudio.com/Grove-Finger-clip-Heart-Rate-Sensor-with-shell-p-2420.html)|
 |113020003 |Grove - GPS                         |UART| [リンク](https://www.seeedstudio.com/Grove-GPS-p-959.html)|
 |104030007 |Grove - Green LED |I/O| [リンク](https://www.seeedstudio.com/Grove-Green-LED-p-1144.html)|
-|103020013 |Grove - I2C ADC |I2C| [リンク](https://wiki.seeedstudio.com/Grove-I2C_ADC/)|
+|103020013 |Grove - I2C ADC |I2C| [リンク](https://wiki.seeedstudio.com/ja/Grove-I2C_ADC/)|
 |103020006 |Grove - I2C Hub |I2C| [リンク](https://www.seeedstudio.com/Grove-I2C-Hub-p-851.html)|
 |101020079 |Grove - IMU 10DOF |I2C| [リンク](https://www.seeedstudio.com/Grove-IMU-10DOF-p-2386.html)|
 |101020080 |Grove - IMU 9DOF v2.0 |I2C| [リンク](https://www.seeedstudio.com/Grove-IMU-9DOF-v2.0-p-2400.html)|

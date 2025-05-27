@@ -167,11 +167,11 @@ AWS IoT Core コンソールにログインする際は、**Root user** を選�
 
 ## デバイスへの統合の接続
 
-次に、Helium コンソールのクリック＆ドラッグインターフェースを使用して、デバイスを関数（デコーダー）および AWS IoT Core に接続します。詳細は[以前の説明](https://wiki.seeedstudio.com/Helium-Introduction/#helium-console-flows)を参照してください。
+次に、Helium コンソールのクリック＆ドラッグインターフェースを使用して、デバイスを関数（デコーダー）および AWS IoT Core に接続します。詳細は[以前の説明](https://wiki.seeedstudio.com/ja/Helium-Introduction/#helium-console-flows)を参照してください。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/K1100/59.png" /></div>
 
-この時点で、[以前の手順](https://wiki.seeedstudio.com/Connecting-to-Helium/#upload-code-send-data-to-helium)に従ってコードを再度アップロードし、Wio Terminal が Helium に再接続してデータをアップロードします。
+この時点で、[以前の手順](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/#upload-code-send-data-to-helium)に従ってコードを再度アップロードし、Wio Terminal が Helium に再接続してデータをアップロードします。
 
 シリアルモニターで返されるデータを確認することで、データ送信の成功を確認することもできます。
 

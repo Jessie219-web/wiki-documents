@@ -44,7 +44,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## ライブラリのダウンロード
 ----
 - Xadow BarometerはGrove - Barometer Sensorとライブラリを共有しています。GitHubから直接[ライブラリ](https://github.com/Seeed-Studio/Grove_Barometer_Sensor)をダウンロードできます。
-- コードを開いてXadow Main Boardにアップロードできます。Xadow Driverをインストールしていない場合は、wikiメインページの[Getting Started](https://wiki.seeedstudio.com/Xadow_Main_Board/)を参照して操作手順を学んでください。
+- コードを開いてXadow Main Boardにアップロードできます。Xadow Driverをインストールしていない場合は、wikiメインページの[Getting Started](https://wiki.seeedstudio.com/ja/Xadow_Main_Board/)を参照して操作手順を学んでください。
 
 ```
 /*

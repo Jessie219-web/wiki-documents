@@ -36,7 +36,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - Suli互換ライブラリ
 
 :::tip
-    - Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    - Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 ## デモンストレーション
 ---
@@ -48,10 +48,10 @@ https://github.com/Seeed-Studio/wiki-documents/issues
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_3_Axis_Digital_Accelerometer_Plus_Minus_16g/images/Grove_-_3-Axis_Digital_Accelerometer_ADXL345_connect_photo.JPG" alt="pir" width={600} height="auto" /></p>
 
 - **ステップ1:** Grove - Base ShieldのI2Cポートに接続します。
-- **ステップ2:** [Digital Accelerometer(±16g) Library](https://github.com/Seeed-Studio/Accelerometer_ADXL345) .zipをダウンロードし、Arduinoインストールフォルダ内のarduino-1.0\librariesに解凍します。Arduino用ライブラリのインストール方法がわからない場合は、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)を参照してください。
+- **ステップ2:** [Digital Accelerometer(±16g) Library](https://github.com/Seeed-Studio/Accelerometer_ADXL345) .zipをダウンロードし、Arduinoインストールフォルダ内のarduino-1.0\librariesに解凍します。Arduino用ライブラリのインストール方法がわからない場合は、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)を参照してください。
 - **ステップ3:** ライブラリがインストールされている場合、以下のパスからデモコードを直接開きます：
 ** File(ファイル) -> Example(例) ->DigitalAccelerometer_ADXL345->ADXL345_demo_code. **
-- **ステップ4:** コードをアップロードし、シリアルモニターを開きます（通常は右上隅にあります）。アップロード方法がわからない場合は、[コードのアップロード](https://wiki.seeedstudio.com/Upload_Code/)を参照してください。
+- **ステップ4:** コードをアップロードし、シリアルモニターを開きます（通常は右上隅にあります）。アップロード方法がわからない場合は、[コードのアップロード](https://wiki.seeedstudio.com/ja/Upload_Code/)を参照してください。
 - **ステップ5:** 結果は以下の画像の形式で表示されます。Groveを振ると数値が変化するのがわかります。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove_3_Axis_Digital_Accelerometer_Plus_Minus_16g/images/Digital_Accelerometer.jpg) -->
@@ -72,7 +72,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メイン手順を作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[Arduinoを使用したCodecraftガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[Arduinoを使用したCodecraftガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
 
@@ -88,7 +88,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 - **ステップ1:** Raspberry PiとGrovePiまたはGrovePi+を用意します。
 
-- **ステップ2:** 開発環境の設定を完了している必要があります。設定がまだの場合は、[こちら](https://wiki.seeedstudio.com/GrovePi_Plus/#Introducing_the_GrovePi.2B)を参照してください。
+- **ステップ2:** 開発環境の設定を完了している必要があります。設定がまだの場合は、[こちら](https://wiki.seeedstudio.com/ja/GrovePi_Plus/#Introducing_the_GrovePi.2B)を参照してください。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove_3_Axis_Digital_Accelerometer_Plus_Minus_16g/images/C9-create-tab.png) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_3_Axis_Digital_Accelerometer_Plus_Minus_16g/images/C9-create-tab.png" alt="pir" width={600} height="auto" /></p>

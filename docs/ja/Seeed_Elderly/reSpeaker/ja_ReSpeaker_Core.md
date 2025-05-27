@@ -145,7 +145,7 @@ ReSpeaker を初めて電源オンすると、「ReSpeakerXXXXXX」という名�
 ![](https://files.seeedstudio.com/wiki/Respeaker_Core/img/wifi1.png)
 
 :::note
-「ReSpeakerXXXXXX」が表示されず、「LinkIt_Smart_7688_XXXXXX」が見つかった場合は、[こちら](https://wiki.seeedstudio.com/ReSpeaker_Core/#q20-system-recovery-by-factory-image)をクリックしてください。
+「ReSpeakerXXXXXX」が表示されず、「LinkIt_Smart_7688_XXXXXX」が見つかった場合は、[こちら](https://wiki.seeedstudio.com/ja/ReSpeaker_Core/#q20-system-recovery-by-factory-image)をクリックしてください。
 :::
 
 IPアドレスを取得したら、ウェブブラウザを開き、アドレスバーに `192.168.100.1` を入力します。数秒後、既存の Wi-Fi ネットワークの ssid とパスワードを尋ねるウェブページが表示されます。

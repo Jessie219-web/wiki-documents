@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # Edge Impulseを使用したGrove Vision AIのモデル高速トレーニング
 
-[Grove - Vision AI Module](https://wiki.seeedstudio.com/Grove-Vision-AI-Module)は、Himax HX6537-Aプロセッサをベースにした親指サイズのボードで、2メガピクセルのOV2640カメラ、マイク、3軸加速度計、3軸ジャイロスコープを搭載しています。32 MBのSPIフラッシュストレージを提供し、顔認識や人物検出のための機械学習アルゴリズムがプリインストールされており、カスタマイズされたモデルもサポートしています。このモジュールはXIAOエコシステムやArduinoと互換性があり、AI対応カメラプロジェクトを始めるのに最適です！
+[Grove - Vision AI Module](https://wiki.seeedstudio.com/ja/Grove-Vision-AI-Module)は、Himax HX6537-Aプロセッサをベースにした親指サイズのボードで、2メガピクセルのOV2640カメラ、マイク、3軸加速度計、3軸ジャイロスコープを搭載しています。32 MBのSPIフラッシュストレージを提供し、顔認識や人物検出のための機械学習アルゴリズムがプリインストールされており、カスタマイズされたモデルもサポートしています。このモジュールはXIAOエコシステムやArduinoと互換性があり、AI対応カメラプロジェクトを始めるのに最適です！
 
 このモジュールはEdge Impulseに完全対応しており、カメラからの生データをサンプリングし、モデルを構築し、トレーニング済みの機械学習モデルをスタジオから直接モジュールにデプロイすることができます。プログラミングは不要です。[Seeed Studio Bazaar](https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html)から直接購入可能です。
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/
+image: https://wiki.seeedstudio.com/ja/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder/
 slug: /ja/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder
 last_update:
   date: 05/15/2025

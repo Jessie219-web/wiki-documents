@@ -44,7 +44,7 @@ XIAO ESP32C3 搭載の 7.5 インチ E-Ink ディスプレイは、Home Assistan
 ### 仕様
 | 項目 | 説明 |
 | --- | --- |
-| MCU | [XIAO ESP32 C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/) |
+| MCU | [XIAO ESP32 C3](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/) |
 | ディスプレイ | 7.5 インチ ePaper ディスプレイ |
 | 解像度 | 800x480 |
 | バッテリー | 2000mAh |

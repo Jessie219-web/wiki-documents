@@ -28,7 +28,7 @@ Grove - アルコールセンサーは、ArduinoまたはSeeeduino用の完全�
 </div>
 
 :::tip
-    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
+    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
 :::
 特徴
 --------
@@ -43,7 +43,7 @@ Grove - アルコールセンサーは、ArduinoまたはSeeeduino用の完全�
 -   コンパクトな形状
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 対応プラットフォーム

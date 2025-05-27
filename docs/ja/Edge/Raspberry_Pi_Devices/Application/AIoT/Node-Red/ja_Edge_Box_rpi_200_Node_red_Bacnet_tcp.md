@@ -47,7 +47,7 @@ BACnet IP (Building Automation and Control Network over IP) は、建物のシ�
 
 ### ソフトウェアの準備
 
-Edge Box は Raspberry Pi OS がプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/Edge_Box_introduction/) をお読みください。また、[Node-RED の入門ガイド](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/) も用意しています。このガイドを進める前に確認することをお勧めします。このチュートリアルでは、YABE 室温シミュレータを実行しているホスト PC を Edge Box 上で実行している Node-RED に接続します。
+Edge Box は Raspberry Pi OS がプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/ja/Edge_Box_introduction/) をお読みください。また、[Node-RED の入門ガイド](https://wiki.seeedstudio.com/ja/Edge-Box-Getting-Started-with-Node-Red/) も用意しています。このガイドを進める前に確認することをお勧めします。このチュートリアルでは、YABE 室温シミュレータを実行しているホスト PC を Edge Box 上で実行している Node-RED に接続します。
 
 ### YABE
 

@@ -19,7 +19,7 @@ SenseCAP Watcher は、特定のオブジェクトを認識し、ユーザー定
 
 SenseCraft AI モデルリポジトリからカスタムモデルを使用する前に、以下を確認してください：
 
-- **SenseCAP Watcher**: SenseCAP Watcher デバイスをセットアップして使用可能な状態にしてください。まだセットアップしていない場合は、[SenseCAP Watcher クイックスタートガイド](https://wiki.seeedstudio.com/getting_started_with_watcher/)の手順に従ってデバイスをセットアップしてください。
+- **SenseCAP Watcher**: SenseCAP Watcher デバイスをセットアップして使用可能な状態にしてください。まだセットアップしていない場合は、[SenseCAP Watcher クイックスタートガイド](https://wiki.seeedstudio.com/ja/getting_started_with_watcher/)の手順に従ってデバイスをセットアップしてください。
 
 - **SenseCraft APP**: SenseCraft APP をモバイルデバイスにインストールしてください。このアプリは iOS および Android プラットフォームで利用可能で、それぞれのアプリストアからダウンロードできます。
 
@@ -57,7 +57,7 @@ SenseCraft AI モデルリポジトリからカスタムモデルを使用する
 
 タスクを作成する際には、Watcher に認識させたいオブジェクトと、そのオブジェクトが検出された際に実行させたいアクションを明確かつ具体的に指定することが重要です。これにより、Watcher がタスクを正確に理解し実行できるようになります。
 
-Watcher に適切なタスクを割り当てる方法について詳しく知りたい場合は、[タスク割り当てガイドライン](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)を参照してください。
+Watcher に適切なタスクを割り当てる方法について詳しく知りたい場合は、[タスク割り当てガイドライン](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)を参照してください。
 
 ## ステップ 2. カスタム TinyML モデルの使用を有効化する
 

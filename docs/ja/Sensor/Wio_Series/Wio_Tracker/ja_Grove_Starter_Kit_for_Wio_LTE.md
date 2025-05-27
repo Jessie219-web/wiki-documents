@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove_Starter_Kit_for_Wio_LTE/
+image: https://wiki.seeedstudio.com/ja/Grove_Starter_Kit_for_Wio_LTE/
 slug: /ja/Grove_Starter_Kit_for_Wio_LTE
 last_update:
   date: 05/15/2025
@@ -43,13 +43,13 @@ Grove Starter Kit for Wio LTEは、Wio LTEボードを使い始めるための�
 
 | アイテム                                    | 数量   | 学習リンク |
 |--------------------------------------------|--------|------------|
-| Grove - 3-Axis Digital Accelerometer(±16g) | 1      | [Wiki](https://wiki.seeedstudio.com/Grove-3-Axis_Digital_Accelerometer-16g/)  |
-| Grove - Relay                              | 1      | [Wiki](https://wiki.seeedstudio.com/Grove-Relay/)   |
-| Grove - Light Sensor v1.2                  | 1      | [Wiki](https://wiki.seeedstudio.com/Grove-Light_Sensor/)   |
-| Grove - Temp&humidity                      | 1      | [Wiki](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/)   |
-| Grove - Buzzer                             | 1      | [Wiki](https://wiki.seeedstudio.com/Grove-Buzzer)   |
-| Grove - Button(P)                          | 1      | [Wiki](https://wiki.seeedstudio.com/Grove-Button)   |
-| Grove - Servo                              | 1      | [Wiki](https://wiki.seeedstudio.com/Grove-Servo/)   |
+| Grove - 3-Axis Digital Accelerometer(±16g) | 1      | [Wiki](https://wiki.seeedstudio.com/ja/Grove-3-Axis_Digital_Accelerometer-16g/)  |
+| Grove - Relay                              | 1      | [Wiki](https://wiki.seeedstudio.com/ja/Grove-Relay/)   |
+| Grove - Light Sensor v1.2                  | 1      | [Wiki](https://wiki.seeedstudio.com/ja/Grove-Light_Sensor/)   |
+| Grove - Temp&humidity                      | 1      | [Wiki](https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor/)   |
+| Grove - Buzzer                             | 1      | [Wiki](https://wiki.seeedstudio.com/ja/Grove-Buzzer)   |
+| Grove - Button(P)                          | 1      | [Wiki](https://wiki.seeedstudio.com/ja/Grove-Button)   |
+| Grove - Servo                              | 1      | [Wiki](https://wiki.seeedstudio.com/ja/Grove-Servo/)   |
 
 ## 始め方
 

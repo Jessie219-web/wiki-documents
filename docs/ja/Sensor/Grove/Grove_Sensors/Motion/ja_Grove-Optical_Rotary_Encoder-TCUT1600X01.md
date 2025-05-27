@@ -136,7 +136,7 @@ TCUT1600X01の標準電圧は5Vであるため、[MP3120](https://files.seeedstu
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** Arduino IDEに**Encoder Library**をインストールします。このライブラリは以下のパスで見つけることができます：**Sketch-->Include Library-->Manage Libraries**
@@ -200,7 +200,7 @@ void loop() {
 エンコーダに接続されているピンを変更することができます。最良のパフォーマンスを得るには、両方のピンが割り込み機能を持つ必要があります。そのため、コードの13行目を <mark>Encoder myEnc(2, 3);</mark> に変更し、このセンサーをベースシールドの **D2** に接続してください。
 :::
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニター** を開きます。**Tool-> Serial Monitor** をクリックするか、++ctrl+shift+m++ キーを同時に押します。ボーレートを **9600** に設定してください。
 
@@ -265,7 +265,7 @@ void loop() {
 - **ステップ 4.** Raspberry Pi を USB ケーブルで PC に接続します。
 
 #### ソフトウェア
-- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成し、grove.py を Raspberry Pi にインストールします。
+- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成し、grove.py を Raspberry Pi にインストールします。
 - **ステップ 2.** 以下のコマンドを実行してコードを実行します。
 
 ```

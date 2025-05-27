@@ -47,9 +47,9 @@ Type-C ケーブルを使用してコンピュータに接続します。
 
 **必要なソフトウェア**
 
-- [Arduino IDE](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)
+- [Arduino IDE](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)
 
-このプロジェクトは Arduino プラットフォームに基づいているため、Arduino IDE とさまざまな Arduino ライブラリが必要です。Wio Terminal を初めて使用する場合は、[Wio Terminal のクイックスタートガイド](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)を参照することをお勧めします。
+このプロジェクトは Arduino プラットフォームに基づいているため、Arduino IDE とさまざまな Arduino ライブラリが必要です。Wio Terminal を初めて使用する場合は、[Wio Terminal のクイックスタートガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)を参照することをお勧めします。
 
 ### Edge Impulse トレーニングの開始
 

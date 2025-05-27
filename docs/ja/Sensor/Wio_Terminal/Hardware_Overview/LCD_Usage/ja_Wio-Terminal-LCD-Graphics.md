@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-Graphics/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Graphics/
 slug: /ja/Wio-Terminal-LCD-Graphics
 last_update:
   date: 05/15/2025

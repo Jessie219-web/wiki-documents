@@ -40,7 +40,7 @@ Grove - 3軸デジタルジャイロモジュールは、ITG 3200をベースに
 -   RoHSおよびグリーン準拠
 
 :::tip
-    Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 対応プラットフォーム
 -------------------

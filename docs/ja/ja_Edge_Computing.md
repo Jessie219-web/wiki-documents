@@ -43,9 +43,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>reTerminal DM</font></div>
-            <a href="https://wiki.seeedstudio.com/reterminal-dm/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM の使い方 </font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reterminal-dm/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM の使い方 </font></span></a>
             <br/>
-            <a href="https://wiki.seeedstudio.com/reterminal-dm-hardware-guide/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ハードウェアレイアウト </font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reterminal-dm-hardware-guide/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> ハードウェアレイアウト </font></span></a>
             <br/>
     </div>
 </div>
@@ -135,15 +135,15 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="independent_container">
     <div class="independent_item" style={{textAlign: 'center'}}>
             <div class="independent_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>reTerminal DM</font></div>
-            <a href="https://wiki.seeedstudio.com/reTerminal-DM-Getting-Started-with-Node-Red/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM Getting Started with Node Red</font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reTerminal-DM-Getting-Started-with-Node-Red/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM Getting Started with Node Red</font></span></a>
             <br/>
-            <a href="https://wiki.seeedstudio.com/reTerminal-DM-Node-Red-RS485/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM RS485 Port with Node-RED </font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reTerminal-DM-Node-Red-RS485/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM RS485 Port with Node-RED </font></span></a>
             <br/>
-            <a href="https://wiki.seeedstudio.com/reTerminal-DM-Node-Red-mqtt/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM MQTT with Node-RED </font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reTerminal-DM-Node-Red-mqtt/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM MQTT with Node-RED </font></span></a>
             <br/>
-            <a href="https://wiki.seeedstudio.com/reTerminal-DM-Node-Red-canbus/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM CAN BUS with Node-RED </font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reTerminal-DM-Node-Red-canbus/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM CAN BUS with Node-RED </font></span></a>
             <br/>
-            <a href="https://wiki.seeedstudio.com/reterminal-dm-sensecraft-edge-os-intro/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM SenseCraft Edge OS Getting Started </font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reterminal-dm-sensecraft-edge-os-intro/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> reTerminal DM SenseCraft Edge OS Getting Started </font></span></a>
     </div>
 </div>
 
@@ -209,7 +209,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="intro_container">
     <div class="intro_item" style={{textAlign: 'center'}}>
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"5"}>reTerminal DM</font></div>
-            <a href="https://wiki.seeedstudio.com/reterminal-dm-flash-OS/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> オリジナルOSインストール</font></span></a>
+            <a href="https://wiki.seeedstudio.com/ja/reterminal-dm-flash-OS/" target="_blank"><span><font color={'FFFFFF'} size={"2"}> オリジナルOSインストール</font></span></a>
             <br/>
     </div>
 </div>

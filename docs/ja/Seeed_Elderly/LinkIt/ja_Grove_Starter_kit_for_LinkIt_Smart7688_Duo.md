@@ -36,7 +36,7 @@ LinkIt<sup>TM</sup> Smart 7688 Duoについて：LinkIt<sup>TM</sup> Smart 7688 
 - 詳細で完全なチュートリアル。
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 アプリケーションアイデア

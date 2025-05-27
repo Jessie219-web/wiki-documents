@@ -263,7 +263,7 @@ XIAO ESP32S3 を迅速に使用開始できるように、以下のハードウ�
 
 XIAO ESP32S3 Sense には、WebCam サンプルプログラムがプリインストールされています。このプログラムを使用するには、適切なアンテナを取り付けて電源を入れるだけです。詳細については、このプログラムに関する Wiki をご覧ください。
 
-- [ビデオストリーミング](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage#project-ii-video-streaming)
+- [ビデオストリーミング](https://wiki.seeedstudio.com/ja/xiao_esp32s3_camera_usage#project-ii-video-streaming)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/98.png" style={{width:900, height:'auto'}}/></div>
 
@@ -399,7 +399,7 @@ XIAO ESP32S3 PlusのBATピンを使用したい場合、このデュアルヒー
 XIAO ESP32S3の推奨プログラミングツールはArduino IDEです。そのため、ソフトウェア準備の一環としてArduinoのインストールを完了する必要があります。
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** お使いのオペレーティングシステムに応じて、安定版のArduino IDEをダウンロードしてインストールします。

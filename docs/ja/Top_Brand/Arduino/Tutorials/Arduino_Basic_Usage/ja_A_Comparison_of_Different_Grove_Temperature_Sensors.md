@@ -41,19 +41,19 @@ Groveファミリーは、温度を測定するために使用できる最大10�
 
 |温度センサー名|インターフェース|範囲|精度|感度|データシート|
 |-----------------------|---------|----|---------|-----------|----|
-|[Temp&Humi Sensor](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/) | デジタル | 0~50C|+-2C|1C|[DHT11](https://files.seeedstudio.com/wiki/Grove-TemperatureAndHumidity_Sensor/res/DHT11.pdf)|
-|[Temp&Humi Sensor Pro](https://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/) | デジタル | -40~80C|+-0.5C|0.1C| [DHT22/AM2302](https://files.seeedstudio.com/wiki/Grove-Temperature_and_Humidity_Sensor_Pro/res/AM2302.pdf) |
-|[Temperature Sensor](https://wiki.seeedstudio.com/Grove-Temperature_Sensor_V1.2/) | アナログ | -40~125C|+-1.5C|N/A|[NCP18WF104F03RC](https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor_V1.2/res/NCP18WF104F03RC.pdf) |
+|[Temp&Humi Sensor](https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor/) | デジタル | 0~50C|+-2C|1C|[DHT11](https://files.seeedstudio.com/wiki/Grove-TemperatureAndHumidity_Sensor/res/DHT11.pdf)|
+|[Temp&Humi Sensor Pro](https://wiki.seeedstudio.com/ja/Grove-Temperature_and_Humidity_Sensor_Pro/) | デジタル | -40~80C|+-0.5C|0.1C| [DHT22/AM2302](https://files.seeedstudio.com/wiki/Grove-Temperature_and_Humidity_Sensor_Pro/res/AM2302.pdf) |
+|[Temperature Sensor](https://wiki.seeedstudio.com/ja/Grove-Temperature_Sensor_V1.2/) | アナログ | -40~125C|+-1.5C|N/A|[NCP18WF104F03RC](https://files.seeedstudio.com/wiki/Grove-Temperature_Sensor_V1.2/res/NCP18WF104F03RC.pdf) |
 |[One Wire Temperature Sensor](http://datasheets.maxim-ic.com/en/ds/DS18B20.pdf) | ワイヤー1本 | -55~125C|+-0.5C|0.5C|[DS18B20](http://datasheets.maxim-ic.com/en/ds/DS18B20.pdf) |
-|[High Temperature Sensor](https://wiki.seeedstudio.com/Grove-High_Temperature_Sensor/) |アナログ|-50~600C|2%|N/A|Kタイプ熱電対|
-|[Temperature&Humidity Sensor (High-Accuracy & Mini)](https://wiki.seeedstudio.com/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/) |I2C|0~70C|+-0.5C|1C|[TH02](https://files.seeedstudio.com/wiki/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/res/TH02_SENSOR.pdf) |
-|[DIGITAL INFRARED TEMPERATURE SENSOR](https://wiki.seeedstudio.com/Grove-Digital_Infrared_Temperature_Sensor/) |I2C|-40~85C|+-0.5C|0.02C|[MLX90615](https://files.seeedstudio.com/wiki/Grove-Digital_Infrared_Temperature_Sensor/res/MLX90615.pdf) |
-|[Temperature&Humidity Sensor(SHT31)](https://wiki.seeedstudio.com/Grove-TempAndHumi_Sensor-SHT31/) |I2C|-40~125C|+-0.3C|0.01C|[SHT31](https://files.seeedstudio.com/wiki/Grove-TempAndHumi_Sensor-SHT31/res/Grove-TempAndHumi_Sensor-SHT31-Datasheets.zip) |
-|[INFRARED TEMPERATURE SENSOR](https://wiki.seeedstudio.com/Grove-Infrared_Temperature_Sensor/) |アナログ|-10~100C|N/A|N/A|[OTP-538U](https://files.seeedstudio.com/wiki/Grove-Infrared_Temperature_Sensor/res/OTP-538Udatasheet.zip) |
-|[Temperature&Humidity Sensor(HDC1000)](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor-HDC1000/) |I2C|-40~125C|+-0.2C|0.01C|[HDC1000](https://files.seeedstudio.com/wiki/Grove-TemperatureAndHumidity_Sensor-HDC1000/res/HDC1000.pdf) |
-|[Barometer Sensor(BMP180)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP180/) |I2C|-40~85C|+-0.5C|0.1C|[BMP180](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-BMP180/res/BMP180.pdf) |
-|[Barometer Sensor(BMP280)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP280/) |I2C|-40~85C|+-0.5C|0.01C|[BMP280](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-BMP280/res/Grove-Barometer_Sensor-BMP280-BMP280-DS001-12_Datasheet.pdf) |
-|[Temp&Humi&Barometer Sensor(BME280)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BME280/) |I2C|-40~85C|+-0.5C|0.01C|[BME280](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-BME280/res/Grove-Barometer_Sensor-BME280-.pdf) |
+|[High Temperature Sensor](https://wiki.seeedstudio.com/ja/Grove-High_Temperature_Sensor/) |アナログ|-50~600C|2%|N/A|Kタイプ熱電対|
+|[Temperature&Humidity Sensor (High-Accuracy & Mini)](https://wiki.seeedstudio.com/ja/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/) |I2C|0~70C|+-0.5C|1C|[TH02](https://files.seeedstudio.com/wiki/Grove-TemptureAndHumidity_Sensor-High-Accuracy_AndMini-v1.0/res/TH02_SENSOR.pdf) |
+|[DIGITAL INFRARED TEMPERATURE SENSOR](https://wiki.seeedstudio.com/ja/Grove-Digital_Infrared_Temperature_Sensor/) |I2C|-40~85C|+-0.5C|0.02C|[MLX90615](https://files.seeedstudio.com/wiki/Grove-Digital_Infrared_Temperature_Sensor/res/MLX90615.pdf) |
+|[Temperature&Humidity Sensor(SHT31)](https://wiki.seeedstudio.com/ja/Grove-TempAndHumi_Sensor-SHT31/) |I2C|-40~125C|+-0.3C|0.01C|[SHT31](https://files.seeedstudio.com/wiki/Grove-TempAndHumi_Sensor-SHT31/res/Grove-TempAndHumi_Sensor-SHT31-Datasheets.zip) |
+|[INFRARED TEMPERATURE SENSOR](https://wiki.seeedstudio.com/ja/Grove-Infrared_Temperature_Sensor/) |アナログ|-10~100C|N/A|N/A|[OTP-538U](https://files.seeedstudio.com/wiki/Grove-Infrared_Temperature_Sensor/res/OTP-538Udatasheet.zip) |
+|[Temperature&Humidity Sensor(HDC1000)](https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor-HDC1000/) |I2C|-40~125C|+-0.2C|0.01C|[HDC1000](https://files.seeedstudio.com/wiki/Grove-TemperatureAndHumidity_Sensor-HDC1000/res/HDC1000.pdf) |
+|[Barometer Sensor(BMP180)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BMP180/) |I2C|-40~85C|+-0.5C|0.1C|[BMP180](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-BMP180/res/BMP180.pdf) |
+|[Barometer Sensor(BMP280)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BMP280/) |I2C|-40~85C|+-0.5C|0.01C|[BMP280](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-BMP280/res/Grove-Barometer_Sensor-BMP280-BMP280-DS001-12_Datasheet.pdf) |
+|[Temp&Humi&Barometer Sensor(BME280)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BME280/) |I2C|-40~85C|+-0.5C|0.01C|[BME280](https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-BME280/res/Grove-Barometer_Sensor-BME280-.pdf) |
 
 詳細については、以下のリストをダウンロードしてください。
 

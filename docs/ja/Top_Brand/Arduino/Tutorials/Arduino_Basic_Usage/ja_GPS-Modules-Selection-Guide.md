@@ -31,8 +31,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 以下の2つのGPSモジュールを紹介し、比較します：
 
-- [Grove – GPSモジュール](https://wiki.seeedstudio.com/Grove-GPS/)  
-- [Grove – GPS(Air530)](https://wiki.seeedstudio.com/Grove-GPS-Air530/)
+- [Grove – GPSモジュール](https://wiki.seeedstudio.com/ja/Grove-GPS/)  
+- [Grove – GPS(Air530)](https://wiki.seeedstudio.com/ja/Grove-GPS-Air530/)
 
 これらのGPSモジュールはArduinoおよびRaspberry Piと互換性があり、簡単に試してみることができます。**Grove - GPS(Air530)**に搭載されているAir530モジュールは、高性能で高度に統合されたマルチモード衛星測位およびナビゲーションモジュールです。GPS / 北斗 / GLONASS / Galileo / QZSS / SBASをサポートしており、車のナビゲーション、スマートウェア、ドローンなどのGNSS測位アプリケーションに適しています。また、Air530モジュールはNMEA 0183 V4.1プロトコルをサポートしており、以前のバージョンとも互換性があります。
 
@@ -172,8 +172,8 @@ GPSモジュールには多くの利用方法があります。特に、これ�
 
 | 名前 | サムネイル | サイズ | 更新レート | ボーレート | ナビゲーション感度 | 電力要件 | チャンネル数 | 初回起動時間 | アンテナ | 精度 | 購入リンク |
 |-----------------------------------------------------------------|----------------------------------------------------------------------------------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-----------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------|
-| [Grove – GPS Module](https://wiki.seeedstudio.com/Grove-GPS/)  | <img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/gps-module.jpg"/>|40mm x 20mm x 13mm|1Hz, 最大10Hz|9,600bps – 115,200bps|-160dBm|3.3V - 5V|22トラッキング、66チャンネル|コールドスタート: 13秒; ウォームスタート: 1-2秒; ホットスタート: <1秒|アンテナ付属|2.5m GPS水平位置精度|[今すぐ注文](https://www.seeedstudio.com/Grove-GPS-Module.html?utm_source=blog&utm_medium=blog)|
-| [Grove – GPS (Air530)](https://wiki.seeedstudio.com/Grove-GPS-Air530/)  | <img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/03_11.png"/>|40mm x 20mm x 13mm|/|デフォルト 9,600bps|-148dB|3.3V - 5V|/|コールドスタート: 27秒; ウォームスタート: 4秒;|アンテナ付属|2.5m 水平位置精度|[今すぐ注文](https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html)|
+| [Grove – GPS Module](https://wiki.seeedstudio.com/ja/Grove-GPS/)  | <img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/gps-module.jpg"/>|40mm x 20mm x 13mm|1Hz, 最大10Hz|9,600bps – 115,200bps|-160dBm|3.3V - 5V|22トラッキング、66チャンネル|コールドスタート: 13秒; ウォームスタート: 1-2秒; ホットスタート: <1秒|アンテナ付属|2.5m GPS水平位置精度|[今すぐ注文](https://www.seeedstudio.com/Grove-GPS-Module.html?utm_source=blog&utm_medium=blog)|
+| [Grove – GPS (Air530)](https://wiki.seeedstudio.com/ja/Grove-GPS-Air530/)  | <img src="https://files.seeedstudio.com/wiki/Grove-GPS/img/03_11.png"/>|40mm x 20mm x 13mm|/|デフォルト 9,600bps|-148dB|3.3V - 5V|/|コールドスタート: 27秒; ウォームスタート: 4秒;|アンテナ付属|2.5m 水平位置精度|[今すぐ注文](https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html)|
 
 ### どちらのGPSモジュールが優れているか
 

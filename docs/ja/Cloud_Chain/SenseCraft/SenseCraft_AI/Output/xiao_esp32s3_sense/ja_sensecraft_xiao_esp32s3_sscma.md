@@ -47,12 +47,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 作業を進める前に、XIAO ESP32S3 Senseボードにトレーニング済みモデルがロードされていることを確認してください。まだモデルをロードしていない場合は、SenseCraft AIのドキュメントを参照して、デバイスにモデルをトレーニングおよびデプロイする方法を確認してください。
 
-- [XIAO ESP32S3 Senseでモデルを使用する](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_xiao/)
+- [XIAO ESP32S3 Senseでモデルを使用する](https://wiki.seeedstudio.com/ja/sensecraft_ai_pretrained_models_for_xiao/)
 
 独自にトレーニングしたモデルを使用したい場合は、以下の2つのWikiを参照してください。
 
-- [トレーニングタイプ - 分類](https://wiki.seeedstudio.com/sensecraft_ai_training_classification/)
-- [トレーニングタイプ - オブジェクト検出](https://wiki.seeedstudio.com/sensecraft_ai_training_object_detection/)
+- [トレーニングタイプ - 分類](https://wiki.seeedstudio.com/ja/sensecraft_ai_training_classification/)
+- [トレーニングタイプ - オブジェクト検出](https://wiki.seeedstudio.com/ja/sensecraft_ai_training_object_detection/)
 
 ## ステップ2. SSCMAライブラリをセットアップする
 

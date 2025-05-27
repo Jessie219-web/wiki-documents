@@ -345,8 +345,8 @@ XIAO ESP32C3がESPHomeおよびHome Assistantに対応したことをお知ら�
 
 このセクションの詳細については、関連するチュートリアルをご参照ください。
 
-- [GroveモジュールをESPHomeを使用してHome Assistantに接続する](https://wiki.seeedstudio.com/Connect-Grove-to-Home-Assistant-ESPHome/)
-- [LinkStar Home Assistant](https://wiki.seeedstudio.com/h68k-ha-esphome/)
+- [GroveモジュールをESPHomeを使用してHome Assistantに接続する](https://wiki.seeedstudio.com/ja/Connect-Grove-to-Home-Assistant-ESPHome/)
+- [LinkStar Home Assistant](https://wiki.seeedstudio.com/ja/h68k-ha-esphome/)
 
 ## 参考資料
 

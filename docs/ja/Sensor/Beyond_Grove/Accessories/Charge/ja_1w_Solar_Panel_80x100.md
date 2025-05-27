@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/1w_Solar_Panel_80x100/
+image: https://wiki.seeedstudio.com/ja/1w_Solar_Panel_80x100/
 slug: /ja/1w_Solar_Panel_80x100
 last_update:
   date: 05/15/2025

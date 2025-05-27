@@ -234,7 +234,7 @@ void loop()
 
 * 音声認識機能を単独で使用するのは非常に簡単です。まずはそのWikiをご覧ください。
 
-以下の表に基づいて必要なボタンを選択できます。[Grove - Speech Recognizer](https://wiki.seeedstudio.com/Seeed_BLE_Shield/)の返り値の表をご参照ください。以下は返り値の表です：
+以下の表に基づいて必要なボタンを選択できます。[Grove - Speech Recognizer](https://wiki.seeedstudio.com/ja/Seeed_BLE_Shield/)の返り値の表をご参照ください。以下は返り値の表です：
 
 <center>
 <table>

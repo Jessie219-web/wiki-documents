@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/DSO_Nano/
+image: https://wiki.seeedstudio.com/ja/DSO_Nano/
 slug: /ja/DSO_Nano
 last_update:
   date: 05/15/2025
@@ -30,7 +30,7 @@ DSO Nano は、1 チャンネルのハンドヘルドオシロスコープで、
 
 ##   ハードウェアの詳細
 ---
-これまでに DSO Nano には 3 つの主要なバージョンがあり、最初のものは 2009 年、DSO Nano V2 は 2010 年に登場しました。（デュアルチャンネルを含む大幅なハードウェアアップグレードは [DSO Quad](https://wiki.seeedstudio.com/DSO_Quad) で導入されました。）V2 では充電ユニットの改良と PCB の再設計が行われましたが、仕様はほぼ同じです。同じファームウェアを使用することができます。
+これまでに DSO Nano には 3 つの主要なバージョンがあり、最初のものは 2009 年、DSO Nano V2 は 2010 年に登場しました。（デュアルチャンネルを含む大幅なハードウェアアップグレードは [DSO Quad](https://wiki.seeedstudio.com/ja/DSO_Quad) で導入されました。）V2 では充電ユニットの改良と PCB の再設計が行われましたが、仕様はほぼ同じです。同じファームウェアを使用することができます。
 
 V2 の内部写真が [フォーラム](https://community.seeedstudio.com/discover.html?t=DSO) に投稿されています。
 
@@ -90,12 +90,12 @@ V2 の内部写真が [フォーラム](https://community.seeedstudio.com/discov
 ---
 お手元の DSO Nano が届くまでには時間がかかっています。そのため、すでに新しいバージョンのファームウェアが利用可能である可能性が高いです。
 
-BenF による最新のファームウェアは [Tech Support](https://forum.seeedstudio.com/viewtopic.php?f=12&amp;t=1793)（このリンクは壊れています。ファームウェアをお探しの場合は [DSO Nano V3](https://wiki.seeedstudio.com/DSO_Nano_v3/) の Wiki を参照してください）フォーラムから入手できます。ZIP ファイル内には、このファームウェアリリースの操作マニュアルも含まれています。
+BenF による最新のファームウェアは [Tech Support](https://forum.seeedstudio.com/viewtopic.php?f=12&amp;t=1793)（このリンクは壊れています。ファームウェアをお探しの場合は [DSO Nano V3](https://wiki.seeedstudio.com/ja/DSO_Nano_v3/) の Wiki を参照してください）フォーラムから入手できます。ZIP ファイル内には、このファームウェアリリースの操作マニュアルも含まれています。
 
 最新バージョンのファームウェアにアップグレードするには、以下のオプションがあります：
 
 *   Windows を使用している場合は、公式の [v2 ユーザーマニュアル](https://files.seeedstudio.com/wiki/DSO_Nano/res/DSO%20Nano%20v2%20Manual.pdf)（8～10 ページ）に記載されている手順に従ってください。必要なユーティリティ DfuSeDemo.exe は [こちら](http://dsonano.googlecode.com/files/um0412.zip) から入手できます。
-*   Linux および Mac OS X では [Dfu-util](https://wiki.seeedstudio.com/Dfu-util)（0.5 以上）を使用できます。
+*   Linux および Mac OS X では [Dfu-util](https://wiki.seeedstudio.com/ja/Dfu-util)（0.5 以上）を使用できます。
 
 ## 機能
 ---

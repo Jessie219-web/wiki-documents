@@ -89,11 +89,11 @@ J3接続を刃物で切断する際にカメラを傷つけないように、カ
 
 XIAO ESP32S3を使用するため、開始する前にWikiの指示に従ってXIAO ESP32S3オンボードパッケージをインストールしてください。
 
-- [Seeed Studio XIAO ESP32S3 (Sense)の使い方](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#software-preparation)
+- [Seeed Studio XIAO ESP32S3 (Sense)の使い方](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/#software-preparation)
 
 これに加えて、XIAO用ラウンドディスプレイも使用するため、Wikiに従って拡張ボードのライブラリを準備する必要があります。
 
-- [Seeed Studio XIAO用ラウンドディスプレイの使い方](https://wiki.seeedstudio.com/get_start_round_display/#getting-started)
+- [Seeed Studio XIAO用ラウンドディスプレイの使い方](https://wiki.seeedstudio.com/ja/get_start_round_display/#getting-started)
 
 プロジェクト中にChatGPTのライブラリやArduinoJSONなどのサードパーティライブラリを使用する場合があります。これらは以下からダウンロードしてArduino開発環境に追加できます。
 
@@ -1340,7 +1340,7 @@ bool uploadFile(){
 1. **ネットワークのWiFi名** - コードの[18行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#L18)で、Google Cloud Servicesをデプロイするホストと同じLAN内のネットワーク名に変更してください。
 2. **ネットワークのWiFiパスワード** - コードの[19行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#LL19C40-L19C40)で、ネットワークに対応するパスワードに変更してください。
 3. **ホストIPアドレス** - コードの[241行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#LL241C7-L241C7)で、ここをホストのIPアドレスに変更し、ポート番号は8888のままにしてください。
-4. **OpenAI APIトークン** - ChatGPTインターフェースを呼び出すために、OpenAIトークンを準備し、コードの[33行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#L33)に記入してください。トークンを初めて使用する場合は、[このWikiの内容](https://wiki.seeedstudio.com/xiaoesp32c3-chatgpt/#submit-questions-via-the-built-in-web-page)を読んで取得方法を学んでください。
+4. **OpenAI APIトークン** - ChatGPTインターフェースを呼び出すために、OpenAIトークンを準備し、コードの[33行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#L33)に記入してください。トークンを初めて使用する場合は、[このWikiの内容](https://wiki.seeedstudio.com/ja/xiaoesp32c3-chatgpt/#submit-questions-via-the-built-in-web-page)を読んで取得方法を学んでください。
 
 変更後、プログラムをアップロードし、シリアルモニターをオンにしてください。録音後、ChatGPTが質問に対して返答した答えが表示されます。
 
@@ -1354,7 +1354,7 @@ bool uploadFile(){
 
 SquareLine Studioは、組み込みシステム向けのグラフィックライブラリであるLVGLによって開発されたGUIデザインツールです。SquareLine Studioは、開発者が組み込みシステムのユーザーインターフェースを迅速かつ効率的に作成および設計するのを支援するために設計されています。このツールは、UIを設計するためのドラッグアンドドロップインターフェースを提供し、さまざまなウィジェットやテーマをサポートしています。
 
-このようなシンプルなインターフェースを設計するには、このツールを使用することをお勧めします。SquareLine Studioでのラウンドディスプレイの使用方法について詳しく知りたい場合は、[Wiki](https://wiki.seeedstudio.com/using_lvgl_and_tft_on_round_display/#drawing-complex-ui-interfaces-with-squareline-studio)をご覧ください。
+このようなシンプルなインターフェースを設計するには、このツールを使用することをお勧めします。SquareLine Studioでのラウンドディスプレイの使用方法について詳しく知りたい場合は、[Wiki](https://wiki.seeedstudio.com/ja/using_lvgl_and_tft_on_round_display/#drawing-complex-ui-interfaces-with-squareline-studio)をご覧ください。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoesp32s3sense-speech2chatgpt/21.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -2191,7 +2191,7 @@ void wifiConnect(void *pvParameters){
 1. **ネットワークのWiFi名** - コードの[18行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#L18)で、Google Cloud Servicesをデプロイしているホストと同じLAN内のネットワーク名に変更してください。
 2. **ネットワークのWiFiパスワード** - コードの[19行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#LL19C40-L19C40)で、ネットワークに対応するパスワードに変更してください。
 3. **ホストIPアドレス** - コードの[241行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#LL241C7-L241C7)で、ホストのIPアドレスに変更し、ポート番号は8888のままにしてください。
-4. **OpenAI APIトークン** - ChatGPTインターフェースを呼び出すために、OpenAIトークンを準備し、コードの[33行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#L33)に記入してください。初めてトークンを使用する場合は、[このWikiの内容](https://wiki.seeedstudio.com/xiaoesp32c3-chatgpt/#submit-questions-via-the-built-in-web-page)を読んで取得方法を学んでください。
+4. **OpenAI APIトークン** - ChatGPTインターフェースを呼び出すために、OpenAIトークンを準備し、コードの[33行目](https://github.com/limengdu/XIAO-ESP32S3Sense-Speech2ChatGPT/blob/404007a16f42495576d729848d00c6bb6a8149fc/XIAOESP32S3-SPEECH-TO-CHATGPT/XIAOESP32S3-SPEECH-TO-CHATGPT.ino#L33)に記入してください。初めてトークンを使用する場合は、[このWikiの内容](https://wiki.seeedstudio.com/ja/xiaoesp32c3-chatgpt/#submit-questions-via-the-built-in-web-page)を読んで取得方法を学んでください。
 
 プログラムをアップロードして画面をクリックすると、録音タスクが開始されます。この時点で、マイクに向かって質問したい内容を話してください。認識結果が得られると、質問が画面の上半分に表示されます。その直後にChatGPTからの回答が得られ、画面の下半分に表示されます。
 

@@ -202,7 +202,7 @@ CAN_H を CAN_H に、CAN_L を CAN_L に接続してください。
 
 **STEP3: ソフトウェア**
 
-[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) の手順に従って、CAN BUS Shield ライブラリをインストールしてください。
+[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) の手順に従って、CAN BUS Shield ライブラリをインストールしてください。
 
 - [**Seeed_Arduino_CAN**](https://github.com/Seeed-Studio/Seeed_Arduino_CAN) Arduino ライブラリをこちらからダウンロードしてください。
 
@@ -377,7 +377,7 @@ CAN.readMsgBuf(unsigned char len, unsigned char buf);
 
 ### 7. init_CS
 
-Arduinoで2つのCAN-BUSシールドを使用する場合に非常に便利です。CS_CANピンを選択するための機能を提供しています。CS_CANピンの使用方法がわからない場合は、[CS_CANピン](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/#cs_can-pin)をご覧ください。
+Arduinoで2つのCAN-BUSシールドを使用する場合に非常に便利です。CS_CANピンを選択するための機能を提供しています。CS_CANピンの使用方法がわからない場合は、[CS_CANピン](https://wiki.seeedstudio.com/ja/CAN-BUS_Shield_V2.0/#cs_can-pin)をご覧ください。
 
 ```cpp
 void MCP_CAN::init_CS(byte _CS)

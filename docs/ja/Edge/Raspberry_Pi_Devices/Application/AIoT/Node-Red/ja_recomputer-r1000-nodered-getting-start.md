@@ -47,7 +47,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェアの準備
 
-reComputer-R1000 は、事前に Raspberry Pi OS がインストールされた状態でお手元に届きます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/recomputer_r/) Wiki をお読みください。
+reComputer-R1000 は、事前に Raspberry Pi OS がインストールされた状態でお手元に届きます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/ja/recomputer_r/) Wiki をお読みください。
 
 ## reComputer-R1000 に Node-RED をインストールする
 

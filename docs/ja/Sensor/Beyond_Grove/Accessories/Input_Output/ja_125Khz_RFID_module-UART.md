@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/125Khz RFID module - UART/
+image: https://wiki.seeedstudio.com/ja/125Khz RFID module - UART/
 slug: /ja/125Khz_RFID_module-UART
 last_update:
   date: 05/15/2025

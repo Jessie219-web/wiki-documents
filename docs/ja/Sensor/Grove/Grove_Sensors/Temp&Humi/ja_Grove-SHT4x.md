@@ -101,7 +101,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## Arduinoライブラリ概要
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 ここで使用するライブラリはGitHubで公開されており、例も含まれています。

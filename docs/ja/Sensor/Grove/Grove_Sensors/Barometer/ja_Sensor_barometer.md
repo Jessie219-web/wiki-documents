@@ -14,15 +14,15 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-- [Grove - 気圧計 (高精度)](https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/)
+- [Grove - 気圧計 (高精度)](https://wiki.seeedstudio.com/ja/Grove-Barometer-High-Accuracy/)
 
-- [Grove - 気圧センサー (BMP180)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP180/)
+- [Grove - 気圧センサー (BMP180)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BMP180/)
 
-- [Grove - 気圧センサー (BMP280)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP280/)
+- [Grove - 気圧センサー (BMP280)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BMP280/)
 
-- [Grove - 気圧センサー](https://wiki.seeedstudio.com/Grove-Barometer_Sensor/)
+- [Grove - 気圧センサー](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor/)
 
-- [Grove - 気圧センサー (BME280)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BME280/)<br />弊社製品をお選びいただきありがとうございます！お客様が弊社製品をスムーズにご利用いただけるよう、さまざまなサポートをご提供しております。お客様のご希望やニーズに応じた複数のコミュニケーションチャネルをご用意しています。
+- [Grove - 気圧センサー (BME280)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BME280/)<br />弊社製品をお選びいただきありがとうございます！お客様が弊社製品をスムーズにご利用いただけるよう、さまざまなサポートをご提供しております。お客様のご希望やニーズに応じた複数のコミュニケーションチャネルをご用意しています。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

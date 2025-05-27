@@ -44,7 +44,7 @@ I2C タッチセンサーは、FreeScale の近接容量性タッチセンサー
 | I2C アドレス           | 0x5A                                |
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 対応プラットフォーム
@@ -106,7 +106,7 @@ MPR121 の割り込みピンを使用したい場合は、INT ピンを引き出
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/) を開き、Arduino サポートを追加し、メイン手順を作業エリアにドラッグします。
 
 :::note
-Codecraft を初めて使用する場合は、[Arduino を使用した Codecraft ガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/) も参照してください。
+Codecraft を初めて使用する場合は、[Arduino を使用した Codecraft ガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/) も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後からダウンロードできる cdc ファイルを開きます。

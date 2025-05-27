@@ -30,7 +30,7 @@ reCamera Gimbalの開発には以下の3つのアプローチがあります：
 このドキュメントでは、Cプログラミングを使用してreCamera Gimbalを開発する方法について詳しく説明します。
 
 Node-REDベースの開発については、以下を参照してください：  
-[Node-RED開発ドキュメント](https://wiki.seeedstudio.com/recamera_gimbal_node_red/)
+[Node-RED開発ドキュメント](https://wiki.seeedstudio.com/ja/recamera_gimbal_node_red/)
 
 開発を始める前に、クロスコンパイル環境を開発環境にインストールする必要があります。
 

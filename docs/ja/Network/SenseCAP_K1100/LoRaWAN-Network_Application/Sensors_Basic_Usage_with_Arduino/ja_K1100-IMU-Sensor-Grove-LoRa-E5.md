@@ -69,7 +69,7 @@ LIS3DHTR加速度センサーは圧電センサーであり、測定対象の加
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/137.png" /></div>
 
-IMUセンサーの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/)を参照してください。
+IMUセンサーの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-IMU-Overview/)を参照してください。
 
 ## 必要な材料
 
@@ -258,7 +258,7 @@ Grove - Wio-E5 の以前のコードを組み合わせて、LoRa® ネットワ�
 </div>
 
 :::tip
-現時点でコードをアップロードして結果を確認することはお勧めしません。なぜなら、まだ Helium/TTN の設定を行っておらず、「Join failed」という結果が得られるためです。[Connecting to Helium](https://wiki.seeedstudio.com/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/Connecting-to-TTN/) の章を完了してから、このコードをアップロードして完全なデータ送信プロセスを完了することをお勧めします。
+現時点でコードをアップロードして結果を確認することはお勧めしません。なぜなら、まだ Helium/TTN の設定を行っておらず、「Join failed」という結果が得られるためです。[Connecting to Helium](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/ja/Connecting-to-TTN/) の章を完了してから、このコードをアップロードして完全なデータ送信プロセスを完了することをお勧めします。
 :::
 
 IMU センサーの動作とデータ形式を理解したら、次のステップで LoRaWAN® に参加するチュートリアルを続けてください。
@@ -269,11 +269,11 @@ IMU センサーの動作とデータ形式を理解したら、次のステッ�
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/178.jpeg" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作を紹介し、Helium コンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/Helium-Introduction">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作を紹介し、Helium コンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/helium.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium に接続する</strong><br /><br />このセクションでは、センサーデータを Helium に正常にアップロードして表示できるようにするための設定方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-Helium">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium に接続する</strong><br /><br />このセクションでは、センサーデータを Helium に正常にアップロードして表示できるようにするための設定方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td colSpan={2} bgcolor="8FBC8F"><b>TTN セクション</b></td>
@@ -281,12 +281,12 @@ IMU センサーの動作とデータ形式を理解したら、次のステッ�
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-TTN/TTN.png" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN の紹介</strong><br /><br />この章では、TTN コンソールの操作を紹介し、TTN コンソールの第一印象を得ることができます。
-        <br /><br /><a href="https://wiki.seeedstudio.com/TTN-Introduction">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/ttncon.jpg" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN に接続する</strong><br /><br />このセクションでは、センサーデータを TTN に正常にアップロードして表示できるようにするための設定方法を説明します。
-        <br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-TTN">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN">章にジャンプ &gt;</a></td>
     </tr>
   </tbody></table>
 

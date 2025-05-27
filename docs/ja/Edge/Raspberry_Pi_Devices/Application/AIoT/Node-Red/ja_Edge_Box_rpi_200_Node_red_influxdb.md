@@ -44,7 +44,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア準備
 
-Edge Box には Raspberry Pi OS がプリインストールされています。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/Edge_Box_introduction/) をお読みください。また、[Node-RED の入門ガイド](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/) も用意しています。このガイドを進める前に、こちらを確認することをお勧めします。このチュートリアルでは、YABE 室温シミュレーターを実行しているホスト PC を、Edge Box 上で実行されている Node-RED に接続します。
+Edge Box には Raspberry Pi OS がプリインストールされています。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/ja/Edge_Box_introduction/) をお読みください。また、[Node-RED の入門ガイド](https://wiki.seeedstudio.com/ja/Edge-Box-Getting-Started-with-Node-Red/) も用意しています。このガイドを進める前に、こちらを確認することをお勧めします。このチュートリアルでは、YABE 室温シミュレーターを実行しているホスト PC を、Edge Box 上で実行されている Node-RED に接続します。
 
 ## Edgebox RPi 200 に InfluxDB をインストールする
 

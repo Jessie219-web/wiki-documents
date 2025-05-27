@@ -304,7 +304,7 @@ Grove Wio E5 に接続されていない場合や、プロセス中に LoRaWAN®
 
 スペースの都合上、この章の詳細な説明については以下のリンクを参照してください。
 
-- [Wio Terminal を Microsoft Azure IoT Central に接続](https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/)
+- [Wio Terminal を Microsoft Azure IoT Central に接続](https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/)
 
 ## センサーデータを WiFi 経由で Ubidots に送信
 
@@ -420,7 +420,7 @@ Ubidotsの無料版では、**1つのTOKEN**と**10個のラベル**のみ作成
 :::
 
 :::note
-Ubidotsを使用してさらに独立した開発を行いたい場合は、[Ubidotsに関するさらなるチュートリアル](https://wiki.seeedstudio.com/Getting_started_with_Ubidots/)をご参照ください。
+Ubidotsを使用してさらに独立した開発を行いたい場合は、[Ubidotsに関するさらなるチュートリアル](https://wiki.seeedstudio.com/ja/Getting_started_with_Ubidots/)をご参照ください。
 :::
 
 ## キット内の他のGroveセンサーを接続する
@@ -457,9 +457,9 @@ SenseCraftによるセンサーの検出は完全に自動化されているた�
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/K1100-quick-start/57.png" /></div>
 
-その後、**[LoRa®経由でセンサーのデータをSenseCAPに送信する](https://wiki.seeedstudio.com/K1100-quickstart/#send-sensor-data-to-sensecap-via-lora)**の手順に従ってください。
+その後、**[LoRa®経由でセンサーのデータをSenseCAPに送信する](https://wiki.seeedstudio.com/ja/K1100-quickstart/#send-sensor-data-to-sensecap-via-lora)**の手順に従ってください。
 
-- WiFi経由でデータを送信したい場合は、他に何も接続する必要はありません。**[WiFi経由でセンサーのデータをUbidotsに送信する](https://wiki.seeedstudio.com/K1100-quickstart/#send-sensor-data-to-ubidots-via-wifi)**の内容を引き続き参照してください。
+- WiFi経由でデータを送信したい場合は、他に何も接続する必要はありません。**[WiFi経由でセンサーのデータをUbidotsに送信する](https://wiki.seeedstudio.com/ja/K1100-quickstart/#send-sensor-data-to-ubidots-via-wifi)**の内容を引き続き参照してください。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/K1100-quick-start/58.png" /></div>
 
@@ -535,7 +535,7 @@ Light列がすでにハイライトされている状態で、5方向ボタン�
 
 このクイックスタートガイドの手順を無事に完了し、センサー機器から SenseCAP コンソールや Ubidots ビューにデータが短時間で転送されるのを確認できましたね！おめでとうございます。
 
-次に、センサーのプログラミングや LoRaWAN®、クラウドプラットフォームなどについてさらに深く学びたい場合は、[SenseCAP - センサープロトタイプキット概要](https://wiki.seeedstudio.com/K1100-Getting-Started/)をご覧ください。
+次に、センサーのプログラミングや LoRaWAN®、クラウドプラットフォームなどについてさらに深く学びたい場合は、[SenseCAP - センサープロトタイプキット概要](https://wiki.seeedstudio.com/ja/K1100-Getting-Started/)をご覧ください。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/K1101/41.png" /></div>
 

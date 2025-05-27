@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio_Tracker/
+image: https://wiki.seeedstudio.com/ja/Wio_Tracker/
 slug: /ja/Wio_Tracker
 last_update:
   date: 05/15/2025
@@ -27,8 +27,8 @@ Wio の最も魅力的な点は、プラグアンドプレイモジュールを�
 
 以下は、Seeed WiKi で見つけることができる Wio_Tracker ボードのリストです。このリストは随時更新されます。
 
-- [Wio LTE Cat.1](https://wiki.seeedstudio.com/Wio_LTE_Cat.1/)
-- [Wio Tracker - GPS、BT3.0、GSM、Arduino 互換](https://wiki.seeedstudio.com/wio_gps_board/)
+- [Wio LTE Cat.1](https://wiki.seeedstudio.com/ja/Wio_LTE_Cat.1/)
+- [Wio Tracker - GPS、BT3.0、GSM、Arduino 互換](https://wiki.seeedstudio.com/ja/wio_gps_board/)
 
 
 ## 技術サポートと製品ディスカッション

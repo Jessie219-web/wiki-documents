@@ -107,7 +107,7 @@ Grove 12ボタン静電容量式タッチキーパッドは、最大16 MHzで動
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** Githubから[12_Channel_Keypad.ino](https://github.com/Seeed-Studio/Seeed_ATtiny1616/blob/master/12_Channel_Keypad.ino)をダウンロードします。
@@ -195,7 +195,7 @@ void printData() {
 
 ```
 
-- **ステップ3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ4.** Arduino IDEの**シリアルモニタ**を開きます。**ツール -> シリアルモニタ**をクリックするか、`ctrl`+`shift`+`m`キーを同時に押します。ボーレートを**9600**に設定します。
 
@@ -278,7 +278,7 @@ sudo reboot
 
 ##### Raspberry Pi デモ
 
-- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
+- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
 
 システム環境が正常に構成されると、次のようなプロンプトが表示されます：
 

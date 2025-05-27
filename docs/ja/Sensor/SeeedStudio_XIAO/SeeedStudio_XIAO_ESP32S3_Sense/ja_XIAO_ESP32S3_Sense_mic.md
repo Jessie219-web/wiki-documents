@@ -184,7 +184,7 @@ if (sample && sample != -1 && sample != 1) {
 
 次のプロジェクトでは、microSD カードの機能を組み合わせて録音した音声を microSD カードに保存する方法を説明します。このプロジェクトのために、microSD カードを準備し、事前に **FAT32** フォーマットでフォーマットしてください。
 
-初めて XIAO ESP32S3 で microSD カードを使用する場合は、microSD カードのインストールと準備について学ぶために [ファイルシステム Wiki](https://wiki.seeedstudio.com/xiao_esp32s3_sense_filesystem/#prepare-the-microsd-card) の内容を読むことをお勧めします。
+初めて XIAO ESP32S3 で microSD カードを使用する場合は、microSD カードのインストールと準備について学ぶために [ファイルシステム Wiki](https://wiki.seeedstudio.com/ja/xiao_esp32s3_sense_filesystem/#prepare-the-microsd-card) の内容を読むことをお勧めします。
 
 以下は、このプロジェクトの Arduino プログラムです。
 :::tip

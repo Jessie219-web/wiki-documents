@@ -36,7 +36,7 @@ H3LIS331DLは「nano」ファミリーに属する低消費電力・高性能な
 -   ECOPACK®RoHSおよび「グリーン」準拠
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 応用例

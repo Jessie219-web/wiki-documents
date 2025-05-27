@@ -49,11 +49,11 @@ FIN Framework (FIN) は、統合、制御、管理、分析、可視化、接続
     </div>
 
 ### ソフトウェアの準備
-* FIN Framework のインストール方法については、この [wiki](https://wiki.seeedstudio.com/reComputer_r1000_install_fin/) を参照してください。
+* FIN Framework のインストール方法については、この [wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_install_fin/) を参照してください。
 
 ## Site Graphic 作成手順
 ### 新しい Site Graphic の作成
-**ステップ 1**: 4 つのフロアを作成しました。フロアの作成方法については、この [wiki](https://wiki.seeedstudio.com/reComputer_r1000_fin_modbus_tcp_and_rtu/) を参照してください。その後、対応する `Site` の下にコンテキストを配置します。ここでは `Tower` パスの下に配置します。
+**ステップ 1**: 4 つのフロアを作成しました。フロアの作成方法については、この [wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_fin_modbus_tcp_and_rtu/) を参照してください。その後、対応する `Site` の下にコンテキストを配置します。ここでは `Tower` パスの下に配置します。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Site_graphic_path_and_floor.png" /></center>
 

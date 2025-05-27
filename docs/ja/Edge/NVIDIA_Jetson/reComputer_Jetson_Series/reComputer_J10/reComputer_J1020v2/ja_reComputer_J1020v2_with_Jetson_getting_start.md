@@ -28,7 +28,7 @@ Jetson向けreComputerシリーズは、NVIDIAの高度なAI組み込みシス�
 
 reComputer J1020 v2は、Jetson Nanoプロダクションモジュールを搭載した強力でコンパクトなインテリジェントエッジボックスで、最新のAI性能をエッジにもたらします。内蔵のJ202キャリアボードはJetson Nano開発キットと同じ寸法で、4xUSB 3、M.2 Key M、HDMI、DPを含みます。完全なシステムにはファンと電源アダプターも含まれています。
 
-AI初心者の方で、重要なAIスキルを習得し、ディープラーニングに挑戦したい場合は、[NVIDIAのDeep Learning Institute (DLI)](https://www.nvidia.com/en-us/training/)が実践的なハンズオントレーニングと認定を提供しています。また、Jetson Nanoの使い方やさまざまなプロジェクトの構築を含むSeeedの[wiki](https://wiki.seeedstudio.com/reComputer_Jetson_Series_Started_Guide/)ガイドもぜひご覧ください。
+AI初心者の方で、重要なAIスキルを習得し、ディープラーニングに挑戦したい場合は、[NVIDIAのDeep Learning Institute (DLI)](https://www.nvidia.com/en-us/training/)が実践的なハンズオントレーニングと認定を提供しています。また、Jetson Nanoの使い方やさまざまなプロジェクトの構築を含むSeeedの[wiki](https://wiki.seeedstudio.com/ja/reComputer_Jetson_Series_Started_Guide/)ガイドもぜひご覧ください。
 
 ソリューションプロバイダー向けに、reComputer J1020 v2はJetpack 4.6.1がプリインストールされており、豊富なI/Oを備えています。このAIボックスは開発を簡素化し、スマートシティ、セキュリティ、産業オートメーション、スマートファクトリーなどの業界で、ビデオ分析、物体検出、自然言語処理、医療画像処理、ロボティクスに取り組むエッジAIソリューションプロバイダーに適しています。
 
@@ -37,7 +37,7 @@ AI初心者の方で、重要なAIスキルを習得し、ディープラーニ�
 - **NVIDIA Jetson Nano Dev Kitの代替:** Jetson Nano 4GBプロダクションモジュールを搭載した手のひらサイズのエッジAIデバイス。キャリアボードは豊富なI/Oを提供します：GPIO、CSI、ギガビットイーサネット、4 x USB 3.0 Type A、オンボード16 GB eMMC。SSDストレージ拡張についてはこちらをご確認ください。
 - **128 NVIDIA CUDA®コアが0.5 TFLOPs (FP16)** を提供し、画像分類、物体検出、セグメンテーション、音声処理などのアプリケーション向けにAIフレームワークとモデルを実行します。
 - **NVIDIA Jetpackがプリインストール済み**, JetPack SDKにはボードサポートパッケージ（BSP）、Linux OS、NVIDIA CUDA、cuDNN、TensorRTソフトウェアライブラリが含まれており、ディープラーニング、コンピュータビジョン、GPUコンピューティング、マルチメディア処理などに対応します。
-- **Jetsonソフトウェアスタック全体** [Jetsonソフトウェアスタック](https://developer.nvidia.com/embedded/develop/software)およびSeeed Edge AIパートナーが提供する高速で堅牢なAIアプリケーションを構築するためのさまざまな[開発者ツール](https://wiki.seeedstudio.com/Jetson-AI-developer-tools/)をサポートします。
+- **Jetsonソフトウェアスタック全体** [Jetsonソフトウェアスタック](https://developer.nvidia.com/embedded/develop/software)およびSeeed Edge AIパートナーが提供する高速で堅牢なAIアプリケーションを構築するためのさまざまな[開発者ツール](https://wiki.seeedstudio.com/ja/Jetson-AI-developer-tools/)をサポートします。
 
 ## 仕様
 

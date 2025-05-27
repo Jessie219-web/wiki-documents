@@ -65,12 +65,12 @@ USB-Cケーブルを使用して、Grove Vision AI V2デバイスをコンピュ
 
 次に進む前に、Grove Vision AI V2デバイスにトレーニング済みモデルがデプロイされていることを確認してください。まだモデルをデプロイしていない場合は、SenseCraft AIのドキュメントを参照して、デバイスにモデルをトレーニングおよびデプロイする方法を確認してください。
 
-- [Grove Vision AI V2でモデルを使用する](https://wiki.seeedstudio.com/sensecraft_ai_pretrained_models_for_grove_visionai_v2/)
+- [Grove Vision AI V2でモデルを使用する](https://wiki.seeedstudio.com/ja/sensecraft_ai_pretrained_models_for_grove_visionai_v2/)
 
 独自のトレーニング済みモデルを使用したい場合は、以下の2つのWikiを参照してください。
 
-- [トレーニングタイプ - 分類](https://wiki.seeedstudio.com/sensecraft_ai_training_classification/)
-- [トレーニングタイプ - オブジェクト検出](https://wiki.seeedstudio.com/sensecraft_ai_training_object_detection/)
+- [トレーニングタイプ - 分類](https://wiki.seeedstudio.com/ja/sensecraft_ai_training_classification/)
+- [トレーニングタイプ - オブジェクト検出](https://wiki.seeedstudio.com/ja/sensecraft_ai_training_object_detection/)
 
 ## ステップ 3. 出力設定にアクセスする
 
@@ -125,7 +125,7 @@ Grove Vision AI V2 は以下の 2 種類のトリガーアクションをサポ�
 
 このステップバイステップガイドに従うことで、Grove Vision AI V2デバイス向けにSenseCraft AIプラットフォームでモデル出力設定を構成し、アクションをトリガーする方法を学びました。これにより、トレーニング済みモデルの出力に基づいて、オンボードLEDを点灯させたり、キャプチャした画像を保存したりするなど、特定のアクションを実行するようデバイスを設定できます。この機能を活用することで、Grove Vision AI V2とSenseCraft AIを使用してインタラクティブなアプリケーションやプロジェクトを作成することが可能になります。ウェブプラットフォームとデバイス間の安定した接続を維持することを忘れずに、円滑な操作を確保してください。
 
-Grove Vision AI V2は本質的にはAIカメラセンサーであるため、センサー関連の機能以上のことを期待するのは難しいかもしれません。ただし、追加のMCUがあれば、GroveインターフェースやPin to Pinインターフェースを使用して、より興味深いプロジェクトを実現することができます。SenseCraft AIはモデルを提供するための媒介に過ぎません。Grove Vision AI V2モデルに関するArduinoルーチンについては、[Grove Vision AI V2の使い方](https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/)をご参照ください。
+Grove Vision AI V2は本質的にはAIカメラセンサーであるため、センサー関連の機能以上のことを期待するのは難しいかもしれません。ただし、追加のMCUがあれば、GroveインターフェースやPin to Pinインターフェースを使用して、より興味深いプロジェクトを実現することができます。SenseCraft AIはモデルを提供するための媒介に過ぎません。Grove Vision AI V2モデルに関するArduinoルーチンについては、[Grove Vision AI V2の使い方](https://wiki.seeedstudio.com/ja/grove_vision_ai_v2_software_support/)をご参照ください。
 
 ## 技術サポートと製品に関する議論
 

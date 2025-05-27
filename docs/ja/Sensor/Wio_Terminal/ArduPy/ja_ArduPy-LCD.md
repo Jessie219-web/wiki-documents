@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 これは ArduPy 用の LCD API リファレンスです。現在、このリファレンスは Wio Terminal 上の LCD モジュールでのみテストされています。
 
-詳細については、[**ArduPy**](https://github.com/Seeed-Studio/ArduPy) をご覧ください。ArduPy の使い方を始めるには、[こちら](https://wiki.seeedstudio.com/Wio-Terminal-ArduPy/)をご参照ください。
+詳細については、[**ArduPy**](https://github.com/Seeed-Studio/ArduPy) をご覧ください。ArduPy の使い方を始めるには、[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-ArduPy/)をご参照ください。
 
 **使用例:**
 

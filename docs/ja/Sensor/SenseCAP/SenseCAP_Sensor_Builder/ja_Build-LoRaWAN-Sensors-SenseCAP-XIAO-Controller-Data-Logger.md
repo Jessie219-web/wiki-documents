@@ -70,7 +70,7 @@ Builder に追加するための Grove モジュールをさらに探してい�
 
 Seeed Studio XIAO RP2040 によって駆動され、ボード上に Grove コネクタがあるため、通常の開発デバイスとして直接使用できます。RS485 接続を利用することで、RS485 対応センサーを XIAO に追加し、プロジェクトのアイデアを拡張することができます。
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Arduino </font></span></strong></a> <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-RP2040-with-MicroPython/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 MicroPython </font></span></strong></a> <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-RP2040-with-CircuitPython/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 CircuitPython </font></span></strong></a></div>
+<div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-Arduino/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Arduino </font></span></strong></a> <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-MicroPython/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 MicroPython </font></span></strong></a> <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-CircuitPython/"><strong><span><font color={'FFFFFF'} size={"4"}> 📚 CircuitPython </font></span></strong></a></div>
 
 ## 工場ファームウェアのフラッシュ
 

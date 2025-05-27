@@ -39,11 +39,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## ソフトウェア
 
-Arduino IDE をお持ちでない場合は、[**Wio Terminal の使い方**](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)をご覧ください。
+Arduino IDE をお持ちでない場合は、[**Wio Terminal の使い方**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)をご覧ください。
 
-- LCD スクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。[Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) を参照してください。
+- LCD スクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。[Wio Terminal LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) を参照してください。
 
-- DPS310-Pressure-Sensor ライブラリ `#include <Dps310.h>` をインストールしてください。[DPS310-Pressure-Sensor](https://wiki.seeedstudio.com/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310/) を参照してください。
+- DPS310-Pressure-Sensor ライブラリ `#include <Dps310.h>` をインストールしてください。[DPS310-Pressure-Sensor](https://wiki.seeedstudio.com/ja/Grove-High-Precision-Barometric-Pressure-Sensor-DPS310/) を参照してください。
 
 ## コード
 

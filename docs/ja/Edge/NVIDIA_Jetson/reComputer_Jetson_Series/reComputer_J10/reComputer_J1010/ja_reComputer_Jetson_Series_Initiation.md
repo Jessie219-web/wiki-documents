@@ -136,8 +136,8 @@ seeed@seeed-desktop:~$
 
 reComputer デバイスがクラッシュし、NVIDIA システムを再インストールしたい場合、reComputer に NVIDIA システムをインストールする方法についての Wiki を提供しています。提供されている Wiki には A20X キャリアボードと reComputer J1010 キャリアボードが含まれています。
 
-- [A20X キャリアボードに基づく NVIDIA システムのインストール](https://wiki.seeedstudio.com/reComputer_J2021_J202_Flash_Jetpack/)
-- [reComputer J1010 キャリアボードに基づく NVIDIA システムのインストール](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/)
+- [A20X キャリアボードに基づく NVIDIA システムのインストール](https://wiki.seeedstudio.com/ja/reComputer_J2021_J202_Flash_Jetpack/)
+- [reComputer J1010 キャリアボードに基づく NVIDIA システムのインストール](https://wiki.seeedstudio.com/ja/reComputer_J1010_J101_Flash_Jetpack/)
 
 ## トラブルシューティング
 
@@ -286,7 +286,7 @@ CUDAコンポーネントの内容を解放した後、eMMCの残り容量が増
 
 通常の使用を続けながら既存のシステム環境を破壊せずに拡張ソリューションを完了したい場合、このオプションを選択できます。
 
-私たちはすでに拡張に関する詳細なWikiを提供しています：[reComputerシリーズのメモリ拡張](https://wiki.seeedstudio.com/reComputer_Jetson_Memory_Expansion/)。
+私たちはすでに拡張に関する詳細なWikiを提供しています：[reComputerシリーズのメモリ拡張](https://wiki.seeedstudio.com/ja/reComputer_Jetson_Memory_Expansion/)。
 
 なお、いかなる拡張操作も危険を伴うため、すべてを開始する前にシステムの**バックアップを作成**することを強く推奨します。
 

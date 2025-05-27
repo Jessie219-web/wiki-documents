@@ -22,7 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## はじめに
 
-[reComputer-R1000デバイスからAWS IoT CoreにMQTTプロトコルを使用してデータを送信するプロセス](https://wiki.seeedstudio.com/recomputer_r1000_aws/)を説明しました。このチュートリアルは、前述のプロセスとシームレスに統合されます。本チュートリアルでは、N3uron Edge IIoTプラットフォームとAWS IoT Core間のインターフェースの詳細について掘り下げます。
+[reComputer-R1000デバイスからAWS IoT CoreにMQTTプロトコルを使用してデータを送信するプロセス](https://wiki.seeedstudio.com/ja/recomputer_r1000_aws/)を説明しました。このチュートリアルは、前述のプロセスとシームレスに統合されます。本チュートリアルでは、N3uron Edge IIoTプラットフォームとAWS IoT Core間のインターフェースの詳細について掘り下げます。
 
 ## 前提条件
 
@@ -50,9 +50,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア
 
-[N3uronのはじめに](https://wiki.seeedstudio.com/recomputer_r1000_n3uron/)ガイドを学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作方法、Web UIやWeb Visionモジュールの概念、タグの理解、基本的なダッシュボードの作成など、重要な知識を提供します。これらの基本をまだ学んでいない場合は、先に進む前にこのガイドを確認することをお勧めします。リンクを通じてガイドにアクセスできます。
+[N3uronのはじめに](https://wiki.seeedstudio.com/ja/recomputer_r1000_n3uron/)ガイドを学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作方法、Web UIやWeb Visionモジュールの概念、タグの理解、基本的なダッシュボードの作成など、重要な知識を提供します。これらの基本をまだ学んでいない場合は、先に進む前にこのガイドを確認することをお勧めします。リンクを通じてガイドにアクセスできます。
 
-また、[AWS IoT CoreとreComputer-R1000の統合](https://wiki.seeedstudio.com/recomputer_r1000_aws/)に関するガイドをまだ確認していない場合は、こちらも確認することをお勧めします。この包括的なガイドでは、IoT Coreに値を公開する基本から高度な手順までをカバーしています。**このチュートリアルを補完する内容であるため、この内容にも慣れておくと良いでしょう**。
+また、[AWS IoT CoreとreComputer-R1000の統合](https://wiki.seeedstudio.com/ja/recomputer_r1000_aws/)に関するガイドをまだ確認していない場合は、こちらも確認することをお勧めします。この包括的なガイドでは、IoT Coreに値を公開する基本から高度な手順までをカバーしています。**このチュートリアルを補完する内容であるため、この内容にも慣れておくと良いでしょう**。
 
 ## N3uron IIoTプラットフォームの設定
 

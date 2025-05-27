@@ -105,7 +105,7 @@ void alarmMatch(uint32_t flag)
 
 NTP を使用して RTC の時間を取得することもできます。
 
-- このデモを実行するには、まず **[Wio Terminal ネットワーク Wiki](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/)** を確認してください。
+- このデモを実行するには、まず **[Wio Terminal ネットワーク Wiki](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/)** を確認してください。
 
 ### 依存ライブラリ
 

@@ -212,7 +212,7 @@ XIAO への接続については、以下の図を参照してください。
 
 - **ステップ 1.** [CAN Bus Library](https://github.com/limengdu/Arduino_CAN_BUS_MCP2515) をGithubからダウンロードしてください。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino用のライブラリをインストールしてください。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino用のライブラリをインストールしてください。
 
 - **ステップ 3.** ライブラリを正しくダウンロードしてインストールした後、examplesフォルダ内にあるsend.inoという名前のサンプルプログラムを見つけることができます。このプログラムはD7Sモジュール用に設計されています。
 
@@ -267,7 +267,7 @@ void loop()
 // END FILE
 ```
 
-- **ステップ 4.** デモをアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** コードのアップロードが成功すると、RXとTXのLEDが点灯し、CANバスがデータをアクティブに送信していることを示します。CANバスが他のデバイスに接続されている場合、これらのLEDは点灯し続けるのではなく、点滅します。
 

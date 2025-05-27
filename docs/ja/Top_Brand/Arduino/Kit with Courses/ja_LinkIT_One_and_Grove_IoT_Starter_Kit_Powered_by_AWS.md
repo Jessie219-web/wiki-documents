@@ -25,7 +25,7 @@ sku:
 --- -->
 ![](https://files.seeedstudio.com/wiki/LinkIT_One_and_Grove_IoT_Starter_Kit_Powered_by_AWS/img/Aws_linkit_cover.JPG)
 
-_主な参考資料: [Grove IoTスターターキット（AWS対応）](/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoTスターターキット（AWS対応）"), [LinkIt ONE](https://wiki.seeedstudio.com/LinkIt_ONE/ "LinkIt ONE"), [MediaTek AWS IoTガイド](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/hdk_intro/aws_kit/index.gsp)_
+_主な参考資料: [Grove IoTスターターキット（AWS対応）](/Grove_IoT_Starter_Kits_Powered_by_AWS "Grove IoTスターターキット（AWS対応）"), [LinkIt ONE](https://wiki.seeedstudio.com/ja/LinkIt_ONE/ "LinkIt ONE"), [MediaTek AWS IoTガイド](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/hdk_intro/aws_kit/index.gsp)_
 
 **LinkIt ONE**開発ボードは、ウェアラブルおよびIoT製品のプロトタイピング向けのオープンソースで高性能な開発ボードです。このボードはMT2502（ARM7EJ-S™ MCU）をベースにしており、GSM、GPRS、Wi-Fi、Bluetooth BR/EDR/BLE、GPS、オーディオデコーダー、SDカードコネクタを1つの開発ボードに統合しています。このキットを使用すると、スマートシティ、輸送、物流に関連する通信を含むクラウドコンピューティング接続プロジェクトを構築できます。
 
@@ -41,23 +41,23 @@ MediaTek LinkIt™ ONEとGrove IoTスターターキット（AWS対応）を使�
 
 |ボード/部品|数量|ドキュメント|
 |-----|------|------|
-|[LinkIt ONE](https://www.seeedstudio.com/depot/LinkIt-ONE-p-2017.html?cPath=122_142)|1|[こちらを読む](https://wiki.seeedstudio.com/LinkIt_ONE/)|
-|[Base Shield](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html?cPath=98_16)|1|[こちらを読む](https://wiki.seeedstudio.com/Base_Shield_V2/)|
-|[Grove - 3軸デジタル加速度計(±16g)](https://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html?cPath=25_132)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-3-Axis_Digital_Accelerometer-16g/)|
-|[Grove - 光センサー](https://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html?cPath=25_27)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-Light_Sensor/)|
-|[Grove - LEDバー v2.0](https://www.seeedstudio.com/depot/Grove-LED-Bar-v20-p-2474.html)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-LED_Bar/)|
-|[Grove - 土壌湿度センサー](https://www.seeedstudio.com/depot/Grove-Moisture-Sensor-p-955.html?cPath=25_27)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-Moisture_Sensor/)|
-|[Grove - タッチセンサー](https://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html?cPath=85_94)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-Touch_Sensor/)|
-|[Grove - 温度センサー](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html?cPath=25_125)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-Temperature_Sensor_V1.2/)|
-|[Grove - OLEDディスプレイ](https://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html?cPath=34_36)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-OLED_Display_0.96inch/)|
-|[Grove - 音量センサー](https://www.seeedstudio.com/depot/Grove-Loudness-Sensor-p-1382.html?cPath=25_128)|1|[こちらを読む](https://wiki.seeedstudio.com/Grove-Loudness_Sensor/)|
+|[LinkIt ONE](https://www.seeedstudio.com/depot/LinkIt-ONE-p-2017.html?cPath=122_142)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/LinkIt_ONE/)|
+|[Base Shield](https://www.seeedstudio.com/depot/Base-Shield-V2-p-1378.html?cPath=98_16)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Base_Shield_V2/)|
+|[Grove - 3軸デジタル加速度計(±16g)](https://www.seeedstudio.com/depot/Grove-3Axis-Digital-Accelerometer16g-p-1156.html?cPath=25_132)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-3-Axis_Digital_Accelerometer-16g/)|
+|[Grove - 光センサー](https://www.seeedstudio.com/depot/Grove-Light-Sensor-p-746.html?cPath=25_27)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-Light_Sensor/)|
+|[Grove - LEDバー v2.0](https://www.seeedstudio.com/depot/Grove-LED-Bar-v20-p-2474.html)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-LED_Bar/)|
+|[Grove - 土壌湿度センサー](https://www.seeedstudio.com/depot/Grove-Moisture-Sensor-p-955.html?cPath=25_27)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-Moisture_Sensor/)|
+|[Grove - タッチセンサー](https://www.seeedstudio.com/depot/Grove-Touch-Sensor-p-747.html?cPath=85_94)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-Touch_Sensor/)|
+|[Grove - 温度センサー](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html?cPath=25_125)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-Temperature_Sensor_V1.2/)|
+|[Grove - OLEDディスプレイ](https://www.seeedstudio.com/depot/Grove-OLED-Display-112-p-781.html?cPath=34_36)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-OLED_Display_0.96inch/)|
+|[Grove - 音量センサー](https://www.seeedstudio.com/depot/Grove-Loudness-Sensor-p-1382.html?cPath=25_128)|1|[こちらを読む](https://wiki.seeedstudio.com/ja/Grove-Loudness_Sensor/)|
 |[Micro USBケーブル - 48cm](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html)|1|-|
 
 ## 特徴
 
 * 簡単で完全かつ強力な開発プラットフォーム（LinkIt™ ONE）。
 
-* [Groveシステム](https://wiki.seeedstudio.com/Grove_System/)による多様な機能モジュール。
+* [Groveシステム](https://wiki.seeedstudio.com/ja/Grove_System/)による多様な機能モジュール。
 
 * AWS認証サービスを通じて、アプリケーション（ウェブアプリケーション、モバイルアプリ、制御デバイス）とリモートデバイス（センサー、アクチュエータ、組み込みデバイス、スマート家電）間の機密通信。
 
@@ -115,9 +115,9 @@ MediaTek LinkIt™ ONEとGrove IoTスターターキット（AWS対応）を使�
 
 * [LinkIt SDK 1.1.17をダウンロード](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/sdk_intro/index.gsp)
 
-* [SDKのインストール方法とLinkIt ONEの使用方法](https://wiki.seeedstudio.com/LinkIt_ONE/)
+* [SDKのインストール方法とLinkIt ONEの使用方法](https://wiki.seeedstudio.com/ja/LinkIt_ONE/)
 
-* [LinkIt ONEのファームウェアを1.1.17に更新](https://wiki.seeedstudio.com/LinkIt_ONE#Updating_Firmware)
+* [LinkIt ONEのファームウェアを1.1.17に更新](https://wiki.seeedstudio.com/ja/LinkIt_ONE#Updating_Firmware)
 
 * 開発環境の構築については[こちら](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/get-started/index.gsp)を参照してください。
 
@@ -225,7 +225,7 @@ LinkIt ONE を PC に接続し、最初に Wi-Fi アンテナを挿入するこ�
 
 ### 出力を確認する
 
-**注意**: アンテナが接続されている必要があります。[こちら](https://wiki.seeedstudio.com/LinkIt_ONE#Connecting_Antennae)を参照してください。
+**注意**: アンテナが接続されている必要があります。[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE#Connecting_Antennae)を参照してください。
 
 **1.** Arduino IDE のポートを MTK USB Modem Port に変更し、シリアルモニターを開いてボーレートを 9600 に設定します。
 
@@ -267,7 +267,7 @@ LinkIt ONE を PC に接続し、最初に Wi-Fi アンテナを挿入するこ�
 
 * [AWS IoT サービス入門ガイド](http://aws.amazon.com/cn/documentation/iot/)
 
-* [LinkIt ONE Wiki](https://wiki.seeedstudio.com/LinkIt_ONE/)
+* [LinkIt ONE Wiki](https://wiki.seeedstudio.com/ja/LinkIt_ONE/)
 
 * [LinkIt™ ONE 開発プラットフォームでの AWS IoT サービスの開始](https://labs.mediatek.com/site/global/developer_tools/mediatek_linkit/get-started/aws/get-started/index.gsp)
 

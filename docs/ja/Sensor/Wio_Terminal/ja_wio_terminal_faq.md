@@ -13,7 +13,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### Q1: Wio Terminalを複数回再起動した後にプログラムが消失するのを防ぐ方法
 
-詳細については、[**こちら**](https://wiki.seeedstudio.com/Program_loss_by_repeated_power)をクリックしてください。
+詳細については、[**こちら**](https://wiki.seeedstudio.com/ja/Program_loss_by_repeated_power)をクリックしてください。
 
 
 # 技術サポート

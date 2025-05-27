@@ -87,7 +87,7 @@ Grove - TDSセンサーは、水中の総溶解固形物（TDS）レベルを検
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を強くお勧めします。
 :::
 
 - **ステップ1.** Arduino IDEを開き、新しいファイルを作成して、以下のコードを新しいファイルにコピーします。
@@ -114,7 +114,7 @@ void loop() {
 }
 ```
 
-- **ステップ3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ4.** Arduino IDEの**シリアルモニター**を開くには、**ツール->シリアルモニター**をクリックします。または++ctrl+shift+m++キーを同時に押します。ボーレートを**9600**に設定します。
 
@@ -142,7 +142,7 @@ void loop() {
 
 #### ソフトウェア
 
-- **ステップ1.** [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ1.** [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 
 - **ステップ2.** grove pythonライブラリをクローンしてソースファイルをダウンロードします。
 

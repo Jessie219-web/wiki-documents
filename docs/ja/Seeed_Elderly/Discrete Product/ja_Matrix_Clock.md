@@ -86,7 +86,7 @@ Arduino Leonardoをベースにしたマトリックスクロックは、Arduino
 
 ## 回路図
 ---
-- [MatrixClock-Schematic-MC201V1-Rev1.pdf](https://wiki.seeedstudio.com/images/c/c3/MatrixClock-Schematic-MC201V1-Rev1.pdf)
+- [MatrixClock-Schematic-MC201V1-Rev1.pdf](https://wiki.seeedstudio.com/ja/images/c/c3/MatrixClock-Schematic-MC201V1-Rev1.pdf)
 
 ## PCB
 ---

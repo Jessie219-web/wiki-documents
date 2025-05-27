@@ -15,13 +15,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # Watcher機能モジュール開発ガイド
 
-まずは[Watcherソフトウェアフレームワーク](https://wiki.seeedstudio.com/watcher_software_framework)を読んで、機能モジュールがどのように動作するかを理解することをお勧めします。
+まずは[Watcherソフトウェアフレームワーク](https://wiki.seeedstudio.com/ja/watcher_software_framework)を読んで、機能モジュールがどのように動作するかを理解することをお勧めします。
 
 このドキュメントでは、新しい機能モジュールを開発するためのステップバイステップガイドを示します。例として`UART Alarm`モジュールを取り上げます。
 
 ## 1. インストールと初回ビルド
 
-[Watcher開発環境の構築](https://wiki.seeedstudio.com/build_watcher_development_environment)の手順をスキップした場合は、まずその手順を実行してください。
+[Watcher開発環境の構築](https://wiki.seeedstudio.com/ja/build_watcher_development_environment)の手順をスキップした場合は、まずその手順を実行してください。
 
 ```shell
 # 現在のディレクトリは PROJ_ROOT_DIR/examples/factory_firmware/ です
@@ -30,7 +30,7 @@ cd main/task_flow_module
 
 ## 2. 適切なテンプレートを選択
 
-[Watcherソフトウェアフレームワーク](https://wiki.seeedstudio.com/watcher_software_framework)では、既存の機能モジュール（以下、**FM**と略します）とその用途について紹介しました。新しいFMを開発する際には、既存のFMの中から最も近いものを参考にするのが良いでしょう。このチュートリアルではアラームFMを開発するので、最もシンプルなアラームFMである`local alarmer`を選択します。
+[Watcherソフトウェアフレームワーク](https://wiki.seeedstudio.com/ja/watcher_software_framework)では、既存の機能モジュール（以下、**FM**と略します）とその用途について紹介しました。新しいFMを開発する際には、既存のFMの中から最も近いものを参考にするのが良いでしょう。このチュートリアルではアラームFMを開発するので、最もシンプルなアラームFMである`local alarmer`を選択します。
 
 ```shell
 cp tf_module_local_alarm.h tf_module_uart_alarm.h
@@ -367,7 +367,7 @@ static int __msgs_sub_set(void *p_module, int evt_id)
 
 ### 4.3 イベントハンドラー
 
-[Watcher Software Framework](https://wiki.seeedstudio.com/watcher_software_framework) では、データフローがイベントループによって駆動されることを学びました。基本的に、FM はイベントハンドラーからデータを受け取り、そのデータを消費し、計算を行い、結果を得ます。そして、最終的にその結果をイベントループに投稿する必要があります。ターゲットは、この FM のデータに関心を持つ下流の FM です。
+[Watcher Software Framework](https://wiki.seeedstudio.com/ja/watcher_software_framework) では、データフローがイベントループによって駆動されることを学びました。基本的に、FM はイベントハンドラーからデータを受け取り、そのデータを消費し、計算を行い、結果を得ます。そして、最終的にその結果をイベントループに投稿する必要があります。ターゲットは、この FM のデータに関心を持つ下流の FM です。
 
 この `uart alarmer` の例では、`TF_DATA_TYPE_DUALIMAGE_WITH_INFERENCE_AUDIO_TEXT` 型の出力データを持つアラームトリガー FM からデータを消費します。UART データ準備が簡単であるため、すべてのデータ生成をイベントループハンドラー内で行います。ただし、これは推奨されません。データ処理が時間を要する場合や IO を多く消費する場合は、バックグラウンド処理を行うワーカータスク（スレッド）を作成する必要があります。
 
@@ -455,7 +455,7 @@ taskflow  [-iej] [-f <string>]
     -j, --json  標準入力からタスクフロー JSON 文字列をインポート
 ```
 
-[ウォッチャー開発環境の構築](https://wiki.seeedstudio.com/build_watcher_development_environment) - `5. ログ出力の監視` を参照してコンソールを取得してください。スペースや空白文字を削除したタスクフローを準備し、以下のようにタスクフローを実行します。
+[ウォッチャー開発環境の構築](https://wiki.seeedstudio.com/ja/build_watcher_development_environment) - `5. ログ出力の監視` を参照してコンソールを取得してください。スペースや空白文字を削除したタスクフローを準備し、以下のようにタスクフローを実行します。
 
 ```shell
 taskflow -i -j<enter>
@@ -464,7 +464,7 @@ Please input taskflow json:
 {"tlid":3,"ctd":3,"tn":"Local Human Detection","type":0,"task_flow":[{"id":1,"type":"ai camera","index":0,"version":"1.0.0","params":{"model_type":1,"modes":0,"model":{"arguments":{"iou":45,"conf":50}},"conditions":[{"class":"person","mode":1,"type":2,"num":0}],"conditions_combo":0,"silent_period":{"silence_duration":5},"output_type":0,"shutter":0},"wires":[[2]]},{"id":2,"type":"alarm trigger","index":1,"version":"1.0.0","params":{"text":"human detected","audio":""},"wires":[[3]]},{"id":3,"type":"uart alarm","index":2,"version":"1.0.0","params":{"output_format":1},"wires":[]}]}
 ```
 
-タスクフローをどのように作成するか？[ウォッチャーソフトウェアフレームワーク](https://wiki.seeedstudio.com/watcher_software_framework) では、各 FM とそのパラメータを紹介しています。タスクフローの作成は、Node-RED のように FM ブロック間にワイヤーを引くようなものです。
+タスクフローをどのように作成するか？[ウォッチャーソフトウェアフレームワーク](https://wiki.seeedstudio.com/ja/watcher_software_framework) では、各 FM とそのパラメータを紹介しています。タスクフローの作成は、Node-RED のように FM ブロック間にワイヤーを引くようなものです。
 
 タスクフローを作成するための GUI が用意される前に、エクスポートコマンドを使用して例を収集できます。モバイルアプリを使用してローカルアラーム機能（RGB ライト）が有効なフローを実行し、そのフローが実行中に以下のコマンドでタスクフローをエクスポートします。
 

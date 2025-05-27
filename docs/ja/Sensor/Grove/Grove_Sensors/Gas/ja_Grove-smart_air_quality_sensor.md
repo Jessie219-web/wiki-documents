@@ -36,7 +36,7 @@ Grove - スマート空気質センサー (SGP41) モジュールはコンパク
 
 :::tip
 
-[Seeed ガスセンサー選択ガイド](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/) を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
+[Seeed ガスセンサー選択ガイド](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/) を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
 
 :::
 
@@ -81,7 +81,7 @@ Grove - スマート空気質センサー (SGP41) モジュールはコンパク
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -165,7 +165,7 @@ Grove Base Shieldがない場合は、以下のようにGrove - スマート空�
     </a>
 </div>
 
-- **ステップ 2.** Arduino 用ライブラリをインストールする方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してください。
+- **ステップ 2.** Arduino 用ライブラリをインストールする方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してください。
 
 - **ステップ 3.** ライブラリを正しくダウンロードしてインストールした後、`exampleUsage.ino` という名前のサンプルプログラムを examples フォルダ内で見つけることができます。このプログラムは SGP41 センサー用に設計されています。
 

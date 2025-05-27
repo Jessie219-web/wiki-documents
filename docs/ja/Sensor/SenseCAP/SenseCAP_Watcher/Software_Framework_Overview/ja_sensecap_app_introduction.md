@@ -79,7 +79,7 @@ WatcherのHTTPメッセージブロック機能は、RGBアラーム、APPアラ
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/83.png" style={{width:250, height:'auto'}}/></div><br />
 
-HTTPメッセージブロックを設定するには、ユーザーは**HTTP URL**と**HTTPトークン**という2つの重要な情報を構成する必要があります。これらの詳細は、独自のHTTPサーバーまたはローカルにデプロイされたソフトウェア（例：[Watcher APP](https://wiki.seeedstudio.com/watcher_local_deploy/#software-preparation)）によって提供されます。独自のHTTPサーバーを使用する場合は、正しく設定され、必要なURLとトークンを提供することを確認してください。あるいは、Watcher APPを選択した場合、ソフトウェアがこれらの構成詳細を生成および管理します。構成データを独自のサーバーまたはWatcher APPのローカルに保持することで、Watcherはユーザーのプライバシーとセキュリティの高いレベルを維持し、機密情報がユーザーの管理下に留まることを保証します。
+HTTPメッセージブロックを設定するには、ユーザーは**HTTP URL**と**HTTPトークン**という2つの重要な情報を構成する必要があります。これらの詳細は、独自のHTTPサーバーまたはローカルにデプロイされたソフトウェア（例：[Watcher APP](https://wiki.seeedstudio.com/ja/watcher_local_deploy/#software-preparation)）によって提供されます。独自のHTTPサーバーを使用する場合は、正しく設定され、必要なURLとトークンを提供することを確認してください。あるいは、Watcher APPを選択した場合、ソフトウェアがこれらの構成詳細を生成および管理します。構成データを独自のサーバーまたはWatcher APPのローカルに保持することで、Watcherはユーザーのプライバシーとセキュリティの高いレベルを維持し、機密情報がユーザーの管理下に留まることを保証します。
 
 :::caution
 完全にローカルな通知サービスをSenseCraftを介さずに使用したい場合は、メッセージ通知を構成する際に**APPプッシュ通知**を選択しないでください。そうしないと、通知がSenseCraftを経由してアプリにプッシュされます。また、**HTTPプッシュ通知オプション**を選択することを忘れないでください。
@@ -95,7 +95,7 @@ WatcherのデバイスAIサービスは、PCやJetsonのような高性能マシ
 
 設定が完了すると、デバイスAIサービスはユーザーのローカルコンピューティングリソースを活用して、音声インタラクション、タスク分解、画像分析、チャットボットサービスなど、さまざまなAI機能を実現します。
 
-AIサービスをローカルで実行する柔軟性と制御を重視するユーザーにとって、WatcherのデバイスAIサービスは包括的でカスタマイズ可能なソリューションを提供します。デバイスAIサービスの設定と構成に関する詳細情報、および各AI機能の詳細な説明については、**[WatcherのAI機能をローカルにデプロイする](https://wiki.seeedstudio.com/watcher_local_deploy/)**をご覧ください。
+AIサービスをローカルで実行する柔軟性と制御を重視するユーザーにとって、WatcherのデバイスAIサービスは包括的でカスタマイズ可能なソリューションを提供します。デバイスAIサービスの設定と構成に関する詳細情報、および各AI機能の詳細な説明については、**[WatcherのAI機能をローカルにデプロイする](https://wiki.seeedstudio.com/ja/watcher_local_deploy/)**をご覧ください。
 
 :::caution
 以前にプライベートWatcherサービスをクリックした場合、SenseCraftのクラウドサービスを使用することはできません。クラウドサービスからメッセージを受信できなくなった場合は、**SenseCraft**が選択されていないかどうかを確認してください。

@@ -127,18 +127,18 @@ Grove Base Shieldがない場合は、以下のようにこのモジュールを
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** [Grove BME680](https://github.com/Seeed-Studio/Seeed_BME680)ライブラリをGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。パス**File --> Examples --> Seeed BME680 --> seeed_bme680_test**を通じて「BME680」例を開きます。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Pressure-Gas-Sensor_BME680/img/demo_path.jpg" /></div>
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ5.** Arduino IDEの**シリアルモニター**を開くには、**Tool-> Serial Monitor**をクリックします。または++ctrl+shift+m++キーを同時に押します。すべてが正常に動作していれば、結果が表示されます。
 

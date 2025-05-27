@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/
 slug: /ja/Wio-Terminal-Network-Overview
 last_update:
   date: 05/15/2025

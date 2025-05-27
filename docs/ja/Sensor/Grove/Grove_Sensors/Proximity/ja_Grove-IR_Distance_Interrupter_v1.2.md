@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-IR_Distance_Interrupter_v1.2/
+image: https://wiki.seeedstudio.com/ja/Grove-IR_Distance_Interrupter_v1.2/
 slug: /ja/Grove-IR_Distance_Interrupter_v1.2
 last_update:
   date: 05/15/2025
@@ -53,7 +53,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - より耐久性が高い
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 仕様

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-RJ45_Adapter/
+image: https://wiki.seeedstudio.com/ja/Grove-RJ45_Adapter/
 slug: /ja/Grove-RJ45_Adapter
 last_update:
   date: 05/15/2025

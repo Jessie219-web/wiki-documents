@@ -38,7 +38,7 @@ Grove - 赤外線温度センサー v1.2 | 電源チップを変更し、電源�
 - 保存温度: -35～80°C
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -58,7 +58,7 @@ Grove - 赤外線温度センサー v1.2 | 電源チップを変更し、電源�
 以下のスケッチは、センサー周辺の温度とセンサーの前にある対象物の温度を測定し、その結果をシリアルモニターに表示する簡単なアプリケーションを示しています。
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 - **ステップ 1.** 以下の材料を準備してください：
@@ -119,7 +119,7 @@ Grove Base Shieldがない場合は、以下のようにGrove - 温度および�
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Infrared_Temperature_Sensor/img/Dsdiagram.jpg" /></div>
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 - **ステップ 5.** Arduino IDEの**シリアルモニター**を開きます。**ツール->シリアルモニター**をクリックするか、++ctrl+shift+m++キーを同時に押します。すべてが正常に動作していれば、温度が表示されます。
 

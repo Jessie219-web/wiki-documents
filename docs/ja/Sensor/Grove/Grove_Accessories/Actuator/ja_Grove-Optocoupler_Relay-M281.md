@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Optocoupler_Relay-M281/
+image: https://wiki.seeedstudio.com/ja/Grove-Optocoupler_Relay-M281/
 slug: /ja/Grove-Optocoupler_Relay-M281
 last_update:
   date: 05/15/2025
@@ -124,7 +124,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を強くお勧めします。
 :::
 
 - **ステップ1.** 以下のコードをArduino IDEの新しいスケッチにコピーします。
@@ -146,7 +146,7 @@ void loop() {
 }
 ```
 
-- **ステップ2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::tip
   すべてが正常に動作すれば、LEDが点滅するのが確認できます。

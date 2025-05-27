@@ -49,10 +49,10 @@ Modbus RTU（リモートターミナルユニット）は、センサーやコ�
 
 ### ソフトウェアの準備
 
-Edge Box は Raspberry Pi OS がプリインストールされた状態で手元に届きます。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/Edge_Box_introduction/) をお読みください。また、[Node-RED の Getting Started Guide](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/) を準備しています。このガイドを確認してから Wiki に進むことをお勧めします。このチュートリアルでは、YABE 室温シミュレーターを実行しているホスト PC を Edge Box 上で実行されている Node-RED に接続します。
+Edge Box は Raspberry Pi OS がプリインストールされた状態で手元に届きます。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/ja/Edge_Box_introduction/) をお読みください。また、[Node-RED の Getting Started Guide](https://wiki.seeedstudio.com/ja/Edge-Box-Getting-Started-with-Node-Red/) を準備しています。このガイドを確認してから Wiki に進むことをお勧めします。このチュートリアルでは、YABE 室温シミュレーターを実行しているホスト PC を Edge Box 上で実行されている Node-RED に接続します。
 
 ### RS485
-Edge Box RPi 200 には RS-485 ポートが 1 つあります。詳細は [こちら](https://wiki.seeedstudio.com/Edge_Box_introduction/#serial-ports--rs232-and-rs485) をご覧ください。Node-RED を操作する前に、デバイスを正しく配線する必要があります。
+Edge Box RPi 200 には RS-485 ポートが 1 つあります。詳細は [こちら](https://wiki.seeedstudio.com/ja/Edge_Box_introduction/#serial-ports--rs232-and-rs485) をご覧ください。Node-RED を操作する前に、デバイスを正しく配線する必要があります。
 
 ## Modbusノードのインストール
 

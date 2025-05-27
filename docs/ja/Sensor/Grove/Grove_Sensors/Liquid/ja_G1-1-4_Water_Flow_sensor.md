@@ -337,7 +337,7 @@ void loop ()
 
 *   [LCDに水流量を表示](http://www.practicalarduino.com/projects/water-flow-gauge)
 
-*   [材料のデータシート](https://wiki.seeedstudio.com/images/4/4e/YEE70G30HSLNC..pdf)
+*   [材料のデータシート](https://wiki.seeedstudio.com/ja/images/4/4e/YEE70G30HSLNC..pdf)
 
 ## 技術サポートと製品ディスカッション
 

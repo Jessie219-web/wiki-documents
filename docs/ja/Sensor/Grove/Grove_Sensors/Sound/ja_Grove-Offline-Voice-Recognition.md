@@ -98,10 +98,10 @@ Grove - オフライン音声認識モジュールは、VC-02モジュールを�
 
 <p style={{textAlign: 'center'}}><a href="https://www.arduino.cc/en/software"target="_blank"><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/Download_IDE.png" /></a></p>
 
-**ステップ2.** 開発ボードモデルを選択し、Arduino IDEに追加します。後の手順で**XIAO RP2040**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
+**ステップ2.** 開発ボードモデルを選択し、Arduino IDEに追加します。後の手順で**XIAO RP2040**を使用する場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-Arduino/#software-setup)を参照して追加を完了してください。
 
 :::tip
-他の種類のXIAOを使用したい場合は、[こちら](https://wiki.seeedstudio.com/xiao_topic_page/)を参照してください。
+他の種類のXIAOを使用したい場合は、[こちら](https://wiki.seeedstudio.com/ja/xiao_topic_page/)を参照してください。
 :::
 
 **ステップ3.** Arduinoコードライブラリをインストールします。
@@ -196,7 +196,7 @@ XIAO ESP32S3にアンテナを接続します。
 ブラウザのアドレスバーにHome Assistantデバイスのアドレスを入力し、Home Assistantアカウントを作成します。ステップバイステップのガイドは[こちら](https://www.home-assistant.io/getting-started/onboarding/)をご参照ください。
 
 **ステップ 3.** Home AssistantにESPHomeをインストール  
-[こちら](https://wiki.seeedstudio.com/Connect-Grove-to-Home-Assistant-ESPHome/#install-esphome-on-home-assistant)を参照して、Home AssistantにESPHomeを迅速にセットアップできます。
+[こちら](https://wiki.seeedstudio.com/ja/Connect-Grove-to-Home-Assistant-ESPHome/#install-esphome-on-home-assistant)を参照して、Home AssistantにESPHomeを迅速にセットアップできます。
 
 #### ソフトウェア
 

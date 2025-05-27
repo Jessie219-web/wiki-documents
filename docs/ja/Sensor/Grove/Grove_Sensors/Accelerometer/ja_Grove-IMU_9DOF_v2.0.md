@@ -33,10 +33,10 @@ Grove - IMU 9DOF v2.0は、**Grove - IMU 9DOF v1.0**のアップグレード版�
 -   I2Cアドレス: 0x68
 
 :::note
-    複数のI2Cデバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/)を参照してください。
+    複数のI2Cデバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/)を参照してください。
 :::
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -105,7 +105,7 @@ Grove Base Shieldがない場合でも、以下のようにこのモジュール
 
 **ステップ1.** [ライブラリ](https://github.com/Seeed-Studio/Grove_IMU_9DOF/archive/master.zip)をGithubからダウンロードします。
 
-**ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+**ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 **ステップ3.** 新しいArduinoスケッチを作成し、以下のコードを貼り付けるか、次のパスから直接コードを開きます：File -> Example -> IMU_9DOF_Demo_Compass_Calibrated -> IMU_9DOF_Demo_Compass_Calibrated。
 

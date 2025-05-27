@@ -34,7 +34,7 @@ sku:  110060007
 
 <font color="Red">R</font><font color="Orange">a</font><font color="Yellow">i</font><font color="Green">n</font><font color="Blue">b</font><font color="Indigo">o</font><font color="Violet">w</font> **Cube Kit** は、カラフルなデザインを作成するのに役立つ**3D<font color="red"> R</font><font color="green">G</font><font color="blue">B</font>** LEDキューブです。この3Dキューブは、4 x 4 x 4の配置で64個の8mm **<font color="red">R</font><font color="green">G</font><font color="blue">B</font>** LEDを芸術的に組み合わせて作られています。**Rainbow Cube Kit**は、**Rainbowduino**を使用して多くの美しい視覚効果を作成することができます。**Rainbow Cube Kit**には、独立してキットに電力を供給するための3.3V / 1アンペアLDOが内蔵されています。また、XBee互換のソケットが提供されており、これを使用してRainbowduinoをPCやArduinoにワイヤレスで接続することができます。
 
-このキットは組み立てキット形式で販売されています。完全に組み立てられたキットについては、[Rainbow_Cube_Kit_Acrylic_Harness](https://wiki.seeedstudio.com/Rainbow_Cube_Kit_Acrylic_Harness/ "Rainbow Cube")をご覧ください。
+このキットは組み立てキット形式で販売されています。完全に組み立てられたキットについては、[Rainbow_Cube_Kit_Acrylic_Harness](https://wiki.seeedstudio.com/ja/Rainbow_Cube_Kit_Acrylic_Harness/ "Rainbow Cube")をご覧ください。
 
 未組み立てのRainbow Cube Kit
 

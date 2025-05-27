@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # J101 SDカードを有効化する
 
-この方法は、reComputer J1010上で動作するJ101キャリアボードにSDカードへNVIDIA JetPack OSをフラッシュする手順です。そのため、まず<a href="https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/" target="_blank"><span>JetPack OSをreComputer J1010にフラッシュ</span></a>する必要があります。
+この方法は、reComputer J1010上で動作するJ101キャリアボードにSDカードへNVIDIA JetPack OSをフラッシュする手順です。そのため、まず<a href="https://wiki.seeedstudio.com/ja/reComputer_J1010_J101_Flash_Jetpack/" target="_blank"><span>JetPack OSをreComputer J1010にフラッシュ</span></a>する必要があります。
 
 ## ドライバ設定
 
@@ -166,7 +166,7 @@ cd bootFromUSB
 
 ### SDカードのI/O速度を変更
 
-<a href="https://wiki.seeedstudio.com/install_NVIDIA_software_to_Jetson-101" target="_blank"><span>reComputer J101キャリアボード</span></a>では、CLK周波数48MHzをサポートするSDカード機能を提供しています。ここでのCLKは、CE/FCCなどの認証を取得するために設計されています。CLKを自分で増加させたい場合は、以下の手順を使用してください。
+<a href="https://wiki.seeedstudio.com/ja/install_NVIDIA_software_to_Jetson-101" target="_blank"><span>reComputer J101キャリアボード</span></a>では、CLK周波数48MHzをサポートするSDカード機能を提供しています。ここでのCLKは、CE/FCCなどの認証を取得するために設計されています。CLKを自分で増加させたい場合は、以下の手順を使用してください。
 
 <div>
   <p style={{}}><a href="https://github.com/Seeed-Studio/seeed-linux-dtoverlays/blob/master/overlays/jetsonnano/jetson-sdmmc-overlay.dts" target="_blank" /></p><div align="center"><a href="https://github.com/Seeed-Studio/seeed-linux-dtoverlays/blob/master/overlays/jetsonnano/jetson-sdmmc-overlay.dts" target="_blank"><img width={300} src="https://files.seeedstudio.com/wiki/seeed_logo/github.png" /></a></div><p />

@@ -63,7 +63,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - **モジュールをオンにする**
     - モジュールの電源ボタンを押します。
 - **通信ポートを確認する**
-    - [ドライバーが正しくインストールされていることを確認してください](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#for-windows)。Windows デバイスマネージャーに COM ポートが表示されるはずです。
+    - [ドライバーが正しくインストールされていることを確認してください](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#for-windows)。Windows デバイスマネージャーに COM ポートが表示されるはずです。
 
 ### ステップ 2: QCOM インターフェースを開く
 
@@ -163,12 +163,12 @@ OK
 
 ## Raspberry PiでMinicomを使用してSMSを送信する
 
-ドライバーをインストールし、モジュールを正しく起動していることを前提とします。そうでない場合は、[こちらのガイド](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#raspberry-pi)を参照してください。
+ドライバーをインストールし、モジュールを正しく起動していることを前提とします。そうでない場合は、[こちらのガイド](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#raspberry-pi)を参照してください。
 
 **ステップ 1: Minicomを開く**
 
 :::note
-ATコマンドで通信するための必要なドライバーがインストールされていない場合は、[こちらからインストール](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#software-preparation)してください。
+ATコマンドで通信するための必要なドライバーがインストールされていない場合は、[こちらからインストール](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#software-preparation)してください。
 :::
 
 ```bash
@@ -261,7 +261,7 @@ finally:
 
 ここでは、ATコマンドを使用してSMSメッセージを受信および読み取る手順を説明します。以下のコマンドを順番に実行してください。
 
-ドライバーをインストールし、モジュールを正しく起動していることを前提とします。そうでない場合は、[こちらのガイド](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#for-windows)を参照してください。
+ドライバーをインストールし、モジュールを正しく起動していることを前提とします。そうでない場合は、[こちらのガイド](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#for-windows)を参照してください。
 
 ### ステップ1: SMSモードをテキストに設定する
 
@@ -356,7 +356,7 @@ AT+CMGR=1
 
 ## Raspberry PiでMinicomを使用してSMSメッセージを受信する
 
-ドライバーをインストールし、モジュールを正しく起動していることを前提とします。そうでない場合は、[こちらのガイド](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#raspberry-pi)を参照してください。
+ドライバーをインストールし、モジュールを正しく起動していることを前提とします。そうでない場合は、[こちらのガイド](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#raspberry-pi)を参照してください。
 
 ## ステップ1: Minicomを開く
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Wio_Link_Bootcamp_Kit/
+image: https://wiki.seeedstudio.com/ja/Wio_Link_Bootcamp_Kit/
 slug: /ja/Wio_Link_Bootcamp_Kit
 last_update:
   date: 05/15/2025

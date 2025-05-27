@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio_RP2040_Module_Build-in_Wireless_2.4G/
+image: https://wiki.seeedstudio.com/ja/Wio_RP2040_Module_Build-in_Wireless_2.4G/
 slug: /ja/Wio-Terminal-IO-Overview
 last_update:
   date: 05/15/2025

@@ -58,7 +58,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 Raspberry Piを使用してECMモード（Ethernet Control Model）でネットワーキングを設定するには、**ATコマンド**を使用してQuectelモジュールを操作します。
 
 :::note
-ATコマンドで通信するための必要なドライバーがインストールされていない場合は、[こちら](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#raspberry-pi)からインストールしてください。
+ATコマンドで通信するための必要なドライバーがインストールされていない場合は、[こちら](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#raspberry-pi)からインストールしてください。
 :::
 
 ## ネットワーク構成

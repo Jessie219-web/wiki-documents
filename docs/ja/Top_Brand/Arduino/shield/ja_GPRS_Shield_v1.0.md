@@ -51,7 +51,7 @@ GPRS Shieldは、標準的なArduinoボードと同じフォームファクタ�
 
 * M2M（Machine to Machine）アプリケーション - SMSまたはGPRSを使用して、異なる工場にある2つの機械間で制御データを転送。
 * 家電の遠隔操作 - オフィスにいる間にSMSを送信して自宅の洗濯機をオンまたはオフにする。
-* 遠隔気象観測所またはワイヤレスセンサーネットワーク - [Seeeduino Stalker](https://wiki.seeedstudio.com/Seeeduino_Stalker_V3.1/)を使用して、センサーノードを作成し、気象観測所（温度、湿度など）からのセンサーデータをウェブサーバー（例：[pachube.com](http://www.pachube.com)）に転送。
+* 遠隔気象観測所またはワイヤレスセンサーネットワーク - [Seeeduino Stalker](https://wiki.seeedstudio.com/ja/Seeeduino_Stalker_V3.1/)を使用して、センサーノードを作成し、気象観測所（温度、湿度など）からのセンサーデータをウェブサーバー（例：[pachube.com](http://www.pachube.com)）に転送。
 * インタラクティブ音声応答システム - GPRS ShieldをMP3デコーダーおよびDTMFデコーダー（Arduinoとともに）と組み合わせて、[インタラクティブ音声応答システム（IVRS）](https://en.wikipedia.org/wiki/Interactive_voice_response)を作成。
 * 車両追跡システム - GPRS ShieldをArduinoおよびGPSモジュールと組み合わせて車に設置し、インターネット上で位置情報をライブ配信。自動車盗難警報として使用可能。
 
@@ -60,11 +60,11 @@ GPRS Shieldは、標準的なArduinoボードと同じフォームファクタ�
 * SIMカードがロック解除されていることを確認してください。
 * 本製品は絶縁ケースなしで提供されます。特に乾燥した（湿度が低い）天候では、ESD（静電気放電）対策を徹底してください。
 * GPRS ShieldのUARTの工場出荷時設定は19200 bps 8-N-1です。（ATコマンドで変更可能です）。
-* [Seeeduino Stalker](https://wiki.seeedstudio.com/Seeeduino_Stalker_V3.1/)とGPRS Shieldを使用する場合は、**OK_READ**ジャンパーを取り外す（つまり開く）ことを忘れないでください。これにより、バッテリーチャージャーICのOKピンがマイクロコントローラーのデジタルピン7から切断され、NewSoftSerialライブラリを使用してGPRS Shieldとの通信が妨げられなくなります。
+* [Seeeduino Stalker](https://wiki.seeedstudio.com/ja/Seeeduino_Stalker_V3.1/)とGPRS Shieldを使用する場合は、**OK_READ**ジャンパーを取り外す（つまり開く）ことを忘れないでください。これにより、バッテリーチャージャーICのOKピンがマイクロコントローラーのデジタルピン7から切断され、NewSoftSerialライブラリを使用してGPRS Shieldとの通信が妨げられなくなります。
 
 ## 仕様
 
-SIM900の仕様については、以下のPDFファイルを参照してください：[SIM900_SPEC.pdf](https://wiki.seeedstudio.com/images/0/0b/SIM900_SPEC.pdf)
+SIM900の仕様については、以下のPDFファイルを参照してください：[SIM900_SPEC.pdf](https://wiki.seeedstudio.com/ja/images/0/0b/SIM900_SPEC.pdf)
 
 <table cellspacing="0" width="80%">
 <tr>
@@ -245,7 +245,7 @@ GPRSシールドを受け取ったら、最初に何をしたいですか？テ�
 ほとんどのATコマンドは**キャリッジリターン**を伴って送信する必要があり、シリアルポートターミナルで「+CR」オプションを選択する必要があります。
 :::
 
-ATコマンドを試すには、GPRSシールドを電源オンし、通信する方法が必要です。以下に説明するArduino Duemilanoveボードを使用するのが最適です。同じ手順は[Seeeduino](https://wiki.seeedstudio.com/Seeeduino_v4.2/)や[Seeeduino Stalker](https://wiki.seeedstudio.com/Seeeduino_Stalker_V3.1/)にも適用されます。
+ATコマンドを試すには、GPRSシールドを電源オンし、通信する方法が必要です。以下に説明するArduino Duemilanoveボードを使用するのが最適です。同じ手順は[Seeeduino](https://wiki.seeedstudio.com/ja/Seeeduino_v4.2/)や[Seeeduino Stalker](https://wiki.seeedstudio.com/ja/Seeeduino_Stalker_V3.1/)にも適用されます。
 
 * 前述のハードウェアインストール手順に従ってハードウェアシステムをセットアップします。
 * GPRSシールド上のGPRS_TX & GPRS_RXジャンパーがSWSerial位置に取り付けられていることを確認します。これにより、GPRS_TXがD7（RX）に、GPRS_RXがD8（TX）に接続されます。
@@ -340,7 +340,7 @@ ATコマンドの使い方を理解したので、GPRSシールドを使用し�
 
 これには、シリアルポートを介してGPRSシールドにこれらのATコマンドのシーケンスを送信し、SMSの送信、通話の発信、またはGPRS接続を介したデータ送信を行うスケッチを作成することが含まれます。
 
-[ATコマンドリファレンスマニュアル](https://wiki.seeedstudio.com/images/a/a0/SIM900_ATC_V1_00.pdf)を参照して、コマンドのシーケンスを確認してください。Arduinoスケッチを開発してもGPRSシールドが期待通りに動作しない場合は、ATコマンドとそのシーケンスを確認する必要があります。そのためには、入門セクションで添付されているシリアルリレースケッチをATmega328Pに再ロードし、ATコマンドを手動で入力して出力を確認してください。GPRSシールドから返される応答は、ATコマンドシーケンスのデバッグに役立ちます。
+[ATコマンドリファレンスマニュアル](https://wiki.seeedstudio.com/ja/images/a/a0/SIM900_ATC_V1_00.pdf)を参照して、コマンドのシーケンスを確認してください。Arduinoスケッチを開発してもGPRSシールドが期待通りに動作しない場合は、ATコマンドとそのシーケンスを確認する必要があります。そのためには、入門セクションで添付されているシリアルリレースケッチをATmega328Pに再ロードし、ATコマンドを手動で入力して出力を確認してください。GPRSシールドから返される応答は、ATコマンドシーケンスのデバッグに役立ちます。
 
 :::note
 同じタスクを実行するためのCプログラムも開発され、添付されています：[Softuart relay atmega328p.zip](https://files.seeedstudio.com/wiki/GPRS_Shield_v1.0/res/Softuart_relay_atmega328p.zip "File:Softuart relay atmega328p.zip")。
@@ -632,12 +632,12 @@ void ShowSerialData()
 
 * [GPRS Shield v1.4 PCB（PDF形式）](https://files.seeedstudio.com/wiki/GPRS_Shield_v1.0/res/GPRSshield%20v1.4.pdf)
 * [GPRS Shield v1.4 回路図とPCB（Eagle形式）](https://files.seeedstudio.com/wiki/GPRS_Shield_v1.0/res/GPRS_shield_v1.4.zip)
-* [ATコマンド v1.00](https://wiki.seeedstudio.com/images/a/a0/SIM900_ATC_V1_00.pdf)
-* [ATコマンド v1.03](https://wiki.seeedstudio.com/images/a/a8/SIM900_AT_Command_Manual_V1.03.pdf)
+* [ATコマンド v1.00](https://wiki.seeedstudio.com/ja/images/a/a0/SIM900_ATC_V1_00.pdf)
+* [ATコマンド v1.03](https://wiki.seeedstudio.com/ja/images/a/a8/SIM900_AT_Command_Manual_V1.03.pdf)
 * [ATコマンド v1.11](https://files.seeedstudio.com/wiki/GPRS_Shield_v1.0/res/AT_Commands_v1.11.pdf)
 * [Si5902BDC](http://www.vishay.com/docs/70415/si5902bd.pdf)
-* [SIM900 ハードウェア設計](https://wiki.seeedstudio.com/images/e/e3/SIM900_HD_V1.05.pdf)
-* [SIM900 ファームウェアとツール（ファームウェア:1137B08SIM900M64_ST）](https://wiki.seeedstudio.com/images/8/87/SIM900_firmware_and_tool.zip)
+* [SIM900 ハードウェア設計](https://wiki.seeedstudio.com/ja/images/e/e3/SIM900_HD_V1.05.pdf)
+* [SIM900 ファームウェアとツール（ファームウェア:1137B08SIM900M64_ST）](https://wiki.seeedstudio.com/ja/images/8/87/SIM900_firmware_and_tool.zip)
 * [SIM900 データシート](https://www.seeedstudio.com/document/SIM900datasheeet.zip)
 
 ## 技術サポートと製品ディスカッション

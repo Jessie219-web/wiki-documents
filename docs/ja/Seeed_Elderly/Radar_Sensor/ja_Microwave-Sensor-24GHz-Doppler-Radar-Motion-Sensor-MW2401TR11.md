@@ -173,8 +173,8 @@ R2は予約されたI/Oインターフェースです。
 ## ソフトウェア
 
 - **ステップ1.** [Arduino IDE](https://www.arduino.cc/en/main/software) **をダウンロードします**。
-- **ステップ2. Seeeduino Cortex-M0+をセットアップします。以下の手順に従ってください：** [Seeeduino Cortex-M0+の説明](https://wiki.seeedstudio.com/Seeeduino-Cortex-M0/)。
-- **ステップ3. 以下のコードをArduino IDEにコピーしてアップロードします。** [コードアップロードガイド](https://wiki.seeedstudio.com/Upload_Code/)
+- **ステップ2. Seeeduino Cortex-M0+をセットアップします。以下の手順に従ってください：** [Seeeduino Cortex-M0+の説明](https://wiki.seeedstudio.com/ja/Seeeduino-Cortex-M0/)。
+- **ステップ3. 以下のコードをArduino IDEにコピーしてアップロードします。** [コードアップロードガイド](https://wiki.seeedstudio.com/ja/Upload_Code/)
 
 ```cpp
 int MW_out = 2;   

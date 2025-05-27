@@ -85,7 +85,7 @@ USB電源供給が不十分な場合に備えて、必ず3.7Vリポバッテリ�
     </tr>
     <tr>
       <td className="tg-6k2t"><font face size={5} font color="00b0f0">❶</font></td>
-      <td className="tg-vn4c"><a href="https://wiki.seeedstudio.com/Raspberry_Pi_3_Model_B/">Raspberry Pi 3</a></td>
+      <td className="tg-vn4c"><a href="https://wiki.seeedstudio.com/ja/Raspberry_Pi_3_Model_B/">Raspberry Pi 3</a></td>
       <td className="tg-vn4c">1 個</td>
     </tr>
     <tr>
@@ -100,7 +100,7 @@ USB電源供給が不十分な場合に備えて、必ず3.7Vリポバッテリ�
     </tr>
     <tr>
       <td className="tg-yw4l"><font face size={5} font color="00b0f0">❹</font></td>
-      <td className="tg-031e"><a href="https://wiki.seeedstudio.com/Seeeduino_LoRAWAN/">Seeeduino LoRaWAN GPS付き (RHF76-052AM)</a></td>
+      <td className="tg-031e"><a href="https://wiki.seeedstudio.com/ja/Seeeduino_LoRAWAN/">Seeeduino LoRaWAN GPS付き (RHF76-052AM)</a></td>
       <td className="tg-031e">1 個</td>
     </tr>
     <tr>
@@ -203,7 +203,7 @@ HDデジタルビデオ出力インターフェース。
 
 以下のガイドでは、以下のツールが必要になります。これらをコンピュータにインストールしてください。
 
-- **[Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)**: ポータブルシリアルツールで、Seeeduino LoRaWAN with GPS (RHF76-052AM) のシリアルポートを開き、ATコマンドを送信するために使用します。
+- **[Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)**: ポータブルシリアルツールで、Seeeduino LoRaWAN with GPS (RHF76-052AM) のシリアルポートを開き、ATコマンドを送信するために使用します。
 - **[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)**: シリアルおよびSSHターミナルを含むターミナルツールで、Raspberry Pi を制御するために使用します。
 - インターネットブラウザ: RHF2S001 統合 LoRaWAN サーバーにアクセスするために使用します（Chrome または Firefox を推奨）。
 
@@ -399,7 +399,7 @@ EU868 用周波数プラン
 
 - まず、Seeeduino LoRaWAN GPS を PC に接続します。
 
-- 次に、**[Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)** IDE を開き、新しいスケッチに以下のコードをコピーします。
+- 次に、**[Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)** IDE を開き、新しいスケッチに以下のコードをコピーします。
 
 ```
  void setup()
@@ -421,7 +421,7 @@ EU868 用周波数プラン
  }
 ```
 
-- 次に、Seeeduino LoRa GPS の正しいシリアルポートを選択し、ボードを **Tool->Board->Seeeduino_LoRAWAN** に設定します。その後、アップロードボタンをクリックします。ボードリストに Seeeduino_LoRAWAN が見つからない場合やコードの更新方法がわからない場合は、[こちら](https://wiki.seeedstudio.com/Seeeduino_LoRAWAN/#install-the-driver-for-windows) をクリックして詳細情報をご確認ください。
+- 次に、Seeeduino LoRa GPS の正しいシリアルポートを選択し、ボードを **Tool->Board->Seeeduino_LoRAWAN** に設定します。その後、アップロードボタンをクリックします。ボードリストに Seeeduino_LoRAWAN が見つからない場合やコードの更新方法がわからない場合は、[こちら](https://wiki.seeedstudio.com/ja/Seeeduino_LoRAWAN/#install-the-driver-for-windows) をクリックして詳細情報をご確認ください。
 
 ![](https://files.seeedstudio.com/wiki/LoRaWAN_Gateway-868MHz_Kit_with_Raspberry_Pi_3/img/port_lora.png)
 

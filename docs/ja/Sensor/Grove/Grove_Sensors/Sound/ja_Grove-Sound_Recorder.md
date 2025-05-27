@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Sound_Recorder/
+image: https://wiki.seeedstudio.com/ja/Grove-Sound_Recorder/
 slug: /ja/Grove-Sound_Recorder
 last_update:
   date: 05/15/2025
@@ -31,7 +31,7 @@ Grove-Sound Recorderは、[APR9600](https://files.seeedstudio.com/wiki/Grove-Sou
 - 低消費電力
 - 単一の抵抗を交換することでサンプルレートと録音時間を変更可能
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 応用例

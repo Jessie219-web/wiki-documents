@@ -42,9 +42,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 必要な Arduino ライブラリ
 
-- オンボード加速度センサーライブラリ `Seeed_Arduino_LIS3DHTR` をインストールしてください。詳細については [Wio Terminal IMU](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/) をご覧ください。
+- オンボード加速度センサーライブラリ `Seeed_Arduino_LIS3DHTR` をインストールしてください。詳細については [Wio Terminal IMU](https://wiki.seeedstudio.com/ja/Wio-Terminal-IMU-Overview/) をご覧ください。
 
-- **Arduino TensorFlow Lite** ライブラリをインストールしてください。詳細については [Wio Terminal TensorFlow Lite](https://wiki.seeedstudio.com/Wio-Terminal-TinyML-TFLM-1) をご覧ください。
+- **Arduino TensorFlow Lite** ライブラリをインストールしてください。詳細については [Wio Terminal TensorFlow Lite](https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-TFLM-1) をご覧ください。
 
 ## Wio Terminal から IMU データを収集してトレーニング
 

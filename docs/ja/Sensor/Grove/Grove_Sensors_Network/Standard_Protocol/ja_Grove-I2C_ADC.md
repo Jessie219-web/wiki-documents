@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-I2C_ADC/
+image: https://wiki.seeedstudio.com/ja/Grove-I2C_ADC/
 slug: /ja/Grove-I2C_ADC
 last_update:
   date: 05/15/2025
@@ -38,7 +38,7 @@ Grove - I2C ADC は、ADC121C021 をベースにした 12 ビット精度の ADC
 - アドレス変更可能
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 仕様

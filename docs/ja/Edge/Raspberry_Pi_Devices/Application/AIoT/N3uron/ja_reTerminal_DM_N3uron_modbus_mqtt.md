@@ -49,7 +49,7 @@ reTerminal DMと[N3uron](https://n3uron.com/) Duoの強力な組み合わせに�
 
 ### ソフトウェア
 
-[N3uronの使い方ガイド](https://wiki.seeedstudio.com/reTerminalDM_N3uron_Get_Start/)を学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作方法、Web UIやWeb Visionモジュールの概念、タグの概念の理解、基本的なダッシュボードの作成など、重要な知識を提供します。これらの基本をまだ学んでいない場合は、先に進む前にぜひ確認してください。ガイドは提供されたリンクからアクセスできます。
+[N3uronの使い方ガイド](https://wiki.seeedstudio.com/ja/reTerminalDM_N3uron_Get_Start/)を学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作方法、Web UIやWeb Visionモジュールの概念、タグの概念の理解、基本的なダッシュボードの作成など、重要な知識を提供します。これらの基本をまだ学んでいない場合は、先に進む前にぜひ確認してください。ガイドは提供されたリンクからアクセスできます。
 
 ### イーサネット設定の構成
 
@@ -214,7 +214,7 @@ N3uronのWebUIインターフェースでモジュールインスタンスを作
 ## ボーナス : AWS を使用して工場のステータスを公開する
 
 :::note
-[AWS クラウドを reTerminal DM デバイスに接続する方法](https://wiki.seeedstudio.com/reTerminal-DM_AWS_first/)について、ステップバイステップの手順を提供しています。この Wiki を初めて利用する場合は、このリンクを参照してください。
+[AWS クラウドを reTerminal DM デバイスに接続する方法](https://wiki.seeedstudio.com/ja/reTerminal-DM_AWS_first/)について、ステップバイステップの手順を提供しています。この Wiki を初めて利用する場合は、このリンクを参照してください。
 :::
 
 - ステップ 01: Explorer パネルで、先ほど作成した **MQTT** インスタンスを選択します。

@@ -75,9 +75,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 
 :::tip
-RS485拡張ボードを初めて使用する場合で配線方法がわからない場合は、このリンクをクリックしてください(https://wiki.seeedstudio.com/XIAO-RS485-Expansion-Board/)
+RS485拡張ボードを初めて使用する場合で配線方法がわからない場合は、このリンクをクリックしてください(https://wiki.seeedstudio.com/ja/XIAO-RS485-Expansion-Board/)
 
-モデルの書き込み方法やモデル出力コードの追加方法がわからない場合は、このリンクをクリックしてください(https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/)。各ステップを詳細に説明しています。
+モデルの書き込み方法やモデル出力コードの追加方法がわからない場合は、このリンクをクリックしてください(https://wiki.seeedstudio.com/ja/grove_vision_ai_v2_software_support/)。各ステップを詳細に説明しています。
 
 後の使用をスムーズにするために、これら2つのステップをスキップしないでください！
 :::

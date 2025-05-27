@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-Anti-aliased-Fonts./
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Anti-aliased-Fonts./
 slug: /ja/Wio-Terminal-LCD-Anti-aliased-Fonts
 last_update:
   date: 05/15/2025
@@ -25,11 +25,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### Wio Terminal用SDカードライブラリのインストール
 
-- [ファイルシステム概要](https://wiki.seeedstudio.com/Wio-Terminal-FS-Overview/)を訪問してください。
+- [ファイルシステム概要](https://wiki.seeedstudio.com/ja/Wio-Terminal-FS-Overview/)を訪問してください。
 
 ### Wio Terminal用TFT LCDライブラリのインストール
 
-- [TFT LCD概要](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/)を訪問してください。
+- [TFT LCD概要](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/)を訪問してください。
 
 ## vlwフォントファイルの生成
 

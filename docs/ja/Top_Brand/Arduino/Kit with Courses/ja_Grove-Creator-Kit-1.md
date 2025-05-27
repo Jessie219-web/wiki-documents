@@ -59,241 +59,241 @@ Here is an introductory video of the Grove Creator Kit! -->
 <th>Grove Creator Kit - γ</th>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Button/">Grove - Button</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Button/">Grove - Button</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Switch-P/">Grove - Switch(P)</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Switch-P/">Grove - Switch(P)</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Tilt_Switch/">Grove - Tilt Switch</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Tilt_Switch/">Grove - Tilt Switch</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Magnetic_Switch/">Grove - Magnetic Switch</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Magnetic_Switch/">Grove - Magnetic Switch</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Line_Finder/">Grove - Line Finder v1.1</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Line_Finder/">Grove - Line Finder v1.1</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Temperature_Sensor/">Grove - Temperature Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Temperature_Sensor/">Grove - Temperature Sensor</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Water_Sensor/">Grove - Water Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Water_Sensor/">Grove - Water Sensor</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor/">Grove - Rotary Angle Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Rotary_Angle_Sensor/">Grove - Rotary Angle Sensor</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Sound_Sensor/">Grove - Sound Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Sound_Sensor/">Grove - Sound Sensor</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Light_Sensor/">Grove - Light Sensor v1.2</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Light_Sensor/">Grove - Light Sensor v1.2</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Vibration_Sensor_SW-420/">Grove - Vibration Sensor (SW-420)</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Vibration_Sensor_SW-420/">Grove - Vibration Sensor (SW-420)</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/">Grove - Temperature & Humidity Sensor (DHT11)</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor/">Grove - Temperature & Humidity Sensor (DHT11)</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Buzzer/">Grove - Buzzer</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Buzzer/">Grove - Buzzer</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Relay/">Grove - Relay</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Relay/">Grove - Relay</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Thumb_Joystick/">Grove - Thumb Joystick</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Thumb_Joystick/">Grove - Thumb Joystick</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Red_LED/">Grove - Green LED</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Red_LED/">Grove - Green LED</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Red_LED/">Grove - Red LED</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Red_LED/">Grove - Red LED</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Red_LED/">Grove - Blue LED</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Red_LED/">Grove - Blue LED</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Red_LED/">Multi Color Flash LED (5mm)</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Red_LED/">Multi Color Flash LED (5mm)</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Chainable_RGB_LED/">Grove - Chainable RGB LED V2.0</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Chainable_RGB_LED/">Grove - Chainable RGB LED V2.0</a></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Loudness_Sensor/">Grove - Loudness Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Loudness_Sensor/">Grove - Loudness Sensor</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Ultrasonic_Ranger/">Grove - Ultrasonic Distance Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Ultrasonic_Ranger/">Grove - Ultrasonic Distance Sensor</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Moisture_Sensor/">Grove - Moisture Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Moisture_Sensor/">Grove - Moisture Sensor</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-PIR_Motion_Sensor/">Grove - Mini PIR Motion Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-PIR_Motion_Sensor/">Grove - Mini PIR Motion Sensor</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-LED_Button/">Grove - Red LED Button</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-LED_Button/">Grove - Red LED Button</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-LED_Button/">Grove - Red Yellow Button</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-LED_Button/">Grove - Red Yellow Button</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-LED_Button/">Grove - Red Blue Button</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-LED_Button/">Grove - Red Blue Button</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Infrared_Emitter/">Grove - Infrared Emitter</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Infrared_Emitter/">Grove - Infrared Emitter</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Infrared_Receiver/">Grove - Infrared Receiver</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Infrared_Receiver/">Grove - Infrared Receiver</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-16x2_LCD_Series/">Grove - 16 x 2 LCD (White on Blue)</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-16x2_LCD_Series/">Grove - 16 x 2 LCD (White on Blue)</a></td>
 <td></td>
 <td>&#10003;</td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Hall_Sensor/">Grove - Hall Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Hall_Sensor/">Grove - Hall Sensor</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Flame_Sensor/">Grove - Flame Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Flame_Sensor/">Grove - Flame Sensor</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Touch_Sensor/">Grove - Touch Sensor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Touch_Sensor/">Grove - Touch Sensor</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-3-Axis_Digital_Accelerometer-1.5g/">Grove - 3-Axis Digital Accelerometer(±1.5g)</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-3-Axis_Digital_Accelerometer-1.5g/">Grove - 3-Axis Digital Accelerometer(±1.5g)</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Vibration_Motor/">Grove - Vibration Motor</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Vibration_Motor/">Grove - Vibration Motor</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-4-Digit_Display/">Grove - 4-Digit Display</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-4-Digit_Display/">Grove - 4-Digit Display</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-Speaker/">Grove - Speaker</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-Speaker/">Grove - Speaker</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-RTC/">Grove - RTC</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-RTC/">Grove - RTC</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-LED_Bar/">Grove LED Bar v2.0</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-LED_Bar/">Grove LED Bar v2.0</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>
 </tr>
 <tr>
-<td><a href="https://wiki.seeedstudio.com/Grove-RGB_LED_Stick-10-WS2813_Mini/">Grove - RGB LED Stick (10 - WS2813 Mini)</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-RGB_LED_Stick-10-WS2813_Mini/">Grove - RGB LED Stick (10 - WS2813 Mini)</a></td>
 <td></td>
 <td></td>
 <td>&#10003;</td>

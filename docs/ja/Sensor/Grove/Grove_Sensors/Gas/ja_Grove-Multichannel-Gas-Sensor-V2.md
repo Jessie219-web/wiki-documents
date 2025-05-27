@@ -25,7 +25,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 [<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-v2-p-4569.html)
 
 :::tip
-[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサを選ぶ際に役立ちます。
+[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサを選ぶ際に役立ちます。
 :::
 
 Grove - マルチチャンネルガスセンサ V2 は4つの測定ユニットを備えており、それぞれがさまざまな種類のガスに敏感です。これにより、同時に4セットのデータを取得することが可能です。また、これらの4セットのデータを使用して異なる種類のガスを判別することもできます。このモジュールに使用されているガスセンサはMEMS技術に基づいており、小型で測定の安定性が高いという利点があり、定量的な測定よりも定性的な測定に適しています。
@@ -797,11 +797,11 @@ Grove - マルチチャンネルガスセンサ V2 は4つの測定ユニット�
 
 - **ステップ 1.** Grove - Multichannel Gas Sensor V2をGrove-Base ShieldのI2Cポートに接続します。Grove - Base ShieldをWio Terminalに差し込みます。そして、Wio TerminalをUSBケーブルでPCに接続します。
 
-- **ステップ 2.** Githubから[ Grove_Multichannel_Gas_Sensor_v2 ライブラリ](https://github.com/Seeed-Studio/Seeed_Multichannel_Gas_Sensor/archive/master.zip)をダウンロードします。そして、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
+- **ステップ 2.** Githubから[ Grove_Multichannel_Gas_Sensor_v2 ライブラリ](https://github.com/Seeed-Studio/Seeed_Multichannel_Gas_Sensor/archive/master.zip)をダウンロードします。そして、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
 
-- **ステップ 3.** コードをWio Terminalにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)を確認してください。
+- **ステップ 3.** コードをWio Terminalにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)を確認してください。
 
-- **ステップ 4.** [TFT LCDライブラリのインストール方法](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/)を参照してTFT LCDライブラリをインストールしてください。最後に、以下のソフトウェアコードをアップロードし、データが正常に表示されることを確認してください。
+- **ステップ 4.** [TFT LCDライブラリのインストール方法](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/)を参照してTFT LCDライブラリをインストールしてください。最後に、以下のソフトウェアコードをアップロードし、データが正常に表示されることを確認してください。
 
 #### ソフトウェアコード
 

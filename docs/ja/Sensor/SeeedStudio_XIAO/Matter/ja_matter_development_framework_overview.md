@@ -21,9 +21,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::tip
 この記事はSeeed Studio XIAO ESP32開発Matterシリーズの第4回チュートリアルです。以前のチュートリアルをまだ読んでいない場合は、まずそれらを読むことをお勧めします。これにより、デバイスが必要な設定を満たしているか確認できます。
 
-- **[Espressif ESP-IDFを使用したXIAOでの開発](https://wiki.seeedstudio.com/xiao_idf)**
-- **[XIAO ESP32シリーズでMatterを迅速に始める](https://wiki.seeedstudio.com/getting_started_with_matter)**
-- **[XIAO ESP32シリーズでのMatter開発](https://wiki.seeedstudio.com/xiao_esp32_matter_env/)**
+- **[Espressif ESP-IDFを使用したXIAOでの開発](https://wiki.seeedstudio.com/ja/xiao_idf)**
+- **[XIAO ESP32シリーズでMatterを迅速に始める](https://wiki.seeedstudio.com/ja/getting_started_with_matter)**
+- **[XIAO ESP32シリーズでのMatter開発](https://wiki.seeedstudio.com/ja/xiao_esp32_matter_env/)**
 :::
 
 Matter開発の世界への明るい旅に出発しましょう。この包括的なチュートリアルでは、典型的な光の例を通じて、Matter開発の基盤を形成する基本的な概念と知識を紹介します。クラスタや属性、コマンドなどの基本から始め、このチュートリアルはMatterフレームワークを自信を持って操作するためのツールを提供します。Matter開発スキルのスイッチをオンにして、接続されたデバイスの輝かしい世界に飛び込みましょう！

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Mini_Fan/
+image: https://wiki.seeedstudio.com/ja/Grove-Mini_Fan/
 slug: /ja/Grove-Mini_Fan
 last_update:
   date: 05/15/2025
@@ -100,7 +100,7 @@ Grove 回路には Grove - USB Power モジュールまたは Grove - DC Jack Po
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/) を開き、Arduino サポートを追加し、メイン手順を作業エリアにドラッグします。
 
 :::note
-    初めて Codecraft を使用する場合は、[Codecraft を使用した Arduino のガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/) も参照してください。
+    初めて Codecraft を使用する場合は、[Codecraft を使用した Arduino のガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/) も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできる cdc ファイルを開きます。

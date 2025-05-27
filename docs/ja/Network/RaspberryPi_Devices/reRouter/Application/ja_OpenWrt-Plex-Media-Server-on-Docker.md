@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このガイドでは、Seeed OpenWrtファームウェア上でDockerコンテナとしてPlex Media Serverをセットアップする方法を説明します。Plex Media Serverを使用することで、世界中どこからでもローカルメディアファイルをストリーミングできます！ここでは、OpenWrtを[ODYSSEY – X86 Board](https://www.seeedstudio.com/ODYSSEY-X86J4125800-p-4915.html)または[Raspberry Pi Compute Module 4用デュアルギガビットイーサネットキャリアボード](https://www.seeedstudio.com/Dual-GbE-Carrier-Board-with-4GB-RAM-32GB-eMMC-RPi-CM4-Case-p-5029.html)で実行できます。
 
-**注意:** このガイドを進める前に、[OpenWrtの始め方ガイド](https://wiki.seeedstudio.com/OpenWrt-Getting-Started)を必ず確認してください。
+**注意:** このガイドを進める前に、[OpenWrtの始め方ガイド](https://wiki.seeedstudio.com/ja/OpenWrt-Getting-Started)を必ず確認してください。
 
 ## Dockerとは？
 

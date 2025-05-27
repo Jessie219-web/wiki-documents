@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Xadow_IMU_10DOF/img/Xadow-imu-10dof-shao.JPG)
 
-Xadow - IMU 10DOF は、[Xadow - IMU 9DOF](https://wiki.seeedstudio.com/Xadow_IMU_9DOF) と [Xadow - Barometer BMP180](https://wiki.seeedstudio.com/Xadow_Barometer_BMP180) を組み合わせたモジュールです。このモジュールは MPU-9250 と BMP180 をベースにしており、MPU-9250 は 3 軸ジャイロスコープ、3 軸加速度計、3 軸磁力計、デジタルモーションプロセッサ (DMP) を組み合わせた 9 軸モーショントラッキングデバイスです。一方、BMP180 は高精度で超低消費電力のデジタル圧力センサーで、消費者向けアプリケーションに適しています。このモジュールは、スマートフォン、タブレット、ウェアラブルデバイスのアプリケーションに非常に適しています。
+Xadow - IMU 10DOF は、[Xadow - IMU 9DOF](https://wiki.seeedstudio.com/ja/Xadow_IMU_9DOF) と [Xadow - Barometer BMP180](https://wiki.seeedstudio.com/ja/Xadow_Barometer_BMP180) を組み合わせたモジュールです。このモジュールは MPU-9250 と BMP180 をベースにしており、MPU-9250 は 3 軸ジャイロスコープ、3 軸加速度計、3 軸磁力計、デジタルモーションプロセッサ (DMP) を組み合わせた 9 軸モーショントラッキングデバイスです。一方、BMP180 は高精度で超低消費電力のデジタル圧力センサーで、消費者向けアプリケーションに適しています。このモジュールは、スマートフォン、タブレット、ウェアラブルデバイスのアプリケーションに非常に適しています。
 
 [![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png)](https://www.seeedstudio.com/Xadow-IMU-10DOF-p-2446.html)
 

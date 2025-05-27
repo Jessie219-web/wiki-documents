@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/WiFi_Serial_Transceiver_Module/
+image: https://wiki.seeedstudio.com/ja/WiFi_Serial_Transceiver_Module/
 slug: /ja/WiFi_Serial_Transceiver_Module
 last_update:
   date: 05/15/2025

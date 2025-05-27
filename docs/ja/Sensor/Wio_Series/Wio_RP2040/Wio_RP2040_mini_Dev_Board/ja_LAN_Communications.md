@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/LAN_Communications/
+image: https://wiki.seeedstudio.com/ja/LAN_Communications/
 slug: /ja/LAN_Communications
 last_update:
   date: 05/15/2025

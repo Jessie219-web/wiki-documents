@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このWikiでは、**HTTPClient、DNSServer、WebServer**ライブラリなどのWi-Fiの高度なライブラリ使用法を紹介します。これらのライブラリを実装することで、簡単なAPIを使用してIoTプロジェクトを開発することができます。
 
-[**ネットワーク概要**](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/)に従って、**最新のファームウェアと依存ライブラリ**を更新していることを確認してください。
+[**ネットワーク概要**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/)に従って、**最新のファームウェアと依存ライブラリ**を更新していることを確認してください。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/banner.png" /></div>
 
@@ -93,7 +93,7 @@ void loop() {
 これはHTTPClientライブラリを使用した**HTTPs接続**の例です。訪問したいウェブサイトにHTTPs GETリクエストを送信する際に参考にしてください！
 
 :::note
-ウェブサイトのルートCAを取得する方法については[**こちら**](https://wiki.seeedstudio.com/Wio-Terminal-Wi-Fi/#obtaining-websites-root-ca)をご覧ください。
+ウェブサイトのルートCAを取得する方法については[**こちら**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Wi-Fi/#obtaining-websites-root-ca)をご覧ください。
 :::
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/HTTPs.png" /></div>
 

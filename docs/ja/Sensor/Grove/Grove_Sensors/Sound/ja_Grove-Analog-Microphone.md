@@ -5,7 +5,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Grove-Analog-Microphone/
+image: https://wiki.seeedstudio.com/ja/Grove-Analog-Microphone/
 slug: /ja/Grove-Analog-Microphone
 last_update:
   date: 05/15/2025
@@ -51,7 +51,7 @@ Grove - アナログマイクは、優れた音声性能が求められる音セ
 |動作温度範囲|-40 °C ～ 100 °C|
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -67,7 +67,7 @@ Grove - アナログマイクは、優れた音声性能が求められる音セ
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -97,7 +97,7 @@ Grove - アナログマイクは、優れた音声性能が求められる音セ
 
 **ソフトウェア**
 
-- **ステップ 1.** 以下のコードをArduino IDEにコピーしてArduinoにアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 1.** 以下のコードをArduino IDEにコピーしてArduinoにアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```c
 /*

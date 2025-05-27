@@ -35,7 +35,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### X86にUbuntuをインストールする
 
-[このWiki](https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Installing-OS)に従ってODYSSEY-X86にUbuntuをインストールしてください。最新のUbuntu OSは[こちら](https://ubuntu.com/download/desktop)からダウンロードできます。
+[このWiki](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Installing-OS)に従ってODYSSEY-X86にUbuntuをインストールしてください。最新のUbuntu OSは[こちら](https://ubuntu.com/download/desktop)からダウンロードできます。
 
 ### UbuntuにDockerをインストールする
 

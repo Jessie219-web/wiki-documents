@@ -186,7 +186,7 @@ USB ケーブルを優しく差し込んでください。そうしないとイ�
 ### ソフトウェア
 
 :::note
-Arduino を初めて使用する場合は、[Arduino の使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino)を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Arduino の使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino)を参照することを強くお勧めします。
 :::
 
 **ステップ 1. ドライバをインストールする**
@@ -242,7 +242,7 @@ LED ブリンクのサンプルスケッチを見つけます：**ファイル >
 
 ![enter image description here](https://files.seeedstudio.com/wiki/SeeeduinoV4/images/select_board.png)
 
-Seeeduino v4.2 が見つからない場合は、[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を確認してください。
+Seeeduino v4.2 が見つからない場合は、[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を確認してください。
 
 **ステップ 5. シリアルポートを選択する**
 

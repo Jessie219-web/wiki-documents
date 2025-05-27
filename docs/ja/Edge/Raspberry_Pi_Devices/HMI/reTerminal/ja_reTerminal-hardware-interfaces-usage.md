@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このWikiでは、reTerminalのさまざまなハードウェアとインターフェースについて紹介し、それらを使用してプロジェクトアイデアを拡張する方法を説明します。
 
-**注意:** 一部のハードウェアとインターフェースについては、Raspberry Pi OSイメージ、[Buildrootイメージ](https://wiki.seeedstudio.com/reTerminal-Buildroot-SDK)、および[Yoctoイメージ](https://wiki.seeedstudio.com/reTerminal-Yocto)を使用する場合で使用方法が異なる場合があります。デフォルトの手順はRaspberry Pi OSイメージ用です。ただし、BuildrootイメージおよびYoctoイメージの手順が異なる場合は、明確に記載されています。
+**注意:** 一部のハードウェアとインターフェースについては、Raspberry Pi OSイメージ、[Buildrootイメージ](https://wiki.seeedstudio.com/ja/reTerminal-Buildroot-SDK)、および[Yoctoイメージ](https://wiki.seeedstudio.com/ja/reTerminal-Yocto)を使用する場合で使用方法が異なる場合があります。デフォルトの手順はRaspberry Pi OSイメージ用です。ただし、BuildrootイメージおよびYoctoイメージの手順が異なる場合は、明確に記載されています。
 
 ## ハードウェア概要
 
@@ -717,7 +717,7 @@ ls -l
 
 ## Micro - SDカードスロット
 
-reTerminal には **micro-sdカードスロット** が装備されています。これは、**eMMCなしのCM4モジュール**を使用する際に、micro-SDカードに**オペレーティングシステムをインストール**する場合に便利です。最低でも8GB以上のカードを使用することを推奨します。[こちらのリンク](https://wiki.seeedstudio.com/reTerminal/#flash-to-micro-sd-card-cm4-non-emmc-version) を参照して詳細を確認してください！
+reTerminal には **micro-sdカードスロット** が装備されています。これは、**eMMCなしのCM4モジュール**を使用する際に、micro-SDカードに**オペレーティングシステムをインストール**する場合に便利です。最低でも8GB以上のカードを使用することを推奨します。[こちらのリンク](https://wiki.seeedstudio.com/ja/reTerminal/#flash-to-micro-sd-card-cm4-non-emmc-version) を参照して詳細を確認してください！
 
 ### 回路図
 
@@ -777,7 +777,7 @@ sudo apt install arandr
 
 ## USB Type-Cポート
 
-reTerminalの**USB Type-Cポート**は、**5V/4A（推奨）でreTerminalに電力を供給**するために使用できます。ただし、**USBデバイス**としても機能し、reTerminalを**ホストPC**に接続すると、reTerminalは**USBマスストレージデバイス**として動作します。この機能を使用して、PCを介してreTerminalの**オンボードeMMC**にアクセスし、eMMCに**オペレーティングシステム**をフラッシュすることができます。詳細は[こちら](https://wiki.seeedstudio.com/reTerminal/#flash-to-emmc-cm4-emmc-version)をクリックしてください。
+reTerminalの**USB Type-Cポート**は、**5V/4A（推奨）でreTerminalに電力を供給**するために使用できます。ただし、**USBデバイス**としても機能し、reTerminalを**ホストPC**に接続すると、reTerminalは**USBマスストレージデバイス**として動作します。この機能を使用して、PCを介してreTerminalの**オンボードeMMC**にアクセスし、eMMCに**オペレーティングシステム**をフラッシュすることができます。詳細は[こちら](https://wiki.seeedstudio.com/ja/reTerminal/#flash-to-emmc-cm4-emmc-version)をクリックしてください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/ReTerminal/type-c.png" alt="pir" width="130" height="auto"/></p>
 

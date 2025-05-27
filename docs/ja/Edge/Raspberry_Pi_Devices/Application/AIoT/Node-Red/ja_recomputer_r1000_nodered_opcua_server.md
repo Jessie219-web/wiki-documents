@@ -52,9 +52,9 @@ OPC UAのアーキテクチャは、いくつかの重要な原則に基づい�
 
 ### ソフトウェアの準備
 このチュートリアルでは、Node-REDを使用してreComputer R1000をOPC UAサーバーとして設定する実践的な例を作成します。Modbus TCPおよびRTUデバイスからデータを収集することに焦点を当てますが、MQTT、BACnetなどの他のデバイスからデータを収集することも可能です。デモンストレーションの目的で、特にModbus TCPおよびRTUを使用します。これらのプロトコルからデータを収集する方法に不慣れな場合は、以下の以前のチュートリアルを参照してください：
-- [reComputer R1000とNode-REDを使用したBACnet IP](https://wiki.seeedstudio.com/reComputer_r1000_node_red_bacnet_ip/)
-- [reComputer R1000とNode-REDを使用したModbus TCP](https://wiki.seeedstudio.com/recomputer_r1000_node_red_modbus_tcp/)
-- [reComputer R1000とNode-REDを使用したMQTT](https://wiki.seeedstudio.com/recomputer_r1000_nodered_mqtt/)
+- [reComputer R1000とNode-REDを使用したBACnet IP](https://wiki.seeedstudio.com/ja/reComputer_r1000_node_red_bacnet_ip/)
+- [reComputer R1000とNode-REDを使用したModbus TCP](https://wiki.seeedstudio.com/ja/recomputer_r1000_node_red_modbus_tcp/)
+- [reComputer R1000とNode-REDを使用したMQTT](https://wiki.seeedstudio.com/ja/recomputer_r1000_nodered_mqtt/)
 
 ## OPC-UAサーバーノードのインストール
 

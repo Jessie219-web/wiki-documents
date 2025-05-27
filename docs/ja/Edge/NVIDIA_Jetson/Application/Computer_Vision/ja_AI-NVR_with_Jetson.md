@@ -49,7 +49,7 @@ reServer は、Nvidia Jetson プラットフォームに基づくエッジコン
 :::
 
 :::note
-[こちらの wiki](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#flash-jetpack) の手順に従って、reServer に最新の JetPack 6.0 システムをフラッシュすることができます。
+[こちらの wiki](https://wiki.seeedstudio.com/ja/reServer_Industrial_Getting_Started/#flash-jetpack) の手順に従って、reServer に最新の JetPack 6.0 システムをフラッシュすることができます。
 :::
 
 <div align="center">

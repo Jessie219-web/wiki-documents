@@ -78,7 +78,7 @@ IP66 ハウジング、Bluetooth 設定、グローバル LoRaWAN® ネットワ
 
 この章の内容では、前述の Node-RED を引き続き使用し、Node-RED を利用して Microsoft Azure IoT Central で K1100 キットの管理を容易にします。
 
-Node-RED をインストールしていない、または Node-RED が何であるか分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/) を参照してください。
+Node-RED をインストールしていない、または Node-RED が何であるか分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/) を参照してください。
 
 ## SenseCraft のインストール
 
@@ -87,7 +87,7 @@ Node-RED をインストールしていない、または Node-RED が何であ�
 SenseCraft を使用することで、K1100 キットのセンサー値をプログラミングなしで SenseCAP プラットフォームに直接転送できます。これはもちろん、**LoRaWAN®** を介して実現されます。
 
 :::note
-Azure IoT Central に **WiFi (MQTT)** を介してアクセスしたい場合は、この [Wiki](https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/) を参照してください。
+Azure IoT Central に **WiFi (MQTT)** を介してアクセスしたい場合は、この [Wiki](https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/) を参照してください。
 :::
 
 **ステップ 1.** ファームウェアをコンピュータにダウンロードする
@@ -120,7 +120,7 @@ PC のファイルエクスプローラーを開くと、新しい外部ドラ�
 
 **ステップ 2.** MQTTノードを作成する
 
-**Network -> mqtt in** ノードを使用し、前回の[チュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/#mqtt-node)で説明したように、SenseCAP APIの形式でmqttを設定します。
+**Network -> mqtt in** ノードを使用し、前回の[チュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/#mqtt-node)で説明したように、SenseCAP APIの形式でmqttを設定します。
 
 - サーバー: openstream.api.sensecap.seeed.cc
 - ポート: 1883

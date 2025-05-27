@@ -105,15 +105,15 @@ LinkIt ONE には、機能や動作モードを設定するためのスライド
 ### 手順概要
 |番号|	ステップ	|詳細情報|
 |:------|:-----------------|:-----------------|
-|1|	Arduino IDE 1.5.7 Beta（WindowsまたはMAC OS X版）をインストールします。|	[こちら](https://wiki.seeedstudio.com/LinkIt_ONE/#installing-arduino-ide)
+|1|	Arduino IDE 1.5.7 Beta（WindowsまたはMAC OS X版）をインストールします。|	[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE/#installing-arduino-ide)
 |2|		[MediaTek Labsに登録](https://labs.mediatek.com/dpRegister/create)。	| |
 |3|	[Linkit Developer's Guide](https://labs.mediatek.com/fileMedia/download/5fed7907-b2ba-4000-bcb2-016a332a49fd) をダウンロードして読む。	||
-|4|	Arduino IDE用 [LinkIt SDK](https://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/sdk_intro/index.gsp) をインストールします（WindowsまたはMAC OS X）。|	[こちら](https://wiki.seeedstudio.com/LinkIt_ONE/#installing-mediatek-linkit-one-sdk)|
-|5|	LinkIt ONE ドライバーをインストールします。|	[こちら](https://wiki.seeedstudio.com/LinkIt_ONE/#installing-drivers)|
-|6|	オンボードファームウェアバージョンを更新します。|	[こちら](https://wiki.seeedstudio.com/LinkIt_ONE/#updating-firmware)|
-|7|	Arduino IDEを開き、LinkIt ONEボードを選択してコーディングを開始します。|	[こちら](https://wiki.seeedstudio.com/LinkIt_ONE/#uploading-code-blinky)||
-|8|	GSM、GPS、WiFi/BTアンテナをLinkIt ONEボードに接続します。|	[こちら](https://wiki.seeedstudio.com/LinkIt_ONE/#connecting-antennae)|
-|9	|SIMカードとMicro SDカードを挿入します。|[こちら](https://wiki.seeedstudio.com/LinkIt_ONE/#inserting-sim-card-and-sd-card)|
+|4|	Arduino IDE用 [LinkIt SDK](https://labs.mediatek.com/site/znch/developer_tools/mediatek_linkit/sdk_intro/index.gsp) をインストールします（WindowsまたはMAC OS X）。|	[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE/#installing-mediatek-linkit-one-sdk)|
+|5|	LinkIt ONE ドライバーをインストールします。|	[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE/#installing-drivers)|
+|6|	オンボードファームウェアバージョンを更新します。|	[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE/#updating-firmware)|
+|7|	Arduino IDEを開き、LinkIt ONEボードを選択してコーディングを開始します。|	[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE/#uploading-code-blinky)||
+|8|	GSM、GPS、WiFi/BTアンテナをLinkIt ONEボードに接続します。|	[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE/#connecting-antennae)|
+|9	|SIMカードとMicro SDカードを挿入します。|[こちら](https://wiki.seeedstudio.com/ja/LinkIt_ONE/#inserting-sim-card-and-sd-card)|
 |10	|例を探索して、楽しいものづくりを始めましょう！|
 
 ### Arduino IDEのインストール
@@ -127,7 +127,7 @@ LinkIt ONE には、機能や動作モードを設定するためのスライド
 
 ### ドライバーのインストール
 
-- Windows 8/8.1 OSを使用している場合は、**Driver Signature Enforcement**を無効にしてください。[指示](https://wiki.seeedstudio.com/Driver_for_Seeeduino/#installing-drivers-for-the-seeeduino-with-window8)を参照してください。
+- Windows 8/8.1 OSを使用している場合は、**Driver Signature Enforcement**を無効にしてください。[指示](https://wiki.seeedstudio.com/ja/Driver_for_Seeeduino/#installing-drivers-for-the-seeeduino-with-window8)を参照してください。
 
 - MS/UARTスライドスイッチをUART位置に設定し、LinkIt ONEをPCに接続します。
 - デバイスマネージャーを開くと、以下のCOMポートが表示されます。
@@ -171,7 +171,7 @@ LinkIt ONEボードのファームウェアは定期的に更新する必要が�
 - **Tools** -> **Port** で **MTK USB Debug port** に対応する COM ポート番号を選択します。
 - **Tools > Board > LinkIt One** をクリックしてボードを選択します。
 
-LinkIt One が見つからない場合は、[Arduino IDE に Seeed ボードを追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を確認してください。
+LinkIt One が見つからない場合は、[Arduino IDE に Seeed ボードを追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を確認してください。
 
 - コードをコンパイルしてアップロードします。
 - **L** とマークされた LED が点滅するはずです。

@@ -139,7 +139,7 @@ https://www.thethingsnetwork.org/get-started にアクセスして登録しま�
 
 * XIAO ESP32S3 用の Arduino 環境をインストールする
 
-https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#software-preparation を参照してください。
+https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/#software-preparation を参照してください。
 
 * `DHT20` センサーライブラリをインストールする
 パッケージ：
@@ -249,7 +249,7 @@ const uint8_t subBand = 0; // US915 および AU915 用
     </a>
 </div>
 
-ダウンロードしたファームウェアを XIAO ESP32S3 に書き込んでください。XIAO ESP32S3 を初めて使用する場合は、[書き込みチュートリアル](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#software-preparation)を参照してください。
+ダウンロードしたファームウェアを XIAO ESP32S3 に書き込んでください。XIAO ESP32S3 を初めて使用する場合は、[書き込みチュートリアル](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/#software-preparation)を参照してください。
 
 ## ペイロードフォーマッタの設定
 

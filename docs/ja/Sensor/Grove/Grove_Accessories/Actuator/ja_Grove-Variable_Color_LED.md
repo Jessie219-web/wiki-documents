@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Variable_Color_LED/
+image: https://wiki.seeedstudio.com/ja/Grove-Variable_Color_LED/
 slug: /ja/Grove-Variable_Color_LED
 last_update:
   date: 05/15/2025
@@ -28,7 +28,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - 色の調整が可能
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 応用例

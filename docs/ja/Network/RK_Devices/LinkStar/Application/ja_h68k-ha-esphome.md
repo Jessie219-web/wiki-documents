@@ -62,8 +62,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 LinkStar にさまざまなシステムをインストールする方法については、LinkStar Wiki に詳しく記載されています。このチュートリアルでは、OpenWRT システムを例に取り上げ、LinkStar をソフトルートとして機能させながら Home Assistant コンテナをインストールする方法を説明します。
 
-- [TF カードに OpenWRT をフラッシュする](https://wiki.seeedstudio.com/linkstar-install-system/#flash-openwrt-to-the-tf-card)
-- [eMMC に OpenWRT をフラッシュする](https://wiki.seeedstudio.com/linkstar-install-system/#flash-openwrt-to-emmc)
+- [TF カードに OpenWRT をフラッシュする](https://wiki.seeedstudio.com/ja/linkstar-install-system/#flash-openwrt-to-the-tf-card)
+- [eMMC に OpenWRT をフラッシュする](https://wiki.seeedstudio.com/ja/linkstar-install-system/#flash-openwrt-to-emmc)
 
 上記から、LinkStar に OpenWRT をインストールするシステムの場所を選択してください。
 
@@ -765,8 +765,8 @@ binary_sensor:
 
 もちろん、XIAO ESP32C3 は Home Assistant で MR24HPCB1 をサポートするだけではありません。このドキュメントで他の用途向けのチュートリアルを見つけることができます。
 
-- [Grove モジュールを ESPHome を使用して Home Assistant に接続する (Odyssey)](https://wiki.seeedstudio.com/Connect-Grove-to-Home-Assistant-ESPHome/)
-- [XIAO ESP32C3 が ESPHome サービスを介して Home Assistant にアクセスする](https://wiki.seeedstudio.com/xiao-esp32c3-esphome/)
+- [Grove モジュールを ESPHome を使用して Home Assistant に接続する (Odyssey)](https://wiki.seeedstudio.com/ja/Connect-Grove-to-Home-Assistant-ESPHome/)
+- [XIAO ESP32C3 が ESPHome サービスを介して Home Assistant にアクセスする](https://wiki.seeedstudio.com/ja/xiao-esp32c3-esphome/)
 
 創造力を発揮してください！
 

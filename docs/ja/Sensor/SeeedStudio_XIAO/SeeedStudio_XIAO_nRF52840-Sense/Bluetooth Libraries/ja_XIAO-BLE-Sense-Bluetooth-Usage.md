@@ -34,7 +34,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## Arduinoライブラリの概要
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 Seeed Studio XIAO nRF52840のBluetooth機能を使用するには、公式のArduino BLEライブラリを使用する必要があります。
 
@@ -52,7 +52,7 @@ Seeed Studio XIAO nRF52840のBluetooth機能を使用するには、公式のArd
 
 ArduinoBLEコードライブラリの機能と使用方法については、[Arduino公式サイト](https://www.arduino.cc/reference/en/libraries/arduinoble/)を参照してください。
 
-Seeed 24GHz Sleep Breathing Radar BLEコードライブラリの機能と使用方法については、[Wiki](https://wiki.seeedstudio.com/Radar_MR24BSD1/#function)を参照してください。
+Seeed 24GHz Sleep Breathing Radar BLEコードライブラリの機能と使用方法については、[Wiki](https://wiki.seeedstudio.com/ja/Radar_MR24BSD1/#function)を参照してください。
 
 ### インストール
 
@@ -82,7 +82,7 @@ ZIPライブラリをダウンロードした後、Arduino IDEを開き、**ス�
 
 **ステップ 2.** 開発ボードのモデルを選択し、Arduino IDE に追加します。ここでは「Seeed nrf52 mbed-enabled Boards Library」を使用しています。
 
-> ボードライブラリのインストールについては、[このチュートリアル](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)を参照してインストールを完了してください。
+> ボードライブラリのインストールについては、[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_BLE/#software-setup)を参照してインストールを完了してください。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO_nrf528404.png" /></div>
 
@@ -224,7 +224,7 @@ void loop() {
 
 この例では、センサーの値を取得し、センサーで検出されたデータに関する情報を Bluetooth を介してモバイルデバイスに送信する方法を説明します。使用するのは Seeed Studio XIAO nRF52840 です。
 
-以下の画像に従って、Seeed Studio XIAO nRF52840 ボードと 24GHz 呼吸スリープ検出モジュールを接続してください。詳細については、[こちら](https://wiki.seeedstudio.com/Radar_MR24BSD1)をクリックしてください。
+以下の画像に従って、Seeed Studio XIAO nRF52840 ボードと 24GHz 呼吸スリープ検出モジュールを接続してください。詳細については、[こちら](https://wiki.seeedstudio.com/ja/Radar_MR24BSD1)をクリックしてください。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/60GHzradar/20.png" /></div>
 

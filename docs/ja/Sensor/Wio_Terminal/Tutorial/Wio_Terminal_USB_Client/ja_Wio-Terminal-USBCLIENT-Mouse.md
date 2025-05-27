@@ -72,7 +72,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
  *    この問題はArduinoCoreを更新することで解決できます。
  *    詳細はこちらをご覧ください: https://forum.seeedstudio.com/t/seeeduino-xiao-cant-simulate-keys-pressed/252819/6?u=weihong.cai
  * 
- * Wio Terminal の詳細については、以下をご覧ください: https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/
+ * Wio Terminal の詳細については、以下をご覧ください: https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/
  * 質問がある場合は、フォーラムにメッセージを残してください: https://forum.seeedstudio.com
  */
 

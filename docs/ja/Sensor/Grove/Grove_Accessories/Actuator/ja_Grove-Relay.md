@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Relay/
+image: https://wiki.seeedstudio.com/ja/Grove-Relay/
 slug: /ja/Grove-Relay
 last_update:
   date: 05/15/2025
@@ -37,7 +37,7 @@ Grove-Relay モジュールは、デジタルの常時開スイッチです。�
 | 最大スイッチング電流 | 5A | 5A |
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -55,7 +55,7 @@ Grove-Relay モジュールは、デジタルの常時開スイッチです。�
 ### Arduinoで遊ぶ
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 #### 必要な材料
 
@@ -132,7 +132,7 @@ void loop()
 }
 ```
 
-- **ステップ2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 アップロードが完了したら、Button#1を押すとリレーがオンになり、Button#2を押すとリレーがオフになります。
 
@@ -151,7 +151,7 @@ void loop()
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[ArduinoでのCodecraftの使用ガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    Codecraftを初めて使用する場合は、[ArduinoでのCodecraftの使用ガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
 
@@ -187,7 +187,7 @@ void loop()
 :::note
      **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3のみ**でこのコマンドラインを使用する必要があります。
 :::
-- **ステップ1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

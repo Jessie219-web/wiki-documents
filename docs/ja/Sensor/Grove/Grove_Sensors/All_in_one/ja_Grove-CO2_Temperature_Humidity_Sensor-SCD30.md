@@ -168,12 +168,12 @@ SenseCAP S210x シリーズの産業用センサーは、環境センシング�
 #### ソフトウェア
 
 :::caution
-        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** [Seeed SCD30ライブラリ](https://github.com/Seeed-Studio/Seeed_SCD30)をGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。以下の3つの方法のいずれかでサンプルを開くことができます：
     a. Arduino IDEで直接開く：**File --> Examples --> Grove_scd30_co2_sensor --> SCD30_Example**のパスをたどります。
@@ -248,7 +248,7 @@ void loop()
         ライブラリファイルが更新される可能性があります。このコードは更新されたライブラリファイルには適用されない場合がありますので、最初の2つの方法を使用することをお勧めします。
 :::
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::tipsuccess
   すべてが正常に動作すれば、Grove - CO2 & 温度・湿度センサー（SCD30）の生データをシリアルモニタから読み取ることができます。
@@ -292,9 +292,9 @@ SCD30ライブラリフォルダには2つのサンプルコードが含まれ�
 
 #### ソフトウェア
 
-- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ArduPy/) に従って、Wio TerminalでArduPy開発環境を構成します。
+- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ja/ArduPy/) に従って、Wio TerminalでArduPy開発環境を構成します。
 
-- **ステップ 2.** ArduPyファームウェアがWio Terminalにフラッシュされていることを確認してください。詳細については[こちら](https://wiki.seeedstudio.com/ArduPy/#ardupy-aip-cli-getting-started)を参照してください。
+- **ステップ 2.** ArduPyファームウェアがWio Terminalにフラッシュされていることを確認してください。詳細については[こちら](https://wiki.seeedstudio.com/ja/ArduPy/#ardupy-aip-cli-getting-started)を参照してください。
 
 ```sh
 aip install Seeed-Studio/seeed-ardupy-scd30

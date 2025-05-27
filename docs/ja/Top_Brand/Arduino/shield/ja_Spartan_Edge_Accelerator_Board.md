@@ -522,7 +522,7 @@ Spartan Edge Accelerator Board用ライブラリ
 
 - `examples`フォルダに移動し、任意の例題を選択して、.inoファイルをダブルクリックしてください。
 
-- デモをアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を参照してください。
+- デモをアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を参照してください。
 
 ### スタンドアロンモード
 

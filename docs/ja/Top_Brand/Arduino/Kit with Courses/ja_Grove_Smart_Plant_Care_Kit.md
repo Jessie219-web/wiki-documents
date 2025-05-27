@@ -38,7 +38,7 @@ Grove Smart Plant Care Kitは、植物のためのスマートシステムを開
 
 *   [Grove - Water Sensor](/Grove-Water_Sensor)
 
-*   [Grove - Moisture Sensor](https://wiki.seeedstudio.com/Grove-Moisture_Sensor/#specification)
+*   [Grove - Moisture Sensor](https://wiki.seeedstudio.com/ja/Grove-Moisture_Sensor/#specification)
 
 *   [Grove – Encoder](/Grove-Encoder#Specification)
 

@@ -99,7 +99,7 @@ Grove - 1-Wire Thermocouple Amplifier (MAX31850K) は、14ビットの解像度�
 これは、異なる電圧セクションを接続するための典型的な双方向レベルシフター回路です。左側の**DQ**ピンはMAX31850Kが3.3Vを使用しますが、Arduinoが5Vを使用する場合、この回路が必要になります。上記の回路図では、**Q6**はNチャネルMOSFET [2N7002](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/2N7002A_datasheet.pdf)で、双方向スイッチとして機能します。この部分をよりよく理解するために、[AN10441](https://files.seeedstudio.com/wiki/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/res/AN10441.pdf)を参照してください。
 
 :::note
-このセクションでは回路図の一部のみを表示しています。完全なドキュメントについては、[リソース](https://wiki.seeedstudio.com/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/#resources)を参照してください。
+このセクションでは回路図の一部のみを表示しています。完全なドキュメントについては、[リソース](https://wiki.seeedstudio.com/ja/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/#resources)を参照してください。
 :::
 
 ### 組み立て図
@@ -170,12 +170,12 @@ Grove Base Shieldがない場合は、以下のようにこのモジュールを
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** [Seeed_MAX31850K](https://github.com/Seeed-Studio/Seeed_MAX31850K)ライブラリをGithubからダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ 3.** ライブラリフォルダを解凍し、指定されたパスをたどって**Multiple.ino**を開きます ---> **xxxx\Arduino\libraries\Seeed_MAX31850K-master\examples\Multiple**。xxxxはArduinoをインストールしたパスです。
 
@@ -298,7 +298,7 @@ void loop(void)
 
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 - **ステップ 5.** Arduino IDEの**シリアルモニタ**を開きます。**ツール->シリアルモニタ**をクリックするか、++ctrl+shift+m++キーを同時に押します。その後、ボーレートを**115200**に設定します。
 

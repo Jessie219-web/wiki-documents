@@ -47,7 +47,7 @@ Type-Cケーブルを使用してコンピュータに接続します。
 
 ### チュートリアル
 
-ここでは、CodecraftでWio Terminalを使用し、CodecraftをAzure IoTに接続して機械学習モデルをトレーニングし、それを使用する方法を紹介します。このプロジェクトはArduinoプラットフォームに基づいているため、Arduino IDEとさまざまなArduinoライブラリが必要です。Wio Terminalを初めて使用する場合は、[Wio Terminalのクイックスタートガイド](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)を参照することをお勧めします。
+ここでは、CodecraftでWio Terminalを使用し、CodecraftをAzure IoTに接続して機械学習モデルをトレーニングし、それを使用する方法を紹介します。このプロジェクトはArduinoプラットフォームに基づいているため、Arduino IDEとさまざまなArduinoライブラリが必要です。Wio Terminalを初めて使用する場合は、[Wio Terminalのクイックスタートガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)を参照することをお勧めします。
 
 - **ステップ1** Wio TerminalをPCに接続します。
 - **ステップ2** [Codecraftウェブサイト](https://ide.tinkergen.com/)を開き、Wio Terminalに接続します。

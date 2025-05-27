@@ -37,7 +37,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## Ubuntu OS のインストール
 
-まだ Ubuntu をインストールしていない場合は、[このチュートリアル](https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Installing-OS/) に従って ODYSSEY - X86J4105 に Ubuntu をインストールしてください。
+まだ Ubuntu をインストールしていない場合は、[このチュートリアル](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Installing-OS/) に従って ODYSSEY - X86J4105 に Ubuntu をインストールしてください。
 
 ## Intel® Distribution of OpenVINO™ Toolkit のインストール
 

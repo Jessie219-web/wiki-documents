@@ -24,7 +24,7 @@ Nanase さん、素晴らしい情報をありがとうございます！
 
 **Seeeduino XIAO** の使用に関するドキュメントは2種類あり、それぞれ異なる分野に焦点を当てています。以下の表を参考にしてください：
 
-|[**Seeed によるドキュメント**](https://wiki.seeedstudio.com/Seeeduino-XIAO/)|[**Nanase によるドキュメント**](https://wiki.seeedstudio.com/Seeeduino-XIAO-by-Nanase/)|
+|[**Seeed によるドキュメント**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/)|[**Nanase によるドキュメント**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO-by-Nanase/)|
 |---|---|
 |ピン配置図|インターフェース|
 |Seeed Studio XIAO SAMD21 入門|Seeed Studio XIAO SAMD21 と MicroSD カード（SPI）|
@@ -77,7 +77,7 @@ GPIO の14ピンは、側面の11ピン、リセットピン、背面の SWD（S
 
 ## ボードをリセットする
 
-[こちら](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)を参照して、Arduino IDE に Seeed Studio XIAO SAMD21 を追加する方法を学んでください。
+[こちら](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/#software)を参照して、Arduino IDE に Seeed Studio XIAO SAMD21 を追加する方法を学んでください。
 
 <!-- ![image](https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F30370%2Fd8ff0409-7841-0a07-f9aa-ee49fef757b3.jpeg?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&s=c44f4d6b316014dd3a10476ad49311fd) -->
   <p style={{textAlign: 'center'}}><img src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F30370%2Fd8ff0409-7841-0a07-f9aa-ee49fef757b3.jpeg?ixlib=rb-1.2.2&auto=format&gif-q=60&q=75&s=c44f4d6b316014dd3a10476ad49311fd" alt="pir" width={600} height="auto" /></p>

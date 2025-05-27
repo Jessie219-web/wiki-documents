@@ -48,7 +48,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - よりコンパクトで軽量、簡単に設置可能。
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -88,7 +88,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -121,7 +121,7 @@ Grove Base Shieldがない場合は、以下のようにGrove-Dust SensorをSeee
 
 **ソフトウェア**
 
-- **ステップ1.** 以下のコードをArduino IDEにコピーしてArduinoにアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ1.** 以下のコードをArduino IDEにコピーしてArduinoにアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```
 int pin = 8;

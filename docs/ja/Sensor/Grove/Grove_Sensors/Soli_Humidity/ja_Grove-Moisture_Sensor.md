@@ -51,7 +51,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 - 2.0 cm x 6.0 cm の Grove モジュール
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 仕様
@@ -81,7 +81,7 @@ Grove モジュールの詳細については、[Grove System](https://wiki.seee
 ## はじめに
 
 :::note
-Arduino を初めて使用する場合は、開始前に [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、開始前に [Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
 :::
 
 ### Arduino で遊ぶ
@@ -114,7 +114,7 @@ Grove Base Shield がない場合は、以下のように Grove-Moisture Sensor 
 
 **ソフトウェア**
 
-- **ステップ 1.** 以下のコードを Arduino IDE にコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+- **ステップ 1.** 以下のコードを Arduino IDE にコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 
 ```cpp
 int sensorPin = A0;
@@ -162,7 +162,7 @@ Moisture = 221
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/) を開き、Arduino サポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraft を初めて使用する場合は、[Arduino 用 Codecraft ガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/) も参照してください。
+Codecraft を初めて使用する場合は、[Arduino 用 Codecraft ガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/) も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできる cdc ファイルを開きます。
@@ -194,7 +194,7 @@ Codecraft を初めて使用する場合は、[Arduino 用 Codecraft ガイド](
 
 #### ソフトウェア
 
-- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ 2**. grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

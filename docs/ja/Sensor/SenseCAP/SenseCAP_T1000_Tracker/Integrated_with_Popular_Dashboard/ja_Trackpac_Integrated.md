@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## デバイスの設定
 
-デバイスを正しく設定するには、[クイックスタートガイド](https://wiki.seeedstudio.com/Get_Started_with_SenseCAP_T1000_tracker/) を確認してください。
+デバイスを正しく設定するには、[クイックスタートガイド](https://wiki.seeedstudio.com/ja/Get_Started_with_SenseCAP_T1000_tracker/) を確認してください。
 
 プラットフォームを `Other Platform` に選択し、`APP EUI` を推奨値に設定します：
 ```cpp 

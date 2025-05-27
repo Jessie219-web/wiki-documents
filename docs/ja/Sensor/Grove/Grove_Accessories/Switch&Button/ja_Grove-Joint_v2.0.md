@@ -98,7 +98,7 @@ Grove - Joint v2.0 のデモを作成するために、以下のモジュール�
 * [Digital RGB LED Flexi-Strip](https://www.seeedstudio.com/depot/Digital-RGB-LED-FlexiStrip-60-LED-1-Meter-p-1666.html)
 
 Grove - Joint は Arduino と互換性があります。
-Arduino を初めて使用する場合は、[Getting_Started_with_Seeeduino](https://wiki.seeedstudio.com/Getting_Started_with_Seeeduino/) を参照して Arduino の旅を始めてください。
+Arduino を初めて使用する場合は、[Getting_Started_with_Seeeduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Seeeduino/) を参照して Arduino の旅を始めてください。
 
 ### ハードウェアのインストール
 

@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div align="center"><img width ="{600}" src="https://files.seeedstudio.com/wiki/xiao_topicpage/zephyr-rp2040.png"/></div>
 
-このウィキでは、[Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/xiao_rp2040_getting_started/) に対する [Zephyr](https://www.zephyrproject.org/) のサポートについて説明します。このガイドを利用することで、ボードで利用可能な機能セットを活用できるようになります。
+このウィキでは、[Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/ja/xiao_rp2040_getting_started/) に対する [Zephyr](https://www.zephyrproject.org/) のサポートについて説明します。このガイドを利用することで、ボードで利用可能な機能セットを活用できるようになります。
 
 ## [Zephyr](https://www.zephyrproject.org/) とは
 
@@ -342,7 +342,7 @@ x_value: 1.4137159*2^1, y_value: 1.8977352*2^-3
 #### Grove - 拡張ボード - I2Cディスプレイ
 
 <!-- <div style={{textAlign:'center'}}><img src="https://github.com/Cosmic-Bee/xiao-zephyr-examples/blob/main/images/rp2040/xiao_expansion_oled.jpg?raw=true" style={{width:300, height:'auto'}}/></div> -->
-<div style="text-align:center;"><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_rp2040_zephyr/xiao_expansion_oled.jpg" style={{width:300, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_rp2040_zephyr/xiao_expansion_oled.jpg" style={{width:300, height:'auto'}}/></div>
 
 このセットアップをテストするために、Zephyrの既存のサンプルを使用します：
 
@@ -650,7 +650,7 @@ west flash -r uf2
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studio [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=57293558)によってサポートされています。
-- **Timの努力**に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- **Timの努力**に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)。
 
 ## 技術サポートと製品ディスカッション
 

@@ -168,7 +168,7 @@ MACHINE="dual-gbe-cm4-mender" bitbake core-image-base
 
 ## フラッシュ手順
 
-上記のイメージをボードの eMMC にフラッシュする方法については、[この Wiki ガイド](https://wiki.seeedstudio.com/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4/#flash-to-emmc-cm4-emmc-version) を参照してください。
+上記のイメージをボードの eMMC にフラッシュする方法については、[この Wiki ガイド](https://wiki.seeedstudio.com/ja/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4/#flash-to-emmc-cm4-emmc-version) を参照してください。
 
 フラッシュが完了したら、reTerminal の電源を入れると、コンパイルされたイメージから起動します。
 

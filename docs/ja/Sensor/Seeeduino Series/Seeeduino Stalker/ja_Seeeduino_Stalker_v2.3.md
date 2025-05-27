@@ -86,7 +86,7 @@ Seeeduino Stalkerは、機能が豊富なArduino互換の**ワイヤレスセン
 
 - ソーラーJST入力電圧: 4.6-6V
 
-- 全体消費電流: [注記を参照](https://wiki.seeedstudio.com/Seeeduino_Stalker_v2.3)
+- 全体消費電流: [注記を参照](https://wiki.seeedstudio.com/ja/Seeeduino_Stalker_v2.3)
 
 - UARTボーレート (プログラミング時): 115200 bps
 

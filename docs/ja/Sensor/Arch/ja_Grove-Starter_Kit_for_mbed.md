@@ -27,7 +27,7 @@ Groveは、はんだ付けやブレッドボードを必要としない迅速な
 このキットは、mbedをできるだけ早く始められるように設計されています。mbedの世界を探索するためのプラグアンドプレイ型のGroveモジュールが多数含まれています。このキットの目的は、ハードウェアとソフトウェアに対する自信を持ちながら楽しむことです。
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 ## 始める
 ---

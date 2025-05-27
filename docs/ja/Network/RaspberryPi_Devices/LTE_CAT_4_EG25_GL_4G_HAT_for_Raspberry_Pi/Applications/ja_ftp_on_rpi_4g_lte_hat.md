@@ -55,7 +55,7 @@ FTPはRaspberry Pi 4G LTE HATアプリケーションにおいて非常に便利
 
 ### ソフトウェア要件
 
-関連するドライバや通信ツールをまだインストールしていない場合は、まず[ガイド](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#software-preparation)を確認してください。
+関連するドライバや通信ツールをまだインストールしていない場合は、まず[ガイド](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#software-preparation)を確認してください。
 
 ### 追加要件
 

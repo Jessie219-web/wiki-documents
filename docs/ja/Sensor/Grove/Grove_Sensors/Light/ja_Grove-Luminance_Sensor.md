@@ -32,7 +32,7 @@ Grove - 照度センサーは、特定の表面エリアにおける周囲光の
 | 照度測定範囲               | 0 ~ 1000 Lux |
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 対応プラットフォーム

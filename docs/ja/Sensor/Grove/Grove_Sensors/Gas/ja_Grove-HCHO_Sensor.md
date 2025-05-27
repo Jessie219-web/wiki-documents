@@ -28,7 +28,7 @@ Grove - HCHO センサーは半導体VOCガスセンサーです。その設計�
 </div>
 
 :::tip
-    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
+    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
 :::
 仕様
 -------------
@@ -40,7 +40,7 @@ Grove - HCHO センサーは半導体VOCガスセンサーです。その設計�
 -   感度: Rs(空気中)/Rs(10ppm HCHO)≥5
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 対応プラットフォーム
 -------------------

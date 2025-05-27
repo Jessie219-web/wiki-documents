@@ -93,9 +93,9 @@ XIAO用に高速ファームウェアフラッシュページを作成しまし�
 
 また、Seeed Studio 製品のいくつかに対して Home Assistant のインストール方法を記載していますので、以下をご参照ください。
 
-- [ODYSSEY-X86 での Home Assistant の始め方](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/)
-- [reTerminal での Home Assistant の始め方](https://wiki.seeedstudio.com/reTerminal_Home_Assistant/)
-- [LinkStar H68K/reRouter CM4 での Home Assistant の始め方](https://wiki.seeedstudio.com/h68k-ha-esphome/)
+- [ODYSSEY-X86 での Home Assistant の始め方](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/)
+- [reTerminal での Home Assistant の始め方](https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/)
+- [LinkStar H68K/reRouter CM4 での Home Assistant の始め方](https://wiki.seeedstudio.com/ja/h68k-ha-esphome/)
 
 ## ステップ 1. ESPHome をインストールする
 

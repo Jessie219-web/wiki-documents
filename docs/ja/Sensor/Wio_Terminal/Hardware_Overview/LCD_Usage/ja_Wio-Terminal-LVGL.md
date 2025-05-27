@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LVGL/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-LVGL/
 slug: /ja/Wio-Terminal-LVGL
 last_update:
   date: 05/15/2025
@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 始める前に
 
-- 以下の手順を進める前に、[**Wio Terminal の始め方**](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/) を確認してください。
+- 以下の手順を進める前に、[**Wio Terminal の始め方**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/) を確認してください。
 
 ### Seeed_Arduino_LvGL のインストール
 

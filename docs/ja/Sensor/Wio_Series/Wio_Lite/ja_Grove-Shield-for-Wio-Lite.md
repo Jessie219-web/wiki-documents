@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Shield-for-Wio-Lite/
+image: https://wiki.seeedstudio.com/ja/Grove-Shield-for-Wio-Lite/
 slug: /ja/Grove-Shield-for-Wio-Lite
 last_update:
   date: 05/15/2025

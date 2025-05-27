@@ -176,7 +176,7 @@ ePaperドライバーボードは、24ピンFPCコネクタ、効率的で安全
 ### ソフトウェア準備
  推奨されるプログラミングツールは Arduino IDE であり、XIAO 用に Arduino 環境を設定し、オンボードパッケージを追加する必要があります。
 :::tip
-Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 **ステップ 1.** Arduino アプリケーションを起動します。
@@ -190,13 +190,13 @@ Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.
 
 **ステップ 2.** 開発ボードモデルを選択し、Arduino IDE に追加します。
 
-- **Seeed Studio XIAO SAMD21** を後のルーチンで使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)** を参照して追加を完了してください。
+- **Seeed Studio XIAO SAMD21** を後のルーチンで使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/#software)** を参照して追加を完了してください。
 
-- **Seeed Studio XIAO RP2040** を後のルーチンで使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/XIAO-RP2040-with-Arduino/#software-setup)** を参照して追加を完了してください。
+- **Seeed Studio XIAO RP2040** を後のルーチンで使用する場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO-RP2040-with-Arduino/#software-setup)** を参照して追加を完了してください。
 
-- 後の手順で **Seeed Studio XIAO nRF52840** を使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/XIAO_BLE/#software-setup)** を参照して追加を完了してください。
+- 後の手順で **Seeed Studio XIAO nRF52840** を使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_BLE/#software-setup)** を参照して追加を完了してください。
 
-- 後の手順で **Seeed Studio XIAO ESP32C3** を使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して追加を完了してください。
+- 後の手順で **Seeed Studio XIAO ESP32C3** を使用したい場合は、**[このチュートリアル](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started#software-setup)** を参照して追加を完了してください。
 
 - 後の手順で **Seeed Studio XIAO ESP32S3** を使用したい場合は、**[このチュートリアル](http://wiki.seeedstudio.com/xiao_esp32s3_getting_started#software-preparation)** を参照して追加を完了してください。
 

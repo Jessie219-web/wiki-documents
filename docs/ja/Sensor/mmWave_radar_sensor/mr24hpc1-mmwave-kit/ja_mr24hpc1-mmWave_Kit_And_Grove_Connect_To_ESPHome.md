@@ -57,7 +57,7 @@ HomeAssistantを実行するサーバーとしてRaspberry Pi 4Bを使用し、�
 
 ### Home Assistantのインストール
 
-Home Assistantがすでに稼働していることを確認してください。Home Assistantを[製品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-)にフラッシュする方法を紹介する複数のWikiがあります。私はRaspberry Pi 4Bを使用しているので、[公式の方法を使用してRaspberry Pi 4BにOSをフラッシュできます](https://www.home-assistant.io/installation/raspberrypi)。
+Home Assistantがすでに稼働していることを確認してください。Home Assistantを[製品](https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-)にフラッシュする方法を紹介する複数のWikiがあります。私はRaspberry Pi 4Bを使用しているので、[公式の方法を使用してRaspberry Pi 4BにOSをフラッシュできます](https://www.home-assistant.io/installation/raspberrypi)。
 
 ### Home AssistantにESPHomeをインストール
 
@@ -148,7 +148,7 @@ Type-Cケーブルを使用してmmWaveキットをHomeAssistantに接続しま�
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave_kit_plus_grove/12.png" style={{width:1000, height:'auto'}}/></div>
 
 :::tip
-ESPHomeが設定済みゾーンに表示されず、発見済みゾーンに表示される場合は、この[リンク](https://wiki.seeedstudio.com/XIAO-ESP32C3-for-ESPHome-Support/)のステップ15からステップ18を参照してください。
+ESPHomeが設定済みゾーンに表示されず、発見済みゾーンに表示される場合は、この[リンク](https://wiki.seeedstudio.com/ja/XIAO-ESP32C3-for-ESPHome-Support/)のステップ15からステップ18を参照してください。
 :::
 
 3. **devices**をクリックします。ここでは2つのデバイスがありますが、あなたの場合は1つのデバイスだけかもしれません。

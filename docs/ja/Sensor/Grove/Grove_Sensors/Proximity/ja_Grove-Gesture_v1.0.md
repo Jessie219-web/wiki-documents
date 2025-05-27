@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Gesture_v1.0/
+image: https://wiki.seeedstudio.com/ja/Grove-Gesture_v1.0/
 slug: /ja/Grove-Gesture_v1.0
 last_update:
   date: 05/15/2025
@@ -50,7 +50,7 @@ Grove - Gesture のセンサーは PAJ7620U2 で、ジェスチャー認識機�
   - ウェーブ
 
 :::tip
-    Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 仕様
@@ -69,7 +69,7 @@ Grove - Gesture のセンサーは PAJ7620U2 で、ジェスチャー認識機�
 |I2C アドレス|0x73|
 
 :::note
-    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/) を参照してください。
+    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/) を参照してください。
 :::
 
 ## はじめに
@@ -113,8 +113,8 @@ INT：ジェスチャー検出割り込みフラグマスク。ジャンパー�
 #### ソフトウェア
 
 - **ステップ 1.** [ライブラリ](https://github.com/Seeed-Studio/Grove_Gesture) を Github からダウンロードします。
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して Arduino 用ライブラリをインストールします。
-- **ステップ 3.** コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して Arduino 用ライブラリをインストールします。
+- **ステップ 3.** コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 - **ステップ 4.** Arduino IDE を起動し、上下デモを試してみましょう。
 - **ステップ 5.** 以下のコードをコピーして Arduino IDE に貼り付けます。
 
@@ -337,7 +337,7 @@ Left
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[CodecraftをArduinoで使用するためのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    Codecraftを初めて使用する場合は、[CodecraftをArduinoで使用するためのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
@@ -369,7 +369,7 @@ Left
 
 #### ソフトウェア
 
-- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ 1.** [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ 2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```shell

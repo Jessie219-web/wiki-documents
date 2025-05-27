@@ -92,14 +92,14 @@ Groveネットワークモジュールを使用すると、プロジェクトに
 
 <!-- ## Grove選択ガイド
 
-- [Seeed加速度計選択ガイド](https://wiki.seeedstudio.com/Sensor_accelerometer/)
-- [Seeed気圧計選択ガイド](https://wiki.seeedstudio.com/Barometer-Selection-Guide/)
-- [Seeed生体医学センサー選択ガイド](https://wiki.seeedstudio.com/Sensor_biomedicine/)
-- [Seeed距離センサー選択ガイド](https://wiki.seeedstudio.com/Sensor_distance/)
-- [Seeedガスセンサー選択ガイド](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)
-- [Seeed光センサー選択ガイド](https://wiki.seeedstudio.com/Sensor_light/)
-- [Seeedリレー選択ガイド](https://wiki.seeedstudio.com/Seeed_Relay_Page/)
-- [Seeed音センサー選択ガイド](https://wiki.seeedstudio.com/Sensor_sound/)
+- [Seeed加速度計選択ガイド](https://wiki.seeedstudio.com/ja/Sensor_accelerometer/)
+- [Seeed気圧計選択ガイド](https://wiki.seeedstudio.com/ja/Barometer-Selection-Guide/)
+- [Seeed生体医学センサー選択ガイド](https://wiki.seeedstudio.com/ja/Sensor_biomedicine/)
+- [Seeed距離センサー選択ガイド](https://wiki.seeedstudio.com/ja/Sensor_distance/)
+- [Seeedガスセンサー選択ガイド](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)
+- [Seeed光センサー選択ガイド](https://wiki.seeedstudio.com/ja/Sensor_light/)
+- [Seeedリレー選択ガイド](https://wiki.seeedstudio.com/ja/Seeed_Relay_Page/)
+- [Seeed音センサー選択ガイド](https://wiki.seeedstudio.com/ja/Sensor_sound/)
  -->
 
 ### <span id="jump6"> Groveインターフェースをサポートするボード </span>

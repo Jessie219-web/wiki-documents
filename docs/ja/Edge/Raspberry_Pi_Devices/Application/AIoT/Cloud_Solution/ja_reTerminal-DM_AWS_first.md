@@ -46,7 +46,7 @@ AWS IoT Coreは、IoT（モノのインターネット）デバイスを安全�
 
 ### ソフトウェアの準備
 
-Raspberry Pi 64ビットOSの**Bullseye**バージョンを公式ウェブサイトからインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[**ガイド**](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/)に従ってください。
+Raspberry Pi 64ビットOSの**Bullseye**バージョンを公式ウェブサイトからインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[**ガイド**](https://wiki.seeedstudio.com/ja/reterminal-dm-flash-OS/)に従ってください。
 
 #### Mqttライブラリのインストール
 ターミナルで以下を入力してください：

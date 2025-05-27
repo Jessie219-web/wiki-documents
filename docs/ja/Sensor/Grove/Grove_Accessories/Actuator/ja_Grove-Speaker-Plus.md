@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Speaker-Plus/
+image: https://wiki.seeedstudio.com/ja/Grove-Speaker-Plus/
 slug: /ja/Grove-Speaker-Plus
 last_update:
   date: 05/15/2025
@@ -33,7 +33,7 @@ Grove Speaker Plus は、強力なアンプドライバーボードと高品質�
 - 簡単に使用できるプラグアンドプレイインターフェース
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 仕様
@@ -106,7 +106,7 @@ Arduinoを使用してこのモジュールに異なる周波数の信号を供�
 **ステップ 3.** 以下のコードをArduino IDEにアップロードします。
 
 :::tip
-        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 ```cpp

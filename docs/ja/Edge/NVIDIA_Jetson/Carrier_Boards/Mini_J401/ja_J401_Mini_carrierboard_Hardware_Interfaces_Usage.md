@@ -30,7 +30,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 
 :::info
-J401-Mini キャリアボードのインターフェース使用方法は reComputer J30/40 Mini と同じです。詳細なインターフェース使用例については、[こちらの Wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/)をご参照ください。
+J401-Mini キャリアボードのインターフェース使用方法は reComputer J30/40 Mini と同じです。詳細なインターフェース使用例については、[こちらの Wiki](https://wiki.seeedstudio.com/ja/recomputer_jetson_mini_hardware_interfaces_usage/)をご参照ください。
 :::
 
 

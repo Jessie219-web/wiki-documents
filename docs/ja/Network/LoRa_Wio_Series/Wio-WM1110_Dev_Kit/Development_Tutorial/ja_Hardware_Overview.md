@@ -283,7 +283,7 @@ Grove IICモジュールに接続するには、センサー電源を有効に�
 
 **コード例**
 
-この例では、IICインターフェースを介して[SHT41温湿度センサー](https://wiki.seeedstudio.com/Grove-SHT4x/)の値を読み取り、シリアルモニターに出力します。
+この例では、IICインターフェースを介して[SHT41温湿度センサー](https://wiki.seeedstudio.com/ja/Grove-SHT4x/)の値を読み取り、シリアルモニターに出力します。
 
 ```cpp
 #include "nrf_gpio.h"

@@ -26,7 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - [**ReSpeaker 2-Mics Pi HAT**](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT.html)
 
 :::note
-**ハードウェア接続**については、[**Audio Overview**](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Overview/)をご覧ください。
+**ハードウェア接続**については、[**Audio Overview**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Audio-Overview/)をご覧ください。
 :::
 
 ## 特徴
@@ -40,9 +40,9 @@ Wio Terminal用のオーディオライブラリを使用するには、以下�
 
 ## ライブラリのインストール
 
-1. オーディオライブラリ `Seeed_Arduino_Audio` をインストールします。詳細については、[**Audio Overview**](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Overview/)をご覧ください。
+1. オーディオライブラリ `Seeed_Arduino_Audio` をインストールします。詳細については、[**Audio Overview**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Audio-Overview/)をご覧ください。
 
-2. LCDスクリーンライブラリ `Seeed_Arduino_LCD` をインストールします。詳細については、[Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/)をご覧ください。
+2. LCDスクリーンライブラリ `Seeed_Arduino_LCD` をインストールします。詳細については、[Wio Terminal LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/)をご覧ください。
 
 3. 次に、ライブラリをArduino IDEにインストールします。Arduino IDEを開き、`スケッチ` -> `ライブラリをインクルード` -> `ZIP形式のライブラリを追加` をクリックし、ダウンロードした `Seeed_Arduino_Audio` ファイルを選択します。
 

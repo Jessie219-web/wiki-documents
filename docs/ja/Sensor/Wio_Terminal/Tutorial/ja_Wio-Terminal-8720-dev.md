@@ -22,7 +22,7 @@ Wio Terminal は、Atmel SAMD51 コアと Realtek RTL8720DN ワイヤレスコ�
 
 ## はじめに
 
-- 以下の手順を進める前に、まず [**Wio Terminal Get Started**](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/) をご確認ください。
+- 以下の手順を進める前に、まず [**Wio Terminal Get Started**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/) をご確認ください。
 
 ### Realtek ボードライブラリを Arduino に追加する
 
@@ -69,7 +69,7 @@ Wio Terminal の SAMD51 コアと RTL8720DN 間で通信するための Arduino 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-8720-dev/8720-example.png" /></div>
 
 :::note
-Wi-Fi 関連の例を使用する場合は、まず [こちら](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/) を確認して RTL8720DN コアのファームウェアを消去してください。
+Wi-Fi 関連の例を使用する場合は、まず [こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/) を確認して RTL8720DN コアのファームウェアを消去してください。
 :::
 
 - 以下のように Wio Terminal を **RTL8720DN ファームウェア書き込みモード** に設定します。ボードを **RTL8722DM** に設定し、アップロードをクリックします。

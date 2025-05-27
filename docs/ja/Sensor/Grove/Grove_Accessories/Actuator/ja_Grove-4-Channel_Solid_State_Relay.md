@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-4-Channel_Solid_State_Relay/
+image: https://wiki.seeedstudio.com/ja/Grove-4-Channel_Solid_State_Relay/
 slug: /ja/Grove-4-Channel_Solid_State_Relay
 last_update:
   date: 05/15/2025
@@ -23,13 +23,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 さまざまな用途に応じて、一連のソリッドステートリレーを用意しています。
 
-[Grove - ソリッドステートリレー V2](https://wiki.seeedstudio.com/Grove-Solid_State_Relay_V2)
+[Grove - ソリッドステートリレー V2](https://wiki.seeedstudio.com/ja/Grove-Solid_State_Relay_V2)
 
-[Grove - 2チャンネル ソリッドステートリレー](https://wiki.seeedstudio.com/Grove-2-Channel_Solid_State_Relay)
+[Grove - 2チャンネル ソリッドステートリレー](https://wiki.seeedstudio.com/ja/Grove-2-Channel_Solid_State_Relay)
 
-[Grove - 4チャンネル ソリッドステートリレー](https://wiki.seeedstudio.com/Grove-4-Channel_Solid_State_Relay)
+[Grove - 4チャンネル ソリッドステートリレー](https://wiki.seeedstudio.com/ja/Grove-4-Channel_Solid_State_Relay)
 
-[Grove - 8チャンネル ソリッドステートリレー](https://wiki.seeedstudio.com/Grove-8-Channel_Solid_State_Relay)
+[Grove - 8チャンネル ソリッドステートリレー](https://wiki.seeedstudio.com/ja/Grove-8-Channel_Solid_State_Relay)
 
 <p style={{}}><a href="https://www.seeedstudio.com/Grove-4-Channel-Solid-State-Relay-p-3130.html
 " target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
@@ -170,12 +170,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 + **ステップ 1.** Githubから[Multi_Channel_Relay_Arduino](https://github.com/Seeed-Studio/Multi_Channel_Relay_Arduino_Library)ライブラリをダウンロードします。
 
-+ **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
++ **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 + **ステップ 3.** Arduino IDEを再起動します。以下のパスから例を開きます：**File --> Examples --> Multi Channel Relay Arduino Library --> four_channel_relay_control**。
 
@@ -269,7 +269,7 @@ void loop()
 }
 ```
 
-+ **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
++ **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 + **ステップ 5.** Arduino IDEの**シリアルモニタ**を開きます。**Tool-> Serial Monitor**をクリックするか、++ctrl+shift+m++キーを同時に押します。
 
@@ -299,7 +299,7 @@ I2Cデバイスがアドレス0x12で見つかりました！
 ![](https://files.seeedstudio.com/wiki/Grove-4-Channel_Solid_State_Relay/img/gif.gif)
 
 :::note
-        このデモでは負荷を追加していません。負荷の追加方法を確認したい場合は、[Grove - 2-Channel Solid State Relay](https://wiki.seeedstudio.com/Grove-2-Channel_Solid_State_Relay)をご覧ください。
+        このデモでは負荷を追加していません。負荷の追加方法を確認したい場合は、[Grove - 2-Channel Solid State Relay](https://wiki.seeedstudio.com/ja/Grove-2-Channel_Solid_State_Relay)をご覧ください。
 :::
 
 #### 関数の説明

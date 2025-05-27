@@ -88,7 +88,7 @@ void loop() {
 
 **ソフトウェアシリアル**
 
-Arduinoの標準I2CライブラリはWireライブラリです。このライブラリは、I2CピンSDA/SCLが他の目的で既に使用されている場合には動作しません。そのため、SoftwareI2Cを使用できます。SCLをD2に、SDAをD3に接続してください。[SoftI2CMasterライブラリ](https://github.com/felias-fogg/SoftI2CMaster)をダウンロードし、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)に従ってライブラリを設定してください。以下のコードをArduinoの新しいスケッチにコピーしてアップロードしてください。その後、シリアルモニターから心拍数を取得できます。センサーに指を触れた後、心拍数が有効になるまで約1分かかる場合があります。
+Arduinoの標準I2CライブラリはWireライブラリです。このライブラリは、I2CピンSDA/SCLが他の目的で既に使用されている場合には動作しません。そのため、SoftwareI2Cを使用できます。SCLをD2に、SDAをD3に接続してください。[SoftI2CMasterライブラリ](https://github.com/felias-fogg/SoftI2CMaster)をダウンロードし、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)に従ってライブラリを設定してください。以下のコードをArduinoの新しいスケッチにコピーしてアップロードしてください。その後、シリアルモニターから心拍数を取得できます。センサーに指を触れた後、心拍数が有効になるまで約1分かかる場合があります。
 
 ```cpp
 #define SDA_PORT PORTD

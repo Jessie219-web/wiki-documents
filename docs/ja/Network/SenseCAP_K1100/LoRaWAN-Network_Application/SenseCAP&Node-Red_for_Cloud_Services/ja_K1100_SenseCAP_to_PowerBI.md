@@ -78,10 +78,10 @@ Power BI と Azure Synapse Analytics や Azure Data Lake Storage を含む Azure
 
 このチュートリアルを完了するには、以下が必要です：
 
-- Node-RED をインストールしていない、または Node-RED が何か分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/)を参照してください。
+- Node-RED をインストールしていない、または Node-RED が何か分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/)を参照してください。
 - Power BI アカウント。Power BI アカウントをお持ちでない場合は、[無料の Power BI Pro トライアル](https://app.powerbi.com/signupredirect?pbi_source=web)にサインアップしてください。
 - 以下のいずれかの Wiki を参考にして、データを SenseCAP にアップロード済みであること。
-  - [LoRa® を介してセンサーデータを SenseCAP に送信する](https://wiki.seeedstudio.com/K1100-quickstart/#send-sensor-data-to-sensecap-via-lora)
+  - [LoRa® を介してセンサーデータを SenseCAP に送信する](https://wiki.seeedstudio.com/ja/K1100-quickstart/#send-sensor-data-to-sensecap-via-lora)
 
 <!--## SenseCAP ノードの作成
 
@@ -144,7 +144,7 @@ Power BI と Azure Synapse Analytics や Azure Data Lake Storage を含む Azure
 
 **ステップ 2.** MQTT ノードを作成する
 
-**Network -> mqtt in** ノードを使用し、[前回のチュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/#mqtt-node)で説明した SenseCAP API の形式に従って mqtt を設定します。
+**Network -> mqtt in** ノードを使用し、[前回のチュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/#mqtt-node)で説明した SenseCAP API の形式に従って mqtt を設定します。
 
 - サーバー: openstream.api.sensecap.seeed.cc
 - ポート: 1883

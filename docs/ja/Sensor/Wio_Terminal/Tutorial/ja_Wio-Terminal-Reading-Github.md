@@ -38,13 +38,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 必要なArduinoライブラリ
 
-- LCDスクリーンライブラリ`Seeed_Arduino_LCD`をインストールしてください。詳細は[Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/)をご覧ください。
+- LCDスクリーンライブラリ`Seeed_Arduino_LCD`をインストールしてください。詳細は[Wio Terminal LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/)をご覧ください。
 
 - [ArduinoJson](https://github.com/bblanchon/ArduinoJson)リポジトリを訪問し、リポジトリ全体をローカルドライブにダウンロードしてください。
 
   - 次に、ArduinoJsonライブラリをArduino IDEにインストールします。Arduino IDEを開き、`スケッチ` -> `ライブラリをインクルード` -> `ZIP形式のライブラリを追加`をクリックし、先ほどダウンロードした`ArduinoJson`ファイルを選択してください。
 
-- HTTPS接続に関する詳細は[**こちら**](https://wiki.seeedstudio.com/Wio-Terminal-Wi-Fi/#wi-fi-https-connection-example-code)をご覧ください。
+- HTTPS接続に関する詳細は[**こちら**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Wi-Fi/#wi-fi-https-connection-example-code)をご覧ください。
 
 ## Arduinoの手順
 

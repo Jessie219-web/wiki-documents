@@ -105,9 +105,9 @@ reCamera にフローをインポートする方法は2つあります：
 
 #### モデル選択
 reCamera で異なるモデルを展開する方法は 3 つあります：
-1. `オンデバイス` モデルを選択します。いくつかの Yolo モデルが [デフォルトで](https://wiki.seeedstudio.com/recamera_on_device_models) reCamera に含まれています。
+1. `オンデバイス` モデルを選択します。いくつかの Yolo モデルが [デフォルトで](https://wiki.seeedstudio.com/ja/recamera_on_device_models) reCamera に含まれています。
 2. `SenseCraft Zoo` からモデルを選択します。ジェスチャーやフルーツなどのいくつかの公開モデルを選択できます。ユーザーは独自のモデルをアップロードし、コミュニティに貢献するために公開することもできます。
-3. 独自のモデルを reCamera に `アップロード` します。[モデルを reCamera に変換する](https://wiki.seeedstudio.com/convert xxx) 手順に従うことで、独自の AI モデルを INT8 cvimodel フォーマットに変換し、reCamera に適応させることができます。その後、モデルを reCamera にアップロードして展開します。モデルがアップロードされた後、`Labels` フィールドにモデルのクラスをリストしてください。
+3. 独自のモデルを reCamera に `アップロード` します。[モデルを reCamera に変換する](https://wiki.seeedstudio.com/ja/convert xxx) 手順に従うことで、独自の AI モデルを INT8 cvimodel フォーマットに変換し、reCamera に適応させることができます。その後、モデルを reCamera にアップロードして展開します。モデルがアップロードされた後、`Labels` フィールドにモデルのクラスをリストしてください。
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/model_classes.png" /></div>
 
 #### モデルパラメータ

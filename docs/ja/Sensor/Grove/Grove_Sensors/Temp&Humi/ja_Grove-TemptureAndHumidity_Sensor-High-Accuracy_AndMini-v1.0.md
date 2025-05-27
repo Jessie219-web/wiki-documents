@@ -56,7 +56,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センサーとし
 - 優れた長期安定性
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -78,7 +78,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 ## 初めての使用
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -115,7 +115,7 @@ Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](htt
 
 - **ステップ1.** [Grove Temperature&Humidity TH02ライブラリ](https://github.com/Seeed-Studio/Grove_Temper_Humidity_TH02)をGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。**File --> Examples --> Grove Temper Humidity_TH02 --> TH02_demo**のパスを通じて「TH02_demo」例を開きます。このデモを通じて、環境の温度と相対湿度情報を読み取ることができます。
 
@@ -123,7 +123,7 @@ Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](htt
 
 このデモでは、Grove - Temperature&Humidity Sensor (High-Accuracy & Mini)センサーから温度と湿度情報を読み取る方法を示します。
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ5.** Arduino IDEの**シリアルモニター**を開くには、**Tool-> Serial Monitor**をクリックするか、++ctrl+shift+m++キーを同時に押します。すべてが正常に動作していれば、温度が表示されます。
 

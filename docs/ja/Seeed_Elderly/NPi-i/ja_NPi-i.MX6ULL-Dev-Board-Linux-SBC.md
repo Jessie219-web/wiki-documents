@@ -439,7 +439,7 @@ root@npi:~# i2cget -y 0 0x77 0xD0
 0x58
 ```
 
-最終的に、Grove - BME280のIDである0x58を取得できます。Grove - BME280に関する詳細情報は、[wiki](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BME280/)を参照してください。また、i2c-toolの使用方法については[リンク](https://www.mankier.com/package/i2c-tools)を参照してください。
+最終的に、Grove - BME280のIDである0x58を取得できます。Grove - BME280に関する詳細情報は、[wiki](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BME280/)を参照してください。また、i2c-toolの使用方法については[リンク](https://www.mankier.com/package/i2c-tools)を参照してください。
 
 #### ADC
 
@@ -499,7 +499,7 @@ root@npi:~# cat /sys/bus/iio/devices/iio\:device0/\\in_voltage3_raw
 
 **ソフトウェア**
 
-- **ステップ1.** [インストールガイド](https://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide)に従って、2-Channel CAN BUS FD Shield for Raspberry PiをNPi i.MX6ULL Dev Boardに挿入します。
+- **ステップ1.** [インストールガイド](https://wiki.seeedstudio.com/ja/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide)に従って、2-Channel CAN BUS FD Shield for Raspberry PiをNPi i.MX6ULL Dev Boardに挿入します。
 
 - **ステップ2.** `fire-config`でP23を選択してファイルシステムを拡張します。
 
@@ -552,7 +552,7 @@ can0: flags=128<NOARP>  mtu 16
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-2-Channel CAN-BUS(FD) Shieldの詳細については[wiki](https://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#install-can-hat)を参照してください。
+2-Channel CAN-BUS(FD) Shieldの詳細については[wiki](https://wiki.seeedstudio.com/ja/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#install-can-hat)を参照してください。
 
 #### IIS
 
@@ -565,7 +565,7 @@ can0: flags=128<NOARP>  mtu 16
 
 **ソフトウェア**
 
-- **ステップ1.** [インストールガイド](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/#getting-started)に従って、ReSpeaker 2-Mics Pi HATをNPi i.MX6ULL Dev Boardに挿入します。
+- **ステップ1.** [インストールガイド](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT/#getting-started)に従って、ReSpeaker 2-Mics Pi HATをNPi i.MX6ULL Dev Boardに挿入します。
 
 - **ステップ2.** `apt`を使用してalsa-utilsをインストールします。
 
@@ -621,7 +621,7 @@ arecord -f cd -r 48000 -Dhw:0 test.wav
 aplay -Dhw:0 -r 48000 test.wav
 ```
 
-ReSpeaker 2-Mics Pi HAT に関する詳細情報は、[wiki](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/) をご覧ください。
+ReSpeaker 2-Mics Pi HAT に関する詳細情報は、[wiki](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT/) をご覧ください。
 
 ## リソース
 

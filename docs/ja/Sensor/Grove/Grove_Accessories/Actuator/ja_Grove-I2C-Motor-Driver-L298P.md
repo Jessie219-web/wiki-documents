@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-I2C-Motor-Driver-L298P/
+image: https://wiki.seeedstudio.com/ja/Grove-I2C-Motor-Driver-L298P/
 slug: /ja/Grove-I2C-Motor-Driver-L298P
 last_update:
   date: 05/15/2025
@@ -104,9 +104,9 @@ void loop() {
 
 - **ステップ 1** [Grove_I2C_Motor_Driver_v1_3 ライブラリ](https://github.com/Seeed-Studio/Grove_I2C_Motor_Driver_v1_3/archive/master.zip) を Github からダウンロードします。
 
-- **ステップ 2** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
+- **ステップ 2** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
 
-- **ステップ 3** コードを Arduino IDE にコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+- **ステップ 3** コードを Arduino IDE にコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 
 `speed()` 関数を使用すると、任意の速度でモーターを駆動できます。
 

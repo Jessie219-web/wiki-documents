@@ -68,7 +68,7 @@ TTNに全く慣れていない場合は、まずTTNコンソールについて�
 <table align="center">
   <tbody><tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-TTN/TTN.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>TTNの紹介</strong><br /><br />この章では、TTNコンソールの操作について説明し、TTNコンソールの第一印象を得るための手順を紹介します。<br /><br /><a href="https://wiki.seeedstudio.com/TTN-Introduction">さあ始めましょう &gt;</a></td>
+      <td align="left"><strong>TTNの紹介</strong><br /><br />この章では、TTNコンソールの操作について説明し、TTNコンソールの第一印象を得るための手順を紹介します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction">さあ始めましょう &gt;</a></td>
     </tr>
   </tbody></table>
 
@@ -82,7 +82,7 @@ TTNに全く慣れていない場合は、まずTTNコンソールについて�
 
 **ステップ1.** Grove - Wio-E5のDevEUI、AppEUIを取得する。
 
-[事前準備](https://wiki.seeedstudio.com/K1100-Light-Sensor-Grove-LoRa-E5/#preliminary-preparation)でArduinoとWio Terminalの必要な環境をダウンロードしてください。
+[事前準備](https://wiki.seeedstudio.com/ja/K1100-Light-Sensor-Grove-LoRa-E5/#preliminary-preparation)でArduinoとWio Terminalの必要な環境をダウンロードしてください。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/wiolora.jpg" /></div>
 
@@ -239,7 +239,7 @@ void loop() {
 
 ### オプション 1. Wio Terminal 光センサーデータデコーダー
 
-前のセクション[Wio Terminal 光センサー](https://wiki.seeedstudio.com/K1100-Light-Sensor-Grove-LoRa-E5/)では、光センサーで読み取った光の値を整数変数`light`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、TTNで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
+前のセクション[Wio Terminal 光センサー](https://wiki.seeedstudio.com/ja/K1100-Light-Sensor-Grove-LoRa-E5/)では、光センサーで読み取った光の値を整数変数`light`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、TTNで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
 
 以下はデコーダーの設定コードです。このコードをTTNのコードセクションに貼り付けてください。**Save Function**をクリックしてこのデコーダーを保存します。
 
@@ -267,7 +267,7 @@ function Decoder(bytes, port) {
 
 ### オプション 2. Wio Terminal IMUセンサーデータデコーダー
 
-前のセクション[Wio Terminal IMUセンサー](https://wiki.seeedstudio.com/K1100-IMU-Sensor-Grove-LoRa-E5/)では、IMUから返される3軸のデータを浮動小数点数`x_values`、`y_values`、`z_values`に格納し、これらのデータを100倍して整数に変換してから一緒に送信しました。
+前のセクション[Wio Terminal IMUセンサー](https://wiki.seeedstudio.com/ja/K1100-IMU-Sensor-Grove-LoRa-E5/)では、IMUから返される3軸のデータを浮動小数点数`x_values`、`y_values`、`z_values`に格納し、これらのデータを100倍して整数に変換してから一緒に送信しました。
 
 特に注意すべき点は、これらのデータは正負の値を取る可能性があるため、これを解析して浮動小数点数に戻す必要があることです。
 
@@ -303,7 +303,7 @@ function Decoder(bytes, port) {
 
 ### オプション 3. Grove 土壌湿度センサーデータデコーダー
 
-前のセクション[Grove 土壌湿度センサー](https://wiki.seeedstudio.com/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/)では、土壌湿度センサーで読み取った土壌湿度値を整数変数`sensorValue`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、TTNで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
+前のセクション[Grove 土壌湿度センサー](https://wiki.seeedstudio.com/ja/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/)では、土壌湿度センサーで読み取った土壌湿度値を整数変数`sensorValue`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、TTNで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
 
 以下はデコーダーの設定コードです。このコードをTTNのコードセクションに貼り付けてください。**Save changes**をクリックしてこのデコーダーを保存します。
 
@@ -325,7 +325,7 @@ function Decoder(bytes, port) {
 
 ### オプション 4. Grove VOCおよびeCO2ガスセンサー (SGP30) データデコーダー
 
-前のセクション [Grove VOC and eCO2 Gas Sensor (SGP30)](https://wiki.seeedstudio.com/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/) では、整数変数 `tvoc_ppb` と `co2_eq_ppm` を使用して VOC と eCO2 の値を格納しました。
+前のセクション [Grove VOC and eCO2 Gas Sensor (SGP30)](https://wiki.seeedstudio.com/ja/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/) では、整数変数 `tvoc_ppb` と `co2_eq_ppm` を使用して VOC と eCO2 の値を格納しました。
 
 そのデコーダーの設定コードは以下の通りです。このコードを TTN のコードセクションに貼り付けてください。**Save changes** をクリックしてデコーダーを保存します。
 
@@ -354,7 +354,7 @@ function Decoder(bytes, port) {
 
 ### オプション 5. Grove Temp&Humi Sensor (SHT40) データデコーダー
 
-前のセクション [Grove Temp&Humi Sensor (SHT40)](https://wiki.seeedstudio.com/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/) では、浮動小数点変数 `temperature` と `humidity` を使用して温度と湿度の値を格納しました。そして、これらの値を 100 倍に拡大して整数として送信しました。
+前のセクション [Grove Temp&Humi Sensor (SHT40)](https://wiki.seeedstudio.com/ja/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/) では、浮動小数点変数 `temperature` と `humidity` を使用して温度と湿度の値を格納しました。そして、これらの値を 100 倍に拡大して整数として送信しました。
 
 そのデコーダーの設定コードは以下の通りです。このコードを TTN のコードセクションに貼り付けてください。**Save changes** をクリックしてデコーダーを保存します。
 
@@ -387,7 +387,7 @@ function Decoder(bytes, port) {
 
 ### オプション 6. Grove Vision AI Module データデコーダー
 
-前のセクション [Grove Vision AI Module](https://wiki.seeedstudio.com/K1100-Vision-AI-Module-Grove-LoRa-E5/) では、整数変数 `model` と `confi` を使用して識別されたモデルの種類とその信頼度を格納しました。
+前のセクション [Grove Vision AI Module](https://wiki.seeedstudio.com/ja/K1100-Vision-AI-Module-Grove-LoRa-E5/) では、整数変数 `model` と `confi` を使用して識別されたモデルの種類とその信頼度を格納しました。
 
 そのデコーダーの設定コードは以下の通りです。このコードを TTN のコードセクションに貼り付けてください。**Save changes** をクリックしてデコーダーを保存します。
 

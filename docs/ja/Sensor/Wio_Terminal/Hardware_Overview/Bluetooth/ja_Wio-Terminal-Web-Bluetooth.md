@@ -34,7 +34,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### Arduinoのセットアップ
 
-- [**Wio Terminal Bluetooth Overview**](https://wiki.seeedstudio.com/Wio-Terminal-Bluetooth-Overview/)に従って、BluetoothファームウェアをWio Terminalにフラッシュし、必要なライブラリをダウンロードしてください。
+- [**Wio Terminal Bluetooth Overview**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Bluetooth-Overview/)に従って、BluetoothファームウェアをWio Terminalにフラッシュし、必要なライブラリをダウンロードしてください。
 
 - 以下のコードをコピーしてWio Terminalにアップロードしてください：
 
@@ -177,7 +177,7 @@ Arduino シリアルモニター制御コンソール:
 
 ### Arduino セットアップ
 
-- 以下の手順を実行する前に、[**Wio Terminalの加速度センサー概要**](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/)を確認してください。
+- 以下の手順を実行する前に、[**Wio Terminalの加速度センサー概要**](https://wiki.seeedstudio.com/ja/Wio-Terminal-IMU-Overview/)を確認してください。
 
 - **[`WebBluetooth-Accelerator.ino`](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook/blob/master/examples/WioTerminal_WebBluetooth/WioTerminal_WebBluetooth.ino)の例**をダウンロードするか、以下のコードをArduino IDEにコピーしてください。
 

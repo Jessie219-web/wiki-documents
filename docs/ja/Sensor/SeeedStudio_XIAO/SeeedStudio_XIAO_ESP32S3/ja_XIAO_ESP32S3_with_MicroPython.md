@@ -163,7 +163,7 @@ VS Codeを開き、マイクロコントローラ用の新しいプロジェク�
 ## ピン配置/ポート情報
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32s3_micropython/10.png" /></div>
 
-* 詳細については[ハードウェア概要](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#hardware-overview)を参照してください。
+* 詳細については[ハードウェア概要](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/#hardware-overview)を参照してください。
 * [Seeed Studio XIAO ESP32S3回路図](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_SCH_v1.2.pdf)
 
 ## XIAO ESP32S3でのMicroPythonの始め方
@@ -504,7 +504,7 @@ oled.show()  # テキストを表示
 
 #### カメラストリーミングテスト
 
-ESP32S3 Sense（カメラ付き）向けのカメラストリーミングテストも提供されています。詳細については[こちら](https://wiki.seeedstudio.com/XIAO_ESP32S3_Micropython/#step-3-testing-the-streaming-example)をご参照ください。
+ESP32S3 Sense（カメラ付き）向けのカメラストリーミングテストも提供されています。詳細については[こちら](https://wiki.seeedstudio.com/ja/XIAO_ESP32S3_Micropython/#step-3-testing-the-streaming-example)をご参照ください。
 
 この記事をお読みいただきありがとうございます！ぜひコメントでご意見をお寄せください。
 

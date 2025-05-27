@@ -190,7 +190,7 @@ Azure Sphere が実際の環境でどのように機能するかを理解する�
 
 ## MT3620 Mini Dev Board デモ
 
-MT3620 Mini Dev Board と [Seeed Grove システム](https://wiki.seeedstudio.com/Grove_System/) を組み合わせた3つのデモを用意しました。
+MT3620 Mini Dev Board と [Seeed Grove システム](https://wiki.seeedstudio.com/ja/Grove_System/) を組み合わせた3つのデモを用意しました。
 
 **デモ#1**: MT3620 Mini Dev Board をMCUとして使用し、Grove-ButtonとUSB to TTLアダプタに接続します。その後、MT3620 Mini Dev Board と USB to TTL アダプタをPCのUSBポートに接続します。コードをダウンロードした後、Grove-Buttonを押してUSB to TTLアダプタから「Hello World!」を入力すると、Visual Studioの出力ウィンドウから「Hello World!」を受信できます。
 

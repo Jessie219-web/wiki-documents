@@ -209,7 +209,7 @@ MusicPlayRandomlyスケッチを使用すると、音楽をランダムに再生
 
 7. Arduinoプログラムを実行し、`MusicShieldNewSdLib` スケッチをコンパイルしてArduinoボードにアップロードしてください。
 
-注意: ライブラリ内の特定の関数の具体的な使用方法については、Music Shield V2.0の[ソフトウェアインストール](https://wiki.seeedstudio.com/Music_Shield_V1.0/#software-installation)を参照してください。
+注意: ライブラリ内の特定の関数の具体的な使用方法については、Music Shield V2.0の[ソフトウェアインストール](https://wiki.seeedstudio.com/ja/Music_Shield_V1.0/#software-installation)を参照してください。
 
 ## 回路図オンラインビューア
 

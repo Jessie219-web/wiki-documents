@@ -38,7 +38,7 @@ Grove-Piezo Vibration Sensorは、柔軟性、振動、衝撃、タッチの測�
 -   強い衝撃に対する高い感受性
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 ## 対応プラットフォーム
 
@@ -143,7 +143,7 @@ void loop() {
 **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3**のみでコマンドラインを使用してください。
 :::
 
-- **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構築してください。
+- **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構築してください。
 - **ステップ2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

@@ -107,7 +107,7 @@ Seeed Studio ラウンドディスプレイ製品をご購入いただきあり�
 
 ### ソフトウェアの準備
 
-この部分は [基本 Wiki](https://wiki.seeedstudio.com/get_start_round_display#software-preparation) に詳細に記載されているため、直接そちらを参照してください。
+この部分は [基本 Wiki](https://wiki.seeedstudio.com/ja/get_start_round_display#software-preparation) に詳細に記載されているため、直接そちらを参照してください。
 
 ## TFT_eSPIライブラリを使用したシンプルなダイヤルの描画
 

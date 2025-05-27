@@ -272,7 +272,7 @@ ADC PINのデフォルト設定はfloating_inputです。
 **Raspberry Pi OS >= Bullseye** を使用している場合は、**Python3** のみでこのコマンドラインを使用する必要があります。
 :::
 
-[Grove - Sound Sensor](https://wiki.seeedstudio.com/Grove-Sound_Sensor/) を例に、このボードの使用方法を紹介します。
+[Grove - Sound Sensor](https://wiki.seeedstudio.com/ja/Grove-Sound_Sensor/) を例に、このボードの使用方法を紹介します。
 
 ハードウェア接続
 

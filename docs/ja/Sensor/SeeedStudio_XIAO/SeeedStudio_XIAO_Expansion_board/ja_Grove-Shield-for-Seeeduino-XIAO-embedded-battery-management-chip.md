@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 概要
 
-Seeed Studio Grove Base for XIAO は、**[Seeed Studio XIAO](https://wiki.seeedstudio.com/Seeeduino-XIAO/)** 用のプラグアンドプレイ型 Grove 拡張ボードです。オンボードのバッテリーマネジメントチップとバッテリー接続パッドを使用することで、リチウムバッテリーで Seeed Studio XIAO に簡単に電力を供給し、充電することができます。オンボードの 8 つの Grove コネクタには、2 つの Grove I2C と 1 つの UART が含まれています。これにより、Seeed Studio XIAO と Seeed の Grove システムをつなぐブリッジとして機能します。また、Flash SPI 接続パッドを使用して Seeed Studio XIAO にフラッシュメモリを追加し、メモリ容量を拡張することができ、Seeed Studio XIAO にさらなる可能性を提供します。
+Seeed Studio Grove Base for XIAO は、**[Seeed Studio XIAO](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/)** 用のプラグアンドプレイ型 Grove 拡張ボードです。オンボードのバッテリーマネジメントチップとバッテリー接続パッドを使用することで、リチウムバッテリーで Seeed Studio XIAO に簡単に電力を供給し、充電することができます。オンボードの 8 つの Grove コネクタには、2 つの Grove I2C と 1 つの UART が含まれています。これにより、Seeed Studio XIAO と Seeed の Grove システムをつなぐブリッジとして機能します。また、Flash SPI 接続パッドを使用して Seeed Studio XIAO にフラッシュメモリを追加し、メモリ容量を拡張することができ、Seeed Studio XIAO にさらなる可能性を提供します。
 
 オンボードのバッテリーマネジメントチップとバッテリー接続パッドを使用することで、3.7V のリチウムバッテリーで Seeed Studio XIAO に簡単に電力を供給し、充電することができます。これにより、特にウェアラブルプロジェクトにおいて、より柔軟でポータブルな設計が可能になります。また、プロジェクトの実際のニーズに応じて、オンボードの PCB スタンプホールを通じてボードを分割することもできます（分割後の寸法はわずか 25*39mm）。これにより、さらに小型化され、重量も 13g から 10g に軽減されます。
 <!-- 図に問題あり 
@@ -124,7 +124,7 @@ USBケーブル、Doppler RadarインターフェースをSeeed Studio XIAO拡�
 ### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** [デモコード](https://files.seeedstudio.com/wiki/Grove-Doppler-Radar/Seeed_Arduino_DopplerRadar.rar)をダウンロードします。
@@ -133,7 +133,7 @@ Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](htt
 
 - **ステップ 3.** Arduino IDEで**BGT24LTR11_DETECTION_TARGET**ファイルを開きます。
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 #### ソフトウェアコード
 

@@ -30,7 +30,7 @@ Grove - 酸素センサー(MIX8410)は、以前のバージョンであるGrove 
 
 
 :::tip
-    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)をリリースしました。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
+    [Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)をリリースしました。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
 :::
 
 ## 特徴
@@ -42,7 +42,7 @@ Grove - 酸素センサー(MIX8410)は、以前のバージョンであるGrove 
 * 低出力電流でセンサー寿命が長い
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 
@@ -125,7 +125,7 @@ MIX8410-O2は電流源です。ラベル#3ポイントの電圧はR7 * 電流(MI
     この章は、Win10 と Arduino IDE 1.7.9 を基にしています。
 :::
 
-この新しい Grove Gas Sensor O2(MIX8410) の使用方法は、以前の [ME2-O2-Ф20](https://wiki.seeedstudio.com/Grove-Gas_Sensor-O2/) と全く同じです。
+この新しい Grove Gas Sensor O2(MIX8410) の使用方法は、以前の [ME2-O2-Ф20](https://wiki.seeedstudio.com/ja/Grove-Gas_Sensor-O2/) と全く同じです。
 
 このモジュールは使いやすく、必要なことは信号ピン（Grove ケーブルの黄色のピン）をコントローラーの ADC 入力に接続するだけです。コントローラーに内部 ADC がない場合は、[Grove - I2C ADC](https://www.seeedstudio.com/Grove-I2C-ADC-p-1580.html) を推奨します。
 
@@ -239,7 +239,7 @@ Arduino IDE のシリアルモニターを開くと、データを取得でき�
 
 #### ソフトウェア
 
-- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ 2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

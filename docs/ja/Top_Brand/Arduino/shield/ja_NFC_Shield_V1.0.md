@@ -410,7 +410,7 @@ if(nfc.configurePeerAsTarget()) // 接続がエラーなしの場合
 
 ## 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/images/8/81/NFC_Shield_V0.9b_Schematic_Board_Files.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/ja/images/8/81/NFC_Shield_V0.9b_Schematic_Board_Files.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## リソース ##

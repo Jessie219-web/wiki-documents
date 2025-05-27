@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-Wi-Fi/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-Wi-Fi/
 slug: /ja/Wio-Terminal-Wi-Fi
 last_update:
   date: 05/15/2025
@@ -513,7 +513,7 @@ void loop()
 
 - [**Arduino MQTTライブラリ**](https://github.com/knolleary/pubsubclient)をダウンロードしてインストールしてください。
 
-- [**このWiki**](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/)に従ってWio Terminal用の加速度センサーライブラリをインストールしてください。
+- [**このWiki**](https://wiki.seeedstudio.com/ja/Wio-Terminal-IMU-Overview/)に従ってWio Terminal用の加速度センサーライブラリをインストールしてください。
 
 - Wio Terminalは加速度データを`WioTerminal/IMU`トピックに公開し、`inTopic`トピックからメッセージを購読します。
 

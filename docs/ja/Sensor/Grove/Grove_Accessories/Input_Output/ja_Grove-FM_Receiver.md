@@ -43,7 +43,7 @@ Grove - FM レシーバーは広帯域FMレシーバーモジュールです。�
 - ヘッドセットインターフェース
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 対応プラットフォーム

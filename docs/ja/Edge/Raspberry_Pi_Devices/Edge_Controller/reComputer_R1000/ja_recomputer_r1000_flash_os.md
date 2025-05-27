@@ -50,7 +50,7 @@ reComputer R1000エッジIoTコントローラーは、高性能なRaspberry Pi 
 
 ### NVMEにOSをフラッシュする
 
-この[リンク](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#steps-for-flashing-raspbian-os)を参照し、その後M.2スロットに挿入してください。
+この[リンク](https://wiki.seeedstudio.com/ja/recomputer_r1000_flash_OS/#steps-for-flashing-raspbian-os)を参照し、その後M.2スロットに挿入してください。
 
 ### eMMCから起動してEEPROMを更新する
 

@@ -87,7 +87,7 @@ Watcherデバイスの電源を入れるには、右上隅にあるホイール�
 ### ステップ3. デバイスのバインディング
 
 :::caution
-[SenseCraft Pro](https://wiki.seeedstudio.com/watcher_price/)は、デバイスがSenseCraftアプリに接続されると自動的に試用サービスを開始します。
+[SenseCraft Pro](https://wiki.seeedstudio.com/ja/watcher_price/)は、デバイスがSenseCraftアプリに接続されると自動的に試用サービスを開始します。
 :::
 
 Watcherを起動した後、以前にデバイスにバインドされていない場合は、SenseCraftアプリに接続するよう促されます。または、設定メニューで「Connect to APP」オプションを見つけることができます。その後、WatcherはSenseCraftアプリをダウンロードするためのQRコードを表示します。
@@ -196,7 +196,7 @@ Watcherがターゲットオブジェクトを検出すると、表示が絵文�
 :::danger
 SenseCraft AIの一部のサービスを利用するには料金が発生する場合があります。詳細については以下のドキュメントを参照してください：
 
-**[SenseCraft AI for Watcherのプランと特典](https://wiki.seeedstudio.com/watcher_price/)**
+**[SenseCraft AI for Watcherのプランと特典](https://wiki.seeedstudio.com/ja/watcher_price/)**
 :::
 
 SenseCraftアプリを使用すると、タスクをWatcherデバイスに送信できます。この例では、Watcherが提供するサンプルタスクの1つを使用してタスクを送信するプロセスを示します。コマンド*「キャンドルを見たら通知してください」*を使用します。
@@ -237,7 +237,7 @@ Watcherはタスク指示をダウンロードし、ダウンロードが完了�
 
 これらの手順に従うことで、SenseCraft APPを使用してWatcherにコマンドを送信し、特定の監視タスクを実行させ、指定された条件が満たされた場合に通知を受け取ることができます。
 
-Watcherの設定やタスクフローを定期的に確認・調整し、監視要件に最適化されたパフォーマンスを維持してください。アプリのタスクやオプションの詳細な説明、および間隔の詳細については、**[Watcher Task Assignment Guideline](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)**を参照してください。
+Watcherの設定やタスクフローを定期的に確認・調整し、監視要件に最適化されたパフォーマンスを維持してください。アプリのタスクやオプションの詳細な説明、および間隔の詳細については、**[Watcher Task Assignment Guideline](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)**を参照してください。
 
 </TabItem>
 
@@ -246,7 +246,7 @@ Watcherの設定やタスクフローを定期的に確認・調整し、監視�
 :::danger
 SenseCraft AIの一部のサービスを利用する際には料金が発生する場合があります。詳細については以下のドキュメントを参照してください：
 
-**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/watcher_price/)**
+**[SenseCraft AI for Watcher Plans and Benefits](https://wiki.seeedstudio.com/ja/watcher_price/)**
 :::
 
 Watcherは、音声コマンドを使用してタスクを送信したり会話を行ったりする便利で直感的な方法を提供します。この機能は「Push to Talk」機能によって実現されており、デバイスのどの画面やインターフェースからでもアクセス可能です。メニューをナビゲートすることなくWatcherと簡単にやり取りできます。以下はこの機能の使用方法のステップバイステップガイドです：

@@ -74,7 +74,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア
 
-必要なライブラリは以下の通りです。ここで提供されるコードを使用して、ハードウェアが正常に動作しているか確認することを強くお勧めします。ライブラリのインストールに関する問題がある場合は、[こちら](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)を参照してください。
+必要なライブラリは以下の通りです。ここで提供されるコードを使用して、ハードウェアが正常に動作しているか確認することを強くお勧めします。ライブラリのインストールに関する問題がある場合は、[こちら](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)を参照してください。
 
 - [Seeed_Arduino_LSM6DS3-master](https://files.seeedstudio.com/wiki/XIAO-BLE-Motion-Recognition/Seeed_Arduino_LSM6DS3-master.zip)
 - [U8g2](https://files.seeedstudio.com/wiki/XIAO-BLE-Motion-Recognition/U8g2.zip)

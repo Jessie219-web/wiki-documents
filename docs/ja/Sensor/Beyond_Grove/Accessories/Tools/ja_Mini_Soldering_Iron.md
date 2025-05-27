@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Mini_Soldering_Iron/
+image: https://wiki.seeedstudio.com/ja/Mini_Soldering_Iron/
 slug: /ja/Mini_Soldering_Iron
 last_update:
   date: 05/15/2025

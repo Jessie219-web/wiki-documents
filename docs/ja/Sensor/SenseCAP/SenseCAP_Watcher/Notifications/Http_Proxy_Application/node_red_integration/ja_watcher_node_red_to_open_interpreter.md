@@ -38,13 +38,13 @@ Open Interpreter は、ユーザーとコンピュータ間のやり取りを促
 
 ### Step 1. SenseCap Watcher OpenSteam モジュールの設定
 
-まず最初に、以下のビデオに従って Watcher でタスクを実行する必要があります。詳細を知りたい場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)。
+まず最初に、以下のビデオに従って Watcher でタスクを実行する必要があります。詳細を知りたい場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)。
 
 <div class="table-center">
 <iframe width="600" height="338" src="https://files.seeedstudio.com/wiki/watcher_to_open_interpreter_image/run_task.mp4?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 </div>
 
-Watcher から Node-RED にメッセージを送信する方法がわからない場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/watcher_to_node_red/)。
+Watcher から Node-RED にメッセージを送信する方法がわからない場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/ja/watcher_to_node_red/)。
 
 ### Step 2. function モジュールの設定
 

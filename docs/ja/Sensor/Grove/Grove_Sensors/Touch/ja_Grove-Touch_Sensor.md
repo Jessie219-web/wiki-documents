@@ -29,7 +29,7 @@ Grove - タッチセンサーは、押す操作をタッチ操作に置き換え
 - 使用チップセット: TTP223-BA6
 
 :::tip
-Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -115,7 +115,7 @@ void loop() {
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開いてください。
@@ -155,7 +155,7 @@ Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftの
 **Raspberry Pi OS >= Bullseye**を使用している場合、このコマンドラインは**Python3のみ**で使用してください。
 :::
 
-- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成してください。
+- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成してください。
 - **ステップ 2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wireless-desktop-atmosphere-lamp/
+image: https://wiki.seeedstudio.com/ja/Wireless-desktop-atmosphere-lamp/
 slug: /ja/Wireless-desktop-atmosphere-lamp
 last_update:
   date: 05/15/2025

@@ -74,7 +74,7 @@ IP66 ハウジング、Bluetooth 設定、グローバル LoRaWAN® ネットワ
 
 この章の内容では、前述のNode-REDを引き続き使用し、Node-REDを通じてK1100キットをInfluxDBで管理する方法を説明します。
 
-Node-REDをインストールしていない、またはNode-REDが何であるか分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/)を参照してください。
+Node-REDをインストールしていない、またはNode-REDが何であるか分からない場合は、[Node-RED & SenseCAP チュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/)を参照してください。
 
 ## MQTTノードの作成
 
@@ -84,7 +84,7 @@ Node-REDをインストールしていない、またはNode-REDが何である�
 
 **ステップ2.** MQTTノードを作成する
 
-**Network -> mqtt in**ノードを使用し、[前回のチュートリアル](https://wiki.seeedstudio.com/K1100_sensecap_node-red/#mqtt-node)で説明したSenseCAP APIの形式に従ってMQTTを設定します。
+**Network -> mqtt in**ノードを使用し、[前回のチュートリアル](https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/#mqtt-node)で説明したSenseCAP APIの形式に従ってMQTTを設定します。
 
 - サーバー: openstream.api.sensecap.seeed.cc
 - ポート: 1883

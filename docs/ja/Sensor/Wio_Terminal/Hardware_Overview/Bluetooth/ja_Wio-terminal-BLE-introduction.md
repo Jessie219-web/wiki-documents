@@ -25,7 +25,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - [**Wio Terminal**](https://www.seeedstudio.com/Wio-Terminal-p-4509.html)
 
 :::note
-Wio Terminal をお持ちの場合は、[**Bluetooth 概要**](https://wiki.seeedstudio.com/Wio-Terminal-Bluetooth-Overview/)を訪問し、RTL8720 上の最新の BLE ファームウェアを更新し、依存する Arduino ライブラリをダウンロードしてください。
+Wio Terminal をお持ちの場合は、[**Bluetooth 概要**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Bluetooth-Overview/)を訪問し、RTL8720 上の最新の BLE ファームウェアを更新し、依存する Arduino ライブラリをダウンロードしてください。
 :::
 
 ## **概要**

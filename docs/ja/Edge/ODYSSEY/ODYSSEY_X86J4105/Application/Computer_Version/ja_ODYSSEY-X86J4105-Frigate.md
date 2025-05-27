@@ -40,7 +40,7 @@ Frigate NVR は、セキュリティカメラにローカル処理された AI �
 
 **STEP 1:** [Odyssey Blue](https://www.seeedstudio.com/odyssey-blue-j4125-128gb-p-4921.html?queryID=e375797339bbfbdd78f5c9f94af936ee&objectID=4921&indexName=bazaar_retailer_products) に Debian 11 をインストールしていることを確認してください
 
-[Debian 11](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-11.4.0-amd64-DVD-1.iso) OS イメージをダウンロードし、[こちら](https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Installing-OS/) のセットアップガイドに従って [Odyssey Blue](https://www.seeedstudio.com/odyssey-blue-j4125-128gb-p-4921.html?queryID=e375797339bbfbdd78f5c9f94af936ee&objectID=4921&indexName=bazaar_retailer_products) に Debian 11 オペレーティングシステムをインストールしてください。
+[Debian 11](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/debian-11.4.0-amd64-DVD-1.iso) OS イメージをダウンロードし、[こちら](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Installing-OS/) のセットアップガイドに従って [Odyssey Blue](https://www.seeedstudio.com/odyssey-blue-j4125-128gb-p-4921.html?queryID=e375797339bbfbdd78f5c9f94af936ee&objectID=4921&indexName=bazaar_retailer_products) に Debian 11 オペレーティングシステムをインストールしてください。
 
 **STEP 2:** Debian 11 に Docker Engine と Docker Compose をインストールしていることを確認してください
 

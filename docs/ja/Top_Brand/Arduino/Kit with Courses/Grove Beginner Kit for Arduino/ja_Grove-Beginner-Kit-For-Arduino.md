@@ -30,17 +30,17 @@ Grove Beginner Kit for Arduino は、初心者向けの最高の Arduino 初心�
 
 **注:** 寸法 - 17.69 * 11.64 * 1.88cm
 
-1. **[Grove - LED](https://wiki.seeedstudio.com/Grove-Red_LED/):** シンプルな LED モジュール
-2. **[Grove - Buzzer](https://wiki.seeedstudio.com/Grove-Buzzer/):** 圧電ブザー
-3. **[Grove - OLED Display 0.96"](https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/):** 128×64 ドット解像度、高輝度、自発光、高コントラスト比、コンパクトなデザインで大画面、低消費電力
-4. **[Grove - Button](https://wiki.seeedstudio.com/Grove-Button/):** モーメンタリープッシュボタン
-5. **[Grove - Rotary Potentiometer](https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor/):** 調整可能なポテンショメータ
-6. **[Grove - Light](https://wiki.seeedstudio.com/Grove-Light_Sensor/):** 周囲の光強度を検出
-7. **[Grove - Sound](https://wiki.seeedstudio.com/Grove-Sound_Sensor/):** 周囲の音強度を検出
-8. **[Grove - Temperature & Humidity Sensor](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/):** 周囲の温度と湿度を検出
-9. **[Grove - Air Pressure Sensor](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP280/):** 周囲の気圧を検出
-10. **[Grove - 3-Axis Accelerator](https://wiki.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR):** オブジェクトの加速度を検出
-11. **[Seeeduino Lotus](https://wiki.seeedstudio.com/Seeeduino_Lotus/):** Grove ポートを備えた Arduino 互換ボード
+1. **[Grove - LED](https://wiki.seeedstudio.com/ja/Grove-Red_LED/):** シンプルな LED モジュール
+2. **[Grove - Buzzer](https://wiki.seeedstudio.com/ja/Grove-Buzzer/):** 圧電ブザー
+3. **[Grove - OLED Display 0.96"](https://wiki.seeedstudio.com/ja/Grove-OLED-Display-0.96-SSD1315/):** 128×64 ドット解像度、高輝度、自発光、高コントラスト比、コンパクトなデザインで大画面、低消費電力
+4. **[Grove - Button](https://wiki.seeedstudio.com/ja/Grove-Button/):** モーメンタリープッシュボタン
+5. **[Grove - Rotary Potentiometer](https://wiki.seeedstudio.com/ja/Grove-Rotary_Angle_Sensor/):** 調整可能なポテンショメータ
+6. **[Grove - Light](https://wiki.seeedstudio.com/ja/Grove-Light_Sensor/):** 周囲の光強度を検出
+7. **[Grove - Sound](https://wiki.seeedstudio.com/ja/Grove-Sound_Sensor/):** 周囲の音強度を検出
+8. **[Grove - Temperature & Humidity Sensor](https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor/):** 周囲の温度と湿度を検出
+9. **[Grove - Air Pressure Sensor](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BMP280/):** 周囲の気圧を検出
+10. **[Grove - 3-Axis Accelerator](https://wiki.seeedstudio.com/ja/Grove-3-Axis-Digital-Accelerometer-LIS3DHTR):** オブジェクトの加速度を検出
+11. **[Seeeduino Lotus](https://wiki.seeedstudio.com/ja/Seeeduino_Lotus/):** Grove ポートを備えた Arduino 互換ボード
 
 **注:**
 Grove モジュールはデフォルトで PCB スタンプホールを介して Seeeduino に接続されています。このため、モジュールを取り外さない限り Grove ケーブルを使用する必要はありません。デフォルトのピンは以下の通りです：
@@ -1026,7 +1026,7 @@ Arduino環境は、他の多くのプログラミングプラットフォーム�
 
 ![](https://files.seeedstudio.com/wiki/Grove-Beginner-Kit-For-Arduino/img/zip.jpg)
 
-詳細については、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)をご覧ください。
+詳細については、[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)をご覧ください。
 
 使用するコンポーネント
 
@@ -1960,7 +1960,7 @@ Grove LEDをSeeeduino Lotusのデジタル信号インターフェース **D4** 
 
 もし回路図やレイアウトを自分で作成したくない場合でも、Seeedのモジュールを基にしたプロトタイプを統合製品に変換したい場合は、Upverterを試してみることを強くお勧めします。
 
-詳細については、[**Grove Beginner Kit for Arduino Upverter Guide**](https://wiki.seeedstudio.com/Grove-Beginner-Kit-for-Arduino-Upverter-Guide/) をご覧ください。
+詳細については、[**Grove Beginner Kit for Arduino Upverter Guide**](https://wiki.seeedstudio.com/ja/Grove-Beginner-Kit-for-Arduino-Upverter-Guide/) をご覧ください。
 
 ### PCBサービス
 

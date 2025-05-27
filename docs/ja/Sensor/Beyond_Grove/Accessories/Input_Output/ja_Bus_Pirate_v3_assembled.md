@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Bus_Pirate_v3_assembled/
+image: https://wiki.seeedstudio.com/ja/Bus_Pirate_v3_assembled/
 slug: /ja/Bus_Pirate_v3_assembled
 last_update:
   date: 05/15/2025

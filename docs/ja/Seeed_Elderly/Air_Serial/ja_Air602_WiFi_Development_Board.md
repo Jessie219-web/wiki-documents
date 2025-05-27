@@ -304,7 +304,7 @@ AT+WJOIN
 
 ファームウェアプログラミングについては以下をご確認ください：
 
-[Air602 Firmware Programming Manual](https://wiki.seeedstudio.com/Air602_Firmware_Programming_Manual)
+[Air602 Firmware Programming Manual](https://wiki.seeedstudio.com/ja/Air602_Firmware_Programming_Manual)
 
 ## FAQ
 

@@ -49,7 +49,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 - [USBDisplayAndMouseControl](https://files.seeedstudio.com/wiki/Wio-Terminanl-HMI/USBDisplayAndMouseControl.uf2) の `uf2` ファイルをダウンロードしてください。
 
-電源スイッチを素早く 2 回スライドさせてブートローダーモードに入ります。詳細については、[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#faq) も参照してください。
+電源スイッチを素早く 2 回スライドさせてブートローダーモードに入ります。詳細については、[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#faq) も参照してください。
 
 PC に `Arduino` という名前の外部ドライブが表示されるはずです。ダウンロードした `uf2` ファイルを `Arduino` ドライブにドラッグしてください。
 
@@ -398,7 +398,7 @@ python3 test.py
 
 ## Usermod SDK
 
-このUSBディスプレイドライバはPCでも動作します。詳細については、**[こちらのWiki](https://wiki.seeedstudio.com/Wio-Terminal-HMI-Usermode-SDK/)** をご確認ください。
+このUSBディスプレイドライバはPCでも動作します。詳細については、**[こちらのWiki](https://wiki.seeedstudio.com/ja/Wio-Terminal-HMI-Usermode-SDK/)** をご確認ください。
 
 ## さらなる開発
 

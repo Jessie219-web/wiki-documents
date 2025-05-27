@@ -70,7 +70,7 @@ Arduinoをサポートするすべてのボードに対して、コードをア�
 Arduinoライブラリのインストール方法についてのチュートリアルを提供しています。ほとんどすべてのライブラリは[Github](https://github.com/Seeed-Studio)に保存されていることに注意してください。製品がライブラリを必要とする場合、例えば[CAB-BUS Shield V2](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)のように、Arduinoライブラリを提供します。しかし、Grove - Buttonのような他のシンプルな製品ではライブラリを書く必要がありません。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>Arduinoライブラリのインストール方法</font></span></strong>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>Arduinoライブラリのインストール方法</font></span></strong>
     </a>
 </div>
 
@@ -79,47 +79,47 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 コードのアップロード方法についての別のチュートリアルを用意しています：
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>コードのアップロード方法</font></span></strong>
+    <a class="download_arduino_item" href="https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/"><strong><span><font color={'FFFFFF'} size={"4"}>コードのアップロード方法</font></span></strong>
     </a>
 </div>
 
 ### その他のハウツーチュートリアル
 
-- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)
-- [ライブラリの使用と作成方法](https://wiki.seeedstudio.com/How_to_use_and_write_a_library)
-- [コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code)
-- [外部エディタの使用方法](https://wiki.seeedstudio.com/Use_External_Editor)
-- [SeeedのGithubからダウンロードしたデモの使用方法](https://wiki.seeedstudio.com/Guide_to_use_demos_downloaded_from_Seeed-s_Github)
+- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)
+- [ライブラリの使用と作成方法](https://wiki.seeedstudio.com/ja/How_to_use_and_write_a_library)
+- [コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code)
+- [外部エディタの使用方法](https://wiki.seeedstudio.com/ja/Use_External_Editor)
+- [SeeedのGithubからダウンロードしたデモの使用方法](https://wiki.seeedstudio.com/ja/Guide_to_use_demos_downloaded_from_Seeed-s_Github)
 
-- [スケッチブックの使用方法](https://wiki.seeedstudio.com/How_To_Use_Sketchbook)
-- [Sidekick Advanced Kitのスケッチブックの使用方法](https://wiki.seeedstudio.com/Sketchbook_of_Sidekick_Advanced_Kit)
+- [スケッチブックの使用方法](https://wiki.seeedstudio.com/ja/How_To_Use_Sketchbook)
+- [Sidekick Advanced Kitのスケッチブックの使用方法](https://wiki.seeedstudio.com/ja/Sketchbook_of_Sidekick_Advanced_Kit)
 
-- [ソフトウェアシリアルの使用方法](https://wiki.seeedstudio.com/Software-Serial)
-- [ソフトウェアI2Cの使用方法](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide)
-- [ソフトウェアSPIの使用方法](https://wiki.seeedstudio.com/Software-SPI)
-- [ソフトウェア静的ライブラリの使用方法](https://wiki.seeedstudio.com/Software-Static-Library)
-- [Arduinoの一般的なエラーの対処方法](https://wiki.seeedstudio.com/Arduino_Common_Error)
+- [ソフトウェアシリアルの使用方法](https://wiki.seeedstudio.com/ja/Software-Serial)
+- [ソフトウェアI2Cの使用方法](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide)
+- [ソフトウェアSPIの使用方法](https://wiki.seeedstudio.com/ja/Software-SPI)
+- [ソフトウェア静的ライブラリの使用方法](https://wiki.seeedstudio.com/ja/Software-Static-Library)
+- [Arduinoの一般的なエラーの対処方法](https://wiki.seeedstudio.com/ja/Arduino_Common_Error)
 
-- [ガスセンサーの選び方](https://wiki.seeedstudio.com/How-to-Choose-A-Gas-Sensor)
-- [異なるGrove温度センサーの選び方](https://wiki.seeedstudio.com/A_Comparison_of_Different_Grove_Temperature_Sensors)
-- [GPSモジュールの選び方](https://wiki.seeedstudio.com/GPS-Modules-Selection-Guide)
-- [指タッチの検出方法](https://wiki.seeedstudio.com/How_to_detect_finger_touch)
-- [Seeedリレーの選び方](https://wiki.seeedstudio.com/Seeed_Relay_Page)
-- [気圧センサーの選び方](https://wiki.seeedstudio.com/Barometer-Selection-Guide)
+- [ガスセンサーの選び方](https://wiki.seeedstudio.com/ja/How-to-Choose-A-Gas-Sensor)
+- [異なるGrove温度センサーの選び方](https://wiki.seeedstudio.com/ja/A_Comparison_of_Different_Grove_Temperature_Sensors)
+- [GPSモジュールの選び方](https://wiki.seeedstudio.com/ja/GPS-Modules-Selection-Guide)
+- [指タッチの検出方法](https://wiki.seeedstudio.com/ja/How_to_detect_finger_touch)
+- [Seeedリレーの選び方](https://wiki.seeedstudio.com/ja/Seeed_Relay_Page)
+- [気圧センサーの選び方](https://wiki.seeedstudio.com/ja/Barometer-Selection-Guide)
 
-- [適切なケーブルの選び方](https://wiki.seeedstudio.com/How_To_Choose_The_Right_Cable)
+- [適切なケーブルの選び方](https://wiki.seeedstudio.com/ja/How_To_Choose_The_Right_Cable)
 
 ### より高度なチュートリアル
 
-- [Suli](https://wiki.seeedstudio.com/Suli)
-- [Seeed Arduino Serialの使用方法](https://wiki.seeedstudio.com/Seeed_Arduino_Serial)
-- [Seeed製品のI2CおよびI2Cアドレスの使用方法](https://wiki.seeedstudio.com/I2C_And_I2C_Address_of_Seeed_Product)
-- [ODYSSEY-X86J4105をFirmataで使用する方法](https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Firmata)
-- [SWDインターフェースを使用したArduinoボードのデバッグ方法](https://wiki.seeedstudio.com/Software-SWD)
-- [Mosquitto MQTTブローカーをAWS IoTにArduinoボードでブリッジする方法](https://wiki.seeedstudio.com/Arduino-AWS-IOT-Bridge)
-- [ArduinoボードをDAPLinkデバイスとして使用する方法](https://wiki.seeedstudio.com/Arduino-DAPLink)
-- [DAPLinkを使用してArduinoブートローダーをフラッシュする方法](https://wiki.seeedstudio.com/Flashing-Arduino-Bootloader-DAPLink)
-- [Xadow IOピンマッピングの理解方法](https://wiki.seeedstudio.com/Xadow_IO_pin_mapping)
+- [Suli](https://wiki.seeedstudio.com/ja/Suli)
+- [Seeed Arduino Serialの使用方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Serial)
+- [Seeed製品のI2CおよびI2Cアドレスの使用方法](https://wiki.seeedstudio.com/ja/I2C_And_I2C_Address_of_Seeed_Product)
+- [ODYSSEY-X86J4105をFirmataで使用する方法](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Firmata)
+- [SWDインターフェースを使用したArduinoボードのデバッグ方法](https://wiki.seeedstudio.com/ja/Software-SWD)
+- [Mosquitto MQTTブローカーをAWS IoTにArduinoボードでブリッジする方法](https://wiki.seeedstudio.com/ja/Arduino-AWS-IOT-Bridge)
+- [ArduinoボードをDAPLinkデバイスとして使用する方法](https://wiki.seeedstudio.com/ja/Arduino-DAPLink)
+- [DAPLinkを使用してArduinoブートローダーをフラッシュする方法](https://wiki.seeedstudio.com/ja/Flashing-Arduino-Bootloader-DAPLink)
+- [Xadow IOピンマッピングの理解方法](https://wiki.seeedstudio.com/ja/Xadow_IO_pin_mapping)
 
 ## Arduinoコア
 
@@ -139,7 +139,7 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/catalogsearch/result/?q=xiao"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/SeeedStudio_XIAO_Series_Introduction/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a>
 </div>
 
 <br />
@@ -159,7 +159,7 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Wio Terminal</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 Wio Terminal</font></span></strong></a>
 </div>
 
 <br />
@@ -178,7 +178,7 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Indicator-D1-p-5643.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Develop_with_SenseCAP_Indicator/"><strong><span><font color={'FFFFFF'} size={"4"}>📚SenseCAP Indicator</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Develop_with_SenseCAP_Indicator/"><strong><span><font color={'FFFFFF'} size={"4"}>📚SenseCAP Indicator</font></span></strong></a>
 </div>
 
 #### その他
@@ -187,20 +187,20 @@ Arduinoライブラリのインストール方法についてのチュートリ�
 
 ### Arduinoシールド（拡張ボード）
 
-- [Grove Base V2](https://wiki.seeedstudio.com/Base_Shield_V2/)
-- [CAN-BUS Shield V2.0](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)
-- [Relay Shield v3](https://wiki.seeedstudio.com/Relay_Shield_v3/)
-- [W5500 Ethernet Shield v1.0](https://wiki.seeedstudio.com/W5500_Ethernet_Shield_v1.0/)
-- [Small e-Paper Shield V2](https://wiki.seeedstudio.com/Small_e-Paper_Shield_V2/)
-- [Spartan Edge Accelerator Board](https://wiki.seeedstudio.com/Spartan-Edge-Accelerator-Board/)
-- [Grove Shield for Arduino Nano](https://wiki.seeedstudio.com/Grove_Shield_for_Arduino_Nano/)
+- [Grove Base V2](https://wiki.seeedstudio.com/ja/Base_Shield_V2/)
+- [CAN-BUS Shield V2.0](https://wiki.seeedstudio.com/ja/CAN-BUS_Shield_V2.0/)
+- [Relay Shield v3](https://wiki.seeedstudio.com/ja/Relay_Shield_v3/)
+- [W5500 Ethernet Shield v1.0](https://wiki.seeedstudio.com/ja/W5500_Ethernet_Shield_v1.0/)
+- [Small e-Paper Shield V2](https://wiki.seeedstudio.com/ja/Small_e-Paper_Shield_V2/)
+- [Spartan Edge Accelerator Board](https://wiki.seeedstudio.com/ja/Spartan-Edge-Accelerator-Board/)
+- [Grove Shield for Arduino Nano](https://wiki.seeedstudio.com/ja/Grove_Shield_for_Arduino_Nano/)
 - [Seeed Studio Bazaar](https://www.seeedstudio.com/catalogsearch/result/?q=arduino%20shields)でさらに詳しく。
 
 ### コース付きキット
 
-- [Grove Beginner Kit for Arduino](https://wiki.seeedstudio.com/Grove-Beginner-Kit-For-Arduino/)
-- [Rainbow Cube kit- RGB 4X4X4 (Rainbowduino Compatible)](https://wiki.seeedstudio.com/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/)
-- [Grove Creator Kit for Arduino](https://wiki.seeedstudio.com/Grove-Creator-Kit-1/)
+- [Grove Beginner Kit for Arduino](https://wiki.seeedstudio.com/ja/Grove-Beginner-Kit-For-Arduino/)
+- [Rainbow Cube kit- RGB 4X4X4 (Rainbowduino Compatible)](https://wiki.seeedstudio.com/ja/Rainbow_Cube_kit_RGB_4_4_4_Rainbowduino_Compatible/)
+- [Grove Creator Kit for Arduino](https://wiki.seeedstudio.com/ja/Grove-Creator-Kit-1/)
 
 ## ✨ コントリビュータープロジェクト
 

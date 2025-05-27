@@ -52,7 +52,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 |動作温度 | -40~70 ℃|
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -202,7 +202,7 @@ ArduinoライブラリU8g2はArduino IDEのライブラリマネージャーか�
 - **ステップ4.** Raspberry PiをUSBケーブルを通じてPCに接続します。
 
 #### ソフトウェア
-- **ステップ1.** [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成し、grove.pyをRaspberry Piにインストールします。
+- **ステップ1.** [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成し、grove.pyをRaspberry Piにインストールします。
 - **ステップ2.** 以下のコマンドを実行してコードを実行します。
 
 ```

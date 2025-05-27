@@ -41,28 +41,28 @@ Grove - ガスセンサー(MQ5)モジュールは、ガス漏れ検知（家庭�
     <td><h4>今すぐ購入</h4></td>
     </tr>
     <tr>
-    <td><a href="https://wiki.seeedstudio.com/Grove-Gas_Sensor-MQ2/" target="_blank"><span>MQ2</span></a></td>
+    <td><a href="https://wiki.seeedstudio.com/ja/Grove-Gas_Sensor-MQ2/" target="_blank"><span>MQ2</span></a></td>
     <td>可燃性ガス、煙</td>
     <td><div class="document">
 <a href="https://www.seeedstudio.com/Grove-Gas-Sensor(MQ2)-p-937.html" target="_blank" rel="noopener"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" alt="" width={200} height="auto"/></a>
 </div></td>
     </tr>
     <tr>
-    <td><a href="https://wiki.seeedstudio.com/Grove-Gas_Sensor-MQ3/" target="_blank"><span>MQ3</span></a></td>
+    <td><a href="https://wiki.seeedstudio.com/ja/Grove-Gas_Sensor-MQ3/" target="_blank"><span>MQ3</span></a></td>
     <td>アルコール蒸気</td>
     <td><div class="document">
 <a href="https://www.seeedstudio.com/Grove-Gas-Sensor%28MQ3%29-p-1418.html" target="_blank" rel="noopener"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" alt="" width={200} height="auto"/></a>
 </div></td>
     </tr>
     <tr>
-    <td><a href="https://wiki.seeedstudio.com/Grove-Gas_Sensor-MQ5/" target="_blank"><span>MQ5</span></a></td>
+    <td><a href="https://wiki.seeedstudio.com/ja/Grove-Gas_Sensor-MQ5/" target="_blank"><span>MQ5</span></a></td>
     <td>LPG、天然ガス、都市ガス</td>
     <td><div class="document">
 <a href="https://www.seeedstudio.com/Grove-Gas-Sensor%28MQ5%29-p-938.html" target="_blank" rel="noopener"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" alt="" width={200} height="auto"/></a>
 </div></td>
     </tr>
     <tr>
-    <td><a href="https://wiki.seeedstudio.com/Grove-Gas_Sensor-MQ9/" target="_blank"><span>MQ9</span></a></td>
+    <td><a href="https://wiki.seeedstudio.com/ja/Grove-Gas_Sensor-MQ9/" target="_blank"><span>MQ9</span></a></td>
     <td>一酸化炭素、石炭ガス、液化ガス</td>
     <td><div class="document">
 <a href="https://www.seeedstudio.com/Grove-Gas-Sensor%28MQ9%29-p-1419.html" target="_blank" rel="noopener"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" alt="" width={200} height="auto"/></a>
@@ -72,7 +72,7 @@ Grove - ガスセンサー(MQ5)モジュールは、ガス漏れ検知（家庭�
 
 
 :::tip
-    [Seeed ガスセンサー選択ガイド](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
+    [Seeed ガスセンサー選択ガイド](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶのに役立ちます。
 :::
 
 ## 特徴
@@ -276,7 +276,7 @@ void loop() {
 
 #### ソフトウェア
 
-- **ステップ 1**. [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を設定します。
+- **ステップ 1**. [Setting Software](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を設定します。
 - **ステップ 2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

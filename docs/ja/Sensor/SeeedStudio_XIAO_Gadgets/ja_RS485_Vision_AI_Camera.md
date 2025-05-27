@@ -246,7 +246,7 @@ SenseCraft APPでRS485 Vision AI V2デバイスを正常に使用できました
 
 ### XIAOでデータを読み取る
 
-XIAOを介して書き込まれたモデルからデータを読み取るには、この[wiki](https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/)をご覧ください。Vision AI V2データをXIAOを介して読み取る方法が詳しく説明されています。
+XIAOを介して書き込まれたモデルからデータを読み取るには、この[wiki](https://wiki.seeedstudio.com/ja/grove_vision_ai_v2_software_support/)をご覧ください。Vision AI V2データをXIAOを介して読み取る方法が詳しく説明されています。
 
 ### RS485でのデータ送信
 
@@ -258,7 +258,7 @@ XIAOを介して書き込まれたモデルからデータを読み取るには�
 5Vに接続する場合、12Vに接続する必要はありません。12Vと5Vのいずれか一方の電源を選択してください。同時に使用しないように注意してください！
 :::
 
-上記の図に従って正常に接続した後、この[wiki](https://wiki.seeedstudio.com/grove_vision_ai_v2_rs485/)リンクをクリックして、コードを使用してデバイスを駆動する方法の詳細な説明をご覧ください。
+上記の図に従って正常に接続した後、この[wiki](https://wiki.seeedstudio.com/ja/grove_vision_ai_v2_rs485/)リンクをクリックして、コードを使用してデバイスを駆動する方法の詳細な説明をご覧ください。
 
 ## リソース
 

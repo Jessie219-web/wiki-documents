@@ -59,7 +59,7 @@ GPRSシールドは、クアッドバンド低消費電力GSM/GPRSモジュー�
 ---
 ![](https://files.seeedstudio.com/wiki/GPRS_Shield_V3.0/img/Gprs_shield_v3_layout1.png)
 
-仕様やアプリケーションガイドについては、[GPRSシールド V2.0](https://wiki.seeedstudio.com/GPRS_Shield_V2.0/)のドキュメントを参照してください。
+仕様やアプリケーションガイドについては、[GPRSシールド V2.0](https://wiki.seeedstudio.com/ja/GPRS_Shield_V2.0/)のドキュメントを参照してください。
 
 ## よくある質問（FAQs）
 

@@ -51,7 +51,7 @@ Long Range のネットワークアーキテクチャやアプリケーション
 - **[XIAO ESP32S3](/xiao_esp32s3_getting_started/)**: Arduino 互換で、多様な IoT プロジェクトに最適な汎用ボードです。必要に応じて、他の Arduino 互換ボードに置き換えることができます。
 - **[Grove - DHT11](/Grove-TemperatureAndHumidity_Sensor)**: 環境データ収集用で、多くの IoT アプリケーションに不可欠です。
 - **[Grove - Circular LED](/Grove-Circular_LED)**: ライト制御に使用されます。これは制御可能なデバイスの例であり、必要に応じて他のコンポーネントに置き換えることができます。
-- **[Grove - OLED Display](https://wiki.seeedstudio.com/Grove-OLED-Display-0.96-SSD1315/)**: 視覚的なデータ表示機能をプロジェクトに追加します。このコンポーネントはオプションですが、よりインタラクティブなユーザーインターフェースを提供するために推奨されます。
+- **[Grove - OLED Display](https://wiki.seeedstudio.com/ja/Grove-OLED-Display-0.96-SSD1315/)**: 視覚的なデータ表示機能をプロジェクトに追加します。このコンポーネントはオプションですが、よりインタラクティブなユーザーインターフェースを提供するために推奨されます。
 - **[Grove - Wio-E5 LoRa Module](/Grove_LoRa_E5_New_Version/)**: 長距離、低消費電力のワイヤレス通信を提供し、LoRaWAN アプリケーションに最適です。
 - **[SenseCAP M2 Multi-Platform Gateway](/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview/)**: Wio-E5 モジュールと LoRaWAN ネットワーク間の通信を可能にする重要なコンポーネントです。
 

@@ -252,7 +252,7 @@ SenseCraft APP で Watcher が提供するローカル AI サービスを使用�
 
 これらの手順を完了することで、デバイス上で Watcher の AI サービスの力を活用できるようになります。これにより、プライバシーが強化され、独自の統合システムを便利にカスタマイズすることが可能になります。Watcher の AI 機能をローカルで実行することで、データを自分で管理しながら、高度なタスク、分析、オートメーションを安全かつ効率的に実行できます。
 
-**[HTTP メッセージブロック](https://wiki.seeedstudio.com/getting_started_with_watcher_look_tool/#http-message-block)** を使用したローカルデプロイ後のメッセージプッシュに関するチュートリアルをアプリケーションディレクトリに追加し続けますので、ぜひご期待ください！
+**[HTTP メッセージブロック](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_look_tool/#http-message-block)** を使用したローカルデプロイ後のメッセージプッシュに関するチュートリアルをアプリケーションディレクトリに追加し続けますので、ぜひご期待ください！
 
 ## FAQ
 

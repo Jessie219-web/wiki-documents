@@ -52,7 +52,7 @@ SenseCAP S210xシリーズ産業用センサーは、環境センシングのた
 - プロジェクトを迅速に構築するための高度に抽象化されたライブラリ  
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -147,7 +147,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 
 **ステップ1.** [ライブラリ](https://github.com/Seeed-Studio/Grove_BMP280.git)をGithubからダウンロードします。
 
-**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 **ステップ3.** 新しいArduinoスケッチを作成し、以下のコードを貼り付けるか、次のパスからコードを直接開きます：File -> Example -> bmp280_example -> bmp280_example
 
@@ -214,7 +214,7 @@ void loop()
 }
 ```
 
-**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 **ステップ 5.** シリアルモニターを開き、センサーのデータ（温度、気圧値、高度）を受信します。
 

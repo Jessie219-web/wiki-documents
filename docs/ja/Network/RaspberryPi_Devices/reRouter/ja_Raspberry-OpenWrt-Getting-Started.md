@@ -34,7 +34,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### OpenWrtが事前インストール済み
 
-Compute Module 4には、<a href="https://wiki.seeedstudio.com/OpenWrt-Getting-Started/" target="_blank"><span>OpenWrtファームウェア</span></a>が最初からインストールされています。つまり、パッケージを開封し、ボードを取り出して既存の家庭用ネットワークに接続するだけで、自分専用のミニルーターを手に入れることができます！
+Compute Module 4には、<a href="https://wiki.seeedstudio.com/ja/OpenWrt-Getting-Started/" target="_blank"><span>OpenWrtファームウェア</span></a>が最初からインストールされています。つまり、パッケージを開封し、ボードを取り出して既存の家庭用ネットワークに接続するだけで、自分専用のミニルーターを手に入れることができます！
 
 OpenWrtは、組み込みデバイスやルーターで動作するオープンソースのLinuxオペレーティングシステムです。従来のルーターよりも多くの機能、パフォーマンス、セキュリティを提供します。完全に書き込み可能なファイルシステムを持ち、パッケージ管理システムを含んでいます。これらのパッケージを利用して、さまざまな方法でアプリケーションに適応させることができます。このボードを家庭用ネットワークに接続し、ウェブブラウザからルーターにアクセスすると、以下のような美しくインタラクティブなダッシュボードが表示されます。
 

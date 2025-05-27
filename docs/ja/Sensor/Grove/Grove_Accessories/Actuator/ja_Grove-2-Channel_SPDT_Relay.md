@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-2-Channel_SPDT_Relay/
+image: https://wiki.seeedstudio.com/ja/Grove-2-Channel_SPDT_Relay/
 slug: /ja/Grove-2-Channel_SPDT_Relay
 last_update:
   date: 05/15/2025
@@ -125,7 +125,7 @@ Grove - 2-Channel SPDT Relay は、2つの単極双投（SPDT）スイッチを�
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** Arduino IDEを開き、新しいファイルを作成して、以下のコードを新しいファイルにコピーします。
@@ -148,7 +148,7 @@ void loop() {
 }
 ```
 
-- **ステップ2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::tip
     オンボードLEDが交互に点灯および消灯するのが確認でき、2つのGrove - LEDも同様に動作します。

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウラス
-image: https://wiki.seeedstudio.com/Grove-Ultrasonic_Ranger/
+image: https://wiki.seeedstudio.com/ja/Grove-Ultrasonic_Ranger/
 slug: /ja/Grove-Ultrasonic_Ranger
 last_update:
   date: 05/15/2025
@@ -49,7 +49,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 | エコー信号          | TTL               |
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -65,7 +65,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -102,9 +102,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 - **ステップ 1.** Githubから[UltrasonicRangerライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_UltrasonicRanger/archive/master.zip)をダウンロードします。
 
-- **ステップ 2.** Arduino用ライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してください。
+- **ステップ 2.** Arduino用ライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してください。
 
-- **ステップ 3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 ```cpp
 #include "Ultrasonic.h"
@@ -161,7 +161,7 @@ void loop()
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[ArduinoでのCodecraftの使い方](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    Codecraftを初めて使用する場合は、[ArduinoでのCodecraftの使い方](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
@@ -203,7 +203,7 @@ void loop()
      **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3のみ**で以下のコマンドラインを使用してください。
 :::
 
-- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 
 - **ステップ 2.** grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
@@ -423,9 +423,9 @@ pi@raspberrypi:~/GrovePi/Software/Python $ python3 grove_ultrasonic.py
 
 #### ソフトウェア
 
-- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ArduPy/) に従って Wio Terminal 上で ArduPy 開発環境を構成します。
+- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ja/ArduPy/) に従って Wio Terminal 上で ArduPy 開発環境を構成します。
 
-- **ステップ 2.** 以下のコマンドを使用して、ArduPy ファームウェアに超音波センサー ArduPy ライブラリが含まれていることを確認します。詳細については [**こちら**](https://wiki.seeedstudio.com/ArduPy/#using-aip-to-include-other-ardupy-librariesfrom-arduino-libraries-example) を参照してください。
+- **ステップ 2.** 以下のコマンドを使用して、ArduPy ファームウェアに超音波センサー ArduPy ライブラリが含まれていることを確認します。詳細については [**こちら**](https://wiki.seeedstudio.com/ja/ArduPy/#using-aip-to-include-other-ardupy-librariesfrom-arduino-libraries-example) を参照してください。
 
 ```sh
 aip install Seeed-Studio/seeed-ardupy-ultrasonic-sensor

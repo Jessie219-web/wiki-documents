@@ -34,7 +34,7 @@ Grove Breakout for LinkIt Smart 7688 Duoは、Groveポートが統合されたLi
 - コストパフォーマンスが高い。
 
 :::tip
-    <!-- Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。 -->
+    <!-- Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。 -->
 :::
 ## アプリケーションアイデア
 ---

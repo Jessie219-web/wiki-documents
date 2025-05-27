@@ -279,7 +279,7 @@ D8〜D13はモーターシールドで使用されます。競合を避けるた
 #### ソフトウェア
 
 - 以下のボタンをクリックしてモーターシールドライブラリをダウンロードしてください。
-- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)に従ってライブラリをインストールしてください。
+- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)に従ってライブラリをインストールしてください。
 
 <p style={{textAlign: 'center'}}><a href="https://github.com/Seeed-Studio/SeeedMotorShieldV2/archive/master.zip" target="_blank"><img src="https://files.seeedstudio.com/wiki/Motor_Shield_V2.0/image/400px-Motor_shield_v2_library.png" /></a></p>
 

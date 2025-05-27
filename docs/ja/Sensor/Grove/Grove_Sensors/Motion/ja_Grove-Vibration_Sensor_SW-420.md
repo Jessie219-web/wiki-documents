@@ -165,7 +165,7 @@ $$
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** Arduino IDEを開き、新しいスケッチを開始します。
@@ -202,7 +202,7 @@ void loop() {
 }
 ```
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 :::success
     すべてが正常に動作すれば、Grove - 振動センサーを動かしたり、揺らしたり、傾けたりするたびに、Grove - ブザーが鳴ります。
@@ -223,7 +223,7 @@ void loop() {
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)もご覧ください。
+    Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)もご覧ください。
 :::
 
 **ステップ 2.** 下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。

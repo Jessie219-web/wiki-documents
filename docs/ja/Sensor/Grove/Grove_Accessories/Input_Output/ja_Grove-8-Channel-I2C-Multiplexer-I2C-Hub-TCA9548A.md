@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/
+image: https://wiki.seeedstudio.com/ja/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A/
 slug: /ja/Grove-8-Channel-I2C-Multiplexer-I2C-Hub-TCA9548A
 last_update:
   date: 05/15/2025
@@ -144,9 +144,9 @@ void loop()
 }
 ```
 
-- **ステップ 1** リソースからライブラリをダウンロードし、Arduino IDE に「zip」ライブラリを追加します。[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) を参照してください。
+- **ステップ 1** リソースからライブラリをダウンロードし、Arduino IDE に「zip」ライブラリを追加します。[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) を参照してください。
 
-- **ステップ 2** サンプルコードを見つけてボードにアップロードします。[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を参照してください。
+- **ステップ 2** サンプルコードを見つけてボードにアップロードします。[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を参照してください。
 
 - **ステップ 3** コードをアップロードした後、シリアルモニターから各デバイスの I2C アドレスが確認できます。アドレス 0x70 は I2C Hub の I2C アドレスです。
 ![](https://files.seeedstudio.com/products/103020293/img/Grove-8-channel-I2C-Hub-test-result.png)

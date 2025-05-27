@@ -251,7 +251,7 @@ homeassistant.local:8123
 
 [reTerminal](https://www.seeedstudio.com/ReTerminal-with-CM4-p-4904.html)のLCDでHome Assistant Dashboard UIを表示するために、Raspberry Pi OSに付属しているChromiumウェブブラウザを使用します。Chromiumを設定して、reTerminalが起動した後にフルスクリーンモードで自動的に開始するようにします。
 
-- **ステップ 1.** reTerminalを起動し、Raspberry Pi OSがすでにインストールされていることを確認します。インストールされていない場合は、[このWiki](https://wiki.seeedstudio.com/reTerminal-FAQ/#q2-how-can-i-flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)を参照してください。
+- **ステップ 1.** reTerminalを起動し、Raspberry Pi OSがすでにインストールされていることを確認します。インストールされていない場合は、[このWiki](https://wiki.seeedstudio.com/ja/reTerminal-FAQ/#q2-how-can-i-flash-raspberry-pi-os-which-is-originally-shipped-with-reterminal)を参照してください。
 
 - **ステップ 2.** 以下のディレクトリに移動します。
 

@@ -67,7 +67,7 @@ RS485はシリアル通信においてコスト効率の高いソリューショ
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 Grove - NFCはI2CとUARTをサポートしており、[Seeed Arduino NFCライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_NFC)はArduino Uno/Seeeduino v4.2、Arduino Mega/Seeeduino Mega、Arduino Zero/Seeeduino Lorawan、Arduino Leonardo/Seeeduino Liteをサポートしています。

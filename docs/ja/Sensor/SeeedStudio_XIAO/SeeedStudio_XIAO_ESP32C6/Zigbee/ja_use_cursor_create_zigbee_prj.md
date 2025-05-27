@@ -302,9 +302,9 @@ XIAO の例では、GPIO (デジタル/アナログ) および SPI プロトコ�
 
 ## 技術文書の収集
 
-センサーの技術文書を持っていることは非常に重要です。Seeed の製品を使用している場合、センサーやアクチュエータに関する詳細な文書やリソースを **[Seeed Studio の公式 Wiki](https://wiki.seeedstudio.com/)** で見つけることができます。この Wiki のリソースセクションには Grove 製品のデータシートも含まれており、それを Cursor に提供できます。例えば、このプロジェクトで使用する DHT11 センサーの場合：
+センサーの技術文書を持っていることは非常に重要です。Seeed の製品を使用している場合、センサーやアクチュエータに関する詳細な文書やリソースを **[Seeed Studio の公式 Wiki](https://wiki.seeedstudio.com/ja/)** で見つけることができます。この Wiki のリソースセクションには Grove 製品のデータシートも含まれており、それを Cursor に提供できます。例えば、このプロジェクトで使用する DHT11 センサーの場合：
 
-- [Grove DHT11 Wiki ページ](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/)
+- [Grove DHT11 Wiki ページ](https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor/)
 
 他のメーカーのセンサーを使用している場合は、必要な技術文書を取得するために直接メーカーにお問い合わせください。
 
@@ -366,8 +366,8 @@ Example ディレクトリに完全なプロジェクトを生成してくださ
 
 参考資料:
 - 文書: 
-  - DHT11 センサー: https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/
-  - XIAO ESP32C6: https://wiki.seeedstudio.com/xiao_pin_multiplexing_esp33c6/
+  - DHT11 センサー: https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor/
+  - XIAO ESP32C6: https://wiki.seeedstudio.com/ja/xiao_pin_multiplexing_esp33c6/
 
 Example ディレクトリに完全なプロジェクトを生成してください。メインファイルの名前は [プロジェクト名をアンダースコアに置き換えたもの].ino とし、包括的なコードコメントを含めてください。
 ```

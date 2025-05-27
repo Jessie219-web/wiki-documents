@@ -59,19 +59,19 @@ ReSpeaker 2-Mics Pi HATは、Raspberry Pi向けに設計されたAIおよび音�
 
 <div align="center"><img src="https://files.seeedstudio.com/products/107100001/01.png"/></div>
 
-* **[Raspberry Piで始める](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT_Raspberry)**
+* **[Raspberry Piで始める](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT_Raspberry)**
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/JetsonNano-2MICS.png"/></div>
 
-* **[Nvidia Jetson Nanoシリーズで始める](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT_Jetson)**
+* **[Nvidia Jetson Nanoシリーズで始める](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT_Jetson)**
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/IMX6-2MIC-removebg-preview.png"/></div>
 
-* **[NPi i.MX6ULL Dev Board Linux SBCで始める](https://wiki.seeedstudio.com/NPi-i.MX6ULL-Dev-Board-Linux-SBC/#iis)**
+* **[NPi i.MX6ULL Dev Board Linux SBCで始める](https://wiki.seeedstudio.com/ja/NPi-i.MX6ULL-Dev-Board-Linux-SBC/#iis)**
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/ReSpeaker_2_Mics_Pi_HAT/STM32-2MIC-removebg-preview.png"/></div>
 
-* **[ODYSSEY – STM32MP157Cで始める](https://wiki.seeedstudio.com/ODYSSEY-STM32MP157C/#i2s-on-odyssey-stm32mp157c)**
+* **[ODYSSEY – STM32MP157Cで始める](https://wiki.seeedstudio.com/ja/ODYSSEY-STM32MP157C/#i2s-on-odyssey-stm32mp157c)**
 
 ## エッジでの音声認識を可能にする Picovoice
 

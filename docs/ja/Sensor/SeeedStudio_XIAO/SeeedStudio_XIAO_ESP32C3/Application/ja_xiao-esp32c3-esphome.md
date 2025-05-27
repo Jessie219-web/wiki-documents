@@ -80,9 +80,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 また、Seeed Studio 製品のいくつかに対して Home Assistant のインストール方法を記載していますので、以下を参照してください。
 
-- [ODYSSEY-X86 での Home Assistant の始め方](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/)
-- [reTerminal での Home Assistant の始め方](https://wiki.seeedstudio.com/reTerminal_Home_Assistant/)
-- [LinkStar H68K/reRouter CM4 での Home Assistant の始め方](https://wiki.seeedstudio.com/h68k-ha-esphome/)
+- [ODYSSEY-X86 での Home Assistant の始め方](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant/)
+- [reTerminal での Home Assistant の始め方](https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant/)
+- [LinkStar H68K/reRouter CM4 での Home Assistant の始め方](https://wiki.seeedstudio.com/ja/h68k-ha-esphome/)
 
 ## Home Assistant に ESPHome をインストールする
 
@@ -578,7 +578,7 @@ LAN 上に多くの Home Assistant デバイスがない場合、Home Assistant 
 
 もちろん、XIAO ESP32C3 は Home Assistant で 24GHz mmWave Human Static Presence Module Lite をサポートするだけではありません。このドキュメントでは、他にもさまざまなチュートリアルを見つけることができます。
 
-- [XIAO ESP32C3 を使用して Grove を Home Assistant に接続する](https://wiki.seeedstudio.com/Connect-Grove-to-Home-Assistant-ESPHome/)
+- [XIAO ESP32C3 を使用して Grove を Home Assistant に接続する](https://wiki.seeedstudio.com/ja/Connect-Grove-to-Home-Assistant-ESPHome/)
 
 創造力を発揮しましょう！
 
@@ -668,7 +668,7 @@ void loop() {
 
 > シリアルモニターを開き、ボーレートを 115200 に設定してください。レーダーが正常に動作している場合、多くの数値が表示されるはずです。
 
-> このステップを実行してもデータ出力が表示されない場合は、Wiki に従ってレーダーのファームウェアを再フラッシュしてください。ファームウェアを更新する方法は2つあります：[Firmware Version Updates](https://wiki.seeedstudio.com/Radar_MR24HPC1/#firmware-version-updates)。
+> このステップを実行してもデータ出力が表示されない場合は、Wiki に従ってレーダーのファームウェアを再フラッシュしてください。ファームウェアを更新する方法は2つあります：[Firmware Version Updates](https://wiki.seeedstudio.com/ja/Radar_MR24HPC1/#firmware-version-updates)。
 
 > ファームウェアを更新してもまだ何も反応がない場合は、遠慮せずに直接技術サポートチームに連絡してください。そして、これまでに行ったすべての手順をお知らせください。
 

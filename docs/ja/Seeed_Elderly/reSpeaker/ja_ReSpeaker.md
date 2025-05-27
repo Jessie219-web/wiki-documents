@@ -55,15 +55,15 @@ VAD、DOA、ビームフォーミング、NS、AEC、KWSなどの音声処理ア
 ---
 以下はSeeed WiKiで見つけることができるReSpeakerボードの一覧です。このリストは随時更新されます。
 
-- [ReSpeaker 2-Mics Pi HAT](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/)
-- [ReSpeaker 4-Mic Array for Raspberry Pi](https://wiki.seeedstudio.com/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/)
-- [ReSpeaker Core](https://wiki.seeedstudio.com/ReSpeaker_Core/)
-- [ReSpeaker Core v2.0](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0/)
-- [ReSpeaker Drive Unit](https://wiki.seeedstudio.com/ReSpeaker_Drive_Unit/)
-- [ReSpeaker Mic Array](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array/)
-- [ReSpeaker Mic Array v2.0](https://wiki.seeedstudio.com/ReSpeaker_Mic_Array_v2.0/)
-- [ReSpeaker 4-Mic Linear Array Kit for Raspberry Pi](https://wiki.seeedstudio.com/ReSpeaker_4-Mic_Linear_Array_Kit_for_Raspberry_Pi/)
-- [ReSpeaker 6-Mic Circular Array kit for Raspberry Pi](https://wiki.seeedstudio.com/ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi/)
+- [ReSpeaker 2-Mics Pi HAT](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT/)
+- [ReSpeaker 4-Mic Array for Raspberry Pi](https://wiki.seeedstudio.com/ja/ReSpeaker_4_Mic_Array_for_Raspberry_Pi/)
+- [ReSpeaker Core](https://wiki.seeedstudio.com/ja/ReSpeaker_Core/)
+- [ReSpeaker Core v2.0](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/)
+- [ReSpeaker Drive Unit](https://wiki.seeedstudio.com/ja/ReSpeaker_Drive_Unit/)
+- [ReSpeaker Mic Array](https://wiki.seeedstudio.com/ja/ReSpeaker_Mic_Array/)
+- [ReSpeaker Mic Array v2.0](https://wiki.seeedstudio.com/ja/ReSpeaker_Mic_Array_v2.0/)
+- [ReSpeaker 4-Mic Linear Array Kit for Raspberry Pi](https://wiki.seeedstudio.com/ja/ReSpeaker_4-Mic_Linear_Array_Kit_for_Raspberry_Pi/)
+- [ReSpeaker 6-Mic Circular Array kit for Raspberry Pi](https://wiki.seeedstudio.com/ja/ReSpeaker_6-Mic_Circular_Array_kit_for_Raspberry_Pi/)
 
 ## ReSpeakerプロジェクト
 

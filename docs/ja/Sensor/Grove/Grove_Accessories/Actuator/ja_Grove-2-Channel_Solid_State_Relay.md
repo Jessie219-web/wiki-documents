@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-2-Channel_Solid_State_Relay/
+image: https://wiki.seeedstudio.com/ja/Grove-2-Channel_Solid_State_Relay/
 slug: /ja/Grove-2-Channel_Solid_State_Relay
 last_update:
   date: 05/15/2025
@@ -21,13 +21,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 異なる用途に応じて、一連のソリッドステートリレーを用意しています。
 
-[Grove - Solid State Relay V2](https://wiki.seeedstudio.com/Grove-Solid_State_Relay_V2)
+[Grove - Solid State Relay V2](https://wiki.seeedstudio.com/ja/Grove-Solid_State_Relay_V2)
 
 Grove - 2-Channel Solid State Relay
 
-[Grove - 4-Channel Solid State Relay](https://wiki.seeedstudio.com/Grove-4-Channel_Solid_State_Relay)
+[Grove - 4-Channel Solid State Relay](https://wiki.seeedstudio.com/ja/Grove-4-Channel_Solid_State_Relay)
 
-[Grove - 8-Channel Solid State Relay](https://wiki.seeedstudio.com/Grove-8-Channel_Solid_State_Relay)
+[Grove - 8-Channel Solid State Relay](https://wiki.seeedstudio.com/ja/Grove-8-Channel_Solid_State_Relay)
 
 <p style={{}}><a href="https://www.seeedstudio.com/Grove-2-Channel-Solid-State-Relay-p-3129.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
 
@@ -156,7 +156,7 @@ Grove - 2-Channel Solid State Relay
 #### ソフトウェア
 
 :::note
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** Arduino IDEを開き、新しいファイルを作成します。以下のコードをコピーするには、コードブロックの右上隅にあるアイコン ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/copy.jpg) をクリックして、新しいスケッチに貼り付けてください。
@@ -179,7 +179,7 @@ void loop() {
 }
 ```
 
-- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::tip
     2つのオンボードLEDが交互に点灯・消灯し、2つのファンが交互にオン・オフするのが確認できます。

@@ -66,7 +66,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### ステップ 1: AIキットをインストールする
 
-[このWiki](https://wiki.seeedstudio.com/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)を参照し、reComputer R1000にAIキットをインストールしてください。
+[このWiki](https://wiki.seeedstudio.com/ja/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l/)を参照し、reComputer R1000にAIキットをインストールしてください。
 
 #### ステップ 2: プロジェクトをインストールする
 

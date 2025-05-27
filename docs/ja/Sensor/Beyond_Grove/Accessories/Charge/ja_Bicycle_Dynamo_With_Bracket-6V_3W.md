@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Bicycle_Dynamo_With_Bracket-6V_3W/
+image: https://wiki.seeedstudio.com/ja/Bicycle_Dynamo_With_Bracket-6V_3W/
 slug: /ja/Bicycle_Dynamo_With_Bracket-6V_3W
 last_update:
   date: 05/15/2025

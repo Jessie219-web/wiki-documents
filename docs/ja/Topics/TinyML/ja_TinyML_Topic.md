@@ -60,7 +60,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -86,7 +86,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-Sense-nRF52840-p-5253.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO_BLE/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO_BLE/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -118,7 +118,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-RP2040/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-RP2040/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -148,7 +148,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Pre-Soldered-p-4747.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入 </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Seeeduino-XIAO/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -174,7 +174,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-Terminal-p-4509.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -198,7 +198,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-Module-p-5457.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Grove-Vision-AI-Module/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Grove-Vision-AI-Module/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -222,7 +222,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Vision-AI-V2-Kit-p-5852.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/grove_vision_ai_v2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/grove_vision_ai_v2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -244,7 +244,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-LoRaWAN-Dev-Kit-p-5370.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/K1100-quickstart/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/K1100-quickstart/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -267,7 +267,7 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-A1101-LoRaWAN-Vision-AI-Sensor-p-5367.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 詳細を見る </font></span></strong></a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/SenseCAP-Vision-AI-Get-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/SenseCAP-Vision-AI-Get-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 はじめに</font></span></strong></a>
 </div>
 
 <br />
@@ -351,7 +351,7 @@ TinyMLが達成できる興味深いことを見てみましょう！
 ### TinyML on XIAO
 
 <div class="button_tech_support_container">
-<a href="https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/" class="button_xiao"></a> 
+<a href="https://wiki.seeedstudio.com/ja/SeeedStudio_XIAO_Series_Introduction/" class="button_xiao"></a> 
 </div>
 
 <br />
@@ -377,9 +377,9 @@ TinyMLが達成できる興味深いことを見てみましょう！
     </tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Seeeduino-XIAO-TinyML/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAOEI/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-BLE-Sense-TFLite-Getting-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Seeeduino-XIAO-TinyML/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAOEI/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-BLE-Sense-TFLite-Getting-Started/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
 		</tr>
     <tr class="table-trnobg"></tr>
     <tr>
@@ -395,7 +395,7 @@ TinyMLが達成できる興味深いことを見てみましょう！
     </tr>
     <tr class="table-trnobg"></tr>
     <tr class="table-trnobg">
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/xiao_esp32s3_keyword_spotting/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/xiao_esp32s3_keyword_spotting/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を学ぶ</font></span></strong></a></div></td>
     </tr>
 	</table>
 </div>
@@ -435,8 +435,8 @@ Wio TerminalはArduino、MicroPython、CircuitPythonなどの幅広いプログ�
     </tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-1/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-TFLM-1/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-1/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-TFLM-1/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
       <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.yuque.com/tinkergen-help-en/codecraft/tinyml"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
 		</tr>
 	</table>
@@ -461,7 +461,7 @@ Wio TerminalはArduino、MicroPython、CircuitPythonなどの幅広いプログ�
     </tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/edge-impulse-vision-ai/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/edge-impulse-vision-ai/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
 		</tr>
 	</table>
 </div>
@@ -485,7 +485,7 @@ Wio TerminalはArduino、MicroPython、CircuitPythonなどの幅広いプログ�
     </tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Train-Deploy-AI-Model-A1101/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-A1101/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳しく学ぶ</font></span></strong></a></div></td>
 		</tr>
 	</table>
 </div>
@@ -513,7 +513,7 @@ Wio TerminalはArduino、MicroPython、CircuitPythonなどの幅広いプログ�
 <br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML/"><strong><span><font color={'FFFFFF'} size={"4"}>🖱 詳細を見る</font></span></strong></a>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML/"><strong><span><font color={'FFFFFF'} size={"4"}>🖱 詳細を見る</font></span></strong></a>
     <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/Wio-Terminal-TinyML/No-code_Programming_to_Get_Started_with_TinyML.pdf"><strong><span><font color={'FFFFFF'} size={"4"}>📚 今すぐダウンロード</font></span></strong></a>
 </div>
 
@@ -548,9 +548,9 @@ Wio TerminalはArduino、MicroPython、CircuitPythonなどの幅広いプログ�
     	</tr>
 		<tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-3/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-4/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-3/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-4/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>
     <tr class="table-trnobg"></tr>
     <tr class="table-trnobg">
@@ -569,8 +569,8 @@ Wio TerminalはArduino、MicroPython、CircuitPythonなどの幅広いプログ�
     </tr>
 		<tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-6/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-5/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-6/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-5/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>
 	</table>
 </div>
@@ -598,9 +598,9 @@ Wio TerminalはArduino、MicroPython、CircuitPythonなどの幅広いプログ�
     </tr>
 		<tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-TFLM-2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-TFLM-3/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Wio-Terminal-Gesture-Recognition/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-TFLM-2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-TFLM-3/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Gesture-Recognition/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>
 	</table>
 </div>
@@ -640,7 +640,7 @@ TinyML 技術を使用すると、センサーデータを機械学習モデル�
     	</tr>
 		<tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/XIAO-BLE-Sense-TFLite-Mic/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/XIAO-BLE-Sense-TFLite-Mic/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/mjrobot/tinyml-made-easy-anomaly-detection-motion-classification-958fd2"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
       <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://www.hackster.io/yuwork58426/voice-control-toy-and-display-using-xiao-and-edge-impulse-592bb4"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>

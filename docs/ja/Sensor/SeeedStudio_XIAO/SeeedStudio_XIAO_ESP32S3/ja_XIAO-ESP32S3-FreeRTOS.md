@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # XIAO ESP32S3(Sense) と FreeRTOS
 
-このウィキでは、[Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) における [FreeRTOS](https://freertos.org/) のサポートについて説明します。このガイドを使用することで、ボードで利用可能な機能セットを活用できるようになります。
+このウィキでは、[Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/) における [FreeRTOS](https://freertos.org/) のサポートについて説明します。このガイドを使用することで、ボードで利用可能な機能セットを活用できるようになります。
 
 ## [FreeRTOS](https://www.freertos.org/index.html) とは
 
@@ -37,7 +37,7 @@ FreeRTOS はオープンソースの RTOS（リアルタイムオペレーティ
 
 ## ハードウェア準備
 
-私は [Seeed Studio XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) と、オンボードのカメラ、マイク、SDカードリーダー、さらに ESP32S3 の Wi-Fi 機能を使用します。
+私は [Seeed Studio XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/) と、オンボードのカメラ、マイク、SDカードリーダー、さらに ESP32S3 の Wi-Fi 機能を使用します。
 
 <div class="table-center">
   <table align="center">
@@ -526,7 +526,7 @@ Fresh air.
 
 ### ハードウェアセットアップ
 
-カメラとmicroSDカード拡張ボードを接続するには、[microSDカードガイド](https://wiki.seeedstudio.com/xiao_esp32s3_sense_filesystem/)および[カメラガイド](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/)を参照してください。
+カメラとmicroSDカード拡張ボードを接続するには、[microSDカードガイド](https://wiki.seeedstudio.com/ja/xiao_esp32s3_sense_filesystem/)および[カメラガイド](https://wiki.seeedstudio.com/ja/xiao_esp32s3_camera_usage/)を参照してください。
 
 - microSDカードをフォーマット（最大32GBまで対応）
 - microSDカードを拡張ボードに接続
@@ -987,7 +987,7 @@ Xiao-S3 を [Grove - Expansion Board](https://www.seeedstudio.com/Seeeduino-XIAO
 
 ### ソフトウェアセットアップ
 
-[pcf8563](https://github.com/Bill2462/PCF8563-Arduino-Library)、[U8x8lib](https://github.com/olikraus/U8g2_Arduino)、および [bme680](https://github.com/Seeed-Studio/Seeed_Arduino_BME68x) ライブラリを Arduino 用にインストールします。ライブラリのインストール方法については、[How to install library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) を参照してください。
+[pcf8563](https://github.com/Bill2462/PCF8563-Arduino-Library)、[U8x8lib](https://github.com/olikraus/U8g2_Arduino)、および [bme680](https://github.com/Seeed-Studio/Seeed_Arduino_BME68x) ライブラリを Arduino 用にインストールします。ライブラリのインストール方法については、[How to install library](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) を参照してください。
 
 ```cpp
 #include "time.h"

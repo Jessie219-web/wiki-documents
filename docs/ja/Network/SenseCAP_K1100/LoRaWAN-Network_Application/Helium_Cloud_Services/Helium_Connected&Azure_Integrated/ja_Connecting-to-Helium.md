@@ -66,7 +66,7 @@ IP66の筐体、Bluetooth設定、グローバルLoRaWAN®ネットワークと�
   <table align="center">
     <tbody><tr>
         <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/178.jpeg" alt="pir" width={500} height="auto" /></p></td>
-        <td align="left"><strong>Heliumの紹介</strong><br /><br />この章では、Heliumコンソールの操作方法を紹介し、Heliumコンソールの第一印象を得るための方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Helium-Introduction">さあ始めましょう &gt;</a></td>
+        <td align="left"><strong>Heliumの紹介</strong><br /><br />この章では、Heliumコンソールの操作方法を紹介し、Heliumコンソールの第一印象を得るための方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction">さあ始めましょう &gt;</a></td>
       </tr>
     </tbody></table>
 </div>
@@ -90,7 +90,7 @@ Grove - Wio-E5を追加するには、**Devices**に移動し、ウィンドウ�
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/129.png" /></div>
 
 :::note
-必要なArduinoおよびWio Terminal環境を[事前承認済みコンテンツ](https://wiki.seeedstudio.com/K1100-Light-Sensor-Grove-LoRa-E5/#preliminary-preparation)からダウンロードしてください。
+必要なArduinoおよびWio Terminal環境を[事前承認済みコンテンツ](https://wiki.seeedstudio.com/ja/K1100-Light-Sensor-Grove-LoRa-E5/#preliminary-preparation)からダウンロードしてください。
 :::
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/wiolora.jpg" /></div>
 
@@ -242,7 +242,7 @@ Wio Terminalにコードをアップロードし、Arduino IDEのシリアルポ
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/132.png" /></div>
 
-前のセクション[Wio Terminal 光センサー](https://wiki.seeedstudio.com/K1100-Light-Sensor-Grove-LoRa-E5/)では、光センサーで読み取った光の値を整数変数`light`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、Heliumで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
+前のセクション[Wio Terminal 光センサー](https://wiki.seeedstudio.com/ja/K1100-Light-Sensor-Grove-LoRa-E5/)では、光センサーで読み取った光の値を整数変数`light`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、Heliumで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
 
 以下はデコーダーの設定コードです。このコードをHeliumのコードセクションに貼り付け、**Save Function**をクリックしてデコーダーを保存してください。
 
@@ -274,7 +274,7 @@ Flowsに戻り、デバイスをデコーダーに接続します。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/135.png" /></div>
 
-前のセクション[Wio Terminal IMUセンサー](https://wiki.seeedstudio.com/K1100-IMU-Sensor-Grove-LoRa-E5/)では、IMUから返される3軸のデータを`x_values`、`y_values`、`z_values`という浮動小数点数に格納し、これらのデータを100倍して整数に変換してから一緒に送信しました。
+前のセクション[Wio Terminal IMUセンサー](https://wiki.seeedstudio.com/ja/K1100-IMU-Sensor-Grove-LoRa-E5/)では、IMUから返される3軸のデータを`x_values`、`y_values`、`z_values`という浮動小数点数に格納し、これらのデータを100倍して整数に変換してから一緒に送信しました。
 
 特に注意すべき点は、これらのデータが正負の値を取る可能性があるため、これを解析して浮動小数点数に戻す必要があることです。
 
@@ -318,7 +318,7 @@ Flowsに戻り、デバイスをデコーダーに接続します。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/184.png" /></div>
 
-前のセクション[Grove土壌湿度センサー](https://wiki.seeedstudio.com/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/)では、土壌湿度センサーで読み取った土壌湿度値を整数変数`sensorValue`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、Heliumで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
+前のセクション[Grove土壌湿度センサー](https://wiki.seeedstudio.com/ja/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/)では、土壌湿度センサーで読み取った土壌湿度値を整数変数`sensorValue`に格納し、その値を**send_sync()**関数を使用して送信しました。そのため、Heliumで作成したデコーダーの目的は、この整数データを解析できるようにすることです。
 
 そのデコーダーの設定コードは以下の通りです。このコードをHeliumのコードセクションに貼り付けてください。**Save Function**をクリックしてこのデコーダーを保存します。
 
@@ -348,7 +348,7 @@ Flowsに戻り、デバイスをデコーダーに接続します。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/173.png" /></div>
 
-前のセクション[Grove VOCおよびeCO2ガスセンサー（SGP30）](https://wiki.seeedstudio.com/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/)では、整数変数`tvoc_ppb`と`co2_eq_ppm`を使用してVOCとeCO2の値を格納しました。
+前のセクション[Grove VOCおよびeCO2ガスセンサー（SGP30）](https://wiki.seeedstudio.com/ja/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/)では、整数変数`tvoc_ppb`と`co2_eq_ppm`を使用してVOCとeCO2の値を格納しました。
 
 そのデコーダーの設定コードは以下の通りです。このコードをHeliumのコードセクションに貼り付けてください。**Save Function**をクリックしてこのデコーダーを保存します。
 
@@ -385,7 +385,7 @@ Flowsに戻り、デバイスをデコーダーに接続します。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/189.png" /></div>
 
-前のセクション[Grove Temp&Humiセンサー（SHT40）](https://wiki.seeedstudio.com/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/)では、浮動小数点変数`temperature`と`humidity`を使用して温度と湿度の値を格納しました。そして、これらの値を100倍して整数に変換して送信しました。
+前のセクション[Grove Temp&Humiセンサー（SHT40）](https://wiki.seeedstudio.com/ja/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/)では、浮動小数点変数`temperature`と`humidity`を使用して温度と湿度の値を格納しました。そして、これらの値を100倍して整数に変換して送信しました。
 
 そのデコーダーの設定コードは以下の通りです。このコードをHeliumのコードセクションに貼り付けてください。**Save Function**をクリックしてこのデコーダーを保存します。
 
@@ -426,7 +426,7 @@ Flowsに戻り、デバイスをデコーダーに接続します。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/195.png" /></div>
 
-前のセクション[Grove Vision AIモジュール](https://wiki.seeedstudio.com/K1100-Vision-AI-Module-Grove-LoRa-E5/)では、整数変数`model`と`confi`を使用して識別されたモデルの種類とその信頼度を格納しました。
+前のセクション[Grove Vision AIモジュール](https://wiki.seeedstudio.com/ja/K1100-Vision-AI-Module-Grove-LoRa-E5/)では、整数変数`model`と`confi`を使用して識別されたモデルの種類とその信頼度を格納しました。
 
 そのデコーダーの設定コードは以下の通りです。このコードをHeliumのコードセクションに貼り付けてください。**Save Function**をクリックしてこのデコーダーを保存します。
 
@@ -624,7 +624,7 @@ Grove - Wio-E5のコードと機能についてさらに学ぶには、[リポ�
   <table align="center">
     <tbody><tr>
         <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/azure.png" alt="pir" width={500} height="auto" /></p></td>
-        <td align="left"><strong>HeliumをAzure IoT Hubに統合</strong><br /><br />このセクションでは、Microsoft Azureを構成し、Heliumと統合してデータをMicrosoft Azureプラットフォームにアップロードする方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub">始めましょう &gt;</a></td>
+        <td align="left"><strong>HeliumをAzure IoT Hubに統合</strong><br /><br />このセクションでは、Microsoft Azureを構成し、Heliumと統合してデータをMicrosoft Azureプラットフォームにアップロードする方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub">始めましょう &gt;</a></td>
       </tr>
     </tbody></table>
   必要に応じて、他のプラットフォームを選択することもできます。
@@ -634,11 +634,11 @@ Grove - Wio-E5のコードと機能についてさらに学ぶには、[リポ�
       </tr>
       <tr>
         <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/Google-Sheets.jpeg" alt="pir" width={500} height="auto" /></p></td>
-        <td align="left"><strong>HeliumをGoogle Sheetsに統合</strong><br /><br />このセクションでは、Google Formsを使用してHeliumを統合し、センサーデータを保存する方法を紹介します。<br /><br /><a href="https://wiki.seeedstudio.com/Configuring-Web-APP-Visualization">章にジャンプ &gt;</a></td>
+        <td align="left"><strong>HeliumをGoogle Sheetsに統合</strong><br /><br />このセクションでは、Google Formsを使用してHeliumを統合し、センサーデータを保存する方法を紹介します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Configuring-Web-APP-Visualization">章にジャンプ &gt;</a></td>
       </tr>
       <tr>
         <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/AWS.png" alt="pir" width={500} height="auto" /></p></td>
-        <td align="left"><strong>HeliumをAWS IoT Coreに統合</strong><br /><br />このセクションでは、Microsoft Azureで受信したデータ情報を無料のWeb APP統合を使用して可視化する方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Configuring-Web-APP-Visualization">章にジャンプ &gt;</a></td>
+        <td align="left"><strong>HeliumをAWS IoT Coreに統合</strong><br /><br />このセクションでは、Microsoft Azureで受信したデータ情報を無料のWeb APP統合を使用して可視化する方法を説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Configuring-Web-APP-Visualization">章にジャンプ &gt;</a></td>
       </tr>
     </tbody></table>
 </div>

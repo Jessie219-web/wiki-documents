@@ -153,7 +153,7 @@ Fluxでフットプリントを作成するのは非常に簡単です。フッ�
 ## ✨ 貢献者プロジェクト
 
 - このプロジェクトは [Seeed Studio Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6) によってサポートされています。
-- [Gokul](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=42323283) の努力に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/Honorary-Contributors/) に展示されます。
+- [Gokul](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=42323283) の努力に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/ja/Honorary-Contributors/) に展示されます。
 
 ## 技術サポート & 製品ディスカッション
 

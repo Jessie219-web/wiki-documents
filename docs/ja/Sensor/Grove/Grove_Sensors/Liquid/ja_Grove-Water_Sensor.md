@@ -128,7 +128,7 @@ mA
 </table>
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -175,7 +175,7 @@ mA
 | D2            | 黄色                  |
 
 #### ソフトウェア
-- **ステップ1.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ1.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 ```c
 #define WATER_SENSOR 2
@@ -218,7 +218,7 @@ void loop()
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
 
@@ -248,7 +248,7 @@ Arduino/Seeeduinoにプログラムをアップロードします。
 
 #### ソフトウェア
 
-- **ステップ 1**. [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を設定します。
+- **ステップ 1**. [Setting Software](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を設定します。
 - **ステップ 2**. grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```
@@ -432,7 +432,7 @@ sudo python grove_water_sensor.py
 - **[Library]** [Grove Water Sensor のデモコード](https://github.com/Seeed-Studio/Grove_Water_Sensor)
 - **[Codecraft]** [CDC ファイル](https://files.seeedstudio.com/wiki/Grove-Water_Sensor/res/Grove_Water_Sensor_CDC_File.zip)
 
-<!-- この Markdown ファイルは https://wiki.seeedstudio.com/Grove-Water_Sensor/ から作成されました -->
+<!-- この Markdown ファイルは https://wiki.seeedstudio.com/ja/Grove-Water_Sensor/ から作成されました -->
 
 ## プロジェクト 
 

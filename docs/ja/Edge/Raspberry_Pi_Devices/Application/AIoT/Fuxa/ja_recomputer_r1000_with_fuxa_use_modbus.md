@@ -63,7 +63,7 @@ FUXA は、ウェブベースのプロセス可視化 (SCADA/HMI/ダッシュボ
     sudo npm install -g --unsafe-perm @frangoteam/fuxa
     sudo fuxa
   ```
-* reComputer R1000 の Modbus 機能の使用方法については、この [wiki](https://wiki.seeedstudio.com/reComputer_r1000_use_rs485_modbus_rtu/) を参照してください。
+* reComputer R1000 の Modbus 機能の使用方法については、この [wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_use_rs485_modbus_rtu/) を参照してください。
 
 ### ハードウェアの構成
 ModbusRTU の場合、rs485 から USB モジュールを使用して reComputer R1000 を W10 PC に接続しました。

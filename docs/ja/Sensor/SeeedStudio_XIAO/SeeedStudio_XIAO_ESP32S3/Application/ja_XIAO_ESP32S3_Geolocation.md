@@ -101,7 +101,7 @@ Wi-Fi位置特定システムは、近くのWi-Fiホットスポットやその�
 ## ネットワークに接続し、XIAO ESP32S3でパブリックIPを取得する
 
 :::tip
-XIAO ESP32S3のネットワーク機能に慣れていない場合は、[Seeed Studio XIAO ESP32S3 (Sense) のWiFi使用方法](https://wiki.seeedstudio.com/xiao_esp32s3_wifi_usage/)について読むことができます。
+XIAO ESP32S3のネットワーク機能に慣れていない場合は、[Seeed Studio XIAO ESP32S3 (Sense) のWiFi使用方法](https://wiki.seeedstudio.com/ja/xiao_esp32s3_wifi_usage/)について読むことができます。
 :::
 
 XIAO ESP32S3の基本的な使用方法に関するチュートリアルでは、XIAO ESP32S3を使用してネットワークに接続する方法を習得しました。
@@ -288,7 +288,7 @@ API を取得したら、安全な場所に保管してください。後のプ�
 ## ラウンドディスプレイに位置情報マップを表示する
 
 :::tip
-初めて XIAO 用のラウンドディスプレイを使用する場合は、[こちらの Wiki](https://wiki.seeedstudio.com/get_start_round_display/) を参照して、Arduino 環境をラウンドスクリーン用に設定してください。
+初めて XIAO 用のラウンドディスプレイを使用する場合は、[こちらの Wiki](https://wiki.seeedstudio.com/ja/get_start_round_display/) を参照して、Arduino 環境をラウンドスクリーン用に設定してください。
 :::
 
 ### ステップ 6. Google Cloud Static Maps API の呼び出し方法を学ぶ

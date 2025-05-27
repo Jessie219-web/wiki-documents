@@ -54,7 +54,7 @@ Grove-LCD RGB バックライトは V4.0 から V5.0 に更新され、コード
 * 16x2 LCD
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 ## 仕様
 
@@ -103,7 +103,7 @@ Grove-LCD RGB バックライトは V4.0 から V5.0 に更新され、コード
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -137,7 +137,7 @@ Grove-LCD RGB バックライトは V4.0 から V5.0 に更新され、コード
 **ソフトウェア**
 
 - **ステップ 1.** [Grove-LCD RGB Backlightライブラリ](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip)をGithubからダウンロードします。
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 - **ステップ 3.** ライブラリには以下の12の例があります。
 
     - Autoscroll
@@ -153,7 +153,7 @@ Grove-LCD RGB バックライトは V4.0 から V5.0 に更新され、コード
     - setCursor
     - TextDirection
 
-- **ステップ 4.** 以下の画像を参考にして、例「HelloWorld」を選択し、Arduinoにアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** 以下の画像を参考にして、例「HelloWorld」を選択し、Arduinoにアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 <!-- ![](https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/example.jpg) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove_LCD_RGB_Backlight/img/example.jpg" alt="pir" width={600} height="auto" /></p>
@@ -210,7 +210,7 @@ void loop()
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メイン手順を作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後からダウンロードできるcdcファイルを開いてください。
 
@@ -357,7 +357,7 @@ if __name__=="__main__":
 ## FAQ
 
 - Q1: 複数の Grove-LCD RGB Backlight を使用するにはどうすればよいですか？  
-    - A1: [Arduino Software I2C user guide](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/) を参照してください。
+    - A1: [Arduino Software I2C user guide](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/) を参照してください。
 
 - Q2: ボタンを使用して Grove RGB LCD に異なるページを表示するにはどうすればよいですか？  
     - A2: 以下のコードを参照してください。

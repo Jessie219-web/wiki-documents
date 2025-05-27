@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Protoshield.md/
+image: https://wiki.seeedstudio.com/ja/Grove-Protoshield.md/
 slug: /ja/Grove-Protoshield
 last_update:
   date: 05/15/2025
@@ -62,7 +62,7 @@ GroveインターフェースのVCCとGNDは、上図のように2本のバス�
 
 4. Grove - Basic ShieldをArduinoに差し込み、USBケーブルを使用してArduinoをPCに接続します。
 
-5. 以下のコードを新しいArduinoスケッチにコピー＆ペーストしてください。アップロード方法がわからない場合は[こちら](https://wiki.seeedstudio.com/Upload_Code)をクリックしてください。
+5. 以下のコードを新しいArduinoスケッチにコピー＆ペーストしてください。アップロード方法がわからない場合は[こちら](https://wiki.seeedstudio.com/ja/Upload_Code)をクリックしてください。
 
 ```
 デモコード:

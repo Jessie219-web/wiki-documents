@@ -56,7 +56,7 @@ Seeed Studio [SenseCraft AI プラットフォーム](https://sensecraft.seeed.c
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/4.png)
 
-SenseCraft AI プラットフォームの詳細については、[こちら](https://wiki.seeedstudio.com/sensecraft_ai_main/) を参照してください。
+SenseCraft AI プラットフォームの詳細については、[こちら](https://wiki.seeedstudio.com/ja/sensecraft_ai_main/) を参照してください。
 
 ## SenseCraft AI プラットフォーム上のAIモデル
 
@@ -79,7 +79,7 @@ SenseCraft AI プラットフォームの詳細については、[こちら](htt
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/7.png)
 
-SenseCraft AI プラットフォーム上のAIモデルに関する詳細情報は、[こちら](https://wiki.seeedstudio.com/sensecraft_ai_overview/#pretrained-models) を参照してください。
+SenseCraft AI プラットフォーム上のAIモデルに関する詳細情報は、[こちら](https://wiki.seeedstudio.com/ja/sensecraft_ai_overview/#pretrained-models) を参照してください。
 
 ## デバイスワークスペース
 
@@ -89,19 +89,19 @@ SenseCraft AIプラットフォームは、ユーザーがAIモデルを共有�
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/image4.png)
 
-詳細は[XIAO ESP32S3 ワークスペースのドキュメント](https://wiki.seeedstudio.com/XIAO_ESP32S3_Workspace/)をご覧ください。
+詳細は[XIAO ESP32S3 ワークスペースのドキュメント](https://wiki.seeedstudio.com/ja/XIAO_ESP32S3_Workspace/)をご覧ください。
 
 ### Grove-Vision AI v2 ワークスペース
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/image10.png)
 
-詳細は[Grove-Vision AI v2 ワークスペースのドキュメント](https://wiki.seeedstudio.com/Grove_Vision_AI_v2_Workspace/)をご覧ください。
+詳細は[Grove-Vision AI v2 ワークスペースのドキュメント](https://wiki.seeedstudio.com/ja/Grove_Vision_AI_v2_Workspace/)をご覧ください。
 
 ### Nvidia Jeson ワークスペース
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/35.png)
 
-詳細は[Nvidia Jeson ワークスペースのドキュメント](https://wiki.seeedstudio.com/Nvidia_Jeson_Workspace/)をご覧ください。
+詳細は[Nvidia Jeson ワークスペースのドキュメント](https://wiki.seeedstudio.com/ja/Nvidia_Jeson_Workspace/)をご覧ください。
 
 #### SenseCraft AI-Jetson
 
@@ -111,7 +111,7 @@ SenseCraft AI-Jetsonは、NVIDIA Jetson Edge AIデバイス向けに設計され
 
 ![](https://files.seeedstudio.com/wiki/SenseCraft_AI/img/video.gif)
 
-詳細は[SenseCraft AI-Jetsonのドキュメント](https://wiki.seeedstudio.com/SenseCraft_AI_Jetson/)をご覧ください。
+詳細は[SenseCraft AI-Jetsonのドキュメント](https://wiki.seeedstudio.com/ja/SenseCraft_AI_Jetson/)をご覧ください。
 
 ## AI「瞬き」：AIを迅速に活用する
 

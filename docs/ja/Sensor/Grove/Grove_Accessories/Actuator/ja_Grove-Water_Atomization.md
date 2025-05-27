@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Water_Atomization/
+image: https://wiki.seeedstudio.com/ja/Grove-Water_Atomization/
 slug: /ja/Grove-Water_Atomization
 last_update:
   date: 05/15/2025
@@ -30,7 +30,7 @@ Grove - 水霧化は、アプリケーションで簡単に霧化器や霧化モ
 - 様々な興味深く、スマートでファッショナブルなアプリケーション向け。
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 アプリケーションアイデア
@@ -183,7 +183,7 @@ void loop() {
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    Codecraftを初めて使用する場合は、[CodecraftをArduinoで使用するためのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    Codecraftを初めて使用する場合は、[CodecraftをArduinoで使用するためのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ 2.** 下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
 

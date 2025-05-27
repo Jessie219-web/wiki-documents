@@ -423,7 +423,7 @@ Groveはモジュール化された標準化コネクタプロトタイピング
 <td>103020013</td>
 <td>Grove - I2C ADC</td>
 <td>I2C</td>
-<td><a href="https://wiki.seeedstudio.com/Grove-I2C_ADC/">リンク</a></td>
+<td><a href="https://wiki.seeedstudio.com/ja/Grove-I2C_ADC/">リンク</a></td>
 </tr>
 <tr>
 <td>103020006</td>

@@ -159,7 +159,7 @@ Grove - LCD RGB バックライトをブラシレスモーターシールドの 
 ### ソフトウェア
 
 :::caution
-Arduino を初めて使用する場合は、開始する前に [Arduino の使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
+Arduino を初めて使用する場合は、開始する前に [Arduino の使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
 :::
 
 - **ステップ 1.**  
@@ -167,7 +167,7 @@ Arduino を初めて使用する場合は、開始する前に [Arduino の使�
 [Grove-LCD RGB Backlight ライブラリ](https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight/archive/master.zip) を Github からダウンロードします。
 
 - **ステップ 2.**  
-[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
+[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
 
 - **ステップ 3.**  
 Arduino IDE を再起動します。サンプルを開きます。パスは次の通りです：  
@@ -176,7 +176,7 @@ Arduino IDE を再起動します。サンプルを開きます。パスは次�
 <p style={{textAlign: 'center'}}><a href="https://files.seeedstudio.com/wiki/BLDC-Motor-Shield-TB6605/img/ARDUINO.jpg" target="_blank"><img src="https://files.seeedstudio.com/wiki/BLDC-Motor-Shield-TB6605/img/ARDUINO.jpg" /></a></p>
 
 - **ステップ 4.**  
-デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 
 :::tipsuccess
 すべてが正常に動作すれば、DC モーターが動き、LCD に速度が表示されます。ポテンショメーターを回してモーターの速度を制御することができます。  

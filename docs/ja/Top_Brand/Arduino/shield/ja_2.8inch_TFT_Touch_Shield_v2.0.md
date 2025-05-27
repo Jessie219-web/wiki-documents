@@ -242,7 +242,7 @@ TFT Touch Shield V2.0は、抵抗膜方式のタッチスクリーンで、Ardui
 * Seeeduino Lite/Clio/Lotus
 * LinkIt ONE（タッチパネルは動作しません）
 
-[Touch Screen Driver](https://github.com/Seeed-Studio/Touch_Screen_Driver/archive/master.zip) をクリックしてダウンロードしてください。その後、以下のボタンをクリックしてライブラリをダウンロードし、インストールしてください。Arduino ライブラリのインストール方法がわからない場合は、チュートリアル [(Arduino ライブラリのインストール方法)](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) を参照してください。
+[Touch Screen Driver](https://github.com/Seeed-Studio/Touch_Screen_Driver/archive/master.zip) をクリックしてダウンロードしてください。その後、以下のボタンをクリックしてライブラリをダウンロードし、インストールしてください。Arduino ライブラリのインストール方法がわからない場合は、チュートリアル [(Arduino ライブラリのインストール方法)](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) を参照してください。
 
  <p style={{textAlign: 'center'}}><a href="https://github.com/Seeed-Studio/TFT_Touch_Shield_V2/archive/master.zip" target="_blank"><img src="https://files.seeedstudio.com/wiki/TFT_Touch_Shield_V2/images/library.png" /></a></p>
 このライブラリには以下の例が含まれています：
@@ -274,7 +274,7 @@ TFT Touch Shield V2.0は、抵抗膜方式のタッチスクリーンで、Ardui
 **ステップ4.** **ファイル > サンプル > TFT_Touch_Shield_V2-master > shapes** をクリックしてコードを開きます。この例を Seeeduino にアップロードしてください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/TFT_Touch_Shield_V2/images/shapes%20example.png" alt="pir" width={600} height="auto" /></p>
-コードのアップロード方法について質問がある場合は、[こちら](https://wiki.seeedstudio.com/Seeeduino_v4.2/#getting-started) を参照してください。
+コードのアップロード方法について質問がある場合は、[こちら](https://wiki.seeedstudio.com/ja/Seeeduino_v4.2/#getting-started) を参照してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/TFT_Touch_Shield_V2/images/display.jpeg" alt="pir" width={600} height="auto" /></p>
 
@@ -307,7 +307,7 @@ Q: Seeed_Arduino_LCDを使用して2.8 TFT Touch Shield V2を駆動する方法�
 
 A: Seeed_Arduino_LCDを使用して2.8 TFT Touch Shield V2を駆動したい場合、以下の詳細が使用方法を示します。
 
-**ステップ1.** [Seeed_Arduino_LCD](https://github.com/Seeed-Studio/Seeed_Arduino_LCD)をダウンロードしてインストールします。Arduinoライブラリのインストール方法がわからない場合は、チュートリアル[(Arduinoライブラリのインストール方法)](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)を参照してください。
+**ステップ1.** [Seeed_Arduino_LCD](https://github.com/Seeed-Studio/Seeed_Arduino_LCD)をダウンロードしてインストールします。Arduinoライブラリのインストール方法がわからない場合は、チュートリアル[(Arduinoライブラリのインストール方法)](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)を参照してください。
 
 **ステップ2.** User_Setup.hのコメントを参照して、LCDがボードで動作するようにUser_Setup.hを設定します。
 

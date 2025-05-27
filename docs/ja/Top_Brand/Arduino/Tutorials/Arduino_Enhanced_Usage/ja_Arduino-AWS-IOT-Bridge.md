@@ -187,7 +187,7 @@ PC に [mosquitto](https://mosquitto.org/download/) がインストールされ�
 
 #### 依存ライブラリのインストール
 
-このデモは Wio Terminal の Wi-Fi コアに依存しています。まず [**こちら**](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/) のウィキを参照してください。
+このデモは Wio Terminal の Wi-Fi コアに依存しています。まず [**こちら**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/) のウィキを参照してください。
 
 **STEP.1 Pubsubclient ライブラリのインストール**
 

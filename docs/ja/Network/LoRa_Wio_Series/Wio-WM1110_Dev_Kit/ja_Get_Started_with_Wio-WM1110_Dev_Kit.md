@@ -360,7 +360,7 @@ Seeed パッケージには、この例のプロジェクトを案内する便�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/configure_mqtt1.png" alt="pir" width={800} height="auto" /></p>
 
-サーバーとポートは[前のステップ](https://wiki.seeedstudio.com/Wio-WM1110_Dev_Kit_Server_Configuration/#step-3-create-credentials:~:text=Copy%20the%20values%20from%20the%20following%20fields%3A%20Server%20Address%2C%20Username%2C%20and%20Password.)で確認できます。
+サーバーとポートは[前のステップ](https://wiki.seeedstudio.com/ja/Wio-WM1110_Dev_Kit_Server_Configuration/#step-3-create-credentials:~:text=Copy%20the%20values%20from%20the%20following%20fields%3A%20Server%20Address%2C%20Username%2C%20and%20Password.)で確認できます。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/TTN_TLS.png" alt="pir" width={800} height="auto" /></p>
 
@@ -378,7 +378,7 @@ Seeed パッケージには、この例のプロジェクトを案内する便�
 
 **モデム & ジオロケーションサービスの設定**
 
-サーバーを設定するには、[前のステップ](https://wiki.seeedstudio.com/Wio-WM1110_Dev_Kit_Server_Configuration/#step-2-get-a-token)で取得した MGS URL と MGS TOKEN の値を使用します。
+サーバーを設定するには、[前のステップ](https://wiki.seeedstudio.com/ja/Wio-WM1110_Dev_Kit_Server_Configuration/#step-2-get-a-token)で取得した MGS URL と MGS TOKEN の値を使用します。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Wio-WM1110%20Dev%20Kit/set_token.png" alt="pir" width={800} height="auto" /></p>
 

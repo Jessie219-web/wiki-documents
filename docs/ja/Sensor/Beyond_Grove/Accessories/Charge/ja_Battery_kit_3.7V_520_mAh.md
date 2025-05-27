@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Battery_kit_3.7V_520_mAh/
+image: https://wiki.seeedstudio.com/ja/Battery_kit_3.7V_520_mAh/
 slug: /ja/Battery_kit_3.7V_520_mAh
 last_update:
   date: 05/15/2025

@@ -37,9 +37,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## LinkStar OpenWRTルーターでDocker環境をセットアップする
 
-デフォルトでは、LinkStarにインストールされたDockerのストレージ容量は約250MBであり、イメージをインストールするには十分でない場合があります。そのため、Dockerにより多くのスペースを割り当てて、要件を満たす必要があります。[PlexメディアサーバーWiKi](https://wiki.seeedstudio.com/plex_media_server/)と同様の手順を実行してください。すでに実行済みの場合は、このステップをスキップしてください。
+デフォルトでは、LinkStarにインストールされたDockerのストレージ容量は約250MBであり、イメージをインストールするには十分でない場合があります。そのため、Dockerにより多くのスペースを割り当てて、要件を満たす必要があります。[PlexメディアサーバーWiKi](https://wiki.seeedstudio.com/ja/plex_media_server/)と同様の手順を実行してください。すでに実行済みの場合は、このステップをスキップしてください。
 
-**注意:** このガイドを進める前に、[LinkStar OpenWRTルーターでDocker環境をセットアップする](https://wiki.seeedstudio.com/plex_media_server/#set-up-the-docker-environment-on-the-linkstar-openwrt-router)手順を必ず実行してください。
+**注意:** このガイドを進める前に、[LinkStar OpenWRTルーターでDocker環境をセットアップする](https://wiki.seeedstudio.com/ja/plex_media_server/#set-up-the-docker-environment-on-the-linkstar-openwrt-router)手順を必ず実行してください。
 
 ## Portainerコンテナをインストールする
 

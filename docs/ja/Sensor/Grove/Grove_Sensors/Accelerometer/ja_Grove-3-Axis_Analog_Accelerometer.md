@@ -34,7 +34,7 @@ ADXL335は、小型で薄型、低消費電力の完全な3軸加速度センサ
 -   RoHS/WEEE準拠の鉛フリー
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 応用例

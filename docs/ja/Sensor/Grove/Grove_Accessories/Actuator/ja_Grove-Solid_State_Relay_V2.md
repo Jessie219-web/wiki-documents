@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Solid_State_Relay_V2/
+image: https://wiki.seeedstudio.com/ja/Grove-Solid_State_Relay_V2/
 slug: /ja/Grove-Solid_State_Relay_V2
 last_update:
   date: 05/15/2025
@@ -23,11 +23,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 Grove - ソリッドステートリレー V2
 
-[Grove - 2チャンネルソリッドステートリレー](https://wiki.seeedstudio.com/Grove-2-Channel_Solid_State_Relay)
+[Grove - 2チャンネルソリッドステートリレー](https://wiki.seeedstudio.com/ja/Grove-2-Channel_Solid_State_Relay)
 
-[Grove - 4チャンネルソリッドステートリレー](https://wiki.seeedstudio.com/Grove-4-Channel_Solid_State_Relay)
+[Grove - 4チャンネルソリッドステートリレー](https://wiki.seeedstudio.com/ja/Grove-4-Channel_Solid_State_Relay)
 
-[Grove - 8チャンネルソリッドステートリレー](https://wiki.seeedstudio.com/Grove-8-Channel_Solid_State_Relay)
+[Grove - 8チャンネルソリッドステートリレー](https://wiki.seeedstudio.com/ja/Grove-8-Channel_Solid_State_Relay)
 
 <p style={{}}><a href="https://www.seeedstudio.com/Grove-Solid-State-Relay-V2-p-3128.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
 
@@ -150,7 +150,7 @@ Grove - ソリッドステートリレー V2
 #### ソフトウェア
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 - **ステップ 1.** Arduino IDEを開き、新しいファイルを作成します。以下のコードをArduino IDEの新しいスケッチにコピーするには、コードブロックの右上隅にあるアイコン ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/copy.jpg) をクリックするだけです。
@@ -168,7 +168,7 @@ void loop() {
 }
 ```
 
-- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::tip
     オンボードLEDが交互に点灯および消灯し、ファンが交互にオンおよびオフになるのが確認できます。

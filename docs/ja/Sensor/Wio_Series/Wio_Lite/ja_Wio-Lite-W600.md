@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Lite-W600/
+image: https://wiki.seeedstudio.com/ja/Wio-Lite-W600/
 slug: /ja/Wio-Lite-W600
 last_update:
   date: 05/15/2025
@@ -35,7 +35,7 @@ WiFiコアについては、私たちの古い友人であるW600モジュール
 
 複雑なブレッドボード配線や面倒なハンダ付け作業にさようなら。
 
-こんにちは、[Grove](https://wiki.seeedstudio.com/Grove_System/)！
+こんにちは、[Grove](https://wiki.seeedstudio.com/ja/Grove_System/)！
 
 <p style={{}}><a href="https://www.seeedstudio.com/Wio-Lite-W600-p-4155.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
 
@@ -117,7 +117,7 @@ https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
 ## ステップ 3. Wio Lite W600ボードをArduino IDEに追加する
 
-[Seeed Board Installation Guide](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)に従い、キーワード**seeeduino_samd_zero**を検索して**Wio Lite W600**をArduino IDEに追加してください。
+[Seeed Board Installation Guide](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)に従い、キーワード**seeeduino_samd_zero**を検索して**Wio Lite W600**をArduino IDEに追加してください。
 
 <div align="center">
 <figure>
@@ -128,7 +128,7 @@ https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
 
 ## ステップ 4. W600ライブラリをArduino IDEに追加する
 
-Seeed Githubから[W600ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_W600/archive/master.zip)をダウンロードしてください。その後、[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールしてください。
+Seeed Githubから[W600ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_W600/archive/master.zip)をダウンロードしてください。その後、[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールしてください。
 
 ## ステップ 5. Arduino IDEを再起動し、AP-Stationの例を開きます。Arduino IDEで以下のパスで開くことができます：**ファイル --> 例 --> W600_wifi --> log_data**。
 

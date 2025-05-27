@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/LTE_Cat_1_Pi_HAT/
+image: https://wiki.seeedstudio.com/ja/LTE_Cat_1_Pi_HAT/
 slug: /ja/LTE_Cat_1_Pi_HAT
 last_update:
   date: 05/15/2025

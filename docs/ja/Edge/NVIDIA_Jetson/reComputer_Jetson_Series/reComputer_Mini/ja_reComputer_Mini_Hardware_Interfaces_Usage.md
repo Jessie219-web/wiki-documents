@@ -210,7 +210,7 @@ USB 3.2を介して接続された外部SSDでの1GBデータ転送の読み書�
 このプログラムは他のUSBインターフェースのテストにも適用可能です。
 
 :::info
-USB Micro-Bインターフェースの使用方法については、[このWiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_getting_started/)を参照して詳細なチュートリアルをご覧ください。
+USB Micro-Bインターフェースの使用方法については、[このWiki](https://wiki.seeedstudio.com/ja/recomputer_jetson_mini_getting_started/)を参照して詳細なチュートリアルをご覧ください。
 :::
 
 ## UART

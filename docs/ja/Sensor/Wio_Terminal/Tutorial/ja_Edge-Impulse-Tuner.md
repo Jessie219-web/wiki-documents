@@ -38,7 +38,7 @@ EON Tunerは、入力データ、潜在的な信号処理ブロック、およ�
 
 ## **はじめに**
 
-ここでは、オーディオ分類プロジェクトを提供し、EON Tunerの使用方法を示します。[Wio TerminalとEdge Impulseを使用してLoRaでデータを送信する](https://wiki.seeedstudio.com/AIoTs_GPS_state_tester/)ことに興味がある場合は、例のプロジェクトをクリックして確認できます。
+ここでは、オーディオ分類プロジェクトを提供し、EON Tunerの使用方法を示します。[Wio TerminalとEdge Impulseを使用してLoRaでデータを送信する](https://wiki.seeedstudio.com/ja/AIoTs_GPS_state_tester/)ことに興味がある場合は、例のプロジェクトをクリックして確認できます。
 
 ### **ハードウェア**
 
@@ -59,11 +59,11 @@ Type-Cケーブルを介してコンピュータに接続します。
 
 **必要なソフトウェア**
 
-- [Arduino IDE](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)
+- [Arduino IDE](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)
 
 ### Wio Terminalを使用した機械学習
 
-ここでは、Wio Terminalを使用して機械学習モデルをトレーニングし、使用する方法を示します。このプロジェクトはArduinoプラットフォームに基づいているため、Arduino IDEとさまざまなArduinoライブラリが必要です。初めてWio Terminalを使用する場合は、[Wio Terminalの使い方](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)ガイドを参照することをお勧めします。
+ここでは、Wio Terminalを使用して機械学習モデルをトレーニングし、使用する方法を示します。このプロジェクトはArduinoプラットフォームに基づいているため、Arduino IDEとさまざまなArduinoライブラリが必要です。初めてWio Terminalを使用する場合は、[Wio Terminalの使い方](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)ガイドを参照することをお勧めします。
 
 #### Edge Impulseトレーニングの開始
 
@@ -83,7 +83,7 @@ Type-Cケーブルを介してコンピュータに接続します。
 
 - **ステップ3**. 接続準備のためにファームウェア[wio-terminal-ei-1.4.0.uf2](https://files.seeedstudio.com/wiki/Alots/wio-terminal-ei-1.4.0.uf2)をダウンロードします。
 
-[Wio Terminalの使い方](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)ガイドラインに従って：
+[Wio Terminalの使い方](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)ガイドラインに従って：
 
 Wio Terminal（すでにPCに接続済み）の左下をダブルクリックすると、コンピュータにドライバ（以下のような「Arduino (F:)」）がポップアップ表示されます。その後、[wio-terminal-ei-1.4.0.uf2](https://files.seeedstudio.com/wiki/Alots/wio-terminal-ei-1.4.0.uf2)ファームウェアをドライバにドラッグします。ドライバが消えるのを確認したら、ファームウェアがプログラムされたことを意味します。これでウェブサイトにアクセスしてWio Terminalを接続できます。
 

@@ -40,14 +40,14 @@ XIAO ESP32S3 を使用する理由はメモリです。PNGDEC は動作するた
 
 ### ソフトウェア準備
 
-ラウンドディスプレイを使用するには、[Getting Started with Round Display for XIAO](https://wiki.seeedstudio.com/get_start_round_display/#getting-started) にアクセスして必要なライブラリをインストールしてください。
+ラウンドディスプレイを使用するには、[Getting Started with Round Display for XIAO](https://wiki.seeedstudio.com/ja/get_start_round_display/#getting-started) にアクセスして必要なライブラリをインストールしてください。
 
 いくつかの例を試して、すべてが正常に動作しているか確認してください。
 
 ### ライブラリ
 このプロジェクトでは、[Seeed Studio ラウンドディスプレイ For XIAO](https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html) に付属しているライブラリを使用します。
 
-[Getting Started with Round Display for XIAO](https://wiki.seeedstudio.com/get_start_round_display/#getting-started) のチュートリアルに記載されているように、すべてのライブラリをインストールしてください。
+[Getting Started with Round Display for XIAO](https://wiki.seeedstudio.com/ja/get_start_round_display/#getting-started) のチュートリアルに記載されているように、すべてのライブラリをインストールしてください。
 その後、以下が必要です：
 - PNGdec ライブラリ
 - **LVGL ライブラリの更新**（または Seeed Studio GitHub からインストールしない）
@@ -448,7 +448,7 @@ void loop() {
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- [Bruno Santos](https://github.com/orgs/Seeed-Studio/projects/6/views/1?sliceBy%5Bvalue%5D=feiticeir0&pane=issue&itemId=90657934&issue=Seeed-Studio%7Cwiki-documents%7C1993) さんに感謝します。あなたの作品は [展示](https://wiki.seeedstudio.com/contributors/) されます。
+- [Bruno Santos](https://github.com/orgs/Seeed-Studio/projects/6/views/1?sliceBy%5Bvalue%5D=feiticeir0&pane=issue&itemId=90657934&issue=Seeed-Studio%7Cwiki-documents%7C1993) さんに感謝します。あなたの作品は [展示](https://wiki.seeedstudio.com/ja/contributors/) されます。
 
 ## 技術サポート & 製品ディスカッション
 

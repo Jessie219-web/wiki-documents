@@ -14,7 +14,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # XIAO ESP32C3 Wi-Fi トラッカーを MicroPython で使用する
 
-この Wiki は更新されています: https://wiki.seeedstudio.com/xiao_esp32c3_with_micropython/
+この Wiki は更新されています: https://wiki.seeedstudio.com/ja/xiao_esp32c3_with_micropython/
 
 このチュートリアルでは、XIAO ESP32C3 を MicroPython で利用する方法について簡潔に説明します。さらに、Wi-Fi 信号強度トラッカーの実用的な応用についても探ります。このトラッカーは、高速で高品質な家庭ネットワークを構築する際に非常に役立ちます。
 その結果、Wi-Fi トラッカーの指示に従うことで、Wi-Fi 信号増幅器の配置を効果的に最適化し、最適な信号範囲を確保することができます。
@@ -680,7 +680,7 @@ while True:
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studio [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35177053)によってサポートされています。
-- [Zacharyの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35177053)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- [Zacharyの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35177053)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)。
 
 ## 技術サポートと製品ディスカッション
 

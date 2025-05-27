@@ -3,7 +3,7 @@ title: WT OTA for Blynk
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Blynk-wireless-OTA-functionality-to-Wio-Terminal/
+image: https://wiki.seeedstudio.com/ja/Blynk-wireless-OTA-functionality-to-Wio-Terminal/
 slug: /ja/Blynk-wireless-OTA-functionality-to-Wio-Terminal
 last_update:
   date: 05/15/2025

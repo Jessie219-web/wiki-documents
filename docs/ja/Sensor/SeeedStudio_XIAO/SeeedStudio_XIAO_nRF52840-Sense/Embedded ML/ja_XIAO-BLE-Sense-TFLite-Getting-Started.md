@@ -24,7 +24,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## ソフトウェアのセットアップ
 
-まず、初期のハードウェアおよびソフトウェアのセットアップについては、["Getting Started with Seeed Studio XIAO nRF52840 (Sense)"](https://wiki.seeedstudio.com/XIAO-BLE-Sense-Getting-Started) ウィキを参照してください。
+まず、初期のハードウェアおよびソフトウェアのセットアップについては、["Getting Started with Seeed Studio XIAO nRF52840 (Sense)"](https://wiki.seeedstudio.com/ja/XIAO-BLE-Sense-Getting-Started) ウィキを参照してください。
 
 それでは、残りのソフトウェアセットアップに進みましょう。
 

@@ -61,7 +61,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBone-Blue-p-2809.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Blue/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Blue/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 
@@ -82,7 +82,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Green/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Green/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 
@@ -103,7 +103,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-BeagleBone-Green-Wireless-Development-Board-TI-AM335x-WiFi-BT.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Green_Wireless/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 
@@ -125,7 +125,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/SeeedStudio-BeagleBone-Green-Gateway-p-4586.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone-Green-Gateway/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone-Green-Gateway/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 
@@ -146,7 +146,7 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="https://www.seeedstudio.com/BeagleBoner-Case.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ 今すぐ購入</font></span></strong>
     </a>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/Beaglebone_Case/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Beaglebone_Case/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 
@@ -175,9 +175,9 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
     </tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Grove_Base_Cape_for_BeagleBone_v2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Motor_Bridge_Cape_v1.0/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Skeleton_box_for_Beaglebone/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Grove_Base_Cape_for_BeagleBone_v2/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Motor_Bridge_Cape_v1.0/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+      <td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Skeleton_box_for_Beaglebone/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
         </tr>
     </table>
     </div>
@@ -202,8 +202,8 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
     </tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Green_HDMI_Cape/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Seeed-Studio-BeagleBone-Green-LCD-Cape-with-Resistive-Touch/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Green_HDMI_Cape/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Seeed-Studio-BeagleBone-Green-LCD-Cape-with-Resistive-Touch/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>
 	</table>
 </div>
@@ -230,8 +230,8 @@ BeagleBone®シリーズには、異なるニーズに対応するためのユ�
     </tr>
     <tr class="table-trnobg"></tr>
 		<tr class="table-trnobg">
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Grove_Starter_Kit_for_BeagleBone_Green/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
-			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Grove_Starter_Kit_for_BeagleBone_Green/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
+			<td class="table-trnobg"><div class="get_one_now_container" style={{textAlign: 'center'}}><a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/Beagle_Bone_Green_and_Grove_IoT_Starter_Kit_Powered_by_AWS/"><strong><span><font color={'FFFFFF'} size={"4"}>📚 詳細を見る</font></span></strong></a></div></td>
 		</tr>
 	</table>
 </div>
@@ -248,7 +248,7 @@ BeagleBone®は、フルLinux OSを実行できる多用途プラットフォー
 SeeedのBeagleBone® GreenおよびBeagleBone® Green WirelessはBeagleBone®ファミリーの一部であり、カスタマイズ、製造、展開がすぐに可能です。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/BeagleBone_Solutions/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/BeagleBone_Solutions/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 詳細を見る</font></span></strong>
     </a>
 </div>
 

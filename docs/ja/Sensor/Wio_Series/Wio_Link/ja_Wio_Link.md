@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio_Link/
+image: https://wiki.seeedstudio.com/ja/Wio_Link/
 slug: /ja/Wio_Link
 last_update:
   date: 05/15/2025

@@ -175,7 +175,7 @@ opencvのPythonライブラリが正常にインストールされた後、Thonn
 ## ✨ 貢献者プロジェクト
 
 - このプロジェクトはSeeed Studio [Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)によってサポートされています。
-- [Hendraとshariltuminの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35979545)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- [Hendraとshariltuminの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35979545)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)。
 
 ## 技術サポートと製品ディスカッション
 

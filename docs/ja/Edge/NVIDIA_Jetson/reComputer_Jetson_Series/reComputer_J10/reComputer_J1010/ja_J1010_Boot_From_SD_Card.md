@@ -21,8 +21,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 開始する前に、以下の2つの記事を読んでおく必要があります。J1010システムが正しく書き込まれており、SDカードドライバが正しくインストールされていることを確認してください。
 
-- [J1010/J101 Jetpackの書き込み](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/)
-- [J101_SDカードの有効化](https://wiki.seeedstudio.com/J101_Enable_SD_Card/)
+- [J1010/J101 Jetpackの書き込み](https://wiki.seeedstudio.com/ja/reComputer_J1010_J101_Flash_Jetpack/)
+- [J101_SDカードの有効化](https://wiki.seeedstudio.com/ja/J101_Enable_SD_Card/)
 
 ## J101からSDカードへのシステム書き込み
 

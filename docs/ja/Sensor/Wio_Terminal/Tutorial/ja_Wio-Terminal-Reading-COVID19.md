@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/COVID-19.gif" /></div>
 
-このウィキは [Wio Terminal を使用して Github リポジトリの統計を読み取る](https://wiki.seeedstudio.com/Wio-Terminal-Reading-Github/) の改良版であり、[Coronavirus COVID19 API](https://covid19api.com/) にアクセスしてデータを解析し、LCD 画面にライブ COVID-19 データを表示するように変更されています。
+このウィキは [Wio Terminal を使用して Github リポジトリの統計を読み取る](https://wiki.seeedstudio.com/ja/Wio-Terminal-Reading-Github/) の改良版であり、[Coronavirus COVID19 API](https://covid19api.com/) にアクセスしてデータを解析し、LCD 画面にライブ COVID-19 データを表示するように変更されています。
 
 ## 必要な部品
 
@@ -36,13 +36,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 必要な Arduino ライブラリ
 
-- LCD 画面ライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) を参照してください。
+- LCD 画面ライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) を参照してください。
 
 - [ArduinoJson](https://github.com/bblanchon/ArduinoJson) リポジトリを訪問し、リポジトリ全体をローカルドライブにダウンロードしてください。
 
   - 次に、ArduinoJson ライブラリを Arduino IDE にインストールします。Arduino IDE を開き、`スケッチ` -> `ライブラリをインクルード` -> `ZIP形式のライブラリを追加` をクリックし、先ほどダウンロードした `ArduinoJson` ファイルを選択します。
 
-- HTTPS 接続に関する詳細は、[**こちら**](https://wiki.seeedstudio.com/Wio-Terminal-Wi-Fi/#wi-fi-https-connection-example-code) を参照してください。
+- HTTPS 接続に関する詳細は、[**こちら**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Wi-Fi/#wi-fi-https-connection-example-code) を参照してください。
 
 ## Arduino の手順
 

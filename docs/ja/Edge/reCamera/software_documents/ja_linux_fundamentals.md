@@ -199,7 +199,7 @@ sftp> put myfile.txt /home/user/Documents/
 
 ## **7. ハードウェアコマンド**
 
-recameraデバイスのハードウェアを制御する方法については、[こちらのドキュメント](https://wiki.seeedstudio.com/recamera_hardware_and_specs/#hardware-interface)を参照してください。
+recameraデバイスのハードウェアを制御する方法については、[こちらのドキュメント](https://wiki.seeedstudio.com/ja/recamera_hardware_and_specs/#hardware-interface)を参照してください。
 
 ## 技術サポートと製品ディスカッション
 

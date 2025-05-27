@@ -95,7 +95,7 @@ Arduino IDE、Lua、JavaScript に対応した豊富なライブラリを開発�
 詳細については、RePhone メインページの RePhone 開発環境を参照してください：  
 
 [
-RePhone 開発環境](https://wiki.seeedstudio.com/RePhone/#development-environment)  
+RePhone 開発環境](https://wiki.seeedstudio.com/ja/RePhone/#development-environment)  
 
 ## 関連プロジェクト  
 RePhone を使用して達成された素晴らしいプロジェクトをチェックしてください。  

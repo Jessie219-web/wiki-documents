@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-EL_Driver/
+image: https://wiki.seeedstudio.com/ja/Grove-EL_Driver/
 slug: /ja/Grove-EL_Driver
 last_update:
   date: 05/15/2025
@@ -46,7 +46,7 @@ Grove - EL Driverは、ELワイヤーを駆動するために設計されてい�
 - 最大対応EL容量: 15nF
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 使用方法
@@ -102,7 +102,7 @@ void loop() {
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[Guide for Codecraft using Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[Guide for Codecraft using Arduino](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ2.** 下の画像のようにブロックをドラッグするか、このページの最後でダウンロード可能なcdcファイルを開きます。

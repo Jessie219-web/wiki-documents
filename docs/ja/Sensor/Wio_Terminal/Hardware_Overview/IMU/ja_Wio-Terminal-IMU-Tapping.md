@@ -22,7 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 3軸加速度センサーの初期化
 
-Wio Terminal 上で加速度センサーを初期化するには、[IMUの基本操作](https://wiki.seeedstudio.com/Wio-Terminal-IMU-Basic/)をご覧ください。
+Wio Terminal 上で加速度センサーを初期化するには、[IMUの基本操作](https://wiki.seeedstudio.com/ja/Wio-Terminal-IMU-Basic/)をご覧ください。
 
 ## タッピング感度の設定
 

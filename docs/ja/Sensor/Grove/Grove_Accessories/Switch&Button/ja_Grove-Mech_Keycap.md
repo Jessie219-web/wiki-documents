@@ -89,7 +89,7 @@ K1はボタンに接続されています。キーが開いているとき、**S
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -132,7 +132,7 @@ Grove Base Shieldがない場合は、以下のようにGrove-Mech keycapをSeee
 
 - **ステップ 1.** [Adafruit_NeoPixel-master](https://files.seeedstudio.com/wiki/Grove-Mech_Keycap/res/Adafruit_NeoPixel-master.zip)ライブラリをGithubからダウンロードします。
 
-- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを開き、新しいファイルを作成して、以下のコードを新しいファイルにコピーします。
 
@@ -242,7 +242,7 @@ uint32_t Wheel(byte WheelPos) {
 
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 - **ステップ 5.** Grove-Mech Keycapを押すたびに、LEDの色が変わるのがわかります。ボタンを約2秒間押し続けると、呼吸ライト効果が表示されます。
 
@@ -275,7 +275,7 @@ PWM 機能のピンは以下のピン列の値のいずれかを使用し、対�
 
 #### ソフトウェア
 
-- **Step 1**. [Setting Software](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を設定します。
+- **Step 1**. [Setting Software](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を設定します。
 - **Step 2**. grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

@@ -97,7 +97,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - データベースに登録されていない指の場合、シリアルポートには何も出力されません。
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 リソース

@@ -116,12 +116,12 @@ LDC1612は、磁気的にLCオシレーターと結合した導電性の物体�
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 - **ステップ 1.** Githubから[Grove-2-Channel_Inductive_Sensor-LDC1612](https://github.com/Seeed-Studio/Seeed_LDC1612)ライブラリをダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。例を開くには、以下の3つの方法があります：
     1. Arduino IDEで直接開く：**File --> Examples -->Seeed Inductive Sensor LDC1612--> coin_test_demo**のパスを使用します。

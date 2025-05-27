@@ -46,7 +46,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 **Raspberry Pi用GrovePi PlusとGrovePi+の比較**
 
-| パラメータ                   | [Raspberry Pi用GrovePi Plus](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/)                   | [GrovePi+](https://wiki.seeedstudio.com/GrovePi_Plus/)                                                                            |
+| パラメータ                   | [Raspberry Pi用GrovePi Plus](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/)                   | [GrovePi+](https://wiki.seeedstudio.com/ja/GrovePi_Plus/)                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | 動作電圧                   | 3.3V                                                                                                              | 5V                                                                                                                               |
 | MCU                         | STM32F030F4P6                                                                                                     | ATMEGA328P                                                                                                                       |
@@ -117,51 +117,51 @@ GrovePi の動作を説明するために、3 つの簡単なプロジェクト�
 
 ### Grove リスト
 
-* [1. Grove - ボタン](https://wiki.seeedstudio.com/Grove-Button#With_Raspberry_Pi)
+* [1. Grove - ボタン](https://wiki.seeedstudio.com/ja/Grove-Button#With_Raspberry_Pi)
 
-* [2. 光センサー](https://wiki.seeedstudio.com/Grove-Light_Sensor#With_Raspberry_Pi)
+* [2. 光センサー](https://wiki.seeedstudio.com/ja/Grove-Light_Sensor#With_Raspberry_Pi)
 
-* [3. ブザー](https://wiki.seeedstudio.com/Grove-Buzzer#With_Raspberry_Pi)
+* [3. ブザー](https://wiki.seeedstudio.com/ja/Grove-Buzzer#With_Raspberry_Pi)
 
-* [4. サウンドセンサー](https://wiki.seeedstudio.com/Grove-Sound_Sensor#With_Raspberry_Pi)
+* [4. サウンドセンサー](https://wiki.seeedstudio.com/ja/Grove-Sound_Sensor#With_Raspberry_Pi)
 
-* [5. Grove - 赤色 LED](https://wiki.seeedstudio.com/Grove-Red_LED#With_Raspberry_Pi)
+* [5. Grove - 赤色 LED](https://wiki.seeedstudio.com/ja/Grove-Red_LED#With_Raspberry_Pi)
 
-* [6. LCD RGB バックライト](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight#With_Raspberry_Pi)
+* [6. LCD RGB バックライト](https://wiki.seeedstudio.com/ja/Grove-LCD_RGB_Backlight#With_Raspberry_Pi)
 
-* [7. 回転角センサー](https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor#With_Raspberry_Pi)
+* [7. 回転角センサー](https://wiki.seeedstudio.com/ja/Grove-Rotary_Angle_Sensor#With_Raspberry_Pi)
 
-* [8. Grove-温湿度センサー Pro](https://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/#With_Raspberry_Pi)
+* [8. Grove-温湿度センサー Pro](https://wiki.seeedstudio.com/ja/Grove-Temperature_and_Humidity_Sensor_Pro/#With_Raspberry_Pi)
 
-* [9. 超音波レンジャーセンサー](https://wiki.seeedstudio.com/Grove-Ultrasonic_Ranger#With_Raspberry_Pi)
+* [9. 超音波レンジャーセンサー](https://wiki.seeedstudio.com/ja/Grove-Ultrasonic_Ranger#With_Raspberry_Pi)
 
-* [10. リレー](https://wiki.seeedstudio.com/Grove-Relay#With_Raspberry_Pi)
+* [10. リレー](https://wiki.seeedstudio.com/ja/Grove-Relay#With_Raspberry_Pi)
 
-* [11. Grove-4桁ディスプレイ](https://wiki.seeedstudio.com/Grove-4-Digit-Display#With_Raspberry_Pi)
+* [11. Grove-4桁ディスプレイ](https://wiki.seeedstudio.com/ja/Grove-4-Digit-Display#With_Raspberry_Pi)
 
-* [12. Grove-6軸加速度計およびコンパス V2.0](https://wiki.seeedstudio.com/Grove-6-Axis_AccelerometerAndCompass_V2.0#With_Raspberry_Pi)
+* [12. Grove-6軸加速度計およびコンパス V2.0](https://wiki.seeedstudio.com/ja/Grove-6-Axis_AccelerometerAndCompass_V2.0#With_Raspberry_Pi)
 
-* [13. Grove - バロメーター (高精度)](https://wiki.seeedstudio.com/Grove-Barometer(High-Accuracy)#With_Raspberry_Pi)
+* [13. Grove - バロメーター (高精度)](https://wiki.seeedstudio.com/ja/Grove-Barometer(High-Accuracy)#With_Raspberry_Pi)
 
-* [14. Grove-バロメーターセンサー-BMP180](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP180#With_Raspberry_Pi)
+* [14. Grove-バロメーターセンサー-BMP180](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BMP180#With_Raspberry_Pi)
 
-* [15. Grove-ダストセンサー](https://wiki.seeedstudio.com/Grove-Dust_Sensor#With_Raspberry_Pi)
+* [15. Grove-ダストセンサー](https://wiki.seeedstudio.com/ja/Grove-Dust_Sensor#With_Raspberry_Pi)
 
-* [16. Grove-電流センサー](https://wiki.seeedstudio.com/Grove-Electricity_Sensor#With_Raspberry_Pi)
+* [16. Grove-電流センサー](https://wiki.seeedstudio.com/ja/Grove-Electricity_Sensor#With_Raspberry_Pi)
 
-* [17. Grove-電磁石](https://wiki.seeedstudio.com/Grove-Electromagnet#With_Raspberry_Pi)
+* [17. Grove-電磁石](https://wiki.seeedstudio.com/ja/Grove-Electromagnet#With_Raspberry_Pi)
 
-* [18. Grove-炎センサー](https://wiki.seeedstudio.com/Grove-Flame_Sensor#With_Raspberry_Pi)
+* [18. Grove-炎センサー](https://wiki.seeedstudio.com/ja/Grove-Flame_Sensor#With_Raspberry_Pi)
 
-* [19. Grove-ガスセンサー-MQ2](https://wiki.seeedstudio.com/Grove-Gas_Sensor-MQ2#With_Raspberry_Pi)
+* [19. Grove-ガスセンサー-MQ2](https://wiki.seeedstudio.com/ja/Grove-Gas_Sensor-MQ2#With_Raspberry_Pi)
 
-* [20. Grove-ジェスチャー v1.0](https://wiki.seeedstudio.com/Grove-Gesture_v1.0#With_Raspberry_Pi)
+* [20. Grove-ジェスチャー v1.0](https://wiki.seeedstudio.com/ja/Grove-Gesture_v1.0#With_Raspberry_Pi)
 
-* [21. Grove-GPS](https://wiki.seeedstudio.com/Grove-GPS#With_Raspberry_Pi)
+* [21. Grove-GPS](https://wiki.seeedstudio.com/ja/Grove-GPS#With_Raspberry_Pi)
 
-* [22. Grove-高温センサー](https://wiki.seeedstudio.com/Grove-High_Temperature_Sensor#With_Raspberry_Pi)
+* [22. Grove-高温センサー](https://wiki.seeedstudio.com/ja/Grove-High_Temperature_Sensor#With_Raspberry_Pi)
 
-* [23. Grove-赤外線反射センサー](https://wiki.seeedstudio.com/Grove-Infrared_Reflective_Sensor#With_Raspberry_Pi)
+* [23. Grove-赤外線反射センサー](https://wiki.seeedstudio.com/ja/Grove-Infrared_Reflective_Sensor#With_Raspberry_Pi)
 
 ## 回路図オンラインビューア
 

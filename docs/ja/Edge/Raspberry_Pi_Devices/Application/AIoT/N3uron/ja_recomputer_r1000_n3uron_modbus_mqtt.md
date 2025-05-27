@@ -50,7 +50,7 @@ reComputer R1000と[N3uron](https://n3uron.com/) Duoの強力な組み合わせ�
 
 ### ソフトウェア
 
-[N3uronの使い方](https://wiki.seeedstudio.com/recomputer_r1000_n3uron/)ガイドを学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作、Web UIおよびWeb Visionモジュールの概念の理解、タグの概念の把握、基本的なダッシュボードの作成など、重要な洞察を提供します。これらの基本をまだ学んでいない場合は、先に進む前にこれらを確認することをお勧めします。リンクを通じてガイドにアクセスできます。
+[N3uronの使い方](https://wiki.seeedstudio.com/ja/recomputer_r1000_n3uron/)ガイドを学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作、Web UIおよびWeb Visionモジュールの概念の理解、タグの概念の把握、基本的なダッシュボードの作成など、重要な洞察を提供します。これらの基本をまだ学んでいない場合は、先に進む前にこれらを確認することをお勧めします。リンクを通じてガイドにアクセスできます。
 
 ### Modbus TCP/IPのためのイーサネット設定の構成
 
@@ -224,7 +224,7 @@ N3uronのWebUIインターフェースでモジュールインスタンスを作
 ## ボーナス : AWS を使用して工場のステータスを公開する
 
 :::note
-[AWS クラウドを reComputer R1000 デバイスに接続する方法](https://wiki.seeedstudio.com/recomputer_r1000_n3uron_aws/)について、ステップバイステップの手順を提供しています。この Wiki を初めて利用する場合は、このリンクを参照してください。
+[AWS クラウドを reComputer R1000 デバイスに接続する方法](https://wiki.seeedstudio.com/ja/recomputer_r1000_n3uron_aws/)について、ステップバイステップの手順を提供しています。この Wiki を初めて利用する場合は、このリンクを参照してください。
 
 :::
 

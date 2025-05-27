@@ -283,10 +283,10 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --external-device nvme0n1p1 -c too
 ### コンピュータビジョンと組み込み機械学習
 - [Deepstream](https://developer.nvidia.com/deepstream-sdk): AI ベースのマルチセンサー処理およびビデオ・画像理解のための完全なストリーミング分析ツールキットを Jetson 上で提供します。
 - [TAO](https://developer.nvidia.com/tao-toolkit): TensorFlow と PyTorch を基盤とした NVIDIA TAO フレームワークのローコード版で、モデルトレーニングを加速します。
-- [alwaysAI](https://alwaysai.co/blog/getting-started-with-the-jetson-nano-using-alwaysai): reComputer 上で直接コンピュータビジョンアプリケーションを構築、トレーニング、デプロイします。100 以上の事前トレーニング済みコンピュータビジョンモデルに無料でアクセスし、エンタープライズサブスクリプションを通じてクラウドでカスタム AI モデルを数クリックでトレーニングできます。始め方については [wiki](https://wiki.seeedstudio.com/alwaysAI-Jetson-Getting-Started/#object-detection-on-pre-loaded-video-file) ガイドをご覧ください。
+- [alwaysAI](https://alwaysai.co/blog/getting-started-with-the-jetson-nano-using-alwaysai): reComputer 上で直接コンピュータビジョンアプリケーションを構築、トレーニング、デプロイします。100 以上の事前トレーニング済みコンピュータビジョンモデルに無料でアクセスし、エンタープライズサブスクリプションを通じてクラウドでカスタム AI モデルを数クリックでトレーニングできます。始め方については [wiki](https://wiki.seeedstudio.com/ja/alwaysAI-Jetson-Getting-Started/#object-detection-on-pre-loaded-video-file) ガイドをご覧ください。
 - [edge impulse](https://www.edgeimpulse.com/): クラウド依存なしで、エッジでオーディオ、分類、物体検出アプリケーションをデプロイするための最も簡単な組み込み機械学習パイプライン。
 - [Roboflow](https://blog.roboflow.com/deploy-to-nvidia-jetson/): 生の画像をカスタムトレーニング済みの物体検出および分類モデルに変換し、アプリケーションで使用するためにモデルをデプロイするツールを提供します。NVIDIA Jetson へのデプロイについては https://docs.roboflow.com/inference/nvidia-jetson を参照してください。
-- [ultralytics yolo](https://github.com/ultralytics/yolov5): 転移学習を使用して、YOLOv5 による少数ショット物体検出を実現します。非常に少ないトレーニングサンプルで済みます。ステップバイステップの [wiki](https://wiki.seeedstudio.com/YOLOv5-Object-Detection-Jetson/) チュートリアルをご覧ください。
+- [ultralytics yolo](https://github.com/ultralytics/yolov5): 転移学習を使用して、YOLOv5 による少数ショット物体検出を実現します。非常に少ないトレーニングサンプルで済みます。ステップバイステップの [wiki](https://wiki.seeedstudio.com/ja/YOLOv5-Object-Detection-Jetson/) チュートリアルをご覧ください。
 - [Deep Learning](https://deci.ai/blog/jetson-machine-learning-inference/): NVIDIA Jetson Nano 上でモデルを最適化します。Deci の [こちら](https://info.deci.ai/benchmark-optimize-runtime-performance-nvidia-jetson) を参照して、NVIDIA Jetson Nano および Xavier NX デバイスでのランタイムパフォーマンスを自動的にベンチマークおよび最適化する方法をご確認ください。
 
 ### 音声 AI

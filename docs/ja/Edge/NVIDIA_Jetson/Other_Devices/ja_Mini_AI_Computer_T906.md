@@ -660,7 +660,7 @@ sudo ./bd.gps_serialport
 
 - **ステップ 1.** SSDを取り付ける
   
-  [ハードウェア説明書](https://wiki.seeedstudio.com/reComputer_Jetson_Series_Hardware_Layout/)の手順に従って、reComputerにSSDを取り付けてください。
+  [ハードウェア説明書](https://wiki.seeedstudio.com/ja/reComputer_Jetson_Series_Hardware_Layout/)の手順に従って、reComputerにSSDを取り付けてください。
 
 - **ステップ 2.** SSDを準備する
 

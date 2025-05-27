@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio/
+image: https://wiki.seeedstudio.com/ja/Wio/
 slug: /ja/Wio
 last_update:
   date: 05/15/2025
@@ -27,15 +27,15 @@ Wioの最も魅力的な点は、プラグアンドプレイモジュールを�
 
 以下は、Seeed WiKiで見つけることができるWioボードのリストです。このリストは随時更新されます。
 
-- [Wio Link](https://wiki.seeedstudio.com/Wio_Link/)
-- [Wio Link Bootcamp Kit](https://wiki.seeedstudio.com/Wio_Link_Bootcamp_Kit/)
-- [Wio Link Deluxe Kit](https://wiki.seeedstudio.com/Wio_Link_Deluxe_Kit/)
-- [Wio Link Deluxe Plus Kit](https://wiki.seeedstudio.com/Wio_Link_Deluxe_Plus_Kit/)
-- [Wio Link Environment Kit](https://wiki.seeedstudio.com/Wio_Link_Environment_Kit/)
-- [Wio Link Event Kit](https://wiki.seeedstudio.com/Wio_Link_Event_Kit/)
-- [Wio Link Starter Kit](https://wiki.seeedstudio.com/Wio_Link_Starter_Kit/)
-- [Wio Node](https://wiki.seeedstudio.com/Wio_Node/)
-- [Grove Starter Kit for Wio LTE](https://wiki.seeedstudio.com/Grove_Starter_Kit_for_Wio_LTE/)
+- [Wio Link](https://wiki.seeedstudio.com/ja/Wio_Link/)
+- [Wio Link Bootcamp Kit](https://wiki.seeedstudio.com/ja/Wio_Link_Bootcamp_Kit/)
+- [Wio Link Deluxe Kit](https://wiki.seeedstudio.com/ja/Wio_Link_Deluxe_Kit/)
+- [Wio Link Deluxe Plus Kit](https://wiki.seeedstudio.com/ja/Wio_Link_Deluxe_Plus_Kit/)
+- [Wio Link Environment Kit](https://wiki.seeedstudio.com/ja/Wio_Link_Environment_Kit/)
+- [Wio Link Event Kit](https://wiki.seeedstudio.com/ja/Wio_Link_Event_Kit/)
+- [Wio Link Starter Kit](https://wiki.seeedstudio.com/ja/Wio_Link_Starter_Kit/)
+- [Wio Node](https://wiki.seeedstudio.com/ja/Wio_Node/)
+- [Grove Starter Kit for Wio LTE](https://wiki.seeedstudio.com/ja/Grove_Starter_Kit_for_Wio_LTE/)
 
 ## 技術サポートと製品ディスカッション
 技術的な問題がある場合は、[フォーラム](http://forum.seeedstudio.com/)に問題を投稿してください。  

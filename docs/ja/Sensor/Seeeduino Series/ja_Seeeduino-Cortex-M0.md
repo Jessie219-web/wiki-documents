@@ -126,7 +126,7 @@ LED点滅の例スケッチを開きます：**ファイル > Examples > 01.Basi
 </div>
 
 - **ステップ3. Seeedボードを追加する**  
-[Seeedボードインストールガイド](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)に従い、キーワード**Seeeduino samd**を検索して、Arduino IDEに**Seeeduino Zero**を追加してください。
+[Seeedボードインストールガイド](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)に従い、キーワード**Seeeduino samd**を検索して、Arduino IDEに**Seeeduino Zero**を追加してください。
 
 <div align="center">
   <figure>

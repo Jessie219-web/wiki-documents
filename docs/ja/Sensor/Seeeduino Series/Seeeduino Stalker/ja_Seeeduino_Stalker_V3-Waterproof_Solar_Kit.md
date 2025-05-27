@@ -282,7 +282,7 @@ Seeeduino Stalker v3.0 の主な用途は、バッテリー電圧などのセン
 
 ---
 
-* [Seeeduino Stalker の各バージョンの比較](https://wiki.seeedstudio.com/Seeeduino_Stalker#Comparison_between_various_versions_of_Seeeduino_Stalker)
+* [Seeeduino Stalker の各バージョンの比較](https://wiki.seeedstudio.com/ja/Seeeduino_Stalker#Comparison_between_various_versions_of_Seeeduino_Stalker)
 
 * [カプセル型のSDカード読み取り用ミニUSBケーブル](https://www.seeedstudio.com/sd-card-reading-miniusb-cable-in-a-capsule-p-575.html?cPath=77)
 

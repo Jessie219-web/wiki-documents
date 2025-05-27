@@ -295,9 +295,9 @@ DFUモードに成功するには、この操作を迅速に行う必要があ�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/dfu-mode2.gif" alt="pir" width={600} height="auto" /></p>
 
-* ステップ2: [フラッシュの消去](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase)。
+* ステップ2: [フラッシュの消去](https://wiki.seeedstudio.com/ja/sensecap_t1000_e/#step-2-flash-erase)。
 
-* ステップ3: [ファームウェアのフラッシュ](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware)。
+* ステップ3: [ファームウェアのフラッシュ](https://wiki.seeedstudio.com/ja/sensecap_t1000_e/#step-3-flash-firmware)。
 
 ### デバイスが壊れた（ブリック状態）
 
@@ -406,7 +406,7 @@ adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g4887
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/flash-success.png" alt="pir" width={800} height="auto" /></p>
 
-上記の手順を完了したら、この[手順](https://wiki.seeedstudio.com/sensecap_t1000_e/#flash-the-application-firmware)に従ってアプリケーションファームウェアをフラッシュしてください。
+上記の手順を完了したら、この[手順](https://wiki.seeedstudio.com/ja/sensecap_t1000_e/#flash-the-application-firmware)に従ってアプリケーションファームウェアをフラッシュしてください。
 
 **2) デバイスがDFUモードに入れないが、シリアルポートが検出される場合。**
 
@@ -415,7 +415,7 @@ adafruit-nrfutil --verbose dfu serial --package t1000_e_bootloader-0.9.1-5-g4887
 * ボーレートを `1200` に設定します。
 
 * デバイスを接続します。
-   接続時にライトが一瞬点滅します。ライトが点灯し続けるまで試行を繰り返してください。これによりデバイスがDFUモードに戻ることを意味します。その後、[ブートローダーをフラッシュ](https://wiki.seeedstudio.com/sensecap_t1000_e/#flash-the-bootloader) -> [フラッシュの消去](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-2-flash-erase) -> [ファームウェアのフラッシュ](https://wiki.seeedstudio.com/sensecap_t1000_e/#step-3-flash-firmware)を行います。
+   接続時にライトが一瞬点滅します。ライトが点灯し続けるまで試行を繰り返してください。これによりデバイスがDFUモードに戻ることを意味します。その後、[ブートローダーをフラッシュ](https://wiki.seeedstudio.com/ja/sensecap_t1000_e/#flash-the-bootloader) -> [フラッシュの消去](https://wiki.seeedstudio.com/ja/sensecap_t1000_e/#step-2-flash-erase) -> [ファームウェアのフラッシュ](https://wiki.seeedstudio.com/ja/sensecap_t1000_e/#step-3-flash-firmware)を行います。
 
 <div class="table-center">
 <iframe width="730" height="500" src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/reset%20via%20serial%20tool.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>

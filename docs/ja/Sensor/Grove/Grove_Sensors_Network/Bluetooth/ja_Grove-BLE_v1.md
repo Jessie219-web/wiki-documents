@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-BLE_v1/
+image: https://wiki.seeedstudio.com/ja/Grove-BLE_v1/
 slug: /ja/Grove-BLE_v1
 last_update:
   date: 05/15/2025
@@ -46,7 +46,7 @@ HM-11 の電源供給は 3.3v ですが、Grove - BLE は 3.3V から 5V です�
 :::
 
 :::tip
-Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 対応プラットフォーム

@@ -112,7 +112,7 @@ Buildroot を使用して既にコンパイルされた reTerminal システム�
 
 次に、reTerminal の CM4 の eMMC にイメージを書き込む手順に進みます。
 
-[この Wiki](https://wiki.seeedstudio.com/reTerminal/#getting-started-with-reterminal-extended) の手順に従い、以下のステップに注意してください：
+[この Wiki](https://wiki.seeedstudio.com/ja/reTerminal/#getting-started-with-reterminal-extended) の手順に従い、以下のステップに注意してください：
 
 **注意:** **Raspberry Pi Imager** を開いたら、**CHOOSE OS** をクリックし、**Use custom** を選択して、ダウンロードした **sdcard.img** ファイルを選択してください。
 
@@ -185,7 +185,7 @@ make graph-size
 
 ## Buildroot イメージのテスト
 
-上記の Buildroot イメージを reTerminal でテストするには、[reTerminal ハードウェアとインターフェース使用法 wiki](https://wiki.seeedstudio.com/reTerminal-hardware-interfaces-usage) を訪問し、記載されている手順を参照してください。
+上記の Buildroot イメージを reTerminal でテストするには、[reTerminal ハードウェアとインターフェース使用法 wiki](https://wiki.seeedstudio.com/ja/reTerminal-hardware-interfaces-usage) を訪問し、記載されている手順を参照してください。
 
 ## リソース
 

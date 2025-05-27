@@ -41,7 +41,7 @@ Xadow - IMU 6DOF はモーショントラッキングモジュールです。こ
 
 **テストコード：**
   
-- [Xadow - IMU 6DOF MPU6050 ライブラリ](https://github.com/Seeed-Studio/Xadow_IMU_6DOF) を Github からダウンロードし、I2Cdev ファイルと MPU6050 ファイルを Arduino ライブラリにインストールします。ライブラリのインストールについては、Wiki ページの[こちら](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してください。
+- [Xadow - IMU 6DOF MPU6050 ライブラリ](https://github.com/Seeed-Studio/Xadow_IMU_6DOF) を Github からダウンロードし、I2Cdev ファイルと MPU6050 ファイルを Arduino ライブラリにインストールします。ライブラリのインストールについては、Wiki ページの[こちら](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してください。
 - 次のパスで例を開きます：**MPU6050_DMP6 File -> Examples -> MPU6050 -> Examples -> MPU6050_DMP6**。
 
 ```

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-GPS/
+image: https://wiki.seeedstudio.com/ja/Grove-GPS/
 slug: /ja/Grove-GPS
 last_update:
   date: 05/15/2025
@@ -26,7 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 
 :::tip
-[Seeed GPS Modules Selection Guide](https://wiki.seeedstudio.com/GPS-Modules-Selection-Guide/)を公開しました。これにより、あなたのニーズに最適なGPSモジュールを選択する手助けができます。
+[Seeed GPS Modules Selection Guide](https://wiki.seeedstudio.com/ja/GPS-Modules-Selection-Guide/)を公開しました。これにより、あなたのニーズに最適なGPSモジュールを選択する手助けができます。
 :::
 
 ## バージョン
@@ -43,7 +43,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - Grove互換インターフェース
 
 :::tip
- Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+ Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 仕様
@@ -68,7 +68,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -107,7 +107,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
 - **ステップ 1.** [u-center](https://www.u-blox.com/en/product/u-center-windows)ソフトウェアをインストールします。
-- **ステップ 2.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 2.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```c
 #include <SoftwareSerial.h>

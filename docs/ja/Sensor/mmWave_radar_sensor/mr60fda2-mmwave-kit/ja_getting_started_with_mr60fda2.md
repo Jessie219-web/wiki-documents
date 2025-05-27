@@ -27,7 +27,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
     </a>
 </div><br />
 
-XIAO向けに設計された高度な**mmWaveセンサーモジュール**を紹介します。このモジュールは転倒検知と[心拍検知](https://wiki.seeedstudio.com/getting_started_with_mr60bha2_mmwave_kit/)の両方を提供する最先端の監視ソリューションです。Wi-FiとBluetooth接続を備えた強力なXIAO ESP32マイクロコントローラーによって駆動され、正確で信頼性の高い検知能力を提供します。リアルタイムでの転倒監視や高精度な心拍追跡が必要な場合でも、RGB LEDや周囲光センサーを含む最先端技術を搭載したこれらのモジュールが対応します。Grove GPIOポートを通じた簡単な拡張オプションにより、スマートホーム統合からヘルスケア監視まで、幅広い用途に適しています。
+XIAO向けに設計された高度な**mmWaveセンサーモジュール**を紹介します。このモジュールは転倒検知と[心拍検知](https://wiki.seeedstudio.com/ja/getting_started_with_mr60bha2_mmwave_kit/)の両方を提供する最先端の監視ソリューションです。Wi-FiとBluetooth接続を備えた強力なXIAO ESP32マイクロコントローラーによって駆動され、正確で信頼性の高い検知能力を提供します。リアルタイムでの転倒監視や高精度な心拍追跡が必要な場合でも、RGB LEDや周囲光センサーを含む最先端技術を搭載したこれらのモジュールが対応します。Grove GPIOポートを通じた簡単な拡張オプションにより、スマートホーム統合からヘルスケア監視まで、幅広い用途に適しています。
 
 ## 特徴
 
@@ -110,9 +110,9 @@ MR60BHA2はデフォルトで[XIAO ESP32C6](/xiao_esp32c6_getting_started)にプ
 
 ArduinoをXIAOシリーズで初めて使用する場合は、ボードに適したセットアップガイドに従ってください：
 
-- **XIAO ESP32S3**: [XIAO ESP32S3 Getting Started Guide](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)を参照してください。
-- **XIAO ESP32C3**: [Getting Started with Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/)ガイドに従ってください。
-- **XIAO ESP32C6**: [Getting Started with Seeed Studio XIAO ESP32C6](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)ガイドに従ってください。
+- **XIAO ESP32S3**: [XIAO ESP32S3 Getting Started Guide](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/)を参照してください。
+- **XIAO ESP32C3**: [Getting Started with Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/)ガイドに従ってください。
+- **XIAO ESP32C6**: [Getting Started with Seeed Studio XIAO ESP32C6](https://wiki.seeedstudio.com/ja/xiao_esp32c6_getting_started/)ガイドに従ってください。
 
 ボードのセットアップが完了したら、以下の手順を進めてください：
 

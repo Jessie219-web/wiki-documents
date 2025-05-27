@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Photo_Reflective_Sensor/
+image: https://wiki.seeedstudio.com/ja/Photo_Reflective_Sensor/
 slug: /ja/Photo_Reflective_Sensor
 last_update:
   date: 05/15/2025

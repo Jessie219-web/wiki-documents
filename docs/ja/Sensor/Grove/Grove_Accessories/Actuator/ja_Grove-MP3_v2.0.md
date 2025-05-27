@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-MP3_v2.0/
+image: https://wiki.seeedstudio.com/ja/Grove-MP3_v2.0/
 slug: /ja/Grove-MP3_v2.0
 last_update:
   date: 05/15/2025
@@ -40,7 +40,7 @@ Grove - MP3 v2.0は、小型でコンパクトなオーディオモジュール�
 - 合計10段階のイコライゼーションを内蔵
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## アプリケーションアイデア
@@ -80,7 +80,7 @@ Grove - MP3 v2.0は、小型でコンパクトなオーディオモジュール�
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoでの使用方法
@@ -117,8 +117,8 @@ Grove - MP3 v2.0は、小型でコンパクトなオーディオモジュール�
 #### ソフトウェア
 
 - **ステップ1.** [Grove-MP3 v2.0](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player) をGithubからダウンロードします。
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
-- **ステップ3.** **Seeed_Serial_MP3_Player/examples/KT403A_Terminal_player**の例を選択してArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ3.** **Seeed_Serial_MP3_Player/examples/KT403A_Terminal_player**の例を選択してArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 - **ステップ4.** 以下のようにCOMターミナルに情報が表示されます。
 
 ![](https://files.seeedstudio.com/wiki/Grove-MP3_v2.0/img/COM.png)
@@ -134,7 +134,7 @@ Grove - MP3 v2.0は、小型でコンパクトなオーディオモジュール�
 :::
 シリアルポートには2種類あります。一つはCOMSerialで、Grove-MP3モジュールとの通信ポートを指します。もう一つはShowSerialで、PCとの接続に使用されるシリアル情報表示ポートを指します。
 
-ほとんどのArduinoボードには少なくとも1つのシリアルがありますが、一部のボードには複数のシリアルがあります（Arduino Megaには4つのシリアルがあります）。デジタルピン0（RX）と1（TX）で通信し、USBを介してコンピュータとも通信します。そのため、ピンD0とピンD1にUARTデバイスを接続する場合、USB経由でプログラムをダウンロードする前にそれらを取り外す必要があります。そうしないとアップロードが失敗する原因となります。ハードウェアシリアルポートの数よりも多くのシリアルポートが必要な場合は、ソフトウェアシリアルを使用できます。ソフトウェアシリアルは、シリアルハードウェアをエミュレートするためにソフトウェアを使用します。ソフトウェアシリアルはデータの送受信にArduinoコントローラの多くの助けを必要とするため、ハードウェアシリアルほど高速または効率的ではありません。シリアルに関する詳細は、[Seeed Arduino Serial](https://wiki.seeedstudio.com/Seeed_Arduino_Serial/)を参照してください。
+ほとんどのArduinoボードには少なくとも1つのシリアルがありますが、一部のボードには複数のシリアルがあります（Arduino Megaには4つのシリアルがあります）。デジタルピン0（RX）と1（TX）で通信し、USBを介してコンピュータとも通信します。そのため、ピンD0とピンD1にUARTデバイスを接続する場合、USB経由でプログラムをダウンロードする前にそれらを取り外す必要があります。そうしないとアップロードが失敗する原因となります。ハードウェアシリアルポートの数よりも多くのシリアルポートが必要な場合は、ソフトウェアシリアルを使用できます。ソフトウェアシリアルは、シリアルハードウェアをエミュレートするためにソフトウェアを使用します。ソフトウェアシリアルはデータの送受信にArduinoコントローラの多くの助けを必要とするため、ハードウェアシリアルほど高速または効率的ではありません。シリアルに関する詳細は、[Seeed Arduino Serial](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Serial/)を参照してください。
 
 - **AVR:** 以下の例では、ソフトウェアシリアルをCOMSerial（Grove-MP3モジュールと接続）として定義します。すべてのデジタルピンがソフトウェアシリアルに使用できるわけではありません。詳細なピンについては[Software Serial](https://www.arduino.cc/en/Reference/SoftwareSerial)を参照してください。ハードウェアシリアルをShowSerial（PCと接続）として定義します。Arduino Megaを使用する場合、ハードウェアシリアルをShowSerialに接続し、他のSerial1/Serial2/Serial3をCOMSerialに接続できます。そのため、AVR Megaの設定を参照してください。
 
@@ -143,7 +143,7 @@ Grove - MP3 v2.0は、小型でコンパクトなオーディオモジュール�
 - **STM32F4:** 以下の例では、ハードウェアシリアル**Serial**を使用してGrove-MP3モジュールと通信し、**SerialUSB**を使用してPCにメッセージを表示します。
 
 :::note
-    シリアルに関する詳細情報については、[Seeed Arduino Serial](https://wiki.seeedstudio.com/Seeed_Arduino_Serial/)を参照してください。
+    シリアルに関する詳細情報については、[Seeed Arduino Serial](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Serial/)を参照してください。
 :::
 
 ```cpp

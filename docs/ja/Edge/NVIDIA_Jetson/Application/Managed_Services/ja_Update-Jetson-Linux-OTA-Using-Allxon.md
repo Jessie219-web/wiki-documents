@@ -55,7 +55,7 @@ Allxon を使用した OTA ペイロードパッケージ更新は、以下の�
 ## 必要条件
 
 - JetPack (Base BSP) を実行している上記のいずれかの Jetson デバイス
-- Jetson デバイスにインストールされ、Allxon DMS ポータルとペアリングされた [Allxon DMS エージェント](https://wiki.seeedstudio.com/Allxon-Jetson-Getting-Started)
+- Jetson デバイスにインストールされ、Allxon DMS ポータルとペアリングされた [Allxon DMS エージェント](https://wiki.seeedstudio.com/ja/Allxon-Jetson-Getting-Started)
 - Ubuntu がインストールされたホスト PC（ネイティブシステム推奨）
 - HDMI ディスプレイとキーボード（オプション）
 
@@ -562,7 +562,7 @@ Allxonに検証とzipファイルのアップロードを依頼したい場合�
 
 - **ステップ1.** [Allxon DMSポータル](https://dms.allxon.com/)にアクセスしてサインインします。
 
-**注意:** [このWiki](https://wiki.seeedstudio.com/Allxon-Jetson-Getting-Started)に従って、JetsonデバイスにAllxon DMSエージェントをインストールし、Allxon DMSポータルとペアリングしてください。
+**注意:** [このWiki](https://wiki.seeedstudio.com/ja/Allxon-Jetson-Getting-Started)に従って、JetsonデバイスにAllxon DMSエージェントをインストールし、Allxon DMSポータルとペアリングしてください。
 
 - **ステップ2.** **Applications**ページに移動し、**Register**をクリックして新しいアプリケーションを登録します。
 

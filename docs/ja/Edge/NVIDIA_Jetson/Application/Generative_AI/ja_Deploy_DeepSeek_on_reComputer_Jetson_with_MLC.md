@@ -31,7 +31,7 @@ DeepSeekは、効率性、精度、リアルタイム処理に最適化された
 ## 前提条件
 
 - 8GB以上のメモリを搭載したJetsonデバイス。
-- Jetsonデバイスには、Jetpack [5.1.1](https://wiki.seeedstudio.com/reComputer_Intro/)以降のオペレーティングシステムが事前にフラッシュされている必要があります。
+- Jetsonデバイスには、Jetpack [5.1.1](https://wiki.seeedstudio.com/ja/reComputer_Intro/)以降のオペレーティングシステムが事前にフラッシュされている必要があります。
 
 :::note
 このWikiでは、[reComputer J4012 - Edge AI Computer with NVIDIA® Jetson™ Orin™ NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html?qid=eyJjX3NlYXJjaF9xdWVyeSI6InJlQ29tcHV0ZXIgSjQwMTIiLCJjX3NlYXJjaF9yZXN1bHRfcG9zIjo0LCJjX3RvdGFsX3Jlc3VsdHMiOjUyLCJjX3NlYXJjaF9yZXN1bHRfdHlwZSI6IlByb2R1Y3QiLCJjX3NlYXJjaF9maWx0ZXJzIjoic3RvcmVDb2RlOltyZXRhaWxlcl0gJiYgcXVhbnRpdHlfYW5kX3N0b2NrX3N0YXR1czpbMV0ifQ%3D%3D)を使用してこれらのタスクを達成しますが、他のJetsonデバイスを使用することも可能です。
@@ -261,7 +261,7 @@ print(f"Tokens per second: {tokens_per_second:.2f} tokens/second")
 ## 参考文献
 - https://www.jetson-ai-lab.com/models.html
 - https://www.deepseek.com/
-- https://wiki.seeedstudio.com/deploy_deepseek_on_jetson/
+- https://wiki.seeedstudio.com/ja/deploy_deepseek_on_jetson/
 - https://www.seeedstudio.com/tag/nvidia.html
 
 ## 技術サポートと製品ディスカッション

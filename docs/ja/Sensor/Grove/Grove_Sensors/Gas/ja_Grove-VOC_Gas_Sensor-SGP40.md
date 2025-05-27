@@ -68,7 +68,7 @@ Grove - VOC ガスセンサー (SGP40) の主な利点の一つは、その通�
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -111,7 +111,7 @@ Grove Base Shieldがない場合は、以下のようにGrove - スマート空�
 
 - **ステップ1.** [SGP40 Arduinoライブラリ](https://github.com/Sensirion/arduino-i2c-sgp40)をGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** ライブラリを正しくダウンロードしてインストールした後、`exampleUsage.ino`という名前のサンプルプログラムがexamplesフォルダに見つかります。このプログラムはSGP40センサー用に設計されています。
 
@@ -191,7 +191,7 @@ void loop() {
 }
 ```
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ5.** Arduino IDEの**シリアルモニター**を開きます。**ツール->シリアルモニター**をクリックするか、++ctrl+shift+m++キーを同時に押します。すべてが正常に動作していれば、結果が表示されます。
 

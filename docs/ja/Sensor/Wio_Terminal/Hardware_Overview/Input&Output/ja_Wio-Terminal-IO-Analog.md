@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-IO-Analog/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-IO-Analog/
 slug: /ja/Wio-Terminal-IO-Analog
 last_update:
   date: 05/15/2025

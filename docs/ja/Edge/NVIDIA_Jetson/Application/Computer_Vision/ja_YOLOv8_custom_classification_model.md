@@ -595,7 +595,7 @@ cv2.destroyAllWindows
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio コントリビュータープロジェクトによってサポートされています。
-- **Bruno の努力**に感謝します。あなたの作業は[こちら](https://wiki.seeedstudio.com/Honorary-Contributors/)で展示されます。
+- **Bruno の努力**に感謝します。あなたの作業は[こちら](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)で展示されます。
 
 ## 技術サポート & 製品ディスカッション
 

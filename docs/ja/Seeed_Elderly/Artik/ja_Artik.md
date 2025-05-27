@@ -20,7 +20,7 @@ Samsung ARTIK Smart IoTプラットフォームは、ハードウェアモジュ
 
 以下は、Seeed WiKiで見つけることができるArtikボードの一覧です。このリストは随時更新されます。
 
-- [Eagleye 530s](https://wiki.seeedstudio.com/Eagleye_530s/)
+- [Eagleye 530s](https://wiki.seeedstudio.com/ja/Eagleye_530s/)
 
 ## 技術サポートと製品ディスカッション
 

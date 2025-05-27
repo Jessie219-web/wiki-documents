@@ -224,7 +224,7 @@ Seeeduino Lotus Cortex-M0+では、USBとLi-Poバッテリーの両方を電源�
 </div>
 
 - **ステップ3. Seeedボードを追加する**  
-  [Seeed Boardインストールガイド](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)に従って、Seeeduino samdをArduino IDEに追加してください。
+  [Seeed Boardインストールガイド](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)に従って、Seeeduino samdをArduino IDEに追加してください。
 
 <div align="center">
   <figure>

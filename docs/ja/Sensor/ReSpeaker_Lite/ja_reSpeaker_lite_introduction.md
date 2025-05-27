@@ -314,7 +314,7 @@ dfu-util -l
 
  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/respeaker/usb207-version.png" alt="pir" width={600} height="auto" /></p>
 
- USBバージョンでない場合は、[この手順](https://wiki.seeedstudio.com/reSpeaker_usb_v3/#flash-firmware)に従ってファームウェアをフラッシュしてください。
+ USBバージョンでない場合は、[この手順](https://wiki.seeedstudio.com/ja/reSpeaker_usb_v3/#flash-firmware)に従ってファームウェアをフラッシュしてください。
 
 
 * **USBファームウェアをフラッシュした後、WindowsでReSpeaker Lite USBサウンドデバイスを検出できない？**

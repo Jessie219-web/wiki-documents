@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio_Link_Event_Kit/
+image: https://wiki.seeedstudio.com/ja/Wio_Link_Event_Kit/
 slug: /ja/Wio_Link_Event_Kit
 last_update:
   date: 05/15/2025

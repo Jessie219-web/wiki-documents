@@ -50,7 +50,7 @@ Xadow NFCは、PN532 NFCコントローラーを統合しており、多くの�
 ![](https://files.seeedstudio.com/wiki/Xadow_NFC/images/XadowNFC.jpg)
 
 :::note:
-    [Xadow - Main Board](https://wiki.seeedstudio.com/Xadow_Main_Board)にXadow - NFCを接続する際は、接続方向に注意してください。接続方法は、1つのXadowモジュールの未充填コーナーを別のモジュールの直角に接続することです（各Xadowモジュールの4つのコーナーを参照）。
+    [Xadow - Main Board](https://wiki.seeedstudio.com/ja/Xadow_Main_Board)にXadow - NFCを接続する際は、接続方向に注意してください。接続方法は、1つのXadowモジュールの未充填コーナーを別のモジュールの直角に接続することです（各Xadowモジュールの4つのコーナーを参照）。
 :::
 
 - [PN532ライブラリ](https://github.com/Seeed-Studio/PN532)と[NDEFライブラリ](https://github.com/don/NDEF)をダウンロードします。これらのライブラリをArduinoライブラリにインストールすることを忘れないでください。操作が明確でない場合は、[こちら](https://www.seeedstudio.com/wiki/How_to_install_Arduino_Library)を参照してください。

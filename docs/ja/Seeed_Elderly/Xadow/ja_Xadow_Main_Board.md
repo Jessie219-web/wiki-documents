@@ -84,7 +84,7 @@ Arduino と同様に、Xadow メインボードは単一のマイクロコント
 - ドライバーファイルを [https://github.com/Seeed-Studio/Signed_USB_Serial_Driver](https://github.com/Seeed-Studio/Signed_USB_Serial_Driver) からダウンロードします。
 - Micro-USB ケーブルを Xadow メインボードに接続します。
 - Micro-USB コネクタのもう一方をコンピューターの USB ポートに接続します。
-- 次に、Xadow ドライバーをインストールします。[Arduino のダウンロードとドライバーのインストール](https://wiki.seeedstudio.com/Guide_to_use_demos_downloaded_from_Seeed-s_Github/) を参照して、Xadow ドライバーのインストール方法を学んでください。
+- 次に、Xadow ドライバーをインストールします。[Arduino のダウンロードとドライバーのインストール](https://wiki.seeedstudio.com/ja/Guide_to_use_demos_downloaded_from_Seeed-s_Github/) を参照して、Xadow ドライバーのインストール方法を学んでください。
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Main_Board/img/Xadow_Main_Board_Driver_step4.jpg)
 

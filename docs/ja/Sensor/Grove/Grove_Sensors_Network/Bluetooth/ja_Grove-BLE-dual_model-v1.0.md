@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-BLE-dual_model-v1.0/
+image: https://wiki.seeedstudio.com/ja/Grove-BLE-dual_model-v1.0/
 slug: /ja/Grove-BLE-dual_model-v1.0
 last_update:
   date: 05/15/2025
@@ -41,7 +41,7 @@ Grove - BLE (デュアルモデル) v1.0はCSRデュアルモードBluetoothチ�
 - 動作温度: -5 ~ +65度
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 対応プラットフォーム

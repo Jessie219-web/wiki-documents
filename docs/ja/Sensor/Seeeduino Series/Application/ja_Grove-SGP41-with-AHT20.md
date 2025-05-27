@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 概要（このプロジェクトを始める方法）
 
-まず、[Grove - スマート空気質センサー (SGP41)](https://wiki.seeedstudio.com/grove-smart-air-quality-sensor-sgp41) と [Grove - AHT20 I2C 工業用温湿度センサー](https://wiki.seeedstudio.com/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/) のドキュメントを読みました。
+まず、[Grove - スマート空気質センサー (SGP41)](https://wiki.seeedstudio.com/ja/grove-smart-air-quality-sensor-sgp41) と [Grove - AHT20 I2C 工業用温湿度センサー](https://wiki.seeedstudio.com/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor/) のドキュメントを読みました。
 
 [SGP41 データシート (PDF)](https://files.seeedstudio.com/wiki/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/res/Sensirion_Gas_Sensors_SGP30_Datasheet_EN.pdf) のセクション 3.2（生信号測定）によると、SGP41 の測定値は湿度と温度に依存するため、一貫したデータを得るには補正を適用する必要があります。具体的には、AHT20（または他のセンサー）から相対湿度と温度を読み取り、ティック値を計算して *sgp41_measure_raw_signals* 関数に渡します。
 
@@ -35,7 +35,7 @@ Tticks = (T°C + 45) × 65535 / 175
 50 × 65535 / 100 = 32767.5 = 0x8000（16進数、四捨五入）
 (25 + 45) × 65535 / 175 = 26214 = 0x6666（16進数）
 ```
-結果は、[Grove - スマート空気質センサー (SGP41)](https://wiki.seeedstudio.com/grove-smart-air-quality-sensor-sgp41) で使用されているプログラムおよび [SGP41 データシート (PDF)](https://files.seeedstudio.com/wiki/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/res/Sensirion_Gas_Sensors_SGP30_Datasheet_EN.pdf) の表 11 に定義されている定数と一致します。
+結果は、[Grove - スマート空気質センサー (SGP41)](https://wiki.seeedstudio.com/ja/grove-smart-air-quality-sensor-sgp41) で使用されているプログラムおよび [SGP41 データシート (PDF)](https://files.seeedstudio.com/wiki/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/res/Sensirion_Gas_Sensors_SGP30_Datasheet_EN.pdf) の表 11 に定義されている定数と一致します。
 
 C 言語での同様のコード：
 ```cpp
@@ -109,7 +109,7 @@ C 言語での同様のコード：
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### 1. Arduino Nanoとの接続
@@ -156,13 +156,13 @@ USBケーブルを優しく差し込んでください。そうしないとポ�
         </a>
     </div>
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
-- **ステップ 3.** ライブラリを正しくダウンロードしてインストールした後、以下のコードをアップロードできます。このコードは、[SGP41](https://wiki.seeedstudio.com/grove-smart-air-quality-sensor-sgp41#software)と[AHT20](https://wiki.seeedstudio.com/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor//#software-code)のソフトウェアを組み合わせ、導入部分で説明した式を追加したものです。
+- **ステップ 3.** ライブラリを正しくダウンロードしてインストールした後、以下のコードをアップロードできます。このコードは、[SGP41](https://wiki.seeedstudio.com/ja/grove-smart-air-quality-sensor-sgp41#software)と[AHT20](https://wiki.seeedstudio.com/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor//#software-code)のソフトウェアを組み合わせ、導入部分で説明した式を追加したものです。
 
 ### 3. コードをアップロードして結果を確認
 
-- **ステップ 1.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 1.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 ```cpp
 // GROVE-AHT20+SGP41用ARDUINOデモ
@@ -302,13 +302,13 @@ void loop()
 
 ## リソース
 
-- [SGP41](https://wiki.seeedstudio.com/grove-smart-air-quality-sensor-sgp41#resources)
-- [AHT20](https://wiki.seeedstudio.com/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor//#resources)
+- [SGP41](https://wiki.seeedstudio.com/ja/grove-smart-air-quality-sensor-sgp41#resources)
+- [AHT20](https://wiki.seeedstudio.com/ja/Grove-AHT20-I2C-Industrial-Grade-Temperature&Humidity-Sensor//#resources)
 
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- [Hansの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35179519) に感謝します。あなたの作業は [展示されます](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- [Hansの努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35179519) に感謝します。あなたの作業は [展示されます](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)。
 
 ## 技術サポート & 製品ディスカッション
 

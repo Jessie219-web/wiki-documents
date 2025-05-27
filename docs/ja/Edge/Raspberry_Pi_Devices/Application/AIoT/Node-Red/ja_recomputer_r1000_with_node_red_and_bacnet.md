@@ -49,10 +49,10 @@ BACnet IP（Building Automation and Control Network over IP）は、建物のシ
 
 ### ソフトウェアの準備
 
-reComputer R1000は、Raspberry Pi OSがプリインストールされた状態で手元に届きます。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/reComputer_r/)をご覧ください。Node-REDに関する情報については、[こちらの記事](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/)を参照してください。このガイドを進める前に一読することをお勧めします。このチュートリアルでは、YABE室温シミュレーターを実行しているホストPCを、reComputer R1000上で実行されているNode-REDと接続します。
+reComputer R1000は、Raspberry Pi OSがプリインストールされた状態で手元に届きます。このデバイスを初めて起動する場合は、[Getting Started Wiki](https://wiki.seeedstudio.com/ja/reComputer_r/)をご覧ください。Node-REDに関する情報については、[こちらの記事](https://wiki.seeedstudio.com/ja/Edge-Box-Getting-Started-with-Node-Red/)を参照してください。このガイドを進める前に一読することをお勧めします。このチュートリアルでは、YABE室温シミュレーターを実行しているホストPCを、reComputer R1000上で実行されているNode-REDと接続します。
 
 ### ノードのダウンロード
-このチュートリアルでは、**"node-bacnet-contrib-extended"**ノード、**"node-red-contrib-loop"**ノード、および**"node-red-dashboard"**ノードを使用します。開始する前にこれらをダウンロードしてください。ノードのダウンロード方法については、[チュートリアル](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/)を参照してください。
+このチュートリアルでは、**"node-bacnet-contrib-extended"**ノード、**"node-red-contrib-loop"**ノード、および**"node-red-dashboard"**ノードを使用します。開始する前にこれらをダウンロードしてください。ノードのダウンロード方法については、[チュートリアル](https://wiki.seeedstudio.com/ja/Edge-Box-Getting-Started-with-Node-Red/)を参照してください。
 
 ### YABE
 
@@ -125,7 +125,7 @@ BACnet デバイスから継続的にデータを取得する必要がありま�
 
 <center><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-R1000/Node_red_pic/5show.gif" /></center>
 
-このセクションでは、**"node-bacnet-contrib-extended"** ノードと **"node-red-dashboard"** ノードを使用して BACnet デバイスデータの視覚的な読み取りを実現する方法を主に紹介しました。**"node-bacnet-contrib-extended"** ノードの使用に関する詳細な説明は、[このチュートリアル](https://wiki.seeedstudio.com/edge_box_rpi_200_node_red_bacnet_tcp/) を参照してください。
+このセクションでは、**"node-bacnet-contrib-extended"** ノードと **"node-red-dashboard"** ノードを使用して BACnet デバイスデータの視覚的な読み取りを実現する方法を主に紹介しました。**"node-bacnet-contrib-extended"** ノードの使用に関する詳細な説明は、[このチュートリアル](https://wiki.seeedstudio.com/ja/edge_box_rpi_200_node_red_bacnet_tcp/) を参照してください。
 
 ## 技術サポートと製品ディスカッション
 

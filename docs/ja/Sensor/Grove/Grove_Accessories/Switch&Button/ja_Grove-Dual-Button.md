@@ -72,7 +72,7 @@ Grove Dual ButtonはGroveシールドの「D2」インターフェースに接�
 
 #### ソフトウェア
 
-- **ステップ1** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ1** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 ```cpp
  //対応する周波数で音符を設定

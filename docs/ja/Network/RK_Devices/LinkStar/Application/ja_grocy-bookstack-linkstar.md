@@ -45,12 +45,12 @@ LinkStarルーターを活用したセルフホスト型オフィスサーバー
 
 ## LinkStar OpenWRTルーターでDocker環境をセットアップする
 
-LinkStarのDockerインストールはデフォルトで約250MBのストレージ容量を持っていますが、これはイメージをインストールするには十分ではない場合があります。そのため、Dockerにより多くのスペースを割り当てる必要があります。[PlexメディアサーバーWiKi](https://wiki.seeedstudio.com/plex_media_server/)と同様に手順を実行する必要があります。すでに実行済みの場合、このステップはスキップしてください。
+LinkStarのDockerインストールはデフォルトで約250MBのストレージ容量を持っていますが、これはイメージをインストールするには十分ではない場合があります。そのため、Dockerにより多くのスペースを割り当てる必要があります。[PlexメディアサーバーWiKi](https://wiki.seeedstudio.com/ja/plex_media_server/)と同様に手順を実行する必要があります。すでに実行済みの場合、このステップはスキップしてください。
 
-**注意:** このガイドを進める前に、[LinkStar OpenWRTルーターでDocker環境をセットアップする](https://wiki.seeedstudio.com/plex_media_server/#set-up-the-docker-environment-on-the-linkstar-openwrt-router)手順を必ず確認してください。
+**注意:** このガイドを進める前に、[LinkStar OpenWRTルーターでDocker環境をセットアップする](https://wiki.seeedstudio.com/ja/plex_media_server/#set-up-the-docker-environment-on-the-linkstar-openwrt-router)手順を必ず確認してください。
 
 ## Portainerコンテナをインストールする
-このトピックはLinkStarへのWordPress統合で議論されています。そのため、Portainerを初めてインストールする場合はこれらの手順を実行する必要があります。[Portainerコンテナのインストール](https://wiki.seeedstudio.com/wordpress_linkstar/#install-portainer-container)のリンクをご覧ください。
+このトピックはLinkStarへのWordPress統合で議論されています。そのため、Portainerを初めてインストールする場合はこれらの手順を実行する必要があります。[Portainerコンテナのインストール](https://wiki.seeedstudio.com/ja/wordpress_linkstar/#install-portainer-container)のリンクをご覧ください。
 
 ## BookStackをインストールする
 ### ステップ01: 新しいスタックを作成する

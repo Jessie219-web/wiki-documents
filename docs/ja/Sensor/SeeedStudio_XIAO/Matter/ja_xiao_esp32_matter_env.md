@@ -21,8 +21,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::tip
 この記事は、Seeed Studio XIAO ESP32 開発シリーズの Matter に関する第 3 回目のチュートリアルです。以前のチュートリアルをまだ読んでいない場合は、まずそれらを読んで、デバイスが必要な設定を満たしていることを確認することをお勧めします。
 
-- **[Espressif ESP-IDF を使用した XIAO での開発](https://wiki.seeedstudio.com/xiao_idf)**
-- **[XIAO ESP32 シリーズで Matter をすばやく始める](https://wiki.seeedstudio.com/getting_started_with_matter)**
+- **[Espressif ESP-IDF を使用した XIAO での開発](https://wiki.seeedstudio.com/ja/xiao_idf)**
+- **[XIAO ESP32 シリーズで Matter をすばやく始める](https://wiki.seeedstudio.com/ja/getting_started_with_matter)**
 :::
 
 急速に進化する IoT（モノのインターネット）の世界において、スマートホームデバイスが相互に通信し、連携する方法を革新する新しいプロトコルが登場しました。それが Matter です。この統一プロトコルは、さまざまなスマートホームエコシステム間のギャップを埋め、世界中のユーザーにシームレスで相互運用可能な体験を提供することを目指しています。
@@ -141,7 +141,7 @@ XIAOに加えて、WS281xモデルのライトバーまたはライトビーズ�
 ## ESP-Matter のインストール手順
 
 :::tip
-Matter の環境をインストールする前に、[ESP-IDF プログラミング環境をインストールしてアクセスできるようにする](https://wiki.seeedstudio.com/xiao_idf/#step-5-set-up-environment-variables)ことを確認してください。
+Matter の環境をインストールする前に、[ESP-IDF プログラミング環境をインストールしてアクセスできるようにする](https://wiki.seeedstudio.com/ja/xiao_idf/#step-5-set-up-environment-variables)ことを確認してください。
 :::
 
 ### ステップ 1. 依存関係のインストール
@@ -483,7 +483,7 @@ matter onboardingcodes onnetwork
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiaoc6-matter/9.png" style={{width:1000, height:'auto'}}/></div>
 
-最後に表示されるのはデバイスのペアリングQRコードへのリンクです。このQRコードを使用して、スマートフォンでコードをスキャンし、Matterデバイスを[Getting Started](https://wiki.seeedstudio.com/getting_started_with_matter/#step-2-add-a-device-by-scanning-the-code-using-the-iphone-home-app)の手順に従ってバインドできます。
+最後に表示されるのはデバイスのペアリングQRコードへのリンクです。このQRコードを使用して、スマートフォンでコードをスキャンし、Matterデバイスを[Getting Started](https://wiki.seeedstudio.com/ja/getting_started_with_matter/#step-2-add-a-device-by-scanning-the-code-using-the-iphone-home-app)の手順に従ってバインドできます。
 
 ## Matter デバイスのリモートデバッグ方法（Chip-toolを使用）
 

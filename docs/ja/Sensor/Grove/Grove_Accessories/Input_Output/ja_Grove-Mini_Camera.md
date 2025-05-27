@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Mini_Camera/
+image: https://wiki.seeedstudio.com/ja/Grove-Mini_Camera/
 slug: /ja/Grove-Mini_Camera
 last_update:
   date: 05/15/2025
@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - 小型で軽量
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 仕様

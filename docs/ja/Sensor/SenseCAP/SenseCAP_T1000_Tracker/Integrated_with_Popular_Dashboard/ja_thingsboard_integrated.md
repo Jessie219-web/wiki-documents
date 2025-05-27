@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## はじめに
 
-セットアップを開始する前に、まず [SenseCAP T1000 を TTS に接続する](https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN) を確認して、SenseCAP T1000 トラッカーを TTS に接続してください。
+セットアップを開始する前に、まず [SenseCAP T1000 を TTS に接続する](https://wiki.seeedstudio.com/ja/SenseCAP_T1000_tracker_TTN) を確認して、SenseCAP T1000 トラッカーを TTS に接続してください。
 
 ## ThingsBoard の設定
 

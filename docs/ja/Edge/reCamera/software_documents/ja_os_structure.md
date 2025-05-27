@@ -28,7 +28,7 @@ JavaScript、C/C++、Python、Linux OS、Buildrootに精通した開発者、ま
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/recam_OS_structure.png" /></div>
 
-OSの[ソースコード](https://github.com/Seeed-Studio/reCamera-OS)はGitHubで公開されています。また、OSをより使いやすく多機能にするために、チームは努力を続けており、各アップデートは[こちら](https://github.com/Seeed-Studio/reCamera-OS/releases)で公開されます。新しいバージョンはWebインターフェースを使用してOTAで更新するか、[手動で更新](https://wiki.seeedstudio.com/recamera_os_version_control)することができます。
+OSの[ソースコード](https://github.com/Seeed-Studio/reCamera-OS)はGitHubで公開されています。また、OSをより使いやすく多機能にするために、チームは努力を続けており、各アップデートは[こちら](https://github.com/Seeed-Studio/reCamera-OS/releases)で公開されます。新しいバージョンはWebインターフェースを使用してOTAで更新するか、[手動で更新](https://wiki.seeedstudio.com/ja/recamera_os_version_control)することができます。
 
 ### 🧩 Supervisor
 Supervisorは軽量なプロセスマネージャーで、他のサービスを監視および管理します。サービスの起動と停止、システムイベントの処理、他のサービスやUIへのインターフェース提供を担当します。以下のサービスを提供します：
@@ -81,7 +81,7 @@ Supervisorは軽量なプロセスマネージャーで、他のサービスを�
 - データストレージサービス
 
 #### node-red-sscma:
-`node-red-contrib-sscma`は、フローベースのプログラミングを通じてAIモデルを迅速にデプロイするために設計されたNode-REDノードコンポーネントです。[ソースコード](https://github.com/Seeed-Studio/node-red-contrib-sscma)もGitHubで公開されており、[プロトコル](https://wiki.seeedstudio.com/node_red_protocol)に従って開発者が拡張開発を行うことができます。これにより、AIモデルの出力を他のデバイスとシームレスに統合し、スマートオートメーションやインテリジェントなワークフローを実現できます。
+`node-red-contrib-sscma`は、フローベースのプログラミングを通じてAIモデルを迅速にデプロイするために設計されたNode-REDノードコンポーネントです。[ソースコード](https://github.com/Seeed-Studio/node-red-contrib-sscma)もGitHubで公開されており、[プロトコル](https://wiki.seeedstudio.com/ja/node_red_protocol)に従って開発者が拡張開発を行うことができます。これにより、AIモデルの出力を他のデバイスとシームレスに統合し、スマートオートメーションやインテリジェントなワークフローを実現できます。
 
 以下に`camera node`と`model node`がどのように通信するかの例を示します：
 

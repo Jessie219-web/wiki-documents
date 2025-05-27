@@ -55,7 +55,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-">
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-">
             <strong><span><font color={'FFFFFF'} size={"4"}> 詳細を見る 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -73,7 +73,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### Home Assistant のインストール
 
-まず、Home Assistant がすでに稼働していることを確認してください。Home Assistant を [製品](https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-) にフラッシュする方法については、複数のウィキが紹介されています。私は Raspberry Pi CM4 を搭載した reRouter を使用しているため、[公式の手順を使用して OS を reRouter にフラッシュすることができます](https://www.home-assistant.io/installation/raspberrypi)。
+まず、Home Assistant がすでに稼働していることを確認してください。Home Assistant を [製品](https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-) にフラッシュする方法については、複数のウィキが紹介されています。私は Raspberry Pi CM4 を搭載した reRouter を使用しているため、[公式の手順を使用して OS を reRouter にフラッシュすることができます](https://www.home-assistant.io/installation/raspberrypi)。
 
 ### Home Assistant に ESPHome をインストール
 
@@ -392,7 +392,7 @@ Grove - 光センサー v1.2 はアナログモジュールで、さまざまな
 ## ✨ 貢献者プロジェクト
 
 - このプロジェクトは Seeed Studio [貢献者プロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- [Zacharyの努力](https://github.com/Seeed-Studio/wiki-documents/issues/603)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- [Zacharyの努力](https://github.com/Seeed-Studio/wiki-documents/issues/603)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)。
 
 ## 技術サポートと製品ディスカッション
 

@@ -187,7 +187,7 @@ set EventHubConsumerGroup = YourConsumerGroupName
 
 - 2番目の方法では、コードを直接変更することができます。例えば、MacOS で環境変数を追加するのが面倒な場合に適しています。
 
-エディタで **server.js** ファイルを開き、作成したコンシューマーグループの名前と [**step2**](https://wiki.seeedstudio.com/Configuring-Web-APP-Visualization/#connecting-microsoft-azure-cli-to-microsoft-azure-iot-hub) で取得した接続文字列に従ってコードを変更してください。以下の図を参考にしてください。
+エディタで **server.js** ファイルを開き、作成したコンシューマーグループの名前と [**step2**](https://wiki.seeedstudio.com/ja/Configuring-Web-APP-Visualization/#connecting-microsoft-azure-cli-to-microsoft-azure-iot-hub) で取得した接続文字列に従ってコードを変更してください。以下の図を参考にしてください。
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/160.png" /></div>
 
@@ -195,7 +195,7 @@ set EventHubConsumerGroup = YourConsumerGroupName
 
 ## Web APP を実行する
 
-[以前の wiki](https://wiki.seeedstudio.com/Connecting-to-Helium/#upload-code-send-data-to-helium) の内容に従ってコードをアップロードしてください。デバイスが稼働してデータを送信していることを確認してください。
+[以前の wiki](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/#upload-code-send-data-to-helium) の内容に従ってコードをアップロードしてください。デバイスが稼働してデータを送信していることを確認してください。
 
 コマンドウィンドウで以下のコマンドを実行して、参照パッケージをダウンロードおよびインストールし、ウェブサイトを開始します。
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウラス
-image: https://wiki.seeedstudio.com/Grove_High_Precision_RTC/
+image: https://wiki.seeedstudio.com/ja/Grove_High_Precision_RTC/
 slug: /ja/Grove_High_Precision_RTC
 last_update:
   date: 05/15/2025
@@ -75,7 +75,7 @@ Grove - 高精度RTCモジュールのデモを作成します。このデモで
 - [Seeeduino Lotus](https://www.seeedstudio.com/Seeeduino-Lotus-ATMega328-Board-with-Grove-Interface-p-1942.html) *1  
 - [Grove - 高精度RTC](https://www.seeedstudio.com/) *1  
 
-初めて[Seeeduino Lotus](https://www.seeedstudio.com/Seeeduino-Lotus-ATMega328-Board-with-Grove-Interface-p-1942.html)を使用する場合は、[Seeeduino LotusのWiki](https://wiki.seeedstudio.com/Seeeduino_Lotus/)を参照してください。
+初めて[Seeeduino Lotus](https://www.seeedstudio.com/Seeeduino-Lotus-ATMega328-Board-with-Grove-Interface-p-1942.html)を使用する場合は、[Seeeduino LotusのWiki](https://wiki.seeedstudio.com/ja/Seeeduino_Lotus/)を参照してください。
 
 Seeeduino LotusはArduinoと完全に互換性があり、Arduinoと同じように簡単に動作します。
 
@@ -89,7 +89,7 @@ Arduinoを初めて使用する場合は、[こちら](https://arduino.cc)でArd
 
 ### ライブラリのダウンロード
 
-ライブラリをダウンロードしてインストールしてください（[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)）。
+ライブラリをダウンロードしてインストールしてください（[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)）。
 
 [![](https://files.seeedstudio.com/wiki/Grove-High_Precision_RTC/img/library.png)](https://github.com/Seeed-Studio/Grove_High_Precision_RTC_PCF85063TP/archive/master.zip)
 

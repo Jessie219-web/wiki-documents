@@ -50,7 +50,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア
 
-[N3uronとAWS IoT Coreを接続する方法](https://wiki.seeedstudio.com/reTerminalDM_N3uron_AWS/)を学ぶことを強くお勧めします。このチュートリアルの後半では、Historianモジュールを使用してチャートを作成する方法を学びます。N3uronを初めて使用する場合は、[N3uronのはじめに](https://wiki.seeedstudio.com/reTerminalDM_N3uron_Get_Start/)ガイドから始めることをお勧めします。このガイドでは、N3uronのWebインターフェースの操作、Web UIやWeb Visionモジュールなどの概念の理解、タグの概念の把握、基本的なダッシュボードの作成について説明しています。これらの基本を最初に学ぶことをお勧めします。ガイドは提供されたリンクからアクセスできます。
+[N3uronとAWS IoT Coreを接続する方法](https://wiki.seeedstudio.com/ja/reTerminalDM_N3uron_AWS/)を学ぶことを強くお勧めします。このチュートリアルの後半では、Historianモジュールを使用してチャートを作成する方法を学びます。N3uronを初めて使用する場合は、[N3uronのはじめに](https://wiki.seeedstudio.com/ja/reTerminalDM_N3uron_Get_Start/)ガイドから始めることをお勧めします。このガイドでは、N3uronのWebインターフェースの操作、Web UIやWeb Visionモジュールなどの概念の理解、タグの概念の把握、基本的なダッシュボードの作成について説明しています。これらの基本を最初に学ぶことをお勧めします。ガイドは提供されたリンクからアクセスできます。
 
 ## reTerminal DMにMongoDBをインストールする方法
 

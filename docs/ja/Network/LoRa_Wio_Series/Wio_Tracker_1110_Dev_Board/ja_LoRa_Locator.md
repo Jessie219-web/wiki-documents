@@ -46,7 +46,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ゲートウェイのセットアップ
 
-次に、[SenseCAP M2 Multi-Platform LoRaWAN Indoor Gateway](https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5471.html)を設定する必要があります。詳細については、[Get Started](https://wiki.seeedstudio.com/quick_start_with_M2_MP/) を確認してください。
+次に、[SenseCAP M2 Multi-Platform LoRaWAN Indoor Gateway](https://www.seeedstudio.com/SenseCAP-Multi-Platform-LoRaWAN-Indoor-Gateway-SX1302-EU868-p-5471.html)を設定する必要があります。詳細については、[Get Started](https://wiki.seeedstudio.com/ja/quick_start_with_M2_MP/) を確認してください。
 
 Luci ページにログインし、`LoRa` > `LoRa Network` に移動します。
 
@@ -91,7 +91,7 @@ Luci ページにログインし、`LoRa` > `LoRa Network` に移動します。
 
 ### デバイスのセットアップ
 
-[Connect Wio Tracker 1110 Dev Board to TTN](https://wiki.seeedstudio.com/connect_wio_tracker_to_TTN/) を確認して、TTN に接続するプラットフォームを選択してください。
+[Connect Wio Tracker 1110 Dev Board to TTN](https://wiki.seeedstudio.com/ja/connect_wio_tracker_to_TTN/) を確認して、TTN に接続するプラットフォームを選択してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker_appconfig.png" alt="pir" width={300} height="auto" /></p>
 

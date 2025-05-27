@@ -32,7 +32,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## 前提条件
 
 - 16GB以上のメモリを搭載したJetsonデバイス。
-- ハードウェアデバイスは、jetpack [5.1.1](https://wiki.seeedstudio.com/reComputer_Intro/)オペレーティングシステムが事前にフラッシュされている必要があります。
+- ハードウェアデバイスは、jetpack [5.1.1](https://wiki.seeedstudio.com/ja/reComputer_Intro/)オペレーティングシステムが事前にフラッシュされている必要があります。
 - [スピーカーとマイク](https://www.seeedstudio.com/ReSpeaker-USB-Mic-Array-p-4247.html?queryID=dd9c8d91c63781d66776771a7ee5ec01&objectID=4247&indexName=bazaar_retailer_products)。
 
 **注意:** 私はすべての実験を[Jetson AGX Orin 32GB H01 Kit](https://www.seeedstudio.com/AGX-Orin-32GB-H01-Kit-p-5569.html?queryID=012e528073e90bf80afd3880f3fc2b13&objectID=5569&indexName=bazaar_retailer_products)を使用して完了しましたが、メモリが少ないデバイスで小型モデルをロードすることも試すことができます。

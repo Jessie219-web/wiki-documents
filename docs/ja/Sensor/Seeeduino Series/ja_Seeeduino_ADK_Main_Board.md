@@ -391,16 +391,16 @@ Seeeduino ADKメインボードは、Seeeduino Mega 2560として使用できま
 
 ## オンライン回路図ビューアー
 
-<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/images/1/1a/Seeeduino_ADK_0.9b_final_Eagle_files.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/ja/images/1/1a/Seeeduino_ADK_0.9b_final_Eagle_files.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## リソース ##
 
-- **[ライブラリ]** [修正版MicroBridge Arduinoライブラリ](https://wiki.seeedstudio.com/images/1/19/MicroBridge-ModifiedForSeeeduinoADK.zip)
+- **[ライブラリ]** [修正版MicroBridge Arduinoライブラリ](https://wiki.seeedstudio.com/ja/images/1/19/MicroBridge-ModifiedForSeeeduinoADK.zip)
 - **[ライブラリ]** [Arduino 1.0用修正版MicroBridge Arduinoライブラリ](https://files.seeedstudio.com/wiki/Seeeduino-ADK_Main_Board/res/Adb_for_Arduino1.0.zip)
-- **[デモ]** [Seeeduinoデモ - Androidアプリ](https://wiki.seeedstudio.com/images/1/1b/SeeeduinoADKDemo-App.zip)
-- **[PDF]** [Seeeduino ADK Eagle回路図PDF](https://wiki.seeedstudio.com/images/6/67/Seeeduino_ADK_0.9b_final_Scehmatic.pdf)
-- **[Eagle]** [Seeeduino ADK Eagle回路図およびボードファイル](https://wiki.seeedstudio.com/images/1/1a/Seeeduino_ADK_0.9b_final_Eagle_files.zip)
+- **[デモ]** [Seeeduinoデモ - Androidアプリ](https://wiki.seeedstudio.com/ja/images/1/1b/SeeeduinoADKDemo-App.zip)
+- **[PDF]** [Seeeduino ADK Eagle回路図PDF](https://wiki.seeedstudio.com/ja/images/6/67/Seeeduino_ADK_0.9b_final_Scehmatic.pdf)
+- **[Eagle]** [Seeeduino ADK Eagle回路図およびボードファイル](https://wiki.seeedstudio.com/ja/images/1/1a/Seeeduino_ADK_0.9b_final_Eagle_files.zip)
 - **[アクセサリ]** [Android Open Accessory Development Kitページ](http://developer.android.com/guide/topics/usb/adk.html)
 - **[MicroBridge]** [MicroBridgeページ](http://blogs.unpad.ac.id/dominodiaz/)
 - **[USB]** [USBホストシールドを使用したゲームコントローラー](http://adrian-fh98.web.unair.ac.id/)

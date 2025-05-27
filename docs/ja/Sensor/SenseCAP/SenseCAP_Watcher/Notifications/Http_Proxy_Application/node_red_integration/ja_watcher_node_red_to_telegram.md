@@ -70,7 +70,7 @@ https://api.telegram.org/bot123456789:AoUJnnpoFlkkdfJbCXlo.../getUpdates
 
 ### ステップ3. Telegramモジュールをインストールする
 
-以下の画像に従ってTelegramモジュールをインストールしてください。まだNode-REDをインストールしていない場合は、[こちらを参照してください](https://wiki.seeedstudio.com/watcher_to_node_red/)。
+以下の画像に従ってTelegramモジュールをインストールしてください。まだNode-REDをインストールしていない場合は、[こちらを参照してください](https://wiki.seeedstudio.com/ja/watcher_to_node_red/)。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_to_telegram_image/2.png" style={{width:500, height:'auto'}}/></div>
 
@@ -80,7 +80,7 @@ https://api.telegram.org/bot123456789:AoUJnnpoFlkkdfJbCXlo.../getUpdates
 
 ### ステップ4. モジュールを接続して設定する
 
-**モジュールをドラッグ**してワークスペースに配置し、それらを接続してください。**OpenStream**の設定方法がわからない場合は、[こちらのリンク](https://wiki.seeedstudio.com/watcher_to_node_red/)を参照することができます。
+**モジュールをドラッグ**してワークスペースに配置し、それらを接続してください。**OpenStream**の設定方法がわからない場合は、[こちらのリンク](https://wiki.seeedstudio.com/ja/watcher_to_node_red/)を参照することができます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_to_telegram_image/4.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -130,7 +130,7 @@ node.send({ payload: messagePayload });
 
 ### ステップ5. Watcherでタスクを実行する
 
-まず、以下の動画に従ってWatcherでタスクを実行してください。詳細を知りたい場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/getting_started_with_watcher_task/)。
+まず、以下の動画に従ってWatcherでタスクを実行してください。詳細を知りたい場合は、[こちらをクリックしてください](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/)。
 
 <div class="table-center">
 <iframe width="600" height="338" src="https://files.seeedstudio.com/wiki/watcher_to_open_interpreter_image/run_task.mp4?autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>

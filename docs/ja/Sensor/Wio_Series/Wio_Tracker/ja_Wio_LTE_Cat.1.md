@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio_LTE_Cat.1/
+image: https://wiki.seeedstudio.com/ja/Wio_LTE_Cat.1/
 slug: /ja/Wio_LTE_Cat.1
 last_update:
   date: 05/15/2025
@@ -149,7 +149,7 @@ LED点滅 | バッテリーエラー（バッテリー未接続を含む）
 * 財産安全管理
 
 :::tip
-    Groveモジュールを使用してアプリケーションを拡張してください。ボード上には6つのGroveコネクタがあります。Groveについて初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご覧ください。簡単に言えば、Groveは標準スタイルのセンサーで、センサー、アクチュエータ、ディスプレイ、通信を含む数百種類のモジュールで構成されています。
+    Groveモジュールを使用してアプリケーションを拡張してください。ボード上には6つのGroveコネクタがあります。Groveについて初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご覧ください。簡単に言えば、Groveは標準スタイルのセンサーで、センサー、アクチュエータ、ディスプレイ、通信を含む数百種類のモジュールで構成されています。
 :::
 
 ## ハードウェア概要
@@ -349,15 +349,15 @@ EC21には9つのバリエーションがあります：EC21-E、EC21-A、EC21-V
 **1. ソフトウェア設定**
 
 - ステップ1. Arduino IDEをインストールします。推奨バージョンは1.8.0以上です。
-- ステップ2. [SeeedボードをArduino IDEに追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/) に従って、Wio_LTEをArduinoボードマネージャーに追加します。
+- ステップ2. [SeeedボードをArduino IDEに追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/) に従って、Wio_LTEをArduinoボードマネージャーに追加します。
 
 :::note
-こんにちは、"Wio LTE Cat.1"ボードは "Wio Terminal" のように "Seeed SAMD Boards" パッケージに保存されています。[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started#software) を参照してパッケージをインストールしてください。
+こんにちは、"Wio LTE Cat.1"ボードは "Wio Terminal" のように "Seeed SAMD Boards" パッケージに保存されています。[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started#software) を参照してパッケージをインストールしてください。
 ![](https://files.seeedstudio.com/wiki/Wio-Terminal/img/addBoard.png)
 :::
 
 - ステップ3. [Wio_LTEライブラリ](https://github.com/Seeed-Studio/Wio_LTE_Arduino_Library) をGithubからダウンロードします。
-- ステップ4. [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照してライブラリをインストールします。
+- ステップ4. [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照してライブラリをインストールします。
 
 **2. SMS送信で遊ぶ**
 
@@ -998,13 +998,13 @@ SDカードを初期化中...
 
 **9.1 Groveデジタルモジュールで遊ぶ**  
 
-[温湿度センサー(Grove-TemperatureAndHumidity_Sensor)](https://wiki.seeedstudio.com/Grove-TemperatureAndHumidity_Sensor/)をデジタル入力として使用し、Wio LTEのD20に接続します。
+[温湿度センサー(Grove-TemperatureAndHumidity_Sensor)](https://wiki.seeedstudio.com/ja/Grove-TemperatureAndHumidity_Sensor/)をデジタル入力として使用し、Wio LTEのD20に接続します。
 
 - ステップ1. Wio LTEの背面にあるBOOTボタンを押し続けながら、USBをPCに接続します。
 - ステップ2. デバイスマネージャーに**STM BOOTLARDER**が表示されます。
 - ステップ3. ツール-->ボード-->Wio_Tracker_LTEを選択します。
 - ステップ4. COMポートを空白のままにします。
-- ステップ5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) と [Grove-TemperatureAndHumidity_Sensorライブラリ](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor/archive/master.zip) をダウンロードします。[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
+- ステップ5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) と [Grove-TemperatureAndHumidity_Sensorライブラリ](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor/archive/master.zip) をダウンロードします。[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
 - ステップ6. 以下のコードをスケッチにコピーします。
 - ステップ7. アップロードをクリックしてコードをWio LTEにアップロードします。
 
@@ -1074,13 +1074,13 @@ void loop()
 
 **9.2 Groveアナログモジュールで遊ぶ**  
 
-[Grove-光センサー](https://wiki.seeedstudio.com/Grove-Light_Sensor/)をアナログ入力として使用し、Wio LTEのA4（12ビットADC）に接続します。
+[Grove-光センサー](https://wiki.seeedstudio.com/ja/Grove-Light_Sensor/)をアナログ入力として使用し、Wio LTEのA4（12ビットADC）に接続します。
 
 - ステップ1. Wio LTEの背面にあるBOOTボタンを押し続けながら、USBをPCに接続します。
 - ステップ2. デバイスマネージャーに**STM BOOTLARDER**が表示されます。
 - ステップ3. ツール-->ボード-->Wio_Tracker_LTEを選択します。
 - ステップ4. COMポートを空白のままにします。
-- ステップ5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) をダウンロードします。[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
+- ステップ5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) をダウンロードします。[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
 - ステップ6. 以下のコードをスケッチにコピーします。
 - ステップ7. アップロードをクリックしてコードをWio LTEにアップロードします。
 
@@ -1126,13 +1126,13 @@ void loop() {
 
 **9.3 Grove I2Cモジュールで遊ぶ**  
 
-[Grove - 3軸デジタル加速度センサー(±16g)](https://wiki.seeedstudio.com/Grove-3-Axis_Digital_Accelerometer-16g/)をI2Cデバイスとして使用し、Wio LTEのI2Cポートに接続します。
+[Grove - 3軸デジタル加速度センサー(±16g)](https://wiki.seeedstudio.com/ja/Grove-3-Axis_Digital_Accelerometer-16g/)をI2Cデバイスとして使用し、Wio LTEのI2Cポートに接続します。
 
 - ステップ1. Wio LTEの背面にあるBOOTボタンを押し続けながら、USBをPCに接続します。
 - ステップ2. デバイスマネージャーに**STM BOOTLARDER**が表示されます。
 - ステップ3. ツール-->ボード-->Wio_Tracker_LTEを選択します。
 - ステップ4. COMポートを空白のままにします。
-- ステップ5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) と [ADXL345ライブラリ](https://github.com/Seeed-Studio/Accelerometer_ADXL345/archive/master.zip) をダウンロードします。[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
+- ステップ5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) と [ADXL345ライブラリ](https://github.com/Seeed-Studio/Accelerometer_ADXL345/archive/master.zip) をダウンロードします。[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してライブラリをインストールしてください。
 - ステップ6. 以下のコードをスケッチにコピーします。
 - ステップ7. アップロードをクリックしてコードをWio LTEにアップロードします。
 
@@ -1189,13 +1189,13 @@ void loop()
 
 **9.4 Grove UARTモジュールで遊ぶ**  
 
-私たちは [Grove-CO2](https://wiki.seeedstudio.com/Grove-CO2_Sensor/) をUARTデバイスとして使用し、Wio LTEのUARTポートに接続します。
+私たちは [Grove-CO2](https://wiki.seeedstudio.com/ja/Grove-CO2_Sensor/) をUARTデバイスとして使用し、Wio LTEのUARTポートに接続します。
 
 - ステップ 1. Wio LTEの背面にあるBOOTボタンを押し続けながら、USBをPCに接続します。
 - ステップ 2. デバイスマネージャーで **STM BOOTLARDER** が表示されます。
 - ステップ 3. ツール-->ボード-->Wio_Tracker_LTE を選択します。
 - ステップ 4. COMポートを空白のままにします。
-- ステップ 5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) をダウンロードします。Arduino用ライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照してください。
+- ステップ 5. Githubから [WioLTEforArduinoライブラリ](https://github.com/SeeedJP/WioLTEforArduino/archive/master.zip) をダウンロードします。Arduino用ライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照してください。
 - ステップ 6. 以下のコードをスケッチにコピーします。
 - ステップ 7. アップロードをクリックして、コードをWio LTEにアップロードします。
 

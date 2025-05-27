@@ -135,12 +135,12 @@ Grove Base Shieldがない場合は、以下のようにこのモジュールを
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 - **ステップ1.** [Grove-SHT35 センサー](https://github.com/Seeed-Studio/Seeed_SHT35)ライブラリをGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。以下の3つの方法のいずれかでサンプルを開きます：
     1. Arduino IDEで直接開く：**File --> Examples --> Grove Temperature sensor SHT35 --> basic_demo**のパスをたどります。
@@ -219,7 +219,7 @@ void loop()
 ライブラリファイルが更新される可能性があります。このコードは更新されたライブラリファイルに適用されない場合がありますので、最初の2つの方法を使用することをお勧めします。
 :::
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ5.** Arduino IDEの**シリアルモニタ**を開きます。**Tool-> Serial Monitor**をクリックするか、++ctrl+shift+m++キーを同時に押します。ボーレートを**115200**に設定します。
 
@@ -268,7 +268,7 @@ void loop()
 
 #### ソフトウェア
 
-- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
+- **ステップ 1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
 - **ステップ 2**. grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Screw_Terminal/
+image: https://wiki.seeedstudio.com/ja/Grove-Screw_Terminal/
 slug: /ja/Grove-Screw_Terminal
 last_update:
   date: 05/15/2025

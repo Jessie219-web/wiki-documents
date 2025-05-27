@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove_NFC/
+image: https://wiki.seeedstudio.com/ja/Grove_NFC/
 slug: /ja/Grove_NFC
 last_update:
   date: 05/15/2025
@@ -51,7 +51,7 @@ Grove NFCは、高度に統合されたトランシーバーモジュールPN532
 - 寸法: 25.43mm x 20.35mm
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 対応プラットフォーム
@@ -93,7 +93,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 Grove - NFCはI2CとUARTをサポートしており、[Seeed Arduino NFCライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_NFC)はArduino Uno/Seeeduino v4.2、Arduino Mega/Seeeduino Mega、Arduino Zero/Seeeduino Lorawan、Arduino Leonardo/Seeeduino Liteをサポートしています。
@@ -119,7 +119,7 @@ Grove - NFCはI2CとUARTをサポートしており、[Seeed Arduino NFCライ�
 
 - **ステップ1.** [Seeed Arduino NFCライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_NFC)をダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用の**Seeed Arduino NFC**ライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用の**Seeed Arduino NFC**ライブラリをインストールします。
 
 - **ステップ3.** パス**File --> Examples --> WriteTag**から「WriteTag」コードを開きます。
 
@@ -148,7 +148,7 @@ xiaoはピン互換性の問題がある可能性があります。
 #endif
 ```
 
-- **ステップ5.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ5.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ6.** Arduino IDEの**シリアルモニター**を開きます。**Tool-> Serial Monitor**をクリックするか、ctrl+shift+mキーを同時に押します。ボーレートを**9600**に設定します。
 
@@ -218,7 +218,7 @@ NfcAdapter nfc = NfcAdapter(pn532_i2c);
 
 - **ステップ 1.** [Seeed Arduino NFC Library](https://github.com/Seeed-Studio/Seeed_Arduino_NFC) をダウンロードします。
 
-- **ステップ 2.** [Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino 用の **Seeed Arduino NFC** ライブラリをインストールします。
+- **ステップ 2.** [Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino 用の **Seeed Arduino NFC** ライブラリをインストールします。
 
 - **ステップ 3.** **File --> Examples --> WriteTag** のパスを通じて「WriteTag」コードを開きます。
 
@@ -243,7 +243,7 @@ NfcAdapter nfc = NfcAdapter(pn532_i2c);
 #endif
 ```
 
-- **ステップ 5.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 5.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 6.** Arduino IDE の **Serial Monitor** を開きます。**Tool-> Serial Monitor** をクリックするか、++ctrl+shift+m++ キーを同時に押します。ボーレートを **9600** に設定します。
 

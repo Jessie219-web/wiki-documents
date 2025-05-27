@@ -52,7 +52,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ![](https://files.seeedstudio.com/wiki/Wifi_Bee/img/Wifi_Bee_v0.91b.png)
 
-[PDF形式の回路図を開くにはこちらをクリック](https://wiki.seeedstudio.com/images/9/9f/WifiBee_v0.91b.pdf)
+[PDF形式の回路図を開くにはこちらをクリック](https://wiki.seeedstudio.com/ja/images/9/9f/WifiBee_v0.91b.pdf)
 
 ## 主な仕様 ##
 
@@ -524,7 +524,7 @@ void loop(){
 
 ## WifiBee v0.91b 回路図オンラインビューア
 
-<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/images/f/ff/Wifi_Bee_v0.91b_eagle.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/ja/images/f/ff/Wifi_Bee_v0.91b_eagle.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## リソース ##
@@ -532,8 +532,8 @@ void loop(){
 - **[Eagle]**[WifiBee v1.0 Eagle Files.zip](https://files.seeedstudio.com/wiki/Wifi_Bee/res/WifiBee_v1.0_Eagle_Files.zip)
 - **[PDF]**[WifiBee v1.0 PCB](https://files.seeedstudio.com/wiki/Wifi_Bee/res/WifiBee%20v1.0%20PCB.pdf)
 - **[PDF]**[WifiBee v1.0 SCH](https://files.seeedstudio.com/wiki/Wifi_Bee/res/WifiBee%20v1.0%20Sch.pdf)
-- **[PDF]**[WifiBee v0.91b 回路図 (PDF形式)](https://wiki.seeedstudio.com/images/9/9f/WifiBee_v0.91b.pdf)
-- **[EAGLE]**[Wifi Bee v0.91b 設計ファイル (Eagle形式)](https://wiki.seeedstudio.com/images/f/ff/Wifi_Bee_v0.91b_eagle.zip)
+- **[PDF]**[WifiBee v0.91b 回路図 (PDF形式)](https://wiki.seeedstudio.com/ja/images/9/9f/WifiBee_v0.91b.pdf)
+- **[EAGLE]**[Wifi Bee v0.91b 設計ファイル (Eagle形式)](https://wiki.seeedstudio.com/ja/images/f/ff/Wifi_Bee_v0.91b_eagle.zip)
 - **[Library]**[WiShield ライブラリ](https://github.com/asynclabs/WiShield)
 - **[Library]**[Arduino 1.0に対応した最新のWiShieldライブラリ](https://github.com/CapnBry/WiShield_user_contrib)
 

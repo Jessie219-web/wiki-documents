@@ -31,7 +31,7 @@ Seeed Studioが主催するこのハンズオンワークショップは、AI初
 特に、データ収集、前処理、特徴エンジニアリングなどのタスクを簡素化するグラフィカルインターフェースや、適切なモデルアーキテクチャとトレーニングパラメータの選択に焦点を当てます。
 
 <div class="button_tech_support_container">
-<a href="https://wiki.seeedstudio.com/sensecraft_ai_main/" class="button_edgelab"></a> 
+<a href="https://wiki.seeedstudio.com/ja/sensecraft_ai_main/" class="button_edgelab"></a> 
 </div>
 
 このコースに参加することで、以下のスキルと知識を得ることができます：
@@ -118,7 +118,7 @@ Seeed Studioが主催するこのハンズオンワークショップは、AI初
 
 ## ✨ コラボレーション ✨
 
-このコースはオープンソースであり、さらなるコラボレーションを歓迎します！[こちら](https://wiki.seeedstudio.com/Contribution-Guide/)を参照して、コントリビューション（プルリクエスト）ガイドをご覧ください。
+このコースはオープンソースであり、さらなるコラボレーションを歓迎します！[こちら](https://wiki.seeedstudio.com/ja/Contribution-Guide/)を参照して、コントリビューション（プルリクエスト）ガイドをご覧ください。
 
 :::info
 これらのファイルは `docs/Topics/TinyML/TinyML_Workshop` の相対パスにあります。
@@ -132,7 +132,7 @@ Seeed Studioが主催するこのハンズオンワークショップは、AI初
 
 Edge Impulseは、組み込みデバイス向けにTinyMLモデルを開発およびデプロイするためのプラットフォームです。リアルタイムデータ収集、モデル量子化、最適化のためのツールを提供し、XIAO ESP32S3のようなデバイスへの効率的なデプロイを可能にします。
 
-詳細については、[こちらのドキュメント](https://wiki.seeedstudio.com/edgeimpulse/)をご覧ください。[キーワードスポッティング](https://wiki.seeedstudio.com/tinyml_course_Key_Word_Spotting/)や[画像分類](https://wiki.seeedstudio.com/tinyml_course_Image_classification_project/)を実行する際には、デフォルトのESP NNフォルダを[提供されているバージョン](https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip)に置き換えることを忘れないでください。
+詳細については、[こちらのドキュメント](https://wiki.seeedstudio.com/ja/edgeimpulse/)をご覧ください。[キーワードスポッティング](https://wiki.seeedstudio.com/ja/tinyml_course_Key_Word_Spotting/)や[画像分類](https://wiki.seeedstudio.com/ja/tinyml_course_Image_classification_project/)を実行する際には、デフォルトのESP NNフォルダを[提供されているバージョン](https://github.com/Mjrovai/XIAO-ESP32S3-Sense/blob/main/ESP-NN.zip)に置き換えることを忘れないでください。
 
 ## 技術サポート & 製品ディスカッション
 

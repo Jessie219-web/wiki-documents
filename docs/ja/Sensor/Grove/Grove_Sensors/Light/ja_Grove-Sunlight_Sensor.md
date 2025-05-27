@@ -63,7 +63,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 - I2Cインターフェース（7ビット）
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -103,7 +103,7 @@ Groveモジュールの詳細については、[Grove System](https://wiki.seeed
 |[今すぐ購入](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Sunlight-Sensor.html)|
 
 :::caution
-Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.com/Getting_Started_with_Seeeduino)を参照してArduinoの使い方を学んでください。
+Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.com/ja/Getting_Started_with_Seeeduino)を参照してArduinoの使い方を学んでください。
 :::
 
 **ハードウェアの接続**
@@ -111,12 +111,12 @@ Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Sunlight_Sensor/img/Grove_sunlight_hardware_connect.jpg" /></div>
 
 :::note
-メインコントロールボードに複数のモジュールを接続する必要がある場合は、[Groveベースシールド](https://wiki.seeedstudio.com/Base_Shield_V2/)を使用すると作業が簡単になります。
+メインコントロールボードに複数のモジュールを接続する必要がある場合は、[Groveベースシールド](https://wiki.seeedstudio.com/ja/Base_Shield_V2/)を使用すると作業が簡単になります。
 :::
 
 **ダウンロード**
 
-[こちら](https://github.com/Seeed-Studio/Grove_Sunlight_Sensor/tree/master)をクリックしてライブラリをダウンロードし、[追加](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)してください。
+[こちら](https://github.com/Seeed-Studio/Grove_Sunlight_Sensor/tree/master)をクリックしてライブラリをダウンロードし、[追加](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)してください。
 
 Arduino IDEを起動し、**File>Examples>Grove_Sunlight_Sensor>SI1145DEMO**をクリックしてテストコードを開きます。
 
@@ -158,7 +158,7 @@ void loop() {
 
 Tools>BoardをクリックしてArduino UNOを選択し、対応するシリアルポートを選択します。
 
-次に、Upload（CTRL+U）をクリックしてテストコードをアップロードします。エラープロンプトが表示された場合は、[**こちら**](https://wiki.seeedstudio.com/Arduino_Common_Error)を参照してください。
+次に、Upload（CTRL+U）をクリックしてテストコードをアップロードします。エラープロンプトが表示された場合は、[**こちら**](https://wiki.seeedstudio.com/ja/Arduino_Common_Error)を参照してください。
 
 **結果の確認**
 
@@ -184,7 +184,7 @@ Grove - Sunlight Sensorを太陽の下に置いて、天気が良いかどうか
 |[今すぐ購入](https://www.seeedstudio.com/Seeeduino-V4.2-p-2517.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Sunlight-Sensor.html)|
 
 :::caution
-Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.com/Getting_Started_with_Seeeduino)を参照してArduinoの使い方を学んでください。
+Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.com/ja/Getting_Started_with_Seeeduino)を参照してArduinoの使い方を学んでください。
 :::
 
 **ハードウェアの接続**
@@ -192,12 +192,12 @@ Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Sunlight_Sensor/img/Grove_sunlight_hardware_connect.jpg" /></div>
 
 :::note
-メインコントロールボードに複数のモジュールを接続する必要がある場合は、[Groveベースシールド](https://wiki.seeedstudio.com/Base_Shield_V2/)を使用すると作業が簡単になります。
+メインコントロールボードに複数のモジュールを接続する必要がある場合は、[Groveベースシールド](https://wiki.seeedstudio.com/ja/Base_Shield_V2/)を使用すると作業が簡単になります。
 :::
 
 **ダウンロード**
 
-[こちら](https://github.com/Seeed-Studio/Grove_Sunlight_Sensor/tree/master)をクリックしてライブラリをダウンロードし、[追加](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)してください。
+[こちら](https://github.com/Seeed-Studio/Grove_Sunlight_Sensor/tree/master)をクリックしてライブラリをダウンロードし、[追加](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)してください。
 
 Arduino IDEを起動し、**File>Examples>Grove_Sunlight_Sensor>SI1151**をクリックしてテストコードを開きます。
 
@@ -243,7 +243,7 @@ void loop()
 
 Tools>BoardをクリックしてArduino UNOを選択し、対応するシリアルポートを選択します。
 
-次に、Upload（CTRL+U）をクリックしてテストコードをアップロードします。エラープロンプトが表示された場合は、[**こちら**](https://wiki.seeedstudio.com/Arduino_Common_Error)を参照してください。
+次に、Upload（CTRL+U）をクリックしてテストコードをアップロードします。エラープロンプトが表示された場合は、[**こちら**](https://wiki.seeedstudio.com/ja/Arduino_Common_Error)を参照してください。
 
 **結果の確認**
 

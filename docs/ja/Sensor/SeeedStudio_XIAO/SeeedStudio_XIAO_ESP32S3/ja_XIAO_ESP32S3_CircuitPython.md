@@ -14,7 +14,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # プロジェクト概要
 
-このWikiは更新されました: https://wiki.seeedstudio.com/xiao_esp32s3_with_micropython/
+このWikiは更新されました: https://wiki.seeedstudio.com/ja/xiao_esp32s3_with_micropython/
 
 CircuitPythonは、物理コンピューティングプロジェクトを簡素化するため、XIAO ESP32S3に最適なプログラミング言語です。Pythonに基づいており、初心者に優しい構文を持ち、センサーやディスプレイなどのハードウェアにアクセスするためのモジュールが含まれています。CircuitPythonはすでにESP32S3チップをサポートしているため、このプロジェクトではSeeed Studio XIAO ESP32S3ボード上でCircuitPythonをコンパイルすることを試みます。
 
@@ -316,7 +316,7 @@ while True:
 ## ✨ 貢献者プロジェクト
 
 - このプロジェクトは Seeed Studio の [Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- [Isaac の尽力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35178340) に感謝します。あなたの作業は [展示されます](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- [Isaac の尽力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=35178340) に感謝します。あなたの作業は [展示されます](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)。
 - また、[Djair Guilherme](https://github.com/Seeed-Studio/wiki-documents/issues/1237#issuecomment-2295415274) にも感謝します。
 
 ## 技術サポート & 製品ディスカッション

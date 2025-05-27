@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Scream_out_loud-110dBA_fixed_tone_Siren/
+image: https://wiki.seeedstudio.com/ja/Scream_out_loud-110dBA_fixed_tone_Siren/
 slug: /ja/USB_To_Uart_5V
 last_update:
   date: 05/15/2025

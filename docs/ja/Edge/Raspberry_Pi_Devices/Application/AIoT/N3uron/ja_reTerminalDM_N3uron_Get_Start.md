@@ -58,7 +58,7 @@ N3uronを使用すると、OTシステムとITシステム間で双方向のデ�
 
 ### ソフトウェア
 
-公式ウェブサイトからRaspberry Pi 64ビットOSの**Bullseye**バージョンをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[**ガイド**](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/)に記載された手順に従ってください。
+公式ウェブサイトからRaspberry Pi 64ビットOSの**Bullseye**バージョンをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[**ガイド**](https://wiki.seeedstudio.com/ja/reterminal-dm-flash-OS/)に記載された手順に従ってください。
 
 ## インストール
 
@@ -72,7 +72,7 @@ N3uronは、ワンステップの自動インストールスクリプトを使�
 
 - SSH: Secure Shell (SSH)を使用したリモート接続。reTerminalがネットワーク経由でアクセス可能であり、SSHサーバーが有効になっていることを確認してください。
 
-詳細については、[reTerminal DMでSSHサーバーを設定する](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)をご覧ください。
+詳細については、[reTerminal DMでSSHサーバーを設定する](https://wiki.seeedstudio.com/ja/reterminal-dm-flash-OS/#access-reterminal-dm-via-ssh)をご覧ください。
 
 ターミナルで以下のコマンドを入力してください:
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Serial_MP3_Player/
+image: https://wiki.seeedstudio.com/ja/Grove-Serial_MP3_Player/
 slug: /ja/Grove-Serial_MP3_Player
 last_update:
   date: 05/15/2025
@@ -32,7 +32,7 @@ Grove-シリアル MP3 プレーヤーは、高品質な MP3 オーディオチ�
 - FAT16 および FAT32 ファイルシステムをサポート
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 対応プラットフォーム
@@ -71,8 +71,8 @@ Grove - Serial MP3 PlayはArduino/Seeeduinoで制御できます。また、使�
 ### ソフトウェア
 
 - **ステップ1.** [Grove-MP3 v2.0](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player) をGithubからダウンロードします。
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino用のライブラリをインストールします。
-- **ステップ3.** **Seeed_Serial_MP3_Player/examples/WT2003S_Terminal_Player** の例を選択し、Arduinoにアップロードします。コードのアップロード方法が分からない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino用のライブラリをインストールします。
+- **ステップ3.** **Seeed_Serial_MP3_Player/examples/WT2003S_Terminal_Player** の例を選択し、Arduinoにアップロードします。コードのアップロード方法が分からない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 - **ステップ4.** COMターミナルに以下のような情報が表示されます。
 
 ![](https://files.seeedstudio.com/wiki/Grove-MP3_v2.0/img/COM.png)
@@ -85,7 +85,7 @@ Grove - Serial MP3 PlayはArduino/Seeeduinoで制御できます。また、使�
 
 シリアルポートには2種類あります。一つはCOMSerialで、Grove-MP3モジュールとの通信ポートを指します。もう一つはShowSerialで、PCとの接続に使用されるシリアル情報表示ポートを指します。
 
-ほとんどのArduinoボードには少なくとも1つのシリアルポートがあり、一部のボード（Arduino Megaなど）には複数のシリアルポート（4つのシリアルポート）があります。デジタルピン0（RX）と1（TX）で通信し、USBを介してコンピュータと接続します。そのため、ピンD0とピンD1にUARTデバイスを接続する場合、USB経由でプログラムをダウンロードする前にそれらを取り外す必要があります。そうしないと、アップロードが失敗する原因となります。ハードウェアシリアルポートの数よりも多くのシリアルポートが必要な場合は、ソフトウェアシリアルを使用できます。ソフトウェアシリアルは、シリアルハードウェアをエミュレートするためにソフトウェアを使用しますが、データの送受信にはArduinoコントローラの多大な支援が必要なため、ハードウェアシリアルほど高速または効率的ではありません。シリアルに関する詳細情報は、[Seeed Arduino Serial](https://wiki.seeedstudio.com/Seeed_Arduino_Serial/) を参照してください。
+ほとんどのArduinoボードには少なくとも1つのシリアルポートがあり、一部のボード（Arduino Megaなど）には複数のシリアルポート（4つのシリアルポート）があります。デジタルピン0（RX）と1（TX）で通信し、USBを介してコンピュータと接続します。そのため、ピンD0とピンD1にUARTデバイスを接続する場合、USB経由でプログラムをダウンロードする前にそれらを取り外す必要があります。そうしないと、アップロードが失敗する原因となります。ハードウェアシリアルポートの数よりも多くのシリアルポートが必要な場合は、ソフトウェアシリアルを使用できます。ソフトウェアシリアルは、シリアルハードウェアをエミュレートするためにソフトウェアを使用しますが、データの送受信にはArduinoコントローラの多大な支援が必要なため、ハードウェアシリアルほど高速または効率的ではありません。シリアルに関する詳細情報は、[Seeed Arduino Serial](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Serial/) を参照してください。
 
 - **AVR:** 以下の例では、ソフトウェアシリアルをCOMSerial（Grove-MP3モジュールとの接続）として定義しています。すべてのデジタルピンがソフトウェアシリアルに使用できるわけではありません。詳細なピンについては[Software Serial](https://www.arduino.cc/en/Reference/SoftwareSerial) を参照してください。ハードウェアシリアルをShowSerial（PCとの接続）として定義しています。Arduino Megaを使用する場合、ハードウェアシリアルをShowSerialに接続し、他のSerial1/Serial2/Serial3をCOMSerialに接続できます。そのため、AVR Megaの設定を参照してください。
 
@@ -94,7 +94,7 @@ Grove - Serial MP3 PlayはArduino/Seeeduinoで制御できます。また、使�
 - **STM32F4:** 以下の例では、ハードウェアシリアル **Serial** を使用してGrove-MP3モジュールと通信し、**SerialUSB** を使用してPCにメッセージを表示します。
 
 :::note
-    シリアルに関する詳細情報は、[Seeed Arduino Serial](https://wiki.seeedstudio.com/Seeed_Arduino_Serial/) を参照してください。
+    シリアルに関する詳細情報は、[Seeed Arduino Serial](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Serial/) を参照してください。
 :::
 
 ```

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/433Mhz_RF_Link_Kit/
+image: https://wiki.seeedstudio.com/ja/433Mhz_RF_Link_Kit/
 slug: /ja/433Mhz_RF_Link_Kit
 last_update:
   date: 05/15/2025

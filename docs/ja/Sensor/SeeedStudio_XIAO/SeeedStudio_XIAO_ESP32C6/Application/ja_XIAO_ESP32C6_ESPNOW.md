@@ -22,9 +22,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 このWikiでは、ESP-NOWプロトコルが何であるかを説明し、XIAO ESP32シリーズを使用してこのプロトコルで通信する方法を教えます。プロセスは非常に簡単です。XIAO ESP32シリーズでESP-NOWプロトコルを利用できるようにするために、C6/C3/S3の3種類のXIAO ESP32を準備して通信を行います。それでは、この旅を始めましょう！
 
 ちなみに、このボードを初めて手に入れた場合は、以下のリンクをクリックしてください。使い方を教えてくれます。
-- [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)
-- [Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/xiao_esp32c3_getting_started/)
-- [Seeed Studio XIAO ESP32C6](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/)
+- [Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/)
+- [Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/ja/xiao_esp32c3_getting_started/)
+- [Seeed Studio XIAO ESP32C6](https://wiki.seeedstudio.com/ja/xiao_esp32c6_getting_started/)
 
 ## ESP-NOWプロトコルとは？
 

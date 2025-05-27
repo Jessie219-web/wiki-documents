@@ -29,7 +29,7 @@ Grove - 炎センサーは、火源や波長範囲が760nm～1100nmの他の光�
 - 感度調整可能
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -265,7 +265,7 @@ boolean isFlameDetected()
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/) を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[Codecraftを使用したArduinoガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+Codecraftを初めて使用する場合は、[Codecraftを使用したArduinoガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開いてください。

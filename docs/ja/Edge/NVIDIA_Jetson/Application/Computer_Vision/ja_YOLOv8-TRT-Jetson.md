@@ -46,14 +46,14 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 まず、Jetson デバイスに [JetPack](https://developer.nvidia.com/embedded/jetpack) システムがフラッシュされていることを確認する必要があります。JetPack をデバイスにフラッシュするには、NVIDIA SDK Manager またはコマンドラインを使用できます。
 
 Seeed の Jetson 搭載デバイスのフラッシュガイドについては、以下のリンクを参照してください：
-- [reComputer J1010 | J101](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack)
-- [reComputer J2021 | J202](https://wiki.seeedstudio.com/reComputer_J2021_J202_Flash_Jetpack)
-- [reComputer J1020 | A206](https://wiki.seeedstudio.com/reComputer_J1020_A206_Flash_JetPack)
-- [reComputer J4012 | J401](https://wiki.seeedstudio.com/reComputer_J4012_Flash_Jetpack)
-- [A203 キャリアボード](https://wiki.seeedstudio.com/reComputer_A203_Flash_System)
-- [A205 キャリアボード](https://wiki.seeedstudio.com/reComputer_A205_Flash_System)
-- [Jetson Xavier AGX H01 キット](https://wiki.seeedstudio.com/Jetson_Xavier_AGX_H01_Driver_Installation)
-- [Jetson AGX Orin 32GB H01 キット](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack)
+- [reComputer J1010 | J101](https://wiki.seeedstudio.com/ja/reComputer_J1010_J101_Flash_Jetpack)
+- [reComputer J2021 | J202](https://wiki.seeedstudio.com/ja/reComputer_J2021_J202_Flash_Jetpack)
+- [reComputer J1020 | A206](https://wiki.seeedstudio.com/ja/reComputer_J1020_A206_Flash_JetPack)
+- [reComputer J4012 | J401](https://wiki.seeedstudio.com/ja/reComputer_J4012_Flash_Jetpack)
+- [A203 キャリアボード](https://wiki.seeedstudio.com/ja/reComputer_A203_Flash_System)
+- [A205 キャリアボード](https://wiki.seeedstudio.com/ja/reComputer_A205_Flash_System)
+- [Jetson Xavier AGX H01 キット](https://wiki.seeedstudio.com/ja/Jetson_Xavier_AGX_H01_Driver_Installation)
+- [Jetson AGX Orin 32GB H01 キット](https://wiki.seeedstudio.com/ja/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack)
 
 :::note
 JetPack バージョン 5.1.1 をフラッシュしてください。このウィキではそのバージョンで検証されています。
@@ -604,7 +604,7 @@ yolo detect predict model=yolov8n.engine source='0' show=True
 
 自分でデータを収集したくない場合は、すぐに利用可能な公開データセットを選ぶこともできます。[COCOデータセット](https://cocodataset.org)、[Pascal VOCデータセット](http://host.robots.ox.ac.uk/pascal/VOC)など、多くの公開データセットをダウンロードできます。[Roboflow Universe](https://universe.roboflow.com)は、幅広いデータセットを提供する推奨プラットフォームであり、[90,000以上のデータセットと6,600万以上の画像](https://blog.roboflow.com/computer-vision-datasets-and-apis)がコンピュータビジョンモデルの構築に利用可能です。また、Googleでオープンソースのデータセットを検索し、利用可能なさまざまなデータセットから選ぶこともできます。
 
-独自のデータセットを持っていて画像に注釈を付けたい場合は、[Roboflow](https://roboflow.com)が提供する注釈ツールを使用することをお勧めします。詳細については、[このWikiの部分](https://wiki.seeedstudio.com/YOLOv5-Object-Detection-Jetson/#annotate-dataset-using-roboflow)を参照してください。また、Roboflowの注釈に関する[このガイド](https://docs.roboflow.com/annotate/use-roboflow-annotate)も参考にしてください。
+独自のデータセットを持っていて画像に注釈を付けたい場合は、[Roboflow](https://roboflow.com)が提供する注釈ツールを使用することをお勧めします。詳細については、[このWikiの部分](https://wiki.seeedstudio.com/ja/YOLOv5-Object-Detection-Jetson/#annotate-dataset-using-roboflow)を参照してください。また、Roboflowの注釈に関する[このガイド](https://docs.roboflow.com/annotate/use-roboflow-annotate)も参考にしてください。
 
 ### トレーニング
 
@@ -637,7 +637,7 @@ yolo detect predict model=yolov8n.engine source='0' show=True
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/YOLOV8-TRT/11.jpg
 " style={{width:1000, height:'auto'}}/></div>
 
-- **ステップ5.** 新しいワークスペースを作成し、[このWikiガイド](https://wiki.seeedstudio.com/YOLOv5-Object-Detection-Jetson/#annotate-dataset-using-roboflow)に従ってワークスペース内に新しいプロジェクトを作成します。また、公式のRoboflowドキュメントから[こちら](https://blog.roboflow.com/getting-started-with-roboflow)を参照してさらに学ぶこともできます。
+- **ステップ5.** 新しいワークスペースを作成し、[このWikiガイド](https://wiki.seeedstudio.com/ja/YOLOv5-Object-Detection-Jetson/#annotate-dataset-using-roboflow)に従ってワークスペース内に新しいプロジェクトを作成します。また、公式のRoboflowドキュメントから[こちら](https://blog.roboflow.com/getting-started-with-roboflow)を参照してさらに学ぶこともできます。
 
 - **ステップ6.** ワークスペース内にいくつかのプロジェクトがある場合、以下のように表示されます。
 

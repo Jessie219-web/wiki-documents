@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/0.5w_Solar_Panel_55x70/
+image: https://wiki.seeedstudio.com/ja/0.5w_Solar_Panel_55x70/
 slug: /ja/0.5w_Solar_Panel_55x70
 last_update:
   date: 05/15/2025

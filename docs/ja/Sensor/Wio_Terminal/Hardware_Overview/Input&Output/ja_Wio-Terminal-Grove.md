@@ -23,13 +23,13 @@ Groveを活用することで、より簡単な接続でプロトタイプを迅
 
 ## Wio TerminalとGrove - TDSセンサー
 
-このセクションでは、[Grove - TDSセンサー](https://wiki.seeedstudio.com/Grove-TDS-Sensor/)をWio Terminalと組み合わせて使用し、リアルタイムのTDS値を折れ線グラフで表示する方法を紹介します。
+このセクションでは、[Grove - TDSセンサー](https://wiki.seeedstudio.com/ja/Grove-TDS-Sensor/)をWio Terminalと組み合わせて使用し、リアルタイムのTDS値を折れ線グラフで表示する方法を紹介します。
 
 ### ライブラリのインストール
 
-1. [LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/)ライブラリをインストールします。
+1. [LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/)ライブラリをインストールします。
 
-2. [Linechart](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/)ライブラリをインストールします。
+2. [Linechart](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/)ライブラリをインストールします。
 
 ### 完全なコード
 
@@ -202,13 +202,13 @@ void loop() {
 
 ## Wio Terminal と Grove - 温度センサー
 
-このセクションでは、Wio Terminal を使用して [Grove - Temperature Sensor](https://wiki.seeedstudio.com/Grove-Temperature_Sensor_V1.2/) を接続し、周囲の温度をリアルタイムで表示する方法を紹介します。
+このセクションでは、Wio Terminal を使用して [Grove - Temperature Sensor](https://wiki.seeedstudio.com/ja/Grove-Temperature_Sensor_V1.2/) を接続し、周囲の温度をリアルタイムで表示する方法を紹介します。
 
 ### ライブラリのインストール
 
-1. [LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) ライブラリをインストールします。
+1. [LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) ライブラリをインストールします。
 
-2. [Linechart](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Histogram/) ライブラリをインストールします。
+2. [Linechart](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Histogram/) ライブラリをインストールします。
 
 ### 完全なコード
 

@@ -13,13 +13,13 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-最新バージョンをご確認ください: https://wiki.seeedstudio.com/ODYSSEY-X86J4105/
+最新バージョンをご確認ください: https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105/
 
 <!-- ---
 name: ODYSSEY - X86J4105
 category: ODYSSEY
 bzurl: https://www.seeedstudio.com/ODYSSEY-X86J4105800-p-4445.html
-wikiurl: https://wiki.seeedstudio.com/ODYSSEY-X86J4105/
+wikiurl: https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105/
 sku: 102110399
 --- -->
 
@@ -371,7 +371,7 @@ Odyssey にはプロセッサに統合された FTPM が搭載されています
 
 ### Odyssey がシャットダウンした後も GPIO が動作しているのはなぜですか？
 
-これを設定するには、[最新の BIOS](https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Updating-Firmware/) に更新する必要があります。最新の BIOS では、GPIO と ODYSSEY の両方をオフにするために、ここで有効を無効に変更できます。
+これを設定するには、[最新の BIOS](https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Updating-Firmware/) に更新する必要があります。最新の BIOS では、GPIO と ODYSSEY の両方をオフにするために、ここで有効を無効に変更できます。
 
 ![](https://files.seeedstudio.com/wiki/ODYSSEY-X86J4105/OdysseyFAQ1.png)
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-UART_Wifi/
+image: https://wiki.seeedstudio.com/ja/Grove-UART_Wifi/
 slug: /ja/Grove-UART_Wifi
 last_update:
   date: 05/15/2025
@@ -55,7 +55,7 @@ ESP8266とESP8285の違いについて疑問に思うかもしれません。ESP
 * リセットスイッチ
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## ハードウェア概要
@@ -131,7 +131,7 @@ DTIM期間が長いほど、デバイスはより長くスリープできるた�
 ### Arduinoで遊ぶ
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 #### 必要な材料
@@ -161,7 +161,7 @@ DTIM期間が長いほど、デバイスはより長くスリープできるた�
 
 * **ステップ1.** [128X64 OLEDライブラリ](https://github.com/Seeed-Studio/OLED_Display_128X64/archive/master.zip)をGithubからダウンロードします。
 
-* **ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+* **ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 * **ステップ3.** Arduino IDEを開き、以下のコードを新しいスケッチにコピーします。
 
@@ -300,7 +300,7 @@ void display_ap()
 
 ```
 
-* **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+* **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 その後、OLEDが周囲のWiFiアクセスポイントを表示するのが確認できます。
 
@@ -365,7 +365,7 @@ void display_ap()
 
 #### ハードウェア
 
-**必要な材料**と**ハードウェア接続**は[ファームウェアの更新](https://wiki.seeedstudio.com/Grove-UART_Wifi/#firmware-update)と同じです。
+**必要な材料**と**ハードウェア接続**は[ファームウェアの更新](https://wiki.seeedstudio.com/ja/Grove-UART_Wifi/#firmware-update)と同じです。
 
 ソフトウェア部分に進みましょう。
 

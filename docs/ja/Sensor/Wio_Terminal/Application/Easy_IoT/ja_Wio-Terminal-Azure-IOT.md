@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウラス
-image: https://wiki.seeedstudio.com/Wio-Terminal-Azure-IOT/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-Azure-IOT/
 slug: /ja/Wio-Terminal-Azure-IOT
 last_update:
   date: 05/15/2025

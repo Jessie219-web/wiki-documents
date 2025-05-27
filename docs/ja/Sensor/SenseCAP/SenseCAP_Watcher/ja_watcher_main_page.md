@@ -36,9 +36,9 @@ Watcher製品カタログの紹介です。このカタログは、Watcherデバ
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/Infrastructure.png" style={{width:1000, height:'auto'}}/></div>
 
-### [クイックスタートガイド](https://wiki.seeedstudio.com/getting_started_with_watcher/)
+### [クイックスタートガイド](https://wiki.seeedstudio.com/ja/getting_started_with_watcher/)
 
-### [価格と利点](https://wiki.seeedstudio.com/watcher_price/)
+### [価格と利点](https://wiki.seeedstudio.com/ja/watcher_price/)
 
 ### [製品概要](http://wiki.seeedstudio.com/product_overview_with_watcher/)
 

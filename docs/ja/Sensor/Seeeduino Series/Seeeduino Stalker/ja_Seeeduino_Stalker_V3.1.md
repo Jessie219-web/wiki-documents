@@ -86,7 +86,7 @@ X-beeエリアにトグルスイッチが追加され、接続したいものに
 - ワイヤレスセンサーネットワーク（**XBee**を別途購入）
 - GPSロギング（[GPSBee](https://www.seeedstudio.com/wiki/GPS_Bee_kit)を別途購入）
 - iPhone/Android Phoneで動作するアプリと通信可能なデータ収集システム（[BluetoothBee](https://www.seeedstudio.com/wiki/Bluetooth_Bee)を別途購入）
-- RFリモートコントロール（[RFBee](https://wiki.seeedstudio.com/RFbee_V1.1-Wireless_Arduino_compatible_node/)を別途購入）
+- RFリモートコントロール（[RFBee](https://wiki.seeedstudio.com/ja/RFbee_V1.1-Wireless_Arduino_compatible_node/)を別途購入）
 - シンプルなスタンドアロンArduino互換物理コンピューティングプラットフォームとして
 
 ## ハードウェア概要
@@ -170,7 +170,7 @@ Seeeduino Stalker は、豊富な機能を備えた Arduino 互換ボードで�
 
 ### STEP4: Arduino IDE に Seeeduino Stalker を追加
 
-Arduino IDE のボードオプションには *Seeeduino Stalker* がありません。[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)をクリックして手順を確認してください。
+Arduino IDE のボードオプションには *Seeeduino Stalker* がありません。[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)をクリックして手順を確認してください。
 
 ### STEP5: 点滅（Blink）
 

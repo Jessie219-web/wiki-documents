@@ -28,11 +28,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 必要なArduinoライブラリ
 
-- LCDスクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal 概要](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) を参照してください。
+- LCDスクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal 概要](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) を参照してください。
 
 - SDカードライブラリ `Seeed_Arduino_FS` をインストールしてください。詳細は [Seeed-Arduino-FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS) を参照してください。
 
-- `RawImage.h` ライブラリをインストールしてください。詳細は [画像の読み込み](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Loading-Image/) を参照してください。
+- `RawImage.h` ライブラリをインストールしてください。詳細は [画像の読み込み](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Loading-Image/) を参照してください。
 
 ## Arduinoの手順
 
@@ -85,11 +85,11 @@ void loop() {
 
 ### 必要なArduinoライブラリ
 
-- LCDスクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal 概要](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) を参照してください。
+- LCDスクリーンライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal 概要](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) を参照してください。
 
 - SDカードライブラリ `Seeed_Arduino_FS` をインストールしてください。詳細は [Seeed-Arduino-FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS/tree/beta) を参照してください。
 
-- `RawImage.h` ライブラリをインストールしてください。詳細は [画像の読み込み](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Loading-Image/) を参照してください。
+- `RawImage.h` ライブラリをインストールしてください。詳細は [画像の読み込み](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Loading-Image/) を参照してください。
 
 ### Arduinoの手順
 

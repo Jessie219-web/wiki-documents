@@ -167,10 +167,10 @@ EdgeBox-RPI-200シリーズは、Raspberry Piをベースとしたオールイ�
 ## Raspberry Pi 工業用ソフトウェアエコシステム
 
 優れた Raspberry Pi 工業用ソフトウェアエコシステムにより、EdgeBox は豊富なソフトウェアと自律プラットフォームのサポートを提供しています。
-- [**Codesys**](https://wiki.seeedstudio.com/Edgebox-rpi-200-codesys/)
-- [**Ignition**](https://wiki.seeedstudio.com/Edgebox-rpi-200-ignition-edge/)
-- [**N3uron**](https://wiki.seeedstudio.com/Edgebox-rpi-200-n3uron/)
-- [**balena**](https://wiki.seeedstudio.com/Edgebox-rpi-200-balena-OS-setup/)
+- [**Codesys**](https://wiki.seeedstudio.com/ja/Edgebox-rpi-200-codesys/)
+- [**Ignition**](https://wiki.seeedstudio.com/ja/Edgebox-rpi-200-ignition-edge/)
+- [**N3uron**](https://wiki.seeedstudio.com/ja/Edgebox-rpi-200-n3uron/)
+- [**balena**](https://wiki.seeedstudio.com/ja/Edgebox-rpi-200-balena-OS-setup/)
 - **Node Red**
 
 ## ハードウェア概要

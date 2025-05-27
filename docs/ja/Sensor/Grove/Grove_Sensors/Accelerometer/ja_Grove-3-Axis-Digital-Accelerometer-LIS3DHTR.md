@@ -124,9 +124,9 @@ void loop()
 }
 ```
 
-- **ステップ 1** [ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR/archive/master.zip) を Github からダウンロードし、Arduino IDE に「zip」ライブラリを追加します。[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) を参照してください。
+- **ステップ 1** [ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR/archive/master.zip) を Github からダウンロードし、Arduino IDE に「zip」ライブラリを追加します。[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) を参照してください。
 
-- **ステップ 2** 「LIS3DHTR_IIC」のサンプルコードを見つけて、ボードにアップロードします。[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を参照してください。
+- **ステップ 2** 「LIS3DHTR_IIC」のサンプルコードを見つけて、ボードにアップロードします。[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を参照してください。
 
 - **ステップ 3** コードをアップロードした後、シリアルモニターから各軸の加速度と周囲の温度を確認できます。
 
@@ -151,7 +151,7 @@ LIS3DHTR センサーを Raspberry Pi 用 Grove ベースハットの任意の I
 
 #### コード
 
-- **ステップ 1** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成し、grove.py を Raspberry Pi にインストールします。
+- **ステップ 1** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成し、grove.py を Raspberry Pi にインストールします。
 - **ステップ 2** 以下のコマンドを実行してコードを実行します。
 
 ```

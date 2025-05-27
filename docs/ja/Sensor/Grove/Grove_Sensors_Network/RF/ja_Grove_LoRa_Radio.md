@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove_LoRa_Radio/
+image: https://wiki.seeedstudio.com/ja/Grove_LoRa_Radio/
 slug: /ja/Grove_LoRa_Radio
 last_update:
   date: 05/15/2025
@@ -50,7 +50,7 @@ Grove - LoRa Radio 433MHzの主な機能モジュールはRFM98で、これはLo
 - MHFアンテナコネクタを予約済み
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -109,7 +109,7 @@ Grove - LoRa Radio 433MHzの主な機能モジュールはRFM98で、これはLo
 |Grove - LoRa Radio 433MHz|2|[今すぐ購入！](https://www.seeedstudio.com/Grove-LoRa-Radio-433MHz-p-2777.html)|
 |Micro USBケーブル|2|[今すぐ購入！](https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html)|
 
-初めて[Seeeduino Lotus](https://www.seeedstudio.com/Seeeduino-Lotus-ATMega328-Board-with-Grove-Interface-p-1942.html)を使用する場合は、[Seeeduino LotusのWiki](https://wiki.seeedstudio.com/Seeeduino_Lotus/)を参照してください。
+初めて[Seeeduino Lotus](https://www.seeedstudio.com/Seeeduino-Lotus-ATMega328-Board-with-Grove-Interface-p-1942.html)を使用する場合は、[Seeeduino LotusのWiki](https://wiki.seeedstudio.com/ja/Seeeduino_Lotus/)を参照してください。
 
 Seeeduino LotusはArduinoと完全に互換性があり、Arduinoと同じように簡単に動作します。
 
@@ -123,7 +123,7 @@ Arduinoを初めて使用する場合は、[こちら](https://arduino.cc)でArd
 
 ### ライブラリのダウンロード
 
-ライブラリをダウンロードしてインストールしてください（[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)）。
+ライブラリをダウンロードしてインストールしてください（[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)）。
 
 [![](https://files.seeedstudio.com/wiki/Grove_LoRa_Radio/img/library.png)](https://github.com/Seeed-Studio/Grove_LoRa_433MHz_and_915MHz_RF/archive/master.zip)
 
@@ -132,7 +132,7 @@ Arduinoを初めて使用する場合は、[こちら](https://arduino.cc)でArd
 :::
 シリアルポートには2種類あります。一つはCOMSerialで、通信ポート（Grove-LoRa Radioとの接続）を表します。もう一つはShowSerialで、シリアル情報表示ポート（PCとの接続）を表します。
 
-ほとんどのArduinoボードには少なくとも1つのシリアルがありますが、一部には複数のシリアルがあります（Arduino Megaには4つのシリアルがあります）。デジタルピン0（RX）と1（TX）で通信し、USBを介してコンピュータと通信します。そのため、ピンD0とピンD1にUARTデバイスを接続する場合、USB経由でプログラムをダウンロードする前にそれらを取り外す必要があります。そうしないとアップロードが失敗する原因になります。ハードウェアシリアルポートの数よりも多くのシリアルポートが必要な場合は、ソフトウェアシリアルを使用してシリアルハードウェアをエミュレートすることができます。ソフトウェアシリアルはデータの送受信にArduinoコントローラの多くの助けを必要とするため、ハードウェアシリアルほど高速または効率的ではありません。シリアルに関する詳細情報は[Seeed Arduino Serial](https://wiki.seeedstudio.com/Seeed_Arduino_Serial/)を参照してください。
+ほとんどのArduinoボードには少なくとも1つのシリアルがありますが、一部には複数のシリアルがあります（Arduino Megaには4つのシリアルがあります）。デジタルピン0（RX）と1（TX）で通信し、USBを介してコンピュータと通信します。そのため、ピンD0とピンD1にUARTデバイスを接続する場合、USB経由でプログラムをダウンロードする前にそれらを取り外す必要があります。そうしないとアップロードが失敗する原因になります。ハードウェアシリアルポートの数よりも多くのシリアルポートが必要な場合は、ソフトウェアシリアルを使用してシリアルハードウェアをエミュレートすることができます。ソフトウェアシリアルはデータの送受信にArduinoコントローラの多くの助けを必要とするため、ハードウェアシリアルほど高速または効率的ではありません。シリアルに関する詳細情報は[Seeed Arduino Serial](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Serial/)を参照してください。
 
 - **AVR:** 以下の例では、ソフトウェアシリアルをSSCOM（PCとの接続）として定義します。PCに接続するにはUSBからTTLアダプタが必要です。すべてのデジタルピンがソフトウェアシリアルに使用できるわけではありません。詳細なピンについては[Software Serial](https://www.arduino.cc/en/Reference/SoftwareSerial)を参照してください。ハードウェアシリアルをCOMSerial（Grove-LoRa Radioとの接続）として定義します。ハードウェアシリアルをCOMSerialとして使用し、ソフトウェアシリアルをShowSerialとして使用する場合は、**#define ShowSerial Serial**および**#define COMSerial SSerial**として定義できます。Arduino Megaを使用する場合、ハードウェアシリアルをShowSerialに接続し、他のSerial1/Serial2/Serial3をCOMSerialに接続できます。そのため、AVR Megaの設定を参照してください。
 
@@ -141,7 +141,7 @@ Arduinoを初めて使用する場合は、[こちら](https://arduino.cc)でArd
 - **STM32F4:** 以下の例では、ハードウェアシリアル**Serial**を使用してGrove-LoRa Radioと通信し、**SerialUSB**を使用してPCにメッセージを表示します。
 
 :::note
-    シリアルに関する詳細情報は[Seeed Arduino Serial](https://wiki.seeedstudio.com/Seeed_Arduino_Serial/)を参照してください。
+    シリアルに関する詳細情報は[Seeed Arduino Serial](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Serial/)を参照してください。
 :::
 
 ```

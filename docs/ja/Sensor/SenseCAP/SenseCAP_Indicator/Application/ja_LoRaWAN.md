@@ -188,7 +188,7 @@ SenseCAPゲートウェイを設定するには、ウェブインターフェー
 - **ユーザー名:** `admin`
 - **パスワード:** `admin`
 
-詳細および高度な設定オプションについては、[SenseCAP M2 Gateway LNS Configuration Guide](https://wiki.seeedstudio.com/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_MP_Gateway_LNS_Configuration/)をご覧ください。
+詳細および高度な設定オプションについては、[SenseCAP M2 Gateway LNS Configuration Guide](https://wiki.seeedstudio.com/ja/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_MP_Gateway_LNS_Configuration/)をご覧ください。
 
 
 ### 2.2 ローカルネットワークサーバー（ChirpStack）の設定

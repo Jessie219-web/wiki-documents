@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-MP3-v3/
+image: https://wiki.seeedstudio.com/ja/Grove-MP3-v3/
 slug: /ja/Grove-MP3-v3
 last_update:
   date: 05/15/2025
@@ -82,7 +82,7 @@ Grove - MP3は、WT2003S-20SSオーディオデコーダーをベースにした
 #### ソフトウェア
 
 :::tip
-        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** `.mp3`形式の音楽ファイルをTFカードにコピーし、TFカードのルートディレクトリに保存します。
@@ -90,7 +90,7 @@ Grove - MP3は、WT2003S-20SSオーディオデコーダーをベースにした
 - **ステップ 2.** Githubから[Seeed_Serial_MP3](https://github.com/Seeed-Studio/Seeed_Serial_MP3_Player)ライブラリをダウンロードします。
 
 :::note
-        Arduinoライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)を参照してください。
+        Arduinoライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)を参照してください。
 :::
 
 - **ステップ 3.** Arduino IDEを再起動します。**WT2003S_Terminal_Player**の例を次のパスから開きます：**File** → **Examples** → **Seeed_Serial_MP3_Player** → **WT2003S_Terminal_Player**。このモジュールを使用して`.mp3`形式の音楽ファイルを再生し、3.5mmオーディオジャック、JST2.0スピーカーポートを介してスピーカーを使用するか、さらには同時に両方を出力することができます。
@@ -338,7 +338,7 @@ void printMenu(void) {
 }
 ```
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 4.** Arduino IDEの**シリアルモニター**を開きます。**ツール -> シリアルモニター**をクリックするか、++ctrl+shift+m++キーを同時に押します。ボーレートを**9600**に設定してください。
 

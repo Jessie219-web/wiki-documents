@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウラス
-image: https://wiki.seeedstudio.com/Gear_Stepper_Motor_Driver_Pack/
+image: https://wiki.seeedstudio.com/ja/Gear_Stepper_Motor_Driver_Pack/
 slug: /ja/Gear_Stepper_Motor_Driver_Pack
 last_update:
   date: 05/15/2025
@@ -119,7 +119,7 @@ VMピンをVCC_5Vに接続するか、スイッチでVCCを選択している限
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 - **ステップ 1.** コードブロックの右上隅にあるアイコン ![](https://files.seeedstudio.com/wiki/wiki_english/docs/images/copy.jpg) をクリックして、以下のコードをArduino IDEの新しいスケッチにコピーします。
@@ -194,7 +194,7 @@ void loop ()
 }
 ```
 
-- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::tip
 すべてが正常に動作すれば、モーターが動作するのが確認できます。

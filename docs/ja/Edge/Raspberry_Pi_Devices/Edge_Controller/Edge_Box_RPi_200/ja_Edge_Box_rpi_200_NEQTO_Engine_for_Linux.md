@@ -55,7 +55,7 @@ NEQTOをインストールしたデバイスは、APIまたはNEQTO Consoleを�
 ## 始め方
 ### ハードウェア接続
 
-Edge Box RPI-200の始め方（https://wiki.seeedstudio.com/Edge_Box_introduction/）を参照してください。
+Edge Box RPI-200の始め方（https://wiki.seeedstudio.com/ja/Edge_Box_introduction/）を参照してください。
 
 ### NEQTOアカウントの登録:
 - ステップ1. このページ（https://console.neqto.com/register）にアクセスしてNEQTOアカウントを登録します。

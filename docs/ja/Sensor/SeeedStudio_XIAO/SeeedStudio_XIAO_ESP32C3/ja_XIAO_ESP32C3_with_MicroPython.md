@@ -169,7 +169,7 @@ while True:
 ## ピン配置/ポート情報
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/esp32c3_micropython/11.png" /></div>
 
-* 詳細については、[ハードウェア概要](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#hardware-overview)を参照してください。
+* 詳細については、[ハードウェア概要](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_Getting_Started/#hardware-overview)を参照してください。
 * [Seeed Studio XIAO ESP32C3回路図](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf)
 
 ## MicroPython を使用した XIAO ESP32C3 のセットアップ
@@ -493,7 +493,7 @@ XIAO ESP32C3を接続し、Thonnyを開いて右下をクリックしてイン�
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_micropython/15.png" /></div>
 
 すべてが正常に動作していれば、シェルに出力が表示されます。
-必要な[ライブラリ](https://wiki.seeedstudio.com/XIAO_ESP32C3_MicroPython/#install-required-libraries)をインストールします。
+必要な[ライブラリ](https://wiki.seeedstudio.com/ja/XIAO_ESP32C3_MicroPython/#install-required-libraries)をインストールします。
 「ツール」をクリック >>> 「パッケージ管理」をクリック >>> ライブラリ名を入力 >>> 「micropython-libとPyPlを検索」をクリック
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_micropython/16.png" /></div>
 

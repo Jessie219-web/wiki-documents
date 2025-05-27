@@ -44,7 +44,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア準備
 
-[Node-RED の入門ガイド](https://wiki.seeedstudio.com/recomputer_r1000_getting_statrted_node_red/) を準備しました。このガイドを確認してから Wiki に進むことをお勧めします。
+[Node-RED の入門ガイド](https://wiki.seeedstudio.com/ja/recomputer_r1000_getting_statrted_node_red/) を準備しました。このガイドを確認してから Wiki に進むことをお勧めします。
 
 ## reComputer R1000 に InfluxDB をインストールする
 

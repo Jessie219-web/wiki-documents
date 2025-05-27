@@ -118,8 +118,8 @@ AskLou.io ポモドーロタイマーは以下の方法でカスタマイズで�
 
 - [GitHub リポジトリ](https://github.com/AskLou-io/Pomodoro_Circuit_Python/blob/main/README.md)  
 - [Hackster.io プロジェクト](https://www.hackster.io/peter-machona/asklou-io-pomodoro-timer-a7a1f2)  
-- [XIAO ESP32S3 ドキュメント](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/)  
-- [ラウンドディスプレイドキュメント](https://wiki.seeedstudio.com/get_start_round_display/)  
+- [XIAO ESP32S3 ドキュメント](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/)  
+- [ラウンドディスプレイドキュメント](https://wiki.seeedstudio.com/ja/get_start_round_display/)  
 
 ## クレジット
 
@@ -146,7 +146,7 @@ AskLou.io ポモドーロタイマー - 集中した生産性を、ただ頼む�
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。  
-- 特に [Peter Machona](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92639112&issue=Seeed-Studio%7Cwiki-documents%7C2074) 氏の献身的な努力に感謝します。あなたの作品は [展示されます](https://wiki.seeedstudio.com/contributors/)。  
+- 特に [Peter Machona](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=92639112&issue=Seeed-Studio%7Cwiki-documents%7C2074) 氏の献身的な努力に感謝します。あなたの作品は [展示されます](https://wiki.seeedstudio.com/ja/contributors/)。  
 
 ## 技術サポートと製品ディスカッション
 

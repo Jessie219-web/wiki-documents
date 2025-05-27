@@ -41,7 +41,7 @@ Grove - OLED Display 1.12 V3.0 (SH1107) は、128×128 の解像度を持つ**�
 |Grove - OLED Display 1.12" V3.0 | ドライバ IC を SSD1107G から SH1107 に変更、インターフェースを I2C から I2C/SPI にアップグレード | 2021年7月     |
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 対応プラットフォーム

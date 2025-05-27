@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::tip
 この記事はSeeed Studio XIAO ESP32開発Matterシリーズの第2チュートリアルです。まだESP-IDF環境を構成していない場合は、最初のチュートリアルを先にお読みください：
 
-- **[Espressif ESP-IDFを使用したXIAOでの開発](https://wiki.seeedstudio.com/xiao_idf)**
+- **[Espressif ESP-IDFを使用したXIAOでの開発](https://wiki.seeedstudio.com/ja/xiao_idf)**
 
 このチュートリアルはXIAO ESP32C3、XIAO ESP32S3に適用されます。XIAO ESP32C6については、GPIO8ピンがピンアウトされていないため、Espressifが提供するMatterの例は一時的に利用できません。
 :::

@@ -101,8 +101,8 @@ XIAO RP2350 は、Raspberry Pi RP2350（デュアル Cortex-M33 コア、150MHz�
     </tr>
     <tr>
         <td>ソフトウェア互換性</td>
-        <td>Arduino, PlatformIO, MicroPython, CircuitPython, Zephyr, <a href="https://wiki.seeedstudio.com/xiao_topic_page/">その他対応予定</a></td>
-        <td>Arduino, PlatformIO, MicroPython, CircuitPython, <a href="https://wiki.seeedstudio.com/xiao_topic_page/">その他対応予定</a></td>
+        <td>Arduino, PlatformIO, MicroPython, CircuitPython, Zephyr, <a href="https://wiki.seeedstudio.com/ja/xiao_topic_page/">その他対応予定</a></td>
+        <td>Arduino, PlatformIO, MicroPython, CircuitPython, <a href="https://wiki.seeedstudio.com/ja/xiao_topic_page/">その他対応予定</a></td>
     </tr>
     <tr>
         <td>動作温度</td>

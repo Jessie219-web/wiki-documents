@@ -29,7 +29,7 @@ Grove - 温度＆湿度センサー (HDC1000) は HDC1000 センサーを使用�
 - I2C シリアルバスアドレス設定
 
 :::tip
-Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 仕様
@@ -246,7 +246,7 @@ mm
 
 - **ステップ1.** [Seeed DHTライブラリ](https://github.com/Seeed-Studio/HDC1000)をGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。新しいスケッチを開き、以下のコードを新しいスケッチにコピーします。
 
@@ -295,7 +295,7 @@ void loop(){
 }
 ```
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ5.** Arduino IDEの**シリアルモニター**を開きます。**ツール->シリアルモニター**をクリックするか、++ctrl+shift+m++キーを同時に押します。ボーレートを**9600**に設定します。すべてが正常に動作していれば、結果が表示されます。
 

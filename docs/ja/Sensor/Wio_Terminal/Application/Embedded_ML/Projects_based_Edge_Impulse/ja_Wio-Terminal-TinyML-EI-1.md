@@ -46,7 +46,7 @@ CLI のインストールに問題がありますか？詳細については [�
 
 ### 1. 開発ボードをコンピュータに接続する
 
-Wio Terminal をコンピュータに接続します。電源スイッチを素早く2回スライドさせてブートローダーモードに入ります。詳細については [こちら](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#faq) もご参照ください。
+Wio Terminal をコンピュータに接続します。電源スイッチを素早く2回スライドさせてブートローダーモードに入ります。詳細については [こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#faq) もご参照ください。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Wio-Terminal-CircuitPython/dfu.gif" /></div>
 

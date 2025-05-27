@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 準備
 
-1. まず最初に、[**ArduinoボードをDAPLinkデバイスとして使用する方法**](https://wiki.seeedstudio.com/Arduino-DAPLink/)を参照して、SAMDボードの1つをDAP-Linkデバイスに変換してください。一度設定を完了し、**daplink Arduino inoプログラムをアップロード**したら、このWikiチュートリアルに戻ってください。
+1. まず最初に、[**ArduinoボードをDAPLinkデバイスとして使用する方法**](https://wiki.seeedstudio.com/ja/Arduino-DAPLink/)を参照して、SAMDボードの1つをDAP-Linkデバイスに変換してください。一度設定を完了し、**daplink Arduino inoプログラムをアップロード**したら、このWikiチュートリアルに戻ってください。
 
 2. ターゲットハードウェアをDAP Linkデバイス（SAMDボード）と以下のピン構成に従って接続します。
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-Mini_I2C_Motor_Driver_v1.0/
+image: https://wiki.seeedstudio.com/ja/Grove-Mini_I2C_Motor_Driver_v1.0/
 slug: /ja/Grove-Mini_I2C_Motor_Driver_v1.0
 last_update:
   date: 05/15/2025
@@ -34,7 +34,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - 簡単に使用可能
 
 :::tip
-    Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 用途のアイデア

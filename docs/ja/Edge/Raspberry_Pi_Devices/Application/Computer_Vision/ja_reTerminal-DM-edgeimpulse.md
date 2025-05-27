@@ -60,11 +60,11 @@ Edge Impulseは、マイクロコントローラーや組み込みシステム�
 
 ### ソフトウェア準備
 
-公式ウェブサイトから最新バージョンのRaspberry Pi 64ビットOSをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[ガイド](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/#steps-for-flashing-raspbian-os)に記載されている手順に従ってください。
+公式ウェブサイトから最新バージョンのRaspberry Pi 64ビットOSをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[ガイド](https://wiki.seeedstudio.com/ja/reterminal-dm-flash-OS/#steps-for-flashing-raspbian-os)に記載されている手順に従ってください。
 
 :::note
 
-reTerminal DM（カメラ＆PoE付き）を使用していない場合で、Raspberry Piカメラをセットアップしたい場合は、この[ガイド](https://wiki.seeedstudio.com/reterminal-dm-hardware-guide/#install-camera)に記載されている手順に従ってください。
+reTerminal DM（カメラ＆PoE付き）を使用していない場合で、Raspberry Piカメラをセットアップしたい場合は、この[ガイド](https://wiki.seeedstudio.com/ja/reterminal-dm-hardware-guide/#install-camera)に記載されている手順に従ってください。
 
 :::
 

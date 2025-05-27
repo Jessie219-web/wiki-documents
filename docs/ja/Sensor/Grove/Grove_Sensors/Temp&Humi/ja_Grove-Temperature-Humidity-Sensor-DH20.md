@@ -105,7 +105,7 @@ SenseCAP S210x シリーズの産業用センサーは、環境センシング�
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 DHT11と比較して、DHT20温湿度センサーは、供給電圧、温度と湿度の測定範囲、精度、出力信号の品質に明確な変更があります。

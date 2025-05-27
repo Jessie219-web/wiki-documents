@@ -48,4 +48,4 @@ Wio Terminal 用オーディオライブラリを使用するには、以下の�
 
 ## Wio Terminal 用 FS ライブラリのインストール
 
-- 公式の [**Wio Terminal ファイルシステム Wiki**](https://wiki.seeedstudio.com/Wio-Terminal-FS-Overview/) ページをご覧ください。
+- 公式の [**Wio Terminal ファイルシステム Wiki**](https://wiki.seeedstudio.com/ja/Wio-Terminal-FS-Overview/) ページをご覧ください。

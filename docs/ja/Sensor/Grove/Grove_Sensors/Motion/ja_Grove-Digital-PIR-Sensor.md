@@ -75,7 +75,7 @@ Grove インターフェースを使用することで、Grove デジタル PIR 
 Groveケーブルを使用して、ブレッドボード上のGroveインターフェースとGroveデジタルPIRセンサーを接続します。
 
 #### ソフトウェア
-- **ステップ1** 以下のコードをArduino IDEにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ1** 以下のコードをArduino IDEにコピーしてアップロードしてください。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 ```cpp
 #define digital_pir_sensor 5 // Pin 5に接続
 

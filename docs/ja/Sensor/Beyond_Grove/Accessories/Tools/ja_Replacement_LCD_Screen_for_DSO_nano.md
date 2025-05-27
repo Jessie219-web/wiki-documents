@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Replacement_LCD_Screen_for_DSO_nano/
+image: https://wiki.seeedstudio.com/ja/Replacement_LCD_Screen_for_DSO_nano/
 slug: /ja/Replacement_LCD_Screen_for_DSO_nano
 last_update:
   date: 05/15/2025

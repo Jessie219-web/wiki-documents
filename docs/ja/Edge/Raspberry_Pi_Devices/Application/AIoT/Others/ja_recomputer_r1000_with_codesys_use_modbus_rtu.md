@@ -48,7 +48,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 開始する前に
 
-開始する前に、reComputer R1000 がホストと同じネットワークセグメントにあることを確認し、reComputer R1000 に `CODESYS ランタイム` をデプロイしていることを確認してください。`CODESYS ランタイム` のデプロイ方法については、[wiki](https://wiki.seeedstudio.com/reComputer_r1000_install_codesys/) を参照してください。
+開始する前に、reComputer R1000 がホストと同じネットワークセグメントにあることを確認し、reComputer R1000 に `CODESYS ランタイム` をデプロイしていることを確認してください。`CODESYS ランタイム` のデプロイ方法については、[wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_install_codesys/) を参照してください。
 
 ### ハードウェア構成
 

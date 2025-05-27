@@ -37,10 +37,10 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 -   **広い測定範囲:** 気圧測定範囲は300hPa～1100hPa、温度測定範囲は-40℃～+85℃。
 -   **高精度:** 気圧測定の絶対精度は±0.3 hPa、温度測定の精度は±1℃。
 -   **長いスタンバイ時間:** FIFOを使用することで、ホストプロセッサが読み取り間のスリープモードを長く維持でき、システム全体の消費電力を削減し、スタンバイ電流を0.5 μAまで低減可能。
--   **Groveインターフェース:** [Grove 4ピンコネクタ](https://wiki.seeedstudio.com/Grove_System/)を備え、Arduino、Raspberry Pi、Micro:bitなどの主流ハードウェアプラットフォームとの「プラグアンドプレイ」接続を実現。
+-   **Groveインターフェース:** [Grove 4ピンコネクタ](https://wiki.seeedstudio.com/ja/Grove_System/)を備え、Arduino、Raspberry Pi、Micro:bitなどの主流ハードウェアプラットフォームとの「プラグアンドプレイ」接続を実現。
 
 :::tip
-Groveモジュールの詳細については、[Groveシステム](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Groveシステム](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -290,11 +290,11 @@ Groveモジュールの詳細については、[Groveシステム](https://wiki.
     </a>
 </div><br />
 
-**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 **ステップ 3.** 新しい Arduino スケッチを作成し、以下のコードを貼り付けるか、次のパスからコードを直接開いてください：File -> Example -> Seeed Arduino SPA06 -> Example1_BasicRead
 
-**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 **ステップ 5.** シリアルモニターを開き、センサーのデータ（温度、気圧値、高度）を受信します。
 

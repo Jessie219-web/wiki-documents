@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/G1_and_2_inch_Water_Flow_Sensor/
+image: https://wiki.seeedstudio.com/ja/G1_and_2_inch_Water_Flow_Sensor/
 slug: /ja/G1_and_2_inch_Water_Flow_Sensor
 last_update:
   date: 05/15/2025

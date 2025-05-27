@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-NunChuck/
+image: https://wiki.seeedstudio.com/ja/Grove-NunChuck/
 slug: /ja/Grove-NunChuck
 last_update:
   date: 05/15/2025

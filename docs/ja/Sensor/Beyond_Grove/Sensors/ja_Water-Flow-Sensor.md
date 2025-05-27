@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Water-Flow-Sensor/
+image: https://wiki.seeedstudio.com/ja/Water-Flow-Sensor/
 slug: /ja/Water-Flow-Sensor
 last_update:
   date: 05/15/2025
@@ -140,7 +140,7 @@ Atmega 328 ベースのボード（例：[Seeeduino V4.2](https://www.seeedstudi
 **割り込み**の詳細については、[attachInterrupt](https://www.arduino.cc/reference/en/language/functions/external-interrupts/attachinterrupt/) を参照してください。
 
 :::caution
-Arduino を初めて使用する場合は、開始前に [Arduino の使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
+Arduino を初めて使用する場合は、開始前に [Arduino の使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
 :::
 
 - **ステップ 1.** Grove ベースボードと水流センサーを Seeeduino ボードに接続し、USB ケーブルを介して Seeeduino ボードを PC に接続します。

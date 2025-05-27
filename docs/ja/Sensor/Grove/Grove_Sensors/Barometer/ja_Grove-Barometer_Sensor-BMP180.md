@@ -33,10 +33,10 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - I2C アドレス: 0x77
 
 :::note
-    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/) を参照してください。
+    複数の I2C デバイスを使用したい場合は、[Software I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/) を参照してください。
 :::
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 応用例
@@ -193,7 +193,7 @@ mm
 
 **ステップ 1.** [ライブラリ](https://github.com/Seeed-Studio/Grove_Barometer_Sensor)をGithubからダウンロードしてください。
 
-**ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールしてください。
+**ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールしてください。
 
 **ステップ 3.** 新しいArduinoスケッチを作成し、以下のコードを貼り付けるか、次のパスから直接コードを開いてください: File -> Example -> Barometer_Sensor -> Barometer_Sensor。
 

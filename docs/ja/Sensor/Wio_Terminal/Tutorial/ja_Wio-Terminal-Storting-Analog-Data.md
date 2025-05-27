@@ -28,13 +28,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 必要な Arduino ライブラリ
 
-- ラインチャートライブラリ `Seeed_Arduino_Linechart` をインストールしてください。詳細は [Line Charts](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) を参照してください。
+- ラインチャートライブラリ `Seeed_Arduino_Linechart` をインストールしてください。詳細は [Line Charts](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/) を参照してください。
 
-- SD ライブラリをインストールしてください。詳細は [FS](https://wiki.seeedstudio.com/Wio-Terminal-FS-Overview/) を参照してください。
+- SD ライブラリをインストールしてください。詳細は [FS](https://wiki.seeedstudio.com/ja/Wio-Terminal-FS-Overview/) を参照してください。
 
 ## Arduino の手順
 
-1. この例のコードを試す前に、まず [Line Charts](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) をよく読んでください。
+1. この例のコードを試す前に、まず [Line Charts](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/) をよく読んでください。
 
 2. [`LightReadings.ino`](https://files.seeedstudio.com/wiki/Wio-Terminal/res/LightReadings.ino.zip) ファイルをダウンロードし、`Arduino IDE` を使用して Wio Terminal にアップロードしてください。すべてのライブラリがインストールされていることを確認してください。
 
@@ -98,7 +98,7 @@ void loop() {
 
 - **タイトル設定**
 
-詳細は [Line Charts](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) を参照してください。
+詳細は [Line Charts](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/) を参照してください。
 
 ```cpp
 //ライングラフタイトルの設定
@@ -115,7 +115,7 @@ header.draw(); //ヘッダーの高さはフォントの高さの 2 倍
 
 - **ラインチャート設定**
 
-詳細は [Line Charts](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) を参照してください。
+詳細は [Line Charts](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/) を参照してください。
 
 ```cpp
 //ライングラフの設定
@@ -134,7 +134,7 @@ spr.pushSprite(0, 0);
 
 - **SD カードへのデータ書き込み**
 
-詳細は [SD カードからの読み取り/書き込み](https://wiki.seeedstudio.com/Wio-Terminal-FS-ReadWrite/) を参照してください。
+詳細は [SD カードからの読み取り/書き込み](https://wiki.seeedstudio.com/ja/Wio-Terminal-FS-ReadWrite/) を参照してください。
 
 ```cpp
 void saveData(){

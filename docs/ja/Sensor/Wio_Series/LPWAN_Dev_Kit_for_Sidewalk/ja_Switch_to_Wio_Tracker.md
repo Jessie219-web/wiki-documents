@@ -145,7 +145,7 @@ Arduinoを使用して独自のアプリケーションをアップグレード�
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Sidewalk_Kit/join-fail.png" alt="pir" width={700} height="auto" /></p>
 
 
-SenseCAP Mate APPを使用してプラットフォームを選択し、DevEUI/AppEUI/Appkeyを定義することができます。[Get Started](https://wiki.seeedstudio.com/Get_Started_with_Wio-Trakcer_1110/#configure-the-frequency-and-connect-to-the-gateway)を参照してください。
+SenseCAP Mate APPを使用してプラットフォームを選択し、DevEUI/AppEUI/Appkeyを定義することができます。[Get Started](https://wiki.seeedstudio.com/ja/Get_Started_with_Wio-Trakcer_1110/#configure-the-frequency-and-connect-to-the-gateway)を参照してください。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/tracker_appconfig.png" alt="pir" width={300} height="auto" /></p>
 

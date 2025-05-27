@@ -42,7 +42,7 @@ Grove-GSR センサーは人の抵抗を測定します。**伝導率ではあ�
 | 指接触素材 | ニッケル                         |
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -148,7 +148,7 @@ void loop(){
 
 #### ソフトウェア
 
-- **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構築します。
+- **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構築します。
 - **ステップ2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

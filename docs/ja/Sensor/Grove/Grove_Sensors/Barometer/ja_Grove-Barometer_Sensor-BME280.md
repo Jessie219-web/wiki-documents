@@ -55,7 +55,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 -   プロジェクトを迅速に構築するための高度に抽象化されたライブラリ
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -161,7 +161,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 #### ソフトウェア
 **ステップ1.** [ライブラリとサンプルコード](https://github.com/Seeed-Studio/Grove_BME280)をGithubからダウンロードします。
 
-**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 **ステップ3.** 新しいArduinoスケッチを作成し、以下のコードを貼り付けるか、次のパスから直接コードを開きます：File -> Example ->Barometer_Sensor->Barometer_Sensor。
 
@@ -232,7 +232,7 @@ void loop()
 
 ```
 
-**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+**ステップ 4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 **ステップ 5.** シリアルモニターを開き、温度、気圧値、高度、湿度を含むセンサーのデータを受信します。
 
@@ -255,9 +255,9 @@ void loop()
 
 #### ソフトウェア
 
-- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ArduPy/) に従って、Wio Terminal 上で ArduPy 開発環境を構成してください。
+- **ステップ 1.** [**ArduPy Getting Started**](https://wiki.seeedstudio.com/ja/ArduPy/) に従って、Wio Terminal 上で ArduPy 開発環境を構成してください。
 
-- **ステップ 2.** ArduPy ファームウェアが Wio Terminal にフラッシュされていることを確認してください。詳細については [**こちら**](https://wiki.seeedstudio.com/ArduPy/#ardupy-aip-cli-getting-started) を参照してください。
+- **ステップ 2.** ArduPy ファームウェアが Wio Terminal にフラッシュされていることを確認してください。詳細については [**こちら**](https://wiki.seeedstudio.com/ja/ArduPy/#ardupy-aip-cli-getting-started) を参照してください。
 
 ```sh
 aip install Seeed-Studio/seeed-ardupy-bme280

@@ -48,13 +48,13 @@ Grove ケーブルを使用して Grove オールインワン環境センサー 
 
 ここでは Arduino と Raspberry Pi を使用するため、モジュールをインストールされたシステム上で動作させる必要があります：
 
-- [Arduino](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)
-- [Raspberry Pi](https://wiki.seeedstudio.com/Raspberry_Pi_3_Model_B/)
+- [Arduino](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)
+- [Raspberry Pi](https://wiki.seeedstudio.com/ja/Raspberry_Pi_3_Model_B/)
 
 ## Arduino ライブラリ概要
 
 :::tip
-Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Arduino の始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
 :::
 
 Arduino を使用する際には、以下の2つのライブラリをインストールする必要があります：

@@ -27,7 +27,7 @@ XIAO ESP32S3 をホスト MCU とし、Wio-SX1262 LoRa ラジオキットを使�
 ファームウェアはインストールの準備が整っており、3D ケース付きの XIAO ESP32S3 & Wio-SX1262 キットに事前に書き込まれています。XIAO ESP32S3 & Wio-SX1262 キットをシングルチャンネル LoRaWAN ゲートウェイとして書き込みたい場合は、[bin ライブラリ](https://github.com/Seeed-Studio/one_channel_hub/tree/xiao-esp32s3-sx1262-bt-config/bin)からダウンロードしてください。
 
 :::tip
-3D ケース付きの XIAO ESP32S3 & Wio-SX1262 キットは、シングルチャンネル LoRaWAN ゲートウェイとして事前に書き込まれています。[設定](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/#configuration-via-sensecraft-app)セクションに進んでください。
+3D ケース付きの XIAO ESP32S3 & Wio-SX1262 キットは、シングルチャンネル LoRaWAN ゲートウェイとして事前に書き込まれています。[設定](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/#configuration-via-sensecraft-app)セクションに進んでください。
 :::
 
 :::note
@@ -112,7 +112,7 @@ idf.py -p port monitor
 
 ### esptool を使用した書き込み
 
-完全な ESP-IDF 環境を使用しない場合は、[最初のセクション](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/#flash-firmware)に従って提供されたバイナリファイルをダウンロードするだけです。
+完全な ESP-IDF 環境を使用しない場合は、[最初のセクション](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/#flash-firmware)に従って提供されたバイナリファイルをダウンロードするだけです。
 
 ### esptool-JS を使用した書き込み
 
@@ -157,7 +157,7 @@ idf.py -p port monitor
 ## ESP BLE prov を使用した設定
 
 :::note
-Wi-Fi を **ESP BLE prov** を使用して設定し、LoRaWAN を **ウェブクライアント** を使用して設定したい場合は、[このファームウェア](https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/seeed_xiao_esp32s3_one_chanel_hub_20241016.zip) をフラッシュする必要があります。このファームウェアは SenseCraft アプリを使用した設定用のファームウェアとは異なることに注意してください。また、[ファームウェアのカスタマイズとビルド](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/#customize-and-build-firmware) に従って `Wi-Fi プロビジョニングを有効化` を設定できます。
+Wi-Fi を **ESP BLE prov** を使用して設定し、LoRaWAN を **ウェブクライアント** を使用して設定したい場合は、[このファームウェア](https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/seeed_xiao_esp32s3_one_chanel_hub_20241016.zip) をフラッシュする必要があります。このファームウェアは SenseCraft アプリを使用した設定用のファームウェアとは異なることに注意してください。また、[ファームウェアのカスタマイズとビルド](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/#customize-and-build-firmware) に従って `Wi-Fi プロビジョニングを有効化` を設定できます。
 :::
 
 ### Wi-Fi 設定
@@ -242,8 +242,8 @@ SNTP サーバーアドレス: UTC 時間を取得するため
 
 すべての設定が完了しました。これで、XIAO ESP32S3 & SX1262 キットを TTN (The Things Network) や Chirpstack などの LoRa ネットワークサーバーに接続できます。
 
-* [TTN に接続](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_LNS_TTN/)
-* [Chirpstack に接続](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_LNS_Chirpstack/)
+* [TTN に接続](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_LNS_TTN/)
+* [Chirpstack に接続](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_LNS_Chirpstack/)
 
 ## ファームウェアのカスタマイズとビルド
 

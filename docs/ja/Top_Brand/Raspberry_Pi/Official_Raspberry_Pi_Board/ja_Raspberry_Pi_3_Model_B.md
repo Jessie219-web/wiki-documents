@@ -152,7 +152,7 @@ VNC Viewer を開き、Raspberry Pi の IP アドレスを入力します。Rasp
 
 ## GrovePi と一緒に使用する
 
-[Grove Base Hat for Raspberry Pi wiki](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/) を参照してください。
+[Grove Base Hat for Raspberry Pi wiki](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/) を参照してください。
 
 ## 技術サポート & 製品ディスカッション
 

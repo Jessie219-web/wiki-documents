@@ -250,7 +250,7 @@ line-height:3px
 
 ## Azure Sphere デモ
 
-Sphere 開発キットと [Seeed Grove システム](https://wiki.seeedstudio.com/Grove_System/)を組み合わせた2つのデモを作成しました。
+Sphere 開発キットと [Seeed Grove システム](https://wiki.seeedstudio.com/ja/Grove_System/)を組み合わせた2つのデモを作成しました。
 
 **デモ1**: MT3620 開発ボードが MCU として機能し、温度センサー(SHT31)、リレー、ファン、ディスプレイ、アナログデバイスに接続します。このデモでは、IoT 接続を備えたファンをシミュレートします。ユーザーは周囲温度を測定し、Azure Cloud からファンのオン/オフを切り替えるための閾値を設定できます。温度は LED ディスプレイに表示されます。抵抗を交換することで、ファンの速度レベルを 0, 1, 2, 3（0 はファンをオフにすることを意味します）に変更できます。
 
@@ -343,7 +343,7 @@ Groveベースシールドの電圧スイッチが**3.3v**に設定されてい�
 - ステップ5. アップロードをクリックして、コードをArduino/Seeeduinoにアップロードします。
 
 :::note
-コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 :::
 
 **Azure Sphere MT3620開発システム**
@@ -372,7 +372,7 @@ Groveベースシールドの電圧スイッチが**3.3v**に設定されてい�
 - **[認証]** [Azure Sphere MT3620 Development Kit-FCC](https://files.seeedstudio.com/wiki/Azure_Sphere_MT3620_Development_Kit/certification/Azure%20Sphere%20MT3620%20Development%20Kit-FCC-FCC.zip)
 - **[認証]** [Azure Sphere MT3620 Development Kit-MIC](https://files.seeedstudio.com/wiki/Azure_Sphere_MT3620_Development_Kit/certification/Azure%20Sphere%20MT3620%20Development%20Kit-MIC.zip)
 - **[ライブラリ]** [MT3620 Grove Shield Library](https://github.com/Seeed-Studio/MT3620_Grove_Shield)
-- **[Wiki]** [MT3620 Grove Shield](https://wiki.seeedstudio.com/Grove_Starter_Kit_for_Azure_Sphere_MT3620_Development_Kit/)
+- **[Wiki]** [MT3620 Grove Shield](https://wiki.seeedstudio.com/ja/Grove_Starter_Kit_for_Azure_Sphere_MT3620_Development_Kit/)
 - **[データシート]** [MediaTek MT3620 Product Brief](https://files.seeedstudio.com/wiki/Azure_Sphere_MT3620_Development_Kit/datasheet/MediaTek%20MT3620%20Product%20Brief.pdf)
 - **[データシート]** [DS_FT4232H](https://files.seeedstudio.com/wiki/Azure_Sphere_MT3620_Development_Kit/datasheet/DS_FT4232H.pdf)
 - **[機械図面]** [Azure Sphere MT3620 Development Board-2D-Drawing](https://github.com/SeeedDocument/Azure_Sphere_MT3620_Development_Kit/tree/master/mechanical)

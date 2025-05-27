@@ -60,7 +60,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 |信号ピンモード|-|デジタル|-|-|
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -76,7 +76,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -119,14 +119,14 @@ Arduinoを初めて使用する場合は、開始する前に[Getting Started wi
 
 - **ステップ 1.** [Seeed DHTライブラリ](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor)をGithubからダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDEを再起動します。パス**File --> Examples --> Grove_Humidity_Temperature_Sensor-master --> DHTtester**を通じて「DHTtester」例を開きます。このデモを通じて、環境の温度と相対湿度情報を読み取ることができます。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature_and_Humidity_Sensor_Pro/img/path.png" /></div>
 
 :::note
-この Grove - Temperature&Humidity Sensor Pro と、もう一つの製品 [Grove-Temperature and Humidity Sensor](https://wiki.seeedstudio.com/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/) は同じライブラリを共有しています。どちらの製品を使用する場合でも、ボードのセンサー定義行を有効にし、他の仕様の定義行をコメントアウトしていることを確認してください。例えば、Grove - Temperature and Humidity Sensor Pro で使用されているセンサーは DHT 22 です。そのため、センサー仕様の定義部分は以下のようにする必要があります。
+この Grove - Temperature&Humidity Sensor Pro と、もう一つの製品 [Grove-Temperature and Humidity Sensor](https://wiki.seeedstudio.com/ja/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680/) は同じライブラリを共有しています。どちらの製品を使用する場合でも、ボードのセンサー定義行を有効にし、他の仕様の定義行をコメントアウトしていることを確認してください。例えば、Grove - Temperature and Humidity Sensor Pro で使用されているセンサーは DHT 22 です。そのため、センサー仕様の定義部分は以下のようにする必要があります。
 :::
 
 ```
@@ -135,7 +135,7 @@ Arduinoを初めて使用する場合は、開始する前に[Getting Started wi
 //#define DHTTYPE DHT21   // DHT 21 (AM2301)
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニタ** を開きます。**ツール -> シリアルモニタ** をクリックするか、++ctrl+shift+m++ キーを同時に押します。すべてが正常に動作していれば、結果が表示されます。
 
@@ -170,7 +170,7 @@ Arduinoを初めて使用する場合は、開始する前に[Getting Started wi
 **Raspberry Pi OS >= Bullseye** を使用している場合は、**Python3** のみでこのコマンドラインを使用する必要があります。
 :::
 
-- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
+- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
 - **ステップ 2.** grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

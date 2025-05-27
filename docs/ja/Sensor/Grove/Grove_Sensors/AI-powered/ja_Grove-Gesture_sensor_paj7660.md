@@ -231,7 +231,7 @@ Grove Gesture SensorをUSBケーブルでコンピュータに接続し、リア
 ## Arduinoライブラリ概要
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 <div class="github_container" style={{textAlign: 'center'}}>

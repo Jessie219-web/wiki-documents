@@ -23,7 +23,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 *   [Xadow OLED](/Xado_OLED_128multiply64)
 
-*   [Xadow 振動モーター](https://wiki.seeedstudio.com/Xadow_Vibrator_Motor/)
+*   [Xadow 振動モーター](https://wiki.seeedstudio.com/ja/Xadow_Vibrator_Motor/)
 
 *   [Xadow 加速度計](/Xadow_3_Aixs_Accelerometer/) 
 -->

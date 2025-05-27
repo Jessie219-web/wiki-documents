@@ -51,8 +51,8 @@ EdgeBox RPi 200は、**PLC、VFD、HMI、エネルギーメーター、BMS**シ�
 
 ### ソフトウェアの準備
 
-Edge Box-200は、Raspberry Pi OSがプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/Edge_Box_introduction/) Wikiを参照してください。
-また、[Node-REDの入門ガイド](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/)も用意されています。このWikiを進める前に、このガイドを確認することをお勧めします。
+Edge Box-200は、Raspberry Pi OSがプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/ja/Edge_Box_introduction/) Wikiを参照してください。
+また、[Node-REDの入門ガイド](https://wiki.seeedstudio.com/ja/Edge-Box-Getting-Started-with-Node-Red/)も用意されています。このWikiを進める前に、このガイドを確認することをお勧めします。
 
 ### Modbus TCP/IPのためのイーサネット設定の構成
 

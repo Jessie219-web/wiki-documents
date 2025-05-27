@@ -44,7 +44,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア準備
 
-[Node-REDの入門ガイド](https://wiki.seeedstudio.com/reTerminal-DM-Getting-Started-with-Node-Red/)を用意しています。作業を進める前に、このガイドを確認することをお勧めします。
+[Node-REDの入門ガイド](https://wiki.seeedstudio.com/ja/reTerminal-DM-Getting-Started-with-Node-Red/)を用意しています。作業を進める前に、このガイドを確認することをお勧めします。
 
 ## reTerminal DMへのInfluxDBのインストール
 

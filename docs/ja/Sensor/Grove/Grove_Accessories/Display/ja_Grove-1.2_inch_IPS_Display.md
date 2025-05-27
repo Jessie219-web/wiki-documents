@@ -65,7 +65,7 @@ Grove-1.2インチIPSディスプレイは、Seeed Studioによって精密に�
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -116,7 +116,7 @@ Grove Base Shieldがない場合は、以下のようにGrove-1.2 Inch IPS Displ
 
 <br />
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してArduino用ライブラリをインストールします。
 
 - **ステップ3.** ライブラリを正しくダウンロードしてインストールした後、例題フォルダ内に**ST7789_HelloWorld.ino**という名前のプログラムが見つかります。このプログラムはGrove-1.2 Inch IPS Display用に設計されています。
 

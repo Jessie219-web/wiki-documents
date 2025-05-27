@@ -49,8 +49,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェアの準備
 
-Edge Box-200は、Raspberry Pi OSがプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/Edge_Box_introduction/) Wikiを参照してください。
-また、[Node-REDの入門ガイド](https://wiki.seeedstudio.com/Edge-Box-Getting-Started-with-Node-Red/)も用意しています。このガイドを事前に確認することをお勧めします。
+Edge Box-200は、Raspberry Pi OSがプリインストールされた状態で提供されます。このデバイスを初めて起動する場合は、[Getting Started](https://wiki.seeedstudio.com/ja/Edge_Box_introduction/) Wikiを参照してください。
+また、[Node-REDの入門ガイド](https://wiki.seeedstudio.com/ja/Edge-Box-Getting-Started-with-Node-Red/)も用意しています。このガイドを事前に確認することをお勧めします。
 
 ## EdgeBoxをMQTTブローカーとして設定する
 

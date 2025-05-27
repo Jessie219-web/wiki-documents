@@ -35,7 +35,7 @@ Flutterを使用して開発するには、Dartというプログラミング言
 
 > flutter-piのGitHubリポジトリには[こちら](https://github.com/ardera/flutter-pi)からアクセスできます。
 
-- **ステップ 1.** [このウィキ](https://wiki.seeedstudio.com/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet)で説明されているようにreTerminalにログインし、reTerminalに**flutterエンジンバイナリ**をインストールします。
+- **ステップ 1.** [このウィキ](https://wiki.seeedstudio.com/ja/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet)で説明されているようにreTerminalにログインし、reTerminalに**flutterエンジンバイナリ**をインストールします。
 
 ```sh
 git clone --depth 1 https://github.com/ardera/flutter-engine-binaries-for-arm.git engine-binaries

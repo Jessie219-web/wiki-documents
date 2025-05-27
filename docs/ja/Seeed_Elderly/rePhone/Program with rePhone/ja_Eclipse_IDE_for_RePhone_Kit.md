@@ -22,8 +22,8 @@ RePhoneは、興味深いプロジェクトを始めるための学習ツール�
 
 | 製品バージョン | 注文 |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RePhone core 2G-Atmel32u4 v1.0](https://wiki.seeedstudio.com/RePhone_core_2G-Atmel32u4/)| [購入する](https://www.seeedstudio.com/RePhone-core-2G-Atmel32u4-v1-0-p-2779.html)| 
-|[RePhone core 2G-AtmelSAMD21](https://wiki.seeedstudio.com/Rephone_core_2G-AtmelSAMD21/)|[購入する](https://www.seeedstudio.com/RePhone-core-2G-AtmelSAMD21-p-2775.html)|
+| [RePhone core 2G-Atmel32u4 v1.0](https://wiki.seeedstudio.com/ja/RePhone_core_2G-Atmel32u4/)| [購入する](https://www.seeedstudio.com/RePhone-core-2G-Atmel32u4-v1-0-p-2779.html)| 
+|[RePhone core 2G-AtmelSAMD21](https://wiki.seeedstudio.com/ja/Rephone_core_2G-AtmelSAMD21/)|[購入する](https://www.seeedstudio.com/RePhone-core-2G-AtmelSAMD21-p-2775.html)|
 
 ## Eclipse IDE for RePhoneのダウンロード
 ---

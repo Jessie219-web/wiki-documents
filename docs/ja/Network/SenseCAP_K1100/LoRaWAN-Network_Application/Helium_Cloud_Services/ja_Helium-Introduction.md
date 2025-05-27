@@ -204,7 +204,7 @@ Helium コンソール内で新しい機能を作成するには、左側のナ�
 
 - 機能の作成と添付方法に関する詳細は、[こちら](https://youtu.be/UNUOLbIKXww) の Tips and Tricks ビデオをご覧ください。
 
-- このチュートリアルで各センサー用のカスタムデコーダーを記述する方法は [こちら](https://wiki.seeedstudio.com/) にあります。
+- このチュートリアルで各センサー用のカスタムデコーダーを記述する方法は [こちら](https://wiki.seeedstudio.com/ja/) にあります。
 
 ### Helium コンソール - 統合
 
@@ -218,14 +218,14 @@ Helium コンソール内で新しい機能を作成するには、左側のナ�
 
 - 統合の使用方法に関するビデオウォークスルーは [こちら](https://youtu.be/lnERw1f7TGE) の Tips and Tricks ビデオをご覧ください。
 
-- このチュートリアルで Azure IoT Hub 統合を追加する方法は [こちら](https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub/) にあります。
+- このチュートリアルで Azure IoT Hub 統合を追加する方法は [こちら](https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub/) にあります。
 
-次のチュートリアルステップ [Connecting to Helium](https://wiki.seeedstudio.com/Connecting-to-Helium/) に進んでください。
+次のチュートリアルステップ [Connecting to Helium](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/) に進んでください。
 
 <table align="center">
   <tbody><tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/helium.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Connecting to Helium</strong><br /><br />このセクションでは、センサーのデータを Helium に正常にアップロードして表示できるようにするための設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-Helium">始めましょう &gt;</a></td>
+      <td align="left"><strong>Connecting to Helium</strong><br /><br />このセクションでは、センサーのデータを Helium に正常にアップロードして表示できるようにするための設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium">始めましょう &gt;</a></td>
     </tr></tbody></table>
 
 ## 技術サポートと製品ディスカッション

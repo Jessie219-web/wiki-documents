@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove_NFC_Tag/
+image: https://wiki.seeedstudio.com/ja/Grove_NFC_Tag/
 slug: /ja/Grove_NFC_Tag
 last_update:
   date: 05/15/2025
@@ -34,7 +34,7 @@ Grove - NFC Tag は、高度に統合された近距離無線通信タグモジ�
 - Grove I2C インターフェース
 
 :::tip
-    Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 対応プラットフォーム

@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 name: ODYSSEY - X86J4105
 category: ODYSSEY
 bzurl: https://www.seeedstudio.com/ODYSSEY-X86J4105800-p-4445.html
-wikiurl: https://wiki.seeedstudio.com/ODYSSEY-X86J4105-Installing-pfSense/
+wikiurl: https://wiki.seeedstudio.com/ja/ODYSSEY-X86J4105-Installing-pfSense/
 sku: 102110399
 --- -->
 

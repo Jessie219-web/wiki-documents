@@ -200,7 +200,7 @@ RFExplorerは受信した電力と周波数を表示します。アンテナの�
 -   [EAGLE ファイル形式の回路図とレイアウト](https://www.seeedstudio.com/depot/datasheet/RFBee%20hardware%20v1.1.zip)
 -   [フォーラム](https://forum.seeedstudio.com/viewtopic.php?f=10&t=682&sid=7a9b1bed4f9fd10a9b1003ca1e48e756)
 
-<!-- この Markdown ファイルは https://wiki.seeedstudio.com/RFbee_V1.1-Wireless_Arduino_compatible_node/ から作成されました -->
+<!-- この Markdown ファイルは https://wiki.seeedstudio.com/ja/RFbee_V1.1-Wireless_Arduino_compatible_node/ から作成されました -->
 
 ## 技術サポートと製品ディスカッション
 

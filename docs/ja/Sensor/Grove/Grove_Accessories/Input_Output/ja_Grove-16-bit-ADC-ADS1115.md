@@ -189,7 +189,7 @@ void loop(void)
 
 ### ソフトウェア
 
-Grove - 16-bit ADC(ADS1115) は Raspberry Pi 用の 4 チャンネル 16 ビット ADC (ADS1115) と同じ使用方法です。そのため、[**こちら**](https://wiki.seeedstudio.com/4-Channel_16-Bit_ADC_for_Raspberry_Pi-ADS1115/#getting-started)のチュートリアルに従ってください。
+Grove - 16-bit ADC(ADS1115) は Raspberry Pi 用の 4 チャンネル 16 ビット ADC (ADS1115) と同じ使用方法です。そのため、[**こちら**](https://wiki.seeedstudio.com/ja/4-Channel_16-Bit_ADC_for_Raspberry_Pi-ADS1115/#getting-started)のチュートリアルに従ってください。
 
 ### Wio Terminal での使用
 
@@ -211,7 +211,7 @@ Grove - 16-bit ADC(ADS1115) は Raspberry Pi 用の 4 チャンネル 16 ビッ�
 - **ステップ 1.** [Seeed Arduino ADS1115](https://github.com/Seeed-Studio/Seeed_Arduino_ADS1115) ライブラリを Github からダウンロードします。
 
 :::note
-以下の手順を進める前に、[Wio Terminal のスタートガイド](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)に従ってください。
+以下の手順を進める前に、[Wio Terminal のスタートガイド](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)に従ってください。
 :::
 
 - **ステップ 2.** [**サンプルコード**](https://github.com/Seeed-Studio/Seeed_Arduino_Sketchbook/tree/master/examples/WioTerminal-ADS1115) をこちらからダウンロードします。
@@ -239,9 +239,9 @@ Grove - 16-bit ADC(ADS1115) は Raspberry Pi 用の 4 チャンネル 16 ビッ�
 
 #### ソフトウェア
 
-- **ステップ 1.** [**ArduPy スタートガイド**](https://wiki.seeedstudio.com/ArduPy/) に従って、Wio Terminal 上で ArduPy 開発環境を構成します。
+- **ステップ 1.** [**ArduPy スタートガイド**](https://wiki.seeedstudio.com/ja/ArduPy/) に従って、Wio Terminal 上で ArduPy 開発環境を構成します。
 
-- **ステップ 2.** ADS1115 ライブラリを含む ArduPy ファームウェアが Wio Terminal にフラッシュされていることを確認してください。詳細については、[**こちら**](https://wiki.seeedstudio.com/ArduPy/#ardupy-aip-cli-getting-started)を参照してください。
+- **ステップ 2.** ADS1115 ライブラリを含む ArduPy ファームウェアが Wio Terminal にフラッシュされていることを確認してください。詳細については、[**こちら**](https://wiki.seeedstudio.com/ja/ArduPy/#ardupy-aip-cli-getting-started)を参照してください。
 
 ```sh
 aip install Seeed-Studio/seeed-ardupy-ads1115

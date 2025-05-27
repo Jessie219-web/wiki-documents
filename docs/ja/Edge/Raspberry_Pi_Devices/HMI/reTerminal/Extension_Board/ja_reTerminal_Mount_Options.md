@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 reTerminal は優れたヒューマンマシンインターフェース (HMI) として、多くの異なるシステムで採用されています。システムのインターフェースとして、reTerminal を手持ちではなく、マウントすることは良いアイデアです。
-このセクションでは、reTerminal のマウントソリューションの可能性について議論します。このセクションの内容は、[ハードウェアのネジ仕様](https://wiki.seeedstudio.com/reTerminal_Mount_Options/#Hardware_Specification_of_the_Screw) と [コミュニティデザイン](https://wiki.seeedstudio.com/reTerminal_Mount_Options/#Community_Design) をカバーします。
+このセクションでは、reTerminal のマウントソリューションの可能性について議論します。このセクションの内容は、[ハードウェアのネジ仕様](https://wiki.seeedstudio.com/ja/reTerminal_Mount_Options/#Hardware_Specification_of_the_Screw) と [コミュニティデザイン](https://wiki.seeedstudio.com/ja/reTerminal_Mount_Options/#Community_Design) をカバーします。
 
 ## ハードウェアのネジ仕様
 

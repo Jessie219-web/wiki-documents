@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/wio_gps_board/
+image: https://wiki.seeedstudio.com/ja/wio_gps_board/
 slug: /ja/wio_gps_board
 last_update:
   date: 05/15/2025
@@ -119,7 +119,7 @@ Wio Trackerを「ソリューション」と呼ぶ理由は、それが単なる
 :::tip
     Grove モジュールを使用してアプリケーションを拡張してください
 :::
-ボード上には 6 つの Grove コネクタがあります。Grove を初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+ボード上には 6 つの Grove コネクタがあります。Grove を初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 簡単に言えば、Grove は標準スタイルのセンサー群で、センサー、アクチュエータ、ディスプレイ、通信モジュールで構成されています。
 
 ## ハードウェア概要
@@ -165,7 +165,7 @@ Wio Trackerを「ソリューション」と呼ぶ理由は、それが単なる
 :::note
     この章は、Win10とArduino IDE v1.6.0を基にしています。
 :::
-まず、最新のArduino IDEをインストールし、[Seeeduino SAMDをArduino IDEに追加](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)してください。
+まず、最新のArduino IDEをインストールし、[Seeeduino SAMDをArduino IDEに追加](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)してください。
 
 ### ドライバーのインストール (Windowsの場合)
 

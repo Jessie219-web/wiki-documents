@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Speaker/
+image: https://wiki.seeedstudio.com/ja/Grove-Speaker/
 slug: /ja/Grove-Speaker
 last_update:
   date: 05/15/2025
@@ -28,7 +28,7 @@ Grove - スピーカーは、電力増幅と音声出力を備えたモジュー
 - Groveインターフェース
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 仕様
@@ -117,7 +117,7 @@ void sound(uint8_t note_index)
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メイン手順を作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[Guide for Codecraft using Arduino](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[Guide for Codecraft using Arduino](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 **ステップ2.** 下の画像のようにブロックをドラッグするか、このページの最後からダウンロードできるcdcファイルを開きます。
 

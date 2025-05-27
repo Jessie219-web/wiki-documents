@@ -3,7 +3,7 @@ title: Dfu-util
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Dfu-util/
+image: https://wiki.seeedstudio.com/ja/Dfu-util/
 slug: /ja/Dfu-util
 last_update:
   date: 05/15/2025

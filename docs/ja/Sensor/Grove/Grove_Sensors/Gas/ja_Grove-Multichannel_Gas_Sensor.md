@@ -39,7 +39,7 @@ Grove – マルチチャンネルガスセンサーは、環境検知センサ�
 [<p><img src="https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png" alt="pir" width={600} height="auto" /></p>](https://www.seeedstudio.com/Grove-Multichannel-Gas-Sensor-p-2502.html)
 
 :::tip
-     製品を[マルチチャンネルガスセンサーv2](https://wiki.seeedstudio.com/Grove-Multichannel-Gas-Sensor-V2/)に更新しました。より詳細なドキュメントとオンボードセンサーモジュールが追加されています。また、[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
+     製品を[マルチチャンネルガスセンサーv2](https://wiki.seeedstudio.com/ja/Grove-Multichannel-Gas-Sensor-V2/)に更新しました。より詳細なドキュメントとオンボードセンサーモジュールが追加されています。また、[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。これにより、ニーズに最適なガスセンサーを選択するのに役立ちます。
 :::
 
 ## 使用前に
@@ -184,7 +184,7 @@ Grove – マルチチャンネルガスセンサーは、環境検知センサ�
 
 **コードのアップロード:**
 
-2. [Arduinoライブラリ & Grove/Xadowファームウェア](https://github.com/Seeed-Studio/Mutichannel_Gas_Sensor/archive/master.zip)をダウンロードし、[インストール](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)してArduinoライブラリに追加します。
+2. [Arduinoライブラリ & Grove/Xadowファームウェア](https://github.com/Seeed-Studio/Mutichannel_Gas_Sensor/archive/master.zip)をダウンロードし、[インストール](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)してArduinoライブラリに追加します。
 
 3. 次のパスからコードを直接開きます: File -> Example -> Mutichannel_Gas_Sensor -> ReadSensorValue_Grove。
 
@@ -269,7 +269,7 @@ void loop()
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Multichannel_Gas_Sensor/img/Mutichannel_Gas_Sensor_Grove_Print.jpg" alt="pir" width={600} height="auto" /></p>
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ファームウェアの更新

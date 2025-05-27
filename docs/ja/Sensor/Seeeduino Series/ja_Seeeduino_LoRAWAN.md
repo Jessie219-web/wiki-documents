@@ -114,7 +114,7 @@ Seeeduino LoRaWAN は、LoRaWanプロトコルが組み込まれたArduino開発
 :::tip
     Groveモジュールを使用してアプリケーションを拡張してください。
 :::
-ボード上には4つのGroveコネクタがあります。Groveについて初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご覧ください。
+ボード上には4つのGroveコネクタがあります。Groveについて初めて聞いた場合は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご覧ください。
 簡単に言うと、Groveは標準スタイルのセンサー群で、センサー、アクチュエーター、ディスプレイ、通信モジュールで構成されています。
 
 ## ハードウェア概要
@@ -175,10 +175,10 @@ Seeeduino LoRaWAN は、LoRaWanプロトコルが組み込まれたArduino開発
 ## はじめに
 
 :::note
-Arduino を初めて使用する場合は、[Arduino の使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino)を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Arduino の使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino)を参照することを強くお勧めします。
 :::
 
-まず、最新の Arduino IDE をインストールし、[Seeeduino LoRa を Arduino IDE に追加](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)してください。
+まず、最新の Arduino IDE をインストールし、[Seeeduino LoRa を Arduino IDE に追加](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)してください。
 
 ## ドライバのインストール（Windows 用）
 
@@ -216,7 +216,7 @@ void loop() {
 
 * **ツール > ボード > Seeeduino LoRaWAN** をクリックします。
 
-Seeeduino LoRaWAN が見つからない場合は、[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を確認してください。
+Seeeduino LoRaWAN が見つからない場合は、[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を確認してください。
 
 * **ツール > ポート** をクリックして、正しいポート番号を選択します。（*COM1 を選択しないでください*）
 
@@ -355,8 +355,8 @@ void loop(void)
 
 ### 3.3 ABP
 
-* ステップ 1. [LoRa/LoRaWAN Gateway Kit](https://wiki.seeedstudio.com/LoRa_LoRaWan_Gateway_Kit/) を参照してゲートウェイをセットアップしてください。  
-* ステップ 2. [Grove-Temperature_and_Humidity_Sensor_Pro](https://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/) をベースシールドの D2 ポートに接続してください。
+* ステップ 1. [LoRa/LoRaWAN Gateway Kit](https://wiki.seeedstudio.com/ja/LoRa_LoRaWan_Gateway_Kit/) を参照してゲートウェイをセットアップしてください。  
+* ステップ 2. [Grove-Temperature_and_Humidity_Sensor_Pro](https://wiki.seeedstudio.com/ja/Grove-Temperature_and_Humidity_Sensor_Pro/) をベースシールドの D2 ポートに接続してください。
 * ステップ 3. ベースシールドを Seeeduino Lorawan に接続してください。
 * ステップ 4. [DHT ライブラリ](https://files.seeedstudio.com/wiki/Seeeduino_LoRa/res/DHT.zip) をダウンロードし、Arduino ライブラリフォルダに解凍してください。
 * ステップ 5. 以下のコードを Arduino IDE にコピーしてアップロードしてください。

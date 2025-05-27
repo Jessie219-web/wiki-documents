@@ -242,7 +242,7 @@ KeilでArduino DAPLinkを使用するには、以下を確認してください�
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/Seeeduino-XIAO-pinout.jpg"/></div>
 
->使用例については、[こちら](https://wiki.seeedstudio.com/How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI/)を参照してください。
+>使用例については、[こちら](https://wiki.seeedstudio.com/ja/How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI/)を参照してください。
 
 ## リソース
 

@@ -153,7 +153,7 @@ LED ブリンクのサンプルスケッチを開きます：**ファイル > �
 
 **Seeeduino Lite を Arduino IDE に追加する**
 
-Arduino IDE のボード一覧には *Seeeduino Lite* オプションがありません。[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/) をクリックして手順を確認してください。
+Arduino IDE のボード一覧には *Seeeduino Lite* オプションがありません。[Seeed ボードを Arduino IDE に追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/) をクリックして手順を確認してください。
 
 **ボードを選択する**
 Arduino に対応するエントリを **ツール > ボード** メニューから選択する必要があります。

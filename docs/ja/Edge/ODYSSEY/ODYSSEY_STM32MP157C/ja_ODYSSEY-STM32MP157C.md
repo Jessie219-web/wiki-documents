@@ -461,7 +461,7 @@ Connection successful
 
 **ハードウェア接続**
 
-- **ステップ 1.** [インストールガイド](https://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide) に従って、2 Channel CAN BUS FD Shield for Raspberry Pi を ODYSSEY - STM32MP157C に取り付けます。
+- **ステップ 1.** [インストールガイド](https://wiki.seeedstudio.com/ja/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/#mounting-guide) に従って、2 Channel CAN BUS FD Shield for Raspberry Pi を ODYSSEY - STM32MP157C に取り付けます。
 - **ステップ 2.** CAN BUS Shield V2 を Seeeduino V4.2 に取り付けます。
 - **ステップ 3.** ジャンパーワイヤーを使用して、Raspberry Pi 用の 2 Channel CAN BUS FD Shield を CAN-BUS Shield V2 に接続します。
 
@@ -785,7 +785,7 @@ cd grove.py/grove
 python uart.py
 ```
 
-TX を RX に接続すると、ターミナルで `hello seeder` を確認できます。また、TX と RX の位置は [Pin Function](https://wiki.seeedstudio.com/ODYSSEY-STM32MP157C/#pin-function) で確認できます。
+TX を RX に接続すると、ターミナルで `hello seeder` を確認できます。また、TX と RX の位置は [Pin Function](https://wiki.seeedstudio.com/ja/ODYSSEY-STM32MP157C/#pin-function) で確認できます。
 
 ### ODYSSEY-STM32MP157C 上の I2S
 
@@ -800,7 +800,7 @@ TX を RX に接続すると、ターミナルで `hello seeder` を確認でき
 |![画像をここに入力](https://files.seeedstudio.com/wiki/ODYSSEY-STM32MP157C/IMG/perspective-19-210X157.png)|![画像](https://files.seeedstudio.com/wiki/ODYSSEY-STM32MP157C/IMG/res-thumbnail.png)|
 |[今すぐ購入](https://www.seeedstudio.com/ODYSSEY-STM32MP157C-p-4464.html)|[今すぐ購入](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT.html)|
 
-- **ステップ 2.** [インストールハードウェアガイド](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/#getting-started) に従って、ReSpeaker 2-Mics Pi HAT を ODYSSEY – STM32MP157C に挿入します。
+- **ステップ 2.** [インストールハードウェアガイド](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT/#getting-started) に従って、ReSpeaker 2-Mics Pi HAT を ODYSSEY – STM32MP157C に挿入します。
 
 #### ソフトウェア
 
@@ -885,7 +885,7 @@ aplay -Dhw:0 -r 48000 test.wav
 音声が出力されない場合は、再度再起動してみてください。
 </div>
 
-ReSpeaker 2-Mics Pi HAT の詳細については [wiki](https://wiki.seeedstudio.com/ReSpeaker_2_Mics_Pi_HAT/) を参照してください。
+ReSpeaker 2-Mics Pi HAT の詳細については [wiki](https://wiki.seeedstudio.com/ja/ReSpeaker_2_Mics_Pi_HAT/) を参照してください。
 
 ## リソース
 -----

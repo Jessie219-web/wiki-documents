@@ -144,7 +144,7 @@ REPL を操作するには、*help()* を使用して、REPL の探索を開始�
 ## ピン配置/ポート情報
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c6_circuitpython/5.png" /></div>
 
-* 詳細情報は[ハードウェア概要](https://wiki.seeedstudio.com/xiao_esp32c6_getting_started/#hardware-overview)を参照してください。
+* 詳細情報は[ハードウェア概要](https://wiki.seeedstudio.com/ja/xiao_esp32c6_getting_started/#hardware-overview)を参照してください。
 * [Seeed Studio XIAO ESP32C6 回路図](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/XIAO-ESP32-C6_v1.0_SCH_PDF_24028.pdf)
 
 ## XIAO ESP32C6でのCircuitPythonの使い方

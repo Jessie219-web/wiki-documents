@@ -152,13 +152,13 @@ Grove Base Shieldがない場合は、以下のようにGrove - 0.54" Red Quad A
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 **1. display_basicで始める**
 
 - **ステップ1.** [Grove - 0.54" Red Quad Alphanumeric Displayライブラリ](https://github.com/Seeed-Studio/Seeed_Alphanumeric_Display_HT16K33)をGithubからダウンロードします。
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 - **ステップ3.** **Arduino IDE -> File -> Examples -> Seeed_Alphanumeric_Display_HT16K33 -> display_basic**を開きます。
 - **ステップ4.** 以下のように**tube.setTubeType(TYPE_4,TYPE_4_DEFAULT_I2C_ADDR)**をコメント解除します。他の例でも同様にコメント解除する必要があります。
 
@@ -170,7 +170,7 @@ Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い�
     // tube.setTubeType(TYPE_2,TYPE_2_DEFAULT_I2C_ADDR);
 ```
 
-- **ステップ5.** サンプルをArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ5.** サンプルをArduinoにアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 - **ステップ6.** LEDが「12 -> 4567 -> AB -> abcd」を繰り返し表示するのが確認できます。
 
 **2. その他の例**

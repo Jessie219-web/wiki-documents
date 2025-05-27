@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-TF_Mini_LiDAR/
+image: https://wiki.seeedstudio.com/ja/Grove-TF_Mini_LiDAR/
 slug: /ja/Grove-TF_Mini_LiDAR
 last_update:
   date: 05/15/2025
@@ -58,7 +58,7 @@ ToFはTime of Flight技術の略で、その動作原理は以下の通りです
 | 電磁適合性(EMC)          | EN 55032 Class B                  |
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 対応プラットフォーム

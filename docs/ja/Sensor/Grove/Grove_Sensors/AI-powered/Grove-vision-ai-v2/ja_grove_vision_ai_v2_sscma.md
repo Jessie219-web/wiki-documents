@@ -268,7 +268,7 @@ Roboflowでは、画像をラベル付けするための3つの方法を提供�
 
 ### ステップ1. Colabノートブックにアクセスする
 
-[SenseCraft Model AssistantのWiki](https://wiki.seeedstudio.com/ModelAssistant_Introduce_Quick_Start/#model-training)で、さまざまな種類のモデル用Google Colabコードファイルを見つけることができます。どのコードを選べばよいかわからない場合は、モデルのクラス（物体検出または画像分類）に応じて、どれでも選択できます。
+[SenseCraft Model AssistantのWiki](https://wiki.seeedstudio.com/ja/ModelAssistant_Introduce_Quick_Start/#model-training)で、さまざまな種類のモデル用Google Colabコードファイルを見つけることができます。どのコードを選べばよいかわからない場合は、モデルのクラス（物体検出または画像分類）に応じて、どれでも選択できます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai_v2_train_model/24.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -537,7 +537,7 @@ Roboflow のデータセットを直接ダウンロードした場合、Health C
 Arduino デバイス（例: XIAO）を使用してプロトタイプを実現し続けたい場合は、こちらの Arduino サンプルプログラムを参照してください。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/#demo-1-use-xiao-to-get-recognition-results">
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/grove_vision_ai_v2_software_support/#demo-1-use-xiao-to-get-recognition-results">
             <strong><span><font color={'FFFFFF'} size={"4"}>Arduino Example🖱️</font></span></strong>
     </a>
 </div>

@@ -258,7 +258,7 @@ TODO
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studioの[コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)によってサポートされています。
-- [Caseyの尽力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=34112514)に感謝します。あなたの作業は[こちらで展示](https://wiki.seeedstudio.com/Honorary-Contributors/)されます。
+- [Caseyの尽力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=34112514)に感謝します。あなたの作業は[こちらで展示](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)されます。
 
 ## リソース ##
 * [外部buildrootツリーで使用されるARM Trusted Firmwareのフォーク](https://git.xogium.me/xogium/st-arm-trusted-firmware/tree/v2.8-stm32mp-odyssey-r2)

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-I2C_Motor_Driver-TB6612FNG/
+image: https://wiki.seeedstudio.com/ja/Grove-I2C_Motor_Driver-TB6612FNG/
 slug: /ja/Grove-I2C_Motor_Driver-TB6612FNG
 last_update:
   date: 05/15/2025
@@ -212,12 +212,12 @@ ___
 #### ソフトウェア
 
 :::caution
-        Arduinoを初めて使用する場合は、開始する前に[Arduinoの始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+        Arduinoを初めて使用する場合は、開始する前に[Arduinoの始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ1.** [Grove_Motor_Driver_TB6612FNG](https://github.com/Seeed-Studio/Grove_Motor_Driver_TB6612FNG)ライブラリをGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** Arduino IDEを再起動します。デフォルトの例を開きます。以下の2つの例を提供しています：
 
@@ -230,7 +230,7 @@ ___
     2. コンピュータで開く：**XXXX\Arduino\libraries\Grove_Motor_Driver_TB6612FNG-master\examples\dc_motor**フォルダ内の**dc_motor.ino**をクリックします。**XXXX**はArduino IDEをインストールした場所です。  
     ![](https://files.seeedstudio.com/wiki/Grove-I2C_Motor_Driver-TB6612FNG/img/path2.jpg)
 
-- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 :::tip
         すべてが正常に動作すれば、外部電源ポートに電源を入れるとモーターが動作します。
@@ -270,7 +270,7 @@ ___
 ![](https://files.seeedstudio.com/wiki/Grove-I2C_Motor_Driver-TB6612FNG/img/hardwareconnect2.jpg)
 
 :::note
-        Raspberry Piを初めて使用する場合は、開始する前に[Getting started with Raspberry](https://wiki.seeedstudio.com/Grove_Base_Kit_for_Raspberry_Pi/#getting-started)を参照してください。
+        Raspberry Piを初めて使用する場合は、開始する前に[Getting started with Raspberry](https://wiki.seeedstudio.com/ja/Grove_Base_Kit_for_Raspberry_Pi/#getting-started)を参照してください。
 :::
 
 #### ソフトウェア
@@ -278,7 +278,7 @@ ___
 :::caution
      **Raspberry Pi OS >= Bullseye**を搭載したRaspberry Piを使用している場合は、このコマンドラインを**Python3のみ**で使用する必要があります。
 MarkusBanskyがGrove_Motor_Driver_TB6612FNGのソフトウェアライブラリと学習リソースをRaspberry Pi 4およびPython3向けに提供しています。
-これは、[Grove Arduino Library](https://github.com/Seeed-Studio/Grove_Motor_Driver_TB6612FNG)を[Raspberry Pi用Grove I2C Motor Driver on TB6612FNG](https://wiki.seeedstudio.com/Grove-I2C_Motor_Driver-TB6612FNG/)に移植したものです。
+これは、[Grove Arduino Library](https://github.com/Seeed-Studio/Grove_Motor_Driver_TB6612FNG)を[Raspberry Pi用Grove I2C Motor Driver on TB6612FNG](https://wiki.seeedstudio.com/ja/Grove-I2C_Motor_Driver-TB6612FNG/)に移植したものです。
 :::
 
 #### 必要条件

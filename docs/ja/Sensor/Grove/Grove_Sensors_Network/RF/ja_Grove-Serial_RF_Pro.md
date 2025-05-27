@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Sensor_communication/
+image: https://wiki.seeedstudio.com/ja/Sensor_communication/
 slug: /ja/Grove-Serial_RF_Pro
 last_update:
   date: 05/15/2025
@@ -202,7 +202,7 @@ Grove-Serial RF Proは、433/470/868/915 MHzで動作する低コストで高性
 ---
 ここでは、2つのRF Pro Groveユニットが相互にデータを送受信するデモを紹介します。このデモを行うには、2つのRF Pro Groveユニットと2つのSeeeduinoが必要です。
 
-* 1つのGrove - Serial RF Proを[Grove - Base Shield](https://wiki.seeedstudio.com/Base_Shield_V2/)のUARTに接続し、Grove - Base ShieldをSeeeduinoに接続します。
+* 1つのGrove - Serial RF Proを[Grove - Base Shield](https://wiki.seeedstudio.com/ja/Base_Shield_V2/)のUARTに接続し、Grove - Base ShieldをSeeeduinoに接続します。
 
 ![](https://files.seeedstudio.com/wiki/Grove-Serial_RF_Pro/img/Rfdemo.jpg)
 
@@ -214,7 +214,7 @@ ENABLEピンがLOW、CONFIGピンがLOWの場合、モジュールは設定状�
 
 * CONピンをLOW/GNDに接続して設定モードに入ります。
 
-* コマンドを送信してモジュールの設定を変更したり、設定を問い合わせたりします。設定および問い合わせの指示については[Reference](https://wiki.seeedstudio.com/Grove-Serial_RF_Pro/#reference)を参照してください。
+* コマンドを送信してモジュールの設定を変更したり、設定を問い合わせたりします。設定および問い合わせの指示については[Reference](https://wiki.seeedstudio.com/ja/Grove-Serial_RF_Pro/#reference)を参照してください。
 
 設定指示のフォーマットは、AA+FA+[指示]+[パラメータ]です。指示は1バイト、パラメータは0～4バイトのHEXデータ（ビッグエンディアン順、高位バイトが先）です。
 
@@ -232,7 +232,7 @@ ENABLEピンがLOW、CONFIGピンがLOWの場合、モジュールは設定状�
 
 ### 通信モード
 
-以下のコードをSeeeduinoにアップロードしてください。アップロード方法が分からない場合は[こちら](https://wiki.seeedstudio.com/Upload_Code)をクリックしてください。
+以下のコードをSeeeduinoにアップロードしてください。アップロード方法が分からない場合は[こちら](https://wiki.seeedstudio.com/ja/Upload_Code)をクリックしてください。
 
 ```cpp
 // データ送信ルーチン

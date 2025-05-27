@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Sensor_distance/
+image: https://wiki.seeedstudio.com/ja/Sensor_distance/
 slug: /ja/Sensor_distance
 last_update:
   date: 05/15/2025
@@ -53,13 +53,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 |名前|サムネイル|動作電圧|測定範囲|動作温度|購入リンク|
 |----|-----|-----|------|------|------|
-|[Grove - Time of Flight Distance Sensor(VL53L0X)](https://wiki.seeedstudio.com/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/)|<img src="https://files.seeedstudio.com/wiki/Grove-Time_of_Flight_Distance_Sensor-VL53L0X-/img/thumbnail.jpg"/>|3.3V-5V|30mm-1000mm|-20℃ - 70℃|[購入する](https://www.seeedstudio.com/Grove-Time-of-Flight-Distance-Sensor-VL53L0X.html)|
-|[Grove - Ultrasonic Ranger](https://wiki.seeedstudio.com/Grove-Ultrasonic_Ranger/)|<img src="https://files.seeedstudio.com/wiki/Grove_Ultrasonic_Ranger/img/Ultrasonic_small.jpg" />|3.2V~5.2V|2cm-350cm|-10℃ - 60℃ |[購入する](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)|
-|[Grove - Infrared Reflective Sensor](https://wiki.seeedstudio.com/Grove-Infrared_Reflective_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/img/thumbnail.jpg" />|3.3V-5V|4mm–15 mm|/|[購入する](https://www.seeedstudio.com/Grove-Infrared-Reflective-Sensor-v1-2.html)|
-|[Grove - Digital Distance Interrupter 0.5 to 5cm(GP2Y0D805Z0F)(P)](https://wiki.seeedstudio.com/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F_P/)|<img src="https://files.seeedstudio.com/wiki/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F/img/thumbnail_p.jpg" />|3.3v-5v|0.5cm - 5cm|-10℃ -60℃|[購入する](https://www.seeedstudio.com/Grove-Digital-Distance-Interrupter-0-5-to-5cm-GP2Y0D805Z0F-P.html)|
-|[Grove - Digital Distance Interrupter 0.5 to 5cm(GP2Y0D805Z0F)](https://wiki.seeedstudio.com/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F/)|<img src="https://files.seeedstudio.com/wiki/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F/img/thumnail.jpg" />|3.3v-5v|0.5cm - 5cm|-10℃ -60℃|[購入する](https://www.seeedstudio.com/Grove-Digital-Distance-Interrupter-0-5-to-5cm-GP2Y0D805Z0F.html)|
-|[Grove - IR Distance Interrupter v1.2](https://wiki.seeedstudio.com/Grove-IR_Distance_Interrupter_v1.2/)|<img src="https://files.seeedstudio.com/wiki/Grove-IR_Distance_Interrupter_v1.2/img/IR.png" />|3.3v-5v|7.5cm–40 cm|/|[購入する](https://www.seeedstudio.com/Grove-IR-Distance-Interrupter-p-1278.html)|
-|[Grove-TF Mini LiDAR](https://wiki.seeedstudio.com/Grove-TF_Mini_LiDAR/)|<img src="https://files.seeedstudio.com/wiki/Grove-TF_Mini_LiDAR/img/Grove-TF-Mini-LiDAR_S.JPG" />|4.5V-6V|0.3m-12m|-20℃-60℃|[購入する](https://www.seeedstudio.com/Seeedstudio-Grove-TF-Mini-LiDAR.html)|
+|[Grove - Time of Flight Distance Sensor(VL53L0X)](https://wiki.seeedstudio.com/ja/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/)|<img src="https://files.seeedstudio.com/wiki/Grove-Time_of_Flight_Distance_Sensor-VL53L0X-/img/thumbnail.jpg"/>|3.3V-5V|30mm-1000mm|-20℃ - 70℃|[購入する](https://www.seeedstudio.com/Grove-Time-of-Flight-Distance-Sensor-VL53L0X.html)|
+|[Grove - Ultrasonic Ranger](https://wiki.seeedstudio.com/ja/Grove-Ultrasonic_Ranger/)|<img src="https://files.seeedstudio.com/wiki/Grove_Ultrasonic_Ranger/img/Ultrasonic_small.jpg" />|3.2V~5.2V|2cm-350cm|-10℃ - 60℃ |[購入する](https://www.seeedstudio.com/Grove-Ultrasonic-Distance-Sensor.html)|
+|[Grove - Infrared Reflective Sensor](https://wiki.seeedstudio.com/ja/Grove-Infrared_Reflective_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Infrared_Reflective_Sensor/img/thumbnail.jpg" />|3.3V-5V|4mm–15 mm|/|[購入する](https://www.seeedstudio.com/Grove-Infrared-Reflective-Sensor-v1-2.html)|
+|[Grove - Digital Distance Interrupter 0.5 to 5cm(GP2Y0D805Z0F)(P)](https://wiki.seeedstudio.com/ja/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F_P/)|<img src="https://files.seeedstudio.com/wiki/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F/img/thumbnail_p.jpg" />|3.3v-5v|0.5cm - 5cm|-10℃ -60℃|[購入する](https://www.seeedstudio.com/Grove-Digital-Distance-Interrupter-0-5-to-5cm-GP2Y0D805Z0F-P.html)|
+|[Grove - Digital Distance Interrupter 0.5 to 5cm(GP2Y0D805Z0F)](https://wiki.seeedstudio.com/ja/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F/)|<img src="https://files.seeedstudio.com/wiki/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F/img/thumnail.jpg" />|3.3v-5v|0.5cm - 5cm|-10℃ -60℃|[購入する](https://www.seeedstudio.com/Grove-Digital-Distance-Interrupter-0-5-to-5cm-GP2Y0D805Z0F.html)|
+|[Grove - IR Distance Interrupter v1.2](https://wiki.seeedstudio.com/ja/Grove-IR_Distance_Interrupter_v1.2/)|<img src="https://files.seeedstudio.com/wiki/Grove-IR_Distance_Interrupter_v1.2/img/IR.png" />|3.3v-5v|7.5cm–40 cm|/|[購入する](https://www.seeedstudio.com/Grove-IR-Distance-Interrupter-p-1278.html)|
+|[Grove-TF Mini LiDAR](https://wiki.seeedstudio.com/ja/Grove-TF_Mini_LiDAR/)|<img src="https://files.seeedstudio.com/wiki/Grove-TF_Mini_LiDAR/img/Grove-TF-Mini-LiDAR_S.JPG" />|4.5V-6V|0.3m-12m|-20℃-60℃|[購入する](https://www.seeedstudio.com/Seeedstudio-Grove-TF-Mini-LiDAR.html)|
 
 ### 注意事項
 

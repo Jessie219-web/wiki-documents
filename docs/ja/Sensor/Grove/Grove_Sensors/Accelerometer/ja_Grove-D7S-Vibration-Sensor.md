@@ -76,7 +76,7 @@ Grove - D7S振動センサーは、以下を含む幅広い用途で使用でき
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -113,7 +113,7 @@ Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い�
 
 - **ステップ1.** [Grove - D7S振動センサー](https://github.com/limengdu/d7s-grove-arduino)をGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** ライブラリを正しくダウンロードしてインストールした後、examplesフォルダ内にあるsample.inoという名前のサンプルプログラムを見つけることができます。このプログラムはD7Sモジュール用に設計されています。
 
@@ -234,7 +234,7 @@ void loop()
 }
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニター** を開きます。**ツール -> シリアルモニター** をクリックしてください。例えば、テーブルを叩くなどして振動を発生させると、以下のような結果が得られます。
 

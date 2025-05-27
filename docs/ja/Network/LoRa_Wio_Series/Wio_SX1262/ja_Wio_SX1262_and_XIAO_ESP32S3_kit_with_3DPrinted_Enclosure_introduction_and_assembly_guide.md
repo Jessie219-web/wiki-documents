@@ -117,8 +117,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 このキットには2つのアプリケーションが提供されています。
 
-- LoRaWAN ゲートウェイとして設定する場合（事前にフラッシュ済み）、[LoRaWAN ゲートウェイ設定](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/)および[LNS接続の手順](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_LNS_TTN/)に従ってください。
-- Meshtastic を使用してネットワーク通信を行う場合、[Meshtastic の手順](https://wiki.seeedstudio.com/wio_sx1262_xiao_esp32s3_for_meshtastic/)に従ってください。
+- LoRaWAN ゲートウェイとして設定する場合（事前にフラッシュ済み）、[LoRaWAN ゲートウェイ設定](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_for_single_channel_gateway/)および[LNS接続の手順](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_LNS_TTN/)に従ってください。
+- Meshtastic を使用してネットワーク通信を行う場合、[Meshtastic の手順](https://wiki.seeedstudio.com/ja/wio_sx1262_xiao_esp32s3_for_meshtastic/)に従ってください。
 
 ## リソース
 

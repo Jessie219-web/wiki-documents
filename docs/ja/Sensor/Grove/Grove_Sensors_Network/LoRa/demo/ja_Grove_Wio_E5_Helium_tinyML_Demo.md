@@ -145,7 +145,7 @@ Edge Impulse ツールを使用して tinyML モデルを開発しました。�
 
 <p style={{textAlign: 'center'}}><img src="https://raw.githubusercontent.com/salmanfarisvp/TinyML/main/XIAO-nRF52840-Sense/src/img/Edge_Impulse_project.png" alt="pir" width={800} height="auto" /></p>
 
-現在、[こちら](https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-nRF52840-Sense/src/lib/ei-illegal-logging-detection--vehicle-sound-xiao-nrf52-arduino-1.0.4.zip) から Edge Impulse tinyML ライブラリをダウンロードし、Arduino に追加してください。[このガイド](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/#1add-zip-library) を参照して ZIP ライブラリの追加方法を学んでください。
+現在、[こちら](https://github.com/salmanfarisvp/TinyML/blob/main/XIAO-nRF52840-Sense/src/lib/ei-illegal-logging-detection--vehicle-sound-xiao-nrf52-arduino-1.0.4.zip) から Edge Impulse tinyML ライブラリをダウンロードし、Arduino に追加してください。[このガイド](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/#1add-zip-library) を参照して ZIP ライブラリの追加方法を学んでください。
 
 ライブラリを追加した後、以下のコードをコピーして Arduino スケッチに貼り付け、**Helium LoRa WAN の認証情報を置き換えてください**。
 

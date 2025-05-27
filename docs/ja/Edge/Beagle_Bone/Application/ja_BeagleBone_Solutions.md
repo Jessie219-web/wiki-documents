@@ -22,7 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 BeagleBone® は、フル機能のLinux OSを実行できる一方でリアルタイム機能も保持する多用途なプラットフォームです。産業用途を念頭に設計され、初心者向けのドキュメントが用意されており、豊富なI/Oとプロトコルサポートを備えながらも開発者に優しい設計となっています。
 
-Seeedの[BeagleBone® Green](https://wiki.seeedstudio.com/BeagleBone_Green/)および[BeagleBone® Green Wireless](https://wiki.seeedstudio.com/BeagleBone_Green_Wireless/)は、BeagleBone® ファミリーの一部であり、**今すぐ**カスタマイズ、製造、展開が可能です。
+Seeedの[BeagleBone® Green](https://wiki.seeedstudio.com/ja/BeagleBone_Green/)および[BeagleBone® Green Wireless](https://wiki.seeedstudio.com/ja/BeagleBone_Green_Wireless/)は、BeagleBone® ファミリーの一部であり、**今すぐ**カスタマイズ、製造、展開が可能です。
 
 カスタマイズポートフォリオは[こちら](#portfolio)をご覧ください。
 
@@ -34,7 +34,7 @@ BeagleBoneは完全なオープンソースのソフトウェアおよびハー�
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/BeagleBoneSolutions/img/Prototyping.gif" /></div>
 
-BeagleBone® は、迅速なプロトタイピングのために設計されたSBC開発ボードです。追加機能を提供する多数のケープがあり、概念実証を迅速に構築できます。これらのケープの多くはコミュニティによって設計されており、完全にオープンソースです。さらに、私たちは[Groveモジュール](https://wiki.seeedstudio.com/Grove_System/)を接続できるGroveケープを作成しており、開発者は200以上のオープンソースモジュールとそのオープンソースライブラリにアクセスできます。
+BeagleBone® は、迅速なプロトタイピングのために設計されたSBC開発ボードです。追加機能を提供する多数のケープがあり、概念実証を迅速に構築できます。これらのケープの多くはコミュニティによって設計されており、完全にオープンソースです。さらに、私たちは[Groveモジュール](https://wiki.seeedstudio.com/ja/Grove_System/)を接続できるGroveケープを作成しており、開発者は200以上のオープンソースモジュールとそのオープンソースライブラリにアクセスできます。
 
 ## **カスタマイズ**
 

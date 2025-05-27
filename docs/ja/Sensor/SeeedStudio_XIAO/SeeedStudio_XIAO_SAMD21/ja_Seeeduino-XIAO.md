@@ -32,7 +32,7 @@ Seeed Studio XIAO SAMD21 には 14 本のピンがあり、11 のデジタルイ
 
 **Seeed Studio XIAO SAMD21** の使用方法に関する 2 つのドキュメントがあり、それぞれ異なる分野に焦点を当てています。以下の表を参考にしてください：
 
-|[**Seeed によるドキュメント**](https://wiki.seeedstudio.com/Seeeduino-XIAO/)|[**Nanase によるドキュメント**](https://wiki.seeedstudio.com/Seeeduino-XIAO-by-Nanase/)|
+|[**Seeed によるドキュメント**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/)|[**Nanase によるドキュメント**](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO-by-Nanase/)|
 |---|---|
 |ピン配置図|インターフェース|
 |Seeed Studio XIAO SAMD21 の使い方|Seeed Studio XIAO SAMD21 と MicroSD カード（SPI）|
@@ -340,7 +340,7 @@ void loop()
 
 :::note
 
-Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1. Arduinoソフトウェアをインストールします。**
@@ -402,9 +402,9 @@ Arduinoボードのシリアルデバイスを **Tools | Serial Port** メニュ
 
 ## サンプルアプリケーション
 
-- [Seeed Studio XIAO SAMD21 を使用して Raspberry PI にログインする方法](https://wiki.seeedstudio.com/How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI)
+- [Seeed Studio XIAO SAMD21 を使用して Raspberry PI にログインする方法](https://wiki.seeedstudio.com/ja/How-to-use-Seeeduino-XIAO-to-log-in-to-your-Raspberry-PI)
 
-- [SPI 通信インターフェース](https://wiki.seeedstudio.com/XIAO-SPI-Communication-Interface)
+- [SPI 通信インターフェース](https://wiki.seeedstudio.com/ja/XIAO-SPI-Communication-Interface)
 
 - [Raspberry Pi を使用して壊れた XIAO を復旧する方法](https://forum.seeedstudio.com/t/how-to-unbrick-a-dead-xiao-using-raspberry-pi-guide-openocd/253990)。John_Doe さんの共有に感謝します。
 

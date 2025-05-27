@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - Docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-LCD-Loading-Image/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Loading-Image/
 slug: /ja/Wio-Terminal-LCD-Loading-Image
 last_update:
   date: 05/15/2025
@@ -25,11 +25,11 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### Wio Terminal用SDカードライブラリのインストール
 
-- [File System Overview](https://wiki.seeedstudio.com/Wio-Terminal-FS-Overview/)を訪問してください。
+- [File System Overview](https://wiki.seeedstudio.com/ja/Wio-Terminal-FS-Overview/)を訪問してください。
 
 ### Wio Terminal用TFT LCDライブラリのインストール
 
-- [TFT LCD Overview](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/)を訪問してください。
+- [TFT LCD Overview](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/)を訪問してください。
 
 ## 画像フォーマットの設定
 

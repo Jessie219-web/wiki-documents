@@ -42,7 +42,7 @@ Grove - NFC (ST25DV64)は単なるNFCタグ以上のものです。これは、N
 NFC初心者でも、使いやすいNFCソリューションを探している経験豊富な開発者でも、Grove - NFC (ST25DV64)は優れた選択肢です。そのオープンソースのソフトウェアとハードウェア、使いやすさ、多用途性により、あらゆるNFCプロジェクトにとって貴重なツールとなります。
 
 :::tip
-[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶ際に役立ちます。
+[Seeed Gas Sensor Selection Guide](https://wiki.seeedstudio.com/ja/Seeed_Gas_Sensor_Selection_Guide/)を公開しました。このガイドは、あなたのニーズに最適なガスセンサーを選ぶ際に役立ちます。
 :::
 
 ## 特徴
@@ -88,7 +88,7 @@ NFC初心者でも、使いやすいNFCソリューションを探している�
 ## はじめに
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -154,7 +154,7 @@ Grove - NFC (ST25DV64)にはNFCアンテナが付属していません。その�
 
 - **ステップ1.** [ST25DV Arduinoライブラリ](https://github.com/limengdu/ST25DV)をGithubからダウンロードします。
 
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ3.** ライブラリを正しくダウンロードしてインストールした後、`ST25DV_HelloWorld.ino`という名前のサンプルプログラムがexamplesフォルダに見つかります。このプログラムはST25DVモジュール用に設計されています。
 

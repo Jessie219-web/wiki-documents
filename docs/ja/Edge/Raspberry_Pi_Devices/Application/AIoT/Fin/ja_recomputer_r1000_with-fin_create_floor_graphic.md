@@ -49,12 +49,12 @@ FIN Framework (FIN) は、統合、制御、管理、分析、可視化、接続
     </div>
 
 ### ソフトウェアの準備
-* FIN Framework のインストール方法については、この [wiki](https://wiki.seeedstudio.com/reComputer_r1000_install_fin/) を参照してください。
-* FIN Framework の Modbus 機能の使用方法については、この [wiki](https://wiki.seeedstudio.com/reComputer_r1000_fin_modbus_tcp_and_rtu/) を参照してください。
+* FIN Framework のインストール方法については、この [wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_install_fin/) を参照してください。
+* FIN Framework の Modbus 機能の使用方法については、この [wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_fin_modbus_tcp_and_rtu/) を参照してください。
 
 ## フロアグラフィックを作成する手順
 ### 新しいフロアグラフィックを作成する
-**ステップ 1**: Modbus TCP 接続と Modbus RTU 接続を確立し、対応する Equip を作成します。各 Equip には `humidity` と `temperature` のラベルがあります。このステップの実装方法については、この [wiki](https://wiki.seeedstudio.com/reComputer_r1000_fin_modbus_tcp_and_rtu/) を参照してください。同時に、FIN Framework のコンテキストを対応する `Floor` の下に配置してください。ここでは、コンテキストを `Tower => Floor1` の下に配置します。
+**ステップ 1**: Modbus TCP 接続と Modbus RTU 接続を確立し、対応する Equip を作成します。各 Equip には `humidity` と `temperature` のラベルがあります。このステップの実装方法については、この [wiki](https://wiki.seeedstudio.com/ja/reComputer_r1000_fin_modbus_tcp_and_rtu/) を参照してください。同時に、FIN Framework のコンテキストを対応する `Floor` の下に配置してください。ここでは、コンテキストを `Tower => Floor1` の下に配置します。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/fin/Floor_sit_path_and_equip.png" /></center>
 

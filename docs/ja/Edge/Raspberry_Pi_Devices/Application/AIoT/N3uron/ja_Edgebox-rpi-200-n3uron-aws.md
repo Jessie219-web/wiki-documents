@@ -21,7 +21,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## はじめに
 
-[Edge Box RPi 200デバイスからAWS IoT CoreへMQTTプロトコルを使用してデータを送信するプロセス](https://wiki.seeedstudio.com/Edgebox-rpi-200-AWS/)を概説しました。このチュートリアルは、前述のプロセスとシームレスに統合されます。本チュートリアルでは、N3uron Edge IIoTプラットフォームとAWS IoT Core間のインターフェースの詳細について掘り下げます。
+[Edge Box RPi 200デバイスからAWS IoT CoreへMQTTプロトコルを使用してデータを送信するプロセス](https://wiki.seeedstudio.com/ja/Edgebox-rpi-200-AWS/)を概説しました。このチュートリアルは、前述のプロセスとシームレスに統合されます。本チュートリアルでは、N3uron Edge IIoTプラットフォームとAWS IoT Core間のインターフェースの詳細について掘り下げます。
 
 ## 前提条件
 
@@ -50,9 +50,9 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェア
 
-[N3uronの使い方](https://wiki.seeedstudio.com/Edgebox-rpi-200-n3uron/)ガイドを学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作方法、Web UIやWeb Visionモジュールの概念、タグの理解、基本的なダッシュボードの作成など、重要な情報を提供しています。これらの基本をまだ学んでいない場合は、先に学習することをお勧めします。リンクを通じてガイドにアクセスできます。
+[N3uronの使い方](https://wiki.seeedstudio.com/ja/Edgebox-rpi-200-n3uron/)ガイドを学習することを強くお勧めします。このガイドでは、N3uronのWebインターフェースの操作方法、Web UIやWeb Visionモジュールの概念、タグの理解、基本的なダッシュボードの作成など、重要な情報を提供しています。これらの基本をまだ学んでいない場合は、先に学習することをお勧めします。リンクを通じてガイドにアクセスできます。
 
-また、[AWS IoT CoreとEdge Box RPi 200の統合](https://wiki.seeedstudio.com/Edgebox-rpi-200-AWS/)に関するガイドをまだ確認していない場合は、こちらも確認することをお勧めします。この包括的なガイドでは、IoT Coreに値を公開する基本から高度な手順までを網羅しています。**現在のチュートリアルを補完する内容であるため、このガイドにも慣れておくと良いでしょう**。
+また、[AWS IoT CoreとEdge Box RPi 200の統合](https://wiki.seeedstudio.com/ja/Edgebox-rpi-200-AWS/)に関するガイドをまだ確認していない場合は、こちらも確認することをお勧めします。この包括的なガイドでは、IoT Coreに値を公開する基本から高度な手順までを網羅しています。**現在のチュートリアルを補完する内容であるため、このガイドにも慣れておくと良いでしょう**。
 
 ## N3uron IIoTプラットフォームの設定
 

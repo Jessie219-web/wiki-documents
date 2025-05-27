@@ -57,7 +57,7 @@ Raspberry Pi 用 4G LTE HAT は、信頼性の高い高速なセルラー接続�
 
 #### 通信ドライバーとツール
 
-関連するドライバーや通信ツールをまだインストールしていない場合は、まず [ガイド](https://wiki.seeedstudio.com/getting_started_raspberry_pi_4g_lte_hat/#software-preparation) を確認してください。
+関連するドライバーや通信ツールをまだインストールしていない場合は、まず [ガイド](https://wiki.seeedstudio.com/ja/getting_started_raspberry_pi_4g_lte_hat/#software-preparation) を確認してください。
 
 #### Mosquitto Explorer
 

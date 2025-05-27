@@ -69,7 +69,7 @@ SHT40の湿度は、2つの導電性電極に堆積されたポリアミンま�
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/165.png" /></div>
 
-Grove Temp&Humi Sensorの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/Grove-SHT4x/)を参照してください。
+Grove Temp&Humi Sensorの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/ja/Grove-SHT4x/)を参照してください。
 
 ## 必要な材料
 
@@ -283,7 +283,7 @@ Arduino IDE のシリアルモニタを開き、ボーレートを 115200 に設
 </div>
 
 :::tip
-この時点では、Helium/TTN の設定がまだ完了していないため、コードをアップロードして結果を確認することはお勧めしません。この段階でコードをアップロードすると、「Join failed」という結果が得られます。[Connecting to Helium](https://wiki.seeedstudio.com/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/Connecting-to-TTN/) の章を完了してから、このコードをアップロードして完全なデータ送信プロセスを完了することをお勧めします。
+この時点では、Helium/TTN の設定がまだ完了していないため、コードをアップロードして結果を確認することはお勧めしません。この段階でコードをアップロードすると、「Join failed」という結果が得られます。[Connecting to Helium](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/ja/Connecting-to-TTN/) の章を完了してから、このコードをアップロードして完全なデータ送信プロセスを完了することをお勧めします。
 :::
 
 Grove Temp&Humi センサーの動作とデータ形式を体験し理解したら、次のステップである LoRaWAN® への参加に進んでください。
@@ -294,11 +294,11 @@ Grove Temp&Humi センサーの動作とデータ形式を体験し理解した�
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/178.jpeg" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作について説明し、Helium コンソールの第一印象を得ることを目的としています。<br /><br /><a href="https://wiki.seeedstudio.com/Helium-Introduction">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作について説明し、Helium コンソールの第一印象を得ることを目的としています。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/helium.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium への接続</strong><br /><br />このセクションでは、センサーのデータを正常にアップロードし、Helium に表示できるようにするための Helium の設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-Helium">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium への接続</strong><br /><br />このセクションでは、センサーのデータを正常にアップロードし、Helium に表示できるようにするための Helium の設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td colSpan={2} bgcolor="8FBC8F"><b>TTN セクション</b></td>
@@ -306,12 +306,12 @@ Grove Temp&Humi センサーの動作とデータ形式を体験し理解した�
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-TTN/TTN.png" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN の紹介</strong><br /><br />この章では、TTN コンソールの操作について説明し、TTN コンソールの第一印象を得ることを目的としています。
-        <br /><br /><a href="https://wiki.seeedstudio.com/TTN-Introduction">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/ttncon.jpg" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN への接続</strong><br /><br />このセクションでは、センサーのデータを正常にアップロードし、TTN に表示できるようにするための TTN の設定方法について説明します。
-        <br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-TTN">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN">章にジャンプ &gt;</a></td>
     </tr>
   </tbody></table>
 

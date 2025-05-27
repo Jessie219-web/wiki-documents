@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/RF_Explorer_Software/
+image: https://wiki.seeedstudio.com/ja/RF_Explorer_Software/
 slug: /ja/RF_Explorer_Software
 last_update:
   date: 05/15/2025

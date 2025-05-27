@@ -56,7 +56,7 @@ FUXAは、スケーラブルなSCADA、HMI、Dashboard、またはIIoTシステ�
 
 ### ソフトウェアの準備
 
-公式ウェブサイトからRaspberry Pi 64ビットOSの**Bullseye**バージョンをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[**ガイド**](https://wiki.seeedstudio.com/reterminal-dm-flash-OS/)に従ってください。
+公式ウェブサイトからRaspberry Pi 64ビットOSの**Bullseye**バージョンをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[**ガイド**](https://wiki.seeedstudio.com/ja/reterminal-dm-flash-OS/)に従ってください。
 
 ## reTerminal DMへのFUXAのインストール
 

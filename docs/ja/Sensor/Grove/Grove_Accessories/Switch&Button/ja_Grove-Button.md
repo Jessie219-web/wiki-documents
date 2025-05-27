@@ -32,7 +32,7 @@ Grove - ボタンは、一時的なプッシュボタンです。このボタン
 - 標準的な4ピンGroveケーブルを使用
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -137,7 +137,7 @@ void loop(){
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するためのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+Codecraftを初めて使用する場合は、[CodecraftでArduinoを使用するためのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
@@ -172,7 +172,7 @@ tipsuccess
 **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3のみ**で以下のコマンドを実行してください。
 :::
 
-- **ステップ1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

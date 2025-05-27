@@ -87,7 +87,7 @@ Grove - OLED Display 0.96" (SSD1315) は、Grove I2Cインターフェースを�
 #### ソフトウェア
 
 :::note
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 - **ステップ 1.** **Sketch** -> **Include Library** -> **Manage Libraries...** に移動し、**`U8g2`**ライブラリを**ライブラリマネージャー**で検索してインストールします。
@@ -123,7 +123,7 @@ void loop(void) {
 }
 ```
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 4.** OLEDディスプレイは以下のように表示されるはずです：
 

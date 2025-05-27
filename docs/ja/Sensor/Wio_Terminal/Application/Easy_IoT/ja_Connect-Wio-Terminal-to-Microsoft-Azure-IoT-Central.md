@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central/
+image: https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central/
 slug: /ja/Connect-Wio-Terminal-to-Microsoft-Azure-IoT-Central
 last_update:
   date: 05/15/2025
@@ -95,7 +95,7 @@ IoT Plug and Play 認定を受けるには、いくつかの基準をクリア�
 
 #### RTL8720 ファームウェアの更新
 
-Wio Terminal の Realtek RTL8720 ワイヤレスコアのファームウェアを更新する必要があります。[この Wiki](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview) に従って RTL8720 ファームウェアを更新してください。
+Wio Terminal の Realtek RTL8720 ワイヤレスコアのファームウェアを更新する必要があります。[この Wiki](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview) に従って RTL8720 ファームウェアを更新してください。
 
 **注意:** 指定されたバージョンに従って [ファームウェア](https://github.com/SeeedJP/wioterminal-aziot-example/releases) を更新してください。
 

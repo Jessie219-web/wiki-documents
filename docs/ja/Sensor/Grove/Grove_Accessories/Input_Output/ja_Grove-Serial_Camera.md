@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Serial_Camera/
+image: https://wiki.seeedstudio.com/ja/Grove-Serial_Camera/
 slug: /ja/Grove-Serial_Camera
 last_update:
   date: 05/15/2025
@@ -31,7 +31,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - プロトコル制御
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 仕様

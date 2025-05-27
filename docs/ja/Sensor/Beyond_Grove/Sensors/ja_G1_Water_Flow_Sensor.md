@@ -3,7 +3,7 @@ title: G1 水流センサー
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/G1_Water_Flow_Sensor/
+image: https://wiki.seeedstudio.com/ja/G1_Water_Flow_Sensor/
 slug: /ja/G1_Water_Flow_Sensor
 last_update:
   date: 05/15/2025
@@ -338,7 +338,7 @@ void loop ()
 
 * [LCDに水流量を表示する](http://www.practicalarduino.com/projects/water-flow-gauge)
 
-* [材料のデータシート](https://wiki.seeedstudio.com/images/4/4e/YEE70G30HSLNC..pdf)
+* [材料のデータシート](https://wiki.seeedstudio.com/ja/images/4/4e/YEE70G30HSLNC..pdf)
 
 ## 技術サポートと製品ディスカッション
 

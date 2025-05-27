@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-LED_Matrix_Driver_v1.0/
+image: https://wiki.seeedstudio.com/ja/Grove-LED_Matrix_Driver_v1.0/
 slug: /ja/Grove-LED_Matrix_Driver_v1.0
 last_update:
   date: 05/15/2025
@@ -36,7 +36,7 @@ Grove - LED マトリックス ドライバ v1.0 は、さまざまなグラフ�
 - インターフェース：UART（Arduino の SoftSerial）
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 仕様

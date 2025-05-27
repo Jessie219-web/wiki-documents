@@ -187,7 +187,7 @@ XIAO MG24 を迅速に使い始めるために、以下のハードウェアお�
 XIAO MG24 の推奨プログラミングツールは Arduino IDE です。そのため、ソフトウェア準備の一環として Arduino のインストールを完了する必要があります。
 
 :::tip
-Arduino を初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** お使いのオペレーティングシステムに応じて、安定版の Arduino IDE をダウンロードしてインストールします。

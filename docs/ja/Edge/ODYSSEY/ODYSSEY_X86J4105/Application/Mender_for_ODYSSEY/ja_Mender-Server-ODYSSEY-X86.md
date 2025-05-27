@@ -22,7 +22,7 @@ ODYSSEY - X86ボード上にセルフホスト型Mender Serverをセットアッ
 
 ## 前提条件
 
-- [SeeedによるOpenWrtシステム](https://wiki.seeedstudio.com/OpenWrt-Getting-Started)がインストールされた[ODYSSEY - X86ボード](https://www.seeedstudio.com/ODYSSEY-X86J4125800-p-4915.html)
+- [SeeedによるOpenWrtシステム](https://wiki.seeedstudio.com/ja/OpenWrt-Getting-Started)がインストールされた[ODYSSEY - X86ボード](https://www.seeedstudio.com/ODYSSEY-X86J4125800-p-4915.html)
 - このセルフホスト型Mender Serverを公開する場合、ポート443が公開アクセス可能なパブリックIPアドレスが必要です
 - 上記のようにパブリックIPを使用する場合、Mender ServerのDNS名にパブリックIPをバインドする必要があります
 

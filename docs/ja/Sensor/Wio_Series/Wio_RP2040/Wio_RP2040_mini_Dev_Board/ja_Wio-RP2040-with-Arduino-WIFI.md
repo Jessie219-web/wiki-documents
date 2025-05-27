@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-RP2040-with-Arduino-WIFI/
+image: https://wiki.seeedstudio.com/ja/Wio-RP2040-with-Arduino-WIFI/
 slug: /ja/Wio-RP2040-with-Arduino-WIFI
 last_update:
   date: 05/15/2025
@@ -86,7 +86,7 @@ MQTTXソフトウェアに入り、新しい接続を作成します。名前、
 #### **MQTTを使用したArduinoコード**
 
 :::note
-    Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+    Arduinoを初めて使用する場合は、[Arduinoの始め方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 - **ステップ1. Arduinoソフトウェアをインストールする**
 

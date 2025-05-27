@@ -716,7 +716,7 @@ reCamera で混合精度量子化 YOLOv5 モデルを検証する例を実行で
 git clone https://github.com/jjjadand/yolov5_Test_reCamera.git
 ```
 
-コンパイル済みの例と `yolov5s_mix-precision.cvimodel` を [FileZilla](https://filezilla-project.org/) などのソフトウェアを使用して reCamera にコピーします。（[Getting Started with reCamera](https://wiki.seeedstudio.com/recamera_getting_started/) を参照してください）
+コンパイル済みの例と `yolov5s_mix-precision.cvimodel` を [FileZilla](https://filezilla-project.org/) などのソフトウェアを使用して reCamera にコピーします。（[Getting Started with reCamera](https://wiki.seeedstudio.com/ja/recamera_getting_started/) を参照してください）
 
 コピーが完了したら、**reCamera のターミナルで以下のコマンドを実行します：**
 

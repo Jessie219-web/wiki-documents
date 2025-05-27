@@ -61,10 +61,10 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 
 ## 使用するツール
 
-- [Wio Terminal](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)
+- [Wio Terminal](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)
 - [Edge Impulse](https://studio.edgeimpulse.com/)
 - [Helium](https://console.helium.com/)
-- [Wio Terminal 内蔵加速度計を使用した Edge Impulse の連続動作認識](https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-2/)
+- [Wio Terminal 内蔵加速度計を使用した Edge Impulse の連続動作認識](https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-2/)
 - [Google スプレッドシート](https://docs.google.com/spreadsheets/u/0/)
 - [Google フォーム](https://docs.google.com/forms/u/0/)
 
@@ -72,9 +72,9 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 このセクションを始める前に、**Wio Terminal** の製品について理解していることを確認してください。
 詳細については、以下をお読みください：
 
-- [**Wio Terminal の始め方**](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)
-- [**Helium への接続**](https://wiki.seeedstudio.com/Connecting-to-Helium/)
-- [**Helium を介した Google スプレッドシートへの統合**](https://wiki.seeedstudio.com/Integrate_into_Google_Sheets_via_Helium/)
+- [**Wio Terminal の始め方**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)
+- [**Helium への接続**](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/)
+- [**Helium を介した Google スプレッドシートへの統合**](https://wiki.seeedstudio.com/ja/Integrate_into_Google_Sheets_via_Helium/)
 :::
 
 この記事では、Edge Impulse を使用してモデルを生成し、クラウドに接続したい人向けのソリューションを紹介します。デモでは Google スプレッドシートを使用します。これは直接的で簡単な方法です。
@@ -83,7 +83,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 
 ### ステップ 1. Google フォームをサポートする統合を作成する
 
-このステップは、記事 [**Helium を介した Google スプレッドシートへの統合**](https://wiki.seeedstudio.com/Integrate_into_Google_Sheets_via_Helium/) の手順と似ています。
+このステップは、記事 [**Helium を介した Google スプレッドシートへの統合**](https://wiki.seeedstudio.com/ja/Integrate_into_Google_Sheets_via_Helium/) の手順と似ています。
 
 必要な作業は、統合に名前を付けて設定を保存するだけです。
 
@@ -161,7 +161,7 @@ function Serialize(payload) {
 
 :::note
 詳細については、以下をお読みください：
-[Wio Terminal Edge Impulse Continuous Motion Recognition with Built-in Accelerometer](https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-2/)
+[Wio Terminal Edge Impulse Continuous Motion Recognition with Built-in Accelerometer](https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-2/)
 :::
 
 ## Arduino (Wio Terminal) 設定
@@ -488,7 +488,7 @@ void loop()
 :::note
 詳細については、以下のドキュメントをご覧ください。
 
-- [**Connecting-to-Helium**](https://wiki.seeedstudio.com/Connecting-to-Helium/)
+- [**Connecting-to-Helium**](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/)
 :::
 注意すべき点：
 

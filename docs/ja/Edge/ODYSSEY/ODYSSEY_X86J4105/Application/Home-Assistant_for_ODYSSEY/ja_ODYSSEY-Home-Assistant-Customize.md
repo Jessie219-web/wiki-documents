@@ -20,7 +20,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## はじめに
 
-以前のWikiでは、[reTerminal](https://wiki.seeedstudio.com/reTerminal_Home_Assistant)、[ODYSSEY-X86](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant)にHome Assistantをインストールし、PC、スマートフォン、タブレット、reTerminal LCDのキオスクモードでダッシュボードUIを表示する方法を説明しました。
+以前のWikiでは、[reTerminal](https://wiki.seeedstudio.com/ja/reTerminal_Home_Assistant)、[ODYSSEY-X86](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant)にHome Assistantをインストールし、PC、スマートフォン、タブレット、reTerminal LCDのキオスクモードでダッシュボードUIを表示する方法を説明しました。
 
 このWikiでは、必要な設定を行いながらダッシュボードを構築する方法や、Home Assistantに付属する重要なアドオンの使用方法をステップバイステップで解説します。それでは始めましょう！
 

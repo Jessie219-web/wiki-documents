@@ -95,8 +95,8 @@ Power BI と Azure を組み合わせてデータ資産全体を接続、統合�
 - Azure サブスクリプション。Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) を作成してください。
 - Power BI アカウント。Power BI アカウントをお持ちでない場合は、開始する前に [無料の Power BI Pro トライアル](https://app.powerbi.com/signupredirect?pbi_source=web) にサインアップしてください。
 - 以下のいずれかの Wiki で、Azure IoT Central にデータを正常にアップロードしていること。
-  - [Node-RED を介して SenseCAP を Azure IoT Central に接続する](https://wiki.seeedstudio.com/K1100_SenseCAP_to_Azure_IoT_Central/)
-  - [Wio Terminal を Microsoft Azure IoT Central に接続する (WiFi)](https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/)
+  - [Node-RED を介して SenseCAP を Azure IoT Central に接続する](https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_Azure_IoT_Central/)
+  - [Wio Terminal を Microsoft Azure IoT Central に接続する (WiFi)](https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/)
 
 ## リソースグループを作成する
 

@@ -287,9 +287,9 @@ _**ユーザーマニュアル**_については、[Beagle Bone Green と Grove 
 
 ![enter image description here](https://files.seeedstudio.com/wiki/Grove_IoT_Starter_Kits_Powered_by_AWS/img/Aws_kit_linkit.JPG)
 
-_メイン記事: [LinkIt ONE](https://wiki.seeedstudio.com/LinkIt_ONE/ "LinkIt ONE")_
+_メイン記事: [LinkIt ONE](https://wiki.seeedstudio.com/ja/LinkIt_ONE/ "LinkIt ONE")_
 
-**[LinkIt ONE](https://wiki.seeedstudio.com/LinkIt_ONE/ "LinkIt ONE")** 開発ボードは、ウェアラブルデバイスや IoT デバイスのプロトタイピング向けのオープンソースで高性能な開発ボードです。このボードは MT2502 (ARM7EJ-S™ MCU) をベースにしており、GSM、GPRS、Wi-Fi、Bluetooth BR/EDR/BLE、GPS、オーディオコーデック、SDカードコネクタを単一の開発ボードに統合しています。このキットを使用すると、スマートシティ、輸送、物流に関連する通信を含むクラウドコンピューティング接続プロジェクトを構築できます。
+**[LinkIt ONE](https://wiki.seeedstudio.com/ja/LinkIt_ONE/ "LinkIt ONE")** 開発ボードは、ウェアラブルデバイスや IoT デバイスのプロトタイピング向けのオープンソースで高性能な開発ボードです。このボードは MT2502 (ARM7EJ-S™ MCU) をベースにしており、GSM、GPRS、Wi-Fi、Bluetooth BR/EDR/BLE、GPS、オーディオコーデック、SDカードコネクタを単一の開発ボードに統合しています。このキットを使用すると、スマートシティ、輸送、物流に関連する通信を含むクラウドコンピューティング接続プロジェクトを構築できます。
 
 [![enter image description here](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://wwww.amazon.com/dp/B0168LBYWC)
 

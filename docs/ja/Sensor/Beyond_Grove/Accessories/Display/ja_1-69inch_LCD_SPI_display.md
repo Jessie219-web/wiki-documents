@@ -134,7 +134,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## Arduino ライブラリ概要
 
 :::tip
-Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 **Waveshare**が提供するArduinoのサンプルプログラムを基に、XIAOシリーズ全体で使用できるArduinoライブラリを作成しました。このライブラリは以下のボタンからGithubで直接ダウンロードできます。

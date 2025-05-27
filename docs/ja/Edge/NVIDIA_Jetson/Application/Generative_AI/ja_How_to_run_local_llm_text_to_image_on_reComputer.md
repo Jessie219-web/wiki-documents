@@ -676,7 +676,7 @@ Nvidia Jetson NX 16GBを使用して画像を生成する方法や、オンデ�
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studioの[Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=56418890)によって支援されています。
-- [Brunoの努力](https://github.com/Seeed-Studio/wiki-documents/issues/1029)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/Honorary-Contributors/)。
+- [Brunoの努力](https://github.com/Seeed-Studio/wiki-documents/issues/1029)に感謝します。あなたの作業は[展示されます](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)。
 
 ## 技術サポートと製品ディスカッション
 

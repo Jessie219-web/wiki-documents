@@ -48,7 +48,7 @@ Xadow Compass は、Xadow ファミリーの一員である 3 軸デジタルコ
 :::note
     Xadow Compass を Xadow Main Board に接続する際は、接続方向に注意してください。接続方法は、1つの Xadow モジュールの未充填コーナーを別のモジュールの直角コーナーに接続することです（各 Xadow モジュールの4つのコーナーを参照）。
 :::
-- ライブラリファイルをダウンロードします: [Digital Compass Library](https://github.com/Seeed-Studio/Grove_3Axis_Digital_Compass)、そして Arduino ライブラリにインストールします。[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照してインストール方法を学びます。
+- ライブラリファイルをダウンロードします: [Digital Compass Library](https://github.com/Seeed-Studio/Grove_3Axis_Digital_Compass)、そして Arduino ライブラリにインストールします。[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照してインストール方法を学びます。
 - デモを次のパスで開きます: File -> Example -> Digital Compass -> HMC5883L_Example。変数 "declinationAngle" の値を、すでに計算した値に置き換えます。
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Compass/img/Xadow_Compass_Code.jpg)

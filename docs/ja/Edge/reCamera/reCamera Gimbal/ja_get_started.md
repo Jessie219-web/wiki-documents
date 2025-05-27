@@ -69,7 +69,7 @@ reCamera Gimbalへようこそ！reCamera gimbal 2002シリーズは、初のオ
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/Gimbal_1.png" /></div>
 
 :::note
-パスワードを忘れないようにしてください。忘れた場合、デバイスをリセットするためにすべてのログが消去されます。パスワードを忘れた場合は、[工場出荷時リセット](https://wiki.seeedstudio.com/recamera_getting_started/#factory-reset)を行ってください。
+パスワードを忘れないようにしてください。忘れた場合、デバイスをリセットするためにすべてのログが消去されます。パスワードを忘れた場合は、[工場出荷時リセット](https://wiki.seeedstudio.com/ja/recamera_getting_started/#factory-reset)を行ってください。
 :::
 
 :::note
@@ -135,7 +135,7 @@ gimbal cali
 
 - **機械的制限の確認**: ジンバルの動作範囲が妨げられていないか、または誤って制限されていないかを手動で確認してください。
 
-- **3Dプリント部品による抵抗の確認**: モーターが動く際に抵抗を感じる場合があります。抵抗が過剰な場合は、モーターのPID設定を調整してモーターの力を増加させる必要があるかもしれません。[PIDの調整方法はこちら](https://wiki.seeedstudio.com/recamera_pid_adjustment)をご覧ください。または、部品を研磨したり、ネジを少し緩めたりして摩擦を減らし、動作を改善してください。
+- **3Dプリント部品による抵抗の確認**: モーターが動く際に抵抗を感じる場合があります。抵抗が過剰な場合は、モーターのPID設定を調整してモーターの力を増加させる必要があるかもしれません。[PIDの調整方法はこちら](https://wiki.seeedstudio.com/ja/recamera_pid_adjustment)をご覧ください。または、部品を研磨したり、ネジを少し緩めたりして摩擦を減らし、動作を改善してください。
 
 ## 基本的なウェブアクセス
 
@@ -271,7 +271,7 @@ Node-REDノードでダッシュボードがどのように作成されている
 - **ポート 1880**: Node-RED 操作用に割り当てられています。
 
 ## OTA OS アップグレード
-[OTA アップグレード手順](https://wiki.seeedstudio.com/recamera_getting_started/#ota-upgrade-from-013-to-latest-version) を参照してください。
+[OTA アップグレード手順](https://wiki.seeedstudio.com/ja/recamera_getting_started/#ota-upgrade-from-013-to-latest-version) を参照してください。
 
 
 ## 工場出荷時設定へのリセット

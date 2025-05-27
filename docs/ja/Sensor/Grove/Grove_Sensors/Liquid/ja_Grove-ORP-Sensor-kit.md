@@ -69,7 +69,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 #### ソフトウェア
 
 :::note
-Arduino を初めて使用する場合は、開始する前に [Arduino の使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
+Arduino を初めて使用する場合は、開始する前に [Arduino の使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
 :::
 - **ステップ 1.** Grove-ORP センサーを Grove ケーブルを使用して Seeeduino Lotus ボードのインターフェース **A2** に接続し、USB ケーブルを介して Seeeduino Lotus を PC に接続します。
 
@@ -79,7 +79,7 @@ USB ケーブルや Grove-ORP センサーインターフェースを Seeeduino 
 
 - **ステップ 2.** [デモコード](https://files.seeedstudio.com/wiki/Grove-ORP-Sensor/ORPSensorSample.zip) をダウンロードし、**ORPSensorSample** ファイル全体をコピーして Arduino IDE のライブラリファイルに貼り付けます。
 
-- **ステップ 3.** Arduino IDE で **ORPSensorSample.ino** ファイルを開き、デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/) を確認してください。
+- **ステップ 3.** Arduino IDE で **ORPSensorSample.ino** ファイルを開き、デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/) を確認してください。
 
 #### ソフトウェアコード
 ```cpp

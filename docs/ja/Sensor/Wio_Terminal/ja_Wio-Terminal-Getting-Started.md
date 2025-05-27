@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/
 slug: /ja/Wio-Terminal-Getting-Started
 last_update:
   date: 05/15/2025

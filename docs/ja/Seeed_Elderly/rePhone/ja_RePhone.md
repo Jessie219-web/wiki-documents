@@ -80,13 +80,13 @@ RePhoneのコアは、Xadow GSM+BLEまたはRePhone Core 3Gモジュール（近
 
 以下をご確認ください：
 
-[Arduino IDE for RePhone Kit](https://wiki.seeedstudio.com/Arduino_IDE_for_RePhone_Kit/)
+[Arduino IDE for RePhone Kit](https://wiki.seeedstudio.com/ja/Arduino_IDE_for_RePhone_Kit/)
 
-[Eclipse IDE for RePhone Kit](https://wiki.seeedstudio.com/Eclipse_IDE_for_RePhone_Kit)
+[Eclipse IDE for RePhone Kit](https://wiki.seeedstudio.com/ja/Eclipse_IDE_for_RePhone_Kit)
 
-[Lua for RePhone Kit](https://wiki.seeedstudio.com/Lua_for_RePhone)
+[Lua for RePhone Kit](https://wiki.seeedstudio.com/ja/Lua_for_RePhone)
 
-[JavaScript for RePhone Kit](https://wiki.seeedstudio.com/JavaScript_for_RePhone)
+[JavaScript for RePhone Kit](https://wiki.seeedstudio.com/ja/JavaScript_for_RePhone)
 
 [Building RePhone Applications on Mac OS X](https://github.com/Seeed-Studio/CodeLite_for_RePhone/wiki/building-RePhone-applications-on-Mac-OS-X)
 
@@ -108,9 +108,9 @@ RePhone SDK は GitHub ページで随時更新しています：
 
 RePhone を **デフォルト設定にリセット** する手順：
 
-1. "[ファームウェアの更新/フラッシュ](https://wiki.seeedstudio.com/Arduino_IDE_for_RePhone_Kit/#updateflash-the-firmware)" セクションの指示に従ってファームウェアをフラッシュします。
+1. "[ファームウェアの更新/フラッシュ](https://wiki.seeedstudio.com/ja/Arduino_IDE_for_RePhone_Kit/#updateflash-the-firmware)" セクションの指示に従ってファームウェアをフラッシュします。
 2. [RePhone_Create_Kit_VXP](https://github.com/WayenWeng/RePhone_Create_Kit_VXP/) ファイルをダウンロードします。
-3. [RePhone マスストレージモード](https://wiki.seeedstudio.com/Xadow_GSMPlusBLE/#mass-storage-mode) に入ります。
+3. [RePhone マスストレージモード](https://wiki.seeedstudio.com/ja/Xadow_GSMPlusBLE/#mass-storage-mode) に入ります。
 4. "RePhone Create Kit VXP" という名前のフォルダ内のすべてのファイルを RePhone の 5MB マスストレージにコピーします。
 5. RePhone を再起動すれば完了です。リセットによりすべてのファイルが削除されているため、着信音として使用するために mp3 ファイルをマスストレージに追加する必要があります。
 
@@ -140,16 +140,16 @@ RePhoneモジュールの回路図は以下のリンクから提供されてい�
 
 これには以下が含まれます：
 
-- [Xadow GSM+BLE](https://wiki.seeedstudio.com/Xadow_GSMPlusBLE/)。
-- [Xadow GSM Breakout](https://wiki.seeedstudio.com/Xadow_GSM_Breakout/)。
-- [Xadow 1.54” タッチスクリーン](https://wiki.seeedstudio.com/Xadow_1.54_inch_Touchscreen/)。
-- [Xadow Audio](https://wiki.seeedstudio.com/Xadow_Audio/)。
-- [Xadow Duino](https://wiki.seeedstudio.com/Xadow_Duino/)。
-- [Xadow GPS v2](https://wiki.seeedstudio.com/Xadow_GPS/)。
-- [Xadow Basic Sensors](https://wiki.seeedstudio.com/Xadow_Basic_Sensors/)。
-- [Xadow NFC v2](https://wiki.seeedstudio.com/Xadow_NFC_v2/)。
-- [Xadow LED 5x7](https://wiki.seeedstudio.com/Xadow_LED_5x7/)。
-- [Xadow Pebble Time Adapter](https://wiki.seeedstudio.com/Xadow_Pebble_Time_Adapter/)。
+- [Xadow GSM+BLE](https://wiki.seeedstudio.com/ja/Xadow_GSMPlusBLE/)。
+- [Xadow GSM Breakout](https://wiki.seeedstudio.com/ja/Xadow_GSM_Breakout/)。
+- [Xadow 1.54” タッチスクリーン](https://wiki.seeedstudio.com/ja/Xadow_1.54_inch_Touchscreen/)。
+- [Xadow Audio](https://wiki.seeedstudio.com/ja/Xadow_Audio/)。
+- [Xadow Duino](https://wiki.seeedstudio.com/ja/Xadow_Duino/)。
+- [Xadow GPS v2](https://wiki.seeedstudio.com/ja/Xadow_GPS/)。
+- [Xadow Basic Sensors](https://wiki.seeedstudio.com/ja/Xadow_Basic_Sensors/)。
+- [Xadow NFC v2](https://wiki.seeedstudio.com/ja/Xadow_NFC_v2/)。
+- [Xadow LED 5x7](https://wiki.seeedstudio.com/ja/Xadow_LED_5x7/)。
+- [Xadow Pebble Time Adapter](https://wiki.seeedstudio.com/ja/Xadow_Pebble_Time_Adapter/)。
 
 弊社製品をお選びいただきありがとうございます！製品の使用体験がスムーズになるよう、さまざまなサポートを提供しております。お客様の好みやニーズに応じた複数のコミュニケーションチャネルをご用意しています。
 

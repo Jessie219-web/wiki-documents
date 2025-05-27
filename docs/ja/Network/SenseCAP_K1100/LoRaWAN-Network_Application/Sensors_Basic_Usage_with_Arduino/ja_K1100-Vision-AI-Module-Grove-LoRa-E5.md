@@ -71,9 +71,9 @@ IP66のハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワ�
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/197.jpeg" /></div>
 
-Vision AI Moduleの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/Grove-Vision-AI-Module/)を参照してください。
+Vision AI Moduleの使用に関する詳細情報は[こちら](https://wiki.seeedstudio.com/ja/Grove-Vision-AI-Module/)を参照してください。
 
-独自にモデルをトレーニングしたい場合は、[こちら](https://wiki.seeedstudio.com/Train-Deploy-AI-Model/)の内容を参照してください。
+独自にモデルをトレーニングしたい場合は、[こちら](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model/)の内容を参照してください。
 
 ## 必要な材料
 
@@ -334,7 +334,7 @@ Grove - Wio-E5 の以前のコードを組み合わせて、LoRa® ネットワ�
 </div>
 
 :::tip
-現時点でコードをアップロードして結果を確認することはお勧めしません。なぜなら、この時点ではまだ Helium/TTN の設定が完了しておらず、「Join failed」という結果が得られるためです。このコードをアップロードするのは、[Connecting to Helium](https://wiki.seeedstudio.com/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/Connecting-to-TTN/) の章を完了し、完全なデータ送信プロセスを完了した後にしてください。
+現時点でコードをアップロードして結果を確認することはお勧めしません。なぜなら、この時点ではまだ Helium/TTN の設定が完了しておらず、「Join failed」という結果が得られるためです。このコードをアップロードするのは、[Connecting to Helium](https://wiki.seeedstudio.com/ja/Connecting-to-Helium/) または [Connecting to TTN](https://wiki.seeedstudio.com/ja/Connecting-to-TTN/) の章を完了し、完全なデータ送信プロセスを完了した後にしてください。
 :::
 
 Grove Vision AI モジュールの動作とデータ形式を体験し理解したら、次のステップである LoRaWAN® への参加に進んでください。
@@ -345,11 +345,11 @@ Grove Vision AI モジュールの動作とデータ形式を体験し理解し�
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/178.jpeg" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作方法を紹介し、Helium コンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/Helium-Introduction">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium の紹介</strong><br /><br />この章では、Helium コンソールの操作方法を紹介し、Helium コンソールの第一印象を得ることができます。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/helium.png" alt="pir" width={500} height="auto" /></p></td>
-      <td align="left"><strong>Helium に接続する</strong><br /><br />このセクションでは、センサーデータを Helium に正常にアップロードして表示できるようにするための Helium の設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-Helium">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>Helium に接続する</strong><br /><br />このセクションでは、センサーデータを Helium に正常にアップロードして表示できるようにするための Helium の設定方法について説明します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td colSpan={2} bgcolor="8FBC8F"><b>TTN セクション</b></td>
@@ -357,12 +357,12 @@ Grove Vision AI モジュールの動作とデータ形式を体験し理解し�
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-TTN/TTN.png" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN の紹介</strong><br /><br />この章では、TTN コンソールの操作方法を紹介し、TTN コンソールの第一印象を得ることができます。
-        <br /><br /><a href="https://wiki.seeedstudio.com/TTN-Introduction">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100/ttncon.jpg" alt="pir" width={500} height="auto" /></p></td>
       <td align="left"><strong>TTN に接続する</strong><br /><br />このセクションでは、センサーデータを TTN に正常にアップロードして表示できるようにするための TTN の設定方法について説明します。
-        <br /><br /><a href="https://wiki.seeedstudio.com/Connecting-to-TTN">章にジャンプ &gt;</a></td>
+        <br /><br /><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN">章にジャンプ &gt;</a></td>
     </tr>
   </tbody></table>
 

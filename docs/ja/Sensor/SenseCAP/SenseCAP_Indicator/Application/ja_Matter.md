@@ -127,7 +127,7 @@ Home Assistant側からデバイスを有効化または無効化したり、必
 
 ## ホームアシスタント UI のさらなる設定 {#going_beyond}
 
-UI は [LVGL](https://lvgl.io/) を使用して構築されています。LVGL の詳細な設定方法については、[こちらの記事](https://wiki.seeedstudio.com/using_lvgl_and_tft_on_round_display/)をご覧ください。
+UI は [LVGL](https://lvgl.io/) を使用して構築されています。LVGL の詳細な設定方法については、[こちらの記事](https://wiki.seeedstudio.com/ja/using_lvgl_and_tft_on_round_display/)をご覧ください。
 
 ダッシュボードの UI は、LGVL コンポーネントで構成されており、コールバック用のイベントが設定されています。これにより、データはローカルストレージと Matter エンドポイントの両方に永続化されます。仮想ダッシュボードコントローラー（`indicator_virtual_dashboard_controller.c`）は、フォームの更新を処理し、基礎データが変更された際に他のコンシューマー向けに関連イベントを投稿します。
 

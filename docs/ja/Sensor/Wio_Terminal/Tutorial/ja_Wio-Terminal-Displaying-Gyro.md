@@ -71,7 +71,7 @@ void setup() {
 
 - **加速度センサーのデータ読み取りとデータのロード**
 
-詳細は [Line Charts](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) を参照してください。
+詳細は [Line Charts](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/) を参照してください。
 
 ```cpp
 void loop() {
@@ -96,7 +96,7 @@ void loop() {
 
 - **タイトル設定**
 
-詳細は [Line Charts](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Linecharts/) を参照してください。
+詳細は [Line Charts](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Linecharts/) を参照してください。
 
 ```cpp
 auto header =  text(0, 0)

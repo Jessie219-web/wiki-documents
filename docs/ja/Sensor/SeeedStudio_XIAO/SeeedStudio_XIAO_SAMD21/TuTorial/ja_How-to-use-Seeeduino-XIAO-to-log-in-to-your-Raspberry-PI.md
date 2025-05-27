@@ -55,7 +55,7 @@ enable_uart=1
 
 ### Seeed Studio XIAO SAMD21 の設定
 
-- **ステップ 1.** [Arduino IDE](https://www.arduino.cc/en/Main/Software) を開き、[こちらのリンク](https://wiki.seeedstudio.com/Seeeduino-XIAO/#software)に従って Seeed Studio XIAO SAMD21 を追加します。
+- **ステップ 1.** [Arduino IDE](https://www.arduino.cc/en/Main/Software) を開き、[こちらのリンク](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/#software)に従って Seeed Studio XIAO SAMD21 を追加します。
 
 - **ステップ 2.** 以下のコードを Arduino IDE にコピーし、Seeed Studio XIAO SAMD21 にアップロードします。
 

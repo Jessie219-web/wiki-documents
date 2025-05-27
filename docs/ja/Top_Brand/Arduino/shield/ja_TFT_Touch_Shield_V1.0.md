@@ -383,7 +383,7 @@ TFTタッチシールドがSeeeduinoに接続されています
 
 ## TFT Touch Shield v0.9b 回路図オンラインビューアー
 
-<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/images/1/17/2.8_TFT_Touch_Shield_v0.9b_EagleFiles.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/ja/images/1/17/2.8_TFT_Touch_Shield_v0.9b_EagleFiles.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## リソース ##
@@ -392,9 +392,9 @@ TFTタッチシールドがSeeeduinoに接続されています
 - **[ライブラリ]** [Arduino 1.0用TFT & TouchScreen Libraries 20120628](https://files.seeedstudio.com/wiki/TFT_Touch_Shield_V1.0/res/TFT_TouchScreen_for_Arduino_1.0.zip)
 - **[デモ]** [TFT BMPデモ](https://www.seeedstudio.com/wiki/images/1/11/Tftbmp_demo.zip).
 - **[Eagle]** [TFT Touch Shield v1.0 回路図とボードファイル - Eagle形式](https://www.seeedstudio.com/wiki/images/c/c5/2.8_TFT_Touch_Shield_v1.0_EagleFiles.zip)
-- **[Eagle]** [TFT Touch Shield v0.9b 回路図とボードファイル - Eagle形式](https://wiki.seeedstudio.com/images/1/17/2.8_TFT_Touch_Shield_v0.9b_EagleFiles.zip)
-- **[データシート]** [FGD280E3715V1 - TFTタッチスクリーンデータシート](https://wiki.seeedstudio.com/images/7/75/FGD280E3715V1_8bit.pdf)
-- **[データシート]** [ST7781Rデータシート](https://wiki.seeedstudio.com/images/4/4e/ST7781R_datasheet.pdf)
+- **[Eagle]** [TFT Touch Shield v0.9b 回路図とボードファイル - Eagle形式](https://wiki.seeedstudio.com/ja/images/1/17/2.8_TFT_Touch_Shield_v0.9b_EagleFiles.zip)
+- **[データシート]** [FGD280E3715V1 - TFTタッチスクリーンデータシート](https://wiki.seeedstudio.com/ja/images/7/75/FGD280E3715V1_8bit.pdf)
+- **[データシート]** [ST7781Rデータシート](https://wiki.seeedstudio.com/ja/images/4/4e/ST7781R_datasheet.pdf)
 
 ## 購入方法 ##
 

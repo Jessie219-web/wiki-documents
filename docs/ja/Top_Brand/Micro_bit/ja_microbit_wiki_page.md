@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 1. [Micro:bit](https://www.seeedstudio.com/micro-bit-Telec-version-p-2946.html)
 2. [Grove Shield for micro:bit v2.0](https://www.seeedstudio.com/Grove-Shield-for-micro-bit-v2-0-p-3083.html)
-3. [Grove Inventor Kit for micro:bit](https://wiki.seeedstudio.com/Grove_Inventor_Kit_for_microbit/)
+3. [Grove Inventor Kit for micro:bit](https://wiki.seeedstudio.com/ja/Grove_Inventor_Kit_for_microbit/)
 
 
 ## MakeCodeチュートリアル

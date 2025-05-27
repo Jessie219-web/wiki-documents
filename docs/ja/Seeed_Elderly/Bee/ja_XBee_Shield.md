@@ -67,7 +67,7 @@ void loop()
 
 ## 仕様  
 
-上記の [特徴](https://wiki.seeedstudio.com/XBee_Shield/#features "XBee_Shield#Features") を参照してください。
+上記の [特徴](https://wiki.seeedstudio.com/ja/XBee_Shield/#features "XBee_Shield#Features") を参照してください。
 
 ## 機械的寸法  
 

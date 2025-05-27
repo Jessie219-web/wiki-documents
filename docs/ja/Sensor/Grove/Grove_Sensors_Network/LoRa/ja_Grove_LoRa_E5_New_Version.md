@@ -40,7 +40,7 @@ LoRa®マークは、Semtech Corporationまたはその子会社の商標です�
 
 Grove Wio-E5について詳しく説明する前に、まずWio-E5について簡単に理解しましょう。
 
-[Wio-E5](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html)は、ARM Cortex M4超低消費電力MCUとLoRa® RFラジオSX126xを1つのチップに統合したSTM32WLE5JCを搭載しています。このモジュールは、EU868およびUS915周波数でLoRa®およびLoRaWAN®プロトコルをサポートし、(G)FSK、BPSK、(G)MSK、およびLoRa®変調にも対応しています。また、FCC、CE、IC、Telecの認証を取得しています（Wio-E5の詳細については、[Wio-E5 wiki](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/)を参照してください）。
+[Wio-E5](https://www.seeedstudio.com/LoRa-E5-Wireless-Module-p-4745.html)は、ARM Cortex M4超低消費電力MCUとLoRa® RFラジオSX126xを1つのチップに統合したSTM32WLE5JCを搭載しています。このモジュールは、EU868およびUS915周波数でLoRa®およびLoRaWAN®プロトコルをサポートし、(G)FSK、BPSK、(G)MSK、およびLoRa®変調にも対応しています。また、FCC、CE、IC、Telecの認証を取得しています（Wio-E5の詳細については、[Wio-E5 wiki](https://wiki.seeedstudio.com/ja/LoRa-E5_STM32WLE5JC_Module/)を参照してください）。
 
 [Grove Wio-E5](https://www.seeedstudio.com/Grove-LoRa-E5-STM32WLE5JC-p-4867.html)は、この超低消費電力のWio-E5を組み込んでいます。オンボードのGroveコネクタにより、簡単にプラグアンドプレイで統合でき、開発ボードに超長距離伝送の強力な機能を提供します。
 
@@ -214,7 +214,7 @@ ATコマンドファームウェアにはDFU用のブートローダーとATア�
 
 Grove LoRa E5には組み込みのLoRaWANファームウェアが搭載されており、ATサーバーを提供します（[LoRa-E5 ATコマンド仕様](https://files.seeedstudio.com/products/317990687/res/LoRa-E5%20AT%20Command%20Specification_V1.0%20.pdf)を参照してください）。
 
-ハードコードされていないデバイスと同様に、必要に応じてすべてのEUIおよびAPIキーを定義できます。このワークフローの詳細については、[SenseCAP Indicator Application LoRaWAN](https://wiki.seeedstudio.com/SenseCAP_Indicator_Application_LoRaWAN/#HEAD_register_device)を参照してください。
+ハードコードされていないデバイスと同様に、必要に応じてすべてのEUIおよびAPIキーを定義できます。このワークフローの詳細については、[SenseCAP Indicator Application LoRaWAN](https://wiki.seeedstudio.com/ja/SenseCAP_Indicator_Application_LoRaWAN/#HEAD_register_device)を参照してください。
 
 あなたの製品（XIAO [任意のマイクロコントローラー] + Grove E5）の典型的なワークフローは以下の通りです：
 
@@ -228,11 +228,11 @@ LNS（LoRaWANネットワークサーバー）が正しく設定されている�
 
 ## 例とデモ
 
-1. [Grove - Wio-E5 P2P 例](https://wiki.seeedstudio.com/Grove_Wio_E5_P2P/) 純粋なUART機能を使用して2つのWio-E5デバイス間で通信
-2. [Grove - Wio-E5 TTN デモ](https://wiki.seeedstudio.com/Grove_Wio_E5_TTN_Demo/) Wio-E5を介してTTN LoRaWANネットワークにアクセス
-3. [Grove - Wio-E5 Helium デモ](https://wiki.seeedstudio.com/Grove_Wio_E5_Helium_Demo/) Grove - Wio-E5モジュールとSeeeduino XIAOモジュールを使用してHelium IoTネットワークに接続
-4. [Grove - Wio-E5 Arduino Uno R4と使用するデモ](https://wiki.seeedstudio.com/Grove_Wio_E5_SenseCAP_Cloud_Demo/)
-5. [Grove - Wio-E5 XIAO ESP32S3と使用するデモ](https://wiki.seeedstudio.com/Grove_Wio_E5_SenseCAP_XIAO_ESP32S3/)
+1. [Grove - Wio-E5 P2P 例](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_P2P/) 純粋なUART機能を使用して2つのWio-E5デバイス間で通信
+2. [Grove - Wio-E5 TTN デモ](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_TTN_Demo/) Wio-E5を介してTTN LoRaWANネットワークにアクセス
+3. [Grove - Wio-E5 Helium デモ](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_Helium_Demo/) Grove - Wio-E5モジュールとSeeeduino XIAOモジュールを使用してHelium IoTネットワークに接続
+4. [Grove - Wio-E5 Arduino Uno R4と使用するデモ](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_SenseCAP_Cloud_Demo/)
+5. [Grove - Wio-E5 XIAO ESP32S3と使用するデモ](https://wiki.seeedstudio.com/ja/Grove_Wio_E5_SenseCAP_XIAO_ESP32S3/)
 6. [Wio-E5とXIAO ESP32S3を使用してPlatformIO(Arduino)でLoRaWANネットワークにアクセス](/platformio_wio_e5/) 実践ガイド。PlatformIOを使用してArduino互換ボードとWio-E5を統合し、効率的なLoRaWAN接続を実現する詳細な手順を提供。
 
 ## リソース

@@ -65,7 +65,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 **ステップ2.** Raspberry PiのSSHポートを設定します（オプション）。
 
-環境をデプロイする前に、Raspberry PiのSSHポートを開き、PC上で[SSHインターフェース](https://wiki.seeedstudio.com/remote_connect/)を使用してリモートで呼び出すことができます。
+環境をデプロイする前に、Raspberry PiのSSHポートを開き、PC上で[SSHインターフェース](https://wiki.seeedstudio.com/ja/remote_connect/)を使用してリモートで呼び出すことができます。
 
 > 注意：PCとRaspberry Piが同じLAN内にあることを確認してください。
 
@@ -155,7 +155,7 @@ OpenCVをインストールするには、`pip3 install opencv-python`を直接�
 
 このプロジェクトでは、reComputer J1010にTriton Inference Serverをデプロイします。トレーニング済みモデルのインタラクティブ性とデプロイの利便性を向上させるため、モデルを**ONNX形式**に変換します。
 
-**ステップ 1.** [Jetpack 4.6.1をインストール](https://wiki.seeedstudio.com/reComputer_J1010_J101_Flash_Jetpack/) reComputer J1010にインストールします。
+**ステップ 1.** [Jetpack 4.6.1をインストール](https://wiki.seeedstudio.com/ja/reComputer_J1010_J101_Flash_Jetpack/) reComputer J1010にインストールします。
 
 **ステップ 2.** “home/server/docs/examples/model_repository”に新しいフォルダ“opi/1”を作成し、トレーニング済みで変換された[model.onnx](https://drive.google.com/file/d/1RcHK_gthCXHsJLeDOUQ6c3r0RlAUgRfV/view?usp=sharing)をダウンロードして“1”フォルダに配置します。
 

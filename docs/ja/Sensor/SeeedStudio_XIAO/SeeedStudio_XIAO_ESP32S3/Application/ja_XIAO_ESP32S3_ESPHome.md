@@ -16,7 +16,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 # XIAO ESP32S3 を使用して Home Assistant に ESPHome で接続する（すべてのポート対応）
 
-このWikiでは、[Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) を ESPHome を介して Home Assistant に接続し、Grove モジュールを XIAO ESP32S3 に接続した後にセンサーデータを送信したりデバイスを制御したりする方法を、ステップバイステップで説明します。それでは始めましょう！
+このWikiでは、[Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/) を ESPHome を介して Home Assistant に接続し、Grove モジュールを XIAO ESP32S3 に接続した後にセンサーデータを送信したりデバイスを制御したりする方法を、ステップバイステップで説明します。それでは始めましょう！
 
 ## ESPHome と Home Assistant とは？
 
@@ -52,7 +52,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
-            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/home_assistant_topic/#-devices-for-home-assistant-">
+            <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/home_assistant_topic/#-devices-for-home-assistant-">
             <strong><span><font color={'FFFFFF'} size={"4"}> 詳細を確認 🖱️</font></span></strong>
             </a>
         </div></td>
@@ -69,7 +69,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### Home Assistant のインストール
 
-Home Assistant がすでにインストールされ、稼働していることを確認してください。ODYSSEY-X86 SBC に Home Assistant をインストールする手順については、[このウィキ](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant)を参照してください。または、Seeed Mini Router で Home Assistant を使用する詳細な手順については、[こちらのリンク](https://www.mbreviews.com/how-to-home-assistant-seeed-mini-router/)を参照してください。
+Home Assistant がすでにインストールされ、稼働していることを確認してください。ODYSSEY-X86 SBC に Home Assistant をインストールする手順については、[このウィキ](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant)を参照してください。または、Seeed Mini Router で Home Assistant を使用する詳細な手順については、[こちらのリンク](https://www.mbreviews.com/how-to-home-assistant-seeed-mini-router/)を参照してください。
 
 ### Home Assistant に ESPHome をインストール
 
@@ -290,7 +290,7 @@ GroveモジュールをSeeed Studio XIAO ESP32S3で使用するために、[Seee
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/2.jpg"style={{width:900, height:'auto'}}/></div>
 <br />
 
-例えば、D0ポートにGroveモジュールを接続したい場合、ESPHomeでピンをGPIO1として定義する必要があります。詳細は[こちらをクリック](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/#resources)してください。
+例えば、D0ポートにGroveモジュールを接続したい場合、ESPHomeでピンをGPIO1として定義する必要があります。詳細は[こちらをクリック](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/#resources)してください。
 
 #### ESPHomeとのGrove互換性リスト
 
@@ -821,7 +821,7 @@ binary_sensor:
 
 ##### セットアップ構成
 
-- **ステップ 1.** まず、6x10 RGB マトリックスを XIAO に接続する必要があります。詳細は [この Wiki](https://wiki.seeedstudio.com/rgb_matrix_for_xiao/#hardware-preparation) を参照してください。
+- **ステップ 1.** まず、6x10 RGB マトリックスを XIAO に接続する必要があります。詳細は [この Wiki](https://wiki.seeedstudio.com/ja/rgb_matrix_for_xiao/#hardware-preparation) を参照してください。
 
 - **ステップ 2.** 以下の .yaml 情報をコピーして、OTA を使用して XIAO ESP32S3 にプッシュします。
 
@@ -904,7 +904,7 @@ light:
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [Contributor Project](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) によってサポートされています。
-- **Zachary** の尽力に感謝します。あなたの成果は [こちら](https://wiki.seeedstudio.com/Honorary-Contributors/) で展示されます。
+- **Zachary** の尽力に感謝します。あなたの成果は [こちら](https://wiki.seeedstudio.com/ja/Honorary-Contributors/) で展示されます。
 - **python** の尽力に感謝します。このプロジェクトのソースは [こちら](https://community.home-assistant.io/t/seeed-studio-6x10-rgb-matrix-on-xiao-esp32s3/629867) で共有されています。
 
 ## 技術サポート & 製品ディスカッション

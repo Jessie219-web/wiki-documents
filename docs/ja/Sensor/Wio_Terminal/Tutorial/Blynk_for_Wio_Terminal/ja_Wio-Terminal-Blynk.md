@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-Blynk/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-Blynk/
 slug: /ja/Wio-Terminal-Blynk
 last_update:
   date: 05/15/2025
@@ -48,13 +48,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 >注意: Wi-FiとBluetoothが同時に動作する新しいファームウェアは開発中で、近日中にリリースされる予定です。
 
-- **[Wi-Fi Overview Wiki](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/)**に従って、Wi-FiファームウェアをWio Terminalにアップロードしてください。
+- **[Wi-Fi Overview Wiki](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/)**に従って、Wi-FiファームウェアをWio Terminalにアップロードしてください。
 
 - また、**すべての依存Wi-Fiライブラリをダウンロードしてインストール**してください。
 
 ### Bluetoothの依存関係
 
-- [**Bluetooth Overview Wiki**](https://wiki.seeedstudio.com/Wio-Terminal-Bluetooth-Overview/)に従って、BluetoothファームウェアをWio Terminalにアップロードしてください。
+- [**Bluetooth Overview Wiki**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Bluetooth-Overview/)に従って、BluetoothファームウェアをWio Terminalにアップロードしてください。
 
 - また、**すべての依存Bluetoothライブラリをダウンロードしてインストール**してください。
 

@@ -70,14 +70,14 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 |名前|サムネイル|動作電圧|入力インターフェース|購入リンク|
 |----|-----|-----|------|------|
-|[Grove - 指紋センサー](https://wiki.seeedstudio.com/Grove-Fingerprint_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Fingerprint_Sensor/img/45d_small.jpg" />|3.6V-6V|TTL シリアル|[購入する](https://www.seeedstudio.com/Grove-Fingerprint-Sensor.html)|
-|[Grove - 静電容量式指紋スキャナー/センサー](https://wiki.seeedstudio.com/Grove-Capacitive-Fingerprint-Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Capacitive-Fingerprint-Scanner/img/fingerprint.png" />|3.3V-5V|/|[購入する](https://www.seeedstudio.com/Grove-Capacitive-Fingerprint-Scanner-p-4363.html)|
-|[Grove - 耳クリップ心拍センサー](https://wiki.seeedstudio.com/Grove-Ear-clip_Heart_Rate_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Ear-clip_Heart_Rate_Sensor/img/45d_small.jpg" />|3V-5.25V|TTL シリアル|[購入する](https://www.seeedstudio.com/Grove-Ear-clip-Heart-Rate-Sensor.html)|
-|[Grove - 胸ストラップ心拍センサー](https://wiki.seeedstudio.com/Grove-Chest_Strap_Heart_Rate_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Chest_Strap_Heart_Rate_Sensor/img/45d_small.jpg" />|3V-5.5V|TTL シリアル|[購入する](https://www.seeedstudio.com/Grove-Chest-Strap-Heart-Rate-Sensor-p-1115.html)|
-|[Grove - 指クリップ心拍センサー](https://wiki.seeedstudio.com/Grove-Finger-clip_Heart_Rate_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Finger-clip_Heart_Rate_Sensor/img/Grove-Finger-clip_Heart_Rate_Sensor (1).jpg" />|5V|I2C|[購入する](https://www.seeedstudio.com/Grove-Finger-clip-Heart-Rate-Sensor.html)|
-|[Grove - シェル付き指クリップ心拍センサー](https://wiki.seeedstudio.com/Grove-Finger-clip_Heart_Rate_Sensor_with_shell/)|<img src="https://files.seeedstudio.com/wiki/Grove-Finger-clip_Heart_Rate_Sensor_with_shell/img/1.jpg" />|5V|I2C|[購入する](https://www.seeedstudio.com/Grove-Finger-clip-Heart-Rate-Sensor-with-shell.html)|
-|[Grove - GSRセンサー](https://wiki.seeedstudio.com/Grove-GSR_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-GSR_Sensor/img/4.png" />|3.3-5V|アナログ|[購入する](https://www.seeedstudio.com/Grove-GSR-sensor-p-1614.html)|
-|[Grove - EMG検出器](https://wiki.seeedstudio.com/Grove-EMG_Detector/)|<img src="https://files.seeedstudio.com/wiki/Grove-EMG_Detector/img/45d_small.jpg" />|3.3-5V|アナログ|[購入する](https://www.seeedstudio.com/Grove-EMG-Detector-p-1737.html)|
+|[Grove - 指紋センサー](https://wiki.seeedstudio.com/ja/Grove-Fingerprint_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Fingerprint_Sensor/img/45d_small.jpg" />|3.6V-6V|TTL シリアル|[購入する](https://www.seeedstudio.com/Grove-Fingerprint-Sensor.html)|
+|[Grove - 静電容量式指紋スキャナー/センサー](https://wiki.seeedstudio.com/ja/Grove-Capacitive-Fingerprint-Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Capacitive-Fingerprint-Scanner/img/fingerprint.png" />|3.3V-5V|/|[購入する](https://www.seeedstudio.com/Grove-Capacitive-Fingerprint-Scanner-p-4363.html)|
+|[Grove - 耳クリップ心拍センサー](https://wiki.seeedstudio.com/ja/Grove-Ear-clip_Heart_Rate_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Ear-clip_Heart_Rate_Sensor/img/45d_small.jpg" />|3V-5.25V|TTL シリアル|[購入する](https://www.seeedstudio.com/Grove-Ear-clip-Heart-Rate-Sensor.html)|
+|[Grove - 胸ストラップ心拍センサー](https://wiki.seeedstudio.com/ja/Grove-Chest_Strap_Heart_Rate_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Chest_Strap_Heart_Rate_Sensor/img/45d_small.jpg" />|3V-5.5V|TTL シリアル|[購入する](https://www.seeedstudio.com/Grove-Chest-Strap-Heart-Rate-Sensor-p-1115.html)|
+|[Grove - 指クリップ心拍センサー](https://wiki.seeedstudio.com/ja/Grove-Finger-clip_Heart_Rate_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-Finger-clip_Heart_Rate_Sensor/img/Grove-Finger-clip_Heart_Rate_Sensor (1).jpg" />|5V|I2C|[購入する](https://www.seeedstudio.com/Grove-Finger-clip-Heart-Rate-Sensor.html)|
+|[Grove - シェル付き指クリップ心拍センサー](https://wiki.seeedstudio.com/ja/Grove-Finger-clip_Heart_Rate_Sensor_with_shell/)|<img src="https://files.seeedstudio.com/wiki/Grove-Finger-clip_Heart_Rate_Sensor_with_shell/img/1.jpg" />|5V|I2C|[購入する](https://www.seeedstudio.com/Grove-Finger-clip-Heart-Rate-Sensor-with-shell.html)|
+|[Grove - GSRセンサー](https://wiki.seeedstudio.com/ja/Grove-GSR_Sensor/)|<img src="https://files.seeedstudio.com/wiki/Grove-GSR_Sensor/img/4.png" />|3.3-5V|アナログ|[購入する](https://www.seeedstudio.com/Grove-GSR-sensor-p-1614.html)|
+|[Grove - EMG検出器](https://wiki.seeedstudio.com/ja/Grove-EMG_Detector/)|<img src="https://files.seeedstudio.com/wiki/Grove-EMG_Detector/img/45d_small.jpg" />|3.3-5V|アナログ|[購入する](https://www.seeedstudio.com/Grove-EMG-Detector-p-1737.html)|
 
 ### 注意事項
 

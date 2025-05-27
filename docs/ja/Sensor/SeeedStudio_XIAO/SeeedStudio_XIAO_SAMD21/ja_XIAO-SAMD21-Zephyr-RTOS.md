@@ -746,7 +746,7 @@ west flash
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=57293601) によってサポートされています。
-- **Tim の尽力**に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/Honorary-Contributors/) に展示されます。
+- **Tim の尽力**に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/ja/Honorary-Contributors/) に展示されます。
 
 ## 技術サポート & 製品ディスカッション
 

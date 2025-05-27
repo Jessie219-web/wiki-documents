@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Extension-RTC/
+image: https://wiki.seeedstudio.com/ja/Wio-Extension-RTC/
 slug: /ja/Wio-Extension-RTC
 last_update:
   date: 05/15/2025
@@ -78,7 +78,7 @@ Wio Extension - RTC は Wio LTE 用の拡張ボードであり、I2C ポート�
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。このボードのドライバーは `Seeed STM32F4 Board(JP mirror) by Seeed K.K.` のヘッダーファイルに依存しているため、[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)のチュートリアルに従ってWioボードをインストールしているかどうかに関係なく、以下の手順を実行する必要があります。
+Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。このボードのドライバーは `Seeed STM32F4 Board(JP mirror) by Seeed K.K.` のヘッダーファイルに依存しているため、[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)のチュートリアルに従ってWioボードをインストールしているかどうかに関係なく、以下の手順を実行する必要があります。
 :::
 
 **ステップ1** ライブラリをインストールする  

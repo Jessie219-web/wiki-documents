@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-AND/
+image: https://wiki.seeedstudio.com/ja/Grove-AND/
 slug: /ja/Grove-AND
 last_update:
   date: 05/15/2025

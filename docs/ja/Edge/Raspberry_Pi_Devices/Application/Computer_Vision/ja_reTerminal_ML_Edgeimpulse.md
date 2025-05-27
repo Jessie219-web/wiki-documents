@@ -66,9 +66,9 @@ Edge Impulseは、マイクロコントローラーや組み込みシステム�
 
 ### ソフトウェア準備
 
-公式ウェブサイトから最新バージョンのRaspberry Pi 64ビットOSをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[ガイド](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)に従ってください。
+公式ウェブサイトから最新バージョンのRaspberry Pi 64ビットOSをインストールすることをお勧めします。新しいRaspbian OSをインストールしたい場合は、この[ガイド](https://wiki.seeedstudio.com/ja/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)に従ってください。
 
-その後、Raspberry Piカメラを設定する必要があります。この[ガイド](https://wiki.seeedstudio.com/reTerminal-piCam/)に従ってください。
+その後、Raspberry Piカメラを設定する必要があります。この[ガイド](https://wiki.seeedstudio.com/ja/reTerminal-piCam/)に従ってください。
 
 Edge Impulseを始めるにはアカウントが必要ですので、この[リンク](https://edgeimpulse.com/)を訪れてアカウントを作成してください。デフォルトで初期プロジェクトが作成されます。
 

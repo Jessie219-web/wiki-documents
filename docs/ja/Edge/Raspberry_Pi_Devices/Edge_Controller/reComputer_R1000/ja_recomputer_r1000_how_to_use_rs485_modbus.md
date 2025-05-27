@@ -65,7 +65,7 @@ ModbusTCP の場合、イーサネットケーブルを使用して W10 PC と r
 
 ## reComputer R1000v1.1 で minicom を構成する
 
-**注意:** RS485 を minicom で使用する前に、[こちら](https://wiki.seeedstudio.com/recomputer_r1000_flash_OS/#install-drivers) のように r1000 ドライバをインストールしてください。
+**注意:** RS485 を minicom で使用する前に、[こちら](https://wiki.seeedstudio.com/ja/recomputer_r1000_flash_OS/#install-drivers) のように r1000 ドライバをインストールしてください。
 
 ### まず、minicom をインストールする
 
@@ -105,7 +105,7 @@ sudo minicom -D /dev/ttyAMA*
 reComputer R1000 v1.0 では、内蔵の485トランシーバーのDEピンがデフォルトで制御不能になっており、インターフェースは一方向（受信または送信のみ）でしかデータを送信できません。
 
 :::note
-ハードウェアのリビジョン（v1.0とv1.1）を区別するには、[reComputer R1000 V1.1 製品変更詳細](https://wiki.seeedstudio.com/recomputer_r1000_v1_1_description/)を参照してください。
+ハードウェアのリビジョン（v1.0とv1.1）を区別するには、[reComputer R1000 V1.1 製品変更詳細](https://wiki.seeedstudio.com/ja/recomputer_r1000_v1_1_description/)を参照してください。
 :::
 
 現在、2つの解決策があります。1つは**UARTドライバをフックするカーネルモジュールをロードする方法（推奨）**で、もう1つは`libgpiod`を呼び出してDEピンを制御するアプリケーション層ベースの方法です。ニーズに応じて選択してください。

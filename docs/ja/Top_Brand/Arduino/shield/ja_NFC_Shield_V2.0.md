@@ -96,7 +96,7 @@ NFC Shield セットアップ
 
 - **ステップ1.**  [Seeed Arduino NFC Library](https://github.com/Seeed-Studio/Seeed_Arduino_NFC)をダウンロードします。
 
-- **ステップ2.**  [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用の**Seeed Arduino NFC**ライブラリをインストールします。
+- **ステップ2.**  [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用の**Seeed Arduino NFC**ライブラリをインストールします。
 
 - **ステップ3.**  「WriteTag」コードを以下のパスで開きます：**File --> Examples --> WriteTag**。
 

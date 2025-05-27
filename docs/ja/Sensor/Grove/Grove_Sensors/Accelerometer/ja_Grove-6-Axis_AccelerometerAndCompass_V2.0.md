@@ -32,10 +32,10 @@ Grove –6軸加速度計＆コンパス V2.0は、3軸加速度計と3軸磁気
 -   I2Cアドレス: 0x1E（デフォルト）、または0x1D
 
 :::note
-    複数のI2Cデバイスを使用したい場合は、[ソフトウェアI2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/)を参照してください。
+    複数のI2Cデバイスを使用したい場合は、[ソフトウェアI2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/)を参照してください。
 :::
 :::tip
-    Groveモジュールの詳細については、[Groveシステム](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+    Groveモジュールの詳細については、[Groveシステム](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -103,11 +103,11 @@ MCUはI2Cインターフェースを介して直接6Dセンサーのデータを
 #### ソフトウェア
 **ステップ1.** [ライブラリ](https://github.com/Seeed-Studio/6Axis_Accelerometer_And_Compass_v2)をGithubからダウンロードします。
 
-**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+**ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 **ステップ3.** 新しいArduinoスケッチを作成し、以下のコードを貼り付けるか、次のパスからコードを直接開きます：File -> Example -> Accelerometer_Compass -> Accelerometer_Compass。
 
-**ステップ4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+**ステップ4.** コードをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 以下はコードです：
 ```c

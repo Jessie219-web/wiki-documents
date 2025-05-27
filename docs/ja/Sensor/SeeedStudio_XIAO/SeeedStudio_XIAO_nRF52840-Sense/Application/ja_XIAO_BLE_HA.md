@@ -330,7 +330,7 @@ HAのインストールを開きます。「設定」->「デバイスとサー�
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の[コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)によってサポートされています。
-- [Brunoの尽力](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35979237)に感謝します。あなたの作業は[こちらで展示](https://wiki.seeedstudio.com/Honorary-Contributors/)されます。
+- [Brunoの尽力](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35979237)に感謝します。あなたの作業は[こちらで展示](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)されます。
 
 ## 技術サポート & 製品ディスカッション
 

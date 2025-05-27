@@ -91,7 +91,7 @@ SenseCraft AIプラットフォームのホームページに入ったら、ま�
 
 :::info
 
-時間がある場合は、以前学んだ[「Output」操作](https://wiki.seeedstudio.com/sscma/#2-sensecraft-triggers---do-a-simple-feedback-action)を試してみることができます。
+時間がある場合は、以前学んだ[「Output」操作](https://wiki.seeedstudio.com/ja/sscma/#2-sensecraft-triggers---do-a-simple-feedback-action)を試してみることができます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/tinyml-topic/trainingmodel/8.png" style={{width:800, height:'auto'}}/></div>
 

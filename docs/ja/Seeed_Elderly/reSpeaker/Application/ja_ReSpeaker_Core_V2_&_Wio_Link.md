@@ -14,15 +14,15 @@ last_update:
 https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
-こちらは、ReSpeaker Core V2を使用して[Wio Link](https://wiki.seeedstudio.com/Wio_Link/)を[IFTTT](https://ifttt.com/)を通じて制御する方法に関するチュートリアルです。
+こちらは、ReSpeaker Core V2を使用して[Wio Link](https://wiki.seeedstudio.com/ja/Wio_Link/)を[IFTTT](https://ifttt.com/)を通じて制御する方法に関するチュートリアルです。
 
 ## 1. ReSpeaker Core v2.0 のセットアップ
 
-ReSpeaker Core v2.0の[Out of Box Demo](https://wiki.seeedstudio.com/ReSpeaker_Core_v2.0/#out-of-box-demo)に従って、ReSpeaker Coreをセットアップし、ユーザー名とパスワードでAlexaにログインしてください。
+ReSpeaker Core v2.0の[Out of Box Demo](https://wiki.seeedstudio.com/ja/ReSpeaker_Core_v2.0/#out-of-box-demo)に従って、ReSpeaker Coreをセットアップし、ユーザー名とパスワードでAlexaにログインしてください。
 
 ## 2. Wio Link を Wio APP でセットアップ
 
-[Wio Link Get Starting](https://wiki.seeedstudio.com/Wio_Link/#get-started)に従って、D0ポートにLEDを接続し、Wio APPをセットアップしてください。
+[Wio Link Get Starting](https://wiki.seeedstudio.com/ja/Wio_Link/#get-started)に従って、D0ポートにLEDを接続し、Wio APPをセットアップしてください。
 
 ## 3. IFTTT のセットアップ
 

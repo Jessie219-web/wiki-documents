@@ -543,7 +543,7 @@ candump can0 &
 </div>
 
 :::info
-J501キャリアボードとreTerminal DM間でCANを介して通信を確立する方法については、[こちら](https://wiki.seeedstudio.com/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage/#connection-overview-with-reterminal-dm)を参照してください。
+J501キャリアボードとreTerminal DM間でCANを介して通信を確立する方法については、[こちら](https://wiki.seeedstudio.com/ja/reComputer_Industrial_J40_J30_Hardware_Interfaces_Usage/#connection-overview-with-reterminal-dm)を参照してください。
 :::
 
 ## USB

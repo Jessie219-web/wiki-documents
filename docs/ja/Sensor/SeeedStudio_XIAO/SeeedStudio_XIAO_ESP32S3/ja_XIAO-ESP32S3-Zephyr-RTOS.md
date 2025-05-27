@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div align="center"><img width ="{600}" src="https://files.seeedstudio.com/wiki/xiao_topicpage/zephyr-esp32s3.png"/></div>
 
-このウィキでは、[Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/xiao_esp32s3_getting_started/) に対する [Zephyr](https://www.zephyrproject.org/) のサポートについて説明します。このガイドを使用することで、ボードで利用可能な機能セットを活用できるようになります。
+このウィキでは、[Seeed Studio XIAO ESP32S3](https://wiki.seeedstudio.com/ja/xiao_esp32s3_getting_started/) に対する [Zephyr](https://www.zephyrproject.org/) のサポートについて説明します。このガイドを使用することで、ボードで利用可能な機能セットを活用できるようになります。
 
 ## [Zephyr](https://www.zephyrproject.org/) とは
 
@@ -626,7 +626,7 @@ west build -p always -b xiao_esp32s3 samples/modules/lvgl/demos --  -DSHIELD=see
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトはSeeed Studioの[コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=56649975)によってサポートされています。
-- **Timの努力**に感謝します。あなたの作業は[こちら](https://wiki.seeedstudio.com/Honorary-Contributors/)で展示されます。
+- **Timの努力**に感謝します。あなたの作業は[こちら](https://wiki.seeedstudio.com/ja/Honorary-Contributors/)で展示されます。
 
 
 ## 技術サポートと製品ディスカッション

@@ -159,7 +159,7 @@ LCD と比較して、OLED スクリーンは高輝度、自発光、高コン�
 このモジュールについてさらに詳しい情報を知りたい場合は、[**こちら**](/Grove-OLED_Display_0.96inch) をクリックしてください。
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 例

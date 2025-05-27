@@ -23,7 +23,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/Gimbal/workspace_flow.png" /></div>
 
-Node-RED を初めて使用する場合、または Vision AI をジンバル制御に統合する方法を学びたい場合は、[こちらのページ](https://wiki.seeedstudio.com/recamera_develop_with_node-red/)を参照してください。
+Node-RED を初めて使用する場合、または Vision AI をジンバル制御に統合する方法を学びたい場合は、[こちらのページ](https://wiki.seeedstudio.com/ja/recamera_develop_with_node-red/)を参照してください。
 
 また、以下の画像に示されているように、ジンバルの軸範囲に注意してください。
 
@@ -616,7 +616,7 @@ Inputフィールドでは、CANメッセージオブジェクトを含むメッ
 
 ### PID 制御
 
-PID ノードに関する詳細は、[こちらのドキュメント](https://wiki.seeedstudio.com/recamera_pid_adjustment/#adjust-pid-with-node-red)をご覧ください。
+PID ノードに関する詳細は、[こちらのドキュメント](https://wiki.seeedstudio.com/ja/recamera_pid_adjustment/#adjust-pid-with-node-red)をご覧ください。
 
 ## 技術サポート & 製品ディスカッション
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-80cm_Infrared_Proximity_Sensor/
+image: https://wiki.seeedstudio.com/ja/Grove-80cm_Infrared_Proximity_Sensor/
 slug: /ja/Grove-80cm_Infrared_Proximity_Sensor
 last_update:
   date: 05/15/2025
@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - Groveインターフェース
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 応用例

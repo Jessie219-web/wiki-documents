@@ -62,7 +62,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センサーとし
 * より広いスペクトルを認識可能
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ### プラットフォームサポート
@@ -126,7 +126,7 @@ Grove Base Shieldがない場合は、以下のようにGrove-Light SensorをSee
 #### ソフトウェア
 
 * ステップ1. [Grove-LED Bar Library](https://github.com/Seeed-Studio/Grove_LED_Bar/archive/master.zip)をGithubからダウンロードします。
-* ステップ2. [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Seeeduino用のライブラリをインストールします。
+* ステップ2. [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Seeeduino用のライブラリをインストールします。
 * ステップ3. 以下のコードをSeeeduino IDEにコピーしてアップロードします。
 
 ```c
@@ -170,7 +170,7 @@ void loop()
 **ステップ1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+Codecraftを初めて使用する場合は、[Arduinoを使用したCodecraftガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできるcdcファイルを開きます。
@@ -210,7 +210,7 @@ Arduino/Seeeduinoにプログラムをアップロードします。
 **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3**でのみこのコマンドラインを使用してください。
 :::
 
-* **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+* **ステップ1**. [ソフトウェア設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 * **ステップ2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

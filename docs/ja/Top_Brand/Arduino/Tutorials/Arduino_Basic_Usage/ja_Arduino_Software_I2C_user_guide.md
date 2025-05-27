@@ -85,7 +85,7 @@ void loop()
 
 ----
 
-- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)に従ってライブラリをインストールしてください。
+- [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)に従ってライブラリをインストールしてください。
 - **SoftwareI2C**用のArduinoライブラリを提供しています。[**こちら**](https://github.com/Seeed-Studio/Arduino_Software_I2C)をクリックしてダウンロードしてください。
 
 ## 例#1: I2Cデバイスアドレスのスキャン

@@ -217,7 +217,7 @@ void loop() {
 **ステップ 5**. ファンを安全な位置に配置し、ボタンを押して安全に動作することを確認してください。
 
 :::note
-    Arduinoのライブラリをインストールする方法については、[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照してください。
+    Arduinoのライブラリをインストールする方法については、[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照してください。
 :::
 
 **コード**
@@ -349,7 +349,7 @@ Grove 水霧化モジュールのケーブルを D2 に接続します。
 **ステップ 6**. 水を満たした容器を用意し、水霧化モジュールを水に浮かべます。
 
 :::note
-    Arduino 用ライブラリのインストール方法については、[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照してください。
+    Arduino 用ライブラリのインストール方法については、[**ライブラリのインストール方法**](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照してください。
 :::
 :::note
     水の上にティッシュを置き、水霧化モジュールを浮かせてください。ティッシュの役割は、水をトランスデューサーに導き、トランスデューサーの上部を水面上に保つことです。
@@ -472,7 +472,7 @@ void loop(void) {
 **ステップ 8**. サーボがスイングを開始したら、Processingソフトウェアで再生をクリックしてください。
 
 :::note
-ライブラリのインストール方法がわからない場合は、[**こちら**](https://wiki.seeedstudio.com/Grove-Ultrasonic_Ranger/#software) をクリックしてください。
+ライブラリのインストール方法がわからない場合は、[**こちら**](https://wiki.seeedstudio.com/ja/Grove-Ultrasonic_Ranger/#software) をクリックしてください。
 :::
 
 **レーダーコード**

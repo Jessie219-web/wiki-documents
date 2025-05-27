@@ -293,7 +293,7 @@ function bytes2HexString (arrBytes) {
 
 #### Home Assistantの設定
 
-以下のチュートリアルを使用して、Home Assistantの統合を完了してください：[SenseCAP Integration for Home Assistant](https://wiki.seeedstudio.com/home_assistant_sensecap/)。数分待つと、デバイスXIAO-ESP32-S3が認識され、デバイス内に2つのエンティティ（温度と湿度）があることが確認できます。これらは先ほど送信した2つのデータであり、Home Assistant内で対応するセンサーエンティティとして識別されています。
+以下のチュートリアルを使用して、Home Assistantの統合を完了してください：[SenseCAP Integration for Home Assistant](https://wiki.seeedstudio.com/ja/home_assistant_sensecap/)。数分待つと、デバイスXIAO-ESP32-S3が認識され、デバイス内に2つのエンティティ（温度と湿度）があることが確認できます。これらは先ほど送信した2つのデータであり、Home Assistant内で対応するセンサーエンティティとして識別されています。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Home_Assistant/ha-xiao6.png" alt="pir" width={700} height="auto" /></p>
 

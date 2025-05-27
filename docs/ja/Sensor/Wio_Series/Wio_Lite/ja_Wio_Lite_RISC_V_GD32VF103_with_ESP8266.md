@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Wio_Lite_RISC_V_GD32VF103_with_ESP8266/
+image: https://wiki.seeedstudio.com/ja/Wio_Lite_RISC_V_GD32VF103_with_ESP8266/
 slug: /ja/Wio_Lite_RISC_V_GD32VF103_with_ESP8266
 last_update:
   date: 05/15/2025

@@ -157,7 +157,7 @@ Node-REDインスタンスを整理するために、これらはアプリケー
 
 ## FlowFuseでフローを作成する
 
-Node-REDでランダムな数値を生成し、それをダッシュボードに表示するフローを作成してみましょう。Node-REDを初めて使用する場合は、[Node-RED入門ガイド](https://wiki.seeedstudio.com/recomputer_r1000_getting_started_node_red/)をご覧ください。
+Node-REDでランダムな数値を生成し、それをダッシュボードに表示するフローを作成してみましょう。Node-REDを初めて使用する場合は、[Node-RED入門ガイド](https://wiki.seeedstudio.com/ja/recomputer_r1000_getting_started_node_red/)をご覧ください。
 
 <center><img width={600} src="https://files.seeedstudio.com/wiki/reComputer-R1000/flowfuse/selectin.PNG" /></center>
 

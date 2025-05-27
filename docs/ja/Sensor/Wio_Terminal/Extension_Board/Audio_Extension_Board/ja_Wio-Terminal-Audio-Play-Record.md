@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 この Wiki では、Wio Terminal を ReSpeaker 2-Mic Hats と組み合わせて使用する際のオーディオ設定方法を紹介します。
 
 :::note
-**ハードウェア接続**については、[**Audio Overview**](https://wiki.seeedstudio.com/Wio-Terminal-Audio-Overview/) をご覧ください。
+**ハードウェア接続**については、[**Audio Overview**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Audio-Overview/) をご覧ください。
 :::
 
 ## SDカードからオーディオを再生する

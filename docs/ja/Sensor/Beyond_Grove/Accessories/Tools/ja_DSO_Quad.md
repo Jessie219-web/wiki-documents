@@ -3,7 +3,7 @@ title: DSO Quad
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/DSO_Quad/
+image: https://wiki.seeedstudio.com/ja/DSO_Quad/
 slug: /ja/DSO_Quad
 last_update:
   date: 05/15/2025
@@ -414,11 +414,11 @@ DSO Quadのアプリケーション開発に関する情報も参照してくだ
 
 ## 関連ページ
 
-* [DSO Quad:キャリブレーション](https://wiki.seeedstudio.com/DSO_Quad-Calibration)
+* [DSO Quad:キャリブレーション](https://wiki.seeedstudio.com/ja/DSO_Quad-Calibration)
 
-* [DSO Quad:ファームウェアのアップグレード](https://wiki.seeedstudio.com/DSO_Quad/#upgrading-firmware)
+* [DSO Quad:ファームウェアのアップグレード](https://wiki.seeedstudio.com/ja/DSO_Quad/#upgrading-firmware)
 
-* [DSO Quad:ベータハードウェア](https://wiki.seeedstudio.com/DSO_Quad-Beta_HW)
+* [DSO Quad:ベータハードウェア](https://wiki.seeedstudio.com/ja/DSO_Quad-Beta_HW)
 
 ## 外部リンク
 
@@ -433,7 +433,7 @@ DSO Quadのアプリケーション開発に関する情報も参照してくだ
 ---
 
 * [最新のV2.72ファームウェア](https://files.seeedstudio.com/products/109990015/DS203.V2.72.zip)
-* [回路図とファームウェア (HW2.2 ~ HW2.72)](https://wiki.seeedstudio.com/DSO_Quad/#upgrading-firmware)
+* [回路図とファームウェア (HW2.2 ~ HW2.72)](https://wiki.seeedstudio.com/ja/DSO_Quad/#upgrading-firmware)
 
 * [HW2.6用リソース付きディスカッションボード](https://forum.seeedstudio.com/viewtopic.php?f=22&amp;t=1929)
 

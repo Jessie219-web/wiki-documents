@@ -119,7 +119,7 @@ LED点滅の例を開きます: **ファイル > Examples > 01.Basics > Blink**�
 </div>
 
 - **ステップ3. Seeedボードを追加する**  
-[Seeedボードインストールガイド](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)に従い、キーワード**Seeeduino AVR**を検索して**Seeeduino Nano**をArduino IDEに追加してください。
+[Seeedボードインストールガイド](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)に従い、キーワード**Seeeduino AVR**を検索して**Seeeduino Nano**をArduino IDEに追加してください。
 
 <div align="center">
   <figure>

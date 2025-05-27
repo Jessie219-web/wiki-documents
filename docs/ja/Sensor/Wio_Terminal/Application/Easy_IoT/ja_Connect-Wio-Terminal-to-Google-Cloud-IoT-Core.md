@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core/
+image: https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core/
 slug: /ja/Connect-Wio-Terminal-to-Google-Cloud-IoT-Core
 last_update:
   date: 05/15/2025

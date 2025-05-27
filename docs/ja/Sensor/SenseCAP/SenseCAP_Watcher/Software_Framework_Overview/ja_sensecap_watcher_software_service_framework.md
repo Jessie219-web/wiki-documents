@@ -109,7 +109,7 @@ Watcher はまた、ローカルサーバー、サードパーティアプリケ
 この図は、ハイブリッドスマート処理フローを示しています。このフローには、ユーザーとのインタラクション、一部のクラウドサービス、およびローカルアプリケーションが含まれます。ハイブリッドアプローチは、クラウドベースのタスクオーケストレーションとローカルのビジュアルモデルを組み合わせることで、データセキュリティ、ユーザーエクスペリエンス、効率性のバランスを取ります。
 
 **ステップ 1**. 初期設定  
-[初期設定とデバイスのバインディング](https://wiki.seeedstudio.com/getting_started_with_watcher/#device-binding-and-ota-upgrade)を行った後、ユーザーはニーズに応じて適切なローカルサービスを選択し、プライベート Watcher サービスを有効にして、Watcher サーバーの URL を入力します。
+[初期設定とデバイスのバインディング](https://wiki.seeedstudio.com/ja/getting_started_with_watcher/#device-binding-and-ota-upgrade)を行った後、ユーザーはニーズに応じて適切なローカルサービスを選択し、プライベート Watcher サービスを有効にして、Watcher サーバーの URL を入力します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/watcher_software_service_framework/1.gif" style={{width:400, height:'auto'}}/></div>
 
@@ -155,7 +155,7 @@ Watcher はまた、ローカルサーバー、サードパーティアプリケ
 この図は「ローカルセキュア処理フロー」を示しており、ローカルに展開されたアプリケーションとの完全なユーザーインタラクションに焦点を当てています。データプライバシーを確保するために、タスクオーケストレーションおよび画像解析サービスは完全にローカルサーバー上に展開され、完全なプライバシー保護を提供します。ただし、この方法では機能が制限され、SenseCraftクラウドサービスは利用できません。タスクは現場での音声コマンドを通じてのみ開始でき、ユーザーは通知サービスを設定して履歴データを確認する必要があります。
 
 **ステップ 1**. 初期設定  
-[初期設定とデバイスバインディング](https://wiki.seeedstudio.com/getting_started_with_watcher/#device-binding-and-ota-upgrade)を完了した後、ユーザーはニーズに応じて適切なローカルサービスを選択し、プライベートWatcherサービスを有効にしてWatcherサーバーのURLを入力します。
+[初期設定とデバイスバインディング](https://wiki.seeedstudio.com/ja/getting_started_with_watcher/#device-binding-and-ota-upgrade)を完了した後、ユーザーはニーズに応じて適切なローカルサービスを選択し、プライベートWatcherサービスを有効にしてWatcherサーバーのURLを入力します。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/watcher_software_service_framework/1.gif" style={{width:400, height:'auto'}}/></div>
 

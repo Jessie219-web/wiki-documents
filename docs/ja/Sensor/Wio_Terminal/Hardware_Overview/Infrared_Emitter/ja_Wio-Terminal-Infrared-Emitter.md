@@ -30,7 +30,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## サンプルコード
 
-**ファイル** -> **例** -> **IRLib2** -> **Send** に移動します。送信の例が表示され、以下のようになります。Wio Terminal からの赤外線信号をテストするには、[Grove - 赤外線受信モジュール](https://wiki.seeedstudio.com/Grove-Infrared_Receiver/) を使用できます。このコードを簡単に変更して、Wio Terminal をテレビのリモコンとして使用することもできます！
+**ファイル** -> **例** -> **IRLib2** -> **Send** に移動します。送信の例が表示され、以下のようになります。Wio Terminal からの赤外線信号をテストするには、[Grove - 赤外線受信モジュール](https://wiki.seeedstudio.com/ja/Grove-Infrared_Receiver/) を使用できます。このコードを簡単に変更して、Wio Terminal をテレビのリモコンとして使用することもできます！
 
 **注意:** **`WIO_IR`** は内蔵赤外線エミッター用に定義されています（このライブラリのヘッダーファイルで既に定義されているため、inoファイルで再定義する必要はありません）。
 

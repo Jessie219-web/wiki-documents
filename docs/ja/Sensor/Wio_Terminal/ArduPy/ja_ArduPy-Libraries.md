@@ -352,7 +352,7 @@ const mp_rom_map_elem_t lis3dhtr_locals_dict_table[] = {
 
 ArduPyライブラリを書き終えたら、それをビルドし、ビルド中にエラーが発生した場合はデバッグする必要があります！プロジェクト全体のスケッチをGitHubリポジトリにアップロードできます。例えば：https://github.com/Seeed-Studio/seeed-ardupy-bme280。
 
-- `ardupy-aip`をダウンロードしてインストールします。このツールセットを使用してArduPyライブラリをビルドします。[**チュートリアル**](https://wiki.seeedstudio.com/ArduPy/#install-aip-with-macos)に従ってください。
+- `ardupy-aip`をダウンロードしてインストールします。このツールセットを使用してArduPyライブラリをビルドします。[**チュートリアル**](https://wiki.seeedstudio.com/ja/ArduPy/#install-aip-with-macos)に従ってください。
 
 `ardupy-aip`をインストールしたら、以下のコマンドを実行してArduPyファームウェアをビルドできます：
 

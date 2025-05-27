@@ -30,9 +30,9 @@ LoRa P2Pを活用することで、長距離通信と低消費電力が求めら
 - [XIAO Expansion board](https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html) *2
 - USB Type-Cケーブル *2
 
-初めてSeeed Studio XIAO SAMD21を使用する場合は、この[wiki](https://wiki.seeedstudio.com/Seeeduino-XIAO/)を参照してください。
+初めてSeeed Studio XIAO SAMD21を使用する場合は、この[wiki](https://wiki.seeedstudio.com/ja/Seeeduino-XIAO/)を参照してください。
 
-Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)からArduinoの旅を始めてください。
+Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)からArduinoの旅を始めてください。
 
 ### ハードウェアの接続
 
@@ -42,7 +42,7 @@ Arduinoを初めて使用する場合は、[こちら](https://wiki.seeedstudio.
 
 ### ライブラリのダウンロード
 
-このデモでは[u8g2](https://github.com/olikraus/U8g2_Arduino)ライブラリをインストールする必要があります。ライブラリをダウンロードしてインストールしてください（[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)）。
+このデモでは[u8g2](https://github.com/olikraus/U8g2_Arduino)ライブラリをインストールする必要があります。ライブラリをダウンロードしてインストールしてください（[Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)）。
 
 ### サンプルコードのダウンロード
 

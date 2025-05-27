@@ -37,13 +37,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - I2C アドレス 0x3C
 
 :::note
-    複数の I2C デバイスを使用したい場合は、[ソフトウェア I2C](https://wiki.seeedstudio.com/Arduino_Software_I2C_user_guide/) を参照してください。
+    複数の I2C デバイスを使用したい場合は、[ソフトウェア I2C](https://wiki.seeedstudio.com/ja/Arduino_Software_I2C_user_guide/) を参照してください。
 :::
 :::warning
     注意: OLED に強い衝撃やストレスを与えると、画面が破損する可能性があります。
 :::
 :::tip
-    Grove モジュールの詳細については、[Grove システム](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove システム](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 ## 仕様
 
@@ -60,7 +60,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 | 動作温度範囲                       | -         | -20～70 | -     | ℃            |
 
 :::tip
-    Grove モジュールの詳細については、[Grove システム](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove システム](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -79,7 +79,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+    Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -118,8 +118,8 @@ OLED128*64はSSD1308チップのすべてのピンを使用します。デフォ
 #### ソフトウェア
 
 - **ステップ1.** [U8G2 128*64ライブラリ](https://github.com/olikraus/u8g2)をGithubからダウンロードします。
-- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
-- **ステップ3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ3.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```cpp
 #include <Arduino.h>
@@ -175,7 +175,7 @@ void loop(void) {
 :::note 
      **Raspberry Pi OS >= Bullseye** を搭載した Raspberry Pi を使用している場合は、**Python3** のみでこのコマンドラインを使用する必要があります。
 :::
-- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
+- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
 - **ステップ 2**. grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```
@@ -688,7 +688,7 @@ sudo python Grove-OLED_Display_0.96inch.py
 
 ### Beaglebone Greenで遊ぶ
 
-BBG上のプログラムを編集するには、[Cloud9 IDE](https://c9.io)を使用し、[Beaglebone Green Wiki](https://wiki.seeedstudio.com/BeagleBone_Green/)を参照してください。
+BBG上のプログラムを編集するには、[Cloud9 IDE](https://c9.io)を使用し、[Beaglebone Green Wiki](https://wiki.seeedstudio.com/ja/BeagleBone_Green/)を参照してください。
 
 以下は、OLEDに「Hello World」を表示する手順です。
 
@@ -952,7 +952,7 @@ sudo python3 Grove-OLED_Display_0.96inch.py
 
 - **[PDF]** [Grove-OLED128x64 PCB](https://files.seeedstudio.com/wiki/Grove_OLED_Display_0.96/resource/OLED%20128x64%20PCB.pdf)
 
-- **[Wiki]** [Beaglebone Green Wiki](https://wiki.seeedstudio.com/BeagleBone_Green/)
+- **[Wiki]** [Beaglebone Green Wiki](https://wiki.seeedstudio.com/ja/BeagleBone_Green/)
 
 - **[Eagle]** [Grove-OLED128x64](https://files.seeedstudio.com/wiki/Grove_OLED_Display_0.96/resource/OLED%20128x64.zip)
 

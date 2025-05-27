@@ -17,7 +17,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 # Wi-Fi技術を使用してトラッカーの位置情報を有効化する
 
 # 1. The Things NetworkからWi-Fi情報を取得する
-- **ステップ1.** トラッカーとThe Things Network (TTN)を接続するには、Seeed Studioの[Wiki](https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN/)で提供されているステップバイステップのチュートリアルに従います。
+- **ステップ1.** トラッカーとThe Things Network (TTN)を接続するには、Seeed Studioの[Wiki](https://wiki.seeedstudio.com/ja/SenseCAP_T1000_tracker_TTN/)で提供されているステップバイステップのチュートリアルに従います。
 
 - **ステップ2.** 解析されたペイロードから必要なMACアドレス、RSSI（受信信号強度指標）、およびタイムスタンプを抽出します。これらのデータは、次のステップでWi-Fiジオロケーションに使用されます。
 

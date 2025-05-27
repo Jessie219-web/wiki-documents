@@ -152,6 +152,6 @@ vela --accelerator-config ethos-u55-64 \
 
 - デプロイする必要があるモデルファイルは、上記でエクスポートした`tflite`ファイルです。以下のチュートリアルに従って、モデルファイルをターゲットデバイスに書き込むことができます。
 
-- トレーニング済みのtfliteモデルをデバイスに書き込むには、当社のWebツールを使用することを強くお勧めします。詳細な操作は[デプロイチュートリアル](https://wiki.seeedstudio.com/ModelAssistant_Deploy_Overview/)で提供されています。
+- トレーニング済みのtfliteモデルをデバイスに書き込むには、当社のWebツールを使用することを強くお勧めします。詳細な操作は[デプロイチュートリアル](https://wiki.seeedstudio.com/ja/ModelAssistant_Deploy_Overview/)で提供されています。
 
 `注意:` `ESP32S3`デバイスは`vela`グラフ最適化後のモデルデプロイをサポートしていないため、`XIAO ESP32S3`デバイスにモデルをデプロイする場合は`tflite`モデルのグラフ最適化を行う必要はありません。

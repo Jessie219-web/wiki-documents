@@ -18,7 +18,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 このチュートリアルでは、[Wio Tracker 1110 Dev Board](https://www.seeedstudio.com/Wio-Tracker-1110-Dev-Board-p-5799.html) を Meshtastic バージョンに書き換える方法を説明します。これは、Meshtastic ネットワークを使用したいユーザー向けです。
 
 :::tip
-ボードを LoRaWAN バージョンに戻したい場合は、こちらの[チュートリアル](https://wiki.seeedstudio.com/flash_to_wio_tracker/)をご確認ください。
+ボードを LoRaWAN バージョンに戻したい場合は、こちらの[チュートリアル](https://wiki.seeedstudio.com/ja/flash_to_wio_tracker/)をご確認ください。
 :::
 
 ### 準備

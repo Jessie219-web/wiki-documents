@@ -59,7 +59,7 @@ alwaysAIは以下のJetson関連ハードウェアをサポートしています
 
 ## 前提条件
 
-- 上記のいずれかのJetsonデバイスでJetPack 4.6を実行し、すべてのSDKコンポーネントがインストールされていること（インストールに関する参考情報は[こちらのWiki](https://wiki.seeedstudio.com/reComputer_J1020_A206_Flash_JetPack/)を参照）
+- 上記のいずれかのJetsonデバイスでJetPack 4.6を実行し、すべてのSDKコンポーネントがインストールされていること（インストールに関する参考情報は[こちらのWiki](https://wiki.seeedstudio.com/ja/reComputer_J1020_A206_Flash_JetPack/)を参照）
 - Windows、Linux、またはMacを搭載したホストPC
 - JetsonデバイスでサポートされているUSBウェブカメラまたはMIPI CSIカメラ
 

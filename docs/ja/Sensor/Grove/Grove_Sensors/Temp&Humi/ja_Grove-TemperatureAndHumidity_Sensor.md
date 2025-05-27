@@ -52,7 +52,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 - 低消費電力
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## アプリケーションアイデア
@@ -360,7 +360,7 @@ MCUがトリガー信号を送信すると、センサーは低消費電力モ�
     +チェックサム8ビット。
 
 :::note
-Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -397,14 +397,14 @@ Grove Base Shield を持っていない場合でも、以下のように Grove -
 
 - **ステップ 1.** [Seeed DHT ライブラリ](https://github.com/Seeed-Studio/Grove_Temperature_And_Humidity_Sensor) を Github からダウンロードします。
 
-- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
+- **ステップ 2.** [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library) を参照して、Arduino 用のライブラリをインストールします。
 
 - **ステップ 3.** Arduino IDE を再起動します。**File --> Examples --> Grove_Humidity_Temperature_Sensor-master --> DHTtester** のパスを通じて「DHTtester」サンプルを開きます。このデモを通じて、環境の温度と相対湿度の情報を読み取ることができます。
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Temperature_and_Humidity_Sensor_Pro/img/path.png" /></div>
 
 :::note
-この Grove - Temperature&Humidity Sensor と、もう一つの製品 [Grove-Temperature&Humidity Sensor pro](https://wiki.seeedstudio.com/Grove-Temperature_and_Humidity_Sensor_Pro/) は、このライブラリを共有しています。どちらの製品を使用している場合でも、ボードのセンサーの定義行を有効にし、他の仕様の定義行をコメントアウトすることを確認してください。例えば、Grove - Temperature&Humidity Sensor で使用されているセンサーは DHT 11 です。そのため、センサー仕様の定義部分は以下のようにする必要があります。
+この Grove - Temperature&Humidity Sensor と、もう一つの製品 [Grove-Temperature&Humidity Sensor pro](https://wiki.seeedstudio.com/ja/Grove-Temperature_and_Humidity_Sensor_Pro/) は、このライブラリを共有しています。どちらの製品を使用している場合でも、ボードのセンサーの定義行を有効にし、他の仕様の定義行をコメントアウトすることを確認してください。例えば、Grove - Temperature&Humidity Sensor で使用されているセンサーは DHT 11 です。そのため、センサー仕様の定義部分は以下のようにする必要があります。
 :::
 
 ```
@@ -415,7 +415,7 @@ Grove Base Shield を持っていない場合でも、以下のように Grove -
 
 ライブラリのデフォルト設定は `DHT 22` なので、手動で `DHT 11` に変更する必要があります。
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDE の **Serial Monitor** を開きます。**Tool-> Serial Monitor** をクリックするか、++ctrl+shift+m++ キーを同時に押します。すべてが正常に動作していれば、温度が表示されます。
 
@@ -438,7 +438,7 @@ Grove Base Shield を持っていない場合でも、以下のように Grove -
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/) を開き、Arduino サポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-Codecraft を初めて使用する場合は、[Codecraft を Arduino で使用するためのガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+Codecraft を初めて使用する場合は、[Codecraft を Arduino で使用するためのガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ 2.** 以下の画像のようにブロックをドラッグするか、このページの最後でダウンロードできる cdc ファイルを開きます。
@@ -478,7 +478,7 @@ Codecraft を初めて使用する場合は、[Codecraft を Arduino で使用�
 **Raspberry Pi OS >= Bullseye** を使用している場合は、**Python3 のみ**でこのコマンドラインを使用する必要があります。
 :::
 
-- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
+- **ステップ 1.** [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation) に従って開発環境を構成します。
 - **ステップ 2.** grove.py ライブラリをクローンしてソースファイルをダウンロードします。
 
 ```
@@ -674,9 +674,9 @@ temp = 26.00 C humidity =40.00%
 
 #### ソフトウェア
 
-- **ステップ 1.** [**ArduPy 入門**](https://wiki.seeedstudio.com/ArduPy/) に従って Wio Terminal 上で ArduPy 開発環境を構築します。
+- **ステップ 1.** [**ArduPy 入門**](https://wiki.seeedstudio.com/ja/ArduPy/) に従って Wio Terminal 上で ArduPy 開発環境を構築します。
 
-- **ステップ 2.** 以下のコマンドを使用して、ArduPy ファームウェアに DHT ライブラリが含まれていることを確認します。詳細については [**こちら**](https://wiki.seeedstudio.com/ArduPy/#using-aip-to-include-other-ardupy-librariesfrom-arduino-libraries-example) を参照してください。
+- **ステップ 2.** 以下のコマンドを使用して、ArduPy ファームウェアに DHT ライブラリが含まれていることを確認します。詳細については [**こちら**](https://wiki.seeedstudio.com/ja/ArduPy/#using-aip-to-include-other-ardupy-librariesfrom-arduino-libraries-example) を参照してください。
 
 ```sh
 aip install Seeed-Studio/seeed-ardupy-dht/archive/main.zip

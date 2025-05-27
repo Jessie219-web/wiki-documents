@@ -100,11 +100,11 @@ Watcher では、開発者が AI 統合で成功するために必要な柔軟�
 
 画像分析は、Watcherがキャプチャした画像を高度に解析し、画像内のオブジェクト、活動、コンテキストを識別する機能を指します。この機能は大型モデルの使用を必要とし、使用料が発生します。大型モデルを使用して画像分析を行うタスクが要求されると、リクエストとしてカウントされます。
 
-- **[純粋なクラウドベースのLLMサービス](https://wiki.seeedstudio.com/getting_started_with_watcher_task/#pure-cloud-based-llm-service)**を使用している場合、リクエストは設定された**キャプチャ頻度**に基づいてカウントされます。
+- **[純粋なクラウドベースのLLMサービス](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/#pure-cloud-based-llm-service)**を使用している場合、リクエストは設定された**キャプチャ頻度**に基づいてカウントされます。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/llm-app.png" style={{width:1000, height:'auto'}}/></div>
 
-- **[ローカルAI + クラウドベースのLLMサービス](https://wiki.seeedstudio.com/getting_started_with_watcher_task/#local-ai--cloud-based-llm-service)**を使用している場合、小型モデルが検出をトリガーした後に大型モデルが画像認識のために呼び出されるとリクエストがカウントされます。リクエスト間の最小間隔は設定された**キャプチャ頻度**より短くなることはありません。
+- **[ローカルAI + クラウドベースのLLMサービス](https://wiki.seeedstudio.com/ja/getting_started_with_watcher_task/#local-ai--cloud-based-llm-service)**を使用している場合、小型モデルが検出をトリガーした後に大型モデルが画像認識のために呼び出されるとリクエストがカウントされます。リクエスト間の最小間隔は設定された**キャプチャ頻度**より短くなることはありません。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/watcher_getting_started/local_llm-app.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -122,7 +122,7 @@ Watcher では、開発者が AI 統合で成功するために必要な柔軟�
 
 ## サブスクリプション方法
 
-SenseCraft Proをサブスクライブする必要がある場合は、SenseCraft APP内で行う必要があります。最初のステップとして、APPで[SenseCAP Watcherをバインド](https://wiki.seeedstudio.com/getting_started_with_watcher/#step-3-device-binding)する必要があります。現在、SenseCraft ProのサブスクリプションはSenseCAP Watcherユーザーのみ利用可能です。
+SenseCraft Proをサブスクライブする必要がある場合は、SenseCraft APP内で行う必要があります。最初のステップとして、APPで[SenseCAP Watcherをバインド](https://wiki.seeedstudio.com/ja/getting_started_with_watcher/#step-3-device-binding)する必要があります。現在、SenseCraft ProのサブスクリプションはSenseCAP Watcherユーザーのみ利用可能です。
 
 SenseCAP Watcherのチャット画面に移動し、右上の設定ギアボタンをクリックします。その後、画面下部付近に**サブスクリプション**のオプションが表示されます。
 

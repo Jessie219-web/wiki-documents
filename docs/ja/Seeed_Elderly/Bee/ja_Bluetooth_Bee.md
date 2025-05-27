@@ -661,12 +661,12 @@ Bluetooth Bee を使って素晴らしいプロジェクトを作りたい場合
 
 ## オンライン回路図ビューア ##
 
-<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/images/f/f6/Bluetooth_Bee_Schematic_Board.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div className="altium-ecad-viewer" data-project-src="https://wiki.seeedstudio.com/ja/images/f/f6/Bluetooth_Bee_Schematic_Board.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 ## リソース ##
 
-- **[Eagle]** [Bluetooth Bee 回路図および基板ファイル](https://wiki.seeedstudio.com/images/f/f6/Bluetooth_Bee_Schematic_Board.zip)
+- **[Eagle]** [Bluetooth Bee 回路図および基板ファイル](https://wiki.seeedstudio.com/ja/images/f/f6/Bluetooth_Bee_Schematic_Board.zip)
 
 - **[PDF]** [Bluetooth_Bee_v2.0_SCH_PCB.zip](http://images/0/06/Bluetooth_Bee_v2.0_SCH_PCB.zip)
 

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-IO-I2C/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-IO-I2C/
 slug: /ja/Wio-Terminal-IO-I2C
 last_update:
   date: 05/15/2025
@@ -23,7 +23,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 Wio Terminal の Grove I2C ポートを使用するには、I2C を使用する Grove センサーを Wio Terminal の物理的な I2C ポートに接続するだけです。
 
-**注意:** Arduino IDE にセンサーライブラリを含めることを忘れないでください。詳細については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) を参照してください。
+**注意:** Arduino IDE にセンサーライブラリを含めることを忘れないでください。詳細については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) を参照してください。
 
 ## サンプルコード
 

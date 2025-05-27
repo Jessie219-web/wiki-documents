@@ -50,7 +50,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ### ソフトウェアの準備
 
-[Node-RED の入門ガイド](https://wiki.seeedstudio.com/recomputer_r1000_getting_statrted_node_red/) を用意しています。このガイドを進める前に確認することをお勧めします。
+[Node-RED の入門ガイド](https://wiki.seeedstudio.com/ja/recomputer_r1000_getting_statrted_node_red/) を用意しています。このガイドを進める前に確認することをお勧めします。
 
 ## reComputer R1000 を MQTT ブローカーとしてセットアップする
 

@@ -181,7 +181,7 @@ OpenWrt イメージにはデュアルギガビットポートがすぐに動作
 
 1つのポートは **LAN インターフェース** として設定され、もう1つは **WAN インターフェース** として設定されています。WAN インターフェースはインターネットに接続できるもので、**DHCP クライアント**として設定されています。一方、LAN インターフェースはクライアントデバイスに接続できるもので、**DHCP サーバー**として設定されています。
 
-LAN インターフェースは静的 IP アドレス **192.168.2.1** に設定されています。ただし、この OpenWrt ルーターをデフォルトゲートウェイ IP が 192.168.2.1 の別のルーターに接続する場合、LAN インターフェースの IP アドレスを変更する必要があるか、そうでなければ OpenWrt に IP の競合が発生します。詳細については、以下の [FAQ](https://wiki.seeedstudio.com/OpenWrt-Getting-Started/#q1-what-if-i-connect-the-openwrt-router-to-my-exisiting-router-which-has-a-default-gateway-ip-of-19216821) を参照してください！
+LAN インターフェースは静的 IP アドレス **192.168.2.1** に設定されています。ただし、この OpenWrt ルーターをデフォルトゲートウェイ IP が 192.168.2.1 の別のルーターに接続する場合、LAN インターフェースの IP アドレスを変更する必要があるか、そうでなければ OpenWrt に IP の競合が発生します。詳細については、以下の [FAQ](https://wiki.seeedstudio.com/ja/OpenWrt-Getting-Started/#q1-what-if-i-connect-the-openwrt-router-to-my-exisiting-router-which-has-a-default-gateway-ip-of-19216821) を参照してください！
 
 ### ODYSSEY - X86J4125
 
@@ -316,7 +316,7 @@ Rerouter 用の最新バージョン OpenWrt、R23.5 バージョンを更新し
 最初に、デュアルギガビットイーサネットキャリアボードをサーバーとして、ODYSSEY - X86J4125 をクライアントとしてネットワークテストを行います。
 
 :::note
-ODYSSEY ボードの LAN インターフェースの IP アドレスを **192.168.3.1** に変更してください。[こちら](https://wiki.seeedstudio.com/OpenWrt-Getting-Started/#q1-what-if-i-connect-the-openwrt-router-to-my-exisiting-router-which-has-a-default-gateway-ip-of-19216821) を参照してください。
+ODYSSEY ボードの LAN インターフェースの IP アドレスを **192.168.3.1** に変更してください。[こちら](https://wiki.seeedstudio.com/ja/OpenWrt-Getting-Started/#q1-what-if-i-connect-the-openwrt-router-to-my-exisiting-router-which-has-a-default-gateway-ip-of-19216821) を参照してください。
 :::
 
 - **ステップ 1.** 以下のようにボードを接続します。

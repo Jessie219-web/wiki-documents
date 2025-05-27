@@ -85,7 +85,7 @@ WiFiスキャンページの読み込みには約5秒かかる場合がありま
 
 ステップ2. デバイスを登録する
 - [SenseCraft AI-Watcher Agentプラットフォーム](https://sensecraft.seeed.cc/ai/home)にアクセスします。
-- この[WiKi](https://wiki.seeedstudio.com/Web_Control_Panel/)に従ってAgentを構成します。
+- この[WiKi](https://wiki.seeedstudio.com/ja/Web_Control_Panel/)に従ってAgentを構成します。
 
 ### 基本操作
 

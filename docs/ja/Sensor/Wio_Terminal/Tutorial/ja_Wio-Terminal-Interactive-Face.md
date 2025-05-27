@@ -34,13 +34,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 必要なArduinoライブラリ
 
-- LCD画面ライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Overview/) を参照してください。
+- LCD画面ライブラリ `Seeed_Arduino_LCD` をインストールしてください。詳細は [Wio Terminal LCD](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Overview/) を参照してください。
 
 - SDカードライブラリ `Seeed_Arduino_FS` をインストールしてください。詳細は [Seeed-Arduino-FS](https://github.com/Seeed-Studio/Seeed_Arduino_FS/tree/beta) を参照してください。
 
 - 内蔵加速度センサーライブラリ `Seeed_Arduino_LIS3DHTR` をインストールしてください。詳細は [Seeed_Arduino_LIS3DHTR](https://github.com/Seeed-Studio/Seeed_Arduino_LIS3DHTR/tree/beta) を参照してください。
 
-- `RawImage.h` ライブラリをインストールしてください。詳細は [画像の読み込み](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Loading-Image/) を参照してください。
+- `RawImage.h` ライブラリをインストールしてください。詳細は [画像の読み込み](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Loading-Image/) を参照してください。
 
 ## Arduinoの手順
 
@@ -114,7 +114,7 @@ void setup() {
 
 この例では、画像は320x240のフルサイズではないため、描画時に画像の開始位置を指定する必要があります。画像はまずバッファにロードされ、Wio Terminal の揺れによる画像遅延を防ぎます。
 
-詳細は [画像の読み込み](https://wiki.seeedstudio.com/Wio-Terminal-LCD-Loading-Image/) を参照してください。
+詳細は [画像の読み込み](https://wiki.seeedstudio.com/ja/Wio-Terminal-LCD-Loading-Image/) を参照してください。
 
 ```Cpp
 void loop() {

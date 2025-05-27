@@ -95,7 +95,7 @@ XMOS XU316 AI サウンドおよびオーディオチップセットによって
 
 ReSpeaker Lite を XIAO ESP32S3 と使用するには、ReSpeaker Lite のファームウェアが I2S バージョンであることを確認してください。
 
-最新の I2S ファームウェアをフラッシュするには、[ファームウェアフラッシュ](https://wiki.seeedstudio.com/reSpeaker_usb_v3/#update-firmware) を確認してください。
+最新の I2S ファームウェアをフラッシュするには、[ファームウェアフラッシュ](https://wiki.seeedstudio.com/ja/reSpeaker_usb_v3/#update-firmware) を確認してください。
 
 
 

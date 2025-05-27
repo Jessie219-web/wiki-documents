@@ -26,13 +26,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 - このプラットフォームは、サイドバーに表示される主要なトピックに焦点を当て、すべての製品に関する最新情報を提供します。
 
-  - <strong><a href="/Sensor_Network"><span><font color={'8DC215'} size={"4"}> センサーとセンシング</font></span></a></strong>
-  - <strong><a href="/Network"><span><font color={'8DC215'} size={"4"}> ネットワーキング</font></span></a></strong>
-  - <strong><a href="/Edge_Computing"><span><font color={'8DC215'} size={"4"}> エッジコンピューティング </font></span></a></strong>
-  - <strong><a href="/Cloud"><span><font color={'8DC215'} size={"4"}> クラウドサービス</font></span></a></strong>
-  - <strong><a href="/topicintroduction"><span><font color={'8DC215'} size={"4"}> 技術トピック</font></span></a></strong>
-  - <strong><a href="/Contributor"><span><font color={'8DC215'} size={"4"}> 貢献者プログラム</font></span></a></strong>
-  - <strong><a href="/weekly_wiki"><span><font color={'8DC215'} size={"4"}> 週刊Wiki </font></span></a></strong>
+  - <strong><a href="/ja/Sensor_Network"><span><font color={'8DC215'} size={"4"}> センサーとセンシング</font></span></a></strong>
+  - <strong><a href="/ja/Network"><span><font color={'8DC215'} size={"4"}> ネットワーキング</font></span></a></strong>
+  - <strong><a href="/ja/Edge_Computing"><span><font color={'8DC215'} size={"4"}> エッジコンピューティング </font></span></a></strong>
+  - <strong><a href="/ja/Cloud"><span><font color={'8DC215'} size={"4"}> クラウドサービス</font></span></a></strong>
+  - <strong><a href="/ja/topicintroduction"><span><font color={'8DC215'} size={"4"}> 技術トピック</font></span></a></strong>
+  - <strong><a href="/ja/Contributor"><span><font color={'8DC215'} size={"4"}> 貢献者プログラム</font></span></a></strong>
 
 - **実用的な使用方法**や**トラブルシューティング**、産業用IoTシナリオの詳細なドキュメント、さらに独自のプロジェクトを開始するためのオープン開発ツールに関するガイドを見つけることができます。
 
@@ -43,19 +42,19 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#industrial-sensors-and-probes" class="getting_started_label2">SenseCAP 産業用センサー</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Sensor_Network/#industrial-sensors-and-probes" class="getting_started_label2">SenseCAP 産業用センサー</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#data-logger-with-configuration-guide" class="getting_started_label2"> - データロガー</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Sensor_Network/#data-logger-with-configuration-guide" class="getting_started_label2"> - データロガー</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#gateway-for-multiple-platform" class="getting_started_label2"> - ゲートウェイ </a>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#routers-for-other-network-infrastructure" class="getting_started_label2"> - ルーター </a>
+          <a href= "https://wiki.seeedstudio.com/ja/Sensor_Network/#gateway-for-multiple-platform" class="getting_started_label2"> - ゲートウェイ </a>
+          <a href= "https://wiki.seeedstudio.com/ja/Sensor_Network/#routers-for-other-network-infrastructure" class="getting_started_label2"> - ルーター </a>
       </div>
   </div>
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#grove-ecosystem-sensors" class="getting_started_label2">Grove 初級センサー</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Sensor_Network/#grove-ecosystem-sensors" class="getting_started_label2">Grove 初級センサー</a>
           <br/>          <br/>
-          <a href= "https://wiki.seeedstudio.com/Sensor_Network/#grove-communication-modules" class="getting_started_label2">Grove ネットワークモジュール </a>
+          <a href= "https://wiki.seeedstudio.com/ja/Sensor_Network/#grove-communication-modules" class="getting_started_label2">Grove ネットワークモジュール </a>
       </div>
   </div>
 </div>
@@ -65,13 +64,13 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#devices" class="getting_started_label2">デバイス</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#devices" class="getting_started_label2">デバイス</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#os-installation--firmware-updating" class="getting_started_label3">> OSインストールとファームウェア更新</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#os-installation--firmware-updating" class="getting_started_label3">> OSインストールとファームウェア更新</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#extensions--carrier-board" class="getting_started_label3">- キャリアボード</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#extensions--carrier-board" class="getting_started_label3">- キャリアボード</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#application--software" class="getting_started_label3">- アプリケーション / ソフトウェア</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#application--software" class="getting_started_label3">- アプリケーション / ソフトウェア</a>
       </div>
   </div>
 </div>
@@ -79,25 +78,25 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#microcontrollers" class="getting_started_label2">マイクロコントローラー</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#microcontrollers" class="getting_started_label2">マイクロコントローラー</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#easy-iot-applications" class="getting_started_label3">> 簡単なIoTアプリケーション</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#easy-iot-applications" class="getting_started_label3">> 簡単なIoTアプリケーション</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#embedded-ml-scenarios" class="getting_started_label3">> 組み込みMLシナリオ</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#embedded-ml-scenarios" class="getting_started_label3">> 組み込みMLシナリオ</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#extensions" class="getting_started_label3">- 拡張機能</a>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#accessories" class="getting_started_label3">- アクセサリー</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#extensions" class="getting_started_label3">- 拡張機能</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#accessories" class="getting_started_label3">- アクセサリー</a>
       </div>
   </div>
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#single-board-computers" class="getting_started_label2">シングルボードコンピューター</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#single-board-computers" class="getting_started_label2">シングルボードコンピューター</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#os-installation--firmware-updating-1" class="getting_started_label3">> OSインストールとファームウェア更新</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#os-installation--firmware-updating-1" class="getting_started_label3">> OSインストールとファームウェア更新</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#extensions-1" class="getting_started_label3">- 拡張機能</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#extensions-1" class="getting_started_label3">- 拡張機能</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#application--software-1" class="getting_started_label3">- アプリケーション / ソフトウェア</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#application--software-1" class="getting_started_label3">- アプリケーション / ソフトウェア</a>
       </div>
   </div>
 </div>
@@ -108,20 +107,20 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses" class="getting_started_label2">マイクロコントローラー付きキット</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#kit-with-courses" class="getting_started_label2">マイクロコントローラー付きキット</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#tutorials" class="getting_started_label3">- 提供されるデモ</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#tutorials" class="getting_started_label3">- 提供されるデモ</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses" class="getting_started_label3">- 無料コース付き</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#kit-with-courses" class="getting_started_label3">- 無料コース付き</a>
       </div>
   </div>
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses-1" class="getting_started_label2">シングルボードコンピューター付きキット</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#kit-with-courses-1" class="getting_started_label2">シングルボードコンピューター付きキット</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#tutorials--faq" class="getting_started_label3">- 提供されるデモ</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#tutorials--faq" class="getting_started_label3">- 提供されるデモ</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/Edge_Computing/#kit-with-courses-1" class="getting_started_label3">- 無料コース付き</a>
+          <a href= "https://wiki.seeedstudio.com/ja/Edge_Computing/#kit-with-courses-1" class="getting_started_label3">- 無料コース付き</a>
       </div>
   </div>
 </div>
@@ -131,12 +130,12 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 <div class="all_container">
   <div class="getting_started">
       <div class="start_card_wrapper">
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-cloud-production" class="getting_started_label2">SenseCAP クラウド</a>
+          <a href= "https://wiki.seeedstudio.com/ja/CloudnChain/#sensecap-cloud-production" class="getting_started_label2">SenseCAP クラウド</a>
           <br/>
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-ai" class="getting_started_label2">SenseCAP AI</a>
-          <br/><a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-hotspot-app" class="getting_started_label3">HotSpot アプリ</a>,
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-mate-app" class="getting_started_label3">Mate アプリ</a>,
-          <a href= "https://wiki.seeedstudio.com/CloudnChain/#sensecap-api" class="getting_started_label3">SenseCAP API</a>
+          <a href= "https://wiki.seeedstudio.com/ja/CloudnChain/#sensecap-ai" class="getting_started_label2">SenseCAP AI</a>
+          <br/><a href= "https://wiki.seeedstudio.com/ja/CloudnChain/#sensecap-hotspot-app" class="getting_started_label3">HotSpot アプリ</a>,
+          <a href= "https://wiki.seeedstudio.com/ja/CloudnChain/#sensecap-mate-app" class="getting_started_label3">Mate アプリ</a>,
+          <a href= "https://wiki.seeedstudio.com/ja/CloudnChain/#sensecap-api" class="getting_started_label3">SenseCAP API</a>
       </div>
   </div>
 </div>
@@ -157,7 +156,7 @@ Seeedでは、Seeedersコミュニティを非常に大切にしています。S
 
 ![](https://files.seeedstudio.com/wiki/wiki-platform/contributor/contributors.png)
 
-### [GitHubでのタスク]((https://github.com/orgs/Seeed-Studio/projects/6/views/1))
+### [GitHubでのタスク](https://github.com/orgs/Seeed-Studio/projects/6/views/1)
 
 私たちは、WikiプラットフォームのGitHubリポジトリで、必要なプロジェクトやコントリビューターが提案した内容（更新の提案、誤字修正、タスクの受け入れ）を引き続き公開していきます。
 
@@ -165,7 +164,7 @@ Seeedでは、Seeedersコミュニティを非常に大切にしています。S
 
 ### 詳細な紹介
 
-<strong><a href="/Contributor"><span><font color={'8DC215'} size={"4"}>コントリビュータープログラムについてさらに詳しく知るには、こちらをクリック！</font></span></a></strong>
+<strong><a href="/ja/Contributor"><span><font color={'8DC215'} size={"4"}>コントリビュータープログラムについてさらに詳しく知るには、こちらをクリック！</font></span></a></strong>
 
 ## ウィークリーワイキ
 

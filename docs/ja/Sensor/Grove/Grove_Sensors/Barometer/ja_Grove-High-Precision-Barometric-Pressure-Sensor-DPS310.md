@@ -33,7 +33,7 @@ Grove - 高精度気圧センサー (DPS310)
 
 ## BMP280 vs. BME280 vs. DPS310
 
-すでに [Grove - 気圧センサー (BMP280)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BMP280/) と [Grove - 気圧センサー (BME280)](https://wiki.seeedstudio.com/Grove-Barometer_Sensor-BME280/) をリリースしていますが、以下の表を通じて Grove-DPS310 の強力さを比較してみましょう。
+すでに [Grove - 気圧センサー (BMP280)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BMP280/) と [Grove - 気圧センサー (BME280)](https://wiki.seeedstudio.com/ja/Grove-Barometer_Sensor-BME280/) をリリースしていますが、以下の表を通じて Grove-DPS310 の強力さを比較してみましょう。
 
 
 | 項目 | Grove-BMP280 | Grove-BME280 | Grove-DPS310 |
@@ -80,7 +80,7 @@ Grove - 高精度気圧センサー (DPS310)
 
 :::tip
 
-Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 
 :::
 
@@ -104,7 +104,7 @@ Groveモジュールに関する詳細は、[Grove System](https://wiki.seeedstu
 
 :::note
 
-Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 
 :::
 
@@ -135,12 +135,12 @@ Arduinoを初めて使用する場合は、開始前に[Getting Started with Ard
 
 :::note
 
-Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 
 :::
 
 - **ステップ1.** [DPS310-Pressure-Sensor](https://github.com/Infineon/DPS310-Pressure-Sensor.git) ライブラリをGithubからダウンロードします。
-- **ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 - **ステップ3.** 以下のコードをArduino IDEにコピーしてアップロードします。
 
 ```cpp
@@ -220,7 +220,7 @@ void loop()
 *********************************************************************************************************/
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** シリアルモニターを開きます。すべてが正常に動作し、落下をシミュレーションするか地面に落とした場合、助けが必要かどうかを知らせてくれます。
 

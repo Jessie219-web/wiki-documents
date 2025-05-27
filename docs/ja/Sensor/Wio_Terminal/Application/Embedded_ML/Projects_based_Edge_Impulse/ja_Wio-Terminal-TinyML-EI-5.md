@@ -40,7 +40,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### ① Wio Terminal に最新のデバイスファームウェアをロードする
 
-Wio Terminal をコンピュータに接続します。電源スイッチを素早く2回スライドさせてブートローダーモードに入ります。詳細については[こちら](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#faq)も参照してください。
+Wio Terminal をコンピュータに接続します。電源スイッチを素早く2回スライドさせてブートローダーモードに入ります。詳細については[こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#faq)も参照してください。
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/Wio-Terminal-CircuitPython/dfu.gif" /></div>
 

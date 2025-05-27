@@ -32,7 +32,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## Home Assistantのインストール
 
-Home Assistantがすでにインストールされていることを確認してください。ODYSSEY-X86 SBCにHome Assistantをインストールする手順については、[このWiki](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant)を参照してください。
+Home Assistantがすでにインストールされていることを確認してください。ODYSSEY-X86 SBCにHome Assistantをインストールする手順については、[このWiki](https://wiki.seeedstudio.com/ja/ODYSSEY-X86-Home-Assistant)を参照してください。
 
 ## Home AssistantにESPHomeをインストールする
 

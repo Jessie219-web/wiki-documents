@@ -85,7 +85,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-quickstart/" target="_blank">SenseCAP - K1100 を使用したクイックスタート</a>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-quickstart/" target="_blank">SenseCAP - K1100 を使用したクイックスタート</a>
       </li></ul>
   </div>
   <h3>
@@ -93,25 +93,25 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_Azure_IoT_Central/" target="_blank">Node-RED を使用して SenseCAP を Azure IoT Central に接続する (SenseCAP)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_Azure_IoT_Central/" target="_blank">Node-RED を使用して SenseCAP を Azure IoT Central に接続する (SenseCAP)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/" target="_blank">Wio Terminal を Microsoft Azure IoT Central に接続する (WiFi)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/" target="_blank">Wio Terminal を Microsoft Azure IoT Central に接続する (WiFi)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Wio-Terminal-Azure-IOT/" target="_blank">Wio Terminal を Microsoft Azure IoT Hub に接続する (WiFi)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Azure-IOT/" target="_blank">Wio Terminal を Microsoft Azure IoT Hub に接続する (WiFi)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub/" target="_blank">Azure IoT Hub に統合する (Helium)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub/" target="_blank">Azure IoT Hub に統合する (Helium)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Develop-in-Microsoft-Azure-IoT-Central/" target="_blank">Microsoft Azure IoT Central で開発する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Develop-in-Microsoft-Azure-IoT-Central/" target="_blank">Microsoft Azure IoT Central で開発する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Configuring-Web-APP-Visualization/" target="_blank">Web APP ビジュアライゼーションを設定する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Configuring-Web-APP-Visualization/" target="_blank">Web APP ビジュアライゼーションを設定する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_Azure_to_PowerBI/" target="_blank">Microsoft Azure IoT データを Power BI で視覚化する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_Azure_to_PowerBI/" target="_blank">Microsoft Azure IoT データを Power BI で視覚化する</a></li>
     </ul>
     <ul>
       <li><a href="https://github.com/microsoft/IoT-For-Beginners" target="_blank">Microsoft IoT Hub 初心者向けコース</a></li>
@@ -125,22 +125,22 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
       <li><a href="https://sensecap-docs.seeed.cc/introduction.html" target="_blank">SenseCAP ドキュメントセンター</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_sensecap_node-red/" target="_blank">Node-RED を使用した SenseCAP コンソールのクイックスタート</a>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/" target="_blank">Node-RED を使用した SenseCAP コンソールのクイックスタート</a>
       </li></ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_Azure_IoT_Central/" target="_blank">Node-RED を使用して SenseCAP を Azure IoT Central に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_Azure_IoT_Central/" target="_blank">Node-RED を使用して SenseCAP を Azure IoT Central に接続する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_PowerBI/" target="_blank">Node-RED を使用して SenseCAP を Power BI に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_PowerBI/" target="_blank">Node-RED を使用して SenseCAP を Power BI に接続する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_influxdb/" target="_blank">Node-RED を使用して SenseCAP を InfluxDB に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_influxdb/" target="_blank">Node-RED を使用して SenseCAP を InfluxDB に接続する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_twilio/" target="_blank">Node-RED を使用して SenseCAP を Twilio に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_twilio/" target="_blank">Node-RED を使用して SenseCAP を Twilio に接続する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_datacake/" target="_blank">Node-RED を使用して SenseCAP を Datacake に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_datacake/" target="_blank">Node-RED を使用して SenseCAP を Datacake に接続する</a></li>
     </ul>
   </div>
   <h3>
@@ -148,22 +148,22 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Wio-Terminal-Light/" target="_blank">Wio Terminal 光センサー</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Light/" target="_blank">Wio Terminal 光センサー</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Wio-Terminal-IMU-Overview/" target="_blank">Wio Terminal IMU センサー</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-IMU-Overview/" target="_blank">Wio Terminal IMU センサー</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Grove-Moisture_Sensor/" target="_blank">Grove 土壌湿度センサー</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Grove-Moisture_Sensor/" target="_blank">Grove 土壌湿度センサー</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/" target="_blank">Grove VOC および eCO2 ガスセンサー (SGP30)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/" target="_blank">Grove VOC および eCO2 ガスセンサー (SGP30)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Grove-SHT4x/" target="_blank">Grove 温度＆湿度センサー (SHT40)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Grove-SHT4x/" target="_blank">Grove 温度＆湿度センサー (SHT40)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Grove-Vision-AI-Module/" target="_blank">Grove Vision AI モジュール</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Grove-Vision-AI-Module/" target="_blank">Grove Vision AI モジュール</a></li>
     </ul>
   </div>
   <h3>
@@ -171,22 +171,22 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-Light-Sensor-Grove-LoRa-E5/" target="_blank">Wio Terminal 光センサー</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-Light-Sensor-Grove-LoRa-E5/" target="_blank">Wio Terminal 光センサー</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-IMU-Sensor-Grove-LoRa-E5/" target="_blank">Wio Terminal IMU センサー</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-IMU-Sensor-Grove-LoRa-E5/" target="_blank">Wio Terminal IMU センサー</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/" target="_blank">Grove 土壌湿度センサー</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/" target="_blank">Grove 土壌湿度センサー</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/" target="_blank">Grove VOC および eCO2 ガスセンサー (SGP30)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/" target="_blank">Grove VOC および eCO2 ガスセンサー (SGP30)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/" target="_blank">Grove 温度＆湿度センサー (SHT40)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/" target="_blank">Grove 温度＆湿度センサー (SHT40)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1100-Vision-AI-Module-Grove-LoRa-E5/" target="_blank">Grove Vision AI モジュール</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1100-Vision-AI-Module-Grove-LoRa-E5/" target="_blank">Grove Vision AI モジュール</a></li>
     </ul>
   </div>
   <h3>
@@ -194,22 +194,22 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Helium-Introduction/" target="_blank">Helium の紹介</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction/" target="_blank">Helium の紹介</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connecting-to-Helium/" target="_blank">Helium に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium/" target="_blank">Helium に接続する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Integrate_into_Google_Sheets_via_Helium/" target="_blank">Helium を介して Google Sheets に統合する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Integrate_into_Google_Sheets_via_Helium/" target="_blank">Helium を介して Google Sheets に統合する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connect_AWS_via_helium/" target="_blank">Helium を介して AWS IoT Core に接続する (Helium)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connect_AWS_via_helium/" target="_blank">Helium を介して AWS IoT Core に接続する (Helium)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub/" target="_blank">Azure IoT Hub に統合する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub/" target="_blank">Azure IoT Hub に統合する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Configuring-Web-APP-Visualization/" target="_blank">Web APP ビジュアライゼーションを設定する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Configuring-Web-APP-Visualization/" target="_blank">Web APP ビジュアライゼーションを設定する</a></li>
     </ul>
   </div>
   <h3>
@@ -217,10 +217,10 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/TTN-Introduction/" target="_blank">TTN の紹介</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction/" target="_blank">TTN の紹介</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connecting-to-TTN/" target="_blank">TTN に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN/" target="_blank">TTN に接続する</a></li>
     </ul>
   </div>
   <h3>
@@ -228,22 +228,22 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Getting_started_with_Ubidots/" target="_blank">Ubidots を使用したクイックスタート</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Getting_started_with_Ubidots/" target="_blank">Ubidots を使用したクイックスタート</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Quick-Start-to-using-Blynk/" target="_blank">Blynk を使用したクイックスタート</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Quick-Start-to-using-Blynk/" target="_blank">Blynk を使用したクイックスタート</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Wio-Terminal-Advanced-WiFi/" target="_blank">高度な Wi-Fi 使用法</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Advanced-WiFi/" target="_blank">高度な Wi-Fi 使用法</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Google-Cloud/" target="_blank">Wio Terminal を Google Cloud IoT Core に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Google-Cloud/" target="_blank">Wio Terminal を Google Cloud IoT Core に接続する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/" target="_blank">Wio Terminal を Microsoft Azure IoT Central に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/" target="_blank">Wio Terminal を Microsoft Azure IoT Central に接続する</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Wio-Terminal-Azure-IOT/" target="_blank">Wio Terminal を Microsoft Azure IoT Hub に接続する</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Azure-IOT/" target="_blank">Wio Terminal を Microsoft Azure IoT Hub に接続する</a></li>
     </ul>
   </div>
   <h3>
@@ -251,25 +251,25 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connect_AWS_via_helium/" target="_blank">Helium を介して AWS IoT Core に接続する (Helium)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connect_AWS_via_helium/" target="_blank">Helium を介して AWS IoT Core に接続する (Helium)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub/" target="_blank">Azure IoT Hub に統合する (Helium)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub/" target="_blank">Azure IoT Hub に統合する (Helium)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Google-Cloud/" target="_blank">Wio Terminal を Google Cloud IoT Core に接続する (WiFi)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Google-Cloud/" target="_blank">Wio Terminal を Google Cloud IoT Core に接続する (WiFi)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/" target="_blank">Wio Terminal を Microsoft Azure IoT Central に接続する (WiFi)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/" target="_blank">Wio Terminal を Microsoft Azure IoT Central に接続する (WiFi)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Wio-Terminal-Azure-IOT/" target="_blank">Wio Terminal を Microsoft Azure IoT Hub に接続する (WiFi)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Azure-IOT/" target="_blank">Wio Terminal を Microsoft Azure IoT Hub に接続する (WiFi)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Getting_started_with_Ubidots/" target="_blank">Ubidots を使用したクイックスタート (WiFi)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Getting_started_with_Ubidots/" target="_blank">Ubidots を使用したクイックスタート (WiFi)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Quick-Start-to-using-Blynk/" target="_blank">Blynk を使用したクイックスタート (WiFi)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Quick-Start-to-using-Blynk/" target="_blank">Blynk を使用したクイックスタート (WiFi)</a></li>
     </ul>
   </div>
   <h3>
@@ -277,13 +277,13 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   </h3>
   <div className="item">
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Wio-Terminal-TinyML-EI-1/" target="_blank">Wio Terminal Edge Impulse クイックスタート (内蔵センサー)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-EI-1/" target="_blank">Wio Terminal Edge Impulse クイックスタート (内蔵センサー)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1111-Edge-Impulse/" target="_blank">Helium を介してクラウドに Edge Impulse アプリケーションを開発する (内蔵センサー)</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1111-Edge-Impulse/" target="_blank">Helium を介してクラウドに Edge Impulse アプリケーションを開発する (内蔵センサー)</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/Train-Deploy-AI-Model/" target="_blank">独自の AI モデルを Grove - Vision AI にトレーニングしてデプロイする</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model/" target="_blank">独自の AI モデルを Grove - Vision AI にトレーニングしてデプロイする</a></li>
     </ul>
   </div>
   <h3>
@@ -294,7 +294,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
       <li><a href="https://www.hackster.io/contests/iotinthewild#winners" target="_blank">持続可能な地球のための IoT Into the Wild コンテスト 2022</a></li>
     </ul>
     <ul>
-      <li><a href="https://wiki.seeedstudio.com/K1111-Quick-Start-Guide/" target="_blank">土壌湿度監視アラームシステム</a></li>
+      <li><a href="https://wiki.seeedstudio.com/ja/K1111-Quick-Start-Guide/" target="_blank">土壌湿度監視アラームシステム</a></li>
     </ul>
     <ul>
       <li><a href="https://www.hackster.io/hendra/environment-data-lora-node-c91415" target="_blank">Grove Wio E5 ピアツーピア通信</a></li>
@@ -309,7 +309,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <html>
     <table>
         <tr>
-            <td align="left">このチュートリアルでは、まず<strong>クイックスタートガイド</strong>セクションを通じて始めていただきます。このキットの卓越したデータプレゼンテーションと、IoT機能の簡便さを学びましょう。この章では、オープンソースプロジェクトを使用して、データ収集とデータ処理の楽しさを最短時間で体験できます。また、収集したデータをWiFiやLoRa®を通じてさまざまなプラットフォームに転送することができます。<br /><br /><a href="https://wiki.seeedstudio.com/K1100-quickstart/">章にジャンプ &gt;</a>
+            <td align="left">このチュートリアルでは、まず<strong>クイックスタートガイド</strong>セクションを通じて始めていただきます。このキットの卓越したデータプレゼンテーションと、IoT機能の簡便さを学びましょう。この章では、オープンソースプロジェクトを使用して、データ収集とデータ処理の楽しさを最短時間で体験できます。また、収集したデータをWiFiやLoRa®を通じてさまざまなプラットフォームに転送することができます。<br /><br /><a href="https://wiki.seeedstudio.com/ja/K1100-quickstart/">章にジャンプ &gt;</a>
             </td>
             <td>
                 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100_overview/1.png" /></div>
@@ -328,7 +328,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <table>
     <tbody>
         <tr>
-            <td colSpan={2}>SenseCAP プラットフォームからさまざまな他のPaaSプラットフォームにデータを接続し、より深いデータ処理を行いやすくするために、SenseCAP &amp; Node-RED の一連のチュートリアルを提供します。<br /><br /><a href="https://wiki.seeedstudio.com/K1100-quickstart/">章にジャンプ &gt;</a></td>
+            <td colSpan={2}>SenseCAP プラットフォームからさまざまな他のPaaSプラットフォームにデータを接続し、より深いデータ処理を行いやすくするために、SenseCAP &amp; Node-RED の一連のチュートリアルを提供します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/K1100-quickstart/">章にジャンプ &gt;</a></td>
             <td>
                 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100_overview/1.png" /></div>
             </td>
@@ -343,8 +343,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td>この章では、前述のNode-REDを引き続き使用し、Node-REDを活用してMicrosoft Azure IoT CentralでK1100キットを管理する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/K1100_sensecap_node-red/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_Azure_IoT_Central/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_sensecap_node-red/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_Azure_IoT_Central/">章にジャンプ &gt;</a></th>
         </tr>
         <tr> <td colspan={3}>—————————————————————————————————————————————</td>  </tr>
         <tr>
@@ -356,8 +356,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td>この章では、前述のNode-REDを引き続き使用し、Node-REDを活用してInfluxDBでK1100キットを管理する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_PowerBI/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_influxdb/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_PowerBI/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_influxdb/">章にジャンプ &gt;</a></th>
         </tr>
         <tr> <td colspan={3}>—————————————————————————————————————————————</td>  </tr>
         <tr>
@@ -369,8 +369,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td>この章では、前述のNode-REDを引き続き使用し、Node-REDを活用してDatacakeでK1100キットを管理する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_twilio/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_datacake/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_twilio/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_datacake/">章にジャンプ &gt;</a></th>
         </tr>
     </tbody>
 </table>
@@ -399,8 +399,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td>この章では、Wio Terminalに搭載されたWiFi機能を使用して、Wio TerminalからAzure IoT Centralにデータを送信する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/K1100_SenseCAP_to_Azure_IoT_Central/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_SenseCAP_to_Azure_IoT_Central/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/">章にジャンプ &gt;</a></th>
         </tr>
         <tr> <td> </td> </tr>
         <tr>
@@ -410,7 +410,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td align="left">この章では、Azure IoT Centralでデータを処理し、さらに開発する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/Develop-in-Microsoft-Azure-IoT-Central/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Develop-in-Microsoft-Azure-IoT-Central/">章にジャンプ &gt;</a></th>
         </tr>
         <tr> <td colspan={3}>————————————————————————————————————————————————————</td>  </tr>
         <tr>
@@ -423,8 +423,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td align="left">この章では、HeliumコンソールでAzure IoT Hubを使用する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub/">章にジャンプ &gt;</a></th>
         </tr>
         <tr> <td> </td> </tr>
         <tr>
@@ -446,8 +446,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td align="left">このセクションでは、Microsoft Azureで受信したデータ情報を無料のWeb APP統合を使用して可視化する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/K1100_Azure_to_PowerBI/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Configuring-Web-APP-Visualization/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100_Azure_to_PowerBI/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Configuring-Web-APP-Visualization/">章にジャンプ &gt;</a></th>
         </tr>
   </tbody></table>
 
@@ -480,9 +480,9 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td>このセクションでは、Grove 土壌湿度センサーを使用してデータを取得し、Grove - Wio-E5 を介して LoRa® ネットワークに接続し、Helium/TTN に接続する準備をする方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/K1100-Light-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/K1100-IMU-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100-Light-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100-IMU-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
         </tr>
         <tr>
             <td bgcolor="#93dfef"><div align="center"><img width={150} src="https://files.seeedstudio.com/wiki/K1100_overview/sgp30.png" /></div>
@@ -503,9 +503,9 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td>このセクションでは、Wio Terminal 光センサーを使用してデータを取得し、Grove - Wio-E5 を介して LoRa® ネットワークに接続し、Helium/TTN に接続する準備をする方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/K1100-Vision-AI-Module-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100-Temp-Humi-Sensor-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/K1100-Vision-AI-Module-Grove-LoRa-E5/">章にジャンプ &gt;</a></th>
         </tr>
 </tbody></table>
 
@@ -532,8 +532,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td> </td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/Helium-Introduction">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Connecting-to-Helium">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Helium-Introduction">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium">章にジャンプ &gt;</a></th>
             <td> </td>
         </tr>
         <tr> <td colspan={3}>————————————————————————————————————————————</td>  </tr>
@@ -548,8 +548,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td> </td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/Integrate-into-Azure-IoT-Hub">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Integrate_into_Google_Sheets_via_Helium/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Integrate-into-Azure-IoT-Hub">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Integrate_into_Google_Sheets_via_Helium/">章にジャンプ &gt;</a></th>
             <td> </td>
         </tr>
         <tr> <td colspan={3}>————————————————————————————————————————————</td>  </tr>
@@ -562,7 +562,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td colspan={2}> </td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/Connect_AWS_via_helium/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Connect_AWS_via_helium/">章にジャンプ &gt;</a></th>
             <td colspan={2}> </td>
         </tr>
         <tr>
@@ -592,8 +592,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td> </td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/TTN-Introduction">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Connecting-to-TTN">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/TTN-Introduction">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Connecting-to-TTN">章にジャンプ &gt;</a></th>
             <td> </td>
         </tr>
         <tr>
@@ -620,9 +620,9 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td align="left">この章では、データを Ubidots にアップロードし、自分の WiFi ネットワークを通じてグラフィカルに表示するプロセスを体験する方法を説明します。</td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/Wio-Terminal-Advanced-WiFi/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Azure-IoT-Central/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Getting_started_with_Ubidots/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Wio-Terminal-Advanced-WiFi/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Azure-IoT-Central/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Getting_started_with_Ubidots/">章にジャンプ &gt;</a></th>
         </tr>
         <tr> <td> </td> </tr>
         <tr>
@@ -636,8 +636,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
             <td> </td>
         </tr>
         <tr>
-            <th><a href="https://wiki.seeedstudio.com/Quick-Start-to-using-Blynk/">章にジャンプ &gt;</a></th>
-            <th><a href="https://wiki.seeedstudio.com/Connect-Wio-Terminal-to-Google-Cloud/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Quick-Start-to-using-Blynk/">章にジャンプ &gt;</a></th>
+            <th><a href="https://wiki.seeedstudio.com/ja/Connect-Wio-Terminal-to-Google-Cloud/">章にジャンプ &gt;</a></th>
             <th> </th>
         </tr>
 </tbody></table>
@@ -663,8 +663,8 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
       <td align="left">この wiki では、特定のアプリケーション向けに独自の AI モデルをトレーニングし、それを簡単に SenseCAP A1101 - LoRaWAN Vision AI センサーおよび Grove - Vision AI モジュールにデプロイする方法を説明します。</td>
     </tr>
     <tr>
-      <td><a href="https://wiki.seeedstudio.com/K1111-Edge-Impulse/">章にジャンプ &gt;</a></td>
-      <td><a href="https://wiki.seeedstudio.com/Train-Deploy-AI-Model/">章にジャンプ &gt;</a></td>
+      <td><a href="https://wiki.seeedstudio.com/ja/K1111-Edge-Impulse/">章にジャンプ &gt;</a></td>
+      <td><a href="https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model/">章にジャンプ &gt;</a></td>
       <td colSpan={2} />
     </tr>
   </tbody></table>
@@ -687,7 +687,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
 <table align="center">
   <tbody><tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit33.jpg" alt="pir" width={1100} height="auto" /></p></td>
-      <td align="left"><strong>土壌湿度モニタリングアラームシステム</strong><br /><br />このセクションでは、Wio Terminal を使用して Grove - Wio-E5 と Grove - 土壌湿度センサーをリンクし、それらを Helium と Azure IoT Central に接続して、リアルタイムの庭の植木モニターと水やりリマインダーを構築する方法を紹介します。<br /><br /><a href="https://wiki.seeedstudio.com/soil-alarm-system/">章にジャンプ &gt;</a></td>
+      <td align="left"><strong>土壌湿度モニタリングアラームシステム</strong><br /><br />このセクションでは、Wio Terminal を使用して Grove - Wio-E5 と Grove - 土壌湿度センサーをリンクし、それらを Helium と Azure IoT Central に接続して、リアルタイムの庭の植木モニターと水やりリマインダーを構築する方法を紹介します。<br /><br /><a href="https://wiki.seeedstudio.com/ja/soil-alarm-system/">章にジャンプ &gt;</a></td>
     </tr>
     <tr>
       <td align="center"><p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/K1100_overview/000000.png" alt="pir" width={1100} height="auto" /></p></td>

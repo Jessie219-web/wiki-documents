@@ -41,7 +41,7 @@ GPSは屋外での位置測定能力を証明してきました。現在では�
 <p style={{textAlign: 'center'}}><img src="https://wdcdn.qpic.cn/MTY4ODg1NTkyNTI4NTEwNA_594585_HptIoexn6zqh4-oS_1692694140?w=1424&h=328&type=image/png" alt="pir" width={800} height="auto" /></p>
 
 :::tip
-詳細については、[屋内位置測定システム](https://wiki.seeedstudio.com/IPS_For_SenseCAP_T1000_Traker)をご確認ください。
+詳細については、[屋内位置測定システム](https://wiki.seeedstudio.com/ja/IPS_For_SenseCAP_T1000_Traker)をご確認ください。
 :::
 
 

@@ -4,7 +4,7 @@ title: Raspberry Pi 用 WM1302 Pi Hat
 keywords:
   - wio 
   - docusaurus
-image: https://wiki.seeedstudio.com/wio_gps_board/
+image: https://wiki.seeedstudio.com/ja/wio_gps_board/
 slug: /ja/WM1302_Pi_HAT
 last_update:
   date: 05/15/2025
@@ -24,7 +24,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 
 :::note
-        最近、[WM1302 LoRaWAN ゲートウェイモジュール](https://wiki.seeedstudio.com/WM1302_module/)およびLoRa-E5モジュールに基づくLoRa-E5シリーズをリリースしました。[こちら](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3)をクリックして、[Groveモジュール](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/)、[ミニ開発ボード](https://wiki.seeedstudio.com/LoRa_E5_mini/)、[開発キット](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/)など、LoRa-E5ファミリーの新しいメンバーをご覧ください。STM32WLシリーズ(SDK)用のSTM32Cube MCUパッケージを使用してLoRaWANエンドノードを作成し、LoRaWANネットワークに参加してデータを送信する方法については、[ミニ開発ボード](https://wiki.seeedstudio.com/LoRa_E5_mini/)および[開発キット](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/)のWikiページをご覧ください。
+        最近、[WM1302 LoRaWAN ゲートウェイモジュール](https://wiki.seeedstudio.com/ja/WM1302_module/)およびLoRa-E5モジュールに基づくLoRa-E5シリーズをリリースしました。[こちら](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3)をクリックして、[Groveモジュール](https://wiki.seeedstudio.com/ja/Grove_LoRa_E5_New_Version/)、[ミニ開発ボード](https://wiki.seeedstudio.com/ja/LoRa_E5_mini/)、[開発キット](https://wiki.seeedstudio.com/ja/LoRa_E5_Dev_Board/)など、LoRa-E5ファミリーの新しいメンバーをご覧ください。STM32WLシリーズ(SDK)用のSTM32Cube MCUパッケージを使用してLoRaWANエンドノードを作成し、LoRaWANネットワークに参加してデータを送信する方法については、[ミニ開発ボード](https://wiki.seeedstudio.com/ja/LoRa_E5_mini/)および[開発キット](https://wiki.seeedstudio.com/ja/LoRa_E5_Dev_Board/)のWikiページをご覧ください。
 :::
 
 WM1302 Pi HATは、SX1302に基づくWM1302 LoRaWAN ゲートウェイモジュールをRaspberry Pi（Raspberry Pi 4Bまでのバージョン）に接続するために設計された拡張ボードです。また、LoRaWAN認証チップとGPSモジュールも統合されています。

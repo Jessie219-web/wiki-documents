@@ -101,7 +101,7 @@ RePhone Core 2G Atmel32u4 v1.0は、新しいArduino互換のRePhone Core 2Gボ�
 
 ## Arduino IDE
 
-[最新のArduino IDE](https://www.arduino.cc/en/Main/Software)をダウンロードしてインストールした後、[こちら](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)をクリックしてArduino IDEにボードを追加してください。
+[最新のArduino IDE](https://www.arduino.cc/en/Main/Software)をダウンロードしてインストールした後、[こちら](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)をクリックしてArduino IDEにボードを追加してください。
 
 ### ドライバのインストール (Windowsの場合)
 
@@ -136,7 +136,7 @@ void loop()
 
 * **ツール > ボード > RePhone core 2G-Atmel32u4**をクリックしてください。
 
-RePhone core 2G-Atmel32u4が見つからない場合は、[SeeedボードをArduino IDEに追加する方法](https://wiki.seeedstudio.com/Seeed_Arduino_Boards/)を確認してください。
+RePhone core 2G-Atmel32u4が見つからない場合は、[SeeedボードをArduino IDEに追加する方法](https://wiki.seeedstudio.com/ja/Seeed_Arduino_Boards/)を確認してください。
 
 * **ツール > ポート**をクリックして正しいポート番号を選択してください。（*COM1は選択しないでください*）
 

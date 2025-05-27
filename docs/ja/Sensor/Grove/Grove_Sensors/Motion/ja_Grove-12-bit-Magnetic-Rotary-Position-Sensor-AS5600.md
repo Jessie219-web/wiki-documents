@@ -93,13 +93,13 @@ AS5600は測定される磁場に対して一定の要件があります。チ�
 #### ソフトウェア
 
 :::caution
-Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
+Arduinoを初めて使用する場合は、開始前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** Githubから[AS5600](https://github.com/Seeed-Studio/Seeed_Arduino_AS5600)ライブラリをダウンロードします。
 
 :::note
-Arduino用ライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)を参照してください。
+Arduino用ライブラリのインストール方法については、[ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/)を参照してください。
 :::
 
 - **ステップ 2.** Arduino IDEを再起動します。**File** → **Examples** → **Seeed_AS5600-master** → **readAngle**のパスを通じて**readAngle**の例を開きます。このデモを通じて、センサーの下にある磁石から角度を読み取ることができます。
@@ -159,7 +159,7 @@ void loop()
 }
 ```
 
-- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 3.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 4.** Arduino IDEの**シリアルモニター**を開くには、**Tool-> Serial Monitor**をクリックします。または、`ctrl`+`shift`+`m`キーを同時に押します。ボーレートを**115200**に設定します。
 

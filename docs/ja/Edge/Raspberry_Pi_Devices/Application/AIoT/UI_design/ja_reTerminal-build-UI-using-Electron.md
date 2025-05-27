@@ -29,7 +29,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 まず、reTerminal に **Node.js** と **npm** をインストールします。npm は Node.js パッケージのパッケージマネージャです。
 
-- **ステップ 1.** [こちら](https://wiki.seeedstudio.com/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet)で説明されているように、**オンボード LCD、外部ディスプレイ、または SSH** を使用して reTerminal にアクセスします。
+- **ステップ 1.** [こちら](https://wiki.seeedstudio.com/ja/reTerminal/#log-in-to-raspberry-pi-os-ubuntu-os-or-other-os-using-ssh-over-wi-fi-ethernet)で説明されているように、**オンボード LCD、外部ディスプレイ、または SSH** を使用して reTerminal にアクセスします。
 
 - **ステップ 2.** パッケージをアップグレードします。
 

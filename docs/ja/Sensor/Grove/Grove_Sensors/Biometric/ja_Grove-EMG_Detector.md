@@ -37,7 +37,7 @@ EMG検出器は、人間の身体と電気をつなぐ橋渡し役です。こ�
 - 追加の電源不要
 
 :::tip
-Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)を参照してください。
+Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)を参照してください。
 :::
 
 対応プラットフォーム

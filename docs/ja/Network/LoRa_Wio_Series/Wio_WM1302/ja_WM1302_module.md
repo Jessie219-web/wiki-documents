@@ -26,9 +26,9 @@ LoRa®マークはSemtech Corporationまたはその子会社の商標です。
 :::note
 最近、Wio-E5モジュールを基にしたWio-E5シリーズをリリースしました。
 
-[こちら](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3)をクリックして、[Wio-E5モジュール](https://wiki.seeedstudio.com/LoRa-E5_STM32WLE5JC_Module/)、[Groveモジュール](https://wiki.seeedstudio.com/Grove_LoRa_E5_New_Version/)、[ミニ開発ボード](https://wiki.seeedstudio.com/LoRa_E5_mini/)、[開発キット](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/)など、LoRa-E5ファミリーの新しいメンバーをご覧ください。
+[こちら](https://www.seeedstudio.com/lora-c-755.html?product_list_stock=3)をクリックして、[Wio-E5モジュール](https://wiki.seeedstudio.com/ja/LoRa-E5_STM32WLE5JC_Module/)、[Groveモジュール](https://wiki.seeedstudio.com/ja/Grove_LoRa_E5_New_Version/)、[ミニ開発ボード](https://wiki.seeedstudio.com/ja/LoRa_E5_mini/)、[開発キット](https://wiki.seeedstudio.com/ja/LoRa_E5_Dev_Board/)など、LoRa-E5ファミリーの新しいメンバーをご覧ください。
 
-STM32WLシリーズ(SDK)向けのSTM32Cube MCUパッケージを使用してLoRaWAN®エンドノードを作成し、LoRaWAN®ネットワークに参加してデータを送信する方法については、[ミニ開発ボード](https://wiki.seeedstudio.com/LoRa_E5_mini/)および[開発キット](https://wiki.seeedstudio.com/LoRa_E5_Dev_Board/)のWikiページをご覧ください。
+STM32WLシリーズ(SDK)向けのSTM32Cube MCUパッケージを使用してLoRaWAN®エンドノードを作成し、LoRaWAN®ネットワークに参加してデータを送信する方法については、[ミニ開発ボード](https://wiki.seeedstudio.com/ja/LoRa_E5_mini/)および[開発キット](https://wiki.seeedstudio.com/ja/LoRa_E5_Dev_Board/)のWikiページをご覧ください。
 :::
 
 WM1302モジュールは、mini-PCIeフォームファクターを備えた新世代のLoRaWAN®ゲートウェイモジュールです。Semtech® SX1302ベースバンドLoRaWAN®チップを基にしており、ゲートウェイ製品の長距離無線通信の潜在能力をさらに引き出します。このモジュールは、以前のSX1301およびSX1308 LoRa®チップと比較して、感度が高く、消費電力が少なく、動作温度が低いという特徴があります。

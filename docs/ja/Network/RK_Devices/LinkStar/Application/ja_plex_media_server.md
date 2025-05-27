@@ -38,8 +38,8 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 LinkStarデバイスにOpenWRTをインストールするには、LinkStar Wikiに記載されている包括的なインストールガイドを参照してください。このチュートリアルでは、OpenWRTシステムを利用し、LinkStarをソフトルーターとして機能させながらPlexコンテナをインストールする方法を説明します。
 以下のオプションのいずれかを選択して、LinkStarにOpenWRTをインストールしてください：
-1. TFカードにOpenWRTをフラッシュする。[こちらがチュートリアルです](https://wiki.seeedstudio.com/linkstar-install-system/#flash-openwrt-to-the-tf-card)
-2. eMMCにOpenWRTをフラッシュする。[こちらがチュートリアルです](https://wiki.seeedstudio.com/linkstar-install-system/#flash-openwrt-to-emmc)
+1. TFカードにOpenWRTをフラッシュする。[こちらがチュートリアルです](https://wiki.seeedstudio.com/ja/linkstar-install-system/#flash-openwrt-to-the-tf-card)
+2. eMMCにOpenWRTをフラッシュする。[こちらがチュートリアルです](https://wiki.seeedstudio.com/ja/linkstar-install-system/#flash-openwrt-to-emmc)
 
 - **ステップ 02** LinkStarネットワークの設定
 

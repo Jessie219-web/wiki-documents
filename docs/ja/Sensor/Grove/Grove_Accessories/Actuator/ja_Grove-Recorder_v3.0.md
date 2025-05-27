@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Recorder_v3.0/
+image: https://wiki.seeedstudio.com/ja/Grove-Recorder_v3.0/
 slug: /ja/Grove-Recorder_v3.0
 last_update:
   date: 05/15/2025
@@ -39,7 +39,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 * 内蔵マイクロフォン
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## プラットフォームサポート
@@ -190,7 +190,7 @@ void loop()
 **ステップ 1.** [Codecraft](https://ide.chmakered.com/)を開き、Arduinoサポートを追加し、メインプロシージャを作業エリアにドラッグします。
 
 :::note
-    初めてCodecraftを使用する場合は、[Arduino用Codecraftガイド](https://wiki.seeedstudio.com/Guide_for_Codecraft_using_Arduino/)も参照してください。
+    初めてCodecraftを使用する場合は、[Arduino用Codecraftガイド](https://wiki.seeedstudio.com/ja/Guide_for_Codecraft_using_Arduino/)も参照してください。
 :::
 
 **ステップ 2.** 下の画像のようにブロックをドラッグするか、このページの最後からダウンロードできるcdcファイルを開きます。

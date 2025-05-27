@@ -86,7 +86,7 @@ IP66ハウジング、Bluetooth設定、グローバルLoRaWAN®ネットワー�
   - <a href="https://www.arduino.cc/" target="_blank"><span>Arduino</span></a>
 </div>
 
-Arduino を使用して Wio Terminal にプログラムをアップロードします。Arduino を Wio Terminal と初めて使用する場合は、<a href="https://wiki.seeedstudio.com/Preliminary-Preparation/" target="_blank"><span>Getting Started with Wio Terminal</span></a> を参照することを強くお勧めします。
+Arduino を使用して Wio Terminal にプログラムをアップロードします。Arduino を Wio Terminal と初めて使用する場合は、<a href="https://wiki.seeedstudio.com/ja/Preliminary-Preparation/" target="_blank"><span>Getting Started with Wio Terminal</span></a> を参照することを強くお勧めします。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/selectBoard.png" /></div>
 
@@ -192,7 +192,7 @@ function Decoder(bytes, port) {
 
 これにより、データを読みやすい形式に変換できます。
 
-- **ステップ 4（オプション）**. 「Function」ページに戻り、デバイスから<a href="https://wiki.seeedstudio.com/Connecting-to-Helium/#upload-code-send-data-to-helium" target="_blank"><span>入力された16進データ</span></a>を取得できます。ポートを「8」に設定し、「RUN」ボタンをクリックしてください。
+- **ステップ 4（オプション）**. 「Function」ページに戻り、デバイスから<a href="https://wiki.seeedstudio.com/ja/Connecting-to-Helium/#upload-code-send-data-to-helium" target="_blank"><span>入力された16進データ</span></a>を取得できます。ポートを「8」に設定し、「RUN」ボタンをクリックしてください。
 
 <div align="center"><img width={400} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/185.png" /></div>
 

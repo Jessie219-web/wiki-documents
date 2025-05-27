@@ -60,7 +60,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 | 寸法                                         | 20mm x 40mm                         |
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 対応プラットフォーム
@@ -106,7 +106,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 #### ソフトウェア
 
 - ステップ1. [Grove-高温センサーライブラリ](https://github.com/Seeed-Studio/Grove_HighTemp_Sensor/archive/master.zip)をGithubからダウンロードします。
-- ステップ2. [ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- ステップ2. [ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 - ステップ3. 以下のコードをArduino IDEにコピーしてアップロードします。
 
 ```cpp

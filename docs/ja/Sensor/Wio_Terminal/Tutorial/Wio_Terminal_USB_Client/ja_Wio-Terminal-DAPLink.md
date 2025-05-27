@@ -26,7 +26,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 ## 始めましょう
 
-Arduino DAPLink のスタートガイド Wiki は [こちら](https://wiki.seeedstudio.com/Arduino-DAPLink/) をご覧ください。
+Arduino DAPLink のスタートガイド Wiki は [こちら](https://wiki.seeedstudio.com/ja/Arduino-DAPLink/) をご覧ください。
 
 ### `uf2` メソッド
 
@@ -34,7 +34,7 @@ Arduino DAPLink のスタートガイド Wiki は [こちら](https://wiki.seeed
 
 - [**simple_daplink_wt**](https://files.seeedstudio.com/wiki/Wio-Terminal/res/simple_daplink_wt.uf2) `uf2` ファイルをダウンロードします。
 
-電源スイッチを素早く 2 回スライドさせてブートローダーモードに入ります。詳細については [こちら](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#faq) も参照してください。
+電源スイッチを素早く 2 回スライドさせてブートローダーモードに入ります。詳細については [こちら](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#faq) も参照してください。
 
 PC に `Arduino` という名前の外部ドライブが表示されるはずです。ダウンロードした `uf2` ファイルを `Arduino` ドライブにドラッグしてください。
 

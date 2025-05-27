@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Logic_DC_Jack/
+image: https://wiki.seeedstudio.com/ja/Logic_DC_Jack/
 slug: /ja/Logic_DC_Jack
 last_update:
   date: 05/15/2025

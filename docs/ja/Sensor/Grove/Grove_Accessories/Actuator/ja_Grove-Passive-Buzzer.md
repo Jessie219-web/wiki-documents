@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Grove-Passive-Buzzer/
+image: https://wiki.seeedstudio.com/ja/Grove-Passive-Buzzer/
 slug: /ja/Grove-Passive-Buzzer
 last_update:
   date: 05/15/2025
@@ -63,7 +63,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 #### ソフトウェア
 
-- **ステップ1** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ1** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 #### コード例1 - 単純なビープ音を鳴らす
 

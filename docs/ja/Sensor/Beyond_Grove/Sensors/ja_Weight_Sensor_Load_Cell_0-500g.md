@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - ドキュサウルス
-image: https://wiki.seeedstudio.com/Weight_Sensor_Load_Cell_0-500g/
+image: https://wiki.seeedstudio.com/ja/Weight_Sensor_Load_Cell_0-500g/
 slug: /ja/Weight_Sensor_Load_Cell_0-500g
 last_update:
   date: 05/15/2025

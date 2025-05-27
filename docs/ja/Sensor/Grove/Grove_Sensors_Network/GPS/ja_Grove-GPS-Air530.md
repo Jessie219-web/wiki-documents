@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-GPS-Air530/
+image: https://wiki.seeedstudio.com/ja/Grove-GPS-Air530/
 slug: /ja/Grove-GPS-Air530
 last_update:
   date: 05/15/2025
@@ -22,7 +22,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 [![](https://files.seeedstudio.com/wiki/common/Get_One_Now_Banner.png)](https://www.seeedstudio.com/Grove-GPS-Air530-p-4584.html)
 
 :::tip
-      [Seeed GPS Modules Selection Guide](https://wiki.seeedstudio.com/GPS-Modules-Selection-Guide/)を公開しました。これにより、あなたのニーズに最適なGPSモジュールを選ぶ手助けができます。
+      [Seeed GPS Modules Selection Guide](https://wiki.seeedstudio.com/ja/GPS-Modules-Selection-Guide/)を公開しました。これにより、あなたのニーズに最適なGPSモジュールを選ぶ手助けができます。
 :::
 
 ## 特徴
@@ -33,7 +33,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 - 小型で低消費電力
 
 :::tip
-    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/)をご参照ください。
+    Groveモジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をご参照ください。
 :::
 
 ## 仕様
@@ -58,7 +58,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)を必ずご覧ください。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)を必ずご覧ください。
 :::
 
 ### Arduinoで遊ぶ
@@ -97,7 +97,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 :::
 
 - **ステップ 1.** [u-center](https://www.u-blox.com/en/product/u-center-windows)ソフトウェアをインストールします。
-- **ステップ 2.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)をご確認ください。
+- **ステップ 2.** 以下のコードをArduino IDEにコピーしてアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)をご確認ください。
 
 ```c
 #include <SoftwareSerial.h>

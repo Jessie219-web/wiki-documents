@@ -52,7 +52,7 @@ SenseCraftクラウドサービスは、LoRaWAN IoT低消費電力通信プロ�
 
 
 :::tip
-現在、アプリは単一デバイスの購入のみ対応しています。複数デバイスのサービス購入については、[SenseCAPポータルサブスクリプション](https://wiki.seeedstudio.com/sensecraft_cloud_fee/#sensecap-portal-services-subscription)をご覧ください。
+現在、アプリは単一デバイスの購入のみ対応しています。複数デバイスのサービス購入については、[SenseCAPポータルサブスクリプション](https://wiki.seeedstudio.com/ja/sensecraft_cloud_fee/#sensecap-portal-services-subscription)をご覧ください。
 :::
 
 

@@ -137,12 +137,12 @@ git clone https://github.com/Cosmic-Bee/xiao-zephyr-examples
       <td><div align="center"><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" style={{width:210, height:'auto'}}/></div></td>
     </tr>
     <tr>
-        <td align="center"><div class="get_one_now_container" style="text-align: center;">
+        <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
             <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-BLE-nRF52840-p-5201.html">
             <strong><span><font color="FFFFFF" size="4"> 今すぐ購入 🖱️</font></span></strong>
             </a>
         </div></td>
-        <td align="center"><div class="get_one_now_container" style="text-align: center;">
+        <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
             <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
             <strong><span><font color="FFFFFF" size="4"> 今すぐ購入 🖱️</font></span></strong>
             </a>
@@ -938,7 +938,7 @@ D2はSD CSピンに使用されます。
 ## ✨ コントリビュータープロジェクト
 
 - このプロジェクトは Seeed Studio の [コントリビュータープロジェクト](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=57293418) によってサポートされています。
-- **Tim の努力**に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/Honorary-Contributors/) で展示されます。
+- **Tim の努力**に感謝します。あなたの作業は [こちら](https://wiki.seeedstudio.com/ja/Honorary-Contributors/) で展示されます。
 
 ## 技術サポート & 製品ディスカッション
 

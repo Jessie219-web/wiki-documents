@@ -134,7 +134,7 @@ Grove Base Shield がない場合は、以下のように直接このモジュ�
 #### ソフトウェア
 
 :::note
-Arduino を初めて使用する場合は、開始する前に [Arduino の使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
+Arduino を初めて使用する場合は、開始する前に [Arduino の使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) を参照することを強くお勧めします。
 :::
 
 - **ステップ 1.** Arduino IDE を開き、新しいファイルを作成して、以下のコードをそのファイルにコピーします。
@@ -229,7 +229,7 @@ void loop() {
 このデモでは、モード1（トグルモード）を選択しています。<mark>#define LED_MODE   1</mark> を <mark>#define LED_MODE   2</mark> に変更することで、フォローモードを使用することができます。
 :::
 
-- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 2.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 3.** ボタンを押してみてください。LEDがフェードイン/フェードアウト効果で点灯するのが確認できます。
 
@@ -264,7 +264,7 @@ void loop() {
 **Raspberry Pi OS >= Bullseye**を使用している場合は、**Python3**のみで以下のコマンドラインを使用してください。
 :::
 
-- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
+- **ステップ 1**. [ソフトウェアの設定](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/#installation)に従って開発環境を構成します。
 - **ステップ 2**. grove.pyライブラリをクローンしてソースファイルをダウンロードします。
 
 ```

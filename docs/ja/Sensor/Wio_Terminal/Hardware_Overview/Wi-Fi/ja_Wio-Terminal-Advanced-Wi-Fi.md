@@ -4,7 +4,7 @@ nointro:
 keywords:
   - ドキュメント
   - docusaurus
-image: https://wiki.seeedstudio.com/Wio-Terminal-Advanced-Wi-Fi/
+image: https://wiki.seeedstudio.com/ja/Wio-Terminal-Advanced-Wi-Fi/
 slug: /ja/Wio-Terminal-Advanced-Wi-Fi
 last_update:
   date: 05/15/2025
@@ -19,7 +19,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 この Wiki では、**HTTPClient、DNSServer、WebServer** ライブラリなど、Wi-Fi の高度なライブラリ使用法を紹介します。これらのライブラリを実装することで、簡単な API を使用して IoT プロジェクトを開発することができます。
 
-[**ネットワーク概要**](https://wiki.seeedstudio.com/Wio-Terminal-Network-Overview/) に従って、**最新のファームウェアと依存ライブラリ**を更新していることを確認してください。
+[**ネットワーク概要**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Network-Overview/) に従って、**最新のファームウェアと依存ライブラリ**を更新していることを確認してください。
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/banner.png" /></div>
 
@@ -93,7 +93,7 @@ void loop() {
 これは HTTPClient ライブラリを使用した **HTTPs 接続** の例です。訪問したいウェブサイトに HTTPs GET リクエストを送信する際に参考にしてください！
 
 :::note
-    ウェブサイトのルート CA を取得する方法については [**こちら**](https://wiki.seeedstudio.com/Wio-Terminal-Wi-Fi/#obtaining-websites-root-ca) を参照してください。
+    ウェブサイトのルート CA を取得する方法については [**こちら**](https://wiki.seeedstudio.com/ja/Wio-Terminal-Wi-Fi/#obtaining-websites-root-ca) を参照してください。
 :::
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Advanced-Wi-Fi/HTTPs.png" /></div>
 

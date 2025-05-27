@@ -35,7 +35,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 
 円形ディスプレイを初めて使用する場合は、以前に作成した準備コンテンツを読み、それに従ってライブラリ環境を構成することで、円形ディスプレイをスムーズに使用できるようにしてください。
 
-- **[Seeed Studio 円形ディスプレイの準備 (XIAO用)](https://wiki.seeedstudio.com/get_start_round_display#getting-started)**
+- **[Seeed Studio 円形ディスプレイの準備 (XIAO用)](https://wiki.seeedstudio.com/ja/get_start_round_display#getting-started)**
 
 ### microSDカードの取り付け
 
@@ -1014,7 +1014,7 @@ void loop() {
 
 ESP32シリーズは非常に強力なファイルシステムサポートを備えているため、XIAO ESP32でファイルシステムを使用し、microSDカードを保存する方法についての一連の例を用意しています。以下のリンクから学ぶことができます。
 
-- **[ファイルシステムとXIAO ESP32S3 Sense](https://wiki.seeedstudio.com/xiao_esp32s3_sense_filesystem)**
+- **[ファイルシステムとXIAO ESP32S3 Sense](https://wiki.seeedstudio.com/ja/xiao_esp32s3_sense_filesystem)**
 
 このWikiのチュートリアルはXIAO ESP32シリーズに適用されますが、Round DisplayのSDカードスロットを使用したい場合、上記のチュートリアルはXIAO ESP32S3 SenseのSDカードスロットの使用に焦点を当てているため、SDカードの初期化を以下の行に変更する必要があります。
 
@@ -1109,7 +1109,7 @@ void loop() {
 
 ディスプレイ部分については、主にLVGLライブラリとTFTライブラリの使用方法を紹介します。スペースの関係で、サポートされているグラフィックスライブラリを使用して複雑なダイヤルを描画する方法については、新しいWikiで詳しく説明します。
 
-[Seeed Studio ラウンドディスプレイでの XIAO 用LVGLとTFTの使用方法](https://wiki.seeedstudio.com/using_lvgl_and_tft_on_round_display)
+[Seeed Studio ラウンドディスプレイでの XIAO 用LVGLとTFTの使用方法](https://wiki.seeedstudio.com/ja/using_lvgl_and_tft_on_round_display)
 
 もちろん、簡単な例を実装したいだけの場合でも、グラフィックスライブラリには非常に豊富な例が用意されており、参考にすることができます。
 

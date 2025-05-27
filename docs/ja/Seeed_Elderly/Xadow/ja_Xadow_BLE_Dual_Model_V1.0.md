@@ -54,7 +54,7 @@ Xadow - BLE (デュアルモード) v1.0は、CSRデュアルモードBluetooth�
 ---
 **Uart Beeを介してPCにBluetoothを接続する**
 
-Xadow - BLEは標準のXadowインターフェースを持ち、リードピッチがあります。[Xadow - Breakout](https://wiki.seeedstudio.com/Xadow_Breakout)を使用してGroveソケットに変換します。
+Xadow - BLEは標準のXadowインターフェースを持ち、リードピッチがあります。[Xadow - Breakout](https://wiki.seeedstudio.com/ja/Xadow_Breakout)を使用してGroveソケットに変換します。
 
 Xadowインターフェースは軸対称ポートであるため、組み立て方向を守る必要があります。以下の画像を参照してください。
 
@@ -64,7 +64,7 @@ Xadowインターフェースは軸対称ポートであるため、組み立て
 
 **Xadow - メインボードにBluetoothを接続する**
 
-Xadow BLEスレーブを[Xadow - メインボード](https://wiki.seeedstudio.com/Xadow_Main_Board)に接続し、USBケーブルでメインボードをPCに接続します。
+Xadow BLEスレーブを[Xadow - メインボード](https://wiki.seeedstudio.com/ja/Xadow_Main_Board)に接続し、USBケーブルでメインボードをPCに接続します。
 
 注意: Xadow - BLEをXadowメインボードに接続する際には、接続方向に注意してください。接続方法は、1つのXadowモジュールの未充填コーナーを別のモジュールの直角コーナーに接続することです（各Xadowモジュールの4つのコーナーを参照してください）。
 

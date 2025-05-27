@@ -682,7 +682,7 @@ CM4のチップ周辺には、ICをしっかりと保護するために、特別
 
 ## Q9: なぜreTerminalのドライバーをインストールした後にブザー、LED、ボタンが動作しないのですか？
 
-reTerminalには、I/O拡張チップの2つのバージョンが搭載されています。古いバージョンはMCP23008、新しいバージョンはPCA9554です。[reTerminalドライバーを手動でインストールした場合](https://wiki.seeedstudio.com/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)、以下を確認してください。
+reTerminalには、I/O拡張チップの2つのバージョンが搭載されています。古いバージョンはMCP23008、新しいバージョンはPCA9554です。[reTerminalドライバーを手動でインストールした場合](https://wiki.seeedstudio.com/ja/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os)、以下を確認してください。
 
 まず、reTerminalにどのチップが搭載されているかを確認してください。
 
@@ -710,7 +710,7 @@ MCP23008チップが搭載されたreTerminalの場合、以下の手順を実�
 
 - **ステップ1.** [Ubuntu Server 21.10](https://ubuntu.com/download/raspberry-pi/thank-you?version=21.10&architecture=server-arm64+raspi)をreTerminalのeMMCストレージにフラッシュします
 
-**注意:** フラッシュ手順については[こちら](https://wiki.seeedstudio.com/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)を参照してください。**Raspberry Pi Imager**を開いた後、`CHOOSE OS > Use custom` に移動し、上記のイメージを選択してフラッシュしてください。
+**注意:** フラッシュ手順については[こちら](https://wiki.seeedstudio.com/ja/reTerminal/#flash-raspberry-pi-os-64-bit-ubuntu-os-or-other-os-to-emmc)を参照してください。**Raspberry Pi Imager**を開いた後、`CHOOSE OS > Use custom` に移動し、上記のイメージを選択してフラッシュしてください。
 
 - **ステップ2.** reTerminalにSSHで接続し、以下のコマンドを順番に実行します。**ubuntu**をユーザー名として使用し、**ubuntu**をパスワードとして使用してください。
 
@@ -742,7 +742,7 @@ sudo reboot
 
 ## Q11: Raspberry Pi OS Bullseye をインストールした後、画面の向きが正しくない
 
-- **ステップ 1.** reTerminal の eMMC に **Raspberry Pi OS Bullseye** をフラッシュした後、[このガイド](https://wiki.seeedstudio.com/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os) に従って必要なドライバをインストールしてください。
+- **ステップ 1.** reTerminal の eMMC に **Raspberry Pi OS Bullseye** をフラッシュした後、[このガイド](https://wiki.seeedstudio.com/ja/reTerminal/#install-reterminal-drivers-after-flashing-new-raspberry-pi-os-ubuntu-os-or-other-os) に従って必要なドライバをインストールしてください。
 
 - **ステップ 2.** **.config** ディレクトリの下に **monitors.xml** という名前の新しいファイルを作成します。
 

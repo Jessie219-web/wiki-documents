@@ -31,7 +31,7 @@ Grove – UV センサーは、入射する紫外線（UV）放射の強度を�
 - Grove インターフェース
 
 :::tip
-Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 仕様

@@ -4,7 +4,7 @@ nointro:
 keywords:
   - docs
   - docusaurus
-image: https://wiki.seeedstudio.com/Grove-I2C_FM_Receiver/
+image: https://wiki.seeedstudio.com/ja/Grove-I2C_FM_Receiver/
 slug: /ja/Grove-I2C_FM_Receiver
 last_update:
   date: 05/15/2025
@@ -39,7 +39,7 @@ Grove - I2C FM Receiver v1.1  | 一部のコンポーネントを変更して基
 - 入力電圧: 3.3V - 5V
 
 :::tip
-    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/Grove_System/) を参照してください。
+    Grove モジュールの詳細については、[Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) を参照してください。
 :::
 
 ## 対応プラットフォーム
@@ -55,7 +55,7 @@ Grove - I2C FM Receiver v1.1  | 一部のコンポーネントを変更して基
 ## はじめに
 
 :::note
-    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
+    Arduinoを初めて使用する場合は、開始する前に[Arduinoの使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/)をご覧になることを強くお勧めします。
 :::
 
 ### Arduinoで遊ぶ
@@ -121,7 +121,7 @@ Grove - I2C FM Receiver v1.1  | 一部のコンポーネントを変更して基
 
 - **ステップ 1.** [Grove-I2C FM Receiverライブラリ](https://github.com/mathertel/Radio/)をダウンロードしてインストールします。
 
-- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
+- **ステップ 2.** [Arduinoライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library)を参照して、Arduino用のライブラリをインストールします。
 
 - **ステップ 3.** 以下のコードをArduino IDEにコピーし、保存してコンパイルします。
 
@@ -735,7 +735,7 @@ long epReadLong(int where) {
 
 ```
 
-- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/Upload_Code/)を確認してください。
+- **ステップ 4.** デモをアップロードします。コードのアップロード方法がわからない場合は、[コードのアップロード方法](https://wiki.seeedstudio.com/ja/Upload_Code/)を確認してください。
 
 - **ステップ 5.** Arduino IDE の **シリアルモニター** を開きます。**ツール -> シリアルモニター** をクリックするか、++ctrl+shift+m++ キーを同時に押してください。すべてが正常に動作していれば、以下のような結果が得られます。
 

@@ -119,7 +119,7 @@ Base Shield v2は拡張ボードとして、多くのGroveコネクタを備え�
 |[今すぐ購入！](https://www.seeedstudio.com/Grove-Buzzer-p-768.html)|[今すぐ購入！](https://www.seeedstudio.com/Grove-Serial-RF-Pro-p-794.html)|[今すぐ購入！](https://www.seeedstudio.com/Grove-Serial-Bluetooth-v3.0-p-2475.html)|
 
 :::tip
-    [Grove System](https://wiki.seeedstudio.com/Grove_System/)をクリックして、利用可能なモジュールをさらに確認してください。
+    [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/)をクリックして、利用可能なモジュールをさらに確認してください。
 :::
 
 ## Raspberry Pi を使う
@@ -158,7 +158,7 @@ GrovePi+ は Grove モジュールを Raspberry Pi に接続するためのシ�
 |[今すぐ購入！](https://www.seeedstudio.com/300K-Pixel-USB-2.0-Mini-Webcam-p-1499.html)|[今すぐ購入！](https://www.seeedstudio.com/Grove-OLED-Display-1.12%22-p-824.html)|[今すぐ購入！](https://www.seeedstudio.com/depot/grove-gps-p-959.html)|
 
 :::tip
-    [Grove System](https://wiki.seeedstudio.com/Grove_System/) をクリックして、利用可能なモジュールをさらに確認してください。
+    [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) をクリックして、利用可能なモジュールをさらに確認してください。
 :::
 
 ## BeagleBone ボードを使う
@@ -202,7 +202,7 @@ Grove Base Cape for BeagleBone v2 は、BeagleBone プラットフォーム用�
 |[今すぐ購入！](https://www.seeedstudio.com/Grove-OLED-Display-1.12%22-p-824.html)|[今すぐ購入！](https://www.seeedstudio.com/Grove-Digital-Light-Sensor-p-1281.html)|[今すぐ購入！](https://www.seeedstudio.com/depot/grove-gps-p-959.html)|
 
 :::tip
-    [Grove System](https://wiki.seeedstudio.com/Grove_System/) をクリックして、利用可能なモジュールをさらに確認してください。
+    [Grove System](https://wiki.seeedstudio.com/ja/Grove_System/) をクリックして、利用可能なモジュールをさらに確認してください。
 :::
 
 ## シンプルな例

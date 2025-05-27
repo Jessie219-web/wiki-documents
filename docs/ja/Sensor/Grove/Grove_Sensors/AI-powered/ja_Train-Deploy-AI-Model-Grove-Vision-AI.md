@@ -265,7 +265,7 @@ Roboflowには**Label Assist**という機能があり、事前にラベルを�
 
 ### Google Colab 上で YOLOv5 を使用したトレーニング
 
-データセットのアノテーションが完了したら、次にデータセットをトレーニングする必要があります。[こちらのセクション](https://wiki.seeedstudio.com/Train-Deploy-AI-Model-Grove-Vision-AI/#train-using-yolov5-on-google-colab)に進み、Google Colab 上で YOLOv5 を使用して AI モデルをトレーニングする方法を確認してください。
+データセットのアノテーションが完了したら、次にデータセットをトレーニングする必要があります。[こちらのセクション](https://wiki.seeedstudio.com/ja/Train-Deploy-AI-Model-Grove-Vision-AI/#train-using-yolov5-on-google-colab)に進み、Google Colab 上で YOLOv5 を使用して AI モデルをトレーニングする方法を確認してください。
 
 ## <span id="jump3">3. トレーニング済みモデルをデプロイして推論を実行する</span>
 
@@ -273,7 +273,7 @@ Roboflowには**Label Assist**という機能があり、事前にラベルを�
 
 トレーニングの最後に取得した **model-1.uf2** を Grove - Vision AI モジュールに移動します。ここでは、Grove - Vision AI モジュールを [Wio Terminal](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) に接続して推論結果を確認します。
 
-**注意:** Arduino を初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino) を参照することを強くお勧めします。また、[このウィキ](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/#getting-started) に従って、Arduino IDE で Wio Terminal をセットアップしてください。
+**注意:** Arduino を初めて使用する場合は、[Getting Started with Arduino](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino) を参照することを強くお勧めします。また、[このウィキ](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/#getting-started) に従って、Arduino IDE で Wio Terminal をセットアップしてください。
 
 - **ステップ 1.** 最新バージョンの [Google Chrome](https://www.google.com/chrome) または [Microsoft Edge browser](https://www.microsoft.com/en-us/edge?r=1) をインストールして開きます。
 

@@ -39,7 +39,7 @@ Helium IoT ネットワークは LoRaWAN プロトコルを使用して「モノ
 |  <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO/img/seeeduino-XIAO-thumbnail.jpg" alt="pir" width={600} height="auto" /></p>|   <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/1/1/11302009_preview-34.png" alt="pir" width={600} height="auto" /></p>| <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-Expansion-Board/Update_pic/zheng1.jpg" alt="pir" width={600} height="auto" /></p>|  <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/9d0ce51a71ce6a79dfa2a98d65a0f0bd/g/r/grove-temperature-humidity-sensor-dht11-preview.png" alt="pir" width={600} height="auto" /></p> |[今すぐ購入](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Doppler-Radar-BGT24LTR11-p-4572.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html)|[今すぐ購入](https://www.seeedstudio.com/Grove-Temperature-Humidity-Sensor-DHT11.html)|
 
 :::note
-Seeeduino XIAO を初めて使用する場合は、[Seeeduino XIAO の wiki](https://wiki.seeedstudio.com/Seeeduino_Lotus/) を参照してください。
+Seeeduino XIAO を初めて使用する場合は、[Seeeduino XIAO の wiki](https://wiki.seeedstudio.com/ja/Seeeduino_Lotus/) を参照してください。
 Arduino を初めて使用する場合は、[Arduino のウェブサイト](https://www.arduino.cc/) が Arduino の旅を始めるための素晴らしいリソースです。
 :::
 
@@ -78,8 +78,8 @@ Arduino を初めて使用する場合は、[Arduino のウェブサイト](http
 ### ソフトウェア準備
 
 :::note
-Arduino を初めて使用する場合は、開始前に [Arduino の使い方](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
-[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/) の詳細については、こちらをクリックしてください。
+Arduino を初めて使用する場合は、開始前に [Arduino の使い方](https://wiki.seeedstudio.com/ja/Getting_Started_with_Arduino/) をご覧になることを強くお勧めします。
+[Arduino ライブラリのインストール方法](https://wiki.seeedstudio.com/ja/How_to_install_Arduino_Library/) の詳細については、こちらをクリックしてください。
 :::
 
 #### ライブラリのダウンロード

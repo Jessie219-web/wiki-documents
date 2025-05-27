@@ -55,7 +55,7 @@ reTerminal DMは、**PLC、VFD、HMI、エネルギーメーター、BMS**シス
 
 ### ソフトウェア準備
 
-[Node-REDの入門ガイド](https://wiki.seeedstudio.com/reTerminal-DM-Getting-Started-with-Node-Red/)を準備しています。このガイドを進む前に確認することをお勧めします。
+[Node-REDの入門ガイド](https://wiki.seeedstudio.com/ja/reTerminal-DM-Getting-Started-with-Node-Red/)を準備しています。このガイドを進む前に確認することをお勧めします。
 
 ### Modbus TCP/IPのためのイーサネット設定を構成する
 

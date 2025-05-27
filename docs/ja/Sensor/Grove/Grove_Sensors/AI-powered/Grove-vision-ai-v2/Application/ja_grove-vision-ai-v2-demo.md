@@ -73,14 +73,14 @@ AI ビジョンの秘密を解き明かし、独自の画期的なプロジェ�
     </a>
 </div>
 
-別のカメラを使用したい場合は、[こちらの対応カメラリスト](https://wiki.seeedstudio.com/Grove-vision-ai-v2-camera-supported/)を参照して詳細を確認してください。
+別のカメラを使用したい場合は、[こちらの対応カメラリスト](https://wiki.seeedstudio.com/ja/Grove-vision-ai-v2-camera-supported/)を参照して詳細を確認してください。
 
 ### ソフトウェアの準備
 
 Grove Vision AI V2 を初めて使用する場合は、以下の Wiki を読んで SenseCraft AI の使用方法やモデルのアップロード方法を学び、Grove Vision AI V2 用の Arduino ライブラリのインストール方法を理解することをお勧めします。
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/grove_vision_ai_v2_software_support/">
+    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/ja/grove_vision_ai_v2_software_support/">
             <strong><span><font color={'FFFFFF'} size={"4"}>Wiki を見る</font></span></strong>
     </a>
 </div>

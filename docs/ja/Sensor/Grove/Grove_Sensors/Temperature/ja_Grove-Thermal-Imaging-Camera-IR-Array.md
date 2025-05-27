@@ -83,7 +83,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 **ステップ 2.** [ライブラリ](https://github.com/Seeed-Studio/Seeed_Arduino_MLX9064x/archive/master.zip)をダウンロードし、**Seeed_Arduino_MLX9064x**ファイル全体をArduino IDEのライブラリフォルダにコピーして貼り付けます。
 
 :::note
-初めてWio Terminalを使用する場合、どのインターフェースに接続するか分からない場合は、**[Wio Terminalの使い方](https://wiki.seeedstudio.com/Wio-Terminal-Getting-Started/)**を参照してください。
+初めてWio Terminalを使用する場合、どのインターフェースに接続するか分からない場合は、**[Wio Terminalの使い方](https://wiki.seeedstudio.com/ja/Wio-Terminal-Getting-Started/)**を参照してください。
 :::
 
 **ステップ 3.** 以下のソフトウェアコード1をArduino IDEにコピーし、アップロードして**シリアルポート**を介した視覚化形式を表示します。

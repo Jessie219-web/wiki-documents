@@ -21,7 +21,7 @@ IoT アプリケーション構築の需要が増加していることに対応�
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Tracker/datacake_sense.png" alt="pir" width={800} height="auto" /></p>
 
-セットアップを開始する前に、まず [SenseCAP T1000 を TTS に接続する](https://wiki.seeedstudio.com/SenseCAP_T1000_tracker_TTN) を確認して、SenseCAP T1000 Tracker を TTS に接続してください。
+セットアップを開始する前に、まず [SenseCAP T1000 を TTS に接続する](https://wiki.seeedstudio.com/ja/SenseCAP_T1000_tracker_TTN) を確認して、SenseCAP T1000 Tracker を TTS に接続してください。
 
 ## Datacake の設定
 

@@ -117,7 +117,7 @@ Grove UARTポートはGPIO14（UART0 TX）およびGPIO15（UART0 RX）に接続
 
 **Raspberry Pi用Grove Base HatとGrovePi+の比較**
 
-| パラメータ                   | [Raspberry Pi用Grove Base Hat](https://wiki.seeedstudio.com/Grove_Base_Hat_for_Raspberry_Pi/)                   | [GrovePi+](https://wiki.seeedstudio.com/GrovePi_Plus/)                                                                            |
+| パラメータ                   | [Raspberry Pi用Grove Base Hat](https://wiki.seeedstudio.com/ja/Grove_Base_Hat_for_Raspberry_Pi/)                   | [GrovePi+](https://wiki.seeedstudio.com/ja/GrovePi_Plus/)                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | 動作電圧             | 3.3V                                                                                                              | 5V                                                                                                                               |
 | MCU                         | STM32F030F4P6                                                                                                     | ATMEGA328P                                                                                                                       |
