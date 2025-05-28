@@ -3938,6 +3938,10 @@ const sidebars = {
                 // },
                 items: [
                   "Robotics/Robot_Software/ROS/Installing_ROS1",
+                  "Robotics/Robot_Software/ROS/Install_IsaacROS",
+                  "Robotics/Robot_Software/ROS/Install_ROS2_Humble",
+                  "Robotics/Robot_Software/ROS/Isaac_ROS_AprilTag",
+                  "Robotics/Robot_Software/ROS/Isaac_ROS_Visual_SLAM",
                     ]},
             {
               type: 'category',
@@ -3947,7 +3951,7 @@ const sidebars = {
                 //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
                 // },
                 items: [
-                  'Robotics/Robot_Software/Isaac_Lab/Isaac_lab',
+                  'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
                     ]},
           ]
 
