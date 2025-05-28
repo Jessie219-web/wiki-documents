@@ -156,8 +156,10 @@ torch>=1.7.0 --> # torch>=1.7.0
 torchvision>=0.8.1 --> # torchvision>=0.8.1
 
 # Press `ESC` to exit edit mode, and finally input `:wq` to save and exit the file.
+```
 
-Step 3. Run the following commands to download the required dependencies for YOLO and install YOLOv8:
+**Step 3**. Run the following commands to download the required dependencies for YOLO and install YOLOv8:
+```bash
 pip3 install -e .
 cd ..
 ```

@@ -323,8 +323,8 @@ Open a terminal window on the host PC and run the following command：
 
 ```bash
 cd <path to drivers>
-tar xf Jetson_Linux_r36.4.3_aarch64.tbz2
-sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_r36.4.3_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
+tar xf Jetson_Linux_R36.4.3_aarch64.tbz2
+sudo tar xpf Tegra_Linux_Sample-Root-Filesystem_R36.4.3_aarch64.tbz2 -C Linux_for_Tegra/rootfs/
 sudo tar zxpf 608_jp62.tar.gz
 sudo cp -r 608_jp62/Linux_for_Tegra/* Linux_for_Tegra/ 
 cd Linux_for_Tegra/

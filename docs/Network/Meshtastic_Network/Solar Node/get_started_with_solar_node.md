@@ -4,7 +4,7 @@ title:  Get Started with SenseCAP Solar Node
 keywords:
 - Meshtastic
 - Solar
-image: https://files.seeedstudio.com/wiki/wiki-platform/solar-node.webp
+image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.webp
 slug: /get_started_with_meshtastic_solar_node
 sidebar_position: 2
 last_update:
@@ -19,7 +19,9 @@ last_update:
 
 Before formal deployment, please test and configure the node first.
 
-### Install Battery and GPS Module(for P1-Pro version only)
+### Install Battery and GPS Module(Optional)
+
+P1-Pro version has built-in battery and GPS module, for P1 version, user needs to install the battery and GPS module manually if needed.
 
 * Step 1: Remove all the screws and the cover.
 
