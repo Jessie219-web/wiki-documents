@@ -82,8 +82,8 @@ LED Driver Board for XIAO is a compact yet powerful solution supporting both 5V 
         <td>DC 12V / DC 5V</td>
     </tr>
     <tr>
-        <td>Operating Current</td>
-        <td>Operating Current</td>
+        <td>Max Operating Current</td>
+        <td>12V/2A 5V/3A</td>
     </tr>
     <tr>
         <td>LED Connector</td>
