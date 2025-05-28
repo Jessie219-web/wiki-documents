@@ -2,6 +2,7 @@
 description: Being a trusted Internet of Things (IOT) hardware partner since 2008, Seeed Studio is dedicated to realizing interactive digital replica of our physical world. This website is an open source platform with a collection of all wikis currently published by Seeed Studio and updated weekly to showcase our product range and research, which includes digitalisation of the natural environment.
 title: Getting Started with Seeed Studio Wiki Platform
 image: https://files.seeedstudio.com/wiki/seeed_logo/Wiki_Platform_GT_Logo.jpg
+slug: /Getting_Started
 last_update:
   date: 08/30/2024
   author: Matthew

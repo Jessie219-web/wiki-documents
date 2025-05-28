@@ -4,6 +4,7 @@ title: Contributor Program
 keywords:
 - Contributor
 image: https://files.seeedstudio.com/wiki/wiki-platform/contributor/xuanchuan.jpg
+slug: /Contributor
 last_update:
   date: 09/01/2024
   author: Matthew
