@@ -117,9 +117,9 @@ IoTボタンにはESPHome互換のファームウェアがプリロードされ�
     :::tip Home Assistantのインストール
     Seeed Studio製品向けにHome Assistantのインストール方法を記載したガイドもありますので、参考にしてください。
 
-    - [ODYSSEY-X86でのHome Assistantの使い方](/ODYSSEY-X86-Home-Assistance)
-    - [reTerminalでのHome Assistantの使い方](/reTerminal_Home_Assistant)
-    - [LinkStar H68K/reRouter CM4でのHome Assistantの使い方](/h68k-ha-esphome)
+    - [ODYSSEY-X86でのHome Assistantの使い方](/ja/ODYSSEY-X86-Home-Assistant)
+    - [reTerminalでのHome Assistantの使い方](/ja/reTerminal_Home_Assistant)
+    - [LinkStar H68K/reRouter CM4でのHome Assistantの使い方](/ja/h68k-ha-esphome)
     :::
 
     また、以下のボタンをクリックして、Home Assistant GreenまたはHome Assistant Yellowを購入し、直接使用することもできます。
@@ -188,7 +188,7 @@ IoTボタンにはESPHome互換のファームウェアがプリロードされ�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/mmwave-for-xiao/mr60/mr60fda2/ha-enter-psw.jpg" style={{width:360, height:'auto', "border-radius": '15px'}}/></div>
 
-### ステップ3: Home Assistantでデバイスを検出して追加する {#discovering-and-adding-the-device-in-home-assistant}
+### ステップ4: Home Assistantでデバイスを検出して追加する {#discovering-and-adding-the-device-in-home-assistant}
 
 このセクションでは、Home Assistantアプリを使用したプロセスを説明します。このロジックはWeb版と同じです。
 
