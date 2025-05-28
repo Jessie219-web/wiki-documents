@@ -76,7 +76,7 @@ last_update:
         <td>With WiFi and BLE, Budget Friendly Risc-V</td>
         <td>With WiFi-6, BLE, Zigbee, and Thread for Matter</td>
         <td>With WiFi and BLE, High Performance</td>
-        <td>Advanced Version of XIAO ESP32S3 with OV2640 Camera and Microphone</td>
+        <td>Advanced Version of XIAO ESP32S3 with OV2640 Camera/OV3660 Camera and Microphone</td>
         <td>Renesas 32-bit ARM Cortex-M4 MCU, compatible with Arduino IDE</td>
         <td>Matter, Open Thread, Zigbee, Bluetooth Low Energy (BLE 5.3), Bluetooth Mesh, Proprietary 2.4 GHz</td>
         <td>Advanced Version of XIAO MG24 with Six-axis acceleration sensors and Microphone</td>
@@ -166,7 +166,7 @@ last_update:
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
-        <td align="center">OV2640 camera, Microphone</td>
+        <td align="center">OV2640 camera/OV3660, Microphone</td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center">Six-axis acceleration sensors, Microphone</td>
