@@ -138,7 +138,7 @@ If you purchase the Arm Kit version, both power supplies are 5V. If you purchase
 | USB-C Cable 2 pcs | 1 | ✅ |
 | Power Supply2 | 2 | ✅ |
 | Table Clamp| 4 | ✅ |
-| 3D printed parts of the arm | 1 | ❌ |
+| 3D printed parts of the arm | 1 | Option |
 
 ## Initial System Environment
 
