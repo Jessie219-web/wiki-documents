@@ -663,7 +663,7 @@ You should see on your laptop something like this: ```[INFO] Connected to remote
 | F   | Decrease speed |
 
 > [!TIP]
->  If you use a different keyboard you can change the keys for each command in the [`LeKiwiRobotConfig`](../lerobot/common/robot_devices/robots/configs.py).
+>  If you use a different keyboard you can change the keys for each command in the `LeKiwiRobotConfig`.
 
 ### Wired version
 If you have the **wired** LeKiwi version please run all commands including both these teleoperation commands on your laptop.
@@ -771,7 +771,7 @@ python lerobot/scripts/control_robot.py \
 
 ## J. Train a policy
 
-To train a policy to control your robot, use the [`python lerobot/scripts/train.py`](../lerobot/scripts/train.py) script. A few arguments are required. Here is an example command:
+To train a policy to control your robot, use the `python lerobot/scripts/train.py` script. A few arguments are required. Here is an example command:
 ```bash
 python lerobot/scripts/train.py \
   --dataset.repo_id=${HF_USER}/lekiwi_test \
@@ -784,7 +784,7 @@ python lerobot/scripts/train.py \
 
 Let's explain it:
 1. We provided the dataset as argument with `--dataset.repo_id=${HF_USER}/lekiwi_test`.
-2. We provided the policy with `policy.type=act`. This loads configurations from [`configuration_act.py`](../lerobot/common/policies/act/configuration_act.py). Importantly, this policy will automatically adapt to the number of motor states, motor actions and cameras of your robot (e.g. `laptop` and `phone`) which have been saved in your dataset.
+2. We provided the policy with `policy.type=act`. This loads configurations from `configuration_act.py`. Importantly, this policy will automatically adapt to the number of motor states, motor actions and cameras of your robot (e.g. `laptop` and `phone`) which have been saved in your dataset.
 4. We provided `policy.device=cuda` since we are training on a Nvidia GPU, but you could use `policy.device=mps` to train on Apple silicon.
 5. We provided `wandb.enable=true` to use [Weights and Biases](https://docs.wandb.ai/quickstart) for visualizing training plots. This is optional but if you use it, make sure you are logged in by running `wandb login`.
 
@@ -792,7 +792,7 @@ Training should take several hours. You will find checkpoints in `outputs/train/
 
 ## K. Evaluate your policy
 
-You can use the `record` function from [`lerobot/scripts/control_robot.py`](../lerobot/scripts/control_robot.py) but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
+You can use the `record` function from `lerobot/scripts/control_robot.py` but with a policy checkpoint as input. For instance, run this command to record 10 evaluation episodes:
 ```bash
 python lerobot/scripts/control_robot.py \
   --robot.type=lekiwi \
