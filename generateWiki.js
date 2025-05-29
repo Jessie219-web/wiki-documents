@@ -14,8 +14,9 @@ const excludedPaths = [
 
 
   // 排除指定文档
-  path.join(docsDirectory, 'Edge', 'reCamera', 'reCamera Gimbal', 'gimbal_development_c.md'), //4.15
-  path.join(docsDirectory, 'Sensor', 'SeeedStudio_XIAO', 'SeeedStudio_XIAO_ESP32S3', 'Application', 'XIAO_ESP32S3_Voice_Pomodoro.md'), //4.17
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Robotics_J401', 'Robotics_J401_carrierboard_Hardware_Interfaces_Usage.md'), //4.29
+  path.join(docsDirectory, 'Sensor', 'SeeedStudio_XIAO', 'SeeedStudio_XIAO_ESP32C3', 'XIAO-ESP32C3-NuttX.md'), //4.28
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Application', 'Generative_AI', 'Deploy_Dia_on_reComputer_Jetson.md'), //5.16
 ];
 
 // 递归函数，用于遍历多层文件夹

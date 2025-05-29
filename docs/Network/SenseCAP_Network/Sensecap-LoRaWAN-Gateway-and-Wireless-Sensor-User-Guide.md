@@ -4,6 +4,7 @@ title: Sensecap LoRaWAN User Guide
 keywords:
 - SenseCAP
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Network/SenseCAP_Network/Sensecap-LoRaWAN-Gateway-and-Wireless-Sensor-User-Guide
 last_update:
   date: 1/16/2023
   author: jianjing Huang

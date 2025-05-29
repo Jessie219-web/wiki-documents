@@ -4,6 +4,7 @@ title: Data OpenStream API Reference
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
+slug: /Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Reference
 last_update:
   date: 02/14/2023
   author: Matthew

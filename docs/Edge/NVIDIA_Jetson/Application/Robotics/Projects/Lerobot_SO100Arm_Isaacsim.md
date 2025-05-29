@@ -13,7 +13,7 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# How to Import and Control SO100Arm Kit in Isaac Sim
+# How to Import and Control SO100Arm Kit in Isaac Sim 4.2(Only)
 
 ## Introduction
 

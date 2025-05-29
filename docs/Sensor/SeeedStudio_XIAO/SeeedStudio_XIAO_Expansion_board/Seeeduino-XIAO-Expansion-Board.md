@@ -195,7 +195,7 @@ U8X8_SSD1306_128X64_NONAME_HW_I2C u8x8(/* clock=*/ SCL, /* data=*/ SDA, /* reset
 
 void setup(void) {
   u8x8.begin();
-  u8x8.setFlipMode(1);   // set number from 1 to 3, the screen word will rotary 180
+  u8x8.setFlipMode(1);   // Enable (1) and disbale (0) 180 degree rotation of the display content
 }
 
 void loop(void) {

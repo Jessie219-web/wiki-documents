@@ -103,6 +103,9 @@ dtoverlay=respeaker-2mic-v2_0-overlay
 dtoverlay=i2s-mmap
 ```
 
+> **Note:** If your kernel version is greater than 4.0, you don't need to add `dtoverlay=i2s-mmap`.
+
+
 ![config example](https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/dtoverlays.png)
 
 - Step 3: Reboot your Pi.

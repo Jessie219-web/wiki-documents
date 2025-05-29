@@ -240,6 +240,20 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 ```
 
+  **我们适配了奥比中光Orbbec Gemini2深度相机，发现单个深度相机效果优于2个RGB相机，如果你也使用这款相机，请克隆转换仓库分支到Orbbec,并按我们后续流程来配置相机。**
+
+  ```bash
+  cd ~/lerobot
+  git checkout orbbec
+  ```
+
+  如果你只是使用RGB，请不要切换分支，否则会报依赖相关的错误。如果你已经切换到了orbbec，想切换回原始版本
+
+  ```bash
+  cd ~/lerobot
+  git checkout main
+  ```
+
 4. 使用 miniconda 时，在环境中安装 ffmpeg：
 
 ```bash
@@ -288,67 +302,18 @@ print(torch.cuda.is_available())
 
 
 ## 校准舵机并组装机械臂
+
+:::danger
+由于官方代码和舵机厂家固件升级，2025年5月30日之前的用户请先[下载飞特官方上位机](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip)（Windows系统下），上电连接所有舵机，选择对应的端口号->波特率1000000->打开->搜索，搜索到所有的舵机后点击`升级`->`在线检测`->`升级固件`，确保固件版本从3.9升级到3.10版本，避免出现后续问题。
+:::
+
 <!-- Code -->
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="SO100" label="SO100">
 
-### 舵机校准
-
-官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也记录了我们的舵机校准和机械臂安装过程。
-
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114176236191787&bvid=BV1WiQiY1EYP&cid=28909307865&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
-
-
-在终端输入以下指令来找到两个机械臂对应的端口号：
-
-```bash
-python lerobot/scripts/find_motors_bus_port.py
-```
-
-识别领导臂端口时的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0031751`，或在 Linux 上可能为 `/dev/ttyACM0`）：
-识别跟随臂端口时的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0032081`，或在 Linux 上可能为 `/dev/ttyACM1`）：
-
-故障排除：在 Linux 上，你可能需要通过运行以下命令来赋予 USB 端口访问权限：
-```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1
-```
-
-插入你的第一个电机并运行此脚本将其 ID 设置为 1。它还会将当前位置设置为 2048，你的电机会旋转：
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 1
-```
-
-注意：这些电机目前有一定的限制。它们只能接受 0 到 4096 之间的值，对应于一整圈。它们不能旋转超过这个范围。2048 是这个范围的中间值，所以我们可以向逆时针方向移动 -2048 步（180 度）达到最大范围，或向顺时针方向移动 +2048 步（180 度）达到最大范围。配置步骤还将归位偏移设置为 0，因此如果你组装机械臂时有误，可以始终更新归位偏移以补偿最多 ±2048 步（±180 度）的偏移。
-
-然后拔下你的电机，插入第二个电机并将其 ID 设置为 2。
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 2
-```
-
-对所有电机重复此过程，直到 ID 为 6。领导臂的 6 个电机也同样操作。现在你可以开始组装你的机械臂了。
-
-### 机械臂组装
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114182410272948&bvid=BV1KFX5YREjU&cid=28929295238&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
-
-<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187896425203&bvid=BV1MJQRYgEUw&cid=28947320683&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
-
-</TabItem>
 
 <TabItem value="SO101" label="SO101">
 
@@ -374,14 +339,14 @@ SO101的舵机校准初始化与SO100方法和代码一致的，这里只是需�
 </div>
 
 :::danger
-如果你买的是SO101的标准版，则使用5V电源进行舵机校准(ST-3215-C046, C044, 001).
+如果你买的是SO101的标准版，则使用5V电源进行Leader舵机校准(ST-3215-C046, C044, C001).
 :::
 | **Leader机械臂1号舵机校准** | **Leader机械臂2号舵机校准** | **Leader机械臂3号舵机校准** | **Leader机械臂4号舵机校准** | **Leader机械臂5号舵机校准** | **Leader机械臂6号舵机校准** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L1.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L2.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L3.jpg) |![fig4](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L4.jpg) |![fig5](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L5.jpg) |![fig6](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/cal_L6.jpg) |
 
 :::danger
-如果你买的是SO101的Pro版，则使用12V电源进行舵机校准(ST-3215-C047/ST-3215-C018)，如果是SO101标准版则使用5V进行舵机校准(ST-3215-C001).
+如果你买的是SO101的Pro版，则使用12V电源进行Follower舵机校准(ST-3215-C047/ST-3215-C018)，如果是SO101标准版则使用5V进行舵机校准(ST-3215-C001).
 :::
 
 | **Follower机械臂1号舵机校准** | **Follower机械臂2号舵机校准** | **Follower机械臂3号舵机校准** |**Follower机械臂4号舵机校准** | **Follower机械臂5号舵机校准** | **Follower机械臂6号舵机校准** |
@@ -435,9 +400,21 @@ python lerobot/scripts/configure_motor.py \
 
 ### Leader机械臂组装步骤
 
-:::note
+:::danger
+- 装配前请再次检查电机型号和减速比。如果您已经购买了SO100，则可以忽略此步骤。如果您购买了SO101，请查看下表，区分F1到F6， L1到L6。
+:::
+
+| 舵机型号 | 减速比 | 对应机械臂关节 |
+|--|--|--|
+| ST-3215-C044(7.4V)                            | 1:191      | L1                           |
+| ST-3215-C001(7.4V)                       | 1:345      | L2                           |
+| ST-3215-C044(7.4V)                           | 1:191      | L3                           |
+| ST-3215-C046(7.4V)                           | 1:147      | L4–L6                        |
+| ST-3215-C001(7.4V) / C018(12V) / C047(12V)             | 1:345      | F1–F6                        |
+
+:::caution
 - 校准舵机后，在拧上螺丝之前，请不要扭动舵机，确保3D打印件安装的方向与图片参考方向一致，在电机的中位。
-- SO101的双臂组装与SO100一致，唯一不同的是SO101上增加了固定线的卡扣，以及Leader机械臂关节舵机的减速比不同，所以可以参考SO100的组装视频进行组装。 
+- 如果你购买的是SO101 Pro，Follower arm供电为12V，Leader Arm供电为5V，如果你购买的是标准版，两个Arm都为5V。
 :::
 
 | **Step 1** | **Step 2** | **Step 3** | **Step 4** | **Step 5** | **Step 6** |
@@ -466,6 +443,69 @@ python lerobot/scripts/configure_motor.py \
 
 
 </TabItem>
+
+<TabItem value="SO100" label="SO100">
+
+### 舵机校准
+
+官方提供了Youtube[组装视频](https://www.youtube.com/watch?v=FioA2oeFZ5I) ，我们也记录了我们的舵机校准和机械臂安装过程。
+
+<div class="video-container">
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114176236191787&bvid=BV1WiQiY1EYP&cid=28909307865&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+</div>
+
+在终端输入以下指令来找到两个机械臂对应的端口号：
+
+```bash
+python lerobot/scripts/find_motors_bus_port.py
+```
+
+识别领导臂端口时的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0031751`，或在 Linux 上可能为 `/dev/ttyACM0`）：
+识别跟随臂端口时的示例输出（例如，在 Mac 上为 `/dev/tty.usbmodem575E0032081`，或在 Linux 上可能为 `/dev/ttyACM1`）：
+
+故障排除：在 Linux 上，你可能需要通过运行以下命令来赋予 USB 端口访问权限：
+```bash
+sudo chmod 666 /dev/ttyACM0
+sudo chmod 666 /dev/ttyACM1
+```
+
+插入你的第一个电机并运行此脚本将其 ID 设置为 1。它还会将当前位置设置为 2048，你的电机会旋转：
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 1
+```
+
+注意：这些电机目前有一定的限制。它们只能接受 0 到 4096 之间的值，对应于一整圈。它们不能旋转超过这个范围。2048 是这个范围的中间值，所以我们可以向逆时针方向移动 -2048 步（180 度）达到最大范围，或向顺时针方向移动 +2048 步（180 度）达到最大范围。配置步骤还将归位偏移设置为 0，因此如果你组装机械臂时有误，可以始终更新归位偏移以补偿最多 ±2048 步（±180 度）的偏移。
+
+然后拔下你的电机，插入第二个电机并将其 ID 设置为 2。
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 2
+```
+
+对所有电机重复此过程，直到 ID 为 6。领导臂的 6 个电机也同样操作。现在你可以开始组装你的机械臂了。
+
+### 机械臂组装
+
+<div class="video-container">
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114182410272948&bvid=BV1KFX5YREjU&cid=28929295238&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+</div>
+
+<div class="video-container">
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114187896425203&bvid=BV1MJQRYgEUw&cid=28947320683&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+</div>
+
+</TabItem>
+
 
 </Tabs>
 
@@ -678,7 +718,9 @@ python lerobot/scripts/control_robot.py \
 
 ## 遥操作
 
+<div class="video-container">
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806571580&bvid=BV14M6JY6E72&cid=27744995936&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+</div>
 
 :::tip
 SO100 和 SO101 的代码是兼容的。SO100 用户可以直接使用 SO101 的参数和代码进行操作。
@@ -694,7 +736,9 @@ python lerobot/scripts/control_robot.py \
 
 ## 添加摄像头
 
+<div class="video-container">
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806636901&bvid=BV12M6JY6Erv&cid=27744931613&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+</div>
 
 :::tip
 SO100 和 SO101 的代码是兼容的。SO100 用户可以直接使用 SO101 的参数和代码进行操作。
@@ -756,8 +800,6 @@ class So101RobotConfig(ManipulatorRobotConfig):
   
 ```
 
-
-
 <details>
 
 <summary> 添加两个以上的摄像头 (可选) </summary>
@@ -801,6 +843,109 @@ class So101RobotConfig(ManipulatorRobotConfig):
 
 </details>
 
+<details>
+
+<summary> 使用单个奥比中光摄像头 </summary>
+
+:::tip
+该项目由奥比中光发起并提供宝贵指导，由华南师范大学张家铨、王文钊、黄锦鹏 完成，实现lerobot框架下使用Orbbec相机采集深度数据，从而使机械臂的环境感知更加丰富的效果
+如果你手上已经有了奥比中光Gemini2的深度相机，目前我们测试过是将深度相机放在正前上方，并进行以下的环境安装。
+:::
+
+**安装并编译Gemini 2深度相机Python SDK**
+
+1.克隆pyOrbbecsdk
+
+```bash
+cd ~/
+git clone https://github.com/orbbec/pyorbbecsdk.git
+cd pyorbbecsdk
+```
+
+2.安装 pyOrbbecsdk 的依赖并编译
+
+```bash
+conda activate lerobot
+sudo apt-get install python3-dev python3-venv python3-pip python3-opencv
+pip3 install -r requirements.txt
+mkdir build
+cd build
+cmake -Dpybind11_DIR=`pybind11-config --cmakedir` ..
+make -j4
+make install
+```
+
+3.进行深度相机是否正常运行的测试
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+python3 examples/depth.py
+```
+
+但是每次新建终端需要再次运行
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+
+你也可以在主目录`.bashrc`文件末尾添加
+```bash
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ~/pyorbbecsdk/scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+这样每次启动终端会自动加载深度相机环境。
+
+在插入您的 Orbbec 深度相机后，运行以下脚本以检查深度相机的深度数据流及彩色数据流，电脑将会有两个窗口弹出，您可以根据这两个窗口调整摄像头位置，在终端使用Ctrl+C退出按切记摄像头不能插在USB Hub上，要直接插在设备上，USB Hub速率太慢会导致读不到图像数据。
+
+```bash
+cd ~/lerobot
+python lerobot/common/robot_devices/OrbbecCamera.py
+```
+
+完成摄像头的调整后，完成 lerobot/lerobot/common/robot_devices/robots/configs.py 文件中摄像头参数的对齐。
+
+```python
+@RobotConfig.register_subclass("so101")  #so100也兼容
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,            
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(    #这是普通摄像头，与奥比相机兼容，您仍然可以正常添加
+                camera_index=1,             
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "Orbbec":OrbbecCameraConfig(    #在这里添加奥比摄像头信息
+                fps=30,
+                use_depth=True              #是否采用深度
+                width = 640                 #这里会根据宽度自动适配分辨率，不用填高度信息，宽度的值必须为640或者1280（未测试）中的一个
+                Hi_resolution_mode = False  #高分辨率模式，会导致可视化效果不是那么地好，可以进一步提升深度数据的分辨率
+            )，
+
+        }
+    )
+
+    mock: bool = False
+```
+
+</details>
 
 
 然后，您将能够在遥操作时在计算机上显示摄像头：
@@ -818,7 +963,9 @@ python lerobot/scripts/control_robot.py \
 SO100 和 SO101 的代码是兼容的。SO100 用户可以直接使用 SO101 的参数和代码进行操作。
 :::
 
+<div class="video-container">
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806571649&bvid=BV14M6JY6ELn&cid=27744994748&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
+</div>
 
 一旦您熟悉了遥操作，您就可以使用 SO-10x 记录您的第一个数据集。
 
@@ -905,7 +1052,6 @@ echo ${HF_USER}/so101_test
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id ${HF_USER}/so101_test \
-  --local-files-only 1 
 ```
 
 如果您数据集保存在本地，并且数据采集时运行超参数为 `--control.push_to_hub=false` ，您也可以使用以下命令在本地进行可视化：
@@ -913,7 +1059,6 @@ python lerobot/scripts/visualize_dataset_html.py \
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id seeed_123/so101_test \
-  --local-files-only 1
 ```
 这里的`seeed_123`为采集数据时候自定义的repo_id名。
 
@@ -935,7 +1080,7 @@ python lerobot/scripts/control_robot.py \
   --robot.type=so101 \
   --control.type=replay \
   --control.fps=30 \
-  --control.repo_id=${HF_USER}/so100_test \
+  --control.repo_id=${HF_USER}/so101_test \
   --control.episode=0
 ```
 如果你将数据保存在本地，请添加`--control.local_files_only=true` .
@@ -946,8 +1091,9 @@ python lerobot/scripts/control_robot.py \
 SO100 和 SO101 的代码是兼容的。SO100 用户可以直接使用 SO101 的参数和代码进行操作。
 :::
 
+<div class="video-container">
 <iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=113746806575007&bvid=BV1xM6JY6Ess&cid=27744930563&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
-
+</div>
 
 要训练一个控制您机器人策略，使用 `python lerobot/scripts/train.py` 脚本。需要一些参数。以下是一个示例命令：
 
@@ -958,12 +1104,11 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true \
-  --dataset.local_files_only=false
+  --wandb.enable=true
 ```
 
 
-如果你想训练本地数据集，在命令后加上`--dataset.local_files_only=true`,然后repo_id与采集数据的repo_id对齐即可。
+如果你想训练本地数据集，repo_id与采集数据的repo_id对齐即可。
 
 让我们解释一下：
 1. 我们使用 `--dataset.repo_id=${HF_USER}/so101_test` 提供了数据集本地路径或上传到Huggingface的数据集ID作为参数。
@@ -1001,7 +1146,7 @@ SO100 和 SO101 的代码是兼容的。SO100 用户可以直接使用 SO101 的
 
 ```bash
 python lerobot/scripts/control_robot.py \
-  --robot.type=so101 \ 
+  --robot.type=so101 \
   --control.type=record \
   --control.fps=30 \
   --control.single_task="Grasp a lego block and put it in the bin." \
@@ -1019,7 +1164,9 @@ python lerobot/scripts/control_robot.py \
 1. 增加了 `--control.policy.path` 参数，指示您的策略检查点的路径（例如 `outputs/train/eval_act_so100_test/checkpoints/last/pretrained_model`）。如果您将模型检查点上传到 Hub，也可以使用模型仓库（例如 `${HF_USER}/act_so100_test`）。
 2. 数据集的名称以 `eval` 开头，以反映您正在运行推理（例如 `${HF_USER}/eval_act_so100_test`）。
 
+<div class="video-container">
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113746806575007&bvid=BV1xM6JY6Ess&cid=27744930563&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</div>
 
 ## FAQ
 

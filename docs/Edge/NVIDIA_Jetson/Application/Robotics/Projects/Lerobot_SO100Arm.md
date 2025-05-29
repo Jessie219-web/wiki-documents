@@ -19,7 +19,9 @@ last_update:
 
 The [SO-10xARM](https://github.com/TheRobotStudio/SO-ARM100) is a fully open-source robotic arm project launched by [TheRobotStudio](https://www.therobotstudio.com/). It includes the follower arm and the leader robotic arm, and also provides detailed 3D printing files and operation guides. [LeRobot](https://github.com/huggingface/lerobot/tree/main) is committed to providing models, datasets and tools for real-world robotics in PyTorch. Its aim is to reduce the entry barrier of robotics, enabling everyone to contribute and benefit from sharing datasets and pretrained models. LeRobot integrates cutting-edge methodologies validated for real-world application, centering on imitation learning. It has furnished a suite of pre-trained models, datasets featuring human-gathered demonstrations, and simulation environments, enabling users to commence without the necessity of robot assembly. In the forthcoming weeks, the intention is to augment support for real-world robotics on the most cost-effective and competent robots presently accessible.
 
+<div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/sD34HnAkGNc?si=hqKd_sH5Oc9sdcwd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Projects Introduction
 
@@ -56,8 +58,9 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
 
 :::
 
-
+<div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/JrF_ymUvrqc?si=vslu5NNI-ZIzVXLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Specification
 <table>
@@ -250,6 +253,20 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
 ```
 
+**We adapted the Orbbec Gemini2 depth camera and found that a single depth camera performs better than two RGB cameras. If you are also using this camera, please clone the conversion repository branch to Orbbec and follow our subsequent steps to configure the camera.**  
+
+```bash  
+cd ~/lerobot  
+git checkout orbbec  
+```  
+
+**If you are only using RGB, do not switch branches, otherwise dependency-related errors may occur. If you have already switched to `orbbec` and want to revert to the original version:**  
+
+```bash  
+cd ~/lerobot  
+git checkout main  
+```
+
 4. When using miniconda, install ffmpeg in your environment:
 
 ```bash
@@ -302,66 +319,15 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 
 ## Configure the motors
 
+:::danger  
+Due to official code and servo manufacturer firmware updates, users before May 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
+:::
+
+
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 <Tabs>
-<TabItem value="SO100" label="SO100">
-
-Designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6 (F1...F6 and L1...L6).
-
-Follow steps 1 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the use of our scripts below.
-
-<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-**Find USB ports associated to your arms**
-To find the correct ports for each arm, run the utility script twice:
-
-```bash
-python lerobot/scripts/find_motors_bus_port.py
-```
-
-Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
-
-Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
-
-Troubleshooting: On Linux, you might need to give access to the USB ports by running:
-
-```bash
-sudo chmod 666 /dev/ttyACM0
-sudo chmod 666 /dev/ttyACM1
-```
-
-**Configure your motors**
-
-Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 1
-```
-
-:::note
-Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
-:::
-
-Then unplug your motor and plug the second motor and set its ID to 2.
-
-```bash
-python lerobot/scripts/configure_motor.py \
-  --port /dev/ttyACM0 \
-  --brand feetech \
-  --model sts3215 \
-  --baudrate 1000000 \
-  --ID 2
-```
-
-Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
-</TabItem>
 
 
 <TabItem value="SO101" label="SO101">
@@ -454,18 +420,90 @@ python lerobot/scripts/configure_motor.py \
 
 Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
 </TabItem>
+
+<TabItem value="SO100" label="SO100">
+
+Designate one bus servo adapter and 6 motors for your leader arm, and similarly the other bus servo adapter and 6 motors for the follower arm. It's convenient to label them and write on each motor if it's for the follower F or for the leader L and it's ID from 1 to 6 (F1...F6 and L1...L6).
+
+Follow steps 1 of the [assembly video](https://www.youtube.com/watch?v=FioA2oeFZ5I) which illustrates the use of our scripts below.
+
+<div class="video-container">
+<iframe width="900" height="600" src="https://www.youtube.com/embed/FioA2oeFZ5I?si=GjudmAovwF_X5m2f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+**Find USB ports associated to your arms**
+To find the correct ports for each arm, run the utility script twice:
+
+```bash
+python lerobot/scripts/find_motors_bus_port.py
+```
+
+Example output when identifying the leader arm's port (e.g., `/dev/tty.usbmodem575E0031751` on Mac, or possibly `/dev/ttyACM0` on Linux):
+
+Example output when identifying the follower arm's port (e.g., `/dev/tty.usbmodem575E0032081`, or possibly `/dev/ttyACM1` on Linux):
+
+Troubleshooting: On Linux, you might need to give access to the USB ports by running:
+
+```bash
+sudo chmod 666 /dev/ttyACM0
+sudo chmod 666 /dev/ttyACM1
+```
+
+**Configure your motors**
+
+Plug your first motor and run this script to set its ID to 1. It will also set its present position to 2048, so expect your motor to rotate:
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 1
+```
+
+:::note
+Note: These motors are currently limitated. They can take values between 0 and 4096 only, which corresponds to a full turn. They can't turn more than that. 2048 is at the middle of this range, so we can take -2048 steps (180 degrees anticlockwise) and reach the maximum range, or take +2048 steps (180 degrees clockwise) and reach the maximum range. The configuration step also sets the homing offset to 0, so that if you misassembled the arm, you can always update the homing offset to account for a shift up to ± 2048 steps (± 180 degrees).
+:::
+
+Then unplug your motor and plug the second motor and set its ID to 2.
+
+```bash
+python lerobot/scripts/configure_motor.py \
+  --port /dev/ttyACM0 \
+  --brand feetech \
+  --model sts3215 \
+  --baudrate 1000000 \
+  --ID 2
+```
+
+Redo the process for all your motors until ID 6. Do the same for the 6 motors of the leader arm.
+</TabItem>
 </Tabs>
 
 
 ## Assembly
 
-**Assemble Leader Arm**
-
 :::tip
 - The dual-arm assembly process of SO-ARM101 is the same as that of SO-ARM100. The only differences are the addition of cable clips on SO-ARM101 and the different gear ratios of the joint servos on the Leader Arm. So both SO100 and SO101 can be installed by referring to the following content
 - After calibrating the servos, do not rotate them before tightening the screws. Make sure the orientation of the 3D printed parts matches the reference direction in the images and that the motors are in their middle positions.
+
+- Before assembly, please check your motor model and reduction ratio again. If you have purchased SO100, you can ignore this step. If you have purchased SO101, please check the following table to distinguish F1 to F6 and L1 to L6. 
 :::
 
+  | Servo Model                            | Gear Ratio | Corresponding Joints         |
+|----------------------------------------|------------|------------------------------|
+| ST-3215-C044(7.4V)                            | 1:191      | L1                           |
+| ST-3215-C001(7.4V)                       | 1:345      | L2                           |
+| ST-3215-C044(7.4V)                           | 1:191      | L3                           |
+| ST-3215-C046(7.4V)                           | 1:147      | L4–L6                        |
+| ST-3215-C001(7.4V) / C018(12V) / C047(12V)             | 1:345      | F1–F6                        |
+
+:::danger
+If you purchased the **SO101 Arm Kit Standard Edition**, all power supplies are 5V. If you purchased the **SO101 Arm Kit Pro Edition**, the Leader Arm should be calibrated and operated at every step using a 5V power supply, while the Follower Arm should be calibrated and operated at every step using a 12V power supply.
+:::
+
+**Assemble Leader Arm**
 
 | **Step 1** | **Step 2** | **Step 3** | **Step 4** | **Step 5** | **Step 6** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
@@ -714,7 +752,9 @@ python lerobot/scripts/control_robot.py \
   --control.type=teleoperate
 ```
 
+<div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/hnRwfcyX1ZI?si=RuzYjP_FUTK16lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Add cameras
 
@@ -823,6 +863,111 @@ class So101RobotConfig(ManipulatorRobotConfig):
 
 </details>
 
+<details>
+
+<summary>Using a Single Orbbec Gemini 2 Depth Camera</summary>
+
+:::tip
+This project was initiated by Orbbec with valuable guidance, and implemented by Jiaquan Zhang, Wenzhao Wang, and Jinpeng Huang from South China Normal University. It enables the use of Orbbec cameras to collect depth data within the lerobot framework, thereby enriching the environmental perception of robotic arms.
+If you already have an Orbbec Gemini2 depth camera, our current testing configuration places the depth camera at the front upper position. Please follow the installation instructions below.
+:::
+
+**Install and Compile Gemini 2 Depth Camera Python SDK**
+
+1. Clone pyOrbbecsdk
+
+```bash
+cd ~/
+git clone https://github.com/orbbec/pyorbbecsdk.git
+cd pyorbbecsdk
+```
+
+2. Install dependencies and compile pyOrbbecsdk
+
+```bash
+conda activate lerobot
+sudo apt-get install python3-dev python3-venv python3-pip python3-opencv
+pip3 install -r requirements.txt
+mkdir build
+cd build
+cmake -Dpybind11_DIR=`pybind11-config --cmakedir` ..
+make -j4
+make install
+```
+
+3. Test if the depth camera works properly
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+python3 examples/depth.py
+```
+
+However, you need to run these commands again when opening a new terminal:
+```bash
+cd ~/pyorbbecsdk 
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ./scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+
+You can also add the following to the end of your `.bashrc` file:
+```bash
+export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
+sudo bash ~/pyorbbecsdk/scripts/install_udev_rules.sh
+sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+This will automatically load the depth camera environment when starting a terminal.
+
+After connecting your Orbbec depth camera, run the following script to check the depth data stream and color data stream. Two windows will pop up, allowing you to adjust the camera position. Use Ctrl+C in the terminal to exit. Important: The camera must be connected directly to your device, not through a USB hub, as the hub's bandwidth may be too slow for image data transmission.
+
+```bash
+cd ~/lerobot
+python lerobot/common/robot_devices/OrbbecCamera.py
+```
+
+After adjusting the camera, align the camera parameters in the configuration file at `lerobot/lerobot/common/robot_devices/robots/configs.py`.
+
+```python
+@RobotConfig.register_subclass("so101")  # Also compatible with so100
+@dataclass
+class So101RobotConfig(ManipulatorRobotConfig):
+    calibration_dir: str = ".cache/calibration/so101"
+    ''''''''''''''''
+          .
+          .
+    ''''''''''''''''
+    cameras: dict[str, CameraConfig] = field(
+        default_factory=lambda: {
+            "laptop": OpenCVCameraConfig(
+                camera_index=0,            
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "phone": OpenCVCameraConfig(    # Regular camera, compatible with Orbbec camera
+                camera_index=1,             
+                fps=30,
+                width=640,
+                height=480,
+            ),
+            "Orbbec":OrbbecCameraConfig(    # Add Orbbec camera configuration here
+                fps=30,
+                use_depth=True              # Whether to use depth
+                width = 640                 # Resolution automatically adapts to width. Only 640 or 1280 (untested) are valid values
+                Hi_resolution_mode = False  # High resolution mode (may reduce visualization quality but improves depth data resolution)
+            ),
+
+        }
+    )
+
+    mock: bool = False
+```
+
+</details>
+
+
 
 Then you will be able to display the cameras on your computer while you are teleoperating by running the following code. This is useful to prepare your setup before recording your first dataset.
 
@@ -835,8 +980,9 @@ python lerobot/scripts/control_robot.py \
 
 
 
-
+<div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/EUcXlLlOjGE?si=6ncQ7o5ZFLR4PGTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Record the dataset
 :::tip
@@ -914,8 +1060,9 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 :::
 
-
+<div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/wc-qh7UFkuQ?si=-eDB73KgUksyJXa-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## Visualize the dataset
 :::tip
@@ -932,7 +1079,6 @@ If you didn't upload with `--control.push_to_hub=false`, you can also visualize 
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id ${HF_USER}/so101_test \
-  --local-files-only 1 
 ```
 
 If you upload with `--control.push_to_hub=false`, you can also visualize it locally with:
@@ -940,7 +1086,6 @@ If you upload with `--control.push_to_hub=false`, you can also visualize it loca
 ```bash
 python lerobot/scripts/visualize_dataset_html.py \
   --repo-id seeed_123/so101_test \
-  --local-files-only 1
 ```
 **Here, `seeed_123` is the custom `repo_id` name defined when collecting data.**
 
@@ -962,7 +1107,7 @@ python lerobot/scripts/control_robot.py \
   --robot.type=so101 \
   --control.type=replay \
   --control.fps=30 \
-  --control.repo_id=${HF_USER}/so100_test \
+  --control.repo_id=${HF_USER}/so101_test \
   --control.episode=0
 ```
 
@@ -983,11 +1128,10 @@ python lerobot/scripts/train.py \
   --output_dir=outputs/train/act_so101_test \
   --job_name=act_so101_test \
   --policy.device=cuda \
-  --wandb.enable=true \
-  --dataset.local_files_only=false
+  --wandb.enable=true
 ```
 
-**If you want to train on a local dataset, add `--dataset.local_files_only=true` to the command, and make sure the `repo_id` matches the one used during data collection.**
+**If you want to train on a local dataset, make sure the `repo_id` matches the one used during data collection.**
 
 
 Let's explain it:
@@ -1042,7 +1186,9 @@ As you can see, it's almost the same command as previously used to record your t
 1. There is an additional `--control.policy.path` argument which indicates the path to your policy checkpoint with  (e.g. `outputs/train/eval_act_so100_test/checkpoints/last/pretrained_model`). You can also use the model repository if you uploaded a model checkpoint to the hub (e.g. `${HF_USER}/act_so100_test`).
 2. The name of dataset begins by `eval` to reflect that you are running inference (e.g. `${HF_USER}/eval_act_so100_test`).
 
+<div class="video-container">
 <iframe width="900" height="600" src="https://www.youtube.com/embed/wc-qh7UFkuQ?si=Y2SXU9T0DSmtz4ll" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
 ## FAQ
 

@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 04/28/2025
+  date: 05/26/2025
   author: Frank
 ---
 
@@ -17,50 +17,59 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is April 28th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is May 26th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting start with reComputer J401B](https://wiki.seeedstudio.com/recomputer_j401b_getting_start/)
+### [Getting Started with XIAO 7.5" ePaper Panel](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_main_page/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/recomputer-j401b_1.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.jpg" alt="pir" width={800} height="auto" /></p>
 
-The reComputer J401B series is an iteration on reComputer Classic series. The reComputer J4011B with NVIDIA Jetson Orin NX 8GB modules is a powerful and compact edge AI device with rich interfaces: 2x USB 3.2, HDMI, Ethernet, M.2 Key E for Wi-Fi module, M.2 Key M for SSD, mini-PCIe for LTE module, CAN, 40-pin and more.
+Powered by XIAO ESP32-C3, this 7.5 inch ePaper display is a versatile, energy-efficient smart e-ink screen supporting a wide range of popular community applications including Home Assistant, trmnl, Arduino, and more. This flexible display solution is perfect for showcasing dashboard data, weather updates, schedules, and custom information. With crisp visuals, exceptional 3-months battery life (2000mAh) in deep sleep mode, and extensive customization possibilities, this compact device adapts to diverse use cases. Perfect for modern living spaces and project environments, it combines functionality with elegant design for an enhanced visual experience across multiple platforms.
 
-### [J401B Interfaces](https://wiki.seeedstudio.com/recomputer_j401b_interfaces_usage/)
+### [XIAO 7.5-Inch ePaper Panel Works with TRMNL](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_with_trmnl/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401B/j401b_interfaces.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/202.png" alt="pir" width={800} height="auto" /></p>
 
-This wiki introduces the various different hardware and interfaces on the reComputer J401B and how to use them to expand your project ideas.
+This document explains how to use the XIAO 7.5-Inch ePaper Panel with the TRMNL device. It covers hardware connections, software setup, driver installation, and example code for displaying content on the ePaper screen. Whether you're using Arduino or CircuitPython, this guide will help you get started quickly and integrate the ePaper display into your own projects.
 
-### [Total Solar Radiation Sensor](https://wiki.seeedstudio.com/total_solar_radiation_sensor/)
+### [Grove - Barometer Sensor (SPA06-003)](https://wiki.seeedstudio.com/grove_barometer_sensor_spa06_003/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Total_Solar_Radiation_Sensor/image1.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.jpg" alt="pir" width={800} height="auto" /></p>
 
-The IP68 RS485 Total Solar Radiation Sensor measures real-time solar total radiation from 300 to 1100 nanometers. It's ideal for environmental monitoring and agriculture. Pair it with the SenseCAP Sensor Hub 4G Data Logger or SenseCAP S2100 LoRaWAN® Data Logger for seamless data collection and management.
-On this page, we'll guide you through the process of connecting the S2100 LoRaWAN Data Logger with a Total Solar Radiation Sensor, enabling you to create a robust, industrial-grade LoRaWAN wireless sensor that can be used commercially in just five minutes.
+Grove - Temperature and Barometer Sensor(SPA06-003) is a high-precision and a low-current environmental sensor measures the temperature and barometer. It supports both I2C and SPI communication and we provide the SPA06-003 Arduino library.
+
+### [Wio Tracker L1 Meshtastic Node](https://wiki.seeedstudio.com/wio_tracker_node/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/wio-tracker-l1.jpg" alt="pir" width={800} height="auto" /></p>
+
+The Wio Tracker L1 Series is a low-power, highly extensible Meshtastic node featuring LoRa (862–930 MHz), the nRF52840 for efficient processing, and an L76K GPS module for accurate location tracking. Designed for flexibility, it supports OLED and E-Ink displays, as well as solar panels and battery power, making it ideal for a wide range of IoT and off-grid applications.
+
+### [Getting Started with LED Driver Board for XIAO](https://wiki.seeedstudio.com/led_driver_board/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LED_Driver_Board_for_XIAO/dimension.jpg" alt="pir" width={800} height="auto" /></p>
+
+LED Driver Board for XIAO is a compact yet powerful solution supporting both 5V and 12V LED strips, including popular addressable RGB LEDs such as NeoPixel WS2812, WS2813, WS2815. Compatible with all XIAO boards, it enables smart control and automation through WLED and Home Assistant when using XIAO ESP32 Series, while offering flexible power options and comprehensive protection for safe, reliable operation in your lighting setup.
+
+### [How to use UPS to read input voltage on reComputer r1000](https://wiki.seeedstudio.com/recomputer_use_ups/)
+
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/x/-/x-110992004-supercap_ups_ltc3350_module.jpg" alt="pir" width={800} height="auto" /></p>
+
+This wiki article primarily explains how to install the UPS module on the reComputer R10 and R11 series and use the UPS to read the input voltage.
 
 ## Existing Wiki Updated
 
-### [Connect Seeed Studio IoT Button To ESPHome](https://wiki.seeedstudio.com/iot_button_for_esphome/)
+### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
 
-We have modified the configuration code in the '[Adding the ESPHome Configuration](https://wiki.seeedstudio.com/iot_button_for_esphome/#adding-the-esphome-configuration)' section.
-
-### [Grove - Barometer (High-Accuracy)](https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/)
-
-We have corrected the example steps related to '[Play With Raspberry Pi](https://wiki.seeedstudio.com/Grove-Barometer-High-Accuracy/#software-1)' and adjusted the sample code.
-
-### [Flash Opensource Firmware to M2 Gateway](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/)
-
-We have added a sample reference for [flashing firmware via Luci](https://wiki.seeedstudio.com/flash_opensource_firmware_to_m2_gateway/#flash-firmware-via-luci).
+We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras).
 
 ## The Efforts of Contributor
 
-<!-- ### [Seeed Studio XIAO ESP32C3 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-esp32c3-nuttx/)
+<!-- ### [Seeed Studio XIAO ESP32C6 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao_esp32c6_nuttx/)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/></div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C3 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -172,5 +181,9 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C3 boar
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 - [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
 - [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
+- [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
+- [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
+- [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
+- [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
 
 </details>

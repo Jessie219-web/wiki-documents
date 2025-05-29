@@ -4,6 +4,7 @@ title: HTTP API Access Guide
 keywords:
 - HTTP API 
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Cloud_Chain/SenseCAP_API/HTTP_API/HTTP_API_Access_Guide
 last_update:
   date: 1/13/2023
   author: shuxu hu

@@ -12,11 +12,43 @@ last_update:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_ESP32S3_for_Meshtastic_LoRa/2.png" style={{width:600, height:'auto'}}/></div>
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
-    </a>
+<div style={{ textAlign: 'center', marginTop: '20px' }}>
+  <a
+    href="https://www.seeedstudio.com/Wio-SX1262-with-XIAO-ESP32S3-p-5982.html"
+    style={{
+      display: 'inline-block',
+      margin: '0 12px',
+      padding: '12px 24px',
+      backgroundColor: '#4ec354',
+      color: '#FFFFFF',
+      fontSize: '16px',
+      fontWeight: 'bold',
+      borderRadius: '8px',
+      textDecoration: 'none',
+    }}
+  >
+    Get One from Seeed Online Store
+  </a>
+
+  <a
+    href="https://s.click.aliexpress.com/e/_o2E9vLh"
+    style={{
+      display: 'inline-block',
+      margin: '0 12px',
+      padding: '12px 24px',
+      backgroundColor: '#4ec354',
+      color: '#FFFFFF',
+      fontSize: '16px',
+      fontWeight: 'bold',
+      borderRadius: '8px',
+      textDecoration: 'none',
+    }}
+  >
+    Get One from Aliexpress
+  </a>
 </div>
+
+
 
 ## Introduction
 

@@ -4,6 +4,7 @@ title: Data OpenStream API Quickstart
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
+slug: /Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Quickstart
 last_update:
   date: 02/14/2023
   author: Matthew
