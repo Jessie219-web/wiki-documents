@@ -285,11 +285,15 @@ const config = {
                 to: '/edge_ai_topic',
               },
               {
-                label: '矽递科技 Wiki 文档平台',
+                label: 'Wiki 矽递科技 (中文)',
                 to: '/cn/Getting_Started',
               },
               {
-                label: 'Plataforma Wiki de SeeedStudio (Español)',
+                label: 'Wiki SeeedStudio (日本語)',
+                to: '/ja/Getting_Started',
+              },
+              {
+                label: 'Wiki SeeedStudio (Español)',
                 to: '/es/SeeedStudio_XIAO_Series_Introduction',
               },
             ],
