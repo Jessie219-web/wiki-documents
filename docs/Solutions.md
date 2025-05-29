@@ -4,6 +4,7 @@ title: Solutions
 keywords:
 - solutions
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Solutions
 last_update:
   date: 03/01/2023
   author: Matthew
