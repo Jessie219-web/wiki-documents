@@ -744,7 +744,7 @@ const sidebars = {
               'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Get_Started',
               'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Payload',
            'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Tracker_WiFi_Geolocation',
-           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/BC01_Indoor_Bluetooth_Beacon.md',
+           'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/BC01_Indoor_Bluetooth_Beacon',
            'Sensor/SenseCAP/SenseCAP_T1000_Tracker/User_Guide/Indoor_Positioning_Guide',
                    ],
           },
