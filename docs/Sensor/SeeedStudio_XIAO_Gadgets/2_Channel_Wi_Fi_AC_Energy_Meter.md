@@ -29,7 +29,7 @@ import TabItem from '@theme/TabItem';
 </div><br />
 
 ## Overview
-The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments.
+The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/XIAO-2-Channel-Wi-Fi-AC-Energy-Meter-Bundle-Kit.html)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments.
 
 This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
 
@@ -146,7 +146,7 @@ When installing the fixture, please ensure that the direction of the current mat
 ### Requirements
 
 1. **Core Components**:
-   - [XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)
+   - [XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/XIAO-2-Channel-Wi-Fi-AC-Energy-Meter-Bundle-Kit.html)
    - [Non-invasive AC Current Transformer](https://www.seeedstudio.com/Non-invasive-AC-Current-Sensor-100A-ma-p-547.html)
    - [Home Assistant Green](https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html)
 2. **Network**:
