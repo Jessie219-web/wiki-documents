@@ -10,25 +10,40 @@ keywords:
     - UART
     - USB connection
     - Jumper settings
-# sidebar_position: 2
 last_update:
-  author: w0x7ce
-  date: 02/26/2025
+  author: Citric
+  date: 05/27/2025
 ---
 
-### Getting Started with Bus Servo Driver Board
+# Getting Started with Bus Servo Driver Board / XIAO Bus Servo Adapter
+
+This wiki covers two related products: the **Bus Servo Driver Board** and the **XIAO Bus Servo Adapter**.
+
+- The **Bus Servo Driver Board** does **not** include an onboard XIAO ESP32C3 microcontroller, nor does it come with a 3D-printed enclosure. It is designed to function as a general-purpose bus servo interface board, allowing you to connect and control servos via an external controller of your choice.
+
+- The **XIAO Bus Servo Adapter**, on the other hand, **includes** the XIAO ESP32C3 as the main controller and comes with a 3D-printed case. With this version, you can directly control bus servos using the onboard XIAO, making it a more integrated and ready-to-use solution for robotics projects.
+
+Please refer to the rest of this guide for details on setup and usage for both products.
+
 
 <div class="table-center">
   <table align="center">
     <tr>
-        <th>OV5640 Camera for XIAO ESP32S3 Sense</th>
+        <th>Bus Servo Driver Board</th>
+        <th>XIAO Bus Servo Adapter</th>
     </tr>
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/6.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/5.png" style={{width:250, height:'auto'}}/></div></td>
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="/xiao_bus_servo_adapter">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -37,7 +52,7 @@ last_update:
 </div>
 
 
-### Overview
+## Introduction
 
 The Bus Servo Driver Board is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. With support for UART communication, it enables precise control and feedback from multiple ST/SC series servos, making it ideal for applications such as robotic arms, hexapods, humanoid robots, and wheeled robots requiring servo angle and load feedback.
 
@@ -49,7 +64,18 @@ Always disconnect power before connecting or disconnecting servos or wiring. Ens
 
 :::
 
-### Physical Layout and Connections
+## Hardware Overview
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="Bus Servo Driver Board" label="Bus Servo Driver Board">
+
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/1.png" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/2.png" style={{width:800, height:'auto'}}/></div>
 
 The Bus Servo Driver Board features several key connection points:
 
@@ -65,11 +91,37 @@ The Bus Servo Driver Board features several key connection points:
 
 * **UART (RX/TX):** These pins provide serial communication for controlling the servos. The connection method and jumper settings depend on your host device. See below for details.
 
-### Connection Methods and Jumper Settings
+</TabItem>
+
+<TabItem value="XIAO Bus Servo Adapter" label="XIAO Bus Servo Adapter">
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/3.png" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/4.png" style={{width:800, height:'auto'}}/></div>
+
+**Input:**
+
+* **DC IN (5.5 * 2.1mm):** This is the power input for the board and the connected servos. Connect a 5~12V power supply here. *Crucially, the voltage of this power supply must match the voltage requirements of your servos.* For example, ST series servos typically operate at 9V, while SC series servos may require 12V.
+
+**Output:**
+
+* **Servo Interface:** This dedicated port is where you connect your ST/SC series bus servos. Ensure the connector is properly aligned.
+
+</TabItem>
+
+</Tabs>
+
+## Getting Started
+
+### Selecting the operating mode of the driver board **(Only for Bus Servo Driver Board)**
+
+:::tip
+For XIAO Bus Servo Adapter, you don't need to modify any circuits to use the included XIAO ESP32-C3 to control the servos, you can skip this part directly.
+:::
 
 The Bus Servo Driver Board offers two primary connection methods: direct UART connection and USB connection via a USB-to-UART adapter. *The correct jumper setting is essential for proper operation.*
 
-**1. Direct UART Connection (for MCUs, XIAO, ESP32, etc.)**
+#### UART Connection (for MCUs, XIAO, ESP32, etc.)
 
 This method is used when connecting directly to the UART pins of a microcontroller (MCU) like an ESP32, Arduino, Seeed Studio XIAO, or a single-board computer.
 
@@ -82,7 +134,7 @@ This method is used when connecting directly to the UART pins of a microcontroll
 
 * **Powering the Host:** Your host device (e.g., Raspberry Pi Zero, ESP32, XIAO) will require its own separate power supply.
 
-**2. USB Connection**
+#### USB Connection
 
 This method is used when connecting to a computer or single-board computer with a USB port (e.g., a PC or Raspberry Pi 4B). You simply connect the control board to the computer using a USB cable.
 
@@ -166,7 +218,8 @@ Yes, multiple servos are supported, but ensure your power supply can handle the 
 
 ### Resources
 
-* **Schematic:** [Bus_Servo_Driver_Board_SCH.pdf](https://files.seeedstudio.com/wiki/bus_servo_driver_board/202004237_Servo_Driver_Board_for_Seeed_Studio_XIAO_SCH_PDF_250225.pdf) *(Ensure this PDF is accessible at this relative path in your Docusaurus project.)*
+* **Schematic:** [Bus_Servo_Driver_Board_SCH.pdf](https://files.seeedstudio.com/wiki/bus_servo_driver_board/202004237_Servo_Driver_Board_for_Seeed_Studio_XIAO_SCH_PDF_250225.pdf)
+
 <!-- * **3D Model:** [Bus_Servo_Driver_Board_STEP.stp](Bus_Servo_Driver_Board_STEP.stp) *(Ensure this STEP file is accessible at this relative path in your Docusaurus project.)* -->
 
 ### Tech Support & Product Discussion
