@@ -27,7 +27,7 @@ last_update:
 - 您可以在这个文档平台中找到关于现实部署的边缘计算设备和工业物联网场景的资料，同时我们还提供了开放式开发工具的文档和课程，帮助您构建自己的解决方案。
 
 :::tip
-目前内容为测试版。最新更新在：<strong><a><span><font color={'8DC215'} size={"4"}> 2024 年 11 月 27 号 </font></span></a></strong>
+目前内容为测试版。最新更新在：<strong><a><span><font color={'8DC215'} size={"4"}> 2025 年 5 月 15 号 </font></span></a></strong>
 :::
 
 

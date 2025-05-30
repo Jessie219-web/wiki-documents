@@ -1,37 +1,42 @@
 ---
-description: 带有 PlatformIO 的 Seeed Studio XIAO nRF52840
-title: XIAO nRF52840-Sense 与 PlatformIO
+description: Seeed Studio XIAO nRF52840 使用 PlatformIO
+title: XIAO nRF52840-Sense 使用 PlatformIO
 keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/nRF52840_PlatformIO/1.png
 slug: /cn/xiao_nrf52840_with_platform_io
 last_update:
-  date: 11/13/2024
-  author: Agnes
+  date: 05/15/2025
+  author: Jason
 ---
+
+# **Seeed Studio XIAO nRF52840 使用 PlatformIO**
+
+:::note
+本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
+:::
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/nRF52840_PlatformIO/1.png" /></div>
 
-# **Seeed Studio XIAO nRF52840 与 PlatformIO**
 
-PlatformIO 是一个集成了多种开发板类型并且具有良好扩展性的开发平台。如果平台中没有你需要的开发板类型，你可以手动添加。你在 Arduino 中编写的代码可以直接在 PlatformIO 中使用，只需要添加相应的库。
+PlatformIO 是一个集成了多种开发板并具有良好扩展性的开发平台。如果平台中没有您需要的开发板类型，您可以手动添加开发板类型。您在 Arduino 上编写的代码也可以使用它，只需添加相应的库即可。
 
-在本篇 Wiki 中，我们将介绍如何在 PlatformIO 中安装并运行示例代码。
+在本教程中，我们将介绍如何在 PlatformIO 中安装并运行示例代码。
 
-## 在 PlatformIO 中使用 XIAO nRF52840
+## 使用 PlatformIO 进行 XIAO nRF52840 开发
 
-### 步骤 1 . 安装 [PlatformIO](https://platformio.org/platformio-ide) 官方网站中的软件
+### 步骤 1：在官网安装 [PlatformIO](https://platformio.org/platformio-ide)
 
-如果你还没有安装 PlatformIO，可以点击上述链接进行下载和安装。
+如果您尚未安装 PlatformIO 软件，可以点击上方链接进行安装。
 
-### 步骤 2 . 在 PlatformIO 中创建项目
+### 步骤 2：在 PlatformIO 中创建任意项目
 
-因为平台已经包含了 XIAO ESP32S3 和 XIAO ESP32C3 开发板选项，所以我们可以选择其中一个来创建项目。当然，其他开发板文件也可以创建，项目名称可以随意选择。
+由于平台已经包含了我们的 XIAO ESP32S3 和 XIAO ESP32C3 开发板选项，我们可以选择其中之一来创建文件。当然，选择其他文件也可以，这并不重要。项目名称也可以随意选择。这里我以 XIAO ESP32 C3 为例。
 
 <table align="center">
   <tr>
-      <th>操作 1</th>
-        <th>操作 2</th>
+      <th>操作一</th>
+        <th>操作二</th>
   </tr>
   <tr>
       <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_platformio/4.png" style={{width:500, height:'auto'}}/></div></td>
@@ -40,54 +45,37 @@ PlatformIO 是一个集成了多种开发板类型并且具有良好扩展性的
 </table>
 
 :::tip
-在此之前，我已经安装了 XIAO ESP32C6 和 XIAO nRF52840 安装包，因此你会看到操作二中的图像中有 XIAO ESP32C6 和 XIAO nRF52840 的选项。如果你在执行操作时没有这些选项，请参考后续步骤。
+在此之前，我已经安装了 XIAO ESP32C6 和 XIAO nRF52840 的安装包，因此您可以看到操作二中的图像有 XIAO ESP32C6 和 XIAO nRF52840 的选项，但在您执行操作时可能没有这些选项。
 :::
 
-### 步骤 3 . 修改 platformio.ini 文件
+### 步骤 3：修改 platformio.ini 文件
 
-成功创建 PlatformIO 项目后，左侧栏会出现多个文件。我们可以看到一个名为 platform.ini 的文件。接下来，我们需要替换其中的内容。
+当您成功创建 PlatformIO 文件后，左侧列中会出现许多文件。我们可以看到一个名为 platform.ini 的文件。接下来，我们需要替换其中的内容。
+
 <table align="center">
   <tr>
-      <th>操作 3</th>
+      <th>操作三</th>
   </tr>
   <tr>
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/esp32c6_platformio/2.png" /></div>
+<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/XIAO_PlatformIO/platformIO_file.jpg" /></div>
   </tr>
 </table>
 
-你需要复制以下代码，并替换 platform.ini 文件中的内容：
+您需要复制以下代码并替换 platform.ini 文件中的内容：
 
 ```
-[env]
-platform = https://github.com/maxgerhardt/platform-nordicnrf52
+[env:seeed_xiao_nrf52840_sense]
+platform = https://github.com/Seeed-Studio/platform-seeedboards.git
+board = seeed-xiao-afruitnrf52-nrf52840
 framework = arduino
- 
-[env:xiaoblesense_arduinocore_mbed]
-board = xiaoblesense
- 
-[env:xiaoble_arduinocore_mbed]
-board = xiaoble
 ```
 :::tip
-记得保存文件，按 ctrl+s，文件将会被加载。
+记得保存文件，使用快捷键 ctrl+s，保存后会自动加载。
 :::
-
-### 步骤 4 .  编译并烧录
-
-<table align="center">
-  <tr>
-      <th>操作 4</th>
-  </tr>
-  <tr>
-<div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/nRF52840_PlatformIO/2.png" /></div>
-  </tr>
-</table>
-
-最终，如果你看到与下图相同的结果，说明你已经成功添加了 XIAO nRF52840 开发板。当你再次创建项目时，就可以选择 XIAO nRF52840 进行操作。
 
 ## 技术支持与产品讨论
 
-感谢你选择我们的产品！我们提供不同的支持方式，确保你在使用我们的产品时获得顺畅的体验。我们提供多个沟通渠道，以满足不同的需求和偏好。
+感谢您选择我们的产品！我们为您提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通方式，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

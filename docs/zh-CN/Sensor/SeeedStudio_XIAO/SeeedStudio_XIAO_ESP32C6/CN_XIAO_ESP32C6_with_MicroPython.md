@@ -1,24 +1,28 @@
 ---
-description: 适用于 XIAO ESP32C6 的 MicroPython
+description: XIAO ESP32C6 的 MicroPython 使用指南
 title: 使用 MicroPython 的 XIAO ESP32C6
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /cn/xiao_esp32c6_micropython
 last_update:
-  date: 11/16/2024
-  author: Agnes
+  date: 05/15/2025
+  author: Hendra
 ---
 
-# 适用于 XIAO ESP32C6 的 MicroPython
+# 用于 XIAO ESP32C6 的 MicroPython
 
-MicroPython 是 Python 3 编程语言的精简高效实现，包含了 Python 标准库的一个小子集，且经过优化以便在微控制器和受限环境中运行。
+:::note
+本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
+:::
 
-自2014年首次发布以来，MicroPython 支持了许多微控制器，包括 ESP32 系列，但目前尚未正式支持 ESP32C6 芯片。此固件是自编译的，官方固件正在开发中，请耐心等待。
+MicroPython 是 Python 3 编程语言的一种精简高效的实现版本，它包含了 Python 标准库的一小部分，并针对微控制器和受限环境进行了优化。
 
-在本页中，我们将引导您如何使用 XIAO ESP32C6 的功能，利用 MicroPython 简单易懂的语法。
+自 2014 年首次发布以来，MicroPython 已支持许多微控制器，包括 ESP32 系列，但目前尚未正式支持 ESP32C6 芯片。本文档中的固件是自行编译的，官方固件正在开发中，请耐心等待。
+
+在本页面中，我们将指导您如何使用 MicroPython 的简单语法来发挥 XIAO ESP32C6 的功能。
 
 ## 硬件准备
 
-在此，我使用的是 Seeed Studio 的 XIAO ESP32C6 开发板。
+本文档中使用的是 Seeed Studio XIAO ESP32C6 开发板。
 
 <div class="table-center">
   <table align="center">
@@ -31,17 +35,16 @@ MicroPython 是 Python 3 编程语言的精简高效实现，包含了 Python �
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-p-5884.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
     </tr>
   </table>
 </div>
 
-
 ## 软件准备
 
-在本指南中，我将使用 **Windows 10** 操作系统，以及 Thonny IDE 和 esptool。为了使用 esptool，请确保您的 Windows 系统已安装 Python 3 环境。在开始之前，请确保下载固件并安装 Thonny。
+在本指南中，我将使用 **Windows 10** 操作系统，并结合 Thonny IDE 和 esptool 工具。为了使用 esptool，请确保在 Windows 系统上安装了 Python 3 环境。在开始之前，请先下载固件并安装 Thonny。
 
 <div class="table-center">
   <table align="center">
@@ -64,35 +67,33 @@ MicroPython 是 Python 3 编程语言的精简高效实现，包含了 Python �
   </table>
 </div>
 
-
 ### 👍 特别感谢
 
-<strong><font color={'8DC215'} size={"3"}>本指南中使用的针对 XIAO ESP32C6 开发板设计的固件，由我们的朋友 Zhishuo Song 开发，我们对此深表感谢。</font></strong>
+<strong><font color={'8DC215'} size={"3"}>本文档中用于 XIAO ESP32C6 开发板的固件由我们的朋友 Zhishuo Song 制作，我们对此深表感谢。</font></strong>
 
+## 入门指南
 
-## 开始使用
+此固件专为 XIAO ESP32C6 的 MicroPython 编程设计。我们将首先刷入固件，然后运行示例代码。
 
-该固件仅适用于 XIAO ESP32C6 微Python 编程。我们将首先烧录固件，然后使用示例代码。
+### 第 1 步：刷入固件
 
-### 步骤 1. 烧录固件
-
-通过打开设备管理器，找到 USB 到串口的端口地址。
+通过打开设备管理器找到 USB 转串口的地址。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/S3-MicroPy/device_manager.jpg" alt="pir" width={600} height="auto" /></p>
 
-解压下载的 zip 文件并导航到文件夹。
+解压下载的压缩文件并导航到文件夹。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022205037972.png" alt="pir" width={600} height="auto" /></p>
 
-点击路径框，然后输入 "CMD" 并按回车。
+点击路径框，然后输入 "CMD" 并按回车键。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022205105289.png" alt="pir" width={600} height="auto" /></p>
 
-这将打开命令提示符窗口。
+您将进入命令提示符窗口。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022204711119.png" alt="pir" width={600} height="auto" /></p>
 
-使用 pip 命令安装 esptool（确保已安装 Python 3）：
+使用 pip 命令安装 esptool（确保已安装 Python 3）。
 
 ```cpp
 pip install esptool
@@ -106,24 +107,23 @@ pip install esptool
 esptool.py --port COMXX --chip esp32c6 erase_flash
 ```
 
-然后使用以下命令安装微Python 固件：
+接下来，使用以下命令安装 MicroPython 固件：
 
 ```cpp
 esptool.py --port COMXX --baud 460800 --before default_reset --after hard_reset --chip esp32c6  write_flash --flash_mode dio --flash_size detect --flash_freq 80m 0x0 ESP32C6_MicroPython.bin
 ```
 
 :::tip
-将 COMXX 替换为您的 PC 上的端口号
+将 COMXX 替换为您电脑上的端口号。
 :::
-
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022205457866.png" alt="pir" width={600} height="auto" /></p>
 
-### 步骤 2. 上传示例代码
+### 第 2 步：上传示例代码
 
-现在我们将示例代码上传到 XIAO ESP32C6 的内存中。
+现在我们将示例代码上传到 XIAO ESP32C6 的内部闪存。
 
-在这部分，我使用 Thonny IDE，首先配置端口。
+在此部分，我使用 Thonny IDE，首先配置端口。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022205437800.png" alt="pir" width={600} height="auto" /></p>
 
@@ -131,34 +131,34 @@ esptool.py --port COMXX --baud 460800 --before default_reset --after hard_reset 
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022220104960.png" alt="pir" width={600} height="auto" /></p>
 
-##  NTP 获取当前时间从 WiFi
+## 使用 NTP 从 WiFi 获取当前时间
 
-### 步骤1: 在 Thonny 中打开 `wifi_Ntp.py` 文件
+### 第 1 步：在 Thonny 中打开 `wifi_Ntp.py` 文件
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022220645986.png" alt="pir" width={600} height="auto" /></p>
 
-### 步骤2: 在第8行修改您的 WiFi 路由器的 SSID 和密码
+### 第 2 步：修改第 8 行中的 WiFi 路由器 SSID 和密码
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022220714175.png" alt="pir" width={600} height="auto" /></p>
 
-### 步骤3: 运行代码
+### 第 3 步：运行代码
 
-运行程序时，您可以在 shell 窗口中看到 XIAO 已连接到指定的 WiFi 并获取了 NTP 网络时间。
+运行程序时，您可以在 Shell 窗口中看到 XIAO 已连接到指定的 WiFi，并获取了 NTP 网络时间。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/esp32c6_micropython/image-20241022220808948.png" alt="pir" width={600} height="auto" /></p>
 
-## 故障排除
+## 故障排查
 
-如果程序无法烧录，请尝试使用 BOOT 按钮和 RST 按钮将开发板设置为引导下载模式。
+如果程序无法烧录，请尝试使用 BOOT 按钮和 RST 按钮将开发板设置为启动下载模式。
 
 ## ✨ 贡献者项目
 
-- 本项目由 Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479)支持。
-- 感谢 [Hendra 和 shariltumin 的努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117) ，您的工作将被 [展示](https://wiki.seeedstudio.com/contributors/).
+- 本项目由 Seeed Studio [贡献者项目](https://github.com/orgs/Seeed-Studio/projects/6/views/1?pane=issue&itemId=30957479) 支持。
+- 感谢 [Hendra 和 shariltumin 的努力](https://github.com/orgs/Seeed-Studio/projects/6/views/1?filterQuery=c6&pane=issue&itemId=59874459&issue=Seeed-Studio%7Cwiki-documents%7C1117)，您的工作将被[展示](https://wiki.seeedstudio.com/contributors/)。
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，确保您使用我们产品的体验尽可能顺畅。我们提供了多个沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

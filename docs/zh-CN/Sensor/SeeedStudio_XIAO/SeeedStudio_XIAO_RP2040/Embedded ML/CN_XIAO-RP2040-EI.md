@@ -1,52 +1,56 @@
 ---
-description: 基于Edge Impulse的动作识别
-title: 基于Edge Impulse的动作识别
+description: 基于 Edge Impulse 的运动识别
+title: 基于 Edge Impulse 的运动识别
 keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/XIAO-RP2040-EI
 last_update:
-  date: 11/1/2023
-  author: 金 菊
+  date: 05/15/2025
+  author: Citric
 ---
 
-# XIAO RP2040 基于 Edge Impulse 的动作识别
+# SEEED XIAO RP2040 上的 TinyML（运动识别）
 
-在本维基中，我们将向您展示如何利用Seeed Studio XIAO RP2040上的加速度计结合Edge Impulse实现动作识别。我们在这里展示的代码适用于最新版本的XIAO RP2040开发板。
+:::note
+本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
+:::
+
+在本教程中，我们将向您展示如何利用 Seeed Studio XIAO RP2040 上的加速度计结合 Edge Impulse 实现运动识别。我们提供的代码支持最新版本的 XIAO RP2040 开发板。
 
 ## 所需材料
 
 ### 硬件
 
-在本WiKi中，我们需要准备以下材料：
+在本教程中，我们需要准备以下材料：
 
 - [Seeed Studio XIAO RP2040](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-5026.html)
-- [Shield for Seeeduino Xiao Grove扩展版](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html)
-- [Grove - 3轴数字加速度计（±1.5g）](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-1-5g.html)
+- [Grove - Shield for Seeeduino Xiao](https://www.seeedstudio.com/Grove-Shield-for-Seeeduino-XIAO-p-4621.html)
+- [Grove - 3-Axis Digital Accelerometer(±1.5g)](https://www.seeedstudio.com/Grove-3-Axis-Digital-Accelerometer-1-5g.html)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/xiao_rp2040_ei_all_in_one.jpg" alt="pir" width={800} height="auto" /></p>
 
-**硬件设置**
+**硬件连接**
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/xiao_rp2040_ei_all_in_one_connect.jpg" alt="pir" width={400} height="auto" /></p>
 
 ### 软件
 
-下面列出了所需的库。强烈建议使用这里的代码来检查硬件是否正常工作。如果您在安装库方面遇到问题，请参考 [这里](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
+以下是所需的库。强烈建议使用这里的代码来检查硬件是否正常工作。如果您在安装库时遇到问题，请参考[这里](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)。
 
 - [Seeed_Arduino_LSM6DS3-master](https://files.seeedstudio.com/wiki/XIAO-BLE-Motion-Recognition/Seeed_Arduino_LSM6DS3-master.zip)
 
-## 入门指南
+## 开始
 
-首先，我们将运行一些演示程序，以检查开发板和显示屏是否正常工作。如果您的设备正常，您可以继续进行下一步操作。
+首先，我们将运行一些示例代码来检查开发板和显示屏是否正常工作。如果一切正常，您可以继续下一步操作。
 
 ### 检查电路连接和加速度计
 
-打开Arduino IDE，导航到Sketch -> Include Library -> Manage Libraries...，在库管理器中搜索并安装  `U8g2 library` 。
+打开 Arduino IDE，导航到 **Sketch -> Include Library -> Manage Libraries...**，然后在库管理器中搜索并安装 `U8g2 library`。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-BLE-Motion-Recognition/Motion-Recognition29.png" alt="pir" width={400} height="auto" /></p>
 
-安装完成后，复制以下代码并运行它。
+安装完成后，复制以下代码并运行。
 
 ```cpp
 #include <Wire.h>
@@ -66,123 +70,120 @@ void loop() {
     float ax, ay, az;
     accelemeter.getAcceleration(&ax, &ay, &az);
 
-    Serial.print(ax * CONVERT_G_TO_MS2,4);
+    Serial.print(ax * CONVERT_G_TO_MS2,4); // 打印 X 轴加速度
     Serial.print('\t');
-    Serial.print(ay * CONVERT_G_TO_MS2,4);
+    Serial.print(ay * CONVERT_G_TO_MS2,4); // 打印 Y 轴加速度
     Serial.print('\t');
-    Serial.println(az * CONVERT_G_TO_MS2,4);
+    Serial.println(az * CONVERT_G_TO_MS2,4); // 打印 Z 轴加速度
     
 }
-
 ```
 
-在上传代码并拔掉Seeed Studio XIAO RP2040后，然后打开串口监视器，您将看到类似以下的输出：
+上传代码后，断开 Seeed Studio XIAO RP2040 的连接。
+然后，打开串口监视器，您将看到如下输出：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/xiao_rp2040_ei_serial_monitor.jpg" alt="pir" width={400} height="auto" /></p>
 
-在上传代码并拔掉Seeed Studio XIAO RP2040后，
-然后，打开串口监视器，您将看到如下输出：
-如果一切正常，我们可以继续将Seeed Studio XIAO RP2040连接到Edge Impulse。
+如果一切正常，我们可以继续将 Seeed Studio XIAO RP2040 连接到 Edge Impulse。
 
-## 已连接到Edge Impulse
+## 连接到 Edge Impulse
 
-训练模型的准确度对最终结果非常重要。如果您的输出训练结果低于65%，我们强烈建议您多次进行训练或添加更多数据。
+训练模型的精度对最终结果非常重要。如果您的训练结果低于 65%，我们强烈建议您多次训练或添加更多数据。
 
-- **第一步.** 在 [Edge Impulse](https://studio.edgeimpulse.com/)创建一个新项目。
+- **步骤 1.** 在 [Edge Impulse](https://studio.edgeimpulse.com/) 中创建一个新项目。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/01.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第二步.** 选择"加速度计数据"，然后点击"让我们开始吧！"。
+- **步骤 2.** 选择“Accelerometer data”，然后点击“Let’s get started!”。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/02.jpg" alt="pir" width={800} height="auto" /></p>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/03.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第三步.** 在电脑上安装 [Edge Impulse CLI](https://docs.edgeimpulse.com/docs/cli-installation) 。
+- **步骤 3.** 在您的电脑上安装 [Edge Impulse CLI](https://docs.edgeimpulse.com/docs/cli-installation)。
 
-- **第四步.** 在您的终端 `terminal` 或 `cmd` 或 `powershell` 中运行以下命令以启动它。
+- **步骤 4.** 在您的 `终端` 或 `cmd` 或 `powershell` 中运行以下命令以启动它。
 
 ```bash
 sudo edge-impulse-data-forwarder
 ```
 
-- **第五步.** 我们需要使用命令行界面（CLI）将Seeed Studio XIAO RP2040与Edge Impulse连接起来。首先，登录您的帐户并选择您的项目。
+- **步骤 5.** 我们需要使用 CLI 将 Seeed Studio XIAO RP2040 连接到 Edge Impulse。首先，登录您的账户并选择您的项目。
 
 为加速度计和设备命名。
 
-返回到Edge Impulse的"数据采集"页面，如果连接成功，结果应该如下所示。您可以在页面右侧找到"XIAO RP2040"设备的信息。
+返回 Edge Impulse 的“Data acquisition”页面，如果连接成功，结果应如下所示。您可以在页面右侧找到设备 "XIAO RP2040"。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/04.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第六步.**  选择传感器为"3轴"。将标签命名为 `上` 和 `下`, 将样本长度（毫秒）修改为20000，然后点击开始采样。
+- **步骤 6.** 选择传感器为“3 axes”。将标签命名为 `up` 和 `down`，将采样长度（ms）修改为 20000，然后点击开始采样。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/05.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第七步.** 将 [Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/) 上下摆动并保持运动20秒钟。您可以在采集结果中看到如下显示：
+- **步骤 7.** 上下摆动 [Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/)，并保持运动 20 秒。您可以看到采集结果如下所示：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/06.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第八步.** 通过点击右上角的原始数据并选择"拆分样本"来拆分数据。点击+添加分段，然后点击图表。重复这个步骤超过20次以添加分段。点击拆分，您将看到每个1秒钟的样本数据。
+- **步骤 8.** 点击右上角的原始数据并选择“Split Sample”以分割数据。点击 +Add Segment，然后点击图表。重复操作超过 20 次以添加片段。点击 Split，您将看到每段 1 秒的样本数据。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/07.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第九步.** 重复步 **第七步.** 和 **第八步.** ，并使用不同的名称为数据标记，例如 `圆圈` 和 `直线` 等。提供的示例是上下、左右和圆圈的分类。您可以根据需要进行更改。
+- **步骤 9.** 重复 **步骤 7** 和 **步骤 8**，并使用不同的名称标记数据以捕获不同的运动数据，例如 `circle` 和 `line` 等。提供的示例是对上下、左右和圆形进行分类。您可以根据需要在此处进行更改。
 
-:::注意
-在步骤8中，拆分时间为1秒，这意味着您在步骤7中至少要在1秒内进行一次上下摆动。否则，结果将不准确。同时，您可以根据自己的运动速度调整拆分时间。
+:::note
+在步骤 8 中，分割时间为 1 秒，这意味着在步骤 7 中，你至少需要完成一次上下摆动，否则结果将不准确。同时，你可以根据自己的运动速度调整分割时间。
 :::
 
-- **第十步.** 创建 Impulse
+- **步骤 10.** 创建 Impulse
 
-点击 **Create impulse** -> 添加处理块 -> 选择 **Spectral Analysis** -> 添加学习块  -> 选择 **Classification (Keras)** -> 保存 Impulse
+点击 **Create impulse** -> 添加一个处理块 -> 选择 **Spectral Analysis** -> 添加一个学习块 -> 选择 **Classification (Keras)** -> 保存 Impulse
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/08.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第十一步.** 频谱特征
+- **步骤 11.** 光谱特征
 
 点击并设置
 
-点击 **Spectral features** -> 下拉页面点击保存参数 -> 点击 **Generate features**
+点击 **Spectral features** -> 下拉页面点击 Save parameters -> 点击 **Generate features**
 
-输出页面应该如下所示：
+输出页面应如下所示：
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/09.jpg" alt="pir" width={800} height="auto" /></p>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/10.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第十二步.** 训练你的模型
+- **步骤 12.** 训练你的模型
 
-点击NN分类器 -> 点击开始训练 -> 选择未优化的(float32)
+点击 NN Classifier -> 点击 Start training -> 选择 Unoptimized (float32)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/11.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第十三步.** 模型测试
+- **步骤 13.** 模型测试
 
-点击模型测试 -> 点击全部分类
+点击 Model testing -> 点击 Classify all
 
-**如果准确率低，可以通过增加训练集和延长样本时间来检查数据集**
+**如果你的准确率较低，可以通过增加训练集和延长采样时间来检查数据集**
 
-在下载模型时，我们也可以获得评估结果
+我们也可以在下载模型时获得评估结果。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/12.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第十四步.** 构建Arduino库
+- **步骤 14.** 构建 Arduino 库
 
-点击部署 -> 点击Arduino库 -> 点击 **构建** -> 下载 .ZIP 文件
+点击 Deployment -> 点击 Arduino Library -> 点击 **Build** -> 下载 .ZIP 文件
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/13.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第十五步.** .ZIP 文件的名称非常重要，默认设置为Edge Impulse项目的名称。就像这里的项目名称是"RP2040"。选择文件并将其添加到Arduino库中
+- **步骤 15.** .ZIP 文件的名称非常重要，它默认设置为你的 Edge Impulse 项目名称。例如，这里的项目名称是 "RP2040"。选择文件并将其作为 ""添加到 Arduino 库中。
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/14.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第十六步.** 打开 Arduino -> 点击 Sketch -> 点击 **Include Library** ->
- **添加 .ZIP 库**
+- **步骤 16.** 打开 Arduino -> 点击 Sketch -> 点击 **Include Library** -> **ADD .ZIP Library**
 
-复制下面的代码，如果edgeimpluse上的项目名称已自定义，则zip存档文本将与该名称相同。您可以将include的第一行更改为您的头文件。
+复制以下代码，如果 Edge Impulse 项目名称是自定义的，那么 ZIP 文件的名称也会相同。你可以将第一行的 include 更改为你的头文件名称。
 
 ```c
-#include <XIAO_RP2040_inferencing.h> // customed name need change this header file to your own file name
+#include <XIAO_RP2040_inferencing.h> // 如果是自定义名称，需要将此头文件更改为你自己的文件名
 #include <Wire.h>
 #include "MMA7660.h"
 MMA7660 accelemeter;
@@ -212,11 +213,11 @@ void loop()
 
     ei_printf("Sampling...\n");
 
-    // Allocate a buffer here for the values we'll read from the IMU
+    // 在此处为我们将从 IMU 读取的值分配一个缓冲区
     float buffer[EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE] = { 0 };
 
     for (size_t ix = 0; ix < EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE; ix += 3) {
-        // Determine the next tick (and then sleep later)
+        // 确定下一个时间点（然后稍后休眠）
         uint64_t next_tick = micros() + (EI_CLASSIFIER_INTERVAL_MS * 1000);
         accelemeter.getAcceleration(&buffer[ix], &buffer[ix + 1], &buffer[ix + 2]);
 
@@ -233,7 +234,7 @@ void loop()
         delayMicroseconds(next_tick - micros());
     }
 
-    // Turn the raw buffer in a signal which we can the classify
+    // 将原始缓冲区转换为信号，以便我们可以进行分类
     signal_t signal;
     int err = numpy::signal_from_buffer(buffer, EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE, &signal);
     if (err != 0) {
@@ -241,7 +242,7 @@ void loop()
         return;
     }
 
-    // Run the classifier
+    // 运行分类器
     ei_impulse_result_t result = { 0 };
 
     err = run_classifier(&signal, &result, debug_nn);
@@ -250,7 +251,7 @@ void loop()
         return;
     }
 
-    // print the predictions
+    // 打印预测结果
     ei_printf("Predictions ");
     ei_printf("(DSP: %d ms., Classification: %d ms., Anomaly: %d ms.)",
         result.timing.dsp, result.timing.classification, result.timing.anomaly);
@@ -268,13 +269,13 @@ void loop()
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/EI/15.jpg" alt="pir" width={800} height="auto" /></p>
 
-- **第十七步.** 移动或保持Seeed Studio XIAO RP2040并检查结果：
+- **步骤 17.** 移动或握住 Seeed Studio XIAO RP2040 并检查结果：
 
-点击Arduino右上角的监视器。
+点击 Arduino 界面右上角的监视器。
 
-当您将Seeed Studio XIAO RP2040移动到 **circle and line** 方向时：
+当你以 **圆形和直线** 方向移动 Seeed Studio XIAO RP2040 时：
 
-监视器将输出类似以下内容：
+监视器将输出如下内容：
 
 ```bash
 15:45:45.434 -> 
@@ -286,16 +287,16 @@ void loop()
 15:45:48.439 -> 
 ```
 
-恭喜！您已完成项目的最后一步。鼓励您尝试更多的方向并检查哪个方向会产生最佳输出。
+恭喜！你完成了项目的最后一步。建议你尝试更多的方向，并检查哪个方向会产生最佳输出。
 
 ## 资源
 
 - [Seeed Studio XIAO RP2040](https://wiki.seeedstudio.com/XIAO-RP2040/)
-- [Edge Impluse CLI](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-installation)
+- [Edge Impulse CLI](https://docs.edgeimpulse.com/docs/edge-impulse-cli/cli-installation)
 
-## 技术支持和产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们在这里为您提供不同的支持，以确保您使用我们的产品的体验尽可能顺利。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们致力于为您提供各种支持，以确保您使用我们的产品时能够获得尽可能顺畅的体验。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

@@ -1,66 +1,72 @@
 ---
-description: “在 XIAO RP2350 上使用 Pico SDK”
+description: "在 XIAO RP2350 上使用 Pico SDK"
 title: Seeed Studio XIAO RP2350 与 C/C++ SDK
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /cn/xiao-rp2350-c-cpp-sdk
-sidebar_position: 2
 last_update:
-    date: 11/18/2024
-    author: Agnes
+  date: 05/15/2025
+  author: Spencer
+sidebar_position: 4
 ---
+
+# 初始化 Raspberry Pi Pico SDK
+
+:::note
+本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
+:::
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-## 介绍
+## 简介
 
-Seeed Studio XIAO RP2350 配备 RP2350 微控制器，提供强大的性能，且体积小巧。本指南将提供设置和使用 C/C++ SDK 的基本步骤，帮助您在 XIAO RP2350 上开始开发。
+Seeed Studio XIAO RP2350 由 RP2350 微控制器驱动，在小巧的外形中提供了强大的性能。本指南提供了设置和使用 XIAO RP2350 的 C/C++ SDK 的基本步骤。
 
-## 前提条件
+## 前置条件
 
 在开始之前，请确保您具备以下条件：
 
 - 一台运行 Windows、macOS 或 Linux 的计算机。
-- 一根用于将 XIAO RP2350 连接到计算机的 USB 电缆。
+- 一根用于将 XIAO RP2350 连接到计算机的 USB 数据线。
 - 基本的 C/C++ 编程知识。
 
-## 通过 Vscode 安装指南
+## 通过 VSCode 的安装指南
 
 :::info
-对于那些喜欢本地开发体验的用户，可以参考 [Raspberry Pi Pico C/C++ SDK 文档](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) 或 [Raspberry Pi Pico SDK | GitHub](https://github.com/raspberrypi/pico-sdk)。
+如果您更喜欢原生开发体验，可以参考 [Raspberry Pi Pico C/C++ SDK 文档](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) 或 [Raspberry Pi Pico SDK | GitHub](https://github.com/raspberrypi/pico-sdk)。
 :::
 
-为了获得更简单和更流畅的 SDK 编程体验，尤其适合新手，您可以为 Visual Studio Code (VSCode) 安装 [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico) 扩展。
+对于 SDK 编程的新手，您可以安装适用于 Visual Studio Code (VSCode) 的 [Raspberry Pi Pico](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico) 扩展，以获得更简单、更流畅的体验。
 
-此扩展简化了设置过程，通过引导您完成必要的工具链安装，避免了手动单独安装每个工具。不过，您仍然需要确保您的系统符合平台要求：Windows x64、macOS（Sonoma 及更新版本）、Linux x64 或 arm64。
+此扩展通过引导您完成必要的工具链安装，简化了设置过程，避免了手动逐一安装工具的麻烦。然而，您仍需确保您的系统满足以下平台要求：Windows x64、macOS（Sonoma 或更新版本）、Linux x64 或 arm64。
 
-有关适合您操作系统的详细安装说明，请参考 [Raspberry Pi Pico Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico) 页面。
+有关针对您的操作系统的详细安装说明，请参阅 [Raspberry Pi Pico Extension for VSCode](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico) 页面。
 
-#### 步骤 1：安装扩展
+#### 第 1 步：安装扩展
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/0-install-pico-extension.png" style={{width:500, height:'auto'}}/>
-<div style={{ marginTop: '-8px' }}><em>在 VSCode 中安装扩展</em></div>
+<div style={{ marginTop: '-8px' }}><em>在 VSCode 上安装扩展</em></div>
 <br></br>
 </div>
 
-#### 步骤 2：创建新项目
+#### 第 2 步：创建新项目
 
-页面加载后，您将看到所需的内容。
+页面加载后，您可以看到所需的内容。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/1-new-example-project.png" style={{width:500, height:'auto'}}/>
-<div style={{ marginTop: '-8px' }}><em>从示例中创建新项目</em></div>
+<div style={{ marginTop: '-8px' }}><em>从示例创建新项目</em></div>
 <br></br>
 </div>
 
-尝试通过 `从示例创建新项目` 创建一个项目。
+尝试通过 `New Project From Examples` 创建一个项目。
 
-#### 步骤 3：配置您的项目
+#### 第 3 步：配置您的项目
 
-- **名称：** 通常这是示例项目的名称；在此，我们选择 `blink` 项目。
+- **名称：** 通常为示例项目名称；在本例中，我们选择 `blink` 项目。
 - **板类型：** `Pico 2`
 - **位置：** 选择您希望存储 XIAO RP2350 项目的位置。
-- **SDK 版本：** 必须是 `v2.0.0` 或更高版本。
-- **调试器：** 如果您计划使用 SWD 调试接口，请勾选 SWD 调试器选项以便以后启用调试。
+- **SDK 版本：** 必须为 `v2.0.0` 或更高版本。
+- **调试器：** 如果您计划使用 SWD 调试接口，请勾选 SWD Debugger 选项以启用调试功能。
 
 <Tabs>
 <TabItem value="c1" label="配置项目">
@@ -73,28 +79,28 @@ Seeed Studio XIAO RP2350 配备 RP2350 微控制器，提供强大的性能，�
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/3-advanced-options.png" style={{width:500, height:'auto'}}/></div>
 
-如果您想对工具链设置进行微调并避免下载冗余资源，可以勾选 **高级选项**。在这里，您可以为 Ninja 和 CMake 等工具指定路径。如果您以前没有安装 CMake 或 Python 环境，或者不想担心这些问题，可以跳过此步骤。
+如果您希望微调工具链设置并避免下载冗余资源，请勾选 **Advanced Options**。在这里，您可以为 Ninja 和 CMake 等工具指定路径。如果您之前未安装 CMake 或 Python 环境，或者不想担心这些问题，可以跳过此步骤。
 
-在此示例中，我将使用已经在 Windows 计算机上安装并添加到系统 PATH 的系统版本。因此，我选择 **使用系统版本**。
+在本例中，我将使用已安装在 Windows 机器上的系统版本，并将其添加到系统 PATH。因此，我选择 **Use system version**。
 
 </TabItem>
 </Tabs>
 
-如果这是您第一次运行设置，当您点击 `创建` 时，扩展会为您下载并管理 SDK。在 Windows 上，SDK 通常会放置在 `%userprofile%\.pico-sdk` 目录下。安装所需时间取决于您的互联网速度。完成后，将会打开一个新窗口，显示您的项目。
+如果这是您第一次运行设置，当您点击 `Create` 时，扩展将为您下载并管理 SDK。在 Windows 上，SDK 通常会放置在 `%userprofile%\.pico-sdk` 中。设置所需时间取决于您的网络速度。完成后，将打开一个新窗口，显示您的项目。
 
-#### 步骤 4：构建项目
+#### 第 4 步：构建项目
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/4-blink-example-created.png" style={{width:500, height:'auto'}}/></div>
 
 :::caution 注意
 
-第一次设置项目时，您需要手动修改 CMake 项目中的板类型，因为扩展默认不包含 XIAO RP2350 板。将板类型设置为 `seeed_xiao_rp2350`，如下所示：
+首次设置项目时，您需要手动修改 CMake 项目中的板类型，因为扩展默认不包含 XIAO RP2350 板。将板设置为 `seeed_xiao_rp2350`，如下所示：
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/set-xiao-rp2350-board.png" style={{width:500, height:'auto'}}/></div>
 
-**修改板类型后，请清理 `build` 文件夹**，以确保使用 `%userprofile%/.pico-sdk/sdk/2.0.0/src/boards/include/boards/seeed_xiao_rp2350.h` 中的正确板配置。然后输入以下命令，在构建文件夹中生成 CMake 缓存：
+**修改板类型后，请清理 `build` 文件夹**，以确保使用正确的板配置文件 `%userprofile%/.pico-sdk/sdk/2.0.0/src/boards/include/boards/seeed_xiao_rp2350.h`。然后在 `build` 文件夹中输入以下命令以生成 CMake 缓存：
 ```shell
-cmake .. # 在 build 文件夹中执行
+cmake .. # 在 build 文件夹中
 ```
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/get-cmake-cache.png" style={{width:500, height:'auto'}}/></div>
 
@@ -105,7 +111,7 @@ cmake .. # 在 build 文件夹中执行
 <Tabs>
 <TabItem value="compile" label="编译项目">
 
-现在您可以按 **编译** 按钮来构建项目。此操作将在 `build` 文件夹中生成 `blink.uf2` 文件，您可以将其拖放到计算机识别的 RP2350 驱动器中。
+现在您可以按下 **Compile** 按钮来构建项目。这将在 `build` 文件夹中生成 `blink.uf2` 文件，您可以将其拖放到计算机识别的 RP2350 驱动器中。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/5-compile-project.png" style={{width:500, height:'auto'}}/></div>
 
@@ -113,19 +119,18 @@ cmake .. # 在 build 文件夹中执行
 
 <TabItem value="run" label="运行项目">
 
-如果设备处于 BOOT 模式，您可以按 **运行** 按钮来编译并自动将 `.uf2` 文件复制到 RP2350，省去手动拖放文件的步骤。
+如果您的设备处于 BOOT 模式，您可以按下 **Run** 按钮来编译并自动将 `.uf2` 文件复制到 RP2350，从而无需手动拖放文件。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/6-run-project.png" style={{width:500, height:'auto'}}/></div>
 
 </TabItem>
 </Tabs>
 
-我们刚刚设置了开发环境，并成功使用 Raspberry Pi Pico 扩展创建了一个新项目。项目已准备就绪，工具也已配置好，您可以轻松地编译并在 XIAO RP2350 上运行您的代码，从而简化开发流程。
-
+我们刚刚设置好了开发环境，并使用 VSCode 的 Raspberry Pi Pico 扩展成功创建了一个新项目。项目已准备就绪，工具也已配置好，您可以轻松地在 XIAO RP2350 上编译并运行代码，从而简化开发流程。
 
 ## 示例 1：LED 闪烁
 
-为了演示基本的 SDK 使用方法，以下示例展示了如何编程控制板载 LED 闪烁：
+为了演示基本的 SDK 使用，以下示例详细说明了如何编程控制板载 LED 闪烁：
 
 ```c title="blink.c"
 #include "pico/stdlib.h"
@@ -146,14 +151,14 @@ int main() {
 ```
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/rp2350-blink.gif" style={{width:400, height:'auto', "border-radius": '12.8px'}}/></div>
 
-## 示例 2: RGB 闪烁
+## 示例 2：RGB 闪烁
 
 <Tabs>
 <TabItem value="ws2812.c" label="ws2812.c">
 
 ```c
 /**
- * Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+ * 版权所有 (c) 2020 Raspberry Pi (Trading) Ltd.
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
@@ -172,7 +177,7 @@ int main() {
 #ifdef PICO_DEFAULT_WS2812_PIN
 #define WS2812_PIN PICO_DEFAULT_WS2812_PIN
 #else
-// 如果板子没有默认的 WS2812 引脚定义，则默认为引脚 2
+// 如果板子没有定义默认的 WS2812 引脚，则默认为引脚 22
 #define WS2812_PIN 22
 #endif
 
@@ -216,7 +221,7 @@ void pattern_sparkle(uint len, uint t) {
 }
 
 void pattern_greys(uint len, uint t) {
-    int max = 100; // 为了不消耗过多电流！
+    int max = 100; // 避免消耗过多电流！
     t %= max;
     for (int i = 0; i < len; ++i) {
         put_pixel(t * 0x10101);
@@ -229,10 +234,10 @@ const struct {
     pattern pat;
     const char *name;
 } pattern_table[] = {
-        {pattern_snakes,  "蛇形!"},
-        {pattern_random,  "随机数据"},
-        {pattern_sparkle, "闪光"},
-        {pattern_greys,   "灰度"},
+        {pattern_snakes,  "Snakes!"},
+        {pattern_random,  "Random data"},
+        {pattern_sparkle, "Sparkles"},
+        {pattern_greys,   "Greys"},
 };
 
 int main() {
@@ -246,7 +251,7 @@ int main() {
 
     printf("WS2812 烟雾测试，使用引脚 %d", WS2812_PIN);
 
-    // todo 获取空闲的状态机
+    // todo 获取空闲状态机
     PIO pio = pio0;
     int sm = 0;
     uint offset = pio_add_program(pio, &ws2812_program);
@@ -272,7 +277,7 @@ int main() {
 
 ```assembly
 ;
-; Copyright (c) 2020 Raspberry Pi (Trading) Ltd.
+; 版权所有 (c) 2020 Raspberry Pi (Trading) Ltd.
 ;
 ; SPDX-License-Identifier: BSD-3-Clause
 ;
@@ -290,12 +295,12 @@ int main() {
 
 .wrap_target
 bitloop:
-    out x, 1       side 0 [T3 - 1] ; 即使指令停顿时，Side-set仍然会发生
-    jmp !x do_zero side 1 [T1 - 1] ; 根据我们移出的位进行跳转。正脉冲
+    out x, 1       side 0 [T3 - 1] ; 当指令暂停时，仍然会进行 Side-set
+    jmp !x do_zero side 1 [T1 - 1] ; 根据移出的位分支。正脉冲
 do_one:
-    jmp  bitloop   side 1 [T2 - 1] ; 继续驱动高电平，产生长脉冲
+    jmp  bitloop   side 1 [T2 - 1] ; 继续保持高电平，形成长脉冲
 do_zero:
-    nop            side 0 [T2 - 1] ; 或者驱动低电平，产生短脉冲
+    nop            side 0 [T2 - 1] ; 或者驱动低电平，形成短脉冲
 .wrap
 
 % c-sdk {
@@ -361,12 +366,11 @@ static inline void ws2812_parallel_program_init(PIO pio, uint sm, uint offset, u
 
 <TabItem value="ws2812-cmake" label="CMakeLists.txt">
 
-复制以下代码段并将其附加到 `CMakeLists.txt` 文件中。
+将以下代码片段复制并追加到您的 `CMakeLists.txt` 文件中。
 
 ```cmake title="CMakeLists.txt"
 project(pio_ws2812 C CXX ASM)
 
-# 初始化 Raspberry Pi Pico SDK
 pico_sdk_init()
 
 # 为 pio_ws2812 添加可执行目标
@@ -378,16 +382,16 @@ file(MAKE_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/generated)
 # 从 ws2812.pio 生成 PIO 头文件
 pico_generate_pio_header(pio_ws2812 ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio OUTPUT_DIR ${CMAKE_CURRENT_LIST_DIR}/generated)
 
-# 将源文件添加到 pio_ws2812 目标中
+# 将源文件添加到 pio_ws2812 目标
 target_sources(pio_ws2812 PRIVATE ws2812.c)
 
 # 将必要的库链接到 pio_ws2812 目标
 target_link_libraries(pio_ws2812 PRIVATE pico_stdlib hardware_pio)
 
-# 生成额外的输出格式（例如，UF2，BIN）
+# 生成额外的输出格式（例如 UF2、BIN）
 pico_add_extra_outputs(pio_ws2812)
 
-# 可选地，从 PIO 汇编生成 Python 文件，以供进一步分析或文档使用
+# 可选：从 PIO 汇编生成 Python 文件以供进一步分析或文档使用
 add_custom_command(OUTPUT ${CMAKE_CURRENT_LIST_DIR}/generated/ws2812.py
     DEPENDS ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio
     COMMAND pioasm -o python ${CMAKE_CURRENT_LIST_DIR}/ws2812.pio ${CMAKE_CURRENT_LIST_DIR}/generated/ws2812.py
@@ -403,10 +407,10 @@ add_dependencies(pio_ws2812 pio_ws2812_datasheet)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/rp2350-rgb.gif" style={{width:240, height:'auto', "border-radius": '12.8px' }}/></div>
 
-## 示例 3: UART 打印
+## 示例 3：UART 打印
 
 :::tip USB 串口
-如果你想通过 USB 启用 `printf` 输出到计算机，你需要在项目的 `CMakeLists.txt` 文件中添加以下行：
+如果您希望通过 USB 将 `printf` 输出到计算机，您需要在项目的 `CMakeLists.txt` 文件中添加以下行：
 
 ```cmake
 pico_enable_stdio_usb(your_project_name 1)
@@ -414,7 +418,7 @@ pico_enable_stdio_usb(your_project_name 1)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2350/img/sdk/10-cmake-usb-enabled.png" alt="CMake USB Enabled" style={{width:400, height:'auto'}}/></div>
 
-另外，确保在你的代码中初始化标准 I/O，通过在主函数中添加`stdio_init_all();` 。
+此外，请确保在代码中通过在主函数中添加 `stdio_init_all();` 来初始化标准 I/O。
 
 :::
 
@@ -428,30 +432,30 @@ pico_enable_stdio_usb(your_project_name 1)
 #define UART_ID uart0
 #define BAUD_RATE 115200
 
-// 我们使用的是引脚 0 和 1，更多可用引脚请参见数据手册中的 GPIO 功能选择表
+// 我们使用的是引脚 0 和 1，但请参阅数据手册中的 GPIO 功能选择表，了解可以使用的其他引脚。
 #define UART_TX_PIN 0
 #define UART_RX_PIN 1
 
 int main() {
    stdio_init_all();
-  // 设置我们所需的波特率来初始化 UART
+  // 设置所需速度的 UART。
   uart_init(UART_ID, BAUD_RATE);
 
-  // 通过使用 GPIO 的功能选择设置 TX 和 RX 引脚
-  // 更多信息请参见数据手册中的功能选择
+  // 使用 GPIO 的功能选择设置 TX 和 RX 引脚
+  // 有关功能选择的更多信息，请参阅数据手册
   gpio_set_function(UART_TX_PIN, UART_FUNCSEL_NUM(UART_ID, UART_TX_PIN));
   gpio_set_function(UART_RX_PIN, UART_FUNCSEL_NUM(UART_ID, UART_RX_PIN));
 
-  // 使用一些 UART 函数来发送数据
+  // 使用各种 UART 函数发送数据
   // 在默认系统中，printf 也会通过默认 UART 输出
 
-  // 发送一个字符，不做任何转换
+  // 发送一个字符，不进行任何转换
   uart_putc_raw(UART_ID, 'A');
 
-  // 发送一个字符，进行 CR/LF 转换
+  // 发送一个字符，但进行 CR/LF 转换
   uart_putc(UART_ID, 'B');
 
-  // 发送一个字符串，进行 CR/LF 转换
+  // 发送一个字符串，带有 CR/LF 转换
   uart_puts(UART_ID, " Hello, UART!\n");
 
   // 打印测试
@@ -463,7 +467,7 @@ int main() {
 }
 ```
 
-## 示例 4: 读取电池电压
+## 示例 4：读取电池电压
 
 ```c title="hello_adc.c"
 #include <stdio.h>
@@ -486,13 +490,13 @@ int main() {
     init_gpio();
     adc_init();
 
-    // 确保GPIO为高阻抗，没有上拉等
+    // 确保 GPIO 是高阻抗的，没有上拉等
     adc_gpio_init(29);
-    // 选择ADC输入 0（GPIO26）
+    // 选择 ADC 输入 0（GPIO26）
     adc_select_input(3);
 
     while (1) {
-        // 12位转换，假设最大值 == ADC_VREF == 3.3 V
+        // 12 位转换，假设最大值 == ADC_VREF == 3.3 V
         const float conversion_factor = 3.3f / (1 << 12);
         uint16_t result = adc_read();
         printf("原始值: 0x%03x, 电压: %f V\n", result, result * conversion_factor * 2);
@@ -509,13 +513,13 @@ int main() {
 在构建项目时，您可能会看到以下警告：
 
 ```plaintext
-TinyUSB 子模块尚未初始化；USB 支持将不可用
+TinyUSB submodule has not been initialized; USB support will be unavailable
 ```
 
 **解决方案：**
 
-1. 在 Linux/macOS 上打开终端，或在 Windows 上打开命令提示符/PowerShell/Git Bash。
-2. **进入 Pico SDK 目录：**
+1. **打开终端**（Linux/macOS）或命令提示符/PowerShell/Git Bash（Windows）。
+2. **导航到 Pico SDK 目录：**
 
    ```bash
    cd /path/to/your/pico-sdk
@@ -527,18 +531,18 @@ TinyUSB 子模块尚未初始化；USB 支持将不可用
    git submodule update --init
    ```
 
-这将为您的项目启用 USB 支持。
+这将启用项目中的 USB 支持。
 
 ## 资源
 
 - 🔗 **[链接]** [Raspberry Pi Pico SDK | GitHub](https://github.com/raspberrypi/pico-sdk)
-- 📄 **[PDF]** [Raspberry Pi Pico系列 C/C++SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) — 该书记录了 SDK 的 API
-- 📄 **[PDF]** [Raspberry Pi Pico系列入门指南](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf) — 官方 Raspberry Pi 文档。
-- 📽️ **[视频]** [Raspberry Pi Pico 和 RP2040 简介](https://www.youtube.com/watch?v=B5rQSoOmR5w) — 一段视频教程。
+- 📄 **[PDF]** [Raspberry Pi Pico 系列 C/C++ SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf) - SDK API 文档。
+- 📄 **[PDF]** [Raspberry Pi Pico 系列入门指南](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf) - 官方 Raspberry Pi 文档。
+- 📽️ **[视频]** [Raspberry Pi Pico 和 RP2040 简介](https://www.youtube.com/watch?v=B5rQSoOmR5w) - 视频教程。
 
 ## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们为您提供多种支持方式，确保您在使用我们产品时的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
+感谢您选择我们的产品！我们为您提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通方式，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

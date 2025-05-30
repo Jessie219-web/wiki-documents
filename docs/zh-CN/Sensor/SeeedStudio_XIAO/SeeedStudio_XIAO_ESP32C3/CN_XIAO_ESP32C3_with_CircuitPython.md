@@ -1,6 +1,6 @@
 ---
-description: Seeed Studio XIAO ESP32C3与CircuitPython
-title: XIAO ESP32C3 与 CircuitPython
+description: Seeed Studio XIAO ESP32C3 使用 CircuitPython
+title: XIAO ESP32C3 使用 CircuitPython
 keywords:
 - xiao
 - esp32c3
@@ -8,63 +8,66 @@ keywords:
 image: https://files.seeedstudio.com/wiki/esp32c3_circuitpython/title.png
 slug: /cn/xiao_esp32c3_with_circuitpython
 last_update:
-  date: 11/15/2024
-  author: Agnes
+  date: 05/15/2025
+  author: Evelyn Chen
 ---
 
-# **Seeed Studio XIAO ESP32C3与CircuitPython**
+# **Seeed Studio XIAO ESP32C3 使用 CircuitPython**
+
+:::note
+本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
+:::
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/title.png" /></div>
 
-本文介绍如何在Seeed Studio XIAO ESP32C3开发板上安装并运行Adafruit Industries官方的CircuitPython！
-CircuitPython是一种编程语言，旨在简化低成本微控制器板上的实验和编程学习。它使得入门比以往任何时候都更容易，不需要预先下载桌面软件。一旦设置好开发板，你只需打开任何文本编辑器，开始编辑代码即可。如需更多信息，请参考 [这里](https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython)。
+本篇 Wiki 介绍如何在 Seeed Studio XIAO ESP32C3 开发板上安装并运行 Adafruit Industries 官方的 CircuitPython！  
+CircuitPython 是一种编程语言，旨在简化在低成本微控制器板上进行实验和学习编程的过程。它使入门变得前所未有的简单，无需预先下载桌面软件。设置好开发板后，只需打开任意文本编辑器即可开始编辑代码。有关更多信息，请参考 [这里](https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython)。
 
-## 安装CircuitPython
+## 安装 CircuitPython
 
-### 方法 1：使用命令行的esptool
+### 方法 1：使用命令行工具 esptool
 
-#### 安装Esptool
-如果尚未安装esptool.py，可以通过pip在你的PC上安装：
+#### 安装 Esptool
+如果尚未安装 esptool.py，可以通过 pip 在您的电脑上安装：
 
 ``` linux
 pip install esptool
 ```
 
-#### 下载XIAO ESP32C3的CircuitPython固件
-你需要从 [circirtpython.org](https://circuitpython.org/board/seeed_xiao_esp32c3/)下载固件二进制文件。
-下载正确的bin文件后，进入该文件所在的文件夹，并在该位置打开命令行终端。
-截至当前版本，最新的bin文件为：
+#### 下载 XIAO ESP32C3 CircuitPython 固件
+您需要从 [circirtpython.org](https://circuitpython.org/board/seeed_xiao_esp32c3/) 下载固件二进制文件。  
+下载正确的 bin 文件后，导航到该文件所在的文件夹，并在此处打开命令行终端。  
+截至最终草稿，最新的 bin 文件版本为：
 
 ```
 adafruit-circuitpython-seeed_xiao_esp32c3-en_GB-9.1.1.bin
 ```
 
-#### 连接XIAO ESP32C3到PC
+#### 将 XIAO ESP32C3 连接到您的电脑
 
-你需要按住XIAO ESP32C3板上的BOOT按钮，进入“bootloader”模式，同时将Type C USB数据线连接到PC。
+您需要按住 XIAO ESP32C3 板上的 BOOT 按钮，同时将其通过 Type-C USB 数据线连接到电脑，以进入“引导加载程序”模式。
 
 #### 检查端口
 
-查看PC上的所有串口设备。
-
+查找电脑上的所有串行设备。
 
 * Linux 
 
-在Linux上，你可以使用 dmesg 命令查看连接的设备：
+在 Linux 上，可以使用 *dmesg* 命令查看已连接的设备：
 
 ```Linux
 dmesg | grep tty
 ```
 
-或者，你可以使用 ls 命令列出串口设备：
+或者，您可以使用 *ls* 列出串行设备：
 
 ```
 ls /dev/ttyS* /dev/ttyUSB*
 ```
 
-* Window
+* Windows
 
-在Windows上，你可以通过设备管理器检查串口。在“端口（COM与LPT）”部分查看可用的串口。也可以使用命令提示符中的mode命令列出串口：
+在 Windows 上，可以通过设备管理器检查串行端口。在“端口 (COM 和 LPT)”部分查看可用的串行端口。您也可以在命令提示符中使用 mode 命令列出串行端口：
 
 ```
 mode
@@ -72,34 +75,33 @@ mode
 
 * macOS
 
-在macOS上，你可以使用 ls 命令列出可用的串口：
+在 macOS 上，可以使用 *ls* 命令列出可用的串行端口：
 
 ```
 ls /dev/cu*
 ```
 
-这将显示所有串口设备。
+这将显示所有串行端口设备。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/1.png" /></div>
 
 :::tip
-如果端口忙碌，你可以使用以下命令查找并终止占用该端口的进程（在macOS上）：
-查找占用端口的进程：
+如果端口被占用，可以使用以下命令查找并终止占用端口的进程（适用于 macOS）：  
+识别占用端口的进程：
 
 ```
 lsof | grep port
 ```
 
-该命令列出打开的文件，并搜索任何使用指定端口的进程。
-从输出中找到进程ID（PID），然后终止进程：
+此命令列出打开的文件并搜索使用指定端口的任何进程。  
+从输出中找到进程 ID (PID)，并终止该进程：
 
 ```
 kill -9 <PID>
 ```
 
-将 *PID* 替换为实际的进程ID。
+将 *PID* 替换为实际的进程 ID。
 :::
-
 
 #### 擦除闪存
 
@@ -107,78 +109,74 @@ kill -9 <PID>
 esptool.py --chip esp32c3 --port /dev/cu.usbmodem11301 erase_flash
 ```
 
-将`/dev/cu.usbmodem11301`替换为你系统中正确的端口名（例如Windows中的`COM3`，Linux中的`/dev/ttyUSB0`）。
-
+将 '/dev/cu.usbmodem11301' 替换为系统中的正确端口名称（例如，在 Windows 上为 `COM3`，在 Linux 上为 `/dev/ttyUSB0`）。
 
 #### 写入闪存
-将固件写入XIAO ESP32C3：
+将固件刷写到 XIAO ESP32C3：
 
 ```linux
 esptool.py --chip esp32c3 --port /dev/cu.usbmodem11301 --baud 460800 write_flash -z 0x0 adafruit-circuitpython-seeed_xiao_esp32c3-en_GB-9.1.1.bin
 ```
 
-再次，将`/dev/cu.usbmodem11301`替换为正确的端口名，将`adafruit-circuitpython-seeed_xiao_esp32c3-en_GB-9.1.1.bin`替换为你下载的固件文件路径。
-通过RTS引脚进行硬复位…
+同样，将 '/dev/cu.usbmodem11301' 替换为正确的端口名称，并将 'adafruit-circuitpython-seeed_xiao_esp32c3-en_GB-9.1.1.bin' 替换为您的固件文件路径。  
+通过 RTS 引脚进行硬重置...
 
+### 方法 2：使用 Web Serial esptool
+WebSerial ESPTool 是为编程 Espressif ESP 系列微控制器板设计的基于 Web 的选项，这些微控制器板具有基于串行的 ROM 引导加载程序。它允许您擦除微控制器的内容，并在不同的偏移量处编程最多 4 个文件。请参考 [Web Serial ESPtool](https://learn.adafruit.com/circuitpython-with-esp32-quick-start/web-serial-esptool)。
 
-### 方法 2: Web Serial esptool
-WebSerial ESPTool是一个针对具有串行ROM引导加载程序的Espressif ESP系列微控制器板设计的Web编程工具。它允许擦除微控制器的内容并以不同的偏移量编程最多4个文件。请参考 [Web Serial ESPtool](https://learn.adafruit.com/circuitpython-with-esp32-quick-start/web-serial-esptool)。
+然后，您可以使用您喜欢的工具开始为 XIAO ESP32C3 编写脚本！
 
-然后，你可以使用你喜欢的工具开始编写脚本并将其上传到XIAO ESP32C3！
+## CircuitPython 推荐编辑器
 
-## 推荐的CircuitPython编辑器
-
-通常，当CircuitPython安装完成后，或者你将已经安装CircuitPython的开发板插入计算机时，开发板会以名为CIRCUITPY的USB驱动器的形式出现在计算机中。
-然而，不支持本机USB的ESP32或ESP32-C3微控制器无法呈现CIRCUITPY驱动器。
-在这些板上，可以通过其他方式传输和编辑文件。你可以使用 [Thonny](https://thonny.org/), ，它通过隐藏命令发送到REPL来读取和写入文件。或者，你可以使用 [CircuitPython web 工作流程](https://code.circuitpython.org/)该功能在CircuitPython 8中引入。Web工作流程提供基于浏览器的WiFi访问CircuitPython文件系统，更多信息请参考 [使用代码编辑器进行Web工作流程入门](https://learn.adafruit.com/getting-started-with-web-workflow-using-the-code-editor/overview.)。
+通常，当 CircuitPython 安装完成后，或者您将已安装 CircuitPython 的开发板插入电脑时，开发板会显示为名为 CIRCUITPY 的 USB 驱动器。  
+然而，ESP32 或 ESP32-C3 微控制器不支持原生 USB，因此无法显示 CIRCUITPY 驱动器。  
+在这些开发板上，有其他方式传输和编辑文件。您可以使用 [Thonny](https://thonny.org/)，它通过发送隐藏命令到 REPL 来读取和写入文件。或者，您可以使用 CircuitPython 8 中引入的 [CircuitPython Web Workflow](https://code.circuitpython.org/)，该功能提供基于浏览器的 WiFi 访问 CircuitPython 文件系统的方式。请参考 [使用代码编辑器开始使用 Web Workflow](https://learn.adafruit.com/getting-started-with-web-workflow-using-the-code-editor/overview)。
 
 ### 1. Thonny
-安装并打开Thonny，然后按照以下说明配置Thonny：
+安装并打开 Thonny，然后按照以下说明配置 Thonny：
 
 ```
 pip install thonny
-#open thonny after installation
+# 安装完成后打开 thonny
 thonny
 ```
 
-进入 "Run" -> "Configure Interpreter"，确保Thonny选项中的"Interpreter"标签如图所示，选择“CircuitPython (generic)”和端口：
+进入 Run --> Configure Interpreter，并确保 Thonny 选项中的 Interpreter 选项卡如下所示，选择 "CircuitPython (generic)" 和端口：
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/2.png" /></div>
 
-点击对话框中的“OK”，你应该会在Thonny窗口底部看到Micropython shell，如下图所示。
-然后，你可以使用**R**ead-**E**valuate-**P**rint-**L**oop（REPL）进行串口连接，它允许你输入单行代码并立即在shell中运行。如果你在某个程序中遇到问题并且不知道原因，REPL非常有用。它是交互式的，非常适合测试新想法。更多信息请参考 [REPL](https://learn.adafruit.com/welcome-to-circuitpython/the-repl) 。
+点击对话框中的 "OK"，您应该会在 Thonny 窗口底部看到 Micropython shell，如下图所示。  
+然后，您可以使用 **R**ead-**E**valuate-**P**rint-**L**oop（REPL）进行串行连接，这允许您输入单独的代码行并立即在 shell 中运行。它对于调试特定程序的问题非常有用。它是交互式的，因此非常适合测试新想法。请参考 [REPL](https://learn.adafruit.com/welcome-to-circuitpython/the-repl) 了解更多信息。
 
-你可以通过输入*help()*与REPL进行交互，帮助你开始探索REPL。要在REPL中运行代码，直接在REPL提示符旁边输入。
-输入*help("modules")*可以列出所有内置模块，包括*board*模块。
+通过输入 *help()* 与 REPL 交互，它会告诉您从哪里开始探索 REPL。要在 REPL 中运行代码，请在 REPL 提示符后输入代码。  
+要列出内置模块，请输入 *help("modules")*，这将显示 CircuitPython 中所有核心模块的列表，包括 "*board*"。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/3.png" /></div>
 
-接下来，输入*"import board"*到REPL并按Enter。然后，输入*"dir(board)"*，它将列出你板上的所有引脚。
+然后可以在 REPL 中输入 *"import board"* 并按回车键。接下来，输入 *"dir(board)"* 并按回车键，就可以获得板子上所有引脚的列表。
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/4.png" /></div>
 
-### 2. CircuitPython Web Workflow
+### 2. CircuitPython Web 工作流
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/5.png" /></div>
 
-[CircuitPython代码编辑器](https://code.circuitpython.org/) 提供了一个更全面、丰富的体验，适用于在运行最新版本CircuitPython的ESP32设备上编辑文件。
-该编辑器支持通过Web蓝牙、USB和WiFi Web工作流来编辑文件。
+[The CircuitPython Code Editor](https://code.circuitpython.org/) 提供了一个更全面、更丰富的体验，用于编辑运行最新版本 CircuitPython 的 ESP32 系列设备上的文件。
+该编辑器支持通过 Web Bluetooth、USB 和 WiFi 的 Web Workflow 来编辑文件。
 
 ## 引脚/端口信息
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/6.png" /></div>
 
-* 更多信息请参阅 [硬件概述](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#hardware-overview)
+* 更多信息请参考 [硬件概述](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#hardware-overview)
 * [Seeed Studio XIAO ESP32C3 原理图](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-SCH.pdf)
 
-
-
-## 在XIAO ESP32C3上开始使用CircuitPython
+## 在 XIAO ESP32C3 上开始使用 CircuitPython
 
 ### 网络-WLAN
 
-对于没有本机USB支持的开发板（如ESP32-C3或ESP32），你需要通过REPL连接到Wi-Fi。当文件名为*settings.toml*的文件被添加到CircuitPython文件系统的根目录时，将启用Wi-Fi功能。
-通过REPL创建*settings.toml*文件：
+对于没有原生 USB 的板子（如 ESP32-C3 或 ESP32），需要通过 REPL 来连接 Wi-Fi。当在 CircuitPython 文件系统的根文件夹中添加名为 *settings.toml* 的文件时，Wi-Fi 功能会被启用。
+通过 REPL 创建 *settings.toml* 文件：
 
 ```r
 f = open('settings.toml', 'w')
@@ -188,39 +186,38 @@ f.write('CIRCUITPY_WEB_API_PASSWORD = "webpassword"\n')
 f.close()
 ```
 
-* 将*wifissid*替换为你本地Wi-Fi网络的名称。
-* 将*wifipassword*替换为你本地Wi-Fi的密码。
-* 另一个密码*webpassword*用于通过Web浏览器访问开发板。你可以根据需要设置这个密码。
+* 将 *wifissid* 替换为你的本地 Wi-Fi 网络名称
+* 将 *wifipassword* 替换为你的本地 Wi-Fi 密码
+* 另一个密码用于通过网页浏览器访问板子。可以设置为任意值 *webpassword*
 
-连接后，你可以按**重置**按钮启动固件，然后按几次回车键进入REPL提示符。然后重新连接设备到Thonny，你的XIAO ESP32C3的IP地址将会显示出来。
+连接后，可以按下 **Reset** 按钮重启固件，然后按几次回车键进入 REPL 提示符。然后重新连接设备到 Thonny，XIAO ESP32C3 的 IP 地址会显示出来。
 
 :::note
-请记住，ESP32不支持5 GHz网络，因此如果你有两个网络，使用2.4 GHz的SSID。
+请记住，ESP32 不支持 5 GHz 网络，因此如果你有两个 SSID，请使用 2.4 GHz 的 SSID。
 :::
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/7.png" /></div>
 
-### 延迟和定时
+### 延迟和计时
 
-使用*time*模块：
+*time* 模块：
 
 ```python
 import time
-time.sleep(1)           # 延时1秒
-time.sleep_ms(500)      # 延时500毫秒
-time.sleep_us(10)       # 延时10微秒
+time.sleep(1)           # 休眠 1 秒
+time.sleep_ms(500)      # 休眠 500 毫秒
+time.sleep_us(10)       # 休眠 10 微秒
 start = time.ticks_ms() # 获取毫秒计数器
 delta = time.ticks_diff(time.ticks_ms(), start) # 计算时间差
 ```
 
+### 引脚和 GPIO
 
-### 引脚和GPIO
-
-你可以使用*board*和*microcontroller*模块控制GPIO，以下是连接LED到D5引脚的示例代码：
+可以使用 "*board*" 和 "*microcontroller*" 模块控制 GPIO，以下代码示例连接一个 LED 到 D5：
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/14.png" /></div>
 
 ```python
-# 使用board模块
+# 使用 board 模块
 import board
 import digitalio
 import time
@@ -229,12 +226,12 @@ led = digitalio.DigitalInOut(board.D5)
 led.direction = digitalio.Direction.OUTPUT
 
 while True:
-    led.value = True  # 打开LED
+    led.value = True  # 打开 LED
     time.sleep(1)
-    led.value = False  # 关闭LED
+    led.value = False  # 关闭 LED
     time.sleep(1)
     
-# 使用microcontroller模块
+# 使用 microcontroller 模块
 import microcontroller
 import digitalio
 import time
@@ -243,22 +240,22 @@ led = digitalio.DigitalInOut(microcontroller.pin.GPIO7)
 led.direction = digitalio.Direction.OUTPUT
 
 while True:
-    led.value = True  # 打开LED
+    led.value = True  # 打开 LED
     time.sleep(1)
-    led.value = False  # 关闭LED
+    led.value = False  # 关闭 LED
     time.sleep(1)
 ```
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/8.png" /></div>
 
 ### UART（串行总线）
 
-使用*busio*模块：
+使用 *busio* 模块：
 
 ```python
 import board
 import busio
 
-# 初始化UART
+# 初始化 UART
 uart = busio.UART(board.TX, board.RX, baudrate=9600)
 
 # 发送数据
@@ -269,19 +266,18 @@ while True:
     if uart.in_waiting > 0:
         data = uart.read()
         print("Received:", data)
-
 ```
 
-XIAO ESP32C3有一个硬件UART，下面是对应的引脚：
+XIAO ESP32C3 有一个硬件 UART，以下是引脚列表：
 
-| UART | Pin |
+| UART | 引脚 |
 |------|-----|
 | TX   | D6  |
 | RX   | D7  |
 
-### PWM（脉冲宽度调制）
+### PWM（脉宽调制）
 
-使用 *pwmio* 模块:
+使用 *pwmio* 模块：
 
 ```python
 import board
@@ -289,34 +285,32 @@ import pwmio
 from digitalio import DigitalInOut
 import time
 
-# 初始化PWM
+# 初始化 PWM
 pwm = pwmio.PWMOut(board.D5, frequency=5000, duty_cycle=0)
 
-# 调节LED亮度
+# 一个渐变亮度的 LED
 while True:
     for duty_cycle in range(0, 65535, 1000):
         pwm.duty_cycle = duty_cycle
         time.sleep(0.1)
-
 ```
 
 ### ADC（模拟到数字转换）
 
-使用 *analogio* 模块:
+使用 *analogio* 模块：
 
 ```python
 import board
 import analogio
 import time
 
-# 初始化ADC
+# 初始化 ADC
 adc = analogio.AnalogIn(board.A0)
 
 while True:
     value = adc.value
-    print("ADC值:", value)
+    print("ADC Value:", value)
     time.sleep(1)
-
 ```
 
 ### SPI
@@ -326,7 +320,7 @@ import board
 import busio
 import digitalio
 
-# 初始化SPI
+# 初始化 SPI
 spi = busio.SPI(board.SCK, board.MOSI, board.MISO)
 
 # 选择一个芯片
@@ -338,7 +332,7 @@ cs.value = True
 data_out = bytearray([0x01, 0x02, 0x03])
 data_in = bytearray(3)
 spi.write_readinto(data_out, data_in)
-print("接收到的数据:", data_in)
+print("Received:", data_in)
 ```
 
 | SPI  | 引脚 |
@@ -353,19 +347,19 @@ print("接收到的数据:", data_in)
 import board
 import busio
 
-# 初始化I2C
+# 初始化 I2C
 i2c = busio.I2C(board.SCL, board.SDA, frequency=400000)
 ```
 
-### XIAO扩展板基础
+### XIAO 扩展板底座
 
-*前提条件：*:
+*前提条件*：
 
 <table align="center">
   <tbody><tr>
-      <th>XIAO ESP32C3<br /> 带焊接插针</th>
-      <th>扩展板基础</th>
-      <th>Grove光传感器</th>
+      <th>XIAO ESP32C3<br /> 焊接了针脚</th>
+      <th>XIAO 扩展板底座</th>
+      <th>Grove 光传感器</th>
     </tr>
     <tr>
       <td><div align="center"><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/board-pic.png" style={{width:100, height:'auto'}}/></div></td>
@@ -375,17 +369,17 @@ i2c = busio.I2C(board.SCL, board.SDA, frequency=400000)
     <tr>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
             <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
             <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeeduino-XIAO-Expansion-board-p-4746.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
             </a>
         </div></td>
         <td align="center"><div class="get_one_now_container" style={{textAlign: 'center'}}>
             <a class="get_one_now_item" href="https://www.seeedstudio.com/Grove-Light-Sensor-v1-2-LS06-S-phototransistor.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> 立即获取 🖱️</font></span></strong>
+            <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
             </a>
         </div></td>
     </tr>
@@ -400,7 +394,7 @@ import time
 import board
 import analogio
 
-# 初始化A0上的模拟输入
+# 初始化 A0 上的模拟输入
 analog_in = analogio.AnalogIn(board.A0)
 
 def get_voltage(pin):
@@ -412,25 +406,25 @@ while True:
     # 将原始值转换为电压
     voltage = get_voltage(analog_in)
     
-    # 打印原始值和电压
-    print("[光传感器] 原始值: {:5d} 电压: {:.2f}V".format(raw_value, voltage))
+    # 将原始值和电压打印到串行控制台
+    print("[Light] Raw value: {:5d} Voltage: {:.2f}V".format(raw_value, voltage))
     
-    # 延时一段时间再读取
+    # 延迟一小段时间后再读取
     time.sleep(1)
 ```
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/10.png" /></div>
 
-#### 点亮OLED显示屏
+#### 点亮 OLED 屏幕
 
-**下载并解压库包：**:
-* 访问 [CircuitPython库](https://circuitpython.org/libraries) 并下载适用于你的CircuitPython版本的库包。
+**下载并解压库文件包**：
+* 前往 [library](https://circuitpython.org/libraries) 下载 CircuitPython 的库文件包。根据您的 CircuitPython 版本下载相应的文件包。
 
-**将库复制到CIRCUITPY**:
+**将库文件复制到 CIRCUITPY**：
 
-* 解压库包ZIP文件，你将找到一个名为lib的文件夹，里面包含多个*.mpy文件。
-* 打开Thonny->查看->文件，然后将所需的.mpy文件和lib文件夹复制到CircuitPython设备的/lib目录下。
-你需要手动安装库包中的必要库：
+* 解压库文件包 ZIP 文件。您会找到一个名为 `lib` 的文件夹，其中包含各种 *.mpy* 文件。
+* 打开 Thonny-->View-->Files，然后将所需的 .mpy 文件和 lib 文件夹复制到 CircuitPython 设备的 `lib` 文件夹中。
+您需要从文件包中手动安装以下必要的库：
   * adafruit_ssd1306
   * adafruit_bus_device
   * adafruit_register
@@ -440,9 +434,9 @@ while True:
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/12.png" /></div>
 
-**编写CircuitPython代码**:
+**创建您的 CircuitPython 代码**：
 
-* 创建一个code.py（或main.py）文件，这个文件将包含你的CircuitPython代码。
+* 创建一个 `code.py` 文件（或 `main.py`）。该文件应包含您的 CircuitPython 代码。
 
 ```python
 import board
@@ -451,47 +445,47 @@ import displayio
 import adafruit_ssd1306
 import terminalio
 
-# 初始化I2C
+# 初始化 I2C
 i2c = busio.I2C(board.SCL, board.SDA)
 
-# 定义显示屏参数
+# 定义显示参数
 oled_width = 128
 oled_height = 64
 
-# 初始化OLED显示屏
+# 初始化 OLED 显示屏
 oled = adafruit_ssd1306.SSD1306_I2C(oled_width, oled_height, i2c)
 
-# 清空显示屏
+# 用颜色 0 填充显示屏
 oled.fill(0)
-# 设置第一个像素为白色
+# 将第一个像素设置为白色
 oled.pixel(0, 0, 1)
 oled.show()
 ```
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/esp32c3_circuitpython/13.png" /></div>
 
+## “卸载” CircuitPython
 
-## "卸载" CircuitPython
+我们的许多开发板可以支持多种编程语言。例如，Circuit Playground Express 可以用于 MakeCode、Code.org CS Discoveries、CircuitPython 和 Arduino。您可能希望切换回 Arduino 或 MakeCode。实际上并不需要卸载 CircuitPython。CircuitPython 只是加载到您的开发板中的“另一个程序”。因此，您只需加载另一个程序（如 Arduino 或 MakeCode），它就会覆盖 CircuitPython。
 
-我们的许多开发板可以与多种编程语言一起使用。例如，Circuit Playground Express 可以与 MakeCode、Code.org CS Discoveries、CircuitPython 和 Arduino 一起使用。你可能想要回到 Arduino 或 MakeCode 环境。其实并不需要卸载 CircuitPython。CircuitPython 只是加载到开发板上的“另一种程序”。因此，你只需要加载另一个程序（Arduino 或 MakeCode），它将覆盖 CircuitPython。
+### 备份您的代码
 
-### 备份你的代码
+在替换 CircuitPython 之前，请务必备份您在 CIRCUITPY 驱动器上的代码。这包括您的 *code.py* 文件以及其他文件、lib 文件夹等。当您移除 CircuitPython 时，可能会丢失这些文件，因此备份非常重要！只需像操作任何 USB 驱动器一样，将文件拖到您的笔记本电脑或台式电脑中的某个文件夹即可。
 
-在替换 CircuitPython 之前，请不要忘记备份你在 CIRCUITPY 驱动器上的代码。这意味着你需要备份 code.py 及任何其他文件，如 lib 文件夹等。移除 CircuitPython 时，这些文件可能会丢失，因此备份是非常重要的！只需像使用 USB 驱动器一样，将文件拖到笔记本电脑或桌面计算机的文件夹中即可。
+### 切换到 Arduino
 
-### 转向 Arduino
+如果您想使用 Arduino，只需使用 Arduino IDE 加载一个 Arduino 程序即可。以下是上传一个简单的“Blink” Arduino 程序的示例，但您不必使用这个特定程序。
+首先插入您的开发板，然后双击复位按钮，直到板载 LED 开始闪烁。
 
-如果你想使用 Arduino，只需使用 Arduino IDE 来加载一个 Arduino 程序。这里是上传一个简单的“Blink” Arduino 程序的示例，但你不必使用这个特定的程序。 首先，插入你的开发板，双击重置按钮，直到看到板载 LED 闪烁。
-
-感谢你阅读本文！欢迎在评论中分享你的想法。
+感谢您阅读本文！欢迎在评论中分享您的想法。
 
 ## 资源
 
-* [XIAO ESP32C3 的 CircuitPython 固件二进制文件](https://circuitpython.org/board/seeed_xiao_esp32c3/) for XIAO ESP32C3 with CircuitPython
-* [CircuitPython 的库包](https://circuitpython.org/libraries)
+* [适用于 XIAO ESP32C3 的 CircuitPython 固件二进制文件](https://circuitpython.org/board/seeed_xiao_esp32c3/)
+* [CircuitPython 的库文件包](https://circuitpython.org/libraries)
 
 ## 技术支持与产品讨论
 
-感谢你选择我们的产品！我们提供多种支持方式，确保你在使用我们的产品时能够获得顺畅的体验。我们为不同的需求和偏好提供了多个沟通渠道。
+感谢您选择我们的产品！我们为您提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

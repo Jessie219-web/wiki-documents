@@ -1,66 +1,73 @@
 ---
-description: 用XIAO ESP32S3制作超紧凑型全球定位跟踪器。
-title: 基于 XIAO ESP32S3 的地理定位追踪器
+description: 使用 XIAO ESP32S3 制作一个超紧凑的全球定位追踪器。
+title: 使用 XIAO ESP32S3 (Sense) 实现地理位置追踪
+keywords:
+- 位置
+- 追踪器
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
 slug: /cn/geolocation_tracker_with_XIAO_ESP32S3
 last_update:
-  date: 10/31/2023
-  author: Xin Ping Li
+  date: 05/15/2025
+  author: Citric
 ---
 
-# 基于XIAO ESP32S3的地理定位追踪器
+# 使用 XIAO ESP32S3 实现地理位置追踪
+
+:::note
+本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
+:::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/main.jpg" style={{width:1000, height:500}}/></div>
 
-市场上的自制追踪器经常面临几个问题。例如，跟踪精度差，体积大，对跟踪器的使用环境要求高。XIAO凭借其出色的音量控制吸引了众多创作者。那么我们是否可以通过使用XIAO来制作一个可以全局定位的Tracker，并且只能使用XIAO?
+市面上的自制追踪器通常面临几个问题。例如，追踪精度差、体积庞大，并且对使用环境有较高的要求。XIAO 以其出色的体积控制吸引了众多创作者。那么，我们能否仅使用 XIAO 制作一个可以全球定位的追踪器呢？
 
-在本教程中，我们将探索部署XIAO(不使用GPS模块)的两种更流行的方法，以创建令人惊讶的跟踪器。
+在本教程中，我们将探索两种流行的方法，使用 XIAO（无需 GPS 模块）创建一个令人惊讶的追踪器。
 
 ## 概述
 
-本文将介绍两种定位方式，一种是从XIAO所连接的网络的IP地址中获取位置信息，实现定位。另一种是使用Wi-Fi定位系统(通常称为wps或WFPS)
+本文将介绍两种定位方式，一种是通过获取 XIAO 所连接网络的 IP 地址来获取位置信息，从而实现定位。另一种是使用 Wi-Fi 定位系统（通常称为 WiPS 或 WFPS）。
 
-- **方法1:根据IP地址定位**
+- **方法 1：通过 IP 地址定位**
 
-定位IP地址的原理是使用数据库将IP地址映射到物理位置。这个过程通常被称为地理定位。
+通过 IP 地址定位的原理是使用一个将 IP 地址映射到物理位置的数据库。这一过程通常称为地理定位。
 
-IP地址查找包括使用反向DNS查找来检索与IP地址关联的域名。然后，域名可以用来识别托管网站或服务的服务器的地理位置。
+IP 地址查找涉及使用反向 DNS 查找来检索与 IP 地址关联的域名。然后可以使用该域名来识别托管网站或服务的服务器的地理位置。
 
-IP地址映射涉及使用一个数据库，该数据库将IP地址映射到物理位置。数据库可能包含与每个IP地址相关的城市、地区和国家等信息。
+IP 地址映射涉及使用一个将 IP 地址映射到物理位置的数据库。该数据库可能包含与每个 IP 地址相关的城市、地区和国家等信息。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/iplocation.png" style={{width:700, height:'auto'}}/></div>
 
-IP地址地理定位的准确性取决于使用的方法和可用数据的质量。一般来说，IP地址地理定位对于固定设备(如桌面计算机和服务器)是最精确的，它们通常与固定的物理位置相关联。智能手机和平板电脑等移动设备可能更难准确定位，因为它们可以四处移动并连接不同的Wi-Fi网络。
+IP 地址地理定位的准确性可能因所用方法和可用数据的质量而异。通常，对于固定设备（如台式电脑和服务器），IP 地址地理定位的准确性最高，因为它们通常与固定的物理位置相关联。移动设备（如智能手机和平板电脑）可能更难准确定位，因为它们可以移动并连接到不同的 Wi-Fi 网络。
 
-- **方法2:通过[WFPS](https://en.wikipedia.org/wiki/Wi-Fi_positioning_system)**
+- **方法 2：通过 [WFPS](https://en.wikipedia.org/wiki/Wi-Fi_positioning_system) 定位**
 
-Wi-Fi定位系统是一种利用附近Wi-Fi热点和其他无线接入点的特征来发现设备所在位置的地理定位系统。
+Wi-Fi 定位系统是一种地理定位系统，它利用附近 Wi-Fi 热点和其他无线接入点的特性来发现设备的位置。
 
-由于多径和室内信号堵塞等各种原因，GPS等卫星导航不完善，或获取卫星定位需要很长时间。这些系统包括辅助GPS、通过热点数据库的城市定位服务和室内定位系统。Wi-Fi定位利用了21世纪初城市无线接入点的快速增长。
+它用于卫星导航（如 GPS）因多路径和室内信号阻塞等原因而不足的场景，或者在获取卫星信号需要很长时间的情况下。此类系统包括辅助 GPS、通过热点数据库的城市定位服务和室内定位系统。Wi-Fi 定位利用了 21 世纪初期城市地区无线接入点的快速增长。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/wfps.png" style={{width:700, height:'auto'}}/></div>
 
-用于无线接入点定位的最常见和广泛的定位技术是基于测量接收信号的强度(接收信号强度指示或RSSI)和“指纹”方法。定位无线接入点的典型参数包括SSID和MAC地址。准确性取决于附近位置已输入数据库的接入点的数量。Wi-Fi热点数据库通过将移动设备的GPS位置数据与Wi-Fi热点的MAC地址关联起来来填充。可能发生的信号波动会增加用户路径中的误差和不准确性。为了使接收信号的波动最小化，可以使用一些技术来滤除噪声。
+最常见和广泛使用的无线接入点定位技术基于测量接收到的信号强度（接收信号强度指示或 RSSI）和“指纹识别”方法。用于定位无线接入点的典型参数包括其 SSID 和 MAC 地址。准确性取决于附近接入点的数量，这些接入点的位置已被输入数据库。Wi-Fi 热点数据库通过将移动设备 GPS 位置数据与 Wi-Fi 热点 MAC 地址相关联来填充。可能发生的信号波动可能会增加用户路径中的误差和不准确性。为了最小化接收信号中的波动，可以应用某些技术来过滤噪声。
 
+这就是 XIAO 在无需 GPS 模块辅助的情况下获取位置的理论基础。我们还将结合以上两种方法，比较最佳定位方式，并使用圆形显示屏将坐标作为地图显示在屏幕上。以下是目录和本文的摘要。
 
-这是XIAO能够在没有GPS模块帮助的情况下获得位置的理论基础。我们还将比较在上述两种方法的帮助下，结合使用圆形显示器(它将坐标以地图的形式显示在屏幕上)获得定位的最佳方式。下面是论文的目录和摘要。
-
-- [使用XIAO ESP32S3连接网络，获取公网IP地址](#connect-to-the-network-and-obtain-public-ip-with-the-xiao-esp32s3)
-- [使用ipstack平台获取位置坐标](#obtain-location-coordinates-with-the-ipstack-platform)
-- [通过HTTPS服务从谷歌地图下载静态图像](#download-static-images-from-google-maps-via-https-service)
+- [连接网络并获取 XIAO ESP32S3 的公共 IP](#connect-to-the-network-and-obtain-public-ip-with-the-xiao-esp32s3)
+- [通过 ipstack 平台获取位置坐标](#obtain-location-coordinates-with-the-ipstack-platform)
+- [通过 HTTPS 服务从 Google Maps 下载静态图像](#download-static-images-from-google-maps-via-https-service)
 - [在圆形显示屏上显示位置地图](#display-the-location-map-on-the-round-display)
-- [使用WFPS方法定位](#positioning-using-the-wfps-method)
-- [最新位置的实时更新](#live-updates-on-the-latest-location)
+- [使用 WFPS 方法定位](#positioning-using-the-wfps-method)
+- [实时更新最新位置](#live-updates-on-the-latest-location)
 
-## 开始
+## 入门
 
-要成功完成此项目，您可能需要使用以下硬件。任何XIAO ESP32都支持。
+要成功完成此项目，您可能需要使用以下硬件。所有 XIAO ESP32 系列均支持。
 
 <div class="table-center">
   <table align="center">
     <tr>
         <th>Seeed Studio XIAO ESP32S3</th>
         <th>Seeed Studio XIAO ESP32S3 Sense</th>
-        <th>Seeed Studio Round Display for XIAO</th>
+        <th>Seeed Studio 圆形显示屏（适用于 XIAO）</th>
     </tr>
     <tr>
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/xiaoesp32s3.jpg" style={{width:250, height:'auto'}}/></div></td>
@@ -70,104 +77,105 @@ Wi-Fi定位系统是一种利用附近Wi-Fi热点和其他无线接入点的特�
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-p-5627.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 点击购买🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 点击购买🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/Seeed-Studio-Round-Display-for-XIAO-p-5638.html">
-              <strong><span><font color={'FFFFFF'} size={"4"}> 点击购买🖱️</font></span></strong>
+              <strong><span><font color={'FFFFFF'} size={"4"}> 立即购买 🖱️</font></span></strong>
           </a>
       </div></td>
     </tr>
   </table>
 </div>
 
-除此之外，还可以另外准备一个小型锂电池、microSD卡和外壳。制作一份完整的追踪表格。
+除了上述内容外，你还可以准备一个小型锂电池、microSD卡和外壳，以组成一个完整的追踪器形式。
 
 <iframe width="100%" height="500" src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/install.mp4" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-## 使用XIAO ESP32S3连接网络，获取公网IP地址
+## 使用 XIAO ESP32S3 连接网络并获取公网 IP
 
-:::tip提示
-如果您不熟悉XIAO ESP32S3的网络功能，您可以阅读有关[Seeed Studio XIAO ESP32S3 (Sense)的WiFi使用情况](https://wiki.seeedstudio.com/xiao_esp32s3_wifi_usage/)。
+:::tip
+如果你对 XIAO ESP32S3 的网络功能不熟悉，可以阅读 [Seeed Studio XIAO ESP32S3 (Sense) 的 WiFi 使用指南](https://wiki.seeedstudio.com/xiao_esp32s3_wifi_usage/)。
 :::
 
-在关于XIAO ESP32S3基本使用的教程中，我们已经掌握了使用XIAO ESP32S3连接网络的方法。
+在 XIAO ESP32S3 的基础使用教程中，我们已经掌握了使用 XIAO ESP32S3 连接网络的方法。
 
 ```cpp
 #include <WiFi.h>
 
-// For network
+// 网络配置
 const char* ssid = "<YOUR_WIFI_SSID_HERE>";
 const char* password = "<YOUR_WIFI_PW_HERE>";
 
 void setup() {
   Serial.begin(115200);
 
-  Serial.print("Try to connect to ");
+  Serial.print("尝试连接到 ");
   Serial.println(ssid);
   WiFi.begin(ssid, password);
   while(WiFi.status() != WL_CONNECTED){
     Serial.print(".");
   }
-  Serial.println("Wi-Fi Connected!");
+  Serial.println("Wi-Fi 已连接！");
 }
 
 void loop() {
 }
 ```
 
-使用IP地址查找位置的核心实质是获取XIAO的IP地址。那么我们可能会很自然地认为我们需要使用`WiFi.localIP()`函数来查找它。
+使用 IP 地址进行位置查询的核心是获取 XIAO 的 IP 地址。可能很自然地想到我们需要使用 `WiFi.localIP()` 函数来查询。
 
-但实际上，路由器会为小安分配内部IP地址，比如192.168.xxx.xxx，无法查询位置信息。我们需要的是一个公共IP。所以我们需要使用以下代码。
+然而，实际上路由器会为 XIAO 分配一个内部 IP 地址，例如 192.168.xxx.xxx，这种地址无法用于位置查询。我们需要的是公网 IP。因此我们需要使用以下代码。
 
 ```cpp
-// Get local IP address
+// 获取本地 IP 地址
 IPAddress publicIP;
 if (WiFi.hostByName("ip-api.com", publicIP)) {
-    Serial.print("Public IP address: ");
+    Serial.print("公网 IP 地址: ");
     Serial.println(publicIP);
 } else {
-    Serial.println("Failed to get public IP address");
+    Serial.println("获取公网 IP 地址失败");
     return;
 }
 ```
 
-然后我们可以得到下面的效果，这是第一步。
+然后我们可以得到以下效果，这是第一步。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/7.png" style={{width:600, height:'auto'}}/></div>
 
-## 通过ipstack平台获取位置坐标
+## 使用 ipstack 平台获取位置坐标
 
-使用IP地址的位置通常是一些公共图书馆服务器所需的信息。我们可以获取该服务器信息的帮助下一些平台的API接口。例如,在本教程中,我们将使用这个平台 [ipstack](https://ipstack.com) 。
+使用 IP 地址进行位置查询通常需要一些公共服务器库的信息。我们可以借助某些平台的 API 接口来获取这些服务器信息。例如，在本教程中，我们将使用 [ipstack](https://ipstack.com) 平台。
 
-ipstack提供了一个强大的、实时的IP到地理定位API，能够查找准确的位置数据，并评估来自风险IP地址的安全威胁。结果以JSON或XML格式在毫秒内交付。
+ipstack 提供了一个强大的实时 IP 到地理位置 API，能够查询准确的位置信息并评估来自风险 IP 地址的安全威胁。结果以 JSON 或 XML 格式在毫秒内返回。
 
-Ipstack提供免费/付费搜索服务，[价目表](https://ipstack.com/product)可以在下面的图片中找到。在这个例子中,我们只展示示例，使用**免费服务 100次查询/月**就足够了。
+ipstack 提供免费/付费查询服务，[价格列表](https://ipstack.com/product)可以在下图中找到。在本示例中，我们仅展示示例，使用 **免费服务（每月100次查询）** 已足够。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/8.png" style={{width:800, height:'auto'}}/></div>
 
-### 步骤 1.获取ipstack API访问密钥
+### 第一步：获取 ipstack API 访问密钥
 
-如果这是你第一次使用ipstack，那么你需要[注册一个新帐户](https://ipstack.com/signup/free)。
+如果这是你第一次使用 ipstack，你需要 [注册一个新账户](https://ipstack.com/signup/free)。
 
-一旦你注册并登录，你将能够看到你的API密钥，请复制它并保存在一个安全的地方，我们稍后会使用它。
+注册并登录后，你将能够看到你的 API 密钥，请复制并保存到安全的地方，我们稍后会使用它。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/9.png" style={{width:800, height:'auto'}}/></div>
 
-### 步骤 2.了解如何使用ipstack API
+### 第二步：学习如何使用 ipstack API
 
-ipstack提供了详细的[文档](https://ipstack.com/documentation)来解释如何使用ipstack API。
+ipstack 提供了详细的 [文档](https://ipstack.com/documentation)，解释如何使用 ipstack API。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/10.png" style={{width:800, height:'auto'}}/></div>
 
-很简单，对吧?只需发送**服务器地址+ IP地址+ API密钥**。
+非常简单，对吧？只需发送 **服务器地址 + IP 地址 + API 密钥**。
 
-接下来，我们需要知道ipstack将返回什么样的JSON消息，并提取我们需要的信息，如城市、国家、纬度和经度。
+接下来我们需要知道 ipstack 会返回什么样的 JSON 消息，并提取我们需要的信息，例如城市、国家以及经纬度。
 
 ```json
 {
@@ -193,34 +201,34 @@ ipstack提供了详细的[文档](https://ipstack.com/documentation)来解释如
 ...
 ```
 
-然后，我们只需要在ArduinoJSON库的帮助下提取我们需要的信息。
+然后，我们只需借助 ArduinoJSON 库提取所需信息。
 
-### 步骤 3.通过http服务获取IP地址坐标
+### 第三步：通过 HTTP 服务获取 IP 地址的坐标
 
-总而言之，我们从安装**ArduinoJSON**库开始。可以直接从Arduino IDE中搜索和下载。
+总结来说，我们首先安装 **ArduinoJSON** 库。可以直接在 Arduino IDE 中搜索并下载。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/11.png" style={{width:400, height:'auto'}}/></div>
 
-然后我们编写`getLocation()`函数，我们使用它来获取ipstack返回的国家、城市、纬度和经度信息，并打印出来。
+然后我们编写 `getLocation()` 函数，用于获取 ipstack 返回的国家、城市以及经纬度信息，并打印出来。
 
 ```cpp
-// For ipstack
+// 对于 ipstack
 const char* IPStack_key = "<YOUR_API_KEY_HERE>";
 String ip_address;
 
-// Obtain the approximate coordinate position based on the current IP address of XIAO.
+// 根据 XIAO 当前 IP 地址获取大致坐标位置。
 bool getLocation(){
-  // Make HTTP request to IPStack API
+  // 向 IPStack API 发起 HTTP 请求
   HTTPClient http;
   String url = "http://api.ipstack.com/" + String(ip_address) + "?access_key=" + String(IPStack_key);
-  Serial.println("Requesting URL: " + url);
+  Serial.println("请求 URL: " + url);
   http.begin(url);
   int httpCode = http.GET();
 
-  // Parse JSON response
+  // 解析 JSON 响应
   if (httpCode == 200) {
     String payload = http.getString();
-    Serial.println("Response payload: " + payload);
+    Serial.println("响应内容: " + payload);
     DynamicJsonDocument doc(1024);
     deserializeJson(doc, payload);
     String country_name = doc["country_name"].as<String>();
@@ -228,63 +236,66 @@ bool getLocation(){
     String city = doc["city"].as<String>();
     latitude = doc["latitude"].as<double>();
     longitude = doc["longitude"].as<double>();
-    Serial.println("Country: " + country_name);
-    Serial.println("Region: " + region_name);
-    Serial.println("City: " + city);
-    Serial.println("Latitude: " + String(latitude));
-    Serial.println("Longitude: " + String(longitude));
-    http.end(); // Close connection
+    Serial.println("国家: " + country_name);
+    Serial.println("地区: " + region_name);
+    Serial.println("城市: " + city);
+    Serial.println("纬度: " + String(latitude));
+    Serial.println("经度: " + String(longitude));
+    http.end(); // 关闭连接
     return true;
   } else {
-    Serial.println("HTTP error code: " + String(httpCode));
-    http.end(); // Close connection
+    Serial.println("HTTP 错误代码: " + String(httpCode));
+    http.end(); // 关闭连接
     return false;
   }
 }
 ```
 
-在上述程序中，请将ipstack API密钥替换为您自己的。
+在上述程序中，请将 ipstack API Key 替换为您自己的。
 
-接下来，我们可以看看通过IP地址定位有多精确。下面的地图上的[红色标记点](https://www.google.com/maps/place/22%C2%B034'26.5%22N+113%C2%B054'53.1%22E/@22.5729214,113.9171335,16z/data=!4m4!3m3!8m2!3d22.5740278!4d113.91475?hl=zh-CN&entry=ttu)是我所处IP地址的确切位置。红线的另一端是我所在的实际位置。它们之间相差2.4公里。
+接下来，我们可以通过 IP 地址查看定位的准确性。以下地图中[红色标记点](https://www.google.com/maps/place/22%C2%B034'26.5%22N+113%C2%B054'53.1%22E/@22.5729214,113.9171335,16z/data=!4m4!3m3!8m2!3d22.5740278!4d113.91475?hl=zh-CN&entry=ttu)是通过 IP 地址定位的准确位置。而红线的另一端是我实际所在的位置。两者之间的距离为 2.4 公里。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/1.png" style={{width:1000, height:'auto'}}/></div>
 
-可以看出，这种定位的误差在千米范围内，与我们对跟踪器的期望相差甚远。
+可以看出，这种定位方式的误差在公里范围内，与我们对追踪器的期望相差甚远。
 
-## 通过HTTPS服务从谷歌地图下载静态图像
+## 通过 HTTPS 服务从 Google Maps 下载静态图片
 
-在我们的视图中讨论经纬度坐标不是很直观。即使它们包含国家和城市的信息。因此，我们想知道是否有可能在地图上标记这些经纬度坐标，并在屏幕上显示它们。然后我们找到了谷歌云的地图服务。
+纬度和经度坐标在我们的视角中并不直观。即使它们包含了国家和城市的信息。所以我们想知道是否可以将这些纬度和经度坐标标记在地图上并显示在屏幕上。于是我们找到了 Google Cloud 的地图服务。
 
-在我们开始之前，我认为您有必要了解[谷歌地图服务的定价](https://mapsplatform.google.com/pricing/)，以便决定是否继续。
+在开始之前，我认为了解 [Google Maps 服务的定价](https://mapsplatform.google.com/pricing/)是很重要的，以便决定是否继续。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/12.png" style={{width:800, height:'auto'}}/></div>
 
-如果你是第一次注册用户，你将有**300美元**的免费积分。这里我们主要使用Maps静态API， **每1000次调用花费2.00美元**。
+如果您是首次注册用户，将会有 **$300** 的免费额度。这里我们主要使用的是 Maps Static API，其费用为 **$2.00 每 1000 次调用**。
 
-### 步骤 4. [设置您的谷歌云项目](https://developers.google.com/maps/documentation/elevation/cloud-setup)并完成下面的设置说明
+### 第 4 步：[设置您的 Google Cloud 项目](https://developers.google.com/maps/documentation/elevation/cloud-setup)并完成后续的设置说明
 
-### 步骤 5.启用谷歌映射API
+### 第 5 步：启用 Google Maps API
 
-您需要谷歌API密钥才能使用谷歌API进行验证。导航到[谷歌开发者控制台](https://console.developers.google.com/apis)以启用地理定位API。没有这个API密钥，你将得到一个错误响应。
+您需要一个 Google API Key 来验证 Google API。前往 [Google Developers Console](https://console.developers.google.com/apis) 启用 GeoLocation API。如果没有这个 API Key，您将会收到错误响应。
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/2.png" style={{width:1000, height:'auto'}}/></div>
 
-一旦你有了API，请把它放在一个安全的地方，我们将在后面的编程步骤中使用它。
+一旦您获得了 API Key，请妥善保管，我们将在后续的编程步骤中使用它。
 
-:::note注意
-如果您对当前使用API的环境有顾虑，可以打开API调用的限制，以避免因滥用而产生的额外费用。打开某些限制可能需要更改程序。
+:::note
+如果您对当前使用 API 的环境有顾虑，可以开启 API 调用的限制，以避免因滥用而产生额外费用。开启某些限制可能需要对您的程序进行更改。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/4.png" style={{width:1000, height:'auto'}}/></div>
 :::
 
 ## 在圆形显示屏上显示位置地图
-:::tip提示
-如果您第一次为XIAO使用圆形显示器，那么您可能需要参考[Wiki此处](https://wiki.seeedstudio.com/get_start_round_display/)以配置圆形屏幕的Arduino环境。
+
+:::tip
+如果您是首次使用 XIAO 的圆形显示屏，那么您可能需要参考 [此处的 Wiki](https://wiki.seeedstudio.com/get_start_round_display/) 来为圆形屏幕配置您的 Arduino 环境。
 :::
 
-### 步骤 6.了解如何调用谷歌云静态映射AP
+### 第 6 步：学习如何调用 Google Cloud Static Maps API
 
-点击[这里](https://developers.google.com/maps/documentation/maps-static/overview)阅读谷歌Cloud Static Maps API的文档。
+点击[这里](https://developers.google.com/maps/documentation/maps-static/overview)阅读 Google Cloud Static Maps API 的文档。
 
-文档给出了使用该API的示例代码，如下所示:
+文档中提供了一个使用该 API 的示例代码，如下所示：
 
 ```
 https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
@@ -295,31 +306,26 @@ https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,N
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/staticmap.png" style={{width:700, height:'auto'}}/></div>
 
-Maps的静态API URL必须是以下形式:
+Maps Static API 的 URL 必须符合以下格式：
 
 ```
 https://maps.googleapis.com/maps/api/staticmap?parameters
 ```
 
-静态API Maps使用以下URL参数定义地图图像:
+Maps Static API 使用以下 URL 参数定义地图图像：
 
-- `Maps静态API使用center`定义地图图像(如果没有标记，则需要)定义地图的中心，与地图的所有边缘等距。这个参数接受一个位置作为逗号分隔的{latitude,longitude}对(例如:"40.714728，-73.998672")或字符串地址(例如:“纽约市市政厅，纽约”)在地球表面上确定了一个独特的位置。
+- `center`（如果未提供 markers 则为必需）定义地图的中心点，该点与地图所有边缘等距。此参数接受一个以逗号分隔的 {latitude,longitude} 坐标对（例如 "40.714728,-73.998672"）或一个字符串地址（例如 "city hall, new york, ny"），用于标识地球表面上的唯一位置。
+- `zoom`（如果未提供 markers 则为必需）定义地图的缩放级别，决定地图的放大程度。此参数接受一个数值，表示所需区域的缩放级别。
+- `size`（必需）定义地图图像的矩形尺寸。此参数接受一个格式为 `{horizontal_value}x{vertical_value}` 的字符串。
+- `maptype`（可选）定义要构建的地图类型。可能的 maptype 值包括 roadmap、satellite、hybrid 和 terrain。
+- `markers`（可选）定义一个或多个标记，附加到指定位置的图像上。此参数接受一个带有以管道符号（|）分隔的参数的标记定义。只要具有相同样式，多个标记可以放置在同一个 markers 参数中；您可以通过添加额外的 markers 参数来添加不同样式的标记。请注意，如果您为地图提供了标记，则无需指定（通常是必需的）center 和 zoom 参数。
+- `key`（必需）允许您在 Google Cloud Console 中监控应用程序的 API 使用情况，并确保 Google 可以在必要时联系您关于您的应用程序的信息。
 
-- `zoom`(如果标记不存在，则需要)定义地图的缩放级别，它决定了地图的放大级别。该参数接受一个数值，对应于所需区域的缩放级别。
-
-- `size`(必填)定义地图图像的矩形尺寸。这个参数接受一个形式为`{horizontal_value}x{vertical_value}`的字符串。
-
-- `maptype`(可选)定义要构造的map的类型。maptype有几个可能的值，包括roadmap、satellite、hybrid和terrain。
-
-- `markers`(可选)定义一个或多个标记，附加到图像的指定位置。此参数接受一个标记定义，其中参数由管道字符(|)分隔。多个标记可以放置在同一个标记参数中，只要它们表现出相同的样式;你可以通过添加额外的标记参数来添加不同样式的标记。注意，如果您为地图提供标记，则不需要指定(通常需要的)中心和缩放参数。
-
-- `key` (required)允许您在谷歌云控制台监控您的应用程序的API使用情况，并确保谷歌在必要时可以联系您有关您的应用程序。
-
-:::tip提示
-上面只显示了最基本的参数，如果您需要定制此静态映射，您可以单击 **[此处](https://developers.google.com/maps/documentation/maps-static/start)** 以阅读参数的完整列表。
+:::tip
+上述仅展示了最基本的参数，如果您需要自定义此静态地图，可以点击 **[这里](https://developers.google.com/maps/documentation/maps-static/start)** 阅读完整的参数列表。
 :::
 
-总之，我们可以缝合在一起形成一个完整的字符串来发送。
+总结一下，我们可以拼接形成一个完整的字符串以发送请求。
 
 ```cpp
 // For google static maps
@@ -352,14 +358,14 @@ String getPath(){
 }
 ```
 
-请用您自己的谷歌云地图API替换上面的代码。
+请将上述代码替换为您自己的 Google Cloud Maps API。
 
-### 步骤 7. 返回的图像通过HTTPS获取并写入microSD卡
+### 第七步：通过 HTTPS 获取返回的图像并写入 microSD 卡
 
-我们需要一个足够大的存储介质来容纳返回的静态图像，以便在将它们显示在屏幕上的程序中读取它们。圆形显示屏恰好支持microSD卡。
+我们需要一个足够大的存储介质来保存返回的静态图像，以便它们可以被程序读取并显示在屏幕上。圆形显示屏恰好支持 microSD 卡。
 
 ```cpp
-// Static images of coordinates from Google Cloud Services
+// 从 Google Cloud Services 获取坐标的静态图像
 bool getStaticMapImage(const char *host, const char *path, String fileName){
   int contentLength = 0;
   int httpCode;
@@ -369,15 +375,15 @@ bool getStaticMapImage(const char *host, const char *path, String fileName){
   client.setCACert(GlobalSignCA);
   client.connect(host, 443);
 
-  Serial.printf("Trying: %s:443...", host);
+  Serial.printf("尝试连接: %s:443...", host);
   
   if(!client.connected()){
     client.stop();
-    Serial.printf("*** Can't connect. ***\n-------\n");
+    Serial.printf("*** 无法连接. ***\n-------\n");
     return false;
   }
 
-  Serial.println("HTTPS Connected!");
+  Serial.println("HTTPS 已连接!");
   client.print("GET ");
   client.print(path);
   client.print(" HTTP/1.0\r\nHost: ");
@@ -408,7 +414,7 @@ bool getStaticMapImage(const char *host, const char *path, String fileName){
   }
   fs::File f = SD.open(fileName, "w");
   if(!f){
-    Serial.println(F("FILE OPEN FAILED"));
+    Serial.println(F("文件打开失败"));
     client.stop();
     return false;
   }
@@ -425,15 +431,16 @@ bool getStaticMapImage(const char *host, const char *path, String fileName){
   }
   f.close();
   client.stop();
-  Serial.println("DOWNLOAD END");
+  Serial.println("下载完成");
   return (remaining == 0 ? true : false);
 }
 ```
 
-### 步骤 8. 在圆形显示屏上显示JPEG图像
-一般情况下，轮显示支持的TFT图形库只支持BMP格式的图像显示，如果需要显示其他格式的图像，就需要使用一些第三方库，这里我们使用 **[TJpg_Decoder](https://github.com/Bodmer/TJpg_Decoder)** 库.
+### 第八步：在圆形显示屏上显示 JPEG 图像
 
-请下载此库作为zip文件，并将其添加到您的Arduino环境中。
+通常，圆形显示屏支持的 TFT 图形库仅支持显示 BMP 格式的图像。如果我们需要显示其他格式的图像，则需要使用一些第三方库，这里我们使用 **[TJpg_Decoder](https://github.com/Bodmer/TJpg_Decoder)** 库。
+
+请下载此库的 zip 文件并添加到您的 Arduino 环境中。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/Bodmer/TJpg_Decoder">
@@ -443,41 +450,41 @@ bool getStaticMapImage(const char *host, const char *path, String fileName){
 
 <br />
 
-参考库提供的示例程序，重写程序:
+我们参考该库提供的示例程序重写了我们的程序：
+
 ```cpp
-// This next function will be called during decoding of the jpeg file to
-// render each block to the TFT.  If you use a different TFT library
-// you will need to adapt this function to suit.
+// 此函数将在解码 JPEG 文件时调用，以将每个块渲染到 TFT。
+// 如果您使用不同的 TFT 库，则需要调整此函数以适应。
 bool tft_output(int16_t x, int16_t y, uint16_t w, uint16_t h, uint16_t* bitmap)
 {
-   // Stop further decoding as image is running off bottom of screen
+   // 如果图像超出屏幕底部，则停止进一步解码
   if ( y >= tft.height() ) return 0;
 
-  // This function will clip the image block rendering automatically at the TFT boundaries
+  // 此函数会自动在 TFT 边界剪裁图像块渲染
   tft.pushImage(x, y, w, h, bitmap);
 
-  // Return 1 to decode next block
+  // 返回 1 以解码下一个块
   return 1;
 }
 
 void setup() {
-  // Initialise the TFT
+  // 初始化 TFT
   tft.init();
   tft.setRotation(2);
   tft.fillScreen(TFT_BLACK);
-  tft.setSwapBytes(true); // We need to swap the colour bytes (endianess)
+  tft.setSwapBytes(true); // 我们需要交换颜色字节（字节序）
 
-  // Initialise SD before TFT
+  // 在初始化 TFT 之前初始化 SD
   if (!SD.begin(SD_CS)) {
-    Serial.println(F("SD.begin failed!"));
+    Serial.println(F("SD.begin 失败!"));
     return;
   }
-  Serial.println("\r\nInitialisation done.");
+  Serial.println("\r\n初始化完成.");
 
-  // The jpeg image can be scaled by a factor of 1, 2, 4, or 8
+  // JPEG 图像可以按比例缩放，比例因子为 1、2、4 或 8
   TJpgDec.setJpgScale(1);
 
-  // The decoder must be given the exact name of the rendering function above
+  // 解码器必须指定上面定义的渲染函数的确切名称
   TJpgDec.setCallback(tft_output);
 
   if(WiFi.status() == WL_CONNECTED){
@@ -488,7 +495,7 @@ void setup() {
 }
 ```
 
-这个项目的完整程序可以在这个场合找到。
+该项目的完整程序可以在以下链接中找到。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/limengdu/XIAO-ESP32S3-Geolocation/blob/main/IP-address-location-method/IP-address-location-method.ino">
@@ -498,21 +505,21 @@ void setup() {
 
 <br />
 
-执行程序，您可以看到串口监视器的输出。
+运行程序后，您可以在串行监视器中看到输出结果。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/5.png" style={{width:700, height:'auto'}}/></div>
 
-屏幕还将显示与您的IP地址相对应的位置图片。
+屏幕上还会显示与您的 IP 地址对应的地理位置图片。
 
-## 屏幕上还会显示与你的IP地址对应的位置的图片。
+## 使用 WFPS 方法进行定位
 
-正如我们在前面的步骤中所比较的，使用IP地址进行定位的准确性非常低。因此，接下来，让我们使用WFPS方法改进程序，看看准确性是否有变化。
+正如我们在前面的步骤中比较过的，使用 IP 地址进行定位的精度确实很差。因此，接下来我们将使用 WFPS 方法改进程序，看看精度是否有所变化。
 
-当然，这个算法对我们来说很难实现，我们仍然依赖于谷歌地图服务中的[地理定位API](https://developers.google.com/maps/documentation/geolocation/overview)。
+当然，这种算法对我们来说实现起来较为困难，因此我们仍然依赖 Google Maps 服务中的 [Geolocation API](https://developers.google.com/maps/documentation/geolocation/overview)。
 
-地理定位API是一项服务，它通过移动客户端可以检测到的手机信号塔和WiFi接入点接受HTTPS请求。它返回纬度/经度坐标和一个半径，表示每个有效输入的结果的准确性。
+Geolocation API 是一种服务，它接受包含移动客户端可检测到的基站和 WiFi 接入点的 HTTPS 请求。它返回纬度/经度坐标以及一个表示结果精度的半径。
 
-在社区中 **[gmag11](https://github.com/gmag11)** 和他们的团队编写了可以直接调用此服务的库。我们可以直接在这里使用它。
+在社区中，**[gmag11](https://github.com/gmag11)** 和他们的团队编写了可以直接调用此服务的库。我们可以直接在这里使用它。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/gmag11/WifiLocation/tree/master">
@@ -522,7 +529,7 @@ void setup() {
 
 <br />
 
-与此同时，你将需要 **QuickDebug** 库来调试信息。
+同时，您还需要 **QuickDebug** 库用于调试消息。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/gmag11/QuickDebug">
@@ -532,7 +539,7 @@ void setup() {
 
 <br />
 
-接下来，我们只需要修`getLocation()`函数。
+接下来，我们只需修改 `getLocation()` 函数。
 
 ```cpp
 //For google geolocation
@@ -571,19 +578,18 @@ void getLocation(){
 }
 ```
 
-让我们看看通过粮食计划署获得的坐标与实际位置有何不同。
-
+让我们看看通过 WFPS 方法获取的坐标与实际位置的差异。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/13.png" style={{width:1000, height:'auto'}}/></div>
 
-位置偏差已经大约1公里了!这种性能甚至比一些GPS模块更好。
+位置偏差已经在 1 公里左右！这种性能甚至比某些 GPS 模块还要好。
 
+## 实时更新最新位置
 
-## 最新位置的实时更新
+最后一步，我们将完成这个全球定位追踪器。让它实现自动地图刷新功能。
 
-因此最后一步，让我们包装这个全球定位跟踪器。让它实现一个自动的地图刷新。
-:::tip提示
-使用本程序时，请预估您的谷歌云服务资费消耗，否则频繁的API调用可能会导致大量计费!
+:::tip
+在使用此程序时，请估算您的 Google Cloud 服务费用消耗，否则频繁的 API 调用可能会导致高额账单！
 :::
 
 ```cpp
@@ -604,15 +610,15 @@ void loop() {
 }
 ```
 
-在主循环中，我们将每10秒获取周围的网络并更新当前位置坐标。如果返回的位置坐标与上次不同，那么地图将重新下载并刷新屏幕。
+在主循环中，我们每隔 10 秒获取周围网络并更新当前位置坐标。如果返回的坐标与上次不同，则地图将重新下载并在屏幕上刷新。
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/6.png" style={{width:800, height:'auto'}}/></div>
 
-我们的3D打印住房，不是真的看起来像一个跟踪器!
+使用我们的 3D 打印外壳，是不是看起来真的像一个追踪器！
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/final.jpg" style={{width:800, height:'auto'}}/></div>
 
-最后，通过WFPS方法获得定位的完整程序代码可以在下面的按钮中找到。
+最后，通过 WFPS 方法获取定位的完整程序代码可以通过下面的按钮下载。
 
 <div class="github_container" style={{textAlign: 'center'}}>
     <a class="github_item" href="https://github.com/limengdu/XIAO-ESP32S3-Geolocation/blob/main/WFPS-location-method/WFPS-location-method.ino">
@@ -622,30 +628,29 @@ void loop() {
 
 ## 资源
 
-- **[GITHUB]**[源代码](https://github.com/limengdu/XIAO-ESP32S3-Geolocation)
+- **[GITHUB]** [源代码](https://github.com/limengdu/XIAO-ESP32S3-Geolocation)
+- **[STP]** [XIAO ESP32S3 Sense 外壳设计（顶部）](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(top).stp)
+- **[STP]** [XIAO ESP32S3 Sense 外壳设计（底部）](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(bottom).stp)
 
-- **[STP]** [XIAO ESP32S3 Sense外壳设计(上)](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(top).stp)
+## 故障排查
 
-- **[STP]** [XIAO ESP32S3传感器外壳设计(底部)](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(bottom).stp)
+### Q1: 为什么使用 `WiFi.hostByName()` 函数时无法获得准确的 IP 地址？
 
-## 故障排除
+当使用 `WiFi.hostByName()` 函数查询路由器的公网 IP 地址时，请确保您的路由器可以通过 DNS 解析器解析到相应的 IP 地址。如果您的路由器使用的是 ISP 提供的 DNS 服务器，可能会遇到 DNS 解析失败的情况。在这种情况下，您可以尝试使用其他 DNS 服务器，例如 Google 的公共 DNS 服务器 8.8.8.8 或 8.8.4.4。
 
-### 问题1:为什么我没有使用 ` WiFi.hostByName() ` 函数获得确切的IP地址?
+如果仍然无法查询到正确的公网 IP 地址，可能是由于网络连接问题或其他网络配置问题。您可以尝试以下方法解决问题：
 
-当使用WiFi.hostByName()函数查询路由器的公共IP地址时，请确保您的路由器可以通过DNS解析器解析到相应的IP地址。如果路由器使用ISP提供的DNS服务器，可能会遇到DNS解析失败。在这种情况下，您可以尝试使用备选DNS服务器，例如b谷歌的公共DNS服务器8.8.8.8或8.8.4.4。
+1. **尝试其他公网 IP 地址查询服务**：如果您使用的是 api.ipify.org 服务查询公网 IP 地址，但仍无法获得正确的 IP 地址，可以尝试使用其他公网 IP 地址查询服务，例如 ip-api.com 或 whatismyip.com。
 
-如果仍然无法查询到正确的公网IP地址，可能是由于网络连接问题或其他网络配置问题。您可以尝试以下方法来解决问题:
+2. **检查路由器配置**：检查您的路由器配置，确保 NAT 和端口转发功能已正确配置，并且没有阻止外部网络的访问。您还可以尝试在路由器上启用 UPnP 功能，以自动配置端口转发。
 
-1. 尝试其他公共IP地址查询服务:如果使用api.ipify.org服务查询公共IP地址，仍然无法获取到正确的IP地址，可以尝试使用其他公共IP地址查询服务，如IP -api.com或whatismyip.com。
+3. **重启路由器和 ESP32S3 设备**：有时，重启路由器和 ESP32S3 设备可以解决网络连接和配置问题。
 
-2. 检查路由器配置:检查路由器配置，确保NAT和端口转发功能配置正确，没有阻断外部网络的访问。您也可以尝试在路由器上启用UPnP功能，以自动配置端口转发。
+如果仍然无法解决问题，我们建议使用第二种方法，或者在路由器查询到公网 IP 后直接为 XIAO 赋值。
 
-3. 重启路由器和ESP32S3设备:有时，重启路由器和ESP32S3设备可以解决网络连接和配置问题。
+## 技术支持与产品讨论
 
-如果这仍然不能解决问题，我们建议使用第二种方法，或者在路由器查询公网IP后直接为XIAO赋值。
-
-## 技术支持和产品讨论
-感谢您选择我们的产品!我们在这里为您提供不同的支持，以确保您使用我们产品的体验尽可能顺畅。我们提供多种沟通渠道，以满足不同的喜好和需求。
+感谢您选择我们的产品！我们致力于为您提供多种支持，以确保您在使用我们的产品时获得顺畅的体验。我们提供多种沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
@@ -656,6 +661,3 @@ void loop() {
 <a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
-
-
-

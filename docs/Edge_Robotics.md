@@ -7,6 +7,7 @@ keywords:
 - ros
 - isaac
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /robotics_page
 last_update:
   date: 05/29/2025
   author: ZhuYaohui
@@ -53,7 +54,7 @@ last_update:
 - [SO100 Arm with IsaacSim](/lerobot_so100m_isaacsim/)
 - [Lekiwi Mobile Base](/lerobot_lekiwi/) <span className="tag recommended">New</span>
 
-##  Others
+## Others
 
 - **Comming soon**
 

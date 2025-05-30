@@ -1,69 +1,70 @@
 ---
-description: Seeed Studio XIAO SAMD21 with TinyUSB
-title: 将 XIAO SAMD21 变成 USB 设备（TinyUSB）
+description: Seeed Studio XIAO SAMD21 使用 TinyUSB
+title: Seeed Studio XIAO SAMD21 使用 TinyUSB
 keywords:
 - xiao
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /cn/Seeeduino-XIAO-TinyUSB
 last_update:
-  date: 10/11/2023
-  author: 赵桂莹
+  date: 05/15/2025
+  author: shuxu hu
 ---
-# 将 XIAO SAMD21 变成 USB 设备（TinyUSB）
+
+# Seeed Studio XIAO SAMD21 作为 USB 设备 (TinyUSB)
+
+:::note
+本文档由 AI 翻译。如您发现内容有误或有改进建议，欢迎通过页面下方的评论区，或在以下 Issue 页面中告诉我们：https://github.com/Seeed-Studio/wiki-documents/issues
+:::
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/Seeeduino-XIAO-TinyUSB/XIAO-USB.png" /></div>
 
-本 wiki 介绍如何在 TinyUSB 库的帮助下使用 Seeed Studio XIAO SAMD21 作为 USB 客户端。它允许 Seeed Studio XIAO SAMD21 用于 HID 设备，如键盘、鼠标等。
+本篇 Wiki 介绍如何使用 TinyUSB 库将 Seeed Studio XIAO SAMD21 配置为 USB 客户端。通过该库，Seeed Studio XIAO SAMD21 可以用作 HID 设备，例如键盘、鼠标等。
 
-此功能依赖于 [Adafruit TinyUSB Library for Arduino](https://github.com/adafruit/Adafruit_TinyUSB_Arduino). 该库已使用 [**Seeed Studio XIAO SAMD21 **](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) 和 [**Wio Terminal(SAMD51)**](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) 并且正常工作
+此功能依赖于 [Adafruit TinyUSB Library for Arduino](https://github.com/adafruit/Adafruit_TinyUSB_Arduino)。该库已在 [**Seeed Studio XIAO SAMD21**](https://www.seeedstudio.com/Seeeduino-XIAO-Arduino-Microcontroller-SAMD21-Cortex-M0+-p-4426.html) 和 [**Wio Terminal(SAMD51)**](https://www.seeedstudio.com/Wio-Terminal-p-4509.html) 上测试，并正常工作。
 
-## 安装适用于 Arduino 的 Adafruit TinyUSB 库
+## 安装 Adafruit TinyUSB Library for Arduino
 
-:::提示
- 由于“Adafruit TinyUSB Library for Arduino”库的重大更新，V1.0.0及以上版本不能与Seeed Studio XIAO SAMD21一起使用，如果您需要使用此库，请使用V0.10.5版本的库。
+:::note
+  由于 "Adafruit TinyUSB Library for Arduino" 库进行了重大更新，版本 V1.0.0 及以上版本无法与 Seeed Studio XIAO SAMD21 一起使用。如果需要使用该库，请使用 V0.10.5 版本。
 :::
+1. 访问 [Adafruit TinyUSB Library for Arduino](https://github.com/adafruit/Adafruit_TinyUSB_Arduino) 仓库，并将整个仓库下载到本地。
 
-1. 访问[Adafruit TinyUSB库for Arduino](https://github.com/adafruit/Adafruit_TinyUSB_Arduino)存储库并将整个存储库下载到您的本地驱动器。 
-
-2. 现在，该库可以安装到Arduino IDE中。打开Arduino IDE，并单击`sketch` -> `Include Library` -> `Add . zip Library`，并选择您刚刚下载的`Adafruit_TinyUSB_Arduino`文件。
+2. 现在可以将库安装到 Arduino IDE 中。打开 Arduino IDE，点击 `sketch` -> `Include Library` -> `Add .ZIP Library`，选择刚刚下载的 `Adafruit_TinyUSB_Arduino` 文件。
 
 <!-- ![InstallLibrary](https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg) -->
   <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal/img/Xnip2019-11-21_15-50-13.jpg" alt="pir" width={600} height="auto" /></p>
 
 ## 简单示例代码
 
-TinyUSB 库提供了很多示例，这里我们可以导航到`Files`-> `Examples`-> `Adafruit TinyUSB Library`-> `HID`->`hid_mouse`来查看简单的鼠标示例。将按钮连接到Seeed Studio XIAO SAMD21 的**D0**引脚，并在代码（#28）中进行配置，如下所示：
+TinyUSB 库提供了许多示例代码，这里我们可以导航到 `Files` -> `Examples` -> `Adafruit TinyUSB Library` -> `HID` -> `hid_mouse`，找到一个简单的鼠标示例。将一个按钮连接到 Seeed Studio XIAO SAMD21 的 **D0** 引脚，并在代码中进行配置（#28），如下所示：
 
-:::笔记
-      Make sure you have updated the `ArduinoCore-samd` to the latest versions to avoid compile error.
+:::note
+      请确保已将 `ArduinoCore-samd` 更新到最新版本，以避免编译错误。
 :::
-
 ```cpp
 /*********************************************************************
- Adafruit invests time and resources providing this open source code,
- please support Adafruit and open-source hardware by purchasing
- products from Adafruit!
+ Adafruit 投资时间和资源提供此开源代码，
+ 请通过购买 Adafruit 的产品支持 Adafruit 和开源硬件！
 
- MIT license, check LICENSE for more information
- Copyright (c) 2019 Ha Thach for Adafruit Industries
- All text above, and the splash screen below must be included in
- any redistribution
+ MIT 许可证，更多信息请查看 LICENSE
+ 版权所有 (c) 2019 Ha Thach for Adafruit Industries
+ 上述所有文本以及以下启动画面必须包含在任何再分发中
 *********************************************************************/
 
 #include "Adafruit_TinyUSB.h"
 
-/* This sketch demonstrates USB HID mouse
- * Press button pin will move
- * - mouse toward bottom right of monitor
+/* 此代码演示 USB HID 鼠标
+ * 按下按钮引脚将使鼠标移动到
+ * - 显示器的右下角
  * 
- * Depending on the board, the button pin
- * and its active state (when pressed) are different
+ * 根据开发板的不同，按钮引脚
+ * 和其活动状态（按下时）可能不同
  */
 #if defined ARDUINO_SAMD_CIRCUITPLAYGROUND_EXPRESS
-  const int pin = 4; // Left Button
+  const int pin = 4; // 左按钮
   bool activeState = true;
 #elif defined ARDUINO_NRF52840_FEATHER
-  const int pin = 7; // UserSw
+  const int pin = 7; // 用户按钮
   bool activeState = false;
 #else
   const int pin = 0;
@@ -71,20 +72,20 @@ TinyUSB 库提供了很多示例，这里我们可以导航到`Files`-> `Example
 #endif
   
 
-// HID report descriptor using TinyUSB's template
-// Single Report (no ID) descriptor
+// 使用 TinyUSB 模板的 HID 报告描述符
+// 单报告（无 ID）描述符
 uint8_t const desc_hid_report[] =
 {
   TUD_HID_REPORT_DESC_MOUSE()
 };
 
-// USB HID object
+// USB HID 对象
 Adafruit_USBD_HID usb_hid;
 
-// the setup function runs once when you press reset or power the board
+// setup 函数在按下复位或为开发板供电时运行一次
 void setup()
 {
-  // Set up button, pullup opposite to active state
+  // 设置按钮，拉高或拉低与活动状态相反
   pinMode(pin, activeState ? INPUT_PULLDOWN : INPUT_PULLUP);
 
   usb_hid.setPollInterval(2);
@@ -94,42 +95,41 @@ void setup()
 
   Serial.begin(115200);
 
-  // wait until device mounted
+  // 等待设备挂载
   while( !USBDevice.mounted() ) delay(1);
 
-  Serial.println("Adafruit TinyUSB HID Mouse example");
+  Serial.println("Adafruit TinyUSB HID 鼠标示例");
 }
 
 void loop()
 {
-  // poll gpio once each 10 ms
+  // 每 10 毫秒轮询一次 GPIO
   delay(10);
 
-  // Whether button is pressed
+  // 检查按钮是否被按下
   bool btn_pressed = (digitalRead(pin) == activeState);
 
-  // nothing to do if button is not pressed
+  // 如果按钮未按下，则无需执行任何操作
   if (!btn_pressed) return;
 
-  // Remote wakeup
+  // 远程唤醒
   if ( USBDevice.suspended() )
   {
-    // Wake up host if we are in suspend mode
-    // and REMOTE_WAKEUP feature is enabled by host
+    // 如果我们处于挂起模式，并且主机启用了 REMOTE_WAKEUP 功能，则唤醒主机
     USBDevice.remoteWakeup();
   }
 
   if ( usb_hid.ready() )
   {
     int8_t const delta = 5;
-    usb_hid.mouseMove(0, delta, delta); // no ID: right + down
+    usb_hid.mouseMove(0, delta, delta); // 无 ID：向右 + 向下
   }
 }
 ```
 
-## 技术支持和产品讨论
+## 技术支持与产品讨论
 
-感谢您选择我们的产品！我们随时为您提供不同的支持，以确保您尽可能顺利地使用我们的产品。我们提供多种沟通渠道来满足不同的偏好和需求。
+感谢您选择我们的产品！我们提供多种支持渠道，以确保您使用我们的产品时体验顺畅。我们提供多个沟通渠道，以满足不同的偏好和需求。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
