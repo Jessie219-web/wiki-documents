@@ -3329,8 +3329,6 @@ const sidebars = {
 
 
     },
-
-
     {
       type: 'category',
       label: 'NVIDIA® Jetson™',
@@ -3606,50 +3604,6 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Multimodal_AI/Speech_vlm',
               ]
             },
-            {
-              type: 'category',
-              label: 'Robotics',
-                // link: {
-                //   type: "doc",
-                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
-                // },
-              items: [
-    
-                {
-                  type: 'category',
-                  label: 'Software',
-                    // link: {
-                    //   type: "doc",
-                    //   id: 'Edge/NVIDIA_Jetson/Application/Robotics/Software',
-                    // },
-                  items: [
-                      'Edge/NVIDIA_Jetson/Application/Robotics/Software/Installing_ROS1',
-                      'Edge/NVIDIA_Jetson/Application/Robotics/Software/A_Loam',
-                    ]},
-                  
-                {
-                  type: 'category',
-                  label: 'Hardware',
-                        // link: {
-                        //   type: "doc",
-                        //   id: 'Edge/NVIDIA_Jetson/Application/Robotics/Hardware',
-                        // },
-                  items: [
-                    'Edge/NVIDIA_Jetson/Application/Robotics/Hardware/Robosense_Lidar',
-                    'Edge/NVIDIA_Jetson/Application/Robotics/Hardware/MID360',
-                    'Edge/NVIDIA_Jetson/Application/Robotics/Hardware/Orbbec_Depth_Camera',
-                    'Edge/NVIDIA_Jetson/Application/Robotics/Hardware/CSI_Camera'
-                      ]},
-                      {
-                        type: 'category',
-                        label: 'Projects',
-                        items: [
-                          'Edge/NVIDIA_Jetson/Application/Robotics/Projects/Lerobot_SO100Arm',
-                          'Edge/NVIDIA_Jetson/Application/Robotics/Projects/Lerobot_SO100Arm_Isaacsim',
-                            ]},
-                
-                ]},
-
             // Managed Services
             {
               type: 'category',
@@ -3908,6 +3862,108 @@ const sidebars = {
     },
 
 
+    {
+      type: 'doc',
+      id: 'Edge_Robotics',
+      label: 'Robotics Page',
+      className: 'sideboard_calss',
+    },
+    {
+      type: 'category',
+      label: 'Robot Kits',
+      collapsed: true,
+      collapsible: true,
+          items: [
+            {
+              type: 'category',
+              label: 'Lerobot',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
+                  'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
+                  'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
+                    ]},
+
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Actuator',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application',
+          // },
+          items: [
+            'Robotics/Robot_Actuator/Myactuator_Series',
+              ]
+        },
+        {
+          type: 'category',
+          label: 'Sensor',
+          // link: {
+          //   type: "doc",
+          //   id: 'Edge/NVIDIA_Jetson/Application',
+          // },
+          items: [
+            {
+              type: 'category',
+              label: 'Lidar',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  'Robotics/Robot_Sensor/Lidar/Robosense_Lidar',
+                  'Robotics/Robot_Sensor/Lidar/MID360',
+                  'Robotics/Robot_Sensor/Lidar/A_Loam',
+                    ]},
+            {
+              type: 'category',
+              label: 'Camera',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
+                  'Robotics/Robot_Sensor/Camera/CSI_Camera'
+                    ]},
+          ]
+        },
+        {
+          type: 'category',
+          label: 'Software',
+          items: [
+            {
+              type: 'category',
+              label: 'ROS',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  "Robotics/Robot_Software/ROS/Installing_ROS1",
+                  "Robotics/Robot_Software/ROS/Install_IsaacROS",
+                  "Robotics/Robot_Software/ROS/Install_ROS2_Humble",
+                  "Robotics/Robot_Software/ROS/Isaac_ROS_AprilTag",
+                  "Robotics/Robot_Software/ROS/Isaac_ROS_Visual_SLAM",
+                    ]},
+            {
+              type: 'category',
+              label: 'Isaag Lab',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
+                    ]},
+          ]
+
+    },
     
 
     // {
