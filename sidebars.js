@@ -3471,6 +3471,14 @@ const sidebars = {
                     'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_J401B/recomputer_j401b_interfaces_usage'
                   ]
                 },
+                {
+                  type: 'category',
+                  label: 'reComputer Super',
+                  items: [
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Getting_Started',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage'
+                  ],
+                },
             ]},
             
             // reServer Jetson Series
