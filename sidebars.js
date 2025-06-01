@@ -3898,6 +3898,7 @@ const sidebars = {
           // },
           items: [
             'Robotics/Robot_Actuator/Myactuator_Series',
+            'Robotics/Robot_Actuator/Damiao_Series',
               ]
         },
         {
