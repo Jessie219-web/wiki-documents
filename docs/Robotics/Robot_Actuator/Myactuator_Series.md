@@ -6,7 +6,7 @@ keywords:
 - motor
 - arm
 - robotics
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.webp
 slug: /myactuator_series
 last_update:
   date: 05/29/2025

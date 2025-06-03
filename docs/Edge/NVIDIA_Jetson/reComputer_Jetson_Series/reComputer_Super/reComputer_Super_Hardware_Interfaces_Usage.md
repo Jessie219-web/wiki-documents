@@ -5,7 +5,7 @@ keywords:
   - reComputer Super
   - Interfaces Usage
   - Jetson
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/super/super2.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super2.webp
 slug: /recomputer_jetson_super_hardware_interfaces_usage
 last_update:
   date: 05/26/2025
