@@ -4,7 +4,7 @@ title: BC01 Indoor Bluetooth Beacon
 keywords:
 - BLE
 - Positioning
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/SenseCAP/Tracker/BC01_Indoor_Bluetooth_Beacon.webp
 slug: /bluetooth_beacon_for_SenseCAP_Traker
 last_update:
   date: 05/29/2025

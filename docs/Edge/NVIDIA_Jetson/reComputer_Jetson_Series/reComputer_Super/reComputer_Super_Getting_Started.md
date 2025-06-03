@@ -1,6 +1,6 @@
 ---
 description: Getting Started for reComputer Super
-title: reComputer Super
+title: Getting Started with reComputer Super
 keywords:
   - reComputer Super
 image: https://files.seeedstudio.com/wiki/reComputer-Jetson/super/super2.webp

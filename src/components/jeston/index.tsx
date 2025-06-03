@@ -3,9 +3,10 @@ import clsx from 'clsx';
 import styles from './index.module.scss';
 import { useColorMode } from '@docusaurus/theme-common';
 
-// 动态加载两种语言的配置
+// 动态加载三种语言的配置
 import * as config_en from './config.en';
 import * as config_ja from './config.ja';
+import * as config_zh from './config.zh';
 
 function getImgUrl(str: string, suffix?: string) {
   return `https://files.seeedstudio.com/wiki/Jetson/${str}.${suffix || 'png'}`;
@@ -59,15 +60,37 @@ export const translations = {
       robot: "ロボティクス",
     },
   },
+  zh: {
+    banner: {
+      title: "社区项目",
+      desc: "NVIDIA® Jetson™ 通过搭载 NVIDIA CUDA-X™ 软件的高能效模块，在边缘提供高性能 AI。作为授权经销商和精英合作伙伴，Seeed 凭借 15 年以上的硬件经验，提供全面的边缘 AI 开发解决方案。",
+      bottom: "了解更多 NVIDIA Jetson 驱动设备的比较信息",
+    },
+    usage1: {
+      title: "Jetpack 刷机与硬件使用",
+      desc: "我们的多数 reComputer Jetson 产品已预装 NVIDIA JetPack 系统。如果你希望重新刷机或为未预装 JetPack 的设备安装系统，请参考以下指南。",
+    },
+    usage2: {
+      title: "AI 开发工具",
+      desc: "AI 开发流程包括数据收集、模型训练、优化和部署。我们为每个阶段提供了完整的文档支持。",
+    },
+    community: {
+      title: "社区项目",
+      cv: "计算机视觉",
+      gen: "生成式 AI",
+      robot: "机器人",
+    },
+  },
 };
 
 const configMap = {
   en: config_en,
   ja: config_ja,
+  zh: config_zh,
 };
 
 type Props = {
-  lang?: 'en' | 'ja';
+  lang?: 'en' | 'ja' | 'zh'; 
 };
 
 const usageRender = (obj) => {
