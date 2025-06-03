@@ -14,7 +14,7 @@ last_update:
 ---
 
 # MyActuator X Series Motors Getting Start
-This article will introduce how to get started with MyActuator series motors and how to use them with Python and ROS on the reComputer Mini Jetson Orin.
+This article will introduce how to get started with MyActuator series motors and how to use them with C++ and Python on the reComputer Mini Jetson Orin.
 
 <div align="center">
     <img width={800} 
@@ -194,6 +194,13 @@ For more details on CAN usage, you can refer to this [wiki](https://wiki.seeedst
 </div>
 
 **Step2:** Connect the motor directly to the reComputer Mini CAN0 via the XT30 (2+2) interface.
+
+This is CAN0 interfaces for reComputer Mini
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/can0-datasheet.png"/>
+</div>
+
 
 <div align="center">
     <img width={800} 

@@ -42,15 +42,17 @@ last_update:
   </nav>
 </div>
 
+
 <div className="nav-grid">
 
 ## 📦 Robot Kits {#robot-kits}
 
-<div className="category-card robot-kits">
+<div class="category-group">
+  <div class="category-card robot-kits">
 
 ## 🤗 Lerobot
 
-- [SO100/101 Arm](/lerobot_so100m/) <span className="tag stable">Update</span>  
+- [SO100/101 Arm](/lerobot_so100m/) <span className="tag stable">Update</span>
 - [SO100 Arm with IsaacSim](/lerobot_so100m_isaacsim/)
 - [Lekiwi Mobile Base](/lerobot_lekiwi/) <span className="tag recommended">New</span>
 
@@ -59,17 +61,20 @@ last_update:
 - **Comming soon**
 
 </div>
+</div>
 
 ## ⚙️ Actuators {#actuators}
-
+<div class="category-group">
 <div className="category-card actuators">
 
-- [MyActuator Series Motors](/myactuator_series/) <span className="tag recommended">New</span>
+- [MyActuator X Series Motors](/myactuator_series/) <span className="tag recommended">New</span>
+- [Damiao DM43 Series Motors](/damiao_series/) <span className="tag recommended">New</span>
 
+</div>
 </div>
 
 ## 👁️ Sensors {#sensors}
-
+<div class="category-group">
 <div className="category-card sensors">
 
 **LiDAR Systems**  
@@ -82,9 +87,10 @@ last_update:
 - [CSI Camera Setup](/csi_camera_on_ros/)
 
 </div>
+</div>
 
 ## 💻 Software {#software}
-
+<div class="category-group">
 <div className="category-card software">
 
 **ROS Ecosystem**  
@@ -97,6 +103,7 @@ last_update:
 **NVIDIA Isaac**  
 - [Isaac Lab Installation](/install_isaaclab/)
 
+</div>
 </div>
 
 </div>
@@ -200,7 +207,7 @@ last_update:
 <style>{`
 /* 内容卡片增强版样式 */
 .nav-grid {
-  display: grid;
+  display: block;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2rem;
@@ -216,6 +223,11 @@ last_update:
   overflow: hidden;
   z-index: 1;
 }
+
+.category-group {
+  margin-bottom: 2rem;
+}
+
 
 /* 分类色标 */
 .category-card::before {
@@ -309,7 +321,8 @@ last_update:
   }
   
   .category-card {
-    padding: 1.2rem;
-  }
+  width: 100%;
+  margin-top: 0.5rem; /* 卡片紧贴标题 */
+}
 }
 `}</style>
