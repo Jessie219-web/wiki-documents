@@ -361,8 +361,15 @@ In the [datasheet](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComput
   <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/can0-datasheet.png"/>
 </div>
 
+Before using CAN0 and CAN1, please remove the bottom cover and set both 120Ω termination resistors to the ​ON position.
+<div align="center">
+    <img width={300} 
+     src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/7.png" />
+</div>
+
 Here, we will demonstrate sending data continuously from CAN0 to CAN1 at a baud rate of 125 kbps for 30 seconds.
 First, as shown in the figure below, connect the signal lines of CAN0 to those of CAN1. Specifically, connect **CAN0_H to CAN1_H** and **CAN0_L to CAN1_L**.
+
 <div align="center">
   <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/CANdraw.jpg"/>
 </div>

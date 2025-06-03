@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 05/26/2025
+  date: 06/02/2025
   author: Frank
 ---
 
@@ -17,51 +17,53 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is May 26th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 2nd, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting Started with XIAO 7.5" ePaper Panel](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_main_page/)
+### [reComputer Super Hardware and Interfaces Usage](https://wiki.seeedstudio.com/recomputer_jetson_super_hardware_interfaces_usage/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
 
-Powered by XIAO ESP32-C3, this 7.5 inch ePaper display is a versatile, energy-efficient smart e-ink screen supporting a wide range of popular community applications including Home Assistant, trmnl, Arduino, and more. This flexible display solution is perfect for showcasing dashboard data, weather updates, schedules, and custom information. With crisp visuals, exceptional 3-months battery life (2000mAh) in deep sleep mode, and extensive customization possibilities, this compact device adapts to diverse use cases. Perfect for modern living spaces and project environments, it combines functionality with elegant design for an enhanced visual experience across multiple platforms.
+This wiki introduces the various different hardware and interfaces on the reComputer Super and how to use them to expand your project ideas.
 
-### [XIAO 7.5-Inch ePaper Panel Works with TRMNL](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_with_trmnl/)
+### [MyActuator X Series Motors Getting Start](https://wiki.seeedstudio.com/myactuator_series/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/202.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.png" alt="pir" width={800} height="auto" /></p>
 
-This document explains how to use the XIAO 7.5-Inch ePaper Panel with the TRMNL device. It covers hardware connections, software setup, driver installation, and example code for displaying content on the ePaper screen. Whether you're using Arduino or CircuitPython, this guide will help you get started quickly and integrate the ePaper display into your own projects.
+This article will introduce how to get started with MyActuator series motors and how to use them with Python and ROS on the reComputer Mini Jetson Orin.
 
-### [Grove - Barometer Sensor (SPA06-003)](https://wiki.seeedstudio.com/grove_barometer_sensor_spa06_003/)
+### [How to use the Lekiwi in Lerobot](https://wiki.seeedstudio.com/lerobot_lekiwi/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.png" alt="pir" width={800} height="auto" /></p>
 
-Grove - Temperature and Barometer Sensor(SPA06-003) is a high-precision and a low-current environmental sensor measures the temperature and barometer. It supports both I2C and SPI communication and we provide the SPA06-003 Arduino library.
+The [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) is a fully open-source robotic car project launched by [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). It includes the detailed 3D printing files and operation guides, designed to be compatible with the [LeRobot](https://github.com/huggingface/lerobot/tree/main) imitation learning framework. It supports the SO101 robotic arm to enable a complete imitation learning pipeline.
 
-### [Wio Tracker L1 Meshtastic Node](https://wiki.seeedstudio.com/wio_tracker_node/)
+### [Install the Isaac Lab](https://wiki.seeedstudio.com/install_isaaclab/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/wio-tracker-l1.jpg" alt="pir" width={800} height="auto" /></p>
+This wiki provides a step-by-step guide to install Isaac Lab. Isaac Lab requires Isaac Sim. This tutorial first installs Isaac Sim via pip, then installs Isaac Lab from source code.
 
-The Wio Tracker L1 Series is a low-power, highly extensible Meshtastic node featuring LoRa (862–930 MHz), the nRF52840 for efficient processing, and an L76K GPS module for accurate location tracking. Designed for flexibility, it supports OLED and E-Ink displays, as well as solar panels and battery power, making it ideal for a wide range of IoT and off-grid applications.
+### [Install the Isaac ROS](https://wiki.seeedstudio.com/install_isaacros/)
 
-### [Getting Started with LED Driver Board for XIAO](https://wiki.seeedstudio.com/led_driver_board/)
+This wiki provides a step-by-step guide to install Isaac ROS.
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LED_Driver_Board_for_XIAO/dimension.jpg" alt="pir" width={800} height="auto" /></p>
+### [Install the ROS2 Humble](https://wiki.seeedstudio.com/install_ros2_humble/)
 
-LED Driver Board for XIAO is a compact yet powerful solution supporting both 5V and 12V LED strips, including popular addressable RGB LEDs such as NeoPixel WS2812, WS2813, WS2815. Compatible with all XIAO boards, it enables smart control and automation through WLED and Home Assistant when using XIAO ESP32 Series, while offering flexible power options and comprehensive protection for safe, reliable operation in your lighting setup.
+This wiki provides a step-by-step guide to install ROS2 humble.
 
-### [How to use UPS to read input voltage on reComputer r1000](https://wiki.seeedstudio.com/recomputer_use_ups/)
+### [Isaac ROS AprilTag](https://wiki.seeedstudio.com/isaac_ros_apriltag/)
 
-<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/x/-/x-110992004-supercap_ups_ltc3350_module.jpg" alt="pir" width={800} height="auto" /></p>
+This wiki provides a step-by-step guide to use Isaac ROS AprilTag.
 
-This wiki article primarily explains how to install the UPS module on the reComputer R10 and R11 series and use the UPS to read the input voltage.
+### [Isaac ROS Visual SLAM Deployment](https://wiki.seeedstudio.com/isaac_ros_visual_slam/)
 
-## Existing Wiki Updated
+This wiki provides a step-by-step guide to use Isaac ROS Visual SLAM.
+
+<!-- ## Existing Wiki Updated
 
 ### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
 
-We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras).
+We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras). -->
 
 ## The Efforts of Contributor
 
@@ -185,5 +187,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
 - [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
 - [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
+- [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 
 </details>
