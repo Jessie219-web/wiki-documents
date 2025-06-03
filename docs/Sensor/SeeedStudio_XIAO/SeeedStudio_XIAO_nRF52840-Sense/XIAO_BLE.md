@@ -459,25 +459,37 @@ Adafruit_SPIFlash flash(&flashTransport);
 
 
 #include <bluefruit.h>
-void setup()
-{
+
+bool deepPowerDown(Adafruit_SPIFlash& flash, Adafruit_FlashTransport& transport) {
+  uint32_t id_before = flash.getJEDECID();
+
+  transport.begin();
+  transport.runCommand(0xB9);  // SPI deep power-down command
+  delay(10);
+
+  uint32_t id_after = flash.getJEDECID();
+
+  return (id_after == 0xFFFFFF || id_after == 0xFFFFFFFF);
+}
+
+void setup() {
   flash.begin();
-  Bluefruit.begin(); 
-  if(flash.deepPowerDown() == false){
+  Bluefruit.begin();
+
+  if (!deepPowerDown(flash, flashTransport)) {
     pinMode(LED_BUILTIN, OUTPUT);
     digitalWrite(LED_BUILTIN, LOW);
-    while(1)
-    {
+    while (1) {
       yield();
     }
   }
+
   flash.end();
 
-  sd_power_system_off(); 
+  sd_power_system_off();
 }
 
-void loop()
-{
+void loop() {
   // nothing to do
 }
 ```
