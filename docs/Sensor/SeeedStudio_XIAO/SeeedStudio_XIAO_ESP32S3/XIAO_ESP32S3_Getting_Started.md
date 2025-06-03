@@ -291,7 +291,7 @@ Remove the antenna is also the case, do not use brute force to pull the antenna 
 
 #### Installation of expansion boards (for Sense)
 
-If you are shopping for the XIAO ESP32S3 Sense, then you should also include an expansion board. This expansion board has a 1600*1200 OV2640 camera sensor, Onboard SD Card Slot and digital microphone.
+If you are shopping for the XIAO ESP32S3 Sense, then you should also include an expansion board. This expansion board has a 1600x1200 OV2640/2048x1536 OV3660 camera sensor, Onboard SD Card Slot and digital microphone.
 
 By installing the expansion board with XIAO ESP32S3 Sense, you can use the functions on the expansion board.
 
