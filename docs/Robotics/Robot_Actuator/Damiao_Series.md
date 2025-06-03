@@ -59,7 +59,7 @@ J10010L-2EC | 40 | 120 | 100@24V 200@48V | 70@24V 100@48V | 10 | 120 * 53 | ~137
 ### Environmental Preparation Before Use
 **Windows System in PC**
 - Download the [Download the Damiao Debugging Tools](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/Debugging_Tools_v.1.6.8.8.exe).
-- Downlaod the [USB2CAN Tools](USB2CAN_2.0.0.3.exe)
+- Downlaod the [USB2CAN Tools](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/USB2CAN_2.0.0.3.exe)
 
 ### Connect the Circuit to PC
 
