@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 05/12/2025
+  date: 06/02/2025
   author: Frank
 ---
 
@@ -17,33 +17,61 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is May 12th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 2nd, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Seeed Studio XIAO MG24 Connect HomeAssistant With Matter](https://wiki.seeedstudio.com/xiao_mg24_ha_openthread/)
+### [reComputer Super Hardware and Interfaces Usage](https://wiki.seeedstudio.com/recomputer_jetson_super_hardware_interfaces_usage/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/HA_OpenThread/Group10.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
 
-In this wiki, we will utilize the Sonoff Zigbee 3.0 USB Dongle to access the HomeAssistant and thus act as a border router, while the Seeed Studio XIAO MG24 will act as a Matter protocol device with the Thread network.
+This wiki introduces the various different hardware and interfaces on the reComputer Super and how to use them to expand your project ideas.
 
-## Existing Wiki Updated
+### [MyActuator X Series Motors Getting Start](https://wiki.seeedstudio.com/myactuator_series/)
 
-<!-- ### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.png" alt="pir" width={800} height="auto" /></p>
 
-We added examples related to [Configure the motors](https://wiki.seeedstudio.com/lerobot_so100m/#configure-the-motors).
+This article will introduce how to get started with MyActuator series motors and how to use them with Python and ROS on the reComputer Mini Jetson Orin.
 
-### [Camera Usage in Seeed Studio XIAO ESP32S3 Sense](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/)
+### [How to use the Lekiwi in Lerobot](https://wiki.seeedstudio.com/lerobot_lekiwi/)
 
-We added examples related to [OV5640 AutoFocus operations](https://wiki.seeedstudio.com/xiao_esp32s3_camera_usage/#ov5640-autofocus). -->
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.png" alt="pir" width={800} height="auto" /></p>
+
+The [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) is a fully open-source robotic car project launched by [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). It includes the detailed 3D printing files and operation guides, designed to be compatible with the [LeRobot](https://github.com/huggingface/lerobot/tree/main) imitation learning framework. It supports the SO101 robotic arm to enable a complete imitation learning pipeline.
+
+### [Install the Isaac Lab](https://wiki.seeedstudio.com/install_isaaclab/)
+
+This wiki provides a step-by-step guide to install Isaac Lab. Isaac Lab requires Isaac Sim. This tutorial first installs Isaac Sim via pip, then installs Isaac Lab from source code.
+
+### [Install the Isaac ROS](https://wiki.seeedstudio.com/install_isaacros/)
+
+This wiki provides a step-by-step guide to install Isaac ROS.
+
+### [Install the ROS2 Humble](https://wiki.seeedstudio.com/install_ros2_humble/)
+
+This wiki provides a step-by-step guide to install ROS2 humble.
+
+### [Isaac ROS AprilTag](https://wiki.seeedstudio.com/isaac_ros_apriltag/)
+
+This wiki provides a step-by-step guide to use Isaac ROS AprilTag.
+
+### [Isaac ROS Visual SLAM Deployment](https://wiki.seeedstudio.com/isaac_ros_visual_slam/)
+
+This wiki provides a step-by-step guide to use Isaac ROS Visual SLAM.
+
+<!-- ## Existing Wiki Updated
+
+### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+
+We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras). -->
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO ESP32C6 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao_esp32c6_nuttx/)
+<!-- ### [Seeed Studio XIAO ESP32C6 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao_esp32c6_nuttx/)
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/></div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -157,5 +185,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
 - [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
+- [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
+- [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
+- [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 
 </details>

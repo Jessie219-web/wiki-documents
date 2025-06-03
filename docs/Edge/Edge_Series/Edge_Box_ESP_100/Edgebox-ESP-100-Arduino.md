@@ -34,6 +34,36 @@ This portable box comes with rugged hardware, an electrical design, and an alumi
 
 ## Features
 
+> ⚠️ **Important Notice: USB Programming/Debug Function Availability**
+>
+> - The **USB Programming/Debug function is only available** on the **latest version** of the **EdgeBox-ESP-100**.
+> - The **previous version** only supports **power supply via the USB-A port** and **does *not* support programming or debugging**.
+
+---
+
+> ❗**Warning: Do Not Connect the USB-A Port of Older Versions to a PC**
+>
+> - Connecting the USB-A port of the **old version** to a PC USB port may result in **improper behavior**.
+> - Only use the **new version** if you plan to program or debug the device via USB.
+
+---
+
+> **🔍 How to Identify the New Version**
+>
+> Check the **Serial Number (SN)** label on the device enclosure:
+>
+> **Old Version SNs**:
+>
+>  - All serial numbers with `2437` or **earlier**
+>  - Example: `102991735243700001`, `102991735243700093`
+> - `2437` = produced in **Week 37 of 2024**
+>
+> **New Version SNs**:
+> - All serial numbers with `2438` or **later**
+>  - Example: `102991735243800001`, `102991735243800093`
+> - `2438` = produced from **Week 38 of 2024 onwards**
+
+
 - Multi-Fieldbus Support: CAN, RS485, Ethernet
 - Multi-wireless Capability: On-chip Wifi, BLE connectivity; built-in Cellular 4G LTE module
 - Reliable Hardware Design: Rugged, maintenance-reduced structure

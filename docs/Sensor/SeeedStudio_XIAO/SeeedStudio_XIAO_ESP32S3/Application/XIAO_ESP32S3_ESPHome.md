@@ -612,11 +612,11 @@ The Same as before.
 <br />
 
 
-#### OV2640 camera (XIAO ESP32S3 Sense)
+#### OV2640/OV3660 camera (XIAO ESP32S3 Sense)
 
 ##### Setup Configuration
 
-- **Step 1.** Connect OV2640 Camera external board to the xiao esp32s3 sense
+- **Step 1.** Connect OV2640 or OV660 Camera external board to the xiao esp32s3 sense
 
 - **Step 2.** Inside the **xiao-esp32s3-camera.yaml** file that we created before, change the file and push it OTA to XIAO ESP32S3 sense
 

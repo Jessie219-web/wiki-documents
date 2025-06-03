@@ -1741,6 +1741,57 @@ a.reComputer_compare:hover .reComputer_compare_label3 {
 	display: none;
 } */
 
+.nav-grid {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	padding: 2rem 0;
+  }
+  
+
+  .category-card {
+	border-radius: 12px;
+	padding: 1.5rem;
+	background: #ffffff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+	transition: transform 0.2s;
+  }
+  
+  .category-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .robot-kits { border-left: 4px solid #4a90e2; }
+  .actuators { border-left: 4px solid #50e3c2; }
+  .sensors { border-left: 4px solid #ff6b6b; }
+  .software { border-left: 4px solid #f5a623; }
+  
+
+  .tag {
+	font-size: 0.75rem;
+	padding: 2px 8px;
+	border-radius: 8px;
+	margin-left: 8px;
+	vertical-align: middle;
+  }
+  .stable { background: #e6f4ea; color: #137333; }
+  .beta { background: #fef7e0; color: #b86000; }
+  .new { background: #e8f0fe; color: #174ea6; }
+  .recommended { background: #fce8e6; color: #a50e0e; }
+  .linux-only { background: #f1f3f4; color: #5f6368; }
+  .jetpack { background: #f3e5f5; color: #6a1b9a; }
+  .cloud { background: #e3f2fd; color: #0d47a1; }
+  
+
+  @media (max-width: 996px) {
+	.nav-grid {
+	  grid-template-columns: 1fr;
+	  padding: 1rem;
+	}
+  }
+
 [data-theme='light'] .DocSearch {
 	/* --docsearch-primary-color: var(--ifm-color-primary); */
 	/* --docsearch-text-color: var(--ifm-font-color-base); */
@@ -1795,3 +1846,4 @@ a.reComputer_compare:hover .reComputer_compare_label3 {
 	font-family: 'Montserrat-bold';
 	src: url('https://files.seeedstudio.com/wiki/Montserrat-bold.otf');
 }
+
