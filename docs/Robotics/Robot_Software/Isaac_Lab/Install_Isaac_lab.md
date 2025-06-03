@@ -4,7 +4,7 @@ title: Install the Isaac Lab
 keywords:
 - NVIDIA
 - Isaac Lab
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/robotics/isaac_lab/1.webp
 slug: /install_isaaclab
 last_update:
   date: 5/28/2025

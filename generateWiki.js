@@ -9,14 +9,18 @@ const docList = []
 const excludedPaths = [
   path.join(docsDirectory, 'Seeed_Elderly', 'weekly_wiki'), // weekly wiki 的历史目录
   path.join(docsDirectory, 'zh-CN'), // 排除中文文档的目录
+  path.join(docsDirectory, 'ja'), // 排除日文文档的目录
   path.join(docsDirectory, 'Spanish'), // 排除西班牙语文档的目录
   path.join(docsDirectory, 'weekly_wiki.md'), // 排除 weekly wiki 的文件
 
 
   // 排除指定文档
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Carrier_Boards', 'Robotics_J401', 'Robotics_J401_carrierboard_Hardware_Interfaces_Usage.md'), //4.29
-  path.join(docsDirectory, 'Sensor', 'SeeedStudio_XIAO', 'SeeedStudio_XIAO_ESP32C3', 'XIAO-ESP32C3-NuttX.md'), //4.28
   path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Application', 'Generative_AI', 'Deploy_Dia_on_reComputer_Jetson.md'), //5.16
+  path.join(docsDirectory, 'Edge_Robotics.md'), //5.29
+  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_IsaacROS.md'), //5.28
+  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_ROS2_Humble.md'), //5.28
+  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Isaac_ROS_AprilTag.md'), //5.28
+  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Isaac_ROS_Visual_SLAM.md'), //5.28
 ];
 
 // 递归函数，用于遍历多层文件夹
