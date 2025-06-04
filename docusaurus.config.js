@@ -31,6 +31,10 @@ const config = {
       src: '/js/custom.js', // 添加你的 JavaScript 文件名、
       async: true,
     },
+    {
+    src: '/js/language-switcher.js', 
+    async: true,
+    },
   ],
 
   // GitHub pages deployment config.
@@ -444,12 +448,12 @@ const config = {
           //   label: 'Solutions',
           //   className: 'navbar_doc_items'
           // },
-          {
-            to: 'https://wiki-gpt.seeedstudio.com/chat',
-            label: 'AI Bot 🤖️',
-            position: 'right',
-            className: 'navbar_doc_right_items',
-          },
+          // {
+          //   to: 'https://wiki-gpt.seeedstudio.com/chat',
+          //   label: 'AI Bot 🤖️',
+          //   position: 'right',
+          //   className: 'navbar_doc_right_items',
+          // },
           {
             to: 'https://sensecraft.seeed.cc/ai/#/home',
             label: 'SenseCraft AI',
