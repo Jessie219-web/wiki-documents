@@ -36,7 +36,7 @@ En esta wiki, aprenderemos cómo implementar Llama-Factory en la Nvidia Jetson y
 - Dispositivo Jetson con más de 16GB de memoria.
 - Monitor, Mouse, teclado y red. (no es necesario)
 
-:::Nota
+:::note
 En esta wiki usamos la reComputer [Orin NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) y [AGX Orin 64GB](https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html) Developer Kit.
 :::
 
@@ -63,7 +63,7 @@ En esta wiki usamos la reComputer [Orin NX 16GB](https://www.seeedstudio.com/reC
 
 ### Instalar Jetson-Examples
 
-:::nota
+:::note
 Los [jetson-examples](https://github.com/Seeed-Projects/jetson-examples) de Seeed Studio ofrecen una implementación perfecta de comandos de una sola línea para ejecutar modelos de IA de visión e IA generativa en la plataforma NVIDIA Jetson..
 :::
 
@@ -109,7 +109,7 @@ Finalmente, haz click en el botón "iniciar" para comenzar el entrenamiento.
      src="https://files.seeedstudio.com/wiki/reComputer-Jetson/Llama-Factory/training.png" />
 </div>
 
-:::nota
+:::note
 El entrenamiento durará aproximadamente 18 horas.
 :::
 

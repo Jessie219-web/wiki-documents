@@ -243,7 +243,7 @@ La reComputer industrial tiene 2 puertos RJ45 GbE, uno de los cuales es un puert
 
 La reComputer industrial viene con JetPack 5.1.1 preinstalado en un SSD de 128 GB junto con los controladores necesarios. Esto incluye componentes SDK como CUDA, CUDNN y TensorRT. Sin embargo, si deseas flashear Jetpack al SSD incluido o a un SSD nuevo, puedes seguir los pasos mostrados a continuación.
 
-:::nota
+:::note
 Si deseas utilizar un SSD con la reComputer industrial, solo te recomendamos que elijas los siguientes: [128 GB](https://www.seeedstudio.com/M-2-2280-SSD-128GB-p-5332.html), el [256GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-256GB-p-5333.html), o el [512GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-512GB-p-5334.html) de Seeed.
 :::
 
@@ -300,7 +300,7 @@ Ahora debes ingresar al modo de recuperación en la placa reComputer industrial 
 
 <div align="center"><img width ="750" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/97.png"/></div>
 
-:::nota
+:::note
 Asegúrate de encender el dispositivo mientras mantienes presionado el botón **Recovery**; de lo contrario, no ingresarás al modo de recuperación.
 :::
 
@@ -326,7 +326,7 @@ Aquí ofrecemos 2 métodos diferentes de flasheo.
 1. Descarga la imagen completa del sistema que hemos preparado, que incluye NVIDIA JetPack, controladores periféricos de hardware y flashea al dispositivo.
 2. Descarga NVIDIA L4T oficial, usa los controladores periféricos de hardware incluidos y flashea al dispositivo
 
-:::nota
+:::note
 La descarga del primer método es de aproximadamente 14 GB y la descarga del segundo método es de aproximadamente 3 GB.
 :::
 

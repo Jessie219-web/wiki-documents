@@ -52,7 +52,7 @@ El modelo TTS es un modelo de aprendizaje profundo de alto rendimiento para tare
 - Micrófono altavoz USB sin controlador
 - Una cámara IP que puede generar una dirección de transmisión RTSP. También hemos incluido instrucciones sobre [cómo utilizar la herramienta NVIDIA Nvstreamer](../Developer_Tools/es_NVStreamer_Getting_Started.md) para convertir videos locales en transmisiones RTSP.
 
-:::nota
+:::note
 Ya hemos probado la viabilidad de esta wiki en la reComputer [Orin NX 16GB](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) y [AGX Orin 64GB](https://www.seeedstudio.com/NVIDIArJetson-AGX-Orintm-64GB-Developer-Kit-p-5641.html) Developer Kit.
 :::
 
@@ -157,7 +157,7 @@ curl --location 'http://192.168.49.227:5010/api/v1/live-stream' \
 --header 'Content-Type: application/json' \
 --data '{"liveStreamUrl": "rtsp://admin:IHFXnM8k@192.168.49.15:554//Streaming/Channels/1"}'
 ```
-:::nota
+:::note
 Si no tienes una cámara RTSP, te proporcionamos instrucciones sobre [cómo usar NVStreamer para transmitir videos locales como RTSP](../Developer_Tools/es_NVStreamer_Getting_Started.md) y [agregarlos al VLM](../Generative_AI/es_How_to_run_VLM_on_reComputer.md).
 :::
 

@@ -99,6 +99,13 @@ When you first receive your IoT Button, it's essential to perform an initial act
 2. **This initial power connection is crucial as it activates the built-in battery**
 3. **Without this activation step, the device will not function properly**
 
+:::note
+The IoT Button features a power-saving sleep mode:
+- In unconfigured state: The device will enter sleep mode after 2 minutes of inactivity. A single button press is required to wake it up.
+
+- After ESPHome configuration: The device will enter sleep mode 9 seconds after releasing the button to conserve battery. You may need to press the button once to wake it up before performing any button operations.
+:::
+
 The IoT Button comes pre-loaded with ESPHome-compatible firmware, so once activated, you can proceed directly to integrating it with Home Assistant following the steps below.
 
 :::note

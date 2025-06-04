@@ -76,7 +76,7 @@ last_update:
         <td>With WiFi and BLE, Budget Friendly Risc-V</td>
         <td>With WiFi-6, BLE, Zigbee, and Thread for Matter</td>
         <td>With WiFi and BLE, High Performance</td>
-        <td>Advanced Version of XIAO ESP32S3 with OV2640 Camera and Microphone</td>
+        <td>Advanced Version of XIAO ESP32S3 with OV2640 Camera/OV3660 Camera and Microphone</td>
         <td>Renesas 32-bit ARM Cortex-M4 MCU, compatible with Arduino IDE</td>
         <td>Matter, Open Thread, Zigbee, Bluetooth Low Energy (BLE 5.3), Bluetooth Mesh, Proprietary 2.4 GHz</td>
         <td>Advanced Version of XIAO MG24 with Six-axis acceleration sensors and Microphone</td>
@@ -166,7 +166,7 @@ last_update:
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
-        <td align="center">OV2640 camera, Microphone</td>
+        <td align="center">OV2640 camera/OV3660, Microphone</td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
         <td align="center">Six-axis acceleration sensors, Microphone</td>
@@ -295,7 +295,7 @@ last_update:
 	    <th>Low Power Mode</th>
 	    <td align="center"><font size={"3"}>❌</font></td>
 	    <td align="center"><font size={"3"}>❌</font></td>
-        <td align="center">27μA</td>
+        <td align="center">50μA</td>
 	    <td align="center">5μA</td>
 	    <td align="center">5μA</td>
         <td align="center">44μA</td>
@@ -328,7 +328,7 @@ last_update:
 	    <th>PlatformIO</th>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
-        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
@@ -358,7 +358,7 @@ last_update:
         <th>CircuitPython</th>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
-        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
 	    <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
@@ -447,8 +447,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO SAMD21 3D Model](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/seeeduino-xiao-samd21-3d-model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO SAMD21 Certification files](https://files.seeedstudio.com/wiki/Seeeduino-XIAO/res/XIAO-SAMD21-Certification.zip)
-
 ### Seeed Studio XIAO RP2040 Open-Source Materials
 
 - **[PDF]** [RP2040 datasheet](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/rp2040_datasheet.pdf)
@@ -467,7 +465,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO RP2040 3D Model](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/seeed-studio-xiao-rp2040-3d-model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO RP2040 Certification files](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO-RP2040-Certification.zip)
 
 ### Seeed Studio XIAO nRF52840 Open-Source Materials
 
@@ -485,7 +482,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[XLSX]** [Seeed Studio XIAO nRF52840 pinout sheet](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-pinout_sheet.xlsx)
 
-- **[ZIP]** [Seeed Studio XIAO nRF52840 Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Certification.zip)
 
 ### Seeed Studio XIAO nRF52840 Sense Open-Source Materials
 
@@ -505,7 +501,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO nRF52840 Sense 3D Model](https://files.seeedstudio.com/wiki/XIAO-BLE/seeed-studio-xiao-nrf52840-3d-model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO nRF52840 Sense Certification files](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Sense-Certification.zip)
 
 ### Seeed Studio XIAO nRF52840 (Sense) Plus Open-Source Materials
 
@@ -543,7 +538,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO ESP32C3 3D Model](https://grabcad.com/library/seeed-studio-xiao-esp32-c3-1)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32C3 Certification files](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-Certification.zip)
 
 ### Seeed Studio XIAO ESP32C6 Open-Source Materials
 
@@ -555,7 +549,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[XLSX]** [Seeed Studio XIAO ESP32C6 pinout sheet](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/XIAO_ESP32C6_Pinout.xlsx)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32C6 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32C6/res/SeeedStudio_XIAO_ESP32C6_Certification.zip)
 
 ### Seeed Studio XIAO ESP32S3 Open-Source Materials
 
@@ -573,7 +566,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO ESP32S3 3D Model](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/seeed-studio-xiao-esp32s3-3d_model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32S3 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Certification.zip)
 
 ### Seeed Studio XIAO ESP32S3 Sense Open-Source Materials
 
@@ -597,7 +589,6 @@ As a growing ecosystem of Seeed Studio XIAO, we offer a wide range of add-ons, w
 
 - **[STEP]** [Seeed Studio XIAO ESP32S3 Sense 3D Model](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/seeed-studio-xiao-esp32s3-sense-3d_model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO ESP32S3 Certification files](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_ESP32S3_Certification.zip)
 
 ### Seeed Studio XIAO ESP32S3 Plus Open-Source Materials
 

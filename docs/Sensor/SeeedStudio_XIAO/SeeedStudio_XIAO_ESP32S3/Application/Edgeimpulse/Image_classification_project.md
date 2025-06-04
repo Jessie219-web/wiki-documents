@@ -550,7 +550,7 @@ Congrats to you 🙌 on completing the tinyML image classification project.
 
 <!-- - **[STEP]** [Seeed Studio XIAO ESP32S3 3D Model]() -->
 
-<!-- - **[ZIP]** [Seeed Studio XIAO ESP32S3 Certification files]() -->
+
 
 ### For Seeed Studio XIAO ESP32S3 Sense
 
@@ -570,7 +570,7 @@ Congrats to you 🙌 on completing the tinyML image classification project.
 
 <!-- - **[STEP]** [Seeed Studio XIAO ESP32S3 Sense 3D Model]() -->
 
-<!-- - **[ZIP]** [Seeed Studio XIAO ESP32S3 Sense Certification files]() -->
+
 
 ### Other
 

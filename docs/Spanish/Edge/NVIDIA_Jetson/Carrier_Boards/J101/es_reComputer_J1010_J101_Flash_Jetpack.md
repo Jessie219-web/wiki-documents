@@ -29,7 +29,7 @@ Todavía hay algunos preparativos que necesitamos primero:
 - <a href="https://developer.nvidia.com/login" target="_blank"><span>Cuenta NVIDIA</span></a>
 - PC Host con Ubuntu 18.04 OS (o superior)
 
-:::nota
+:::note
 En este tutorial, usaremos Ubuntu 18.04 LTS para completar la instalación.
 :::
 
@@ -311,7 +311,7 @@ Si no puedes ingresar al sistema en **Actualizar a eMMC con la línea de comando
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/35.jpg" /></div>
 
-:::nota
+:::note
 Si se necesita más espacio de almacenamiento, podemos usar una tarjeta SD para ampliar la capacidad o grabar el sistema en una tarjeta SD. Puedes consultar nuestra solución recomendada [Flashear sistema en tarjeta SD](https://wiki.seeedstudio.com/J1010_Boot_From_SD_Card/)
 :::
 

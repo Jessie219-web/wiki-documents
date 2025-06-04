@@ -31,7 +31,7 @@ import TabItem from '@theme/TabItem';
   </a>
 </div><br></br>
 
-The XIAO RP2350 packs the power of the Raspberry Pi RP2350 (dual Cortex-M33 cores running at 150MHz with FPU, enhanced security and encryption) into the classic XIAO form factor. Measuring just 21x17.8mm, it features 19 multifunction GPIOs, an RGB LED, and a Battery Management System with ultra-low power consumption of 27μA, battery power supply, and direct battery voltage measurement. Thanks to the XIAO ecosystem, the XIAO RP2350 is compatible with a wide range of add-ons, including displays, LED matrix, Grove modules, CAN Bus, Vision AI sensors, and mmWave sensors. With native support for MicroPython, C, and C++, the XIAO RP2350 is perfect for developers of all levels looking to create compact, battery-powered applications for smart control, wearables, DIY keyboards, and more.
+The XIAO RP2350 packs the power of the Raspberry Pi RP2350 (dual Cortex-M33 cores running at 150MHz with FPU, enhanced security and encryption) into the classic XIAO form factor. Measuring just 21x17.8mm, it features 19 multifunction GPIOs, an RGB LED, and a Battery Management System with ultra-low power consumption of 50μA, battery power supply, and direct battery voltage measurement. Thanks to the XIAO ecosystem, the XIAO RP2350 is compatible with a wide range of add-ons, including displays, LED matrix, Grove modules, CAN Bus, Vision AI sensors, and mmWave sensors. With native support for MicroPython, C, and C++, the XIAO RP2350 is perfect for developers of all levels looking to create compact, battery-powered applications for smart control, wearables, DIY keyboards, and more.
 
 ## Features
 
@@ -40,7 +40,7 @@ The XIAO RP2350 packs the power of the Raspberry Pi RP2350 (dual Cortex-M33 core
 - **Software Support:** Compatible with C/C++ and MicroPython, ensuring easy project development and prototyping.
 - **Rich Onboard Resources:** Integrates an RGB LED, 2MB Flash, 520kB SRAM, and 19 multifunction GPIOs(Analog, Digital, I²C, UART, SPI, PWM).
 - **Expanded 8 New IOs:** Compared to previous XIAO MCUs, the addition of 8 IO pins on the back supports more complex applications.
-- **Efficient Power Design:** Ultra-low power consumption of just 27μA in sleep mode, enabling battery power supply. Direct battery voltage measurement via internal IO enhances the battery management system (BMS).
+- **Efficient Power Design:** Ultra-low power consumption of just 50μA in sleep mode, enabling battery power supply. Direct battery voltage measurement via internal IO enhances the battery management system (BMS).
 - **Compact Thumb-Sized Design:** Measuring 21 x 17.8mm, adopting Seeed Studio's classic XIAO form factor, ideal for space-conscious applications.
 - **Production-friendly:** Surface Mount Device (SMD) design with all components on the front and stamp holes on both sides, facilitating efficient mass production.
 
@@ -73,8 +73,8 @@ The XIAO RP2350 packs the power of the Raspberry Pi RP2350 (dual Cortex-M33 core
     </tr>
     <tr>
         <td>LEDs</td>
-        <td>1 user LED, 1 power LED, 1 RGB LED<br></br>Two LEDs for serial port downloading</td>
-        <td>1 user LED, 1 power LED，1 RGB LED</td>
+        <td>1 user LED(3 colors), 1 power LED, 1 RGB LED</td>
+        <td>1 user LED, 1 charge LED(Battery Charging Indicator)，1 RGB LED</td>
     </tr>
     <tr>
         <td>Interface</td>
@@ -93,12 +93,12 @@ The XIAO RP2350 packs the power of the Raspberry Pi RP2350 (dual Cortex-M33 core
     <tr>
         <td>Low power</td>
        <td align="center"> - </td>
-        <td>5V/205uA <br></br>3.7V/57uA</td>
+        <td>4.2V/50uA</td>
     </tr>
     <tr>
         <td>Software compatibility</td>
-        <td>Support MicroPython/CircuitPython, Arduino</td>
-        <td>Support MicroPython, C/C++</td>
+        <td>Arduino, PlatformIO, MicroPython, CircuitPython, Zephyr, <a href="https://wiki.seeedstudio.com/xiao_topic_page/">and more to come</a></td>
+        <td>Arduino, PlatformIO, MicroPython, CircuitPython, <a href="https://wiki.seeedstudio.com/xiao_topic_page/">and more to come</a></td>
     </tr>
     <tr>
         <td>Working Temperature</td>
@@ -520,6 +520,8 @@ The XIAO RP2350 harnesses the power of the Raspberry Pi RP2350, leveraging a wea
 - 📄 **[DXF]** [Seeed Studio XIAO RP2350 Dimension in DXF](https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO-RP2350-dimension-v1.0.dxf)
 - 🔗 **[Link]** [Seeed Studio XIAO RP2350 3D STEP File](https://grabcad.com/library/seeed-studio-xiao-rp2350-1)
 - 📄 **[ZIP]** [Seeed Studio XIAO RP2350 v1.0 SCH&PCB](https://files.seeedstudio.com/wiki/XIAO-RP2350/res/XIAO_RP2350_v1.0_SCH&PCB_240626.zip)
+
+- 📄 **[UF2]** [Low Power Test Firmware](https://files.seeedstudio.com/wiki/XIAO-RP2350/res/powman_timer-56.uf2)
 
 ***Related Resources***
 

@@ -1,212 +1,218 @@
 import React, { useState } from 'react';
-import clsx from 'clsx'
-import styles from './index.module.scss'
-import { listData,listData1, communityList_cv,communityList_gen, communityList_robot} from './config'
-import {
-  useThemeConfig,
-  useColorMode,
-  ThemeConfig
-} from '@docusaurus/theme-common';
+import clsx from 'clsx';
+import styles from './index.module.scss';
+import { useColorMode } from '@docusaurus/theme-common';
+
+// 动态加载三种语言的配置
+import * as config_en from './config.en';
+import * as config_ja from './config.ja';
+import * as config_zh from './config.zh';
+
 function getImgUrl(str: string, suffix?: string) {
-  return `https://files.seeedstudio.com/wiki/Jetson/${str}.${suffix || 'png'}`
+  return `https://files.seeedstudio.com/wiki/Jetson/${str}.${suffix || 'png'}`;
 }
 
 const toUrl = (url: string) => {
   if (!url) return;
-  window.location.href = url;  // 在当前窗口打开链接
-}
+  window.location.href = url;
+};
 
+export const translations = {
+  en: {
+    banner: {
+      title: "Community Projects",
+      desc: "NVIDIA® Jetson™ delivers high-performance AI at the edge with energy-efficient modules using NVIDIA CUDA-X™ software. As an authorized reseller and Elite Partner, Seeed provides a comprehensive edge AI development solution, leveraging 15+ years of hardware expertise.",
+      bottom: "Learn more about the comparison between the NVIDIA Jetson powered devices",
+    },
+    usage1: {
+      title: "Jetpack Flash and Hardware Usage",
+      desc: "Most of our reComputer Jetson products come with NVIDIA JetPack system pre-installed on the device. However, if you want to flash these devices again or flash other devices which do not come with JetPack system, follow these guides.",
+    },
+    usage2: {
+      title: "AI Developer Tools",
+      desc: "The AI development process includes data collection, training, optimization, and deployment. We provide a full stack of documentation to support each phase.",
+    },
+    community: {
+      title: "Community Projects",
+      cv: "Computer Vision",
+      gen: "Generative AI",
+      robot: "Robotics",
+    },
+  },
+  ja: {
+    banner: {
+      title: "コミュニティプロジェクト",
+      desc: "NVIDIA® Jetson™ は、エネルギー効率に優れたモジュールを使用し、エッジで高性能な AI を実現します。Seeed は正規代理店およびエリートパートナーとして、15 年以上のハードウェア経験を活かし、エッジ AI ソリューションを提供します。",
+      bottom: "NVIDIA Jetson 搭載デバイスの比較についてさらに詳しく",
+    },
+    usage1: {
+      title: "Jetpack フラッシュとハードウェアの使用",
+      desc: "reComputer Jetson 製品のほとんどには JetPack システムがプリインストールされています。必要に応じて再フラッシュまたは他デバイスへのインストールが可能です。",
+    },
+    usage2: {
+      title: "AI 開発ツール",
+      desc: "データ収集、学習、最適化、デプロイなど、Jetson における AI 開発プロセスをサポートする完全なドキュメントを提供します。",
+    },
+    community: {
+      title: "コミュニティプロジェクト",
+      cv: "コンピュータビジョン",
+      gen: "生成 AI",
+      robot: "ロボティクス",
+    },
+  },
+  zh: {
+    banner: {
+      title: "社区项目",
+      desc: "NVIDIA® Jetson™ 通过搭载 NVIDIA CUDA-X™ 软件的高能效模块，在边缘提供高性能 AI。作为授权经销商和精英合作伙伴，Seeed 凭借 15 年以上的硬件经验，提供全面的边缘 AI 开发解决方案。",
+      bottom: "了解更多 NVIDIA Jetson 驱动设备的比较信息",
+    },
+    usage1: {
+      title: "Jetpack 刷机与硬件使用",
+      desc: "我们的多数 reComputer Jetson 产品已预装 NVIDIA JetPack 系统。如果你希望重新刷机或为未预装 JetPack 的设备安装系统，请参考以下指南。",
+    },
+    usage2: {
+      title: "AI 开发工具",
+      desc: "AI 开发流程包括数据收集、模型训练、优化和部署。我们为每个阶段提供了完整的文档支持。",
+    },
+    community: {
+      title: "社区项目",
+      cv: "计算机视觉",
+      gen: "生成式 AI",
+      robot: "机器人",
+    },
+  },
+};
 
+const configMap = {
+  en: config_en,
+  ja: config_ja,
+  zh: config_zh,
+};
 
-const bannerRender = () => {
-  return (
-    <div className={styles.banner}>
-      <div  className={styles.banner_left}>
-        <div className={styles.title}>
-          Community Projects
-        </div>
-        <div>NVIDIA® Jetson™ delivers high-performance AI at the edge with energy-efficient modules using NVIDIA CUDA-X™ software. As an authorized reseller and Elite Partner, Seeed provides a comprehensive edge AI development solution, leveraging 15+ years of hardware expertise. Our offerings include standard carrier boards, ODM services, and image flashing, ensuring a seamless integration process. Partnering with top AI ecosystem players, we expedite your market launch with our end-to-end service from integration to distribution.</div>
-        <div className={clsx(styles.flex, styles.bottom)}>
-          <div className={clsx(styles.right, styles.flex)}>
-            <img src={getImgUrl('right', 'svg')} alt="" />
-          </div>
-          <span>
-            learn more about the comparison between the NVIDIA Jetson powered devices
-          </span>
-        </div>
-      </div>
-      <div  className={styles.banner_right}>
-        <img src={getImgUrl('banner_img')} alt="" />
-      </div>
-    </div>
-  )
-}
-const communityRender = () => {
-  return (
-    <div className={clsx(styles.section, styles.community)}>
-      <div className={styles.title}>
-        Community Projects
-      </div>
-
-      {/* Computer Vision Section */}
-      <div className={clsx(styles.subtitle, styles.bold, styles.center)}>
-        Computer Vision
-      </div>
-      <div className={clsx(styles.com_wrapper, styles.flex, styles.section_wrapper)}>
-        {
-          communityList_cv.map((item) => {
-            return (
-              <div className={clsx(styles.com_item)}>
-                {/* 图片不进行跳转 */}
-                <img src={item.img} alt={item.name} />
-                {/* 只有文字部分进行跳转 */}
-                <div 
-                  className={clsx(styles.com_title, styles.cursor)} 
-                  onClick={() => toUrl(item.URL)}
-                >
-                  {item.name}
-                </div>
-              </div>
-            )
-          })
-        }
-      </div>
-
-      {/* Generative AI Section */}
-      <div className={clsx(styles.subtitle, styles.bold, styles.center)}>
-        Generative AI
-      </div>
-      <div className={clsx(styles.com_wrapper, styles.flex, styles.section_wrapper)}>
-        {
-          communityList_gen.map((item) => {
-            return (
-              <div className={clsx(styles.com_item)}>
-                {/* 图片不进行跳转 */}
-                <img src={item.img} alt={item.name} />
-                {/* 只有文字部分进行跳转 */}
-                <div 
-                  className={clsx(styles.com_title, styles.cursor)} 
-                  onClick={() => toUrl(item.URL)}
-                >
-                  {item.name}
-                </div>
-              </div>
-            )
-          })
-        }
-      </div>
-
-      {/* Robotics Section */}
-      <div className={clsx(styles.subtitle, styles.bold, styles.center)}>
-        Robotics
-      </div>
-      <div className={clsx(styles.com_wrapper, styles.flex, styles.section_wrapper)}>
-        {
-          communityList_robot.map((item) => {
-            return (
-              <div className={clsx(styles.com_item)}>
-                {/* 图片不进行跳转 */}
-                <img src={item.img} alt={item.name} />
-                {/* 只有文字部分进行跳转 */}
-                <div 
-                  className={clsx(styles.com_title, styles.cursor)} 
-                  onClick={() => toUrl(item.URL)}
-                >
-                  {item.name}
-                </div>
-              </div>
-            )
-          })
-        }
-      </div>
-    </div>
-  )
-}
-
+type Props = {
+  lang?: 'en' | 'ja' | 'zh'; 
+};
 
 const usageRender = (obj) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className={clsx(styles.section, styles.usage, obj.class)}>
-      <div className={styles.title}>
-        {obj.title}
-      </div>
-      <div className={styles.desc}>
-        {obj.desc}
-      </div>
+      <div className={styles.title}>{obj.title}</div>
+      <div className={styles.desc}>{obj.desc}</div>
       <div className={clsx(styles.com_wrapper, styles.flex, styles.section_wrapper)}>
         <div className={styles.left_container}>
-          {obj.list.map((item, index) => {
-            return (
-              <div 
-                className={clsx(styles.flex, styles.tab, activeIndex === index && styles.active)}
-                onClick={() => setActiveIndex(index)} // 选中不同的品牌
-              >
-                {/* 上级的 img 和 name 不进行跳转 */}
-                <img 
-                  src={item.img} 
-                  alt={item.name} 
-                />
-                <div className={styles.name}>
-                  {item.name}
-                </div>
-              </div>
-            )
-          })}
+          {obj.list.map((item, index) => (
+            <div
+              key={index}
+              className={clsx(styles.flex, styles.tab, activeIndex === index && styles.active)}
+              onClick={() => setActiveIndex(index)}
+            >
+              <img src={item.img} alt={item.name} />
+              <div className={styles.name}>{item.name}</div>
+            </div>
+          ))}
         </div>
         <div className={styles.right_container}>
           <div className={styles.right_wrapper}>
-            {/* 只对 brands 的 img 和 name 进行跳转 */}
-            {obj.list[activeIndex].brands.map((brand) => {
-              return (
-                <div 
-                  className={clsx(styles.prod_item, styles.cursor)}  
-                  onClick={() => toUrl(brand.href)} // 点击整个品牌项时跳转
-                >
-                  <img 
-                    src={brand.img} 
-                    alt={brand.name} 
-                  />
-                  <div className={styles.name}>{brand.name}</div>
-                </div>
-              )
-            })}
+            {obj.list[activeIndex].brands.map((brand, idx) => (
+              <div
+                key={idx}
+                className={clsx(styles.prod_item, styles.cursor)}
+                onClick={() => toUrl(brand.href)}
+              >
+                <img src={brand.img} alt={brand.name} />
+                <div className={styles.name}>{brand.name}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-const computerPageA = () => {
+const RecomputerPage = ({ lang = 'en' }: Props) => {
+  const { colorMode } = useColorMode();
+  const t = translations[lang];
+  const config = configMap[lang];
 
-
-
-  const { colorMode } =useColorMode()
-  
   return (
-    <div className={clsx(styles.jeston_page,styles[colorMode])}>
-      {bannerRender()}
+    <div className={clsx(styles.jeston_page, styles[colorMode])}>
+      {/* Banner */}
+      <div className={styles.banner}>
+        <div className={styles.banner_left}>
+          <div className={styles.title}>{t.banner.title}</div>
+          <div>{t.banner.desc}</div>
+          <div className={clsx(styles.flex, styles.bottom)}>
+            <div className={clsx(styles.right, styles.flex)}>
+              <img src={getImgUrl('right', 'svg')} alt="" />
+            </div>
+            <span>{t.banner.bottom}</span>
+          </div>
+        </div>
+        <div className={styles.banner_right}>
+          <img src={getImgUrl('banner_img')} alt="" />
+        </div>
+      </div>
+
+      {/* Usage Section 1 */}
       {usageRender({
-        title: 'Jetpack Flash and Hardware Usage',
-        desc: `
-        Most of our reComputer Jetson products come with NVIDIA JetPack system pre-installed on the device. However, if you want to flash these devices again or flash other devices which do not come with JetPack system, you can follow the below links for step-by-step guidance. We have also included guidance on how to use different hardware peripherals on these NVIDIA Jetson powered devices.
-        `,
-        list:listData
+        title: t.usage1.title,
+        desc: t.usage1.desc,
+        list: config.listData,
       })}
-       {usageRender({
-       class:styles.gray,
-        title: 'AI Developer Tools',
-        desc: `
-        After accessing an NVIDIA Jetson device, the AI development process involves several key steps: obtaining and labeling data for training, training and optimizing the AI model to ensure optimal performance on the device, and finally deploying the model to build applications. Additionally, applications can be managed remotely, allowing for tracking of device performance metrics to ensure field efficiency. Comprehensive wiki guides are available to support this AI workflow using various software tools. 
-        `,
-        list:listData1
+
+      {/* Usage Section 2 */}
+      {usageRender({
+        class: styles.gray,
+        title: t.usage2.title,
+        desc: t.usage2.desc,
+        list: config.listData1,
       })}
-      {communityRender()}
- 
+
+      {/* Community Section */}
+      <div className={clsx(styles.section, styles.community)}>
+        <div className={styles.title}>{t.community.title}</div>
+
+        <div className={clsx(styles.subtitle, styles.bold, styles.center)}>{t.community.cv}</div>
+        <div className={clsx(styles.com_wrapper, styles.flex, styles.section_wrapper)}>
+          {config.communityList_cv.map((item, idx) => (
+            <div key={idx} className={clsx(styles.com_item)}>
+              <img src={item.img} alt={item.name} />
+              <div className={clsx(styles.com_title, styles.cursor)} onClick={() => toUrl(item.URL)}>
+                {item.name}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className={clsx(styles.subtitle, styles.bold, styles.center)}>{t.community.gen}</div>
+        <div className={clsx(styles.com_wrapper, styles.flex, styles.section_wrapper)}>
+          {config.communityList_gen.map((item, idx) => (
+            <div key={idx} className={clsx(styles.com_item)}>
+              <img src={item.img} alt={item.name} />
+              <div className={clsx(styles.com_title, styles.cursor)} onClick={() => toUrl(item.URL)}>
+                {item.name}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className={clsx(styles.subtitle, styles.bold, styles.center)}>{t.community.robot}</div>
+        <div className={clsx(styles.com_wrapper, styles.flex, styles.section_wrapper)}>
+          {config.communityList_robot.map((item, idx) => (
+            <div key={idx} className={clsx(styles.com_item)}>
+              <img src={item.img} alt={item.name} />
+              <div className={clsx(styles.com_title, styles.cursor)} onClick={() => toUrl(item.URL)}>
+                {item.name}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default computerPageA;
+export default RecomputerPage;

@@ -35,7 +35,7 @@ Esta wiki proporciona pasos detallados para configurar y ejecutar el algoritmo A
 
 - __RoboSense RS32 Lidar__.
 
-  :::nota
+  :::note
     - Asegúrate de que tu computadora esté ejecutando Jetpack 5.x. Sólo hemos probado en Ubuntu 20.04 y ROS Noetic. Sigue la [instalación de ROS1 para reComputer](/installing_ros1) como se describe en esta guía para completar la configuración del entorno ROS.
     - Asegúrate de seguir el tutorial para [iniciar RoboSense RS32 LiDAR en reComputer en ROS](/robosense_lidar) y visualizar correctamente los datos de la nube de puntos.
   :::

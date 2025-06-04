@@ -33,7 +33,7 @@ Y modelos fundamentales como CLIP y SAM.
 - PC con Ubuntu OS (nativo o en máquina virtual)
 - [reComputer Jetson](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) o cualquier otro dispositivo NVIDIA Jetson
 
-:::nota
+:::note
 Esta wiki ha sido testeada y verificada en la [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) y la [reComputer Industrial J4012](https://www.seeedstudio.com/reComputer-Industrial-J4012-p-5684.html) potenciada por el módulo NVIDIA Jetson Orin NX 16GB 
 :::
 
@@ -55,7 +55,7 @@ Para obtener guías de actualización de dispositivos impulsados ​​por Seeed
 - [reComputer Indsutrial](https://wiki.seeedstudio.com/reComputer_Industrial_Getting_Started/#flash-jetpack)
 - [reServer Industrial](https://wiki.seeedstudio.com/reServer_Industrial_Getting_Started/#flash-jetpack)
 
-:::nota
+:::note
 Asegúrate de actualizar JetPack a la versión 5.1.1 porque esa es la versión que hemos verificado para esta wiki.
 :::
 

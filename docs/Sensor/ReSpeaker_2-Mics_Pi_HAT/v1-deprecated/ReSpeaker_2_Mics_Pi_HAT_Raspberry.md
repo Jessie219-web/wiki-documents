@@ -41,6 +41,24 @@ sudo ./install.sh
 sudo reboot now
 ```
 
+
+<!--
+:::note
+If your raspberry pi Linux kernel version is [rpi-6.6.y](https://github.com/raspberrypi/linux/tree/rpi-6.6.y) (like Raspberry Pi 5), you may encounter build errors due to changes in simple_card_utils.h[simple_card_utils.h](https://github.com/raspberrypi/linux/blob/rpi-6.6.y/include/sound/simple_card_utils.h), To fix this, make the following changes to seeed-voicecard.c.
+
+- open the file seeed-voicecard/seeed-voicecard.c
+- Replace all instances of "simple_util_" prefix with "asoc_simple_"
+- Replace all instances of: "rtd->id" with "rtd->num"
+- Save and exit
+- Install again and reboot
+
+```bash
+sudo ./install.sh
+sudo reboot now
+```
+:::
+-->
+
 - Step 2. Check that the sound card name matches the source code seeed-voicecard by command ```aplay -l``` and ```arecord -l```.
 
 ```shell

@@ -4,6 +4,7 @@ title: Update Hotspot Location
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Cloud_Chain/SenseCAP_Hotspot_APP/Update_Hotspot_Location
 last_update:
   date: 02/14/2023
   author: Matthew

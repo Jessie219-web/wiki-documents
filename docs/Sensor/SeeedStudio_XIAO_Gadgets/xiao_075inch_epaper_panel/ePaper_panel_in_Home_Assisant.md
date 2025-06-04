@@ -1,11 +1,13 @@
 ---
-description: The XIAO ESP32C3-powered 7.5-inch E-Ink Display is a compact, energy-efficient solution for showcasing Home Assistant data. 
-title: ePaper Panel in Home Assistant
+description: The XIAO ESP32C3-powered 7.5-inch E Ink® Display is a compact, energy-efficient solution for showcasing Home Assistant data.
+title: Works with ESPHome in Home Assistant
 keywords:
 - ePaper display
+- ESPHome
+- Home Assistant
 image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover.webp
 slug: /xiao_075inch_epaper_panel
-sidebar_position: 1
+sidebar_position: 2
 last_update:
   date: 03/12/2025
   author: Allen
@@ -14,7 +16,7 @@ last_update:
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/cover.JPG" style={{width:1000, height:'auto'}}/></div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/201.png" style={{width:900, height:'auto'}}/></div>
 
 <br></br>
 
@@ -23,38 +25,98 @@ import TabItem from '@theme/TabItem';
     </a>
 </div>
 
-## Hardware Overview
 
-### Introduction
+## Introduction to Home Assistant
 
-The XIAO ESP32C3-powered 7.5-inch E-Ink Display is a compact, energy-efficient solution for showcasing Home Assistant data. With seamless integration and crisp visuals, it's perfect for smart homes. Also compatible with Arduino for easy customization, it offers low power consumption and excellent readability in any light. Simplify your smart home setup with this versatile display.
+Home Assistant is a powerful open-source home automation platform that allows you to control and monitor your smart home devices from a single, unified interface. It acts as the central hub for your smart home, enabling you to automate routines, monitor sensors, and create a more intelligent living space.
 
-### Features
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/204.png" style={{width:900, height:'auto'}}/></div>
 
-1. **Energy-Efficient E-Ink Screen**: Offers low power consumption and excellent readability, even in direct sunlight.
-2. **Seamless Integration**: Easy to integrate with Home Assistant and Arduino for customization.
-3. **Compact Design**: Compact size, ideal for smart home applications.
-4. **User-Friendly Setup**: Simple to configure and use, making it accessible for both beginners and advanced users.
-5. **Durable and Reliable**: Built with quality components for long-lasting performance.
+### Why Home Assistant?
 
+- **Local Control**: Unlike many cloud-based solutions, Home Assistant runs locally on your network, ensuring your data stays private and your automations work even without internet access.
 
-### Specifications
-| Item | Description |
-| --- | --- |
-| MCU | [XIAO ESP32 C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/) |
-| Display | 7.5-inch ePaper Display |
-| Resolution | 800x480 |
-| Battery | 2000mAh |
-| Dimension | 178x131x19mm |
-| Weight | 218g |
-| Operating Temperature | -40°C to 85°C |
-| Operating Voltage | 3.3V to 5V |
+- **Extensive Device Support**: Home Assistant integrates with thousands of different smart home devices and services, making it highly versatile and future-proof.
 
-## Software Overview
+- **Powerful Automation**: Create sophisticated automation rules that can respond to various triggers like time, device states, sensor readings, and more.
 
-### Usage in Home Assistant
+- **Customizable Dashboard**: Design your own user interface to display the information that matters most to you.
 
-#### Step 1.Install ESPHome
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.home-assistant.io/"><strong><span><font color={'FFFFFF'} size={"4"}> Learn More 🖱️</font></span></strong>
+    </a>
+</div>
+
+### Why E-Paper Display with Home Assistant?
+
+The XIAO 7.5" ePaper Panel is an excellent companion for Home Assistant for several reasons:
+
+1. **Energy Efficiency**: The e-paper display only consumes power when updating content, making it perfect for displaying persistent information like weather forecasts, calendar events, or system status.
+
+2. **Clear Visibility**: Unlike LCD screens, e-paper displays are easily readable in any lighting condition, including direct sunlight, making them ideal for wall-mounted home control panels.
+
+3. **Long Battery Life**: Combined with deep sleep mode, the display can operate for months on a single battery charge while still providing valuable information at a glance.
+
+4. **Flexible Integration**: Through ESPHome, the display seamlessly integrates with Home Assistant, allowing you to show any data from your smart home system in an elegant, always-visible format.
+
+These advantages make the XIAO 7.5" ePaper Panel an ideal choice for creating an energy-efficient, always-on information display for your Home Assistant setup.
+
+### ESPHome Integration
+
+ESPHome is an open-source firmware creation tool specifically designed for ESP8266/ESP32 devices. It allows you to create custom firmware using simple YAML configuration files, which can then be flashed to your device. For the XIAO 7.5" ePaper Panel, ESPHome serves as the essential middleware that enables communication between the device and Home Assistant.
+
+The system works by converting your YAML configuration into fully-featured firmware that runs on your ESP device. This firmware handles all the complex tasks of connecting to your network, communicating with Home Assistant, and controlling the ePaper display. When combined with Home Assistant, ESPHome provides a robust platform for creating sophisticated home automation displays and controls.
+
+Let's explore how to set it up and make the most of this versatile display.
+
+## Getting Started
+
+Before the tutorial content of this article begins, you may need to have the following hardware ready.
+
+### Materials Required
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+      <th>XIAO 7.5" ePaper Panel</th>
+      <th>Home Assistant Green</th>
+    </tr>
+    <tr>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/209.jpg" style={{width:250, height:'auto'}}/></div></td>
+      <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/visionai-v2-ha/ha.png" style={{width:210, height:'auto'}}/></div></td>
+    </tr>
+    <tr>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+        </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+        <a class="get_one_now_item" href="https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html">
+        <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+        </a>
+      </div></td>
+    </tr>
+  </table>
+</div>
+
+Home Assistant Green is the easiest and most privacy-focused way to automate your home. It offers an effortless setup and allows you to control all the smart devices with just one system, where all the data is stored locally by default. This board benefits from the thriving Home Assistant ecosystem and it will be improved every month by open source.
+
+We recommend using Home Assistant Green as the Home Assistant host for this tutorial, or you can use any Home Assistant host with a Supervisor.
+
+:::tip install Home Assistant
+We have also written how to install Home Assistant for some of Seeed Studio products, please refer to them.
+
+- **[Getting Started with Home Assistant on ODYSSEY-X86](https://wiki.seeedstudio.com/ODYSSEY-X86-Home-Assistant/)**
+- **[Getting Started with Home Assistant on reTerminal](https://wiki.seeedstudio.com/reTerminal_Home_Assistant/)**
+- **[Getting Started with Home Assistant on LinkStar H68K/reRouter CM4](https://wiki.seeedstudio.com/h68k-ha-esphome/)**
+
+If you are not using a Seeed Studio product, you can also check and learn how to install Home Assistant for other products on the official Home Assistant website.
+
+- **[Home Assistant Installation](https://www.home-assistant.io/installation/)**
+:::
+
+### Step 1. Install ESPHome
 
 If you have already installed ESPHome, you can skip this step.
 
@@ -66,13 +128,17 @@ Go to **Settings** -> **Add-ons** -> **ADD-ON STORE**
 
 Search ESPHome and click on it. Click on **INSTALL** and **START**.
 
+:::tip
+If you can't find ESPHome in the add-on store, make sure you're using a Home Assistant installation that supports add-ons (like Home Assistant OS or supervised installations). For other installation types (like Home Assistant Container), you may need to run the ESPHome Device Builder independently using Docker. See the [official ESPHome documentation](https://esphome.io/guides/getting_started_hassio) for more details.
+:::
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/03.png" style={{width:800, height:'auto'}}/></div>
 
 And then, ESPHome Builder will appear at the sidebar.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/04.png" style={{width:800, height:'auto'}}/></div>
 
-#### Step 2.Add a new device
+### Step 2. Add a new device
 
 Go to ESPHome and click on **NEW DEVICE**.
 
@@ -87,23 +153,23 @@ Give the device a name you like and click on **NEXT**.
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3.png" style={{width:'100%', height:'auto'}}/></div>
 </div>
 
-After you create a new devcie, click **EDIT**. 
+After you create a new device, click **EDIT**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/4.png" style={{width:800, height:'auto'}}/></div>
 
 
 
-#### Step 3.Install firmware
+### Step 3. Install firmware
 
-This is a very basic example and will show "Hello World!" on the display. 
+This is a very basic example and will show "Hello World!" on the display.
 
 **The main purpose is to show you different ways to install firmware to the device.**
 
-After installing ESPHome and adding a new device, you can copy the code below and paste it to **captive_portal** part as the following image.
+After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
 
 <details>
 
-<summary> Click here to copy the code. </summary> 
+<summary>Click here to preview the full code</summary>
 
 ```yaml
 
@@ -124,7 +190,7 @@ display:
     dc_pin: GPIO5
     busy_pin: GPIO4
     reset_pin: GPIO2
-    model: 7.50inv2    
+    model: 7.50inv2
     update_interval: 30s
     lambda: |-
       it.print(0, 0, id(font1), "Hello World!");
@@ -134,7 +200,7 @@ display:
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/5.png" style={{width:1000, height:'auto'}}/></div>
 
-Click **INSTALL** to install the code to the device and you will see the follwing image.
+Click **INSTALL** to install the code to the device and you will see the following image.
 
 <Tabs>
 <TabItem value='Install through browser'>
@@ -159,7 +225,7 @@ Select Factory format.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/65.png" style={{width:500, height:'auto'}}/></div>
 
-Use USB cable to **connect the ePaper panel to your computer** and click **CONNECT**. 
+Use USB cable to **connect the ePaper panel to your computer** and click **CONNECT**.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/66.png" style={{width:800, height:'auto'}}/></div>
 
@@ -171,7 +237,7 @@ Click **INSTALL** and select the firmware you just downloaded.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/69.png" style={{width:500, height:'auto'}}/></div>
 
-Wait a moment and you will see 'Hellow world!' on the display ～
+Wait a moment and you will see 'Hello world!' on the display ～
 
 <div style={{display:'flex', justifyContent:'space-between', alignItems:'center', width:'100%'}}>
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/71.png" style={{width:'100%', height:'auto'}}/></div>
@@ -207,7 +273,7 @@ Wait a moment and you will see the feedback like the following image. It means t
 <TabItem value='Install through Wi-Fi'>
 
 :::tip
-This is the simplest way, but on the premise that when installing the program for the first time, you should first upload the program to the ePaper Panel using the method on the left. After that, you can upload it via wifi.
+This is the simplest way, but on the premise that when installing the program for the first time, you should first upload the program to the ePaper Panel using the method on the left. After that, you can upload it via wifi. Also, make sure your YAML configuration includes properly configured `ota` and `api` sections with valid encryption keys for this method to work.
 :::
 
 In this way, you don't need to connect the ePaper panel to anything, just make sure it is online.
@@ -227,12 +293,9 @@ Wait a moment and you will see the feedback like the following image. If it fail
 </Tabs>
 
 
+## Basic usages
 
-
-
-#### Step 4.Basic usages
-
-##### 1. Display shape
+### 1. Display shape
 
 This example will show shape on the display.
 
@@ -240,7 +303,7 @@ After installing ESPHome and add a new device, you can copy the code below and p
 
 <details>
 
-<summary> Click here to copy the code. </summary> 
+<summary> Click here to copy the code. </summary>
 
 ```yaml
 spi:
@@ -262,25 +325,25 @@ display:
 
       it.filled_rectangle(10, 80, 100, 50);
       it.filled_rectangle(150, 80, 50, 50);
-      it.filled_circle(250, 105, 25);   
+      it.filled_circle(250, 105, 25);
 ```
 
 </details>
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/40.png" style={{width:800, height:'auto'}}/></div>
 
-When you see the feedback like the following image, it means the code is running successfully.  
+When you see the feedback like the following image, it means the code is running successfully.
 
 You can also [click here](https://esphome.io/components/display/) to see more usages.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/37.png" style={{width:600, height:'auto'}}/></div>
 
 
-##### 2. Display information in HA
+### 2. Display information in HA
 
 This example will show the information in HA on the display.
 
-First of all, you need to add this device to HA. Otherwise, you can't get the information from HA. 
+First of all, you need to add this device to HA. Otherwise, you can't get the information from HA.
 
 If HA don't show the device, you should run above demo first. After running above demo, you can see the device in HA.
 
@@ -295,13 +358,11 @@ And then, click **SUBMIT** and **FINISH**.
   <div style={{flex:1}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/13.png" style={{width:'68%', height:'auto'}}/></div>
 </div>
 
-
-
-After installing ESPHome and add a new device, you can copy the code below and paste it to **captive_portal** part as the following image.
+After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
 
 <details>
 
-<summary> Click here to copy the code </summary> 
+<summary>Click here to preview the full code</summary>
 
 ```yaml
 
@@ -342,8 +403,8 @@ display:
     dc_pin: GPIO5
     busy_pin: GPIO4
     reset_pin: GPIO2
-    model: 7.50inv2    
-    update_interval: 30s 
+    model: 7.50inv2
+    update_interval: 30s
     lambda: |-
       //print info in log
       ESP_LOGD("epaper", "weather: %s", id(myWeather).state.c_str());
@@ -376,7 +437,7 @@ When you see the feedback like the following image, it means the code is running
 
 
 
-##### 3. <span id="ttf">Display icon</span>
+### 3. <span id="ttf">Display icon</span>
 
 This example will show icon on the display.
 
@@ -396,18 +457,18 @@ And <span id="ttf">then</span>, create a new folder call **fonts** and download 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/19.png" style={{width:800, height:'auto'}}/></div>
 
-Go back to your ESPHome file and copy the code below and paste it to **captive_portal** part as the following image.
+After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
 
 <details>
 
-<summary> Click here to copy the code. </summary> 
+<summary>Click here to preview the full code</summary>
 
 ```yaml
 font:
   - file: 'fonts/materialdesignicons-webfont.ttf'  #here is the directory to save ttf file
     id: font_mdi_large
     size: 200        # big size icon
-    glyphs: &mdi-weather-glyphs 
+    glyphs: &mdi-weather-glyphs
       - "\U000F0595" # weather cloudy
       - "\U000F0592" # weather hail
   - file: 'fonts/materialdesignicons-webfont.ttf'
@@ -426,7 +487,7 @@ display:
     busy_pin: GPIO4
     reset_pin: GPIO2
     model: 7.50inv2
-    update_interval: 30s  
+    update_interval: 30s
     lambda: |-
       it.printf(100, 200, id(font_mdi_medium), TextAlign::CENTER, "\U000F0595");
       it.printf(400, 200, id(font_mdi_large), TextAlign::CENTER, "\U000F0592");
@@ -441,7 +502,7 @@ When you see the feedback like the following image, it means the code is running
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/35.png" style={{width:600, height:'auto'}}/></div>
 
-If you want to use other icons, you can click the below button to explore more. 
+If you want to use other icons, you can click the below button to explore more.
 
 <div align="center">
 <a href="https://pictogrammers.com/library/mdi/" target="_blank">
@@ -459,95 +520,7 @@ Copy the code and paste it to **captive_portal** part as the following image.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/43.png" style={{width:800, height:'auto'}}/></div>
 
-##### 4. <span id="image">Display image</span>
-
-<Tabs>
-<TabItem value='Display screenshot of HA'>
-
-This example will show the screenshot of HA on the display.
-
-First, you need to install an screenshot Add-on **Puppet**, [click here to install.](https://github.com/balloob/home-assistant-addons/tree/main/puppet)
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/83.jpg" style={{width:800, height:'auto'}}/></div>
-
-After installation, go to **Configuration page**. We need to create a access_token for this add-on.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/87.jpg" style={{width:800, height:'auto'}}/></div>
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/88.jpg" style={{width:800, height:'auto'}}/></div>
-
-Go to the bottom of **Security page** and create a token, and then copy and paste it to **Puppet** add-on.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/85.jpg" style={{width:800, height:'auto'}}/></div>
-
-Remember to **restart** the Puppet add-on.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/75.jpg" style={{width:800, height:'auto'}}/></div>
-
-Starting the add-on will launch a new server on port 10000. Any path you request will return a screenshot of that page. You will need to specify the viewport size you want.
-
-For example, to get a 1000px x 1000px screenshot of your default dashboard, fetch:
-
-```python
-# http://homeassistant.local:10000/lovelace/0?viewport=1000x1000
-
-http://192.168.1.191:10000/lovelace/0?viewport=1000x1000
-```
-
-Besides, you can also screenshot other page, for example **To-do lists** page in HA:
-
-```python
-http://192.168.1.191:10000/todo?viewport=800x480
-```
-
-You can take a look the effect of the screenshot by input this link in your browser.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/77.jpg" style={{width:800, height:'auto'}}/></div>
-
-After that, you can copy the code below and paste it to **captive_portal** part as the following image.
-<details>
-
-<summary> Click here to copy the code. </summary> 
-
-```yaml
-
-image:
-  - file: http://192.168.1.191:10000/todo?viewport=800x480  # the path you want to screenshot and the size
-    id: myImage
-    type: BINARY
-    resize: 800x480    # how big you want to show, the biggest size should be as same as epaper pixel
-    invert_alpha: true   # invert color 
-
-spi:
-  clk_pin: GPIO8
-  mosi_pin: GPIO10
-
-display:
-  - platform: waveshare_epaper
-    cs_pin: GPIO3
-    dc_pin: GPIO5
-    busy_pin: GPIO4
-    reset_pin: GPIO2
-    model: 7.50inv2
-    update_interval: 3min 
-    lambda: |-
-      it.image(0, 0, id(myImage));
-      
-```
-
-</details>
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/78.jpg" style={{width:800, height:'auto'}}/></div>
-
-When you see the feedback like the following image, it means the code is running successfully.
-
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/79.JPG" style={{width:800, height:'auto'}}/></div>
-
-
-</TabItem>
-
-<TabItem value='Display other images'>
-
+### 4. <span id="image">Display image</span>
 
 This example will show any images you like on the display.
 
@@ -563,11 +536,11 @@ And then put a image into **image** folder. You can click the below button to do
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/20.png" style={{width:800, height:'auto'}}/></div>
 
-After that, you can copy the code below and paste it to **captive_portal** part as the following image.
+After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
 
 <details>
 
-<summary> Click here to copy the code. </summary> 
+<summary>Click here to preview the full code</summary>
 
 ```yaml
 
@@ -576,7 +549,7 @@ image:
     id: myImage
     type: BINARY
     resize: 800x480    # how big you want to show, the biggest size should be as same as ePaper Penal pixel(800x480)
-    invert_alpha: true   # invert color 
+    invert_alpha: true   # invert color
 
 spi:
   clk_pin: GPIO8
@@ -589,7 +562,7 @@ display:
     busy_pin: GPIO4
     reset_pin: GPIO2
     model: 7.50inv2
-    update_interval: 30s 
+    update_interval: 30s
     lambda: |-
       it.image(0, 0, id(myImage));
 ```
@@ -602,23 +575,125 @@ When you see the feedback like the following image, it means the code is running
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/wifi.png" style={{width:600, height:'auto'}}/></div>
 
+## Demo 1. Take the Home Assistant dashboard as a screenshot
 
-</TabItem>
-</Tabs>
+This example will show the screenshot of HA on the display.
 
-##### 5. Deep sleep mode
+First, you need to install an screenshot Add-on **Puppet**, [click here to install.](https://github.com/balloob/home-assistant-addons/tree/main/puppet)
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/83.jpg" style={{width:800, height:'auto'}}/></div>
+
+Please note that the version should be **higher than or equal to 1.11.4**. After installation, go to **Configuration page**. We need to create a access_token for this add-on.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/96.jpg" style={{width:800, height:'auto'}}/></div>
+
+See next step to create a token and paste here.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/88.jpg" style={{width:800, height:'auto'}}/></div>
+
+Go to the bottom of **Security page** and create a token, and then copy and paste it to **Puppet** add-on.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/85.jpg" style={{width:800, height:'auto'}}/></div>
+
+Remember to **restart** the Puppet add-on.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/95.jpg" style={{width:800, height:'auto'}}/></div>
+
+Starting the add-on will launch a new server on port 10000. Any path you request will return a screenshot of that page. You will need to specify the viewport size you want.
+
+For example, to get a 1000px x 1000px screenshot of your default dashboard, fetch:
+
+```python
+# http://192.168.1.191:10000/lovelace/0?viewport=1000x1000(My address)
+
+http://homeassistant.local:10000/lovelace/0?viewport=1000x1000
+```
+
+To reduce the color palette for E Ink® displays, you can add the eink parameter. The value represents the number of colors (including black) to use. For example, for a 2-color E Ink® display:
+
+```python
+http://homeassistant.local:10000/lovelace/0?viewport=1000x1000&eink=2
+```
+
+If you are using eink=2, you can also invert the colors by adding the invert parameter:
+
+```python
+http://homeassistant.local:10000/lovelace/0?viewport=1000x1000&eink=2&invert
+```
+
+Besides, you can also screenshot other page, for example **To-do lists** page in HA:
+
+```python
+http://192.168.1.191:10000/todo?viewport=800x480&eink=2&invert
+```
+
+You can take a look the effect of the screenshot by input this link in your browser.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/92.jpg" style={{width:800, height:'auto'}}/></div>
+
+After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
+
+<details>
+
+<summary>Click here to preview the full code</summary>
+
+```yaml
+
+http_request:
+  verify_ssl: false
+  timeout: 10s
+  watchdog_timeout: 15s
+
+online_image:
+  - id: dashboard_image
+    format: PNG
+    type: BINARY
+    buffer_size: 30000
+    url: http://192.168.1.191:10000/todo?viewport=800x480&eink=2&invert #change this link to your screenshot link
+    update_interval: 30s
+    on_download_finished:
+      - delay: 0ms
+      - component.update: main_display
+
+spi:
+  clk_pin: GPIO8
+  mosi_pin: GPIO10
+
+display:
+  - platform: waveshare_epaper
+    id: main_display
+    cs_pin: GPIO3
+    dc_pin: GPIO5
+    busy_pin: GPIO4
+    reset_pin: GPIO2
+    model: 7.50inv2
+    update_interval: never
+    lambda: |-
+      it.image(0, 0, id(dashboard_image));
+
+```
+
+</details>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/93.jpg" style={{width:800, height:'auto'}}/></div>
+
+When you see the feedback like the following image, it means the code is running successfully.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/94.jpg" style={{width:600, height:'auto'}}/></div>
+
+## Demo2. Deep sleep mode
 
 :::tip
-During deep sleep mode, you can't upload code to the device derectly. You need to enter the download mode.[Click here jump to Q3.](#port)
+During deep sleep mode, you can't upload code to the device directly. You need to enter the download mode.[Click here jump to Q3.](#port)
 :::
 
 This example will show how to use deep sleep mode to save power. Update info every 6 hours. A 2000mAh battery can last about 3 months.
 
-Copy the code below and paste it to **captive_portal** part as the following image.
+After installing ESPHome and adding a new device, you can copy the code below and paste it after `captive_portal` as shown below.
 
 <details>
 
-<summary> Click here to copy the code. </summary> 
+<summary>Click here to preview the full code</summary>
 
 ```yaml
 globals:
@@ -626,7 +701,7 @@ globals:
     type: int
     restore_value: yes  # key parameter, to use RTC storage
     initial_value: '0'
-    
+
 # Here is deep sleep part
 deep_sleep:
   id: deep_sleep_1
@@ -653,8 +728,8 @@ display:
     dc_pin: GPIO5
     busy_pin: GPIO4
     reset_pin: GPIO2
-    model: 7.50inv2    
-    update_interval: 3min   
+    model: 7.50inv2
+    update_interval: 3min
     lambda: |-
       id(sleep_counter) += 1;
       ESP_LOGD("main", "Wakeup count: %d", id(sleep_counter));
@@ -668,7 +743,7 @@ You'll see a counter. It will increment by one every time it wakes up.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/90.jpg" style={{width:600, height:'auto'}}/></div>
 
-#### Step 5.Comperhensive example
+## Demo 3. Comprehensive example
 
 :::tip
 For you to understand better, we strongly recommend that you run the basic usages above first.
@@ -680,7 +755,7 @@ First, you need to check if you have weather component in HA. Normally, you will
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/24.png" style={{width:800, height:'auto'}}/></div>
 
-Also you can go to **Developer Tools -> STATES** to check if you have weather information in HA. Here is the infomation you will get later.
+Also you can go to **Developer Tools -> STATES** to check if you have weather information in HA. Here is the information you will get later.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/25.png" style={{width:800, height:'auto'}}/></div>
 
@@ -714,7 +789,8 @@ Before copy the code, please put [wifi.jpg](#image), [icon ttf file and font ttf
 :::
 
 <details>
-<summary> Click here to copy the code. </summary>  
+
+<summary>Click here to preview the full code</summary>
 
 ```yaml
 
@@ -802,7 +878,7 @@ image:
     type: BINARY
     id: esphome_logo
     resize: 400x240
-    invert_alpha: true    
+    invert_alpha: true
 
 # Connect to Home Assistant to get time
 time:
@@ -917,7 +993,7 @@ display:
     busy_pin: GPIO4
     reset_pin: GPIO2
     model: 7.50inv2
-    update_interval: 50s 
+    update_interval: 50s
     lambda: |-
       if(id(wifi_status) == 0){
         it.image(180, 0, id(esphome_logo));
@@ -1136,7 +1212,9 @@ When you see the feedback like the following image, it means the code is running
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/38.png" style={{width:600, height:'auto'}}/></div>
 
-### FAQ
+
+
+## FAQ
 
 #### Q1: Why is there no data?
 
@@ -1196,7 +1274,8 @@ In this case, you epaper penal is offline or in deep sleep mode. Please get it o
 ## Resources
 
 - **[STP]**: [3D Model enclosure](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3D_model.zip)
-- **[PDF]**: [ePaper_Breakout_Board_for_XIAO_V2_PCBA.pdf](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/ePaper_Breakout_Board_for_XIAO_V2_PCBA.pdf)
+- **[PDF]**: [ePaper Driver Board SCH PDF](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/ePaper_Driver_Board.pdf)
+
 
 ## Tech Support & Product Discussion
 

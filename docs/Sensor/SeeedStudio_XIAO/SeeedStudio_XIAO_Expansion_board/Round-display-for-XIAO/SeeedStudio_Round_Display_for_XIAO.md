@@ -263,6 +263,12 @@ As we can probably tell from the above tutorial, Round Display mainly uses **LVG
 
 ### Demo 1: TFT Clock
 
+:::tip
+We need to use the RTC function on the round display, so you also need to search and install the **I2C BM8563 RTC** library.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/63.png" style={{width:800, height:'auto'}}/></div>
+:::
+
 Once the hardware and software are ready, we start uploading our first example program. This sample program can be used to check if the Round Display's RTC clock are working properly. Because this demo requires a small amount of memory, suitable for all XIAO models. 
 
 :::tip
@@ -299,6 +305,12 @@ Because the HardwareTest demo is a bit complex and occupies a larger amount of m
 | XIAO ESP32S3 | ✅  | ✅  |
 
 This sample program can be used to check if the Round Display's RTC clock, SD card and touch functions are working properly.
+
+:::tip
+We need to use the RTC function on the round display, so you also need to search and install the **I2C BM8563 RTC** library.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/round_display_for_xiao/63.png" style={{width:800, height:'auto'}}/></div>
+:::
 
 You can find this sample program in the Arduino IDE under **File -> Examples -> Seeed Arduino Round display -> HardwareTest**.
 
@@ -364,7 +376,7 @@ A: This may be caused by you not selecting the appropriate compile option for th
 - **[PDF]** [GJX0128A4-15HY Datasheet](https://files.seeedstudio.com/wiki/round_display_for_xiao/GJX0128A4-15HY_Datasheet.pdf)
 - **[ZIP]** [Seeed Studio Round Display for XIAO SCH&PCB](https://files.seeedstudio.com/wiki/round_display_for_xiao/SeeedStudio_Round_Display_for_XIAO_v1.0_SCH&PCB_230308.zip)
 - **[ZIP]** [Seeed Studio Round Display for XIAO SCH&PCB v1.1](https://files.seeedstudio.com/wiki/round_display_for_xiao/SeeedStudio_Round_Display_for_XIAO_v1.1_SCH&PCB_230407.zip)
-- **[3DM]** [The 3D model of the Round Display for XIAO](https://files.seeedstudio.com/wiki/round_display_for_xiao/Round-Display-shell-3D-Model.stl)
+- **[3DM]** [The 3D model of the Round Display for XIAO](https://grabcad.com/library/seeed-studio-round-display-for-xiao-1)
 - **[STL]** [The 3D model diagram of the shell for Round Display](https://files.seeedstudio.com/wiki/round_display_for_xiao/Round-Display-shell-3D-Model.stl)
 - **[STL]** [Seeed Studio XIAO ESP32 S3 Sense Case With Round Screen](https://files.seeedstudio.com/wiki/round_display_for_xiao/Seeed_Studio-XIAO-ESP32-S3-Sense-Case-With-Round-Screen.stl)
 

@@ -19,7 +19,7 @@ Seeed had designed so many boards that work with Arduino IDE, include,
 * [Seeeduino LoRaWAN](https://wiki.seeedstudio.com/Seeeduino_LoRAWAN/)/GPS
 * [Seeeduino Cortex M0](https://wiki.seeedstudio.com/Seeeduino-Cortex-M0/)
 
-:::cautionattention
+:::caution
 The board mentioned above is the AT SAMD21 Microcontroller series,Please copy the below url to *Additional Boards Manager URLs* in the step2 .
 :::
 
