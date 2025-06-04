@@ -1,18 +1,14 @@
 ---
-description: |
-  A versatile driver board from Seeed Studio designed to control serial bus servos for robotic applications. It features a critical jumper setting that must be adjusted depending on the connection method (USB or direct UART).
-title: Bus Servo Driver Board
-image: https://files.seeedstudio.com/wiki/bus_servo_driver_board/9.webp
-slug: /bus_servo_driver_board
+description: Getting Started with XIAO Bus Servo Adapter
+title: Getting Started with XIAO Bus Servo Adapter
 keywords:
-    - Bus Servo
-    - Robotics
-    - UART
-    - USB connection
-    - Jumper settings
+  - servo
+image: https://files.seeedstudio.com/wiki/bus_servo_driver_board/10.webp
+sidebar_position: 8
+slug: /xiao_bus_servo_adapter
 last_update:
+  date: 05/26/2025
   author: Citric
-  date: 05/27/2025
 ---
 
 # Getting Started with Bus Servo Driver Board / XIAO Bus Servo Adapter
@@ -468,7 +464,8 @@ Yes, multiple servos are supported, but ensure your power supply can handle the 
 ### Resources
 
 - **[PDF]** [Bus Servo Driver Board Schematic](https://files.seeedstudio.com/wiki/bus_servo_driver_board/202004237_Servo_Driver_Board_for_Seeed_Studio_XIAO_SCH_PDF_250225.pdf)
-
+- **[STL]** [XIAO Bus Servo Adapter upper shell](https://files.seeedstudio.com/wiki/bus_servo_driver_board/xiao_bus_servo_adapter_top.stl)
+- **[STL]** [XIAO Bus Servo Adapter lower shell](https://files.seeedstudio.com/wiki/bus_servo_driver_board/xiao_bus_servo_adapter_bottom.stl)
 
 ### Tech Support & Product Discussion
 
@@ -489,3 +486,6 @@ Thank you for choosing our products! We are here to provide you with different s
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 
 </div>
+
+
+

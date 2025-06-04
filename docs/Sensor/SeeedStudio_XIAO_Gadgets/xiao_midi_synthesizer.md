@@ -7,6 +7,7 @@ keywords:
   - ESP32-C3
   - SAM2695
   - synthesizer
+sidebar_position: 7
 image: https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/1.webp
 slug: /xiao_midi_synthesizer
 last_update:
