@@ -418,7 +418,7 @@ Pull frigate_seeed image
 
 ```
 cd ~
-docker pull frigate_seeed
+docker pull mjqx2023/frigate_seeed
 docker compose -f frigate.yml start 
 ```
 Then open `localhost:5000` on your AI box web browser:
