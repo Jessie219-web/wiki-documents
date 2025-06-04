@@ -72,7 +72,7 @@ last_update:
 	    <td>Compatible con el ecosistema Raspberry Pi RP2040</td>
         <td>Compatible con el ecosistema Raspberry Pi RP2350</td>
 	    <td>Bluetooth 5.0 de ultra bajo consumo, ideal para aplicaciones de productos de grado de consumo</td>
-	    <td>Versión avanzada del XIAO nRF52840 con micrófono integrado y unidad de medición inercial (IMU) de 3 ejes</td>
+	    <td>Versión avanzada del XIAO nRF52840 con micrófono integrado y unidad de medición inercial (IMU) de 6 ejes</td>
         <td>Con WiFi y BLE, económico y basado en RISC-V</td>
         <td>Con WiFi-6, BLE, Zigbee y Thread para Matter</td>
         <td>Con WiFi y BLE, de alto rendimiento</td>
