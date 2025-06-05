@@ -6,7 +6,7 @@ keywords:
   - reCamera
   - Gimbal
   - Node-RED
-image: https://files.seeedstudio.com/wiki/reCamera/Gimbal/workspace_flow.png
+image: https://files.seeedstudio.com/wiki/reCamera/Gimbal/workspace_flow.webp
 slug: /recamera_gimbal_node_red
 sidebar_position: 3
 last_update:

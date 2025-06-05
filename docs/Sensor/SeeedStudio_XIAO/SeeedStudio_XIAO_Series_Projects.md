@@ -289,8 +289,13 @@ We can't do it without the love, contribution that we get from the community, an
 		</tr>
 		<tr>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_esp32c6_with_platform_io/">XIAO ESP32C6</a></th>
-			<th style={{width:333, height:'auto'}}><a href="https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32s3.html">XIAO ESP32S3</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://docs.platformio.org/en/latest/boards/espressif32/seeed_xiao_esp32s3.html">XIAO ESP32S3 (Sense)</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://taunoerik.art/2023/05/15/start-seeed-xiao-rp2040-on-platformio/">XIAO RP2040</a></th>
+		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_rp2350_with_platform_io/">XIAO RP2350</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_mg24_with_platform_io/"> XIAO MG24 (Sense)</a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_ra4m1_with_platform_io/">XIAO RA4M1</a></th>
 		</tr>
 	</table>
 </div>
@@ -316,7 +321,7 @@ We can't do it without the love, contribution that we get from the community, an
 		</tr>
 		<tr>
 			<th style={{width:333, height:'auto'}}><a href="https://wiki.seeedstudio.com/xiao_esp32c6_micropython/">XIAO ESP32C6</a></th>
-			<th style={{width:333, height:'auto'}}><a href=""></a></th>
+			<th style={{width:333, height:'auto'}}><a href="https://micropython.org/download/SEEED_XIAO_RP2350/">XIAO RP2350</a></th>
             <th style={{width:333, height:'auto'}}><a href=""></a></th>
 		</tr>
 	</table>
@@ -430,9 +435,9 @@ We can't do it without the love, contribution that we get from the community, an
 ## <span id="supported_rtos">Supported RTOS</span>
 
 <br></br>
-<div><a href="https://zephyrproject.org/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/zephyr.png" style={{width:'auto', height:70}} /></a></div>
+<div><a href="https://docs.zephyrproject.org/latest/"><img src="https://files.seeedstudio.com/wiki/xiao_topicpage/zephyr.png" style={{width:'auto', height:70}} /></a></div>
 
-<span id="zephyr"><strong><a href="https://zephyrproject.org/">Zephyr</a></strong></span>, a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind.
+<span id="zephyr"><strong><a href="https://docs.zephyrproject.org/latest/">Zephyr</a></strong></span>, a scalable real-time operating system (RTOS) supporting multiple hardware architectures, optimized for resource constrained devices, and built with security in mind.
 <br></br>
 <br></br>
 
@@ -490,6 +495,11 @@ We can't do it without the love, contribution that we get from the community, an
 			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/rp23xx/boards/xiao-rp2350/index.html">XIAO RP2350</a></th>
 			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/arm/ra4m1/boards/xiao-ra4m1/index.html ">XIAO RA4M1</a></th>
             <th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/xtensa/esp32s3/boards/esp32s3-xiao/index.html">XIAO ESP32S3</a></th>
+		</tr>
+		<tr>
+			<th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/risc-v/esp32c3/boards/esp32c3-xiao/index.html">XIAO ESP32C3</a></th>
+            <th style={{width:333, height:'auto'}}><a href="https://nuttx.apache.org/docs/latest/platforms/risc-v/esp32c6/boards/esp32c6-xiao/index.html">XIAO ESP32C6</a></th>
+			<th style={{width:333, height:'auto'}}><a href=""></a></th>
 		</tr>
 	</table>
 </div>

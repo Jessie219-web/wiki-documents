@@ -33,7 +33,7 @@ Se presentarán diferentes sistemas de visión por computadora, como:
 - PC con Ubuntu OS(nativo o en máquina virtual)
 - [reComputer Jetson](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) o cualquier otro dispositivo NVIDIA Jetson corriendo JetPack 4.6 o superior
 
-:::nota
+:::note
 En esta wiki verificamos en funcionamiento en la [reComputer J4012](https://www.seeedstudio.com/reComputer-J4012-p-5586.html) y la reComputer Industrial J4012[https://www.seeedstudio.com/reComputer-Industrial-J4012-p-5684.html] impulsadas por el modulo NVIDIA Jetson orin NX 16GB
 :::
 
@@ -51,7 +51,7 @@ Para obtener guías de actualización de dispositivos impulsados ​​por Seeed
 - [Jetson Xavier AGX H01 Kit](https://wiki.seeedstudio.com/Jetson_Xavier_AGX_H01_Driver_Installation)
 - [Jetson AGX Orin 32GB H01 Kit](https://wiki.seeedstudio.com/Jetson_AGX_Orin_32GB_H01_Flash_Jetpack)
 
-:::nota
+:::note
 Asegúrate de actualizar JetPack versión 5.1.1 porque esa es la versión que hemos verificado para esta wiki.
 :::
 
@@ -63,7 +63,7 @@ Después de actualizar el dispositivo Jetson con JetPack, puedes simplemente eje
 wget files.seeedstudio.com/YOLOv8-Jetson.py && python YOLOv8-Jetson.py
 ```
 
-:::nota
+:::note
 El código fuente del script anterior se puede encontrar [aquí](https://github.com/yuyoujiang/Run-YOLOv8-in-One-Line-on-Jetson)
 :::
 
@@ -159,7 +159,7 @@ También puedes conectar una cámara web y ejecutar el siguiente comando
 yolo detect predict model=yolov8n.pt source='0' show=True
 ```
 
-:::nota
+:::note
 Si encuentras algún error al ejecutar los comandos anteriores, intenta agregar "device = 0" al final del comando.
 :::
 
@@ -258,7 +258,7 @@ También puedes conectar una cámara web y ejecutar el siguiente comando
 yolo classify predict model=yolov8n-cls.pt source='0' show=True
 ```
 
-:::nota
+:::note
 Si encuentras algún error al ejecutar los comandos anteriores, intenta agregar "device = 0" al final del comando.
 :::
 
@@ -266,7 +266,7 @@ Si encuentras algún error al ejecutar los comandos anteriores, intenta agregar 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/YOLOV8-TRT/5.gif
 " style={{width:1000, height:'auto'}}/></div>
 
-:::nota
+:::note
 Lo anterior se ejecuta en una reComputer J4012/reComputer Industrial J4012 y utiliza el modelo YOLOv8s-cls entrenado con entrada de 224x224 y utiliza precisión TensorRT FP16. Además, asegúrate de pasar el argumento **imgsz=224** dentro del comando de inferencia con las exportaciones de TensorRT porque el motor de inferencia acepta un tamaño de imagen de 640 de forma predeterminada cuando se usan modelos de TensorRT.
 :::
 
@@ -358,14 +358,14 @@ También puedes conectar una cámara web y ejecutar el siguiente comando
 yolo segment predict model=yolov8n-seg.pt source='0' show=True
 ```
 
-:::nota
+:::note
 Si encuentras algún error al ejecutar los comandos anteriores, intenta agregar "device = 0" al final del comando.
 :::
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/YOLOV8-TRT/3.gif
 " style={{width:1000, height:'auto'}}/></div>
 
-:::nota
+:::note
 Lo anterior se ejecuta en una reComputer J4012/reComputer Industrial J4012 y utiliza el modelo YOLOv8s-seg entrenado con entrada de 640x640 con una precisión TensorRT FP16.
 :::
 
@@ -467,7 +467,7 @@ También puedes conectar una cámara web y ejecutar el siguiente comando
 yolo pose predict model=yolov8n-pose.pt source='0'
 ```
 
-:::nota
+:::note
 Si encuentras algún error al ejecutar los comandos anteriores, intenta agregar "device = 0" al final del comando.
 :::
 
@@ -497,7 +497,7 @@ También puedes conectar una cámara web y ejecutar el siguiente comando
 yolo track model=yolov8n.pt source="0"
 ```
 
-:::nota
+:::note
 Si encuentras algún error al ejecutar los comandos anteriores, intenta agregar "device = 0" al final del comando.
 :::
 
@@ -520,7 +520,7 @@ Como mencionamos antes, si deseas mejorar la velocidad de inferencia de la Jetso
 
 Sigue los siguientes pasos para convertir modelos YOLOv8 PyTorch a modelos TensorRT.
 
-:::nota
+:::note
 Esto funciona para las cuatro tareas de visión por computadora que hemos mencionado antes.
 :::
 
@@ -536,7 +536,7 @@ Por ejemplo:
 yolo export model=yolov8n.pt format=engine device=0
 ```
 
-:::nota
+:::note
 Si encuentras un error sobre cmake, puedes ignorarlo. Ten paciencia hasta que finalice la exportación de TensorRT. Puede que tarde unos minutos
 :::
 
@@ -815,7 +815,7 @@ pip install ultralytics
 yolo train data=<path_to_yaml> model=yolov8s.pt epochs=100 imgsz=640 batch=-1
 ```
 
-:::nota
+:::note
 Aquí el tamaño de la imagen se establece en 640x640. Usamos el tamaño de lote como -1 porque eso determinará automáticamente el mejor tamaño de lote. También puedes cambiar la cantidad de épocas según tus preferencias. Aquí puedes cambiar el modelo pre entrenado a cualquier modelo de detección, segmentación, clasificación y pose.
 :::
 

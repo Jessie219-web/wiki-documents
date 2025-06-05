@@ -90,10 +90,10 @@ dmesg | grep tlv320
 - Step 1: Get Device Tree Source (DTS) for the ReSpeaker 2-Mics Pi HAT (V2.0), compile it and install the device tree overlay.
 
 ```bash
-$ curl https://raw.githubusercontent.com/Seeed-Studio/seeed-linux-dtoverlays/refs/heads/master/overlays/rpi/respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dts
-$ dtc -I dts respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dtbo
-$ sudo dtoverlay respeaker-2mic-v2_0-overlay.dtbo
-$ sudo cp respeaker-2mic-v2_0-overlay.dtbo /boot/firmware/overlays
+curl https://raw.githubusercontent.com/Seeed-Studio/seeed-linux-dtoverlays/refs/heads/master/overlays/rpi/respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dts
+dtc -I dts respeaker-2mic-v2_0-overlay.dts -o respeaker-2mic-v2_0-overlay.dtbo
+sudo dtoverlay respeaker-2mic-v2_0-overlay.dtbo
+sudo cp respeaker-2mic-v2_0-overlay.dtbo /boot/firmware/overlays
 ```
 
 - Step 2: Edit `/boot/firmware/config.txt` and add the following lines:
@@ -103,12 +103,15 @@ dtoverlay=respeaker-2mic-v2_0-overlay
 dtoverlay=i2s-mmap
 ```
 
+> **Note:** If your kernel version is greater than 4.0, you don't need to add `dtoverlay=i2s-mmap`.
+
+
 ![config example](https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/dtoverlays.png)
 
 - Step 3: Reboot your Pi.
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 - Step 4: Check if the device is detected by `aplay` / `arecord`.
@@ -146,7 +149,7 @@ card 2: seeed2micvoicec [seeed2micvoicec], device 0: 1f000a4000.i2s-tlv320aic3x-
 `alsamixer` is a terminal user interface mixer program for the Advanced Linux Sound Architecture (ALSA) that is used to configure sound settings and adjust the volume.
 
 ```bash
-$ alsamixer
+alsamixer
 ```
 
 ![](https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/alsamixer.png)
@@ -178,24 +181,25 @@ pip3 install -r requirements.txt
 To use the LEDs, you need enable SPI interface first. To enable SPI interface, open the Raspberry Pi software configuration tool:
 
 ```bash
-$ sudo raspi-config
+sudo raspi-config
 ```
 
 Choose "3 Interface Options" -> "I4 SPI" to enable SPI interface. Then reboot your Raspberry Pi.
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Each on-board APA102 LED has an additional driver chip. The driver chip takes care of receiving the desired color via its input lines, and then holding this color until a new command is received.
 
 ```bash
+cd mic_hat
 python3 interfaces/pixels.py
 ```
 
-<video width={512} height={384} controls preload>
-  <source src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/led.mp4" />
+<video width={512} height={384} controls preload> 
   <source src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/led.webmhd.webm" />
+  <source src="https://files.seeedstudio.com/wiki/MIC_HATv1.0_for_raspberrypi/img/led.mp4" />
 </video>
 
 ### User Button
@@ -252,6 +256,14 @@ on
 off
 ```
 
+:::note
+It does not work in a virtual environment, you need to exit it first:
+```bash
+deactivate
+python3 ~/button.py
+```
+:::
+
 ### Record sound with Python
 
 We use [PyAudio python library](https://people.csail.mit.edu/hubert/pyaudio/) to record sound with Python.
@@ -259,6 +271,7 @@ We use [PyAudio python library](https://people.csail.mit.edu/hubert/pyaudio/) to
 First, run the following script to get the device index number of ReSpeaker:
 
 ```bash
+cd mic_hit
 python3 recording_examples/get_device_index.py
 ```
 

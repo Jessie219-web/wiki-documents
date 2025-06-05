@@ -334,7 +334,7 @@ Verás el siguiente resultado si el proceso de flasheo concluye exitosamente
 
 <div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-J4012/4.png"/></div>
 
-:::nota
+:::note
 El comando flash puede ejecutarse durante 2 - 10 minutos.
 :::
 

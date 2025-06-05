@@ -37,7 +37,7 @@ MT3620 software development is supported using the powerful Microsoft Visual Stu
 |Azure Sphere MT3620 Development Kit JP Version|[![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now_small.png)](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-JP-Version-p-3135.html)|
 |Azure Sphere MT3620 Development Kit EU Version|[![](https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/get_one_now_small.png)](https://www.seeedstudio.com/Azure-Sphere-MT3620-Development-Kit-EU-Version-p-3134.html)|
 
-:::cautionWarning
+:::caution
 If you need help on version selection, please check the [Countries or regions available list](https://view.officeapps.live.com/op/view.aspx?src=https://statics3.seeedstudio.com/document/Available_country.docx) for more details.
 :::
 
@@ -335,7 +335,7 @@ The [SC18IM700](https://files.seeedstudio.com/wiki/Azure_Sphere_MT3620_Developme
 - Step 11. Plug the USB cable to Ardunio/Seeeduino and PC.
 - Step 12. Plug the power supply to Fan.
 
-:::cautionWarning
+:::caution
 Please make sure the voltage switch on Grove base shield is turned to **3.3v**.
 :::
 

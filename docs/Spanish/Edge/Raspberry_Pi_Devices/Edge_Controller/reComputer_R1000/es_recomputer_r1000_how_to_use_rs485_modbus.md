@@ -95,7 +95,7 @@ sudo minicom -D /dev/ttyAMA*
 
 El `ttyAMA*` debe ser `ttyAMA2, ttyAMA3 o ttyAMA4`, dependiendo de qué puerto RS485 estés utilizando.
 
-Luego, presiona `Ctrl+A` y luego `C`, verás la interfaz de minicom como la siguiente:
+Luego, presiona `Ctrl+A` y luego `Z`, verás la interfaz de minicom como la siguiente:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/minicom0.png" alt="pir" width="700" height="auto" /></div>
 

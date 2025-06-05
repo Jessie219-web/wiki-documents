@@ -23,13 +23,13 @@ import TabItem from '@theme/TabItem';
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.jpg" style={{width:680, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/Dual-Smart-Relay-Module-for-XIAO-p-6309.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-2-Channel-Wi-Fi-AC-Energy-Meter-Bundle-Kit.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div><br />
 
 ## Overview
-The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments.
+The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/XIAO-2-Channel-Wi-Fi-AC-Energy-Meter-Bundle-Kit.html)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments.
 
 This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
 
@@ -62,7 +62,7 @@ This guide provides a detailed walkthrough, including setup, integration, and ad
         </tr>
         <tr>
             <th>Effective Range of Current Detection</th>
-            <td>10mA-35A @ 1mΩ</td>
+            <td>10mA-100A @ 1mΩ (CT Mode)</td>
         </tr>
         <tr>
             <th>Active Electrical Energy</th>
@@ -146,7 +146,7 @@ When installing the fixture, please ensure that the direction of the current mat
 ### Requirements
 
 1. **Core Components**:
-   - [XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)
+   - [XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/XIAO-2-Channel-Wi-Fi-AC-Energy-Meter-Bundle-Kit.html)
    - [Non-invasive AC Current Transformer](https://www.seeedstudio.com/Non-invasive-AC-Current-Sensor-100A-ma-p-547.html)
    - [Home Assistant Green](https://www.seeedstudio.com/Home-Assistant-Green-p-5792.html)
 2. **Network**:
@@ -181,7 +181,7 @@ Firefox does not support flashing firmware on ESP devices. Please use Google Chr
 <Tabs>
 <TabItem value='Web Tool'>
 
-You can use this [Web Tool](https://seeed-projects.github.io/6-Channel_Relay_based_on_XIAO_ESP32C6/) for an easy and direct method to flash your firmware. Simply follow the on-screen instructions.
+You can use this [Web Tool](https://gadgets.seeed.cc/) for an easy and direct method to flash your firmware. Simply follow the on-screen instructions. (Please choose **SeeedStuido-2CH-EM**)
 
 - Click the `CONNECT` button to initiate the connection. The tool will automatically update the firmware.
 
@@ -190,7 +190,7 @@ If something goes wrong, follow the on-screen troubleshooting steps or switch to
 </TabItem>
 <TabItem value='ESPHome Web'>
 
-For this method, you'll need to download the `bin` firmware file from [here](https://github.com/Seeed-Projects/6-Channel_Relay_based_on_XIAO_ESP32C6/releases)(you'll need to unzip the downloaded file).
+For this method, you'll need to download the `bin` firmware file from [here](https://github.com/Seeed-Studio/xiao-esphome-projects/releases)(you'll need to unzip the downloaded file).
 
 1. Connect the sensor kit to your PC.
 2. Visit the [ESPHome Web](https://web.esphome.io/) page.

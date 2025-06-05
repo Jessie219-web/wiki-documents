@@ -437,7 +437,7 @@ Verás la siguiente salida cuando el flasheo sea exitoso.
 - 🗃️ **[ZIP]** [Seeed Studio XIAO ESP32C3 KiCAD Libraries](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeeduino-XIAO-ESP32C3-KiCAD-Library.zip)
 - 🗃️ **[ZIP]** [Seeed Studio XIAO ESP32C3 Eagle Libraries](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-v1.2_SCH-PCB.zip)
 - 🗃️ **[ZIP]** [Seeed Studio XIAO ESP32C3 Factory firmware](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/ESP32-C3_RFTest_108_2b9b157_20211014.bin)
-- 🗃️ **[ZIP]** [Seeed Studio XIAO ESP32C3 Certification files](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-Certification.zip)
+
 - 📄 **[DXF]** [Seeed Studio XIAO ESP32C3 Dimension in DXF](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-DXF.zip)
 - 📄 **[LBR]** [Seeed Studio XIAO ESP32C3 Eagle footprint](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/Seeed-Studio-XIAO-ESP32C3-footprint-eagle.lbr)
 - 📄 **[XLSX]** [Seeed Studio XIAO ESP32C3 pinout sheet](https://files.seeedstudio.com/wiki/XIAO_WiFi/Resources/XIAO-ESP32C3-pinout_sheet.xlsx)

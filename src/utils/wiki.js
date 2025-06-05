@@ -1,86 +1,86 @@
 const docList = [
   [
     {
-      "path": "/tracker_at_command",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/intro-e.webp",
-      "title": "LoRaWAN Tracker Bluetooth AT Command Instruction",
-      "date": "4/15/2025"
+      "path": "/myactuator_series",
+      "image": "https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.webp",
+      "title": "MyActuator X Series Motors Getting Start",
+      "date": "05/29/2025"
     },
     {
-      "path": "/Grove-Air_Quality_Sensor_v1.3",
-      "image": "https://files.seeedstudio.com/wiki/Grove_Air_Quality_Sensor_v1.3/img/Grove-Air_Quality_Sensor_v1.3.webp",
-      "title": "Grove - Air Quality Sensor v1.3",
-      "date": "4/14/2025"
+      "path": "/bluetooth_beacon_for_SenseCAP_Traker",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Tracker/BC01_Indoor_Bluetooth_Beacon.webp",
+      "title": "BC01 Indoor Bluetooth Beacon",
+      "date": "05/29/2025"
     }
   ],
   [
     {
-      "path": "/Grove-Temperature_Humidity_Pressure_Gas_Sensor_BME680",
-      "image": "https://files.seeedstudio.com/wiki/Grove-Temperature-Humidity-Pressure-Gas-Sensor_BME680/img/main.webp",
-      "title": "Grove - Temperature Humidity Pressure Gas Sensor(BME680)",
-      "date": "4/14/2025"
+      "path": "/lerobot_lekiwi",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.webp",
+      "title": "How to use the Lekiwi in Lerobot",
+      "date": "5/28/2025"
     },
     {
-      "path": "/xiao-c3-ibeacon",
-      "image": "https://files.seeedstudio.com/wiki/xiao-c3-ibeacon/8.webp",
-      "title": "XIAO ESP32-C3 iBeacon with BME680 Sensor Using ESP-IDF",
-      "date": "04/14/2025"
+      "path": "/install_isaaclab",
+      "image": "https://files.seeedstudio.com/wiki/robotics/isaac_lab/1.webp",
+      "title": "Install the Isaac Lab",
+      "date": "5/28/2025"
     }
   ],
   [
     {
-      "path": "/create_backup_and_restore_on_recomputer",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer_backup/jtop2.webp",
-      "title": "Create Backup and Restore on reComputer",
-      "date": "04/11/2025"
+      "path": "/recomputer_jetson_super_hardware_interfaces_usage",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super2.webp",
+      "title": "reComputer Super Hardware and Interfaces Usage",
+      "date": "05/26/2025"
     },
     {
-      "path": "/recamera_gimbal_getting_started",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/reCamera-Gimbal.webp",
-      "title": "Getting Started with reCamera Gimbal",
-      "date": "04/09/2025"
+      "path": "/recomputer_use_ups",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/ups/ups_model.webp",
+      "title": "How to use UPS to read input voltage on reComputer r1000",
+      "date": "05/21/2025"
     }
   ],
   [
     {
-      "path": "/recamera_pid_adjustment",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/Gimbal/PID_nodered.webp",
-      "title": "reCamera Gimbal PID Settings",
-      "date": "04/08/2025"
+      "path": "/led_driver_board",
+      "image": "https://files.seeedstudio.com/wiki/LED_Driver_Board_for_XIAO/LED_Driver_Board_for_Seeed_Studio_XIAO.webp",
+      "title": "Getting Started with LED Driver Board for XIAO",
+      "date": "05/21/2025"
     },
     {
-      "path": "/getting_started_with_seeed_iot_button",
-      "image": "https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/button_esphome/button_buzzer.webp",
-      "title": "Getting Started with Seeed Studio IoT Button",
-      "date": "04/08/2025"
+      "path": "/wio_tracker_l1_node",
+      "image": "https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/wio-tracker-L1.webp",
+      "title": "Wio Tracker L1 Meshtastic Node",
+      "date": "5/19/2025"
     }
   ],
   [
     {
-      "path": "/xiao-esp32s3-nuttx",
-      "image": "https://files.seeedstudio.com/wiki/XIAO-nRF52840-NuttX/nuttx.webp",
-      "title": "Seeed Studio XIAO ESP32S3 with NuttX(RTOS)",
-      "date": "04/08/2025"
+      "path": "/xiao_7_5_inch_epaper_panel_with_trmnl",
+      "image": "https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/216.webp",
+      "title": "XIAO 7.5-Inch ePaper Panel Works with TRMNL",
+      "date": "05/19/2025"
     },
     {
-      "path": "/xiao_rp2040_with_platform_io",
-      "image": "https://files.seeedstudio.com/wiki/XIAO-RP2040/img/rp2040_with_platformio.webp",
-      "title": "XIAO RP2040 with PlatformIO",
-      "date": "04/08/2025"
+      "path": "/xiao_7_5_inch_epaper_panel_main_page",
+      "image": "https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.webp",
+      "title": "Getting Started with XIAO 7.5\" ePaper Panel",
+      "date": "05/19/2025"
     }
   ],
   [
     {
-      "path": "/xiao_ra4m1_with_platform_io",
-      "image": "https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/ra4m1_with_platformio.webp",
-      "title": "XIAO RA4M1 with PlatformIO",
-      "date": "04/07/2025"
+      "path": "/xiao_midi_synthesizer",
+      "image": "https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/1.webp",
+      "title": "Getting Started with XIAO MIDI Synthesizer",
+      "date": "05/15/2025"
     },
     {
-      "path": "/xiao_rp2350_with_platform_io",
-      "image": "https://files.seeedstudio.com/wiki/XIAO-RP2350/img/rp2350_with_platformio.webp",
-      "title": "XIAO RP2350 with PlatformIO",
-      "date": "04/07/2025"
+      "path": "/grove_barometer_sensor_spa06_003",
+      "image": "https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/show.webp",
+      "title": "Grove - Barometer Sensor (SPA06-003)",
+      "date": "05/13/2025"
     }
   ]
 ];

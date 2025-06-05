@@ -19,7 +19,7 @@ The i.MX RT1052 is a new processor family featuring NXP’s advanced implementat
 
 <p style={{textAlign: 'center'}}><a href="https://www.seeedstudio.com/Arch-Mix-p-2901.html" target="_blank"><img src="https://files.seeedstudio.com/wiki/Seeed-WiKi/docs/images/300px-Get_One_Now_Banner-ragular.png" /></a></p>
 
-:::cautionattention
+:::caution
 The Initial Firmware of Arch Mix is RT-Thread which is depreciated, please follow this wiki to flash the Arduino Bootloader into Arch Mix and use it as Arduino Dev board.
 :::
 
