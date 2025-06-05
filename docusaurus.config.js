@@ -3,8 +3,6 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github')
 const darkCodeTheme = require('prism-react-renderer/themes/dracula')
-const math = require('remark-math')
-const katex = require('rehype-katex')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -70,8 +68,14 @@ const config = {
 
           sidebarPath: require.resolve('./sidebars.js'),
 
-          remarkPlugins: [math],
-          rehypePlugins: [katex],
+          async remarkPlugins() {
+            const math = await import('remark-math');
+            return [math.default];
+          },
+          async rehypePlugins() {
+            const katex = await import('rehype-katex');
+            return [katex.default];
+          },
 
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
