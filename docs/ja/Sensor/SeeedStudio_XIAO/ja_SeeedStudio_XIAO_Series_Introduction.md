@@ -75,7 +75,7 @@ https://github.com/Seeed-Studio/wiki-documents/issues
 	    <td>Raspberry Pi RP2040エコシステムと互換性あり</td>
         <td>Raspberry Pi RP2350エコシステムと互換性あり</td>
 	    <td>超低消費電力のBluetooth 5.0、消費者向け製品アプリケーションに適する</td>
-	    <td>オンボードマイクと3軸IMUを備えたXIAO nRF52840の上位版</td>
+	    <td>オンボードマイクと6軸IMUを備えたXIAO nRF52840の上位版</td>
         <td>WiFiとBLEを搭載、コストパフォーマンスに優れたRisc-V</td>
         <td>WiFi-6、BLE、Zigbee、Thread for Matterを搭載</td>
         <td>WiFiとBLEを搭載、高性能</td>

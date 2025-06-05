@@ -7991,9 +7991,10 @@ const sidebars = {
       ]
     },
 
+
     {
       type: 'doc',
-      id: 'Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/es_reComputer_Intro',
+      id: 'Spanish/Edge/NVIDIA_Jetson/es_RecomputerPage',
       label: 'NVIDIA® Jetson™',
       className: 'sideboard_calss',
     },
