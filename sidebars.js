@@ -3996,7 +3996,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'Cloud',
-      label: 'Cloud',
+      label: 'SenseCraft & Cloud',
       className: 'sideboard_calss',
     },
     {
@@ -11808,7 +11808,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'ja/ja_Cloud',
-      label: 'クラウド',
+      label: 'SenseCraft & クラウド',
       className: 'sideboard_calss',
     },
     {
