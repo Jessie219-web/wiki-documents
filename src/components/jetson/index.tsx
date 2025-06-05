@@ -161,7 +161,7 @@ const RecomputerPage = ({ lang = 'en' }: Props) => {
   const config = configMap[lang];
 
   return (
-    <div className={clsx(styles.jeston_page, styles[colorMode])}>
+    <div className={clsx(styles.jetson_page, styles[colorMode])}>
       {/* Banner */}
       <div className={styles.banner}>
         <div className={styles.banner_left}>
