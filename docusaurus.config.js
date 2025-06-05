@@ -70,7 +70,7 @@ const config = {
 
           sidebarPath: require.resolve('./sidebars.js'),
 
-          remarkPlugins: [],
+          remarkPlugins: [math],
           rehypePlugins: [katex],
 
           // Please change this to your repo.
@@ -673,12 +673,6 @@ const config = {
 
         // Optional
         contextualSearch: true,
-      },
-
-      mermaid: {
-        options: {
-          maxTextSize: 50,
-        },
       },
 
       announcementBar: {
