@@ -120,6 +120,12 @@ last_update:
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
+/* Dark模式 - 导航容器 */
+html[data-theme='dark'] .quick-nav-container {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
 /* 导航主体 */
 .quick-nav {
   display: flex;
@@ -142,6 +148,13 @@ last_update:
   background: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   z-index: 1;
+}
+
+/* Dark模式 - 导航项 */
+html[data-theme='dark'] .nav-item {
+  color: #e5e7eb;
+  background: #374151;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 /* 图标样式 */
@@ -174,6 +187,12 @@ last_update:
 .nav-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  color: white;
+}
+
+/* Dark模式 - 悬浮动画 */
+html[data-theme='dark'] .nav-item:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
   color: white;
 }
 
@@ -224,10 +243,16 @@ last_update:
   z-index: 1;
 }
 
+/* Dark模式 - 内容卡片 */
+html[data-theme='dark'] .category-card {
+  background: #374151;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  color: #e5e7eb;
+}
+
 .category-group {
   margin-bottom: 2rem;
 }
-
 
 /* 分类色标 */
 .category-card::before {
@@ -250,6 +275,11 @@ last_update:
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
+/* Dark模式 - 悬浮特效 */
+html[data-theme='dark'] .category-card:hover {
+  box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
 .category-card:hover::after {
   content: "";
   position: absolute;
@@ -261,6 +291,11 @@ last_update:
   z-index: -1;
 }
 
+/* Dark模式 - 悬浮光效 */
+html[data-theme='dark'] .category-card:hover::after {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+}
+
 /* 链接动画 */
 .category-card a {
   position: relative;
@@ -270,9 +305,19 @@ last_update:
   color: #333;
 }
 
+/* Dark模式 - 链接 */
+html[data-theme='dark'] .category-card a {
+  color: #d1d5db;
+}
+
 .category-card a:hover {
   color: #4a90e2;
   transform: translateX(5px);
+}
+
+/* Dark模式 - 链接悬浮 */
+html[data-theme='dark'] .category-card a:hover {
+  color: #60a5fa;
 }
 
 .category-card a::after {
@@ -284,6 +329,11 @@ last_update:
   height: 2px;
   background: #4a90e2;
   transition: width 0.3s;
+}
+
+/* Dark模式 - 链接下划线 */
+html[data-theme='dark'] .category-card a::after {
+  background: #60a5fa;
 }
 
 .category-card a:hover::after {
@@ -305,15 +355,36 @@ last_update:
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
+/* Dark模式 - Stable标签 */
+html[data-theme='dark'] .stable {
+  background: #065f46;
+  color: #a7f3d0;
+  box-shadow: 0 2px 4px rgba(0,100,0,0.3);
+}
+
 .recommended { 
   background: #fce8e6; 
   color: #a50e0e;
   box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
+
+/* Dark模式 - Recommended标签 */
+html[data-theme='dark'] .recommended {
+  background: #7f1d1d;
+  color: #fca5a5;
+  box-shadow: 0 2px 4px rgba(200,0,0,0.3);
+}
+
 .category-card:active {
   transform: translateY(-2px) scale(0.98);
   box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
+
+/* Dark模式 - 点击效果 */
+html[data-theme='dark'] .category-card:active {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+}
+
 /* 响应式优化 */
 @media (max-width: 768px) {
   .nav-grid {
@@ -321,8 +392,31 @@ last_update:
   }
   
   .category-card {
-  width: 100%;
-  margin-top: 0.5rem; /* 卡片紧贴标题 */
+    width: 100%;
+    margin-top: 0.5rem; /* 卡片紧贴标题 */
+  }
 }
+
+/* Dark模式 - 标题文字 */
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6 {
+  color: #f9fafb;
+}
+
+/* Dark模式 - 正文文字 */
+html[data-theme='dark'] p,
+html[data-theme='dark'] li,
+html[data-theme='dark'] strong {
+  color: #e5e7eb;
+}
+
+/* Dark模式 - 引用块 */
+html[data-theme='dark'] blockquote {
+  color: #9ca3af;
+  border-left-color: #4b5563;
 }
 `}</style>

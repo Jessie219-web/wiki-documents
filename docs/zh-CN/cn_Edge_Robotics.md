@@ -46,7 +46,8 @@ last_update:
 
 ## 📦 机器人套件 {#robot-kits}
 
-<div className="category-card robot-kits">
+<div class="category-group">
+  <div className="category-card robot-kits">
 
 ## 🤗 Lerobot
 
@@ -59,18 +60,22 @@ last_update:
 - **即将推出**
 
 </div>
+</div>
 
 ## ⚙️ 执行器 {#actuators}
 
-<div className="category-card actuators">
+<div class="category-group">
+  <div className="category-card actuators">
 
 - [MyActuator 系列电机](/cn/myactuator_series/) <span className="tag recommended">新</span>
 
 </div>
+</div>
 
 ## 👁️ 传感器 {#sensors}
 
-<div className="category-card sensors">
+<div class="category-group">
+  <div className="category-card sensors">
 
 **LiDAR 系统**  
 
@@ -84,10 +89,12 @@ last_update:
 - [CSI 相机设置](/cn/csi_camera_on_ros/)
 
 </div>
+</div>
 
 ## 💻 软件 {#software}
 
-<div className="category-card software">
+<div class="category-group">
+  <div className="category-card software">
 
 **ROS 生态系统**  
 - [ROS1 安装](/cn/installing_ros1/) <span className="tag recommended">新</span>
@@ -100,8 +107,10 @@ last_update:
 - [Isaac Lab 安装](/cn/install_isaaclab/)
 
 </div>
+</div>
 
 </div>
+
 
 
 
@@ -113,6 +122,12 @@ last_update:
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Dark模式 - 导航容器 */
+html[data-theme='dark'] .quick-nav-container {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 /* 导航主体 */
@@ -137,6 +152,13 @@ last_update:
   background: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   z-index: 1;
+}
+
+/* Dark模式 - 导航项 */
+html[data-theme='dark'] .nav-item {
+  color: #e5e7eb;
+  background: #374151;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
 /* 图标样式 */
@@ -172,6 +194,12 @@ last_update:
   color: white;
 }
 
+/* Dark模式 - 悬浮动画 */
+html[data-theme='dark'] .nav-item:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+  color: white;
+}
+
 .nav-item:hover .icon {
   transform: scale(1.2) rotate(10deg);
 }
@@ -202,7 +230,7 @@ last_update:
 <style>{`
 /* 内容卡片增强版样式 */
 .nav-grid {
-  display: grid;
+  display: block;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2rem;
@@ -217,6 +245,17 @@ last_update:
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   z-index: 1;
+}
+
+/* Dark模式 - 内容卡片 */
+html[data-theme='dark'] .category-card {
+  background: #374151;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  color: #e5e7eb;
+}
+
+.category-group {
+  margin-bottom: 2rem;
 }
 
 /* 分类色标 */
@@ -240,6 +279,11 @@ last_update:
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
 }
 
+/* Dark模式 - 悬浮特效 */
+html[data-theme='dark'] .category-card:hover {
+  box-shadow: 0 12px 20px rgba(0,0,0,0.6);
+}
+
 .category-card:hover::after {
   content: "";
   position: absolute;
@@ -251,6 +295,11 @@ last_update:
   z-index: -1;
 }
 
+/* Dark模式 - 悬浮光效 */
+html[data-theme='dark'] .category-card:hover::after {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+}
+
 /* 链接动画 */
 .category-card a {
   position: relative;
@@ -260,9 +309,19 @@ last_update:
   color: #333;
 }
 
+/* Dark模式 - 链接 */
+html[data-theme='dark'] .category-card a {
+  color: #d1d5db;
+}
+
 .category-card a:hover {
   color: #4a90e2;
   transform: translateX(5px);
+}
+
+/* Dark模式 - 链接悬浮 */
+html[data-theme='dark'] .category-card a:hover {
+  color: #60a5fa;
 }
 
 .category-card a::after {
@@ -274,6 +333,11 @@ last_update:
   height: 2px;
   background: #4a90e2;
   transition: width 0.3s;
+}
+
+/* Dark模式 - 链接下划线 */
+html[data-theme='dark'] .category-card a::after {
+  background: #60a5fa;
 }
 
 .category-card a:hover::after {
@@ -295,23 +359,68 @@ last_update:
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
+/* Dark模式 - Stable标签 */
+html[data-theme='dark'] .stable {
+  background: #065f46;
+  color: #a7f3d0;
+  box-shadow: 0 2px 4px rgba(0,100,0,0.3);
+}
+
 .recommended { 
-  background: #fce8e6; /* 背景颜色 */
-  color: #a50e0e; /* 字体颜色 */
-  box-shadow: 0 2px 4px rgba(200,0,0,0.1); /* 阴影效果 */
+  background: #fce8e6; 
+  color: #a50e0e;
+  box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
+
+/* Dark模式 - Recommended标签 */
+html[data-theme='dark'] .recommended {
+  background: #7f1d1d;
+  color: #fca5a5;
+  box-shadow: 0 2px 4px rgba(200,0,0,0.3);
+}
+
 .category-card:active {
-  transform: translateY(-2px) scale(0.98); /* 点击时的缩放与位移效果 */
-  box-shadow: 0 6px 10px rgba(0,0,0,0.1); /* 点击时的阴影效果 */
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
+
+/* Dark模式 - 点击效果 */
+html[data-theme='dark'] .category-card:active {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+}
+
 /* 响应式优化 */
 @media (max-width: 768px) {
   .nav-grid {
-    grid-template-columns: 1fr; /* 单列布局 */
+    grid-template-columns: 1fr;
   }
   
   .category-card {
-    padding: 1.2rem; /* 调整内边距 */
+    width: 100%;
+    margin-top: 0.5rem; /* 卡片紧贴标题 */
   }
+}
+
+/* Dark模式 - 标题文字 */
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6 {
+  color: #f9fafb;
+}
+
+/* Dark模式 - 正文文字 */
+html[data-theme='dark'] p,
+html[data-theme='dark'] li,
+html[data-theme='dark'] strong {
+  color: #e5e7eb;
+}
+
+/* Dark模式 - 引用块 */
+html[data-theme='dark'] blockquote {
+  color: #9ca3af;
+  border-left-color: #4b5563;
 }
 `}</style>

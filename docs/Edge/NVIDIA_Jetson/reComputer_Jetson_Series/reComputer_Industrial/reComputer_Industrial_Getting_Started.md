@@ -535,6 +535,92 @@ sudo apt install nvidia-jetpack -y
 ---
 
 </TabItem>
+
+<TabItem value="Jetpack 5.1.3" label="Jetpack5.1.3">
+
+- **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>Device</th>
+      <th>Link</th>
+      <th>SHA256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>reComputer Industrial J4012</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWzTx7AJjbtFksz5DSwvW1sBjUa1RgnSlk-prR0kK_ymWw?e=dq9zIb" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>3b8b11c63d52d043fb3506b5be9870bca83fbe924e3871bf3060fbc811f253c5</th>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J4011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EQwbQHuBbGhDpLP_Prr6NgkBMtu41jENXa_zTRoQ2pYCBQ?e=tNeW4d" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>b8ffb1c7bf5b5436cca6ba0e32e9a71752b25c1494527ec25129895a2fbc7d93</th>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J3011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EdhYh3cLibBPloeruCn9_TwBwyxtn8XycXp0jTqS5UlMaA?e=efwpWa" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>484cb81f399301b8a6ff61429e974ae790365b9498fb8b20df02c603656cf6d0</th>
+    </tr>
+    <tr>
+      <td>reComputer Industrial J3010</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXK1GomjByJKnmt3OdE5Vq8BSqzYZm1MY_yD18YjmRplLw?e=dIWPKA" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>a238c5229219ccf1f6ac2b2e4d93a914e6b2e471f56c975990cc03beefc5f9dd</th>
+    </tr>
+        <tr>
+      <td>reComputer Industrial J2012</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfB-onLVAIxFreZTCSpejYIBPX42dZoKnKrDm8ZC27DI_w?e=fAOXZr" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>b54cf2545a8ed8bfe115c439b0b427112bd882f03292b9f5c03ab55746c707c1</th>
+    </tr>
+        <tr>
+      <td>reComputer Industrial J2011</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXmfIDIx80hCk61-dZogyUwBe6uOlz0U6tZEW3i7WC2JBw?e=BLjUW3" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <th>11bdb47d06ca8409cfcea109b8bacd9bb79a54a275d2664d6cf492bfead31131</th>
+    </tr>
+  </tbody>
+  </table> 
+</div>
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
+:::info
+The source code for the above images can be found [here](https://github.com/Seeed-Studio/Linux_for_Tegra).
+:::
+
+- **Step 2:** Extract the generated file 
+
+```sh
+sudo tar -xvf <file_name>.tar.gz
+```
+
+- **Step 3:** Navigate to the extracted file from before and execute the flash command as follows 
+
+```sh
+cd mfi_xxxx
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0 --showlogs
+```
+
+Now it will start to flash the system image to the board. If the flashing is successful, you will see the below output
+
+<div align="center"><img width ="650" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/99.png"/></div>
+
+
+- **Step 4:** Connect the J401 to a display using the HDMI connector on the board and finish the initial configuration setup:
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
+
+
+</TabItem>
 <TabItem value="Jetpack 6.0" label="Jetpack6.0">
 
 - **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using
@@ -551,12 +637,12 @@ sudo apt install nvidia-jetpack -y
     <tr>
       <td>reComputer Industrial J4012</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcQJulAOt3ZJlnG-xr0lzdcB_d-yLXxEpicXuHr8sIca1w?e=dUWeYw" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>FEB6B83441F4C812921ED4554A3F6E903FCBF48DB1C2CF6C4240E764C3C3A4A3</th>
+      <th>77B5967DCDFAAE6725381EAE7BD570A254BD1F9E6E4C28DE8D9D84760C204DF1</th>
     </tr>
     <tr>
       <td>reComputer Industrial J4011</td>
       <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERWRQ6mJe2hIoSwsatwN68IBF0prjvm7XX1aHFmsTd25fQ?e=x06NFw" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <th>77B5967DCDFAAE6725381EAE7BD570A254BD1F9E6E4C28DE8D9D84760C204DF1</th>
+      <th>FEB6B83441F4C812921ED4554A3F6E903FCBF48DB1C2CF6C4240E764C3C3A4A3</th>
     </tr>
     <tr>
       <td>reComputer Industrial J3011</td>
