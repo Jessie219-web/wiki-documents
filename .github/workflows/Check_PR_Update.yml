@@ -32,4 +32,4 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Test build website
-        run: yarn docusaurus deploy
+        run: yarn docusaurus build

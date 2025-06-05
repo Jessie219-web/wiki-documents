@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Test build website
-        run: yarn docusaurus deploy
+        run: yarn docusaurus build
   deploy:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
