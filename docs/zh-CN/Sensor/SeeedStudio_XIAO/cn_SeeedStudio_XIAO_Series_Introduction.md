@@ -75,7 +75,7 @@ last_update:
 	    <td>兼容 Raspberry Pi RP2040 生态系统</td>
         <td>兼容 Raspberry Pi RP2350 生态系统</td>
 	    <td>超低功耗蓝牙 5.0，适合消费级产品应用</td>
-	    <td>XIAO nRF52840 的高级版本，带有板载麦克风和三轴 IMU</td>
+	    <td>XIAO nRF52840 的高级版本，带有板载麦克风和六轴 IMU</td>
         <td>支持 WiFi 和 BLE，经济实惠的 RISC-V</td>
         <td>支持 WiFi-6、BLE、Zigbee 和 Thread for Matter</td>
         <td>支持 WiFi 和 BLE，高性能</td>

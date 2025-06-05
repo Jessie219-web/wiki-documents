@@ -81,7 +81,7 @@ sudo minicom -D /dev/ttyAMA*
 ```
 The `ttyAMA*` should be `ttyAMA2, ttyAMA3 or ttyAMA4` depends on which RS485 you use.
 
-And then type `Ctal+A` then type `C` you will see minicom like below:
+And then type `Ctal+A` then type `Z` you will see minicom like below:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/minicom0.png" alt="pir" width="700" height="auto" /></div>
 

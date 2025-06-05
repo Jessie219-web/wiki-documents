@@ -62,6 +62,9 @@ const getIndexImage = (src) => {
   return src && require(`../../assets/index/${src}`).default;
 }
 
+import BazaarAffiliate from '../components/home/BazaarAffiliate';
+
+
 
 
 
@@ -174,7 +177,9 @@ function Home() {
         {renderBanner()}
         <IndexLatestedViki ></IndexLatestedViki>
         <IndexBrowseBy theme={theme}></IndexBrowseBy>
-        <IndexPlatform></IndexPlatform>
+        {/* <IndexPlatform></IndexPlatform> */}
+        <BazaarAffiliate></BazaarAffiliate>
+        {/* Uncomment the line below to enable the IndexForm component */}
         {/* <IndexForm ></IndexForm> */}
 
         <div className={clsx(css.tech_container, 'com_module')}>
