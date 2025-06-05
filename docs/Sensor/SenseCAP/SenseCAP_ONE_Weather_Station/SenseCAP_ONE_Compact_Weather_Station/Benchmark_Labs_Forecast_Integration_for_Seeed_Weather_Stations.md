@@ -3,7 +3,8 @@ description:  This guide explains how to purchase and activate Benchmark Labs’
 title:  Benchmark Labs Forecast Integration for Seeed Weather Stations
 keywords:
 - SenseCAP
-slug: /Benchmark_Labs_Forecast_Integration_for_Seeed_Weather_Stations
+image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /benchmark_labs_forecast_integration_for_seeed_weather_stations
 last_update:
   date: 6/3/2025
   author: Zeno
