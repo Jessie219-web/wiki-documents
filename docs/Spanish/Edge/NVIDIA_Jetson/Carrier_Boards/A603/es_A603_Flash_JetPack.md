@@ -37,7 +37,7 @@ La Carrier Board A603 es una potente placa de extensión que admite módulos Jet
 
 ## Entrar en modo de recuperación forzado
 
-:::nota
+:::note
 Antes de continuar con los pasos de instalación, debemos asegurarnos de que la placa esté en modo de recuperación forzada.
 :::
 
@@ -144,7 +144,7 @@ En una máquina host Ubuntu, abre la terminal y ejecuta el comando `sha256sum <A
 
 ## Flashear la Jetson 
 
-:::nota
+:::note
 Antes de pasar al flasheo, cabe señalar que el módulo Jetson Orin NX solo admite JetPack 5.1 y superior, mientras que el módulo Jetson Orin Nano solo admite JetPack 5.1.1 y superior.
 :::
 

@@ -34,7 +34,7 @@ La función principal del SODIMM de 260 pines es conectar tu Carrier Board con *
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/Jetson-connect-J401.gif"/></div>
 
-:::nota
+:::note
 Si la conexión es correcta, cuando conectes tu adaptador de corriente, verás que se enciende el indicador de encendido.
 :::
 
@@ -167,7 +167,7 @@ Para el puerto CAM1
 nvgstcapture-1.0 sensor-id=1  
 ```
 
-:::nota
+:::note
 Si deseas cambiar más configuraciones de la cámara, puedes escribir **"nvgstcapture-1.0 --help"** para acceder a todas las opciones configurables disponibles.
 :::
 </TabItem>
@@ -186,7 +186,7 @@ Para el puerto CAM1
 gst-launch-1.0 nvarguscamerasrc sensor-id=1 sensor-mode=0 ! 'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=20/1, format=NV12' ! nvvidconv ! xvimagesink
 ```
 
-:::nota
+:::note
 Si deseas cambiar más configuraciones de la cámara, puedes actualizar los argumentos como **ancho, alto, velocidad de fotogramas, formato**, etc.
 :::
 </TabItem>
@@ -226,7 +226,7 @@ Conecta una **batería de tipo botón CR2302 de 3 V con conector JST** al conect
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/13.png"/></div>
 
-:::nota
+:::note
 Si no te has conectado a Internet a través de Ethernet, puedes configurar manualmente la fecha/hora aquí.
 :::
 
@@ -320,7 +320,7 @@ nvfancontrol es un daemon de control de velocidad del ventilador en el espacio d
 
 Hay algunos elementos básicos en el servicio nvfancontrol, incluidos Tmargin, kickstart PWM, perfil de ventilador, control de ventilador y gobernador de ventilador. Todos estos se pueden programar a través del archivo de configuración según las preferencias del usuario. Este capítulo explicará cada uno de ellos en las siguientes secciones.
 
-:::nota
+:::note
 Si deseas cambiar nvfancontrol.conf, asegúrate de haberlo leído [Aquí](https://docs.nvidia.com/jetson/archives/r35.4.1/DeveloperGuide/text/SD/PlatformPowerAndPerformance/JetsonOrinNanoSeriesJetsonOrinNxSeriesAndJetsonAgxOrinSeries.html?highlight=fan#fan-profile-control)
 :::
 
@@ -340,7 +340,7 @@ sudo systemctl stop nvfancontrol
 ```
 vi /etc/nvfancontrol.conf 
 ```
-:::nota
+:::note
 Después de cambiar nvfancontrol.conf, imprime `Ese` y `:q` para salir
 :::
 
@@ -376,7 +376,7 @@ sudo systemctl stop nvfancontrol
 ```
 echo 100 > /sys/devices/platform/pwm-fan/hwmon/hwmon3/pwm1
 ```
-:::nota
+:::note
 Cuanto mayor sea el valor, más rápida será la velocidad del ventilador. El valor de PWM debe estar entre 0 y 255, tal vez **hwmon3** no sea tu palabra de ruta, así que verifica tu propia palabra de ruta.
 :::
 
@@ -828,7 +828,7 @@ sudo apt install putty
 
 - **Paso 3:** Utiliza PuTTy en Windows para enviar 'hola Linux' a la Jetson y utiliza PuTTy en la Jetson para enviar 'hola Windows' a Windows.
 
-:::nota
+:::note
 Asegúrate de configurar el baudrate a 115200 baudios.
 :::
 
@@ -940,7 +940,7 @@ Abre tu terminal (ALT+Ctrl+T) y escribe el siguiente comando:
 i2cdetect -y -r 7
 ```
 
-:::nota
+:::note
 Tu canal puede ser diferente al mío en el comando: ```i2cdetect -y -r x```.
 :::
 

@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 04/14/2025
+  date: 06/02/2025
   author: Frank
 ---
 
@@ -17,53 +17,61 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is April 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 2nd, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [XIAO RP2040 with PlatformIO](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/)
+### [reComputer Super Hardware and Interfaces Usage](https://wiki.seeedstudio.com/recomputer_jetson_super_hardware_interfaces_usage/)
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/rp2040_with_platformio.jpg" style={{width:800, height:'auto'}}/></div>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
 
-PlatformIO is a development platform that integrates many types of development boards and has good scalability. If the platform does not have the type you need, you can manually add the type of development board yourself. The code you write on Arduino can use it, just add the corresponding library.
+This wiki introduces the various different hardware and interfaces on the reComputer Super and how to use them to expand your project ideas.
 
-In this wiki, we will introduce how to install PlatformIO for the [XIAO RP2040](https://wiki.seeedstudio.com/xiao_rp2040_with_platform_io/) and run the sample code. In addition, we have also updated the tutorials for the [XIAO RA4M1](https://wiki.seeedstudio.com/xiao_ra4m1_with_platform_io/), [XIAO RP2350](https://wiki.seeedstudio.com/xiao_rp2350_with_platform_io/), and [XIAO SAMD21](https://wiki.seeedstudio.com/xiao_samd21_with_platform_io/).
+### [MyActuator X Series Motors Getting Start](https://wiki.seeedstudio.com/myactuator_series/)
 
-### [Getting started with XIAO 2-Channel Wi-Fi AC Energy Meter In Home Assistant](https://wiki.seeedstudio.com/2_channel_wifi_ac_energy_meter/)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.png" alt="pir" width={800} height="auto" /></p>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO/Gadgets/2_channel_wifi_ac_energy_meter/energy_meter_appearance.jpg" style={{width:800, height:'auto'}}/></div>
+This article will introduce how to get started with MyActuator series motors and how to use them with Python and ROS on the reComputer Mini Jetson Orin.
 
-The **[XIAO 2-Channel Wi-Fi AC Energy Meter](https://www.seeedstudio.com/)** is a smart device from Seeed Studio designed to detect the electricity usage of AC-powered appliances. Its dual-channel configuration supports independent detect of up to two loads, making it an excellent choice for automating a variety of devices in smart home environments. This guide provides a detailed walkthrough, including setup, integration, and advanced configuration for users ranging from beginners to smart-home enthusiasts.
+### [How to use the Lekiwi in Lerobot](https://wiki.seeedstudio.com/lerobot_lekiwi/)
 
-### [Getting Started with Seeed Studio IoT Button](https://wiki.seeedstudio.com/getting_started_with_seeed_iot_button/)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.png" alt="pir" width={800} height="auto" /></p>
 
-<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/IoT_Botton_ESPHOME/1.jpg" style={{width:800, height:'auto'}}/></div>
+The [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) is a fully open-source robotic car project launched by [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). It includes the detailed 3D printing files and operation guides, designed to be compatible with the [LeRobot](https://github.com/huggingface/lerobot/tree/main) imitation learning framework. It supports the SO101 robotic arm to enable a complete imitation learning pipeline.
 
-The IoT Button is a versatile smart switch offering dual Home Assistant integrations through ESPHome and Zigbee. Powered by ESP32-C6, it features customizable RGB LED indicators, programmable event triggers, USB-C charging, and flexible mounting options - everything you need for intuitive smart home control.
+### [Install the Isaac Lab](https://wiki.seeedstudio.com/install_isaaclab/)
 
-## Existing Wiki Updated
+This wiki provides a step-by-step guide to install Isaac Lab. Isaac Lab requires Isaac Sim. This tutorial first installs Isaac Sim via pip, then installs Isaac Lab from source code.
 
-### [Getting Started with ODYSSEY – STM32MP135D](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/)
+### [Install the Isaac ROS](https://wiki.seeedstudio.com/install_isaacros/)
 
-We have provided a [precompiled package](https://wiki.seeedstudio.com/ODYSSEY-STM32MP135D/#noteif-you-want-to-use-the-precompiled-package-please-click-this-link) for the ODYSSEY STM32MP135D.
+This wiki provides a step-by-step guide to install Isaac ROS.
 
-### [Voice Assistant System for Home Assitant](https://wiki.seeedstudio.com/respeaker_lite_ha/)
+### [Install the ROS2 Humble](https://wiki.seeedstudio.com/install_ros2_humble/)
 
-We have updated the `.yaml` example for [adding the XIAO ESP32S3 to ESPHome](https://wiki.seeedstudio.com/respeaker_lite_ha/#add-xiao-esp32s3-to-esphome).
+This wiki provides a step-by-step guide to install ROS2 humble.
 
-### [ePaper Panel in Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/)
+### [Isaac ROS AprilTag](https://wiki.seeedstudio.com/isaac_ros_apriltag/)
 
-We have added an example of [displaying a screenshot of Home Assistant](https://wiki.seeedstudio.com/xiao_075inch_epaper_panel/#4-display-image).
+This wiki provides a step-by-step guide to use Isaac ROS AprilTag.
+
+### [Isaac ROS Visual SLAM Deployment](https://wiki.seeedstudio.com/isaac_ros_visual_slam/)
+
+This wiki provides a step-by-step guide to use Isaac ROS Visual SLAM.
+
+<!-- ## Existing Wiki Updated
+
+### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+
+We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras). -->
 
 ## The Efforts of Contributor
 
-### [Seeed Studio XIAO ESP32S3 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao-esp32s3-nuttx/)
+<!-- ### [Seeed Studio XIAO ESP32C6 with NuttX(RTOS)](https://wiki.seeedstudio.com/xiao_esp32c6_nuttx/)
 
-<div style={{textAlign:'center'}}>
-  <img src="https://files.seeedstudio.com/wiki/XIAO-RP2040/img/NuttX/nuttx.svg" style={{width:400, height:'auto'}}/>
-</div>
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32C3-NuttX/nuttx.svg" style={{width:400, height:'auto'}}/></div>
 
-This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control.
+This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 board. NuttX is a lightweight, scalable real-time operating system known for its small footprint and broad hardware support. The guide walks through installing necessary tools, configuring the board, building the system, and flashing firmware. It includes examples for using NuttShell (NSH), USBNSH, and JUMBO applications, with a focus on practical tasks like GPIO and LED control. -->
 
 - Check on [GitHub](https://github.com/orgs/Seeed-Studio/projects/6) for more information.
 - We will be really appreciate if you can [share your ideas](https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=35179519) with us!
@@ -109,7 +117,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 boar
 - [weekly wiki on 12.04th](/Seeed_Elderly/weekly_wiki/wiki1204)
 - [weekly wiki on 12.11th](/Seeed_Elderly/weekly_wiki/wiki1211)
 - [weekly wiki on 12.18th](/Seeed_Elderly/weekly_wiki/wiki1218)
-- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225) -->
+- [weekly wiki on 12.25th](/Seeed_Elderly/weekly_wiki/wiki1225)
 - [weekly wiki on 2024.1.08th](/Seeed_Elderly/weekly_wiki/wiki240108)
 - [weekly wiki on 2024.1.15th](/Seeed_Elderly/weekly_wiki/wiki240115)
 - [weekly wiki on 2024.1.22nd](/Seeed_Elderly/weekly_wiki/wiki240122)
@@ -119,7 +127,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 boar
 - [weekly wiki on 2024.3.04th](/Seeed_Elderly/weekly_wiki/wiki240304)
 - [weekly wiki on 2024.3.11th](/Seeed_Elderly/weekly_wiki/wiki240311)
 - [weekly wiki on 2024.3.18th](/Seeed_Elderly/weekly_wiki/wiki240318)
-- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325)
+- [weekly wiki on 2024.3.25th](/Seeed_Elderly/weekly_wiki/wiki240325) -->
 - [weekly wiki on 2024.4.01st](/Seeed_Elderly/weekly_wiki/wiki240401)
 - [weekly wiki on 2024.4.08th](/Seeed_Elderly/weekly_wiki/wiki240408)
 - [weekly wiki on 2024.4.15th](/Seeed_Elderly/weekly_wiki/wiki240415)
@@ -173,5 +181,12 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32S3 boar
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
 - [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
+- [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
+- [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
+- [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
+- [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
+- [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
+- [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
+- [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 
 </details>

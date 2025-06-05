@@ -31,6 +31,10 @@ const config = {
       src: '/js/custom.js', // 添加你的 JavaScript 文件名、
       async: true,
     },
+    {
+    src: '/js/language-switcher.js', 
+    async: true,
+    },
   ],
 
   // GitHub pages deployment config.
@@ -285,11 +289,15 @@ const config = {
                 to: '/edge_ai_topic',
               },
               {
-                label: '矽递科技 Wiki 文档平台',
+                label: 'Wiki 矽递科技 (中文)',
                 to: '/cn/Getting_Started',
               },
               {
-                label: 'Plataforma Wiki de SeeedStudio (Español)',
+                label: 'Wiki SeeedStudio (日本語)',
+                to: '/ja/Getting_Started',
+              },
+              {
+                label: 'Wiki SeeedStudio (Español)',
                 to: '/es/SeeedStudio_XIAO_Series_Introduction',
               },
             ],
@@ -377,11 +385,15 @@ const config = {
 
           {
             type: 'dropdown',
-            label: 'Rangers',
+            label: 'Get Involved',
             to: '/ranger',
             position: 'left',
             className: 'navbar_dorp_items',
             items: [
+              {
+                label: 'Affiliate & Creator',
+                to: 'https://www.seeedstudio.com/blog/affiliate-program/',
+              },
               {
                 label: 'Rangers',
                 to: '/ranger',
@@ -436,12 +448,12 @@ const config = {
           //   label: 'Solutions',
           //   className: 'navbar_doc_items'
           // },
-          {
-            to: 'https://wiki-gpt.seeedstudio.com/chat',
-            label: 'AI Bot 🤖️',
-            position: 'right',
-            className: 'navbar_doc_right_items',
-          },
+          // {
+          //   to: 'https://wiki-gpt.seeedstudio.com/chat',
+          //   label: 'AI Bot 🤖️',
+          //   position: 'right',
+          //   className: 'navbar_doc_right_items',
+          // },
           {
             to: 'https://sensecraft.seeed.cc/ai/#/home',
             label: 'SenseCraft AI',
@@ -674,7 +686,7 @@ const config = {
         content:
           // 'We are looking forward to your contribution! Welcome to check our <a target="_blank" rel="https://github.com/orgs/Seeed-Studio/projects/3/views/1" href="https://github.com/BilltheWorld/wiki-documents/blob/docusaurus-version/TASK.md">task lists</a>！',
           // 'All planned updates to the wiki platform has been publicly availble. Your <a target="_blank" href="https://github.com/orgs/Seeed-Studio/projects/6?pane=issue&itemId=30957479">contributions</a> will be essential to us!',
-          'Collaborating with us! Join the Seeed Studio <a target="_blank" href="https://wiki.seeedstudio.com/ranger/">Ranger Program</a> or <a target="_blank" href="https://wiki.seeedstudio.com/contributors/">Contributor Program</a>!',
+          'Collaborate with Seeed — <a target="_blank" href="https://www.seeedstudio.com/blog/affiliate-program/">Creator</a>, <a target="_blank" href="https://wiki.seeedstudio.com/ranger/">Ranger</a>, or <a target="_blank" href="https://wiki.seeedstudio.com/contributors/">Contributor</a>, there’s always a role ideal for you!',
         backgroundColor: '#013949',
         textColor: '#FFFFFF',
         isCloseable: false,

@@ -41,7 +41,7 @@ En este tutorial utilizaremos MobaXterm.
 
 **Paso 1.** Obten el número de identificación del módulo USB2TTL reconocido por la computadora.
 
-:::nota
+:::note
 Si tu computadora usa Windows, puedes encontrar el número de identificación reconocido en el Administrador de dispositivos.
 :::
 

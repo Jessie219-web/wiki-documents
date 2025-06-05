@@ -130,7 +130,7 @@ En primer lugar, necesitas instalar los controladores periféricos para esta pla
 
 ## Flashear la Jetson 
 
-:::nota
+:::note
  Antes de pasar al flasheo, cabe señalar que el módulo Jetson Orin NX solo admite JetPack 5.1 y superior, mientras que el módulo Jetson Orin Nano solo admite JetPack 5.1.1 y superior.
 :::  
 
@@ -343,7 +343,7 @@ Aquí usaremos NVIDIA L4T **36.4** para instalar **Jetpack 6.1** en la Carrier B
 
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A607/a607_jp6.1.png" /></div>
 
-:::nota
+:::note
 Puedes utilizar el siguiente comando para verificar que el archivo descargado esté completo.
 
 <div align="center">

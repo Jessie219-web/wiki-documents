@@ -122,7 +122,7 @@ First of all, you need to:
   * You need a Micro-USB cable first; the data cable of an Android Phone will do fine.
 If you can't find one, you can buy one [here](https://www.seeedstudio.com/depot/Micro-USB-Cable-48cm-p-1475.html?cPath=98_100).
 
-:::cautionWarning
+:::caution
 Take gentle care in handling micro USB socket, or you might break the socket off.
 :::
 

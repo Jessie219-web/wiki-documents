@@ -245,7 +245,7 @@ El dispositivo vendrá preinstalado con JetPack 5.1.1. Si no hay requisitos espe
 
 La reServer Industrial viene preinstalada con JetPack 5.1.1 en un SSD de 128 GB junto con los controladores necesarios. Esto incluye componentes SDK como CUDA, CUDNN y TensorRT. Sin embargo, si deseas flashear Jetpack al SSD incluido o a un SSD nuevo, puedes seguir los pasos mostrados a continuación. Actualmente solo brindamos orientación para JP5.1.1 y seguiremos actualizándola en el futuro.
 
-:::nota
+:::note
 Si quieres utilizar un SSD con la reServer Industrial, solo te recomendamos elegir el de [128GB](https://www.seeedstudio.com/M-2-2280-SSD-128GB-p-5332.html), de [256GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-256GB-p-5333.html), [512GB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-512GB-p-5334.html), y el de [1TB](https://www.seeedstudio.com/NVMe-M-2-2280-SSD-1TB-p-5767.html) de Seeed.
 :::
 
@@ -267,7 +267,7 @@ Ahora debes ingresar al modo de recuperación en la placa reServer Industrial pa
 
 <div align="center"><img width ="650" src="https://files.seeedstudio.com/wiki/reServer-Industrial/4.jpg"/></div>
 
-:::nota
+:::note
 Asegúrate de encender el dispositivo mientras mantienes presionado el botón RECUPERACIÓN; de lo contrario, no ingresarás al modo de recuperación.
 :::
 
@@ -285,7 +285,7 @@ Aquí ofrecemos 2 métodos diferentes de flasheo.
 1. Descarga la imagen completa del sistema que hemos preparado, que incluye NVIDIA JetPack, controladores periféricos de hardware y flashea al dispositivo.
 2. Descarga NVIDIA L4T oficial, usa los controladores periféricos de hardware incluidos y flashea al dispositivo
 
-:::nota
+:::note
 La descarga del primer método es de aproximadamente 14 GB y la descarga del segundo método es de aproximadamente 3 GB.
 :::
 
@@ -806,7 +806,7 @@ Conecta una **batería de tipo CR2302 de 3 V con conector JST** al conector JST 
 
 <div align="center"><img width ="1000" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/13.png"/></div>
 
-:::nota
+:::note
 Si no te haz conectado a Internet a través de Ethernet, puedes configurar manualmente la fecha/hora aquí
 :::
 
@@ -957,7 +957,7 @@ Actualmente esta placa admite módulos EC25EUXGA y EC20CEHCLG.
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reServer-Industrial/13.jpg"/></div>
 
-:::nota
+:::note
 Si deseas quitar la tarjeta SIM, empújala hacia adentro para golpear el resorte interno para que la SIM salga de la ranura.
 :::
 
@@ -1132,7 +1132,7 @@ Actualmente esta placa admite el módulo SPI WM1302. Puedes utilizar la [versió
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reServer-Industrial/17.jpg"/></div>
 
-:::nota
+:::note
 Asegúrate de que no haya ningún puente entre los pines **SIM_MUX_SEL** y **GND** en el encabezado **J8 (Control y UART)**. Este puente sólo es necesario cuando se utilizan módulos 4G.
 :::
 
@@ -1228,7 +1228,7 @@ Después de ejecutar el comando anterior, verás el siguiente resultado con la �
 
 <div align="center"><img width ="500" src="https://files.seeedstudio.com/wiki/reComputer-Industrial/85.jpg"/></div>
 
-:::nota
+:::note
 El **ID de puerta de enlace** se ha completado automáticamente. Sin embargo, puedes cambiarlo a lo que prefieras. **El nombre de la puerta de enlace** no es obligatorio. Sin embargo, también puedes llenarlo según tu preferencia.
 :::
 
@@ -1279,7 +1279,7 @@ La reServer Industrial viene con un conector M.2 Key B que admite módulos 4G y 
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/reServer-Industrial/13.jpg"/></div>
 
-:::nota
+:::note
 Si deseas quitar la tarjeta SIM, empújala hacia adentro para golpear el resorte interno para que la SIM salga de la ranura.
 :::
 
@@ -1487,7 +1487,7 @@ echo 453 > export
 cd PQ.05
 ```
 
-:::nota
+:::note
 Puedes consultar la **Tabla de asignación de pines DI/DO** para encontrar el número GPIO y el número BGA. En el ejemplo anterior, para el pin DI1, el número GPIO es 453 y el número BGA es PQ.05
 :::
 
@@ -1521,7 +1521,7 @@ cd PI.00
 echo out > direction
 ```
 
-:::nota
+:::note
 Puedes consultar la **Tabla de asignación de pines DI/DO** para encontrar el número GPIO y el número BGA. En el ejemplo anterior, para el pin DO1, el número GPIO es 399 y el número BGA es PI.00
 :::
 
@@ -1764,7 +1764,7 @@ Y la siguiente tabla explica los diferentes modos según las posiciones del inte
   </tbody>
 </table>
 
-:::nota
+:::note
 Fuera de la caja, el modo predeterminado de los interruptores se configurará en RS485 con 010 de fábrica.
 :::
 

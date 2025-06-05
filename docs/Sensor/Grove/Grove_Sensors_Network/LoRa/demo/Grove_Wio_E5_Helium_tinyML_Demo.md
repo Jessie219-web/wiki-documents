@@ -104,7 +104,7 @@ Once uploaded, you will see the built-in red LED blinking with a 1-second delay 
 Make sure you are inside the helium network coverage. You can find the network coverage at [explorer.helium.com](https://explorer.helium.com/)
 :::
 
-:::cautionattention
+:::caution
 Please ensure the consistent of the frequency band among the end nodes, gateway, and Helium configuration you are using by following this instruction.
 The frequency plan this demo applied is for **IN865**.
 :::

@@ -52,7 +52,7 @@ Para este tutorial, necesitaremos una Nvidia [Jetson Orin NX 16GB](https://www.s
 La reComputer J4012 de Seeed Studio es una Jetson Orin NX de 16 GB.
 Es una máquina potente, pero Tegra Linux viene con muchas cosas y arranca en modo gráfico. Cambiemos eso.
 
-:::nota
+:::note
 Voy a ejecutar los ejemplos y la programación de forma remota usando VScode y una terminal SSH con habilitación de reenvío X. 
 El reenvío X es una opción con SSH que puede ejecutar algunas aplicaciones gráficas en nuestro lado de la conexión, en lugar de en la computadora remota.
 :::

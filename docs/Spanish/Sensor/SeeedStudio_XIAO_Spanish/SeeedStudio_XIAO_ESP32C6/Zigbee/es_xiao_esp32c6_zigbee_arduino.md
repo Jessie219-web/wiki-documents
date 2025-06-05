@@ -82,7 +82,7 @@ Una red Zigbee está compuesta por tres tipos principales de nodos:
    - No retransmiten mensajes a otros dispositivos.  
    - Optimizados para operar con batería y suelen entrar en modos de suspensión para ahorrar energía.  
 
-:::nota  
+:::note  
 
 - **Direcciones y Enrutamiento**:  
   - Zigbee utiliza un esquema de direccionamiento de 16 bits. Los dispositivos se comunican mediante direccionamiento directo e indirecto.  

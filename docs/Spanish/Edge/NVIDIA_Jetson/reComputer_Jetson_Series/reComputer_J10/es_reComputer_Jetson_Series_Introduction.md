@@ -89,7 +89,7 @@ Antes de encender y poner en marcha, es necesario realizar todas las comprobacio
 - Monitor
 - Cable de alimentación Tipo-C power cable y fuente de alimentación
 
-:::nota
+:::note
     No se incluirá ningún cable de alimentación tipo C ni fuente de alimentación en el producto.
 :::
 
@@ -111,7 +111,7 @@ Antes de encender y poner en marcha, es necesario realizar todas las comprobacio
 - Teclado y mouse USB
 - Monitor
 
-:::nota
+:::note
 Habrá 5 adaptadores de corriente seleccionables para ti. Cable de alimentación tipo C y fuente de alimentación incluidos en el producto. Por lo tanto, puedes elegir el que sea adecuado para tu país o región para alimentar la computadora sin tener que comprar ninguna fuente de alimentación adicional.
 :::
 
@@ -134,7 +134,7 @@ Habrá 5 adaptadores de corriente seleccionables para ti. Cable de alimentación
 - Monitor
 - Adaptador y fuente de alimentación
 
-:::nota
+:::note
 Haz coincidir el cable de alimentación del adaptador de corriente de acuerdo con el estándar de enchufe de alimentación local.
 :::
 
@@ -159,7 +159,7 @@ Haz coincidir el cable de alimentación del adaptador de corriente de acuerdo co
 - Monitor
 - Cable de alimentación
 
-:::nota
+:::note
 Haz coincidir el cable de alimentación del adaptador de corriente de acuerdo con el estándar de enchufe de alimentación local.
 :::
 

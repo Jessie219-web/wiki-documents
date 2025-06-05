@@ -264,8 +264,9 @@ sudo nano /boot/firmware/config.txt
 **Step 2**:Add the following to the [all] section at the end of the `/boot/firmware/config.txt` file:
 
 ```shell
+dtparam=pciex1
 dtparam=pciex1_gen=3
-dtoverlay=pciex1-compat-pi5,no-mip
+dtoverlay=pciex1-compat-pi5,no-mip,mmio-hi 
 
 ```
 

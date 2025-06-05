@@ -4,6 +4,7 @@ title: SenseCAP M1 Local Console
 keywords:
 - SenseCAP Network
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_Local_Console
 last_update:
   date: 02/14/2023
   author: Matthew

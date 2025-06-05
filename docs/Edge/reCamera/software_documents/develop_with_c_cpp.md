@@ -21,6 +21,9 @@ recamera has limited resources and no compilation environment for C code is conf
  **Step1**:Configuring the build environment
 
 ```bash
+sudo apt update
+sudo apt install build-essential
+
 mkdir recamera && cd recamera
 
 wget https://github.com/Seeed-Studio/reCamera-OS/releases/download/0.1.5/reCameraOS_sdk_v0.1.5.tar.gz

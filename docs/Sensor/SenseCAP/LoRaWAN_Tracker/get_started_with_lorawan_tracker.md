@@ -34,6 +34,67 @@ T1000-E for LoRaWAN comes with fully open-source firmware. To enhance the user e
 
 <p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/wysiwyg/upload/image2_20.png" alt="pir" width={800} height="auto" /></p>
 
+## Hardware Overview
+
+
+### Diagram
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/LoraWAN_Tracker/diagram.png" alt="pir" width={800} height="auto" /></p>
+
+### Pin Descriptions
+
+
+|No.|Name|Function|Description|
+| :- | :- | :- | :- |
+|1|P0.00|XL1|Connection for 32.768 kHz crystal|
+|2|P0.01|XL2|Connection for 32.768 kHz crystal|
+|3|P0.02|<p>Digital I/O</p><p>Analog input</p>|Baterry level dectect|
+|4|P0.03|<p>Digital I/O</p><p>Analog input</p>|Red LED IO|
+|5|P0.04|<p>Digital I/O</p><p>Analog input</p>|VCC voltage dectect|
+|6|P0.05|<p>Digital I/O</p><p>Analog input</p>|Charger insert dectect,must be configured as no pullup or pulldown|
+|7|P0.06|Digital I/O|Key IO, must be configured as input\_pulldown|
+|8|P0.07|Digital I/O|LR1110 BUSY|
+|9|P0.08|Digital I/O|AG3335 VRTC EN|
+|10|P0.09|NFC input|NC|
+|11|P0.10|NFC input|NC|
+|12|P0.11|Digital I/O|SPI SCK|
+|13|P0.12|Digital I/O|SPI CS|
+|14|P0.13|Digital I/O|UART1 TX For AG3335|
+|15|P0.14|Digital I/O|UART1 RX For AG3335|
+|16|P0.15|Digital I/O|AG3335 RTC Interrupt|
+|17|P0.16|Digital I/O|UART1 TX For debug|
+|18|P0.17|Digital I/O|UART1 RX For debug|
+|19|P0.18|Reset|Reset|
+|20|P0.19|Digital I/O|QSPI Clock for FLASH|
+|21|P0.20|Digital I/O|QSPI CS for FLASH|
+|22|P0.21|Digital I/O|QSPI IO0 for FLASH|
+|23|P0.22|Digital I/O|QSPI IO1 for FLASH|
+|24|P0.23|Digital I/O|QSPI IO2 for FLASH|
+|25|P0.24|Digital I/O|Green LED IO|
+|26|P0.25|Digital I/O|Buzzer PWM|
+|27|P0.26|Digital I/O|I2C SDA|
+|28|P0.27|Digital I/O|I2C SCL|
+|29|P0.28|<p>Digital I/O</p><p>Analog input</p>|NC|
+|30|P0.29|<p>Digital I/O</p><p>Analog input</p>|Light Sensor ADC input|
+|31|P0.30|<p>Digital I/O</p><p>Analog input</p>|NC|
+|32|P0.31|<p>Digital I/O</p><p>Analog input</p>|Temperature Sensor ADC input|
+|33|P1.00|Digital I/O|QSPI IO3 for FLASH|
+|34|P1.01|Digital I/O|LR1110 DIO9|
+|35|P1.02|Digital I/O|Accelerator Interrupt|
+|36|P1.03|Digital I/O|Charger State|
+|37|P1.04|Digital I/O|Charger Done|
+|38|P1.05|Digital I/O|Buzzer Enable|
+|39|P1.06|Digital I/O|Sensor VCC Enable|
+|40|P1.07|Digital I/O|Accelerator Enable|
+|41|P1.08|Digital I/O|SPI MISO|
+|42|P1.09|Digital I/O|SPI MOSI|
+|43|P1.10|Digital I/O|LR1110 RESET|
+|44|P1.11|Digital I/O|AG3335 PWR EN|
+|45|P1.12|Digital I/O|AG3335 SLEEP Interrupt|
+|46|P1.13|Digital I/O|Flash Enable|
+|47|P1.14|Digital I/O|AG3335 RESETB OUT|
+|48|P1.15|Digital I/O|AG3335 Reset|
+
 
 
 ## Demo Firmware Overview

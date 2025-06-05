@@ -382,9 +382,9 @@ The tracker supports LoRaWAN to downlink some commands to adjust parameters. If 
 | - | :- |
 |ID|<p>SOS mode</p><p>0: single mode</p><p>1: continuous mode</p>|
 
-8001: set SOS to single mode.
+8000: set SOS to single mode.
 
-8002: set SOS to continuous mode.
+8001: set SOS to continuous mode.
 
 ### Setting the Uplink Interval -0x81
 
@@ -484,7 +484,8 @@ Example:
 Example: 
 
 8600: Set the positioning strategy to “Only GNSS”.
-1. ### <a name="_toc145487516"></a>**Request Event Parameters -0x87**
+
+### Request Event Parameters -0x87
 
 |0x87|
 | - |
@@ -492,7 +493,7 @@ Example:
 
 Example: 
 
-85: request event parameters. 
+87: request event parameters. 
 
 ### Request Device Status Packet -0x88
 
@@ -518,14 +519,14 @@ Example:
 
 Enable data collection and upload for the temperature and light sensor.
 
-|0x83|Byte2|
+|0x8C|Byte2|
 | - | :- |
 |ID|<p>Open the temperature and light sensor.</p><p>00: Close the temperature and light sensor.</p><p>01: Open the temperature and light sensor.</p>|
 
 Example:
 
-8300: Close the temperature and light sensor.<br/>
-8301: Open the temperature and light sensor.
+8C00: Close the temperature and light sensor.<br/>
+8C01: Open the temperature and light sensor.
 
 ### Enable SOS Alarm -0x8D
 

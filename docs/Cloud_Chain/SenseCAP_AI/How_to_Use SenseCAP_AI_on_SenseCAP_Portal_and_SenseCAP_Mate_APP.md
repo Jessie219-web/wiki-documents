@@ -1,4 +1,4 @@
-﻿---
+---
 description: How to Use SenseCAP AI on SenseCAP Portal and SenseCAP Mate APP
 title: How to Use SenseCAP AI on SenseCAP Portal and SenseCAP Mate APP
 keywords:

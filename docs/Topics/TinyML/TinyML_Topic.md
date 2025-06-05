@@ -68,11 +68,11 @@ Machine learning is a field of computer systems that aims to develop self-improv
         <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840sense.jpg" style={{width:800, height:'auto'}}/>
     </div>
     <div class="xiao_topic_page_vertical">
-        <font size={"2"}>XIAO nRF52840 Sense features an onboard microphone and 3-axis IMU, suitable for the TinyML AI+IOT project</font>
+        <font size={"2"}>XIAO nRF52840 Sense features an onboard microphone and 6-axis IMU, suitable for the TinyML AI+IOT project</font>
         <br /><font size={"3"}><strong>HIGH-PERFORMANCE</strong></font>
         <font size={"2"}>ARM® Cortex™-M4 32-bit processor with FPU operating at 64 MHz</font>
         <br /><font size={"3"}><strong>Memory</strong></font><font size={"2"}>256 KB RAM + 2MB FLASH</font>
-        <br /><font size={"3"}><strong>MULTI-FUNCTIONAL</strong></font><font size={"2"}>Onboard microphone and 3-axis IMU</font>
+        <br /><font size={"3"}><strong>MULTI-FUNCTIONAL</strong></font><font size={"2"}>Onboard microphone and 6-axis IMU</font>
         <br /><font size={"3"}><strong>WIRELESS</strong></font><font size={"2"}>Bluetooth 5.0, NFC with onboard antenna</font>
         <br /><font size={"3"}><strong>TINYML-SUPPORTED</strong></font><font size={"2"}>Gesture/Voice recognition</font>
     </div>

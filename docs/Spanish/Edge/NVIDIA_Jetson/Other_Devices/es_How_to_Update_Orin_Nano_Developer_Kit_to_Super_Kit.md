@@ -52,7 +52,7 @@ Mira el vídeo para sumergirte en la experiencia paso a paso.
 
 Utiliza el programa de grabación para cargar completamente la CPU y la GPU, bajo el cual la potencia máxima del módulo alcanza los 21 W, cerca del nivel de potencia de la Jetson Orin NX.
 
-:::nota
+:::note
 Programa de grabación de CPU y GPU Jetson Orin [enlace de descarga](https://github.com/anseeto/jetson-gpu-burn).
 :::
 
@@ -64,7 +64,7 @@ Programa de grabación de CPU y GPU Jetson Orin [enlace de descarga](https://git
 
 Aquí, usamos Ollama para cargar el modelo Llama3.2-3B y comparar la velocidad de inferencia del modelo bajo diferentes modos de potencia. Es evidente que con la potencia máxima habilitada, la velocidad de inferencia del modelo es significativamente más rápida, mostrando una mejora de 1,28 veces en comparación con su predecesor.
 
-:::nota
+:::note
 Consulta [este tutorial](https://www.jetson-ai-lab.com/tutorial_ollama.html) para aprender cómo implementar rápidamente Ollama en dispositivos Nvidia Jetson.
 :::
 

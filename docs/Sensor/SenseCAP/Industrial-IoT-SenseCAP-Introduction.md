@@ -47,7 +47,7 @@ Wild IoT refers to the technology of deploying sensor networks in natural enviro
 [**SenseCAP T1000**](https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html) is a compact LoRaWAN® tracker that utilizes GNSS/Wi-Fi/Bluetooth for precise indoor & outdoor location tracking. It boasts self-geo-adaptive capabilities, local data storage, and an impressive months of battery life. Additionally, it is equipped with temperature, light, and motion sensors, making it ideal for a variety of location-based applications.
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecap_t1000_tracker/"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-A-p-5697.html"><strong><span><font color={'FFFFFF'} size={"4"}> 🖱️ Buy Now</font></span></strong>
     </a>
     <a class="get_one_now_item" href="https://wiki.seeedstudio.com/sensecap_t1000_tracker/" ><strong><span><font color={'FFFFFF'} size={"4"}> 📚 Learn More</font></span></strong>
     </a>

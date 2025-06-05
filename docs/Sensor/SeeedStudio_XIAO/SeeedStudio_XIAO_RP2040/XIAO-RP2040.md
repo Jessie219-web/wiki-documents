@@ -124,7 +124,7 @@ Please note: The behavior of the built-in programmable Single-colour LEDs (They 
 
 - **[STEP]** [Seeed Studio XIAO RP2040 3D Model](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/seeed-studio-xiao-rp2040-3d-model.zip)
 
-- **[ZIP]** [Seeed Studio XIAO RP2040 Certification files](https://files.seeedstudio.com/wiki/XIAO-RP2040/res/XIAO-RP2040-Certification.zip)
+
 
 - 🔗 **[Kicad]** [Seeed Studio XIAO RP2040 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 
