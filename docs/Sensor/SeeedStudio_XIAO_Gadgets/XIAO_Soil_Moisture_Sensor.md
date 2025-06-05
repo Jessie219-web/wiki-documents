@@ -776,7 +776,7 @@ Wait a moment and you will see the feedback like the following image. If it fail
 </TabItem>
 </Tabs>
 
-## Restet
+## Reset
 If the firmware needs to be reflashed, you can use the following link to restore the default firmware:  
 [https://gadgets.seeed.cc/](https://gadgets.seeed.cc/)
 
