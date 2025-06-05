@@ -6289,6 +6289,7 @@ const sidebars = {
           label: 'Isaag Lab',
           items: [
             'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_Install_Isaac_lab',
+            'zh-CN/Robotics/cn_XiaoPi',
           ]
         },
       ]
