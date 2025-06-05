@@ -1,6 +1,6 @@
 ---
-description: Getting Started with XIAO Soil Moisture
-title: Getting Started with XIAO Soil Moisture
+description: Getting Started with XIAO Soil Moisture Sensor
+title: Getting Started with XIAO Soil Moisture Sensor
 keywords:
   - XIAO
   - Soil Moisture Sensor
@@ -73,7 +73,7 @@ Powered by a single AA battery, designed to last up to three months thanks to op
 
 ## Getting Started
 
-This section will guide you through setting up your XIAO Soil Moisture for the first time.
+This section will guide you through setting up your XIAO Soil Moisture Sensor for the first time.
 
 ### Materials Required
 
