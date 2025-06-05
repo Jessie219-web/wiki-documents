@@ -228,8 +228,8 @@ last_update:
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
-        <td align="center"><font size={"3"}>✅</font></td>
-        <td align="center"><font size={"3"}>✅</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
 	</tr>
     <tr>
 	    <th>Reset Button</th>
