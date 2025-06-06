@@ -1,4 +1,4 @@
-// 简化版本：移除缓存，专注生成速度和可靠性
+// 生成内嵌映射数据的语言切换器脚本
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
@@ -21,10 +21,9 @@ const config = {
     es: '/es'
   },
   
-  // 输出文件
-  outputFile: 'static/js/language-map.json',
+  // 输出文件 - 直接生成JavaScript文件
+  outputFile: 'static/js/language-switcher.js',
   
-  // 简化配置
   verbose: true
 };
 
@@ -44,7 +43,6 @@ function getAllMarkdownFiles(dir) {
       const entries = fs.readdirSync(currentDir, { withFileTypes: true });
       
       for (const entry of entries) {
-        // 跳过隐藏文件和无关目录
         if (entry.name.startsWith('.') || 
             entry.name === 'node_modules' || 
             entry.name === '_site' ||
@@ -90,19 +88,14 @@ function extractSlugFromFile(filePath) {
 
 // 从相对路径推断默认slug
 function inferSlugFromPath(relativePath) {
-  // 移除文件扩展名
   const withoutExt = relativePath.replace(/\.(md|mdx)$/i, '');
-  
-  // 标准化路径分隔符
   const normalized = withoutExt.replace(/\\/g, '/');
   
-  // 处理index文件
   if (normalized.endsWith('/index') || normalized === 'index') {
     const dir = path.dirname(normalized);
     return dir === '.' ? '/' : `/${dir}/`;
   }
   
-  // 普通文件
   return `/${normalized}/`;
 }
 
@@ -120,22 +113,18 @@ function processLanguageDocuments(languageCode, docsPath) {
   }
   
   for (const file of files) {
-    // 先尝试从frontmatter提取slug
     let slug = extractSlugFromFile(file.fullPath);
     
-    // 如果没有slug，从文件路径推断
     if (!slug) {
       slug = inferSlugFromPath(file.relativePath);
     }
     
-    // 处理语言前缀
     if (languageCode !== 'en' && slug.startsWith(config.languagePrefixes[languageCode])) {
       slug = slug.replace(config.languagePrefixes[languageCode], '') || '/';
     }
     
     slugMap.set(slug, {
       file: file.relativePath,
-      fullPath: file.fullPath,
       language: languageCode
     });
     
@@ -152,13 +141,10 @@ function generateLanguageMapping() {
   console.log('🚀 开始生成语言映射表...\n');
   
   const allSlugs = new Map();
-  const processedFiles = new Set();
   
-  // 处理每种语言的文档
   for (const [langCode, docsPath] of Object.entries(config.docsPaths)) {
     const slugMap = processLanguageDocuments(langCode, docsPath);
     
-    // 合并到总映射中
     for (const [slug, fileInfo] of slugMap) {
       if (!allSlugs.has(slug)) {
         allSlugs.set(slug, {
@@ -170,11 +156,9 @@ function generateLanguageMapping() {
       const slugInfo = allSlugs.get(slug);
       slugInfo.languages.push(langCode);
       slugInfo.files[langCode] = fileInfo;
-      processedFiles.add(fileInfo.fullPath);
     }
   }
   
-  // 转换为最终格式
   const languageMapping = {};
   
   for (const [slug, info] of allSlugs) {
@@ -183,161 +167,324 @@ function generateLanguageMapping() {
     }
   }
   
-  return { 
-    languageMapping, 
-    allSlugs, 
-    processedFiles: processedFiles.size
-  };
+  return { languageMapping, allSlugs };
 }
 
-// 生成统计报告
-function generateReport(allSlugs, processedFiles) {
-  if (!config.verbose) return {};
-  
-  console.log('\n📊 生成统计报告...\n');
-  
-  const stats = {
-    total: allSlugs.size,
-    multiLanguage: 0,
-    singleLanguage: 0,
-    byLanguageCount: {},
-    processedFiles
-  };
-  
-  const multiLanguagePages = [];
-  const languageDistribution = {};
-  
-  for (const [slug, info] of allSlugs) {
-    const langCount = info.languages.length;
-    
-    if (langCount > 1) {
-      stats.multiLanguage++;
-      multiLanguagePages.push({
-        slug,
-        languages: info.languages,
-        count: langCount
-      });
-    } else {
-      stats.singleLanguage++;
-    }
-    
-    stats.byLanguageCount[langCount] = (stats.byLanguageCount[langCount] || 0) + 1;
-    
-    // 统计每种语言的页面数
-    for (const lang of info.languages) {
-      languageDistribution[lang] = (languageDistribution[lang] || 0) + 1;
-    }
-  }
-  
-  // 输出统计信息
-  console.log('📈 统计信息:');
-  console.log(`   总页面数: ${stats.total}`);
-  console.log(`   多语言页面: ${stats.multiLanguage}`);
-  console.log(`   单语言页面: ${stats.singleLanguage}`);
-  console.log(`   处理文件数: ${processedFiles}`);
-  
-  console.log('\n🌍 各语言页面分布:');
-  for (const [lang, count] of Object.entries(languageDistribution)) {
-    const langName = {en: '英文', cn: '中文', ja: '日文', es: '西语'}[lang] || lang;
-    console.log(`   ${langName} (${lang}): ${count} 页`);
-  }
-  
-  console.log('\n📊 按语言数量分布:');
-  for (const [count, pages] of Object.entries(stats.byLanguageCount)) {
-    console.log(`   ${count} 种语言: ${pages} 页`);
-  }
-  
-  // 显示多语言页面示例
-  console.log('\n🌐 多语言页面示例 (前10个):');
-  multiLanguagePages
-    .sort((a, b) => b.count - a.count)
-    .slice(0, 10)
-    .forEach(page => {
-      console.log(`   ${page.slug} (${page.languages.join(', ')})`);
-    });
-  
-  return stats;
-}
-
-// 验证输出数据
-function validateOutput(languageMapping) {
-  const issues = [];
-  
-  for (const [slug, languages] of Object.entries(languageMapping)) {
-    if (!Array.isArray(languages) || languages.length < 2) {
-      issues.push(`无效的语言数组: ${slug}`);
-    }
-    
-    for (const lang of languages) {
-      if (!config.languagePrefixes.hasOwnProperty(lang)) {
-        issues.push(`未知语言代码: ${lang} in ${slug}`);
-      }
-    }
-  }
-  
-  if (issues.length > 0) {
-    console.warn('\n⚠️  发现问题:');
-    issues.forEach(issue => console.warn(`   - ${issue}`));
-  }
-  
-  return issues.length === 0;
-}
-
-// 主函数
-function main() {
+// 生成包含映射数据的JavaScript文件
+function generateJavaScriptFile() {
   const startTime = Date.now();
   
   try {
-    // 生成映射
-    const { languageMapping, allSlugs, processedFiles } = generateLanguageMapping();
+    const { languageMapping, allSlugs } = generateLanguageMapping();
     
-    // 验证数据
-    const isValid = validateOutput(languageMapping);
-    if (!isValid) {
-      console.error('❌ 数据验证失败，请检查配置');
-      process.exit(1);
-    }
-    
-    // 生成报告
-    const stats = generateReport(allSlugs, processedFiles);
-    
-    // 准备输出数据
-    const outputData = {
-      generatedAt: new Date().toISOString(),
-      generatedBy: 'generate-language-map.js v3.0 (无缓存版)',
-      generationTime: Date.now() - startTime,
-      stats: {
-        totalPages: allSlugs.size,
-        multiLanguagePages: stats.multiLanguage || 0,
-        singleLanguagePages: stats.singleLanguage || 0,
-        processedFiles: processedFiles
-      },
-      config: {
-        languagePrefixes: config.languagePrefixes,
-        docsPaths: config.docsPaths,
-        version: '3.0'
-      },
-      languageMapping: languageMapping
+    // 统计信息
+    const stats = {
+      total: allSlugs.size,
+      multiLanguage: Object.keys(languageMapping).length,
+      singleLanguage: allSlugs.size - Object.keys(languageMapping).length
     };
     
+    console.log('\n📊 统计信息:');
+    console.log(`   总页面数: ${stats.total}`);
+    console.log(`   多语言页面: ${stats.multiLanguage}`);
+    console.log(`   单语言页面: ${stats.singleLanguage}`);
+    
+    // 生成JavaScript代码
+    const jsContent = `// 语言切换器 - 内嵌映射数据版本
+// 生成时间: ${new Date().toISOString()}
+// 多语言页面: ${stats.multiLanguage} 个
+
+(function() {
+  'use strict';
+
+  const DEBUG = false;
+  
+  function log(...args) {
+    if (DEBUG) {
+      console.log('🔄 [内嵌数据版]', new Date().toISOString().slice(11, 23), ...args);
+    }
+  }
+
+  // 语言配置
+  const languages = {
+    en: { label: 'English', flag: '🇺🇸', prefix: '' },
+    cn: { label: '简体中文', flag: '🇨🇳', prefix: '/cn' },
+    ja: { label: '日本語', flag: '🇯🇵', prefix: '/ja' },
+    es: { label: 'Español', flag: '🇪🇸', prefix: '/es' }
+  };
+
+  // 内嵌的语言映射数据 - 无需网络请求！
+  const languageMapping = ${JSON.stringify(languageMapping, null, 2)};
+
+  let isInitialized = false;
+  let retryCount = 0;
+  const MAX_RETRIES = 5;
+  const RETRY_INTERVAL = 100;
+
+  function getCurrentLanguageAndPath() {
+    const currentPath = window.location.pathname;
+    let detectedLanguage = 'en';
+    let basePath = currentPath;
+    
+    if (currentPath.startsWith('/cn/')) {
+      detectedLanguage = 'cn';
+      basePath = currentPath.replace('/cn', '') || '/';
+    } else if (currentPath.startsWith('/ja/')) {
+      detectedLanguage = 'ja';
+      basePath = currentPath.replace('/ja', '') || '/';
+    } else if (currentPath.startsWith('/es/')) {
+      detectedLanguage = 'es';
+      basePath = currentPath.replace('/es', '') || '/';
+    }
+    
+    if (!basePath.startsWith('/')) {
+      basePath = '/' + basePath;
+    }
+    
+    log('路径解析:', { currentPath, detectedLanguage, basePath });
+    return { currentLanguage: detectedLanguage, basePath };
+  }
+
+  function findAvailableLanguages(basePath, currentLanguage) {
+    const pathsToTry = [
+      basePath,
+      basePath.replace(/\\/$/, ''),
+      basePath + (basePath.endsWith('/') ? '' : '/'),
+    ];
+    
+    for (const tryPath of pathsToTry) {
+      if (languageMapping[tryPath]) {
+        const availableLanguages = languageMapping[tryPath];
+        log(\`🌐 找到多语言页面 \${tryPath}:\`, availableLanguages);
+        return availableLanguages;
+      }
+    }
+    
+    log(\`ℹ️ 单语言页面: \${basePath}\`);
+    return [currentLanguage];
+  }
+
+  function createLanguageSwitcher(availableLanguages, currentLanguage, basePath) {
+    if (availableLanguages.length <= 1) {
+      log('⚪ 单语言，跳过切换器');
+      return null;
+    }
+
+    const currentLangConfig = languages[currentLanguage];
+    const priority = { en: 0, cn: 1, ja: 2, es: 3 };
+    const sortedLanguages = [...availableLanguages].sort((a, b) => {
+      if (a === currentLanguage) return -1;
+      if (b === currentLanguage) return 1;
+      return (priority[a] || 999) - (priority[b] || 999);
+    });
+    
+    const switcherHTML = \`
+      <div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items">
+        <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button">
+          <span class="lang-flag">\${currentLangConfig.flag}</span>
+          <span class="lang-label">\${currentLangConfig.label}</span>
+          <svg width="8" height="8" class="lang-arrow" aria-hidden="true">
+            <path d="M1 2l3 3 3-3" stroke="currentColor" stroke-width="1.5" fill="none"></path>
+          </svg>
+        </a>
+        <ul class="dropdown__menu">
+          \${sortedLanguages.map(langCode => {
+            const lang = languages[langCode];
+            const langPath = lang.prefix + basePath;
+            const isActive = langCode === currentLanguage;
+            
+            return \`
+              <li>
+                <a class="dropdown__link \${isActive ? 'dropdown__link--active' : ''}" 
+                   href="\${langPath}"
+                   title="切换到 \${lang.label}"
+                   \${isActive ? 'aria-current="page"' : ''}>
+                  <span class="lang-flag">\${lang.flag}</span>
+                  <span class="lang-label">\${lang.label}</span>
+                  \${isActive ? '<span class="lang-check">✓</span>' : ''}
+                </a>
+              </li>
+            \`;
+          }).join('')}
+        </ul>
+      </div>
+    \`;
+    
+    log('🎨 创建切换器HTML');
+    return switcherHTML;
+  }
+
+  function injectLanguageSwitcher() {
+    const startTime = Date.now();
+    log(\`🔧 开始注入切换器... (尝试 \${retryCount + 1}/\${MAX_RETRIES})\`);
+    
+    let navbar = document.querySelector('.navbar__items--right') || 
+                 document.querySelector('.navbar__items') ||
+                 document.querySelector('.navbar');
+    
+    if (!navbar) {
+      log('⏳ 导航栏未找到');
+      if (retryCount < MAX_RETRIES) {
+        retryCount++;
+        setTimeout(injectLanguageSwitcher, RETRY_INTERVAL);
+        return;
+      } else {
+        log('❌ 达到最大重试次数，放弃注入');
+        return;
+      }
+    }
+
+    if (document.querySelector('.navbar-language-switcher')) {
+      log('⚠️ 切换器已存在，跳过');
+      return;
+    }
+
+    const { currentLanguage, basePath } = getCurrentLanguageAndPath();
+    
+    try {
+      // 无需网络请求，直接使用内嵌数据！
+      const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
+      const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+      
+      if (switcherHTML) {
+        let insertPosition = null;
+        const positionSelectors = [
+          'a[href*="seeedstudio.com"]',
+          '.header-github-link', 
+          '.navbar__item:last-child'
+        ];
+        
+        for (const selector of positionSelectors) {
+          const element = navbar.querySelector(selector);
+          if (element) {
+            insertPosition = element;
+            break;
+          }
+        }
+        
+        if (insertPosition) {
+          insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
+          log(\`✅ 插入到 \${insertPosition.tagName} 前面\`);
+        } else {
+          navbar.insertAdjacentHTML('beforeend', switcherHTML);
+          log('✅ 插入到导航栏末尾');
+        }
+        
+        const switcherButton = navbar.querySelector('.navbar-language-switcher .navbar__link');
+        if (switcherButton) {
+          switcherButton.addEventListener('click', (e) => {
+            e.preventDefault();
+          });
+        }
+        
+        const injectTime = Date.now() - startTime;
+        log(\`🎉 切换器注入成功! (\${injectTime}ms)\`);
+        log(\`🌐 支持语言: \${availableLanguages.join(', ')}\`);
+        
+        retryCount = 0;
+        
+      } else {
+        log('⚪ 单语言页面，无需切换器');
+      }
+    } catch (error) {
+      log('❌ 注入失败:', error);
+      
+      if (retryCount < MAX_RETRIES) {
+        retryCount++;
+        setTimeout(injectLanguageSwitcher, RETRY_INTERVAL);
+      }
+    }
+  }
+
+  function observeRouteChanges() {
+    let currentUrl = location.href;
+    let lastPathname = location.pathname;
+    
+    function handleRouteChange(source) {
+      if (location.href !== currentUrl || location.pathname !== lastPathname) {
+        log(\`🔄 路由变化 [\${source}]:\`, lastPathname, '->', location.pathname);
+        currentUrl = location.href;
+        lastPathname = location.pathname;
+        
+        const oldSwitcher = document.querySelector('.navbar-language-switcher');
+        if (oldSwitcher) {
+          oldSwitcher.remove();
+          log('🗑️ 移除旧切换器');
+        }
+        
+        retryCount = 0;
+        setTimeout(injectLanguageSwitcher, 5); // 极短延迟
+      }
+    }
+
+    window.addEventListener('popstate', () => handleRouteChange('popstate'));
+    
+    const originalPushState = history.pushState;
+    const originalReplaceState = history.replaceState;
+    
+    history.pushState = function(...args) {
+      originalPushState.apply(this, args);
+      setTimeout(() => handleRouteChange('pushState'), 0);
+    };
+    
+    history.replaceState = function(...args) {
+      originalReplaceState.apply(this, args);
+      setTimeout(() => handleRouteChange('replaceState'), 0);
+    };
+    
+    new MutationObserver(() => {
+      handleRouteChange('mutation');
+    }).observe(document.body, { 
+      subtree: true, 
+      childList: true,
+      attributes: true,
+      attributeFilter: ['data-current-path', 'data-rh'] 
+    });
+  }
+
+  function init() {
+    if (isInitialized) {
+      log('⚠️ 已初始化，跳过');
+      return;
+    }
+    
+    log('🚀 初始化语言切换器 (内嵌数据版)...');
+    log(\`📊 包含 \${Object.keys(languageMapping).length} 个多语言页面\`);
+    isInitialized = true;
+    
+    observeRouteChanges();
+    injectLanguageSwitcher();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    setTimeout(init, 0);
+  }
+  
+  setTimeout(() => {
+    if (!isInitialized) {
+      log('🔄 备用初始化触发');
+      init();
+    }
+  }, 500);
+
+})();`;
+
     // 确保输出目录存在
     const outputDir = path.dirname(config.outputFile);
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
     }
     
-    // 写入文件
-    fs.writeFileSync(
-      config.outputFile, 
-      JSON.stringify(outputData, null, 2),
-      'utf8'
-    );
+    // 写入JavaScript文件
+    fs.writeFileSync(config.outputFile, jsContent, 'utf8');
     
-    console.log(`\n✅ 语言映射表已生成: ${config.outputFile}`);
-    console.log(`📄 包含 ${Object.keys(languageMapping).length} 个多语言页面`);
+    console.log(`\n✅ 语言切换器已生成: ${config.outputFile}`);
+    console.log(`📄 包含 ${stats.multiLanguage} 个多语言页面的映射数据`);
     console.log(`⚡ 用时: ${Date.now() - startTime}ms`);
+    console.log(`🚀 无需网络请求，页面切换即时响应！`);
     
-    // 输出文件大小
     const stats_file = fs.statSync(config.outputFile);
     console.log(`📦 文件大小: ${Math.round(stats_file.size / 1024)}KB`);
     
@@ -349,7 +496,7 @@ function main() {
 
 // 运行脚本
 if (require.main === module) {
-  main();
+  generateJavaScriptFile();
 }
 
-module.exports = { generateLanguageMapping, config };
+module.exports = { generateJavaScriptFile, config };
