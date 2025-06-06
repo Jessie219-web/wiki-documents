@@ -1,15 +1,17 @@
 ---
-description: Using XIAO ESP32C3 to connect to SenseCAP AI for planting advice
-title: Using XIAO ESP32C3 to connect to SenseCAP AI for planting advice
+description: Using XIAO ESP32C3 to connect to SenseCraft Data Platform AI Advisor for planting advice
+title: Using XIAO ESP32C3 to connect to SenseCraft Data Platform AI Advisor for planting advice
 keywords:
+- sensecraft data platform
 - xiao
-- sensecap ai
 - AI
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
-slug: /xiao_esp32c3_sensecapai
+slug: /sensecraft-data-platform/applications/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor
+aliases:
+  - /xiao_esp32c3_sensecapai
 last_update:
-  date: 08/04/2023
-  author: Citric
+  date: 06/06/2025
+  author: Jancee
 ---
 
 
@@ -19,7 +21,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/1.png" style={{width:1000, height:'auto'}}/></div>
 
 
-During this time, Seeed Studio's SenseCAP platform developed and released new AI features. Currently the main features of SenseCAP AI are focused on providing constructive planting advice to growers, and will be updated with richer AI features in the near future!
+During this time, Seeed Studio's SenseCAP platform developed and released new AI features. Currently the main features of AI Advisor on SenseCraft Data Platform are focused on providing constructive planting advice to growers, and will be updated with richer AI features in the near future!
 
 This tutorial, then, will bridge the XIAO ESP32 series with the SenseCAP platform, detailing how to use the XIAO and Grove series sensors to upload data to SenseCAP and get constructive suggestions from the AI based on these sensor values.
 
@@ -502,9 +504,9 @@ Turn on the serial monitor, when you turn it on, the program will start to execu
 The minimum time interval for SenseCAP to receive data uploads is five minutes.
 :::
 
-## Introduction to SenseCAP HTTPS API -- Getting AI Advice
+## Introduction to `SenseCraft Data Platform`'s HTTP API -- Getting AI Advice
 
-Next, let's learn how to use the SenseCAP AI API below. Use our sensor data over time as a reference to get suggestions from the AI.
+Next, let's learn how to use `SenseCAP Data Platform`'s API below. Use our sensor data over time as a reference to get suggestions from the AI.
 
 The interface call process for SenseCAP AI is roughly as follows.
 - Obtain the device and measurement value IDs under the account that are supported for use in AIGC via the interface I.
