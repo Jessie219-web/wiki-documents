@@ -4,6 +4,7 @@ title: Cloud
 keywords:
 - Cloud
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Cloud
 last_update:
   date: 05/24/2024
   author: Matthew
