@@ -137,7 +137,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
+  BLEScanResults foundDevices = *pBLEScan->start(scanTime, false);
   Serial.print("Devices found: ");
   Serial.println(foundDevices.getCount());
   Serial.println("Scan done!");
@@ -180,7 +180,7 @@ pBLEScan->setWindow(99);
 Finally, `loop` function starts the BLE scan with the specified scan time and blocking flag. It then prints the number of found devices to the serial port and clears the results buffer to release memory.
 
 ```c
-BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
+BLEScanResults foundDevices = *pBLEScan->start(scanTime, false);
 Serial.print("Devices found: ");
 Serial.println(foundDevices.getCount());
 Serial.println("Scan done!");
