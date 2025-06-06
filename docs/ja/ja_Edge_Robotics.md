@@ -46,7 +46,8 @@ last_update:
 
 ## 📦 ロボットキット {#robot-kits}
 
-<div className="category-card robot-kits">
+<div class="category-group">
+  <div className="category-card robot-kits">
 
 ## 🤗 Lerobot
 
@@ -59,18 +60,22 @@ last_update:
 - **近日公開予定**
 
 </div>
+</div>
 
 ## ⚙️ アクチュエータ {#actuators}
 
-<div className="category-card actuators">
+<div class="category-group">
+  <div className="category-card actuators">
 
 - [MyActuator シリーズモーター](/ja/myactuator_series/) <span className="tag recommended">新着</span>
 
 </div>
+</div>
 
 ## 👁️ センサー {#sensors}
 
-<div className="category-card sensors">
+<div class="category-group">
+  <div className="category-card sensors">
 
 **LiDAR システム**  
 
@@ -84,10 +89,12 @@ last_update:
 - [CSI カメラセットアップ](/ja/csi_camera_on_ros/)
 
 </div>
+</div>
 
 ## 💻 ソフトウェア {#software}
 
-<div className="category-card software">
+<div class="category-group">
+  <div className="category-card software">
 
 **ROS エコシステム**  
 
@@ -102,13 +109,13 @@ last_update:
 - [Isaac Lab インストール](/ja/install_isaaclab/)
 
 </div>
-
+</div>
 </div>
 
 
 
 <style>{`
-/* ナビゲーションコンテナ */
+/* 导航容器 */
 .quick-nav-container {
   margin: 2rem 0;
   padding: 1rem;
@@ -117,14 +124,20 @@ last_update:
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* ナビゲーション本体 */
+/* Dark模式 - 导航容器 */
+html[data-theme='dark'] .quick-nav-container {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+/* 导航主体 */
 .quick-nav {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
 }
 
-/* ナビゲーション項目 */
+/* 导航项 */
 .nav-item {
   position: relative;
   padding: 0.8rem 1.5rem;
@@ -141,20 +154,27 @@ last_update:
   z-index: 1;
 }
 
-/* アイコンスタイル */
+/* Dark模式 - 导航项 */
+html[data-theme='dark'] .nav-item {
+  color: #e5e7eb;
+  background: #374151;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+/* 图标样式 */
 .nav-item .icon {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
   transition: transform 0.3s;
 }
 
-/* テキストスタイル */
+/* 文字样式 */
 .nav-item .text {
   font-size: 0.95rem;
   white-space: nowrap;
 }
 
-/* ホバーエフェクト */
+/* 悬浮特效 */
 .nav-item .hover-effect {
   position: absolute;
   bottom: 0;
@@ -167,10 +187,16 @@ last_update:
   z-index: -1;
 }
 
-/* ホバーアニメーション */
+/* 悬浮动画 */
 .nav-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  color: white;
+}
+
+/* Dark模式 - 悬浮动画 */
+html[data-theme='dark'] .nav-item:hover {
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
   color: white;
 }
 
@@ -182,7 +208,7 @@ last_update:
   height: 100%;
 }
 
-/* レスポンシブデザイン */
+/* 响应式设计 */
 @media (max-width: 768px) {
   .quick-nav {
     flex-direction: column;
@@ -202,9 +228,9 @@ last_update:
 
 
 <style>{`
-/* コンテンツカード拡張版スタイル */
+/* 内容卡片增强版样式 */
 .nav-grid {
-  display: grid;
+  display: block;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-top: 2rem;
@@ -221,7 +247,18 @@ last_update:
   z-index: 1;
 }
 
-/* カテゴリカラーラベル */
+/* Dark模式 - 内容卡片 */
+html[data-theme='dark'] .category-card {
+  background: #374151;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+  color: #e5e7eb;
+}
+
+.category-group {
+  margin-bottom: 2rem;
+}
+
+/* 分类色标 */
 .category-card::before {
   content: "";
   position: absolute;
@@ -236,10 +273,15 @@ last_update:
 .sensors::before { background: linear-gradient(to bottom, #ff6b6b, #ff8e8e); }
 .software::before { background: linear-gradient(to bottom, #f5a623, #f5c623); }
 
-/* ホバーエフェクト */
+/* 悬浮特效 */
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+/* Dark模式 - 悬浮特效 */
+html[data-theme='dark'] .category-card:hover {
+  box-shadow: 0 12px 20px rgba(0,0,0,0.6);
 }
 
 .category-card:hover::after {
@@ -253,7 +295,12 @@ last_update:
   z-index: -1;
 }
 
-/* リンクアニメーション */
+/* Dark模式 - 悬浮光效 */
+html[data-theme='dark'] .category-card:hover::after {
+  background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* 链接动画 */
 .category-card a {
   position: relative;
   display: inline-block;
@@ -262,9 +309,19 @@ last_update:
   color: #333;
 }
 
+/* Dark模式 - 链接 */
+html[data-theme='dark'] .category-card a {
+  color: #d1d5db;
+}
+
 .category-card a:hover {
   color: #4a90e2;
   transform: translateX(5px);
+}
+
+/* Dark模式 - 链接悬浮 */
+html[data-theme='dark'] .category-card a:hover {
+  color: #60a5fa;
 }
 
 .category-card a::after {
@@ -278,11 +335,16 @@ last_update:
   transition: width 0.3s;
 }
 
+/* Dark模式 - 链接下划线 */
+html[data-theme='dark'] .category-card a::after {
+  background: #60a5fa;
+}
+
 .category-card a:hover::after {
   width: 100%;
 }
 
-/* タグスタイル拡張 */
+/* 标签样式增强 */
 .tag {
   font-size: 0.75rem;
   padding: 2px 8px;
@@ -297,23 +359,68 @@ last_update:
   box-shadow: 0 2px 4px rgba(0,100,0,0.1);
 }
 
+/* Dark模式 - Stable标签 */
+html[data-theme='dark'] .stable {
+  background: #065f46;
+  color: #a7f3d0;
+  box-shadow: 0 2px 4px rgba(0,100,0,0.3);
+}
+
 .recommended { 
-  background: #fce8e6; /* 背景色 */
-  color: #a50e0e; /* 文字色 */
-  box-shadow: 0 2px 4px rgba(200,0,0,0.1); /* 影の効果 */
+  background: #fce8e6; 
+  color: #a50e0e;
+  box-shadow: 0 2px 4px rgba(200,0,0,0.1);
 }
+
+/* Dark模式 - Recommended标签 */
+html[data-theme='dark'] .recommended {
+  background: #7f1d1d;
+  color: #fca5a5;
+  box-shadow: 0 2px 4px rgba(200,0,0,0.3);
+}
+
 .category-card:active {
-  transform: translateY(-2px) scale(0.98); /* 押された時の変形 */
-  box-shadow: 0 6px 10px rgba(0,0,0,0.1); /* 押された時の影の効果 */
+  transform: translateY(-2px) scale(0.98);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
 }
-/* レスポンシブ最適化 */
+
+/* Dark模式 - 点击效果 */
+html[data-theme='dark'] .category-card:active {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.4);
+}
+
+/* 响应式优化 */
 @media (max-width: 768px) {
   .nav-grid {
-    grid-template-columns: 1fr; /* グリッド列を1列に変更 */
+    grid-template-columns: 1fr;
   }
   
   .category-card {
-    padding: 1.2rem; /* パディングの調整 */
+    width: 100%;
+    margin-top: 0.5rem; /* 卡片紧贴标题 */
   }
+}
+
+/* Dark模式 - 标题文字 */
+html[data-theme='dark'] h1,
+html[data-theme='dark'] h2,
+html[data-theme='dark'] h3,
+html[data-theme='dark'] h4,
+html[data-theme='dark'] h5,
+html[data-theme='dark'] h6 {
+  color: #f9fafb;
+}
+
+/* Dark模式 - 正文文字 */
+html[data-theme='dark'] p,
+html[data-theme='dark'] li,
+html[data-theme='dark'] strong {
+  color: #e5e7eb;
+}
+
+/* Dark模式 - 引用块 */
+html[data-theme='dark'] blockquote {
+  color: #9ca3af;
+  border-left-color: #4b5563;
 }
 `}</style>
