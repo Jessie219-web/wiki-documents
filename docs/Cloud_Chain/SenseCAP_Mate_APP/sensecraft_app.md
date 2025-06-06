@@ -1,15 +1,21 @@
 ---
-description: SenseCraft APP
 title:  Introduction and Usage
+description: SenseCraft App offers a fast, user-friendly solution for visualizing sensor data, managing IoT devices, and receiving intelligent alerts, all in one place.
 keywords:
-- App
+- SenseCraft App
+- IoT Device Management
+- Sensor Data Visualization
+- Smart Alerts
+- Bluetooth Configuration
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /sensecraft_app
+slug: /sensecraft-app/overview
+aliases:
+  - /sensecap-app
+  - /sensecraft-app
 last_update:
-  date: 7/26/2024
-  author: Jessie
+  date: 06/06/2025
+  author: Jancee
 ---
-
 
 
 :::tip note
