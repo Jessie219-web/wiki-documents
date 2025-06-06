@@ -2,7 +2,7 @@
 description: |
   A versatile driver board from Seeed Studio designed to control serial bus servos for robotic applications. It features a critical jumper setting that must be adjusted depending on the connection method (USB or direct UART).
 title: Bus Servo Driver Board
-image: https://files.seeedstudio.com/wiki/Bus_Servo_Driver/bus_servo_driver_board_main.webp
+image: https://files.seeedstudio.com/wiki/bus_servo_driver_board/9.webp
 slug: /bus_servo_driver_board
 keywords:
     - Bus Servo
@@ -10,25 +10,40 @@ keywords:
     - UART
     - USB connection
     - Jumper settings
-# sidebar_position: 2
 last_update:
-  author: w0x7ce
-  date: 02/26/2025
+  author: Citric
+  date: 05/27/2025
 ---
 
-### Getting Started with Bus Servo Driver Board
+# Getting Started with Bus Servo Driver Board / XIAO Bus Servo Adapter
+
+This wiki covers two related products: the **Bus Servo Driver Board** and the **XIAO Bus Servo Adapter**.
+
+- The **Bus Servo Driver Board** does **not** include an onboard XIAO ESP32-C3 microcontroller, nor does it come with a 3D-printed enclosure. It is designed to function as a general-purpose bus servo interface board, allowing you to connect and control servos via an external controller of your choice.
+
+- The **XIAO Bus Servo Adapter**, on the other hand, **includes** the XIAO ESP32-C3 as the main controller and comes with a 3D-printed case. With this version, you can directly control bus servos using the onboard XIAO, making it a more integrated and ready-to-use solution for robotics projects.
+
+Please refer to the rest of this guide for details on setup and usage for both products.
+
 
 <div class="table-center">
   <table align="center">
     <tr>
-        <th>OV5640 Camera for XIAO ESP32S3 Sense</th>
+        <th>Bus Servo Driver Board</th>
+        <th>XIAO Bus Servo Adapter</th>
     </tr>
     <tr>
-        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/board.jpg" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/6.png" style={{width:250, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/5.png" style={{width:250, height:'auto'}}/></div></td>
     </tr>
       <tr>
         <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
           <a class="get_one_now_item" href="https://www.seeedstudio.com/Bus-Servo-Driver-Board-for-XIAO-p-6413.html">
+              <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+          </a>
+      </div></td>
+      <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
+          <a class="get_one_now_item" href="/xiao_bus_servo_adapter">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -37,9 +52,9 @@ last_update:
 </div>
 
 
-### Overview
+## Introduction
 
-The Bus Servo Driver Board is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. With support for UART communication, it enables precise control and feedback from multiple ST/SC series servos, making it ideal for applications such as robotic arms, hexapods, humanoid robots, and wheeled robots requiring servo angle and load feedback.
+The Bus Servo Driver Board / XIAO Bus Servo Adapter is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. With support for UART communication, it enables precise control and feedback from multiple ST/SC series servos, including the Feetech SCS series (see [Feetech SCS/STS/TTL Series Official Website](https://www.feetechrc.com/en/scs_ttl_Servo.html)). This makes it ideal for applications such as robotic arms, hexapods, humanoid robots, and wheeled robots requiring servo angle and load feedback.
 
 This guide focuses on the hardware setup, physical connections, key specifications, and **critical jumper settings** to help users integrate the board into their projects effectively.
 
@@ -49,7 +64,18 @@ Always disconnect power before connecting or disconnecting servos or wiring. Ens
 
 :::
 
-### Physical Layout and Connections
+## Hardware Overview
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="Bus Servo Driver Board" label="Bus Servo Driver Board">
+
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/1.png" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/2.png" style={{width:800, height:'auto'}}/></div>
 
 The Bus Servo Driver Board features several key connection points:
 
@@ -65,11 +91,37 @@ The Bus Servo Driver Board features several key connection points:
 
 * **UART (RX/TX):** These pins provide serial communication for controlling the servos. The connection method and jumper settings depend on your host device. See below for details.
 
-### Connection Methods and Jumper Settings
+</TabItem>
+
+<TabItem value="XIAO Bus Servo Adapter" label="XIAO Bus Servo Adapter">
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/3.png" style={{width:800, height:'auto'}}/></div>
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/4.png" style={{width:800, height:'auto'}}/></div>
+
+**Input:**
+
+* **DC IN (5.5 * 2.1mm):** This is the power input for the board and the connected servos. Connect a 5~12V power supply here. *Crucially, the voltage of this power supply must match the voltage requirements of your servos.* For example, ST series servos typically operate at 9V, while SC series servos may require 12V.
+
+**Output:**
+
+* **Servo Interface:** This dedicated port is where you connect your ST/SC series bus servos. Ensure the connector is properly aligned.
+
+</TabItem>
+
+</Tabs>
+
+## Getting Started
+
+### Selecting the operating mode of the driver board **(Only for Bus Servo Driver Board)**
+
+:::tip
+For XIAO Bus Servo Adapter, you don't need to modify any circuits to use the included XIAO ESP32-C3 to control the servos, you can skip this part directly.
+:::
 
 The Bus Servo Driver Board offers two primary connection methods: direct UART connection and USB connection via a USB-to-UART adapter. *The correct jumper setting is essential for proper operation.*
 
-**1. Direct UART Connection (for MCUs, XIAO, ESP32, etc.)**
+#### UART Connection (for MCUs, XIAO, ESP32, etc.)
 
 This method is used when connecting directly to the UART pins of a microcontroller (MCU) like an ESP32, Arduino, Seeed Studio XIAO, or a single-board computer.
 
@@ -78,11 +130,14 @@ This method is used when connecting directly to the UART pins of a microcontroll
     * Connect the `TX` pin on the Driver Board to the `RX` pin (D6) on your host device.
     * For devices like the Seeed Studio XIAO, you can directly plug the XIAO into the provided headers, ensuring correct pin alignment. This eliminates the need for separate Dupont wires for the UART connection.
 
-* **Jumper Setting (Critical):** Locate the solder jumper near the UART pins. **For direct UART communication, you must ensure that the two pads are connected (soldered together).**
+* **Jumper Setting (Critical):** 
+
+    * Use a 2.54mm jumper cap to short-circuit the 2pin pin on the front of the board. (It's shorted by default)
+    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-2.png" style={{width:400, height:'auto'}}/></div>
 
 * **Powering the Host:** Your host device (e.g., Raspberry Pi Zero, ESP32, XIAO) will require its own separate power supply.
 
-**2. USB Connection**
+#### USB Connection
 
 This method is used when connecting to a computer or single-board computer with a USB port (e.g., a PC or Raspberry Pi 4B). You simply connect the control board to the computer using a USB cable.
 
@@ -91,61 +146,307 @@ This method is used when connecting to a computer or single-board computer with 
 
 * **Jumper Setting (Critical):** 
 
-**Step1:** Locate the soldering jumper on the back of the board. **For USB communication, you must ensure that the two pads are connected (there is a solder bridge between them).**
+    * **Step 1.** Locate the soldering jumper on the back of the board. **For USB communication, you must ensure that the two pads are connected (there is a solder bridge between them).**
 
-<br />
-<div style={{ textAlign: 'center' }}>  
-    <img   
-        src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-1.png"   
-        style={{   
-            width: '400px',   
-            height: '400px',   
-            borderRadius: '15px',   
-            filter: 'drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3))'   
-        }}   
-    />  
-</div>  
-<br />
+    - Backside pads for version 1:
 
-**Step2:** Use a 2.54mm jumper cap to short-circuit the 2pin pin on the front of the board.
+    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/7.jpg" style={{width:400, height:'auto'}}/></div>
 
-<br />
-<div style={{ textAlign: 'center' }}>  
-    <img   
-        src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-2.png"   
-        style={{   
-            width: '400px',   
-            height: '400px',   
-            borderRadius: '15px',   
-            filter: 'drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3))'   
-        }}   
-    />  
-</div>  
-<br />
+    - Backside pads for version 2:
+
+    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-1.png" style={{width:400, height:'auto'}}/></div>
+
+    * **Step 2.** Use a 2.54mm jumper cap to short-circuit the 2pin pin on the front of the board. (It's shorted by default)
+    <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/change-2.png" style={{width:400, height:'auto'}}/></div>
 
 ### Required Components (Before You Start)
 
 Before connecting anything, ensure you have the following:
 
-* **Bus Servo Driver Board**
-* **Compatible ST/SC series bus servos**
+* **Bus Servo Driver Board / XIAO Bus Servo Adapter**
+* **Compatible ST/SC series bus servos**: see [Feetech SCS/STS/TTL Series Official Website](https://www.feetechrc.com/en/scs_ttl_Servo.html).
 * **5~12V Power Supply:** A battery or power adapter. *The voltage must match your servo's specifications.*
 * **Host Device:**
     * **For Direct UART:** A UART-capable device like a Raspberry Pi, Arduino, ESP32, or Seeed Studio XIAO.
     * **For USB:** A computer (PC, Mac, Linux) or a single-board computer like a Raspberry Pi 4B, *plus* a USB-to-UART adapter.
+
+:::note
+For XIAO Bus Servo Adapter, XIAO ESP32-C3 is built-in, so there is no need to prepare a host device.
+:::
+
 * **Connecting Wires/Adapters:** Jumper wires (Dupont wires) if using direct UART (except when using XIAO with direct header connection). A USB-to-UART adapter if using the USB connection method.
 
 :::caution
-
 If using SC series servos, confirm the power supply matches their voltage requirements. The board’s DC input label is tailored for ST series servos but supports SC series voltages as well. **Incorrect jumper settings will prevent communication with the driver board.**
-
 :::
 
-### Safety and Maintenance
 
-- Regularly check servo and power connections for wear or loose contacts.
-- Avoid exposing the board to moisture or extreme temperatures.
-- Use a power supply with sufficient current capacity to support all connected servos.
+## Controlling Servos via USB
+
+This section describes how to control multiple bus servos through the Bus Servo Driver Board using a USB connection.
+
+### Principle Overview
+
+The Bus Servo Driver Board works by receiving serial (UART) commands from your host device (such as a PC, Raspberry Pi, or microcontroller) via USB. These commands are then relayed to the connected bus servos. By sending the appropriate serial protocol commands, you can control the position, speed, and other parameters of each servo individually.
+
+The board itself does not interpret or generate servo control signals autonomously; instead, it acts as a transparent bridge between your host and the servos. This means you are responsible for sending the correct command packets according to your servo's communication protocol.
+
+### Example Reference
+
+For a practical example of how to send commands to Feetech (ST/SC/STS/TTL series) bus servos, you can refer to the following Python example:  
+[lerobot/common/robot_devices/motors/feetech.py on GitHub](https://github.com/huggingface/lerobot/blob/main/lerobot/common/robot_devices/motors/feetech.py)
+
+This example demonstrates how to construct and send serial packets to control Feetech servos. You can adapt the code to your own host platform and programming language as needed.
+
+> **Note:**  
+> - The specific command format and protocol may vary depending on your servo model.  
+> - Please consult your servo's official documentation for the correct serial protocol and command structure.  
+> - You will need to write or adapt a driver program that matches your servo's requirements.
+
+For more details on the Feetech SCS/STS/TTL series protocol, see the [Feetech official documentation](https://www.feetechrc.com/en/scs_ttl_Servo.html).
+
+## Controlling Servos via XIAO
+
+Next, we describe how to send signals to control servo motion through XIAO and how to use the library.
+
+### Arduino Library Overview
+
+:::tip
+If this is your first time using Arduino, we highly recommend you to refer to [Getting Started with Arduino](https://wiki.seeedstudio.com/Getting_Started_with_Arduino/).
+:::
+
+<div class="github_container" style={{textAlign: 'center'}}>
+    <a class="github_item" href="https://github.com/workloads/scservo">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download the Library</font></span></strong> <svg aria-hidden="true" focusable="false" role="img" className="mr-2" viewBox="-3 10 9 1" width={16} height={16} fill="currentColor" style={{textAlign: 'center', display: 'inline-block', userSelect: 'none', verticalAlign: 'text-bottom', overflow: 'visible'}}><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+    </a>
+</div><br />
+
+### Function
+
+Before we get started developing a sketch, let's look at the available functions of the library.
+
+- `SMS_STS(uint8_t id)` —— Create a servo object with the specified ID.  
+  Parameters: `uint8_t id` (servo ID)  
+  Output: none
+
+- `void WritePos(uint8_t id, int16_t Position, uint16_t Time, uint16_t Speed)` —— Set the target position, time, and speed for the servo.  
+  Parameters: `uint8_t id`, `int16_t Position`, `uint16_t Time`, `uint16_t Speed`  
+  Output: none
+
+- `void RegWritePos(uint8_t id, int16_t Position, uint16_t Time, uint16_t Speed)` —— Set the target position, time, and speed for the servo, but execute later with Action command.  
+  Parameters: `uint8_t id`, `int16_t Position`, `uint16_t Time`, `uint16_t Speed`  
+  Output: none
+
+- `void RegWriteAction()` —— Execute all registered RegWritePos commands.  
+  Parameters: none  
+  Output: none
+
+- `void WriteSpe(uint8_t id, int16_t Speed)` —— Set the rotation speed for the servo.  
+  Parameters: `uint8_t id`, `int16_t Speed`  
+  Output: none
+
+- `void WritePosEx(uint8_t id, int16_t Position, uint16_t Time, uint16_t Speed, uint8_t ACC)` —— Set position, time, speed, and acceleration.  
+  Parameters: `uint8_t id`, `int16_t Position`, `uint16_t Time`, `uint16_t Speed`, `uint8_t ACC`  
+  Output: none
+
+- `void RegWritePosEx(uint8_t id, int16_t Position, uint16_t Time, uint16_t Speed, uint8_t ACC)` —— Register position, time, speed, and acceleration, execute later.  
+  Parameters: `uint8_t id`, `int16_t Position`, `uint16_t Time`, `uint16_t Speed`, `uint8_t ACC`  
+  Output: none
+
+- `void RegWriteActionEx()` —— Execute all registered RegWritePosEx commands.  
+  Parameters: none  
+  Output: none
+
+- `int16_t ReadPos(uint8_t id)` —— Read the current position of the servo.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (position)
+
+- `int16_t ReadSpeed(uint8_t id)` —— Read the current speed of the servo.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (speed)
+
+- `int16_t ReadLoad(uint8_t id)` —— Read the current load of the servo.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (load)
+
+- `int16_t ReadVoltage(uint8_t id)` —— Read the current voltage of the servo.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (voltage)
+
+- `int16_t ReadTemper(uint8_t id)` —— Read the current temperature of the servo.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (temperature)
+
+- `int16_t ReadMove(uint8_t id)` —— Check if the servo is moving.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (1: moving, 0: stopped)
+
+- `int16_t ReadCurrent(uint8_t id)` —— Read the current (electric current) of the servo.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (current)
+
+- `void SetID(uint8_t id, uint8_t newid)` —— Set a new ID for the servo.  
+  Parameters: `uint8_t id`, `uint8_t newid`  
+  Output: none
+
+- `void Load(uint8_t id)` —— Enable the servo torque.  
+  Parameters: `uint8_t id`  
+  Output: none
+
+- `void Unload(uint8_t id)` —— Disable the servo torque.  
+  Parameters: `uint8_t id`  
+  Output: none
+
+- `int16_t ReadTorque(uint8_t id)` —— Read the torque status of the servo.  
+  Parameters: `uint8_t id`  
+  Output: `int16_t` (1: enabled, 0: disabled)
+
+- `void LEDAlarm(uint8_t id, uint8_t enable)` —— Set the LED alarm status.  
+  Parameters: `uint8_t id`, `uint8_t enable`  
+  Output: none
+
+- `void Reset(uint8_t id)` —— Reset the servo to factory settings.  
+  Parameters: `uint8_t id`  
+  Output: none
+
+- `void LockEprom(uint8_t id)` —— Lock the EEPROM of the servo.  
+  Parameters: `uint8_t id`  
+  Output: none
+
+- `void UnlockEprom(uint8_t id)` —— Unlock the EEPROM of the servo.  
+  Parameters: `uint8_t id`  
+  Output: none
+
+### XIAO Example
+
+Now that we have our library installed and we understand the basic functions, let's run some examples for our 产品名称 to see how it behaves.
+
+**Step 1.** Launch the Arduino application.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/seeed_logo/arduino.jpg" style={{width:800, height:'auto'}}/></div>
+
+<div class="download_arduino_container" style={{textAlign: 'center'}}>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    </a>
+</div>
+
+**Step 2.** Select your development board model and add it to the Arduino IDE.
+
+- To use **Seeed Studio XIAO ESP32-C3** for the later routines, please refer to **[this tutorial](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started#software-setup)** to finish adding.
+
+**Step 3.** Complete the wiring as shown. If you need to connect multiple servos, you can use the wires that come with the servos to complete the connection.
+
+<div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/8.jpg" style={{width:600, height:'auto'}}/></div>
+
+#### Control multiple servos
+
+
+```cpp
+#include <SCServo.h>
+
+#if defined(CONFIG_IDF_TARGET_ESP32C3) || defined(CONFIG_IDF_TARGET_ESP32C6) || defined(CONFIG_IDF_TARGET_ESP32S3)
+#define COMSerial Serial0
+#else
+#define COMSerial Serial1
+#endif
+
+#if defined(NRF52840_XXAA) && defined(USE_TINYUSB)
+#include <Adafruit_TinyUSB.h>
+#endif
+
+#define S_RXD D7
+#define S_TXD D6
+#define Servo_Num 2
+
+SMS_STS st;
+byte ID[Servo_Num] = {1, 2};
+u16 Speed[Servo_Num] = {3400, 3400, 3400, 3400, 3400, 3400};
+byte ACC[Servo_Num] = {253, 253, 253, 253, 253, 253};
+s16 Pos[Servo_Num] = {0, 0, 0, 0, 0, 0};
+
+int getPos(int id)
+{
+  return st.ReadPos(id);
+}
+
+void setup()
+{
+  Serial.begin(115200);
+
+  COMSerial.begin(1000000, SERIAL_8N1);
+  st.pSerial = &COMSerial;
+  delay(1000);
+
+  Serial.println("Calibration of all Servo");
+  for (int i = 0; i < Servo_Num; i++) {
+    st.CalibrationOfs(ID[i]);
+  }
+
+  for (int i = 0; i < Servo_Num; i++) {
+    Pos[i] = getPos(ID[i]);
+  }
+
+  delay(1000);
+}
+
+void loop()
+{
+  if (!Serial.available()) {
+    delay(100);
+    return;
+  }
+
+  String input = Serial.readString();
+  input.trim();
+
+  if(input.startsWith("j")) {
+    Serial.println("Reduce the angle");
+
+    for (int i = 0; i < Servo_Num; i++) {
+      if (Pos[i] == 0) {
+        Serial.print(i);
+        Serial.println(" It's already in the minimum position.");
+        continue;
+      }
+
+      Pos[i] -= 1024;
+      if (Pos[i] < 0) Pos[i] = 0;
+    }
+  } else if(input.startsWith("k")) {
+    Serial.println("Increase the angle");
+
+    for (int i = 0; i < Servo_Num; i++) {
+      if (Pos[i] == 4095) {
+        Serial.print(i);
+        Serial.println(" It's already in the maximum position.");
+        continue;
+      }
+
+      Pos[i] += 1024;
+      if (Pos[i] > 4095) Pos[i] = 4095;
+    }
+  }
+
+  st.SyncWritePosEx(ID, Servo_Num, Pos, Speed, ACC);
+  delay(600);
+}
+```
+
+This example demonstrates how to control multiple Feetech SCS series bus servos using the XIAO and the SCServo library. The code initializes two servos, calibrates them, and allows the user to adjust their positions interactively via serial commands. When you send 'j' or 'k' through the serial monitor, the code will decrease or increase the angle of all connected servos, respectively. The current position of each servo is tracked and updated accordingly, and the new positions are sent to the servos using the `SyncWritePosEx` function.
+
+How to customize for your own project:
+
+- **Number of Servos**: Change the value of `Servo_Num` and update the ID, Speed, ACC, and Pos arrays to match the number and IDs of your servos.
+Servo IDs: Modify the ID array to match the IDs of your connected servos.
+
+- **Speed and Acceleration**: Adjust the Speed and ACC arrays to set different speeds and accelerations for each servo.
+
+- **Serial Pins**: If you use different pins for UART, update S_RXD and S_TXD definitions.
+
+- **Movement Logic**: You can change the logic in the `loop()` function to implement more complex or project-specific behaviors, such as responding to different serial commands, adding sensor feedback, or integrating with other hardware.
+
+- **Initial Position**: Set the initial values in the `Pos` array to define the starting positions of your servos.
+
 
 ### FAQs
 
@@ -166,8 +467,8 @@ Yes, multiple servos are supported, but ensure your power supply can handle the 
 
 ### Resources
 
-* **Schematic:** [Bus_Servo_Driver_Board_SCH.pdf](https://files.seeedstudio.com/wiki/bus_servo_driver_board/202004237_Servo_Driver_Board_for_Seeed_Studio_XIAO_SCH_PDF_250225.pdf) *(Ensure this PDF is accessible at this relative path in your Docusaurus project.)*
-<!-- * **3D Model:** [Bus_Servo_Driver_Board_STEP.stp](Bus_Servo_Driver_Board_STEP.stp) *(Ensure this STEP file is accessible at this relative path in your Docusaurus project.)* -->
+- **[PDF]** [Bus Servo Driver Board Schematic](https://files.seeedstudio.com/wiki/bus_servo_driver_board/202004237_Servo_Driver_Board_for_Seeed_Studio_XIAO_SCH_PDF_250225.pdf)
+
 
 ### Tech Support & Product Discussion
 

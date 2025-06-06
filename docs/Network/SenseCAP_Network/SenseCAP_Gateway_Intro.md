@@ -5,6 +5,7 @@ keywords:
 - SenseCAP
 - Gateway
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+slug: /Network/SenseCAP_Network/SenseCAP_Gateway_Intro
 last_update:
   date: 09/26/2023
   author: Jessie

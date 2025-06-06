@@ -4,6 +4,7 @@ title: List of Device Status IDs
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
+slug: /Cloud_Chain/SenseCAP_API/Appendix/List_of_Device_Status_IDs
 last_update:
   date: 02/14/2023
   author: Matthew
