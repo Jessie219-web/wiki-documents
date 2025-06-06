@@ -1,10 +1,12 @@
 {
-  "generatedAt": "2025-06-03T09:45:03.401Z",
-  "generatedBy": "generate-language-map.js",
+  "generatedAt": "2025-06-05T10:20:10.440Z",
+  "generatedBy": "generate-language-map.js v3.0 (无缓存版)",
+  "generationTime": 4104,
   "stats": {
-    "totalPages": 5051,
+    "totalPages": 5055,
     "multiLanguagePages": 1864,
-    "singleLanguagePages": 3187
+    "singleLanguagePages": 3191,
+    "processedFiles": 5030
   },
   "config": {
     "languagePrefixes": {
@@ -18,7 +20,8 @@
       "cn": "docs/zh-CN",
       "ja": "docs/ja",
       "es": "docs/Spanish"
-    }
+    },
+    "version": "3.0"
   },
   "languageMapping": {
     "/Cloud": [
