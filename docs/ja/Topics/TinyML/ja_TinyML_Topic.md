@@ -72,11 +72,11 @@ Tiny Machine Learning (TinyML) は、Arduino のような低消費電力、低�
         <img src="https://files.seeedstudio.com/wiki/xiao_topicpage/nrf52840sense.jpg" style={{width:800, height:'auto'}}/>
     </div>
     <div class="xiao_topic_page_vertical">
-        <font size={"2"}>XIAO nRF52840 Sense は、オンボードマイクと 3 軸 IMU を備え、TinyML AI+IoT プロジェクトに適しています</font>
+        <font size={"2"}>XIAO nRF52840 Sense は、オンボードマイクと 6 軸 IMU を備え、TinyML AI+IoT プロジェクトに適しています</font>
         <br /><font size={"3"}><strong>高性能</strong></font>
         <font size={"2"}>ARM® Cortex™-M4 32ビットプロセッサ（FPU 搭載）64 MHz で動作</font>
         <br /><font size={"3"}><strong>メモリ</strong></font><font size={"2"}>256 KB RAM + 2MB FLASH</font>
-        <br /><font size={"3"}><strong>多機能</strong></font><font size={"2"}>オンボードマイクと 3 軸 IMU</font>
+        <br /><font size={"3"}><strong>多機能</strong></font><font size={"2"}>オンボードマイクと 6 軸 IMU</font>
         <br /><font size={"3"}><strong>ワイヤレス</strong></font><font size={"2"}>Bluetooth 5.0、NFC（オンボードアンテナ付き）</font>
         <br /><font size={"3"}><strong>TinyML 対応</strong></font><font size={"2"}>ジェスチャー/音声認識</font>
     </div>

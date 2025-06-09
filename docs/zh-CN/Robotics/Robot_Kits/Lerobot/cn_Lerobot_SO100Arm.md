@@ -304,7 +304,7 @@ print(torch.cuda.is_available())
 ## 校准舵机并组装机械臂
 
 :::danger
-由于官方代码和舵机厂家固件升级，2025年5月30日之前的用户请先[下载飞特官方上位机](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip)（Windows系统下），上电连接所有舵机，选择对应的端口号->波特率1000000->打开->搜索，搜索到所有的舵机后点击`升级`->`在线检测`->`升级固件`，确保固件版本从3.9升级到3.10版本，避免出现后续问题。
+由于官方代码和舵机厂家固件升级，2025年6月30日之前的用户请先[下载飞特官方上位机](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip)（Windows系统下），上电连接所有舵机，选择对应的端口号->波特率1000000->打开->搜索，搜索到所有的舵机后点击`升级`->`在线检测`->`升级固件`，确保固件版本从3.9升级到3.10版本，避免出现后续问题。
 :::
 
 <!-- Code -->
@@ -878,6 +878,7 @@ make install
 3.进行深度相机是否正常运行的测试
 ```bash
 cd ~/pyorbbecsdk 
+pip install -e .
 export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
 sudo bash ./scripts/install_udev_rules.sh
 sudo udevadm control --reload-rules && sudo udevadm trigger
@@ -901,11 +902,6 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 这样每次启动终端会自动加载深度相机环境。
 
 在插入您的 Orbbec 深度相机后，运行以下脚本以检查深度相机的深度数据流及彩色数据流，电脑将会有两个窗口弹出，您可以根据这两个窗口调整摄像头位置，在终端使用Ctrl+C退出按切记摄像头不能插在USB Hub上，要直接插在设备上，USB Hub速率太慢会导致读不到图像数据。
-
-```bash
-cd ~/lerobot
-python lerobot/common/robot_devices/OrbbecCamera.py
-```
 
 完成摄像头的调整后，完成 lerobot/lerobot/common/robot_devices/robots/configs.py 文件中摄像头参数的对齐。
 
@@ -934,9 +930,9 @@ class So101RobotConfig(ManipulatorRobotConfig):
             ),
             "Orbbec":OrbbecCameraConfig(    #在这里添加奥比摄像头信息
                 fps=30,
-                use_depth=True              #是否采用深度
-                width = 640                 #这里会根据宽度自动适配分辨率，不用填高度信息，宽度的值必须为640或者1280（未测试）中的一个
-                Hi_resolution_mode = False  #高分辨率模式，会导致可视化效果不是那么地好，可以进一步提升深度数据的分辨率
+                use_depth=True,              #是否采用深度
+                width = 640,                 #这里会根据宽度自动适配分辨率，不用填高度信息，宽度的值必须为640或者1280（未测试）中的一个
+                Hi_resolution_mode = False,  #高分辨率模式，会导致可视化效果不是那么地好，可以进一步提升深度数据的分辨率
             )，
 
         }

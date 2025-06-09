@@ -3,10 +3,11 @@ import clsx from 'clsx';
 import styles from './index.module.scss';
 import { useColorMode } from '@docusaurus/theme-common';
 
-// 动态加载三种语言的配置
+// 动态加载四种语言的配置
 import * as config_en from './config.en';
 import * as config_ja from './config.ja';
 import * as config_zh from './config.zh';
+import * as config_es from './config.es';
 
 function getImgUrl(str: string, suffix?: string) {
   return `https://files.seeedstudio.com/wiki/Jetson/${str}.${suffix || 'png'}`;
@@ -81,16 +82,38 @@ export const translations = {
       robot: "机器人",
     },
   },
+  es: {
+    banner: {
+      title: "Proyectos Comunitarios",
+      desc: "NVIDIA® Jetson™ ofrece inteligencia artificial de alto rendimiento en el borde mediante módulos energéticamente eficientes y el software NVIDIA CUDA-X™. Como distribuidor autorizado y socio Elite, Seeed proporciona una solución integral de desarrollo de IA en el borde con más de 15 años de experiencia en hardware.",
+      bottom: "Conozca más sobre la comparación entre los dispositivos impulsados por NVIDIA Jetson",
+    },
+    usage1: {
+      title: "Uso de Hardware y Flash de JetPack",
+      desc: "La mayoría de nuestros productos Jetson reComputer vienen con el sistema JetPack preinstalado. Si desea volver a flashear el dispositivo o instalar JetPack en otros dispositivos, siga estas guías.",
+    },
+    usage2: {
+      title: "Herramientas de Desarrollo de IA",
+      desc: "El proceso de desarrollo de IA incluye recopilación de datos, entrenamiento, optimización y despliegue. Ofrecemos documentación completa para respaldar cada fase.",
+    },
+    community: {
+      title: "Proyectos Comunitarios",
+      cv: "Visión por Computadora",
+      gen: "IA Generativa",
+      robot: "Robótica",
+    },
+  },
 };
 
 const configMap = {
   en: config_en,
   ja: config_ja,
   zh: config_zh,
+  es: config_es,
 };
 
 type Props = {
-  lang?: 'en' | 'ja' | 'zh'; 
+  lang?: 'en' | 'ja' | 'zh' | 'es';
 };
 
 const usageRender = (obj) => {
@@ -138,7 +161,7 @@ const RecomputerPage = ({ lang = 'en' }: Props) => {
   const config = configMap[lang];
 
   return (
-    <div className={clsx(styles.jeston_page, styles[colorMode])}>
+    <div className={clsx(styles.jetson_page, styles[colorMode])}>
       {/* Banner */}
       <div className={styles.banner}>
         <div className={styles.banner_left}>
