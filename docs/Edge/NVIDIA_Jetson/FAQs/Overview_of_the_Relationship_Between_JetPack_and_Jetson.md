@@ -5,7 +5,7 @@ keywords:
 - jetson
 - jetpack
 - L4T
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer/nvidia-jetpack-6-0-stack.webp
 slug: /overview_of_the_relationship_between_jetpack_and_jetson
 last_update:
   date: 06/05/2025
