@@ -1,15 +1,15 @@
-// 语言切换器 - 诊断和修复版本
-// 生成时间: 2025-06-09T01:19:23.894Z
+// 语言切换器 - 积极恢复版本
+// 生成时间: 2025-06-09 15:05:37 (北京时间)
 // 多语言页面: 1864 个
 
 (function() {
   'use strict';
 
-  const DEBUG = true; // 默认开启调试，帮助诊断问题
+  const DEBUG = false; // 生产环境可关闭调试
   
   function log(...args) {
     if (DEBUG) {
-      console.log('🔄 [诊断版]', new Date().toISOString().slice(11, 23), ...args);
+      console.log('🔄 [积极恢复版]', new Date().toISOString().slice(11, 23), ...args);
     }
   }
 
@@ -8599,15 +8599,13 @@
 
   // 状态管理变量
   let isInitialized = false;
-  let retryCount = 0;
-  const MAX_RETRIES = 3; // 减少重试次数
-  const RETRY_INTERVAL = 200;
-  
-  // 诊断变量
+  let shouldHaveSwitcher = false;
   let injectionCount = 0;
-  let removalCount = 0;
-  let lastRemovalReason = '';
-  let watchdogInterval = null;
+  
+  // 积极恢复相关变量
+  let rapidCheckInterval = null;
+  let normalCheckInterval = null;
+  let lastSuccessfulInjection = 0;
 
   function getCurrentLanguageAndPath() {
     const currentPath = window.location.pathname;
@@ -8629,7 +8627,6 @@
       basePath = '/' + basePath;
     }
     
-    log('路径解析:', { currentPath, detectedLanguage, basePath });
     return { currentLanguage: detectedLanguage, basePath };
   }
 
@@ -8654,10 +8651,11 @@
 
   function createLanguageSwitcher(availableLanguages, currentLanguage, basePath) {
     if (availableLanguages.length <= 1) {
-      log('⚪ 单语言，跳过切换器');
+      shouldHaveSwitcher = false;
       return null;
     }
 
+    shouldHaveSwitcher = true;
     const currentLangConfig = languages[currentLanguage];
     const priority = { en: 0, cn: 1, ja: 2, es: 3 };
     const sortedLanguages = [...availableLanguages].sort((a, b) => {
@@ -8667,13 +8665,10 @@
     });
     
     const switcherHTML = [
-      '<div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items" data-injected-at="' + Date.now() + '">',
+      '<div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items" data-recovery-count="' + injectionCount + '">',
       '  <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button">',
       '    <span class="lang-flag">' + currentLangConfig.flag + '</span>',
       '    <span class="lang-label">' + currentLangConfig.label + '</span>',
-      '    <svg width="8" height="8" class="lang-arrow" aria-hidden="true">',
-      '      <path d="M1 2l3 3 3-3" stroke="currentColor" stroke-width="1.5" fill="none"></path>',
-      '    </svg>',
       '  </a>',
       '  <ul class="dropdown__menu">',
       sortedLanguages.map(langCode => {
@@ -8698,194 +8693,181 @@
       '</div>'
     ].join('\n');
     
-    log('🎨 创建切换器HTML');
     return switcherHTML;
   }
 
   function injectLanguageSwitcher() {
-    const startTime = Date.now();
-    injectionCount++;
-    
-    log('🔧 开始注入切换器... (#' + injectionCount + ', 尝试 ' + (retryCount + 1) + '/' + MAX_RETRIES + ')');
-    
-    let navbar = document.querySelector('.navbar__items--right') || 
-                 document.querySelector('.navbar__items') ||
-                 document.querySelector('.navbar');
+    const navbar = document.querySelector('.navbar__items--right') || 
+                   document.querySelector('.navbar__items') ||
+                   document.querySelector('.navbar');
     
     if (!navbar) {
       log('⏳ 导航栏未找到');
-      if (retryCount < MAX_RETRIES) {
-        retryCount++;
-        setTimeout(injectLanguageSwitcher, RETRY_INTERVAL);
-        return;
-      } else {
-        log('❌ 达到最大重试次数，放弃注入');
-        return;
-      }
+      return false;
     }
 
-    // 严格检查是否已存在
+    // 检查是否已存在
     const existingSwitcher = document.querySelector('.navbar-language-switcher');
     if (existingSwitcher) {
-      const injectedAt = existingSwitcher.getAttribute('data-injected-at');
-      log('⚠️ 切换器已存在，注入时间: ' + (injectedAt || '未知'));
-      return;
+      return true; // 已存在，算作成功
     }
 
     const { currentLanguage, basePath } = getCurrentLanguageAndPath();
+    const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
+    const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
     
+    if (!switcherHTML) {
+      return true; // 单语言页面，不需要切换器，算作成功
+    }
+
     try {
-      const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
-      const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+      injectionCount++;
       
-      if (switcherHTML) {
-        let insertPosition = null;
-        const positionSelectors = [
-          'a[href*="seeedstudio.com"]',
-          '.header-github-link', 
-          '.navbar__item:last-child'
-        ];
-        
-        for (const selector of positionSelectors) {
-          const element = navbar.querySelector(selector);
-          if (element) {
-            insertPosition = element;
-            break;
-          }
+      let insertPosition = null;
+      const positionSelectors = [
+        'a[href*="seeedstudio.com"]',
+        '.header-github-link', 
+        '.navbar__item:last-child'
+      ];
+      
+      for (const selector of positionSelectors) {
+        const element = navbar.querySelector(selector);
+        if (element) {
+          insertPosition = element;
+          break;
         }
-        
-        if (insertPosition) {
-          insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
-          log('✅ 插入到 ' + insertPosition.tagName + ' 前面');
-        } else {
-          navbar.insertAdjacentHTML('beforeend', switcherHTML);
-          log('✅ 插入到导航栏末尾');
-        }
-        
-        // 防止默认链接行为
-        const switcherElement = navbar.querySelector('.navbar-language-switcher');
-        if (switcherElement) {
-          const switcherButton = switcherElement.querySelector('.navbar__link');
-          if (switcherButton) {
-            switcherButton.addEventListener('click', function(e) {
-              e.preventDefault();
-            });
-          }
-        }
-        
-        const injectTime = Date.now() - startTime;
-        log('🎉 切换器注入成功! (#' + injectionCount + ', 用时' + injectTime + 'ms)');
-        log('🌐 支持语言: ' + availableLanguages.join(', '));
-        
-        retryCount = 0;
-        
-      } else {
-        log('⚪ 单语言页面，无需切换器');
       }
+      
+      if (insertPosition) {
+        insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
+      } else {
+        navbar.insertAdjacentHTML('beforeend', switcherHTML);
+      }
+      
+      // 防止默认链接行为
+      const switcherElement = navbar.querySelector('.navbar-language-switcher');
+      if (switcherElement) {
+        const switcherButton = switcherElement.querySelector('.navbar__link');
+        if (switcherButton) {
+          switcherButton.addEventListener('click', function(e) {
+            e.preventDefault();
+          });
+        }
+      }
+      
+      lastSuccessfulInjection = Date.now();
+      log('✅ 切换器注入成功! (#' + injectionCount + ')');
+      return true;
+      
     } catch (error) {
       log('❌ 注入失败:', error);
-      
-      if (retryCount < MAX_RETRIES) {
-        retryCount++;
-        setTimeout(injectLanguageSwitcher, RETRY_INTERVAL);
-      }
+      return false;
     }
   }
 
-  // 看门狗：定期检查切换器是否还存在
-  function startWatchdog() {
-    if (watchdogInterval) {
-      clearInterval(watchdogInterval);
-    }
+  // 积极恢复策略
+  function startAggressiveRecovery() {
+    // 清除可能存在的检查器
+    if (rapidCheckInterval) clearInterval(rapidCheckInterval);
+    if (normalCheckInterval) clearInterval(normalCheckInterval);
     
-    watchdogInterval = setInterval(function() {
-      const { currentLanguage, basePath } = getCurrentLanguageAndPath();
-      const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
+    // 第一阶段：前10秒内每100ms检查一次（高频）
+    let rapidCheckCount = 0;
+    const maxRapidChecks = 100; // 10秒 * 10次/秒
+    
+    rapidCheckInterval = setInterval(function() {
+      rapidCheckCount++;
       
-      // 如果应该有切换器但不存在，重新注入
-      if (availableLanguages.length > 1) {
+      if (shouldHaveSwitcher) {
         const existingSwitcher = document.querySelector('.navbar-language-switcher');
         if (!existingSwitcher) {
-          log('🚨 看门狗发现切换器丢失，重新注入...');
+          log('🚀 快速恢复：检测到切换器丢失，立即注入 (#' + rapidCheckCount + ')');
           injectLanguageSwitcher();
         }
       }
-    }, 2000); // 每2秒检查一次
+      
+      // 10秒后切换到正常模式
+      if (rapidCheckCount >= maxRapidChecks) {
+        clearInterval(rapidCheckInterval);
+        rapidCheckInterval = null;
+        log('🔄 切换到正常检查模式');
+        startNormalRecovery();
+      }
+    }, 100); // 每100ms检查一次
     
-    log('🐕 看门狗启动，每2秒检查一次');
+    log('🚀 启动积极恢复模式：前10秒内每100ms检查一次');
   }
 
-  // 极简化的路由监听 - 只监听最关键的事件
+  // 正常恢复策略
+  function startNormalRecovery() {
+    normalCheckInterval = setInterval(function() {
+      if (shouldHaveSwitcher) {
+        const existingSwitcher = document.querySelector('.navbar-language-switcher');
+        if (!existingSwitcher) {
+          log('🔄 正常恢复：检测到切换器丢失，重新注入');
+          injectLanguageSwitcher();
+        }
+      }
+    }, 1000); // 每1秒检查一次
+    
+    log('🔄 启动正常恢复模式：每1秒检查一次');
+  }
+
+  // 延迟初始化策略：等待Docusaurus稳定后再注入
+  function delayedInitialization() {
+    log('⏰ 开始延迟初始化...');
+    
+    // 等待500ms让Docusaurus完成初始化
+    setTimeout(function() {
+      log('🔧 延迟注入切换器...');
+      
+      if (injectLanguageSwitcher()) {
+        log('✅ 延迟注入成功');
+        // 启动积极恢复
+        setTimeout(startAggressiveRecovery, 100);
+      } else {
+        log('⚠️ 延迟注入失败，1秒后重试');
+        setTimeout(delayedInitialization, 1000);
+      }
+    }, 500);
+  }
+
+  // 极简路由监听
   function observeRouteChanges() {
     let currentPathname = location.pathname;
     
-    function handleRouteChange(source) {
+    function handleRouteChange() {
       if (location.pathname !== currentPathname) {
-        log('🔄 路由变化 [' + source + ']: ' + currentPathname + ' -> ' + location.pathname);
+        log('🔄 路由变化: ' + currentPathname + ' -> ' + location.pathname);
         currentPathname = location.pathname;
         
-        const oldSwitcher = document.querySelector('.navbar-language-switcher');
-        if (oldSwitcher) {
-          removalCount++;
-          lastRemovalReason = source;
-          const injectedAt = oldSwitcher.getAttribute('data-injected-at');
-          const lifespan = injectedAt ? (Date.now() - parseInt(injectedAt)) : '未知';
-          
-          oldSwitcher.remove();
-          log('🗑️ 移除旧切换器 (#' + removalCount + ', 存在时间: ' + lifespan + 'ms, 原因: ' + source + ')');
-        }
+        // 清除现有的恢复机制
+        if (rapidCheckInterval) clearInterval(rapidCheckInterval);
+        if (normalCheckInterval) clearInterval(normalCheckInterval);
         
-        retryCount = 0;
-        setTimeout(injectLanguageSwitcher, 100);
+        // 重新开始延迟初始化
+        delayedInitialization();
       }
     }
 
-    // 只监听真正的路由变化
-    window.addEventListener('popstate', function() {
-      handleRouteChange('popstate');
-    });
-    
-    // 禁用MutationObserver，因为它太敏感了
-    log('⚠️ 禁用MutationObserver，只监听popstate事件');
+    window.addEventListener('popstate', handleRouteChange);
   }
 
   function init() {
     if (isInitialized) {
-      log('⚠️ 已初始化，跳过');
       return;
     }
     
-    log('🚀 初始化诊断版语言切换器...');
+    log('🚀 初始化积极恢复版语言切换器...');
     log('📊 包含 ' + Object.keys(languageMapping).length + ' 个多语言页面');
-    log('📍 当前页面: ' + location.pathname);
     
     isInitialized = true;
     
-    // 启动极简路由监听
+    // 启动路由监听
     observeRouteChanges();
     
-    // 立即注入
-    injectLanguageSwitcher();
-    
-    // 启动看门狗
-    setTimeout(startWatchdog, 3000); // 3秒后启动看门狗
-    
-    // 诊断信息
-    setTimeout(function() {
-      log('📊 诊断统计:');
-      log('   注入次数: ' + injectionCount);
-      log('   移除次数: ' + removalCount);
-      log('   最后移除原因: ' + (lastRemovalReason || '无'));
-      
-      const currentSwitcher = document.querySelector('.navbar-language-switcher');
-      if (currentSwitcher) {
-        const injectedAt = currentSwitcher.getAttribute('data-injected-at');
-        const age = injectedAt ? (Date.now() - parseInt(injectedAt)) : '未知';
-        log('   当前切换器存在，年龄: ' + age + 'ms');
-      } else {
-        log('   当前无切换器');
-      }
-    }, 5000);
+    // 开始延迟初始化
+    delayedInitialization();
   }
 
   // 立即初始化
