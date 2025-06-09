@@ -3,12 +3,12 @@ import clsx from 'clsx';
 import css from './form.module.scss';
 import contributorBanner from '../../../assets/index/contributor_banner.png';
 import rangerBanner from '../../../assets/index/ranger_banner.png';
-import affiliateBanner from '../../../assets/index/bazaar_affiliate_banner.jpg';
+import affiliateBanner from '../../../assets/index/bazaar_affiliate_banner.png';
 
 const imageMap: Record<string, string> = {
   'contributor_banner.png': contributorBanner,
   'ranger_banner.png': rangerBanner,
-  'bazaar_affiliate_banner.jpg': affiliateBanner,
+  'bazaar_affiliate_banner.png': affiliateBanner,
 };
 
 
@@ -74,7 +74,7 @@ Don't hesitate, start promoting and earning high rewards.`,
         primary: true
       }
     ],
-    image: 'bazaar_affiliate_banner.jpg'
+    image: 'bazaar_affiliate_banner.png'
   }
 ];
 
