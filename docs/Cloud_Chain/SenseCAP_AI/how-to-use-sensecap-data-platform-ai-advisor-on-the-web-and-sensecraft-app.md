@@ -1,5 +1,5 @@
 ---
-title: How to Use SenseCraft Data Platform AI Advisor on the web and SenseCAP Mate APP
+title: How to Use SenseCraft Data Platform AI Advisor on the web and SenseCraft APP
 description: Learn how to deploy the AI Advisor on SenseCraft Data Platform and App for advanced sensor data analysis. Automate monitoring, optimize operations, and unlock actionable insights with AI-powered solutions.
 keywords:
 - SenseCraft
@@ -10,9 +10,10 @@ keywords:
 - Precision Agriculture
 - Smart Farming
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /sensecraft-data-platform/tutorial/how-to-use-sensecap-data-platform-ai-advisor-on-the-web-and-sensecap-mate-app
+slug: /sensecraft-data-platform/tutorial/how-to-use-sensecap-data-platform-ai-advisor-on-the-web-and-sensecraft-app
 aliases:
   - /How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP
+  - /sensecraft-data-platform/tutorial/how-to-use-sensecap-data-platform-ai-advisor-on-the-web-and-sensecap-mate-app
 tags:
   - SenseCraft
   - SenseCraft Data Platform
