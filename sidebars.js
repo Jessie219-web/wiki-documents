@@ -4024,7 +4024,7 @@ const sidebars = {
       items: [
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics',
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration',
-        'sensecraft-blockchain/sensecap-mx-dashboard/hotspot-registration',
+        'Cloud_Chain/SenseCAP_Dashboard/hotspot-registration',
       ],
     },
     {
