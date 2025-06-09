@@ -4083,7 +4083,7 @@ const sidebars = {
       label: 'SenseCraft Data Platform API',
       items: [
         'Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction',
-        'Cloud_Chain/SenseCAP_API/API_pricing',
+        'Cloud_Chain/SenseCAP_API/api-pricing',
         {
           type: 'category',
           label: 'HTTP API',
@@ -11886,7 +11886,7 @@ const sidebars = {
       label: 'SenseCAP API',
       items: [
         'ja/Cloud_Chain/SenseCAP_API/ja_SenseCAP_API_Introduction',
-        'ja/Cloud_Chain/SenseCAP_API/ja_API_pricing',
+        'ja/Cloud_Chain/SenseCAP_API/ja_api-pricing',
         {
           type: 'category',
           label: 'HTTP API',
