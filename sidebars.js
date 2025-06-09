@@ -11886,7 +11886,7 @@ const sidebars = {
       label: 'SenseCAP API',
       items: [
         'ja/Cloud_Chain/SenseCAP_API/ja_SenseCAP_API_Introduction',
-        'ja/Cloud_Chain/SenseCAP_API/ja_api-pricing',
+        'ja/Cloud_Chain/SenseCAP_API/ja_API_pricing',
         {
           type: 'category',
           label: 'HTTP API',
