@@ -889,6 +889,7 @@ const sidebars = {
                   items: [
                     'Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/Introduction',
                     'Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/Tutorials-Getting Started with SenseCAP ONE Compact Weather Sensor',
+                    'Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/Benchmark_Labs_Forecast_Integration_for_Seeed_Weather_Stations',
                   ],
                 },
               ],
@@ -3474,7 +3475,8 @@ const sidebars = {
                   label: 'reComputer Super',
                   items: [
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage'
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing'
                   ],
                 },
             ]},
@@ -3664,6 +3666,7 @@ const sidebars = {
             'Edge/NVIDIA_Jetson/FAQs/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
             'Edge/NVIDIA_Jetson/FAQs/Use_IMX477_Camera_with_A603',
             'Edge/NVIDIA_Jetson/FAQs/Differences_of_L4T_Between_Seeed_and_NVIDIA',
+            'Edge/NVIDIA_Jetson/FAQs/Overview_of_the_Relationship_Between_JetPack_and_Jetson',
           ]
         }
       ],
@@ -3996,7 +3999,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'Cloud',
-      label: 'Cloud',
+      label: 'SenseCraft & Cloud',
       className: 'sideboard_calss',
     },
     {
@@ -4017,7 +4020,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP Dashboard',
+      label: 'Blockchain Dashboard',
       items: [
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics',
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration',
@@ -4026,7 +4029,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP Portal',
+      label: 'SenseCraft Data Platform',
       items: [
         'Cloud_Chain/SenseCAP_Portal/QuickStart',
         {
@@ -4069,7 +4072,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP AI',
+      label: 'SenseCraft AI',
       items: [
         'Cloud_Chain/SenseCAP_AI/How_to_Use SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP',
         'Cloud_Chain/SenseCAP_AI/xiao-esp32c3-sensecapai',
@@ -4077,7 +4080,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP API',
+      label: 'SenseCraft Data Platform API',
       items: [
         'Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction',
         'Cloud_Chain/SenseCAP_API/API_pricing',
@@ -6289,6 +6292,7 @@ const sidebars = {
           label: 'Isaag Lab',
           items: [
             'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_Install_Isaac_lab',
+            'zh-CN/Robotics/cn_XiaoPi',
           ]
         },
       ]
@@ -7990,9 +7994,10 @@ const sidebars = {
       ]
     },
 
+
     {
       type: 'doc',
-      id: 'Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/es_reComputer_Intro',
+      id: 'Spanish/Edge/NVIDIA_Jetson/es_RecomputerPage',
       label: 'NVIDIA® Jetson™',
       className: 'sideboard_calss',
     },
@@ -11807,7 +11812,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'ja/ja_Cloud',
-      label: 'クラウド',
+      label: 'SenseCraft & クラウド',
       className: 'sideboard_calss',
     },
     {

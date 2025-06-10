@@ -72,7 +72,7 @@ last_update:
 	    <td>Compatible with the Raspberry Pi RP2040 ecosystem</td>
         <td>Compatible with the Raspberry Pi RP2350 ecosystem</td>
 	    <td>Ultra-low power consumption Bluetooth 5.0 Suitable for consumergrade product applications</td>
-	    <td>Advanced Version of XIAO nRF52840 With Onboard Microphone And 3-Axis IMU</td>
+	    <td>Advanced Version of XIAO nRF52840 With Onboard Microphone And 6-Axis IMU</td>
         <td>With WiFi and BLE, Budget Friendly Risc-V</td>
         <td>With WiFi-6, BLE, Zigbee, and Thread for Matter</td>
         <td>With WiFi and BLE, High Performance</td>
@@ -228,8 +228,8 @@ last_update:
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>✅</font></td>
         <td align="center"><font size={"3"}>❌</font></td>
-        <td align="center"><font size={"3"}>✅</font></td>
-        <td align="center"><font size={"3"}>✅</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
+        <td align="center"><font size={"3"}>❌</font></td>
 	</tr>
     <tr>
 	    <th>Reset Button</th>

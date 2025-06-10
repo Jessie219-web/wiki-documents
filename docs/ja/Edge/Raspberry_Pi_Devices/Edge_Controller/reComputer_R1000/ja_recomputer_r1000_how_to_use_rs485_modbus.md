@@ -84,7 +84,7 @@ sudo minicom -D /dev/ttyAMA*
 ```
 `ttyAMA*` は使用する RS485 に応じて `ttyAMA2`, `ttyAMA3`, または `ttyAMA4` になります。
 
-その後、`Ctrl+A` を押してから `C` を入力すると、以下のように minicom が表示されます：
+その後、`Ctrl+A` を押してから `Z` を入力すると、以下のように minicom が表示されます：
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/reComputer-R1000/RS485_fix/minicom0.png" alt="pir" width="700" height="auto" /></div>
 
