@@ -1,11 +1,10 @@
-// 生成内嵌映射数据的语言切换器脚本
+// 语言切换器（内嵌数据）
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 
 // 配置
 const config = {
-  // 文档目录配置
   docsPaths: {
     en: 'docs',           
     cn: 'docs/zh-CN',     
@@ -13,7 +12,6 @@ const config = {
     es: 'docs/Spanish'    
   },
   
-  // 语言前缀配置（URL路径）
   languagePrefixes: {
     en: '',
     cn: '/cn',
@@ -21,13 +19,11 @@ const config = {
     es: '/es'
   },
   
-  // 输出文件 - 直接生成JavaScript文件
   outputFile: 'static/js/language-switcher.js',
-  
   verbose: true
 };
 
-// 递归获取目录下所有markdown文件
+// 获取所有markdown文件
 function getAllMarkdownFiles(dir) {
   const files = [];
   
@@ -72,12 +68,10 @@ function getAllMarkdownFiles(dir) {
   return files;
 }
 
-// 从markdown文件中提取slug
 function extractSlugFromFile(filePath) {
   try {
     const content = fs.readFileSync(filePath, 'utf8');
     const parsed = matter(content);
-    
     const slug = parsed.data.slug;
     return slug ? (slug.startsWith('/') ? slug : `/${slug}`) : null;
   } catch (error) {
@@ -86,7 +80,6 @@ function extractSlugFromFile(filePath) {
   }
 }
 
-// 从相对路径推断默认slug
 function inferSlugFromPath(relativePath) {
   const withoutExt = relativePath.replace(/\.(md|mdx)$/i, '');
   const normalized = withoutExt.replace(/\\/g, '/');
@@ -99,7 +92,6 @@ function inferSlugFromPath(relativePath) {
   return `/${normalized}/`;
 }
 
-// 处理单个语言的文档
 function processLanguageDocuments(languageCode, docsPath) {
   if (config.verbose) {
     console.log(`\n🔍 处理 ${languageCode} 文档: ${docsPath}`);
@@ -136,7 +128,6 @@ function processLanguageDocuments(languageCode, docsPath) {
   return slugMap;
 }
 
-// 生成语言映射表
 function generateLanguageMapping() {
   console.log('🚀 开始生成语言映射表...\n');
   
@@ -170,14 +161,12 @@ function generateLanguageMapping() {
   return { languageMapping, allSlugs };
 }
 
-// 生成包含映射数据的JavaScript文件
 function generateJavaScriptFile() {
   const startTime = Date.now();
   
   try {
     const { languageMapping, allSlugs } = generateLanguageMapping();
     
-    // 统计信息
     const stats = {
       total: allSlugs.size,
       multiLanguage: Object.keys(languageMapping).length,
@@ -189,19 +178,24 @@ function generateJavaScriptFile() {
     console.log(`   多语言页面: ${stats.multiLanguage}`);
     console.log(`   单语言页面: ${stats.singleLanguage}`);
     
-    // 生成JavaScript代码
-    const jsContent = `// 语言切换器 - 内嵌映射数据版本
-// 生成时间: ${new Date().toISOString()}
+    // 生成北京时间
+    const now = new Date();
+    const beijingTime = new Date(now.getTime() + (8 * 60 * 60 * 1000)); // UTC+8
+    const beijingTimeString = beijingTime.toISOString().replace('T', ' ').slice(0, 19) + ' (北京时间)';
+    
+    // 生成积极恢复版本的JavaScript代码
+    const jsContent = `// 语言切换器 - 积极恢复版本
+// 生成时间: ${beijingTimeString}
 // 多语言页面: ${stats.multiLanguage} 个
 
 (function() {
   'use strict';
 
-  const DEBUG = false;
+  const DEBUG = false; // 生产环境可关闭调试
   
   function log(...args) {
     if (DEBUG) {
-      console.log('🔄 [内嵌数据版]', new Date().toISOString().slice(11, 23), ...args);
+      console.log('🔄 [积极恢复版]', new Date().toISOString().slice(11, 23), ...args);
     }
   }
 
@@ -213,13 +207,18 @@ function generateJavaScriptFile() {
     es: { label: 'Español', flag: '🇪🇸', prefix: '/es' }
   };
 
-  // 内嵌的语言映射数据 - 无需网络请求！
+  // 内嵌的语言映射数据
   const languageMapping = ${JSON.stringify(languageMapping, null, 2)};
 
+  // 状态管理变量
   let isInitialized = false;
-  let retryCount = 0;
-  const MAX_RETRIES = 5;
-  const RETRY_INTERVAL = 100;
+  let shouldHaveSwitcher = false;
+  let injectionCount = 0;
+  
+  // 积极恢复相关变量
+  let rapidCheckInterval = null;
+  let normalCheckInterval = null;
+  let lastSuccessfulInjection = 0;
 
   function getCurrentLanguageAndPath() {
     const currentPath = window.location.pathname;
@@ -241,7 +240,6 @@ function generateJavaScriptFile() {
       basePath = '/' + basePath;
     }
     
-    log('路径解析:', { currentPath, detectedLanguage, basePath });
     return { currentLanguage: detectedLanguage, basePath };
   }
 
@@ -255,21 +253,22 @@ function generateJavaScriptFile() {
     for (const tryPath of pathsToTry) {
       if (languageMapping[tryPath]) {
         const availableLanguages = languageMapping[tryPath];
-        log(\`🌐 找到多语言页面 \${tryPath}:\`, availableLanguages);
+        log('🌐 找到多语言页面 ' + tryPath + ':', availableLanguages);
         return availableLanguages;
       }
     }
     
-    log(\`ℹ️ 单语言页面: \${basePath}\`);
+    log('ℹ️ 单语言页面: ' + basePath);
     return [currentLanguage];
   }
 
   function createLanguageSwitcher(availableLanguages, currentLanguage, basePath) {
     if (availableLanguages.length <= 1) {
-      log('⚪ 单语言，跳过切换器');
+      shouldHaveSwitcher = false;
       return null;
     }
 
+    shouldHaveSwitcher = true;
     const currentLangConfig = languages[currentLanguage];
     const priority = { en: 0, cn: 1, ja: 2, es: 3 };
     const sortedLanguages = [...availableLanguages].sort((a, b) => {
@@ -278,196 +277,218 @@ function generateJavaScriptFile() {
       return (priority[a] || 999) - (priority[b] || 999);
     });
     
-    const switcherHTML = \`
-      <div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items">
-        <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button">
-          <span class="lang-flag">\${currentLangConfig.flag}</span>
-          <span class="lang-label">\${currentLangConfig.label}</span>
-          <svg width="8" height="8" class="lang-arrow" aria-hidden="true">
-            <path d="M1 2l3 3 3-3" stroke="currentColor" stroke-width="1.5" fill="none"></path>
-          </svg>
-        </a>
-        <ul class="dropdown__menu">
-          \${sortedLanguages.map(langCode => {
-            const lang = languages[langCode];
-            const langPath = lang.prefix + basePath;
-            const isActive = langCode === currentLanguage;
-            
-            return \`
-              <li>
-                <a class="dropdown__link \${isActive ? 'dropdown__link--active' : ''}" 
-                   href="\${langPath}"
-                   title="切换到 \${lang.label}"
-                   \${isActive ? 'aria-current="page"' : ''}>
-                  <span class="lang-flag">\${lang.flag}</span>
-                  <span class="lang-label">\${lang.label}</span>
-                  \${isActive ? '<span class="lang-check">✓</span>' : ''}
-                </a>
-              </li>
-            \`;
-          }).join('')}
-        </ul>
-      </div>
-    \`;
+    const switcherHTML = [
+      '<div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items" data-recovery-count="' + injectionCount + '">',
+      '  <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button">',
+      '    <span class="lang-flag">' + currentLangConfig.flag + '</span>',
+      '    <span class="lang-label">' + currentLangConfig.label + '</span>',
+      '  </a>',
+      '  <ul class="dropdown__menu">',
+      sortedLanguages.map(langCode => {
+        const lang = languages[langCode];
+        const langPath = lang.prefix + basePath;
+        const isActive = langCode === currentLanguage;
+        
+        return [
+          '    <li>',
+          '      <a class="dropdown__link ' + (isActive ? 'dropdown__link--active' : '') + '"',
+          '         href="' + langPath + '"',
+          '         title="切换到 ' + lang.label + '"',
+          (isActive ? '         aria-current="page">' : '>'),
+          '        <span class="lang-flag">' + lang.flag + '</span>',
+          '        <span class="lang-label">' + lang.label + '</span>',
+          (isActive ? '        <span class="lang-check">✓</span>' : ''),
+          '      </a>',
+          '    </li>'
+        ].join('\\n');
+      }).join('\\n'),
+      '  </ul>',
+      '</div>'
+    ].join('\\n');
     
-    log('🎨 创建切换器HTML');
     return switcherHTML;
   }
 
   function injectLanguageSwitcher() {
-    const startTime = Date.now();
-    log(\`🔧 开始注入切换器... (尝试 \${retryCount + 1}/\${MAX_RETRIES})\`);
-    
-    let navbar = document.querySelector('.navbar__items--right') || 
-                 document.querySelector('.navbar__items') ||
-                 document.querySelector('.navbar');
+    const navbar = document.querySelector('.navbar__items--right') || 
+                   document.querySelector('.navbar__items') ||
+                   document.querySelector('.navbar');
     
     if (!navbar) {
       log('⏳ 导航栏未找到');
-      if (retryCount < MAX_RETRIES) {
-        retryCount++;
-        setTimeout(injectLanguageSwitcher, RETRY_INTERVAL);
-        return;
-      } else {
-        log('❌ 达到最大重试次数，放弃注入');
-        return;
-      }
+      return false;
     }
 
-    if (document.querySelector('.navbar-language-switcher')) {
-      log('⚠️ 切换器已存在，跳过');
-      return;
+    // 检查是否已存在
+    const existingSwitcher = document.querySelector('.navbar-language-switcher');
+    if (existingSwitcher) {
+      return true; // 已存在，算作成功
     }
 
     const { currentLanguage, basePath } = getCurrentLanguageAndPath();
+    const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
+    const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
     
+    if (!switcherHTML) {
+      return true; // 单语言页面，不需要切换器，算作成功
+    }
+
     try {
-      // 无需网络请求，直接使用内嵌数据！
-      const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
-      const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+      injectionCount++;
       
-      if (switcherHTML) {
-        let insertPosition = null;
-        const positionSelectors = [
-          'a[href*="seeedstudio.com"]',
-          '.header-github-link', 
-          '.navbar__item:last-child'
-        ];
-        
-        for (const selector of positionSelectors) {
-          const element = navbar.querySelector(selector);
-          if (element) {
-            insertPosition = element;
-            break;
-          }
+      let insertPosition = null;
+      const positionSelectors = [
+        'a[href*="seeedstudio.com"]',
+        '.header-github-link', 
+        '.navbar__item:last-child'
+      ];
+      
+      for (const selector of positionSelectors) {
+        const element = navbar.querySelector(selector);
+        if (element) {
+          insertPosition = element;
+          break;
         }
-        
-        if (insertPosition) {
-          insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
-          log(\`✅ 插入到 \${insertPosition.tagName} 前面\`);
-        } else {
-          navbar.insertAdjacentHTML('beforeend', switcherHTML);
-          log('✅ 插入到导航栏末尾');
-        }
-        
-        const switcherButton = navbar.querySelector('.navbar-language-switcher .navbar__link');
+      }
+      
+      if (insertPosition) {
+        insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
+      } else {
+        navbar.insertAdjacentHTML('beforeend', switcherHTML);
+      }
+      
+      // 防止默认链接行为
+      const switcherElement = navbar.querySelector('.navbar-language-switcher');
+      if (switcherElement) {
+        const switcherButton = switcherElement.querySelector('.navbar__link');
         if (switcherButton) {
-          switcherButton.addEventListener('click', (e) => {
+          switcherButton.addEventListener('click', function(e) {
             e.preventDefault();
           });
         }
-        
-        const injectTime = Date.now() - startTime;
-        log(\`🎉 切换器注入成功! (\${injectTime}ms)\`);
-        log(\`🌐 支持语言: \${availableLanguages.join(', ')}\`);
-        
-        retryCount = 0;
-        
-      } else {
-        log('⚪ 单语言页面，无需切换器');
       }
+      
+      lastSuccessfulInjection = Date.now();
+      log('✅ 切换器注入成功! (#' + injectionCount + ')');
+      return true;
+      
     } catch (error) {
       log('❌ 注入失败:', error);
-      
-      if (retryCount < MAX_RETRIES) {
-        retryCount++;
-        setTimeout(injectLanguageSwitcher, RETRY_INTERVAL);
-      }
+      return false;
     }
   }
 
-  function observeRouteChanges() {
-    let currentUrl = location.href;
-    let lastPathname = location.pathname;
+  // 积极恢复策略
+  function startAggressiveRecovery() {
+    // 清除可能存在的检查器
+    if (rapidCheckInterval) clearInterval(rapidCheckInterval);
+    if (normalCheckInterval) clearInterval(normalCheckInterval);
     
-    function handleRouteChange(source) {
-      if (location.href !== currentUrl || location.pathname !== lastPathname) {
-        log(\`🔄 路由变化 [\${source}]:\`, lastPathname, '->', location.pathname);
-        currentUrl = location.href;
-        lastPathname = location.pathname;
-        
-        const oldSwitcher = document.querySelector('.navbar-language-switcher');
-        if (oldSwitcher) {
-          oldSwitcher.remove();
-          log('🗑️ 移除旧切换器');
+    // 第一阶段：前10秒内每100ms检查一次（高频）
+    let rapidCheckCount = 0;
+    const maxRapidChecks = 100; // 10秒 * 10次/秒
+    
+    rapidCheckInterval = setInterval(function() {
+      rapidCheckCount++;
+      
+      if (shouldHaveSwitcher) {
+        const existingSwitcher = document.querySelector('.navbar-language-switcher');
+        if (!existingSwitcher) {
+          log('🚀 快速恢复：检测到切换器丢失，立即注入 (#' + rapidCheckCount + ')');
+          injectLanguageSwitcher();
         }
+      }
+      
+      // 10秒后切换到正常模式
+      if (rapidCheckCount >= maxRapidChecks) {
+        clearInterval(rapidCheckInterval);
+        rapidCheckInterval = null;
+        log('🔄 切换到正常检查模式');
+        startNormalRecovery();
+      }
+    }, 100); // 每100ms检查一次
+    
+    log('🚀 启动积极恢复模式：前10秒内每100ms检查一次');
+  }
+
+  // 正常恢复策略
+  function startNormalRecovery() {
+    normalCheckInterval = setInterval(function() {
+      if (shouldHaveSwitcher) {
+        const existingSwitcher = document.querySelector('.navbar-language-switcher');
+        if (!existingSwitcher) {
+          log('🔄 正常恢复：检测到切换器丢失，重新注入');
+          injectLanguageSwitcher();
+        }
+      }
+    }, 1000); // 每1秒检查一次
+    
+    log('🔄 启动正常恢复模式：每1秒检查一次');
+  }
+
+  // 延迟初始化策略：等待Docusaurus稳定后再注入
+  function delayedInitialization() {
+    log('⏰ 开始延迟初始化...');
+    
+    // 等待500ms让Docusaurus完成初始化
+    setTimeout(function() {
+      log('🔧 延迟注入切换器...');
+      
+      if (injectLanguageSwitcher()) {
+        log('✅ 延迟注入成功');
+        // 启动积极恢复
+        setTimeout(startAggressiveRecovery, 100);
+      } else {
+        log('⚠️ 延迟注入失败，1秒后重试');
+        setTimeout(delayedInitialization, 1000);
+      }
+    }, 500);
+  }
+
+  // 极简路由监听
+  function observeRouteChanges() {
+    let currentPathname = location.pathname;
+    
+    function handleRouteChange() {
+      if (location.pathname !== currentPathname) {
+        log('🔄 路由变化: ' + currentPathname + ' -> ' + location.pathname);
+        currentPathname = location.pathname;
         
-        retryCount = 0;
-        setTimeout(injectLanguageSwitcher, 5); // 极短延迟
+        // 清除现有的恢复机制
+        if (rapidCheckInterval) clearInterval(rapidCheckInterval);
+        if (normalCheckInterval) clearInterval(normalCheckInterval);
+        
+        // 重新开始延迟初始化
+        delayedInitialization();
       }
     }
 
-    window.addEventListener('popstate', () => handleRouteChange('popstate'));
-    
-    const originalPushState = history.pushState;
-    const originalReplaceState = history.replaceState;
-    
-    history.pushState = function(...args) {
-      originalPushState.apply(this, args);
-      setTimeout(() => handleRouteChange('pushState'), 0);
-    };
-    
-    history.replaceState = function(...args) {
-      originalReplaceState.apply(this, args);
-      setTimeout(() => handleRouteChange('replaceState'), 0);
-    };
-    
-    new MutationObserver(() => {
-      handleRouteChange('mutation');
-    }).observe(document.body, { 
-      subtree: true, 
-      childList: true,
-      attributes: true,
-      attributeFilter: ['data-current-path', 'data-rh'] 
-    });
+    window.addEventListener('popstate', handleRouteChange);
   }
 
   function init() {
     if (isInitialized) {
-      log('⚠️ 已初始化，跳过');
       return;
     }
     
-    log('🚀 初始化语言切换器 (内嵌数据版)...');
-    log(\`📊 包含 \${Object.keys(languageMapping).length} 个多语言页面\`);
+    log('🚀 初始化积极恢复版语言切换器...');
+    log('📊 包含 ' + Object.keys(languageMapping).length + ' 个多语言页面');
+    
     isInitialized = true;
     
+    // 启动路由监听
     observeRouteChanges();
-    injectLanguageSwitcher();
+    
+    // 开始延迟初始化
+    delayedInitialization();
   }
 
+  // 立即初始化
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
     setTimeout(init, 0);
   }
-  
-  setTimeout(() => {
-    if (!isInitialized) {
-      log('🔄 备用初始化触发');
-      init();
-    }
-  }, 500);
 
 })();`;
 
@@ -480,10 +501,12 @@ function generateJavaScriptFile() {
     // 写入JavaScript文件
     fs.writeFileSync(config.outputFile, jsContent, 'utf8');
     
-    console.log(`\n✅ 语言切换器已生成: ${config.outputFile}`);
+    console.log(`\n✅ 积极恢复版语言切换器已生成: ${config.outputFile}`);
     console.log(`📄 包含 ${stats.multiLanguage} 个多语言页面的映射数据`);
     console.log(`⚡ 用时: ${Date.now() - startTime}ms`);
-    console.log(`🚀 无需网络请求，页面切换即时响应！`);
+    console.log(`🚀 优化用户体验：快速恢复机制！`);
+    console.log(`🕐 生成时间: ${beijingTimeString}`);
+    console.log(`🔧 已移除重复箭头符号，使用你现有的样式`);
     
     const stats_file = fs.statSync(config.outputFile);
     console.log(`📦 文件大小: ${Math.round(stats_file.size / 1024)}KB`);
