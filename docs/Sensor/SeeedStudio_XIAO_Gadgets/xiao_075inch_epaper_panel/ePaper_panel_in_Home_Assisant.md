@@ -778,7 +778,7 @@ After that, you will see the Local Calendar in Configured part and in your sideb
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/32.png" style={{width:800, height:'auto'}}/></div>
 
-Click Calendar in your sidebar and create 3 new calendars name **calender**, **epaper_event** and **new_calendar**. You can also use other name but please keep the same name in your code later.
+Click Calendar in your sidebar and create 3 new calendars name **calendar**, **epaper_event** and **new_calendar**. You can also use other name but please keep the same name in your code later.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/27.png" style={{width:800, height:'auto'}}/></div>
 
@@ -888,15 +888,15 @@ time:
 text_sensor:
   - platform: homeassistant
     id: ha_calendar_event_1
-    entity_id: calendar.calender
+    entity_id: calendar.calendar
     attribute: "message"
   - platform: homeassistant
     id: ha_calendar_start_time_1
-    entity_id: calendar.calender
+    entity_id: calendar.calendar
     attribute: "start_time"
   - platform: homeassistant
     id: ha_calendar_end_time_1
-    entity_id: calendar.calender
+    entity_id: calendar.calendar
     attribute: "end_time"
 
   - platform: homeassistant
@@ -914,15 +914,15 @@ text_sensor:
 
   - platform: homeassistant
     id: ha_calendar_event_3
-    entity_id: calendar.new_calender
+    entity_id: calendar.new_calendar
     attribute: "message"
   - platform: homeassistant
     id: ha_calendar_start_time_3
-    entity_id: calendar.new_calender
+    entity_id: calendar.new_calendar
     attribute: "start_time"
   - platform: homeassistant
     id: ha_calendar_end_time_3
-    entity_id: calendar.new_calender
+    entity_id: calendar.new_calendar
     attribute: "end_time"
 
   - platform: homeassistant
