@@ -140,6 +140,7 @@ The following Wiki pages provide detailed information about different ways to pr
 
 - **[STP]**: [3D Model enclosure](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/3D_model.zip)
 - **[PDF]**: [ePaper Driver Board SCH PDF](https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/ePaper_Driver_Board.pdf)
+- **[BAMBU]** [Jonathan Thomson - XIAO 7.5" ePaper Panel Wall Mount](https://makerworld.com/en/models/1487711-seeed-studio-xiao-7-5-epaper-panel-wall-mount#profileId-1554538)
 
 
 ## Tech Support & Product Discussion
