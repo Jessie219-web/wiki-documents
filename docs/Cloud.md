@@ -44,7 +44,7 @@ Cloud services are a vital component that enable processed data management from 
             <br/>
             <a href="/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Dashboard Registration</font></span></a>
             <br/>
-            <a href="/Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Hotspot Registration</font></span></a>
+            <a href="/sensecraft-blockchain/sensecap-mx-dashboard/hotspot-registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Hotspot Registration</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
