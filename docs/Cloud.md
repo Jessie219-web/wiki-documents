@@ -44,7 +44,7 @@ Cloud services are a vital component that enable processed data management from 
             <br/>
             <a href="/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Dashboard Registration</font></span></a>
             <br/>
-            <a href="/Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Hotspot Registration</font></span></a>
+            <a href="/sensecraft-blockchain/sensecap-mx-dashboard/hotspot-registration" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Hotspot Registration</font></span></a>
             <br/>
     </div>
     <div class="intro_item" style={{textAlign: 'center'}}>
@@ -99,7 +99,7 @@ Cloud services are a vital component that enable processed data management from 
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft App</font></div>
             SenseCraft App is used on mobile phones to config, build, and manage sensors, and display data from SenseCraft Data Platform.
             <br/>
-            > <a href="/sensecraft_app#download" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download</font></span></a> / <a href="/sensecraft_app#config" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Bind Devices</font></span></a> / <a href="/sensecraft_app#account" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Account</font></span></a> / <a href="/sensecraft_app#user" target="_blank"><span><font color={'FFFFFF'} size={"3"}>User</font></span></a>
+            > <a href="/sensecraft-app/overview#download" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download</font></span></a> / <a href="/sensecraft-app/overview#config" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Bind Devices</font></span></a> / <a href="/sensecraft-app/overview#account" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Account</font></span></a> / <a href="/sensecraft-app/overview#user" target="_blank"><span><font color={'FFFFFF'} size={"3"}>User</font></span></a>
     </div>
 </div>
 
@@ -110,8 +110,8 @@ Cloud services are a vital component that enable processed data management from 
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft AI</font></div>
             SenseCraft AI can be accessed on the SenseCraft Data Platform and SenseCraft App.
             <br/>
-            > <a href="/How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Getting Started</font></span></a> 
-            > <a href="/sensecraft-data-platform/applications/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Connecting XIAO ESP32C3</font></span></a>
+            > <a href="/how_to_use_sensecap_data_platform_ai_advisor_on_the_web_and_sensecraft_app" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Getting Started</font></span></a> 
+            > <a href="/xiao_esp32c3_sensecapai/" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Connecting XIAO ESP32C3</font></span></a>
     </div>
 </div>
 

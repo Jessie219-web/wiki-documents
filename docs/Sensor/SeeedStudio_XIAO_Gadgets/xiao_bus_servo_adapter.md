@@ -39,7 +39,7 @@ Please refer to the rest of this guide for details on setup and usage for both p
           </a>
       </div></td>
       <td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-          <a class="get_one_now_item" href="/xiao_bus_servo_adapter">
+          <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-Bus-Servo-Adapter-for-XIAO-p-6397.html">
               <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
           </a>
       </div></td>
@@ -444,7 +444,7 @@ Servo IDs: Modify the ID array to match the IDs of your connected servos.
 - **Initial Position**: Set the initial values in the `Pos` array to define the starting positions of your servos.
 
 
-### FAQs
+## FAQs
 
 :::tip
 
@@ -461,7 +461,7 @@ Yes, multiple servos are supported, but ensure your power supply can handle the 
 
 </details> <br/>
 
-### Resources
+## Resources
 
 - **[PDF]** [Bus Servo Driver Board Schematic](https://files.seeedstudio.com/wiki/bus_servo_driver_board/202004237_Servo_Driver_Board_for_Seeed_Studio_XIAO_SCH_PDF_250225.pdf)
 - **[STL]** [XIAO Bus Servo Adapter upper shell](https://files.seeedstudio.com/wiki/bus_servo_driver_board/xiao_bus_servo_adapter_top.stl)
