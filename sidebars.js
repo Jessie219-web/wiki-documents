@@ -4074,7 +4074,7 @@ const sidebars = {
       type: 'category',
       label: 'SenseCraft AI',
       items: [
-        'Cloud_Chain/SenseCAP_AI/how-to-use-sensecap-data-platform-ai-advisor-on-the-web-and-sensecraft-app',
+        'Cloud_Chain/SenseCAP_AI/how_to_use_sensecap_data_platform_ai_advisor_on_the_web_and_sensecraft_app',
         'Cloud_Chain/SenseCAP_AI/xiao-esp32c3-sensecapai',
       ],
     },
