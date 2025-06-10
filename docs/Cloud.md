@@ -111,7 +111,7 @@ Cloud services are a vital component that enable processed data management from 
             SenseCraft AI can be accessed on the SenseCraft Data Platform and SenseCraft App.
             <br/>
             > <a href="/How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Getting Started</font></span></a> 
-            > <a href="/xiao_esp32c3_sensecapai/" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Connecting XIAO ESP32C3</font></span></a>
+            > <a href="/sensecraft-data-platform/applications/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Connecting XIAO ESP32C3</font></span></a>
     </div>
 </div>
 
