@@ -3,7 +3,7 @@ sidebar_position: 7
 description: This article describes how to get outputs using Grove Vision AI V2 and SenseCraft AI.
 title: Grove Vision AI V2 Model Output
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/54.webp
-slug: /sensecraft_ai_output_grove_visionai
+slug: /sensecraft-ai/tutorial/sensecraft-ai-output-grove-vision-ai
 last_update:
   date: 12/04/2024
   author: Citric

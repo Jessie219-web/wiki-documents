@@ -3,7 +3,7 @@ sidebar_position: 10
 description: This article describes how to use SenseCraft AI's libraries on XIAO.
 title: As a Sensor
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/uart_connection.png
-slug: /sensecraft_ai_output_libraries_xiao
+slug: /sensecraft-ai/tutorial/sensecraft-ai-output-libraries-xiao
 last_update:
   date: 12/04/2024
   author: Citric

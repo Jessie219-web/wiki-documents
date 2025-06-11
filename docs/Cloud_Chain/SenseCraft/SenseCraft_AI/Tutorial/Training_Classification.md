@@ -3,7 +3,7 @@ sidebar_position: 5
 description: How to use Training(Classification)
 title: Training - Classification
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/34.webp
-slug: /sensecraft_ai_training_classification
+slug: /sensecraft-ai/tutorial/sensecraft-ai-training-classification
 last_update:
   date: 12/03/2024
   author: Citric

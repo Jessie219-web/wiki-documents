@@ -7,7 +7,7 @@ keywords:
 - SenseCraft AI
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 sidebar_class_name: hidden
-slug: /grove_vision_ai_v2_workspace
+slug: /sensecraft-ai/grove-vision-ai-v2-workspace
 last_update:
   date: 08/22/2024
   author: Frank
