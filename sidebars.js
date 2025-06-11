@@ -4024,7 +4024,7 @@ const sidebars = {
       items: [
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics',
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration',
-        'Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration',
+        'Cloud_Chain/SenseCAP_Dashboard/hotspot-registration',
       ],
     },
     {
@@ -4065,7 +4065,7 @@ const sidebars = {
       type: 'category',
       label: 'SenseCraft APP',
       items: [
-        'Cloud_Chain/SenseCAP_Mate_APP/sensecraft_app',
+        'Cloud_Chain/SenseCAP_Mate_APP/overview',
     //    'Cloud_Chain/SenseCAP_Mate_APP/sensecap_mate_app_event',
          'Cloud_Chain/SenseCAP_Mate_APP/sensecraft_cloud_fee',
       ],
@@ -4074,7 +4074,7 @@ const sidebars = {
       type: 'category',
       label: 'SenseCraft AI',
       items: [
-        'Cloud_Chain/SenseCAP_AI/How_to_Use SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP',
+        'Cloud_Chain/SenseCAP_AI/how_to_use_sensecap_data_platform_ai_advisor_on_the_web_and_sensecraft_app',
         'Cloud_Chain/SenseCAP_AI/xiao-esp32c3-sensecapai',
       ],
     },
