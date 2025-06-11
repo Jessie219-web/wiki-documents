@@ -1,28 +1,33 @@
 ---
 sidebar_position: 2
-description: Using XIAO ESP32C3 to connect to SenseCAP AI for planting advice
-title: Using XIAO ESP32C3 to connect to SenseCAP AI for planting advice
+description: Using XIAO ESP32C3 to connect to SenseCraft Data Platform AI Advisor for planting advice
+title: Using XIAO ESP32C3 to connect to SenseCraft Data Platform AI Advisor for planting advice
 keywords:
+- sensecraft data platform
 - xiao
-- sensecap ai
 - AI
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
-slug: /xiao_esp32c3_sensecapai
+slug: /sensecraft-data-platform/applications/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor
+aliases:
+  - /xiao_esp32c3_sensecapai
 last_update:
-  date: 08/04/2023
-  author: Citric
+  date: 06/06/2025
+  author: Jancee
 ---
 
+:::tip note
+SenseCAP Platform is officially renamed as `SenseCraft Data Platform`!
+:::
 
-# Using XIAO ESP32C3 to connect to SenseCAP AI for planting advice
+# Using XIAO ESP32C3 to connect to SenseCraft Data Platform for planting advice
 
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/1.png" style={{width:1000, height:'auto'}}/></div>
 
 
-During this time, Seeed Studio's SenseCAP platform developed and released new AI features. Currently the main features of SenseCAP AI are focused on providing constructive planting advice to growers, and will be updated with richer AI features in the near future!
+During this time, Seeed Studio's SenseCraft Data platform developed and released new AI features. Currently the main features of AI Advisor on SenseCraft Data Platform are focused on providing constructive planting advice to growers, and will be updated with richer AI features in the near future!
 
-This tutorial, then, will bridge the XIAO ESP32 series with the SenseCAP platform, detailing how to use the XIAO and Grove series sensors to upload data to SenseCAP and get constructive suggestions from the AI based on these sensor values.
+This tutorial, then, will bridge the XIAO ESP32 series with the `SenseCraft Data platform`, detailing how to use the XIAO and Grove series sensors to upload data to platform and get constructive suggestions from the AI based on these sensor values.
 
 ## Getting Started
 
@@ -147,13 +152,13 @@ Open the serial monitor of Arduino IDE and select the baud rate as 115200 and ob
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/166.png" style={{width:700, height:'auto'}}/></div>
 
 
-## Introduction to SenseCAP HTTPS API -- Upload Sensor Data
+## Introduction to SenseCraft Data Platform HTTPS API -- Upload Sensor Data
 
-Now that we know how to get data from the SHT40 sensor, let's start by learning the following API call rules for the SenseCAP platform. You can read about using the SenseCAP API by clicking the button below to jump directly to the SenseCAP Documentation Center.
+Now that we know how to get data from the SHT40 sensor, let's start by learning the following API call rules for `SenseCraft Data Platform`. You can read about using the `SenseCraft Data Platform`s API by clicking the button below to jump directly to the SenseCraft Documentation Center.
 
-- [SenseCAP Document Center](https://sensecap-docs.seeed.cc/httpapi_quickstart.html)
+- [SenseCraft Document Center](https://sensecap-docs.seeed.cc/httpapi_quickstart.html)
 
-The basic principle of SenseCAP to receive sensor data is to use EUI, Key as the authentication information and report the device data by POST.
+The basic principle of SenseCraft Data Platform to receive sensor data is to use EUI, Key as the authentication information and report the device data by POST.
 
 HTTPS Server Address: 
 
@@ -264,17 +269,17 @@ The following is an example of sending sensor upload data.
 }
 ```
 
-## Upload temperature and humidity data to SenseCAP
+## Upload temperature and humidity data to SenseCraft Data Platform
 
-Once we understand the above rules, we can start writing the HTTPS program to upload the temperature and humidity data of our SHT40 for SenseCAP.
+Once we understand the above rules, we can start writing the HTTPS program to upload the temperature and humidity data of our SHT40 for SenseCraft Data Platform.
 
-### Step 1. Register and login to SenseCAP
+### Step 1. Register and login to SenseCraft Data Platform
 
-You can click on the link below to go directly to the SenseCAP International site. If this is your first time using SenseCAP's services, you may need to register for an account.
+You can click on the link below to go directly to the SenseCraft Data Platform International site. If this is your first time using SenseCraft's services, you may need to register for an account.
 
-- [SenseCAP Website](https://sensecap.seeed.cc)
+- [SenseCraft Data Platform Website](https://sensecap.seeed.cc)
 
-Logging in to SenseCAP takes you to the console screen. We need to add a kit of our own, please click **DevelopKit** on the left menu bar.
+Logging in to SenseCraft Data Platform takes you to the console screen. We need to add a kit of our own, please click **DevelopKit** on the left menu bar.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/3.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -292,7 +297,7 @@ Next, you'll be able to see the device you created in the dashboard, usually the
 
 ### Step 2. Obtaining Forensic Information
 
-SenseCAP's interface for authentication information requires Base64-based **EUI:KEY** encryption.
+SenseCraft's interface for authentication information requires Base64-based **EUI:KEY** encryption.
 
 For example, your EUI is `2CF7F11003900000` and Key is `06C42483D7155E7006C42483D7155E70`. then you can get the Base64 encrypted forensic information by the following commands in the terminal.
 
@@ -306,9 +311,9 @@ Please keep the authentication information, we will use it as the **apiKey** in 
 
 ### Step 3. Obtaining the number of the sensor type
 
-Included in the upload is the number of the sensor type and sensor name that we are reporting. This is so that SenseCAP knows what sensor we are uploading data from and what units the data is in.
+Included in the upload is the number of the sensor type and sensor name that we are reporting. This is so that SenseCraft knows what sensor we are uploading data from and what units the data is in.
 
-For this section, please refer to the numbered cross-reference table of sensors and values provided in the SenseCAP Documentation Center.
+For this section, please refer to the numbered cross-reference table of sensors and values provided in the SenseCraft Documentation Center.
 
 - [List of Measurement IDs](https://sensecap-docs.seeed.cc/measurement_list.html)
 
@@ -334,7 +339,7 @@ First is the **NTPClient** library, which can use XIAO networking to get the cur
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/9.png" style={{width:1000, height:'auto'}}/></div>
 
-Next is the **ArduinoJson** library, which makes it easier to help us parse what SenseCAP returns to us.
+Next is the **ArduinoJson** library, which makes it easier to help us parse what SenseCraft returns to us.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/10.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -495,19 +500,19 @@ void loop() {
 }
 ```
 
-Turn on the serial monitor, when you turn it on, the program will start to execute, when you receive the response as shown in the figure, it means that SenseCAP has successfully received one of your data uploads.
+Turn on the serial monitor, when you turn it on, the program will start to execute, when you receive the response as shown in the figure, it means that SenseCraft has successfully received one of your data uploads.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/11.png" style={{width:1000, height:'auto'}}/></div>
 
 :::tip
-The minimum time interval for SenseCAP to receive data uploads is five minutes.
+The minimum time interval for SenseCraft to receive data uploads is five minutes.
 :::
 
-## Introduction to SenseCAP HTTPS API -- Getting AI Advice
+## Introduction to `SenseCraft Data Platform`'s HTTP API -- Getting AI Advice
 
-Next, let's learn how to use the SenseCAP AI API below. Use our sensor data over time as a reference to get suggestions from the AI.
+Next, let's learn how to use `SenseCraft Data Platform`'s API below. Use our sensor data over time as a reference to get suggestions from the AI.
 
-The interface call process for SenseCAP AI is roughly as follows.
+The interface call process for SenseCraft AI is roughly as follows.
 - Obtain the device and measurement value IDs under the account that are supported for use in AIGC via the interface I.
 - Using the result obtained by interface I as one of the parameters, interface II is called to obtain the AIGC result.
   - Since the AIGC generation time may be long, the interface I will return a **resource_id** when it is called for the first time, and then the front-end will use the **resource_id** to poll for the result of the response. When the code of the response is **11338**, it means that the AIGC is still in the process of inference, and the interface II needs to be called again with the **resource_id** until the final result is returned.
@@ -710,11 +715,11 @@ The following is an example of getting AI advice.
 }
 ```
 
-## XIAO ESP32C3 Getting SenseCAP AI Answer
+## XIAO ESP32C3 Getting SenseCraft AI Advisor
 
 ### Step 6. Create API Access
 
-If you want to call the AIGC interface of SenseCAP, then you need to prepare the API ID and API Access Key in SenseCAP. Select **Access API keys** in the left menu bar of the dashboard. Then click **Create Access Key** at the top.
+If you want to call the AIGC interface of SenseCraft, then you need to prepare the API ID and API Access Key in SenseCraft. Select **Access API keys** in the left menu bar of the dashboard. Then click **Create Access Key** at the top.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/12.png" style={{width:1000, height:'auto'}}/></div>
 
@@ -725,7 +730,7 @@ Copy the created **Access Key ID** and **Access API Key**. Please keep them safe
 
 ### Step 7. Write and upload programs
 
-Following the interface guidelines above, we can then write a program that allows SenseCAP to use the temperature and humidity data from our SHT40 to return planting recommendations to us.
+Following the interface guidelines above, we can then write a program that allows SenseCraft to use the temperature and humidity data from our SHT40 to return planting recommendations to us.
 
 ```cpp
 #include <Arduino.h>
@@ -857,7 +862,7 @@ void loop() {
             DynamicJsonDocument doc(1024);
             deserializeJson(doc, response);
             String suggest = doc["data"].as<String>();
-            Serial.println("SenseCAP AI gives the following planting advice: ");
+            Serial.println("SenseCraft AI gives the following planting advice: ");
             Serial.println(suggest);
             break;
           }
@@ -883,7 +888,7 @@ void loop() {
 }
 ```
 
-Here, there are some parameters to keep an eye on. At the beginning of the code, a macro definition `DEBUG` is commented out. if this line is uncommented, then the program can be executed to print the message returned each time SenseCAP returns.
+Here, there are some parameters to keep an eye on. At the beginning of the code, a macro definition `DEBUG` is commented out. if this line is uncommented, then the program can be executed to print the message returned each time SenseCraft returns.
 
 Below `DEBUG` is the information that needs to be changed depending on your account and device. For example, if you are not growing apples and the location is not Shenzhen, then you need to change it to suit your situation.
 
@@ -916,7 +921,7 @@ Upload this program and you will see the message upload and keep looping through
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao-connect-sensecap/14.png" style={{width:700, height:'auto'}}/></div>
 
-At this point, congratulations you have mastered all the knowledge and content of XIAO access SenseCAP, we very much welcome you to use our XIAO and SenseCAP to utilize more of your creativity!
+At this point, congratulations you have mastered all the knowledge and content of XIAO access SenseCraft, we very much welcome you to use our XIAO and SenseCraft to utilize more of your creativity!
 
 ## Troubleshooting
 

@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 description: Using XIAO ESP32C3 to connect to SenseCraft Data Platform AI Advisor for planting advice
 title: Using XIAO ESP32C3 to connect to SenseCraft Data Platform AI Advisor for planting advice
 keywords:

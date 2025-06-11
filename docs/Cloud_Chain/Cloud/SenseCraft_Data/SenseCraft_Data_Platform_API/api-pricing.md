@@ -1,22 +1,25 @@
 ---
 sidebar_position: 2
-description: SenseCAP API Pricing
-title: SenseCAP API Pricing
+title: API Pricing for SenseCraft Data Platform
+description: API Pricing for SenseCraft Data Platform
 keywords:
-- Cloud and Chain
+- Cloud
+- SenseCraft Data Platform
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
-slug: /Cloud_Chain/SenseCAP_API/API_pricing
+slug: /sensecraft-data-platform/api-pricing
+aliases:
+  - /Cloud_Chain/SenseCAP_API/API_pricing
 last_update:
-  date: 02/14/2023
-  author: Matthew
+  date: 06/06/2025
+  author: Jancee
 ---
 
-# SenseCAP API Pricing
+# API Pricing for SenseCraft Data Platform
 
 ===============
 
 
-With SenseCAP Portal, you pay only for what you use with no minimum fees or mandatory service usage.
+With `SenseCraft Data Platform`'s web portal, you pay only for what you use with no minimum fees or mandatory service usage.
 
 *   um (up-message): The number of messages uploaded by the sensor.
 *   dm(download-message): The number of messages that get historical data through the API.

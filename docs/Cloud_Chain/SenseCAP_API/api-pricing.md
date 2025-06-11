@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 title: API Pricing for SenseCraft Data Platform
 description: API Pricing for SenseCraft Data Platform
 keywords:
