@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 description: SenseCraft App Event Version 2.9.0 User Manual
 title: Event Management
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png

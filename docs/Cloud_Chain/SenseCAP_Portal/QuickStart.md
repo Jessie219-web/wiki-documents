@@ -1,4 +1,5 @@
 ---
+sidebar_position: 1
 title: SenseCraft Data Platform Quick Start
 description: Quick start guide for SenseCraft Data Platform — manage your SenseCAP devices and visualize sensor data with a secure and reliable cloud platform.
 keywords:

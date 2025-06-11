@@ -1,4 +1,5 @@
 ---
+sidebar_position: 3
 title: How to Use SenseCraft Data Platform AI Advisor on the web and SenseCraft APP
 description: Learn how to deploy the AI Advisor on SenseCraft Data Platform and App for advanced sensor data analysis. Automate monitoring, optimize operations, and unlock actionable insights with AI-powered solutions.
 keywords:

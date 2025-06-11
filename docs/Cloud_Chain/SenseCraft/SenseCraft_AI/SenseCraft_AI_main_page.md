@@ -1,7 +1,8 @@
 ---
 description: Catalog of SenseCraft AI Documentation
-title: SenseCraft AI Overview
+title: Overview
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/55.png
+sidebar_class_name: hidden
 slug: /sensecraft_ai_main
 sidebar_position: 1
 last_update:
