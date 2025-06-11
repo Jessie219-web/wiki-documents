@@ -77,7 +77,7 @@ For installation with a casing, you need to prepare the following materials:
 
 <div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/pi5_GPIO_Pad.png" alt="pir" width="700" height="auto" /></div>
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/M.2_Hat/new/hat_installation.gif" alt="pir" width="700" height="auto" /></div>
+![](https://files.seeedstudio.com/wiki/M.2_Hat/new/hat_installation.gif)
 
 
 import Tabs from '@theme/Tabs';
