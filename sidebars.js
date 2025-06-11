@@ -4091,7 +4091,7 @@ const sidebars = {
       label: 'SenseCraft Data Platform API',
       items: [
         'Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction',
-        'Cloud_Chain/SenseCAP_API/API_pricing',
+        'Cloud_Chain/SenseCAP_API/api-pricing',
         {
           type: 'category',
           label: 'HTTP API',
