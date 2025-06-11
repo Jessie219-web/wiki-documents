@@ -306,23 +306,23 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
     <tr>
       <td rowSpan={4}>5.1.3</td>
       <td>Orin Nx 16GB</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZDMO2dBwiJIjw82nlOmxpgBpaKBuRk2a2coH0sIl2rlAA?e=xF3X5M" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td>8C3E89F54198DA2AC6094B7602C8AA2<br />CE14A2AB2C75A885A915BF2D04EDF2BD4</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfA7P_6gLnJAnxptIAURoCgBDF-emSfyD9uGWYY2vuFhmg?e=DF6a8l" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>099bf8e706468dc36600ffdb3444168<br />3cde7454646621017fc39db49c16a2c53</td>
     </tr>
     <tr>
       <td>Orin Nx 8GB</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcvT_P3RFzRGtzWfQQrofw0Bi8CptGEHqKDIUs6j7kI5Tw?e=VWh5Ww" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td>B7C50661695C7E42360B6DCD8E5679B<br />E2807DC1B10C94FF12BB43B223FF3CFCB</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/Eew7pWvWB3RLtT5vMkVTFHABADBzxS8id4xNtrQHGcO3eg?e=A4X31b" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>6ce30b9e212310498eee2c0a363cb35<br />14b1c607ae6a1ab403d5029115bc3a71b</td>
     </tr>
     <tr>
       <td>Orin Nano 8GB</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ERyWCoUKxZ5NkussOSSiX4AB0uKN8Mo_DhKsXhi1x_SGqA?e=bdhxnE" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td>9A7EEE111D8175EF8286A276BE2668A<br />AA9DE1AB4E850D722351B5BE76C8610B1</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EcEvOGxB9DpOuFubj-xJ1oYBixiZy4vd0t_chXQcezPy9A?e=RnX7NN" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>b8f7a0b6d5974add33c3102824c671b<br />61ca8e278b0c5e3c38a7c5a45e251251e</td>
     </tr>
     <tr>
       <td>Orin Nano 4GB</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUJePP-bzqJAoQQ2pLw_VaABpJfj4K4EbCja9QH-OYqWSg?e=vI1M1K" target="_blank" rel="noopener noreferrer">Download</a></td>
-      <td>24A37D1EB26B65CEA9830961F0270AA<br />CCF4909C06D8CC1FCC91DB560C1B9060E</td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYi8K66PG6xOjwiU-_x3Ey4BpZhEiLFS8c_JoEDzeTVaxg?e=TkAgJV" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td>cc6efd6e4a42f099dde47e9ed71a34e<br />0981e77c50e3dc74f38338210c1f3bda0</td>
     </tr>
     <tr>
       <td rowSpan={4}>6.0</td>
