@@ -111,7 +111,7 @@ Cloud services are a vital component that enable processed data management from 
             SenseCraft AI can be accessed on the SenseCraft Data Platform and SenseCraft App.
             <br/>
             > <a href="/how_to_use_sensecap_data_platform_ai_advisor_on_the_web_and_sensecraft_app" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Getting Started</font></span></a> 
-            > <a href="/xiao_esp32c3_sensecapai/" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Connecting XIAO ESP32C3</font></span></a>
+            > <a href="/sensecraft-data-platform/applications/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Connecting XIAO ESP32C3</font></span></a>
     </div>
 </div>
 
@@ -122,6 +122,6 @@ Cloud services are a vital component that enable processed data management from 
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCraft Data Platform - API</font></div>
             The SenseCraft Data Platform API supports device and data management.
             <br/>
-            > <a href="https://sensecap-docs.seeed.cc/pdf/sensecap_opanapi_document_en.pdf" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download PDF</font></span></a> / <a href="/Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API Introduction</font></span></a> / <a href="/Cloud_Chain/SenseCAP_API/API_pricing" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API Pricing</font></span></a>
+            > <a href="https://sensecap-docs.seeed.cc/pdf/sensecap_opanapi_document_en.pdf" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download PDF</font></span></a> / <a href="/Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API Introduction</font></span></a> / <a href="/sensecraft-data-platform/api-pricing" target="_blank"><span><font color={'FFFFFF'} size={"3"}>API Pricing</font></span></a>
     </div>
 </div>
