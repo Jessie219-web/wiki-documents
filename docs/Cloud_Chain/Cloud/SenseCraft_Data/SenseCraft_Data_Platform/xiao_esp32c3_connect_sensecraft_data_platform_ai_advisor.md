@@ -7,7 +7,7 @@ keywords:
 - xiao
 - AI
 image: https://files.seeedstudio.com/wiki/seeed_logo/logo_2023.png
-slug: /sensecraft-data-platform/applications/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor
+slug: /cloud/sensecraft-data/sensecraft-data-platform/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor
 aliases:
   - /xiao_esp32c3_sensecapai
 last_update:

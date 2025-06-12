@@ -5,7 +5,9 @@ title: SenseCAP API Introduction
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction
+slug: /cloud/sensecraft-data/sensecraft-data-platform-api/sensecap-api-introduction
+aliases:
+  - /Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction
 last_update:
   date: 02/14/2023
   author: Matthew

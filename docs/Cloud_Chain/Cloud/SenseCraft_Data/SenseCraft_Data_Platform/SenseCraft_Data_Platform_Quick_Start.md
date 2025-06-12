@@ -5,7 +5,7 @@ description: Quick start guide for SenseCraft Data Platform — manage your Sens
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
-slug: /sensecraft-data-platform/quickstart
+slug: /cloud/sensecraft-data/sensecraft-data-platform/quickstart
 aliases:
   - /Cloud_Chain/SenseCAP_Portal/QuickStart
 last_update:

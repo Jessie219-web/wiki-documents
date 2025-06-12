@@ -6,7 +6,7 @@ keywords:
 - Cloud
 - SenseCraft Data Platform
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
-slug: /sensecraft-data-platform/api-pricing
+slug: /cloud/sensecraft-data/sensecraft-data-platform-api/api-pricing
 aliases:
   - /Cloud_Chain/SenseCAP_API/API_pricing
 last_update:

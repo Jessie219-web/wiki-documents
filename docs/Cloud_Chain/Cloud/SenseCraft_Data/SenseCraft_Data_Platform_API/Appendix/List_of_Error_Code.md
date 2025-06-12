@@ -5,7 +5,9 @@ title: List of Error Code
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
-slug: /Cloud_Chain/SenseCAP_API/Appendix/List_of_Error_Code
+slug: /cloud/sensecraft-data/sensecraft-data-platform-api/appendix/list_of_error_code
+aliases:
+  - /Cloud_Chain/SenseCAP_API/Appendix/List_of_Error_Code
 last_update:
   date: 02/14/2023
   author: Matthew
