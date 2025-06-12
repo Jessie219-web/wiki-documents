@@ -534,7 +534,7 @@ sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --netwo
 
 You will see the following output if the flashing process is successful
 
-<div align="center"><img width ="800" src="https://files.seeedstudio.com//wiki/reComputer_J2021/flash-jetpack.png"/></div>
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer_J2021/flash-jetpack.png"/></div>
 
 :::note
 The flash command may run for 2-10 minutes.
