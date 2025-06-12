@@ -4,6 +4,8 @@ description: This article describes how to send the recognition results of a mod
 title: XIAO ESP32S3 Sense Model Output Via MQTT
 image: https://files.seeedstudio.com/wiki/watcher_getting_started/headimage.webp
 slug: /sensecraft-ai/tutorial/sensecraft-ai-output-mqtt-xiao
+aliases:
+  - /sensecraft_ai_output_mqtt_xiao
 last_update:
   date: 12/04/2024
   author: Citric

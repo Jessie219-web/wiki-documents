@@ -5,7 +5,9 @@ title: Dashboard Registration
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration
+slug: /cloud_chain/cloud/sensecraft-data/sensecraft-hotspot/blockchain-dashboard/dashboard-registration
+aliases:
+  - /Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration
 last_update:
   date: 02/14/2023
   author: Matthew

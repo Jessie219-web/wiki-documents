@@ -8,6 +8,8 @@ keywords:
 - SenseCraft AI
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
 slug: /sensecraft-ai/tutorial/nvidia-jetson-workspace
+aliases:
+  - /nvidia_jetson_workspace
 last_update:
   date: 08/22/2024
   author: Frank

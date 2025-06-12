@@ -4,6 +4,8 @@ description: How to use Training(Object Detection)
 title: Training - Object Detection
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img3/object%20detection/1.9.webp
 slug: /sensecraft-ai/tutorial/sensecraft-ai-training-object-detection
+aliases:
+  - /sensecraft_ai_training_object_detection
 last_update:
   date: 11/27/2024
   author: qiuyu wei

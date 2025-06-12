@@ -4,6 +4,8 @@ description: This article describes how to send the recognition results of a mod
 title: XIAO ESP32S3 Sense Model Output Via GPIO
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/xiaoesp32s3sense.webp
 slug: /sensecraft-ai/tutorial/sensecraft-ai-output-gpio-xiao
+aliases:
+  - /sensecraft_ai_output_gpio_xiao
 last_update:
   date: 12/04/2024
   author: Citric

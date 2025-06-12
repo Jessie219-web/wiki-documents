@@ -5,7 +5,9 @@ title: Dashboard Basics
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics
+slug: /cloud_chain/cloud/sensecraft-data/sensecraft-hotspot/blockchain-dashboard/dashboard-basics
+aliases:
+  - /Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics
 last_update:
   date: 02/14/2023
   author: Matthew
