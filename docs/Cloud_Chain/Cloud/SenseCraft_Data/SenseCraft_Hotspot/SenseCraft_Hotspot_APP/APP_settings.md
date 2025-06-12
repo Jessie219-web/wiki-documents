@@ -6,7 +6,7 @@ keywords:
 - SenseCraft
 - Blockchain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /sensecraft-blockchain/sensecap-hotspot-app/app-settings
+slug: /cloud/sensecraft-data/sensecraft-hotspot/sensecraft-hotspot-app/app-settings
 aliases:
   - /Cloud_Chain/SenseCAP_Hotspot_APP/APP_settings
 last_update:

@@ -4,7 +4,9 @@ title: Hotspot Onboarding
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cloud_Chain/cloud/sensecraft-data/sensecraft-hotspot/sensecraft-hotspot-app/hotspot_management/hotspot_onboarding
+slug: /cloud/sensecraft-data/sensecraft-hotspot/sensecraft-hotspot-app/hotspot_onboarding
+aliases:
+  - /Cloud_Chain/cloud/sensecraft-data/sensecraft-hotspot/sensecraft-hotspot-app/hotspot_management/hotspot_onboarding
 last_update:
   date: 02/14/2023
   author: Matthew

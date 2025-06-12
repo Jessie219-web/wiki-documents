@@ -4,7 +4,9 @@ title: Update Antenna
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cloud_Chain/SenseCAP_Hotspot_APP/Update_antenna
+slug: /cloud/sensecraft-data/sensecraft-hotspot/sensecraft-hotspot-app/update_antenna
+aliases:
+  - /Cloud_Chain/SenseCAP_Hotspot_APP/Update_antenna
 last_update:
   date: 02/14/2023
   author: Matthew

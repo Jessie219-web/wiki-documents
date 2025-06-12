@@ -6,7 +6,9 @@ keywords:
 - Cloud and Chain
 - SenseCAP 
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /SenseCAP_Hotspot_APP
+slug: /cloud/sensecraft-data/sensecraft-hotspot/sensecraft-hotspot-app/sensecap_hotspot_app
+aliases:
+  - /SenseCAP_Hotspot_APP
 last_update:
   date: 09/18/2023
   author: Jessie

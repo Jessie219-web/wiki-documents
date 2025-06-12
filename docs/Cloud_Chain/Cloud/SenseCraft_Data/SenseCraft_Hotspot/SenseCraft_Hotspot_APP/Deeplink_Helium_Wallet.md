@@ -4,7 +4,9 @@ title: Deeplink Helium Wallet
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet
+slug: /cloud/sensecraft-data/sensecraft-hotspot/sensecraft-hotspot-app/deeplink_helium_wallet
+aliases:
+  - /Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet
 last_update:
   date: 02/14/2023
   author: Matthew
