@@ -14,7 +14,7 @@ last_update:
   author: Parker Hu & Yuxin Liang
 ---
 
-# Develop with c&cpp
+# Develop on reCamera with c&cpp
 
 ## Environment Configuration
 Recamera has limited resources and no compilation environment for C code is configured. If you want to use C/C++ to develop applications on the recamera, you need to configure the cross-compilation environment (Compile the C/C++ program on another Linux, then transfer the compiled file to the recamera terminal for execution).If you're using Windows, you can install Windows Subsystem for Linux (WSL) to run Linux (Ubuntu, OpenSUSE, Kali, Debian, or Arch Linux).
