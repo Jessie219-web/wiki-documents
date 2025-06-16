@@ -16,6 +16,7 @@ const excludedPaths = [
 
 
   // 排除指定文档
+  path.join(docsDirectory, 'Cloud_Chain'), // 排除cloud目录，因为最近在整改
   path.join(docsDirectory, 'Edge_Robotics.md'), //5.29
   path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_IsaacROS.md'), //5.28
   path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_ROS2_Humble.md'), //5.28

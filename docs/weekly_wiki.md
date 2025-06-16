@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 06/09/2025
+  date: 06/16/2025
   author: Frank
 ---
 
@@ -17,35 +17,27 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is June 9th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting Started with Bus Servo Driver Board / XIAO Bus Servo Adapter](https://wiki.seeedstudio.com/xiao_bus_servo_adapter/)
+### [reComputer Super vs Classic Next-Gen AI Performance in Edge Inferencing](https://wiki.seeedstudio.com/recomputer_jetson_super_performance/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/bus_servo_driver_board/5.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
 
-The Bus Servo Driver Board / XIAO Bus Servo Adapter is a compact and powerful hardware solution from Seeed Studio, designed to drive serial bus servos for robotics and automation projects. With support for UART communication, it enables precise control and feedback from multiple ST/SC series servos, including the Feetech SCS series (see [Feetech SCS/STS/TTL Series Official Website](https://www.feetechrc.com/en/scs_ttl_Servo.html)). This makes it ideal for applications such as robotic arms, hexapods, humanoid robots, and wheeled robots requiring servo angle and load feedback.
+The reComputer Super Series supercharges the reComputer Classic, delivering up to a 1.7x boost of 157 TOPS in AI performance. This wiki compares the performance differences between the reComputer Super and reComputer Classic in AI text generation and AI video processing. Using the <a href="https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5524.html" target="_blank">NVIDIA Jetson Orin NX 16GB module</a> as the test platform, it clearly demonstrates that the reComputer Super delivers superior performance compared to the reComputer Classic.
 
-This guide focuses on the hardware setup, physical connections, key specifications, and **critical jumper settings** to help users integrate the board into their projects effectively.
+### [Getting Started with XIAO W5500 Ethernet Adapter](https://wiki.seeedstudio.com/xiao_w5500_ethernet_adapter/)
 
-### [Getting Started with XIAO Soil Moisture Sensor](https://wiki.seeedstudio.com/xiao_soil_moisture_sensor/)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" alt="pir" width={800} height="auto" /></p>
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/top.jpg" alt="pir" width={800} height="auto" /></p>
-
-The XIAO Soil Moisture Sensor is a compact, low-power environmental monitor powered by the [XIAO ESP32-C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html). Running on a single AA battery, it offers long-lasting operation and real-time soil condition updates. It features Pre-Calibrated Adaptive Soil Moisture Sensing for precise soil monitoring. Meanwhile, it enables dynamic monitoring intervals and instant readouts for accurate, responsive data. Fully compatible with Home Assistant, it’s ideal for smart gardening and precision agriculture—efficient, reliable, and made for sustainable plant care.
-
-### [Benchmark Labs Forecast Integration for Seeed Weather Stations](https://wiki.seeedstudio.com/benchmark_labs_forecast_integration_for_seeed_weather_stations/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP%20ONE%20Compact%20Weather%20Sensor_/image59.png" alt="pir" width={800} height="auto" /></p>
-
-This guide explains how to purchase and activate Benchmark Labs’ hyper-local point specific weather forecasts with your Seeed weather station. Our AI-powered system delivers point-specific 10-day hourly forecasts tailored to your microclimate powered by data from your weather station, helping you make better environmental and operational decisions.
+This document introduces the Seeed Studio XIAO W5500 Ethernet Adapter, detailing its features, hardware specifications, pin definitions, and usage instructions. It enables users to easily add wired Ethernet connectivity to Seeed Studio XIAO series development boards, making it ideal for IoT, remote control, and data transmission applications.
 
 ## Existing Wiki Updated
 
-### [Getting Started with Bus Servo Driver Board / XIAO Bus Servo Adapter](https://wiki.seeedstudio.com/bus_servo_driver_board/)
+### [Develop on reCamera with c&cpp](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/)
 
-We have added relevant operation examples for [controlling servos via XIAO](https://wiki.seeedstudio.com/bus_servo_driver_board/#controlling-servos-via-xiao).
+We have added [some demos built with C and C++](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/#more-demos-built-with-ccpp).
 
 ## The Efforts of Contributor
 
@@ -171,5 +163,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
 - [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 - [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
+- [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
 
 </details>

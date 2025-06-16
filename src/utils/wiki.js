@@ -1,10 +1,38 @@
 const docList = [
   [
     {
+      "path": "/recomputer_jetson_robotics_j401_getting_started",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer_robotics1.webp",
+      "title": "reComputer Jetson Robotics J401 Hardware and Getting Started",
+      "date": "06/10/2025"
+    },
+    {
+      "path": "/recamera_develop_with_c_cpp",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
+      "title": "Develop on reCamera with c&cpp",
+      "date": "06/09/2025"
+    }
+  ],
+  [
+    {
       "path": "/overview_of_the_relationship_between_jetpack_and_jetson",
       "image": "https://files.seeedstudio.com/wiki/reComputer/nvidia-jetpack-6-0-stack.webp",
       "title": "Overview of the Relationship Between Jetpack and Jetson",
       "date": "06/05/2025"
+    },
+    {
+      "path": "/recomputer_jetson_super_performance",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super2.webp",
+      "title": "reComputer Super vs Classic Next-Gen AI Performance in Edge Inferencing",
+      "date": "06/04/2025"
+    }
+  ],
+  [
+    {
+      "path": "/xiao_w5500_ethernet_adapter",
+      "image": "https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.webp",
+      "title": "Getting Started with XIAO W5500 Ethernet Adapter",
+      "date": "06/04/2025"
     },
     {
       "path": "/benchmark_labs_forecast_integration_for_seeed_weather_stations",
@@ -53,34 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/bus_servo_driver_board/9.webp",
       "title": "Getting Started with Bus Servo Driver Board / XIAO Bus Servo Adapter",
       "date": "05/27/2025"
-    }
-  ],
-  [
-    {
-      "path": "/recomputer_jetson_super_hardware_interfaces_usage",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super2.webp",
-      "title": "reComputer Super Hardware and Interfaces Usage",
-      "date": "05/26/2025"
-    },
-    {
-      "path": "/xiao_bus_servo_adapter",
-      "image": "https://files.seeedstudio.com/wiki/bus_servo_driver_board/10.webp",
-      "title": "Getting Started with Bus Servo Driver Board / XIAO Bus Servo Adapter",
-      "date": "05/26/2025"
-    }
-  ],
-  [
-    {
-      "path": "/xiao_soil_moisture_sensor",
-      "image": "https://files.seeedstudio.com/wiki/XIAO_Soil_Moisture_Sensor/img/1.webp",
-      "title": "Getting Started with XIAO Soil Moisture Sensor",
-      "date": "05/26/2025"
-    },
-    {
-      "path": "/recomputer_use_ups",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-R1000/ups/ups_model.webp",
-      "title": "How to use UPS to read input voltage on reComputer r1000",
-      "date": "05/21/2025"
     }
   ]
 ];
