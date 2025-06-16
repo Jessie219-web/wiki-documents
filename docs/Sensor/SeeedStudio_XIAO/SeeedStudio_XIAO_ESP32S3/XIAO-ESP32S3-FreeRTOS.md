@@ -547,6 +547,26 @@ The setup would look something like this :
 After pulling the git repository, open the folder in VSCode. Go to View->Command Palette->ESP-IDF: Add vscode Configuration Folder.
 From the bottom panel select the correct COM port, chip (ESP-S3) and build,flash and monitor.
 
+:::tip
+If you are using the OV3660 model, you need to set it up in the IDF to be able to drive it. input **"idf.py menuconfig"** in your terminal
+:::
+
+<div class="table-center">
+  <table align="center">
+    <tr>
+        <th>Step 1</th>
+        <th>Step 2</th>
+        <th>Step 3</th>
+    </tr>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/36601.jpg" style={{width:300, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/36602.jpg" style={{width:300, height:'auto'}}/></div></td>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/wiki-ranger/Contributions/xiao_esp32s3_freertos/36603.jpg" style={{width:300, height:'auto'}}/></div></td>
+    </tr>
+  </table>
+</div>
+
+
 ### Camera Component
 
 - Camera Configuration:
