@@ -24,11 +24,11 @@ import TabItem from '@theme/TabItem';
     </a>
 </div>
 
-# Introduction
+## Introduction
 
 The XIAO Soil Moisture Sensor is a compact, low-power environmental monitor powered by the [XIAO ESP32-C6](https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C6-Pre-Soldered-p-6328.html). Running on a single AA battery, it offers long-lasting operation and real-time soil condition updates. It features Pre-Calibrated Adaptive Soil Moisture Sensing for precise soil monitoring. Meanwhile, it enables dynamic monitoring intervals and instant readouts for accurate, responsive data. Fully compatible with Home Assistant, it’s ideal for smart gardening and precision agriculture—efficient, reliable, and made for sustainable plant care.
 
-### Features
+## Features
 
 **1.Three-Level Soil Moisture Monitoring**  
 - 🌿 **Normal:** Soil moisture is optimal, no watering needed.  

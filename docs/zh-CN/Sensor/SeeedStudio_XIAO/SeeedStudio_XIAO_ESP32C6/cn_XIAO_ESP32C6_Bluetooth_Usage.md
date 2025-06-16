@@ -141,7 +141,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
+  BLEScanResults foundDevices = *pBLEScan->start(scanTime, false);
   Serial.print("Devices found: ");
   Serial.println(foundDevices.getCount());
   Serial.println("Scan done!");
@@ -184,7 +184,7 @@ pBLEScan->setWindow(99);
 最后，`loop` 函数启动 BLE 扫描器，并指定扫描时间和阻塞标志。然后，它将发现的设备数量打印到串口，并清空结果缓冲区以释放内存。
 
 ```c
-BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
+BLEScanResults foundDevices = *pBLEScan->start(scanTime, false);
 Serial.print("Devices found: ");
 Serial.println(foundDevices.getCount());
 Serial.println("Scan done!");

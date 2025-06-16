@@ -141,7 +141,7 @@ void setup() {
 
 void loop() {
   // 繰り返し実行するメインコードをここに記述
-  BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
+  BLEScanResults foundDevices = *pBLEScan->start(scanTime, false);
   Serial.print("Devices found: ");
   Serial.println(foundDevices.getCount());
   Serial.println("Scan done!");
@@ -184,7 +184,7 @@ pBLEScan->setWindow(99);
 最後に、`loop`関数では、指定されたスキャン時間とブロッキングフラグでBLEスキャンを開始します。その後、見つかったデバイスの数をシリアルポートに出力し、結果バッファをクリアしてメモリを解放します。
 
 ```c
-BLEScanResults foundDevices = pBLEScan->start(scanTime, false);
+BLEScanResults foundDevices = *pBLEScan->start(scanTime, false);
 Serial.print("Devices found: ");
 Serial.println(foundDevices.getCount());
 Serial.println("Scan done!");

@@ -2,8 +2,9 @@ const fs = require('fs')
 const path = require('path')
 const matter = require('gray-matter')
 
-const docsDirectory = path.join(__dirname, 'docs')
-const wikiFilePath = path.join(__dirname, '/src/utils/wiki.js')
+const rootDir = path.join(__dirname, '..') // 回到项目根目录
+const docsDirectory = path.join(rootDir, 'docs')
+const wikiFilePath = path.join(rootDir, '/src/utils/wiki.js')
 
 const docList = []
 const excludedPaths = [
@@ -15,12 +16,13 @@ const excludedPaths = [
 
 
   // 排除指定文档
-  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'Application', 'Generative_AI', 'Deploy_Dia_on_reComputer_Jetson.md'), //5.16
+  path.join(docsDirectory, 'Cloud_Chain'), // 排除cloud目录，因为最近在整改
   path.join(docsDirectory, 'Edge_Robotics.md'), //5.29
   path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_IsaacROS.md'), //5.28
   path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_ROS2_Humble.md'), //5.28
   path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Isaac_ROS_AprilTag.md'), //5.28
   path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Isaac_ROS_Visual_SLAM.md'), //5.28
+  path.join(docsDirectory, 'Cloud.md'), //6.6
 ];
 
 // 递归函数，用于遍历多层文件夹

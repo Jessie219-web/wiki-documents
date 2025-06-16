@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 06/02/2025
+  date: 06/16/2025
   author: Frank
 ---
 
@@ -17,53 +17,27 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is June 2nd, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [reComputer Super Hardware and Interfaces Usage](https://wiki.seeedstudio.com/recomputer_jetson_super_hardware_interfaces_usage/)
+### [reComputer Super vs Classic Next-Gen AI Performance in Edge Inferencing](https://wiki.seeedstudio.com/recomputer_jetson_super_performance/)
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
 
-This wiki introduces the various different hardware and interfaces on the reComputer Super and how to use them to expand your project ideas.
+The reComputer Super Series supercharges the reComputer Classic, delivering up to a 1.7x boost of 157 TOPS in AI performance. This wiki compares the performance differences between the reComputer Super and reComputer Classic in AI text generation and AI video processing. Using the <a href="https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5524.html" target="_blank">NVIDIA Jetson Orin NX 16GB module</a> as the test platform, it clearly demonstrates that the reComputer Super delivers superior performance compared to the reComputer Classic.
 
-### [MyActuator X Series Motors Getting Start](https://wiki.seeedstudio.com/myactuator_series/)
+### [Getting Started with XIAO W5500 Ethernet Adapter](https://wiki.seeedstudio.com/xiao_w5500_ethernet_adapter/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" alt="pir" width={800} height="auto" /></p>
 
-This article will introduce how to get started with MyActuator series motors and how to use them with Python and ROS on the reComputer Mini Jetson Orin.
+This document introduces the Seeed Studio XIAO W5500 Ethernet Adapter, detailing its features, hardware specifications, pin definitions, and usage instructions. It enables users to easily add wired Ethernet connectivity to Seeed Studio XIAO series development boards, making it ideal for IoT, remote control, and data transmission applications.
 
-### [How to use the Lekiwi in Lerobot](https://wiki.seeedstudio.com/lerobot_lekiwi/)
+## Existing Wiki Updated
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.png" alt="pir" width={800} height="auto" /></p>
+### [Develop on reCamera with c&cpp](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/)
 
-The [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) is a fully open-source robotic car project launched by [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). It includes the detailed 3D printing files and operation guides, designed to be compatible with the [LeRobot](https://github.com/huggingface/lerobot/tree/main) imitation learning framework. It supports the SO101 robotic arm to enable a complete imitation learning pipeline.
-
-### [Install the Isaac Lab](https://wiki.seeedstudio.com/install_isaaclab/)
-
-This wiki provides a step-by-step guide to install Isaac Lab. Isaac Lab requires Isaac Sim. This tutorial first installs Isaac Sim via pip, then installs Isaac Lab from source code.
-
-### [Install the Isaac ROS](https://wiki.seeedstudio.com/install_isaacros/)
-
-This wiki provides a step-by-step guide to install Isaac ROS.
-
-### [Install the ROS2 Humble](https://wiki.seeedstudio.com/install_ros2_humble/)
-
-This wiki provides a step-by-step guide to install ROS2 humble.
-
-### [Isaac ROS AprilTag](https://wiki.seeedstudio.com/isaac_ros_apriltag/)
-
-This wiki provides a step-by-step guide to use Isaac ROS AprilTag.
-
-### [Isaac ROS Visual SLAM Deployment](https://wiki.seeedstudio.com/isaac_ros_visual_slam/)
-
-This wiki provides a step-by-step guide to use Isaac ROS Visual SLAM.
-
-<!-- ## Existing Wiki Updated
-
-### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
-
-We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras). -->
+We have added [some demos built with C and C++](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/#more-demos-built-with-ccpp).
 
 ## The Efforts of Contributor
 
@@ -188,5 +162,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
 - [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
 - [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
+- [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
+- [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
 
 </details>

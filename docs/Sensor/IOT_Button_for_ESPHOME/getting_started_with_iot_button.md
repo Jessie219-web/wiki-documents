@@ -167,7 +167,7 @@ If something goes wrong, follow the on-screen troubleshooting steps or switch to
 </TabItem>
 <TabItem value='ESPHome Web'>
 
-For this method, you'll need to download the `bin` firmware file from [here](https://github.com/limengdu/MR60FDA2_ESPHome_external_components/releases)(you'll need to unzip the downloaded file).
+For this method, you'll need to download the `bin` firmware file from [here](https://github.com/Seeed-Studio/xiao-esphome-projects/releases)(you'll need to unzip the downloaded file).
 
 1. Connect the IoT Button to your PC.
 2. Visit the [ESPHome Web](https://web.esphome.io/) page.

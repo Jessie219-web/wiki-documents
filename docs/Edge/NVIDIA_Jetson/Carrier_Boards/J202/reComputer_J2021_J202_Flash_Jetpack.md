@@ -422,7 +422,7 @@ At this moment, we can unplug the jumper and then power up the reComputer again 
 </TabItem>
 
 
-<TabItem value="With Seeed BSP" label="With Seeed BSP">
+<TabItem value="With Seeed BSP (nano)" label="With Seeed BSP (nano)">
 
 :::info
 
@@ -475,6 +475,79 @@ Since we alreadly force the reComputer J1010 into the recovery mode and the modu
 ```bash
 sudo ./nvmflash.sh --showlogs
 ```
+
+</TabItem>
+
+<TabItem value="With Seeed BSP (Xavier NX)" label="With Seeed BSP (Xavier NX)">
+
+Here we will install Jetpack 5.1.3 on the reComputer.
+
+**Step 1:** Download the system image to your Ubuntu PC corresponding to the Jetson module you are using:
+
+<div class="table-center">
+<table style={{textAlign: 'center'}}>
+  <thead>
+    <tr>
+      <th>Jetson Module</th>
+      <th>Download Link</th>
+      <th>SHA256</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Xavier NX 16GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EfKRq92vAAxEhDx43JOBDxkBCQvjy_-h8UC7HmWK6COMEg?e=PCDzib" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>0cded5b093da648e5371c880037601d1593132780bb869c814ac21b11f2aae5c</td>
+    </tr>
+    <tr>
+      <td>Xavier NX 8GB</td>
+      <td>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaNbv75ItvNHqdsj9LEW4E0BvP_CCTRWMyUvJOA2JUQv8g?e=lToSlK" target="_blank" rel="noopener noreferrer">Download</a>
+      </td>
+      <td>db960d3f0e31909aa443e3d4317c737de6cec4de9a7df7c09801fcb1574f4595</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+:::info
+To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 
+
+On an Ubuntu host machine, open the terminal and run the command `sha256sum <File>` to obtain the SHA256 hash value of the downloaded file. If the resulting hash matches the SHA256 hash provided in the wiki, it confirms that the firmware you downloaded is complete and intact.
+:::
+
+**Step 2:** Extract the downloaded image file:
+```bash
+sudo tar xpf mfi_xxxx.tar.gz
+# For example: sudo tar xpf mfi_recomputer-orin-nano-8g-j401-6.0-36.3.0-2024-06-07.tar.gz
+```
+
+**Step 3:** Navigate to the unzipped directory and execute the following command to flash jetpack system to the NVMe SSD: 
+
+```bash
+cd mfi_xxxx
+# For example: cd mfi_recomputer-orin-j401
+sudo ./tools/kernel_flash/l4t_initrd_flash.sh --flash-only --massflash 1 --network usb0  --showlogs
+```
+
+You will see the following output if the flashing process is successful
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer_J2021/flash-jetpack.png"/></div>
+
+:::note
+The flash command may run for 2-10 minutes.
+:::
+
+**Step 4:** Connect the J20 to a display using the HDMI connector on the board and finish the initial configuration setup:
+
+<div align="center"><img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/></div>
+
+
+:::info
+Please complete the **System Configuration** according to your needs.
+:::
 
 </TabItem>
 
