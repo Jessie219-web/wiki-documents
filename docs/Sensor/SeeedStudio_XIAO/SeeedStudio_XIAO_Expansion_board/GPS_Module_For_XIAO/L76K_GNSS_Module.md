@@ -211,8 +211,8 @@ SoftwareSerial ss(RXPin, TXPin);
 void setup() {
   Serial.begin(115200);
 #ifdef ARDUINO_SEEED_XIAO_RP2040
-  pinMode(D10,OUTPUT);
-  digitalWrite(D10,1);
+  pinMode(D2,OUTPUT);
+  digitalWrite(D2,1);
   pinMode(D0,OUTPUT);
   digitalWrite(D0,1);
 #endif
@@ -376,11 +376,11 @@ Make sure that the L76K GNSS Module is placed outdoor where good GNSS signals ca
 
 <details>
 <summary>Why does the device's green light stay on constantly when plugged into the XIAO RP2040?</summary>
-To address this issue, you need to pull D0 and D10 high. The constant illumination of the fix green light indicates that the device has entered an abnormal working state.
+To address this issue, you need to pull D0 and D2 high. The constant illumination of the fix green light indicates that the device has entered an abnormal working state.
 
 ```cpp
-pinMode(D10,OUTPUT);
-digitalWrite(D10,1);
+pinMode(D2,OUTPUT);
+digitalWrite(D2,1);
 pinMode(D0,OUTPUT);
 digitalWrite(D0,1);
 ```

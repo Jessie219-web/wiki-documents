@@ -6,7 +6,7 @@ keywords:
 - motor
 - arm
 - robotics
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/damiao.webp
 slug: /damiao_series
 last_update:
   date: 06/1/2025

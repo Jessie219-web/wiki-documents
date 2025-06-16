@@ -321,6 +321,7 @@ The below image is for Orin NX 16GB
 
 <summary> Flash the device with a single command. </summary>
 
+
 The reComputer Jetson J30/40 has launched a one-click flashing script, which supports flashing Jetpack 5.1.1, 5.1.2 and 6.0. Currently, the one-click flashing for Jetpack 6.1 and other series of reComputer Jetson is under testing and will be available to everyone in the near future. 
 
 ```bash
@@ -351,6 +352,11 @@ sudo apt install qemu-user-static sshpass abootimg nfs-kernel-server libxml2-uti
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+
+:::caution
+NVIDIA has updated the SRAM used in its modules. To ensure compatibility with the new modules, we have updated JetPack accordingly. The currently stable and supported version is `JetPack 5.1.3`.
+If the SRAM on your module is from `Hynix` (this can be identified from the markings on the chip package), it is recommended to flash `JetPack 5.1.3`.
+:::
 
 <Tabs>
 <TabItem value="JP5.1.1" label="JP5.1.1">
@@ -511,34 +517,36 @@ Here we will install Jetpack 5.1.3 on the reComputer.
     <tr>
       <td>Orin NX 16GB</td>
       <td>
-        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXpnEetKYeNEkVs_mrG161IBNt4Rn84D2l1mvX-RS6hBog?e=OUpkC2" target="_blank" rel="noopener noreferrer">Download</a>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EXNAt15LoFlDhwXTWQQmv1QBpUhKxHSpUkeqp-lRVcRUaA?e=F4JonE" target="_blank" rel="noopener noreferrer">Download</a>
       </td>
-      <td>28877E13DE9E029C4E4328F836C7D534E182849714CCA2930C3712757DDD6CD1</td>
+      <td>03a48a3035cff720902636664608277b573ce392602c14f1b84c4a18ea9f59bb</td>
     </tr>
     <tr>
       <td>Orin NX 8GB</td>
       <td>
-        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EdchzEJ2fYJClYD680qFaosBNkYRXjHBLpYykpxYBi2_0Q?e=LEHd41" target="_blank" rel="noopener noreferrer">Download</a>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EbaFgN0BKn5GnKZW_wG5_08BFzL6LOzYQKNIO8xBRwSakg?e=aZIbSg" target="_blank" rel="noopener noreferrer">Download</a>
       </td>
-      <td>E4C5611164475D86E2F128826F993F251491368168218A2D660E6D23DEE63D53</td>
+      <td>d35b47c01a1bb3be73b931841387af0401cbc7e88fdfd1f8f64cde1838084e0c</td>
     </tr>
     <tr>
       <td>Orin Nano 8GB</td>
       <td>
-        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUPTqRpD_fVGmw-qKTrRl4gBUB9YvlytoRGwxe7aCqhF9w?e=Bsr1GU" target="_blank" rel="noopener noreferrer">Download</a>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EZZm_6YlZHxEuEF-V6Xael0BsJ2PavdzoLApWzYLpB6m6w?e=OD8SO9" target="_blank" rel="noopener noreferrer">Download</a>
       </td>
-      <td>A3F0C30EFDFB612F1EAB5B01E01B7E6FDFACA6A27A596C3B0AABD82C0EFE94D4</td>
+      <td>3a5daef9d0a5cb07dd5ff6c595f84be6773ec6fad7c4eeff4e5de3fdfd10e8a5</td>
     </tr>
     <tr>
       <td>Orin Nano 4GB</td>
       <td>
-        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/ER4pJqYIOGVGiu1ticFeYMoBFaSpmI_JISciXqqvI-lzAA?e=nBRhmh" target="_blank" rel="noopener noreferrer">Download</a>
+        <a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EaTmJFMwMshJhqxb2Cys1okBJ2yjUBm80GGHGdrirYfB8Q?e=eXFEXB" target="_blank" rel="noopener noreferrer">Download</a>
       </td>
-      <td>EDCDA822B59BB6FAC8E7AD301757C6801FC29481DE274DEE370CFDA4874AC0B0</td>
+      <td>84ae723e6a78568dfb11aa85fc0a4f70504c58e2f339071b237aa0a4785a2591</td>
     </tr>
   </tbody>
 </table>
 </div>
+
+
 
 :::info
 To verify the integrity of the downloaded firmware, you can compare the SHA256 hash value. 

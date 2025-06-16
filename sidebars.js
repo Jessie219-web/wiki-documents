@@ -3369,12 +3369,20 @@ const sidebars = {
                     'Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/J401_Mini_carrierboard_Hardware_Interfaces_Usage',
                   ],
                 },
+               
                 {
                   type: 'category',
                   label: 'J501 Carrier Board',
                   items: [
                     'Edge/NVIDIA_Jetson/Carrier_Boards/J501/reServer_Industrial_J501_Getting_Started',
                     'Edge/NVIDIA_Jetson/Carrier_Boards/J501/Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Robotics J401 Carrier Board',
+                  items: [
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/Robotics_J401/Robotics_J401_carrierboard_Hardware_Interfaces_Usage',
                   ],
                 },
                 'Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/reComputer_A203_Flash_System',
@@ -3476,7 +3484,8 @@ const sidebars = {
                   label: 'reComputer Super',
                   items: [
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage'
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing'
                   ],
                 },
             ]},
@@ -3999,7 +4008,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'Cloud',
-      label: 'Cloud',
+      label: 'SenseCraft & Cloud',
       className: 'sideboard_calss',
     },
     {
@@ -4020,16 +4029,16 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'SenseCAP Dashboard',
+      label: 'Blockchain Dashboard',
       items: [
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics',
         'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration',
-        'Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration',
+        'Cloud_Chain/SenseCAP_Dashboard/hotspot-registration',
       ],
     },
     {
       type: 'category',
-      label: 'SenseCAP Portal',
+      label: 'SenseCraft Data Platform',
       items: [
         'Cloud_Chain/SenseCAP_Portal/QuickStart',
         {
@@ -4065,25 +4074,25 @@ const sidebars = {
       type: 'category',
       label: 'SenseCraft APP',
       items: [
-        'Cloud_Chain/SenseCAP_Mate_APP/sensecraft_app',
+        'Cloud_Chain/SenseCAP_Mate_APP/overview',
     //    'Cloud_Chain/SenseCAP_Mate_APP/sensecap_mate_app_event',
          'Cloud_Chain/SenseCAP_Mate_APP/sensecraft_cloud_fee',
       ],
     },
     {
       type: 'category',
-      label: 'SenseCAP AI',
+      label: 'SenseCraft AI',
       items: [
-        'Cloud_Chain/SenseCAP_AI/How_to_Use SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP',
-        'Cloud_Chain/SenseCAP_AI/xiao-esp32c3-sensecapai',
+        'Cloud_Chain/SenseCAP_AI/how_to_use_sensecap_data_platform_ai_advisor_on_the_web_and_sensecraft_app',
+        'Cloud_Chain/SenseCAP_AI/xiao-esp32c3-connect-sensecraft-data-platform-ai-advisor',
       ],
     },
     {
       type: 'category',
-      label: 'SenseCAP API',
+      label: 'SenseCraft Data Platform API',
       items: [
         'Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction',
-        'Cloud_Chain/SenseCAP_API/API_pricing',
+        'Cloud_Chain/SenseCAP_API/api-pricing',
         {
           type: 'category',
           label: 'HTTP API',
@@ -11812,7 +11821,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'ja/ja_Cloud',
-      label: 'クラウド',
+      label: 'SenseCraft & クラウド',
       className: 'sideboard_calss',
     },
     {
