@@ -170,8 +170,35 @@ Input: Wire the `camera` node to the `stream` node to enable the streaming.
 
 Output:
 You can then use other applications such as VLC to view the RTSP stream out from reCamera. As an example in the above screenshot, you can use `rtsp://admin:admin@192.168.42.1:554/live` in VLC then you can see the H.264 streaming video.
-- Video parameter: 1920 * 1800 * 30fps by default.
+- Video parameter: 1920 * 1800 * 15fps by default.
 - Latency: This is different based on what end applications you are using. E.g, VLC is 500 ms.  
+
+:::note
+Considering the stability of the device push stream, the highest configuration we recommend is 1080p@15fps video stream. This is also the default configuration.
+If you want to set a different resolution, you can simply change the preset options by:
+1. Enter the recamera backend terminal
+2. Enter command `cd /home/recamera/.node-red/node_modules/node-red-contrib-sscma/nodes`
+3. Enter command `sudo sed -i 's/option: n.option || 0,/option: n.option !== undefined ? parseInt(n.option) : 1,/' camera.js` set to 720p video.
+
+`option: n.option !== undefined ? parseInt(n.option) : 1`
+
+The numerical configuration relationship of the option settings is as follows:
+```c++
+if (option.find("1080p") != std::string::npos) {
+            option_ = 0;
+        } else if (option.find("720p") != std::string::npos) {
+            option_ = 1;
+        } else if (option.find("480p") != std::string::npos) {
+            option_ = 2;
+        }
+```
+For detailed information, please refer to the [following link](https://github.com/Seeed-Studio/sscma-example-sg200x/blob/main/solutions/sscma-node/main/node/camera.cpp). The sscma-node node can be customized to meet your desired video resolution and frame rate.
+
+It should be noted that modifying the source code requires you to have a solid foundation in C++ and be proficient in the technical stack for cross-compilation. Just modify the configuration of "default".
+
+<div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/resolution_setting.png" /></div>
+
+:::
 
 ### Save Node
 This node is used to enable the saving of the camera module. It can be used to save the video stream of the camera module.

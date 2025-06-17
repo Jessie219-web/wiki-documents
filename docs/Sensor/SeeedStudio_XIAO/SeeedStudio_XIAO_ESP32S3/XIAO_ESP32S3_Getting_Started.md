@@ -154,6 +154,30 @@ The **OV2640 camera** has been discontinued, and the subsequent XIAO ESP32S3 Sen
 - **Outstanding RF performance**: Support 2.4GHz Wi-Fi and BLE dual wireless communication, support 100m+ remote communication when connected with U.FL antenna
 - **Thumb-sized Compact Design**: 21 x 17.8mm, adopting the classic form factor of XIAO, suitable for space limited projects like wearable devices
 
+<table align="center">
+	<tr>
+	    <th>Item</th>
+	    <th style={{width:300, height:'auto'}}>OV3660 Camera</th>
+        <th style={{width:300, height:'auto'}}>OV2640 Camera</th>
+	</tr>
+    <tr>
+        <th>MAX Power Consumption on (640*480)</th>
+        <td align="center">Active Model: <strong>~ 0.6A</strong></td>
+        <td align="center">Active Model: <strong>~ 0.65A</strong></td>
+    </tr>
+    <tr>
+        <th>AVG Power Consumption on (640*480)</th>
+        <td align="center">Active Model: <strong>~ 0.12A</strong></td>
+        <td align="center">Active Model: <strong>~ 0.24A</strong></td>
+    </tr> 
+    <tr>
+        <th>MIN Power Consumption on (640*480)</th>
+        <td align="center">Active Model: <strong>~ 0.12A</strong></td>
+        <td align="center">Active Model: <strong>~ 0.15A</strong></td>
+    </tr> 
+</table>
+
+
 ## Hardware Overview
 
 Before everything starts, it is quite essential to have some basic parameters of the product. The following table provides information about the characteristics of Seeed Studio XIAO ESP32S3.
@@ -291,7 +315,7 @@ Remove the antenna is also the case, do not use brute force to pull the antenna 
 
 #### Installation of expansion boards (for Sense)
 
-If you are shopping for the XIAO ESP32S3 Sense, then you should also include an expansion board. This expansion board has a 1600*1200 OV2640 camera sensor, Onboard SD Card Slot and digital microphone.
+If you are shopping for the XIAO ESP32S3 Sense, then you should also include an expansion board. This expansion board has a 1600x1200 OV2640/2048x1536 OV3660 camera sensor, Onboard SD Card Slot and digital microphone.
 
 By installing the expansion board with XIAO ESP32S3 Sense, you can use the functions on the expansion board.
 

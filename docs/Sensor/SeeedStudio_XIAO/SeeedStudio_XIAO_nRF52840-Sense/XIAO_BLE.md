@@ -459,25 +459,37 @@ Adafruit_SPIFlash flash(&flashTransport);
 
 
 #include <bluefruit.h>
-void setup()
-{
+
+bool deepPowerDown(Adafruit_SPIFlash& flash, Adafruit_FlashTransport& transport) {
+  uint32_t id_before = flash.getJEDECID();
+
+  transport.begin();
+  transport.runCommand(0xB9);  // SPI deep power-down command
+  delay(10);
+
+  uint32_t id_after = flash.getJEDECID();
+
+  return (id_after == 0xFFFFFF || id_after == 0xFFFFFFFF);
+}
+
+void setup() {
   flash.begin();
-  Bluefruit.begin(); 
-  if(flash.deepPowerDown() == false){
+  Bluefruit.begin();
+
+  if (!deepPowerDown(flash, flashTransport)) {
     pinMode(LED_BUILTIN, OUTPUT);
     digitalWrite(LED_BUILTIN, LOW);
-    while(1)
-    {
+    while (1) {
       yield();
     }
   }
+
   flash.end();
 
-  sd_power_system_off(); 
+  sd_power_system_off();
 }
 
-void loop()
-{
+void loop() {
   // nothing to do
 }
 ```
@@ -596,6 +608,7 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 - 🔗 **[Kicad]** [Seeed Studio XIAO nRF52840 FootPrint](https://github.com/Seeed-Studio/OPL_Kicad_Library/tree/master/Seeed%20Studio%20XIAO%20Series%20Library)
 
 
+
 ### Seeed Studio XIAO nRF52840 Sense
 
 - **[PDF]** [nRF52840 datasheet](https://files.seeedstudio.com/wiki/XIAO-BLE/nRF52840_PS_v1.5.pdf)
@@ -634,6 +647,7 @@ For more details, check the PMIC datasheet: [BQ25100](https://www.ti.com/lit/ds/
 
 - **[Kicad]** [Seeed Studio XIAO nRF52840 (Sense) Plus FootPrint](https://files.seeedstudio.com/wiki/XIAO-BLE/XIAO-nRF52840-Plus-SMD.kicad_mod)
 
+- **[Kicad]** [Seeed Studio XIAO nRF52840 (Sense) Plus Symbol](https://files.seeedstudio.com/wiki/XIAO-BLE/Seeed_Studio_XIAO_Series.kicad_sym)
 
 ## Course Resources
 

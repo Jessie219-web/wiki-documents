@@ -1,9 +1,9 @@
 ---
 description: Getting Started for reComputer Super
-title: reComputer Super
+title: Getting Started with reComputer Super
 keywords:
   - reComputer Super
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/super/super2.webp
 slug: /recomputer_jetson_super_getting_started
 last_update:
   date: 03/26/2025
@@ -240,9 +240,7 @@ It also supports a wide range of LLM & Physical AI frameworks, such as NVIDIA, H
 </div>
 
 
-:::tip
-Other Information is Comming Soon
-:::
+
 ## Tech Support & Product Discussion
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.

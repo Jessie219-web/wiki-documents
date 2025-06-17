@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 05/26/2025
+  date: 06/16/2025
   author: Frank
 ---
 
@@ -17,51 +17,27 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is May 26th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting Started with XIAO 7.5" ePaper Panel](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_main_page/)
+### [reComputer Super vs Classic Next-Gen AI Performance in Edge Inferencing](https://wiki.seeedstudio.com/recomputer_jetson_super_performance/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
 
-Powered by XIAO ESP32-C3, this 7.5 inch ePaper display is a versatile, energy-efficient smart e-ink screen supporting a wide range of popular community applications including Home Assistant, trmnl, Arduino, and more. This flexible display solution is perfect for showcasing dashboard data, weather updates, schedules, and custom information. With crisp visuals, exceptional 3-months battery life (2000mAh) in deep sleep mode, and extensive customization possibilities, this compact device adapts to diverse use cases. Perfect for modern living spaces and project environments, it combines functionality with elegant design for an enhanced visual experience across multiple platforms.
+The reComputer Super Series supercharges the reComputer Classic, delivering up to a 1.7x boost of 157 TOPS in AI performance. This wiki compares the performance differences between the reComputer Super and reComputer Classic in AI text generation and AI video processing. Using the <a href="https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5524.html" target="_blank">NVIDIA Jetson Orin NX 16GB module</a> as the test platform, it clearly demonstrates that the reComputer Super delivers superior performance compared to the reComputer Classic.
 
-### [XIAO 7.5-Inch ePaper Panel Works with TRMNL](https://wiki.seeedstudio.com/xiao_7_5_inch_epaper_panel_with_trmnl/)
+### [Getting Started with XIAO W5500 Ethernet Adapter](https://wiki.seeedstudio.com/xiao_w5500_ethernet_adapter/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/202.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" alt="pir" width={800} height="auto" /></p>
 
-This document explains how to use the XIAO 7.5-Inch ePaper Panel with the TRMNL device. It covers hardware connections, software setup, driver installation, and example code for displaying content on the ePaper screen. Whether you're using Arduino or CircuitPython, this guide will help you get started quickly and integrate the ePaper display into your own projects.
-
-### [Grove - Barometer Sensor (SPA06-003)](https://wiki.seeedstudio.com/grove_barometer_sensor_spa06_003/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Grove-Barometer_Sensor-SPA06-003/img/SPA06-003.jpg" alt="pir" width={800} height="auto" /></p>
-
-Grove - Temperature and Barometer Sensor(SPA06-003) is a high-precision and a low-current environmental sensor measures the temperature and barometer. It supports both I2C and SPI communication and we provide the SPA06-003 Arduino library.
-
-### [Wio Tracker L1 Meshtastic Node](https://wiki.seeedstudio.com/wio_tracker_node/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/wio-tracker-l1.jpg" alt="pir" width={800} height="auto" /></p>
-
-The Wio Tracker L1 Series is a low-power, highly extensible Meshtastic node featuring LoRa (862–930 MHz), the nRF52840 for efficient processing, and an L76K GPS module for accurate location tracking. Designed for flexibility, it supports OLED and E-Ink displays, as well as solar panels and battery power, making it ideal for a wide range of IoT and off-grid applications.
-
-### [Getting Started with LED Driver Board for XIAO](https://wiki.seeedstudio.com/led_driver_board/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/LED_Driver_Board_for_XIAO/dimension.jpg" alt="pir" width={800} height="auto" /></p>
-
-LED Driver Board for XIAO is a compact yet powerful solution supporting both 5V and 12V LED strips, including popular addressable RGB LEDs such as NeoPixel WS2812, WS2813, WS2815. Compatible with all XIAO boards, it enables smart control and automation through WLED and Home Assistant when using XIAO ESP32 Series, while offering flexible power options and comprehensive protection for safe, reliable operation in your lighting setup.
-
-### [How to use UPS to read input voltage on reComputer r1000](https://wiki.seeedstudio.com/recomputer_use_ups/)
-
-<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/x/-/x-110992004-supercap_ups_ltc3350_module.jpg" alt="pir" width={800} height="auto" /></p>
-
-This wiki article primarily explains how to install the UPS module on the reComputer R10 and R11 series and use the UPS to read the input voltage.
+This document introduces the Seeed Studio XIAO W5500 Ethernet Adapter, detailing its features, hardware specifications, pin definitions, and usage instructions. It enables users to easily add wired Ethernet connectivity to Seeed Studio XIAO series development boards, making it ideal for IoT, remote control, and data transmission applications.
 
 ## Existing Wiki Updated
 
-### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+### [Develop on reCamera with c&cpp](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/)
 
-We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras).
+We have added [some demos built with C and C++](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/#more-demos-built-with-ccpp).
 
 ## The Efforts of Contributor
 
@@ -185,5 +161,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
 - [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
 - [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
+- [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
+- [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
+- [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
 
 </details>
