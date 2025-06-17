@@ -3974,6 +3974,7 @@ const sidebars = {
                 items: [
                   'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
                     ]},
+            'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
           ]
 
     },
