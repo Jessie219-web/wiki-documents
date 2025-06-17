@@ -188,7 +188,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -316,7 +318,9 @@ display:
     cs_pin: GPIO3
     dc_pin: GPIO5
     reset_pin: GPIO2
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     update_interval: 5min
     lambda: |-
       it.rectangle(10, 10, 100, 50);
@@ -401,7 +405,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -484,7 +490,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -559,7 +567,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 30s
@@ -664,7 +674,9 @@ display:
     id: main_display
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: never
@@ -726,7 +738,9 @@ display:
   - platform: waveshare_epaper
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 3min
@@ -990,7 +1004,9 @@ display:
     id: my_display
     cs_pin: GPIO3
     dc_pin: GPIO5
-    busy_pin: GPIO4
+    busy_pin: 
+      number: GPIO4
+      inverted: true
     reset_pin: GPIO2
     model: 7.50inv2
     update_interval: 50s
