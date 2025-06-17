@@ -3,7 +3,7 @@ description: Catalog of SenseCraft AI Documentation
 title: Overview
 image: https://files.seeedstudio.com/wiki/SenseCraft_AI/img2/55.png
 sidebar_class_name: hidden
-slug: /sensecraft-ai//sensecraft-ai-main
+slug: /sensecraft-ai/sensecraft-ai-main
 aliases:
   - /sensecraft_ai_main
 sidebar_position: 1
