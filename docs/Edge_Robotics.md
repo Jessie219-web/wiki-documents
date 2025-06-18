@@ -1,6 +1,6 @@
 ---
 description: This topic introduces Seeed Studio's Robotics product documentation.
-title: Robotics Page
+title: Robotics
 keywords:
 - robotics
 - nvidia
@@ -13,7 +13,7 @@ last_update:
   author: ZhuYaohui
 ---
 
-# 🤖 Robotics Navigation 
+# 🤖 Robotics 
 
 > *"The science of today is the technology of tomorrow." - Edward Teller*
 

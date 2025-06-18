@@ -15,6 +15,10 @@ last_update:
 
 # How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot
 
+:::tip
+This tutorial repository maintains the verified stable release of Lerobot as of June 5, 2025. Currently, ​Hugging Face​ has rolled out a ​major upgrade​ to Lerobot, introducing many new features. If you want to experience the latest tutorials, please follow the [​official documentation​ for guidance](https://huggingface.co/docs/lerobot/index).
+:::
+
 ## Introduction
 
 The [SO-10xARM](https://github.com/TheRobotStudio/SO-ARM100) is a fully open-source robotic arm project launched by [TheRobotStudio](https://www.therobotstudio.com/). It includes the follower arm and the leader robotic arm, and also provides detailed 3D printing files and operation guides. [LeRobot](https://github.com/huggingface/lerobot/tree/main) is committed to providing models, datasets and tools for real-world robotics in PyTorch. Its aim is to reduce the entry barrier of robotics, enabling everyone to contribute and benefit from sharing datasets and pretrained models. LeRobot integrates cutting-edge methodologies validated for real-world application, centering on imitation learning. It has furnished a suite of pre-trained models, datasets featuring human-gathered demonstrations, and simulation environments, enabling users to commence without the necessity of robot assembly. In the forthcoming weeks, the intention is to augment support for real-world robotics on the most cost-effective and competent robots presently accessible.
@@ -321,6 +325,10 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 
 :::danger  
 Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
+:::
+
+:::note
+If the servo cannot be recognized again after a failed firmware update, you can connect another detectable servo directly to the host computer, then perform a motor scan and firmware online detection. Keep the current window open, immediately disconnect the current servo, and connect the unrecognized servo instead. Click ​​"Online Upgrade"​​ within 1 second. If it fails, you can retry multiple times.
 :::
 
 
