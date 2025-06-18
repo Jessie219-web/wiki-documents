@@ -3312,7 +3312,8 @@ const sidebars = {
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/reTerminal-DM-Yolo5',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l'
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/real-time-ocr'
             ]
           },
           {
