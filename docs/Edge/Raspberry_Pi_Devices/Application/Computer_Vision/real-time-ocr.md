@@ -7,7 +7,7 @@ keywords:
   - reComputer R2100
   - yolov5
 image: https://files.seeedstudio.com/wiki/reComputer-R2000/reComputer_AI_Industrial_R2135-12.webp
-slug: /Real-time-OCR
+slug: /real-time-ocr
 last_update:
   date: 6/16/2025
   author: Jiahao Li
