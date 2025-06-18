@@ -220,7 +220,7 @@ conda activate lerobot
 
 ### 4. 克隆 LeRobot：
 ```bash
-git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
+git clone https://gitee.com/Marlboro1998/lerobot_seeed_version.git ~/lerobot
 ```
 
 ### 5. 在您的环境中安装 ffmpeg：

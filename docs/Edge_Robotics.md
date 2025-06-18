@@ -77,14 +77,17 @@ last_update:
 <div class="category-group">
 <div className="category-card sensors">
 
-**LiDAR Systems**  
+**LiDAR**  
 - [Robosense LiDAR](/robosense_lidar/)  
 - [MID360 LiDAR](/mid360/)  
 - [A-LOAM Algorithm](/a_loam/)  
 
-**Vision Systems**  
+**Camera**  
 - [Orbbec Depth Camera](/orbbec_depth_camera_on_ros/)  
 - [CSI Camera Setup](/csi_camera_on_ros/)
+
+**IMU**  
+- [HEXFELLOW Y200](/hexfellow_y200/)  
 
 </div>
 </div>

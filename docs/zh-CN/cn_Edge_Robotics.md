@@ -77,7 +77,7 @@ last_update:
 <div class="category-group">
   <div className="category-card sensors">
 
-**LiDAR 系统**  
+**激光雷达**  
 
 - [Robosense LiDAR](/cn/robosense_lidar/)
 - [MID360 LiDAR](/cn/mid360/)
@@ -87,6 +87,11 @@ last_update:
 
 - [Orbbec 深度相机](/cn/orbbec_depth_camera_on_ros/)  
 - [CSI 相机设置](/cn/csi_camera_on_ros/)
+
+**陀螺仪**  
+
+- [HEXFELLOW Y200](/cn/cn_hexfellow_y200/)  
+
 
 </div>
 </div>
