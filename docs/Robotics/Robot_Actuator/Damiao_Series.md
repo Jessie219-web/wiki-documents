@@ -24,7 +24,7 @@ This article will introduce how to get started with Damiao 43 series motors and 
 
 ## Specification
 
-
+ 
 Here's the completed table with all parameters filled in for all motor models:
 
 
@@ -290,6 +290,15 @@ For more details on CAN usage, you can refer to this [wiki](https://wiki.seeedst
 </div>
 
 **Step2:** Connect the motor directly to the reComputer Mini CAN0 via the XT30 (2+2) interface.
+
+:::tip
+For the reComputer Mini's CAN interface, the H/L pins are inverted compared to the motor's H/L. Therefore, you need to reverse the H/L connections in the XT30 2+2 cable harness.
+:::
+
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/can0-datasheet.png"/>
+</div>
+
 
 <div align="center">
     <img width={800} 

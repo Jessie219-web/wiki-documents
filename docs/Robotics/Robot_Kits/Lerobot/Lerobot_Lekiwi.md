@@ -15,6 +15,12 @@ last_update:
 
 # How to use the Lekiwi in Lerobot
  
+:::warm
+This tutorial repository maintains the verified stable release of Lerobot as of June 5, 2025. Currently, ​Hugging Face​ has rolled out a ​major upgrade​ to Lerobot, introducing many new features. If you want to experience the latest tutorials, please follow the [​official documentation​ for guidance](https://huggingface.co/docs/lerobot/index).
+:::
+
+
+
 ## Introduction
 
 The [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) is a fully open-source robotic car project launched by [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). It includes the detailed 3D printing files and operation guides, designed to be compatible with the [LeRobot](https://github.com/huggingface/lerobot/tree/main) imitation learning framework. It supports the SO101 robotic arm to enable a complete imitation learning pipeline, 
@@ -221,7 +227,7 @@ conda activate lerobot
 
 ### 4. Clone LeRobot:
 ```bash
-git clone https://github.com/huggingface/lerobot.git ~/lerobot
+git clone https://github.com/ZhuYaoHui1998/lerobot ~/lerobot
 ```
 
 ### 5. Install ffmpeg in your environment:
