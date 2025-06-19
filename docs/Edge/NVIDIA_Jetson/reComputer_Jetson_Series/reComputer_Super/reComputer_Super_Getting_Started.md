@@ -400,7 +400,7 @@ You will see the following output if the flashing process is successful
 The flash command may run for 2-10 minutes.
 :::
 
-**Step 3:** Connect the Robotics J401 to a display use the PD to HDMI adapter to connect to a display that supports HDMI input, or directly connect to a display that supports PD input using the PD cable, and finish the initial configuration setup:
+**Step 3:** Connect the monitor using an HDMI cable and complete the initialization configuration of the reComputer Super system:
 
 <div align="center">
   <img width ="800" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J401/jetpack6_configuration.png"/>
