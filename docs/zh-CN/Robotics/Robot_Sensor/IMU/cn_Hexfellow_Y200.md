@@ -118,7 +118,7 @@ Y200是一款专为机器人开发的9轴陀螺仪。该设备支持最高60V的
 
 ### 在Jetson上安装ROS
 
-请参考教程[在reComputer Jetson上安装ROS2 Humble](https://wiki.seeedstudio.com/cn/install_ros2_humble/)或[安装ROS1](https://wiki.seeedstudio.com/cn/installing_ros1/)
+请参考教程[在reComputer Jetson上安装ROS2 Humble](/cn/install_ros2_humble)或[安装ROS1](/cn/install_ros2_humble)
 
 ### 启用CAN功能
 

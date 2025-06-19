@@ -1,6 +1,6 @@
 ---
 description: 本维基提供了 Myactuator 系列电机的教程。
-title: MyActuator 系列电机入门指南
+title: MyActuator脉塔 系列电机入门指南
 keywords:
 - 执行器
 - 电机
@@ -13,8 +13,8 @@ last_update:
   author: ZhuYaoHui
 ---
 
-# MyActuator X 系列电机入门指南
-本文将介绍如何开始使用 MyActuator 系列电机，以及如何在 reComputer Mini Jetson Orin 上使用 Python 和 ROS 控制它们。
+# MyActuator 脉塔 X 系列电机入门指南
+本文将介绍如何开始使用 MyActuator 脉塔关节电机，以及如何在 reComputer Mini Jetson Orin 上使用 Python 和 ROS 控制它们。
 
 <div align="center">
     <img width={800} 

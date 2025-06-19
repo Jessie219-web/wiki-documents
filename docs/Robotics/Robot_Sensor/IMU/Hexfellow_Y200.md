@@ -128,13 +128,13 @@ The ​CAN_H​ and ​CAN_L​ pin assignments on our devices are ​reversed�
 
 ### Install ROS on Jetson
 
-Please refer to the tutorial about [Install ROS2 Humble](/docs/Robotics/Robot_Software/ROS/Install_ROS2_Humble.md) or [Install ROS1](/docs/Robotics/Robot_Software/ROS/Installing_ROS1.md) on reComptuer Jetson
+Please refer to the tutorial about [Install ROS2 Humble](/install_ros2_humble) or [Install ROS1](/installing_ros1) on reComptuer Jetson
 
 ### Enable CAN Function
 
 **For reComputer Robotics J401:**
 
-
+ 
 ```bash
 sudo ip link set can0 down
 sudo ip link set can0 type can bitrate 500000

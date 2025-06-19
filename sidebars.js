@@ -3933,6 +3933,7 @@ const sidebars = {
                   'Robotics/Robot_Sensor/Lidar/Robosense_Lidar',
                   'Robotics/Robot_Sensor/Lidar/MID360',
                   'Robotics/Robot_Sensor/Lidar/A_Loam',
+                  'Robotics/Robot_Sensor/Lidar/SLAMTEC',
                     ]},
             {
               type: 'category',
@@ -6283,7 +6284,8 @@ const sidebars = {
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_Robosense_Lidar',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_MID360',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_A_Loam',
-              ]},
+            'zh-CN/Robotics/Robot_Sensor/Lidar/cn_SLAMTEC',
+        ]},
         {
           type: 'category',
           label: '摄像头',
