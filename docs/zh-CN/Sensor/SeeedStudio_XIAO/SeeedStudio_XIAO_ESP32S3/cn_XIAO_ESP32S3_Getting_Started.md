@@ -491,7 +491,6 @@ XIAO ESP32S3 的板载包需要 **2.0.8** 及以上版本。
 
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/8.png" style={{width:600, height:'auto'}}/></div>
 
-```markdown
     `C:\Users\${UserName}\AppData\Local\Arduino15\packages\esp32\hardware\esp32\2.0.7\variants`
 
     然后进入 **variants 文件夹**，将 **XIAO_ESP32S3 文件夹**复制到该目录下。
@@ -508,7 +507,7 @@ XIAO ESP32S3 的板载包需要 **2.0.8** 及以上版本。
 
     然后进入 **variants 文件夹**，将 **XIAO_ESP32S3 文件夹**复制到该目录下。
 
-- **步骤 4.** 关闭 Arduino IDE 并重新打开它。
+- **步骤 4.** 关闭 Arduino IDE 并重新打开它。-->
 
 <Tabs>
 <TabItem value="(Sense)" label="适用于 XIAO ESP32S2 (Sense)" default>
@@ -599,7 +598,6 @@ XIAO ESP32S3 系列内置电源管理芯片，可以通过电池独立为 XIAO E
 1. 当 XIAO ESP32S3 未连接电池时，连接 Type-C 数据线时红灯亮起，30 秒后熄灭。
 2. 当电池已连接并通过 Type-C 数据线充电时，红灯闪烁。
 3. 当通过 Type-C 数据线将电池充满时，红灯熄灭。
-```
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/img/104.jpg" style={{width:600, height:'auto'}}/></div>
 
@@ -756,6 +754,12 @@ XIAO ESP32S3 是所有 XIAO 中集成度最高的一个，其 PCB 在工厂生�
 - **[ZIP]** [Seeed Studio XIAO ESP32S3 Plus KiCAD 文件](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/Seeed_Studio_XIAO_ESP32S3_Plus_V1.0_SCH%26PCB_KICAD.zip)
 - **[ZIP]** [Seeed Studio XIAO Plus 基板（带底部焊盘引出）](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_with_botton_pad_lead_out_V1.0.zip)
 - **[ZIP]** [Seeed Studio XIAO Plus 基板（不带底部焊盘引出）](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO_Plus_Base_without_botton_pad_lead_out_V1.0.zip)
+
+### 针对 Seeed Studio XIAO ESP32S3 Sense Camera
+
+- **[PDF]** [OV3660 数据手册](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/OV3660_datasheet.pdf)
+- **[PDF]** [OV5640 数据手册](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/OV5640_datasheet.pdf)
+- **[PDF]** [OV2640 数据手册](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/OV2640_datasheet.pdf)
 
 ## 课程资源
 
