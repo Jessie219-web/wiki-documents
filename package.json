@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.4.0",
+    "@babel/helper-split-export-declaration": "^7.24.7",
     "@docusaurus/core": "^2.4.3",
     "@docusaurus/plugin-content-docs": "^2.4.3",
     "@docusaurus/plugin-debug": "^2.4.3",

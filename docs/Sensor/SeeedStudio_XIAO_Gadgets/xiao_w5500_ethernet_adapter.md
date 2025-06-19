@@ -37,7 +37,70 @@ A compact PoE development board featuring the XIAO ESP32S3 Plus, with an integra
 
 ### Specification
 
-
+<div class="table-center">
+	<table align="center">
+		<tr>
+			<th>Parameter</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>MCU</td>
+			<td>XIAO ESP32-S3 Plus</td>
+		</tr>
+		<tr>
+			<td>Antenna</td>
+			<td>2.4GHz Rod Antenna (2.81dBi)</td>
+		</tr>
+		<tr>
+			<td>USB Type-C</td>
+			<td>Input voltage (Type-C): 5V</td>
+		</tr>
+		<tr>
+			<td>PoE Chip</td>
+			<td>MQ7813T120</td>
+		</tr>
+		<tr>
+			<td>PoE Power Supply</td>
+			<td>PoE IEEE802.3af<br />Output Current: 12V/1.1A<br />High Efficiency 86% (Input 48V, Load 12V@1.1A)</td>
+		</tr>
+		<tr>
+			<td>Ethernet Chip</td>
+			<td>WIZnet W5500</td>
+		</tr>
+		<tr>
+			<td>Ethernet Interface</td>
+			<td>RJ45<br />10 or 100Mbps Ethernet</td>
+		</tr>
+		<tr>
+			<td>TCP/IP Protocols</td>
+			<td>TCP, UDP, ICMP, IPv4, ARP, IGMP, PPPoE</td>
+		</tr>
+		<tr>
+			<td>LED Indicator</td>
+			<td>Power x 1<br />User x 1</td>
+		</tr>
+		<tr>
+			<td>Button</td>
+			<td>Reset</td>
+		</tr>
+		<tr>
+			<td>I/O Interface</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Product Size</td>
+			<td>83 x 118 x 26 mm</td>
+		</tr>
+		<tr>
+			<td>Product Weight</td>
+			<td>75g</td>
+		</tr>
+		<tr>
+			<td>Enclosure</td>
+			<td>3D-Printed in White</td>
+		</tr>
+	</table>
+</div>
 
 ## Hardware Overview
 
