@@ -14,12 +14,29 @@ last_update:
 
 ## Introduction
 
+A compact PoE development board featuring the XIAO ESP32S3 Plus, with an integrated, isolated PoE module and TPS563201-based power conversion that delivers a clean 5V supply to power the microcontroller. Ideal for IoT projects, smart home devices, and industrial automation—where a versatile combination of reliable Ethernet connectivity and low-power wireless processing simplifies installation and enhances system performance.
+
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" style={{width:800, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
     <a class="get_one_now_item" href="/xiao_w5500_ethernet_adapter">
     <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 </a></div>
+
+### Feature
+
+- **High-Performance Microcontroller**: Built on the XIAO ESP32S3 Plus platform, our board delivers robust processing power and efficient wireless connectivity, making it ideal for complex IoT and embedded applications.
+
+- **Integrated PoE with Isolation & Power Conversion**: Featuring a robust PoE module with built-in isolation, the board safely accepts a 12V Ethernet power input. A high-efficiency TPS563201 buck converter then steps the 12V down to a stable 5V rail, providing optimal power to the XIAO ESP32S3 Plus.
+
+- **Reliable Ethernet Connectivity**: Equipped with an onboard W5500 Ethernet chip and a standard RJ45 jack, the board ensures stable wired network access for seamless data transmission and remote management.
+
+- **Versatile I/O Options**: With dual-sided I/O outputs, you can easily expand functionality and interface with a range of sensors and peripherals to customize your application to exact specifications.
+
+- **Compact & Ready-to-Deploy Design**: Combining integrated PoE, isolation circuitry, and Ethernet connectivity in a small form factor, this board simplifies prototyping and enables efficient deployment in smart home, industrial automation, or network appliance projects.
+
+### Specification
+
 
 
 ## Hardware Overview
