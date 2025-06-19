@@ -262,7 +262,7 @@ Visit: `http://<your-device-ip>:5000`
 
 Assuming you're running Home Assistant (HA Green, HA Yellow, or similar standalone devices):
 
-- Install [HACS](https://hacs.xyz/docs/setup/download) if not already installed.
+- Install [HACS](https://hacs.xyz/docs/use/) if not already installed.
 - In HACS, install the **Frigate integration** from the community store.
 
 Configure it using the IP d port of your Frigate AI box 
