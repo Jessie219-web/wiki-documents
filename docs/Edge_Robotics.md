@@ -174,10 +174,20 @@ last_update:
 
 
 **NVIDIA Isaac**  
-
+<div className="card-container">
 <a href="/install_isaaclab/" className="nav-item">
   <span className="text">Isaac Lab Installation</span>
 </a>
+</div>
+
+
+**VLA**  
+<div className="card-container">
+<a href="/control_robotic_arm_via_gr00t" className="nav-item">
+  <span className="text">NVIDIA's GR00T</span>
+</a>
+</div>
+
 
 </div>
 </div>
