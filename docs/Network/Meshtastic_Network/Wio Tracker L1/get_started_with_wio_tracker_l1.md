@@ -22,7 +22,7 @@ last_update:
 
 Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/).
 
-Select the target device to `Seeed SenseCAP Solar Node` and choose the latest firmware, then click `Flash`.
+Select the target device to `Seeed Wio Tracker L1` and choose the latest firmware, then click `Flash`.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/select-wio-tracker.png" alt="pir" width={800} height="auto" /></p>
 
