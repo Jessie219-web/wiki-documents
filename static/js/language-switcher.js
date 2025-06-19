@@ -1,6 +1,7 @@
-// 语言切换器 - 积极恢复版本
-// 生成时间: 2025-06-09 15:05:37 (北京时间)
-// 多语言页面: 1864 个
+// 语言切换器
+// 生成时间: 2025-06-19 10:20:31 (北京时间)
+// 多语言页面: 1857 个
+// 修复：侧边栏导航时自动更新语言选项
 
 (function() {
   'use strict';
@@ -9,7 +10,7 @@
   
   function log(...args) {
     if (DEBUG) {
-      console.log('🔄 [积极恢复版]', new Date().toISOString().slice(11, 23), ...args);
+      console.log('🔄 [SPA路由修复版]', new Date().toISOString().slice(11, 23), ...args);
     }
   }
 
@@ -24,18 +25,6 @@
   // 内嵌的语言映射数据
   const languageMapping = {
   "/Cloud": [
-    "en",
-    "ja"
-  ],
-  "/How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP": [
-    "en",
-    "ja"
-  ],
-  "/xiao_esp32c3_sensecapai": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/API_pricing": [
     "en",
     "ja"
   ],
@@ -83,14 +72,6 @@
     "en",
     "ja"
   ],
-  "/Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/APP_settings": [
-    "en",
-    "ja"
-  ],
   "/Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet": [
     "en",
     "ja"
@@ -135,10 +116,6 @@
     "en",
     "ja"
   ],
-  "/sensecraft_app": [
-    "en",
-    "ja"
-  ],
   "/sensecraft_cloud_fee": [
     "en",
     "ja"
@@ -152,10 +129,6 @@
     "ja"
   ],
   "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Device_Management": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/QuickStart": [
     "en",
     "ja"
   ],
@@ -8778,13 +8751,7 @@
     rapidCheckInterval = setInterval(function() {
       rapidCheckCount++;
       
-      if (shouldHaveSwitcher) {
-        const existingSwitcher = document.querySelector('.navbar-language-switcher');
-        if (!existingSwitcher) {
-          log('🚀 快速恢复：检测到切换器丢失，立即注入 (#' + rapidCheckCount + ')');
-          injectLanguageSwitcher();
-        }
-      }
+      checkAndUpdateSwitcher();
       
       // 10秒后切换到正常模式
       if (rapidCheckCount >= maxRapidChecks) {
@@ -8801,16 +8768,77 @@
   // 正常恢复策略
   function startNormalRecovery() {
     normalCheckInterval = setInterval(function() {
-      if (shouldHaveSwitcher) {
-        const existingSwitcher = document.querySelector('.navbar-language-switcher');
-        if (!existingSwitcher) {
-          log('🔄 正常恢复：检测到切换器丢失，重新注入');
-          injectLanguageSwitcher();
-        }
-      }
+      checkAndUpdateSwitcher();
     }, 1000); // 每1秒检查一次
     
     log('🔄 启动正常恢复模式：每1秒检查一次');
+  }
+
+  // 核心检查和更新函数 - 解决SPA路由问题
+  function checkAndUpdateSwitcher() {
+    const { currentLanguage, basePath } = getCurrentLanguageAndPath();
+    const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
+    const existingSwitcher = document.querySelector('.navbar-language-switcher');
+    
+    // 情况1：应该有切换器但不存在 - 注入
+    if (availableLanguages.length > 1 && !existingSwitcher) {
+      log('🚀 检测到需要注入切换器');
+      shouldHaveSwitcher = true;
+      injectLanguageSwitcher();
+      return;
+    }
+    
+    // 情况2：不应该有切换器但存在 - 移除
+    if (availableLanguages.length <= 1 && existingSwitcher) {
+      log('🗑️ 检测到需要移除切换器（单语言页面）');
+      shouldHaveSwitcher = false;
+      existingSwitcher.remove();
+      return;
+    }
+    
+    // 情况3：应该有切换器且存在 - 检查是否需要更新内容
+    if (availableLanguages.length > 1 && existingSwitcher) {
+      shouldHaveSwitcher = true;
+      
+      // 检查当前切换器是否匹配当前页面
+      const currentSwitcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+      if (!currentSwitcherHTML) return;
+      
+      // 创建临时元素来比较内容
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = currentSwitcherHTML;
+      const newSwitcherContent = tempDiv.firstElementChild;
+      
+      // 比较关键属性：语言选项和当前语言
+      const existingLanguages = Array.from(existingSwitcher.querySelectorAll('.dropdown__link')).map(link => {
+        const flag = link.querySelector('.lang-flag');
+        const label = link.querySelector('.lang-label');
+        return (flag ? flag.textContent : '') + (label ? label.textContent : '');
+      }).join(',');
+      
+      const newLanguages = Array.from(newSwitcherContent.querySelectorAll('.dropdown__link')).map(link => {
+        const flag = link.querySelector('.lang-flag');
+        const label = link.querySelector('.lang-label');
+        return (flag ? flag.textContent : '') + (label ? label.textContent : '');
+      }).join(',');
+      
+      const existingCurrentLang = existingSwitcher.querySelector('.navbar__link .lang-label');
+      const newCurrentLang = newSwitcherContent.querySelector('.navbar__link .lang-label');
+      
+      const existingCurrentLangText = existingCurrentLang ? existingCurrentLang.textContent : '';
+      const newCurrentLangText = newCurrentLang ? newCurrentLang.textContent : '';
+      
+      // 如果内容不匹配，更新切换器
+      if (existingLanguages !== newLanguages || existingCurrentLangText !== newCurrentLangText) {
+        log('🔄 检测到页面变化，更新切换器内容');
+        log('   旧语言: ' + existingCurrentLangText + ' [' + existingLanguages + ']');
+        log('   新语言: ' + newCurrentLangText + ' [' + newLanguages + ']');
+        
+        // 替换整个切换器
+        existingSwitcher.remove();
+        injectLanguageSwitcher();
+      }
+    }
   }
 
   // 延迟初始化策略：等待Docusaurus稳定后再注入
@@ -8819,38 +8847,87 @@
     
     // 等待500ms让Docusaurus完成初始化
     setTimeout(function() {
-      log('🔧 延迟注入切换器...');
+      log('🔧 延迟检查和注入切换器...');
       
-      if (injectLanguageSwitcher()) {
-        log('✅ 延迟注入成功');
-        // 启动积极恢复
-        setTimeout(startAggressiveRecovery, 100);
-      } else {
-        log('⚠️ 延迟注入失败，1秒后重试');
-        setTimeout(delayedInitialization, 1000);
-      }
+      checkAndUpdateSwitcher();
+      
+      // 启动积极恢复
+      setTimeout(startAggressiveRecovery, 100);
     }, 500);
   }
 
-  // 极简路由监听
+  // 增强的路由监听 - 解决SPA导航问题
   function observeRouteChanges() {
     let currentPathname = location.pathname;
+    let debounceTimeout = null;
     
-    function handleRouteChange() {
-      if (location.pathname !== currentPathname) {
-        log('🔄 路由变化: ' + currentPathname + ' -> ' + location.pathname);
-        currentPathname = location.pathname;
-        
-        // 清除现有的恢复机制
-        if (rapidCheckInterval) clearInterval(rapidCheckInterval);
-        if (normalCheckInterval) clearInterval(normalCheckInterval);
-        
-        // 重新开始延迟初始化
-        delayedInitialization();
-      }
+    function handleRouteChange(source) {
+      // 防抖处理
+      clearTimeout(debounceTimeout);
+      debounceTimeout = setTimeout(function() {
+        if (location.pathname !== currentPathname) {
+          log('🔄 路由变化 [' + source + ']: ' + currentPathname + ' -> ' + location.pathname);
+          currentPathname = location.pathname;
+          
+          // 清除现有的恢复机制
+          if (rapidCheckInterval) clearInterval(rapidCheckInterval);
+          if (normalCheckInterval) clearInterval(normalCheckInterval);
+          
+          // 立即检查并更新切换器
+          setTimeout(function() {
+            checkAndUpdateSwitcher();
+            // 重新启动恢复机制
+            startAggressiveRecovery();
+          }, 100);
+        }
+      }, 50); // 50ms防抖
     }
 
-    window.addEventListener('popstate', handleRouteChange);
+    // 方法1：监听浏览器前进后退
+    window.addEventListener('popstate', function() {
+      handleRouteChange('popstate');
+    });
+    
+    // 方法2：拦截pushState和replaceState（程序化导航）
+    const originalPushState = history.pushState;
+    const originalReplaceState = history.replaceState;
+    
+    history.pushState = function() {
+      originalPushState.apply(this, arguments);
+      setTimeout(function() {
+        handleRouteChange('pushState');
+      }, 0);
+    };
+    
+    history.replaceState = function() {
+      originalReplaceState.apply(this, arguments);
+      setTimeout(function() {
+        handleRouteChange('replaceState');
+      }, 0);
+    };
+    
+    // 方法3：监听点击事件（捕获侧边栏导航）
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a[href]');
+      if (link && link.href) {
+        const url = new URL(link.href);
+        // 如果是内部链接且路径不同
+        if (url.origin === window.location.origin && url.pathname !== currentPathname) {
+          setTimeout(function() {
+            handleRouteChange('click');
+          }, 100); // 给导航一些时间完成
+        }
+      }
+    });
+    
+    // 方法4：监听URL变化（备用方案）
+    let urlCheckInterval = setInterval(function() {
+      if (location.pathname !== currentPathname) {
+        handleRouteChange('urlCheck');
+      }
+    }, 500); // 每500ms检查一次URL变化
+    
+    log('🔧 启动增强路由监听：popstate + pushState + click + urlCheck');
   }
 
   function init() {
@@ -8858,7 +8935,7 @@
       return;
     }
     
-    log('🚀 初始化积极恢复版语言切换器...');
+    log('🚀 初始化SPA路由修复版语言切换器...');
     log('📊 包含 ' + Object.keys(languageMapping).length + ' 个多语言页面');
     
     isInitialized = true;
