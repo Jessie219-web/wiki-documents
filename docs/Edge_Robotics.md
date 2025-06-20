@@ -60,7 +60,7 @@ last_update:
     <a href="/lerobot_so100m_isaacsim/" className="nav-item">
       <span className="text">SO100 Arm with IsaacSim</span>
     </a>
-    <a href="(/lerobot_lekiwi/" className="nav-item">
+    <a href="/lerobot_lekiwi/" className="nav-item">
       <span className="text">Lekiwi Mobile Base</span>
        <span className="tag recommended">New</span>
     </a>
@@ -215,7 +215,7 @@ html[data-theme='dark'] .quick-nav-container {
   background: 
     radial-gradient(at 10% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
     radial-gradient(at 90% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
-    linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    linear-gradient(135deg,rgb(42, 44, 49) 0%,rgb(32, 32, 33) 100%);
   box-shadow: 
     0 4px 6px rgba(0, 0, 0, 0.3),
     inset 0 0 12px rgba(99, 102, 241, 0.1); /* 内发光增强深度 */
@@ -248,7 +248,7 @@ html[data-theme='dark'] .quick-nav-container {
 /* Dark模式 - 导航项 */
 html[data-theme='dark'] .nav-item {
   color: #e5e7eb;
-  background: #374151;
+  background:rgb(47, 50, 57);
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
 }
 
@@ -340,7 +340,7 @@ html[data-theme='dark'] .nav-item:hover {
 
 /* Dark模式 - 内容卡片 */
 html[data-theme='dark'] .category-card {
-  background: #374151;
+  background:rgb(30, 30, 32);
   box-shadow: 0 4px 6px rgba(0,0,0,0.4);
   color: #e5e7eb;
 }
