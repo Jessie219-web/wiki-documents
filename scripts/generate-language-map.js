@@ -1,4 +1,4 @@
-// 生产环境优化版本：解决部署后的语言切换器问题
+// 语言切换器（内嵌数据）
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
