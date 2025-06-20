@@ -15,8 +15,10 @@ last_update:
 
 # How to use the Lekiwi in Lerobot
  
-:::warm
+:::tip
+
 This tutorial repository maintains the verified stable release of Lerobot as of June 5, 2025. Currently, ​Hugging Face​ has rolled out a ​major upgrade​ to Lerobot, introducing many new features. If you want to experience the latest tutorials, please follow the [​official documentation​ for guidance](https://huggingface.co/docs/lerobot/index).
+
 :::
 
 
@@ -105,31 +107,6 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
 
 **For Raspberry Pi:**
 - Raspberry Pi5 4G~16G
-
-## Table of Contents
-  [A. 3D Printing Guide]
-
-  [B. Install LeRobot]
-
-  [C. Configure the motors]
-
-  [D. Assembly]
-
-  [E. Calibrate]
-
-  [F. Teleoperate]
-
-  [G. Add cameras]
-
-  [H. Record the dataset]
-
-  [I. Visualize the dataset]
-
-  [J. Replay an episode]
-
-  [K. Train a policy]
-
-  [L. Evaluate your policy]
 
 
 ## 3D Printing Guide
@@ -626,7 +603,7 @@ python lerobot/scripts/control_robot.py \
 |:---------:|:---------:|:---------:|:---------:|
 | ![fig7](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_middle.webp) | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_zero.webp) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rotated.webp) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/so101/follower_rest.webp) |
 
-# F. Teleoperate
+## Teleoperate
 
 > [!TIP]
 > If you're using a Mac, you might need to give Terminal permission to access your keyboard. Go to System Preferences > Security & Privacy > Input Monitoring and check the box for Terminal.
