@@ -411,6 +411,12 @@ Since we alreadly force the reComputer J2021 into the recovery mode and the modu
 sudo ./flash.sh jetson-xavier-nx-devkit-emmc mmcblk0p1
 ```
 
+If you use the Jetson nano module, the flash command follow:
+
+```sh
+sudo ./flash.sh jetson-nano-emmc mmcblk0p1
+```
+
 <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/reComputer-Jetson-Nano/19.png" /></div>
 
 :::note
