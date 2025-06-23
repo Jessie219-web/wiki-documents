@@ -5,7 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "cross-env NODE_OPTIONS=--max-old-space-size=6144 docusaurus start --host 0.0.0.0",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=6144 docusaurus build",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus build",
+    "serve": "docusaurus serve",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
