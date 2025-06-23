@@ -3,7 +3,7 @@ description: Get Started with Wio Tracker L1 Series
 title:  Get Started with Wio Tracker L1
 keywords:
 - Meshtastic
-image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/solar-node.webp
+image: https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/wio-tracker-l1.webp
 slug: /get_started_with_meshtastic_wio_tracker_l1
 sidebar_position: 2
 last_update:
