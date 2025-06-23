@@ -3913,6 +3913,7 @@ const sidebars = {
           items: [
             'Robotics/Robot_Actuator/Myactuator_Series',
             'Robotics/Robot_Actuator/Damiao_Series',
+            'Robotics/Robot_Actuator/Feetech_Servo',
               ]
         },
         {
@@ -6272,6 +6273,8 @@ const sidebars = {
       label: 'Actuator',
       items: [
         'zh-CN/Robotics/Robot_Actuator/cn_Myactuator_Series',
+        'zh-CN/Robotics/Robot_Actuator/cn_Damiao_Series',
+        'zh-CN/Robotics/Robot_Actuator/cn_Feetech_Servo',
           ]
     },
     {

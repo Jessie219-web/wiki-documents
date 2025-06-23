@@ -76,8 +76,16 @@ last_update:
 
 <div className="card-container">
     <a href="/cn/myactuator_series" className="nav-item">
-      <span className="text">脉塔关节模组</span>
+      <span className="text">脉塔X系列关节模组</span>
       <span className="tag recommended">新</span>
+    </a>
+    <a href="/cn/cn_damiao_series" className="nav-item">
+      <span className="text">达妙43系列关节模组</span>
+      <span className="tag recommended">新</span>
+    </a>
+    <a href="/cn/cn_feetech_servo/" className="nav-item">
+      <span className="text">飞特STS3215舵机</span>
+      <span className="tag recommended">New</span>
     </a>
 </div>
 

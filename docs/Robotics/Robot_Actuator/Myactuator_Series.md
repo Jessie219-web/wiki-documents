@@ -21,6 +21,11 @@ This article will introduce how to get started with MyActuator series motors and
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.png" />
 </div>
 
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/Myactuator-X4-P36-Planetary-Actuator-p-6469.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
+    </a>
+</div>
 
 ## Specification
 
