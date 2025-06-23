@@ -1,15 +1,15 @@
-// 语言切换器 - 积极恢复版本
-// 生成时间: 2025-06-09 15:05:37 (北京时间)
-// 多语言页面: 1864 个
+// 语言切换器 - 生产环境优化版本
+// 生成时间: 2025-06-20 16:10:42 (北京时间)
+// 多语言页面: 1857 个
 
 (function() {
   'use strict';
 
-  const DEBUG = false; // 生产环境可关闭调试
+  const DEBUG = false; // 生产环境关闭调试
   
   function log(...args) {
     if (DEBUG) {
-      console.log('🔄 [积极恢复版]', new Date().toISOString().slice(11, 23), ...args);
+      console.log('🔄 [生产优化版]', new Date().toISOString().slice(11, 23), ...args);
     }
   }
 
@@ -24,18 +24,6 @@
   // 内嵌的语言映射数据
   const languageMapping = {
   "/Cloud": [
-    "en",
-    "ja"
-  ],
-  "/How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP": [
-    "en",
-    "ja"
-  ],
-  "/xiao_esp32c3_sensecapai": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/API_pricing": [
     "en",
     "ja"
   ],
@@ -83,14 +71,6 @@
     "en",
     "ja"
   ],
-  "/Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/APP_settings": [
-    "en",
-    "ja"
-  ],
   "/Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet": [
     "en",
     "ja"
@@ -135,10 +115,6 @@
     "en",
     "ja"
   ],
-  "/sensecraft_app": [
-    "en",
-    "ja"
-  ],
   "/sensecraft_cloud_fee": [
     "en",
     "ja"
@@ -152,10 +128,6 @@
     "ja"
   ],
   "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Device_Management": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/QuickStart": [
     "en",
     "ja"
   ],
@@ -8597,15 +8569,14 @@
   ]
 };
 
-  // 状态管理变量
+  // 生产环境优化的状态管理
   let isInitialized = false;
-  let shouldHaveSwitcher = false;
-  let injectionCount = 0;
+  let currentPageInfo = null;
+  let observerConnected = false;
   
-  // 积极恢复相关变量
-  let rapidCheckInterval = null;
-  let normalCheckInterval = null;
-  let lastSuccessfulInjection = 0;
+  // 监控间隔ID
+  let primaryCheckInterval = null;
+  let backupCheckInterval = null;
 
   function getCurrentLanguageAndPath() {
     const currentPath = window.location.pathname;
@@ -8651,11 +8622,9 @@
 
   function createLanguageSwitcher(availableLanguages, currentLanguage, basePath) {
     if (availableLanguages.length <= 1) {
-      shouldHaveSwitcher = false;
       return null;
     }
 
-    shouldHaveSwitcher = true;
     const currentLangConfig = languages[currentLanguage];
     const priority = { en: 0, cn: 1, ja: 2, es: 3 };
     const sortedLanguages = [...availableLanguages].sort((a, b) => {
@@ -8665,7 +8634,7 @@
     });
     
     const switcherHTML = [
-      '<div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items" data-recovery-count="' + injectionCount + '">',
+      '<div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items" data-page-path="' + basePath + '" data-current-lang="' + currentLanguage + '">',
       '  <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button">',
       '    <span class="lang-flag">' + currentLangConfig.flag + '</span>',
       '    <span class="lang-label">' + currentLangConfig.label + '</span>',
@@ -8696,7 +8665,7 @@
     return switcherHTML;
   }
 
-  function injectLanguageSwitcher() {
+  function injectOrUpdateSwitcher() {
     const navbar = document.querySelector('.navbar__items--right') || 
                    document.querySelector('.navbar__items') ||
                    document.querySelector('.navbar');
@@ -8706,151 +8675,219 @@
       return false;
     }
 
-    // 检查是否已存在
-    const existingSwitcher = document.querySelector('.navbar-language-switcher');
-    if (existingSwitcher) {
-      return true; // 已存在，算作成功
-    }
-
     const { currentLanguage, basePath } = getCurrentLanguageAndPath();
     const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
-    const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+    const existingSwitcher = document.querySelector('.navbar-language-switcher');
     
-    if (!switcherHTML) {
-      return true; // 单语言页面，不需要切换器，算作成功
-    }
-
-    try {
-      injectionCount++;
-      
-      let insertPosition = null;
-      const positionSelectors = [
-        'a[href*="seeedstudio.com"]',
-        '.header-github-link', 
-        '.navbar__item:last-child'
-      ];
-      
-      for (const selector of positionSelectors) {
-        const element = navbar.querySelector(selector);
-        if (element) {
-          insertPosition = element;
-          break;
-        }
+    // 更新当前页面信息
+    currentPageInfo = {
+      basePath: basePath,
+      currentLanguage: currentLanguage,
+      availableLanguages: availableLanguages,
+      timestamp: Date.now()
+    };
+    
+    // 情况1：不需要切换器
+    if (availableLanguages.length <= 1) {
+      if (existingSwitcher) {
+        existingSwitcher.remove();
+        log('🗑️ 移除切换器（单语言页面）');
       }
-      
-      if (insertPosition) {
-        insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
-      } else {
-        navbar.insertAdjacentHTML('beforeend', switcherHTML);
-      }
-      
-      // 防止默认链接行为
-      const switcherElement = navbar.querySelector('.navbar-language-switcher');
-      if (switcherElement) {
-        const switcherButton = switcherElement.querySelector('.navbar__link');
-        if (switcherButton) {
-          switcherButton.addEventListener('click', function(e) {
-            e.preventDefault();
-          });
-        }
-      }
-      
-      lastSuccessfulInjection = Date.now();
-      log('✅ 切换器注入成功! (#' + injectionCount + ')');
       return true;
-      
-    } catch (error) {
-      log('❌ 注入失败:', error);
-      return false;
     }
+    
+    // 情况2：需要切换器但不存在 - 创建
+    if (!existingSwitcher) {
+      const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+      if (switcherHTML) {
+        let insertPosition = null;
+        const positionSelectors = [
+          'a[href*="seeedstudio.com"]',
+          '.header-github-link', 
+          '.navbar__item:last-child'
+        ];
+        
+        for (const selector of positionSelectors) {
+          const element = navbar.querySelector(selector);
+          if (element) {
+            insertPosition = element;
+            break;
+          }
+        }
+        
+        if (insertPosition) {
+          insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
+        } else {
+          navbar.insertAdjacentHTML('beforeend', switcherHTML);
+        }
+        
+        const switcherElement = navbar.querySelector('.navbar-language-switcher');
+        if (switcherElement) {
+          const switcherButton = switcherElement.querySelector('.navbar__link');
+          if (switcherButton) {
+            switcherButton.addEventListener('click', function(e) {
+              e.preventDefault();
+            });
+          }
+        }
+        
+        log('✅ 创建新的语言切换器');
+        return true;
+      }
+    }
+    
+    // 情况3：切换器存在 - 检查是否需要更新
+    if (existingSwitcher) {
+      const currentPagePath = existingSwitcher.getAttribute('data-page-path');
+      const currentLang = existingSwitcher.getAttribute('data-current-lang');
+      
+      // 如果页面路径或当前语言发生变化，则更新
+      if (currentPagePath !== basePath || currentLang !== currentLanguage) {
+        log('🔄 检测到页面变化，更新切换器');
+        log('   从: ' + (currentPagePath || '未知') + ' (' + (currentLang || '未知') + ')');
+        log('   到: ' + basePath + ' (' + currentLanguage + ')');
+        
+        existingSwitcher.remove();
+        return injectOrUpdateSwitcher(); // 递归调用重新创建
+      }
+    }
+    
+    return true;
   }
 
-  // 积极恢复策略
-  function startAggressiveRecovery() {
-    // 清除可能存在的检查器
-    if (rapidCheckInterval) clearInterval(rapidCheckInterval);
-    if (normalCheckInterval) clearInterval(normalCheckInterval);
+  // 生产环境优化的监控策略
+  function startProductionMonitoring() {
+    // 清除可能存在的监控
+    if (primaryCheckInterval) clearInterval(primaryCheckInterval);
+    if (backupCheckInterval) clearInterval(backupCheckInterval);
     
-    // 第一阶段：前10秒内每100ms检查一次（高频）
-    let rapidCheckCount = 0;
-    const maxRapidChecks = 100; // 10秒 * 10次/秒
-    
-    rapidCheckInterval = setInterval(function() {
-      rapidCheckCount++;
+    // 主要监控：每200ms检查一次（针对生产环境优化）
+    primaryCheckInterval = setInterval(function() {
+      const { currentLanguage, basePath } = getCurrentLanguageAndPath();
       
-      if (shouldHaveSwitcher) {
-        const existingSwitcher = document.querySelector('.navbar-language-switcher');
-        if (!existingSwitcher) {
-          log('🚀 快速恢复：检测到切换器丢失，立即注入 (#' + rapidCheckCount + ')');
-          injectLanguageSwitcher();
+      // 检查页面是否发生变化
+      if (!currentPageInfo || 
+          currentPageInfo.basePath !== basePath || 
+          currentPageInfo.currentLanguage !== currentLanguage) {
+        
+        log('🔄 检测到页面变化，执行更新');
+        injectOrUpdateSwitcher();
+      }
+    }, 200);
+    
+    // 备用监控：每2秒进行完整检查
+    backupCheckInterval = setInterval(function() {
+      const { currentLanguage, basePath } = getCurrentLanguageAndPath();
+      const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
+      const existingSwitcher = document.querySelector('.navbar-language-switcher');
+      
+      // 完整性检查
+      if (availableLanguages.length > 1 && !existingSwitcher) {
+        log('🚨 备用监控发现切换器丢失，重新创建');
+        injectOrUpdateSwitcher();
+      } else if (availableLanguages.length <= 1 && existingSwitcher) {
+        log('🚨 备用监控发现多余切换器，移除');
+        existingSwitcher.remove();
+        currentPageInfo = null;
+      }
+    }, 2000);
+    
+    log('🔧 启动生产环境监控机制');
+  }
+
+  // 强化的路由变化检测（专为生产环境设计）
+  function setupProductionRouteDetection() {
+    let lastPathname = location.pathname;
+    let lastHref = location.href;
+    
+    // 方法1：历史记录变化
+    function handleHistoryChange(source) {
+      setTimeout(function() {
+        if (location.pathname !== lastPathname || location.href !== lastHref) {
+          log('🔄 路由变化 [' + source + ']: ' + lastPathname + ' -> ' + location.pathname);
+          lastPathname = location.pathname;
+          lastHref = location.href;
+          
+          // 强制更新
+          setTimeout(function() {
+            injectOrUpdateSwitcher();
+          }, 100);
+        }
+      }, 50);
+    }
+    
+    window.addEventListener('popstate', function() {
+      handleHistoryChange('popstate');
+    });
+    
+    // 拦截pushState和replaceState
+    const originalPushState = history.pushState;
+    const originalReplaceState = history.replaceState;
+    
+    history.pushState = function() {
+      originalPushState.apply(this, arguments);
+      handleHistoryChange('pushState');
+    };
+    
+    history.replaceState = function() {
+      originalReplaceState.apply(this, arguments);
+      handleHistoryChange('replaceState');
+    };
+    
+    // 方法2：全局点击监听（捕获所有内部链接）
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a[href]');
+      if (link && link.href) {
+        try {
+          const url = new URL(link.href);
+          if (url.origin === window.location.origin && url.pathname !== lastPathname) {
+            setTimeout(function() {
+              handleHistoryChange('click');
+            }, 150);
+          }
+        } catch (err) {
+          // 忽略无效URL
         }
       }
-      
-      // 10秒后切换到正常模式
-      if (rapidCheckCount >= maxRapidChecks) {
-        clearInterval(rapidCheckInterval);
-        rapidCheckInterval = null;
-        log('🔄 切换到正常检查模式');
-        startNormalRecovery();
-      }
-    }, 100); // 每100ms检查一次
+    }, true);
     
-    log('🚀 启动积极恢复模式：前10秒内每100ms检查一次');
+    // 方法3：定期URL检查（生产环境备用方案）
+    setInterval(function() {
+      if (location.pathname !== lastPathname || location.href !== lastHref) {
+        handleHistoryChange('periodic');
+      }
+    }, 1000);
+    
+    log('🔧 启动生产环境路由检测');
   }
 
-  // 正常恢复策略
-  function startNormalRecovery() {
-    normalCheckInterval = setInterval(function() {
-      if (shouldHaveSwitcher) {
-        const existingSwitcher = document.querySelector('.navbar-language-switcher');
-        if (!existingSwitcher) {
-          log('🔄 正常恢复：检测到切换器丢失，重新注入');
-          injectLanguageSwitcher();
-        }
-      }
-    }, 1000); // 每1秒检查一次
+  function productionInitialization() {
+    log('🚀 初始化生产环境优化版语言切换器');
     
-    log('🔄 启动正常恢复模式：每1秒检查一次');
-  }
-
-  // 延迟初始化策略：等待Docusaurus稳定后再注入
-  function delayedInitialization() {
-    log('⏰ 开始延迟初始化...');
-    
-    // 等待500ms让Docusaurus完成初始化
-    setTimeout(function() {
-      log('🔧 延迟注入切换器...');
+    // 等待DOM完全稳定
+    function attemptInitialization() {
+      const navbar = document.querySelector('.navbar__items--right') || 
+                     document.querySelector('.navbar__items');
       
-      if (injectLanguageSwitcher()) {
-        log('✅ 延迟注入成功');
-        // 启动积极恢复
-        setTimeout(startAggressiveRecovery, 100);
+      if (navbar) {
+        log('✅ 导航栏就绪，开始初始化');
+        
+        // 立即执行一次注入
+        injectOrUpdateSwitcher();
+        
+        // 启动监控机制
+        setTimeout(function() {
+          startProductionMonitoring();
+          setupProductionRouteDetection();
+        }, 500);
+        
       } else {
-        log('⚠️ 延迟注入失败，1秒后重试');
-        setTimeout(delayedInitialization, 1000);
-      }
-    }, 500);
-  }
-
-  // 极简路由监听
-  function observeRouteChanges() {
-    let currentPathname = location.pathname;
-    
-    function handleRouteChange() {
-      if (location.pathname !== currentPathname) {
-        log('🔄 路由变化: ' + currentPathname + ' -> ' + location.pathname);
-        currentPathname = location.pathname;
-        
-        // 清除现有的恢复机制
-        if (rapidCheckInterval) clearInterval(rapidCheckInterval);
-        if (normalCheckInterval) clearInterval(normalCheckInterval);
-        
-        // 重新开始延迟初始化
-        delayedInitialization();
+        log('⏳ 等待导航栏加载...');
+        setTimeout(attemptInitialization, 300);
       }
     }
-
-    window.addEventListener('popstate', handleRouteChange);
+    
+    attemptInitialization();
   }
 
   function init() {
@@ -8858,23 +8895,28 @@
       return;
     }
     
-    log('🚀 初始化积极恢复版语言切换器...');
-    log('📊 包含 ' + Object.keys(languageMapping).length + ' 个多语言页面');
+    log('🚀 启动生产环境优化版语言切换器');
+    log('📊 映射数据包含 ' + Object.keys(languageMapping).length + ' 个多语言页面');
     
     isInitialized = true;
     
-    // 启动路由监听
-    observeRouteChanges();
-    
-    // 开始延迟初始化
-    delayedInitialization();
+    // 延迟初始化以确保生产环境稳定性
+    setTimeout(productionInitialization, 800);
   }
 
-  // 立即初始化
+  // 多重初始化策略
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
-    setTimeout(init, 0);
+    setTimeout(init, 100);
   }
+  
+  // 确保初始化的备用机制
+  setTimeout(function() {
+    if (!isInitialized) {
+      log('🔄 备用初始化触发');
+      init();
+    }
+  }, 2000);
 
 })();

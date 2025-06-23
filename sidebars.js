@@ -3302,6 +3302,7 @@ const sidebars = {
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/clip_application_on_rpi_with_ai_kit',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/convert_model_to_edge_tpu_tflite_format_for_google_coral',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/frigate_nvr_with_raspberrypi_5',
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/frigate_home_assistant_recomputer_r2000',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/install_m.2_coral_to_rpi5',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/pose_based_light_control_with_nodered_and_rpi_with_aikit',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/reterminal_frigate',
@@ -3312,7 +3313,8 @@ const sidebars = {
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/reTerminal-DM-Yolo5',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l'
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/real-time-ocr'
             ]
           },
           {
@@ -3932,6 +3934,7 @@ const sidebars = {
                   'Robotics/Robot_Sensor/Lidar/Robosense_Lidar',
                   'Robotics/Robot_Sensor/Lidar/MID360',
                   'Robotics/Robot_Sensor/Lidar/A_Loam',
+                  'Robotics/Robot_Sensor/Lidar/SLAMTEC',
                     ]},
             {
               type: 'category',
@@ -3943,6 +3946,16 @@ const sidebars = {
                 items: [
                   'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
                   'Robotics/Robot_Sensor/Camera/CSI_Camera'
+                    ]},
+            {
+              type: 'category',
+              label: 'IMU',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  'Robotics/Robot_Sensor/IMU/Hexfellow_Y200',
                     ]},
           ]
         },
@@ -6182,18 +6195,25 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Lidar',
+          label: '激光雷达',
           items: [
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_Robosense_Lidar',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_MID360',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_A_Loam',
-              ]},
+            'zh-CN/Robotics/Robot_Sensor/Lidar/cn_SLAMTEC',
+        ]},
         {
           type: 'category',
           label: '摄像头',
           items: [
             'zh-CN/Robotics/Robot_Sensor/Camera/cn_Orbbec_Depth_Camera',
             'zh-CN/Robotics/Robot_Sensor/Camera/cn_CSI_Camera'
+              ]},
+        {
+          type: 'category',
+          label: '陀螺仪',
+          items: [
+            'zh-CN/Robotics/Robot_Sensor/IMU/cn_Hexfellow_Y200',
               ]},
       ]
     },

@@ -15,6 +15,11 @@ last_update:
 
 # 如何在 Lerobot 中使用 Lekiwi
 
+:::tip
+本教程仓库代码保持为2025年6月5日之前的Lerobot经过测试的稳定版本，目前Huggingface对Lerobot进行了非常庞大的升级，增加了非常多的新功能，如果需要体验最新的教程请跟随[官方文档进行操作](https://huggingface.co/docs/lerobot/index)。
+:::
+
+
 ## 简介
 
 [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) 是由 [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC) 发起的一个完全开源的机器人小车项目。它包含详细的 3D 打印文件和操作指南，设计上与 [LeRobot](https://github.com/huggingface/lerobot/tree/main) 模仿学习框架兼容。它支持 SO101 机器人手臂，从而实现完整的模仿学习流程。
@@ -215,7 +220,7 @@ conda activate lerobot
 
 ### 4. 克隆 LeRobot：
 ```bash
-git clone https://github.com/huggingface/lerobot.git ~/lerobot
+git clone https://gitee.com/Marlboro1998/lerobot_seeed_version.git ~/lerobot
 ```
 
 ### 5. 在您的环境中安装 ffmpeg：
