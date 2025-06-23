@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 06/16/2025
+  date: 06/23/2025
   author: Frank
 ---
 
@@ -17,27 +17,55 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is June 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 23rd, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [reComputer Super vs Classic Next-Gen AI Performance in Edge Inferencing](https://wiki.seeedstudio.com/recomputer_jetson_super_performance/)
+### [Connect SenseCAP S210X to Datacake via TTN](https://wiki.seeedstudio.com/how_to_connect_sensecap_s210x_to_datacake_via_ttn/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAPS210X/Datacake/image1.webp" alt="pir" width={800} height="auto" /></p>
 
-The reComputer Super Series supercharges the reComputer Classic, delivering up to a 1.7x boost of 157 TOPS in AI performance. This wiki compares the performance differences between the reComputer Super and reComputer Classic in AI text generation and AI video processing. Using the <a href="https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5524.html" target="_blank">NVIDIA Jetson Orin NX 16GB module</a> as the test platform, it clearly demonstrates that the reComputer Super delivers superior performance compared to the reComputer Classic.
+This guide walks you through how to connect the SenseCAP S210X LoRaWAN® sensors to Datacake via The Things Network (TTN). It covers everything from setting up your Datacake account and adding your device to TTN, to configuring webhooks, generating API tokens, and setting up downlinks and payload decoders. Perfect for anyone looking to integrate SenseCAP sensors into a low-code IoT platform.
 
-### [Getting Started with XIAO W5500 Ethernet Adapter](https://wiki.seeedstudio.com/xiao_w5500_ethernet_adapter/)
+### [Get Started with Wio Tracker L1](https://wiki.seeedstudio.com/get_started_with_meshtastic_wio_tracker_l1/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993648-wio-tracker-l1.jpg" alt="pir" width={600} height="auto" /></p>
 
-This document introduces the Seeed Studio XIAO W5500 Ethernet Adapter, detailing its features, hardware specifications, pin definitions, and usage instructions. It enables users to easily add wired Ethernet connectivity to Seeed Studio XIAO series development boards, making it ideal for IoT, remote control, and data transmission applications.
+This guide shows you how to get started with the Meshtastic-enabled Wio Tracker L1. It walks you through flashing the latest firmware using the Meshtastic Web Flasher, entering DFU mode, setting up the device over USB, and connecting via Bluetooth (iOS/Android apps). It also explains how to configure the correct LoRa region to begin mesh communication.
+
+### [HEXFELLOW Y200 IMU Sensor Getting Start](https://wiki.seeedstudio.com/hexfellow_y200/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig1.jpg" alt="pir" width={600} height="auto" /></p>
+
+The Y200 is a 9-axis gyroscope specifically developed for robots. The device supports a maximum power supply of 60V and uses a standard XT30 CAN interface for quick integration into a robot network. It features an internal potting process for excellent shock resistance, and its casing is designed with a reinforced structure for stable and reliable installation.
+
+### [AI-Powered Control of the Robotic Arm via GR00T](https://wiki.seeedstudio.com/control_robotic_arm_via_gr00t/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/gr00t/dataset.png" alt="pir" width={800} height="auto" /></p>
+
+This article demonstrates how NVIDIA's GR00T AI platform enables advanced, autonomous control of StarAI Robotic Arm. Combining real-time perception and adaptive decision-making, GR00T bridges AI and robotics for precision tasks in industrial and research applications.
+
+### [Real-time OCR with reComputer AI box](https://wiki.seeedstudio.com/real-time-ocr/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/ocr.png" alt="pir" width={800} height="auto" /></p>
+
+OCR, or Optical Character Recognition, can be applied to various scenarios such as sign recognition and invoice processing. In this project, the PGNet model is deployed on the reComputer R2000 or reComputer R2000 produced by Seeed Studio to enable accelerated and real-time OCR detection.
+
+### [Frigate NVR and Hailo on reComputer R2000 connect with Home Assistant](https://wiki.seeedstudio.com/r2000_series_frigate_and_home_assistant/)
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R2000/frigateHA/frigate_web.png" alt="pir" width={800} height="auto" /></p>
+
+In this guide, we'll walk you through how to install **Frigate on a reComputer AI box** equipped with **Hailo PCIe**, and how to connect it to your existing **Home Assistant** setup using **MQTT** with minimal hassle.
 
 ## Existing Wiki Updated
 
-### [Develop on reCamera with c&cpp](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/)
+### [Get Started with SenseCAP Solar Node](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/)
 
-We have added [some demos built with C and C++](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/#more-demos-built-with-ccpp).
+We added an example of the [Flash Firmware](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/#flash-firmware) operation.
+
+### [Getting Started with reComputer Super](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/)
+
+We added an example of the [Flash JetPack OS](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/#flash-jetpack-os) operation.
 
 ## The Efforts of Contributor
 
@@ -118,7 +146,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.7.01st](/Seeed_Elderly/weekly_wiki/wiki240701)
 - [weekly wiki on 2024.7.08th](/Seeed_Elderly/weekly_wiki/wiki240708)
 - [weekly wiki on 2024.7.16th](/Seeed_Elderly/weekly_wiki/wiki240716)
-- [weekly wiki on 2024.7.22th](/Seeed_Elderly/weekly_wiki/wiki240722)
+- [weekly wiki on 2024.7.22nd](/Seeed_Elderly/weekly_wiki/wiki240722)
 - [weekly wiki on 2024.7.29th](/Seeed_Elderly/weekly_wiki/wiki240729)
 - [weekly wiki on 2024.8.05th](/Seeed_Elderly/weekly_wiki/wiki240805)
 - [weekly wiki on 2024.8.12th](/Seeed_Elderly/weekly_wiki/wiki240812)
@@ -127,7 +155,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.9.02nd](/Seeed_Elderly/weekly_wiki/wiki240902)
 - [weekly wiki on 2024.9.09th](/Seeed_Elderly/weekly_wiki/wiki240909)
 - [weekly wiki on 2024.9.16th](/Seeed_Elderly/weekly_wiki/wiki240918)
-- [weekly wiki on 2024.9.23th](/Seeed_Elderly/weekly_wiki/wiki240923)
+- [weekly wiki on 2024.9.23rd](/Seeed_Elderly/weekly_wiki/wiki240923)
 - [weekly wiki on 2024.9.30th](/Seeed_Elderly/weekly_wiki/wiki240930)
 - [weekly wiki on 2024.10.07th](/Seeed_Elderly/weekly_wiki/wiki241007)
 - [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
@@ -140,7 +168,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
-- [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
+- [weekly wiki on 2024.12.23rd](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
 - [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
@@ -153,10 +181,10 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
-- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
+- [weekly wiki on 2025.3.31st](/Seeed_Elderly/weekly_wiki/wiki250331)
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 - [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
-- [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
+- [weekly wiki on 2025.4.21st](/Seeed_Elderly/weekly_wiki/wiki250421)
 - [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
 - [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
@@ -164,5 +192,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 - [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
 - [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
+- [weekly wiki on 2025.6.16th](/Seeed_Elderly/weekly_wiki/wiki250616)
 
 </details>
