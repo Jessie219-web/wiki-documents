@@ -4,7 +4,7 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-// 从 frontmatter 中提取 aliases 的函数（增强版 - 验证目标路径）
+// 从 frontmatter 中提取 aliases
 function getFrontmatterAliases() {
   try {
     const fs = require('fs');
