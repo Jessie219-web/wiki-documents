@@ -6,7 +6,7 @@ keywords:
   - reComputer R2000
   - reComputer R2100
   - yolov5
-image: https://files.seeedstudio.com/wiki/reComputer-R2000/reComputer_AI_Industrial_R2135-12.webp
+image: https://files.seeedstudio.com/wiki/Edge_Box/ocr.webp
 slug: /real-time-ocr
 last_update:
   date: 6/16/2025
@@ -75,7 +75,7 @@ You can see the OCR model detecting the text on the receipt in real time.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/OCR.gif" alt="pir" width={1000} height="auto"/></p>
 
-# Tech support
+## Tech support
 
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
