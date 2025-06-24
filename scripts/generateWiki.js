@@ -17,12 +17,8 @@ const excludedPaths = [
 
   // 排除指定文档
   path.join(docsDirectory, 'Cloud_Chain'), // 排除cloud目录，因为最近在整改
-  path.join(docsDirectory, 'Edge_Robotics.md'), //5.29
-  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_IsaacROS.md'), //5.28
-  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Install_ROS2_Humble.md'), //5.28
-  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Isaac_ROS_AprilTag.md'), //5.28
-  path.join(docsDirectory, 'Robotics', 'Robot_Software', 'ROS', 'Isaac_ROS_Visual_SLAM.md'), //5.28
   path.join(docsDirectory, 'Cloud.md'), //6.6
+  path.join(docsDirectory, 'Robotics', 'Robot_Sensor', 'Lidar', 'SLAMTEC.md'), //6.18
 ];
 
 // 递归函数，用于遍历多层文件夹
