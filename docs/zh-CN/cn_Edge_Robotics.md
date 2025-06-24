@@ -87,6 +87,10 @@ last_update:
       <span className="text">飞特STS3215舵机</span>
       <span className="tag recommended">New</span>
     </a>
+    <a href="/cn/hightorque_series/" className="nav-item">
+      <span className="text">高擎系列关节模组</span>
+      <span className="tag recommended">New</span>
+    </a>
 </div>
 
 

@@ -7,7 +7,7 @@ keywords:
 - Robotics
 - Robotic Arm
 image: https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/damiao.webp
-slug: /en/hightorque_series
+slug: /hightorque_series
 last_update:
   date: 06/24/2025
   author: ZhuYaoHui
