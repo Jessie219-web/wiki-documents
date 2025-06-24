@@ -3899,6 +3899,7 @@ const sidebars = {
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
+                  'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
                     ]},
 
           ]
