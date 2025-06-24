@@ -79,11 +79,11 @@ last_update:
       <span className="text">脉塔X系列关节模组</span>
       <span className="tag recommended">新</span>
     </a>
-    <a href="/cn/cn_damiao_series" className="nav-item">
+    <a href="/cn/damiao_series" className="nav-item">
       <span className="text">达妙43系列关节模组</span>
       <span className="tag recommended">新</span>
     </a>
-    <a href="/cn/cn_feetech_servo/" className="nav-item">
+    <a href="/cn/feetech_servo/" className="nav-item">
       <span className="text">飞特STS3215舵机</span>
       <span className="tag recommended">New</span>
     </a>
@@ -107,11 +107,11 @@ last_update:
     <a href="/cn/mid360/" className="nav-item">
       <span className="text">MID360</span>
     </a>
-    <a href="/cn/cn_slamtec" className="nav-item">
+    <a href="/cn/slamtec" className="nav-item">
       <span className="text">思岚系列雷达</span>
       <span className="tag recommended">新</span>
     </a>
-    <a href="/cn/a_loam/" className="nav-item">
+    <a href="/cn/loam/" className="nav-item">
       <span className="text">A-LOAM 算法</span>
     </a>
 </div>
@@ -142,7 +142,7 @@ last_update:
 **陀螺仪**  
 
 <div className="card-container">
-    <a href="/cn/cn_hexfellow_y200/" className="nav-item">
+    <a href="/cn/hexfellow_y200/" className="nav-item">
       <span className="text">HEXFELLOW Y200</span>
     </a>
 </div>

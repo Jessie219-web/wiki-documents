@@ -1,13 +1,13 @@
 ---
 description: This wiki provides tutorial for Feetech Servo motors.
-title: Feetech Servo Motors Getting Start
+title: 飞特舵机使用文档
 keywords:
 - actuator
 - motor
 - arm
 - robotics
 image:   https://media-cdn.seeedstudio.com/media/catalog/pr…5d/1/-/1-108090023-feetech-st-3215-c001-servo.jpg
-slug: /cn/cn_feetech_servo
+slug: /cn/feetech_servo
 last_update:
   date: 06/24/2025
   author: ZhuYaoHui

@@ -180,12 +180,19 @@ For more detail features, please refer to the ​**Setup Software Instruction Ma
 
 ## Control the Motor Using the [​reComputer Mini Jetson Orin.](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)
 
-Currently, the most common CAN communication interfaces for motors in the market use **XT30 (2+2)** and **JST connectors**. Our **reComputer Mini Jetson Orin** device is equipped with **dual XT30 (2+2) ports** and **JST-based CAN interfaces**, providing seamless compatibility.  
+Currently, the most common CAN communication interfaces for motors in the market use **XT30 (2+2)** and **JST connectors**. Our **reComputer Mini Jetson Orin** and **reComputer Robotics** device is equipped with **dual XT30 (2+2) ports** and **JST-based CAN interfaces**, providing seamless compatibility.  
 
+**reComputer Mini:**
 <div align="center">
-    <img width={500} 
-     src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg" />
+  <img width ="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/mini/1-reComputer-Mini-bundle.jpg"/>  
 </div>
+
+**reComputer Robotics**
+<div align="center">
+  <img width ="800" src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig5.jpg"/>  
+</div>
+
+
 
 For more details on CAN usage, you can refer to this [wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can ).
 
@@ -741,6 +748,10 @@ actuator.setAcceleration(800, AccelerationType.POSITION_PLANNING_DECELERATION)
 actuator.setAcceleration(1200, AccelerationType.VELOCITY_PLANNING_ACCELERATION)
 actuator.setAcceleration(1000, AccelerationType.VELOCITY_PLANNING_DECELERATION)
 ```
+
+
+<iframe width="960" height="640" src="https://www.youtube.com/embed/0HLx3iQitXg?si=Z39mFeatUdp4j9dh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## Tech Support & Product Discussion
 
