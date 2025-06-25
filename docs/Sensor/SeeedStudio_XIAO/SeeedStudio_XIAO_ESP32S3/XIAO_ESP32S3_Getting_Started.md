@@ -110,7 +110,7 @@ The **OV2640 camera** has been discontinued, and the subsequent XIAO ESP32S3 Sen
 	</tr>
 	<tr>
 	    <td align="center"> - </td>
-        <td align="center">Webcam Web application: <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>138mA</strong> <br></br> - - Photo moment: 5V/<strong>341mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 3.8V/<strong>154mA</strong> <br></br> - - Photo moment: 3.8V/<strong>304mA</strong></td>
+        <td align="center">Webcam Web application: <br></br> - Type-C: <br></br> - - Average power consumption: 5V/<strong>220mA</strong> <br></br> - - Photo moment: 5V/<strong>341mA</strong> <br></br> - Battery: <br></br> - - Average power consumption: 4.2V/<strong>212mA</strong> <br></br> - - Photo moment: 3.8V/<strong>304mA</strong></td>
 		<td align="center"> - </td>
 	</tr>
 	<tr>
