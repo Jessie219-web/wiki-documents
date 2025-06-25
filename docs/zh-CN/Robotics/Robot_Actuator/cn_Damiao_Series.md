@@ -1,270 +1,255 @@
 ---
-description: This wiki provides tutorial for Damiao series motors.
-title: Damiao Series Motors Getting Start
+description: 本文档将介绍如何快速上手达妙43系列电机.
+title:  达妙43系列电机使用文档
 keywords:
-- actuator
-- motor
-- arm
-- robotics
+- 关节模组
+- 电机
+- 机器人
+- 机械臂
 image: https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/damiao.webp
-slug: /damiao_series
+slug: /cn/damiao_series
 last_update:
   date: 06/1/2025
   author: ZhuYaoHui
 ---
 
-# Damiao 43 Series Motors Getting Start
-This article will introduce how to get started with Damiao 43 series motors and how to use them with C++ and Python on the reComputer Mini Jetson Orin.
+# 达妙43系列电机快速入门指南
+本文档将介绍如何快速上手达妙43系列电机，以及如何在reComputer Mini Jetson Orin上使用C++和Python控制电机。
 
 <div align="center">
     <img width={400} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/damiao.png" />
 </div>
 
+## 技术规格
 
-## Specification
+以下是完整的产品参数表（所有型号）：
 
+| 电机型号 | 额定扭矩(Nm) | 峰值扭矩(Nm) | 空载转速(rpm) | 额定转速(rpm) | 减速比 | 尺寸直径*高度(mm) | 重量(g) | 工作电压(V) | 推荐电压范围(V) | 额定相电流(A) | 峰值相电流(A) | 额定功率(W) | 极对数 | 通信方式 | 编码器类型 | 安装方式 | 相电阻(Ω) | 相电感(uH) | 磁链(Wb) | 转动惯量(Kg*m²) | 扭矩常数(Nm/A) | 驱动器最大电流(A) | 速度环KP | 默认PMAX(rad) | 默认VMAX(rad/s) | 默认TMAX(Nm) | 速度常数 |
+|---------|-------------|-------------|--------------|--------------|--------|------------------|---------|------------|----------------|--------------|--------------|------------|--------|----------|------------|----------|-----------|------------|----------|--------------|---------------|----------------|----------|---------------|---------------|---------------|----------|
+| J4310-2EC V1.1 | 3 | 7 | 200 | 120 | 10 | 57*46 | ~300 | 24 | 15-32 | 3.7 | 7.2 | 37.699 | 14 | CAN/CANFD | 磁编双编码 | 内置 | 0.85 | 345 | 0.0045 | 1.80E-05 | 0.945 | 10.261 | 3.72E-04 | 12.5 | 30 | 10 | 87.513 |
+| J4310-2EC V1.1(48V) | 3 | 7 | 400 | 120 | 10 | 57*46 | ~300 | 48 | 15-52 | 3.7 | 7.2 | 37.699 | 14 | CAN/CANFD | 磁编双编码 | 内置 | 0.85 | 345 | 0.0045 | 1.80E-05 | 0.945 | 10.261 | 3.72E-04 | 12.5 | 30 | 10 | 87.513 |
+| J4340-2EC | 9 | 27 | 52.5 | 36 | 40 | 57*53.3 | ~362 | 24 | 15-32 | 3 | 8 | 33.929 | 14 | CAN/CANFD | 磁编双编码 | 内置 | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261 | 9.59E-05 | 12.5 | 8 | 28 | 81.197 |
+| J4340-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57*53.3 | ~362 | 48 | 15-52 | 2.5 | 9 | 33.929 | 14 | CAN/CANFD | 磁编双编码 | 内置 | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261 | 9.59E-05 | 12.5 | 8 | 28 | 81.197 |
+| J4340P-2EC | 9 | 27 | 52.5 | 36 | 40 | 57*56.5 | ~375 | 24 | 15-32 | 3 | 8 | 33.929 | 14 | CAN/CANFD | 磁编双编码 | 内置 | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261 | 9.59E-05 | 12.5 | 8 | 28 | 81.197 |
+| J4340P-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57*56.5 | ~375 | 48 | 15-52 | 2.5 | 9 | 33.929 | 14 | CAN/CANFD | 磁编双编码 | 内置 | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261 | 9.59E-05 | 12.5 | 8 | 28 | 81.197 |
+
+
+## 核心特性
  
-Here's the completed table with all parameters filled in for all motor models:
+1. **支持CAN总线 & CANFD协议**
+2. **双编码器设计**
+3. **高扭矩密度**
+4. **高运动精度**
+5. **中空轴结构**
 
+## 快速入门
+### 使用前的环境准备
+**Windows PC端准备**
+- 下载[达妙调试工具](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/Debugging_Tools_v.1.6.8.8.exe)
+- 下载[USB转CAN工具](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/USB2CAN_2.0.0.3.exe)
 
- Motor Model | Rated Torque (Nm) | Peak Torque (Nm) | No-load Speed (rpm) | Rated Speed (rpm) | Reduction Ratio | Size Diameter*Height (mm) | Weight (g) | Supply Voltage (V) | Recommended Voltage Range (V) | Rated Phase Current (A) | Peak Phase Current (A) | Rated Power (W) | Pole Pairs | Communication Method | Encoder Type | Installation | Phase Resistance (Ω) | Phase Inductance (uH) | Flux Linkage (Wb) | Rotational Inertia (Kg*m²) | Torque Constant (Nm/A) | Drive Max Current (A) | Speed Loop KP | Default PMAX (rad) | Default VMAX (rad/s) | Default TMAX (Nm) | Speed Constant |
-------------|------------------|-----------------|---------------------|------------------|----------------|--------------------------|-----------|-------------------|-----------------------------|------------------------|----------------------|----------------|-----------|---------------------|-------------|-------------|----------------------|---------------------|------------------|--------------------------|----------------------|---------------------|--------------|------------------|------------------|----------------|---------------|
-J4310-2EC V1.1 | 3 | 7 | 200 | 120 | 10 | 57 * 46 | ~300 | 24 | 15-32 | 3.7 | 7.2 | 37.699112 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.85 | 345 | 0.0045 | 1.80E-05 | 0.945 | 10.261194 | 3.72E-04 | 12.5 | 30 | 10 | 87.512523 |
-J4310-2EC V1.1(48V) | 3 | 7 | 400 | 120 | 10 | 57 * 46 | ~300 | 48 | 15-52 | 3.7 | 7.2 | 37.699112 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.85 | 345 | 0.0045 | 1.80E-05 | 0.945 | 10.261194 | 3.72E-04 | 12.5 | 30 | 10 | 87.512523 |
-J4340-2EC | 9 | 27 | 52.5 | 36 | 40 | 57 * 53.3 | ~362 | 24 | 15-32 | 3 | 8 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
-J4340-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57 * 53.3 | ~362 | 48 | 15-52 | 2.5 | 9 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
-J4340P-2EC | 9 | 27 | 52.5 | 36 | 40 | 57 * 56.5 | ~375 | 24 | 15-32 | 3 | 8 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
-J4340P-2EC(48V) | 9 | 27 | 100 | 36 | 40 | 57 * 56.5 | ~375 | 48 | 15-52 | 2.5 | 9 | 33.929201 | 14 | CAN, CANFD | Magnetic, Dual | Built-in | 0.88 | 360 | 0.00485 | 2.00E-05 | 4.074 | 10.261194 | 9.59E-05 | 12.5 | 8 | 28 | 81.197186 |
+### 连接电路到PC
 
-
-
-## Main Features
- 
-1. **CAN BUS & CANFD**
-2. **Dual Encoder**
-3. **High Torque Density**
-4. **High Precision**
-5. **Hollow Design**
-
-
-## Getting Start
-### Environmental Preparation Before Use
-**Windows System in PC**
-- Download the [Download the Damiao Debugging Tools](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/Debugging_Tools_v.1.6.8.8.exe).
-- Downlaod the [USB2CAN Tools](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/USB2CAN_2.0.0.3.exe)
-
-### Connect the Circuit to PC
-
-We use the CAN communication method, which requires an additional USB-CAN interface for debugging via an upper computer on Windows.
+我们采用CAN通信方式，需要通过USB-CAN转换器连接Windows上位机进行调试。
 
 <div align="center">
     <img width={500} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/circcuit.jpg" />
 </div>
 
-Here, you need to provide a separate 24V power supply for the motor and connect the USB to your computer.
+注意需要为电机单独提供24V电源，同时将USB接口连接至电脑。
 
+### 使用`Debugging_Tools_v.1.6.8.8.exe`测试电机
+软件底部可切换中英文界面。
 
-### Use the `Debugging_Tools_v.1.6.8.8.exe` to Test the Motor.
-You can switch between Chinese and English at the bottom of the app.
-
-| **Configure serial port connection parameters** | **connect to motor** | **Read Param** | **Set CAN ID** |**Write Param.** |
+| **配置串口连接参数** | **连接电机** | **读取参数** | **设置CAN ID** |**写入参数** |
 |:---------:|:---------:|:---------:|:---------:|:---------:|
-| ![fig1](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/1.png) | ![fig2](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/2.png) | ![fig3](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/3.png) | ![fig4](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/4.png) |![fig5](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/5.png) |
-| For the Serial Port, use the port automatically recognized by the computer, with all other settings as defaults. | After clicking the 'Open Port' button, it will automatically connect to the host computer. If this is the first connection, motor information will be printed in the dialog box|In the 'Set Parameters' section, clicking 'Read Param' will display the motor's current detailed information and motion mode.|Here, please first configure the CAN ID. |After configuration, click 'Write Param' to update the parameters. |
+| ![图1](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/1.png) | ![图2](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/2.png) | ![图3](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/3.png) | ![图4](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/4.png) |![图5](https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/5.png) |
+| 串口选择电脑自动识别的端口，其他参数保持默认 | 点击'打开端口'按钮后会自动连接上位机，首次连接时对话框会打印电机信息|在'参数设置'区域点击'读取参数'可显示电机当前详细信息和工作模式|此处请先配置CAN ID |配置完成后点击'写入参数'更新参数 |
 
 :::tip
+**CAN_ID**: 驱动器接收CAN指令的帧ID(16进制)
 
-**​CAN_ID**: The frame ID used by the drive to receive CAN commands (hexadecimal).
+**Master ID**: 驱动器发送反馈的帧ID(16进制)
 
-**​Master ID**: The frame ID used by the drive to send feedback (hexadecimal).
+建议为每个电机设置唯一的Master ID
 
-The ​Master ID is the host ID. It is recommended to set ​unique Master IDs for each motor.
+最佳实践是将Master ID设置为比CAN_ID大0x10(例如CAN_ID=0x01，则Master ID=0x11)
 
-A good practice is to set the ​Master ID higher than the ​CAN_ID by ​0x10 (e.g., if CAN_ID = 0x01, Master ID = 0x11).
-
-​Example:
-
-​Motor 1: CAN_ID = 0x01, Master ID = 0x11
-
-​Motor 2: CAN_ID = 0x02, Master ID = 0x12
-
-​Do not set Master ID to 0x00!!!
+示例：
+电机1: CAN_ID=0x01, Master ID=0x11
+电机2: CAN_ID=0x02, Master ID=0x12
+绝对不要将Master ID设为0x00!!!
 :::
 
+#### **(1) 基本参数**  
+- **NPP**: 电机极对数，通过校准自动确定  
+- **UV**: 当供电电压低于阈值(最低15V)时，驱动器将停止工作  
+- **OV**: 设置电压上限。驱动器上电时检查供电电压，若超限则禁用操作(仅在上电时检查一次)  
+- **Acc/Dec**: 在非MIT模式下用于限制速度变化率  
+- **GR(减速比)**: 影响输出速度/位置，间接影响扭矩反馈。支持浮点数值  
+- **OT**: 线圈温度阈值(建议≤100°C)。超限将触发故障模式(禁用电机并报错)  
+- **CAN_ID**: 接收CAN指令的帧ID(16进制)  
+- **Master ID**: 驱动器反馈的帧ID(16进制)。最佳实践：设置`MasterID = CAN_ID + 0x10`(如`0x01`→`0x11`)。切勿设为`0x00`  
+- **CAN超时**: 32位整数定义超时周期(单位:50µs周期)。若在此间隔内未检测到CAN指令，电机进入保护模式  
+- **速度限制**(*仅速度模式*): 减速前的最大速度(单位:rad/s)  
+- **过流保护**: 最大相电流限制(百分比)  
 
-#### **(1) Basic Parameters**  
-- **NPP**: The number of motor pole pairs, automatically determined through calibration.  
-- **UV**: If the supply voltage drops below the threshold (minimum **15V**), the drive will stop operating.  
-- **OV**: Sets the upper voltage limit. The drive checks the supply voltage at power-up and disables operation if exceeded (checked only once at startup).  
-- **Acc/Dec**: Used in **non-MIT modes** to limit the rate of speed change.  
-- **GR(Gear Ratio)**: Affects output speed/position and indirectly influences torque feedback. Supports floating-point values.  
-- **OT**: Coil temperature threshold (recommended ≤ **100°C**). Exceeding this triggers fault mode (disables motor and reports error).  
-- **CAN_ID**: Frame ID for receiving CAN commands (hexadecimal).  
-- **Master ID**: Frame ID for drive feedback (hexadecimal). Best practice: Set `MasterID = CAN_ID + 0x10` (e.g., `0x01` → `0x11`). **Never set to `0x00`.**  
-- **CAN Timeout**: 32-bit integer defining the timeout period (units: 50µs cycles). Motor enters protection mode if no CAN commands are detected within this interval.  
-- **Speed Limit** (*Speed mode only*): Maximum speed before deceleration (units: **rad/s**).  
-- **Overcurrent**: Maximum phase current limit (percentage).  
+#### **(2) 电机参数**  
+- 由驱动器自动识别。更换驱动板时需要重新校准。参数持久化存储在驱动器中  
 
-#### **(2) Motor Parameters**  
-- Automatically identified by the drive. **Recalibration required when replacing the drive board**. Stored persistently in the drive.  
+#### **(3) 指令缩放(幅值设置)**  
+- **PMAX**: 在MIT模式下缩放指令输入；在其他模式下缩放反馈输出。参考CAN协议了解映射规则  
+- **VMAX**: 同PMAX  
+- **TMAX**: 同PMAX  
+- **KT_OUT**: 电机扭矩常数。若电机参数已准确识别则设为0  
+- **减速比系数**: 齿轮的扭矩传递比  
 
-#### **(3) Command Scaling (Amplitude Settings)**  
-- **PMAX**: In **MIT mode**, scales command input; in other modes, scales feedback output. Refer to CAN protocol for mapping rules.  
-- **VMAX**: Same as PMAX.  
-- **TMAX**: Same as PMAX.  
-- **KT_OUT**: Motor torque constant. Set to **0** if motor parameters are accurately identified.  
-- **Gear Ratio Coefficient**: Torque transmission ratio for gears.  
+> **注意**: 驱动器使用MIT通信协议格式  
 
-> **Note**: The drive uses the **MIT communication protocol format**.  
+#### **(4) 控制设置**  
+- **控制模式**:  
+  - **MIT模式**  
+  - **位置-速度模式**(梯形加减速)  
+  - **速度模式**  
+- **电流带宽**: 电流环增益(默认:1000)  
+- **速度KP/KI, 位置KP/KI**: 速度和位置环的PID参数  
 
-#### **(4) Control Settings**  
-- **Control Modes**:  
-  - **MIT Mode**  
-  - **Position-Velocity Mode** (trapezoidal acceleration/deceleration)  
-  - **Velocity Mode**  
-- **Current Bandwidth**: Current loop gain (default: `1000`).  
-- **Speed KP/KI, Position KP/KI**: PID parameters for speed and position loops.  
+### MIT控制模式
+**1. MIT扭矩控制模式:**
 
+1. 在参数设置区域点击读取参数显示当前电机参数
 
-### MIT Control Mode
-**1. MIT Torque Control Mode:**
+2. 将控制模式设为MIT模式
 
-1. In the Set Parameters section, click ​Read Param to display current motor parameters.
+3. 确认配置的CAN ID
 
-2. Set the ​Control Mode to MIT Mode.
-
-3. Verify the configured ​CAN ID.
-
-4. Click ​Write Param to save all settings.
+4. 点击写入参数保存所有设置
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/7.png" />
 </div>
 
-5. In the ​Test tab, click the ​**"Enable Motor"** button (Ente).
+5. 在测试标签页点击"使能电机"按钮(Ente)
 
-6. In the ​MIT Control section:
- - Set ​Torque (Nm) to ​1.
- - Click ​Update → ​Send.
+6. 在MIT控制区域:
+ - 设置扭矩(Nm)为1
+ - 点击更新→发送
 
-The motor will start rotating.
+电机将开始旋转
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/6.png" />
 </div>
 
-You can also copy the CAN data (in hexadecimal format) and use a serial port debugging tool to drive the motor.
+您也可以复制CAN数据(16进制格式)使用串口调试工具驱动电机
 
 <div align="center">
     <img width={400} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/8.png" />
 </div>
 
-**2. MIT Speed Control Mode:**
-1. In the ​Test tab, click the ​**"Enable Motor"** button (Ente).
+**2. MIT速度控制模式:**
+1. 在测试标签页点击"使能电机"按钮(Ente)
 
-2. In the ​MIT Control section:
- - Set Vel (rad/s) to ​5.
- - Set KD (N*s/r) to ​1.
- - Click ​Update → ​Send.
+2. 在MIT控制区域:
+ - 设置速度(rad/s)为5
+ - 设置KD(N*s/r)为1
+ - 点击更新→发送
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/9.png" />
 </div>
 
-The motor will start rotating.
-You can also copy the CAN data (in hexadecimal format) and use a serial port debugging tool to drive the motor.
+电机将开始旋转
+您也可以复制CAN数据使用串口调试工具驱动电机
 
-**3. MIT Position Control Mode:**
-1. In the ​Test tab, click the ​**"Enable Motor"** button (Ente).
+**3. MIT位置控制模式:**
+1. 在测试标签页点击"使能电机"按钮(Ente)
 
-2. You can use ​**"SaveZero"** to set the current position as the zero point.
+2. 可使用"保存零点"将当前位置设为零点
 
 
-3. In the ​MIT Control section:
- - Set Pos (rad) to 3.14.
- - Set KP (N/r) to ​2.
- - Set KD (N*s/r) to ​1.
- - Click ​Update → ​Send.
+3. 在MIT控制区域:
+ - 设置位置(rad)为3.14
+ - 设置KP(N/r)为2
+ - 设置KD(N*s/r)为1
+ - 点击更新→发送
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/10.png" />
 </div>
 
-The motor will start rotating.
-You can also copy the CAN data (in hexadecimal format) and use a serial port debugging tool to drive the motor.
+电机将开始旋转
+您也可以复制CAN数据使用串口调试工具驱动电机
 
-### Speed Control Mode
+### 速度控制模式
 
-1. In the Set Parameters section, click ​Read Param to display current motor parameters.
+1. 在参数设置区域点击读取参数显示当前电机参数
 
-2. Set the ​Control Mode to Vel Mode.
+2. 将控制模式设为速度模式
 
-3. Verify the configured ​CAN ID.
+3. 确认配置的CAN ID
 
-4. Click ​Write Param to save all settings.
+4. 点击写入参数保存所有设置
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/11.png" />
 </div>
 
-5. In the ​Test tab, click the ​**"Enable Motor"** button (Ente).
+5. 在测试标签页点击"使能电机"按钮(Ente)
 
-6. In the Vel Control section:
- - Set Vel (rad/s) to 5.
- - Click ​Update → ​Send.
+6. 在速度控制区域:
+ - 设置速度(rad/s)为5
+ - 点击更新→发送
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/12.png" />
 </div>
 
-The motor will start rotating.
-You can also copy the CAN data (in hexadecimal format) and use a serial port debugging tool to drive the motor.
+电机将开始旋转
+您也可以复制CAN数据使用串口调试工具驱动电机
 
-### Position Control Mode
+### 位置控制模式
 
-1. In the Set Parameters section, click ​Read Param to display current motor parameters.
+1. 在参数设置区域点击读取参数显示当前电机参数
 
-2. Set the ​Control Mode to Pos Mode.
+2. 将控制模式设为位置模式
 
-3. Verify the configured ​CAN ID.
+3. 确认配置的CAN ID
 
-4. Click ​Write Param to save all settings.
+4. 点击写入参数保存所有设置
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/13.png" />
 </div>
 
-5. In the ​Test tab, click the ​**"Enable Motor"** button (Ente).
+5. 在测试标签页点击"使能电机"按钮(Ente)
 
-6. In the Pos Control section:
- - Set Pos to 3.14.
- - Set Vel (rad/s) to 5.
- - Click ​Update → ​Send.
+6. 在位置控制区域:
+ - 设置位置为3.14
+ - 设置速度(rad/s)为5
+ - 点击更新→发送
 
 <div align="center">
     <img width={800} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/damiao/14.png" />
 </div>
 
-The motor will start rotating.
-You can also copy the CAN data (in hexadecimal format) and use a serial port debugging tool to drive the motor.
+电机将开始旋转
+您也可以复制CAN数据使用串口调试工具驱动电机
 
+## 使用[reComputer Mini Jetson Orin](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)控制电机
 
-
-
-## Control the Motor Using the [​reComputer Mini Jetson Orin.](/docs/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Mini/reComputer_Mini_Getting_Started.md)
-
-Currently, the most common CAN communication interfaces for motors in the market use **XT30 (2+2)** and **JST connectors**. Our **reComputer Mini Jetson Orin** and **reComputer Robotics** device is equipped with **dual XT30 (2+2) ports** and **JST-based CAN interfaces**, providing seamless compatibility.  
+目前市场上电机最常用的CAN通信接口采用XT30(2+2)和JST连接器。我们的**reComputer Mini Jetson Orin** 和**reComptuer Robotics**设备配备了双XT30(2+2)端口和基于JST的CAN接口，提供无缝兼容性。
 
 **reComputer Mini:**
 <div align="center">
@@ -277,27 +262,27 @@ Currently, the most common CAN communication interfaces for motors in the market
 </div>
 
 
-For more details on CAN usage, you can refer to this [wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can ).
 
-### Enable CAN Interfaces
+有关CAN使用的更多细节，可参考此[wiki](https://wiki.seeedstudio.com/recomputer_jetson_mini_hardware_interfaces_usage/#can)。
 
-**Step1:** Before using CAN0 and CAN1, please remove the bottom cover and set both 120Ω termination resistors to the ​ON position.
+### 启用CAN接口
+
+**步骤1:** 使用CAN0和CAN1前，请移除底盖并将两个120Ω终端电阻拨至ON位置
 
 <div align="center">
     <img width={300} 
      src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/7.png" />
 </div>
 
-**Step2:** Connect the motor directly to the reComputer Mini CAN0 via the XT30 (2+2) interface.
+**步骤2:** 通过XT30(2+2)接口将电机直接连接到reComputer Mini的CAN0
 
 :::tip
-For the reComputer Mini's CAN interface, the H/L pins are inverted compared to the motor's H/L. Therefore, you need to reverse the H/L connections in the XT30 2+2 cable harness.
+reComputer Mini的CAN接口H/L引脚与电机的H/L相反，因此需要反转XT30 2+2线束中的H/L连接
 :::
 
 <div align="center">
   <img width ="800" src="https://files.seeedstudio.com/wiki/recomputer_mini/can0-datasheet.png"/>
 </div>
-
 
 <div align="center">
     <img width={800} 
@@ -305,52 +290,51 @@ For the reComputer Mini's CAN interface, the H/L pins are inverted compared to t
 </div>
 
 :::danger
-This power supply is only for single-motor learning and testing. For multiple motors, please design a separate power board and isolate the Jetson's power supply from the motor power supply to avoid high current passing directly through the Jetson.
+此电源方案仅适用于单电机学习测试。多电机使用时请设计独立电源板，将Jetson电源与电机电源隔离，避免大电流直接通过Jetson
 :::
 
-
-#### Enable Jetson CAN communication
-Open a terminal and enter the following command to pull the GPIO pin high and activate CAN0:
+#### 启用Jetson CAN通信
+打开终端输入以下命令拉高GPIO引脚激活CAN0:
 ```bash
 gpioset --mode=wait 0 43=0
 ```
 
-If you are using the JST-interface CAN1, pull pin 106 high.
+若使用JST接口的CAN1，则拉高106引脚
 ```bash
 gpioset --mode=wait 0 106=0
 ```
 
-Keep this terminal open, launch a new terminal, and configure CAN0.
+保持此终端开启，新建终端配置CAN0
 ```bash
 sudo modprobe mttcan
 sudo ip link set can0 type can bitrate 1000000
 sudo ip link set can0 up
 ```
 
-### For C++ Examples.
+### C++示例
 
-#### Installation and Compilation  
+#### 安装与编译
 
-- **Install CMake**  
+- **安装CMake**  
 ```shell
 sudo apt update  
 sudo apt install cmake  
 ```  
 
-- **Install CAN Tools**  
+- **安装CAN工具**  
 ```shell
 sudo apt install can-utils  
 ```  
 
-- **Download and Compile the Program**  
-1. Create a workspace and clone the repository:  
+- **下载并编译程序**  
+1. 创建工作空间并克隆仓库:  
 ```shell
 mkdir -p ~/orin_ws/src  
 cd ~/orin_ws/src  
 git clone https://gitee.com/xauter/orin-control.git  
 ```  
 
-2. Compile:  
+2. 编译:  
 ```shell
 cd ~/orin_ws/src/orin-control/dm_hw  
 mkdir build  
@@ -359,47 +343,45 @@ cmake ..
 make  
 ```  
 
-#### Usage  
+#### 使用说明  
 
-1. **Check CAN Devices**  
-Open a terminal and run:  
+1. **检查CAN设备**  
+打开终端运行:  
 ```shell
 ip -brief link | grep can  
 ```  
 
-2. **Run the Program**  
-In the `build` folder, execute:  
+2. **运行程序**  
+在build文件夹执行:  
 ```shell
 cd ~/orin_ws/src/orin-control/dm_hw/build  
 ./dm_main  
 ```  
-The motor will light up **green** and rotate at a **sinusoidal speed**.
+电机将亮起绿灯并以正弦速度旋转
 
+### Python控制
 
-### Control Using Python
-
-- **Install Python Environment**  
+- **安装Python环境**  
 ```bash
 pip install python-can numpy
 ```
 
-
-- **Create a folder named scripts under the directory `~/damiao/scripts` to store Python scripts.**
+- **创建脚本目录**  
 ```bash
 mkdir -p ~/damiao/scripts
 ```
 
-- **Create the damiao_motor.py file**
+- **创建damiao_motor.py文件**
 
 ```bash
 cd ~/damiao/scripts
 touch damiao_motor.py
 ```
-Copy the following code to damiao_motor.py
+将以下代码复制到damiao_motor.py
 
 <details>
-
 <summary>damiao_motor.py</summary>
+
 
 ```python
 ## This is a derivative of the following software.
@@ -1249,13 +1231,13 @@ class DamiaoPort:
 
 </details>
 
-- **Create the damiao_test.py file**
+- **创建damiao_test.py文件**
 
-Copy the following code to damiao_test.py
+将以下代码复制到damiao_test.py
 
 <details>
+<summary>damiao_test.py</summary>
 
-<summary>damiao_motor.py</summary>
 
 ```python
 #!/usr/bin/env python3
@@ -1327,18 +1309,18 @@ if __name__ == "__main__":
 
 </details>
 
-- **Run damiao_test.py**
+- **运行damiao_test.py**
 ```bash
 python damiao_test.py
 ```
 
-<iframe width="960" height="640" src="https://www.youtube.com/embed/e5hajjlaXAM?si=mTwNAeU5cfQEIuOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe  width="960" height="640" src="//player.bilibili.com/player.html?isOutside=true&aid=114736997926097&bvid=BV1vuKGz4ETG&cid=30669737702&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" allowfullscreen></iframe>
 
-The motor will light up **green** and rotate at a **sinusoidal speed**.
+电机将亮起绿灯并以正弦速度旋转
 
-## Tech Support & Product Discussion
+## 技术支持与产品讨论
 
-Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+感谢选择我们的产品！我们提供多种支持渠道确保您获得最佳使用体验。
 
 <div class="button_tech_support_container">
 <a href="https://forum.seeedstudio.com/" class="button_forum"></a> 

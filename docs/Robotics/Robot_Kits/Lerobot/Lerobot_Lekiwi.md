@@ -287,13 +287,13 @@ Upon receiving the printed parts, all printed components are as shown below.
 </div>
 
 
-**A. Attach the drive motor to the motor mount using 4 m2x5 tap screws.**
+**A. Attach the drive motor to the motor mount using 12 m2x6 tap screws.**
 
 | **Step 1** | **Step 2** |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/2.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/3.jpg) |
 
-**B. Screw the drive motor mount onto the bottom base plate using 4 m3x16 machine screws.**
+**B. Screw the drive motor mount onto the bottom base plate using 12 m3x16 machine screws.**
 
 :::tip
 Remember the ID arrangement: 8 represents the rear wheel, while 7 and 9 correspond to the left front and right front wheels respectively.
@@ -311,19 +311,19 @@ Remember the ID arrangement: 8 represents the rear wheel, while 7 and 9 correspo
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/6.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/7.jpg) |
 
-**Step 3 and Step 4**: Attach the wheel hub to the omniwheel using 2 m4x16 machine screws.
+**Step 3 and Step 4**: Attach the wheel hub to the omniwheel using 9 m4x18 machine screws.
 
 | **Step 3** | **Step 4** |
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/8.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/9.jpg) |
 
-**D. Attach the servo horn to the wheel hub using 2 m3x16 machine screws.**
+**D. Attach the servo horn to the wheel hub using 6 m3x16 machine screws.**
 
 | **Step 1** | **Step 2** |**Step 3** |
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/10.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/11.jpg) | ![fig3](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/12.jpg) |
 
-**E. Attach the servo horn to the drive motor using 1 m3x6 machine screw.**
+**E. Attach the servo horn to the drive motor using 3 m3x10 machine screw.**
 
 | **Step 1** | **Step 2** |**Step 3** |
 |:---------:|:---------:|:---------:|
@@ -371,13 +371,13 @@ For the additional **2-pin terminals (5V & 12V)**:
 |:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/30.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/31.jpg) |
 
-**J. Now you need to secure the Raspberry Pi and the remaining parts of the top plate using M3×16 screws.**
+**J. Now you need to secure the Raspberry Pi and the remaining parts of the top plate using 12 M3×16 screws.**
 
 |  | ||
 |:---------:|:---------:|:---------:|
 | ![fig1](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/32.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/33.jpg) | ![fig2](https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/34.jpg) |
 
-**K. Now you can install the USB camera and Follower Arm using M3x16 and M5×25 screws**
+**K. Now you can install the USB camera and Follower Arm using 1 M3x16 and 4 M5×25 screws**
 
 |  |
 |:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
