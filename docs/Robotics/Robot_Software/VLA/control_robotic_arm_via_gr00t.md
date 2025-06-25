@@ -1,6 +1,6 @@
 ---
 description: This article demonstrates how to implement NVIDIA's GR00T AI platform for advanced robotic arm control using StarAI hardware, covering the complete workflow from environment setup to model fine-tuning and deployment.
-title: AI-Powered Control of the Robotic Arm via GR00T
+title: Control 6/7 DOF Robot Arm using NVIDIA Isaac GR00T N1.5
 keywords:
 - NVIDIA Jetson
 - Isaac GR00T
@@ -17,13 +17,13 @@ This article demonstrates how NVIDIA's GR00T AI platform enables advanced, auton
 
 ## Prerequisites
 - StarAI Robotic Arm 
-- Orbbec Gemini 335L 
+- Orbbec Gemini 2 
 - NVIDIA GPU-accelerated Linux host
   - ubuntu 20.04
   - VRAM >32GB
 
 :::info
- While this demonstration uses StarAI + Gemini335L, the tutorial remains fully applicable to SOArm 100 + standard USB cameras.
+ While this demonstration uses StarAI + Gemini2, the tutorial remains fully applicable to SOArm 100 + standard USB cameras.
 :::
 
 ## Getting Started
