@@ -1,6 +1,6 @@
 // 语言切换器 - 生产环境优化版本
-// 生成时间: 2025-06-20 16:10:42 (北京时间)
-// 多语言页面: 1857 个
+// 生成时间: 2025-06-26 17:12:27 (北京时间)
+// 多语言页面: 1859 个
 
 (function() {
   'use strict';
@@ -1967,624 +1967,783 @@
   "/LoRa-E5_STM32WLE5JC_Module": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/LoRa_E5_Dev_Board": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/LoRa_E5_mini": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-WM1110_Dev_Kit_Hardware_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Get_Started_with_Wio-WM1110_Dev_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-WM1110_Dev_Kit/Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_and_xiao_esp32s3_kit_with_3dprinted_enclosure_introduction_and_assembly_guide": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/4_layer_sandwich_for_meshtastic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_for_meshtastic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_with_xiao_esp32s3_kit": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_LNS_Chirpstack": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_LNS_TTN": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_for_lora_sensor_node": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_for_single_channel_gateway": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/change_antenna_path": [
     "en",
+    "es",
     "ja"
   ],
   "/configure_param_for_wio_tracker": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_tracker_home_assistant": [
     "en",
+    "es",
     "ja"
   ],
   "/connect_wio_tracker_to_TTN": [
     "en",
+    "es",
     "ja"
   ],
   "/development_tutorial_for_Wio-trakcer": [
     "en",
+    "es",
     "ja"
   ],
   "/setup_toolchain_for_wio_tracker": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_tracker_dual_stack": [
     "en",
+    "es",
     "ja"
   ],
   "/Get_Started_with_Wio-Trakcer_1110": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Tracker_Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/connect_wio_tracker_to_locator": [
     "en",
+    "es",
     "ja"
   ],
   "/WM1302_module": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/WM1302_Pi_HAT": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/meshtastic_introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_indicator_meshtastic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/get_started_with_meshtastic_solar_node": [
     "en",
+    "es",
     "ja"
   ],
   "/meshtastic_solar_node": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_t1000_e": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/t1000_e_intro": [
     "cn",
     "en",
+    "es",
     "ja"
+  ],
+  "/wio_tracker_l1_node": [
+    "en",
+    "es"
   ],
   "/flash_meshtastic_kit": [
     "en",
+    "es",
     "ja"
   ],
   "/meshtastic_kit_wio_tracker_1110": [
     "en",
+    "es",
     "ja"
   ],
   "/xiao_esp32s3_&_wio_SX1262_kit_for_meshtastic": [
     "en",
+    "es",
     "ja"
   ],
   "/xiao_nrf52840&_wio_SX1262_kit_for_meshtastic": [
     "en",
+    "es",
     "ja"
   ],
   "/4g_lte_hotspot_on_raspberry_pi_os": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_lte_hat_mbim": [
     "en",
+    "es",
     "ja"
   ],
   "/4g_lte_hat_and_raspberry_pi_router_with_openwrt": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_lte_hat_qmi": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_lte_hat_rndis": [
     "en",
+    "es",
     "ja"
   ],
   "/ftp_with_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_hat_gnss_functionlities": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_hat_ecm_mobile_internet": [
     "en",
+    "es",
     "ja"
   ],
   "/mqtt_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/send_receive_sms_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/tcp_ip_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/Mender-Client-dual-GbE-CM4": [
     "en",
+    "es",
     "ja"
   ],
   "/OpenWrt-Getting-Started": [
     "en",
+    "es",
     "ja"
   ],
   "/OpenWrt-Plex-Media-Server-on-Docker": [
     "en",
+    "es",
     "ja"
   ],
   "/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4": [
     "en",
+    "es",
     "ja"
   ],
   "/FAQs_For_openWrt": [
     "en",
+    "es",
     "ja"
   ],
   "/Raspberry-OpenWrt-Getting-Started": [
     "en",
+    "es",
     "ja"
   ],
   "/reRouter_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/H28K-install-system": [
     "en",
+    "es",
     "ja"
   ],
   "/H28K_Datasheet": [
     "en",
+    "es",
     "ja"
   ],
   "/h68kv2_datasheet": [
     "en",
+    "es",
     "ja"
   ],
   "/H68KV2_install_system": [
     "en",
+    "es",
     "ja"
   ],
   "/grocy-bookstack-linkstar": [
     "en",
+    "es",
     "ja"
   ],
   "/h68k-ha-esphome": [
     "en",
+    "es",
     "ja"
   ],
   "/plex_media_server": [
     "en",
+    "es",
     "ja"
   ],
   "/wordpress_linkstar": [
     "en",
+    "es",
     "ja"
   ],
   "/linkstar-install-system": [
     "en",
+    "es",
     "ja"
   ],
   "/Linkstar_Datasheet": [
     "en",
+    "es",
     "ja"
   ],
   "/Linkstar_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/Rockchip_network_solutions": [
     "en",
+    "es",
     "ja"
   ],
   "/IoT-into-the-wild-contest": [
     "en",
+    "es",
     "ja"
   ],
   "/K1111-Quick-Start-Guide": [
     "en",
+    "es",
     "ja"
   ],
   "/K1111-Edge-Impulse": [
     "en",
+    "es",
     "ja"
   ],
   "/Vision_AI_with_Customizable_Models": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-quickstart": [
     "en",
+    "es",
     "ja"
+  ],
+  "/K1100-Getting-Started": [
+    "en",
+    "es"
   ],
   "/Connect_AWS_via_helium": [
     "en",
+    "es",
     "ja"
   ],
   "/Helium-Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/Configuring-Web-APP-Visualization": [
     "en",
+    "es",
     "ja"
   ],
   "/Connecting-to-Helium": [
     "en",
+    "es",
     "ja"
   ],
   "/Integrate-into-Azure-IoT-Hub": [
     "en",
+    "es",
     "ja"
   ],
   "/Integrate_into_Google_Sheets_via_Helium": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_sensecap_node-red": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_Azure_IoT_Central": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_datacake": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_grafana": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_influxdb": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_PowerBI": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_twilio": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-IMU-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Light-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Temp-Humi-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Vision-AI-Module-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/Connecting-to-TTN": [
     "en",
+    "es",
     "ja"
   ],
   "/TTN-Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_K1100_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/Connect-Wio-Terminal-to-Azure-IoT-Central": [
     "en",
+    "es",
     "ja"
   ],
   "/Develop-in-Microsoft-Azure-IoT-Central": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_Azure_to_PowerBI": [
     "en",
+    "es",
     "ja"
   ],
   "/Connect-Wio-Terminal-to-Google-Cloud": [
     "en",
+    "es",
     "ja"
   ],
   "/Getting_started_with_Ubidots": [
     "en",
+    "es",
     "ja"
   ],
   "/Quick-Start-to-using-Blynk": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Advanced-WiFi": [
     "en",
+    "es",
     "ja"
   ],
   "/platformio_wio_e5": [
     "en",
+    "es",
     "ja"
   ],
   "/M2_Kit_Getting_Started": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/Sensecap-LoRaWAN-Gateway-and-Wireless-Sensor-User-Guide": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Flux_Gateway/SenseCAP_M4_Square/SenseCAP_M4_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Flux_Gateway/SenseCAP_M4_Square/SenseCAP_M4_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Flux_Gateway/SenseCAP_M4_Square/SenseCAP_M4_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/Troubleshooting": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/M2_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Light/FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Light/Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Light/Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_Gateway_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Troubleshooting": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/M2_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/flash_opensource_firmware_to_m2_gateway": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_m2_LNS_config": [
     "en",
+    "es",
     "ja"
   ],
   "/quick_start_with_M2_MP": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_MP_Gateway_LNS_Configuration": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/traffic_saving_config": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-AWS-IoT": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-The-Things-Network": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/The-Things-Indoor-Gateway": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_wifi_halow_mini_pcie_module": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_wifi_halow_module_for_xiao": [
     "en",
+    "es",
     "ja"
   ],
   "/Network": [
     "en",
+    "es",
     "ja"
   ],
   "/myactuator_series": [
