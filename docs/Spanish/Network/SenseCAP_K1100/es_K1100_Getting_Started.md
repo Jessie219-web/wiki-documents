@@ -300,6 +300,24 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
 
 ## <span id="jump1">Introduction</span>
 
+### Inicio Rápido con SenseCAP - K1100
+
+<html>
+    <table>
+        <tr>
+            <td align="left">En este tutorial, nos gustaría que comenzaras revisando nuestra sección de la <strong>Guía de Inicio Rápido</strong>. Aprende sobre la extraordinaria presentación de datos de nuestro kit y la facilidad de uso de sus funciones de IoT. En este capítulo, podrás experimentar la diversión de la recopilación y el procesamiento de datos con nuestro proyecto de código abierto en el menor tiempo posible. Además, puedes transferir los datos recopilados a diferentes plataformas mediante WiFi o LoRa®.<br /><br /><a href="https://wiki.seeedstudio.com/K1100-quickstart/">Ir al capítulo &gt;</a>
+            </td>
+            <td>
+                <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/K1100_overview/1.png" /></div>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" colspan="2">
+                <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/K1100-quick-start/step.png" /></div>
+            </td>
+        </tr>
+    </table>
+</html>
 
 ### Aplicaciones en la Nube SenseCAP
 
@@ -545,9 +563,7 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
             <td colspan={2}></td>
         </tr>
         <tr>
-            <td colSpan={3}>
-                <div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/113.png" /></div>
-            </td>
+            <td colSpan={3}><div align="center"><img width={800} src="https://files.seeedstudio.com/wiki/Wio-Terminal-Developer-for-helium/113.png" /></div></td>
         </tr>   
 </tbody></table>
 
@@ -651,7 +667,7 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
                 Por supuesto, si te interesa TinyML y quieres implementar proyectos y contenido de aprendizaje automático, puedes consultar la sección TinyML.
             </td>
             <td>
-                <div align="center"><img width="900" src="https://files.seeedstudio.com/wiki/K1100_overview/tinyml.png" /></div>
+                <div align="center"><img width="{900}" src="https://files.seeedstudio.com/wiki/K1100_overview/tinyml.png" /></div>
             </td>
         </tr>
         <tr>
@@ -685,7 +701,7 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
         Además de los tutoriales básicos para cada plataforma, hemos preparado una variedad de ejemplos enriquecidos sobre el uso de este kit, ¡para que veas que el valor del kit es ilimitado!
       </td>
       <td>
-        <div align="center"><img width="350" src="https://files.seeedstudio.com/wiki/K1100_overview/project.png" /></div>
+        <div align="center"><img width={350} src="https://files.seeedstudio.com/wiki/K1100_overview/project.png" /></div>
       </td>
     </tr>
   </tbody>
@@ -695,8 +711,8 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
   <tbody>
     <tr>
       <td align="center">
-        <p style="text-align: center;">
-          <img src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit33.jpg" alt="Soil moisture monitoring alarm system" width="1100" height="auto" />
+        <p style={{textAlign: 'center'}}>
+          <img src="https://files.seeedstudio.com/wiki/LoraWANdevKit/lorawandevkit33.jpg" alt="Soil moisture monitoring alarm system" width={1100} height="auto" />
         </p>
       </td>
       <td align="left">
@@ -707,8 +723,8 @@ La carcasa IP66, configuración Bluetooth, compatibilidad con la red global LoRa
     </tr>
     <tr>
       <td align="center">
-        <p style="text-align: center;">
-          <img src="https://files.seeedstudio.com/wiki/K1100_overview/000000.png" alt="IoT Into the Wild Contest" width="1100" height="auto" />
+        <p style={{textAlign: 'center'}}>
+          <img src="https://files.seeedstudio.com/wiki/K1100_overview/000000.png" alt="IoT Into the Wild Contest" width={1100} height="auto" />
         </p>
       </td>
       <td align="left">
