@@ -111,11 +111,9 @@ Seeed ofrece una gran variedad de productos de red que se integran perfectamente
 </div>
 
 
-## Módulos de Red para sensores de nivel básico
+<!-- ## Módulos de Red para sensores de nivel básico
 
 ### Módulos de Comunicación Grove
-
-<!-- Grove Sensor Network -->
 
 <div class="title_container">
     <div class="title_item" style={{textAlign: 'center'}}>
@@ -177,10 +175,10 @@ Seeed ofrece una gran variedad de productos de red que se integran perfectamente
             <a href="/es/Grove-I2C_FM_Receiver" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Receptor de Modulación de Frecuencia </font></span></a>
             <br/>
     </div>
-</div>
+</div> -->
 
 
-## Módulos de red legacy de Seeed Studio
+<!-- ## Módulos de red legacy de Seeed Studio
 
 
 <div class="intro_container">
@@ -193,4 +191,4 @@ Seeed ofrece una gran variedad de productos de red que se integran perfectamente
             <a href="/es/2KM_Long_Range_RF_link_kits_w_encoder_and_decoder" target="_blank"><span><font color={'FFFFFF'} size={"2"}> Kits de enlace RF de largo alcance 2KM con codificador y decodificador</font></span></a>
             <br/>
     </div>
-</div>
+</div> -->
