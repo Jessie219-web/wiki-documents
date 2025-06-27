@@ -3576,6 +3576,7 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/YOLOv8-TRT-Jetson',
                 // 'Edge/NVIDIA_Jetson/Application/Computer_Vision/reComputer_Jetson_Series_Tutorials_Exercise',
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/YOLOv8_custom_classification_model',
+                'Edge/NVIDIA_Jetson/Application/Computer_Vision/Multi-GMSL_Cameras_for_Real-Time_Object_Detection_and_3D_Reconstruction_on_Jetson_AGX_Orin',
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/deploy_frigate_on_jetson',
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/AI-NVR_with_Jetson',
               ]
