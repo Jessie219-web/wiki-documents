@@ -15,6 +15,12 @@ last_update:
 
 # 如何从0搭建具身智能Lerobot SO-ARM100和SO-ARM101机械臂并完成自定义抓取任务
 
+:::tip
+
+本教程仓库代码保持为2025年6月5日之前的Lerobot经过测试的稳定版本，目前Huggingface对Lerobot进行了非常庞大的升级，增加了非常多的新功能，如果需要体验最新的教程请跟随[官方文档进行操作](https://huggingface.co/docs/lerobot/index)。
+
+:::
+
 [SO-10xARM](https://github.com/TheRobotStudio/SO-ARM100) 是由 [TheRobotStudio](https://www.therobotstudio.com/) 发起的一个完全开源的机器人手臂项目。它包括跟随臂和领导机器人手臂，并提供详细的3D打印文件和操作指南。[LeRobot](https://github.com/huggingface/lerobot/tree/main) 致力于为真实世界的机器人提供 PyTorch 中的模型、数据集和工具。其目标是降低机器人学的入门门槛，使每个人都能通过共享数据集和预训练模型进行贡献和受益。LeRobot 集成了经过验证的前沿方法，专注于模仿学习和强化学习。它提供了一套预训练模型、包含人类收集的示范数据集和仿真环境，使用户无需进行机器人组装即可开始使用。未来几周，计划在当前最具成本效益和性能的机器人上增强对真实世界机器人的支持。
 
 ### 项目介绍
@@ -237,7 +243,7 @@ conda create -y -n lerobot python=3.10 && conda activate lerobot
 3. 克隆 Lerobot 仓库：
 
 ```bash
-git clone https://github.com/ZhuYaoHui1998/lerobot.git ~/lerobot
+git clone https://gitee.com/Marlboro1998/lerobot_seeed_version.git ~/lerobot
 ```
 
   **我们适配了奥比中光Orbbec Gemini2深度相机，发现单个深度相机效果优于2个RGB相机，如果你也使用这款相机，请克隆转换仓库分支到Orbbec,并按我们后续流程来配置相机。**
@@ -304,7 +310,11 @@ print(torch.cuda.is_available())
 ## 校准舵机并组装机械臂
 
 :::danger
-由于官方代码和舵机厂家固件升级，2025年5月30日之前的用户请先[下载飞特官方上位机](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip)（Windows系统下），上电连接所有舵机，选择对应的端口号->波特率1000000->打开->搜索，搜索到所有的舵机后点击`升级`->`在线检测`->`升级固件`，确保固件版本从3.9升级到3.10版本，避免出现后续问题。
+由于官方代码和舵机厂家固件升级，2025年6月30日之前的用户请先[下载飞特官方上位机](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip)（Windows系统下），上电连接所有舵机，选择对应的端口号->波特率1000000->打开->搜索，搜索到所有的舵机后点击`升级`->`在线检测`->`升级固件`，确保固件版本从3.9升级到3.10版本，避免出现后续问题。
+:::
+
+:::note
+如果更新固件失败后无法再次识别到改舵机，可以拿另一个可以识别的舵机单独链接到上位机，然后电机扫描和固件在线检测，这时保持当前窗口，立刻断开当前舵机，连上无法识别的舵机，并且在1秒内点击在线升级即可，若失败可以多次尝试。
 :::
 
 <!-- Code -->
@@ -878,6 +888,7 @@ make install
 3.进行深度相机是否正常运行的测试
 ```bash
 cd ~/pyorbbecsdk 
+pip install -e .
 export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
 sudo bash ./scripts/install_udev_rules.sh
 sudo udevadm control --reload-rules && sudo udevadm trigger
@@ -901,11 +912,6 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 这样每次启动终端会自动加载深度相机环境。
 
 在插入您的 Orbbec 深度相机后，运行以下脚本以检查深度相机的深度数据流及彩色数据流，电脑将会有两个窗口弹出，您可以根据这两个窗口调整摄像头位置，在终端使用Ctrl+C退出按切记摄像头不能插在USB Hub上，要直接插在设备上，USB Hub速率太慢会导致读不到图像数据。
-
-```bash
-cd ~/lerobot
-python lerobot/common/robot_devices/OrbbecCamera.py
-```
 
 完成摄像头的调整后，完成 lerobot/lerobot/common/robot_devices/robots/configs.py 文件中摄像头参数的对齐。
 
@@ -934,9 +940,9 @@ class So101RobotConfig(ManipulatorRobotConfig):
             ),
             "Orbbec":OrbbecCameraConfig(    #在这里添加奥比摄像头信息
                 fps=30,
-                use_depth=True              #是否采用深度
-                width = 640                 #这里会根据宽度自动适配分辨率，不用填高度信息，宽度的值必须为640或者1280（未测试）中的一个
-                Hi_resolution_mode = False  #高分辨率模式，会导致可视化效果不是那么地好，可以进一步提升深度数据的分辨率
+                use_depth=True,              #是否采用深度
+                width = 640,                 #这里会根据宽度自动适配分辨率，不用填高度信息，宽度的值必须为640或者1280（未测试）中的一个
+                Hi_resolution_mode = False,  #高分辨率模式，会导致可视化效果不是那么地好，可以进一步提升深度数据的分辨率
             )，
 
         }

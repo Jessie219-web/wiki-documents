@@ -65,7 +65,7 @@ sidebar_position: 0
 	</tr>
 	<tr>
 	    <th>Wireless</th>
-	    <td align="center" colspan="2">Complete 2.4GHz Wi-Fi subsystem <br></br> BLE: Bluetooth 5.3, Bluetooth mesh</td>
+	    <td align="center" colspan="2">Proprietary 2.4 GHz <br></br> Zigbee PRO/Green Power protocols <br></br> BLE: Bluetooth 5.3, Bluetooth mesh</td>
 	</tr>
     <tr>
 	    <th>Built-in Sensors</th>

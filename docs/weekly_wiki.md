@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 06/02/2025
+  date: 06/23/2025
   author: Frank
 ---
 
@@ -17,53 +17,55 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is June 2nd, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is June 23rd, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [reComputer Super Hardware and Interfaces Usage](https://wiki.seeedstudio.com/recomputer_jetson_super_hardware_interfaces_usage/)
+### [Connect SenseCAP S210X to Datacake via TTN](https://wiki.seeedstudio.com/how_to_connect_sensecap_s210x_to_datacake_via_ttn/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAPS210X/Datacake/image1.webp" alt="pir" width={800} height="auto" /></p>
 
-This wiki introduces the various different hardware and interfaces on the reComputer Super and how to use them to expand your project ideas.
+This guide walks you through how to connect the SenseCAP S210X LoRaWAN® sensors to Datacake via The Things Network (TTN). It covers everything from setting up your Datacake account and adding your device to TTN, to configuring webhooks, generating API tokens, and setting up downlinks and payload decoders. Perfect for anyone looking to integrate SenseCAP sensors into a low-code IoT platform.
 
-### [MyActuator X Series Motors Getting Start](https://wiki.seeedstudio.com/myactuator_series/)
+### [Get Started with Wio Tracker L1](https://wiki.seeedstudio.com/get_started_with_meshtastic_wio_tracker_l1/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/Actuator/myactuator/all.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-114993648-wio-tracker-l1.jpg" alt="pir" width={600} height="auto" /></p>
 
-This article will introduce how to get started with MyActuator series motors and how to use them with Python and ROS on the reComputer Mini Jetson Orin.
+This guide shows you how to get started with the Meshtastic-enabled Wio Tracker L1. It walks you through flashing the latest firmware using the Meshtastic Web Flasher, entering DFU mode, setting up the device over USB, and connecting via Bluetooth (iOS/Android apps). It also explains how to configure the correct LoRa region to begin mesh communication.
 
-### [How to use the Lekiwi in Lerobot](https://wiki.seeedstudio.com/lerobot_lekiwi/)
+### [HEXFELLOW Y200 IMU Sensor Getting Start](https://wiki.seeedstudio.com/hexfellow_y200/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig1.jpg" alt="pir" width={600} height="auto" /></p>
 
-The [Lekiwi](https://github.com/SIGRobotics-UIUC/LeKiwi) is a fully open-source robotic car project launched by [SIGRobotics-UIUC](https://github.com/SIGRobotics-UIUC). It includes the detailed 3D printing files and operation guides, designed to be compatible with the [LeRobot](https://github.com/huggingface/lerobot/tree/main) imitation learning framework. It supports the SO101 robotic arm to enable a complete imitation learning pipeline.
+The Y200 is a 9-axis gyroscope specifically developed for robots. The device supports a maximum power supply of 60V and uses a standard XT30 CAN interface for quick integration into a robot network. It features an internal potting process for excellent shock resistance, and its casing is designed with a reinforced structure for stable and reliable installation.
 
-### [Install the Isaac Lab](https://wiki.seeedstudio.com/install_isaaclab/)
+### [AI-Powered Control of the Robotic Arm via GR00T](https://wiki.seeedstudio.com/control_robotic_arm_via_gr00t/)
 
-This wiki provides a step-by-step guide to install Isaac Lab. Isaac Lab requires Isaac Sim. This tutorial first installs Isaac Sim via pip, then installs Isaac Lab from source code.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/gr00t/dataset.png" alt="pir" width={800} height="auto" /></p>
 
-### [Install the Isaac ROS](https://wiki.seeedstudio.com/install_isaacros/)
+This article demonstrates how NVIDIA's GR00T AI platform enables advanced, autonomous control of StarAI Robotic Arm. Combining real-time perception and adaptive decision-making, GR00T bridges AI and robotics for precision tasks in industrial and research applications.
 
-This wiki provides a step-by-step guide to install Isaac ROS.
+### [Real-time OCR with reComputer AI box](https://wiki.seeedstudio.com/real-time-ocr/)
 
-### [Install the ROS2 Humble](https://wiki.seeedstudio.com/install_ros2_humble/)
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Edge_Box/ocr.png" alt="pir" width={800} height="auto" /></p>
 
-This wiki provides a step-by-step guide to install ROS2 humble.
+OCR, or Optical Character Recognition, can be applied to various scenarios such as sign recognition and invoice processing. In this project, the PGNet model is deployed on the reComputer R2000 or reComputer R2000 produced by Seeed Studio to enable accelerated and real-time OCR detection.
 
-### [Isaac ROS AprilTag](https://wiki.seeedstudio.com/isaac_ros_apriltag/)
+### [Frigate NVR and Hailo on reComputer R2000 connect with Home Assistant](https://wiki.seeedstudio.com/r2000_series_frigate_and_home_assistant/)
 
-This wiki provides a step-by-step guide to use Isaac ROS AprilTag.
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-R2000/frigateHA/frigate_web.png" alt="pir" width={800} height="auto" /></p>
 
-### [Isaac ROS Visual SLAM Deployment](https://wiki.seeedstudio.com/isaac_ros_visual_slam/)
+In this guide, we'll walk you through how to install **Frigate on a reComputer AI box** equipped with **Hailo PCIe**, and how to connect it to your existing **Home Assistant** setup using **MQTT** with minimal hassle.
 
-This wiki provides a step-by-step guide to use Isaac ROS Visual SLAM.
+## Existing Wiki Updated
 
-<!-- ## Existing Wiki Updated
+### [Get Started with SenseCAP Solar Node](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/)
 
-### [How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot](https://wiki.seeedstudio.com/lerobot_so100m/)
+We added an example of the [Flash Firmware](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/#flash-firmware) operation.
 
-We added a reference example for [using a single Orbbec Gemini 2 depth camera](https://wiki.seeedstudio.com/lerobot_so100m/#add-cameras). -->
+### [Getting Started with reComputer Super](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/)
+
+We added an example of the [Flash JetPack OS](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/#flash-jetpack-os) operation.
 
 ## The Efforts of Contributor
 
@@ -144,7 +146,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.7.01st](/Seeed_Elderly/weekly_wiki/wiki240701)
 - [weekly wiki on 2024.7.08th](/Seeed_Elderly/weekly_wiki/wiki240708)
 - [weekly wiki on 2024.7.16th](/Seeed_Elderly/weekly_wiki/wiki240716)
-- [weekly wiki on 2024.7.22th](/Seeed_Elderly/weekly_wiki/wiki240722)
+- [weekly wiki on 2024.7.22nd](/Seeed_Elderly/weekly_wiki/wiki240722)
 - [weekly wiki on 2024.7.29th](/Seeed_Elderly/weekly_wiki/wiki240729)
 - [weekly wiki on 2024.8.05th](/Seeed_Elderly/weekly_wiki/wiki240805)
 - [weekly wiki on 2024.8.12th](/Seeed_Elderly/weekly_wiki/wiki240812)
@@ -153,7 +155,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.9.02nd](/Seeed_Elderly/weekly_wiki/wiki240902)
 - [weekly wiki on 2024.9.09th](/Seeed_Elderly/weekly_wiki/wiki240909)
 - [weekly wiki on 2024.9.16th](/Seeed_Elderly/weekly_wiki/wiki240918)
-- [weekly wiki on 2024.9.23th](/Seeed_Elderly/weekly_wiki/wiki240923)
+- [weekly wiki on 2024.9.23rd](/Seeed_Elderly/weekly_wiki/wiki240923)
 - [weekly wiki on 2024.9.30th](/Seeed_Elderly/weekly_wiki/wiki240930)
 - [weekly wiki on 2024.10.07th](/Seeed_Elderly/weekly_wiki/wiki241007)
 - [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
@@ -166,7 +168,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
-- [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
+- [weekly wiki on 2024.12.23rd](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
 - [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
@@ -179,14 +181,17 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
-- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
+- [weekly wiki on 2025.3.31st](/Seeed_Elderly/weekly_wiki/wiki250331)
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 - [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
-- [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
+- [weekly wiki on 2025.4.21st](/Seeed_Elderly/weekly_wiki/wiki250421)
 - [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
 - [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
 - [weekly wiki on 2025.5.19th](/Seeed_Elderly/weekly_wiki/wiki250519)
 - [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
+- [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
+- [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
+- [weekly wiki on 2025.6.16th](/Seeed_Elderly/weekly_wiki/wiki250616)
 
 </details>

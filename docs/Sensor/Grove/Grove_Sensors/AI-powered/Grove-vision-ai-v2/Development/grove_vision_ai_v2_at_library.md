@@ -12,7 +12,6 @@ slug: /grove_vision_ai_v2_at
 last_update:
   date: 04/22/2024
   author: Spencer
-mermaid: true
 toc_max_heading_level: 3
 ---
 

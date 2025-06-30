@@ -7,6 +7,7 @@ keywords:
   - ESP32-C3
   - SAM2695
   - synthesizer
+sidebar_position: 7
 image: https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/1.webp
 slug: /xiao_midi_synthesizer
 last_update:
@@ -17,7 +18,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/1.jpg" style={{width:600, height:'auto'}}/></div><br />
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="/xiao_midi_synthesizer">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-MIDI-Synthesizer-p-6462.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
@@ -631,7 +632,7 @@ This demo shows how to play a single note using the XIAO MIDI Synthesizer.
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/xiao_midi_synthesizer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-MIDI-Synthesizer-p-6462.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -780,7 +781,7 @@ This demo shows how to use the XIAO MIDI Synthesizer's physical buttons to contr
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/xiao_midi_synthesizer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-MIDI-Synthesizer-p-6462.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -975,7 +976,7 @@ This demo shows how to use the XIAO MIDI Synthesizer to play multi-track chords,
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/xiao_midi_synthesizer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-MIDI-Synthesizer-p-6462.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -1183,7 +1184,7 @@ This demo shows how to use the XIAO MIDI Synthesizer to play a full melody seque
 		</tr>
 		<tr>
 			<td><div class="get_one_now_container" style={{textAlign: 'center'}}>
-				<a class="get_one_now_item" href="/xiao_midi_synthesizer">
+				<a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-MIDI-Synthesizer-p-6462.html">
 				<strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
 				</a>
 			</div></td>
@@ -1767,6 +1768,57 @@ For those looking to convert MIDI files to Arduino code, you can try tools like 
 - **[PDF]** [XIAO MIDI Synthesizer SCH](https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/res/202004281_XIAO_MIDI_Synthesizer_v1.0_SCH&PDF_250421.pdf)
 - **[ZIP]** [XIAO MIDI Synthesizer SCH&PCB](https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/res/202004281_XIAO_MIDI_Synthesizer_v1.0_SCH&PCB_050421.zip)
 - **[GitHub]** [Seeed_Arduino_MIDIMaster Library](https://github.com/Seeed-Studio/Seeed_Arduino_MIDIMaster)
+
+## Troubleshooting
+
+### Q1: How can I convert a MIDI file into Arduino code for the XIAO MIDI Synthesizer?
+
+To convert a MIDI file into Arduino code that can be used with the XIAO MIDI Synthesizer, you can follow these steps:
+
+1. Obtain a MIDI File
+
+    You can download free MIDI files from the following websites:
+    - [The Wild West MIDIs](https://thewildwestmidis.github.io/?search=animals)
+    - [LibreScore MIDI Library](https://github.com/LibreScore/app-librescore?tab=readme-ov-file#installation)
+
+2. Convert the MIDI File to Text
+
+    Use the open-source tool [midicomp](https://github.com/markc/midicomp) to convert your MIDI file into a human-readable text format.
+
+3. Convert the MIDI Text to Playable Code
+
+    After converting your MIDI file to a text format using `midicomp`, you need to process this text into a C/C++ array that the XIAO MIDI Synthesizer can play. Seeed provides Python scripts to automate this conversion:
+
+    - **Fast rhythm, single track (each note start as interval):**  
+    [change_fast.py](https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/res/change_fast.py)
+    - **Slower rhythm, single track (each note end as interval):**  
+    [change_shuqing.py](https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/res/change_shuqing.py)
+    - **Multi-track processing:**  
+    [change_mutich.py](https://files.seeedstudio.com/wiki/xiao_midi_synthesizer/res/change_mutich.py)
+
+    **Example usage:**
+
+    1. Place your MIDI text file (e.g., `1.txt`) in the same directory as the script.
+    2. Run the script in your terminal:
+    ```sh
+    python change_fast.py
+    ```
+    This will generate a header file (e.g., `track_from_miditext.h`) containing the note array.
+
+    3. Copy the generated array into your Arduino sketch, replacing the melody data.
+
+    :::tip
+    - The scripts map MIDI note numbers to the XIAO MIDI Synthesizer's note definitions automatically.
+    - You can adjust the script or the generated array for custom arrangements or to fit memory constraints.
+    :::
+
+    4. Integrate the Generated Code
+
+    - Open the generated `.h` file and copy the `musicData` array.
+    - Paste it into your Arduino project, replacing the existing melody array.
+    - Update your playback logic if needed to match the new array structure.
+
+
 
 ## Tech Support & Product Discussion
 

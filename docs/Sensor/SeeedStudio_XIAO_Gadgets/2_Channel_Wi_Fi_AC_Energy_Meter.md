@@ -62,7 +62,7 @@ This guide provides a detailed walkthrough, including setup, integration, and ad
         </tr>
         <tr>
             <th>Effective Range of Current Detection</th>
-            <td>10mA-35A @ 1mΩ</td>
+            <td>10mA-100A @ 1mΩ (CT Mode)</td>
         </tr>
         <tr>
             <th>Active Electrical Energy</th>

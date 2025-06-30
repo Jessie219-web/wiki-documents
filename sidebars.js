@@ -822,6 +822,7 @@ const sidebars = {
                         'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/Connect-S210X-Sensor-to-Microsoft-Azure-IoT-Central',
                         'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/How-to-Connect-SenseCAP-S210X-to-Helium-Network',
                         'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/How-to-Connect-SenseCAP-S210X-to-The-Things-Network',
+                        'Sensor/SenseCAP/SenseCAP_LoRaWAN_Sensor/SenseCAP_S210X_Series/tutorial/How_to_Connect_SenseCAP_S210X_to_Datacake_via_TTN',
                       ],
                     },
                   ],
@@ -889,6 +890,7 @@ const sidebars = {
                   items: [
                     'Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/Introduction',
                     'Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/Tutorials-Getting Started with SenseCAP ONE Compact Weather Sensor',
+                    'Sensor/SenseCAP/SenseCAP_ONE_Weather_Station/SenseCAP_ONE_Compact_Weather_Station/Benchmark_Labs_Forecast_Integration_for_Seeed_Weather_Stations',
                   ],
                 },
               ],
@@ -3300,6 +3302,7 @@ const sidebars = {
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/clip_application_on_rpi_with_ai_kit',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/convert_model_to_edge_tpu_tflite_format_for_google_coral',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/frigate_nvr_with_raspberrypi_5',
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/frigate_home_assistant_recomputer_r2000',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/install_m.2_coral_to_rpi5',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/pose_based_light_control_with_nodered_and_rpi_with_aikit',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/reterminal_frigate',
@@ -3310,7 +3313,8 @@ const sidebars = {
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/reTerminal-DM-Yolo5',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/tutorial_of_ai_kit_with_raspberrypi5_about_yolov8n_object_detection',
               'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_object_detection_on_recomputer_r1000_with_hailo_8l',
-              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l'
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l',
+              'Edge/Raspberry_Pi_Devices/Application/Computer_Vision/real-time-ocr'
             ]
           },
           {
@@ -3367,12 +3371,20 @@ const sidebars = {
                     'Edge/NVIDIA_Jetson/Carrier_Boards/Mini_J401/J401_Mini_carrierboard_Hardware_Interfaces_Usage',
                   ],
                 },
+               
                 {
                   type: 'category',
                   label: 'J501 Carrier Board',
                   items: [
                     'Edge/NVIDIA_Jetson/Carrier_Boards/J501/reServer_Industrial_J501_Getting_Started',
                     'Edge/NVIDIA_Jetson/Carrier_Boards/J501/Hardware_Interfaces_Usage',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'Robotics J401 Carrier Board',
+                  items: [
+                    'Edge/NVIDIA_Jetson/Carrier_Boards/Robotics_J401/Robotics_J401_carrierboard_Hardware_Interfaces_Usage',
                   ],
                 },
                 'Edge/NVIDIA_Jetson/Carrier_Boards/A203v2/reComputer_A203_Flash_System',
@@ -3474,7 +3486,8 @@ const sidebars = {
                   label: 'reComputer Super',
                   items: [
                   'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Getting_Started',
-                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage'
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_Hardware_Interfaces_Usage',
+                  'Edge/NVIDIA_Jetson/reComputer_Jetson_Series/reComputer_Super/reComputer_Super_vs_Classic_Next-Gen_AI_Performance_in_Edge_Inferencing'
                   ],
                 },
             ]},
@@ -3563,6 +3576,7 @@ const sidebars = {
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/YOLOv8-TRT-Jetson',
                 // 'Edge/NVIDIA_Jetson/Application/Computer_Vision/reComputer_Jetson_Series_Tutorials_Exercise',
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/YOLOv8_custom_classification_model',
+                'Edge/NVIDIA_Jetson/Application/Computer_Vision/Multi-GMSL_Cameras_for_Real-Time_Object_Detection_and_3D_Reconstruction_on_Jetson_AGX_Orin',
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/deploy_frigate_on_jetson',
                 'Edge/NVIDIA_Jetson/Application/Computer_Vision/AI-NVR_with_Jetson',
               ]
@@ -3664,6 +3678,7 @@ const sidebars = {
             'Edge/NVIDIA_Jetson/FAQs/Solution_for_the_Compatibility_Issue_between_reComputer_and_VEYE_Camera',
             'Edge/NVIDIA_Jetson/FAQs/Use_IMX477_Camera_with_A603',
             'Edge/NVIDIA_Jetson/FAQs/Differences_of_L4T_Between_Seeed_and_NVIDIA',
+            'Edge/NVIDIA_Jetson/FAQs/Overview_of_the_Relationship_Between_JetPack_and_Jetson',
           ]
         }
       ],
@@ -3885,6 +3900,7 @@ const sidebars = {
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
+                  'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
                     ]},
 
           ]
@@ -3899,6 +3915,8 @@ const sidebars = {
           items: [
             'Robotics/Robot_Actuator/Myactuator_Series',
             'Robotics/Robot_Actuator/Damiao_Series',
+            'Robotics/Robot_Actuator/Feetech_Servo',
+            'Robotics/Robot_Actuator/HighTorque',
               ]
         },
         {
@@ -3920,6 +3938,7 @@ const sidebars = {
                   'Robotics/Robot_Sensor/Lidar/Robosense_Lidar',
                   'Robotics/Robot_Sensor/Lidar/MID360',
                   'Robotics/Robot_Sensor/Lidar/A_Loam',
+                  'Robotics/Robot_Sensor/Lidar/SLAMTEC',
                     ]},
             {
               type: 'category',
@@ -3931,6 +3950,16 @@ const sidebars = {
                 items: [
                   'Robotics/Robot_Sensor/Camera/Orbbec_Depth_Camera',
                   'Robotics/Robot_Sensor/Camera/CSI_Camera'
+                    ]},
+            {
+              type: 'category',
+              label: 'IMU',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  'Robotics/Robot_Sensor/IMU/Hexfellow_Y200',
                     ]},
           ]
         },
@@ -3962,6 +3991,7 @@ const sidebars = {
                 items: [
                   'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
                     ]},
+            'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
           ]
 
     },
@@ -3996,119 +4026,34 @@ const sidebars = {
     {
       type: 'doc',
       id: 'Cloud',
-      label: 'Cloud',
+      label: 'SenseCraft & Cloud',
       className: 'sideboard_calss',
     },
     {
       type: 'category',
-      label: 'SenseCraft AI',
+      label: 'SenseCraft',
       collapsed: true,
       collapsible: true,
-      link: {
-        type: "doc",
-        id: 'Cloud_Chain/SenseCraft/SenseCraft_AI/SenseCraft_AI_main_page',
-      },
       items: [
         {
           type: 'autogenerated',
-          dirName: 'Cloud_Chain/SenseCraft/SenseCraft_AI',
+          dirName: 'Cloud_Chain/SenseCraft',
         },
-      ]
-    },
-    {
-      type: 'category',
-      label: 'SenseCAP Dashboard',
-      items: [
-        'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics',
-        'Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration',
-        'Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration',
       ],
     },
     {
       type: 'category',
-      label: 'SenseCAP Portal',
+      label: 'Cloud',
+      collapsed: true,
+      collapsible: true,
       items: [
-        'Cloud_Chain/SenseCAP_Portal/QuickStart',
         {
-          type: 'category',
-          label: 'Management',
-          items: [
-            'Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Dashboard',
-            'Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Data_Management',
-            'Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Device_Management',
-          ],
+          type: 'autogenerated',
+          dirName: 'Cloud_Chain/Cloud',
         },
       ],
     },
 
-    {
-      type: 'category',
-      label: 'SenseCAP Hotspot APP',
-      items: [
-       // 'Cloud_Chain/SenseCAP_Hotspot_APP/Download_APP',
-        'Cloud_Chain/SenseCAP_Hotspot_APP/Introduction',
-       // 'Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet',
-       // 'Cloud_Chain/SenseCAP_Hotspot_APP/Hotspot_Onboarding',
-       // 'Cloud_Chain/SenseCAP_Hotspot_APP/Update_Hotspot_Location',
-       // 'Cloud_Chain/SenseCAP_Hotspot_APP/Update_antenna',
-       // 'Cloud_Chain/SenseCAP_Hotspot_APP/Remote Reboot',
-      //  'Cloud_Chain/SenseCAP_Hotspot_APP/Hotspot_Management',
-      //  'Cloud_Chain/SenseCAP_Hotspot_APP/APP_settings',
-      //  'Cloud_Chain/SenseCAP_Hotspot_APP/FAQ',
-      //  'Cloud_Chain/SenseCAP_Hotspot_APP/forget-wifi-profile',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'SenseCraft APP',
-      items: [
-        'Cloud_Chain/SenseCAP_Mate_APP/sensecraft_app',
-    //    'Cloud_Chain/SenseCAP_Mate_APP/sensecap_mate_app_event',
-         'Cloud_Chain/SenseCAP_Mate_APP/sensecraft_cloud_fee',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'SenseCAP AI',
-      items: [
-        'Cloud_Chain/SenseCAP_AI/How_to_Use SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP',
-        'Cloud_Chain/SenseCAP_AI/xiao-esp32c3-sensecapai',
-      ],
-    },
-    {
-      type: 'category',
-      label: 'SenseCAP API',
-      items: [
-        'Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction',
-        'Cloud_Chain/SenseCAP_API/API_pricing',
-        {
-          type: 'category',
-          label: 'HTTP API',
-          items: [
-            'Cloud_Chain/SenseCAP_API/HTTP_API/Quick_Start',
-            'Cloud_Chain/SenseCAP_API/HTTP_API/HTTP_API_Access_Guide',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Data OpenStream API',
-          items: [
-            'Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Quickstart',
-            'Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Reference',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'Appendix',
-          items: [
-            'Cloud_Chain/SenseCAP_API/Appendix/List_of_Sensor_Types',
-            'Cloud_Chain/SenseCAP_API/Appendix/List_of_Measurement_IDs',
-            'Cloud_Chain/SenseCAP_API/Appendix/List_of_Device_Status_IDs',
-            'Cloud_Chain/SenseCAP_API/Appendix/List_of_Error_Code',
-          ],
-        },
-      ],
-    },
     
     /*
     {
@@ -6246,6 +6191,9 @@ const sidebars = {
       label: 'Actuator',
       items: [
         'zh-CN/Robotics/Robot_Actuator/cn_Myactuator_Series',
+        'zh-CN/Robotics/Robot_Actuator/cn_Damiao_Series',
+        'zh-CN/Robotics/Robot_Actuator/cn_Feetech_Servo',
+        'zh-CN/Robotics/Robot_Actuator/cn_HighTorque',
           ]
     },
     {
@@ -6254,18 +6202,25 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Lidar',
+          label: '激光雷达',
           items: [
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_Robosense_Lidar',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_MID360',
             'zh-CN/Robotics/Robot_Sensor/Lidar/cn_A_Loam',
-              ]},
+            'zh-CN/Robotics/Robot_Sensor/Lidar/cn_SLAMTEC',
+        ]},
         {
           type: 'category',
           label: '摄像头',
           items: [
             'zh-CN/Robotics/Robot_Sensor/Camera/cn_Orbbec_Depth_Camera',
             'zh-CN/Robotics/Robot_Sensor/Camera/cn_CSI_Camera'
+              ]},
+        {
+          type: 'category',
+          label: '陀螺仪',
+          items: [
+            'zh-CN/Robotics/Robot_Sensor/IMU/cn_Hexfellow_Y200',
               ]},
       ]
     },
@@ -6289,6 +6244,7 @@ const sidebars = {
           label: 'Isaag Lab',
           items: [
             'zh-CN/Robotics/Robot_Software/Isaac_Lab/cn_Install_Isaac_lab',
+            'zh-CN/Robotics/cn_XiaoPi',
           ]
         },
       ]
@@ -7990,9 +7946,10 @@ const sidebars = {
       ]
     },
 
+
     {
       type: 'doc',
-      id: 'Spanish/Edge/NVIDIA_Jetson/reComputer_Jetson_Series/es_reComputer_Intro',
+      id: 'Spanish/Edge/NVIDIA_Jetson/es_RecomputerPage',
       label: 'NVIDIA® Jetson™',
       className: 'sideboard_calss',
     },
@@ -11807,7 +11764,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'ja/ja_Cloud',
-      label: 'クラウド',
+      label: 'SenseCraft & クラウド',
       className: 'sideboard_calss',
     },
     {

@@ -310,7 +310,7 @@ Here we will use NVIDIA L4T 36.4.3 to install Jetpack 6.2 on the A608 Carrier Bo
 **Step 1.** [Download](https://developer.nvidia.com/embedded/jetson-linux-r3643) the NVIDIA drivers on the host PC. The required drivers are shown below:
 <div align="center"><img width="{800}" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/A608/jp6.2.png" /></div>
 
-**Step 2.** [Download](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EWjgLHXcemlLjraZ5JAohrcBv0gPkuoQ4vKGyu5U0JmHrQ?e=c0vJNG) peripheral drivers and put all the drivers in same folder.
+**Step 2.** [Download](https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EYGdRLSx_oxDjagkG2J6GTYBB9TDLvTKagnRfQcbz6gplA?e=sswKna) peripheral drivers and put all the drivers in same folder.
 
 Now you will see three compressed files in the same folder:
 

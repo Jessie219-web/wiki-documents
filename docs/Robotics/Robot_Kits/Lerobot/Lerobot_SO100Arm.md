@@ -15,6 +15,10 @@ last_update:
 
 # How to use the SO-ARM100 and SO-ARM101 robotic arm in Lerobot
 
+:::tip
+This tutorial repository maintains the verified stable release of Lerobot as of June 5, 2025. Currently, ​Hugging Face​ has rolled out a ​major upgrade​ to Lerobot, introducing many new features. If you want to experience the latest tutorials, please follow the [​official documentation​ for guidance](https://huggingface.co/docs/lerobot/index).
+:::
+
 ## Introduction
 
 The [SO-10xARM](https://github.com/TheRobotStudio/SO-ARM100) is a fully open-source robotic arm project launched by [TheRobotStudio](https://www.therobotstudio.com/). It includes the follower arm and the leader robotic arm, and also provides detailed 3D printing files and operation guides. [LeRobot](https://github.com/huggingface/lerobot/tree/main) is committed to providing models, datasets and tools for real-world robotics in PyTorch. Its aim is to reduce the entry barrier of robotics, enabling everyone to contribute and benefit from sharing datasets and pretrained models. LeRobot integrates cutting-edge methodologies validated for real-world application, centering on imitation learning. It has furnished a suite of pre-trained models, datasets featuring human-gathered demonstrations, and simulation environments, enabling users to commence without the necessity of robot assembly. In the forthcoming weeks, the intention is to augment support for real-world robotics on the most cost-effective and competent robots presently accessible.
@@ -320,7 +324,11 @@ If you are using a Jetson device, install Pytorch and Torchvision according to [
 ## Configure the motors
 
 :::danger  
-Due to official code and servo manufacturer firmware updates, users before May 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
+Due to official code and servo manufacturer firmware updates, users before June 30, 2025, please download the [Feetech official host computer software](https://gitee.com/ftservo/fddebug/blob/master/FD1.9.8.5(250425).zip) (for Windows systems) first. Power on and connect all servos, select the corresponding `Port Number` -> `Baudrate 1000000` -> `Open` -> `Search`. After detecting all servos, click `Upgrade` -> `Online Detection` -> `Upgrade Firmware` to ensure the firmware version is updated from 3.9 to 3.10 to avoid subsequent issues.  
+:::
+
+:::note
+If the servo cannot be recognized again after a failed firmware update, you can connect another detectable servo directly to the host computer, then perform a motor scan and firmware online detection. Keep the current window open, immediately disconnect the current servo, and connect the unrecognized servo instead. Click ​​"Online Upgrade"​​ within 1 second. If it fails, you can retry multiple times.
 :::
 
 
@@ -893,11 +901,14 @@ cd build
 cmake -Dpybind11_DIR=`pybind11-config --cmakedir` ..
 make -j4
 make install
+cd ~/pyorbbecsdk
+pip install -e .
 ```
 
 3. Test if the depth camera works properly
 ```bash
 cd ~/pyorbbecsdk 
+pip install -e .
 export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
 sudo bash ./scripts/install_udev_rules.sh
 sudo udevadm control --reload-rules && sudo udevadm trigger
@@ -922,11 +933,6 @@ This will automatically load the depth camera environment when starting a termin
 
 After connecting your Orbbec depth camera, run the following script to check the depth data stream and color data stream. Two windows will pop up, allowing you to adjust the camera position. Use Ctrl+C in the terminal to exit. Important: The camera must be connected directly to your device, not through a USB hub, as the hub's bandwidth may be too slow for image data transmission.
 
-```bash
-cd ~/lerobot
-python lerobot/common/robot_devices/OrbbecCamera.py
-```
-
 After adjusting the camera, align the camera parameters in the configuration file at `lerobot/lerobot/common/robot_devices/robots/configs.py`.
 
 ```python
@@ -940,23 +946,11 @@ class So101RobotConfig(ManipulatorRobotConfig):
     ''''''''''''''''
     cameras: dict[str, CameraConfig] = field(
         default_factory=lambda: {
-            "laptop": OpenCVCameraConfig(
-                camera_index=0,            
-                fps=30,
-                width=640,
-                height=480,
-            ),
-            "phone": OpenCVCameraConfig(    # Regular camera, compatible with Orbbec camera
-                camera_index=1,             
-                fps=30,
-                width=640,
-                height=480,
-            ),
             "Orbbec":OrbbecCameraConfig(    # Add Orbbec camera configuration here
                 fps=30,
-                use_depth=True              # Whether to use depth
-                width = 640                 # Resolution automatically adapts to width. Only 640 or 1280 (untested) are valid values
-                Hi_resolution_mode = False  # High resolution mode (may reduce visualization quality but improves depth data resolution)
+                use_depth=True,             # Whether to use depth
+                width = 640,                # Resolution automatically adapts to width. Only 640 or 1280 (untested) are valid values
+                Hi_resolution_mode = False, # High resolution mode (may reduce visualization quality but improves depth data resolution)
             ),
 
         }
