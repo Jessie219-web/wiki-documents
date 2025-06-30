@@ -9,7 +9,7 @@ keywords:
   - Computer Vision
   - application
   - Jetson Agx Orin
-image: https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super2.webp
+image: https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/yolo1.webp
 slug: /multiple_cameras_with_jetson
 last_update:
   date: 06/26/2025
