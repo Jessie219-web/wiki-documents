@@ -3679,6 +3679,7 @@ const sidebars = {
             'Edge/NVIDIA_Jetson/FAQs/Use_IMX477_Camera_with_A603',
             'Edge/NVIDIA_Jetson/FAQs/Differences_of_L4T_Between_Seeed_and_NVIDIA',
             'Edge/NVIDIA_Jetson/FAQs/Overview_of_the_Relationship_Between_JetPack_and_Jetson',
+            'Edge/NVIDIA_Jetson/FAQs/Flash_Jetpack'
           ]
         }
       ],

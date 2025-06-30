@@ -6,7 +6,7 @@ keywords:
 - motor
 - arm
 - robotics
-image:   https://media-cdn.seeedstudio.com/media/catalog/pr…5d/1/-/1-108090023-feetech-st-3215-c001-servo.jpg
+image: https://files.seeedstudio.com/wiki/robotics/Actuator/feetech/Feetech-ST3215-Servo.webp
 slug: /feetech_servo
 last_update:
   date: 06/24/2025

@@ -1,6 +1,6 @@
 // 语言切换器 - 生产环境优化版本
-// 生成时间: 2025-06-26 17:12:27 (北京时间)
-// 多语言页面: 1859 个
+// 生成时间: 2025-06-30 15:05:02 (北京时间)
+// 多语言页面: 1821 个
 
 (function() {
   'use strict';
@@ -27,180 +27,11 @@
     "en",
     "ja"
   ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Device_Status_IDs": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Error_Code": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Measurement_IDs": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Sensor_Types": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Quickstart": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Reference": [
-    "en",
-    "ja"
-  ],
   "/Cloud_Chain/SenseCAP_API/HTTP_API/HTTP_API_Access_Guide": [
     "en",
     "ja"
   ],
   "/Cloud_Chain/SenseCAP_API/HTTP_API/Quick_Start": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Download_APP": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/FAQ": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/forget-wifi-profile": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Hotspot_Management": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Hotspot_Onboarding": [
-    "en",
-    "ja"
-  ],
-  "/SenseCAP_Hotspot_APP": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Remote Reboot": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Update_antenna": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Update_Hotspot_Location": [
-    "en",
-    "ja"
-  ],
-  "/sensecap_mate_app_event": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_cloud_fee": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Dashboard": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Data_Management": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Device_Management": [
-    "en",
-    "ja"
-  ],
-  "/connect_vision_ai_v2_to_ha": [
-    "cn",
-    "en",
-    "ja"
-  ],
-  "/grove_vision_ai_v2_workspace": [
-    "en",
-    "ja"
-  ],
-  "/nvidia_jetson_workspace": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_jetson": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_grove_visionai": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_gpio_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_libraries_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_mqtt_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_sscmacore_library": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_deploy_model_to_jetson": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_pretrained_models_for_grove_visionai_v2": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_pretrained_models_for_watcher": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_pretrained_models_for_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_main": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_overview": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_training_classification": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_training_object_detection": [
-    "en",
-    "ja"
-  ],
-  "/xiao_esp32s3_workspace": [
     "en",
     "ja"
   ],
@@ -2746,6 +2577,18 @@
     "es",
     "ja"
   ],
+  "/damiao_series": [
+    "cn",
+    "en"
+  ],
+  "/feetech_servo": [
+    "cn",
+    "en"
+  ],
+  "/hightorque_series": [
+    "cn",
+    "en"
+  ],
   "/myactuator_series": [
     "cn",
     "en",
@@ -2780,6 +2623,10 @@
     "es",
     "ja"
   ],
+  "/hexfellow_y200": [
+    "cn",
+    "en"
+  ],
   "/a_loam": [
     "cn",
     "en",
@@ -2797,6 +2644,10 @@
     "en",
     "es",
     "ja"
+  ],
+  "/slamtec": [
+    "cn",
+    "en"
   ],
   "/install_isaaclab": [
     "cn",
@@ -8725,6 +8576,10 @@
   "/CN/TinyML/ModelAssistant/Deploy/Deploy_YOLOv8_Pose": [
     "cn",
     "en"
+  ],
+  "/connect_vision_ai_v2_to_ha": [
+    "cn",
+    "ja"
   ]
 };
 
