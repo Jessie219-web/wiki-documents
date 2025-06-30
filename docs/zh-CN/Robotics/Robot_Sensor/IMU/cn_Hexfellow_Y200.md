@@ -5,7 +5,7 @@ keywords:
 - IMU
 - robotics
 image: https://files.seeedstudio.com/wiki/robotics/Sensor/IMU/hexfellow/fig1.jpg
-slug: /cn/cn_hexfellow_y200
+slug: /cn/hexfellow_y200
 last_update:
   date: 06/18/2025
   author: ZhuYaoHui

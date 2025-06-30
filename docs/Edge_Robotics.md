@@ -82,6 +82,14 @@ last_update:
       <span className="text">Damiao DM43 Series</span>
       <span className="tag recommended">New</span>
     </a>
+    <a href="/feetech_servo/" className="nav-item">
+      <span className="text">Feetech STS3215 Servo Motor</span>
+      <span className="tag recommended">New</span>
+    </a>
+    <a href="/hightorque_series/" className="nav-item">
+      <span className="text">HighTorque Series</span>
+      <span className="tag recommended">New</span>
+    </a>
 </div>
 
 </div>
