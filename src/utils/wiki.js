@@ -1,6 +1,34 @@
 const docList = [
   [
     {
+      "path": "/multiple_cameras_with_jetson",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/yolo1.webp",
+      "title": "Multi-GMSL Cameras for Real-Time Object Detection and 3D Reconstruction on Jetson AGX Orin",
+      "date": "06/26/2025"
+    },
+    {
+      "path": "/real_time_yolo_object_detection_using_recamera_based_on_cpp",
+      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
+      "title": "Real-time YOLO object detection using reCamera based on Cpp",
+      "date": "06/26/2025"
+    }
+  ],
+  [
+    {
+      "path": "/feetech_servo",
+      "image": "https://files.seeedstudio.com/wiki/robotics/Actuator/feetech/Feetech-ST3215-Servo.webp",
+      "title": "Feetech Servo Motors Documents Hub",
+      "date": "06/24/2025"
+    },
+    {
+      "path": "/sound_follow_robot",
+      "image": "https://files.seeedstudio.com/wiki/robotics/projects/lerobot/lekiwi/lekiwi_cad_v1.webp",
+      "title": "A Sound Follow Robot Powered by reSpeaker and Lekiwi",
+      "date": "6/24/2025"
+    }
+  ],
+  [
+    {
       "path": "/recomputer_jetson_super_getting_started",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super2.webp",
       "title": "Getting Started with reComputer Super",
@@ -37,7 +65,7 @@ const docList = [
     {
       "path": "/control_robotic_arm_via_gr00t",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/gr00t/dataset.webp",
-      "title": "AI-Powered Control of the Robotic Arm via GR00T",
+      "title": "Control 6/7 DOF Robot Arm using NVIDIA Isaac GR00T N1.5",
       "date": "6/16/2025"
     }
   ],
@@ -53,34 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/SenseCAPS210X/Datacake/image1.webp",
       "title": "Connect to Datacake via TTN",
       "date": "6/10/2025"
-    }
-  ],
-  [
-    {
-      "path": "/recamera_develop_with_c_cpp",
-      "image": "https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp",
-      "title": "Develop on reCamera with c&cpp",
-      "date": "06/09/2025"
-    },
-    {
-      "path": "/overview_of_the_relationship_between_jetpack_and_jetson",
-      "image": "https://files.seeedstudio.com/wiki/reComputer/nvidia-jetpack-6-0-stack.webp",
-      "title": "Overview of the Relationship Between Jetpack and Jetson",
-      "date": "06/05/2025"
-    }
-  ],
-  [
-    {
-      "path": "/recomputer_jetson_super_performance",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/recomputer-super_robotics_2.webp",
-      "title": "reComputer Super vs Classic Next-Gen AI Performance in Edge Inferencing",
-      "date": "06/04/2025"
-    },
-    {
-      "path": "/xiao_w5500_ethernet_adapter",
-      "image": "https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.webp",
-      "title": "Getting Started with XIAO W5500 Ethernet Adapter",
-      "date": "06/04/2025"
     }
   ]
 ];

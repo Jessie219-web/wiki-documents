@@ -7,7 +7,7 @@ keywords:
   - Object detecton
   - YOLO
   - C++
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
 slug: /real_time_yolo_object_detection_using_recamera_based_on_cpp
 last_update:
   date: 06/26/2025
