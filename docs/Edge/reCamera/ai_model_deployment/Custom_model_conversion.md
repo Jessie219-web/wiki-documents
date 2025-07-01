@@ -54,7 +54,7 @@ docker run --privileged --name MyName -v $PWD:/workspace -it sophgo/tpuc_dev:v3.
 Use `pip` to install `tpu_mlir` inside the Docker container, just like in `Method 1`:
 
 ```bash
-pip install tpu_mlir[all]==1.14
+pip install tpu_mlir[all]==1.7
 ```
 
 ### Method 2: Local Installation
