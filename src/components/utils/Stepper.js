@@ -1,64 +1,85 @@
-import React, { useState } from 'react';
+// 文件路径: src/components/Steppers.js
+
+import React, { useState, useEffect, useMemo } from 'react';
+import { useLocation, useHistory } from '@docusaurus/router';
 import { Steps } from 'antd';
 
 export default function Steppers({ children }) {
   const [current, setCurrent] = useState(0);
-  const onChange = (value) => setCurrent(value);
+  const location = useLocation();
+  const history = useHistory();
 
-  const parseChildrenToItems = () => {
-    const items = [];
+  const onChange = (value) => {
+    const targetId = items[value]?.id;
+    if (targetId) {
+      history.push({ hash: `#${targetId}` });
+    }
+  };
+
+  const items = useMemo(() => {
+    const stepsData = [];
+    let currentStep = null;
     const validChildren = React.Children.toArray(children);
-
-    let currentStepDescription = [];
 
     validChildren.forEach(child => {
       if (!React.isValidElement(child)) return;
-
-      // MDX 可能生成 mdxType: 'h3' 的 props，而不是 type: 'h3'。
-      const isHeading = child.props?.mdxType === 'h3' || child.type === 'h3';
+      const mdxType = child.props?.mdxType;
+      const isHeading = typeof mdxType === 'string' && /^h[2-6]$/.test(mdxType);
 
       if (isHeading) {
-        if (items.length > 0 && currentStepDescription.length > 0) {
-          items[items.length - 1].description = <>{currentStepDescription}</>;
-        }
-        currentStepDescription = [];
-        items.push({
-          title: child.props.children,
-          description: null,
-        });
-      } else {
-        currentStepDescription.push(child);
+        if (currentStep) stepsData.push(currentStep);
+        currentStep = {
+          headingElement: child,
+          descriptionElements: [],
+        };
+      } else if (currentStep) {
+        currentStep.descriptionElements.push(child);
       }
     });
+    if (currentStep) stepsData.push(currentStep);
 
-    if (items.length > 0 && currentStepDescription.length > 0) {
-      items[items.length - 1].description = <>{currentStepDescription}</>;
+    return stepsData.map(step => ({
+      id: step.headingElement.props.id,
+      title: step.headingElement.props.children,
+      description: (
+        <>
+          {/* ✨ 核心变更 1: 更新隐形锚点的样式，使用绝对定位来创建偏移 */}
+          {React.cloneElement(step.headingElement, {
+            style: {
+              position: 'absolute',
+              top: `calc(-1 * var(--ifm-navbar-height))`, // 将其向上移动一个导航栏的高度
+              visibility: 'hidden', // 仍然让它不可见
+            },
+          })}
+          {step.descriptionElements}
+        </>
+      ),
+    }));
+  }, [children]);
+
+  useEffect(() => {
+    const hash = decodeURIComponent(location.hash.substring(1));
+    if (hash) {
+      const index = items.findIndex(item => item.id === hash);
+      if (index !== -1 && index !== current) {
+        setCurrent(index);
+      }
     }
+  }, [location.hash, items, current]);
 
-    return items;
-  };
 
-  const items = parseChildrenToItems();
-
-  // 如果没有解析出任何步骤，则不渲染任何内容，避免报错。
-  if (items.length === 0) {
-    // 可以在这里返回一个提示，告诉作者内容格式可能不正确
-    if (process.env.NODE_ENV === 'development') {
-      return (
-        <div style={{ padding: '1rem', border: '1px dashed red', color: 'red', backgroundColor: '#fff5f5' }}>
-          <strong>MarkdownSteps 组件警告:</strong> 未能解析出任何步骤。请确保在 <code>&lt;MarkdownSteps&gt;</code> 内部使用了 <code>### 标题</code> 格式来定义每个步骤。
-        </div>
-      );
-    }
-    return null;
-  }
-
+  if (items.length === 0) { return null; }
+  
   return (
-    <Steps
-      current={current}
-      onChange={onChange}
-      direction="vertical"
-      items={items}
-    />
+    <Steps current={current} onChange={onChange} direction="vertical">
+      {items.map((item) => (
+        <Steps.Step
+          key={item.id}
+          className="stepper-step-item"
+          title={item.title}
+          description={item.description}
+        />
+      ))}
+    </Steps>
   );
 }
