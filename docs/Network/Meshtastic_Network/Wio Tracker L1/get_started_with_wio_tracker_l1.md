@@ -18,6 +18,10 @@ last_update:
 ## Get Started
 
 
+:::note
+Do not erase the flash, as this may damage the device.
+:::
+
 ### Flash Firmware
 
 Visit [Meshtastic Web Flasher](https://flasher.meshtastic.org/).
@@ -30,7 +34,7 @@ Select the target device to `Seeed Wio Tracker L1` and choose the latest firmwar
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/flash-wio-tracker.png" alt="pir" width={800} height="auto" /></p>
 
-Click `Enter DFU Mode`, there will be a serial port named `XIAO-xxx`, click and connect it, and there should be a driver named `XIAO-xxx` display.
+Switch on the device, click `Enter DFU Mode`, there will be a serial port named `Tracker L1`, click and connect it, and there should be a driver named `Tracker L1` display.
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/52840-connect.png" alt="pir" width={800} height="auto" /></p>
 
@@ -133,3 +137,13 @@ Now that you have set the LoRa region on your device, you can continue with conf
 
 
 
+
+### FAQ
+
+#### Entering DFU Mode Manually
+
+Connect the device to your PC, double-press the `Reset` button. The yellow LED will stay solid, and a new USB drive named `Tracker L1` will appear on your PC.
+
+#### Exiting DFU Mode
+
+Press the `Reset` button once to exit DFU mode.
