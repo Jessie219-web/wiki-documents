@@ -904,6 +904,61 @@
 	margin: 10px 20px 10px 0; /* 为图片添加外边距，使其与文本有间隔 */
 }
 
+.stepper-step-item {
+  position: relative;
+}
+
+[data-theme='dark'] {
+  .ant-list-item-meta-title > a {
+    color: var(--ifm-link-color) !important;
+  }
+
+  .ant-list-item-meta-description {
+    color: var(--ifm-color-secondary-darkest) !important;
+  }
+
+  .ant-list-item {
+    border-bottom-color: var(--ifm-toc-border-color) !important;
+  }
+
+  /* 步骤条的标题和描述文字颜色 */
+  .ant-steps-item-title,
+  .ant-steps-item-description {
+    color: var(--ifm-font-color-base) !important;
+  }
+
+  /* “等待中”状态的图标背景和边框颜色 */
+  .ant-steps-item-wait .ant-steps-item-icon {
+    background-color: var(--ifm-hover-overlay) !important;
+    border-color: var(--ifm-color-gray-700) !important;
+  }
+
+  /* “等待中”状态的图标内数字/符号的颜色 */
+  .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    color: var(--ifm-color-secondary-darkest) !important;
+  }
+
+  /* 步骤条之间的连接线颜色 */
+  .ant-steps-item-tail::after {
+    background-color: var(--ifm-color-gray-700) !important;
+  }
+
+
+  /* 1. 将已完成和等待中的步骤默认设为半透明 */
+  .ant-steps-item-finish,
+  .ant-steps-item-wait {
+    opacity: 0.45; 
+    transition: opacity 0.3s ease-in-out; /* 添加过渡效果，让变化更平滑 */
+  }
+
+  /* 2. 将当前正在处理的步骤，以及鼠标悬浮的任何步骤，恢复为完全不透明 */
+  .ant-steps-item-process,
+  .ant-steps-item-finish:hover,
+  .ant-steps-item-wait:hover {
+    opacity: 1;
+  }
+}
+
 /********************* Spencer's CSS Ended******************************/
 
 .button2 {
