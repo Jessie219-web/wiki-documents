@@ -53,7 +53,7 @@ Cloud services are a vital component that enable processed data management from 
             <br/>
             <a href="/sensecraft-data-platform/tutorials/data-management#graph" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Graphical Data in Graph View</font></span></a>
             <br/>
-            <a href="/sensecraft-data_platform/tutorials/data-management#check-account-info" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Account Information</font></span></a>
+            <a href="/sensecraft-data-platform/tutorials/data-management#check-account-info" target="_blank"><span><font color={'FFFFFF'} size={"2"}>Account Information</font></span></a>
             <br/>
     </div>
 </div>
@@ -88,7 +88,7 @@ Cloud services are a vital component that enable processed data management from 
             <div class="start_card_title" style={{textAlign: 'center'}}><font color={'8DC215'} size={"6"}>SenseCAP MX Blockchain App</font></div>
             The SenseCAP HotSpot App is used on mobile phones to manage LoRaWAN hotspots.
             <br/>
-            > <a href="/sensecraft-blockchain/sensecraft-hotspot-app/download-app" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-management" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Hotspot Management</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/remote-reboot" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Remote Reboot</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-onboarding" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Hotspot Onboarding</font></span></a>
+            > <a href="/sensecraft-blockchain/sensecraft-hotspot-app/download-app" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Download</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot_management" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Hotspot Management</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/remote-reboot" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Remote Reboot</font></span></a> / <a href="/sensecraft-blockchain/sensecraft-hotspot-app/hotspot-onboarding" target="_blank"><span><font color={'FFFFFF'} size={"3"}>Hotspot Onboarding</font></span></a>
     </div>
 </div>
 
