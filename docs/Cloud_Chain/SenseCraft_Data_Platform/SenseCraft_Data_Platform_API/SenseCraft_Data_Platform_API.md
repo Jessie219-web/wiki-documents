@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 description: SenseCAP API Introduction
-title: SenseCraft Data Platform Introduction
+title: SenseCraft Data Platform API Introduction
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
@@ -13,7 +13,7 @@ last_update:
   author: Matthew
 ---
 
-# SenseCraft Data Platform Introduction
+# SenseCraft Data Platform API Introduction
 
 
 =============================
