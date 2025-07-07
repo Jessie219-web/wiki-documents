@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 description: Download APP
-title: SenseCAP Hotspot APP
+title: SenseCraft Hotspot APP
 keywords:
 - Cloud and Chain
 - SenseCAP 
