@@ -22,6 +22,17 @@ The reComputer Robotics J401 is a compact, high-performance edge AI carrier boar
 
 Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1, the reComputer Robotics J401 bridges large language model-driven decision-making with physical robotics control, such as motion planning and sensor fusion. Ideal for the rapid development of autonomous robots, it accelerates time-to-market with ready-to-use interfaces and optimized AI frameworks.
 
+
+<div align="center">
+  <img width="600" src="https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer-robotics-carrier-board.png"/>
+</div>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J401-Carrier-Board-optional-accessories.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
+    </a>
+</div>
+
 ## reComputer Jetson Robotics J401 Carrier Board overview
 
 | **Top View** |
@@ -33,11 +44,7 @@ Supporting frameworks like NVIDIA Isaac ROS, Hugging Face, PyTorch, and ROS 2/1,
 | ![fig3](https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/carrier_board/bottom.png) |
 
 
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/reComputer-Robotics-J401-Carrier-Board-optional-accessories.html">
-            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱</font></span></strong>
-    </a>
-</div>
+
 
 ## Part List
 - reComputer Robotics J401 Carrier Board x 1
@@ -837,7 +844,7 @@ Here are the Robotics j401 carrier board GMSL2 camera expansion board connection
 The reComputer Jetson Robotics J401  is equipped with an DP1.4 (included in Type-C Host) for high-resolution display output.
 
 ## Resources
-- [reComputer Robotics J401 Carrier Board Bazaar Bundle Page](https://www.seeedstudio.com/reComputer-Robotics-Bundle.html)
+- [reComputer Robotics J401 Carrier Board Schematic](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer%20Robotics%20J401_V1.0_SCH_250421.pdf)
 - [reComputer Robotics J401 Carrier Board Datasheet](https://files.seeedstudio.com/products/NVIDIA-Jetson/reComputer_robotics_J401_datasheet.pdf)
 
 ## Tech Support & Product Discussion
