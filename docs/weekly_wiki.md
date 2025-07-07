@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 06/30/2025
+  date: 07/07/2025
   author: Frank
 ---
 
@@ -17,25 +17,19 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is June 30th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is July 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [A Sound Follow Robot Powered by reSpeaker and Lekiwi](https://wiki.seeedstudio.com/sound_follow_robot/)
+### [Getting Started with Phospho](https://wiki.seeedstudio.com/control_robotic_arm_via_phospho/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/sound_follow/robot.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/phospho/phospho_1.png" alt="pir" width={800} height="auto" /></p>
 
-The Lewiki Robot Kit, integrated with the ReSpeaker Mic Array v2.0, gains voice interaction and sound navigation capabilities. This guide details the step-by-step process for configuring both hardware and software environments to achieve sound-following functionality on the robot.
+Phospho is how ML engineers make real robots intelligent. We provide the hardware, libraries, and remote control capabilities so developers can collect data, train AI models and deploy applications to real robots in minutes instead of months. In this wiki, we will demonstrate SO Arm 100 robotic arm motion control using phospho.
 
-### [Multi-GMSL Cameras for Real-Time Object Detection and 3D Reconstruction on Jetson AGX Orin](https://wiki.seeedstudio.com/multiple_cameras_with_jetson/)
+### [Integrate AI Space Butler into Home Assistant](https://wiki.seeedstudio.com/ha_dify_watcher_llms/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/yolo1.gif" alt="pir" width={800} height="auto" /></p>
-
-This wiki will use the reServer Industrial J501 Carrier Board with the GMSL extension board to introduce how to deploy real-time object detection and 3D reconstruction in a multi-camera system.
-
-### [Real-time YOLO object detection using reCamera based on Cpp](https://wiki.seeedstudio.com/real_time_yolo_object_detection_using_recamera_based_on_cpp/)
-
-This document demonstrates how to implement real-time photo capture, YOLO object detection, and result access by HTTP with C++ based on cross-compilation on reCamera terminals. This approach avoids the overheating issues encountered when using Node-RED on reCamera. You can refer to this document to modify the C++ code for customized computer vision applications.
+This article will provide a step-by-step guide on how to use Dify, the Xiaozhi backend service, and the SenseCAP Watcher to integrate an AI assistant—capable of contextual understanding, device control, status queries, and even knowledge-based Q&A—into your Home Assistant smart home system. You will learn how to make AI a truly effective assistant in your smart life through simple voice interactions.
 
 ## Existing Wiki Updated
 
@@ -60,7 +54,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 
 ## Past Weekly wiki
 
-<details><summary>Click here</summary>
+<details>
+<summary>Click here</summary>
 
 <!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
@@ -174,5 +169,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
 - [weekly wiki on 2025.6.16th](/Seeed_Elderly/weekly_wiki/wiki250616)
 - [weekly wiki on 2025.6.23rd](/Seeed_Elderly/weekly_wiki/wiki250623)
+- [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
 
 </details>
