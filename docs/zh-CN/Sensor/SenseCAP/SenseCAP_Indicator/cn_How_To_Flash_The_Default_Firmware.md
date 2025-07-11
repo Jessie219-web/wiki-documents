@@ -316,8 +316,7 @@ esptool.exe --chip esp32s3 --port COMx --baud 921600 write_flash -z 0x0 indicato
         <td>
         <div style={{textAlign: 'center'}}><strong>芯片类型</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>ESP32-S3</div>
-        </td>
+        <td><div  style={{textAlign: 'center'}}>ESP32-S3</div></td>
     </tr>
     <tr>
       <td>
@@ -356,8 +355,7 @@ esptool.exe --chip esp32s3 --port COMx --baud 921600 write_flash -z 0x0 indicato
         <td>
         <div style={{textAlign: 'center'}}><strong>SPI 速度</strong></div>
         </td>
-        <td><div  style={{textAlign: 'center'}}>40MHz</div>
-        </td>
+        <td><div  style={{textAlign: 'center'}}>40MHz</div></td>
     </tr>
     <tr>
       <td>
@@ -466,7 +464,9 @@ RP2040 开发工具利用 Arduino 提升您的编码体验。
     <tr>
         <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/board.png" style={{width:680, height:'auto'}}/></div></td>
     </tr>
-     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png" style={{width:680, height:'auto'}}/></div></td>
+    <tr>
+        <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/SenseCAP_Indicator/portport.png" style={{width:680, height:'auto'}}/></div></td>
+    </tr>
   </table>
 </div>
 

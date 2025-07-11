@@ -33,15 +33,15 @@ sku:
     <tbody><tr>
       </tr>
       <tr>
-        <td align="center">正面
-        </td><td align="center">背面
-        </td></tr>
+        <td align="center">正面</td>
+        <td align="center">背面</td>
+      </tr>
       <tr>
         <td align="center">
-          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware1.png" alt />
+          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware1.png" alt="" />
         </td>
         <td align="center">
-          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware2.png" alt />
+          <img width={700} src="https://files.seeedstudio.com/wiki/reComputer/reComputerJ2032hardware2.png" alt="" />
         </td>
       </tr>
     </tbody></table>

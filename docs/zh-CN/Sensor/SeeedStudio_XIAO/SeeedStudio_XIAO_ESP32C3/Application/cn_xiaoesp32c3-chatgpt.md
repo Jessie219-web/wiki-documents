@@ -89,7 +89,7 @@ Seeed Studio XIAO ESP32C3 是一款基于 Espressif ESP32-C3 WiFi/Bluetooth 双�
 - **步骤 4.** 在 Arduino IDE 中添加 ESP32 板卡包。
 
 导航到 **文件 > 首选项**，并在 **"附加板管理器 URLs"** 中填写以下 URL：
-*<https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json>*
+*https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json*
 
 <div align="center"><img width ="600" src="https://files.seeedstudio.com/wiki/xiaoesp32c3-chatgpt/4.png"/></div>
 

@@ -21,72 +21,75 @@ with Intel Edison.It includes an Edison expansion board named Xadow-Edison and
 ##   Part list
 
 <table>
-  <tbody><tr>
+  <tbody>
+  <tr>
       <th> Parts </th>
       <th> Count </th>
       <th> Parts</th>
-      <th> Count
-      </th></tr>
+      <th> Count</th>
+      </tr>
     <tr>
       <td> Xadow - Edison </td>
       <td> 1</td>
       <td> Xadow - 3 Axis Accelerometer</td>
-      <td> 1
-      </td></tr>
+      <td> 1</td>
+      </tr>
     <tr>
       <td> Xadow - Edison Programmer</td>
       <td> 1</td>
       <td> Xadow - Barometer BMP 180</td>
-      <td> 1
-      </td></tr>
+      <td> 1</td>
+      </tr>
     <tr>
       <td> Xadow - Edison SD</td>
       <td> 1</td>
       <td> Battery</td>
-      <td> 1
-      </td></tr>
+      <td> 1</td>
+      </tr>
     <tr>
       <td> Xadow - Q Touch Sensor </td>
       <td> 1</td>
       <td> Digital RGB LED Flexi-Strip</td>
-      <td> 1
-      </td></tr>
+      <td> 1</td>
+      </tr>
     <tr>
       <td> Xadow - NFC </td>
       <td> 1</td>
       <td> Power cable White</td>
-      <td> 5
-      </td></tr>
+      <td> 5</td>
+      </tr>
     <tr>
       <td> Xadow - Breakout</td>
       <td> 3 </td>
       <td> Power cable Red</td>
-      <td> 5
-      </td></tr>
+      <td> 5</td>
+      </tr>
     <tr>
       <td> Xadow - Buzzer </td>
       <td> 1</td>
       <td> Power cable Yellow</td>
-      <td> 5
-      </td></tr>
+      <td> 5</td>
+      </tr>
     <tr>
       <td> Xadow - Vibration Motor </td>
       <td> 1</td>
       <td> FFC cable package</td>
-      <td> 1
-      </td></tr>
+      <td> 1</td>
+      </tr>
     <tr>
       <td> Xadow - OLED </td>
       <td> 1</td>
       <td> Color printed Tutorial</td>
-      <td> 1
-      </td></tr>
+      <td> 1</td>
+      </tr>
     <tr>
       <td>  NFC Tags</td>
       <td> 3</td>
       <td> </td>
-      <td>
-      </td></tr></tbody></table>
+      <td> </td>
+      </tr>
+      </tbody>
+      </table>
 
 
 ##   Getting Started

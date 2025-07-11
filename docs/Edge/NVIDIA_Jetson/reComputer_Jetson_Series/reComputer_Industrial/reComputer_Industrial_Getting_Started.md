@@ -104,7 +104,7 @@ reComputer industrial has 2 RJ45 GbE ports, one of which is a PoE PSE port for p
     </tr>
     <tr>
       <td>Video Decode</td>
-      <td colSpan={2}>1*8K30 (H.265) | 2*4K60 (H.265) | 4*4K30 (H.265) | 9*1080p60 (H.265) | 18*1080p30 (H.265)</td>
+      <td colSpan={2}>1×8K30 (H.265) | 2×4K60 (H.265) | 4×4K30 (H.265) | 9×1080p60 (H.265) | 18×1080p30 (H.265)</td>
       <td colSpan={2}>1*4K60 (H.265) | 2*4K30 (H.265) | 5*1080p60 (H.265) | 11*1080p30 (H.265)</td>
       <td colSpan={2}>2*8K30 | 6*4K60 | 12*4K30 | 22*1080p60 | 44*1080p30 (H.265)<br /> 2*4K60 | 6*4K30 | 10*1080p60 | 22*1080p30 (H.264)</td>
     </tr>
@@ -187,7 +187,7 @@ reComputer industrial has 2 RJ45 GbE ports, one of which is a PoE PSE port for p
     <tr>
       <td rowSpan={3}>Mechanical<br /></td>
       <td>Dimensions (W x D x H)</td>
-      <td colSpan={6}>159mm*155mm*57mm</td>
+      <td colSpan={6}>159mm×155mm×57mm</td>
     </tr>
     <tr>
       <td>Weight</td>
@@ -334,7 +334,8 @@ The first method download is around 14GB and the second method download is about
 <TabItem value="Method 1" label="Method 1">
 
 - **Step 1:** Download the system image to your Ubuntu PC corresponding to the board you are using
-  <div class="table-center">
+
+<div class="table-center">
   <table style={{textAlign: 'center'}}>
   <thead>
     <tr>
@@ -621,6 +622,7 @@ Please complete the **System Configuration** according to your needs.
 
 
 </TabItem>
+
 <TabItem value="Jetpack 6.0" label="Jetpack6.0">
 
 - **Step 1:**Download the system image to your Ubuntu PC corresponding to the board you are using

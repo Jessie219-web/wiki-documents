@@ -161,7 +161,8 @@ Si es la primera vez que usas Arduino, te recomendamos encarecidamente que consu
 #### Paso 1. Descarga e instala la versión estable del IDE de Arduino según tu sistema operativo.
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software">
+        <strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
     </a>
 </div>
 

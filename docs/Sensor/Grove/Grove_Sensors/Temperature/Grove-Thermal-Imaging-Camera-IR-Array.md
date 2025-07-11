@@ -11,12 +11,16 @@ last_update:
 ---
 
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/grove-thermal-imaging-camera_-ir-array-mlx90641-55-front.jpg" /><figcaption><b /> <i>Grove - Thermal Imaging Camera / IR Array MLX90641</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/grove-thermal-imaging-camera_-ir-array-mlx90641-55-front.jpg" />
+  <figcaption><b /> <i>Grove - Thermal Imaging Camera / IR Array MLX90641</i></figcaption>
 </div>
 
 This IR thermal camera carries a 16x12 array of thermal sensors **(MLX90641)** and it can detect the temperature of objects from far away with a center area accuracy of ±1℃ and average accuracy of ±1.5℃. In order to obtain the thermal images easily, the I2C protocol is used to get the low-resolution images from the camera. The FOV (Field of View) of this camera is 110°x75°, and the temperature measurement range is -40℃ to 300℃. In order to obtain the thermal image easily, I2C protocol is used to get the low-resolution image from the camera.
 
-<div align="center"><img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/90640.png" /><figcaption><b /> <i>Grove - Thermal Imaging Camera / IR Array MLX90640</i></figcaption>
+<div align="center">
+  <img src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/90640.png" />
+  <figcaption><b /> <i>Grove - Thermal Imaging Camera / IR Array MLX90640</i></figcaption>
 </div>
 
 While Grove - Thermal Imaging Camera is a thermal sensor **(MLX90640)** , carrying a 32x24 array of thermal sensors, and it can detect the temperature of objects from feet away with the accuracy of ±1.5℃ and can present dynamic thermal images and detect the surrounding temperature from -40℃~300℃. The camera with narrow-angle/wide-angle has an FOV(Field of View) of 55°x35°/110°x75°.In order to obtain the thermal image easily, I2C protocol is used to get the low-resolution image from the camera.

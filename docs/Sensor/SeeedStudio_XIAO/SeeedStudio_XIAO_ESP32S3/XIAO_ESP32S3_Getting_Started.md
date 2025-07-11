@@ -345,7 +345,8 @@ All the programs about cameras in the Wiki are compatible with both OV5640、OV2
 
 Ensure optimal cooling for your XIAO ESP32S3 Sense by installing our upgraded heat sink. This new design is tailored to address the cooling deficiencies observed with the previous models, particularly during intensive operations like camera usage. Feedback highlighted that the original heat sink did not adequately dissipate heat, leading to the development of a more effective solution.
 
-<details><summary>Click to View Performance Comparison</summary>
+<details>
+<summary>Click to View Performance Comparison</summary>
 
 Our testing has demonstrated the benefits of the upgraded heat sink over the original setup:
 
@@ -432,8 +433,7 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 - **Step 1.** Download and Install the stable version of Arduino IDE according to your operating system.
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
 </div>
 
 - **Step 2.** Launch the Arduino application.

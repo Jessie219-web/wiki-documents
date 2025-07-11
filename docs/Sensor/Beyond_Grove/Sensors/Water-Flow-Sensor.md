@@ -51,8 +51,8 @@ Water flow sensor consists of a copper body, a water rotor, and a hall-effect se
 |Material Description |H57Copper+POM|
 |Storage Temperature |-25～+ 80℃|
 |Storage Humidity |25%～95%RH|
-|Output Pulse High Level |>DC 4.7V (Input Voltage DC5V)|
-|Output Pulse Low Level |<DC 0.5V (Input Voltage DC5V)|
+|Output Pulse High Level |&gt;DC 4.7V (Input Voltage DC5V)|
+|Output Pulse Low Level |&lt;DC 0.5V (Input Voltage DC5V)|
 |Output Pulse Duty Cycle| 50%±10%|
 
 ## What is a water flow sensor (meter)

@@ -32,11 +32,11 @@ tags:
 
 <div align="center">
   <table>
-    <tbody><tr>
-        <td align="center"><a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank"><span>A205E 扩展板</span></a>
-        </td>
-        <td align="center"><a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank"><span>A205E Mini PC</span></a>
-        </td></tr>
+    <tbody>
+      <tr>
+        <td align="center"><a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank"><span>A205E 扩展板</span></a></td>
+        <td align="center"><a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank"><span>A205E Mini PC</span></a></td>
+      </tr>
       <tr>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank" rel="noopener"><img width={350} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/5/_/5_7_1.png" alt /></a>
@@ -45,7 +45,8 @@ tags:
           <a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank" rel="noopener"><img width={380} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/1/_/1_9_2.png" alt /></a>
         </td>
       </tr>
-    </tbody></table>
+    </tbody>
+  </table>
 </div>
 
 ## 开始
@@ -74,10 +75,11 @@ tags:
 
 <div align="center">
   <table>
-    <tbody><tr>
-        <td align="center">A205E 扩展板
-        </td><td align="center">A205E Mini PC
-        </td></tr>
+    <tbody>
+      <tr>
+        <td align="center">A205E 扩展板</td>
+        <td align="center">A205E Mini PC</td>
+      </tr>
       <tr>
         <td align="center">
           <a href="https://www.seeedstudio.com/A205E-Carrier-Board-for-Jetson-Nano-Xavier-NX-p-5496.html" target="_blank" rel="noopener"><img width={350} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/a/n/antenna_dc_jack_io_controller_20_pin_1_.png" alt /></a>
@@ -86,7 +88,8 @@ tags:
           <a href="https://www.seeedstudio.com/A205E-Mini-PC-with-128GB-SSD-p-5495.html" target="_blank" rel="noopener"><img width={380} src="https://media-cdn.seeedstudio.com/media/catalog/product/cache/b5e839932a12c6938f4f9ff16fa3726a/2/_/2_8_3.png" alt /></a>
         </td>
       </tr>
-    </tbody></table>
+    </tbody>
+  </table>
 </div>
 
 要将 A205E 置于强制恢复模式，请确保 A205E 已关闭电源。

@@ -267,7 +267,7 @@ bool getLocation(){
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-ESP32S3-Geolocation/12.png" style={{width:800, height:'auto'}}/></div>
 
-如果您是首次注册用户，将会有 **$300** 的免费额度。这里我们主要使用的是 Maps Static API，其费用为 **$2.00 每 1000 次调用**。
+如果您是首次注册用户，将会有 **\$300** 的免费额度。这里我们主要使用的是 Maps Static API，其费用为 **\$2.00 每 1000 次调用**。
 
 ### 第 4 步：[设置您的 Google Cloud 项目](https://developers.google.com/maps/documentation/elevation/cloud-setup)并完成后续的设置说明
 
@@ -314,7 +314,7 @@ https://maps.googleapis.com/maps/api/staticmap?parameters
 
 Maps Static API 使用以下 URL 参数定义地图图像：
 
-- `center`（如果未提供 markers 则为必需）定义地图的中心点，该点与地图所有边缘等距。此参数接受一个以逗号分隔的 {latitude,longitude} 坐标对（例如 "40.714728,-73.998672"）或一个字符串地址（例如 "city hall, new york, ny"），用于标识地球表面上的唯一位置。
+- `center`（如果未提供 markers 则为必需）定义地图的中心点，该点与地图所有边缘等距。此参数接受一个以逗号分隔的 \{latitude,longitude\} 坐标对（例如 "40.714728,-73.998672"）或一个字符串地址（例如 "city hall, new york, ny"），用于标识地球表面上的唯一位置。
 - `zoom`（如果未提供 markers 则为必需）定义地图的缩放级别，决定地图的放大程度。此参数接受一个数值，表示所需区域的缩放级别。
 - `size`（必需）定义地图图像的矩形尺寸。此参数接受一个格式为 `{horizontal_value}x{vertical_value}` 的字符串。
 - `maptype`（可选）定义要构建的地图类型。可能的 maptype 值包括 roadmap、satellite、hybrid 和 terrain。

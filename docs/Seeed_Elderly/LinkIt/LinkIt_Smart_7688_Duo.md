@@ -323,7 +323,7 @@ Next, you will need to install drivers depending on your operating system. The s
 :::
 :::note
     For Windows 7, find the Serial COM port INF driver in the following path. You can also install it from here.
-{ARDUINO_IDE_PREFERENCE_LOCATION}Arduino15/packages/LinkIt/hardware/avr/0.1.5/driver/linkit_smart_7688.inf
+`<Arduino IDE Preference Location>`Arduino15/packages/LinkIt/hardware/avr/0.1.5/driver/linkit_smart_7688.inf
 :::
 You will find the Arduino preference location at **File -> Preferences**, see the **preference.txt path**.
 

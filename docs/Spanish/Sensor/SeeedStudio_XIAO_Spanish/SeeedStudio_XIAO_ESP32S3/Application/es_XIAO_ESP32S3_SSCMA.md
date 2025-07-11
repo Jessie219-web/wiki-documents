@@ -193,7 +193,7 @@ Después de subir las imágenes, deberás anotarlas etiquetando los gestos de la
 Roboflow ofrece tres formas diferentes de etiquetar imágenes: Auto Label, Roboflow Labeling y Manual Labeling.
 
 - [**Auto Label**](https://blog.roboflow.com/yolo-world-prompting-tips/): Usa un modelo generalizado grande para etiquetar automáticamente las imágenes.
-- **Roboflow Labeling**: Trabaja con un equipo profesional de etiquetadores humanos. No hay volumen mínimo. Sin compromisos por adelantado. Las anotaciones de cuadro delimitador comienzan en $0.04 y las anotaciones de polígono comienzan en $0.08.
+- **Roboflow Labeling**: Trabaja con un equipo profesional de etiquetadores humanos. No hay volumen mínimo. Sin compromisos por adelantado. Las anotaciones de cuadro delimitador comienzan en \$0.04 y las anotaciones de polígono comienzan en \$0.08.
 - **Manual Labeling**: Tú y tu equipo etiquetan sus propias imágenes.
 
 A continuación se describe el método más comúnmente utilizado de etiquetado manual.
