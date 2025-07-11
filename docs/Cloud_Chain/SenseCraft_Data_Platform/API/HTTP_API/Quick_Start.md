@@ -5,7 +5,9 @@ title: HTTP API Quickstart
 keywords:
 - HTTP API 
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Cloud_Chain/SenseCAP_API/HTTP_API/Quick_Start
+slug: /sensecraft-data-platform/api/http-api/quick-start
+aliases:
+  - /Cloud_Chain/SenseCAP_API/HTTP_API/Quick_Start
 last_update:
   date: 1/13/2023
   author: shuxu hu
