@@ -15,7 +15,7 @@ last_update:
 
 ## Introducción
 
-El reTerminal, como un excelente dispositivo de Interfaz Hombre-Máquina (HMI), ha sido adoptado en muchos sistemas de diferentes ámbitos. Como interfaz del sistema, es buena idea montar el reTerminal en lugar de sostenerlo con la mano. En esta sección, discutiremos las distintas soluciones de montaje para el reTerminal. El contenido cubre la [Especificación de los Tornillos de Hardware](#Hardware_Specification_of_the_Screw) y los [Diseños de la Comunidad](#Community_Design).
+El reTerminal, como un excelente dispositivo de Interfaz Hombre-Máquina (HMI), ha sido adoptado en muchos sistemas de diferentes ámbitos. Como interfaz del sistema, es buena idea montar el reTerminal en lugar de sostenerlo con la mano. En esta sección, discutiremos las distintas soluciones de montaje para el reTerminal. El contenido cubre la especificación de los Tornillos de Hardware y los Diseños de la Comunidad.
 
 ## Especificación de los Tornillos de Hardware
 

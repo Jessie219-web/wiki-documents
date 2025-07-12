@@ -47,7 +47,7 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Carrier Board A205E 
 
 Podemos hacer esto fácilmente usando la **Terminal Linux**. Para las personas que tienen una base de conocimientos de Linux, recomendamos encarecidamente utilizar únicamente la Terminal de Linux.
 
-- [Flasheo de JetPack OS mediante la terminal de Linux](#flashing-jetpack-os-via-command-line)
+- Flasheo de JetPack OS mediante la terminal de Linux
 
 ### Preparación de Software
 

@@ -126,7 +126,7 @@ Entonces, hay dos formas de seguir esta wiki:
 
 Sin embargo, se recomienda comenzar con la primera opción y luego pasar a la segunda.
 
-## <span id="jump1">1. Entrena tu propio modelo de IA con un conjunto de datos público</span>
+## 1. Entrena tu propio modelo de IA con un conjunto de datos público {#jump1}
 
 El primer paso en un proyecto de detección de objetos es obtener datos para el entrenamiento. Puedes descargar conjuntos de datos públicos disponibles o crear los tuyos propios.
 
@@ -295,7 +295,7 @@ Esto generará un fragmento de código que usaremos más adelante dentro del ent
 
 Una vez que hemos terminado de anotar el conjunto de datos, necesitamos entrenarlo. Dirígete a [esta sección](https://wiki.seeedstudio.com/Vision_AI_with_Customizable_Models/#train-using-yolov5-on-google-colab) donde se explica cómo entrenar un modelo de IA usando YOLOv5 ejecutándose en Google Colab.
 
-## <span id="jump3">3. Implementar el modelo entrenado y realizar inferencias</span>
+## 3. Implementar el modelo entrenado y realizar inferencias {#jump3}
 
 ### Módulo Grove - Vision AI
 

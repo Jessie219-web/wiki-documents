@@ -48,13 +48,13 @@ Seeed Studio XIAO ESP32C3 是一款基于 Espressif ESP32-C3 WiFi/Bluetooth 双�
 
 本教程中的任务可以分为以下四个主要步骤：
 
-1. [配置 XIAO ESP32C3 连接网络](#configure-the-xiao-esp32c3-to-connect-to-the-network)：在此步骤中，我们将学习使用 XIAO ESP32C3 进行基本的 WiFi 配置过程，并学习 XIAO ESP32C3 的基本操作，例如网络配置、连接网络服务和获取 IP 地址。
+1. 配置 XIAO ESP32C3 连接网络：在此步骤中，我们将学习使用 XIAO ESP32C3 进行基本的 WiFi 配置过程，并学习 XIAO ESP32C3 的基本操作，例如网络配置、连接网络服务和获取 IP 地址。
 
-2. [构建嵌入式网页](#build-the-embedded-web-page)：在此步骤中，我们主要接触 WiFi Client 库。通过使用该库的 GET 和 POST 功能，我们可以使用 HTML 编写自己的问答网页并将其部署在 XIAO ESP32C3 上。
+2. 构建嵌入式网页：在此步骤中，我们主要接触 WiFi Client 库。通过使用该库的 GET 和 POST 功能，我们可以使用 HTML 编写自己的问答网页并将其部署在 XIAO ESP32C3 上。
 
-3. [通过内置网页提交问题](#submit-questions-via-the-built-in-web-page)：在此步骤中，我们将主要学习如何使用 HTTP Client 中的 POST 方法，根据 OpenAI API 标准提交我们提出的问题。我们将重点关注如何从网页中收集和存储问题的过程。
+3. 通过内置网页提交问题：在此步骤中，我们将主要学习如何使用 HTTP Client 中的 POST 方法，根据 OpenAI API 标准提交我们提出的问题。我们将重点关注如何从网页中收集和存储问题的过程。
 
-4. [从 ChatGPT 获取答案](#get-answers-from-chatgpt)：在此步骤中，我们学习如何使用 HTTP Client 中的 POST 方法，并从返回的消息中提取我们需要的问题答案。最后一步是整理代码结构并进行最终集成。
+4. 从 ChatGPT 获取答案：在此步骤中，我们学习如何使用 HTTP Client 中的 POST 方法，并从返回的消息中提取我们需要的问题答案。最后一步是整理代码结构并进行最终集成。
 
 ### 所需材料
 

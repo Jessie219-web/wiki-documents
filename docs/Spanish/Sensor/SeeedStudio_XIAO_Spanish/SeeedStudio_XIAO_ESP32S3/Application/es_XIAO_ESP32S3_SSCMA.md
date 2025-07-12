@@ -23,13 +23,13 @@ Luego pasaremos al despliegue de nuestro modelo entrenado utilizando el SenseCra
 
 Desde el conjunto de datos hasta la llegada del modelo, tendremos los siguientes pasos principales:
 
-1. [Conjuntos de Datos Etiquetados](#labelled-datasets) —— Este capítulo se centra en cómo obtener conjuntos de datos que puedan ser entrenados en modelos. Hay dos formas principales de hacer esto. La primera es utilizar los conjuntos de datos etiquetados proporcionados por la comunidad de Roboflow, y la otra es usar tus propias imágenes específicas del escenario como conjuntos de datos, pero necesitarás pasar manualmente por el proceso de etiquetado.
+1. Conjuntos de Datos Etiquetados —— Este capítulo se centra en cómo obtener conjuntos de datos que puedan ser entrenados en modelos. Hay dos formas principales de hacer esto. La primera es utilizar los conjuntos de datos etiquetados proporcionados por la comunidad de Roboflow, y la otra es usar tus propias imágenes específicas del escenario como conjuntos de datos, pero necesitarás pasar manualmente por el proceso de etiquetado.
 
-2. [Modelo Exportado de Conjunto de Datos Entrenado](#training-dataset-exported-model) —— Este capítulo se enfoca en cómo entrenar para obtener un modelo que pueda ser desplegado en el XIAO ESP32S3 basado en el conjunto de datos obtenido en el primer paso, utilizando la plataforma Google Colab.
+2. Modelo Exportado de Conjunto de Datos Entrenado —— Este capítulo se enfoca en cómo entrenar para obtener un modelo que pueda ser desplegado en el XIAO ESP32S3 basado en el conjunto de datos obtenido en el primer paso, utilizando la plataforma Google Colab.
 
-3. [Subir Modelos a través del SenseCraft Model Assistant](#upload-models-via-sensecraft-model-assistant) —— Esta sección describe cómo usar el archivo del modelo exportado para subir el modelo al XIAO ESP32S3 utilizando el SenseCraft Model Assistant.
+3. Subir Modelos a través del SenseCraft Model Assistant —— Esta sección describe cómo usar el archivo del modelo exportado para subir el modelo al XIAO ESP32S3 utilizando el SenseCraft Model Assistant.
 
-4. [Protocolos Comunes y Aplicaciones del Modelo](#common-protocols-and-applications-of-the-model) —— Finalmente, presentaremos el formato unificado de comunicación de datos de SenseCraft AI para que puedas aprovechar al máximo el potencial de tus dispositivos y modelos para crear aplicaciones que se ajusten a tus escenarios.
+4. Protocolos Comunes y Aplicaciones del Modelo —— Finalmente, presentaremos el formato unificado de comunicación de datos de SenseCraft AI para que puedas aprovechar al máximo el potencial de tus dispositivos y modelos para crear aplicaciones que se ajusten a tus escenarios.
 
 Así que, ¡vamos a sumergirnos y comenzar el emocionante proceso de dar vida a tus datos!
 

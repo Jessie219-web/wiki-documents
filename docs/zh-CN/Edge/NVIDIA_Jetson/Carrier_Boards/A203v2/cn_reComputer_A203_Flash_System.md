@@ -43,8 +43,8 @@ tags:
 
 我们可以使用 **NVIDIA SDK Manager 和 Linux 终端**来刷写系统，或者仅通过 **Linux 终端**轻松完成此操作。对于有 Linux 基础知识的用户，我们强烈推荐仅使用 Linux 终端。
 
-- [通过 NVIDIA SDK Manager 和 Linux 终端刷写 JetPack OS](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [通过 Linux 终端刷写 JetPack OS](#flashing-jetpack-os-via-command-line)
+- 通过 NVIDIA SDK Manager 和 Linux 终端刷写 JetPack OS
+- 通过 Linux 终端刷写 JetPack OS
 
 在开始之前，我们需要进行一些准备工作：
 

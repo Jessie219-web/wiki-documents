@@ -182,7 +182,7 @@ Después de la unión inicial, futuras reconexiones del mismo dispositivo serán
 
 - Para más detalles sobre dispositivos Helium, consulta [aquí](https://docs.helium.com/use-the-network/console/migrating-devices).
 
-- Para información sobre cómo agregar dispositivos Grove - Wio-E5 a Helium Console, consulta [aquí](#jump1).
+- Para información sobre cómo agregar dispositivos Grove - Wio-E5 a Helium Console, consulta aquí.
 
 ### Consola Helium - Funciones
 

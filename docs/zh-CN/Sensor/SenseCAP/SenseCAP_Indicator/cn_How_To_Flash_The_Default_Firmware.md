@@ -63,7 +63,7 @@ SenseCAP 指示器的默认出厂固件是完全开源的，适用于 ESP32-S3 �
 
 ## 针对 **ESP32-S3**
 
-### **ESP-IDF** {#ESP-IDF}
+### **ESP-IDF** {#flash-esp32-s3-frimware-using-espressif-idf}
 
 > ESP-IDF（Espressif IoT Development Framework）是由 Espressif Systems 提供的软件开发框架，用于专门设计适用于其 ESP32 和 ESP8266 系列微控制器的固件和应用程序。有关更多信息，您可以参考 [ESP-IDF 编程指南](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/index.html)。
 

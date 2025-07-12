@@ -39,8 +39,8 @@ En esta wiki, te mostraremos cómo flashear Jetpack OS a la Carrier Board A205 q
 
 Podemos usar **NVIDIA SDK manager y terminal Linux** para actualizar el sistema, o podemos hacerlo fácilmente usando la **Terminal Linux**. Para las personas que tienen experiencia en Linux, recomendamos utilizar únicamente la Terminal de Linux.
 
-- [Flasheando JetPack OS con NVIDIA SDK manager y la terminal de Linux](#flashing-jetpack-os-via-nvidia-sdk-manager)
-- [Flasheando JetPack OS con la terminal de Linux](#flashing-jetpack-os-via-command-line)
+- Flasheando JetPack OS con NVIDIA SDK manager y la terminal de Linux
+- Flasheando JetPack OS con la terminal de Linux
 
 Todavía hay algunos preparativos que necesitamos hacer primero:
 

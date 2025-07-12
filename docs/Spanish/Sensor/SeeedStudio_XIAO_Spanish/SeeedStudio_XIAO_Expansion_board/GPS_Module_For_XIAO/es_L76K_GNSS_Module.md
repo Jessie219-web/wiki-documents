@@ -176,7 +176,7 @@ Si es la primera vez que usas Arduino, te recomendamos encarecidamente que consu
 
 - Si deseas usar **Seeed Studio XIAO nRF52840** para los programas posteriores, por favor consulta **[este tutorial](/XIAO_BLE/#software-setup)** para completar la configuración.
 
-- Si deseas usar **Seeed Studio XIAO ESP32C3** para los programas posteriores, por favor consulta **[este tutorial](/XIAO_ESP32C3_Getting_Started#software-setup)** para completar la configuración.
+- Si deseas usar **Seeed Studio XIAO ESP32C3** para los programas posteriores, por favor consulta **[este tutorial](/XIAO_ESP32C3_Getting_Started)** para completar la configuración.
 
 - Si deseas usar **Seeed Studio XIAO ESP32S3** para los programas posteriores, por favor consulta **[este tutorial](/xiao_esp32s3_getting_started#software-preparation)** para completar la configuración.
 
