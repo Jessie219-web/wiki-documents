@@ -648,7 +648,7 @@ void DrawLegend() {
 }
 ```
 
-:::tipsuccess
+:::tip
  The outcome of visualization will display on the screen of Wio Terminal if everything goes well
 :::
 
@@ -714,7 +714,7 @@ You may get the result like this:
 
 <div align="center"><img width={1000} src="https://files.seeedstudio.com/wiki/Grove-Thermal-Imaging-Camera-IR-Array/img/90641-raspi.png" /></div>
 
-:::tipsuccess
+:::tip
      The outcome will be displayed as above if everything goes well.
 :::
 
@@ -747,7 +747,7 @@ sudo reboot
 sudo ircamera I2C MLX90641
 ```
 
-:::tipsuccess
+:::tip
      The outcome will be displayed as following if everything goes well.
 :::
 

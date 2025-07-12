@@ -167,7 +167,7 @@ void loop(void)
 }
 ```
 
-:::tipsuccess
+:::tip
   If everything goes well, you can go to **Serial Monitor** to see an outcome as following:
 :::
 
@@ -254,7 +254,7 @@ cd Seeed_Python_DS18B20
 python3 examples/BasicRead.py 
 ```
 
-:::tipsuccess
+:::tip
           The outcome will display as following if everything goes well:
 :::
 

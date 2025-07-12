@@ -190,7 +190,7 @@ void loop() {
 
 - **Step 2.** Open the **Serial Monitor** of Arduino IDE by click **Tool-> Serial Monitor**. Or tap the ++ctrl+shift+m++ key at the same time. Set the baud rate to **9600**.
 
-:::tipsuccess
+:::tip
 If every thing goes well, when you open the Serial Monitor it may show as below:
 :::
 

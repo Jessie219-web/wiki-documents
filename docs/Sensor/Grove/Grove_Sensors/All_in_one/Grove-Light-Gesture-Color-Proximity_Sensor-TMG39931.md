@@ -185,7 +185,7 @@ void loop()
 The library file may be updated. This code may not be applicable to the updated library file, so we recommend that you use the first two methods.
 :::
 
-:::tipsuccess
+:::tip
 If everything goes well, the raw (uint16_t) data of the proximity sensor should be able to read from Serial Monitor.
 :::
 

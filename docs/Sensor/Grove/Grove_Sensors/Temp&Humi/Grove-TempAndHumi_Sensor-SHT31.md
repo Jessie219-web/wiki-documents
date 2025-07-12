@@ -292,7 +292,7 @@ if __name__ == "__main__":
 
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, you will be able to see temperature and humidity
 :::
 

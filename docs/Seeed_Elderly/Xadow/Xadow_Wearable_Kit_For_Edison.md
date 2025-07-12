@@ -324,7 +324,7 @@ void loop()
 
 ![](https://files.seeedstudio.com/wiki/Xadow_Wearable_Kit_For_Edison/img/Xadow_Wearable_Kit_For_Edison32.jpg)
 
-:::tips
+:::tip
     You’ll need to warm the Xadow-Barometer module to see what happen when the temperature is out of the secure range.
 :::
 3.As the temperature raising the leds light up one by one and the color change from blue to red.

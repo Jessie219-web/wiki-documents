@@ -195,7 +195,7 @@ void flow () // Interrupt function
 }
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, open the serial monitor tool and set the baud rate to 9600. as the water through, the flow value will print to the appropriate window.
 :::
 

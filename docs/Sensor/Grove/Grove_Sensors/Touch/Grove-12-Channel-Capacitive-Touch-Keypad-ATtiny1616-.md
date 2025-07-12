@@ -198,7 +198,7 @@ void printData() {
 
 - **Step 4.** Open the **Serial Monitor** of Arduino IDE by click **Tool-> Serial Monitor**. Or tap the `ctrl`+`shift`+`m` key at the same time. Set the baud rate to **9600**.
 
-:::tipsuccess
+:::tip
 Now, touch the keypad, then the monitor will output the corresponding key.
 :::
 
@@ -312,7 +312,7 @@ python grove_12_channel_touch_keypad.py
 
 ```
 
-:::tipsuccess
+:::tip
     Then touch the keycap, the terminal will output the corresponding key.
 :::
 

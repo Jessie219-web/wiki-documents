@@ -253,7 +253,7 @@ void loop()
 
 - **Step 5.** Open the **Serial Monitor** of Arduino IDE by click **Tool-> Serial Monitor**. Or tap the `ctrl`+`shift`+`m` key at the same time. Set the baud rate to **115200**.
 
-:::tipsuccess
+:::tip
 If everything goes well, you will get the result. When you touch the CH0 ~ CH11 pads, it will trigger **key ?pressed** and **key ?release**
 :::
 
@@ -409,7 +409,7 @@ if __name__  == '__main__':
     main()
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, you will get the result. When you touch the CH0 ~ CH11 pads, it will trigger **channel # pressed** and **Channel # released** with corresponding pressure values.
 :::
 

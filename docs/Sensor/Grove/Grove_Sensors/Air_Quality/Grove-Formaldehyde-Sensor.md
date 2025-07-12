@@ -275,7 +275,7 @@ int main(void) {
 
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, the following results can be displayed like:
 :::
 

@@ -231,7 +231,7 @@ void loop()
 
 - **Step 5.** Open the **Serial Monitor** of Arduino IDE by click **Tool-> Serial Monitor**. Or tap the ++ctrl+shift+m++ key at the same time. Set the baud rate to **115200**.
 
-:::tipsuccess
+:::tip
      If every thing goes well, when you open the Serial Monitor , it may show as below:
 :::
 
@@ -354,7 +354,7 @@ if __name__ == "__main__":
 
 ```
 
-:::tipsuccess
+:::tip
     If everything goes well, you will be able to see the following result
 :::
 

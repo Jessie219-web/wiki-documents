@@ -155,7 +155,7 @@ void loop()
 // END FILE
 ```
 
-:::tipsuccess
+:::tip
   If everything goes well, you can go to **Serial Monitor** to see an outcome as following:
 :::
 

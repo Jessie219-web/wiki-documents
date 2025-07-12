@@ -351,7 +351,7 @@ if __name__ == '__main__':
 
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, you will be able to see the LED turns on if you press it and turns off if you long press it. If you double click the LED button, the LED will blink.
 :::
 

@@ -226,7 +226,7 @@ The library file may be updated. This code may not be applicable to the updated 
 
 - **Step 6.** Please put your finger on the touchpad.
 
-:::tipsuccess
+:::tip
 If every thing goes well, when you open the Serial Monitor, it may show as below:
 :::
 

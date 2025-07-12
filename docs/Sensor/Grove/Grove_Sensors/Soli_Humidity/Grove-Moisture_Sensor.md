@@ -179,7 +179,7 @@ If this is your first time using Codecraft, see also [Guide for Codecraft using 
 
 Upload the program to your Arduino/Seeeduino.
 
-:::tipsuccess
+:::tip
 When the code finishes uploaded, you will see the moisture value displayed in the Serial Monitor.
 :::
 
@@ -311,7 +311,7 @@ if __name__ == '__main__':
     main()
 ```
 
-:::tipsuccess
+:::tip
 If everything goes well, you will be able to see the following result:
 :::
 

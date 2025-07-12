@@ -62,7 +62,7 @@ It uses CSR Bluecore 04-External single chip Bluetooth system with CMOS technolo
 
 *   Auto-reconnect in 30 min when disconnected as a result of beyond the range of connection.
 
-:::cautions
+:::caution
     The supply voltage of this module is 3.3V, higher than this may cause permanent damage to the device.
 c;;;
 ##   Hardware Installation

@@ -221,7 +221,7 @@ if __name__ == '__main__':
     main()
 ```
 
-:::tipsuccess
+:::tip
     If everything goes well, you will be able to see the following result
 :::
 
