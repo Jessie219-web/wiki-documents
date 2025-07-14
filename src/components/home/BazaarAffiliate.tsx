@@ -200,10 +200,6 @@ const BazaarAffiliate: React.FC<BazaarAffiliateProps> = () => {
               width={1600}
               height={1600}
             />
-            <div 
-              className={css.image_overlay}
-              style={{ background: `linear-gradient(135deg, ${THEME_COLOR}20, ${THEME_COLOR}40)` }}
-            />
           </a>
         </div>
       </div>

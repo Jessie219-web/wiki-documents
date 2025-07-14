@@ -1,15 +1,15 @@
-// 语言切换器 - 积极恢复版本
-// 生成时间: 2025-06-09 15:05:37 (北京时间)
-// 多语言页面: 1864 个
+// 语言切换器 - 生产环境优化版本
+// 生成时间: 2025-07-07 11:32:58 (北京时间)
+// 多语言页面: 1823 个
 
 (function() {
   'use strict';
 
-  const DEBUG = false; // 生产环境可关闭调试
+  const DEBUG = false; // 生产环境关闭调试
   
   function log(...args) {
     if (DEBUG) {
-      console.log('🔄 [积极恢复版]', new Date().toISOString().slice(11, 23), ...args);
+      console.log('🔄 [生产优化版]', new Date().toISOString().slice(11, 23), ...args);
     }
   }
 
@@ -27,208 +27,11 @@
     "en",
     "ja"
   ],
-  "/How_to_Use_SenseCAP_AI_on_SenseCAP_Portal_and_SenseCAP_Mate_APP": [
-    "en",
-    "ja"
-  ],
-  "/xiao_esp32c3_sensecapai": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/API_pricing": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Device_Status_IDs": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Error_Code": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Measurement_IDs": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Appendix/List_of_Sensor_Types": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Quickstart": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/Data_OpenStream_API/Data_OpenStream_API_Reference": [
-    "en",
-    "ja"
-  ],
   "/Cloud_Chain/SenseCAP_API/HTTP_API/HTTP_API_Access_Guide": [
     "en",
     "ja"
   ],
   "/Cloud_Chain/SenseCAP_API/HTTP_API/Quick_Start": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_API/SenseCAP_API_Introduction": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Basics": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Dashboard/Dashboard_Registration": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Dashboard/Hotspot_Registration": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/APP_settings": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Deeplink_Helium_Wallet": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Download_APP": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/FAQ": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/forget-wifi-profile": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Hotspot_Management": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Hotspot_Onboarding": [
-    "en",
-    "ja"
-  ],
-  "/SenseCAP_Hotspot_APP": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Remote Reboot": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Update_antenna": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Hotspot_APP/Update_Hotspot_Location": [
-    "en",
-    "ja"
-  ],
-  "/sensecap_mate_app_event": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_app": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_cloud_fee": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Dashboard": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Data_Management": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/Detail_Introduction/Device_Management": [
-    "en",
-    "ja"
-  ],
-  "/Cloud_Chain/SenseCAP_Portal/QuickStart": [
-    "en",
-    "ja"
-  ],
-  "/connect_vision_ai_v2_to_ha": [
-    "cn",
-    "en",
-    "ja"
-  ],
-  "/grove_vision_ai_v2_workspace": [
-    "en",
-    "ja"
-  ],
-  "/nvidia_jetson_workspace": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_jetson": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_grove_visionai": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_gpio_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_libraries_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_output_mqtt_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_sscmacore_library": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_deploy_model_to_jetson": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_pretrained_models_for_grove_visionai_v2": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_pretrained_models_for_watcher": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_pretrained_models_for_xiao": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_main": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_overview": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_training_classification": [
-    "en",
-    "ja"
-  ],
-  "/sensecraft_ai_training_object_detection": [
-    "en",
-    "ja"
-  ],
-  "/xiao_esp32s3_workspace": [
     "en",
     "ja"
   ],
@@ -1995,625 +1798,796 @@
   "/LoRa-E5_STM32WLE5JC_Module": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/LoRa_E5_Dev_Board": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/LoRa_E5_mini": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/Wio-WM1110_Dev_Kit_Hardware_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Get_Started_with_Wio-WM1110_Dev_Kit": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-WM1110_Dev_Kit/Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_and_xiao_esp32s3_kit_with_3dprinted_enclosure_introduction_and_assembly_guide": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/4_layer_sandwich_for_meshtastic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_for_meshtastic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_with_xiao_esp32s3_kit": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_LNS_Chirpstack": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_LNS_TTN": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_for_lora_sensor_node": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/wio_sx1262_xiao_esp32s3_for_single_channel_gateway": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/change_antenna_path": [
     "en",
+    "es",
     "ja"
   ],
   "/configure_param_for_wio_tracker": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_tracker_home_assistant": [
     "en",
+    "es",
     "ja"
   ],
   "/connect_wio_tracker_to_TTN": [
     "en",
+    "es",
     "ja"
   ],
   "/development_tutorial_for_Wio-trakcer": [
     "en",
+    "es",
     "ja"
   ],
   "/setup_toolchain_for_wio_tracker": [
     "en",
+    "es",
     "ja"
   ],
   "/wio_tracker_dual_stack": [
     "en",
+    "es",
     "ja"
   ],
   "/Get_Started_with_Wio-Trakcer_1110": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Tracker_Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/connect_wio_tracker_to_locator": [
     "en",
+    "es",
     "ja"
   ],
   "/WM1302_module": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/WM1302_Pi_HAT": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/meshtastic_introduction": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_indicator_meshtastic": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/get_started_with_meshtastic_solar_node": [
     "en",
+    "es",
     "ja"
   ],
   "/meshtastic_solar_node": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/sensecap_t1000_e": [
     "cn",
     "en",
+    "es",
     "ja"
   ],
   "/t1000_e_intro": [
     "cn",
     "en",
+    "es",
     "ja"
+  ],
+  "/wio_tracker_l1_node": [
+    "en",
+    "es"
   ],
   "/flash_meshtastic_kit": [
     "en",
+    "es",
     "ja"
   ],
   "/meshtastic_kit_wio_tracker_1110": [
     "en",
+    "es",
     "ja"
   ],
   "/xiao_esp32s3_&_wio_SX1262_kit_for_meshtastic": [
     "en",
+    "es",
     "ja"
   ],
   "/xiao_nrf52840&_wio_SX1262_kit_for_meshtastic": [
     "en",
+    "es",
     "ja"
   ],
   "/4g_lte_hotspot_on_raspberry_pi_os": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_lte_hat_mbim": [
     "en",
+    "es",
     "ja"
   ],
   "/4g_lte_hat_and_raspberry_pi_router_with_openwrt": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_lte_hat_qmi": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_lte_hat_rndis": [
     "en",
+    "es",
     "ja"
   ],
   "/ftp_with_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_hat_gnss_functionlities": [
     "en",
+    "es",
     "ja"
   ],
   "/raspberry_pi_4g_hat_ecm_mobile_internet": [
     "en",
+    "es",
     "ja"
   ],
   "/mqtt_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/send_receive_sms_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/tcp_ip_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_raspberry_pi_4g_lte_hat": [
     "en",
+    "es",
     "ja"
   ],
   "/Mender-Client-dual-GbE-CM4": [
     "en",
+    "es",
     "ja"
   ],
   "/OpenWrt-Getting-Started": [
     "en",
+    "es",
     "ja"
   ],
   "/OpenWrt-Plex-Media-Server-on-Docker": [
     "en",
+    "es",
     "ja"
   ],
   "/Dual-Gigabit-Ethernet-Carrier-Board-for-Raspberry-Pi-CM4": [
     "en",
+    "es",
     "ja"
   ],
   "/FAQs_For_openWrt": [
     "en",
+    "es",
     "ja"
   ],
   "/Raspberry-OpenWrt-Getting-Started": [
     "en",
+    "es",
     "ja"
   ],
   "/reRouter_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/H28K-install-system": [
     "en",
+    "es",
     "ja"
   ],
   "/H28K_Datasheet": [
     "en",
+    "es",
     "ja"
   ],
   "/h68kv2_datasheet": [
     "en",
+    "es",
     "ja"
   ],
   "/H68KV2_install_system": [
     "en",
+    "es",
     "ja"
   ],
   "/grocy-bookstack-linkstar": [
     "en",
+    "es",
     "ja"
   ],
   "/h68k-ha-esphome": [
     "en",
+    "es",
     "ja"
   ],
   "/plex_media_server": [
     "en",
+    "es",
     "ja"
   ],
   "/wordpress_linkstar": [
     "en",
+    "es",
     "ja"
   ],
   "/linkstar-install-system": [
     "en",
+    "es",
     "ja"
   ],
   "/Linkstar_Datasheet": [
     "en",
+    "es",
     "ja"
   ],
   "/Linkstar_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/Rockchip_network_solutions": [
     "en",
+    "es",
     "ja"
   ],
   "/IoT-into-the-wild-contest": [
     "en",
+    "es",
     "ja"
   ],
   "/K1111-Quick-Start-Guide": [
     "en",
+    "es",
     "ja"
   ],
   "/K1111-Edge-Impulse": [
     "en",
+    "es",
     "ja"
   ],
   "/Vision_AI_with_Customizable_Models": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-quickstart": [
     "en",
+    "es",
     "ja"
+  ],
+  "/K1100-Getting-Started": [
+    "en",
+    "es"
   ],
   "/Connect_AWS_via_helium": [
     "en",
+    "es",
     "ja"
   ],
   "/Helium-Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/Configuring-Web-APP-Visualization": [
     "en",
+    "es",
     "ja"
   ],
   "/Connecting-to-Helium": [
     "en",
+    "es",
     "ja"
   ],
   "/Integrate-into-Azure-IoT-Hub": [
     "en",
+    "es",
     "ja"
   ],
   "/Integrate_into_Google_Sheets_via_Helium": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_sensecap_node-red": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_Azure_IoT_Central": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_datacake": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_grafana": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_influxdb": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_PowerBI": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_SenseCAP_to_twilio": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-IMU-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Light-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Soil-Moisture-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Temp-Humi-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-Vision-AI-Module-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100-VOC-and-eCO2-Gas-Sensor-Grove-LoRa-E5": [
     "en",
+    "es",
     "ja"
   ],
   "/Connecting-to-TTN": [
     "en",
+    "es",
     "ja"
   ],
   "/TTN-Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_K1100_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/Connect-Wio-Terminal-to-Azure-IoT-Central": [
     "en",
+    "es",
     "ja"
   ],
   "/Develop-in-Microsoft-Azure-IoT-Central": [
     "en",
+    "es",
     "ja"
   ],
   "/K1100_Azure_to_PowerBI": [
     "en",
+    "es",
     "ja"
   ],
   "/Connect-Wio-Terminal-to-Google-Cloud": [
     "en",
+    "es",
     "ja"
   ],
   "/Getting_started_with_Ubidots": [
     "en",
+    "es",
     "ja"
   ],
   "/Quick-Start-to-using-Blynk": [
     "en",
+    "es",
     "ja"
   ],
   "/Wio-Terminal-Advanced-WiFi": [
     "en",
+    "es",
     "ja"
   ],
   "/platformio_wio_e5": [
     "en",
+    "es",
     "ja"
   ],
   "/M2_Kit_Getting_Started": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/Sensecap-LoRaWAN-Gateway-and-Wireless-Sensor-User-Guide": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Flux_Gateway/SenseCAP_M4_Square/SenseCAP_M4_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Flux_Gateway/SenseCAP_M4_Square/SenseCAP_M4_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Flux_Gateway/SenseCAP_M4_Square/SenseCAP_M4_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/SenseCAP_M1_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M1/Troubleshooting": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/M2_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Data_Only/Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Light/FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Light/Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAPMX_Hotspot/Helium_Gateway/SenseCAP_M2_Light/Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_Gateway_Intro": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_LoRaWAN_Outdoor_Gateway/SenseCAP_LoRaWAN_Outdoor_Gateway_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M1-Helium_gateway/SenseCAP_M1_Troubleshooting": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/M2_Local_Console": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Data_Only-Helium_gateway/SenseCAP_M2_Data_Only_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Light_Gateway/SenseCAP_M2_Light_Gateway_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/flash_opensource_firmware_to_m2_gateway": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Introduction": [
     "en",
+    "es",
     "ja"
   ],
   "/SenseCAP_m2_LNS_config": [
     "en",
+    "es",
     "ja"
   ],
   "/quick_start_with_M2_MP": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_MP_Gateway_LNS_Configuration": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/SenseCAP_M2_Multi_Platform_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/traffic_saving_config": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-AWS-IoT": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-ChirpStack": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M2_Multi_Platform/Tutorial/Connect-M2-Multi-Platform-Gateway-to-The-Things-Network": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_FAQ": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Overview": [
     "en",
+    "es",
     "ja"
   ],
   "/Network/SenseCAP_Network/SenseCAP_M4_Square-Flux_gateway/SenseCAP_M4_Quick_Start": [
     "en",
+    "es",
     "ja"
   ],
   "/The-Things-Indoor-Gateway": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_wifi_halow_mini_pcie_module": [
     "en",
+    "es",
     "ja"
   ],
   "/getting_started_with_wifi_halow_module_for_xiao": [
     "en",
+    "es",
     "ja"
   ],
   "/Network": [
     "en",
+    "es",
     "ja"
+  ],
+  "/damiao_series": [
+    "cn",
+    "en"
+  ],
+  "/feetech_servo": [
+    "cn",
+    "en"
+  ],
+  "/hightorque_series": [
+    "cn",
+    "en"
   ],
   "/myactuator_series": [
     "cn",
@@ -2649,6 +2623,10 @@
     "es",
     "ja"
   ],
+  "/hexfellow_y200": [
+    "cn",
+    "en"
+  ],
   "/a_loam": [
     "cn",
     "en",
@@ -2666,6 +2644,10 @@
     "en",
     "es",
     "ja"
+  ],
+  "/slamtec": [
+    "cn",
+    "en"
   ],
   "/install_isaaclab": [
     "cn",
@@ -8594,18 +8576,21 @@
   "/CN/TinyML/ModelAssistant/Deploy/Deploy_YOLOv8_Pose": [
     "cn",
     "en"
+  ],
+  "/connect_vision_ai_v2_to_ha": [
+    "cn",
+    "ja"
   ]
 };
 
-  // 状态管理变量
+  // 生产环境优化的状态管理
   let isInitialized = false;
-  let shouldHaveSwitcher = false;
-  let injectionCount = 0;
+  let currentPageInfo = null;
+  let observerConnected = false;
   
-  // 积极恢复相关变量
-  let rapidCheckInterval = null;
-  let normalCheckInterval = null;
-  let lastSuccessfulInjection = 0;
+  // 监控间隔ID
+  let primaryCheckInterval = null;
+  let backupCheckInterval = null;
 
   function getCurrentLanguageAndPath() {
     const currentPath = window.location.pathname;
@@ -8651,11 +8636,9 @@
 
   function createLanguageSwitcher(availableLanguages, currentLanguage, basePath) {
     if (availableLanguages.length <= 1) {
-      shouldHaveSwitcher = false;
       return null;
     }
 
-    shouldHaveSwitcher = true;
     const currentLangConfig = languages[currentLanguage];
     const priority = { en: 0, cn: 1, ja: 2, es: 3 };
     const sortedLanguages = [...availableLanguages].sort((a, b) => {
@@ -8665,7 +8648,7 @@
     });
     
     const switcherHTML = [
-      '<div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items" data-recovery-count="' + injectionCount + '">',
+      '<div class="navbar__item dropdown dropdown--hoverable navbar-language-switcher navbar_dorp_items" data-page-path="' + basePath + '" data-current-lang="' + currentLanguage + '">',
       '  <a href="#" class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button">',
       '    <span class="lang-flag">' + currentLangConfig.flag + '</span>',
       '    <span class="lang-label">' + currentLangConfig.label + '</span>',
@@ -8696,7 +8679,7 @@
     return switcherHTML;
   }
 
-  function injectLanguageSwitcher() {
+  function injectOrUpdateSwitcher() {
     const navbar = document.querySelector('.navbar__items--right') || 
                    document.querySelector('.navbar__items') ||
                    document.querySelector('.navbar');
@@ -8706,151 +8689,219 @@
       return false;
     }
 
-    // 检查是否已存在
-    const existingSwitcher = document.querySelector('.navbar-language-switcher');
-    if (existingSwitcher) {
-      return true; // 已存在，算作成功
-    }
-
     const { currentLanguage, basePath } = getCurrentLanguageAndPath();
     const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
-    const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+    const existingSwitcher = document.querySelector('.navbar-language-switcher');
     
-    if (!switcherHTML) {
-      return true; // 单语言页面，不需要切换器，算作成功
-    }
-
-    try {
-      injectionCount++;
-      
-      let insertPosition = null;
-      const positionSelectors = [
-        'a[href*="seeedstudio.com"]',
-        '.header-github-link', 
-        '.navbar__item:last-child'
-      ];
-      
-      for (const selector of positionSelectors) {
-        const element = navbar.querySelector(selector);
-        if (element) {
-          insertPosition = element;
-          break;
-        }
+    // 更新当前页面信息
+    currentPageInfo = {
+      basePath: basePath,
+      currentLanguage: currentLanguage,
+      availableLanguages: availableLanguages,
+      timestamp: Date.now()
+    };
+    
+    // 情况1：不需要切换器
+    if (availableLanguages.length <= 1) {
+      if (existingSwitcher) {
+        existingSwitcher.remove();
+        log('🗑️ 移除切换器（单语言页面）');
       }
-      
-      if (insertPosition) {
-        insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
-      } else {
-        navbar.insertAdjacentHTML('beforeend', switcherHTML);
-      }
-      
-      // 防止默认链接行为
-      const switcherElement = navbar.querySelector('.navbar-language-switcher');
-      if (switcherElement) {
-        const switcherButton = switcherElement.querySelector('.navbar__link');
-        if (switcherButton) {
-          switcherButton.addEventListener('click', function(e) {
-            e.preventDefault();
-          });
-        }
-      }
-      
-      lastSuccessfulInjection = Date.now();
-      log('✅ 切换器注入成功! (#' + injectionCount + ')');
       return true;
-      
-    } catch (error) {
-      log('❌ 注入失败:', error);
-      return false;
     }
+    
+    // 情况2：需要切换器但不存在 - 创建
+    if (!existingSwitcher) {
+      const switcherHTML = createLanguageSwitcher(availableLanguages, currentLanguage, basePath);
+      if (switcherHTML) {
+        let insertPosition = null;
+        const positionSelectors = [
+          'a[href*="seeedstudio.com"]',
+          '.header-github-link', 
+          '.navbar__item:last-child'
+        ];
+        
+        for (const selector of positionSelectors) {
+          const element = navbar.querySelector(selector);
+          if (element) {
+            insertPosition = element;
+            break;
+          }
+        }
+        
+        if (insertPosition) {
+          insertPosition.insertAdjacentHTML('beforebegin', switcherHTML);
+        } else {
+          navbar.insertAdjacentHTML('beforeend', switcherHTML);
+        }
+        
+        const switcherElement = navbar.querySelector('.navbar-language-switcher');
+        if (switcherElement) {
+          const switcherButton = switcherElement.querySelector('.navbar__link');
+          if (switcherButton) {
+            switcherButton.addEventListener('click', function(e) {
+              e.preventDefault();
+            });
+          }
+        }
+        
+        log('✅ 创建新的语言切换器');
+        return true;
+      }
+    }
+    
+    // 情况3：切换器存在 - 检查是否需要更新
+    if (existingSwitcher) {
+      const currentPagePath = existingSwitcher.getAttribute('data-page-path');
+      const currentLang = existingSwitcher.getAttribute('data-current-lang');
+      
+      // 如果页面路径或当前语言发生变化，则更新
+      if (currentPagePath !== basePath || currentLang !== currentLanguage) {
+        log('🔄 检测到页面变化，更新切换器');
+        log('   从: ' + (currentPagePath || '未知') + ' (' + (currentLang || '未知') + ')');
+        log('   到: ' + basePath + ' (' + currentLanguage + ')');
+        
+        existingSwitcher.remove();
+        return injectOrUpdateSwitcher(); // 递归调用重新创建
+      }
+    }
+    
+    return true;
   }
 
-  // 积极恢复策略
-  function startAggressiveRecovery() {
-    // 清除可能存在的检查器
-    if (rapidCheckInterval) clearInterval(rapidCheckInterval);
-    if (normalCheckInterval) clearInterval(normalCheckInterval);
+  // 生产环境优化的监控策略
+  function startProductionMonitoring() {
+    // 清除可能存在的监控
+    if (primaryCheckInterval) clearInterval(primaryCheckInterval);
+    if (backupCheckInterval) clearInterval(backupCheckInterval);
     
-    // 第一阶段：前10秒内每100ms检查一次（高频）
-    let rapidCheckCount = 0;
-    const maxRapidChecks = 100; // 10秒 * 10次/秒
-    
-    rapidCheckInterval = setInterval(function() {
-      rapidCheckCount++;
+    // 主要监控：每200ms检查一次（针对生产环境优化）
+    primaryCheckInterval = setInterval(function() {
+      const { currentLanguage, basePath } = getCurrentLanguageAndPath();
       
-      if (shouldHaveSwitcher) {
-        const existingSwitcher = document.querySelector('.navbar-language-switcher');
-        if (!existingSwitcher) {
-          log('🚀 快速恢复：检测到切换器丢失，立即注入 (#' + rapidCheckCount + ')');
-          injectLanguageSwitcher();
+      // 检查页面是否发生变化
+      if (!currentPageInfo || 
+          currentPageInfo.basePath !== basePath || 
+          currentPageInfo.currentLanguage !== currentLanguage) {
+        
+        log('🔄 检测到页面变化，执行更新');
+        injectOrUpdateSwitcher();
+      }
+    }, 200);
+    
+    // 备用监控：每2秒进行完整检查
+    backupCheckInterval = setInterval(function() {
+      const { currentLanguage, basePath } = getCurrentLanguageAndPath();
+      const availableLanguages = findAvailableLanguages(basePath, currentLanguage);
+      const existingSwitcher = document.querySelector('.navbar-language-switcher');
+      
+      // 完整性检查
+      if (availableLanguages.length > 1 && !existingSwitcher) {
+        log('🚨 备用监控发现切换器丢失，重新创建');
+        injectOrUpdateSwitcher();
+      } else if (availableLanguages.length <= 1 && existingSwitcher) {
+        log('🚨 备用监控发现多余切换器，移除');
+        existingSwitcher.remove();
+        currentPageInfo = null;
+      }
+    }, 2000);
+    
+    log('🔧 启动生产环境监控机制');
+  }
+
+  // 强化的路由变化检测（专为生产环境设计）
+  function setupProductionRouteDetection() {
+    let lastPathname = location.pathname;
+    let lastHref = location.href;
+    
+    // 方法1：历史记录变化
+    function handleHistoryChange(source) {
+      setTimeout(function() {
+        if (location.pathname !== lastPathname || location.href !== lastHref) {
+          log('🔄 路由变化 [' + source + ']: ' + lastPathname + ' -> ' + location.pathname);
+          lastPathname = location.pathname;
+          lastHref = location.href;
+          
+          // 强制更新
+          setTimeout(function() {
+            injectOrUpdateSwitcher();
+          }, 100);
+        }
+      }, 50);
+    }
+    
+    window.addEventListener('popstate', function() {
+      handleHistoryChange('popstate');
+    });
+    
+    // 拦截pushState和replaceState
+    const originalPushState = history.pushState;
+    const originalReplaceState = history.replaceState;
+    
+    history.pushState = function() {
+      originalPushState.apply(this, arguments);
+      handleHistoryChange('pushState');
+    };
+    
+    history.replaceState = function() {
+      originalReplaceState.apply(this, arguments);
+      handleHistoryChange('replaceState');
+    };
+    
+    // 方法2：全局点击监听（捕获所有内部链接）
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('a[href]');
+      if (link && link.href) {
+        try {
+          const url = new URL(link.href);
+          if (url.origin === window.location.origin && url.pathname !== lastPathname) {
+            setTimeout(function() {
+              handleHistoryChange('click');
+            }, 150);
+          }
+        } catch (err) {
+          // 忽略无效URL
         }
       }
-      
-      // 10秒后切换到正常模式
-      if (rapidCheckCount >= maxRapidChecks) {
-        clearInterval(rapidCheckInterval);
-        rapidCheckInterval = null;
-        log('🔄 切换到正常检查模式');
-        startNormalRecovery();
-      }
-    }, 100); // 每100ms检查一次
+    }, true);
     
-    log('🚀 启动积极恢复模式：前10秒内每100ms检查一次');
+    // 方法3：定期URL检查（生产环境备用方案）
+    setInterval(function() {
+      if (location.pathname !== lastPathname || location.href !== lastHref) {
+        handleHistoryChange('periodic');
+      }
+    }, 1000);
+    
+    log('🔧 启动生产环境路由检测');
   }
 
-  // 正常恢复策略
-  function startNormalRecovery() {
-    normalCheckInterval = setInterval(function() {
-      if (shouldHaveSwitcher) {
-        const existingSwitcher = document.querySelector('.navbar-language-switcher');
-        if (!existingSwitcher) {
-          log('🔄 正常恢复：检测到切换器丢失，重新注入');
-          injectLanguageSwitcher();
-        }
-      }
-    }, 1000); // 每1秒检查一次
+  function productionInitialization() {
+    log('🚀 初始化生产环境优化版语言切换器');
     
-    log('🔄 启动正常恢复模式：每1秒检查一次');
-  }
-
-  // 延迟初始化策略：等待Docusaurus稳定后再注入
-  function delayedInitialization() {
-    log('⏰ 开始延迟初始化...');
-    
-    // 等待500ms让Docusaurus完成初始化
-    setTimeout(function() {
-      log('🔧 延迟注入切换器...');
+    // 等待DOM完全稳定
+    function attemptInitialization() {
+      const navbar = document.querySelector('.navbar__items--right') || 
+                     document.querySelector('.navbar__items');
       
-      if (injectLanguageSwitcher()) {
-        log('✅ 延迟注入成功');
-        // 启动积极恢复
-        setTimeout(startAggressiveRecovery, 100);
+      if (navbar) {
+        log('✅ 导航栏就绪，开始初始化');
+        
+        // 立即执行一次注入
+        injectOrUpdateSwitcher();
+        
+        // 启动监控机制
+        setTimeout(function() {
+          startProductionMonitoring();
+          setupProductionRouteDetection();
+        }, 500);
+        
       } else {
-        log('⚠️ 延迟注入失败，1秒后重试');
-        setTimeout(delayedInitialization, 1000);
-      }
-    }, 500);
-  }
-
-  // 极简路由监听
-  function observeRouteChanges() {
-    let currentPathname = location.pathname;
-    
-    function handleRouteChange() {
-      if (location.pathname !== currentPathname) {
-        log('🔄 路由变化: ' + currentPathname + ' -> ' + location.pathname);
-        currentPathname = location.pathname;
-        
-        // 清除现有的恢复机制
-        if (rapidCheckInterval) clearInterval(rapidCheckInterval);
-        if (normalCheckInterval) clearInterval(normalCheckInterval);
-        
-        // 重新开始延迟初始化
-        delayedInitialization();
+        log('⏳ 等待导航栏加载...');
+        setTimeout(attemptInitialization, 300);
       }
     }
-
-    window.addEventListener('popstate', handleRouteChange);
+    
+    attemptInitialization();
   }
 
   function init() {
@@ -8858,23 +8909,28 @@
       return;
     }
     
-    log('🚀 初始化积极恢复版语言切换器...');
-    log('📊 包含 ' + Object.keys(languageMapping).length + ' 个多语言页面');
+    log('🚀 启动生产环境优化版语言切换器');
+    log('📊 映射数据包含 ' + Object.keys(languageMapping).length + ' 个多语言页面');
     
     isInitialized = true;
     
-    // 启动路由监听
-    observeRouteChanges();
-    
-    // 开始延迟初始化
-    delayedInitialization();
+    // 延迟初始化以确保生产环境稳定性
+    setTimeout(productionInitialization, 800);
   }
 
-  // 立即初始化
+  // 多重初始化策略
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
-    setTimeout(init, 0);
+    setTimeout(init, 100);
   }
+  
+  // 确保初始化的备用机制
+  setTimeout(function() {
+    if (!isInitialized) {
+      log('🔄 备用初始化触发');
+      init();
+    }
+  }, 2000);
 
 })();

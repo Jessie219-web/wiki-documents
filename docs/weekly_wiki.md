@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 06/16/2025
+  date: 07/07/2025
   author: Frank
 ---
 
@@ -17,27 +17,29 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is June 16th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is July 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [reComputer Super vs Classic Next-Gen AI Performance in Edge Inferencing](https://wiki.seeedstudio.com/recomputer_jetson_super_performance/)
+### [Getting Started with Phospho](https://wiki.seeedstudio.com/control_robotic_arm_via_phospho/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/reComputer-super/super.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/phospho/phospho_1.png" alt="pir" width={800} height="auto" /></p>
 
-The reComputer Super Series supercharges the reComputer Classic, delivering up to a 1.7x boost of 157 TOPS in AI performance. This wiki compares the performance differences between the reComputer Super and reComputer Classic in AI text generation and AI video processing. Using the <a href="https://www.seeedstudio.com/NVIDIA-Jetson-Orin-NX-Module-16GB-p-5524.html" target="_blank">NVIDIA Jetson Orin NX 16GB module</a> as the test platform, it clearly demonstrates that the reComputer Super delivers superior performance compared to the reComputer Classic.
+Phospho is how ML engineers make real robots intelligent. We provide the hardware, libraries, and remote control capabilities so developers can collect data, train AI models and deploy applications to real robots in minutes instead of months. In this wiki, we will demonstrate SO Arm 100 robotic arm motion control using phospho.
 
-### [Getting Started with XIAO W5500 Ethernet Adapter](https://wiki.seeedstudio.com/xiao_w5500_ethernet_adapter/)
+### [Integrate AI Space Butler into Home Assistant](https://wiki.seeedstudio.com/ha_dify_watcher_llms/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/xiao_w5500_poe/0.jpg" alt="pir" width={800} height="auto" /></p>
-
-This document introduces the Seeed Studio XIAO W5500 Ethernet Adapter, detailing its features, hardware specifications, pin definitions, and usage instructions. It enables users to easily add wired Ethernet connectivity to Seeed Studio XIAO series development boards, making it ideal for IoT, remote control, and data transmission applications.
+This article will provide a step-by-step guide on how to use Dify, the Xiaozhi backend service, and the SenseCAP Watcher to integrate an AI assistant—capable of contextual understanding, device control, status queries, and even knowledge-based Q&A—into your Home Assistant smart home system. You will learn how to make AI a truly effective assistant in your smart life through simple voice interactions.
 
 ## Existing Wiki Updated
 
-### [Develop on reCamera with c&cpp](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/)
+<!-- ### [Get Started with SenseCAP Solar Node](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/)
 
-We have added [some demos built with C and C++](https://wiki.seeedstudio.com/recamera_develop_with_c_cpp/#more-demos-built-with-ccpp).
+We added an example of the [Flash Firmware](https://wiki.seeedstudio.com/get_started_with_meshtastic_solar_node/#flash-firmware) operation.
+
+### [Getting Started with reComputer Super](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/)
+
+We added an example of the [Flash JetPack OS](https://wiki.seeedstudio.com/recomputer_jetson_super_getting_started/#flash-jetpack-os) operation. -->
 
 ## The Efforts of Contributor
 
@@ -52,7 +54,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 
 ## Past Weekly wiki
 
-<details><summary>Click here</summary>
+<details>
+<summary>Click here</summary>
 
 <!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
@@ -118,7 +121,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.7.01st](/Seeed_Elderly/weekly_wiki/wiki240701)
 - [weekly wiki on 2024.7.08th](/Seeed_Elderly/weekly_wiki/wiki240708)
 - [weekly wiki on 2024.7.16th](/Seeed_Elderly/weekly_wiki/wiki240716)
-- [weekly wiki on 2024.7.22th](/Seeed_Elderly/weekly_wiki/wiki240722)
+- [weekly wiki on 2024.7.22nd](/Seeed_Elderly/weekly_wiki/wiki240722)
 - [weekly wiki on 2024.7.29th](/Seeed_Elderly/weekly_wiki/wiki240729)
 - [weekly wiki on 2024.8.05th](/Seeed_Elderly/weekly_wiki/wiki240805)
 - [weekly wiki on 2024.8.12th](/Seeed_Elderly/weekly_wiki/wiki240812)
@@ -127,7 +130,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.9.02nd](/Seeed_Elderly/weekly_wiki/wiki240902)
 - [weekly wiki on 2024.9.09th](/Seeed_Elderly/weekly_wiki/wiki240909)
 - [weekly wiki on 2024.9.16th](/Seeed_Elderly/weekly_wiki/wiki240918)
-- [weekly wiki on 2024.9.23th](/Seeed_Elderly/weekly_wiki/wiki240923)
+- [weekly wiki on 2024.9.23rd](/Seeed_Elderly/weekly_wiki/wiki240923)
 - [weekly wiki on 2024.9.30th](/Seeed_Elderly/weekly_wiki/wiki240930)
 - [weekly wiki on 2024.10.07th](/Seeed_Elderly/weekly_wiki/wiki241007)
 - [weekly wiki on 2024.10.14th](/Seeed_Elderly/weekly_wiki/wiki241014)
@@ -140,7 +143,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2024.12.02nd](/Seeed_Elderly/weekly_wiki/wiki241202)
 - [weekly wiki on 2024.12.09th](/Seeed_Elderly/weekly_wiki/wiki241209)
 - [weekly wiki on 2024.12.16th](/Seeed_Elderly/weekly_wiki/wiki241216)
-- [weekly wiki on 2024.12.23th](/Seeed_Elderly/weekly_wiki/wiki241223)
+- [weekly wiki on 2024.12.23rd](/Seeed_Elderly/weekly_wiki/wiki241223)
 - [weekly wiki on 2024.12.30th](/Seeed_Elderly/weekly_wiki/wiki241230)
 - [weekly wiki on 2025.1.06th](/Seeed_Elderly/weekly_wiki/wiki250106)
 - [weekly wiki on 2025.1.13th](/Seeed_Elderly/weekly_wiki/wiki250113)
@@ -153,10 +156,10 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.3.10th](/Seeed_Elderly/weekly_wiki/wiki250310)
 - [weekly wiki on 2025.3.17th](/Seeed_Elderly/weekly_wiki/wiki250317)
 - [weekly wiki on 2025.3.24th](/Seeed_Elderly/weekly_wiki/wiki250324)
-- [weekly wiki on 2025.3.31th](/Seeed_Elderly/weekly_wiki/wiki250331)
+- [weekly wiki on 2025.3.31st](/Seeed_Elderly/weekly_wiki/wiki250331)
 - [weekly wiki on 2025.4.07th](/Seeed_Elderly/weekly_wiki/wiki250407)
 - [weekly wiki on 2025.4.14th](/Seeed_Elderly/weekly_wiki/wiki250414)
-- [weekly wiki on 2025.4.21th](/Seeed_Elderly/weekly_wiki/wiki250421)
+- [weekly wiki on 2025.4.21st](/Seeed_Elderly/weekly_wiki/wiki250421)
 - [weekly wiki on 2025.4.28th](/Seeed_Elderly/weekly_wiki/wiki250428)
 - [weekly wiki on 2025.5.05th](/Seeed_Elderly/weekly_wiki/wiki250505)
 - [weekly wiki on 2025.5.12th](/Seeed_Elderly/weekly_wiki/wiki250512)
@@ -164,5 +167,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.5.26th](/Seeed_Elderly/weekly_wiki/wiki250526)
 - [weekly wiki on 2025.6.02nd](/Seeed_Elderly/weekly_wiki/wiki250602)
 - [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
+- [weekly wiki on 2025.6.16th](/Seeed_Elderly/weekly_wiki/wiki250616)
+- [weekly wiki on 2025.6.23rd](/Seeed_Elderly/weekly_wiki/wiki250623)
+- [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
 
 </details>
