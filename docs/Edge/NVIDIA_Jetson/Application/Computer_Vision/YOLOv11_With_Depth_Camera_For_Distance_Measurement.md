@@ -11,7 +11,7 @@ keywords:
   - Distance Measurement
   - Computer Vision
   - Jetson
-image: https://files.seeedstudio.com/wiki/Yolo11/recomputer-j4011.webp
+image: https://files.seeedstudio.com/wiki/Yolo11/connection.webp
 slug: /yolov11_with_depth_camera
 last_update:
   date: 07/04/2025

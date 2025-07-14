@@ -19,6 +19,7 @@ const excludedPaths = [
   path.join(docsDirectory, 'Cloud_Chain'), // 排除cloud目录，因为最近在整改
   path.join(docsDirectory, 'Robotics', 'Robot_Sensor', 'Lidar', 'SLAMTEC.md'), //6.18
   path.join(docsDirectory, 'Robotics', 'Robot_Actuator', 'HighTorque.md'), //6.24
+  path.join(docsDirectory, 'Edge', 'NVIDIA_Jetson', 'FAQs', 'Enable_SPI_Interface_on_JetsonNano.md'), //7.02
 ];
 
 // 递归函数，用于遍历多层文件夹

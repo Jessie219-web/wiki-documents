@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 07/07/2025
+  date: 07/14/2025
   author: Frank
 ---
 
@@ -17,19 +17,15 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is July 7th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is July 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [Getting Started with Phospho](https://wiki.seeedstudio.com/control_robotic_arm_via_phospho/)
+### [YOLOv11 With Depth Camera on Jetson Orin For Distance Measurement](https://wiki.seeedstudio.com/yolov11_with_depth_camera/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/phospho/phospho_1.png" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Yolo11/connection.jpg" alt="pir" width={800} height="auto" /></p>
 
-Phospho is how ML engineers make real robots intelligent. We provide the hardware, libraries, and remote control capabilities so developers can collect data, train AI models and deploy applications to real robots in minutes instead of months. In this wiki, we will demonstrate SO Arm 100 robotic arm motion control using phospho.
-
-### [Integrate AI Space Butler into Home Assistant](https://wiki.seeedstudio.com/ha_dify_watcher_llms/)
-
-This article will provide a step-by-step guide on how to use Dify, the Xiaozhi backend service, and the SenseCAP Watcher to integrate an AI assistant—capable of contextual understanding, device control, status queries, and even knowledge-based Q&A—into your Home Assistant smart home system. You will learn how to make AI a truly effective assistant in your smart life through simple voice interactions.
+This wiki demonstrates how to use the Orbbec Gemini 2 depth camera with the reComputer J4012 (with NVIDIA® Jetson™ Orin™ NX 16GB Module), combining YOLOv11 object detection for visual target distance measurement.
 
 ## Existing Wiki Updated
 
@@ -170,5 +166,6 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.6.16th](/Seeed_Elderly/weekly_wiki/wiki250616)
 - [weekly wiki on 2025.6.23rd](/Seeed_Elderly/weekly_wiki/wiki250623)
 - [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
+- [weekly wiki on 2025.7.07th](/Seeed_Elderly/weekly_wiki/wiki250707)
 
 </details>
