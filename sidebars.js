@@ -3903,6 +3903,7 @@ const sidebars = {
                   'Robotics/Robot_Kits/Lerobot/Lerobot_SO100Arm_Isaacsim',
                   'Robotics/Robot_Kits/Lerobot/Lerobot_Lekiwi',
                   'Robotics/Robot_Kits/Lerobot/Sound_Follow_Robot_Powered_by_reSpeaker_and_Lekiwi',
+                  'Robotics/Robot_Software/control_robotic_arm_via_phospho',
                     ]},
 
           ]
@@ -3994,7 +3995,6 @@ const sidebars = {
                   'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
                     ]},
             'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
-            'Robotics/Robot_Software/control_robotic_arm_via_phospho',
           ]
 
     },
