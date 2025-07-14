@@ -158,9 +158,9 @@ module.exports = (async () => {
 
     url: 'https://wiki.seeedstudio.com',
     baseUrl: '/',
-    // onBrokenLinks: 'throw',
-    onBrokenLinks: 'warn',
+    onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
+    onBrokenAnchors: 'warn',
     favicon: 'img/S.png',
     themes: ['docusaurus-theme-search-typesense'],
     scripts: [
