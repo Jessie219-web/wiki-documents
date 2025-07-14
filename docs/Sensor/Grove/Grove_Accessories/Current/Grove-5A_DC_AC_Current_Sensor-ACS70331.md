@@ -283,7 +283,7 @@ If you want to know the calculation formula of the result, please refer to the [
 
 #### AC Demo
 
-:::cautionDanger
+:::caution
 When you use AC power, please pay attention to safety and avoid electric shock.
 :::
 

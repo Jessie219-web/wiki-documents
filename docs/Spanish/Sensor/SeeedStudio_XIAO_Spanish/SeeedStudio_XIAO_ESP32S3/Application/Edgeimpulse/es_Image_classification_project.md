@@ -573,9 +573,9 @@ Asegúrate de reemplazar **"#include &lt;XIAO_esp32S3_CatDog2_inferencing.h&gt;"
 
 ### Otras
 
-- **[STP]** [XIAO ESP32S3 Sense housing design (top)](&lt;https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(top).stp&gt;)
+- **[STP]** [XIAO ESP32S3 Sense housing design (top)](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(top).stp)
 
-- **[STP]** [XIAO ESP32S3 Sense housing design (bottom)](&lt;https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(bottom).stp&gt;)
+- **[STP]** [XIAO ESP32S3 Sense housing design (bottom)](https://files.seeedstudio.com/wiki/SeeedStudio-XIAO-ESP32S3/res/XIAO-ESP32S3-Sense-housing-design(bottom).stp)
 
 _El material de código abierto restante sigue compilando, ¡así que quedense atentos!_
 

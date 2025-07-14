@@ -40,7 +40,7 @@ Grove Indoor Environment Kit for Edison makes it easy to create complete indoor 
 
 * [Grove - UV Sensor](/Grove-UV_Sensor)  x1
 
-* [Grove - PIR Motion Sensor](Grove-PIR_Motion_Sensor)  x1
+* [Grove - PIR Motion Sensor](/Grove-PIR_Motion_Sensor)  x1
 
 * [Grove - Encoder](/Grove-Encoder)  x1
 

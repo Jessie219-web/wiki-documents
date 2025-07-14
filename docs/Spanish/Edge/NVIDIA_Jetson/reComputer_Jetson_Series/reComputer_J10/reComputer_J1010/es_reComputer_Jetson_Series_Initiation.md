@@ -147,7 +147,7 @@ Si no has iniciado un proyecto con la reComputer, podrías considerar usar esta 
 
 - Generalmente hay dos formas de instalar un sistema para reComputer, la primera es usar **NVIDIA SDK Manager**.
 
-Si estás en una **reComputer J2011** o **reComputer J2012**, en el **paso 12** de la wiki [Flashear a eMMC con SDK Manager](reComputer_J2021_J202_Flash_Jetpack), puedes ampliar la capacidad cambiando la ubicación del sistema de grabación.
+Si estás en una **reComputer J2011** o **reComputer J2012**, en el **paso 12** de la wiki [Flashear a eMMC con SDK Manager](/es/reComputer_J2021_J202_Flash_Jetpack), puedes ampliar la capacidad cambiando la ubicación del sistema de grabación.
 
 <div align="center"><img width={500} src="https://files.seeedstudio.com/wiki/recomputer-Jetson-20-1-H1/kuorong/52.png" /></div>
 

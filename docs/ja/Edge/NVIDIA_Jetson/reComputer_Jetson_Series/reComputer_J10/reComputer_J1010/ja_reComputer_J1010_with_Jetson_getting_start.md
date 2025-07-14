@@ -142,7 +142,7 @@ Jetsonモジュールに加えて、reComputer J1010には、オンボードmicr
 ## reComputer J1010にJetPackをフラッシュする
 
 :::info
-J1010はJ101キャリアボードを使用しているため、詳細についてはこの[wiki](/reComputer_J1010_J101_Flash_Jetpack)ページを参照してください。
+J1010はJ101キャリアボードを使用しているため、詳細についてはこの[wiki](/ja/reComputer_J1010_J101_Flash_Jetpack)ページを参照してください。
 :::
 
 ## リソース

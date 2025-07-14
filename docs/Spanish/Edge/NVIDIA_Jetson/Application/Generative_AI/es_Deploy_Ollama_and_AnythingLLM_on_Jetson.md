@@ -119,7 +119,7 @@ Puedes ingresar el comando `ifconfig` en la terminal de la Jetson para encontrar
 
 Sigue las instrucciones en pantalla para completar la configuración de AnythingLLM.
 
-:::Peligro
+:::danger
 Ten en cuenta que en la página de configuración de `LLM Perference`, debemos seleccionar el LLM Llama 3.1 de Ollama.
 :::
 

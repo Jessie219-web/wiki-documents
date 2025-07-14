@@ -264,7 +264,7 @@ Drag out the function node from the function bar on the left, double-click it to
 }
 ```
 
-:::Tip
+:::tip
     The above code is common to all sensors and you can choose to paste it all into a function node or intercept a section of one of the sensors you are using to use.
     It is worth noting that the name of the sensor in the program needs to match the name set later in Power BI for the data stream to be transferred successfully. For example, in the above program the light sensor has the value name: **lightIntensity**.
 :::

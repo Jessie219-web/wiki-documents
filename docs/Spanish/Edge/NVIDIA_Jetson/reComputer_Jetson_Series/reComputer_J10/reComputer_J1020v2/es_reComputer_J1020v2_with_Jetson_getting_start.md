@@ -135,5 +135,5 @@ Para los proveedores de soluciones, la reComputer J1020 v2 tiene preinstalado Je
 ## Flashear JetPack a la reComputer J1020v2
 
 :::info
-Por favor revisa [esta wiki](/reComputer_J2021_J202_Flash_Jetpack) para más información, porque la J1020v2 utiliza la Carrier Board J202.
+Por favor revisa [esta wiki](/es/reComputer_J2021_J202_Flash_Jetpack) para más información, porque la J1020v2 utiliza la Carrier Board J202.
 :::

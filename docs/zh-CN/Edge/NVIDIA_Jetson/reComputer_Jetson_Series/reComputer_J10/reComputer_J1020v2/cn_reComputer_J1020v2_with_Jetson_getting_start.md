@@ -147,7 +147,7 @@ Micro-USB 5V⎓2A</td>
 ## 将 JetPack 刷写到 reComputer J1020v2
 
 :::info
-请参考此 [wiki](/reComputer_J2021_J202_Flash_Jetpack) 页面获取更多信息，因为 J1020v2 使用的是 J202 扩展板。
+请参考此 [wiki](/cn/reComputer_J2021_J202_Flash_Jetpack) 页面获取更多信息，因为 J1020v2 使用的是 J202 扩展板。
 :::
 
 ## 资源

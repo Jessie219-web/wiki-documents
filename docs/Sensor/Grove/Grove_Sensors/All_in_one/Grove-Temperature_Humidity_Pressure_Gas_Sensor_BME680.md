@@ -173,7 +173,7 @@ gas ===>> 101.76 Kohms
 
 ```
 
-:::notebug
+:::note
         1 - To get the stable and accurate value, you need to let the arduino run the code for about 2 hours. The result is much more reliable then.
 
         2 - For the gas part, it's a variable resistance which reflect the value of the VOC gas, so the unit is Kohms. 

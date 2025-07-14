@@ -240,7 +240,7 @@ La reServer industrial tiene 5 puertos RJ45 GbE, 4 de los cuales son puertos PoE
 
 ## Flashear JetPack
 
-:::Peligro
+:::danger
 El dispositivo vendrá preinstalado con JetPack 5.1.1. Si no hay requisitos especiales, no es necesario actualizar el sistema.
 :::
 

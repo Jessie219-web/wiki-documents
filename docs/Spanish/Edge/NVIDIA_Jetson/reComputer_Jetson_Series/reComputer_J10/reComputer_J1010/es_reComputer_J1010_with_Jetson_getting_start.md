@@ -133,6 +133,6 @@ Nota: Recibimos consultas de clientes que necesitan más almacenamiento que el e
 ## Flashear JetPack a la reComputer J1010
 
 :::info
-Revisa esta [wiki](/reComputer_J1010_J101_Flash_Jetpack) parao obtener más información por que la J1010 utiliza la Carrier Board J101.
+Revisa esta [wiki](/es/reComputer_J1010_J101_Flash_Jetpack) parao obtener más información por que la J1010 utiliza la Carrier Board J101.
 :::
 

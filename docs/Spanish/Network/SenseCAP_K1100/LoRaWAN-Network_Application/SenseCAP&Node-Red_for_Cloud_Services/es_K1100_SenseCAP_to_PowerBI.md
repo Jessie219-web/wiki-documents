@@ -283,7 +283,7 @@ Arrastra el nodo función desde la barra de funciones a la izquierda, haz doble 
 }
 ```
 
-:::Tip
+:::tip
     El código anterior es común para todos los sensores y puedes elegir pegarlo todo en un nodo función o interceptar una sección de uno de los sensores que estés usando para utilizarla.
     Cabe destacar que el nombre del sensor en el programa debe coincidir con el nombre que se establezca posteriormente en Power BI para que el flujo de datos se transfiera correctamente. Por ejemplo, en el programa anterior el sensor de luz tiene el nombre de valor: **lightIntensity**.
 :::

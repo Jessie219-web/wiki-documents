@@ -79,8 +79,8 @@ Inter Edison For Arduino
     <td class="tg-yw4l">Grove - Touch Sensor[(to Wiki)](/Grove-Touch_Sensor)</td>
   </tr>
   <tr>
-    <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove-Light_Sensor_v1.2_product_view_700_.jpg)](/Grove-Light_Sensor_v1.2)</td>
-    <td class="tg-yw4l">Grove - Light Sensor v1.2[(to Wiki)](/Grove-Light_Sensor_v1.2)</td>
+    <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove-Light_Sensor_v1.2_product_view_700_.jpg)](/Grove-Light_Sensor)</td>
+<td class="tg-yw4l">Grove - Light Sensor v1.2[(to Wiki)](/Grove-Light_Sensor)</td>
   </tr>
   <tr>
     <td class="tg-yw4l">[![](https://files.seeedstudio.com/wiki/Grove_IoT_Developer_Kit-Microsoft_Azure_Edition/img/Grove_Temperature_Sensor_View.jpg)](https://www.seeedstudio.com/depot/Grove-Temperature-Sensor-p-774.html)</td>

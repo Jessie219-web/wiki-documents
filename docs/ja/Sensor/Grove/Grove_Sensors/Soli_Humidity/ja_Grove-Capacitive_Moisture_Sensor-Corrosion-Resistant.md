@@ -122,7 +122,7 @@ SenseCAP S210xシリーズの産業用センサーは、環境センシングの
 **2** Groveモジュールは購入時にGroveケーブルが付属しています。Groveケーブルを紛失した場合は、[こちら](https://www.seeedstudio.com/Grove-Universal-4-Pin-Buckled-20cm-Cable-%285-PCs-pack%29-p-936.html)をクリックして購入できます。
 :::
 
-:::noteimportant
+:::note
 **1** Arduino UNOをマザーボードとして使用する場合は、DC電源の使用を推奨します。そうしないと、VCCの最大リップルが100mVを超える可能性があります。Seeeduino V4.2をマザーボードとして使用する場合は、DC電源を接続する必要はありません。
 
 **2** ホットスワップはサポートされていません。
