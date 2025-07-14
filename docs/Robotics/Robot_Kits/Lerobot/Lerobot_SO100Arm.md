@@ -893,11 +893,14 @@ cd build
 cmake -Dpybind11_DIR=`pybind11-config --cmakedir` ..
 make -j4
 make install
+cd ~/pyorbbecsdk
+pip install -e .
 ```
 
 3. Test if the depth camera works properly
 ```bash
 cd ~/pyorbbecsdk 
+pip install -e .
 export PYTHONPATH=$PYTHONPATH:~/pyorbbecsdk/install/lib/
 sudo bash ./scripts/install_udev_rules.sh
 sudo udevadm control --reload-rules && sudo udevadm trigger
@@ -922,11 +925,6 @@ This will automatically load the depth camera environment when starting a termin
 
 After connecting your Orbbec depth camera, run the following script to check the depth data stream and color data stream. Two windows will pop up, allowing you to adjust the camera position. Use Ctrl+C in the terminal to exit. Important: The camera must be connected directly to your device, not through a USB hub, as the hub's bandwidth may be too slow for image data transmission.
 
-```bash
-cd ~/lerobot
-python lerobot/common/robot_devices/OrbbecCamera.py
-```
-
 After adjusting the camera, align the camera parameters in the configuration file at `lerobot/lerobot/common/robot_devices/robots/configs.py`.
 
 ```python
@@ -940,23 +938,11 @@ class So101RobotConfig(ManipulatorRobotConfig):
     ''''''''''''''''
     cameras: dict[str, CameraConfig] = field(
         default_factory=lambda: {
-            "laptop": OpenCVCameraConfig(
-                camera_index=0,            
-                fps=30,
-                width=640,
-                height=480,
-            ),
-            "phone": OpenCVCameraConfig(    # Regular camera, compatible with Orbbec camera
-                camera_index=1,             
-                fps=30,
-                width=640,
-                height=480,
-            ),
             "Orbbec":OrbbecCameraConfig(    # Add Orbbec camera configuration here
                 fps=30,
-                use_depth=True              # Whether to use depth
-                width = 640                 # Resolution automatically adapts to width. Only 640 or 1280 (untested) are valid values
-                Hi_resolution_mode = False  # High resolution mode (may reduce visualization quality but improves depth data resolution)
+                use_depth=True,             # Whether to use depth
+                width = 640,                # Resolution automatically adapts to width. Only 640 or 1280 (untested) are valid values
+                Hi_resolution_mode = False, # High resolution mode (may reduce visualization quality but improves depth data resolution)
             ),
 
         }
