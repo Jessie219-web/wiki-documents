@@ -27,34 +27,30 @@ last_update:
  #### Request
 <table >
 <tr>
-<th> key
-</th>
-<th> description
-</th></tr>
+<th> key </th>
+<th> description </th>
+</tr>
 <tr>
-<td width="300"> API-VERSION
-</td>
-<td width="300"> api version
-</td></tr></table>
+<td width="300"> API-VERSION </td>
+<td width="300"> api version </td>
+</tr>
+</table>
 
  #### Response
 <table >
 <tr>
-<th> key
-</th>
-<th> description
-</th></tr>
-<tr>
-<td width="300"> api-gateway-excute-second
-</td>
-<td width="300"> Time in seconds to execute the api
-</td>
+<th> key </th>
+<th> description </th>
 </tr>
 <tr>
-<td width="300"> api-gateway-mpuo-consume
-</td>
-<td width="300"> The quota consumed by executing the api
-</td></tr></table>
+<td width="300"> api-gateway-excute-second </td>
+<td width="300"> Time in seconds to execute the api </td>
+</tr>
+<tr>
+<td width="300"> api-gateway-mpuo-consume </td>
+<td width="300"> The quota consumed by executing the api </td>
+</tr>
+</table>
 
  #### HTTP Basic Authentication
   [HTTP Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication)is one of the most common ways for RESTfull API authentication. We use Access ID as username and Access Key as password. Every HTTP client library should have its built-in support for Basic Authentication, in this documentation we use curl, which uses the –user option to specify Basic Authentication credential.

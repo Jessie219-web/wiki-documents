@@ -37,18 +37,11 @@ This guide will walk you through how to subscribe your devices’ messages as we
   <li>OrgID = Organization ID</li>
   <li>Password = Access API keys</li>
 </ul>
-<div class="language-ruby highlighter-rouge">
-<div class="highlight">
-<pre class="highlight"><code><span class="n">mosquitto_sub</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">h</span> <span class="n">sensecap</span><span class="o">-</span><span class="n">openstream</span><span class="p">.</span><span class="nf">seeed</span><span class="p">.</span><span class="nf">cn</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">t</span> <span class="s1">'/device_sensor_data/&lt;OrgID&gt;/+/+/+/+'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">u</span> <span class="s1">'org-&lt;OrgID&gt;'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="no">P</span> <span class="s1">'&lt;Password&gt;'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="no">I</span> <span class="s1">'org-&lt;OrgID&gt;-quickstart'</span> <span class="p">\</span>
-    <span class="o">-</span><span class="n">v</span>
-</code></pre>
-</div>
-</div>
+
+```bash
+mosquitto_sub -h sensecap-openstream.seeed.cn -t '/device_sensor_data/<OrgID>/+/+/+/+' -u 'org-<OrgID>' -P '<Password>' -I 'org-<OrgID>-quickstart' -v
+```
+
 Please replace the Organization ID and Access API Key you just obtained with the &lt;OrgID&gt; and &lt;Password&gt; above.
 
 2.Power up devices, while devices keep sending messages, you should receive the data like:
@@ -110,11 +103,16 @@ Please replace the Organization ID and Access API Key you just obtained with the
 Example:
 Subscribe to the temperature value collected by the Air Temperature and Humidity Sensor (DeviceEUI: 2CF7F12210400083;Channel: 1;).The temperature measurement ID is 4097.
 Replace &lt;OrgID&gt; as Organization ID, &lt;Password&gt; as Access API Key, execute the command:
-<div className="language-ruby highlighter-rouge">
-  <div className="highlight">
-    <pre className="highlight"><code><span className="n">mosquitto_sub</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">h</span> <span className="n">sensecap</span><span className="o">-</span><span className="n">openstream</span><span className="p">.</span><span className="nf">seeed</span><span className="p">.</span><span className="nf">cn</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">t</span> <span className="s1">'/device_sensor_data/&lt;OrgID&gt;/2CF7F12210400083/1/vs/4097'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">u</span> <span className="s1">'org-&lt;OrgID&gt;'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="no">P</span> <span className="s1">'&lt;Password&gt;'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="no">I</span> <span className="s1">'org-&lt;OrgID&gt;-quickstart'</span> <span className="p">\</span>{"\n"}{"    "}<span className="o">-</span><span className="n">v</span>{"\n"}</code></pre>
-  </div>
-</div>
+
+```bash
+mosquitto_sub \
+  -h sensecap-openstream.seeed.cn \
+  -t '/device_sensor_data/<OrgID>/2CF7F12210400083/1/vs/4097' \
+  -u 'org-<OrgID>' \
+  -P '<Password>' \
+  -I 'org-<OrgID>-quickstart' \
+  -v
+```
 
 Received the data:
 ```cpp

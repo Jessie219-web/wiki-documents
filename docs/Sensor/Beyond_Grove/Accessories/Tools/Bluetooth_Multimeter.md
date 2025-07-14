@@ -24,79 +24,56 @@ This Bluetooth Multimeter features a built-in lithium battery and rechargeable c
 
 ##   Specifications
 ---
-<table  cellspacing="0" width="80%">
+<table cellspacing="0" width="80%">
 <tr>
-<th scope="col"> Item
-</th>
-<th scope="col"> Min
-</th>
-<th scope="col"> Typical
-</th>
-<th scope="col"> Max
-</th>
-<th scope="col"> Unit
-</th></tr>
+<th scope="col">Item</th>
+<th scope="col">Min</th>
+<th scope="col">Typical</th>
+<th scope="col">Max</th>
+<th scope="col">Unit</th>
+</tr>
 <tr>
-<th scope="row"> Voltage Measurement Range
-</th>
-<td> -30
-</td>
-<td> -
-</td>
-<td> 30
-</td>
-<td> VDC
-</td></tr>
+<th scope="row">Voltage Measurement Range</th>
+<td>-30</td>
+<td>-</td>
+<td>30</td>
+<td>VDC</td>
+</tr>
 <tr>
-<th scope="row"> Voltage Measurement Precision
-</th>
-<td colspan="3"> 3
-</td>
-<td>  %
-</td></tr>
+<th scope="row">Voltage Measurement Precision</th>
+<td colspan="3">3</td>
+<td>%</td>
+</tr>
 <tr>
-<th scope="row"> Current Measurement Range(Max)
-</th>
-<td colspan="3"> 1
-</td>
-<td> A
-</td></tr>
+<th scope="row">Current Measurement Range(Max)</th>
+<td colspan="3">1</td>
+<td>A</td>
+</tr>
 <tr>
-<th scope="row"> Current Measurement Precision
-</th>
-<td colspan="3"> 3
-</td>
-<td>  %
-</td></tr>
+<th scope="row">Current Measurement Precision</th>
+<td colspan="3">3</td>
+<td>%</td>
+</tr>
 <tr>
-<th scope="row"> Resistance Measurement Range
-</th>
-<td> 10
-</td>
-<td> -
-</td>
-<td> 1,000,000
-</td>
-<td> Ω
-</td></tr>
+<th scope="row">Resistance Measurement Range</th>
+<td>10</td>
+<td>-</td>
+<td>1,000,000</td>
+<td>Ω</td>
+</tr>
 <tr>
-<th scope="row"> Voltage Measurement Precision
-</th>
-<td colspan="3"> 5
-</td>
-<td>  %
-</td></tr>
+<th scope="row">Voltage Measurement Precision</th>
+<td colspan="3">5</td>
+<td>%</td>
+</tr>
 <tr>
-<th scope="row"> Work Temperature
-</th>
-<td> 0
-</td>
-<td> -
-</td>
-<td> 45
-</td>
-<td> ℃
-</td></tr></table>
+<th scope="row">Work Temperature</th>
+<td>0</td>
+<td>-</td>
+<td>45</td>
+<td>℃</td>
+</tr>
+</table>
 
 ##  Product Overview
 ---
@@ -106,15 +83,11 @@ This Bluetooth Multimeter features a built-in lithium battery and rechargeable c
 *   ②：Programming connector for Serial Bluetooth.
 *   ③：Bluetooth Multimeter power switch.
 *   ④：Pairing indicator.
-<dl><dd>Red indicator and blue indicator will flash alternatively --- during pairing
-</dd><dd>Blue indictor will flash --- paired
-</dd></dl>
+<dl><dd>Red indicator and blue indicator will flash alternatively --- during pairing</dd><dd>Blue indictor will flash --- paired</dd></dl>
 
 
 *   ⑤：Charge indicator.
-<dl><dd>Red indicator light - in charging
-</dd><dd>Green indicator light - charge completely.
-</dd></dl>
+<dl><dd>Red indicator light - in charging</dd><dd>Green indicator light - charge completely.</dd></dl>
 
 *   ⑥：Data transfer indicator. when transferring data, it will flash.
 *   ⑦：Audio Connector for measuring the resistance.
