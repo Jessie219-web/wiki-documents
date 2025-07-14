@@ -103,8 +103,8 @@ Seeed Studio **仅对硬件质量负责**。教程严格按官方文档更新，
       <td>5.5 mm×2.1 mm DC 12 V 2 A</td>
       <td>5.5 mm×2.1 mm DC 5 V 4 A</td>
       <td>
-        5.5 mm×2.1 mm DC 12 V 2 A（Leader Arm）<br />
-        5.5 mm×2.1 mm DC 5 V 4 A（Follower Arm）
+        5.5 mm×2.1 mm DC 12 V 2 A（从臂Follower）<br />
+        5.5 mm×2.1 mm DC 5 V 4 A（主臂Leader）
       </td>
     </tr>
     <tr>

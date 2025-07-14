@@ -103,8 +103,8 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
       <td>5.5 mm × 2.1 mm DC 12 V 2 A</td>
       <td>5.5 mm × 2.1 mm DC 5 V 4 A</td>
       <td>
-        5.5 mm × 2.1 mm DC 12 V 2 A (Leader Arm)<br />
-        5.5 mm × 2.1 mm DC 5 V 4 A (Follower Arm)
+        5.5 mm × 2.1 mm DC 12 V 2 A (Follower Arm)<br />
+        5.5 mm × 2.1 mm DC 5 V 4 A (Leader Arm)
       </td>
     </tr>
     <tr>
