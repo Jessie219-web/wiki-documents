@@ -5,7 +5,7 @@ title: List of Measurement IDs
 keywords:
 - Cloud and Chain
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png        
-slug: /cloud/sensecraft-data/sensecraft-data-platform-api/appendix/list_of_measurement_ids
+slug: /sensecraft-data-platform/api/appendix/list_of_measurement_ids
 aliases:
   - /Cloud_Chain/SenseCAP_API/Appendix/List_of_Measurement_IDs
 last_update:

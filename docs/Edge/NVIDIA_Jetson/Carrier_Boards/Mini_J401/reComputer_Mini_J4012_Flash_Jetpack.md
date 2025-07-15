@@ -322,7 +322,7 @@ Here, we need to download the system image to our Ubuntu PC corresponding to the
     </tr>
     <tr>
       <td>Orin Nx 8GB</td>
-      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EUNTXrMsDcJCnIN2RvmXg6EBBLY6PRZiegvUjqI_N2i0YQ?e=SXEXXz" target="_blank" rel="noopener noreferrer">Download</a></td>
+      <td><a href="https://seeedstudio88-my.sharepoint.com/:u:/g/personal/youjiang_yu_seeedstudio88_onmicrosoft_com/EW8ze7CRh9hLkw0Nr2kowXIBB_5XsQz1G30j1tMYhHUOiw?e=0JWXfG" target="_blank" rel="noopener noreferrer">Download</a></td>
       <td>3A96643CF7CF8D765FD7B1B43CA7BEE<br />AAD97AF6094E073CE392AF6E1BAD45B91</td>
     </tr>
     <tr>

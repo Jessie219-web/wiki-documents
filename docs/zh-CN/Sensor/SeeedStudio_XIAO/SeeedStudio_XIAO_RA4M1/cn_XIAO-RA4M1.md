@@ -66,8 +66,7 @@ XIAO RA4M1 将 Renesas 的 RA4M1 芯片（32 位 ARM® Cortex®-M4 MCU，最高 
     <tbody>
         <tr>
             <th rowspan="2">处理器</th>
-            <td><a href="https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ra4m1-32-bit-microcontrollers-48mhz-arm-cortex-m4-and-lcd-controller-and-cap-touch-hmi">Renesas RA4M1</a>
-            </td>
+            <td><a href="https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ra4m1-32-bit-microcontrollers-48mhz-arm-cortex-m4-and-lcd-controller-and-cap-touch-hmi">Renesas RA4M1</a></td>
         </tr>
         <tr>
             <td>48-MHz Arm® Cortex®-M4 核心</td>
@@ -172,8 +171,7 @@ XIAO RA4M1 推荐的编程工具是 Arduino IDE，因此作为软件准备的一
 - **步骤 1.** 根据您的操作系统下载并安装稳定版本的 Arduino IDE。
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>下载 Arduino IDE</font></span></strong></a>
 </div>
 
 - **步骤 2.** 启动 Arduino 应用程序。
@@ -181,7 +179,7 @@ XIAO RA4M1 推荐的编程工具是 Arduino IDE，因此作为软件准备的一
 - **步骤 3.** 将 RA4M1 开发板包添加到您的 Arduino IDE。
 
     进入 **文件 > 首选项**，在 **"附加开发板管理器 URLs"** 中填写以下 URL：
-    *<https://files.seeedstudio.com/arduino/package_renesas_1.2.0_index.json>*
+    *https://files.seeedstudio.com/arduino/package_renesas_1.2.0_index.json*
     
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/arduino_preference.png" style={{width:800, height:'auto'}}/></div>
 
