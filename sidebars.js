@@ -1884,6 +1884,8 @@ const sidebars = {
         'Sensor/ReSpeaker_2-Mics_Pi_HAT/ReSpeaker_2_Mics_Pi_HAT-Hardware-Revisions',
       ],
     },
+      
+
     {
       type: 'category',
       label: 'ReSpeaker Lite',
@@ -1926,6 +1928,15 @@ const sidebars = {
         'Sensor/ReSpeaker_Lite/respeaker_enclosure',
           ],
     },
+
+ {
+      type: 'category',
+      label: 'reSpeaker XVF3800 USB 4 Mic Array',
+        items: [
+        'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_usb_4_mic_array',
+      ],
+    },
+
 
     {
       type: 'category',
