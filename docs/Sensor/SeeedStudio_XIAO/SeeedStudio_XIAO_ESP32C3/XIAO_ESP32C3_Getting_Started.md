@@ -27,7 +27,6 @@ This wiki will show you how you can quickly get started with XIAO ESP32C3!
     <a class="get_one_now_item" href="https://www.seeedstudio.com/seeed-xiao-esp32c3-p-5431.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong></a>
 </div>
 
-
 ### Specifications
 
 <table>
@@ -123,7 +122,6 @@ This wiki will show you how you can quickly get started with XIAO ESP32C3!
     </tbody>
 </table>
 
-
 ### Features
 
 - **Powerful CPU:** ESP32-C3, 32­bit RISC­-V single­core processor that operates at up to 160 MHz
@@ -138,30 +136,72 @@ This wiki will show you how you can quickly get started with XIAO ESP32C3!
 - **Rich interfaces:** 1xI2C, 1xSPI, 2xUART, 11xGPIO(PWM), 4xADC, 1xJTAG bonding pad interface
 - Single-sided components, surface mounting design
 
-
 ## Hardware overview
 
 > *A3(GP105) - Uses ADC2, which may become inoperative due to false sampling signals. For reliable analog reads, use ADC1(A0/A1/A2) instead. Refer to the ESP32-C3 datasheet.
 
 <table align="center">
-	<tr>
-	    <th>XIAO ESP32C3 front indication diagram</th>
-	</tr>
-	<tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/front-label-3.png" style={{width:700, height:'auto'}}/></div></td>
-	</tr>
+ <tr>
+     <th>XIAO ESP32C3 front indication diagram</th>
+ </tr>
+ <tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/front-label-3.png" style={{width:700, height:'auto'}}/></div></td>
+ </tr>
     <tr>
-	    <th>XIAO ESP32C3 back indication diagram</th>
-	</tr>
+     <th>XIAO ESP32C3 back indication diagram</th>
+ </tr>
     <tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/back-label-6.png" style={{width:700, height:'auto'}}/></div></td>
-	</tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/back-label-6.png" style={{width:700, height:'auto'}}/></div></td>
+ </tr>
     <tr>
-	    <th>XIAO ESP32C3 Pin List</th>
-	</tr>
+     <th>XIAO ESP32C3 Pin List</th>
+ </tr>
     <tr>
-	    <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/pin_map-2.png" style={{width:1000, height:'auto'}}/></div></td>
-	</tr>
+     <td><div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/pin_map-2.png" style={{width:1000, height:'auto'}}/></div></td>
+        <!--
+        Image Description: This image is the official pinout diagram of the Seeed Studio XIAO ESP32-C3 development board.
+        The diagram shows:
+        - The top view of the XIAO ESP32-C3 board.
+        - GPIO pin mappings, digital/analog labels, power pins, and function-specific roles (I2C, UART, SPI).
+        - Color-coded labels for each pin type.
+        Pin layout from left to right (as seen in the image):
+        === LEFT SIDE PINS (top to bottom) ===
+        - GPIO2    | A0  | D0   → Analog-capable (ADC1)
+        - GPIO3    | A1  | D1   → Analog-capable (ADC1)
+        - GPIO4    | A2  | D2   → Analog-capable (ADC1)
+        - GPIO5    | A3 (crossed out) | D3 → Analog-capable via ADC2 (not recommended)
+        - GPIO6    | SDA | D4   → I2C data line
+        - GPIO7    | SCL | D5   → I2C clock line
+        - GPIO21   | TX  | D6   → UART TX (Transmit)
+        === RIGHT SIDE PINS (top to bottom) ===
+        - 5V       → Power input/output
+        - GND      → Ground
+        - 3V3      → 3.3V power output
+        - D10      | MOSI | GPIO10 → SPI MOSI (not analog-capable)
+        - D9       | MISO | GPIO9  → SPI MISO (not analog-capable)
+        - D8       | SCK  | GPIO8  → SPI clock (not analog-capable)
+        - D7       | RX   | GPIO20 → UART RX (Receive)
+        === Pin Function Color Legend (as shown in image) ===
+        - Blue: Digital pin labels (D0–D10)
+        - Pink: Analog pin labels (A0–A2); A3 is crossed out due to ADC2 instability
+        - Green: GPIO number
+        - Teal: I2C function (SDA, SCL)
+        - Gray: UART function (TX, RX)
+        - Purple: SPI function (MOSI, MISO, SCK)
+        - Black: GND
+        - Red: Power pins (5V, 3V3)
+        === Footnote in Image ===
+        "A3(GPIO5) - Uses ADC2, which may become inoperative due to false sampling signals. 
+        For reliable analog reads, use ADC1 instead. Refer to the ESP32-C3 datasheet."
+        === Notes ===
+        - Only A0, A1, and A2 are officially supported analog pins using ADC1.
+        - A3 (GPIO5) is crossed out and discouraged due to ADC2 reliability issues.
+        - GPIO0, GPIO1 are not shown as analog pins in this image, though technically ADC1-capable.
+        - GPIOs 8–10, 20–21 are not usable for analog input.
+        - This layout helps developers identify safe and recommended pin functions when designing circuits or writing firmware.
+        End of XIAO ESP32-C3 pinout description.
+        -->
+ </tr>
 </table>
 
 ### Power Pins
@@ -169,13 +209,12 @@ This wiki will show you how you can quickly get started with XIAO ESP32C3!
 - 5V - This is 5v out from the USB port. You can also use this as a voltage input but you must have some sort of diode (schottky, signal, power) between your external power source and this pin with anode to battery, cathode to 5V pin.
 - 3V3 - This is the regulated output from the onboard regulator. You can draw 700mA
 - GND - Power/data/signal ground
- 
+
 ### Strapping Pins
 
 According to the chip manual of ESP32C3, **GPIO2**, **GPIO8** and **GPIO9** in the chip are Strapping Pins, the high and low level configurations of these pins may allow the chip to enter into different Boot modes, please pay attention to this point when you use these pins, otherwise it may prevent your XIAO from uploading or executing the program all the time.
 
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_WiFi/20.png" style={{width:800, height:'auto'}}/></div>
-
 
 ## Getting started
 
@@ -393,7 +432,6 @@ In the program, we are using a **D1** low level to wake up. This means that we c
 Currently the XIAO ESP32C3 only supports GPIO wake-up, and the only pins that support wake-up are D0~D3. This program may not work on other pins.
 :::
 
-
 ## Troubleshooting
 
 ### Q1: My Arduino IDE is stuck when uploading code to the board
@@ -477,11 +515,11 @@ You will see the following output when flashing is successful
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
