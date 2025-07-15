@@ -136,13 +136,13 @@ To flash a new firmware:
 -   Hold the Arch BLE's button and power it ON.
 -   A CRP DISABLD disk will pop up.
     -   On Windows, replace firmware.bin with the above firmware.
-    -   On Linux/Mac, use command: **dd if={new\_firmware.bin} of={firmware.bin} conv=notrunc**
+    -   On Linux/Mac, use command: **dd if=\{new_firmware.bin\} of=\{firmware.bin\} conv=notrunc**
 
 
 
 ## Schematic Online Viewer
 
-<div className="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Arch_BLE/res/Arch_BLE_v1.0_Eagle.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
+<div class="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Arch_BLE/res/Arch_BLE_v1.0_Eagle.zip" style={{borderRadius: '0px 0px 4px 4px', height: 500, borderStyle: 'solid', borderWidth: 1, borderColor: 'rgb(241, 241, 241)', overflow: 'hidden', maxWidth: 1280, maxHeight: 700, boxSizing: 'border-box'}}>
 </div>
 
 

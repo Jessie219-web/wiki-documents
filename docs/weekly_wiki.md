@@ -5,7 +5,7 @@ keywords:
 - weeely wiki
 image: https://files.seeedstudio.com/wiki/IndexWiki/logo_image.jpg
 last_update:
-  date: 06/30/2025
+  date: 07/14/2025
   author: Frank
 ---
 
@@ -17,25 +17,15 @@ This is Frank in Seeed Studio and welcome to the Seeed Studio weekly wiki! Each 
 
 ✨ For each week, when a collaborator contributes a project or fixes something important, we put the stars at the end of title of "Weekly Wiki" for more people be able to see their efforts👍.
 
-Today is June 30th, and a brand new week has begun! Check out what Seeed Studio did last week!
+Today is July 14th, and a brand new week has begun! Check out what Seeed Studio did last week!
 
 ## Latest Wiki Launched
 
-### [A Sound Follow Robot Powered by reSpeaker and Lekiwi](https://wiki.seeedstudio.com/sound_follow_robot/)
+### [YOLOv11 With Depth Camera on Jetson Orin For Distance Measurement](https://wiki.seeedstudio.com/yolov11_with_depth_camera/)
 
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/sound_follow/robot.jpg" alt="pir" width={800} height="auto" /></p>
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/Yolo11/connection.jpg" alt="pir" width={800} height="auto" /></p>
 
-The Lewiki Robot Kit, integrated with the ReSpeaker Mic Array v2.0, gains voice interaction and sound navigation capabilities. This guide details the step-by-step process for configuring both hardware and software environments to achieve sound-following functionality on the robot.
-
-### [Multi-GMSL Cameras for Real-Time Object Detection and 3D Reconstruction on Jetson AGX Orin](https://wiki.seeedstudio.com/multiple_cameras_with_jetson/)
-
-<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/yolo1.gif" alt="pir" width={800} height="auto" /></p>
-
-This wiki will use the reServer Industrial J501 Carrier Board with the GMSL extension board to introduce how to deploy real-time object detection and 3D reconstruction in a multi-camera system.
-
-### [Real-time YOLO object detection using reCamera based on Cpp](https://wiki.seeedstudio.com/real_time_yolo_object_detection_using_recamera_based_on_cpp/)
-
-This document demonstrates how to implement real-time photo capture, YOLO object detection, and result access by HTTP with C++ based on cross-compilation on reCamera terminals. This approach avoids the overheating issues encountered when using Node-RED on reCamera. You can refer to this document to modify the C++ code for customized computer vision applications.
+This wiki demonstrates how to use the Orbbec Gemini 2 depth camera with the reComputer J4012 (with NVIDIA® Jetson™ Orin™ NX 16GB Module), combining YOLOv11 object detection for visual target distance measurement.
 
 ## Existing Wiki Updated
 
@@ -60,7 +50,8 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 
 ## Past Weekly wiki
 
-<details><summary>Click here</summary>
+<details>
+<summary>Click here</summary>
 
 <!-- - [weekly wiki on 2.27th](/Seeed_Elderly/weekly_wiki/wiki227)
 - [weekly wiki on 3.06th](/Seeed_Elderly/weekly_wiki/wiki306)
@@ -174,5 +165,7 @@ This wiki introduces setting up NuttX RTOS on the Seeed Studio XIAO ESP32C6 boar
 - [weekly wiki on 2025.6.09th](/Seeed_Elderly/weekly_wiki/wiki250609)
 - [weekly wiki on 2025.6.16th](/Seeed_Elderly/weekly_wiki/wiki250616)
 - [weekly wiki on 2025.6.23rd](/Seeed_Elderly/weekly_wiki/wiki250623)
+- [weekly wiki on 2025.6.30th](/Seeed_Elderly/weekly_wiki/wiki250630)
+- [weekly wiki on 2025.7.07th](/Seeed_Elderly/weekly_wiki/wiki250707)
 
 </details>

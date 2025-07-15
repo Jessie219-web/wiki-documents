@@ -227,7 +227,7 @@ BeagleBone® BlueをMicro-USBケーブルでコンピュータに接続します
 <div align="center"><img width={1000} src="https://github.com/SeeedDocument/Beaglebone_Blue/raw/master/img/connect.jpg" /></div>
 
 :::caution
-USBケーブルを優しく差し込んでください。そうしないとインターフェースを損傷する可能性があります。内部に4本のワイヤーがあるUSBケーブルを使用してください。2本のワイヤーしかないケーブルではデータ転送ができません。使用しているケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><B>こちら</B></a>をクリックして購入できます。BeagleBone® Blueのモーター制御モジュールを使用する場合、USBポート経由の電源供給では不十分なため、DC-DCポートまたは2Sバッテリーを使用する必要があります。
+USBケーブルを優しく差し込んでください。そうしないとインターフェースを損傷する可能性があります。内部に4本のワイヤーがあるUSBケーブルを使用してください。2本のワイヤーしかないケーブルではデータ転送ができません。使用しているケーブルが不明な場合は、<a href="https://www.seeedstudio.com/Micro-USB-Cable-48cm-p-1475.html"><strong>こちら</strong></a>をクリックして購入できます。BeagleBone® Blueのモーター制御モジュールを使用する場合、USBポート経由の電源供給では不十分なため、DC-DCポートまたは2Sバッテリーを使用する必要があります。
 :::
 
 電源（PWRまたはON）LEDが点灯しているのが確認できます。1分ほどで、他のLEDがデフォルトの設定で点滅し始めます。
