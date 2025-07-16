@@ -4,9 +4,9 @@ title: works with TRMNL
 keywords:
 - ePaper display
 - TRMNL
-image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/216.webp
-slug: /works_with_TRMNL
-sidebar_position: 4
+image: https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/trmnl_head.webp
+slug: /works_with_trmnl
+sidebar_position: 2
 last_update:
   date: 06/29/2025
   author: Allen
@@ -19,10 +19,10 @@ last_update:
 <br></br>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/XIAO-7-5-ePaper-Panel-p-6416.html"><strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/TRMNL-7.5-OG-DIY-Kit.html">
+      <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
-
 
 ## What is [TRMNL](https://trmnl.app/)?
 
@@ -97,7 +97,8 @@ To get your TRMNL 7.5inch(OG) DIY kit working with TRMNL, you need to flash the 
    - Download the latest firmware zip from [here](https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/TRMNL_Kit_Firmware.zip).
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/res/TRMNL_XIAO_7.5inch_epaper_panel_1.5.4.zip"><strong><span><font color={'FFFFFF'} size={"4"}> Download Firmware 🖱️</font></span></strong>
+    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/res/TRMNL_XIAO_7.5inch_epaper_panel_1.5.4.zip">
+    <strong><span><font color={'FFFFFF'} size={"4"}> Download Firmware 🖱️</font></span></strong>
     </a>
 </div>
 
@@ -341,7 +342,7 @@ Your expertise and commitment have made this integration possible and greatly im
 
 ## Resources
 
-<!-- - **[GITHUB]**: [TRMNL firmware repository](https://github.com/usetrmnl/firmware) -->
+- **[GITHUB]**: [TRMNL firmware repository](https://github.com/usetrmnl/firmware)
 - **[Firmware]** [TRMNL ePaper Library (GitHub)](https://github.com/Seeed-Projects/Seeed_TRMNL_Eink_Project)   
 - **[Hardware]** [Driver Board SCH](https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/XIAO_ePaper_driver_board_sch.pdf)
 - **[Printable]** [triangular base](https://www.printables.com/model/1354873)  

@@ -1,8 +1,8 @@
 ---
 description: 'This page is the navigation page for TRMNL 7inch5(OG) DIY Kit.'
 title: Getting Started with TRMNL 7.5inch(OG) DIY Kit
-image: https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/100.webp
-slug: /TRMNL_7inch5_diy_kit_main_page
+image: https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/trmnl_head.webp
+slug: /trmnl_7inch5_diy_kit_main_page
 sidebar_position: 1
 last_update:
   date: 06/29/2025
@@ -25,7 +25,7 @@ The TRMNL 7.5" (OG) DIY Kit, co-developed by Seeed Studio and TRMNL, is a versat
 
 ### Features
 :::tip
-  To celebrate the collaboration, Team TRMNL offers 30% off on TRMNL BYOD firmware access ($35, usually for $50). Use code **trmnl-seeed-diy** at checkout (first 200 customers, 1 per customer). First come, first serve!
+To celebrate the collaboration, Team TRMNL offers 30% off on TRMNL BYOD firmware access (35 dollar, usually for 50 dollar). Use code **trmnl-seeed-diy** at checkout (first 200 customers, 1 per customer). First come, first serve!
 :::
 
 - **TRMNL BYOD Compatibility**: Official kit for building TRMNL 7.5'' OG device with 375+ plugins and 8 no-code layouts (e.g., Calendar, Shopify, GitHub)
@@ -83,7 +83,7 @@ Print open-source enclosure parts from [Printables](https://www.printables.com/)
 ## Wiki Center
 ### Explore Detailed Guides
 
-#### 1. [TRMNL BYOD Ecosystem Tutorial](https://wiki.seeedstudio.com/works_with_TRMNL/)  
+#### 1. [TRMNL BYOD Ecosystem Tutorial](https://wiki.seeedstudio.com/works_with_trmnl/)  
 Discover how to use the TRMNL BYOD platform with 375+ plugins, including no-code dashboard creation for your work and life.  
 
 #### 2. [Works with Home Assistant](https://wiki.seeedstudio.com/XIAO_ESP32S3_Getting_Started/)  
@@ -100,7 +100,8 @@ Master TRMNL kit control with Arduino, including refresh mechanisms, graphics re
 - **[Thingiverse]** [triangular base](https://www.thingiverse.com/thing:7091094)
 - **[Thingiverse]** [L-shaped base](https://www.thingiverse.com/thing:7091096)
 
-## Tech Support & Product Discussion
+## Tech Support & Product Discussion -->
+
 Thank you for choosing our products! We offer multiple support channels:
 <div class="table-center">
   <div class="button_tech_support_container">
