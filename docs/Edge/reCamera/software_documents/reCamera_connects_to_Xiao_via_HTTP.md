@@ -88,7 +88,7 @@ It is necessary to download [Arduino](https://www.arduino.cc/en/software) to fla
 
 **Step 2.** Add ESP32 board package to your Arduino IDE
 Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-**<https://jihulab.com/esp-mirror/espressif/arduino-esp32.git>**
+**https://jihulab.com/esp-mirror/espressif/arduino-esp32.git**
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/6.png" /></div>
 
