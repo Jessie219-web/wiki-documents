@@ -15,9 +15,19 @@ last_update:
 
 # reSpeaker XVF3800 USB Mic Array with XIAO ESP32S3 RGB Test
 
+
+
 ## Objective
 
 This code controls the colorful LED ring on the **reSpeaker XVF3800 USB 4-Mic Array** using an **ESP32S3 microcontroller** via **I2C communication**. It changes the **LED's effect, color, speed, and brightness** by sending specific commands. The ESP32S3 tells the XVF3800 what to do using bytes of data through the Wire library (I2C). You can pick your own colors using RGB values like orange, red, or blue. Once uploaded, the LEDs light up with the effect, color, and brightness you selected.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/front-xiao.jpg" alt="pir" width={600} height="auto" /></p>
+
+<div class="get_one_now_container" style={{textAlign: 'center'}}>
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-Lite-p-5928.html">
+            <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
+    </a>
+</div>
 
 ## How It Works
 
@@ -91,5 +101,18 @@ void setLEDBrightness(uint8_t brightness) {
   Serial.println("LED brightness set.");
 }
 
-
 ```
+
+## Tech Support & Product Discussion
+
+Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
+
+<div class="button_tech_support_container">
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
+</div>
+
+<div class="button_tech_support_container">
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
+</div>
