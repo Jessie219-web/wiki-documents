@@ -36,9 +36,9 @@ The ReSpeaker XVF3800 USB 4-Mic Array is a professional 4-mic circular array wit
 
 - **Unique Device Serial Number** :Built-in SN enables  multi-device deployments and advanced device management
 
-- **Dual Operation Modes** :USB plug-and-play mode and INT-Device mode, configurable via USB or I2S
+- **Dual Operation Modes** :USB plug-and-play mode for instant PC connectivity and INT-Device (I2S) mode for integration with embedded systems—configurable via USB or I2C commands by switching the firmware accordingly
 
-- **Open Source Compatible** :Works with XIAO Series,  Arduino, Raspberry Pi, PC/Mac via I2S and USB Audio Class 2.0
+- **Open Source Compatible** :Works with USB hosts (Windows, macOS, Raspberry Pi OS) and I2S hosts (XIAO Series, ESP32, Arduino).
 
 - **Visual Feedback** :Programmable RGB LEDs and status indicators show device states and voice activity
 
@@ -76,7 +76,7 @@ The ReSpeaker XVF3800 USB 4-Mic Array is a professional 4-mic circular array wit
 
 ### XIAO ESP32S3 support 
 
-- I2S & I2C communication
+-  Stereo I2S input/output with multiple output options; I2C interface for configuring and managing XVF3800 parameters.
 - XIAO reset via IO pin
 - Interface and solder pads
 

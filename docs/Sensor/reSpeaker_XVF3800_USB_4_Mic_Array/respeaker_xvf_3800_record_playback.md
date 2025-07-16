@@ -29,11 +29,10 @@ In the loop() function, the I2S output is first stopped with out.end(), then rec
 #include "AudioTools.h"
 
 AudioInfo info(16000, 2, 32);
-// SineWaveGenerator<int16_t> sineWave(32000);                // subclass of SoundGenerator with max amplitude of 32000
-// GeneratedSoundStream<int16_t> sound(sineWave);             // Stream generated from sine wave
+
 I2SStream out; 
 I2SConfig config;
-// StreamCopy copier(out, sound);                             // copies sound into i2s
+
 
 uint8_t buffer[128000];
 size_t bytes_read = 0;
@@ -57,9 +56,6 @@ void setup(void) {
   config.pin_data_rx = 43;
   config.is_master = true;
   out.begin(config);
-
-  // Setup sine wave
-  // sineWave.begin(info, N_B4);
   Serial.println("started...");
 }
 

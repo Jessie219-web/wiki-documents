@@ -29,14 +29,22 @@ last_update:
 
 ## Features
 
-- Chip upgrade :From XVF3000 to XVF3800
-- Quad Microphone Array :4 high-performance mics in circular pattern for 360° far-field voice capture up to 5 meters
-- Advanced Audio Processing :Powered by XVF3800 with AEC, multi-beamforming, de-reverberation, DoA detection, dynamic noise suppression, 60dB AGC range
-- Unique Device Serial Number :Built-in SN enables multi-device deployments and advanced device management
-- Dual Operation Modes :USB plug-and-play mode and INT-Device mode, configurable via USB or I2S
-- Open Source Compatible :Works with XIAO Series, Arduino, Raspberry Pi, PC/Mac via I2S and USB Audio Class 2.0
-- Visual Feedback :Programmable RGB LEDs and status indicators show device states and voice activity
-- Equal or better audio quality :compared to previous model.
+- **Chip upgrade** :From XVF3000 to XVF3800
+  
+- **Quad Microphone Array** :4 high-performance mics in circular pattern for 360° far-field voice capture up to 5 meters
+  
+- **Advanced Audio Processing** :Powered by XVF3800 with AEC, multi-beamforming, de-reverberation, DoA detection, dynamic noise suppression, 60dB AGC range
+
+- **Unique Device Serial Number** :Built-in SN enables  multi-device deployments and advanced device management
+
+- **Dual Operation Modes** :USB plug-and-play mode for instant PC connectivity and INT-Device (I2S) mode for integration with embedded systems—configurable via USB or I2C commands by switching the firmware accordingly
+
+- **Open Source Compatible** :Works with USB hosts (Windows, macOS, Raspberry Pi OS) and I2S hosts (XIAO Series, ESP32, Arduino).
+
+- **Visual Feedback** :Programmable RGB LEDs and status indicators show device states and voice activity
+
+- **Equal or better audio quality** :compared to previous model
+
 
 ## Hardware Overview
 
@@ -51,7 +59,6 @@ last_update:
 | **Microphone Array**          | **Quad PDM MEMS microphones** in circular pattern, supporting **360° far-field voice capture (5m)**. |
 | **Audio Codec**               | **TLV320AIC3104**, handles audio conversion and output.                                              |
 | **RGB LEDs**                  | **12x WS2812** individually-addressable RGB LEDs for visual feedback (e.g., status, voice activity). |
-| **Power Indicator Light**     | Red LED, **always on** when device is powered.                                                       |
 | **Mute Button**               | Press to **mute/unmute** the microphone input.                                                       |
 | **Mute Indicator LED**        | Lights up (typically red) to show that audio is muted.                                               |
 | **Reset Button**              | Hardware reset for the board/system.                                                                 |
@@ -72,12 +79,19 @@ last_update:
 
 ### XIAO ESP32S3 support 
 
-- I2S & I2C communication
+- Stereo I2S input/output with multiple output options; I2C interface for configuring and managing XVF3800 parameters.
 - XIAO reset via IO pin
 - Interface and solder pads
 
 ### Pin Out
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/pinout.jpg" alt="pir" width={900} height="auto" /></p>
+
+### On-Board WIFI Antenna 
+
+When using the XIAO ESP32S3, no external antenna is needed—simply connect the antenna slots to use the built-in PCB antenna.
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/antenna.PNG" alt="pir" width={600} height="auto" /></p>
 
 ### GPIO Overview 
 
