@@ -1934,6 +1934,7 @@ const sidebars = {
       label: 'reSpeaker XVF3800 USB 4 Mic Array',
         items: [
         'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_usb_4_mic_array',
+        'Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_with_xiao_intro',
       ],
     },
 
