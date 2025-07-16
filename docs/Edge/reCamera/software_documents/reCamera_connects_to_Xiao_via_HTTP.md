@@ -1,13 +1,13 @@
 ---
 description: This wiki demonstrates how to connect to Xiao via HTTP on reCamera to run C++ project.
-title: reCamera connects to Xiao via HTTP
+title: reCamera connects to XIAO via HTTP
 keywords:
   - Http
   - reCamera
   - Xiao
   - YOLO
   - C++
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
 slug: /recamera_connects_to_xiao_via_http
 last_update:
   date: 07/11/2025
@@ -16,7 +16,7 @@ last_update:
 no_comments: false # for Disqus
 ---
 
-# reCamera connects to Xiao via HTTP
+# reCamera connects to XIAO via HTTP
 This document demonstrates how to enable communication between the reCamera and [Xiao](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/) via HTTP, transmitting data to [Xiao](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/) so that you can integrate the reCamera into your own projects.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/1.png" /></div>
@@ -68,7 +68,7 @@ Ensure your reCamera is connected to your WiFi network.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/5.png" /></div>
 
 
-### Xiao 
+### XIAO 
 
 #### Network connection and send HTTP requests
 
