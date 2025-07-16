@@ -102,6 +102,7 @@ void setLEDBrightness(uint8_t brightness) {
 }
 
 ```
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/led_2.gif" alt="pir" width={600} height="auto"/></p>
 
 ## Tech Support & Product Discussion
 

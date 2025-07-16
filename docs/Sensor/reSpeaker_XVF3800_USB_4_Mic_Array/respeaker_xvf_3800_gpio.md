@@ -123,6 +123,9 @@ bool read_gpo_values(uint8_t *buffer, uint8_t *status) {
 }
 
 ```
+
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/GPO.PNG" alt="pir" width={600} height="auto" /></p>
+
 ## Read GPI Pin States
 
 **Goal**: Check states of **input-capable GPIOs** (e.g., mute button status).
@@ -207,6 +210,7 @@ bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
 
 
 ```
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/GPI.PNG" alt="pir" width={600} height="auto" /></p>
 
 ## Write to GPO Pin – Mute Mic Example
 

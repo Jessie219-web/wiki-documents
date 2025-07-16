@@ -110,7 +110,7 @@ void loop() {
   }
 }
 ```
-
+<p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/i2s.PNG" alt="pir" width={900} height="auto" /></p>
 
 ## Tech Support & Product Discussion
 
