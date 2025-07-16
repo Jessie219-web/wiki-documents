@@ -1,10 +1,24 @@
 const docList = [
   [
     {
+      "path": "/yolov11_with_depth_camera",
+      "image": "https://files.seeedstudio.com/wiki/Yolo11/connection.webp",
+      "title": "YOLOv11 With Depth Camera on Jetson Orin For Distance Measurement",
+      "date": "07/04/2025"
+    },
+    {
+      "path": "/control_robotic_arm_via_phospho",
+      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/lerobot/so_arm_100.webp",
+      "title": "Getting Started with Phospho",
+      "date": "7/1/2025"
+    }
+  ],
+  [
+    {
       "path": "/multiple_cameras_with_jetson",
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/J501/yolo1.webp",
       "title": "Multi-GMSL Cameras for Real-Time Object Detection and 3D Reconstruction on Jetson AGX Orin",
-      "date": "06/26/2025"
+      "date": "06/30/2025"
     },
     {
       "path": "/real_time_yolo_object_detection_using_recamera_based_on_cpp",
@@ -67,20 +81,6 @@ const docList = [
       "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/gr00t/dataset.webp",
       "title": "Control 6/7 DOF Robot Arm using NVIDIA Isaac GR00T N1.5",
       "date": "6/16/2025"
-    }
-  ],
-  [
-    {
-      "path": "/recomputer_jetson_robotics_j401_getting_started",
-      "image": "https://files.seeedstudio.com/wiki/reComputer-Jetson/robotics_j401/recomputer_robotics1.webp",
-      "title": "reComputer Jetson Robotics J401 Hardware and Getting Started",
-      "date": "06/10/2025"
-    },
-    {
-      "path": "/how_to_connect_sensecap_s210x_to_datacake_via_ttn",
-      "image": "https://files.seeedstudio.com/wiki/SenseCAPS210X/Datacake/image1.webp",
-      "title": "Connect to Datacake via TTN",
-      "date": "6/10/2025"
     }
   ]
 ];

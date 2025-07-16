@@ -149,7 +149,7 @@ It also supports a wide range of LLM & Physical AI frameworks, such as NVIDIA, H
     </tr>
     <tr>
       <td>Storage</td>
-      <td colSpan={4}>1x M.2 KEY M PCIe (M.2 NVMe 2242 SSD 128G included)</td>
+      <td colSpan={4}>1x M.2 KEY M PCIe (M.2 NVMe 2280 SSD 128G included)</td>
     </tr>
     <tr>
       <td rowSpan={3}>Networking</td>

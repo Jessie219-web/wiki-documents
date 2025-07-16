@@ -20,10 +20,7 @@ import TabItem from '@theme/TabItem';
 <!-- Product Description -->
 
 <div style={{ textAlign: 'center' }}>
-  <img 
-    src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/2-102010551-Seeed-Studio-XIAO-RA4M1-45font.jpg" 
-    style={{ width: 480, height: 'auto', "border-radius": '12.8px' }} 
-  />
+  <img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/2-102010551-Seeed-Studio-XIAO-RA4M1-45font.jpg" style={{ width: 480, height: 'auto', "border-radius": '12.8px' }} />
 </div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
@@ -64,8 +61,7 @@ The XIAO RA4M1 integrates Renesas' RA4M1 chip (32-bit ARM® Cortex®-M4 MCU up t
     <tbody>
         <tr>
             <th rowspan="2">Processor</th>
-            <td><a href="https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ra4m1-32-bit-microcontrollers-48mhz-arm-cortex-m4-and-lcd-controller-and-cap-touch-hmi">Renesas RA4M1</a>
-            </td>
+            <td><a href="https://www.renesas.com/us/en/products/microcontrollers-microprocessors/ra-cortex-m-mcus/ra4m1-32-bit-microcontrollers-48mhz-arm-cortex-m4-and-lcd-controller-and-cap-touch-hmi">Renesas RA4M1</a></td>
         </tr>
         <tr>
             <td>48-MHz Arm® Cortex®-M4 Core</td>
@@ -170,8 +166,7 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 - **Step 1.** Download and Install the stable version of Arduino IDE according to your operating system.
 
 <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
+    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong></a>
 </div>
 
 - **Step 2.** Launch the Arduino application.
@@ -179,7 +174,7 @@ If this is your first time using Arduino, we highly recommend you to refer to [G
 - **Step 3.** Add RA4M1 board package to your Arduino IDE.
 
     Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-    *<https://files.seeedstudio.com/arduino/package_renesas_1.2.0_index.json>*
+    *https://files.seeedstudio.com/arduino/package_renesas_1.2.0_index.json*
     
     <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO-R4AM1/img/arduino_preference.png" style={{width:800, height:'auto'}}/></div>
 

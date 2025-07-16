@@ -103,8 +103,8 @@ Seeed Studio is only responsible for the quality of the hardware itself. The tut
       <td>5.5 mm × 2.1 mm DC 12 V 2 A</td>
       <td>5.5 mm × 2.1 mm DC 5 V 4 A</td>
       <td>
-        5.5 mm × 2.1 mm DC 12 V 2 A (Leader Arm)<br />
-        5.5 mm × 2.1 mm DC 5 V 4 A (Follower Arm)
+        5.5 mm × 2.1 mm DC 12 V 2 A (Follower Arm)<br />
+        5.5 mm × 2.1 mm DC 5 V 4 A (Leader Arm)
       </td>
     </tr>
     <tr>
@@ -1036,9 +1036,9 @@ INFO 2024-08-10 15:02:58 ol_robot.py:219 dt:33.34 (30.0hz) dtRlead: 5.06 (197.5h
 
 - If you uploaded your dataset to the hub with `--control.push_to_hub=true`, you can [visualize your dataset online](https://huggingface.co/spaces/lerobot/visualize_dataset) by copy pasting your repo id given by:
 
-- Press right arrow -> at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
+- Press right arrow → at any time during episode recording to early stop and go to resetting. Same during resetting, to early stop and to go to the next episode recording.
 
-- Press left arrow <- at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
+- Press left arrow ← at any time during episode recording or resetting to early stop, cancel the current episode, and re-record it.
 
 - Press escape ESC at any time during episode recording to end the session early and go straight to video encoding and dataset uploading.
 

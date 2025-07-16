@@ -5,7 +5,7 @@ title: Getting Started with reSpeaker XVF3800 USB Mic Array
 keywords:
 - reSpeaker
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /reSpeaker_xvf3800_introduction
+slug: /respeaker_xvf3800_introduction
 last_update:
   date: 7/15/2025
   author: Kasun Thushara
