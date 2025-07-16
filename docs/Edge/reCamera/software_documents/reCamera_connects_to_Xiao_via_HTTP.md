@@ -1,10 +1,10 @@
 ---
-description: This wiki demonstrates how to connect to Xiao via HTTP on reCamera to run C++ project.
+description: This wiki demonstrates how to connect to XIAO via HTTP on reCamera to run C++ project.
 title: reCamera connects to XIAO via HTTP
 keywords:
   - Http
   - reCamera
-  - Xiao
+  - XIAO
   - YOLO
   - C++
 image: https://files.seeedstudio.com/wiki/reCamera/recamera_banner.webp
@@ -17,12 +17,15 @@ no_comments: false # for Disqus
 ---
 
 # reCamera connects to XIAO via HTTP
-This document demonstrates how to enable communication between the reCamera and [Xiao](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/) via HTTP, transmitting data to [Xiao](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/) so that you can integrate the reCamera into your own projects.
+
+This document demonstrates how to enable communication between the reCamera and [XIAO](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/) via HTTP, transmitting data to [XIAO](https://wiki.seeedstudio.com/SeeedStudio_XIAO_Series_Introduction/) so that you can integrate the reCamera into your own projects.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/1.png" /></div>
 
 ## Preparation
-### reCamera 
+
+### reCamera
+
 #### HTTP API and Network connection
 
 **Firstly**, prepare your reCamera's C++ supervisor project and the running environment.
@@ -31,11 +34,13 @@ This document demonstrates how to enable communication between the reCamera and 
 
 - **Step 2.** Connect the reCamera to the PC using a USB cable, use **MobaXterm** to access the reCamera terminal (**192.168.42.1**), and navigate to **/etc/init.d/** to remove the three auto-start programs: **S93sscma-supervisor, S03node-red, and S91sscma-node**.(For detailed instructions, refer to the wiki: [Real-time YOLO object detection using reCamera based on Cpp / Environment Preparation / reCamera Preparation](https://wiki.seeedstudio.com/real_time_yolo_object_detection_using_recamera_based_on_cpp/).)
 
-**Secondly**, reCamera and Xiao must be on the same 2.4GHz local area network (LAN) to communicate. ReCamera has an internal wireless network card that can connect to WiFi. Typically, you can connect to WiFi through the camera's [Node-RED web](http://192.168.42.1/#/workspace). However, when running a custom C++ project, you must disable Node-RED and restart reCamera.(Reference: [Seeed Studio Wiki](https://wiki.seeedstudio.com/real_time_yolo_object_detection_using_recamera_based_on_cpp/)). Therefore, we need to establish the WiFi connection via the Linux terminal.
+**Secondly**, reCamera and XIAO must be on the same 2.4GHz local area network (LAN) to communicate. ReCamera has an internal wireless network card that can connect to WiFi. Typically, you can connect to WiFi through the camera's [Node-RED web](http://192.168.42.1/#/workspace). However, when running a custom C++ project, you must disable Node-RED and restart reCamera.(Reference: [Seeed Studio Wiki](https://wiki.seeedstudio.com/real_time_yolo_object_detection_using_recamera_based_on_cpp/)). Therefore, we need to establish the WiFi connection via the Linux terminal.
+
 ```
 cd /etc/
 ls
 ```
+
 You can see the **wpa_supplicant.conf** :
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/2.png" /></div>
 You can also view it in the left file directory:
@@ -50,36 +55,40 @@ Delete the original file in reCamera terminal: /etc/.
 ```
 sudo rm wpa_supplicant.conf
 ```
+
 Open your PC windows powershell and copy the file to the reCamera terminal : **/home/recamera/**:
+
 ```
 scp "C:\Users\{your username}\Desktop\wpa_supplicant.conf" recamera@192.168.42.1:/home/recamera
 ```
+
 Copy the file from **/home/recamera/** to : **/etc/**:
 
 ```
 sudo scp wpa_supplicant.conf /etc/
 ```
+
 Restart the reCamera.Then, run the program.
+
 ```
 sudo ./Supervisor_add_detection_http
 ```
+
 Ensure your reCamera is connected to your WiFi network.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/5.png" /></div>
 
-
-### XIAO 
+### XIAO
 
 #### Network connection and send HTTP requests
 
-
-It is necessary to download [Arduino](https://www.arduino.cc/en/software) to flash the program for Xiao (ESP32-C3).
+It is necessary to download [Arduino](https://www.arduino.cc/en/software) to flash the program for XIAO (ESP32-C3).
 
 **Step 1.** Download and Install the latest version of [Arduino IDE](https://www.arduino.cc/en/software/) according to your operating system.Launch the Arduino application.
 
 **Step 2.** Add ESP32 board package to your Arduino IDE
 Navigate to **File > Preferences**, and fill **"Additional Boards Manager URLs"** with the url below:
-**https://jihulab.com/esp-mirror/espressif/arduino-esp32.git**
+**<https://jihulab.com/esp-mirror/espressif/arduino-esp32.git>**
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/6.png" /></div>
 
@@ -95,7 +104,7 @@ Navigate to **Tools > Board > ESP32 Arduino** and select "**XIAO_ESP32C3**". The
 **Port**
 Navigate to **Tools > Port** and select the serial port name of the connected XIAO ESP32C3. This is likely to be COM3 or higher (**COM1** and **COM2** are usually reserved for hardware serial ports).
 
-**Step 4.** Write the following program and click the upload button to compile and upload. The reCamera and Xiao must be on the same 2.4GHz local area network (LAN) to communicate.
+**Step 4.** Write the following program and click the upload button to compile and upload. The reCamera and XIAO must be on the same 2.4GHz local area network (LAN) to communicate.
 
 ```
 #include <WiFi.h>
@@ -178,23 +187,26 @@ void loop() {
 }
 
 ```
+
 **Note**: Modify to your WiFi name (SSID), password, and reCamera wlan0 IP address.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/7.png" /></div>
 
-Wait for the upload to complete,and you can see Xiao has successfully connected to WiFi in the **serial monitor**.
+Wait for the upload to complete,and you can see XIAO has successfully connected to WiFi in the **serial monitor**.
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/8.png" /></div>
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/9.png" /></div>
 
 ## Running
+
 Ensure your reCamera is running the Supervisor project and has successfully connected to WiFi.
 
 ```
 sudo ./Supervisor_add_detection_http
 ```
+
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/10.png" /></div>
 
-You can see the Json results of HTTP service in the **serial monitor** of Xiao.
+You can see the Json results of HTTP service in the **serial monitor** of XIAO.
 
 <div align="center"><img width={600} src="https://files.seeedstudio.com/wiki/reCamera/reCamera_connects_to_Xiao_via_HTTP/11.png" /></div>
 
@@ -203,11 +215,11 @@ You can see the Json results of HTTP service in the **serial monitor** of Xiao.
 Thank you for choosing our products! We are here to provide you with different support to ensure that your experience with our products is as smooth as possible. We offer several communication channels to cater to different preferences and needs.
 
 <div class="button_tech_support_container">
-<a href="https://forum.seeedstudio.com/" class="button_forum"></a> 
+<a href="https://forum.seeedstudio.com/" class="button_forum"></a>
 <a href="https://www.seeedstudio.com/contacts" class="button_email"></a>
 </div>
 
 <div class="button_tech_support_container">
-<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a> 
+<a href="https://discord.gg/eWkprNDMU7" class="button_discord"></a>
 <a href="https://github.com/Seeed-Studio/wiki-documents/discussions/69" class="button_discussion"></a>
 </div>
