@@ -124,12 +124,20 @@ To work with the XIAO ESP32S3, you need to flash the I2S firmware. However, it d
 
 Download and Install the stable version of Arduino IDE according to your operating system
 
- <div class="download_arduino_container" style={{textAlign: 'center'}}>
-    <a class="download_arduino_item" href="https://www.arduino.cc/en/software"><strong><span><font color={'FFFFFF'} size={"4"}>Download Arduino IDE</font></span></strong>
-    </a>
- </div>
+ <div className="download_arduino_container" style={{ textAlign: 'center' }}>
+  <a
+    className="download_arduino_item"
+    href="https://www.arduino.cc/en/software"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: 'none', color: '#FFFFFF', fontSize: '1.25rem' }}
+  >
+    <strong>Download Arduino IDE</strong>
+  </a>
+</div>
 
- <br></br>
+<br />
+
 
  #### Install Arduino-ESP32
 
