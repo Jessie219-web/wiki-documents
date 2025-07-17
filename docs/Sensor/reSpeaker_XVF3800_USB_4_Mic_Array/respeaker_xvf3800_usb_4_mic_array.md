@@ -36,9 +36,9 @@ The ReSpeaker XVF3800 USB 4-Mic Array is a professional 4-mic circular array wit
 
 - **Unique Device Serial Number** :Built-in SN enables  multi-device deployments and advanced device management
 
-- **Dual Operation Modes** :USB plug-and-play mode and INT-Device mode, configurable via USB or I2S
+- **Dual Operation Modes** :USB plug-and-play mode for instant PC connectivity and INT-Device (I2S) mode for integration with embedded systems—configurable via USB or I2C commands by switching the firmware accordingly
 
-- **Open Source Compatible** :Works with XIAO Series,  Arduino, Raspberry Pi, PC/Mac via I2S and USB Audio Class 2.0
+- **Open Source Compatible** :Works with USB hosts (Windows, macOS, Raspberry Pi OS) and I2S hosts (XIAO Series, ESP32, Arduino).
 
 - **Visual Feedback** :Programmable RGB LEDs and status indicators show device states and voice activity
 
@@ -56,7 +56,6 @@ The ReSpeaker XVF3800 USB 4-Mic Array is a professional 4-mic circular array wit
 | **Microphone Array**          | **Quad PDM MEMS microphones** in circular pattern, supporting **360° far-field voice capture (5m)**. |
 | **Audio Codec**               | **TLV320AIC3104**, handles audio conversion and output.                                              |
 | **RGB LEDs**                  | **12x WS2812** individually-addressable RGB LEDs for visual feedback (e.g., status, voice activity). |
-| **Power Indicator Light**     | Red LED, **always on** when device is powered.                                                       |
 | **Mute Button**               | Press to **mute/unmute** the microphone input.                                                       |
 | **Mute Indicator LED**        | Lights up (typically red) to show that audio is muted.                                               |
 | **Reset Button**              | Hardware reset for the board/system.                                                                 |
@@ -74,10 +73,13 @@ The ReSpeaker XVF3800 USB 4-Mic Array is a professional 4-mic circular array wit
 | **Visual Feedback**           | Device state and audio activity shown via **RGB LED patterns** and **status indicators**.            |
 | **Audio Quality**             | Equal or better than the **previous XVF3000-based designs**.                                         |
 
+:::note
+The ReSpeaker XVF3800 is offered in two variants—one without XIAO and another with the XIAO ESP32S3 onboard. The version without XIAO operates with default USB firmware. To use the XIAO-integrated version, you must flash firmware built for **INT-Device (I2S) mode**. For detailed setup instructions, refer to the [official wiki guide](docs/Sensor/reSpeaker_XVF3800_USB_4_Mic_Array/respeaker_xvf3800_with_xiao_intro.md).
+:::
 
 ### XIAO ESP32S3 support 
 
-- I2S & I2C communication
+-  Stereo I2S input/output with multiple output options; I2C interface for configuring and managing XVF3800 parameters.
 - XIAO reset via IO pin
 - Interface and solder pads
 
