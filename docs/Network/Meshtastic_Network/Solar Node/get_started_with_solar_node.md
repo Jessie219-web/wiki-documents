@@ -49,6 +49,10 @@ P1-Pro version has built-in battery and GPS module, for P1 version, user needs t
 
 * Step 2: Install battery and the GPS module.
 
+:::tip
+Recommended Battery: 18650 Lithium-ion Battery 3.6V (Button Top).
+:::
+
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/install-bat-gps.png" alt="pir" width={800} height="auto" /></p>
 
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/gps_install.png" alt="pir" width={800} height="auto" /></p>
