@@ -219,7 +219,7 @@ bool read_gpi_values(uint8_t *buffer, uint8_t *status) {
 - Sends a write command to:
     - Resource ID: 20
     - Command ID: 1 (GPO_WRITE_VALUE)
-    - Payload: { pin_number, value }, e.g., {30, 1} to mute
+    - Payload:  pin number, value `e.g., {30, 1} to mute`
   
 **Convenience Functions:**
 - muteMic() → sets GPIO 30 HIGH to **mute mic and turn on red LED**
