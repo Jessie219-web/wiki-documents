@@ -1371,6 +1371,8 @@ lsusb
 
 ```sh
 sudo dmesg | grep 5740
+# Load ACM module
+sudo modprobe cdc_acm
 ```
 
 その後、デバイスポートを以下のように取得します：

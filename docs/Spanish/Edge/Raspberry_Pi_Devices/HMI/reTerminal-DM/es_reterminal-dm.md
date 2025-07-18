@@ -1367,6 +1367,8 @@ En mi caso, nuestro WM1302 utiliza el "STMicroelectronics Virtual COM Port", obt
 
 ```sh
 sudo dmesg | grep 5740
+# Load ACM module
+sudo modprobe cdc_acm
 ```
 
 Luego, identifica el puerto USB utilizando:

@@ -14,7 +14,7 @@ last_update:
 <div style={{textAlign:'center'}}><img src="https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/head.jpg" style={{width:1000, height:'auto'}}/></div>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/TRMNL-7.5-OG-DIY-Kit.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/TRMNL-7-5-Inch-OG-DIY-Kit-p-6481.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
@@ -86,10 +86,10 @@ Print open-source enclosure parts from [Printables](https://www.printables.com/)
 #### 1. [TRMNL BYOD Ecosystem Tutorial](https://wiki.seeedstudio.com/works_with_trmnl/)  
 Discover how to use the TRMNL BYOD platform with 375+ plugins, including no-code dashboard creation for your work and life.  
 
-#### 2. [Works with Home Assistant](https://wiki.seeedstudio.com/XIAO_ESP32S3_Getting_Started/)  
+#### 2. [Works with Home Assistant](https://wiki.seeedstudio.com/works_with_esphome)  
 Learn how to set up your TRMNL kit with Home Assistant via ESPHome, including firmware upload and basic programming.  
 
-#### 3. [Works with Arduino](https://wiki.seeedstudio.com/E-Ink_Display_Programming/)  
+#### 3. [Works with Arduino](https://wiki.seeedstudio.com/works_with_arduino/)  
 Master TRMNL kit control with Arduino, including refresh mechanisms, graphics rendering, and power management.  
 
 ## Resources
