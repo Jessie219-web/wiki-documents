@@ -4,7 +4,7 @@ description: Get started with the ReSpeaker XVF3800 USB 4-Mic Array—a high-per
 title: Getting Started with reSpeaker XVF3800 USB Mic Array
 keywords:
 - reSpeaker
-image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
+image: https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/respeaker-xvf3800-4-mic-array.webp
 slug: /respeaker_xvf3800_introduction
 last_update:
   date: 7/15/2025
@@ -21,7 +21,7 @@ The ReSpeaker XVF3800 USB 4-Mic Array is a professional 4-mic circular array wit
 <p style={{textAlign: 'center'}}><img src="https://files.seeedstudio.com/wiki/respeaker_xvf3800_usb/intropcb.jpg" alt="pir" width={600} height="auto" /></p>
 
 <div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-Lite-p-5928.html">
+    <a class="get_one_now_item" href="https://www.seeedstudio.com/ReSpeaker-XVF3800-USB-Mic-Array-p-6488.html">
             <strong><span><font color={'FFFFFF'} size={"4"}> Get One Now 🖱️</font></span></strong>
     </a>
 </div>
