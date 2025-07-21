@@ -80,6 +80,10 @@ To get your TRMNL 7.5inch(OG) DIY kit working with TRMNL, you need to flash the 
 
 #### Method 1: Flash via TRMNL Web Flasher (Easiest)
 
+:::tip
+Please use **FW 1.5.12** or newer firmware for Seeed compatibility.
+:::
+
 1. **Go to the TRMNL Web Flasher**
 
    - Visit [https://usetrmnl.com/flash](https://usetrmnl.com/flash)
@@ -90,44 +94,7 @@ To get your TRMNL 7.5inch(OG) DIY kit working with TRMNL, you need to flash the 
 
 ---
 
-#### Method 2: Flash Pre-built Firmware
-
-1. **Download the Firmware Package**
-
-   - Download the latest firmware zip from [here](https://files.seeedstudio.com/wiki/XIAO_Gadget/TRMNL_Kit_Pic/TRMNL_Kit_Firmware.zip).
-
-<div class="get_one_now_container" style={{textAlign: 'center'}}>
-    <a class="get_one_now_item" href="https://files.seeedstudio.com/wiki/xiao_075inch_epaper_panel/res/TRMNL_XIAO_7.5inch_epaper_panel_1.5.4.zip">
-    <strong><span><font color={'FFFFFF'} size={"4"}> Download Firmware 🖱️</font></span></strong>
-    </a>
-</div>
-
-2. **Extract the Files**
-
-   - Unzip the downloaded file. You should see the following files:
-     - `bootloader.bin`
-     - `partitions.bin`
-     - `boot_app0.bin`
-     - `firmware.bin`
-
-3. **Connect Your Device**
-
-   - Plug your TRMNL 7.5inch(OG) DIY kit into your computer via USB.
-
-4. **Flash the Firmware**
-
-   - Open a terminal in the folder containing the extracted `.bin` files.
-   - Run the following command:
-
-     ```
-     esptool.py --chip esp32c3 --baud 460800 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size 4MB 0x0000 bootloader.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 firmware.bin
-     ```
-
-   - Wait for the process to complete. After the programme has been uploaded, you may need to click the Reset button to reboot the device.
-
----
-
-#### Method 3: Build and Flash from Source (For Advanced Users/Developers)
+#### Method 2: Build and Flash from Source (For Advanced Users/Developers)
 
 1. **Clone the Firmware Repository**
 
