@@ -4010,6 +4010,7 @@ const sidebars = {
                   "Robotics/Robot_Software/ROS/Install_ROS2_Humble",
                   "Robotics/Robot_Software/ROS/Isaac_ROS_AprilTag",
                   "Robotics/Robot_Software/ROS/Isaac_ROS_Visual_SLAM",
+
                     ]},
             {
               type: 'category',
@@ -4020,6 +4021,17 @@ const sidebars = {
                 // },
                 items: [
                   'Robotics/Robot_Software/Isaac_Lab/Install_Isaac_lab',
+                    ]},
+
+            {
+              type: 'category',
+              label: 'PX4',
+                // link: {
+                //   type: "doc",
+                //   id: 'Edge/NVIDIA_Jetson/Application/Robotics',
+                // },
+                items: [
+                  "Robotics/Robot_Software/PX4/Control_PX4_with_reComputer_Jetson",
                     ]},
             'Robotics/Robot_Software/VLA/control_robotic_arm_via_gr00t',
           ]
