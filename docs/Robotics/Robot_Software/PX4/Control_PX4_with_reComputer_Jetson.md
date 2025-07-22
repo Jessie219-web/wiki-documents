@@ -6,7 +6,7 @@ keywords:
 - PX4
 - ROS
 image: https://files.seeedstudio.com/wiki/wiki-platform/S-tempor.png
-slug: /Control_PX4_with_reComputer_Jetson
+slug: /control_px4_with_recomputer_jetson
 last_update:
   date: 7/21/2025
   author: TienjuiWong
